@@ -48,6 +48,17 @@ class SearchReliabilityTests(unittest.TestCase):
         self.assertEqual(result.depth, 0)
         self.assertEqual(board.fen(), chess.Board().fen())
 
+    
+    def test_finds_defensive_move_against_promotion_threat(self):
+        board = chess.Board(
+            "r2qk3/pp2pp2/2P2n1Q/1B2p2b/4P2p/2N5/PPP3PP/2K4R b q - 0 19"
+        )
+
+        result = JanusSearch().search(board, max_depth=4)
+
+        self.assertIsNotNone(result.best_move)
+        self.assertEqual(result.best_move, chess.Move.from_uci("e7e6"))
+
 
 if __name__ == "__main__":
     unittest.main()

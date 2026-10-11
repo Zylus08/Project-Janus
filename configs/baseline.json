@@ -1,0 +1,18 @@
+{
+  "engine_name": "Janus",
+  "max_depth": 5,
+  "quiescence_max_ply": 12,
+  "transposition_table_size": 200000,
+  "piece_values": {
+    "pawn": 100,
+    "knight": 320,
+    "bishop": 335,
+    "rook": 500,
+    "queen": 900
+  },
+  "search": {
+    "iterative_deepening": true,
+    "quiescence": true,
+    "move_ordering": true
+  }
+}

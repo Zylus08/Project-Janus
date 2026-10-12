@@ -19,6 +19,11 @@ POSITIONS = [
         "expected": "d1d5",
     },
     {
+        "id": "knight_fork",
+        "fen": "3k3q/8/8/4N3/8/8/8/4K3 w - - 0 1",
+        "expected": "e5f7",
+    },
+    {
         "id": "mate_in_one",
         "fen": "8/7k/5K2/6Q1/8/8/8/8 w - - 0 1",
         "expected": "g5g7",

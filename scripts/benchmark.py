@@ -53,6 +53,16 @@ def load_positions(path: Path) -> list[dict[str, Any]]:
     return data
 
 
+def _validate_pv(board: chess.Board, pv: list[chess.Move]) -> bool:
+    """Return True if every PV move is legal when played in sequence."""
+    verify = board.copy()
+    for move in pv:
+        if move not in verify.legal_moves:
+            return False
+        verify.push(move)
+    return True
+
+
 def run_benchmark(
     positions: list[dict[str, Any]], depth: int, time_limit: float | None
 ) -> dict[str, Any]:
@@ -82,6 +92,7 @@ def run_benchmark(
             "nodes_per_second": round(result.nodes / result.elapsed, 2) if result.elapsed > 0 else 0.0,
             "expected_move_match": expected_match,
             "legal_best_move": result.best_move is None or result.best_move in board.legal_moves,
+            "pv_legal": _validate_pv(board, result.pv),
         })
 
     return {
@@ -100,6 +111,7 @@ def run_benchmark(
         "summary": {
             "positions": len(rows),
             "legal_best_moves": sum(bool(row["legal_best_move"]) for row in rows),
+            "pv_legal_count": sum(bool(row["pv_legal"]) for row in rows),
             "expected_move_checks": sum(row["expected_move_match"] is not None for row in rows),
             "expected_move_matches": sum(row["expected_move_match"] is True for row in rows),
             "total_nodes": sum(row["nodes"] for row in rows),

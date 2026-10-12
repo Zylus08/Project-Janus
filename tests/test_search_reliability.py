@@ -59,6 +59,38 @@ class SearchReliabilityTests(unittest.TestCase):
         self.assertIsNotNone(result.best_move)
         self.assertEqual(result.best_move, chess.Move.from_uci("e7e6"))
 
+    def test_pv_is_legal_sequence(self):
+        """Every move in the returned PV must be legal in sequence."""
+        positions = [
+            ("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1", "startpos"),
+            ("r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 4 7", "open_game"),
+            ("8/7k/5K2/6Q1/8/8/8/8 w - - 0 1", "mate_in_1"),
+            ("8/P7/8/8/8/4k3/8/4K3 w - - 0 1", "promotion"),
+        ]
+        for fen, label in positions:
+            with self.subTest(position=label):
+                board = chess.Board(fen)
+                result = JanusSearch().search(board, max_depth=4)
+                verify = board.copy()
+                for i, move in enumerate(result.pv):
+                    self.assertIn(
+                        move, verify.legal_moves,
+                        f"PV move {i} ({move.uci()}) illegal at {verify.fen()}"
+                    )
+                    verify.push(move)
+
+    def test_score_perspective_symmetry(self):
+        """Score should be positive for the side with material advantage."""
+        # White up a queen, white to move
+        board_w = chess.Board("4k3/8/8/8/8/8/4Q3/4K3 w - - 0 1")
+        r_w = JanusSearch().search(board_w, max_depth=2)
+        self.assertGreater(r_w.score, 0, "Side-to-move with advantage should score positive")
+
+        # Black up a queen, black to move
+        board_b = chess.Board("4k3/4q3/8/8/8/8/8/4K3 b - - 0 1")
+        r_b = JanusSearch().search(board_b, max_depth=2)
+        self.assertGreater(r_b.score, 0, "Side-to-move with advantage should score positive")
+
 
 if __name__ == "__main__":
     unittest.main()

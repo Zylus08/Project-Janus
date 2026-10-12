@@ -33,6 +33,7 @@ class BenchmarkHarnessTests(unittest.TestCase):
         self.assertEqual(report["summary"]["positions"], 4)
         for row in report["results"]:
             self.assertTrue(row["legal_best_move"])
+            self.assertTrue(row["pv_legal"])
         terminal = next(row for row in report["results"] if row["id"] == "stalemate")
         self.assertEqual(terminal["best_move_uci"], "")
         self.assertEqual(terminal["completed_depth"], 0)

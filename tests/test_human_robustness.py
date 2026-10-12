@@ -45,6 +45,20 @@ class HumanRobustnessTests(unittest.TestCase):
             chess.Move.from_uci("a7a8q"),
         )
 
+    def test_avoids_poisoned_queen_capture(self):
+        board = chess.Board(
+            "3qk3/8/8/3r4/8/8/8/3QK3 w - - 0 1"
+        )
+
+        result = JanusSearch().search(board, max_depth=4)
+
+        self.assertIsNotNone(result.best_move)
+        self.assertNotEqual(
+            result.best_move,
+            chess.Move.from_uci("d1d5"),
+            "Janus must not capture the defended rook and lose its queen.",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

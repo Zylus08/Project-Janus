@@ -52,11 +52,86 @@ class MatchSummaryTests(unittest.TestCase):
 
             json_partial = tmppath / "partial.json"
             csv_partial = tmppath / "partial.csv"
-            rows = [{"game": 1, "janus_color": "white", "white": "Janus", "black": "Stockfish",
-                     "result": "0-1", "termination": "checkmate", "plies": 40, "depth": 3}]
+            rows = [{"game": 1, "pair": 1, "opening_id": "open_game", "janus_color": "white",
+                     "white": "Janus", "black": "Stockfish", "result": "0-1",
+                     "termination": "checkmate", "plies": 40, "depth": 3,
+                     "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"}]
             match.write_reports(json_partial, csv_partial, rows, {"meta": "val"}, 2.5)
             self.assertTrue(json_partial.exists())
             self.assertTrue(csv_partial.exists())
+
+    def test_load_openings_deterministic_and_paired(self):
+        openings_path = ROOT / "benchmarks" / "openings.json"
+        self.assertTrue(openings_path.exists(), "benchmarks/openings.json must exist")
+        # Same seed must yield identical sequence
+        ops1 = match.load_openings(openings_path, count=10, seed=42)
+        ops2 = match.load_openings(openings_path, count=10, seed=42)
+        self.assertEqual(len(ops1), 10)
+        self.assertEqual([o["id"] for o in ops1], [o["id"] for o in ops2])
+
+        # Different seed yields different sequence
+        ops3 = match.load_openings(openings_path, count=10, seed=999)
+        self.assertNotEqual([o["id"] for o in ops1], [o["id"] for o in ops3])
+
+        # Missing path falls back safely to startpos
+        fallback = match.load_openings(Path("nonexistent.json"), count=4)
+        self.assertEqual(len(fallback), 4)
+        self.assertEqual(fallback[0]["id"], "startpos")
+
+    def test_paired_openings_color_balance(self):
+        games_count = 6
+        pairs_count = games_count // 2
+        openings_path = ROOT / "benchmarks" / "openings.json"
+        openings = match.load_openings(openings_path, count=pairs_count, seed=42)
+
+        assigned_colors = []
+        assigned_openings = []
+        for i in range(games_count):
+            pair_idx = i // 2
+            color = "white" if i % 2 == 0 else "black"
+            assigned_colors.append(color)
+            assigned_openings.append(openings[pair_idx]["id"])
+
+        # Exact color balance
+        self.assertEqual(assigned_colors.count("white"), games_count // 2)
+        self.assertEqual(assigned_colors.count("black"), games_count // 2)
+
+        # Each pair shares the exact same opening
+        for p in range(pairs_count):
+            g1_op = assigned_openings[2 * p]
+            g2_op = assigned_openings[2 * p + 1]
+            self.assertEqual(g1_op, g2_op)
+            self.assertEqual(assigned_colors[2 * p], "white")
+            self.assertEqual(assigned_colors[2 * p + 1], "black")
+
+    def test_report_metadata_completeness(self):
+        import json, tempfile
+        metadata = {
+            "janus_command": ["python", "-m", "janus.uci"],
+            "stockfish_command": ["stockfish.exe"],
+            "stockfish_threads": 1,
+            "stockfish_hash_mb": 128,
+            "stockfish_skill": 5,
+            "stockfish_elo": None,
+            "depth_each_move": 3,
+            "max_plies_per_game": 240,
+            "openings_path": "benchmarks/openings.json",
+            "seed": 42,
+            "pairs_count": 25,
+            "timestamp_utc": "2026-10-13T00:00:00Z",
+            "python_version": "3.12.8",
+            "method": "paired opening positions with alternating colours",
+        }
+        with tempfile.TemporaryDirectory() as tmpdir:
+            json_file = Path(tmpdir) / "test_report.json"
+            csv_file = Path(tmpdir) / "test_report.csv"
+            match.write_reports(json_file, csv_file, [], metadata, 10.0)
+            data = json.loads(json_file.read_text(encoding="utf-8"))
+            self.assertIn("metadata", data)
+            meta = data["metadata"]
+            for key in ["stockfish_threads", "stockfish_hash_mb", "stockfish_skill", "depth_each_move", "seed", "pairs_count"]:
+                self.assertIn(key, meta)
+                self.assertEqual(meta[key], metadata[key])
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,6 +1,6 @@
 """Run controlled Janus-vs-Stockfish games and save PGN/CSV/JSON reports."""
 from __future__ import annotations
-import argparse, csv, json, platform, sys, time
+import argparse, csv, json, platform, random, sys, time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -11,6 +11,24 @@ import chess.pgn
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT / "src") not in sys.path:
     sys.path.insert(0, str(ROOT / "src"))
+
+def load_openings(openings_path: Path | None, count: int, seed: int = 42) -> list[dict[str, Any]]:
+    """Load and deterministically select opening positions for paired matches."""
+    if openings_path and openings_path.is_file():
+        raw = json.loads(openings_path.read_text(encoding="utf-8"))
+        if not raw:
+            return [{"id": "startpos", "name": "Standard startpos", "fen": chess.STARTING_FEN}] * count
+        rng = random.Random(seed)
+        indices = list(range(len(raw)))
+        rng.shuffle(indices)
+        if count <= len(raw):
+            return [raw[i] for i in indices[:count]]
+        # If more pairs requested than available openings, cycle deterministically
+        selected = [raw[i] for i in indices]
+        while len(selected) < count:
+            selected.extend(raw)
+        return selected[:count]
+    return [{"id": "startpos", "name": "Standard startpos", "fen": chess.STARTING_FEN}] * count
 
 def summarize(rows: list[dict[str, Any]]) -> dict[str, Any]:
     wins = draws = losses = unfinished = 0
@@ -44,9 +62,12 @@ def summarize(rows: list[dict[str, Any]]) -> dict[str, Any]:
     }
 
 def play_one_game(janus, stockfish, game_number: int, janus_color: chess.Color,
-                  depth: int, max_plies: int):
-    board = chess.Board()
+                  depth: int, max_plies: int, start_fen: str | None = None,
+                  opening_id: str = "startpos", pair_number: int = 1):
+    board = chess.Board(start_fen) if start_fen else chess.Board()
     game = chess.pgn.Game()
+    if start_fen and start_fen != chess.STARTING_FEN:
+        game.setup(board)
     game.headers["Event"] = "Project Janus vs Stockfish controlled match"
     game.headers["Site"] = "Local"
     game.headers["Date"] = datetime.now().strftime("%Y.%m.%d")
@@ -54,6 +75,7 @@ def play_one_game(janus, stockfish, game_number: int, janus_color: chess.Color,
     game.headers["White"] = "Janus" if janus_color == chess.WHITE else "Stockfish"
     game.headers["Black"] = "Stockfish" if janus_color == chess.WHITE else "Janus"
     game.headers["TimeControl"] = f"depth {depth}"
+    game.headers["Opening"] = opening_id
     node = game
     for _ in range(max_plies):
         if board.is_game_over(claim_draw=True):
@@ -78,10 +100,11 @@ def play_one_game(janus, stockfish, game_number: int, janus_color: chess.Color,
         game.headers["Termination"] = "unfinished"
     game.headers["Result"] = result_string
     row = {
-        "game": game_number, "janus_color": "white" if janus_color == chess.WHITE else "black",
+        "game": game_number, "pair": pair_number, "opening_id": opening_id,
+        "janus_color": "white" if janus_color == chess.WHITE else "black",
         "white": game.headers["White"], "black": game.headers["Black"],
         "result": result_string, "termination": game.headers["Termination"],
-        "plies": board.ply(), "depth": depth,
+        "plies": board.ply(), "depth": depth, "start_fen": start_fen or chess.STARTING_FEN,
     }
     return game, row
 
@@ -101,7 +124,8 @@ def write_reports(json_path: Path, csv_path: Path, rows: list[dict[str, Any]],
             writer.writeheader()
             writer.writerows(rows)
     else:
-        fieldnames = ["game", "janus_color", "white", "black", "result", "termination", "plies", "depth"]
+        fieldnames = ["game", "pair", "opening_id", "janus_color", "white", "black",
+                      "result", "termination", "plies", "depth", "start_fen"]
         with csv_path.open("w", newline="", encoding="utf-8") as handle:
             writer = csv.DictWriter(handle, fieldnames=fieldnames)
             writer.writeheader()
@@ -109,12 +133,20 @@ def write_reports(json_path: Path, csv_path: Path, rows: list[dict[str, Any]],
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--stockfish", required=True, help="Full path to stockfish.exe")
-    parser.add_argument("--games", type=int, default=2)
+    parser.add_argument("--games", type=int, default=2, help="Total number of games (even number for paired matches)")
     parser.add_argument("--depth", type=int, default=3, help="Fixed search depth for both engines")
     parser.add_argument("--max-plies", type=int, default=240, help="Hard cap per game")
+    parser.add_argument("--openings", type=Path, default=ROOT / "benchmarks" / "openings.json",
+                        help="Path to opening positions JSON file")
+    parser.add_argument("--seed", type=int, default=42, help="Random seed for deterministic opening sampling")
+    parser.add_argument("--stockfish-threads", type=int, default=1, help="Stockfish UCI Threads option")
+    parser.add_argument("--stockfish-hash", type=int, default=128, help="Stockfish UCI Hash (MB) option")
+    parser.add_argument("--stockfish-skill", type=int, default=None, help="Stockfish UCI Skill Level option (0-20)")
+    parser.add_argument("--stockfish-elo", type=int, default=None, help="Stockfish UCI_Elo limit (1320-3190)")
     parser.add_argument("--out", type=Path, default=ROOT / "match-results")
     args = parser.parse_args()
-    if args.games < 1: parser.error("--games must be >= 1")
+    if args.games < 2: parser.error("--games must be >= 2")
+    if args.games % 2 != 0: parser.error("--games must be an even number for paired opening evaluation")
     if args.depth < 1: parser.error("--depth must be >= 1")
     if args.max_plies < 1: parser.error("--max-plies must be >= 1")
 
@@ -126,13 +158,21 @@ def main() -> int:
     csv_path = args.out / f"janus-stockfish-{stamp}.csv"
     json_path = args.out / f"janus-stockfish-{stamp}.json"
     rows = []
+
+    pairs_count = args.games // 2
+    openings = load_openings(args.openings, count=pairs_count, seed=args.seed)
+
     metadata = {
         "janus_command": janus_command, "stockfish_command": stockfish_command,
-        "stockfish_threads": 1, "stockfish_hash_mb": 128,
+        "stockfish_threads": args.stockfish_threads, "stockfish_hash_mb": args.stockfish_hash,
+        "stockfish_skill": args.stockfish_skill, "stockfish_elo": args.stockfish_elo,
         "depth_each_move": args.depth, "max_plies_per_game": args.max_plies,
+        "openings_path": str(args.openings) if args.openings else None,
+        "seed": args.seed, "pairs_count": pairs_count,
         "timestamp_utc": datetime.now(timezone.utc).isoformat(),
         "python_version": platform.python_version(),
-        "method": "alternating Janus colours; fixed depth per move; one Stockfish thread",
+        "platform": platform.platform(),
+        "method": "paired opening positions with alternating colours; fixed depth per move",
     }
     start = time.monotonic()
     match_failed = False
@@ -141,18 +181,31 @@ def main() -> int:
             chess.engine.SimpleEngine.popen_uci(janus_command, cwd=str(ROOT)) as janus,
             chess.engine.SimpleEngine.popen_uci(stockfish_command, cwd=str(ROOT)) as stockfish,
         ):
-            config = {}
-            if "Threads" in stockfish.options: config["Threads"] = 1
-            if "Hash" in stockfish.options: config["Hash"] = 128
+            config: dict[str, Any] = {}
+            if "Threads" in stockfish.options: config["Threads"] = args.stockfish_threads
+            if "Hash" in stockfish.options: config["Hash"] = args.stockfish_hash
+            if args.stockfish_skill is not None and "Skill Level" in stockfish.options:
+                config["Skill Level"] = args.stockfish_skill
+            if args.stockfish_elo is not None:
+                if "UCI_LimitStrength" in stockfish.options: config["UCI_LimitStrength"] = True
+                if "UCI_Elo" in stockfish.options: config["UCI_Elo"] = args.stockfish_elo
             if config: stockfish.configure(config)
+
             with pgn_path.open("w", encoding="utf-8") as pgn_file:
                 for i in range(args.games):
+                    pair_index = i // 2
+                    opening = openings[pair_index]
                     color = chess.WHITE if i % 2 == 0 else chess.BLACK
-                    game, row = play_one_game(janus, stockfish, i + 1, color, args.depth, args.max_plies)
+                    game, row = play_one_game(
+                        janus, stockfish, i + 1, color, args.depth, args.max_plies,
+                        start_fen=opening.get("fen"), opening_id=opening.get("id", "startpos"),
+                        pair_number=pair_index + 1
+                    )
                     pgn_file.write(str(game) + "\n\n")
                     pgn_file.flush()
                     rows.append(row)
-                    print(f"Game {row['game']}: Janus {row['janus_color']}, {row['result']}, "
+                    print(f"Game {row['game']} (Pair {row['pair']}, {row['opening_id']}): "
+                          f"Janus {row['janus_color']}, {row['result']}, "
                           f"{row['plies']} plies, termination={row['termination']}")
     except (OSError, chess.engine.EngineError, RuntimeError) as exc:
         print(f"Match failed: {exc}", file=sys.stderr)

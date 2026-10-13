@@ -64,6 +64,7 @@ def summarize(rows: list[dict[str, Any]]) -> dict[str, Any]:
 def play_one_game(janus, stockfish, game_number: int, janus_color: chess.Color,
                   depth: int, max_plies: int, start_fen: str | None = None,
                   opening_id: str = "startpos", pair_number: int = 1):
+    game_start = time.monotonic()
     board = chess.Board(start_fen) if start_fen else chess.Board()
     game = chess.pgn.Game()
     if start_fen and start_fen != chess.STARTING_FEN:
@@ -99,12 +100,14 @@ def play_one_game(janus, stockfish, game_number: int, janus_color: chess.Color,
         result_string = "*"
         game.headers["Termination"] = "unfinished"
     game.headers["Result"] = result_string
+    game_duration = round(time.monotonic() - game_start, 3)
     row = {
         "game": game_number, "pair": pair_number, "opening_id": opening_id,
         "janus_color": "white" if janus_color == chess.WHITE else "black",
         "white": game.headers["White"], "black": game.headers["Black"],
         "result": result_string, "termination": game.headers["Termination"],
-        "plies": board.ply(), "depth": depth, "start_fen": start_fen or chess.STARTING_FEN,
+        "plies": board.ply(), "depth": depth, "duration_seconds": game_duration,
+        "start_fen": start_fen or chess.STARTING_FEN,
     }
     return game, row
 
@@ -125,7 +128,7 @@ def write_reports(json_path: Path, csv_path: Path, rows: list[dict[str, Any]],
             writer.writerows(rows)
     else:
         fieldnames = ["game", "pair", "opening_id", "janus_color", "white", "black",
-                      "result", "termination", "plies", "depth", "start_fen"]
+                      "result", "termination", "plies", "depth", "duration_seconds", "start_fen"]
         with csv_path.open("w", newline="", encoding="utf-8") as handle:
             writer = csv.DictWriter(handle, fieldnames=fieldnames)
             writer.writeheader()
@@ -206,7 +209,7 @@ def main() -> int:
                     rows.append(row)
                     print(f"Game {row['game']} (Pair {row['pair']}, {row['opening_id']}): "
                           f"Janus {row['janus_color']}, {row['result']}, "
-                          f"{row['plies']} plies, termination={row['termination']}")
+                          f"{row['plies']} plies, {row['duration_seconds']}s, termination={row['termination']}")
     except (OSError, chess.engine.EngineError, RuntimeError) as exc:
         print(f"Match failed: {exc}", file=sys.stderr)
         print("Check executable paths and the Janus UCI smoke test.", file=sys.stderr)

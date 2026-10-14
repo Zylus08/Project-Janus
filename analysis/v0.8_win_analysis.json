@@ -1,0 +1,656 @@
+{
+  "game_number": 32,
+  "pair_number": 16,
+  "opening_id": "queens_gambit_declined",
+  "janus_color": "black",
+  "termination": "checkmate",
+  "plies_count": 38,
+  "plies": [
+    {
+      "ply": 1,
+      "side": "Stockfish (White)",
+      "move": "e2e3",
+      "fen_before": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+      "best_move": "c1g5",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -25
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -2
+      }
+    },
+    {
+      "ply": 2,
+      "side": "Janus (Black)",
+      "move": "b8d7",
+      "fen_before": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N1P3/PP3PPP/R1BQKBNR b KQkq - 0 4",
+      "best_move": "f8e7",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -4
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -8
+      }
+    },
+    {
+      "ply": 3,
+      "side": "Stockfish (White)",
+      "move": "g1f3",
+      "fen_before": "r1bqkb1r/pppn1ppp/4pn2/3p4/2PP4/2N1P3/PP3PPP/R1BQKBNR w KQkq - 1 5",
+      "best_move": "g1f3",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -8
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -9
+      }
+    },
+    {
+      "ply": 4,
+      "side": "Janus (Black)",
+      "move": "h7h5",
+      "fen_before": "r1bqkb1r/pppn1ppp/4pn2/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 2 5",
+      "best_move": "f8e7",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -17
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -104
+      }
+    },
+    {
+      "ply": 5,
+      "side": "Stockfish (White)",
+      "move": "f1d3",
+      "fen_before": "r1bqkb1r/pppn1pp1/4pn2/3p3p/2PP4/2N1PN2/PP3PPP/R1BQKB1R w KQkq - 0 6",
+      "best_move": "f1d3",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -100
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -72
+      }
+    },
+    {
+      "ply": 6,
+      "side": "Janus (Black)",
+      "move": "d5c4",
+      "fen_before": "r1bqkb1r/pppn1pp1/4pn2/3p3p/2PP4/2NBPN2/PP3PPP/R1BQK2R b KQkq - 1 6",
+      "best_move": "d5c4",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -88
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -85
+      }
+    },
+    {
+      "ply": 7,
+      "side": "Stockfish (White)",
+      "move": "d3c4",
+      "fen_before": "r1bqkb1r/pppn1pp1/4pn2/7p/2pP4/2NBPN2/PP3PPP/R1BQK2R w KQkq - 0 7",
+      "best_move": "d3c4",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -89
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -91
+      }
+    },
+    {
+      "ply": 8,
+      "side": "Janus (Black)",
+      "move": "c7c5",
+      "fen_before": "r1bqkb1r/pppn1pp1/4pn2/7p/2BP4/2N1PN2/PP3PPP/R1BQK2R b KQkq - 0 7",
+      "best_move": "a7a6",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -94
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -107
+      }
+    },
+    {
+      "ply": 9,
+      "side": "Stockfish (White)",
+      "move": "d1e2",
+      "fen_before": "r1bqkb1r/pp1n1pp1/4pn2/2p4p/2BP4/2N1PN2/PP3PPP/R1BQK2R w KQkq - 0 8",
+      "best_move": "d1e2",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -112
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -113
+      }
+    },
+    {
+      "ply": 10,
+      "side": "Janus (Black)",
+      "move": "a7a5",
+      "fen_before": "r1bqkb1r/pp1n1pp1/4pn2/2p4p/2BP4/2N1PN2/PP2QPPP/R1B1K2R b KQkq - 1 8",
+      "best_move": "f8e7",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -114
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -191
+      }
+    },
+    {
+      "ply": 11,
+      "side": "Stockfish (White)",
+      "move": "e1g1",
+      "fen_before": "r1bqkb1r/1p1n1pp1/4pn2/p1p4p/2BP4/2N1PN2/PP2QPPP/R1B1K2R w KQkq - 0 9",
+      "best_move": "e1g1",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -175
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -167
+      }
+    },
+    {
+      "ply": 12,
+      "side": "Janus (Black)",
+      "move": "d7b6",
+      "fen_before": "r1bqkb1r/1p1n1pp1/4pn2/p1p4p/2BP4/2N1PN2/PP2QPPP/R1B2RK1 b kq - 1 9",
+      "best_move": "d7b6",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -188
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -190
+      }
+    },
+    {
+      "ply": 13,
+      "side": "Stockfish (White)",
+      "move": "c4b5",
+      "fen_before": "r1bqkb1r/1p3pp1/1n2pn2/p1p4p/2BP4/2N1PN2/PP2QPPP/R1B2RK1 w kq - 2 10",
+      "best_move": "c4b5",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -224
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -212
+      }
+    },
+    {
+      "ply": 14,
+      "side": "Janus (Black)",
+      "move": "b6d7",
+      "fen_before": "r1bqkb1r/1p3pp1/1n2pn2/pBp4p/3P4/2N1PN2/PP2QPPP/R1B2RK1 b kq - 3 10",
+      "best_move": "c8d7",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -207
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -441
+      }
+    },
+    {
+      "ply": 15,
+      "side": "Stockfish (White)",
+      "move": "f1d1",
+      "fen_before": "r1bqkb1r/1p1n1pp1/4pn2/pBp4p/3P4/2N1PN2/PP2QPPP/R1B2RK1 w kq - 4 11",
+      "best_move": "e3e4",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -467
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -446
+      }
+    },
+    {
+      "ply": 16,
+      "side": "Janus (Black)",
+      "move": "f8d6",
+      "fen_before": "r1bqkb1r/1p1n1pp1/4pn2/pBp4p/3P4/2N1PN2/PP2QPPP/R1BR2K1 b kq - 5 11",
+      "best_move": "f8e7",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -397
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -504
+      }
+    },
+    {
+      "ply": 17,
+      "side": "Stockfish (White)",
+      "move": "e3e4",
+      "fen_before": "r1bqk2r/1p1n1pp1/3bpn2/pBp4p/3P4/2N1PN2/PP2QPPP/R1BR2K1 w kq - 6 12",
+      "best_move": "e3e4",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -504
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -504
+      }
+    },
+    {
+      "ply": 18,
+      "side": "Janus (Black)",
+      "move": "c5d4",
+      "fen_before": "r1bqk2r/1p1n1pp1/3bpn2/pBp4p/3PP3/2N2N2/PP2QPPP/R1BR2K1 b kq - 0 12",
+      "best_move": "c5d4",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -504
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -500
+      }
+    },
+    {
+      "ply": 19,
+      "side": "Stockfish (White)",
+      "move": "d1d4",
+      "fen_before": "r1bqk2r/1p1n1pp1/3bpn2/pB5p/3pP3/2N2N2/PP2QPPP/R1BR2K1 w kq - 0 13",
+      "best_move": "e4e5",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -499
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -440
+      }
+    },
+    {
+      "ply": 20,
+      "side": "Janus (Black)",
+      "move": "d6c5",
+      "fen_before": "r1bqk2r/1p1n1pp1/3bpn2/pB5p/3RP3/2N2N2/PP2QPPP/R1B3K1 b kq - 0 13",
+      "best_move": "d6c5",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -440
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -440
+      }
+    },
+    {
+      "ply": 21,
+      "side": "Stockfish (White)",
+      "move": "d4d3",
+      "fen_before": "r1bqk2r/1p1n1pp1/4pn2/pBb4p/3RP3/2N2N2/PP2QPPP/R1B3K1 w kq - 1 14",
+      "best_move": "d4d3",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -462
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -510
+      }
+    },
+    {
+      "ply": 22,
+      "side": "Janus (Black)",
+      "move": "f6g4",
+      "fen_before": "r1bqk2r/1p1n1pp1/4pn2/pBb4p/4P3/2NR1N2/PP2QPPP/R1B3K1 b kq - 2 14",
+      "best_move": "e8g8",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -520
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -570
+      }
+    },
+    {
+      "ply": 23,
+      "side": "Stockfish (White)",
+      "move": "c3a4",
+      "fen_before": "r1bqk2r/1p1n1pp1/4p3/pBb4p/4P1n1/2NR1N2/PP2QPPP/R1B3K1 w kq - 3 15",
+      "best_move": "c1e3",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -581
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -326
+      }
+    },
+    {
+      "ply": 24,
+      "side": "Janus (Black)",
+      "move": "c5f2",
+      "fen_before": "r1bqk2r/1p1n1pp1/4p3/pBb4p/N3P1n1/3R1N2/PP2QPPP/R1B3K1 b kq - 4 15",
+      "best_move": "c5f2",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -390
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -388
+      }
+    },
+    {
+      "ply": 25,
+      "side": "Stockfish (White)",
+      "move": "g1f1",
+      "fen_before": "r1bqk2r/1p1n1pp1/4p3/pB5p/N3P1n1/3R1N2/PP2QbPP/R1B3K1 w kq - 0 16",
+      "best_move": "g1h1",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -348
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -144
+      }
+    },
+    {
+      "ply": 26,
+      "side": "Janus (Black)",
+      "move": "f2a7",
+      "fen_before": "r1bqk2r/1p1n1pp1/4p3/pB5p/N3P1n1/3R1N2/PP2QbPP/R1B2K2 b kq - 1 16",
+      "best_move": "f2a7",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -140
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -132
+      }
+    },
+    {
+      "ply": 27,
+      "side": "Stockfish (White)",
+      "move": "c1g5",
+      "fen_before": "r1bqk2r/bp1n1pp1/4p3/pB5p/N3P1n1/3R1N2/PP2Q1PP/R1B2K2 w kq - 2 17",
+      "best_move": "c1d2",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -119
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": 165
+      }
+    },
+    {
+      "ply": 28,
+      "side": "Janus (Black)",
+      "move": "g4h2",
+      "fen_before": "r1bqk2r/bp1n1pp1/4p3/pB4Bp/N3P1n1/3R1N2/PP2Q1PP/R4K2 b kq - 3 17",
+      "best_move": "g4h2",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": 178
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": 176
+      }
+    },
+    {
+      "ply": 29,
+      "side": "Stockfish (White)",
+      "move": "f3h2",
+      "fen_before": "r1bqk2r/bp1n1pp1/4p3/pB4Bp/N3P3/3R1N2/PP2Q1Pn/R4K2 w kq - 0 18",
+      "best_move": "f3h2",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": 167
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": 174
+      }
+    },
+    {
+      "ply": 30,
+      "side": "Janus (Black)",
+      "move": "d8g5",
+      "fen_before": "r1bqk2r/bp1n1pp1/4p3/pB4Bp/N3P3/3R4/PP2Q1PN/R4K2 b kq - 0 18",
+      "best_move": "d8g5",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": 174
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": 172
+      }
+    },
+    {
+      "ply": 31,
+      "side": "Stockfish (White)",
+      "move": "e4e5",
+      "fen_before": "r1b1k2r/bp1n1pp1/4p3/pB4qp/N3P3/3R4/PP2Q1PN/R4K2 w kq - 0 19",
+      "best_move": "a4c3",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": 176
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": 318
+      }
+    },
+    {
+      "ply": 32,
+      "side": "Janus (Black)",
+      "move": "f7f5",
+      "fen_before": "r1b1k2r/bp1n1pp1/4p3/pB2P1qp/N7/3R4/PP2Q1PN/R4K2 b kq - 0 19",
+      "best_move": "g5h4",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": 302
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -163
+      }
+    },
+    {
+      "ply": 33,
+      "side": "Stockfish (White)",
+      "move": "a1d1",
+      "fen_before": "r1b1k2r/bp1n2p1/4p3/pB2Ppqp/N7/3R4/PP2Q1PN/R4K2 w kq f6 0 20",
+      "best_move": "h2f3",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -143
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -21
+      }
+    },
+    {
+      "ply": 34,
+      "side": "Janus (Black)",
+      "move": "g5h4",
+      "fen_before": "r1b1k2r/bp1n2p1/4p3/pB2Ppqp/N7/3R4/PP2Q1PN/3R1K2 b kq - 1 20",
+      "best_move": "g5f4",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -23
+      },
+      "score_after": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -117
+      }
+    },
+    {
+      "ply": 35,
+      "side": "Stockfish (White)",
+      "move": "h2f3",
+      "fen_before": "r1b1k2r/bp1n2p1/4p3/pB2Pp1p/N6q/3R4/PP2Q1PN/3R1K2 w kq - 2 21",
+      "best_move": "g2g3",
+      "score_before": {
+        "type": "cp",
+        "mate_in": null,
+        "cp": -150
+      },
+      "score_after": {
+        "type": "mate",
+        "mate_in": 2,
+        "cp": 100000
+      }
+    },
+    {
+      "ply": 36,
+      "side": "Janus (Black)",
+      "move": "h4h1",
+      "fen_before": "r1b1k2r/bp1n2p1/4p3/pB2Pp1p/N6q/3R1N2/PP2Q1P1/3R1K2 b kq - 3 21",
+      "best_move": "h4h1",
+      "score_before": {
+        "type": "mate",
+        "mate_in": 2,
+        "cp": 100000
+      },
+      "score_after": {
+        "type": "mate",
+        "mate_in": 1,
+        "cp": 100000
+      }
+    },
+    {
+      "ply": 37,
+      "side": "Stockfish (White)",
+      "move": "f3g1",
+      "fen_before": "r1b1k2r/bp1n2p1/4p3/pB2Pp1p/N7/3R1N2/PP2Q1P1/3R1K1q w kq - 4 22",
+      "best_move": "f3g1",
+      "score_before": {
+        "type": "mate",
+        "mate_in": 1,
+        "cp": 100000
+      },
+      "score_after": {
+        "type": "mate",
+        "mate_in": 1,
+        "cp": 100000
+      }
+    },
+    {
+      "ply": 38,
+      "side": "Janus (Black)",
+      "move": "h1g1",
+      "fen_before": "r1b1k2r/bp1n2p1/4p3/pB2Pp1p/N7/3R4/PP2Q1P1/3R1KNq b kq - 5 22",
+      "best_move": "h1g1",
+      "score_before": {
+        "type": "mate",
+        "mate_in": 1,
+        "cp": 100000
+      },
+      "score_after": {
+        "type": "mate",
+        "mate_in": 0,
+        "cp": -100000
+      }
+    }
+  ]
+}

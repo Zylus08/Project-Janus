@@ -120,6 +120,34 @@ class KillerHeuristicTests(unittest.TestCase):
         score = self.engine._move_order_score(board, move, ply=100)
         self.assertEqual(score, 0)
 
+    def test_captures_and_promotions_never_stored_as_killers(self):
+        # Tactical position where White captures a piece and produces a cutoff
+        board = chess.Board("r1bqk2r/pppp1ppp/2n5/4p3/1b2P3/2NP1N2/PPP2PPP/R1BQKB1R w KQkq - 1 5")
+        capture_move = chess.Move.from_uci("f3e5")
+        self.assertTrue(board.is_capture(capture_move))
+
+        # Perform search and verify all stored killers are strictly non-promotions
+        self.engine.search(board, max_depth=3)
+        for ply_idx, slot in enumerate(self.engine.killers):
+            for move in slot:
+                if move is not None:
+                    self.assertIsNone(
+                        move.promotion,
+                        f"Promotion move {move} was illegally recorded as killer at ply {ply_idx}",
+                    )
+
+    def test_killer_state_does_not_leak_across_searches(self):
+        # Search position 1 to populate killers
+        board1 = chess.Board("r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3")
+        self.engine.search(board1, max_depth=3)
+        self.assertTrue(any(slot[0] is not None for slot in self.engine.killers))
+
+        # Search position 2 (unrelated tactical endgame)
+        board2 = chess.Board("8/7k/5K2/6Q1/8/8/8/8 w - - 0 1")
+        self.engine.search(board2, max_depth=1)
+        # Root ply has no beta cutoffs, so ply 0 must be None
+        self.assertEqual(self.engine.killers[0], [None, None])
+
 
 if __name__ == "__main__":
     unittest.main()

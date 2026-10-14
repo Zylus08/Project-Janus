@@ -14,6 +14,15 @@ MATE_SCORE = 100_000
 MATE_THRESHOLD = MATE_SCORE - 1_000
 INF = 1_000_000
 
+MVV_LVA_PIECE_VALUES = {
+    chess.PAWN: 100,
+    chess.KNIGHT: 320,
+    chess.BISHOP: 335,
+    chess.ROOK: 500,
+    chess.QUEEN: 900,
+    chess.KING: 20_000,
+}
+
 
 @dataclass
 class TTEntry:
@@ -101,20 +110,34 @@ class JanusSearch:
         score = 0
         if board.is_capture(move):
             victim = board.piece_at(move.to_square)
-            values = {
-                chess.PAWN: 100, chess.KNIGHT: 320, chess.BISHOP: 335,
-                chess.ROOK: 500, chess.QUEEN: 900, chess.KING: 20_000,
-            }
             victim_value = 100 if board.is_en_passant(move) else (
-                0 if victim is None else values[victim.piece_type]
+                0 if victim is None else MVV_LVA_PIECE_VALUES[victim.piece_type]
             )
             attacker = board.piece_at(move.from_square)
-            attacker_value = 0 if attacker is None else values[attacker.piece_type]
+            attacker_value = (
+                0 if attacker is None else MVV_LVA_PIECE_VALUES[attacker.piece_type]
+            )
             score += 1_000_000 + 10 * victim_value - attacker_value
 
         if move.promotion:
             score += 800_000 + move.promotion
         return score
+
+    @staticmethod
+    def _quiescence_moves(board: chess.Board) -> list[chess.Move]:
+        moves = list(board.generate_legal_captures())
+        pawn_mask = board.pawns & board.occupied_co[board.turn]
+        seventh_rank = chess.BB_RANK_7 if board.turn == chess.WHITE else chess.BB_RANK_2
+        candidate_pawns = pawn_mask & seventh_rank
+        if candidate_pawns:
+            eighth_rank = chess.BB_RANK_8 if board.turn == chess.WHITE else chess.BB_RANK_1
+            empty_squares = ~board.occupied
+            for move in board.generate_legal_moves(
+                from_mask=candidate_pawns, to_mask=eighth_rank & empty_squares
+            ):
+                if move.promotion is not None:
+                    moves.append(move)
+        return moves
 
     def _ordered_moves(
         self, board: chess.Board, tt_move: Optional[chess.Move] = None
@@ -143,13 +166,13 @@ class JanusSearch:
             if stand_pat >= beta:
                 return beta
             alpha = max(alpha, stand_pat)
-
-        moves = self._ordered_moves(board)
-        if not in_check:
-            moves = [
-                move for move in moves
-                if board.is_capture(move) or move.promotion is not None
-            ]
+            moves = self._quiescence_moves(board)
+            moves.sort(
+                key=lambda move: self._move_order_score(board, move, None),
+                reverse=True,
+            )
+        else:
+            moves = self._ordered_moves(board)
 
         if in_check and not moves:
             return -MATE_SCORE + ply

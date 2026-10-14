@@ -51,10 +51,15 @@ class JanusSearch:
         self,
         tt_max_entries: int = 200_000,
         qsearch_max_ply: int = 12,
+        max_killers_ply: int = 64,
     ) -> None:
         self.tt: dict[str, TTEntry] = {}
         self.tt_max_entries = tt_max_entries
         self.qsearch_max_ply = qsearch_max_ply
+        self.max_killers_ply = max_killers_ply
+        self.killers: list[list[Optional[chess.Move]]] = [
+            [None, None] for _ in range(self.max_killers_ply)
+        ]
         self.nodes = 0
         self.deadline: Optional[float] = None
         self.stop_event: Optional[threading.Event] = None
@@ -102,7 +107,11 @@ class JanusSearch:
         return None
 
     def _move_order_score(
-        self, board: chess.Board, move: chess.Move, tt_move: Optional[chess.Move]
+        self,
+        board: chess.Board,
+        move: chess.Move,
+        tt_move: Optional[chess.Move] = None,
+        ply: int = 0,
     ) -> int:
         if tt_move is not None and move == tt_move:
             return 10_000_000
@@ -121,6 +130,13 @@ class JanusSearch:
 
         if move.promotion:
             score += 800_000 + move.promotion
+
+        if score == 0 and ply < len(self.killers):
+            if move == self.killers[ply][0]:
+                return 700_000
+            if move == self.killers[ply][1]:
+                return 600_000
+
         return score
 
     @staticmethod
@@ -140,11 +156,14 @@ class JanusSearch:
         return moves
 
     def _ordered_moves(
-        self, board: chess.Board, tt_move: Optional[chess.Move] = None
+        self,
+        board: chess.Board,
+        tt_move: Optional[chess.Move] = None,
+        ply: int = 0,
     ) -> list[chess.Move]:
         moves = list(board.legal_moves)
         moves.sort(
-            key=lambda move: self._move_order_score(board, move, tt_move),
+            key=lambda move: self._move_order_score(board, move, tt_move, ply),
             reverse=True,
         )
         return moves
@@ -168,11 +187,11 @@ class JanusSearch:
             alpha = max(alpha, stand_pat)
             moves = self._quiescence_moves(board)
             moves.sort(
-                key=lambda move: self._move_order_score(board, move, None),
+                key=lambda move: self._move_order_score(board, move, None, ply),
                 reverse=True,
             )
         else:
-            moves = self._ordered_moves(board)
+            moves = self._ordered_moves(board, None, ply)
 
         if in_check and not moves:
             return -MATE_SCORE + ply
@@ -227,7 +246,7 @@ class JanusSearch:
         best_move = None
         best_pv: list[chess.Move] = []
 
-        for move in self._ordered_moves(board, tt_move):
+        for move in self._ordered_moves(board, tt_move, ply):
             board.push(move)
             try:
                 child_score, child_pv = self._negamax(
@@ -244,6 +263,10 @@ class JanusSearch:
 
             alpha = max(alpha, score)
             if alpha >= beta:
+                if not board.is_capture(move) and move.promotion is None:
+                    if ply < len(self.killers) and self.killers[ply][0] != move:
+                        self.killers[ply][1] = self.killers[ply][0]
+                        self.killers[ply][0] = move
                 break
 
         if best_move is None:
@@ -279,6 +302,7 @@ class JanusSearch:
         self.deadline = None if time_limit is None else start + max(0.001, time_limit)
         self.stop_event = stop_event
         self.nodes = 0
+        self.killers = [[None, None] for _ in range(self.max_killers_ply)]
 
         legal_moves = list(board.legal_moves)
         if not legal_moves:

@@ -43,6 +43,10 @@ class SearchResult:
     nodes: int
     pv: list[chess.Move]
     elapsed: float
+    scout_searches: int = 0
+    scout_fail_highs: int = 0
+    researches: int = 0
+    beta_cutoffs: int = 0
 
 
 class SearchTimeout(Exception):
@@ -56,17 +60,23 @@ class JanusSearch:
         qsearch_max_ply: int = 12,
         max_killers_ply: int = 64,
         enable_history: bool = True,
+        enable_pvs: bool = True,
     ) -> None:
         self.tt: dict[int, TTEntry] = {}
         self.tt_max_entries = tt_max_entries
         self.qsearch_max_ply = qsearch_max_ply
         self.max_killers_ply = max_killers_ply
         self.enable_history = enable_history
+        self.enable_pvs = enable_pvs
         self.killers: list[list[Optional[chess.Move]]] = [
             [None, None] for _ in range(self.max_killers_ply)
         ]
         self.history: list[list[int]] = [[0] * 64 for _ in range(64)]
         self.nodes = 0
+        self.scout_searches = 0
+        self.scout_fail_highs = 0
+        self.researches = 0
+        self.beta_cutoffs = 0
         self.deadline: Optional[float] = None
         self.stop_event: Optional[threading.Event] = None
 
@@ -324,15 +334,37 @@ class JanusSearch:
                 return -MATE_SCORE + ply, []
             return 0, []
 
+        moves_searched = 0
+
         for move in moves:
             board.push(move)
             try:
-                child_score, child_pv = self._negamax(
-                    board, depth - 1, -beta, -alpha, ply + 1
-                )
-                score = -child_score
+                if self.enable_pvs and moves_searched > 0 and depth >= 2:
+                    # Null-window scout search [-alpha - 1, -alpha]
+                    self.scout_searches += 1
+                    child_score, child_pv = self._negamax(
+                        board, depth - 1, -alpha - 1, -alpha, ply + 1
+                    )
+                    score = -child_score
+
+                    if score > alpha:
+                        self.scout_fail_highs += 1
+                        if score < beta:
+                            self.researches += 1
+                            child_score, child_pv = self._negamax(
+                                board, depth - 1, -beta, -alpha, ply + 1
+                            )
+                            score = -child_score
+                else:
+                    # Full-window search (first move, shallow depth, or PVS disabled)
+                    child_score, child_pv = self._negamax(
+                        board, depth - 1, -beta, -alpha, ply + 1
+                    )
+                    score = -child_score
             finally:
                 board.pop()
+
+            moves_searched += 1
 
             if score > best_score:
                 best_score = score
@@ -341,6 +373,7 @@ class JanusSearch:
 
             alpha = max(alpha, score)
             if alpha >= beta:
+                self.beta_cutoffs += 1
                 if not board.is_capture(move) and move.promotion is None:
                     if ply < len(self.killers) and self.killers[ply][0] != move:
                         self.killers[ply][1] = self.killers[ply][0]
@@ -378,6 +411,10 @@ class JanusSearch:
         self.deadline = None if time_limit is None else start + max(0.001, time_limit)
         self.stop_event = stop_event
         self.nodes = 0
+        self.scout_searches = 0
+        self.scout_fail_highs = 0
+        self.researches = 0
+        self.beta_cutoffs = 0
         self.killers = [[None, None] for _ in range(self.max_killers_ply)]
         self.history = [[0] * 64 for _ in range(64)]
 
@@ -387,6 +424,7 @@ class JanusSearch:
             return SearchResult(
                 None, score, 0, 0, [],
                 time.monotonic() - start,
+                0, 0, 0, 0,
             )
 
         best_move = legal_moves[0]
@@ -414,4 +452,8 @@ class JanusSearch:
             nodes=self.nodes,
             pv=best_pv,
             elapsed=time.monotonic() - start,
+            scout_searches=self.scout_searches,
+            scout_fail_highs=self.scout_fail_highs,
+            researches=self.researches,
+            beta_cutoffs=self.beta_cutoffs,
         )

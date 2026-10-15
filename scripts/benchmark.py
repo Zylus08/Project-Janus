@@ -68,8 +68,9 @@ def run_benchmark(
     depth: int,
     time_limit: float | None,
     enable_history: bool = True,
+    enable_pvs: bool = True,
 ) -> dict[str, Any]:
-    engine = JanusSearch(enable_history=enable_history)
+    engine = JanusSearch(enable_history=enable_history, enable_pvs=enable_pvs)
     rows: list[dict[str, Any]] = []
     for position in positions:
         board = chess.Board(position["fen"])
@@ -96,6 +97,10 @@ def run_benchmark(
             "expected_move_match": expected_match,
             "legal_best_move": result.best_move is None or result.best_move in board.legal_moves,
             "pv_legal": _validate_pv(board, result.pv),
+            "scout_searches": result.scout_searches,
+            "scout_fail_highs": result.scout_fail_highs,
+            "researches": result.researches,
+            "beta_cutoffs": result.beta_cutoffs,
         })
 
     return {
@@ -109,6 +114,7 @@ def run_benchmark(
             "requested_depth": depth,
             "time_limit_seconds": time_limit,
             "history_heuristic_enabled": enable_history,
+            "pvs_enabled": enable_pvs,
             "transposition_table_policy": "cleared before each position (cold start)",
             "score_convention": "score_from_side_to_move is from the side-to-move perspective; mate scores remain encoded near +/-100000",
         },
@@ -120,6 +126,10 @@ def run_benchmark(
             "expected_move_matches": sum(row["expected_move_match"] is True for row in rows),
             "total_nodes": sum(row["nodes"] for row in rows),
             "total_elapsed_seconds": round(sum(row["elapsed_seconds"] for row in rows), 6),
+            "total_scout_searches": sum(row["scout_searches"] for row in rows),
+            "total_scout_fail_highs": sum(row["scout_fail_highs"] for row in rows),
+            "total_researches": sum(row["researches"] for row in rows),
+            "total_beta_cutoffs": sum(row["beta_cutoffs"] for row in rows),
         },
         "results": rows,
     }
@@ -143,6 +153,8 @@ def main() -> int:
                         help="Optional per-position time limit in seconds")
     parser.add_argument("--no-history", action="store_true",
                         help="Disable quiet-move history heuristic")
+    parser.add_argument("--no-pvs", action="store_true",
+                        help="Disable Principal Variation Search (use standard alpha-beta)")
     parser.add_argument("--out", type=Path, default=ROOT / "benchmark-results")
     args = parser.parse_args()
 
@@ -154,7 +166,11 @@ def main() -> int:
     try:
         positions = load_positions(args.positions)
         report = run_benchmark(
-            positions, args.depth, args.time_limit, enable_history=not args.no_history
+            positions,
+            args.depth,
+            args.time_limit,
+            enable_history=not args.no_history,
+            enable_pvs=not args.no_pvs,
         )
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         print(f"Benchmark error: {exc}", file=sys.stderr)

@@ -94,15 +94,17 @@ class JanusSearch:
             if time.monotonic() >= self.deadline:
                 raise SearchTimeout
 
-    def _terminal_score(self, board: chess.Board, ply: int) -> Optional[int]:
-        if board.is_checkmate():
-            return -MATE_SCORE + ply
+    def _terminal_score(self, board: chess.Board, ply: int = 0) -> Optional[int]:
         if (
-            board.is_stalemate()
-            or board.is_insufficient_material()
+            board.is_insufficient_material()
             or board.is_fivefold_repetition()
             or board.is_seventyfive_moves()
         ):
+            return 0
+        if board.is_check():
+            if not any(board.generate_legal_moves()):
+                return -MATE_SCORE + ply
+        elif not any(board.generate_legal_moves()):
             return 0
         return None
 
@@ -172,15 +174,20 @@ class JanusSearch:
         self.nodes += 1
         self._check_stop()
 
-        terminal = self._terminal_score(board, ply)
-        if terminal is not None:
-            return terminal
+        if (
+            board.is_insufficient_material()
+            or board.is_fivefold_repetition()
+            or board.is_seventyfive_moves()
+        ):
+            return 0
 
         in_check = board.is_check()
         if ply >= self.qsearch_max_ply and not in_check:
             return evaluate_side_to_move(board)
 
         if not in_check:
+            if not any(board.generate_legal_moves()):
+                return 0
             stand_pat = evaluate_side_to_move(board)
             if stand_pat >= beta:
                 return beta
@@ -215,10 +222,17 @@ class JanusSearch:
         self.nodes += 1
         self._check_stop()
 
-        terminal = self._terminal_score(board, ply)
-        if terminal is not None:
-            return terminal, []
+        # Fast rule-mandated draws that do not require move generation
+        if (
+            board.is_insufficient_material()
+            or board.is_fivefold_repetition()
+            or board.is_seventyfive_moves()
+        ):
+            return 0, []
+
         if depth <= 0:
+            if not any(board.generate_legal_moves()):
+                return (-MATE_SCORE + ply if board.is_check() else 0), []
             return self._quiescence(board, alpha, beta, ply), []
 
         alpha_original = alpha
@@ -246,7 +260,13 @@ class JanusSearch:
         best_move = None
         best_pv: list[chess.Move] = []
 
-        for move in self._ordered_moves(board, tt_move, ply):
+        moves = self._ordered_moves(board, tt_move, ply)
+        if not moves:
+            if board.is_check():
+                return -MATE_SCORE + ply, []
+            return 0, []
+
+        for move in moves:
             board.push(move)
             try:
                 child_score, child_pv = self._negamax(
@@ -268,9 +288,6 @@ class JanusSearch:
                         self.killers[ply][1] = self.killers[ply][0]
                         self.killers[ply][0] = move
                 break
-
-        if best_move is None:
-            return evaluate_side_to_move(board), []
 
         if len(self.tt) >= self.tt_max_entries:
             self.tt.clear()
@@ -306,9 +323,9 @@ class JanusSearch:
 
         legal_moves = list(board.legal_moves)
         if not legal_moves:
-            terminal = self._terminal_score(board, 0)
+            score = -MATE_SCORE if board.is_check() else 0
             return SearchResult(
-                None, 0 if terminal is None else terminal, 0, 0, [],
+                None, score, 0, 0, [],
                 time.monotonic() - start,
             )
 

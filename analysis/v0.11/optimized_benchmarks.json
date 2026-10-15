@@ -1,0 +1,600 @@
+{
+  "engine_commit": "optimized_v0.11",
+  "description": "Milestone v0.11 optimized benchmark results across 5 independent process runs",
+  "depth_3": {
+    "runs": [
+      {
+        "run": 1,
+        "total_nodes": 13999,
+        "total_elapsed_seconds": 0.656,
+        "json_file": "E:\\ChessXML\\project-janus\\benchmark-results\\janus-benchmark-20261015-033053.json",
+        "results": [
+          {
+            "id": "startpos",
+            "nodes": 1146,
+            "score": 12,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3",
+            "elapsed": 0.047
+          },
+          {
+            "id": "open_game",
+            "nodes": 10027,
+            "score": 12,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c1e3",
+            "elapsed": 0.531
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 1120,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5",
+            "elapsed": 0.031
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 1516,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7",
+            "elapsed": 0.032
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 190,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8",
+            "elapsed": 0.015
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": "",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      {
+        "run": 2,
+        "total_nodes": 13999,
+        "total_elapsed_seconds": 0.64,
+        "json_file": "E:\\ChessXML\\project-janus\\benchmark-results\\janus-benchmark-20261015-033054.json",
+        "results": [
+          {
+            "id": "startpos",
+            "nodes": 1146,
+            "score": 12,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3",
+            "elapsed": 0.047
+          },
+          {
+            "id": "open_game",
+            "nodes": 10027,
+            "score": 12,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c1e3",
+            "elapsed": 0.515
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 1120,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5",
+            "elapsed": 0.032
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 1516,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7",
+            "elapsed": 0.046
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 190,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8",
+            "elapsed": 0.0
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": "",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      {
+        "run": 3,
+        "total_nodes": 13999,
+        "total_elapsed_seconds": 0.656,
+        "json_file": "E:\\ChessXML\\project-janus\\benchmark-results\\janus-benchmark-20261015-033055.json",
+        "results": [
+          {
+            "id": "startpos",
+            "nodes": 1146,
+            "score": 12,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3",
+            "elapsed": 0.046
+          },
+          {
+            "id": "open_game",
+            "nodes": 10027,
+            "score": 12,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c1e3",
+            "elapsed": 0.532
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 1120,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5",
+            "elapsed": 0.031
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 1516,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7",
+            "elapsed": 0.047
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 190,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8",
+            "elapsed": 0.0
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": "",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      {
+        "run": 4,
+        "total_nodes": 13999,
+        "total_elapsed_seconds": 0.625,
+        "json_file": "E:\\ChessXML\\project-janus\\benchmark-results\\janus-benchmark-20261015-033055.json",
+        "results": [
+          {
+            "id": "startpos",
+            "nodes": 1146,
+            "score": 12,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3",
+            "elapsed": 0.047
+          },
+          {
+            "id": "open_game",
+            "nodes": 10027,
+            "score": 12,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c1e3",
+            "elapsed": 0.5
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 1120,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5",
+            "elapsed": 0.031
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 1516,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7",
+            "elapsed": 0.031
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 190,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8",
+            "elapsed": 0.016
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": "",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      {
+        "run": 5,
+        "total_nodes": 13999,
+        "total_elapsed_seconds": 0.657,
+        "json_file": "E:\\ChessXML\\project-janus\\benchmark-results\\janus-benchmark-20261015-033056.json",
+        "results": [
+          {
+            "id": "startpos",
+            "nodes": 1146,
+            "score": 12,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3",
+            "elapsed": 0.047
+          },
+          {
+            "id": "open_game",
+            "nodes": 10027,
+            "score": 12,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c1e3",
+            "elapsed": 0.516
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 1120,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5",
+            "elapsed": 0.031
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 1516,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7",
+            "elapsed": 0.047
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 190,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8",
+            "elapsed": 0.016
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": "",
+            "elapsed": 0.0
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "min": 0.625,
+      "max": 0.657,
+      "median": 0.656,
+      "mean": 0.6468,
+      "stdev": 0.0141,
+      "iqr": 0.016
+    }
+  },
+  "depth_4": {
+    "runs": [
+      {
+        "run": 1,
+        "total_nodes": 71195,
+        "total_elapsed_seconds": 5.266,
+        "json_file": "E:\\ChessXML\\project-janus\\benchmark-results\\janus-benchmark-20261015-033102.json",
+        "results": [
+          {
+            "id": "startpos",
+            "nodes": 3400,
+            "score": 0,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3 b8c6",
+            "elapsed": 0.156
+          },
+          {
+            "id": "open_game",
+            "nodes": 62344,
+            "score": 9,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c2c3 b4a5",
+            "elapsed": 4.782
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 2295,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5 f8g8",
+            "elapsed": 0.156
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 2712,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7",
+            "elapsed": 0.156
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 444,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8 f4g5",
+            "elapsed": 0.016
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": "",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      {
+        "run": 2,
+        "total_nodes": 71195,
+        "total_elapsed_seconds": 3.547,
+        "json_file": "E:\\ChessXML\\project-janus\\benchmark-results\\janus-benchmark-20261015-033106.json",
+        "results": [
+          {
+            "id": "startpos",
+            "nodes": 3400,
+            "score": 0,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3 b8c6",
+            "elapsed": 0.172
+          },
+          {
+            "id": "open_game",
+            "nodes": 62344,
+            "score": 9,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c2c3 b4a5",
+            "elapsed": 3.25
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 2295,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5 f8g8",
+            "elapsed": 0.047
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 2712,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7",
+            "elapsed": 0.062
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 444,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8 f4g5",
+            "elapsed": 0.016
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": "",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      {
+        "run": 3,
+        "total_nodes": 71195,
+        "total_elapsed_seconds": 3.141,
+        "json_file": "E:\\ChessXML\\project-janus\\benchmark-results\\janus-benchmark-20261015-033109.json",
+        "results": [
+          {
+            "id": "startpos",
+            "nodes": 3400,
+            "score": 0,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3 b8c6",
+            "elapsed": 0.125
+          },
+          {
+            "id": "open_game",
+            "nodes": 62344,
+            "score": 9,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c2c3 b4a5",
+            "elapsed": 2.829
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 2295,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5 f8g8",
+            "elapsed": 0.078
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 2712,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7",
+            "elapsed": 0.093
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 444,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8 f4g5",
+            "elapsed": 0.016
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": "",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      {
+        "run": 4,
+        "total_nodes": 71195,
+        "total_elapsed_seconds": 3.969,
+        "json_file": "E:\\ChessXML\\project-janus\\benchmark-results\\janus-benchmark-20261015-033113.json",
+        "results": [
+          {
+            "id": "startpos",
+            "nodes": 3400,
+            "score": 0,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3 b8c6",
+            "elapsed": 0.172
+          },
+          {
+            "id": "open_game",
+            "nodes": 62344,
+            "score": 9,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c2c3 b4a5",
+            "elapsed": 3.609
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 2295,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5 f8g8",
+            "elapsed": 0.094
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 2712,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7",
+            "elapsed": 0.078
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 444,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8 f4g5",
+            "elapsed": 0.016
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": "",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      {
+        "run": 5,
+        "total_nodes": 71195,
+        "total_elapsed_seconds": 4.031,
+        "json_file": "E:\\ChessXML\\project-janus\\benchmark-results\\janus-benchmark-20261015-033117.json",
+        "results": [
+          {
+            "id": "startpos",
+            "nodes": 3400,
+            "score": 0,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3 b8c6",
+            "elapsed": 0.172
+          },
+          {
+            "id": "open_game",
+            "nodes": 62344,
+            "score": 9,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c2c3 b4a5",
+            "elapsed": 3.672
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 2295,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5 f8g8",
+            "elapsed": 0.078
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 2712,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7",
+            "elapsed": 0.094
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 444,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8 f4g5",
+            "elapsed": 0.015
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": "",
+            "elapsed": 0.0
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "min": 3.141,
+      "max": 5.266,
+      "median": 3.969,
+      "mean": 3.9908,
+      "stdev": 0.798,
+      "iqr": 0.484
+    }
+  },
+  "comparison": {
+    "depth_3_baseline_median": 0.719,
+    "depth_3_optimized_median": 0.656,
+    "depth_3_speedup_percent": 8.76,
+    "depth_4_baseline_median": 5.141,
+    "depth_4_optimized_median": 3.969,
+    "depth_4_speedup_percent": 22.8,
+    "nodes_identical": true,
+    "best_moves_identical": true,
+    "scores_identical": true,
+    "pvs_identical": true
+  }
+}

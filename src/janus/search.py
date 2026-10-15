@@ -24,6 +24,8 @@ MVV_LVA_PIECE_VALUES = {
     chess.KING: 20_000,
 }
 
+MAX_HISTORY_SCORE = 500_000
+
 
 @dataclass
 class TTEntry:
@@ -53,17 +55,31 @@ class JanusSearch:
         tt_max_entries: int = 200_000,
         qsearch_max_ply: int = 12,
         max_killers_ply: int = 64,
+        enable_history: bool = True,
     ) -> None:
         self.tt: dict[int, TTEntry] = {}
         self.tt_max_entries = tt_max_entries
         self.qsearch_max_ply = qsearch_max_ply
         self.max_killers_ply = max_killers_ply
+        self.enable_history = enable_history
         self.killers: list[list[Optional[chess.Move]]] = [
             [None, None] for _ in range(self.max_killers_ply)
         ]
+        self.history: list[list[int]] = [[0] * 64 for _ in range(64)]
         self.nodes = 0
         self.deadline: Optional[float] = None
         self.stop_event: Optional[threading.Event] = None
+
+    def _update_history(self, move: chess.Move, depth: int) -> None:
+        """Reward a quiet move causing a beta cutoff with a depth-sensitive bonus."""
+        if not self.enable_history:
+            return
+        bonus = depth * depth
+        from_sq = move.from_square
+        to_sq = move.to_square
+        self.history[from_sq][to_sq] = min(
+            MAX_HISTORY_SCORE, self.history[from_sq][to_sq] + bonus
+        )
 
     @staticmethod
     def _key(board: chess.Board) -> int:
@@ -139,6 +155,9 @@ class JanusSearch:
                 return 700_000
             if move == self.killers[ply][1]:
                 return 600_000
+
+        if score == 0 and self.enable_history:
+            return self.history[move.from_square][move.to_square]
 
         return score
 
@@ -291,6 +310,7 @@ class JanusSearch:
                     if ply < len(self.killers) and self.killers[ply][0] != move:
                         self.killers[ply][1] = self.killers[ply][0]
                         self.killers[ply][0] = move
+                    self._update_history(move, depth)
                 break
 
         if len(self.tt) >= self.tt_max_entries:
@@ -324,6 +344,7 @@ class JanusSearch:
         self.stop_event = stop_event
         self.nodes = 0
         self.killers = [[None, None] for _ in range(self.max_killers_ply)]
+        self.history = [[0] * 64 for _ in range(64)]
 
         legal_moves = list(board.legal_moves)
         if not legal_moves:

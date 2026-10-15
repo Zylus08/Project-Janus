@@ -184,10 +184,45 @@ class JanusSearch:
         ply: int = 0,
     ) -> list[chess.Move]:
         moves = list(board.legal_moves)
-        moves.sort(
-            key=lambda move: self._move_order_score(board, move, tt_move, ply),
-            reverse=True,
-        )
+        if len(moves) <= 1:
+            return moves
+
+        k1 = self.killers[ply][0] if ply < len(self.killers) else None
+        k2 = self.killers[ply][1] if ply < len(self.killers) else None
+        history = self.history if self.enable_history else None
+
+        def score_move(move: chess.Move) -> int:
+            if tt_move is not None and move == tt_move:
+                return 10_000_000
+
+            if board.is_capture(move):
+                victim = board.piece_at(move.to_square)
+                victim_value = 100 if board.is_en_passant(move) else (
+                    0 if victim is None else MVV_LVA_PIECE_VALUES[victim.piece_type]
+                )
+                attacker = board.piece_at(move.from_square)
+                attacker_value = (
+                    0 if attacker is None else MVV_LVA_PIECE_VALUES[attacker.piece_type]
+                )
+                score = 1_000_000 + 10 * victim_value - attacker_value
+                if move.promotion:
+                    score += 800_000 + move.promotion
+                return score
+
+            if move.promotion:
+                return 800_000 + move.promotion
+
+            if move == k1:
+                return 700_000
+            if move == k2:
+                return 600_000
+
+            if history is not None:
+                return history[move.from_square][move.to_square]
+
+            return 0
+
+        moves.sort(key=score_move, reverse=True)
         return moves
 
     def _quiescence(self, board: chess.Board, alpha: int, beta: int, ply: int) -> int:

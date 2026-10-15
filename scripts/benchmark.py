@@ -64,9 +64,12 @@ def _validate_pv(board: chess.Board, pv: list[chess.Move]) -> bool:
 
 
 def run_benchmark(
-    positions: list[dict[str, Any]], depth: int, time_limit: float | None
+    positions: list[dict[str, Any]],
+    depth: int,
+    time_limit: float | None,
+    enable_history: bool = True,
 ) -> dict[str, Any]:
-    engine = JanusSearch()
+    engine = JanusSearch(enable_history=enable_history)
     rows: list[dict[str, Any]] = []
     for position in positions:
         board = chess.Board(position["fen"])
@@ -105,6 +108,7 @@ def run_benchmark(
             "python_chess_version": getattr(chess, "__version__", "unknown"),
             "requested_depth": depth,
             "time_limit_seconds": time_limit,
+            "history_heuristic_enabled": enable_history,
             "transposition_table_policy": "cleared before each position (cold start)",
             "score_convention": "score_from_side_to_move is from the side-to-move perspective; mate scores remain encoded near +/-100000",
         },
@@ -137,6 +141,8 @@ def main() -> int:
     parser.add_argument("--depth", type=int, default=4)
     parser.add_argument("--time-limit", type=float, default=None,
                         help="Optional per-position time limit in seconds")
+    parser.add_argument("--no-history", action="store_true",
+                        help="Disable quiet-move history heuristic")
     parser.add_argument("--out", type=Path, default=ROOT / "benchmark-results")
     args = parser.parse_args()
 
@@ -147,7 +153,9 @@ def main() -> int:
 
     try:
         positions = load_positions(args.positions)
-        report = run_benchmark(positions, args.depth, args.time_limit)
+        report = run_benchmark(
+            positions, args.depth, args.time_limit, enable_history=not args.no_history
+        )
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         print(f"Benchmark error: {exc}", file=sys.stderr)
         return 2

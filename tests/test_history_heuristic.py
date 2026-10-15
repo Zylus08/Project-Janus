@@ -124,5 +124,29 @@ class HistoryHeuristicTests(unittest.TestCase):
             board.push(m)
 
 
+    def test_ordered_moves_single_or_empty_move_short_circuit(self):
+        # Empty board or position with 0 legal moves
+        stalemate_board = chess.Board("7k/5Q2/6K1/8/8/8/8/8 b - - 0 1")
+        self.assertEqual(len(list(stalemate_board.legal_moves)), 0)
+        self.assertEqual(self.engine._ordered_moves(stalemate_board), [])
+
+        # Position with exactly 1 legal move: king corner evasion Kh7
+        evasion_board = chess.Board("8/8/5K1k/6Q1/8/8/8/8 b - - 1 1")
+        self.assertEqual(len(list(evasion_board.legal_moves)), 1)
+        ordered = self.engine._ordered_moves(evasion_board)
+        self.assertEqual(ordered, [chess.Move.from_uci("h6h7")])
+
+    def test_ordered_moves_ranking_matches_move_order_score(self):
+        board = chess.Board("r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 4 7")
+        tt_move = chess.Move.from_uci("c1e3")
+        self.engine.killers[1][0] = chess.Move.from_uci("a2a3")
+        self.engine.history[chess.Move.from_uci("c3a4").from_square][chess.Move.from_uci("c3a4").to_square] = 200
+
+        ordered = self.engine._ordered_moves(board, tt_move=tt_move, ply=1)
+        # Verify that moves in ordered list have non-increasing scores
+        scores = [self.engine._move_order_score(board, m, tt_move=tt_move, ply=1) for m in ordered]
+        self.assertEqual(scores, sorted(scores, reverse=True))
+
+
 if __name__ == "__main__":
     unittest.main()

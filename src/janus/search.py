@@ -7,6 +7,7 @@ import time
 from typing import Optional
 
 import chess
+import chess.polyglot
 
 from .evaluation import evaluate_side_to_move
 
@@ -53,7 +54,7 @@ class JanusSearch:
         qsearch_max_ply: int = 12,
         max_killers_ply: int = 64,
     ) -> None:
-        self.tt: dict[str, TTEntry] = {}
+        self.tt: dict[int, TTEntry] = {}
         self.tt_max_entries = tt_max_entries
         self.qsearch_max_ply = qsearch_max_ply
         self.max_killers_ply = max_killers_ply
@@ -65,9 +66,9 @@ class JanusSearch:
         self.stop_event: Optional[threading.Event] = None
 
     @staticmethod
-    def _key(board: chess.Board) -> str:
-        # Repetition history is path-dependent and is not fully represented by FEN.
-        return board.fen(en_passant="legal")
+    def _key(board: chess.Board) -> int:
+        """Return a 64-bit integer Polyglot Zobrist hash of the current position."""
+        return chess.polyglot.zobrist_hash(board)
 
     @staticmethod
     def _score_to_tt(score: int, ply: int) -> int:
@@ -246,15 +247,18 @@ class JanusSearch:
             tt_score = self._score_from_tt(entry.score, ply)
 
             # Do not let a cached root entry falsely report a new iteration complete.
+            # In addition, near the seventy-five-move draw threshold, non-zero cached scores
+            # cannot guarantee that a forced draw won't intervene within the search horizon.
             if ply > 0 and entry.depth >= depth:
-                if entry.flag == "exact":
-                    return tt_score, ([] if tt_move is None else [tt_move])
-                if entry.flag == "lower":
-                    alpha = max(alpha, tt_score)
-                elif entry.flag == "upper":
-                    beta = min(beta, tt_score)
-                if alpha >= beta:
-                    return tt_score, ([] if tt_move is None else [tt_move])
+                if (board.halfmove_clock + depth < 150) or entry.score == 0:
+                    if entry.flag == "exact":
+                        return tt_score, ([] if tt_move is None else [tt_move])
+                    if entry.flag == "lower":
+                        alpha = max(alpha, tt_score)
+                    elif entry.flag == "upper":
+                        beta = min(beta, tt_score)
+                    if alpha >= beta:
+                        return tt_score, ([] if tt_move is None else [tt_move])
 
         best_score = -INF
         best_move = None

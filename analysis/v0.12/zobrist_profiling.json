@@ -1,0 +1,17 @@
+{
+  "key_stats": {
+    "_key": {
+      "ncalls": 3820,
+      "tottime": 0.0043,
+      "cumtime": 0.2956,
+      "percall": 7.7e-05
+    },
+    "zobrist_hash": {
+      "ncalls": 3820,
+      "tottime": 0.0046,
+      "cumtime": 0.2913,
+      "percall": 7.6e-05
+    }
+  },
+  "raw_stats_top_lines": "         13602214 function calls (13543086 primitive calls) in 14.908 seconds\n\n   Ordered by: cumulative time\n   List reduced from 118 to 60 due to restriction <60>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        6    0.000    0.000   15.083    2.514 E:\\ChessXML\\project-janus\\src\\janus\\search.py:315(search)\n 13424/20    0.156    0.000   15.082    0.754 E:\\ChessXML\\project-janus\\src\\janus\\search.py:220(_negamax)\n55253/9529    0.661    0.000   12.819    0.001 E:\\ChessXML\\project-janus\\src\\janus\\search.py:174(_quiescence)\n   306044    0.662    0.000    5.092    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:3702(generate_legal_moves)\n    49219    0.060    0.000    4.009    0.000 E:\\ChessXML\\project-janus\\src\\janus\\evaluation.py:81(evaluate_side_to_move)\n    49219    1.856    0.000    3.949    0.000 E:\\ChessXML\\project-janus\\src\\janus\\evaluation.py:43(evaluate_white)\n   295427    1.347    0.000    2.748    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:1819(generate_pseudo_legal_moves)\n    26385    0.147    0.000    2.416    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:145(_quiescence_moves)\n     9048    0.077    0.000    2.019    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:161(_ordered_moves)\n    59128    0.710    0.000    1.565    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:2310(push)\n    56641    0.076    0.000    1.539    0.000 {built-in method builtins.any}\n    35433    0.118    0.000    1.429    0.000 {method 'sort' of 'list' objects}\n  1919239    1.047    0.000    1.338    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:405(scan_forward)\n   157317    0.409    0.000    1.181    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:112(_move_order_score)\n  1736224    0.733    0.000    0.943    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:414(scan_reversed)\n   219075    0.281    0.000    0.713    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:3664(_is_safe)\n    60461    0.066    0.000    0.693    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:198(<lambda>)\n    96856    0.064    0.000    0.618    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:169(<lambda>)\n  2407215    0.562    0.000    0.562    0.000 {method 'bit_length' of 'int' objects}\n   199426    0.560    0.000    0.560    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:905(attackers_mask)\n    92064    0.338    0.000    0.504    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:3645(_slider_blockers)\n   154200    0.296    0.000    0.451    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:825(piece_at)\n    55273    0.052    0.000    0.441    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:1918(is_check)\n    29024    0.091    0.000    0.431    0.000 E:\\ChessXML\\project-janus\\."
+}

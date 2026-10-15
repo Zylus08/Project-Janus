@@ -17,40 +17,53 @@ PIECE_VALUES = {
 }
 
 
-def _center_bonus(square: chess.Square) -> int:
+def _compute_center_bonus(square: chess.Square) -> int:
     """Small bonus for occupying/approaching the center."""
     file_distance = abs(chess.square_file(square) - 3.5)
     rank_distance = abs(chess.square_rank(square) - 3.5)
     return int(14 - 4 * (file_distance + rank_distance))
 
 
+CENTER_BONUS: tuple[int, ...] = tuple(
+    _compute_center_bonus(sq) for sq in chess.SQUARES
+)
+WHITE_PAWN_RANK_BONUS: tuple[int, ...] = tuple(
+    chess.square_rank(sq) * 5 for sq in chess.SQUARES
+)
+BLACK_PAWN_RANK_BONUS: tuple[int, ...] = tuple(
+    (7 - chess.square_rank(sq)) * 5 for sq in chess.SQUARES
+)
+
+
+def _center_bonus(square: chess.Square) -> int:
+    """Small bonus for occupying/approaching the center."""
+    return CENTER_BONUS[square]
+
+
 def evaluate_white(board: chess.Board) -> int:
     """Evaluate a non-terminal position from White's perspective."""
-    if board.is_checkmate():
-        # The side to move has been checkmated.
-        return -100_000 if board.turn == chess.WHITE else 100_000
-    if board.is_stalemate() or board.is_insufficient_material() or board.is_fivefold_repetition():
-        return 0
-
     score = 0
     for piece_type, value in PIECE_VALUES.items():
-        for square in board.pieces(piece_type, chess.WHITE):
+        w_mask = board.pieces_mask(piece_type, chess.WHITE)
+        for square in chess.scan_forward(w_mask):
             score += value
             if piece_type in (chess.KNIGHT, chess.BISHOP):
-                score += _center_bonus(square)
+                score += CENTER_BONUS[square]
             elif piece_type == chess.PAWN:
-                score += chess.square_rank(square) * 5
-        for square in board.pieces(piece_type, chess.BLACK):
+                score += WHITE_PAWN_RANK_BONUS[square]
+
+        b_mask = board.pieces_mask(piece_type, chess.BLACK)
+        for square in chess.scan_forward(b_mask):
             score -= value
             if piece_type in (chess.KNIGHT, chess.BISHOP):
-                score -= _center_bonus(square)
+                score -= CENTER_BONUS[square]
             elif piece_type == chess.PAWN:
-                score -= (7 - chess.square_rank(square)) * 5
+                score -= BLACK_PAWN_RANK_BONUS[square]
 
     # Bishop pair: a modest positional signal.
-    if len(board.pieces(chess.BISHOP, chess.WHITE)) >= 2:
+    if board.pieces_mask(chess.BISHOP, chess.WHITE).bit_count() >= 2:
         score += 25
-    if len(board.pieces(chess.BISHOP, chess.BLACK)) >= 2:
+    if board.pieces_mask(chess.BISHOP, chess.BLACK).bit_count() >= 2:
         score -= 25
 
     # Encourage castling rights as a small proxy for king safety / flexibility.

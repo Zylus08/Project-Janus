@@ -1,0 +1,478 @@
+{
+  "depth_3": {
+    "nodes": 16875,
+    "runs": [
+      {
+        "run": 1,
+        "total_nodes": 16875,
+        "total_time": 1.0377920999890193,
+        "nps": 16260,
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 1285,
+            "score": 12,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3"
+            ],
+            "elapsed": 0.045999999972991645
+          },
+          {
+            "id": "open_game",
+            "nodes": 12723,
+            "score": 12,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c1e3"
+            ],
+            "elapsed": 0.875
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 1158,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": [
+              "e2f4",
+              "e8f8",
+              "f4d5"
+            ],
+            "elapsed": 0.0470000000204891
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 1519,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "elapsed": 0.0470000000204891
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 190,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8"
+            ],
+            "elapsed": 0.01600000000325963
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "elapsed": 0.0
+          }
+        ]
+      },
+      {
+        "run": 2,
+        "total_nodes": 16875,
+        "total_time": 1.0466517999884672,
+        "nps": 16123,
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 1285,
+            "score": 12,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3"
+            ],
+            "elapsed": 0.061999999976251274
+          },
+          {
+            "id": "open_game",
+            "nodes": 12723,
+            "score": 12,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c1e3"
+            ],
+            "elapsed": 0.875
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 1158,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": [
+              "e2f4",
+              "e8f8",
+              "f4d5"
+            ],
+            "elapsed": 0.03200000000651926
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 1519,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "elapsed": 0.061999999976251274
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 190,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8"
+            ],
+            "elapsed": 0.01600000000325963
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "elapsed": 0.0
+          }
+        ]
+      },
+      {
+        "run": 3,
+        "total_nodes": 16875,
+        "total_time": 1.0032380999764428,
+        "nps": 16821,
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 1285,
+            "score": 12,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3"
+            ],
+            "elapsed": 0.062000000034458935
+          },
+          {
+            "id": "open_game",
+            "nodes": 12723,
+            "score": 12,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c1e3"
+            ],
+            "elapsed": 0.8439999999827705
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 1158,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": [
+              "e2f4",
+              "e8f8",
+              "f4d5"
+            ],
+            "elapsed": 0.031000000017229468
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 1519,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "elapsed": 0.06299999996554106
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 190,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8"
+            ],
+            "elapsed": 0.0
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "elapsed": 0.0
+          }
+        ]
+      }
+    ],
+    "median_time": 1.038,
+    "median_nps": 16260
+  },
+  "depth_4": {
+    "nodes": 81655,
+    "runs": [
+      {
+        "run": 1,
+        "total_nodes": 81655,
+        "total_time": 5.904447300010361,
+        "nps": 13829,
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 4120,
+            "score": 0,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3",
+              "b8c6"
+            ],
+            "elapsed": 0.25
+          },
+          {
+            "id": "open_game",
+            "nodes": 72179,
+            "score": 9,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c2c3",
+              "b4a5"
+            ],
+            "elapsed": 5.39000000001397
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 2235,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": [
+              "e2f4",
+              "e8f8",
+              "f4d5",
+              "f8g8"
+            ],
+            "elapsed": 0.10999999998603016
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 2677,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "elapsed": 0.125
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 444,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8",
+              "f4g5"
+            ],
+            "elapsed": 0.031000000017229468
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "elapsed": 0.0
+          }
+        ]
+      },
+      {
+        "run": 2,
+        "total_nodes": 81655,
+        "total_time": 5.932213400024921,
+        "nps": 13765,
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 4120,
+            "score": 0,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3",
+              "b8c6"
+            ],
+            "elapsed": 0.26600000000325963
+          },
+          {
+            "id": "open_game",
+            "nodes": 72179,
+            "score": 9,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c2c3",
+              "b4a5"
+            ],
+            "elapsed": 5.4060000000172295
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 2235,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": [
+              "e2f4",
+              "e8f8",
+              "f4d5",
+              "f8g8"
+            ],
+            "elapsed": 0.125
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 2677,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "elapsed": 0.10899999999674037
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 444,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8",
+              "f4g5"
+            ],
+            "elapsed": 0.030999999959021807
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "elapsed": 0.0
+          }
+        ]
+      },
+      {
+        "run": 3,
+        "total_nodes": 81655,
+        "total_time": 5.981668199994601,
+        "nps": 13651,
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 4120,
+            "score": 0,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3",
+              "b8c6"
+            ],
+            "elapsed": 0.25
+          },
+          {
+            "id": "open_game",
+            "nodes": 72179,
+            "score": 9,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c2c3",
+              "b4a5"
+            ],
+            "elapsed": 5.485000000044238
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 2235,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": [
+              "e2f4",
+              "e8f8",
+              "f4d5",
+              "f8g8"
+            ],
+            "elapsed": 0.09399999998277053
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 2677,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "elapsed": 0.125
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 444,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8",
+              "f4g5"
+            ],
+            "elapsed": 0.031000000017229468
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "elapsed": 0.0
+          }
+        ]
+      }
+    ],
+    "median_time": 5.932,
+    "median_nps": 13765,
+    "diagnostics": {
+      "total_beta_cutoffs": 2840,
+      "first_move_cutoffs": 1846,
+      "first_move_cutoff_rate_pct": 65.0,
+      "total_move_loops": 3164
+    }
+  }
+}

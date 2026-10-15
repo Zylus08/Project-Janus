@@ -1,0 +1,42 @@
+[
+  {
+    "id": "startpos",
+    "category": "opening",
+    "description": "Standard initial position",
+    "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+  },
+  {
+    "id": "open_game",
+    "category": "middlegame",
+    "description": "Open center with developed pieces",
+    "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 4 7"
+  },
+  {
+    "id": "white_up_rook",
+    "category": "material",
+    "description": "White has a rook against a minor piece",
+    "fen": "4k3/8/8/8/8/8/4N3/4K2R w K - 0 1"
+  },
+  {
+    "id": "mate_in_one",
+    "category": "tactics",
+    "description": "White to move and mate in one",
+    "fen": "8/7k/5K2/6Q1/8/8/8/8 w - - 0 1",
+    "expected_best_moves": [
+      "g5g7"
+    ]
+  },
+  {
+    "id": "promotion_tactic",
+    "category": "endgame",
+    "description": "Passed pawn near promotion",
+    "fen": "8/P7/8/8/8/4k3/8/4K3 w - - 0 1"
+  },
+  {
+    "id": "stalemate",
+    "category": "terminal",
+    "description": "Black is stalemated",
+    "fen": "7k/5Q2/6K1/8/8/8/8/8 b - - 0 1",
+    "expected_best_moves": []
+  }
+]

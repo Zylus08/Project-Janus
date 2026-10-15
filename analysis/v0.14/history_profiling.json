@@ -1,0 +1,1148 @@
+{
+  "enabled_stats": {
+    "_key (84)": {
+      "ncalls": 3842,
+      "tottime": 0.0033,
+      "cumtime": 0.2342,
+      "percall": 6.1e-05
+    },
+    "piece_type_at (835)": {
+      "ncalls": 405383,
+      "tottime": 0.1835,
+      "cumtime": 0.1835,
+      "percall": 0.0
+    },
+    "__init__ (53)": {
+      "ncalls": 6,
+      "tottime": 0.0002,
+      "cumtime": 0.0002,
+      "percall": 2.7e-05
+    },
+    "_set_board_fen (1123)": {
+      "ncalls": 5,
+      "tottime": 0.0003,
+      "cumtime": 0.0006,
+      "percall": 0.000119
+    },
+    "generate_castling_moves (3738)": {
+      "ncalls": 28352,
+      "tottime": 0.08,
+      "cumtime": 0.0964,
+      "percall": 3e-06
+    },
+    "set_fen (2562)": {
+      "ncalls": 5,
+      "tottime": 0.0001,
+      "cumtime": 0.0008,
+      "percall": 0.000154
+    },
+    "pieces_mask (799)": {
+      "ncalls": 666316,
+      "tottime": 0.2512,
+      "cumtime": 0.2512,
+      "percall": 0.0
+    },
+    "clean_castling_rights (3360)": {
+      "ncalls": 282690,
+      "tottime": 0.0526,
+      "cumtime": 0.0526,
+      "percall": 0.0
+    },
+    "hash_castling (235)": {
+      "ncalls": 3842,
+      "tottime": 0.01,
+      "cumtime": 0.0295,
+      "percall": 8e-06
+    },
+    "_ep_skewered (3618)": {
+      "ncalls": 1,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 4e-06
+    },
+    "_quiescence_moves (164)": {
+      "ncalls": 25390,
+      "tottime": 0.0961,
+      "cumtime": 1.6227,
+      "percall": 6.4e-05
+    },
+    "_is_safe (3664)": {
+      "ncalls": 216588,
+      "tottime": 0.1999,
+      "cumtime": 0.5244,
+      "percall": 2e-06
+    },
+    "_generate_evasions (3677)": {
+      "ncalls": 29875,
+      "tottime": 0.0588,
+      "cumtime": 0.3048,
+      "percall": 1e-05
+    },
+    "generate_legal_moves (3702)": {
+      "ncalls": 301126,
+      "tottime": 0.4631,
+      "cumtime": 3.5969,
+      "percall": 1.2e-05
+    },
+    "search (335)": {
+      "ncalls": 6,
+      "tottime": 0.0003,
+      "cumtime": 10.5475,
+      "percall": 1.757922
+    },
+    "_from_chess960 (3768)": {
+      "ncalls": 57760,
+      "tottime": 0.0651,
+      "cumtime": 0.0883,
+      "percall": 2e-06
+    },
+    "hash_ep_square (250)": {
+      "ncalls": 3842,
+      "tottime": 0.0018,
+      "cumtime": 0.0023,
+      "percall": 1e-06
+    },
+    "__init__ (1547)": {
+      "ncalls": 57733,
+      "tottime": 0.0476,
+      "cumtime": 0.0476,
+      "percall": 1e-06
+    },
+    "_slider_blockers (3645)": {
+      "ncalls": 89791,
+      "tottime": 0.2269,
+      "cumtime": 0.3408,
+      "percall": 4e-06
+    },
+    "attackers_mask (905)": {
+      "ncalls": 195870,
+      "tottime": 0.4041,
+      "cumtime": 0.4041,
+      "percall": 2e-06
+    },
+    "pin_mask (958)": {
+      "ncalls": 1,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 8e-06
+    },
+    "_reset_board (753)": {
+      "ncalls": 1,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 4e-06
+    },
+    "_set_piece_at (1052)": {
+      "ncalls": 57792,
+      "tottime": 0.0749,
+      "cumtime": 0.1739,
+      "percall": 3e-06
+    },
+    "restore (1567)": {
+      "ncalls": 57733,
+      "tottime": 0.0547,
+      "cumtime": 0.0547,
+      "percall": 1e-06
+    },
+    "_move_order_score (128)": {
+      "ncalls": 156166,
+      "tottime": 0.3064,
+      "cumtime": 0.8287,
+      "percall": 5e-06
+    },
+    "attacks_mask (875)": {
+      "ncalls": 273625,
+      "tottime": 0.2764,
+      "cumtime": 0.2764,
+      "percall": 1e-06
+    },
+    "generate_pseudo_legal_moves (1819)": {
+      "ncalls": 290234,
+      "tottime": 0.9513,
+      "cumtime": 1.9388,
+      "percall": 7e-06
+    },
+    "generate_pseudo_legal_ep (1886)": {
+      "ncalls": 25764,
+      "tottime": 0.0081,
+      "cumtime": 0.0081,
+      "percall": 0.0
+    },
+    "_quiescence (193)": {
+      "ncalls": 53836,
+      "tottime": 0.4428,
+      "cumtime": 8.7122,
+      "percall": 0.000162
+    },
+    "has_insufficient_material (2117)": {
+      "ncalls": 67119,
+      "tottime": 0.044,
+      "cumtime": 0.044,
+      "percall": 1e-06
+    },
+    "is_repetition (2258)": {
+      "ncalls": 66939,
+      "tottime": 0.0986,
+      "cumtime": 0.0986,
+      "percall": 1e-06
+    },
+    "push (2310)": {
+      "ncalls": 57733,
+      "tottime": 0.4979,
+      "cumtime": 1.1045,
+      "percall": 1.9e-05
+    },
+    "_set_castling_fen (2656)": {
+      "ncalls": 5,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 4e-06
+    },
+    "_to_chess960 (3783)": {
+      "ncalls": 57733,
+      "tottime": 0.0188,
+      "cumtime": 0.0188,
+      "percall": 0.0
+    },
+    "_remove_piece_at (1014)": {
+      "ncalls": 115554,
+      "tottime": 0.18,
+      "cumtime": 0.2347,
+      "percall": 2e-06
+    },
+    "evaluate_white (43)": {
+      "ncalls": 47594,
+      "tottime": 1.2633,
+      "cumtime": 2.6763,
+      "percall": 5.6e-05
+    },
+    "_negamax (239)": {
+      "ncalls": 13193,
+      "tottime": 0.1312,
+      "cumtime": 10.5462,
+      "percall": 0.000799
+    },
+    "_clear_board (777)": {
+      "ncalls": 11,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 1e-06
+    },
+    "__init__ (1697)": {
+      "ncalls": 6,
+      "tottime": 0.0,
+      "cumtime": 0.0008,
+      "percall": 0.00014
+    },
+    "piece_at (825)": {
+      "ncalls": 149806,
+      "tottime": 0.1888,
+      "cumtime": 0.2882,
+      "percall": 2e-06
+    },
+    "_update_history (73)": {
+      "ncalls": 1625,
+      "tottime": 0.0017,
+      "cumtime": 0.0027,
+      "percall": 2e-06
+    },
+    "_check_stop (107)": {
+      "ncalls": 67029,
+      "tottime": 0.0155,
+      "cumtime": 0.0155,
+      "percall": 0.0
+    },
+    "is_zeroing (3316)": {
+      "ncalls": 57733,
+      "tottime": 0.0478,
+      "cumtime": 0.0478,
+      "percall": 1e-06
+    },
+    "has_kingside_castling_rights (3421)": {
+      "ncalls": 102872,
+      "tottime": 0.1053,
+      "cumtime": 0.1243,
+      "percall": 1e-06
+    },
+    "has_queenside_castling_rights (3442)": {
+      "ncalls": 102872,
+      "tottime": 0.0831,
+      "cumtime": 0.0993,
+      "percall": 1e-06
+    },
+    "msb (411)": {
+      "ncalls": 195031,
+      "tottime": 0.0797,
+      "cumtime": 0.1193,
+      "percall": 1e-06
+    },
+    "shift_right (470)": {
+      "ncalls": 351,
+      "tottime": 0.0002,
+      "cumtime": 0.0002,
+      "percall": 1e-06
+    },
+    "shift_up (464)": {
+      "ncalls": 323,
+      "tottime": 0.0001,
+      "cumtime": 0.0001,
+      "percall": 0.0
+    },
+    "shift_left (476)": {
+      "ncalls": 351,
+      "tottime": 0.0002,
+      "cumtime": 0.0002,
+      "percall": 1e-06
+    },
+    "checkers_mask (1906)": {
+      "ncalls": 53856,
+      "tottime": 0.0603,
+      "cumtime": 0.2657,
+      "percall": 5e-06
+    },
+    "pop (2431)": {
+      "ncalls": 57733,
+      "tottime": 0.0692,
+      "cumtime": 0.1517,
+      "percall": 3e-06
+    },
+    "generate_legal_ep (3722)": {
+      "ncalls": 25390,
+      "tottime": 0.0279,
+      "cumtime": 0.0387,
+      "percall": 2e-06
+    },
+    "__call__ (269)": {
+      "ncalls": 3842,
+      "tottime": 0.0099,
+      "cumtime": 0.2269,
+      "percall": 5.9e-05
+    },
+    "ray (573)": {
+      "ncalls": 7955,
+      "tottime": 0.0017,
+      "cumtime": 0.0017,
+      "percall": 0.0
+    },
+    "from_symbol (624)": {
+      "ncalls": 45,
+      "tottime": 0.0001,
+      "cumtime": 0.0001,
+      "percall": 3e-06
+    },
+    "__bool__ (676)": {
+      "ncalls": 112794,
+      "tottime": 0.0401,
+      "cumtime": 0.0401,
+      "percall": 0.0
+    },
+    "king (864)": {
+      "ncalls": 53858,
+      "tottime": 0.0457,
+      "cumtime": 0.0812,
+      "percall": 2e-06
+    },
+    "is_attacked_by (925)": {
+      "ncalls": 52142,
+      "tottime": 0.0404,
+      "cumtime": 0.15,
+      "percall": 3e-06
+    },
+    "reset (1748)": {
+      "ncalls": 1,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 1.5e-05
+    },
+    "is_en_passant (3304)": {
+      "ncalls": 321823,
+      "tottime": 0.0769,
+      "cumtime": 0.0769,
+      "percall": 0.0
+    },
+    "hash_board (225)": {
+      "ncalls": 3842,
+      "tottime": 0.0899,
+      "cumtime": 0.1839,
+      "percall": 4.8e-05
+    },
+    "reset_board (767)": {
+      "ncalls": 1,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 5e-06
+    },
+    "is_seventyfive_moves (2155)": {
+      "ncalls": 66939,
+      "tottime": 0.0391,
+      "cumtime": 0.0537,
+      "percall": 1e-06
+    },
+    "is_fivefold_repetition (2164)": {
+      "ncalls": 66939,
+      "tottime": 0.0347,
+      "cumtime": 0.1333,
+      "percall": 2e-06
+    },
+    "__init__ (743)": {
+      "ncalls": 6,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 3e-06
+    },
+    "generate_legal_captures (3730)": {
+      "ncalls": 25390,
+      "tottime": 0.0351,
+      "cumtime": 0.0351,
+      "percall": 1e-06
+    },
+    "reset_board (1758)": {
+      "ncalls": 1,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 1.3e-05
+    },
+    "_attacked_for_king (3735)": {
+      "ncalls": 54,
+      "tottime": 0.0001,
+      "cumtime": 0.0004,
+      "percall": 8e-06
+    },
+    "clear_stack (1784)": {
+      "ncalls": 6,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 2e-06
+    },
+    "_ordered_moves (180)": {
+      "ncalls": 9278,
+      "tottime": 0.055,
+      "cumtime": 1.5209,
+      "percall": 0.000164
+    },
+    "scan_forward (405)": {
+      "ncalls": 1855739,
+      "tottime": 0.7144,
+      "cumtime": 0.9153,
+      "percall": 0.0
+    },
+    "scan_reversed (414)": {
+      "ncalls": 1703232,
+      "tottime": 0.5078,
+      "cumtime": 0.6531,
+      "percall": 0.0
+    },
+    "between (576)": {
+      "ncalls": 57154,
+      "tottime": 0.0488,
+      "cumtime": 0.0488,
+      "percall": 1e-06
+    },
+    "_is_halfmoves (2152)": {
+      "ncalls": 66939,
+      "tottime": 0.0145,
+      "cumtime": 0.0145,
+      "percall": 0.0
+    },
+    "<genexpr> (3736)": {
+      "ncalls": 135,
+      "tottime": 0.0001,
+      "cumtime": 0.0003,
+      "percall": 2e-06
+    },
+    "is_check (1918)": {
+      "ncalls": 53856,
+      "tottime": 0.0356,
+      "cumtime": 0.3013,
+      "percall": 6e-06
+    },
+    "<genexpr> (2115)": {
+      "ncalls": 134148,
+      "tottime": 0.076,
+      "cumtime": 0.12,
+      "percall": 1e-06
+    },
+    "is_insufficient_material (2110)": {
+      "ncalls": 67029,
+      "tottime": 0.1415,
+      "cumtime": 0.2967,
+      "percall": 4e-06
+    },
+    "__iter__ (3948)": {
+      "ncalls": 9284,
+      "tottime": 0.0042,
+      "cumtime": 0.0042,
+      "percall": 0.0
+    },
+    "_score_to_tt (89)": {
+      "ncalls": 3049,
+      "tottime": 0.0012,
+      "cumtime": 0.0012,
+      "percall": 0.0
+    },
+    "_score_from_tt (98)": {
+      "ncalls": 1148,
+      "tottime": 0.0004,
+      "cumtime": 0.0004,
+      "percall": 0.0
+    },
+    "legal_moves (1713)": {
+      "ncalls": 9284,
+      "tottime": 0.0113,
+      "cumtime": 0.0134,
+      "percall": 1e-06
+    },
+    "__init__ (3938)": {
+      "ncalls": 9284,
+      "tottime": 0.0021,
+      "cumtime": 0.0021,
+      "percall": 0.0
+    },
+    "zobrist_hash (274)": {
+      "ncalls": 3842,
+      "tottime": 0.004,
+      "cumtime": 0.2309,
+      "percall": 6e-05
+    },
+    "is_capture (3311)": {
+      "ncalls": 158504,
+      "tottime": 0.1185,
+      "cumtime": 0.1354,
+      "percall": 1e-06
+    },
+    "square_file (258)": {
+      "ncalls": 104367,
+      "tottime": 0.0172,
+      "cumtime": 0.0172,
+      "percall": 0.0
+    },
+    "square_rank (262)": {
+      "ncalls": 21825,
+      "tottime": 0.005,
+      "cumtime": 0.005,
+      "percall": 0.0
+    },
+    "shift_down (458)": {
+      "ncalls": 28,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 0.0
+    },
+    "is_variant_end (2001)": {
+      "ncalls": 143506,
+      "tottime": 0.0198,
+      "cumtime": 0.0198,
+      "percall": 0.0
+    },
+    "_push_capture (2307)": {
+      "ncalls": 46354,
+      "tottime": 0.0066,
+      "cumtime": 0.0066,
+      "percall": 0.0
+    },
+    "is_castling (3341)": {
+      "ncalls": 52169,
+      "tottime": 0.1058,
+      "cumtime": 0.1341,
+      "percall": 3e-06
+    },
+    "<lambda> (188)": {
+      "ncalls": 98396,
+      "tottime": 0.0457,
+      "cumtime": 0.4622,
+      "percall": 5e-06
+    },
+    "<lambda> (217)": {
+      "ncalls": 57770,
+      "tottime": 0.0395,
+      "cumtime": 0.4518,
+      "percall": 8e-06
+    },
+    "hash_turn (265)": {
+      "ncalls": 3842,
+      "tottime": 0.0013,
+      "cumtime": 0.0013,
+      "percall": 0.0
+    },
+    "evaluate_side_to_move (81)": {
+      "ncalls": 47594,
+      "tottime": 0.04,
+      "cumtime": 2.7163,
+      "percall": 5.7e-05
+    }
+  },
+  "disabled_stats": {
+    "_key (84)": {
+      "ncalls": 3820,
+      "tottime": 0.0035,
+      "cumtime": 0.2652,
+      "percall": 6.9e-05
+    },
+    "piece_type_at (835)": {
+      "ncalls": 413254,
+      "tottime": 0.2216,
+      "cumtime": 0.2216,
+      "percall": 1e-06
+    },
+    "__init__ (53)": {
+      "ncalls": 6,
+      "tottime": 0.0001,
+      "cumtime": 0.0001,
+      "percall": 2.1e-05
+    },
+    "_set_board_fen (1123)": {
+      "ncalls": 5,
+      "tottime": 0.0002,
+      "cumtime": 0.0005,
+      "percall": 0.0001
+    },
+    "generate_castling_moves (3738)": {
+      "ncalls": 29322,
+      "tottime": 0.0947,
+      "cumtime": 0.1149,
+      "percall": 4e-06
+    },
+    "set_fen (2562)": {
+      "ncalls": 5,
+      "tottime": 0.0001,
+      "cumtime": 0.0006,
+      "percall": 0.000127
+    },
+    "pieces_mask (799)": {
+      "ncalls": 689066,
+      "tottime": 0.3124,
+      "cumtime": 0.3124,
+      "percall": 0.0
+    },
+    "clean_castling_rights (3360)": {
+      "ncalls": 291534,
+      "tottime": 0.0659,
+      "cumtime": 0.0659,
+      "percall": 0.0
+    },
+    "hash_castling (235)": {
+      "ncalls": 3820,
+      "tottime": 0.0076,
+      "cumtime": 0.0294,
+      "percall": 8e-06
+    },
+    "_ep_skewered (3618)": {
+      "ncalls": 1,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 6e-06
+    },
+    "_quiescence_moves (164)": {
+      "ncalls": 26385,
+      "tottime": 0.1209,
+      "cumtime": 2.0213,
+      "percall": 7.7e-05
+    },
+    "_is_safe (3664)": {
+      "ncalls": 219075,
+      "tottime": 0.2367,
+      "cumtime": 0.609,
+      "percall": 3e-06
+    },
+    "_generate_evasions (3677)": {
+      "ncalls": 29024,
+      "tottime": 0.0779,
+      "cumtime": 0.3758,
+      "percall": 1.3e-05
+    },
+    "generate_legal_moves (3702)": {
+      "ncalls": 306044,
+      "tottime": 0.5595,
+      "cumtime": 4.38,
+      "percall": 1.4e-05
+    },
+    "search (335)": {
+      "ncalls": 6,
+      "tottime": 0.0003,
+      "cumtime": 12.8861,
+      "percall": 2.14769
+    },
+    "_from_chess960 (3768)": {
+      "ncalls": 59155,
+      "tottime": 0.074,
+      "cumtime": 0.1026,
+      "percall": 2e-06
+    },
+    "hash_ep_square (250)": {
+      "ncalls": 3820,
+      "tottime": 0.002,
+      "cumtime": 0.0027,
+      "percall": 1e-06
+    },
+    "__init__ (1547)": {
+      "ncalls": 59128,
+      "tottime": 0.0538,
+      "cumtime": 0.0538,
+      "percall": 1e-06
+    },
+    "_slider_blockers (3645)": {
+      "ncalls": 92064,
+      "tottime": 0.2778,
+      "cumtime": 0.4153,
+      "percall": 5e-06
+    },
+    "attackers_mask (905)": {
+      "ncalls": 199426,
+      "tottime": 0.4831,
+      "cumtime": 0.4831,
+      "percall": 2e-06
+    },
+    "pin_mask (958)": {
+      "ncalls": 1,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 7e-06
+    },
+    "_reset_board (753)": {
+      "ncalls": 1,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 7e-06
+    },
+    "_set_piece_at (1052)": {
+      "ncalls": 59187,
+      "tottime": 0.0838,
+      "cumtime": 0.2057,
+      "percall": 3e-06
+    },
+    "restore (1567)": {
+      "ncalls": 59128,
+      "tottime": 0.0598,
+      "cumtime": 0.0598,
+      "percall": 1e-06
+    },
+    "_move_order_score (128)": {
+      "ncalls": 157317,
+      "tottime": 0.357,
+      "cumtime": 1.0108,
+      "percall": 6e-06
+    },
+    "attacks_mask (875)": {
+      "ncalls": 279862,
+      "tottime": 0.3528,
+      "cumtime": 0.3528,
+      "percall": 1e-06
+    },
+    "generate_pseudo_legal_moves (1819)": {
+      "ncalls": 295427,
+      "tottime": 1.177,
+      "cumtime": 2.3932,
+      "percall": 8e-06
+    },
+    "generate_pseudo_legal_ep (1886)": {
+      "ncalls": 26773,
+      "tottime": 0.007,
+      "cumtime": 0.0071,
+      "percall": 0.0
+    },
+    "_quiescence (193)": {
+      "ncalls": 55253,
+      "tottime": 0.5439,
+      "cumtime": 10.7709,
+      "percall": 0.000195
+    },
+    "has_insufficient_material (2117)": {
+      "ncalls": 68767,
+      "tottime": 0.0589,
+      "cumtime": 0.0589,
+      "percall": 1e-06
+    },
+    "is_repetition (2258)": {
+      "ncalls": 68587,
+      "tottime": 0.1265,
+      "cumtime": 0.1265,
+      "percall": 2e-06
+    },
+    "push (2310)": {
+      "ncalls": 59128,
+      "tottime": 0.5934,
+      "cumtime": 1.3171,
+      "percall": 2.2e-05
+    },
+    "_set_castling_fen (2656)": {
+      "ncalls": 5,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 2e-06
+    },
+    "_to_chess960 (3783)": {
+      "ncalls": 59128,
+      "tottime": 0.0224,
+      "cumtime": 0.0224,
+      "percall": 0.0
+    },
+    "_remove_piece_at (1014)": {
+      "ncalls": 118344,
+      "tottime": 0.2206,
+      "cumtime": 0.2816,
+      "percall": 2e-06
+    },
+    "evaluate_white (43)": {
+      "ncalls": 49219,
+      "tottime": 1.5568,
+      "cumtime": 3.3518,
+      "percall": 6.8e-05
+    },
+    "_negamax (239)": {
+      "ncalls": 13424,
+      "tottime": 0.1517,
+      "cumtime": 12.8851,
+      "percall": 0.00096
+    },
+    "_clear_board (777)": {
+      "ncalls": 11,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 1e-06
+    },
+    "__init__ (1697)": {
+      "ncalls": 6,
+      "tottime": 0.0,
+      "cumtime": 0.0007,
+      "percall": 0.000115
+    },
+    "piece_at (825)": {
+      "ncalls": 154200,
+      "tottime": 0.235,
+      "cumtime": 0.3563,
+      "percall": 2e-06
+    },
+    "_update_history (73)": {
+      "ncalls": 1625,
+      "tottime": 0.0004,
+      "cumtime": 0.0004,
+      "percall": 0.0
+    },
+    "_check_stop (107)": {
+      "ncalls": 68677,
+      "tottime": 0.0174,
+      "cumtime": 0.0174,
+      "percall": 0.0
+    },
+    "is_zeroing (3316)": {
+      "ncalls": 59128,
+      "tottime": 0.0609,
+      "cumtime": 0.0609,
+      "percall": 1e-06
+    },
+    "has_kingside_castling_rights (3421)": {
+      "ncalls": 106078,
+      "tottime": 0.1261,
+      "cumtime": 0.1491,
+      "percall": 1e-06
+    },
+    "has_queenside_castling_rights (3442)": {
+      "ncalls": 106078,
+      "tottime": 0.0989,
+      "cumtime": 0.1213,
+      "percall": 1e-06
+    },
+    "msb (411)": {
+      "ncalls": 198959,
+      "tottime": 0.0945,
+      "cumtime": 0.1446,
+      "percall": 1e-06
+    },
+    "shift_right (470)": {
+      "ncalls": 352,
+      "tottime": 0.0002,
+      "cumtime": 0.0002,
+      "percall": 1e-06
+    },
+    "shift_up (464)": {
+      "ncalls": 324,
+      "tottime": 0.0002,
+      "cumtime": 0.0002,
+      "percall": 1e-06
+    },
+    "shift_left (476)": {
+      "ncalls": 352,
+      "tottime": 0.0003,
+      "cumtime": 0.0003,
+      "percall": 1e-06
+    },
+    "checkers_mask (1906)": {
+      "ncalls": 55273,
+      "tottime": 0.0681,
+      "cumtime": 0.3237,
+      "percall": 6e-06
+    },
+    "pop (2431)": {
+      "ncalls": 59128,
+      "tottime": 0.0858,
+      "cumtime": 0.1776,
+      "percall": 3e-06
+    },
+    "generate_legal_ep (3722)": {
+      "ncalls": 26385,
+      "tottime": 0.0364,
+      "cumtime": 0.0465,
+      "percall": 2e-06
+    },
+    "__call__ (269)": {
+      "ncalls": 3820,
+      "tottime": 0.0097,
+      "cumtime": 0.2575,
+      "percall": 6.7e-05
+    },
+    "ray (573)": {
+      "ncalls": 8204,
+      "tottime": 0.0022,
+      "cumtime": 0.0022,
+      "percall": 0.0
+    },
+    "from_symbol (624)": {
+      "ncalls": 45,
+      "tottime": 0.0001,
+      "cumtime": 0.0001,
+      "percall": 3e-06
+    },
+    "__bool__ (676)": {
+      "ncalls": 115683,
+      "tottime": 0.0477,
+      "cumtime": 0.0477,
+      "percall": 0.0
+    },
+    "king (864)": {
+      "ncalls": 55275,
+      "tottime": 0.0577,
+      "cumtime": 0.1016,
+      "percall": 2e-06
+    },
+    "is_attacked_by (925)": {
+      "ncalls": 52008,
+      "tottime": 0.0513,
+      "cumtime": 0.1775,
+      "percall": 3e-06
+    },
+    "reset (1748)": {
+      "ncalls": 1,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 2.2e-05
+    },
+    "is_en_passant (3304)": {
+      "ncalls": 325595,
+      "tottime": 0.0982,
+      "cumtime": 0.0982,
+      "percall": 0.0
+    },
+    "hash_board (225)": {
+      "ncalls": 3820,
+      "tottime": 0.0991,
+      "cumtime": 0.214,
+      "percall": 5.6e-05
+    },
+    "reset_board (767)": {
+      "ncalls": 1,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 8e-06
+    },
+    "is_seventyfive_moves (2155)": {
+      "ncalls": 68587,
+      "tottime": 0.0359,
+      "cumtime": 0.0555,
+      "percall": 1e-06
+    },
+    "is_fivefold_repetition (2164)": {
+      "ncalls": 68587,
+      "tottime": 0.0402,
+      "cumtime": 0.1667,
+      "percall": 2e-06
+    },
+    "__init__ (743)": {
+      "ncalls": 6,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 2e-06
+    },
+    "generate_legal_captures (3730)": {
+      "ncalls": 26385,
+      "tottime": 0.0453,
+      "cumtime": 0.0453,
+      "percall": 2e-06
+    },
+    "reset_board (1758)": {
+      "ncalls": 1,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 1.8e-05
+    },
+    "_attacked_for_king (3735)": {
+      "ncalls": 54,
+      "tottime": 0.0,
+      "cumtime": 0.0003,
+      "percall": 5e-06
+    },
+    "clear_stack (1784)": {
+      "ncalls": 6,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 2e-06
+    },
+    "_ordered_moves (180)": {
+      "ncalls": 9048,
+      "tottime": 0.066,
+      "cumtime": 1.8065,
+      "percall": 0.0002
+    },
+    "scan_forward (405)": {
+      "ncalls": 1919239,
+      "tottime": 0.9115,
+      "cumtime": 1.1838,
+      "percall": 1e-06
+    },
+    "scan_reversed (414)": {
+      "ncalls": 1736224,
+      "tottime": 0.6189,
+      "cumtime": 0.7948,
+      "percall": 0.0
+    },
+    "between (576)": {
+      "ncalls": 57289,
+      "tottime": 0.061,
+      "cumtime": 0.061,
+      "percall": 1e-06
+    },
+    "_is_halfmoves (2152)": {
+      "ncalls": 68587,
+      "tottime": 0.0196,
+      "cumtime": 0.0196,
+      "percall": 0.0
+    },
+    "<genexpr> (3736)": {
+      "ncalls": 135,
+      "tottime": 0.0001,
+      "cumtime": 0.0002,
+      "percall": 1e-06
+    },
+    "is_check (1918)": {
+      "ncalls": 55273,
+      "tottime": 0.0438,
+      "cumtime": 0.3675,
+      "percall": 7e-06
+    },
+    "<genexpr> (2115)": {
+      "ncalls": 137444,
+      "tottime": 0.0914,
+      "cumtime": 0.1503,
+      "percall": 1e-06
+    },
+    "is_insufficient_material (2110)": {
+      "ncalls": 68677,
+      "tottime": 0.1841,
+      "cumtime": 0.3771,
+      "percall": 5e-06
+    },
+    "__iter__ (3948)": {
+      "ncalls": 9054,
+      "tottime": 0.0065,
+      "cumtime": 0.0065,
+      "percall": 1e-06
+    },
+    "_score_to_tt (89)": {
+      "ncalls": 3027,
+      "tottime": 0.0013,
+      "cumtime": 0.0013,
+      "percall": 0.0
+    },
+    "_score_from_tt (98)": {
+      "ncalls": 1148,
+      "tottime": 0.0004,
+      "cumtime": 0.0004,
+      "percall": 0.0
+    },
+    "legal_moves (1713)": {
+      "ncalls": 9054,
+      "tottime": 0.0114,
+      "cumtime": 0.0136,
+      "percall": 2e-06
+    },
+    "__init__ (3938)": {
+      "ncalls": 9054,
+      "tottime": 0.0022,
+      "cumtime": 0.0022,
+      "percall": 0.0
+    },
+    "zobrist_hash (274)": {
+      "ncalls": 3820,
+      "tottime": 0.0042,
+      "cumtime": 0.2618,
+      "percall": 6.9e-05
+    },
+    "is_capture (3311)": {
+      "ncalls": 159632,
+      "tottime": 0.1541,
+      "cumtime": 0.1751,
+      "percall": 1e-06
+    },
+    "square_file (258)": {
+      "ncalls": 104099,
+      "tottime": 0.0189,
+      "cumtime": 0.0189,
+      "percall": 0.0
+    },
+    "square_rank (262)": {
+      "ncalls": 22527,
+      "tottime": 0.0063,
+      "cumtime": 0.0063,
+      "percall": 0.0
+    },
+    "shift_down (458)": {
+      "ncalls": 28,
+      "tottime": 0.0,
+      "cumtime": 0.0,
+      "percall": 0.0
+    },
+    "is_variant_end (2001)": {
+      "ncalls": 147744,
+      "tottime": 0.0226,
+      "cumtime": 0.0226,
+      "percall": 0.0
+    },
+    "_push_capture (2307)": {
+      "ncalls": 47506,
+      "tottime": 0.0112,
+      "cumtime": 0.0112,
+      "percall": 0.0
+    },
+    "is_castling (3341)": {
+      "ncalls": 52035,
+      "tottime": 0.1111,
+      "cumtime": 0.1424,
+      "percall": 3e-06
+    },
+    "<lambda> (188)": {
+      "ncalls": 96856,
+      "tottime": 0.0553,
+      "cumtime": 0.5629,
+      "percall": 6e-06
+    },
+    "<lambda> (217)": {
+      "ncalls": 60461,
+      "tottime": 0.0523,
+      "cumtime": 0.5554,
+      "percall": 9e-06
+    },
+    "hash_turn (265)": {
+      "ncalls": 3820,
+      "tottime": 0.0016,
+      "cumtime": 0.0016,
+      "percall": 0.0
+    },
+    "evaluate_side_to_move (81)": {
+      "ncalls": 49219,
+      "tottime": 0.0452,
+      "cumtime": 3.3969,
+      "percall": 6.9e-05
+    }
+  },
+  "raw_enabled_top": "         13299174 function calls (13241441 primitive calls) in 10.416 seconds\n\n   Ordered by: cumulative time\n   List reduced from 120 to 40 due to restriction <40>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        6    0.000    0.000   10.548    1.758 E:\\ChessXML\\project-janus\\src\\janus\\search.py:335(search)\n 13193/20    0.131    0.000   10.546    0.527 E:\\ChessXML\\project-janus\\src\\janus\\search.py:239(_negamax)\n53836/9276    0.443    0.000    8.712    0.001 E:\\ChessXML\\project-janus\\src\\janus\\search.py:193(_quiescence)\n   301126    0.463    0.000    3.597    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:3702(generate_legal_moves)\n    47594    0.040    0.000    2.716    0.000 E:\\ChessXML\\project-janus\\src\\janus\\evaluation.py:81(evaluate_side_to_move)\n    47594    1.263    0.000    2.676    0.000 E:\\ChessXML\\project-janus\\src\\janus\\evaluation.py:43(evaluate_white)\n   290234    0.951    0.000    1.939    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:1819(generate_pseudo_legal_moves)\n    25390    0.096    0.000    1.623    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:164(_quiescence_moves)\n     9278    0.055    0.000    1.521    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:180(_ordered_moves)\n    57733    0.498    0.000    1.104    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:2310(push)\n    55147    0.055    0.000    1.098    0.000 {built-in method builtins.any}\n    34668    0.081    0.000    0.995    0.000 {method 'sort' of 'list' objects}\n  1855739    0.714    0.000    0.915    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:405(scan_forward)\n   156166    0.306    0.000    0.829    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:128(_move_order_score)\n  1703232    0.508    0.000    0.653    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:414(scan_reversed)\n   216588    0.200    0.000    0.524    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:3664(_is_safe)\n    98396    0.046    0.000    0.462    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:188(<lambda>)\n    57770    0.040    0.000    0.452    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:217(<lambda>)\n   195870    0.404    0.000    0.404    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:905(attackers_mask)\n  2345496    0.386    0.000    0.386    0.000 {method 'bit_length' of 'int' objects}\n    89791    0.227    0.000    0.341    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:3645(_slider_blockers)\n    29875    0.059    0.000    0.305    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:3677(_generate_evasions)\n    53856    0.036    0.000    0.301    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:1918(is_check)\n    67029    0.141    0.000    0.297    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:2110(is_insufficient_material)\n   149806    0.189    0.000    0.288    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:825(piece_at)\n   273625    0.276    0.000    0.276    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:875(attacks_mask)\n    53856    0.060    0.000    0.266    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:1906(checkers_mask)\n   666316    0.251    0.000    0.251    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:799(pieces_mask)\n   115554    0.180    0.000    0.235    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:1014(_remove_piece_at)\n     3842    0.003    0.000    0.234    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:84(_key)\n     3842    0.004    0.000    0.231    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\polyglot.py:274(zobrist_hash)\n     3842    0.010    ",
+  "raw_disabled_top": "         13603839 function calls (13544711 primitive calls) in 12.727 seconds\n\n   Ordered by: cumulative time\n   List reduced from 119 to 40 due to restriction <40>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        6    0.000    0.000   12.886    2.148 E:\\ChessXML\\project-janus\\src\\janus\\search.py:335(search)\n 13424/20    0.152    0.000   12.885    0.644 E:\\ChessXML\\project-janus\\src\\janus\\search.py:239(_negamax)\n55253/9529    0.544    0.000   10.771    0.001 E:\\ChessXML\\project-janus\\src\\janus\\search.py:193(_quiescence)\n   306044    0.559    0.000    4.380    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:3702(generate_legal_moves)\n    49219    0.045    0.000    3.397    0.000 E:\\ChessXML\\project-janus\\src\\janus\\evaluation.py:81(evaluate_side_to_move)\n    49219    1.557    0.000    3.352    0.000 E:\\ChessXML\\project-janus\\src\\janus\\evaluation.py:43(evaluate_white)\n   295427    1.177    0.000    2.393    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:1819(generate_pseudo_legal_moves)\n    26385    0.121    0.000    2.021    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:164(_quiescence_moves)\n     9048    0.066    0.000    1.807    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:180(_ordered_moves)\n    56641    0.064    0.000    1.333    0.000 {built-in method builtins.any}\n    59128    0.593    0.000    1.317    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:2310(push)\n    35433    0.096    0.000    1.214    0.000 {method 'sort' of 'list' objects}\n  1919239    0.912    0.000    1.184    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:405(scan_forward)\n   157317    0.357    0.000    1.011    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:128(_move_order_score)\n  1736224    0.619    0.000    0.795    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:414(scan_reversed)\n   219075    0.237    0.000    0.609    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:3664(_is_safe)\n    96856    0.055    0.000    0.563    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:188(<lambda>)\n    60461    0.052    0.000    0.555    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:217(<lambda>)\n  2407215    0.498    0.000    0.498    0.000 {method 'bit_length' of 'int' objects}\n   199426    0.483    0.000    0.483    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:905(attackers_mask)\n    92064    0.278    0.000    0.415    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:3645(_slider_blockers)\n    68677    0.184    0.000    0.377    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:2110(is_insufficient_material)\n    29024    0.078    0.000    0.376    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:3677(_generate_evasions)\n    55273    0.044    0.000    0.367    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:1918(is_check)\n   154200    0.235    0.000    0.356    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:825(piece_at)\n   279862    0.353    0.000    0.353    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:875(attacks_mask)\n    55273    0.068    0.000    0.324    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:1906(checkers_mask)\n   689066    0.312    0.000    0.312    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:799(pieces_mask)\n   118344    0.221    0.000    0.282    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py:1014(_remove_piece_at)\n     3820    0.003    0.000    0.265    0.000 E:\\ChessXML\\project-janus\\src\\janus\\search.py:84(_key)\n     3820    0.004    0.000    0.262    0.000 E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\polyglot.py:274(zobrist_hash)\n     3820    0.010    "
+}

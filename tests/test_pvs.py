@@ -142,11 +142,20 @@ class PrincipalVariationSearchTests(unittest.TestCase):
         self.assertLessEqual(res.scout_fail_highs, res.scout_searches)
         self.assertGreater(res.beta_cutoffs, 0)
 
-        # Disabling PVS resets scout counts to 0
+        # Disabling PVS resets scout counts to 0, but still counts normal alpha-beta cutoffs
         res_disabled = self.ab_search.search(board, max_depth=4)
         self.assertEqual(res_disabled.scout_searches, 0)
         self.assertEqual(res_disabled.scout_fail_highs, 0)
         self.assertEqual(res_disabled.researches, 0)
+        self.assertGreater(res_disabled.beta_cutoffs, 0)
+
+    def test_beta_cutoffs_counted_in_both_modes(self):
+        """Ordinary alpha-beta cutoffs must be counted when PVS is enabled or disabled."""
+        board = chess.Board("r1bqk2r/pppp1ppp/2n5/4p3/2B1n3/5Q2/PPPP1PPP/RNB1K1NR w KQkq - 0 5")
+        res_pvs = self.pvs_search.search(board, max_depth=3)
+        res_ab = self.ab_search.search(board, max_depth=3)
+        self.assertGreater(res_pvs.beta_cutoffs, 0)
+        self.assertGreater(res_ab.beta_cutoffs, 0)
 
     def test_pvs_vs_alphabeta_invariance(self):
         """PVS produces strictly identical scores and best moves as full alpha-beta across depths."""

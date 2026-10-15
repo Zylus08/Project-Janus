@@ -269,14 +269,20 @@ class AspirationWindowsTests(unittest.TestCase):
             stderr=subprocess.PIPE,
             text=True,
         )
-        commands = (
-            "uci\n"
-            "isready\n"
-            "position startpos\n"
-            "go depth 2\n"
-            "quit\n"
-        )
-        stdout, _ = proc.communicate(input=commands, timeout=10)
+        proc.stdin.write("uci\nisready\nposition startpos\ngo depth 2\n")
+        proc.stdin.flush()
+        lines = []
+        for line in proc.stdout:
+            lines.append(line)
+            if line.startswith("bestmove"):
+                break
+        proc.stdin.write("quit\n")
+        proc.stdin.flush()
+        proc.wait(timeout=5)
+        proc.stdin.close()
+        proc.stdout.close()
+        proc.stderr.close()
+        stdout = "".join(lines)
         self.assertEqual(proc.returncode, 0)
         self.assertIn("uciok", stdout)
         self.assertIn("readyok", stdout)

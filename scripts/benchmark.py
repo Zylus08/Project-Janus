@@ -70,11 +70,13 @@ def run_benchmark(
     enable_history: bool = True,
     enable_pvs: bool = True,
     enable_aspiration: bool = True,
+    enable_lmr: bool = True,
 ) -> dict[str, Any]:
     engine = JanusSearch(
         enable_history=enable_history,
         enable_pvs=enable_pvs,
         enable_aspiration=enable_aspiration,
+        enable_lmr=enable_lmr,
     )
     rows: list[dict[str, Any]] = []
     for position in positions:
@@ -111,6 +113,13 @@ def run_benchmark(
             "aspiration_fail_highs": result.aspiration_fail_highs,
             "aspiration_researches": result.aspiration_researches,
             "aspiration_fallbacks": result.aspiration_fallbacks,
+            "lmr_considered": result.lmr_considered,
+            "lmr_reduced_searches": result.lmr_reduced_searches,
+            "lmr_reduced_plies": result.lmr_reduced_plies,
+            "lmr_researches": result.lmr_researches,
+            "lmr_fail_lows": result.lmr_fail_lows,
+            "lmr_fail_highs": result.lmr_fail_highs,
+            "lmr_cutoffs": result.lmr_cutoffs,
         })
 
     return {
@@ -127,6 +136,7 @@ def run_benchmark(
             "pvs_enabled": enable_pvs,
             "aspiration_windows_enabled": enable_aspiration,
             "aspiration_initial_delta": 35,
+            "lmr_enabled": enable_lmr,
             "transposition_table_policy": "cleared before each position (cold start)",
             "score_convention": "score_from_side_to_move is from the side-to-move perspective; mate scores remain encoded near +/-100000",
         },
@@ -147,6 +157,13 @@ def run_benchmark(
             "total_aspiration_fail_highs": sum(row["aspiration_fail_highs"] for row in rows),
             "total_aspiration_researches": sum(row["aspiration_researches"] for row in rows),
             "total_aspiration_fallbacks": sum(row["aspiration_fallbacks"] for row in rows),
+            "total_lmr_considered": sum(row["lmr_considered"] for row in rows),
+            "total_lmr_reduced_searches": sum(row["lmr_reduced_searches"] for row in rows),
+            "total_lmr_reduced_plies": sum(row["lmr_reduced_plies"] for row in rows),
+            "total_lmr_researches": sum(row["lmr_researches"] for row in rows),
+            "total_lmr_fail_lows": sum(row["lmr_fail_lows"] for row in rows),
+            "total_lmr_fail_highs": sum(row["lmr_fail_highs"] for row in rows),
+            "total_lmr_cutoffs": sum(row["lmr_cutoffs"] for row in rows),
         },
         "results": rows,
     }
@@ -174,6 +191,8 @@ def main() -> int:
                         help="Disable Principal Variation Search (use standard alpha-beta)")
     parser.add_argument("--no-aspiration", action="store_true",
                         help="Disable aspiration windows (use full-window search)")
+    parser.add_argument("--no-lmr", action="store_true",
+                        help="Disable Late Move Reductions")
     parser.add_argument("--out", type=Path, default=ROOT / "benchmark-results")
     args = parser.parse_args()
 
@@ -191,6 +210,7 @@ def main() -> int:
             enable_history=not args.no_history,
             enable_pvs=not args.no_pvs,
             enable_aspiration=not args.no_aspiration,
+            enable_lmr=not args.no_lmr,
         )
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         print(f"Benchmark error: {exc}", file=sys.stderr)

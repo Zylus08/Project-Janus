@@ -52,6 +52,13 @@ class SearchResult:
     aspiration_fail_highs: int = 0
     aspiration_researches: int = 0
     aspiration_fallbacks: int = 0
+    lmr_considered: int = 0
+    lmr_reduced_searches: int = 0
+    lmr_reduced_plies: int = 0
+    lmr_researches: int = 0
+    lmr_fail_lows: int = 0
+    lmr_fail_highs: int = 0
+    lmr_cutoffs: int = 0
 
 
 class SearchTimeout(Exception):
@@ -69,6 +76,7 @@ class JanusSearch:
         enable_aspiration: bool = True,
         aspiration_delta: int = 35,
         max_aspiration_retries: int = 3,
+        enable_lmr: bool = True,
     ) -> None:
         self.tt: dict[int, TTEntry] = {}
         self.tt_max_entries = tt_max_entries
@@ -79,6 +87,7 @@ class JanusSearch:
         self.enable_aspiration = enable_aspiration
         self.aspiration_delta = aspiration_delta
         self.max_aspiration_retries = max_aspiration_retries
+        self.enable_lmr = enable_lmr
         self.killers: list[list[Optional[chess.Move]]] = [
             [None, None] for _ in range(self.max_killers_ply)
         ]
@@ -93,6 +102,13 @@ class JanusSearch:
         self.aspiration_fail_highs = 0
         self.aspiration_researches = 0
         self.aspiration_fallbacks = 0
+        self.lmr_considered = 0
+        self.lmr_reduced_searches = 0
+        self.lmr_reduced_plies = 0
+        self.lmr_researches = 0
+        self.lmr_fail_lows = 0
+        self.lmr_fail_highs = 0
+        self.lmr_cutoffs = 0
         self.deadline: Optional[float] = None
         self.stop_event: Optional[threading.Event] = None
 
@@ -350,12 +366,78 @@ class JanusSearch:
                 return -MATE_SCORE + ply, []
             return 0, []
 
+        in_check = board.is_check()
         moves_searched = 0
 
         for move in moves:
+            is_capture = board.is_capture(move)
+            is_promotion = move.promotion is not None
+            gives_check = board.gives_check(move)
+
+            eligible_for_lmr = (
+                self.enable_lmr
+                and moves_searched >= 3
+                and depth >= 3
+                and ply > 0
+                and not in_check
+                and not is_capture
+                and not is_promotion
+                and not gives_check
+                and (
+                    ply >= len(self.killers)
+                    or (move != self.killers[ply][0] and move != self.killers[ply][1])
+                )
+            )
+
             board.push(move)
             try:
-                if self.enable_pvs and moves_searched > 0 and depth >= 2:
+                if eligible_for_lmr:
+                    self.lmr_considered += 1
+                    reduction = 1
+                    reduced_depth = max(1, depth - 1 - reduction)
+                    self.lmr_reduced_searches += 1
+                    self.lmr_reduced_plies += (depth - 1 - reduced_depth)
+
+                    if self.enable_pvs:
+                        child_score, child_pv = self._negamax(
+                            board, reduced_depth, -alpha - 1, -alpha, ply + 1
+                        )
+                        score = -child_score
+
+                        if score > alpha:
+                            self.lmr_fail_highs += 1
+                            self.lmr_researches += 1
+                            self.scout_searches += 1
+                            child_score, child_pv = self._negamax(
+                                board, depth - 1, -alpha - 1, -alpha, ply + 1
+                            )
+                            score = -child_score
+                            if score > alpha:
+                                self.scout_fail_highs += 1
+                                if score < beta:
+                                    self.researches += 1
+                                    child_score, child_pv = self._negamax(
+                                        board, depth - 1, -beta, -alpha, ply + 1
+                                    )
+                                    score = -child_score
+                        else:
+                            self.lmr_fail_lows += 1
+                    else:
+                        child_score, child_pv = self._negamax(
+                            board, reduced_depth, -beta, -alpha, ply + 1
+                        )
+                        score = -child_score
+                        if score > alpha:
+                            self.lmr_fail_highs += 1
+                            self.lmr_researches += 1
+                            child_score, child_pv = self._negamax(
+                                board, depth - 1, -beta, -alpha, ply + 1
+                            )
+                            score = -child_score
+                        else:
+                            self.lmr_fail_lows += 1
+
+                elif self.enable_pvs and moves_searched > 0 and depth >= 2:
                     # Null-window scout search [-alpha - 1, -alpha]
                     self.scout_searches += 1
                     child_score, child_pv = self._negamax(
@@ -390,7 +472,9 @@ class JanusSearch:
             alpha = max(alpha, score)
             if alpha >= beta:
                 self.beta_cutoffs += 1
-                if not board.is_capture(move) and move.promotion is None:
+                if eligible_for_lmr:
+                    self.lmr_cutoffs += 1
+                if not is_capture and not is_promotion:
                     if ply < len(self.killers) and self.killers[ply][0] != move:
                         self.killers[ply][1] = self.killers[ply][0]
                         self.killers[ply][0] = move
@@ -436,6 +520,13 @@ class JanusSearch:
         self.aspiration_fail_highs = 0
         self.aspiration_researches = 0
         self.aspiration_fallbacks = 0
+        self.lmr_considered = 0
+        self.lmr_reduced_searches = 0
+        self.lmr_reduced_plies = 0
+        self.lmr_researches = 0
+        self.lmr_fail_lows = 0
+        self.lmr_fail_highs = 0
+        self.lmr_cutoffs = 0
         self.killers = [[None, None] for _ in range(self.max_killers_ply)]
         self.history = [[0] * 64 for _ in range(64)]
 
@@ -527,4 +618,11 @@ class JanusSearch:
             aspiration_fail_highs=self.aspiration_fail_highs,
             aspiration_researches=self.aspiration_researches,
             aspiration_fallbacks=self.aspiration_fallbacks,
+            lmr_considered=self.lmr_considered,
+            lmr_reduced_searches=self.lmr_reduced_searches,
+            lmr_reduced_plies=self.lmr_reduced_plies,
+            lmr_researches=self.lmr_researches,
+            lmr_fail_lows=self.lmr_fail_lows,
+            lmr_fail_highs=self.lmr_fail_highs,
+            lmr_cutoffs=self.lmr_cutoffs,
         )

@@ -69,8 +69,13 @@ def run_benchmark(
     time_limit: float | None,
     enable_history: bool = True,
     enable_pvs: bool = True,
+    enable_aspiration: bool = True,
 ) -> dict[str, Any]:
-    engine = JanusSearch(enable_history=enable_history, enable_pvs=enable_pvs)
+    engine = JanusSearch(
+        enable_history=enable_history,
+        enable_pvs=enable_pvs,
+        enable_aspiration=enable_aspiration,
+    )
     rows: list[dict[str, Any]] = []
     for position in positions:
         board = chess.Board(position["fen"])
@@ -101,6 +106,11 @@ def run_benchmark(
             "scout_fail_highs": result.scout_fail_highs,
             "researches": result.researches,
             "beta_cutoffs": result.beta_cutoffs,
+            "aspiration_iterations": result.aspiration_iterations,
+            "aspiration_fail_lows": result.aspiration_fail_lows,
+            "aspiration_fail_highs": result.aspiration_fail_highs,
+            "aspiration_researches": result.aspiration_researches,
+            "aspiration_fallbacks": result.aspiration_fallbacks,
         })
 
     return {
@@ -115,6 +125,8 @@ def run_benchmark(
             "time_limit_seconds": time_limit,
             "history_heuristic_enabled": enable_history,
             "pvs_enabled": enable_pvs,
+            "aspiration_windows_enabled": enable_aspiration,
+            "aspiration_initial_delta": 35,
             "transposition_table_policy": "cleared before each position (cold start)",
             "score_convention": "score_from_side_to_move is from the side-to-move perspective; mate scores remain encoded near +/-100000",
         },
@@ -130,6 +142,11 @@ def run_benchmark(
             "total_scout_fail_highs": sum(row["scout_fail_highs"] for row in rows),
             "total_researches": sum(row["researches"] for row in rows),
             "total_beta_cutoffs": sum(row["beta_cutoffs"] for row in rows),
+            "total_aspiration_iterations": sum(row["aspiration_iterations"] for row in rows),
+            "total_aspiration_fail_lows": sum(row["aspiration_fail_lows"] for row in rows),
+            "total_aspiration_fail_highs": sum(row["aspiration_fail_highs"] for row in rows),
+            "total_aspiration_researches": sum(row["aspiration_researches"] for row in rows),
+            "total_aspiration_fallbacks": sum(row["aspiration_fallbacks"] for row in rows),
         },
         "results": rows,
     }
@@ -155,6 +172,8 @@ def main() -> int:
                         help="Disable quiet-move history heuristic")
     parser.add_argument("--no-pvs", action="store_true",
                         help="Disable Principal Variation Search (use standard alpha-beta)")
+    parser.add_argument("--no-aspiration", action="store_true",
+                        help="Disable aspiration windows (use full-window search)")
     parser.add_argument("--out", type=Path, default=ROOT / "benchmark-results")
     args = parser.parse_args()
 
@@ -171,6 +190,7 @@ def main() -> int:
             args.time_limit,
             enable_history=not args.no_history,
             enable_pvs=not args.no_pvs,
+            enable_aspiration=not args.no_aspiration,
         )
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         print(f"Benchmark error: {exc}", file=sys.stderr)

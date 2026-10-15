@@ -47,6 +47,11 @@ class SearchResult:
     scout_fail_highs: int = 0
     researches: int = 0
     beta_cutoffs: int = 0
+    aspiration_iterations: int = 0
+    aspiration_fail_lows: int = 0
+    aspiration_fail_highs: int = 0
+    aspiration_researches: int = 0
+    aspiration_fallbacks: int = 0
 
 
 class SearchTimeout(Exception):
@@ -61,6 +66,9 @@ class JanusSearch:
         max_killers_ply: int = 64,
         enable_history: bool = True,
         enable_pvs: bool = True,
+        enable_aspiration: bool = True,
+        aspiration_delta: int = 35,
+        max_aspiration_retries: int = 3,
     ) -> None:
         self.tt: dict[int, TTEntry] = {}
         self.tt_max_entries = tt_max_entries
@@ -68,6 +76,9 @@ class JanusSearch:
         self.max_killers_ply = max_killers_ply
         self.enable_history = enable_history
         self.enable_pvs = enable_pvs
+        self.enable_aspiration = enable_aspiration
+        self.aspiration_delta = aspiration_delta
+        self.max_aspiration_retries = max_aspiration_retries
         self.killers: list[list[Optional[chess.Move]]] = [
             [None, None] for _ in range(self.max_killers_ply)
         ]
@@ -77,6 +88,11 @@ class JanusSearch:
         self.scout_fail_highs = 0
         self.researches = 0
         self.beta_cutoffs = 0
+        self.aspiration_iterations = 0
+        self.aspiration_fail_lows = 0
+        self.aspiration_fail_highs = 0
+        self.aspiration_researches = 0
+        self.aspiration_fallbacks = 0
         self.deadline: Optional[float] = None
         self.stop_event: Optional[threading.Event] = None
 
@@ -415,6 +431,11 @@ class JanusSearch:
         self.scout_fail_highs = 0
         self.researches = 0
         self.beta_cutoffs = 0
+        self.aspiration_iterations = 0
+        self.aspiration_fail_lows = 0
+        self.aspiration_fail_highs = 0
+        self.aspiration_researches = 0
+        self.aspiration_fallbacks = 0
         self.killers = [[None, None] for _ in range(self.max_killers_ply)]
         self.history = [[0] * 64 for _ in range(64)]
 
@@ -425,6 +446,7 @@ class JanusSearch:
                 None, score, 0, 0, [],
                 time.monotonic() - start,
                 0, 0, 0, 0,
+                0, 0, 0, 0, 0,
             )
 
         best_move = legal_moves[0]
@@ -433,10 +455,54 @@ class JanusSearch:
         completed_depth = 0
 
         for depth in range(1, max_depth + 1):
-            try:
-                score, pv = self._negamax(board, depth, -INF, INF, 0)
-            except SearchTimeout:
-                break
+            use_aspiration = (
+                self.enable_aspiration
+                and depth >= 2
+                and abs(best_score) < MATE_THRESHOLD
+            )
+
+            if not use_aspiration:
+                try:
+                    score, pv = self._negamax(board, depth, -INF, INF, 0)
+                except SearchTimeout:
+                    break
+            else:
+                self.aspiration_iterations += 1
+                cur_delta = self.aspiration_delta
+                alpha = max(-INF, best_score - cur_delta)
+                beta = min(INF, best_score + cur_delta)
+                retries = 0
+
+                try:
+                    while True:
+                        score, pv = self._negamax(board, depth, alpha, beta, 0)
+
+                        if score <= alpha:
+                            self.aspiration_fail_lows += 1
+                            self.aspiration_researches += 1
+                            retries += 1
+                            if retries >= self.max_aspiration_retries or alpha <= -MATE_THRESHOLD:
+                                alpha = -INF
+                                beta = INF
+                                self.aspiration_fallbacks += 1
+                            else:
+                                cur_delta *= 2
+                                alpha = max(-INF, best_score - cur_delta)
+                        elif score >= beta:
+                            self.aspiration_fail_highs += 1
+                            self.aspiration_researches += 1
+                            retries += 1
+                            if retries >= self.max_aspiration_retries or beta >= MATE_THRESHOLD:
+                                alpha = -INF
+                                beta = INF
+                                self.aspiration_fallbacks += 1
+                            else:
+                                cur_delta *= 2
+                                beta = min(INF, best_score + cur_delta)
+                        else:
+                            break
+                except SearchTimeout:
+                    break
 
             # Only publish results from fully completed iterations.
             if pv:
@@ -456,4 +522,9 @@ class JanusSearch:
             scout_fail_highs=self.scout_fail_highs,
             researches=self.researches,
             beta_cutoffs=self.beta_cutoffs,
+            aspiration_iterations=self.aspiration_iterations,
+            aspiration_fail_lows=self.aspiration_fail_lows,
+            aspiration_fail_highs=self.aspiration_fail_highs,
+            aspiration_researches=self.aspiration_researches,
+            aspiration_fallbacks=self.aspiration_fallbacks,
         )

@@ -71,12 +71,14 @@ def run_benchmark(
     enable_pvs: bool = True,
     enable_aspiration: bool = True,
     enable_lmr: bool = True,
+    enable_nmp: bool = True,
 ) -> dict[str, Any]:
     engine = JanusSearch(
         enable_history=enable_history,
         enable_pvs=enable_pvs,
         enable_aspiration=enable_aspiration,
         enable_lmr=enable_lmr,
+        enable_nmp=enable_nmp,
     )
     rows: list[dict[str, Any]] = []
     for position in positions:
@@ -120,6 +122,13 @@ def run_benchmark(
             "lmr_fail_lows": result.lmr_fail_lows,
             "lmr_fail_highs": result.lmr_fail_highs,
             "lmr_cutoffs": result.lmr_cutoffs,
+            "nmp_considered": result.nmp_considered,
+            "nmp_attempts": result.nmp_attempts,
+            "nmp_fail_highs": result.nmp_fail_highs,
+            "nmp_fail_lows": result.nmp_fail_lows,
+            "nmp_verifications": result.nmp_verifications,
+            "nmp_verification_failures": result.nmp_verification_failures,
+            "nmp_cutoffs": result.nmp_cutoffs,
         })
 
     return {
@@ -137,6 +146,9 @@ def run_benchmark(
             "aspiration_windows_enabled": enable_aspiration,
             "aspiration_initial_delta": 35,
             "lmr_enabled": enable_lmr,
+            "nmp_enabled": enable_nmp,
+            "nmp_reduction": 2,
+            "nmp_verification_enabled": True,
             "transposition_table_policy": "cleared before each position (cold start)",
             "score_convention": "score_from_side_to_move is from the side-to-move perspective; mate scores remain encoded near +/-100000",
         },
@@ -164,6 +176,13 @@ def run_benchmark(
             "total_lmr_fail_lows": sum(row["lmr_fail_lows"] for row in rows),
             "total_lmr_fail_highs": sum(row["lmr_fail_highs"] for row in rows),
             "total_lmr_cutoffs": sum(row["lmr_cutoffs"] for row in rows),
+            "total_nmp_considered": sum(row["nmp_considered"] for row in rows),
+            "total_nmp_attempts": sum(row["nmp_attempts"] for row in rows),
+            "total_nmp_fail_highs": sum(row["nmp_fail_highs"] for row in rows),
+            "total_nmp_fail_lows": sum(row["nmp_fail_lows"] for row in rows),
+            "total_nmp_verifications": sum(row["nmp_verifications"] for row in rows),
+            "total_nmp_verification_failures": sum(row["nmp_verification_failures"] for row in rows),
+            "total_nmp_cutoffs": sum(row["nmp_cutoffs"] for row in rows),
         },
         "results": rows,
     }
@@ -193,6 +212,8 @@ def main() -> int:
                         help="Disable aspiration windows (use full-window search)")
     parser.add_argument("--no-lmr", action="store_true",
                         help="Disable Late Move Reductions")
+    parser.add_argument("--no-nmp", action="store_true",
+                        help="Disable Null Move Pruning")
     parser.add_argument("--out", type=Path, default=ROOT / "benchmark-results")
     args = parser.parse_args()
 
@@ -211,6 +232,7 @@ def main() -> int:
             enable_pvs=not args.no_pvs,
             enable_aspiration=not args.no_aspiration,
             enable_lmr=not args.no_lmr,
+            enable_nmp=not args.no_nmp,
         )
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         print(f"Benchmark error: {exc}", file=sys.stderr)

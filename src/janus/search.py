@@ -59,6 +59,13 @@ class SearchResult:
     lmr_fail_lows: int = 0
     lmr_fail_highs: int = 0
     lmr_cutoffs: int = 0
+    nmp_considered: int = 0
+    nmp_attempts: int = 0
+    nmp_fail_highs: int = 0
+    nmp_fail_lows: int = 0
+    nmp_verifications: int = 0
+    nmp_verification_failures: int = 0
+    nmp_cutoffs: int = 0
 
 
 class SearchTimeout(Exception):
@@ -77,6 +84,10 @@ class JanusSearch:
         aspiration_delta: int = 35,
         max_aspiration_retries: int = 3,
         enable_lmr: bool = True,
+        enable_nmp: bool = True,
+        nmp_reduction: int = 2,
+        enable_nmp_verification: bool = True,
+        nmp_verify_min_depth: int = 5,
     ) -> None:
         self.tt: dict[int, TTEntry] = {}
         self.tt_max_entries = tt_max_entries
@@ -88,6 +99,10 @@ class JanusSearch:
         self.aspiration_delta = aspiration_delta
         self.max_aspiration_retries = max_aspiration_retries
         self.enable_lmr = enable_lmr
+        self.enable_nmp = enable_nmp
+        self.nmp_reduction = nmp_reduction
+        self.enable_nmp_verification = enable_nmp_verification
+        self.nmp_verify_min_depth = nmp_verify_min_depth
         self.killers: list[list[Optional[chess.Move]]] = [
             [None, None] for _ in range(self.max_killers_ply)
         ]
@@ -109,6 +124,13 @@ class JanusSearch:
         self.lmr_fail_lows = 0
         self.lmr_fail_highs = 0
         self.lmr_cutoffs = 0
+        self.nmp_considered = 0
+        self.nmp_attempts = 0
+        self.nmp_fail_highs = 0
+        self.nmp_fail_lows = 0
+        self.nmp_verifications = 0
+        self.nmp_verification_failures = 0
+        self.nmp_cutoffs = 0
         self.deadline: Optional[float] = None
         self.stop_event: Optional[threading.Event] = None
 
@@ -145,6 +167,44 @@ class JanusSearch:
         if score <= -MATE_THRESHOLD:
             return score + ply
         return score
+
+    def _has_nmp_material(self, board: chess.Board) -> bool:
+        """Verify the side to move has sufficient non-pawn material to reduce zugzwang risk.
+
+        Excludes:
+        - Pawn-only endgames (K+P vs ...)
+        - Single minor piece endgames (K+N or K+B vs ...)
+
+        Requires at least 1 Queen, 1 Rook, or >= 2 minor pieces (Knights/Bishops).
+        """
+        side = board.turn
+        knights = len(board.pieces(chess.KNIGHT, side))
+        bishops = len(board.pieces(chess.BISHOP, side))
+        rooks = len(board.pieces(chess.ROOK, side))
+        queens = len(board.pieces(chess.QUEEN, side))
+        return queens >= 1 or rooks >= 1 or (knights + bishops >= 2)
+
+    def _should_verify_nmp(self, board: chess.Board, depth: int) -> bool:
+        """Determine whether a candidate NMP fail-high requires a verification search."""
+        if not self.enable_nmp_verification:
+            return False
+        if depth >= self.nmp_verify_min_depth:
+            return True
+        side = board.turn
+        opp = not side
+        side_pieces = (
+            len(board.pieces(chess.KNIGHT, side))
+            + len(board.pieces(chess.BISHOP, side))
+            + len(board.pieces(chess.ROOK, side))
+            + len(board.pieces(chess.QUEEN, side))
+        )
+        opp_pieces = (
+            len(board.pieces(chess.KNIGHT, opp))
+            + len(board.pieces(chess.BISHOP, opp))
+            + len(board.pieces(chess.ROOK, opp))
+            + len(board.pieces(chess.QUEEN, opp))
+        )
+        return side_pieces <= 2 or opp_pieces <= 1
 
     def _check_stop(self) -> None:
         if self.stop_event is not None and self.stop_event.is_set():
@@ -314,7 +374,13 @@ class JanusSearch:
         return alpha
 
     def _negamax(
-        self, board: chess.Board, depth: int, alpha: int, beta: int, ply: int
+        self,
+        board: chess.Board,
+        depth: int,
+        alpha: int,
+        beta: int,
+        ply: int,
+        allow_nmp: bool = True,
     ) -> tuple[int, list[chess.Move]]:
         self.nodes += 1
         self._check_stop()
@@ -356,17 +422,70 @@ class JanusSearch:
                     if alpha >= beta:
                         return tt_score, ([] if tt_move is None else [tt_move])
 
+        in_check = board.is_check()
+
+        # Conservative Null Move Pruning (NMP)
+        if (
+            self.enable_nmp
+            and allow_nmp
+            and ply > 0
+            and depth >= 3
+            and not in_check
+            and abs(beta) < MATE_THRESHOLD
+            and board.halfmove_clock < 140
+            and not (len(board.move_stack) > 0 and board.peek() == chess.Move.null())
+            and self._has_nmp_material(board)
+        ):
+            self.nmp_considered += 1
+            self.nmp_attempts += 1
+            reduced_depth = max(0, depth - 1 - self.nmp_reduction)
+
+            board.push(chess.Move.null())
+            try:
+                child_score, _ = self._negamax(
+                    board, reduced_depth, -beta, -beta + 1, ply + 1, allow_nmp=False
+                )
+                null_score = -child_score
+            finally:
+                board.pop()
+
+            if null_score >= beta:
+                self.nmp_fail_highs += 1
+                verify_cutoff = True
+                if self._should_verify_nmp(board, depth):
+                    self.nmp_verifications += 1
+                    v_depth = max(1, depth - self.nmp_reduction)
+                    v_score, _ = self._negamax(
+                        board, v_depth, beta - 1, beta, ply, allow_nmp=False
+                    )
+                    if v_score < beta:
+                        self.nmp_verification_failures += 1
+                        verify_cutoff = False
+
+                if verify_cutoff:
+                    self.nmp_cutoffs += 1
+                    if len(self.tt) >= self.tt_max_entries:
+                        self.tt.clear()
+                    self.tt[key] = TTEntry(
+                        depth=depth,
+                        score=self._score_to_tt(beta, ply),
+                        flag="lower",
+                        best_move=tt_move,
+                    )
+                    return beta, []
+            else:
+                self.nmp_fail_lows += 1
+
         best_score = -INF
         best_move = None
         best_pv: list[chess.Move] = []
 
         moves = self._ordered_moves(board, tt_move, ply)
         if not moves:
-            if board.is_check():
+            if in_check:
                 return -MATE_SCORE + ply, []
             return 0, []
 
-        in_check = board.is_check()
         moves_searched = 0
 
         for move in moves:
@@ -527,6 +646,13 @@ class JanusSearch:
         self.lmr_fail_lows = 0
         self.lmr_fail_highs = 0
         self.lmr_cutoffs = 0
+        self.nmp_considered = 0
+        self.nmp_attempts = 0
+        self.nmp_fail_highs = 0
+        self.nmp_fail_lows = 0
+        self.nmp_verifications = 0
+        self.nmp_verification_failures = 0
+        self.nmp_cutoffs = 0
         self.killers = [[None, None] for _ in range(self.max_killers_ply)]
         self.history = [[0] * 64 for _ in range(64)]
 
@@ -534,10 +660,12 @@ class JanusSearch:
         if not legal_moves:
             score = -MATE_SCORE if board.is_check() else 0
             return SearchResult(
-                None, score, 0, 0, [],
-                time.monotonic() - start,
-                0, 0, 0, 0,
-                0, 0, 0, 0, 0,
+                best_move=None,
+                score=score,
+                depth=0,
+                nodes=0,
+                pv=[],
+                elapsed=time.monotonic() - start,
             )
 
         best_move = legal_moves[0]
@@ -625,4 +753,11 @@ class JanusSearch:
             lmr_fail_lows=self.lmr_fail_lows,
             lmr_fail_highs=self.lmr_fail_highs,
             lmr_cutoffs=self.lmr_cutoffs,
+            nmp_considered=self.nmp_considered,
+            nmp_attempts=self.nmp_attempts,
+            nmp_fail_highs=self.nmp_fail_highs,
+            nmp_fail_lows=self.nmp_fail_lows,
+            nmp_verifications=self.nmp_verifications,
+            nmp_verification_failures=self.nmp_verification_failures,
+            nmp_cutoffs=self.nmp_cutoffs,
         )

@@ -237,5 +237,165 @@ class CheckExtensionsTests(unittest.TestCase):
                 proc.stderr.close()
 
 
+    def test_17_policies_independent_selection(self):
+        """All three extension policies can be configured independently, with strict validation."""
+        e_dis = JanusSearch(check_extension_policy="disabled")
+        self.assertEqual(e_dis.check_extension_policy, "disabled")
+        self.assertFalse(e_dis.enable_check_extensions)
+
+        e_all = JanusSearch(check_extension_policy="bounded_all_checks")
+        self.assertEqual(e_all.check_extension_policy, "bounded_all_checks")
+        self.assertTrue(e_all.enable_check_extensions)
+
+        e_sgl = JanusSearch(check_extension_policy="single_reply")
+        self.assertEqual(e_sgl.check_extension_policy, "single_reply")
+        self.assertTrue(e_sgl.enable_check_extensions)
+
+        with self.assertRaises(ValueError):
+            JanusSearch(check_extension_policy="invalid_policy")
+
+        # Backward compatibility with legacy enable_check_extensions flag
+        e_leg_on = JanusSearch(enable_check_extensions=True)
+        self.assertEqual(e_leg_on.check_extension_policy, "bounded_all_checks")
+        self.assertTrue(e_leg_on.enable_check_extensions)
+
+        e_leg_off = JanusSearch(enable_check_extensions=False)
+        self.assertEqual(e_leg_off.check_extension_policy, "disabled")
+        self.assertFalse(e_leg_off.enable_check_extensions)
+
+    def test_18_single_reply_extends_forced_single_evasion(self):
+        """single_reply extends an eligible in-check node when there is exactly 1 legal evasion."""
+        # White King on h1 in check from Black Rook on e1.
+        # Pawns on g2 and h3. Only legal move for White is Kh1-h2 (h1h2).
+        board = chess.Board("8/8/8/8/8/7P/6P1/4r2K w - - 0 1")
+        self.assertTrue(board.is_check())
+        legal_evasions = list(board.legal_moves)
+        self.assertEqual(len(legal_evasions), 1)
+        self.assertEqual(legal_evasions[0], chess.Move.from_uci("h1h2"))
+
+        engine_sgl = JanusSearch(check_extension_policy="single_reply")
+        res_sgl = engine_sgl.search(board, max_depth=1)
+        self.assertGreaterEqual(res_sgl.check_extensions_eligible, 1)
+        self.assertEqual(res_sgl.check_extensions_applied, 1)
+        self.assertEqual(res_sgl.check_extension_plies, 1)
+        self.assertEqual(res_sgl.check_extensions_multiple_replies, 0)
+        self.assertEqual(res_sgl.best_move, chess.Move.from_uci("h1h2"))
+
+        # In disabled mode, 0 extensions applied
+        engine_dis = JanusSearch(check_extension_policy="disabled")
+        res_dis = engine_dis.search(board, max_depth=1)
+        self.assertEqual(res_dis.check_extensions_applied, 0)
+        self.assertEqual(res_dis.check_extension_plies, 0)
+
+        # In bounded_all_checks mode, 1 extension applied
+        engine_all = JanusSearch(check_extension_policy="bounded_all_checks")
+        res_all = engine_all.search(board, max_depth=1)
+        self.assertEqual(res_all.check_extensions_applied, 1)
+        self.assertEqual(res_all.best_move, chess.Move.from_uci("h1h2"))
+
+    def test_19_single_reply_rejects_multiple_evasions(self):
+        """single_reply does NOT extend an in-check node when multiple legal evasions exist."""
+        # White is in check from Black bishop on b4; White has 5 legal evasions (c3, Nc3, Nd2, Bd2, Qd2).
+        board = chess.Board("rnbqk1nr/pppp1ppp/8/4p3/1b1P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3")
+        self.assertTrue(board.is_check())
+        self.assertGreater(len(list(board.legal_moves)), 1)
+
+        engine_sgl = JanusSearch(check_extension_policy="single_reply")
+        res_sgl = engine_sgl.search(board, max_depth=1)
+        # Root is checked with depth 1: multiple replies => rejected by single_reply policy
+        self.assertGreaterEqual(res_sgl.check_extensions_eligible, 1)
+        self.assertGreaterEqual(res_sgl.check_extensions_multiple_replies, 1)
+        self.assertEqual(res_sgl.check_extensions_applied, 0)
+
+        # bounded_all_checks extends despite multiple evasions
+        engine_all = JanusSearch(check_extension_policy="bounded_all_checks")
+        res_all = engine_all.search(board, max_depth=1)
+        self.assertGreaterEqual(res_all.check_extensions_eligible, 1)
+        self.assertEqual(res_all.check_extensions_applied, 1)
+
+    def test_20_single_reply_terminal_checkmate_no_extension(self):
+        """Checkmate positions with zero legal evasions receive no continuation extension."""
+        # Black is checkmated (Scholar's mate)
+        board_mate = chess.Board("r1bqkb1r/pppp1Qpp/2n5/4p3/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 0 4")
+        self.assertTrue(board_mate.is_check())
+        self.assertEqual(len(list(board_mate.legal_moves)), 0)
+
+        engine_sgl = JanusSearch(check_extension_policy="single_reply")
+        res_sgl = engine_sgl.search(board_mate, max_depth=2)
+        self.assertEqual(res_sgl.check_extensions_applied, 0)
+        self.assertEqual(res_sgl.score, -MATE_SCORE)
+        self.assertIsNone(res_sgl.best_move)
+
+    def test_21_single_reply_budget_enforcement(self):
+        """single_reply honors the max_check_extensions path budget."""
+        # Position with potential consecutive forced replies
+        board = chess.Board("8/8/8/8/8/7P/6P1/4r2K w - - 0 1")
+        engine_budget1 = JanusSearch(check_extension_policy="single_reply", max_check_extensions=1)
+        res_budget1 = engine_budget1.search(board, max_depth=3)
+        self.assertLessEqual(res_budget1.check_extension_plies, res_budget1.check_extensions_eligible)
+
+    def test_22_search_correctness_and_board_restoration_all_policies(self):
+        """All three policies ensure legal PVs and exact board restoration."""
+        fens = [
+            "rnbqk1nr/pppp1ppp/8/4p3/1b1P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3",
+            "8/8/8/8/8/7P/6P1/4r2K w - - 0 1",
+            "r1b1k2r/pppp1ppp/2n5/4p3/2B1P1nq/3P4/PPP2PPP/RNBQK2R w KQkq - 1 7",
+        ]
+        for policy in ("disabled", "bounded_all_checks", "single_reply"):
+            engine = JanusSearch(check_extension_policy=policy)
+            for fen in fens:
+                board = chess.Board(fen)
+                res = engine.search(board, max_depth=3)
+                self.assertEqual(board.fen(), fen, f"Board modified under policy {policy} for {fen}")
+                if res.best_move is not None:
+                    self.assertIn(res.best_move, board.legal_moves)
+                # Verify entire PV
+                v_board = board.copy()
+                for move in res.pv:
+                    self.assertIn(move, v_board.legal_moves)
+                    v_board.push(move)
+
+    def test_23_single_reply_pvs_aspiration_tt_coherence(self):
+        """single_reply policy functions coherently with PVS and aspiration windows."""
+        board = chess.Board("rnbqk1nr/pppp1ppp/8/4p3/1b1P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3")
+        engine_full = JanusSearch(
+            check_extension_policy="single_reply",
+            enable_pvs=True,
+            enable_aspiration=True,
+        )
+        res_full = engine_full.search(board, max_depth=3)
+
+        engine_basic = JanusSearch(
+            check_extension_policy="single_reply",
+            enable_pvs=False,
+            enable_aspiration=False,
+        )
+        res_basic = engine_basic.search(board, max_depth=3)
+
+        self.assertEqual(res_full.best_move, res_basic.best_move)
+        self.assertEqual(res_full.score, res_basic.score)
+
+    def test_24_mate_distance_and_scoring_single_reply(self):
+        """Mate scores and distances remain exact in single_reply mode."""
+        # Scholar's mate setup: White has 1-move mate Qxf7#
+        board = chess.Board("r1bqkb1r/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1")
+        engine = JanusSearch(check_extension_policy="single_reply")
+        res = engine.search(board, max_depth=3)
+        self.assertGreaterEqual(res.score, MATE_THRESHOLD)
+        self.assertEqual(res.best_move, chess.Move.from_uci("h5f7"))
+
+    def test_25_tactical_and_endgame_positions(self):
+        """Tactical combinations and king-pawn endings evaluate cleanly across policies."""
+        # Zugzwang / KP endgame position
+        fen_kp = "8/8/p1p5/1p5p/1P5p/8/PPP2k1p/4K1br w - - 0 1"
+        for policy in ("disabled", "bounded_all_checks", "single_reply"):
+            board = chess.Board(fen_kp)
+            engine = JanusSearch(check_extension_policy=policy)
+            res = engine.search(board, max_depth=3)
+            self.assertIsNotNone(res.best_move)
+            self.assertIn(res.best_move, board.legal_moves)
+            self.assertEqual(board.fen(), fen_kp)
+
+
 if __name__ == "__main__":
     unittest.main()

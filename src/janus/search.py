@@ -70,7 +70,9 @@ class SearchResult:
     check_extensions_applied: int = 0
     check_extension_plies: int = 0
     check_extensions_suppressed: int = 0
+    check_extensions_multiple_replies: int = 0
     check_extensions_terminal_mates: int = 0
+    check_extension_policy: str = "disabled"
 
 
 class SearchTimeout(Exception):
@@ -93,7 +95,8 @@ class JanusSearch:
         nmp_reduction: int = 2,
         enable_nmp_verification: bool = True,
         nmp_verify_min_depth: int = 5,
-        enable_check_extensions: bool = False,
+        check_extension_policy: str = "disabled",
+        enable_check_extensions: Optional[bool] = None,
         max_check_extensions: int = 2,
     ) -> None:
         self.tt: dict[int, TTEntry] = {}
@@ -110,7 +113,25 @@ class JanusSearch:
         self.nmp_reduction = nmp_reduction
         self.enable_nmp_verification = enable_nmp_verification
         self.nmp_verify_min_depth = nmp_verify_min_depth
-        self.enable_check_extensions = enable_check_extensions
+
+        valid_policies = ("disabled", "bounded_all_checks", "single_reply")
+        if check_extension_policy not in valid_policies:
+            raise ValueError(
+                f"Unknown check extension policy {check_extension_policy!r}. "
+                f"Valid options: {valid_policies}"
+            )
+        if enable_check_extensions is not None:
+            if enable_check_extensions:
+                self.check_extension_policy = (
+                    "bounded_all_checks"
+                    if check_extension_policy == "disabled"
+                    else check_extension_policy
+                )
+            else:
+                self.check_extension_policy = "disabled"
+        else:
+            self.check_extension_policy = check_extension_policy
+        self.enable_check_extensions = (self.check_extension_policy != "disabled")
         self.max_check_extensions = max_check_extensions
         self._extensions_at_ply: list[int] = [0] * 256
         self.killers: list[list[Optional[chess.Move]]] = [
@@ -145,6 +166,7 @@ class JanusSearch:
         self.check_extensions_applied = 0
         self.check_extension_plies = 0
         self.check_extensions_suppressed = 0
+        self.check_extensions_multiple_replies = 0
         self.check_extensions_terminal_mates = 0
         self.deadline: Optional[float] = None
         self.stop_event: Optional[threading.Event] = None
@@ -415,13 +437,13 @@ class JanusSearch:
 
         in_check = board.is_check()
 
-        # Bounded Check Extensions
+        # Check Extensions
         extension = 0
         current_ext = self._extensions_at_ply[ply] if ply < len(self._extensions_at_ply) else 0
         next_extensions = current_ext
         if in_check and depth > 0:
             self.check_extensions_eligible += 1
-            if self.enable_check_extensions:
+            if self.check_extension_policy == "bounded_all_checks":
                 if current_ext < self.max_check_extensions:
                     extension = 1
                     self.check_extensions_applied += 1
@@ -429,6 +451,26 @@ class JanusSearch:
                     next_extensions = current_ext + 1
                 else:
                     self.check_extensions_suppressed += 1
+            elif self.check_extension_policy == "single_reply":
+                legal_gen = board.generate_legal_moves()
+                first_evasion = next(legal_gen, None)
+                if first_evasion is None:
+                    # Terminal / checkmate - do not grant continuation extension
+                    pass
+                else:
+                    second_evasion = next(legal_gen, None)
+                    if second_evasion is not None:
+                        # Multiple legal replies: rejected by single_reply policy
+                        self.check_extensions_multiple_replies += 1
+                    else:
+                        # Exactly one legal reply
+                        if current_ext < self.max_check_extensions:
+                            extension = 1
+                            self.check_extensions_applied += 1
+                            self.check_extension_plies += 1
+                            next_extensions = current_ext + 1
+                        else:
+                            self.check_extensions_suppressed += 1
 
         effective_depth = depth + extension
         if ply + 1 < len(self._extensions_at_ply):
@@ -693,6 +735,7 @@ class JanusSearch:
         self.check_extensions_applied = 0
         self.check_extension_plies = 0
         self.check_extensions_suppressed = 0
+        self.check_extensions_multiple_replies = 0
         self.check_extensions_terminal_mates = 0
         self._extensions_at_ply = [0] * 256
         self.killers = [[None, None] for _ in range(self.max_killers_ply)]
@@ -708,6 +751,7 @@ class JanusSearch:
                 nodes=0,
                 pv=[],
                 elapsed=time.monotonic() - start,
+                check_extension_policy=self.check_extension_policy,
             )
 
         best_move = legal_moves[0]
@@ -806,5 +850,7 @@ class JanusSearch:
             check_extensions_applied=self.check_extensions_applied,
             check_extension_plies=self.check_extension_plies,
             check_extensions_suppressed=self.check_extensions_suppressed,
+            check_extensions_multiple_replies=self.check_extensions_multiple_replies,
             check_extensions_terminal_mates=self.check_extensions_terminal_mates,
+            check_extension_policy=self.check_extension_policy,
         )

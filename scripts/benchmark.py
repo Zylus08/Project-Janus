@@ -72,15 +72,22 @@ def run_benchmark(
     enable_aspiration: bool = True,
     enable_lmr: bool = True,
     enable_nmp: bool = True,
-    enable_check_extensions: bool = True,
+    enable_check_extensions: bool | None = None,
+    check_extension_policy: str = "bounded_all_checks",
 ) -> dict[str, Any]:
+    if enable_check_extensions is not None:
+        if not enable_check_extensions:
+            check_extension_policy = "disabled"
+        elif check_extension_policy == "disabled":
+            check_extension_policy = "bounded_all_checks"
+
     engine = JanusSearch(
         enable_history=enable_history,
         enable_pvs=enable_pvs,
         enable_aspiration=enable_aspiration,
         enable_lmr=enable_lmr,
         enable_nmp=enable_nmp,
-        enable_check_extensions=enable_check_extensions,
+        check_extension_policy=check_extension_policy,
     )
     rows: list[dict[str, Any]] = []
     for position in positions:
@@ -135,13 +142,14 @@ def run_benchmark(
             "check_extensions_applied": result.check_extensions_applied,
             "check_extension_plies": result.check_extension_plies,
             "check_extensions_suppressed": result.check_extensions_suppressed,
+            "check_extensions_multiple_replies": result.check_extensions_multiple_replies,
             "check_extensions_terminal_mates": result.check_extensions_terminal_mates,
         })
 
     return {
         "metadata": {
             "engine": "Project Janus",
-            "engine_version": "0.2.0",
+            "engine_version": "0.2.1",
             "git_commit": git_commit(),
             "timestamp_utc": datetime.now(timezone.utc).isoformat(),
             "python_version": platform.python_version(),
@@ -156,7 +164,8 @@ def run_benchmark(
             "nmp_enabled": enable_nmp,
             "nmp_reduction": 2,
             "nmp_verification_enabled": True,
-            "check_extensions_enabled": enable_check_extensions,
+            "check_extensions_enabled": engine.enable_check_extensions,
+            "check_extension_policy": engine.check_extension_policy,
             "max_check_extensions": 2,
             "transposition_table_policy": "cleared before each position (cold start)",
             "score_convention": "score_from_side_to_move is from the side-to-move perspective; mate scores remain encoded near +/-100000",
@@ -196,6 +205,7 @@ def run_benchmark(
             "total_check_extensions_applied": sum(row["check_extensions_applied"] for row in rows),
             "total_check_extension_plies": sum(row["check_extension_plies"] for row in rows),
             "total_check_extensions_suppressed": sum(row["check_extensions_suppressed"] for row in rows),
+            "total_check_extensions_multiple_replies": sum(row["check_extensions_multiple_replies"] for row in rows),
             "total_check_extensions_terminal_mates": sum(row["check_extensions_terminal_mates"] for row in rows),
         },
         "results": rows,
@@ -228,8 +238,11 @@ def main() -> int:
                         help="Disable Late Move Reductions")
     parser.add_argument("--no-nmp", action="store_true",
                         help="Disable Null Move Pruning")
+    parser.add_argument("--check-extension-policy", type=str, default="bounded_all_checks",
+                        choices=["disabled", "bounded_all_checks", "single_reply"],
+                        help="Check extension policy: disabled, bounded_all_checks, single_reply")
     parser.add_argument("--no-check-extensions", action="store_true",
-                        help="Disable Check Extensions")
+                        help="Disable Check Extensions (equivalent to --check-extension-policy disabled)")
     parser.add_argument("--out", type=Path, default=ROOT / "benchmark-results")
     args = parser.parse_args()
 
@@ -240,6 +253,7 @@ def main() -> int:
 
     try:
         positions = load_positions(args.positions)
+        policy = "disabled" if args.no_check_extensions else args.check_extension_policy
         report = run_benchmark(
             positions,
             args.depth,
@@ -249,7 +263,7 @@ def main() -> int:
             enable_aspiration=not args.no_aspiration,
             enable_lmr=not args.no_lmr,
             enable_nmp=not args.no_nmp,
-            enable_check_extensions=not args.no_check_extensions,
+            check_extension_policy=policy,
         )
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         print(f"Benchmark error: {exc}", file=sys.stderr)

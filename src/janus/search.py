@@ -66,6 +66,11 @@ class SearchResult:
     nmp_verifications: int = 0
     nmp_verification_failures: int = 0
     nmp_cutoffs: int = 0
+    check_extensions_eligible: int = 0
+    check_extensions_applied: int = 0
+    check_extension_plies: int = 0
+    check_extensions_suppressed: int = 0
+    check_extensions_terminal_mates: int = 0
 
 
 class SearchTimeout(Exception):
@@ -88,6 +93,8 @@ class JanusSearch:
         nmp_reduction: int = 2,
         enable_nmp_verification: bool = True,
         nmp_verify_min_depth: int = 5,
+        enable_check_extensions: bool = False,
+        max_check_extensions: int = 2,
     ) -> None:
         self.tt: dict[int, TTEntry] = {}
         self.tt_max_entries = tt_max_entries
@@ -103,6 +110,9 @@ class JanusSearch:
         self.nmp_reduction = nmp_reduction
         self.enable_nmp_verification = enable_nmp_verification
         self.nmp_verify_min_depth = nmp_verify_min_depth
+        self.enable_check_extensions = enable_check_extensions
+        self.max_check_extensions = max_check_extensions
+        self._extensions_at_ply: list[int] = [0] * 256
         self.killers: list[list[Optional[chess.Move]]] = [
             [None, None] for _ in range(self.max_killers_ply)
         ]
@@ -131,6 +141,11 @@ class JanusSearch:
         self.nmp_verifications = 0
         self.nmp_verification_failures = 0
         self.nmp_cutoffs = 0
+        self.check_extensions_eligible = 0
+        self.check_extensions_applied = 0
+        self.check_extension_plies = 0
+        self.check_extensions_suppressed = 0
+        self.check_extensions_terminal_mates = 0
         self.deadline: Optional[float] = None
         self.stop_event: Optional[threading.Event] = None
 
@@ -398,6 +413,27 @@ class JanusSearch:
                 return (-MATE_SCORE + ply if board.is_check() else 0), []
             return self._quiescence(board, alpha, beta, ply), []
 
+        in_check = board.is_check()
+
+        # Bounded Check Extensions
+        extension = 0
+        current_ext = self._extensions_at_ply[ply] if ply < len(self._extensions_at_ply) else 0
+        next_extensions = current_ext
+        if in_check and depth > 0:
+            self.check_extensions_eligible += 1
+            if self.enable_check_extensions:
+                if current_ext < self.max_check_extensions:
+                    extension = 1
+                    self.check_extensions_applied += 1
+                    self.check_extension_plies += 1
+                    next_extensions = current_ext + 1
+                else:
+                    self.check_extensions_suppressed += 1
+
+        effective_depth = depth + extension
+        if ply + 1 < len(self._extensions_at_ply):
+            self._extensions_at_ply[ply + 1] = next_extensions
+
         alpha_original = alpha
         beta_original = beta
         key = self._key(board)
@@ -411,8 +447,8 @@ class JanusSearch:
             # Do not let a cached root entry falsely report a new iteration complete.
             # In addition, near the seventy-five-move draw threshold, non-zero cached scores
             # cannot guarantee that a forced draw won't intervene within the search horizon.
-            if ply > 0 and entry.depth >= depth:
-                if (board.halfmove_clock + depth < 150) or entry.score == 0:
+            if ply > 0 and entry.depth >= effective_depth:
+                if (board.halfmove_clock + effective_depth < 150) or entry.score == 0:
                     if entry.flag == "exact":
                         return tt_score, ([] if tt_move is None else [tt_move])
                     if entry.flag == "lower":
@@ -421,8 +457,6 @@ class JanusSearch:
                         beta = min(beta, tt_score)
                     if alpha >= beta:
                         return tt_score, ([] if tt_move is None else [tt_move])
-
-        in_check = board.is_check()
 
         # Conservative Null Move Pruning (NMP)
         if (
@@ -483,6 +517,8 @@ class JanusSearch:
         moves = self._ordered_moves(board, tt_move, ply)
         if not moves:
             if in_check:
+                if extension > 0:
+                    self.check_extensions_terminal_mates += 1
                 return -MATE_SCORE + ply, []
             return 0, []
 
@@ -513,9 +549,9 @@ class JanusSearch:
                 if eligible_for_lmr:
                     self.lmr_considered += 1
                     reduction = 1
-                    reduced_depth = max(1, depth - 1 - reduction)
+                    reduced_depth = max(1, effective_depth - 1 - reduction)
                     self.lmr_reduced_searches += 1
-                    self.lmr_reduced_plies += (depth - 1 - reduced_depth)
+                    self.lmr_reduced_plies += (effective_depth - 1 - reduced_depth)
 
                     if self.enable_pvs:
                         child_score, child_pv = self._negamax(
@@ -528,7 +564,7 @@ class JanusSearch:
                             self.lmr_researches += 1
                             self.scout_searches += 1
                             child_score, child_pv = self._negamax(
-                                board, depth - 1, -alpha - 1, -alpha, ply + 1
+                                board, effective_depth - 1, -alpha - 1, -alpha, ply + 1
                             )
                             score = -child_score
                             if score > alpha:
@@ -536,7 +572,7 @@ class JanusSearch:
                                 if score < beta:
                                     self.researches += 1
                                     child_score, child_pv = self._negamax(
-                                        board, depth - 1, -beta, -alpha, ply + 1
+                                        board, effective_depth - 1, -beta, -alpha, ply + 1
                                     )
                                     score = -child_score
                         else:
@@ -550,17 +586,17 @@ class JanusSearch:
                             self.lmr_fail_highs += 1
                             self.lmr_researches += 1
                             child_score, child_pv = self._negamax(
-                                board, depth - 1, -beta, -alpha, ply + 1
+                                board, effective_depth - 1, -beta, -alpha, ply + 1
                             )
                             score = -child_score
                         else:
                             self.lmr_fail_lows += 1
 
-                elif self.enable_pvs and moves_searched > 0 and depth >= 2:
+                elif self.enable_pvs and moves_searched > 0 and effective_depth >= 2:
                     # Null-window scout search [-alpha - 1, -alpha]
                     self.scout_searches += 1
                     child_score, child_pv = self._negamax(
-                        board, depth - 1, -alpha - 1, -alpha, ply + 1
+                        board, effective_depth - 1, -alpha - 1, -alpha, ply + 1
                     )
                     score = -child_score
 
@@ -569,13 +605,13 @@ class JanusSearch:
                         if score < beta:
                             self.researches += 1
                             child_score, child_pv = self._negamax(
-                                board, depth - 1, -beta, -alpha, ply + 1
+                                board, effective_depth - 1, -beta, -alpha, ply + 1
                             )
                             score = -child_score
                 else:
                     # Full-window search (first move, shallow depth, or PVS disabled)
                     child_score, child_pv = self._negamax(
-                        board, depth - 1, -beta, -alpha, ply + 1
+                        board, effective_depth - 1, -beta, -alpha, ply + 1
                     )
                     score = -child_score
             finally:
@@ -612,7 +648,7 @@ class JanusSearch:
             flag = "exact"
 
         self.tt[key] = TTEntry(
-            depth=depth,
+            depth=effective_depth,
             score=self._score_to_tt(best_score, ply),
             flag=flag,
             best_move=best_move,
@@ -653,6 +689,12 @@ class JanusSearch:
         self.nmp_verifications = 0
         self.nmp_verification_failures = 0
         self.nmp_cutoffs = 0
+        self.check_extensions_eligible = 0
+        self.check_extensions_applied = 0
+        self.check_extension_plies = 0
+        self.check_extensions_suppressed = 0
+        self.check_extensions_terminal_mates = 0
+        self._extensions_at_ply = [0] * 256
         self.killers = [[None, None] for _ in range(self.max_killers_ply)]
         self.history = [[0] * 64 for _ in range(64)]
 
@@ -760,4 +802,9 @@ class JanusSearch:
             nmp_verifications=self.nmp_verifications,
             nmp_verification_failures=self.nmp_verification_failures,
             nmp_cutoffs=self.nmp_cutoffs,
+            check_extensions_eligible=self.check_extensions_eligible,
+            check_extensions_applied=self.check_extensions_applied,
+            check_extension_plies=self.check_extension_plies,
+            check_extensions_suppressed=self.check_extensions_suppressed,
+            check_extensions_terminal_mates=self.check_extensions_terminal_mates,
         )

@@ -76,6 +76,7 @@ def run_benchmark(
     check_extension_policy: str = "disabled",
     enable_see_ordering: bool = False,
     enable_see_pruning: bool = False,
+    tt_replacement_policy: str = "always_replace",
 ) -> dict[str, Any]:
     if enable_check_extensions is not None:
         if not enable_check_extensions:
@@ -92,6 +93,7 @@ def run_benchmark(
         check_extension_policy=check_extension_policy,
         enable_see_ordering=enable_see_ordering,
         enable_see_pruning=enable_see_pruning,
+        tt_replacement_policy=tt_replacement_policy,
     )
     rows: list[dict[str, Any]] = []
     for position in positions:
@@ -154,12 +156,22 @@ def run_benchmark(
             "qsearch_captures_pruned": result.qsearch_captures_pruned,
             "qsearch_captures_exempted": result.qsearch_captures_exempted,
             "see_cache_hits": result.see_cache_hits,
+            "tt_replacement_policy": result.tt_replacement_policy,
+            "tt_probes": result.tt_probes,
+            "tt_hits": result.tt_hits,
+            "tt_usable_hits": result.tt_usable_hits,
+            "tt_cutoffs": result.tt_cutoffs,
+            "tt_stores": result.tt_stores,
+            "tt_same_key_updates": result.tt_same_key_updates,
+            "tt_same_key_overwrites": result.tt_same_key_overwrites,
+            "tt_same_key_rejected": result.tt_same_key_rejected,
+            "tt_clears": result.tt_clears,
         })
 
     return {
         "metadata": {
             "engine": "Project Janus",
-            "engine_version": "0.2.2",
+            "engine_version": "0.2.3",
             "git_commit": git_commit(),
             "timestamp_utc": datetime.now(timezone.utc).isoformat(),
             "python_version": platform.python_version(),
@@ -179,6 +191,7 @@ def run_benchmark(
             "max_check_extensions": 2,
             "see_ordering_enabled": enable_see_ordering,
             "see_pruning_enabled": enable_see_pruning,
+            "tt_replacement_policy": engine.tt_replacement_policy,
             "transposition_table_policy": "cleared before each position (cold start)",
             "score_convention": "score_from_side_to_move is from the side-to-move perspective; mate scores remain encoded near +/-100000",
         },
@@ -225,6 +238,15 @@ def run_benchmark(
             "total_qsearch_captures_pruned": sum(row["qsearch_captures_pruned"] for row in rows),
             "total_qsearch_captures_exempted": sum(row["qsearch_captures_exempted"] for row in rows),
             "total_see_cache_hits": sum(row["see_cache_hits"] for row in rows),
+            "total_tt_probes": sum(row["tt_probes"] for row in rows),
+            "total_tt_hits": sum(row["tt_hits"] for row in rows),
+            "total_tt_usable_hits": sum(row["tt_usable_hits"] for row in rows),
+            "total_tt_cutoffs": sum(row["tt_cutoffs"] for row in rows),
+            "total_tt_stores": sum(row["tt_stores"] for row in rows),
+            "total_tt_same_key_updates": sum(row["tt_same_key_updates"] for row in rows),
+            "total_tt_same_key_overwrites": sum(row["tt_same_key_overwrites"] for row in rows),
+            "total_tt_same_key_rejected": sum(row["tt_same_key_rejected"] for row in rows),
+            "total_tt_clears": sum(row["tt_clears"] for row in rows),
         },
         "results": rows,
     }
@@ -269,6 +291,9 @@ def main() -> int:
                         help="Enable conservative SEE-based quiescence pruning")
     parser.add_argument("--no-see-pruning", action="store_true", default=False,
                         help="Disable conservative SEE-based quiescence pruning (default)")
+    parser.add_argument("--tt-replacement-policy", type=str, default="always_replace",
+                        choices=["always_replace", "depth_preferred", "two_tier"],
+                        help="TT replacement policy: always_replace (default), depth_preferred, two_tier")
     parser.add_argument("--out", type=Path, default=ROOT / "benchmark-results")
     args = parser.parse_args()
 
@@ -294,6 +319,7 @@ def main() -> int:
             check_extension_policy=policy,
             enable_see_ordering=see_ordering,
             enable_see_pruning=see_pruning,
+            tt_replacement_policy=args.tt_replacement_policy,
         )
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         print(f"Benchmark error: {exc}", file=sys.stderr)

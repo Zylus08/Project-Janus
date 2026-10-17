@@ -36,6 +36,19 @@ class TTEntry:
     best_move: Optional[chess.Move]
 
 
+class TranspositionTable(dict):
+    """Dictionary-compatible transposition table with support for secondary tiers."""
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.secondary: Optional[dict[int, TTEntry]] = None
+
+    def clear(self) -> None:
+        super().clear()
+        if self.secondary is not None:
+            self.secondary.clear()
+
+
 @dataclass
 class SearchResult:
     best_move: Optional[chess.Move]
@@ -82,6 +95,16 @@ class SearchResult:
     qsearch_captures_pruned: int = 0
     qsearch_captures_exempted: int = 0
     see_cache_hits: int = 0
+    tt_replacement_policy: str = "always_replace"
+    tt_probes: int = 0
+    tt_hits: int = 0
+    tt_usable_hits: int = 0
+    tt_cutoffs: int = 0
+    tt_stores: int = 0
+    tt_same_key_updates: int = 0
+    tt_same_key_overwrites: int = 0
+    tt_same_key_rejected: int = 0
+    tt_clears: int = 0
 
 
 class SearchTimeout(Exception):
@@ -109,8 +132,19 @@ class JanusSearch:
         max_check_extensions: int = 2,
         enable_see_ordering: bool = False,
         enable_see_pruning: bool = False,
+        tt_replacement_policy: str = "always_replace",
     ) -> None:
-        self.tt: dict[int, TTEntry] = {}
+        valid_tt_policies = ("always_replace", "depth_preferred", "two_tier")
+        if tt_replacement_policy not in valid_tt_policies:
+            raise ValueError(
+                f"Unknown tt_replacement_policy {tt_replacement_policy!r}. "
+                f"Valid options: {valid_tt_policies}"
+            )
+        self.tt_replacement_policy = tt_replacement_policy
+        self.tt: TranspositionTable = TranspositionTable()
+        self.tt_recent: dict[int, TTEntry] = {}
+        if self.tt_replacement_policy == "two_tier":
+            self.tt.secondary = self.tt_recent
         self.tt_max_entries = tt_max_entries
         self.qsearch_max_ply = qsearch_max_ply
         self.max_killers_ply = max_killers_ply
@@ -187,8 +221,174 @@ class JanusSearch:
         self.qsearch_captures_pruned = 0
         self.qsearch_captures_exempted = 0
         self.see_cache_hits = 0
+        self.tt_probes = 0
+        self.tt_hits = 0
+        self.tt_usable_hits = 0
+        self.tt_cutoffs = 0
+        self.tt_stores = 0
+        self.tt_same_key_updates = 0
+        self.tt_same_key_overwrites = 0
+        self.tt_same_key_rejected = 0
+        self.tt_clears = 0
         self.deadline: Optional[float] = None
         self.stop_event: Optional[threading.Event] = None
+
+    def _probe_tt(
+        self, key: int, effective_depth: int
+    ) -> tuple[Optional[TTEntry], Optional[chess.Move]]:
+        """Probe transposition table according to configured replacement policy."""
+        self.tt_probes += 1
+
+        if self.tt_replacement_policy == "two_tier":
+            entry_deep = self.tt.get(key)
+            entry_recent = self.tt_recent.get(key)
+            if entry_deep is not None and entry_deep.depth >= effective_depth:
+                entry = entry_deep
+            elif entry_recent is not None and entry_recent.depth >= effective_depth:
+                entry = entry_recent
+            else:
+                entry = entry_deep if entry_deep is not None else entry_recent
+            tt_move = (
+                entry_deep.best_move if (entry_deep and entry_deep.best_move)
+                else (entry_recent.best_move if entry_recent else None)
+            )
+        else:
+            entry = self.tt.get(key)
+            tt_move = entry.best_move if entry is not None else None
+
+        if entry is not None:
+            self.tt_hits += 1
+
+        return entry, tt_move
+
+    def _store_tt(
+        self,
+        key: int,
+        depth: int,
+        score: int,
+        flag: str,
+        best_move: Optional[chess.Move],
+        ply: int,
+    ) -> None:
+        """Store search result into transposition table using configured replacement policy."""
+        self.tt_stores += 1
+        tt_score = self._score_to_tt(score, ply)
+
+        if self.tt_replacement_policy == "always_replace":
+            if key in self.tt:
+                self.tt_same_key_updates += 1
+                self.tt_same_key_overwrites += 1
+            if len(self.tt) >= self.tt_max_entries and key not in self.tt:
+                self.tt.clear()
+                self.tt_clears += 1
+            self.tt[key] = TTEntry(
+                depth=depth,
+                score=tt_score,
+                flag=flag,
+                best_move=best_move,
+            )
+
+        elif self.tt_replacement_policy == "depth_preferred":
+            if key in self.tt:
+                self.tt_same_key_updates += 1
+                old = self.tt[key]
+                # Protect deeper entries against shallower updates
+                replace = (depth >= old.depth)
+                if replace:
+                    self.tt_same_key_overwrites += 1
+                    final_move = best_move if best_move is not None else old.best_move
+                    self.tt[key] = TTEntry(
+                        depth=depth,
+                        score=tt_score,
+                        flag=flag,
+                        best_move=final_move,
+                    )
+                else:
+                    self.tt_same_key_rejected += 1
+                    if old.best_move is None and best_move is not None:
+                        old.best_move = best_move
+            else:
+                if len(self.tt) >= self.tt_max_entries:
+                    self.tt.clear()
+                    self.tt_clears += 1
+                self.tt[key] = TTEntry(
+                    depth=depth,
+                    score=tt_score,
+                    flag=flag,
+                    best_move=best_move,
+                )
+
+        elif self.tt_replacement_policy == "two_tier":
+            tier_capacity = max(1, self.tt_max_entries // 2)
+            if key in self.tt:
+                self.tt_same_key_updates += 1
+                old = self.tt[key]
+                replace = (depth >= old.depth)
+                if replace:
+                    self.tt_same_key_overwrites += 1
+                    final_move = best_move if best_move is not None else old.best_move
+                    self.tt[key] = TTEntry(
+                        depth=depth,
+                        score=tt_score,
+                        flag=flag,
+                        best_move=final_move,
+                    )
+                else:
+                    self.tt_same_key_rejected += 1
+                    if old.best_move is None and best_move is not None:
+                        old.best_move = best_move
+                    if len(self.tt_recent) >= tier_capacity and key not in self.tt_recent:
+                        self.tt_recent.clear()
+                        self.tt_clears += 1
+                    self.tt_recent[key] = TTEntry(
+                        depth=depth,
+                        score=tt_score,
+                        flag=flag,
+                        best_move=best_move,
+                    )
+            elif key in self.tt_recent:
+                self.tt_same_key_updates += 1
+                if depth >= 2:
+                    if len(self.tt) >= tier_capacity and key not in self.tt:
+                        self.tt.clear()
+                        self.tt_clears += 1
+                    self.tt_same_key_overwrites += 1
+                    del self.tt_recent[key]
+                    self.tt[key] = TTEntry(
+                        depth=depth,
+                        score=tt_score,
+                        flag=flag,
+                        best_move=best_move,
+                    )
+                else:
+                    self.tt_same_key_overwrites += 1
+                    self.tt_recent[key] = TTEntry(
+                        depth=depth,
+                        score=tt_score,
+                        flag=flag,
+                        best_move=best_move,
+                    )
+            else:
+                if depth >= 2:
+                    if len(self.tt) >= tier_capacity:
+                        self.tt.clear()
+                        self.tt_clears += 1
+                    self.tt[key] = TTEntry(
+                        depth=depth,
+                        score=tt_score,
+                        flag=flag,
+                        best_move=best_move,
+                    )
+                else:
+                    if len(self.tt_recent) >= tier_capacity:
+                        self.tt_recent.clear()
+                        self.tt_clears += 1
+                    self.tt_recent[key] = TTEntry(
+                        depth=depth,
+                        score=tt_score,
+                        flag=flag,
+                        best_move=best_move,
+                    )
 
     def _see(self, board: chess.Board, move: chess.Move) -> int:
         """Evaluate static exchange evaluation with telemetry tracking."""
@@ -518,11 +718,9 @@ class JanusSearch:
         alpha_original = alpha
         beta_original = beta
         key = self._key(board)
-        entry = self.tt.get(key)
-        tt_move = None
+        entry, tt_move = self._probe_tt(key, effective_depth)
 
         if entry is not None:
-            tt_move = entry.best_move
             tt_score = self._score_from_tt(entry.score, ply)
 
             # Do not let a cached root entry falsely report a new iteration complete.
@@ -530,13 +728,16 @@ class JanusSearch:
             # cannot guarantee that a forced draw won't intervene within the search horizon.
             if ply > 0 and entry.depth >= effective_depth:
                 if (board.halfmove_clock + effective_depth < 150) or entry.score == 0:
+                    self.tt_usable_hits += 1
                     if entry.flag == "exact":
+                        self.tt_cutoffs += 1
                         return tt_score, ([] if tt_move is None else [tt_move])
                     if entry.flag == "lower":
                         alpha = max(alpha, tt_score)
                     elif entry.flag == "upper":
                         beta = min(beta, tt_score)
                     if alpha >= beta:
+                        self.tt_cutoffs += 1
                         return tt_score, ([] if tt_move is None else [tt_move])
 
         # Conservative Null Move Pruning (NMP)
@@ -579,14 +780,7 @@ class JanusSearch:
 
                 if verify_cutoff:
                     self.nmp_cutoffs += 1
-                    if len(self.tt) >= self.tt_max_entries:
-                        self.tt.clear()
-                    self.tt[key] = TTEntry(
-                        depth=depth,
-                        score=self._score_to_tt(beta, ply),
-                        flag="lower",
-                        best_move=tt_move,
-                    )
+                    self._store_tt(key, depth, beta, "lower", tt_move, ply)
                     return beta, []
             else:
                 self.nmp_fail_lows += 1
@@ -717,9 +911,6 @@ class JanusSearch:
                     self._update_history(move, depth)
                 break
 
-        if len(self.tt) >= self.tt_max_entries:
-            self.tt.clear()
-
         # Bound flags must be compared against the original search window.
         if best_score <= alpha_original:
             flag = "upper"
@@ -728,12 +919,7 @@ class JanusSearch:
         else:
             flag = "exact"
 
-        self.tt[key] = TTEntry(
-            depth=effective_depth,
-            score=self._score_to_tt(best_score, ply),
-            flag=flag,
-            best_move=best_move,
-        )
+        self._store_tt(key, effective_depth, best_score, flag, best_move, ply)
         return best_score, best_pv
 
     def search(
@@ -782,6 +968,15 @@ class JanusSearch:
         self.qsearch_captures_pruned = 0
         self.qsearch_captures_exempted = 0
         self.see_cache_hits = 0
+        self.tt_probes = 0
+        self.tt_hits = 0
+        self.tt_usable_hits = 0
+        self.tt_cutoffs = 0
+        self.tt_stores = 0
+        self.tt_same_key_updates = 0
+        self.tt_same_key_overwrites = 0
+        self.tt_same_key_rejected = 0
+        self.tt_clears = 0
         self._extensions_at_ply = [0] * 256
         self.killers = [[None, None] for _ in range(self.max_killers_ply)]
         self.history = [[0] * 64 for _ in range(64)]
@@ -805,6 +1000,16 @@ class JanusSearch:
                 qsearch_captures_pruned=0,
                 qsearch_captures_exempted=0,
                 see_cache_hits=0,
+                tt_replacement_policy=self.tt_replacement_policy,
+                tt_probes=0,
+                tt_hits=0,
+                tt_usable_hits=0,
+                tt_cutoffs=0,
+                tt_stores=0,
+                tt_same_key_updates=0,
+                tt_same_key_overwrites=0,
+                tt_same_key_rejected=0,
+                tt_clears=0,
             )
 
         best_move = legal_moves[0]
@@ -914,4 +1119,14 @@ class JanusSearch:
             qsearch_captures_pruned=self.qsearch_captures_pruned,
             qsearch_captures_exempted=self.qsearch_captures_exempted,
             see_cache_hits=self.see_cache_hits,
+            tt_replacement_policy=self.tt_replacement_policy,
+            tt_probes=self.tt_probes,
+            tt_hits=self.tt_hits,
+            tt_usable_hits=self.tt_usable_hits,
+            tt_cutoffs=self.tt_cutoffs,
+            tt_stores=self.tt_stores,
+            tt_same_key_updates=self.tt_same_key_updates,
+            tt_same_key_overwrites=self.tt_same_key_overwrites,
+            tt_same_key_rejected=self.tt_same_key_rejected,
+            tt_clears=self.tt_clears,
         )

@@ -75,7 +75,7 @@ def main() -> None:
         command = parts[0]
 
         if command == "uci":
-            emit("id name Janus 0.2.2")
+            emit("id name Janus 0.2.3")
             emit("id author Project Janus")
             emit("uciok")
 

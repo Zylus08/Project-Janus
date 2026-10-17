@@ -1,6 +1,7 @@
 """UCI interface for Project Janus with interruptible background search."""
 from __future__ import annotations
 
+import argparse
 import sys
 import threading
 import chess
@@ -22,8 +23,30 @@ def _score_to_uci(score: int) -> str:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Janus UCI Engine")
+    parser.add_argument("--name", type=str, default="Janus 0.2.3")
+    parser.add_argument("--see", action="store_true", help="Enable both SEE ordering and SEE pruning")
+    parser.add_argument("--see-ordering", action="store_true", help="Enable SEE capture ordering")
+    parser.add_argument("--see-pruning", action="store_true", help="Enable SEE quiescence pruning")
+    parser.add_argument("--check-extensions", type=str, default="disabled",
+                        choices=["disabled", "single_reply", "bounded_all_checks"])
+    parser.add_argument("--tt-policy", type=str, default="always_replace",
+                        choices=["always_replace", "depth_preferred", "two_tier"])
+    parser.add_argument("--tt-max-entries", type=int, default=200_000)
+    args = parser.parse_args()
+
+    engine_name = args.name
+    see_ordering = args.see or args.see_ordering
+    see_pruning = args.see or args.see_pruning
+
     board = chess.Board()
-    engine = JanusSearch()
+    engine = JanusSearch(
+        tt_max_entries=args.tt_max_entries,
+        enable_see_ordering=see_ordering,
+        enable_see_pruning=see_pruning,
+        check_extension_policy=args.check_extensions,
+        tt_replacement_policy=args.tt_policy,
+    )
     search_thread: threading.Thread | None = None
     stop_event: threading.Event | None = None
     output_lock = threading.Lock()
@@ -75,9 +98,48 @@ def main() -> None:
         command = parts[0]
 
         if command == "uci":
-            emit("id name Janus 0.2.3")
+            emit(f"id name {engine_name}")
             emit("id author Project Janus")
+            emit("option name Hash type spin default 16 min 1 max 1024")
+            emit(f"option name SEE_Ordering type check default {'true' if engine.enable_see_ordering else 'false'}")
+            emit(f"option name SEE_Pruning type check default {'true' if engine.enable_see_pruning else 'false'}")
+            emit(f"option name CheckExtensions type combo default {engine.check_extension_policy} var disabled var single_reply var bounded_all_checks")
+            emit(f"option name TT_Policy type combo default {engine.tt_replacement_policy} var always_replace var depth_preferred var two_tier")
             emit("uciok")
+
+        elif command == "setoption":
+            try:
+                name_idx = parts.index("name") + 1
+                if "value" in parts:
+                    val_idx = parts.index("value")
+                    opt_name = " ".join(parts[name_idx:val_idx]).lower()
+                    opt_val = " ".join(parts[val_idx + 1:])
+                else:
+                    opt_name = " ".join(parts[name_idx:]).lower()
+                    opt_val = ""
+
+                if opt_name in ("see_ordering", "see ordering"):
+                    engine.enable_see_ordering = (opt_val.lower() == "true")
+                elif opt_name in ("see_pruning", "see pruning"):
+                    engine.enable_see_pruning = (opt_val.lower() == "true")
+                elif opt_name == "see":
+                    val_bool = (opt_val.lower() == "true")
+                    engine.enable_see_ordering = val_bool
+                    engine.enable_see_pruning = val_bool
+                elif opt_name in ("checkextensions", "check extensions"):
+                    if opt_val.lower() in ("disabled", "single_reply", "bounded_all_checks"):
+                        engine.check_extension_policy = opt_val.lower()
+                elif opt_name in ("tt_policy", "tt policy"):
+                    if opt_val.lower() in ("always_replace", "depth_preferred", "two_tier"):
+                        engine.tt_replacement_policy = opt_val.lower()
+                elif opt_name == "hash":
+                    try:
+                        mb = max(1, int(opt_val))
+                        engine.tt_max_entries = mb * 16384
+                    except ValueError:
+                        pass
+            except (ValueError, IndexError):
+                pass
 
         elif command == "isready":
             emit("readyok")

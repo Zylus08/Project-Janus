@@ -350,10 +350,10 @@ class JanusSearch:
                 self.tt_same_key_updates += 1
                 if depth >= 2:
                     if len(self.tt) >= tier_capacity and key not in self.tt:
-                        self.tt.clear()
+                        dict.clear(self.tt)
                         self.tt_clears += 1
                     self.tt_same_key_overwrites += 1
-                    del self.tt_recent[key]
+                    self.tt_recent.pop(key, None)
                     self.tt[key] = TTEntry(
                         depth=depth,
                         score=tt_score,
@@ -371,7 +371,7 @@ class JanusSearch:
             else:
                 if depth >= 2:
                     if len(self.tt) >= tier_capacity:
-                        self.tt.clear()
+                        dict.clear(self.tt)
                         self.tt_clears += 1
                     self.tt[key] = TTEntry(
                         depth=depth,

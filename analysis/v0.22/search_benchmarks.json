@@ -1,0 +1,1797 @@
+{
+  "metadata": {
+    "engine": "Project Janus",
+    "version": "0.22",
+    "git_commit": "946d696659025f7e5117efeeb863a5ce7eea8a0c",
+    "timestamp_utc": "2026-10-17T14:15:24.451002+00:00",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.12.8",
+    "depths": [
+      3,
+      4,
+      5
+    ],
+    "repetitions_per_config": 5,
+    "interleaving_seed": 20261017,
+    "configs": {
+      "baseline": {
+        "enable_see_ordering": false,
+        "enable_see_pruning": false
+      },
+      "see_ordering_only": {
+        "enable_see_ordering": true,
+        "enable_see_pruning": false
+      },
+      "see_pruning_only": {
+        "enable_see_ordering": false,
+        "enable_see_pruning": true
+      },
+      "see_ordering_and_pruning": {
+        "enable_see_ordering": true,
+        "enable_see_pruning": true
+      }
+    },
+    "check_extension_policy": "disabled",
+    "scoring": "centipawns_from_side_to_move"
+  },
+  "depth_results": {
+    "depth_3": {
+      "baseline": {
+        "total_nodes": 13439,
+        "timing_stats": {
+          "min": 0.78638,
+          "max": 2.94393,
+          "mean": 1.611799,
+          "median": 1.114919,
+          "iqr": 1.230981,
+          "stdev": 0.831924
+        },
+        "raw_times": [
+          0.991393,
+          1.114919,
+          2.94393,
+          2.222374,
+          0.78638
+        ],
+        "positions": [
+          {
+            "id": "startpos",
+            "category": "opening",
+            "nodes": 1144,
+            "completed_depth": 3,
+            "score": 12,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "open_game",
+            "category": "middlegame",
+            "nodes": 9445,
+            "completed_depth": 3,
+            "score": 12,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c1e3"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "white_up_rook",
+            "category": "material",
+            "nodes": 1144,
+            "completed_depth": 3,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": [
+              "e2f4",
+              "e8f8",
+              "f4d5"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "mate_in_one",
+            "category": "tactics",
+            "nodes": 1516,
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "promotion_tactic",
+            "category": "endgame",
+            "nodes": 190,
+            "completed_depth": 3,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "stalemate",
+            "category": "terminal",
+            "nodes": 0,
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        ],
+        "telemetry": {
+          "total_see_evaluations": 0,
+          "total_captures_ordered_see": 0,
+          "total_qsearch_captures_considered": 0,
+          "total_qsearch_captures_pruned": 0,
+          "total_qsearch_captures_exempted": 0,
+          "total_see_cache_hits": 0
+        }
+      },
+      "see_ordering_only": {
+        "total_nodes": 10871,
+        "timing_stats": {
+          "min": 0.733119,
+          "max": 2.877095,
+          "mean": 1.86923,
+          "median": 2.39695,
+          "iqr": 1.506216,
+          "stdev": 0.871684
+        },
+        "raw_times": [
+          0.916386,
+          2.877095,
+          2.39695,
+          2.422602,
+          0.733119
+        ],
+        "positions": [
+          {
+            "id": "startpos",
+            "category": "opening",
+            "nodes": 1144,
+            "completed_depth": 3,
+            "score": 12,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 2,
+            "captures_ordered_see": 2,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "open_game",
+            "category": "middlegame",
+            "nodes": 6877,
+            "completed_depth": 3,
+            "score": 12,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c1e3"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 5938,
+            "captures_ordered_see": 5938,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "white_up_rook",
+            "category": "material",
+            "nodes": 1144,
+            "completed_depth": 3,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": [
+              "e2f4",
+              "e8f8",
+              "f4d5"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 4,
+            "captures_ordered_see": 4,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "mate_in_one",
+            "category": "tactics",
+            "nodes": 1516,
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 7,
+            "captures_ordered_see": 7,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "promotion_tactic",
+            "category": "endgame",
+            "nodes": 190,
+            "completed_depth": 3,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 2,
+            "captures_ordered_see": 2,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "stalemate",
+            "category": "terminal",
+            "nodes": 0,
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        ],
+        "telemetry": {
+          "total_see_evaluations": 5953,
+          "total_captures_ordered_see": 5953,
+          "total_qsearch_captures_considered": 0,
+          "total_qsearch_captures_pruned": 0,
+          "total_qsearch_captures_exempted": 0,
+          "total_see_cache_hits": 0
+        }
+      },
+      "see_pruning_only": {
+        "total_nodes": 10507,
+        "timing_stats": {
+          "min": 0.707228,
+          "max": 2.749447,
+          "mean": 2.156137,
+          "median": 2.436585,
+          "iqr": 0.277854,
+          "stdev": 0.73946
+        },
+        "raw_times": [
+          2.304785,
+          2.582639,
+          2.749447,
+          2.436585,
+          0.707228
+        ],
+        "positions": [
+          {
+            "id": "startpos",
+            "category": "opening",
+            "nodes": 1144,
+            "completed_depth": 3,
+            "score": 12,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "open_game",
+            "category": "middlegame",
+            "nodes": 6513,
+            "completed_depth": 3,
+            "score": 12,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c1e3"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 2472,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 2812,
+            "qsearch_captures_pruned": 1038,
+            "qsearch_captures_exempted": 1774,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "white_up_rook",
+            "category": "material",
+            "nodes": 1144,
+            "completed_depth": 3,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": [
+              "e2f4",
+              "e8f8",
+              "f4d5"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 1,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 1,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 1,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "mate_in_one",
+            "category": "tactics",
+            "nodes": 1516,
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "promotion_tactic",
+            "category": "endgame",
+            "nodes": 190,
+            "completed_depth": 3,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 8,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 8,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "stalemate",
+            "category": "terminal",
+            "nodes": 0,
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        ],
+        "telemetry": {
+          "total_see_evaluations": 2473,
+          "total_captures_ordered_see": 0,
+          "total_qsearch_captures_considered": 2821,
+          "total_qsearch_captures_pruned": 1038,
+          "total_qsearch_captures_exempted": 1783,
+          "total_see_cache_hits": 0
+        }
+      },
+      "see_ordering_and_pruning": {
+        "total_nodes": 9403,
+        "timing_stats": {
+          "min": 0.591176,
+          "max": 2.249213,
+          "mean": 1.240505,
+          "median": 0.63812,
+          "iqr": 1.504044,
+          "stdev": 0.769752
+        },
+        "raw_times": [
+          0.591176,
+          0.609987,
+          0.63812,
+          2.249213,
+          2.114031
+        ],
+        "positions": [
+          {
+            "id": "startpos",
+            "category": "opening",
+            "nodes": 1144,
+            "completed_depth": 3,
+            "score": 12,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 2,
+            "captures_ordered_see": 2,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "open_game",
+            "category": "middlegame",
+            "nodes": 5409,
+            "completed_depth": 3,
+            "score": 12,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c1e3"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 3719,
+            "captures_ordered_see": 3719,
+            "qsearch_captures_considered": 1773,
+            "qsearch_captures_pruned": 720,
+            "qsearch_captures_exempted": 1053,
+            "see_cache_hits": 1565
+          },
+          {
+            "id": "white_up_rook",
+            "category": "material",
+            "nodes": 1144,
+            "completed_depth": 3,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": [
+              "e2f4",
+              "e8f8",
+              "f4d5"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 4,
+            "captures_ordered_see": 4,
+            "qsearch_captures_considered": 1,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 1,
+            "see_cache_hits": 1
+          },
+          {
+            "id": "mate_in_one",
+            "category": "tactics",
+            "nodes": 1516,
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 7,
+            "captures_ordered_see": 7,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "promotion_tactic",
+            "category": "endgame",
+            "nodes": 190,
+            "completed_depth": 3,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 2,
+            "captures_ordered_see": 2,
+            "qsearch_captures_considered": 8,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 8,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "stalemate",
+            "category": "terminal",
+            "nodes": 0,
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        ],
+        "telemetry": {
+          "total_see_evaluations": 3734,
+          "total_captures_ordered_see": 3734,
+          "total_qsearch_captures_considered": 1782,
+          "total_qsearch_captures_pruned": 720,
+          "total_qsearch_captures_exempted": 1062,
+          "total_see_cache_hits": 1566
+        }
+      }
+    },
+    "depth_4": {
+      "baseline": {
+        "total_nodes": 26409,
+        "timing_stats": {
+          "min": 1.838293,
+          "max": 6.566759,
+          "mean": 5.1128,
+          "median": 5.727525,
+          "iqr": 0.446185,
+          "stdev": 1.675758
+        },
+        "raw_times": [
+          1.838293,
+          6.566759,
+          5.938804,
+          5.492619,
+          5.727525
+        ],
+        "positions": [
+          {
+            "id": "startpos",
+            "category": "opening",
+            "nodes": 2552,
+            "completed_depth": 4,
+            "score": 0,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3",
+              "b8c6"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "open_game",
+            "category": "middlegame",
+            "nodes": 18418,
+            "completed_depth": 4,
+            "score": 9,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c2c3",
+              "b4a5"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "white_up_rook",
+            "category": "material",
+            "nodes": 2291,
+            "completed_depth": 4,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": [
+              "e2f4",
+              "e8f8",
+              "f4d5",
+              "f8g8"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "mate_in_one",
+            "category": "tactics",
+            "nodes": 2712,
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "promotion_tactic",
+            "category": "endgame",
+            "nodes": 436,
+            "completed_depth": 4,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8",
+              "f4g5"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "stalemate",
+            "category": "terminal",
+            "nodes": 0,
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        ],
+        "telemetry": {
+          "total_see_evaluations": 0,
+          "total_captures_ordered_see": 0,
+          "total_qsearch_captures_considered": 0,
+          "total_qsearch_captures_pruned": 0,
+          "total_qsearch_captures_exempted": 0,
+          "total_see_cache_hits": 0
+        }
+      },
+      "see_ordering_only": {
+        "total_nodes": 20085,
+        "timing_stats": {
+          "min": 4.881385,
+          "max": 5.752181,
+          "mean": 5.334791,
+          "median": 5.419783,
+          "iqr": 0.549147,
+          "stdev": 0.328328
+        },
+        "raw_times": [
+          5.419783,
+          4.881385,
+          5.03573,
+          5.584877,
+          5.752181
+        ],
+        "positions": [
+          {
+            "id": "startpos",
+            "category": "opening",
+            "nodes": 2516,
+            "completed_depth": 4,
+            "score": 0,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3",
+              "b8c6"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 202,
+            "captures_ordered_see": 202,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "open_game",
+            "category": "middlegame",
+            "nodes": 12130,
+            "completed_depth": 4,
+            "score": 9,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c2c3",
+              "b4a5"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 12738,
+            "captures_ordered_see": 12738,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "white_up_rook",
+            "category": "material",
+            "nodes": 2291,
+            "completed_depth": 4,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": [
+              "e2f4",
+              "e8f8",
+              "f4d5",
+              "f8g8"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 11,
+            "captures_ordered_see": 11,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "mate_in_one",
+            "category": "tactics",
+            "nodes": 2712,
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 8,
+            "captures_ordered_see": 8,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "promotion_tactic",
+            "category": "endgame",
+            "nodes": 436,
+            "completed_depth": 4,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8",
+              "f4g5"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 4,
+            "captures_ordered_see": 4,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "stalemate",
+            "category": "terminal",
+            "nodes": 0,
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        ],
+        "telemetry": {
+          "total_see_evaluations": 12963,
+          "total_captures_ordered_see": 12963,
+          "total_qsearch_captures_considered": 0,
+          "total_qsearch_captures_pruned": 0,
+          "total_qsearch_captures_exempted": 0,
+          "total_see_cache_hits": 0
+        }
+      },
+      "see_pruning_only": {
+        "total_nodes": 19723,
+        "timing_stats": {
+          "min": 4.587885,
+          "max": 5.270875,
+          "mean": 4.94031,
+          "median": 4.976329,
+          "iqr": 0.598889,
+          "stdev": 0.287822
+        },
+        "raw_times": [
+          4.587885,
+          5.232675,
+          4.633786,
+          4.976329,
+          5.270875
+        ],
+        "positions": [
+          {
+            "id": "startpos",
+            "category": "opening",
+            "nodes": 2487,
+            "completed_depth": 4,
+            "score": 0,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3",
+              "b8c6"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 67,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 73,
+            "qsearch_captures_pruned": 33,
+            "qsearch_captures_exempted": 40,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "open_game",
+            "category": "middlegame",
+            "nodes": 11797,
+            "completed_depth": 4,
+            "score": 9,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c2c3",
+              "b4a5"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 5791,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 6675,
+            "qsearch_captures_pruned": 2596,
+            "qsearch_captures_exempted": 4079,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "white_up_rook",
+            "category": "material",
+            "nodes": 2291,
+            "completed_depth": 4,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": [
+              "e2f4",
+              "e8f8",
+              "f4d5",
+              "f8g8"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 1,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 1,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 1,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "mate_in_one",
+            "category": "tactics",
+            "nodes": 2712,
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "promotion_tactic",
+            "category": "endgame",
+            "nodes": 436,
+            "completed_depth": 4,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8",
+              "f4g5"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 40,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 40,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "stalemate",
+            "category": "terminal",
+            "nodes": 0,
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        ],
+        "telemetry": {
+          "total_see_evaluations": 5859,
+          "total_captures_ordered_see": 0,
+          "total_qsearch_captures_considered": 6789,
+          "total_qsearch_captures_pruned": 2629,
+          "total_qsearch_captures_exempted": 4160,
+          "total_see_cache_hits": 0
+        }
+      },
+      "see_ordering_and_pruning": {
+        "total_nodes": 16684,
+        "timing_stats": {
+          "min": 3.845109,
+          "max": 4.834404,
+          "mean": 4.314027,
+          "median": 4.294978,
+          "iqr": 0.106452,
+          "stdev": 0.315351
+        },
+        "raw_times": [
+          4.244596,
+          4.294978,
+          3.845109,
+          4.351048,
+          4.834404
+        ],
+        "positions": [
+          {
+            "id": "startpos",
+            "category": "opening",
+            "nodes": 2451,
+            "completed_depth": 4,
+            "score": 0,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3",
+              "b8c6"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 139,
+            "captures_ordered_see": 139,
+            "qsearch_captures_considered": 61,
+            "qsearch_captures_pruned": 33,
+            "qsearch_captures_exempted": 28,
+            "see_cache_hits": 55
+          },
+          {
+            "id": "open_game",
+            "category": "middlegame",
+            "nodes": 8794,
+            "completed_depth": 4,
+            "score": 9,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c2c3",
+              "b4a5"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 8288,
+            "captures_ordered_see": 8288,
+            "qsearch_captures_considered": 3784,
+            "qsearch_captures_pruned": 1619,
+            "qsearch_captures_exempted": 2165,
+            "see_cache_hits": 3258
+          },
+          {
+            "id": "white_up_rook",
+            "category": "material",
+            "nodes": 2291,
+            "completed_depth": 4,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": [
+              "e2f4",
+              "e8f8",
+              "f4d5",
+              "f8g8"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 11,
+            "captures_ordered_see": 11,
+            "qsearch_captures_considered": 1,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 1,
+            "see_cache_hits": 1
+          },
+          {
+            "id": "mate_in_one",
+            "category": "tactics",
+            "nodes": 2712,
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 8,
+            "captures_ordered_see": 8,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "promotion_tactic",
+            "category": "endgame",
+            "nodes": 436,
+            "completed_depth": 4,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8",
+              "f4g5"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 4,
+            "captures_ordered_see": 4,
+            "qsearch_captures_considered": 40,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 40,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "stalemate",
+            "category": "terminal",
+            "nodes": 0,
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        ],
+        "telemetry": {
+          "total_see_evaluations": 8450,
+          "total_captures_ordered_see": 8450,
+          "total_qsearch_captures_considered": 3886,
+          "total_qsearch_captures_pruned": 1652,
+          "total_qsearch_captures_exempted": 2234,
+          "total_see_cache_hits": 3314
+        }
+      }
+    },
+    "depth_5": {
+      "baseline": {
+        "total_nodes": 53707,
+        "timing_stats": {
+          "min": 9.25458,
+          "max": 11.46778,
+          "mean": 10.636739,
+          "median": 11.055557,
+          "iqr": 0.791802,
+          "stdev": 0.787227
+        },
+        "raw_times": [
+          11.46778,
+          9.25458,
+          10.306988,
+          11.055557,
+          11.09879
+        ],
+        "positions": [
+          {
+            "id": "startpos",
+            "category": "opening",
+            "nodes": 8798,
+            "completed_depth": 5,
+            "score": 10,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3",
+              "b8c6",
+              "h2h4"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "open_game",
+            "category": "middlegame",
+            "nodes": 27480,
+            "completed_depth": 5,
+            "score": 21,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c2c3",
+              "b4a5",
+              "c1e3"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "white_up_rook",
+            "category": "material",
+            "nodes": 7213,
+            "completed_depth": 5,
+            "score": 838,
+            "best_move": "e2d4",
+            "pv": [
+              "e2d4",
+              "e8f8",
+              "d4e6",
+              "f8g8",
+              "e6d4"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "mate_in_one",
+            "category": "tactics",
+            "nodes": 8992,
+            "completed_depth": 5,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "promotion_tactic",
+            "category": "endgame",
+            "nodes": 1224,
+            "completed_depth": 5,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8",
+              "f4g5",
+              "h8g8"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "stalemate",
+            "category": "terminal",
+            "nodes": 0,
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        ],
+        "telemetry": {
+          "total_see_evaluations": 0,
+          "total_captures_ordered_see": 0,
+          "total_qsearch_captures_considered": 0,
+          "total_qsearch_captures_pruned": 0,
+          "total_qsearch_captures_exempted": 0,
+          "total_see_cache_hits": 0
+        }
+      },
+      "see_ordering_only": {
+        "total_nodes": 46784,
+        "timing_stats": {
+          "min": 4.477008,
+          "max": 22.184162,
+          "mean": 10.905122,
+          "median": 8.64424,
+          "iqr": 4.154658,
+          "stdev": 6.093172
+        },
+        "raw_times": [
+          4.477008,
+          22.184162,
+          11.68743,
+          7.532772,
+          8.64424
+        ],
+        "positions": [
+          {
+            "id": "startpos",
+            "category": "opening",
+            "nodes": 8582,
+            "completed_depth": 5,
+            "score": 10,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3",
+              "b8c6",
+              "h2h4"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 868,
+            "captures_ordered_see": 868,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "open_game",
+            "category": "middlegame",
+            "nodes": 20773,
+            "completed_depth": 5,
+            "score": 21,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c2c3",
+              "b4a5",
+              "c1e3"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 15723,
+            "captures_ordered_see": 15723,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "white_up_rook",
+            "category": "material",
+            "nodes": 7213,
+            "completed_depth": 5,
+            "score": 838,
+            "best_move": "e2d4",
+            "pv": [
+              "e2d4",
+              "e8f8",
+              "d4e6",
+              "f8g8",
+              "e6d4"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 75,
+            "captures_ordered_see": 75,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "mate_in_one",
+            "category": "tactics",
+            "nodes": 8992,
+            "completed_depth": 5,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 88,
+            "captures_ordered_see": 88,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "promotion_tactic",
+            "category": "endgame",
+            "nodes": 1224,
+            "completed_depth": 5,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8",
+              "f4g5",
+              "h8g8"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 25,
+            "captures_ordered_see": 25,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "stalemate",
+            "category": "terminal",
+            "nodes": 0,
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        ],
+        "telemetry": {
+          "total_see_evaluations": 16779,
+          "total_captures_ordered_see": 16779,
+          "total_qsearch_captures_considered": 0,
+          "total_qsearch_captures_pruned": 0,
+          "total_qsearch_captures_exempted": 0,
+          "total_see_cache_hits": 0
+        }
+      },
+      "see_pruning_only": {
+        "total_nodes": 45981,
+        "timing_stats": {
+          "min": 4.136941,
+          "max": 29.036227,
+          "mean": 14.595245,
+          "median": 10.561738,
+          "iqr": 10.920346,
+          "stdev": 8.874858
+        },
+        "raw_times": [
+          10.561738,
+          29.036227,
+          20.080832,
+          9.160486,
+          4.136941
+        ],
+        "positions": [
+          {
+            "id": "startpos",
+            "category": "opening",
+            "nodes": 8459,
+            "completed_depth": 5,
+            "score": 10,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3",
+              "b8c6",
+              "h2h4"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 345,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 357,
+            "qsearch_captures_pruned": 157,
+            "qsearch_captures_exempted": 200,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "open_game",
+            "category": "middlegame",
+            "nodes": 20093,
+            "completed_depth": 5,
+            "score": 21,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c2c3",
+              "b4a5",
+              "c1e3"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 6723,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 7698,
+            "qsearch_captures_pruned": 2998,
+            "qsearch_captures_exempted": 4700,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "white_up_rook",
+            "category": "material",
+            "nodes": 7213,
+            "completed_depth": 5,
+            "score": 838,
+            "best_move": "e2d4",
+            "pv": [
+              "e2d4",
+              "e8f8",
+              "d4e6",
+              "f8g8",
+              "e6d4"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 1,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 1,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 1,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "mate_in_one",
+            "category": "tactics",
+            "nodes": 8992,
+            "completed_depth": 5,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "promotion_tactic",
+            "category": "endgame",
+            "nodes": 1224,
+            "completed_depth": 5,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8",
+              "f4g5",
+              "h8g8"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 40,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 40,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "stalemate",
+            "category": "terminal",
+            "nodes": 0,
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        ],
+        "telemetry": {
+          "total_see_evaluations": 7069,
+          "total_captures_ordered_see": 0,
+          "total_qsearch_captures_considered": 8096,
+          "total_qsearch_captures_pruned": 3155,
+          "total_qsearch_captures_exempted": 4941,
+          "total_see_cache_hits": 0
+        }
+      },
+      "see_ordering_and_pruning": {
+        "total_nodes": 42521,
+        "timing_stats": {
+          "min": 1.821484,
+          "max": 8.929329,
+          "mean": 6.819599,
+          "median": 8.293409,
+          "iqr": 1.553606,
+          "stdev": 2.600446
+        },
+        "raw_times": [
+          1.821484,
+          6.750083,
+          8.303689,
+          8.293409,
+          8.929329
+        ],
+        "positions": [
+          {
+            "id": "startpos",
+            "category": "opening",
+            "nodes": 8274,
+            "completed_depth": 5,
+            "score": 10,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8f6",
+              "b1c3",
+              "b8c6",
+              "h2h4"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 563,
+            "captures_ordered_see": 563,
+            "qsearch_captures_considered": 291,
+            "qsearch_captures_pruned": 154,
+            "qsearch_captures_exempted": 137,
+            "see_cache_hits": 279
+          },
+          {
+            "id": "open_game",
+            "category": "middlegame",
+            "nodes": 16818,
+            "completed_depth": 5,
+            "score": 21,
+            "best_move": "c3a4",
+            "pv": [
+              "c3a4",
+              "c5b4",
+              "c2c3",
+              "b4a5",
+              "c1e3"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 10669,
+            "captures_ordered_see": 10669,
+            "qsearch_captures_considered": 4557,
+            "qsearch_captures_pruned": 1967,
+            "qsearch_captures_exempted": 2590,
+            "see_cache_hits": 3964
+          },
+          {
+            "id": "white_up_rook",
+            "category": "material",
+            "nodes": 7213,
+            "completed_depth": 5,
+            "score": 838,
+            "best_move": "e2d4",
+            "pv": [
+              "e2d4",
+              "e8f8",
+              "d4e6",
+              "f8g8",
+              "e6d4"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 75,
+            "captures_ordered_see": 75,
+            "qsearch_captures_considered": 1,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 1,
+            "see_cache_hits": 1
+          },
+          {
+            "id": "mate_in_one",
+            "category": "tactics",
+            "nodes": 8992,
+            "completed_depth": 5,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": [
+              "g5g7"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 88,
+            "captures_ordered_see": 88,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "promotion_tactic",
+            "category": "endgame",
+            "nodes": 1224,
+            "completed_depth": 5,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": [
+              "a7a8q",
+              "e3f4",
+              "a8h8",
+              "f4g5",
+              "h8g8"
+            ],
+            "pv_legal": true,
+            "see_evaluations": 25,
+            "captures_ordered_see": 25,
+            "qsearch_captures_considered": 40,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 40,
+            "see_cache_hits": 0
+          },
+          {
+            "id": "stalemate",
+            "category": "terminal",
+            "nodes": 0,
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        ],
+        "telemetry": {
+          "total_see_evaluations": 11420,
+          "total_captures_ordered_see": 11420,
+          "total_qsearch_captures_considered": 4889,
+          "total_qsearch_captures_pruned": 2121,
+          "total_qsearch_captures_exempted": 2768,
+          "total_see_cache_hits": 4244
+        }
+      }
+    }
+  }
+}

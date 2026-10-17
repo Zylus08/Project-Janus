@@ -10,6 +10,7 @@ import chess
 import chess.polyglot
 
 from .evaluation import evaluate_side_to_move
+from .see import static_exchange_evaluation
 
 MATE_SCORE = 100_000
 MATE_THRESHOLD = MATE_SCORE - 1_000
@@ -73,6 +74,14 @@ class SearchResult:
     check_extensions_multiple_replies: int = 0
     check_extensions_terminal_mates: int = 0
     check_extension_policy: str = "disabled"
+    enable_see_ordering: bool = False
+    enable_see_pruning: bool = False
+    see_evaluations: int = 0
+    captures_ordered_see: int = 0
+    qsearch_captures_considered: int = 0
+    qsearch_captures_pruned: int = 0
+    qsearch_captures_exempted: int = 0
+    see_cache_hits: int = 0
 
 
 class SearchTimeout(Exception):
@@ -98,6 +107,8 @@ class JanusSearch:
         check_extension_policy: str = "disabled",
         enable_check_extensions: Optional[bool] = None,
         max_check_extensions: int = 2,
+        enable_see_ordering: bool = False,
+        enable_see_pruning: bool = False,
     ) -> None:
         self.tt: dict[int, TTEntry] = {}
         self.tt_max_entries = tt_max_entries
@@ -113,6 +124,8 @@ class JanusSearch:
         self.nmp_reduction = nmp_reduction
         self.enable_nmp_verification = enable_nmp_verification
         self.nmp_verify_min_depth = nmp_verify_min_depth
+        self.enable_see_ordering = enable_see_ordering
+        self.enable_see_pruning = enable_see_pruning
 
         valid_policies = ("disabled", "bounded_all_checks", "single_reply")
         if check_extension_policy not in valid_policies:
@@ -168,8 +181,19 @@ class JanusSearch:
         self.check_extensions_suppressed = 0
         self.check_extensions_multiple_replies = 0
         self.check_extensions_terminal_mates = 0
+        self.see_evaluations = 0
+        self.captures_ordered_see = 0
+        self.qsearch_captures_considered = 0
+        self.qsearch_captures_pruned = 0
+        self.qsearch_captures_exempted = 0
+        self.see_cache_hits = 0
         self.deadline: Optional[float] = None
         self.stop_event: Optional[threading.Event] = None
+
+    def _see(self, board: chess.Board, move: chess.Move) -> int:
+        """Evaluate static exchange evaluation with telemetry tracking."""
+        self.see_evaluations += 1
+        return static_exchange_evaluation(board, move, check_legality=False)
 
     def _update_history(self, move: chess.Move, depth: int) -> None:
         """Reward a quiet move causing a beta cutoff with a depth-sensitive bonus."""
@@ -270,6 +294,7 @@ class JanusSearch:
         move: chess.Move,
         tt_move: Optional[chess.Move] = None,
         ply: int = 0,
+        node_see: Optional[dict[chess.Move, int]] = None,
     ) -> int:
         if tt_move is not None and move == tt_move:
             return 10_000_000
@@ -284,10 +309,31 @@ class JanusSearch:
             attacker_value = (
                 0 if attacker is None else MVV_LVA_PIECE_VALUES[attacker.piece_type]
             )
-            score += 1_000_000 + 10 * victim_value - attacker_value
+            mvv_lva = 10 * victim_value - attacker_value
+
+            if self.enable_see_ordering:
+                self.captures_ordered_see += 1
+                if node_see is not None and move in node_see:
+                    self.see_cache_hits += 1
+                    see_val = node_see[move]
+                else:
+                    see_val = self._see(board, move)
+                    if node_see is not None:
+                        node_see[move] = see_val
+
+                if see_val >= 0:
+                    score = 1_000_000 + see_val * 100 + mvv_lva
+                else:
+                    # Demote losing captures below killers and quiet history moves
+                    score = 50_000 + see_val * 10 + mvv_lva
+            else:
+                score = 1_000_000 + mvv_lva
+
+            if move.promotion:
+                score += 800_000 + move.promotion
 
         if move.promotion:
-            score += 800_000 + move.promotion
+            return 800_000 + move.promotion
 
         if score == 0 and ply < len(self.killers):
             if move == self.killers[ply][0]:
@@ -326,42 +372,11 @@ class JanusSearch:
         if len(moves) <= 1:
             return moves
 
-        k1 = self.killers[ply][0] if ply < len(self.killers) else None
-        k2 = self.killers[ply][1] if ply < len(self.killers) else None
-        history = self.history if self.enable_history else None
-
-        def score_move(move: chess.Move) -> int:
-            if tt_move is not None and move == tt_move:
-                return 10_000_000
-
-            if board.is_capture(move):
-                victim = board.piece_at(move.to_square)
-                victim_value = 100 if board.is_en_passant(move) else (
-                    0 if victim is None else MVV_LVA_PIECE_VALUES[victim.piece_type]
-                )
-                attacker = board.piece_at(move.from_square)
-                attacker_value = (
-                    0 if attacker is None else MVV_LVA_PIECE_VALUES[attacker.piece_type]
-                )
-                score = 1_000_000 + 10 * victim_value - attacker_value
-                if move.promotion:
-                    score += 800_000 + move.promotion
-                return score
-
-            if move.promotion:
-                return 800_000 + move.promotion
-
-            if move == k1:
-                return 700_000
-            if move == k2:
-                return 600_000
-
-            if history is not None:
-                return history[move.from_square][move.to_square]
-
-            return 0
-
-        moves.sort(key=score_move, reverse=True)
+        node_see: Optional[dict[chess.Move, int]] = {} if self.enable_see_ordering else None
+        moves.sort(
+            key=lambda move: self._move_order_score(board, move, tt_move, ply, node_see=node_see),
+            reverse=True,
+        )
         return moves
 
     def _quiescence(self, board: chess.Board, alpha: int, beta: int, ply: int) -> int:
@@ -379,6 +394,10 @@ class JanusSearch:
         if ply >= self.qsearch_max_ply and not in_check:
             return evaluate_side_to_move(board)
 
+        node_see: Optional[dict[chess.Move, int]] = (
+            {} if (self.enable_see_ordering or self.enable_see_pruning) else None
+        )
+
         if not in_check:
             if not any(board.generate_legal_moves()):
                 return 0
@@ -388,7 +407,7 @@ class JanusSearch:
             alpha = max(alpha, stand_pat)
             moves = self._quiescence_moves(board)
             moves.sort(
-                key=lambda move: self._move_order_score(board, move, None, ply),
+                key=lambda move: self._move_order_score(board, move, None, ply, node_see=node_see),
                 reverse=True,
             )
         else:
@@ -398,6 +417,26 @@ class JanusSearch:
             return -MATE_SCORE + ply
 
         for move in moves:
+            if not in_check and self.enable_see_pruning:
+                self.qsearch_captures_considered += 1
+                if move.promotion is not None:
+                    self.qsearch_captures_exempted += 1
+                elif board.gives_check(move):
+                    self.qsearch_captures_exempted += 1
+                else:
+                    if node_see is not None and move in node_see:
+                        self.see_cache_hits += 1
+                        see_val = node_see[move]
+                    else:
+                        see_val = self._see(board, move)
+                        if node_see is not None:
+                            node_see[move] = see_val
+
+                    if see_val < 0:
+                        self.qsearch_captures_pruned += 1
+                        continue
+                    self.qsearch_captures_exempted += 1
+
             board.push(move)
             try:
                 score = -self._quiescence(board, -beta, -alpha, ply + 1)
@@ -737,6 +776,12 @@ class JanusSearch:
         self.check_extensions_suppressed = 0
         self.check_extensions_multiple_replies = 0
         self.check_extensions_terminal_mates = 0
+        self.see_evaluations = 0
+        self.captures_ordered_see = 0
+        self.qsearch_captures_considered = 0
+        self.qsearch_captures_pruned = 0
+        self.qsearch_captures_exempted = 0
+        self.see_cache_hits = 0
         self._extensions_at_ply = [0] * 256
         self.killers = [[None, None] for _ in range(self.max_killers_ply)]
         self.history = [[0] * 64 for _ in range(64)]
@@ -752,6 +797,14 @@ class JanusSearch:
                 pv=[],
                 elapsed=time.monotonic() - start,
                 check_extension_policy=self.check_extension_policy,
+                enable_see_ordering=self.enable_see_ordering,
+                enable_see_pruning=self.enable_see_pruning,
+                see_evaluations=0,
+                captures_ordered_see=0,
+                qsearch_captures_considered=0,
+                qsearch_captures_pruned=0,
+                qsearch_captures_exempted=0,
+                see_cache_hits=0,
             )
 
         best_move = legal_moves[0]
@@ -853,4 +906,12 @@ class JanusSearch:
             check_extensions_multiple_replies=self.check_extensions_multiple_replies,
             check_extensions_terminal_mates=self.check_extensions_terminal_mates,
             check_extension_policy=self.check_extension_policy,
+            enable_see_ordering=self.enable_see_ordering,
+            enable_see_pruning=self.enable_see_pruning,
+            see_evaluations=self.see_evaluations,
+            captures_ordered_see=self.captures_ordered_see,
+            qsearch_captures_considered=self.qsearch_captures_considered,
+            qsearch_captures_pruned=self.qsearch_captures_pruned,
+            qsearch_captures_exempted=self.qsearch_captures_exempted,
+            see_cache_hits=self.see_cache_hits,
         )

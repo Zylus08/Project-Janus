@@ -1,0 +1,3613 @@
+{
+  "timestamp": "2026-10-17T12:01:54Z",
+  "engine": "Janus v0.22",
+  "suite_size": 20,
+  "configs": [
+    "baseline",
+    "see_ordering_only",
+    "see_pruning_only",
+    "see_ordering_and_pruning"
+  ],
+  "depths": [
+    3,
+    4
+  ],
+  "positions": [
+    {
+      "id": "mate_in_one_scholar",
+      "category": "forced_mate",
+      "description": "Scholar's mate motif (White Queen delivers mate on f7)",
+      "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+      "expected_moves": [
+        "h5f7"
+      ],
+      "target_outcome": "mate",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4955,
+            "elapsed": 0.219,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4959,
+            "elapsed": 0.234,
+            "expected_match": true,
+            "see_evaluations": 1616,
+            "captures_ordered_see": 1616,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4681,
+            "elapsed": 0.219,
+            "expected_match": true,
+            "see_evaluations": 401,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 805,
+            "qsearch_captures_pruned": 273,
+            "qsearch_captures_exempted": 532,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4673,
+            "elapsed": 0.218,
+            "expected_match": true,
+            "see_evaluations": 1614,
+            "captures_ordered_see": 1614,
+            "qsearch_captures_considered": 788,
+            "qsearch_captures_pruned": 285,
+            "qsearch_captures_exempted": 503,
+            "see_cache_hits": 369
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 16578,
+            "elapsed": 0.954,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 14976,
+            "elapsed": 0.968,
+            "expected_match": true,
+            "see_evaluations": 9037,
+            "captures_ordered_see": 9037,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 14479,
+            "elapsed": 0.985,
+            "expected_match": true,
+            "see_evaluations": 3910,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 6124,
+            "qsearch_captures_pruned": 2098,
+            "qsearch_captures_exempted": 4026,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 13101,
+            "elapsed": 1.468,
+            "expected_match": true,
+            "see_evaluations": 9035,
+            "captures_ordered_see": 9035,
+            "qsearch_captures_considered": 5055,
+            "qsearch_captures_pruned": 1874,
+            "qsearch_captures_exempted": 3181,
+            "see_cache_hits": 3121
+          }
+        }
+      }
+    },
+    {
+      "id": "mate_in_two_smothered",
+      "category": "forced_mate",
+      "description": "Smothered mate pattern with Queen sacrifice threat",
+      "fen": "6k1/5ppp/8/8/8/8/1Q4PP/6K1 w - - 0 1",
+      "expected_moves": [
+        "b2b8"
+      ],
+      "target_outcome": "mate",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1572,
+            "elapsed": 0.11,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1572,
+            "elapsed": 0.094,
+            "expected_match": true,
+            "see_evaluations": 38,
+            "captures_ordered_see": 38,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1572,
+            "elapsed": 0.093,
+            "expected_match": true,
+            "see_evaluations": 4,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 17,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 17,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1572,
+            "elapsed": 0.11,
+            "expected_match": true,
+            "see_evaluations": 38,
+            "captures_ordered_see": 38,
+            "qsearch_captures_considered": 17,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 17,
+            "see_cache_hits": 4
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3020,
+            "elapsed": 0.218,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3020,
+            "elapsed": 0.204,
+            "expected_match": true,
+            "see_evaluations": 230,
+            "captures_ordered_see": 230,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3020,
+            "elapsed": 0.234,
+            "expected_match": true,
+            "see_evaluations": 47,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 162,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 162,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3020,
+            "elapsed": 0.219,
+            "expected_match": true,
+            "see_evaluations": 230,
+            "captures_ordered_see": 230,
+            "qsearch_captures_considered": 162,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 162,
+            "see_cache_hits": 47
+          }
+        }
+      }
+    },
+    {
+      "id": "tactical_fork_knight",
+      "category": "forks_and_pins",
+      "description": "Royal fork / check evasion defending equality",
+      "fen": "r1b1k2r/pppp1ppp/8/4q3/1b2N3/8/PPP1PPPP/R2QKB1R w KQkq - 0 1",
+      "expected_moves": [
+        "c2c3",
+        "e4d2",
+        "b1d2",
+        "b1c3",
+        "d1d2"
+      ],
+      "target_outcome": "evasion_preserving_equality",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 735,
+            "elapsed": 0.063,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 698,
+            "elapsed": 0.062,
+            "expected_match": true,
+            "see_evaluations": 530,
+            "captures_ordered_see": 530,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 663,
+            "elapsed": 0.078,
+            "expected_match": true,
+            "see_evaluations": 134,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 216,
+            "qsearch_captures_pruned": 50,
+            "qsearch_captures_exempted": 166,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 638,
+            "elapsed": 0.094,
+            "expected_match": true,
+            "see_evaluations": 507,
+            "captures_ordered_see": 507,
+            "qsearch_captures_considered": 203,
+            "qsearch_captures_pruned": 46,
+            "qsearch_captures_exempted": 157,
+            "see_cache_hits": 127
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4",
+              "e4b4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 2194,
+            "elapsed": 0.219,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4",
+              "e4b4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1657,
+            "elapsed": 0.187,
+            "expected_match": true,
+            "see_evaluations": 1224,
+            "captures_ordered_see": 1224,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4",
+              "e4b4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 2012,
+            "elapsed": 0.157,
+            "expected_match": true,
+            "see_evaluations": 338,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 602,
+            "qsearch_captures_pruned": 122,
+            "qsearch_captures_exempted": 480,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4",
+              "e4b4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1561,
+            "elapsed": 0.109,
+            "expected_match": true,
+            "see_evaluations": 1190,
+            "captures_ordered_see": 1190,
+            "qsearch_captures_considered": 424,
+            "qsearch_captures_pruned": 78,
+            "qsearch_captures_exempted": 346,
+            "see_cache_hits": 250
+          }
+        }
+      }
+    },
+    {
+      "id": "absolute_pin_skewer",
+      "category": "forks_and_pins",
+      "description": "Absolute pin on rook along e-file",
+      "fen": "4k3/4r3/8/8/8/8/4R3/4K3 w - - 0 1",
+      "expected_moves": [
+        "e2e7"
+      ],
+      "target_outcome": "equal_or_winning_trade",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 168,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 168,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 21,
+            "captures_ordered_see": 21,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 168,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 2,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 2,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 2,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 168,
+            "elapsed": 0.015,
+            "expected_match": true,
+            "see_evaluations": 21,
+            "captures_ordered_see": 21,
+            "qsearch_captures_considered": 2,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 2,
+            "see_cache_hits": 2
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 233,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 233,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 39,
+            "captures_ordered_see": 39,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 233,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 2,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 10,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 10,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 233,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 39,
+            "captures_ordered_see": 39,
+            "qsearch_captures_considered": 10,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 10,
+            "see_cache_hits": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "promotion_passed_pawn",
+      "category": "promotion",
+      "description": "Queen promotion with unstoppable 7th rank pawn",
+      "fen": "8/1P6/8/8/8/8/k7/7K w - - 0 1",
+      "expected_moves": [
+        "b7b8q",
+        "b7b8r"
+      ],
+      "target_outcome": "promotion",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 209,
+            "elapsed": 0.015,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 209,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 3,
+            "captures_ordered_see": 3,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 209,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 12,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 12,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 209,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 3,
+            "captures_ordered_see": 3,
+            "qsearch_captures_considered": 12,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 12,
+            "see_cache_hits": 0
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8",
+              "a3b4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 435,
+            "elapsed": 0.015,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8",
+              "a3b4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 435,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 8,
+            "captures_ordered_see": 8,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8",
+              "a3b4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 435,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 48,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 48,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8",
+              "a3b4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 435,
+            "elapsed": 0.015,
+            "expected_match": true,
+            "see_evaluations": 8,
+            "captures_ordered_see": 8,
+            "qsearch_captures_considered": 48,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 48,
+            "see_cache_hits": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "capture_promotion_mate",
+      "category": "capture_promotion",
+      "description": "Pawn captures rook on 8th rank promoting to queen with checkmate",
+      "fen": "4r1k1/3P1ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
+      "expected_moves": [
+        "d7e8q",
+        "d7e8r"
+      ],
+      "target_outcome": "capture_promotion_mate",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "d7e8q",
+            "pv": [
+              "d7e8q"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 475,
+            "elapsed": 0.032,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "d7e8q",
+            "pv": [
+              "d7e8q"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 475,
+            "elapsed": 0.015,
+            "expected_match": true,
+            "see_evaluations": 82,
+            "captures_ordered_see": 82,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "d7e8q",
+            "pv": [
+              "d7e8q"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 474,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 2,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 66,
+            "qsearch_captures_pruned": 1,
+            "qsearch_captures_exempted": 65,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "d7e8q",
+            "pv": [
+              "d7e8q"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 474,
+            "elapsed": 0.015,
+            "expected_match": true,
+            "see_evaluations": 82,
+            "captures_ordered_see": 82,
+            "qsearch_captures_considered": 66,
+            "qsearch_captures_pruned": 1,
+            "qsearch_captures_exempted": 65,
+            "see_cache_hits": 2
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "d7e8q",
+            "pv": [
+              "d7e8q"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1299,
+            "elapsed": 0.079,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "d7e8q",
+            "pv": [
+              "d7e8q"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1299,
+            "elapsed": 0.062,
+            "expected_match": true,
+            "see_evaluations": 358,
+            "captures_ordered_see": 358,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "d7e8q",
+            "pv": [
+              "d7e8q"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1290,
+            "elapsed": 0.078,
+            "expected_match": true,
+            "see_evaluations": 58,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 420,
+            "qsearch_captures_pruned": 9,
+            "qsearch_captures_exempted": 411,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "d7e8q",
+            "pv": [
+              "d7e8q"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1290,
+            "elapsed": 0.063,
+            "expected_match": true,
+            "see_evaluations": 358,
+            "captures_ordered_see": 358,
+            "qsearch_captures_considered": 420,
+            "qsearch_captures_pruned": 9,
+            "qsearch_captures_exempted": 411,
+            "see_cache_hits": 58
+          }
+        }
+      }
+    },
+    {
+      "id": "defensive_block_promotion",
+      "category": "defensive_resource",
+      "description": "Black rook must capture white pawn before promotion",
+      "fen": "8/1P6/8/8/8/8/1r6/k6K b - - 0 1",
+      "expected_moves": [
+        "b2b7"
+      ],
+      "target_outcome": "defensive_capture",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 570,
+            "elapsed": 0.015,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 570,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 39,
+            "captures_ordered_see": 39,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 570,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 9,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 9,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 9,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 570,
+            "elapsed": 0.015,
+            "expected_match": true,
+            "see_evaluations": 39,
+            "captures_ordered_see": 39,
+            "qsearch_captures_considered": 9,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 9,
+            "see_cache_hits": 9
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8",
+              "h2h3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1206,
+            "elapsed": 0.063,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8",
+              "h2h3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1200,
+            "elapsed": 0.047,
+            "expected_match": true,
+            "see_evaluations": 98,
+            "captures_ordered_see": 98,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8",
+              "h2h3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1206,
+            "elapsed": 0.046,
+            "expected_match": true,
+            "see_evaluations": 15,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 15,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 15,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8",
+              "h2h3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1200,
+            "elapsed": 0.047,
+            "expected_match": true,
+            "see_evaluations": 98,
+            "captures_ordered_see": 98,
+            "qsearch_captures_considered": 20,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 20,
+            "see_cache_hits": 20
+          }
+        }
+      }
+    },
+    {
+      "id": "hanging_piece_free_bishop",
+      "category": "hanging_piece",
+      "description": "Black bishop on b4 is completely undefended",
+      "fen": "r1bqk2r/pppp1ppp/2n5/4p3/1bB1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+      "expected_moves": [
+        "c3b4",
+        "a2a3",
+        "d2d3",
+        "d2d4",
+        "c3d5",
+        "c4f7",
+        "e1g1"
+      ],
+      "target_outcome": "profitable_exchange_or_development",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": 340,
+            "best_move": "c3d5",
+            "pv": [
+              "c3d5",
+              "b4d6",
+              "h2h4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 5632,
+            "elapsed": 0.266,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": 340,
+            "best_move": "c3d5",
+            "pv": [
+              "c3d5",
+              "b4d6",
+              "h2h4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 5078,
+            "elapsed": 0.422,
+            "expected_match": true,
+            "see_evaluations": 2723,
+            "captures_ordered_see": 2723,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": 340,
+            "best_move": "c3d5",
+            "pv": [
+              "c3d5",
+              "b4d6",
+              "h2h4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4862,
+            "elapsed": 0.515,
+            "expected_match": true,
+            "see_evaluations": 675,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 1018,
+            "qsearch_captures_pruned": 210,
+            "qsearch_captures_exempted": 808,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": 340,
+            "best_move": "c3d5",
+            "pv": [
+              "c3d5",
+              "b4d6",
+              "h2h4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4629,
+            "elapsed": 0.485,
+            "expected_match": true,
+            "see_evaluations": 2217,
+            "captures_ordered_see": 2217,
+            "qsearch_captures_considered": 882,
+            "qsearch_captures_pruned": 190,
+            "qsearch_captures_exempted": 692,
+            "see_cache_hits": 576
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": 334,
+            "best_move": "d2d4",
+            "pv": [
+              "d2d4",
+              "e5d4",
+              "f3d4",
+              "h7h5"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 15139,
+            "elapsed": 1.609,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": 334,
+            "best_move": "d2d4",
+            "pv": [
+              "d2d4",
+              "e5d4",
+              "f3d4",
+              "h7h5"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 12920,
+            "elapsed": 1.578,
+            "expected_match": true,
+            "see_evaluations": 10872,
+            "captures_ordered_see": 10872,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": 334,
+            "best_move": "d2d4",
+            "pv": [
+              "d2d4",
+              "e5d4",
+              "f3d4",
+              "h7h5"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 11116,
+            "elapsed": 1.188,
+            "expected_match": true,
+            "see_evaluations": 2713,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 3962,
+            "qsearch_captures_pruned": 1065,
+            "qsearch_captures_exempted": 2897,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": 334,
+            "best_move": "d2d4",
+            "pv": [
+              "d2d4",
+              "e5d4",
+              "f3d4",
+              "h7h5"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 9754,
+            "elapsed": 0.937,
+            "expected_match": true,
+            "see_evaluations": 7087,
+            "captures_ordered_see": 7087,
+            "qsearch_captures_considered": 3161,
+            "qsearch_captures_pruned": 915,
+            "qsearch_captures_exempted": 2246,
+            "see_cache_hits": 2069
+          }
+        }
+      }
+    },
+    {
+      "id": "hanging_knight_capture",
+      "category": "hanging_piece",
+      "description": "Black knight on e4 is undefended after pawn push",
+      "fen": "r1bqk2r/ppp2ppp/2n5/3p4/3Pn3/2NB1N2/PPP2PPP/R1BQK2R w KQkq - 0 8",
+      "expected_moves": [
+        "c3e4",
+        "d3e4"
+      ],
+      "target_outcome": "capture_undefended_piece",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": 485,
+            "best_move": "c3e4",
+            "pv": [
+              "c3e4",
+              "d5e4",
+              "d3e4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3914,
+            "elapsed": 0.203,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": 485,
+            "best_move": "c3e4",
+            "pv": [
+              "c3e4",
+              "d5e4",
+              "d3e4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3919,
+            "elapsed": 0.188,
+            "expected_match": true,
+            "see_evaluations": 1297,
+            "captures_ordered_see": 1297,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": 485,
+            "best_move": "c3e4",
+            "pv": [
+              "c3e4",
+              "d5e4",
+              "d3e4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3564,
+            "elapsed": 0.203,
+            "expected_match": true,
+            "see_evaluations": 428,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 467,
+            "qsearch_captures_pruned": 194,
+            "qsearch_captures_exempted": 273,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": 485,
+            "best_move": "c3e4",
+            "pv": [
+              "c3e4",
+              "d5e4",
+              "d3e4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3598,
+            "elapsed": 0.172,
+            "expected_match": true,
+            "see_evaluations": 1035,
+            "captures_ordered_see": 1035,
+            "qsearch_captures_considered": 497,
+            "qsearch_captures_pruned": 183,
+            "qsearch_captures_exempted": 314,
+            "see_cache_hits": 458
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": 473,
+            "best_move": "c3e4",
+            "pv": [
+              "c3e4",
+              "d5e4",
+              "d3e4",
+              "c8e6"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 9950,
+            "elapsed": 0.562,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": 473,
+            "best_move": "c3e4",
+            "pv": [
+              "c3e4",
+              "d5e4",
+              "d3e4",
+              "c8e6"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 9850,
+            "elapsed": 1.016,
+            "expected_match": true,
+            "see_evaluations": 7120,
+            "captures_ordered_see": 7120,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": 473,
+            "best_move": "c3e4",
+            "pv": [
+              "c3e4",
+              "d5e4",
+              "d3e4",
+              "c8e6"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 8440,
+            "elapsed": 1.265,
+            "expected_match": true,
+            "see_evaluations": 2572,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 2736,
+            "qsearch_captures_pruned": 965,
+            "qsearch_captures_exempted": 1771,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": 473,
+            "best_move": "c3e4",
+            "pv": [
+              "c3e4",
+              "d5e4",
+              "d3e4",
+              "c8e6"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 8370,
+            "elapsed": 1.453,
+            "expected_match": true,
+            "see_evaluations": 6291,
+            "captures_ordered_see": 6291,
+            "qsearch_captures_considered": 2871,
+            "qsearch_captures_pruned": 1028,
+            "qsearch_captures_exempted": 1843,
+            "see_cache_hits": 2702
+          }
+        }
+      }
+    },
+    {
+      "id": "checking_capture_pawn",
+      "category": "checking_capture",
+      "description": "Queen captures defended pawn on f7 delivering check",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5Q2/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+      "expected_moves": [
+        "f3f7"
+      ],
+      "target_outcome": "checking_capture_mate",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "f3f7",
+            "pv": [
+              "f3f7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4426,
+            "elapsed": 0.375,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "f3f7",
+            "pv": [
+              "f3f7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4433,
+            "elapsed": 0.469,
+            "expected_match": true,
+            "see_evaluations": 1097,
+            "captures_ordered_see": 1097,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "f3f7",
+            "pv": [
+              "f3f7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4114,
+            "elapsed": 0.422,
+            "expected_match": true,
+            "see_evaluations": 366,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 596,
+            "qsearch_captures_pruned": 309,
+            "qsearch_captures_exempted": 287,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "f3f7",
+            "pv": [
+              "f3f7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4107,
+            "elapsed": 0.5,
+            "expected_match": true,
+            "see_evaluations": 1092,
+            "captures_ordered_see": 1092,
+            "qsearch_captures_considered": 596,
+            "qsearch_captures_pruned": 323,
+            "qsearch_captures_exempted": 273,
+            "see_cache_hits": 362
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "f3f7",
+            "pv": [
+              "f3f7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 13877,
+            "elapsed": 1.719,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "f3f7",
+            "pv": [
+              "f3f7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 12638,
+            "elapsed": 1.906,
+            "expected_match": true,
+            "see_evaluations": 6311,
+            "captures_ordered_see": 6311,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "f3f7",
+            "pv": [
+              "f3f7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 12024,
+            "elapsed": 1.766,
+            "expected_match": true,
+            "see_evaluations": 2683,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 4563,
+            "qsearch_captures_pruned": 1850,
+            "qsearch_captures_exempted": 2713,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "f3f7",
+            "pv": [
+              "f3f7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 11003,
+            "elapsed": 1.937,
+            "expected_match": true,
+            "see_evaluations": 6306,
+            "captures_ordered_see": 6306,
+            "qsearch_captures_considered": 3734,
+            "qsearch_captures_pruned": 1632,
+            "qsearch_captures_exempted": 2102,
+            "see_cache_hits": 2127
+          }
+        }
+      }
+    },
+    {
+      "id": "en_passant_discovered_check",
+      "category": "en_passant",
+      "description": "White pawn plays exd6 e.p. capturing pawn and opening e-file",
+      "fen": "rnbqkbnr/ppp1pppp/8/3pP3/8/8/PPPP1PPP/RNBQKBNR w KQkq d6 0 2",
+      "expected_moves": [
+        "e5d6",
+        "g1f3",
+        "d2d4",
+        "f1c4",
+        "b1c3"
+      ],
+      "target_outcome": "legal_en_passant_handling",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": 17,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "c8e6",
+              "f1d3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 2571,
+            "elapsed": 0.328,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": 17,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "c8e6",
+              "f1d3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 2552,
+            "elapsed": 0.297,
+            "expected_match": true,
+            "see_evaluations": 407,
+            "captures_ordered_see": 407,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": 17,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "c8e6",
+              "f1d3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 2521,
+            "elapsed": 0.297,
+            "expected_match": true,
+            "see_evaluations": 70,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 133,
+            "qsearch_captures_pruned": 22,
+            "qsearch_captures_exempted": 111,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": 17,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "c8e6",
+              "f1d3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 2502,
+            "elapsed": 0.328,
+            "expected_match": true,
+            "see_evaluations": 364,
+            "captures_ordered_see": 364,
+            "qsearch_captures_considered": 126,
+            "qsearch_captures_pruned": 22,
+            "qsearch_captures_exempted": 104,
+            "see_cache_hits": 65
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": 13,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8h6",
+              "b1c3",
+              "b8c6"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 5872,
+            "elapsed": 0.813,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": 13,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8h6",
+              "b1c3",
+              "b8c6"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 5612,
+            "elapsed": 0.734,
+            "expected_match": true,
+            "see_evaluations": 1791,
+            "captures_ordered_see": 1791,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": 13,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8h6",
+              "b1c3",
+              "b8c6"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 5416,
+            "elapsed": 0.797,
+            "expected_match": true,
+            "see_evaluations": 564,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 705,
+            "qsearch_captures_pruned": 205,
+            "qsearch_captures_exempted": 500,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": 13,
+            "best_move": "g1f3",
+            "pv": [
+              "g1f3",
+              "g8h6",
+              "b1c3",
+              "b8c6"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 5190,
+            "elapsed": 0.703,
+            "expected_match": true,
+            "see_evaluations": 1337,
+            "captures_ordered_see": 1337,
+            "qsearch_captures_considered": 621,
+            "qsearch_captures_pruned": 197,
+            "qsearch_captures_exempted": 424,
+            "see_cache_hits": 485
+          }
+        }
+      }
+    },
+    {
+      "id": "pinned_defender_cannot_retaliate",
+      "category": "pins_and_legality",
+      "description": "Black rook pinned to king cannot legally capture queen",
+      "fen": "8/8/8/3r4/4Q3/8/3R4/3K3k w - - 0 1",
+      "expected_moves": [
+        "e4g2",
+        "e4d5",
+        "d2d5"
+      ],
+      "target_outcome": "capture_pinned_piece_or_deliver_mate",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "e4g2",
+            "pv": [
+              "e4g2"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1348,
+            "elapsed": 0.094,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "e4g2",
+            "pv": [
+              "e4g2"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1348,
+            "elapsed": 0.125,
+            "expected_match": true,
+            "see_evaluations": 198,
+            "captures_ordered_see": 198,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "e4g2",
+            "pv": [
+              "e4g2"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1348,
+            "elapsed": 0.14,
+            "expected_match": true,
+            "see_evaluations": 92,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 94,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 94,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": 99999,
+            "best_move": "e4g2",
+            "pv": [
+              "e4g2"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1348,
+            "elapsed": 0.141,
+            "expected_match": true,
+            "see_evaluations": 198,
+            "captures_ordered_see": 198,
+            "qsearch_captures_considered": 94,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 94,
+            "see_cache_hits": 92
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "e4g2",
+            "pv": [
+              "e4g2"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3155,
+            "elapsed": 0.297,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "e4g2",
+            "pv": [
+              "e4g2"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3155,
+            "elapsed": 0.344,
+            "expected_match": true,
+            "see_evaluations": 642,
+            "captures_ordered_see": 642,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "e4g2",
+            "pv": [
+              "e4g2"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3155,
+            "elapsed": 0.343,
+            "expected_match": true,
+            "see_evaluations": 240,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 251,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 251,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": 99999,
+            "best_move": "e4g2",
+            "pv": [
+              "e4g2"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3155,
+            "elapsed": 0.375,
+            "expected_match": true,
+            "see_evaluations": 642,
+            "captures_ordered_see": 642,
+            "qsearch_captures_considered": 251,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 251,
+            "see_cache_hits": 240
+          }
+        }
+      }
+    },
+    {
+      "id": "king_recapture_only_legal_move",
+      "category": "king_recaptures",
+      "description": "King must recapture queen on undefended square",
+      "fen": "8/8/8/8/8/3q4/3K4/8 w - - 0 1",
+      "expected_moves": [
+        "d2d3"
+      ],
+      "target_outcome": "king_recapture",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": 0,
+            "best_move": "d2d3",
+            "pv": [
+              "d2d3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 32,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": 0,
+            "best_move": "d2d3",
+            "pv": [
+              "d2d3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 32,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 1,
+            "captures_ordered_see": 1,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": 0,
+            "best_move": "d2d3",
+            "pv": [
+              "d2d3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 32,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": 0,
+            "best_move": "d2d3",
+            "pv": [
+              "d2d3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 32,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 1,
+            "captures_ordered_see": 1,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": 0,
+            "best_move": "d2d3",
+            "pv": [
+              "d2d3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 42,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": 0,
+            "best_move": "d2d3",
+            "pv": [
+              "d2d3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 42,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 1,
+            "captures_ordered_see": 1,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": 0,
+            "best_move": "d2d3",
+            "pv": [
+              "d2d3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 42,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": 0,
+            "best_move": "d2d3",
+            "pv": [
+              "d2d3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 42,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 1,
+            "captures_ordered_see": 1,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "losing_capture_avoids_mate",
+      "category": "negative_see_defense",
+      "description": "Queen capture on f3 (Qxf3) loses queen to pawn gxf3, but prevents Qxf2#",
+      "fen": "r1b1k2r/pp3ppp/8/8/8/5q2/PP3PPP/R1BQKB1R w KQkq - 0 1",
+      "expected_moves": [
+        "d1f3",
+        "g2f3"
+      ],
+      "target_outcome": "eliminate_mating_attacker",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": 1265,
+            "best_move": "d1f3",
+            "pv": [
+              "d1f3",
+              "a7a6",
+              "f3e4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 2678,
+            "elapsed": 0.281,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": 1265,
+            "best_move": "d1f3",
+            "pv": [
+              "d1f3",
+              "a7a6",
+              "f3e4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 2977,
+            "elapsed": 0.375,
+            "expected_match": true,
+            "see_evaluations": 827,
+            "captures_ordered_see": 827,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": 1265,
+            "best_move": "d1f3",
+            "pv": [
+              "d1f3",
+              "a7a6",
+              "f3e4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 2506,
+            "elapsed": 0.25,
+            "expected_match": true,
+            "see_evaluations": 162,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 242,
+            "qsearch_captures_pruned": 63,
+            "qsearch_captures_exempted": 179,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": 1265,
+            "best_move": "d1f3",
+            "pv": [
+              "d1f3",
+              "a7a6",
+              "f3e4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 2874,
+            "elapsed": 0.359,
+            "expected_match": true,
+            "see_evaluations": 768,
+            "captures_ordered_see": 768,
+            "qsearch_captures_considered": 221,
+            "qsearch_captures_pruned": 58,
+            "qsearch_captures_exempted": 163,
+            "see_cache_hits": 162
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": 1265,
+            "best_move": "d1f3",
+            "pv": [
+              "d1f3",
+              "a7a6",
+              "f3e4",
+              "e8f8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4081,
+            "elapsed": 0.563,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": 1265,
+            "best_move": "d1f3",
+            "pv": [
+              "d1f3",
+              "a7a6",
+              "f3e4",
+              "e8f8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4998,
+            "elapsed": 0.812,
+            "expected_match": true,
+            "see_evaluations": 2190,
+            "captures_ordered_see": 2190,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": 1265,
+            "best_move": "d1f3",
+            "pv": [
+              "d1f3",
+              "a7a6",
+              "f3e4",
+              "e8f8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3516,
+            "elapsed": 0.485,
+            "expected_match": true,
+            "see_evaluations": 404,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 524,
+            "qsearch_captures_pruned": 198,
+            "qsearch_captures_exempted": 326,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": 1265,
+            "best_move": "d1f3",
+            "pv": [
+              "d1f3",
+              "a7a6",
+              "f3e4",
+              "e8f8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4498,
+            "elapsed": 0.781,
+            "expected_match": true,
+            "see_evaluations": 1857,
+            "captures_ordered_see": 1857,
+            "qsearch_captures_considered": 543,
+            "qsearch_captures_pruned": 217,
+            "qsearch_captures_exempted": 326,
+            "see_cache_hits": 439
+          }
+        }
+      }
+    },
+    {
+      "id": "queen_sacrifice_for_stalemate",
+      "category": "stalemate_defense",
+      "description": "Black king stalemated in corner",
+      "fen": "7k/5K2/6Q1/8/8/8/8/8 b - - 0 1",
+      "expected_moves": [],
+      "target_outcome": "stalemate_draw",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 0,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 0,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 0,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 0,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 0,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 0,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 0,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": [],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 0,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "trebuchet_zugzwang",
+      "category": "zugzwang",
+      "description": "Mutual zugzwang (Tr\u00e9buchet); White to move loses d3 pawn",
+      "fen": "8/8/8/3k4/3p4/3K4/8/8 w - - 0 1",
+      "expected_moves": [],
+      "target_outcome": "preserves_material_guard_against_nmp",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2f3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 99,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2f3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 99,
+            "elapsed": 0.015,
+            "expected_match": true,
+            "see_evaluations": 2,
+            "captures_ordered_see": 2,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2f3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 99,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2f3"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 99,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 2,
+            "captures_ordered_see": 2,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2d3",
+              "e6e5"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 278,
+            "elapsed": 0.015,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2d3",
+              "e6e5"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 278,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 10,
+            "captures_ordered_see": 10,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2d3",
+              "e6e5"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 278,
+            "elapsed": 0.031,
+            "expected_match": true,
+            "see_evaluations": 7,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 7,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 7,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2d3",
+              "e6e5"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 278,
+            "elapsed": 0.032,
+            "expected_match": true,
+            "see_evaluations": 10,
+            "captures_ordered_see": 10,
+            "qsearch_captures_considered": 7,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 7,
+            "see_cache_hits": 7
+          }
+        }
+      }
+    },
+    {
+      "id": "king_pawn_opposition",
+      "category": "endgame_opposition",
+      "description": "Distant opposition in king-and-pawn endgame",
+      "fen": "8/8/4k3/8/8/4K3/8/8 w - - 0 1",
+      "expected_moves": [],
+      "target_outcome": "opposition_defense",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 3,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 4,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "rook_endgame_lucena",
+      "category": "low_material_endgame",
+      "description": "Lucena position bridge-building setup",
+      "fen": "1K1k4/1P1r4/8/8/8/8/8/2R5 w - - 0 1",
+      "expected_moves": [],
+      "target_outcome": "winning_technique",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 612,
+            "elapsed": 0.062,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 906,
+            "elapsed": 0.094,
+            "expected_match": true,
+            "see_evaluations": 62,
+            "captures_ordered_see": 62,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 610,
+            "elapsed": 0.047,
+            "expected_match": true,
+            "see_evaluations": 15,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 68,
+            "qsearch_captures_pruned": 1,
+            "qsearch_captures_exempted": 67,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 904,
+            "elapsed": 0.093,
+            "expected_match": true,
+            "see_evaluations": 61,
+            "captures_ordered_see": 61,
+            "qsearch_captures_considered": 74,
+            "qsearch_captures_pruned": 1,
+            "qsearch_captures_exempted": 73,
+            "see_cache_hits": 21
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7",
+              "d8e7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 867,
+            "elapsed": 0.094,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7",
+              "d8e7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1158,
+            "elapsed": 0.125,
+            "expected_match": true,
+            "see_evaluations": 108,
+            "captures_ordered_see": 108,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7",
+              "d8e7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 865,
+            "elapsed": 0.094,
+            "expected_match": true,
+            "see_evaluations": 25,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 81,
+            "qsearch_captures_pruned": 1,
+            "qsearch_captures_exempted": 80,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7",
+              "d8e7"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1156,
+            "elapsed": 0.125,
+            "expected_match": true,
+            "see_evaluations": 107,
+            "captures_ordered_see": 107,
+            "qsearch_captures_considered": 87,
+            "qsearch_captures_pruned": 1,
+            "qsearch_captures_exempted": 86,
+            "see_cache_hits": 31
+          }
+        }
+      }
+    },
+    {
+      "id": "forced_single_evasion",
+      "category": "check_evasion",
+      "description": "White king in check with exactly 1 legal evasion (Kh1-h2)",
+      "fen": "8/8/8/8/8/7P/6P1/4r2K w - - 0 1",
+      "expected_moves": [
+        "h1h2"
+      ],
+      "target_outcome": "forced_single_evasion",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": -280,
+            "best_move": "h1h2",
+            "pv": [
+              "h1h2",
+              "e1e2",
+              "h3h4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 119,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": -280,
+            "best_move": "h1h2",
+            "pv": [
+              "h1h2",
+              "e1e2",
+              "h3h4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 119,
+            "elapsed": 0.015,
+            "expected_match": true,
+            "see_evaluations": 11,
+            "captures_ordered_see": 11,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": -280,
+            "best_move": "h1h2",
+            "pv": [
+              "h1h2",
+              "e1e2",
+              "h3h4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 117,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 1,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 4,
+            "qsearch_captures_pruned": 1,
+            "qsearch_captures_exempted": 3,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": -280,
+            "best_move": "h1h2",
+            "pv": [
+              "h1h2",
+              "e1e2",
+              "h3h4"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 117,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 10,
+            "captures_ordered_see": 10,
+            "qsearch_captures_considered": 4,
+            "qsearch_captures_pruned": 1,
+            "qsearch_captures_exempted": 3,
+            "see_cache_hits": 1
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": -280,
+            "best_move": "h1h2",
+            "pv": [
+              "h1h2",
+              "e1e2",
+              "h3h4",
+              "e2e8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 244,
+            "elapsed": 0.015,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": -280,
+            "best_move": "h1h2",
+            "pv": [
+              "h1h2",
+              "e1e2",
+              "h3h4",
+              "e2e8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 238,
+            "elapsed": 0.0,
+            "expected_match": true,
+            "see_evaluations": 17,
+            "captures_ordered_see": 17,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": -280,
+            "best_move": "h1h2",
+            "pv": [
+              "h1h2",
+              "e1e2",
+              "h3h4",
+              "e2e8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 242,
+            "elapsed": 0.016,
+            "expected_match": true,
+            "see_evaluations": 2,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 5,
+            "qsearch_captures_pruned": 1,
+            "qsearch_captures_exempted": 4,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": -280,
+            "best_move": "h1h2",
+            "pv": [
+              "h1h2",
+              "e1e2",
+              "h3h4",
+              "e2e8"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 236,
+            "elapsed": 0.015,
+            "expected_match": true,
+            "see_evaluations": 16,
+            "captures_ordered_see": 16,
+            "qsearch_captures_considered": 4,
+            "qsearch_captures_pruned": 1,
+            "qsearch_captures_exempted": 3,
+            "see_cache_hits": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "multiple_check_evasions",
+      "category": "check_evasion",
+      "description": "White king in check with 5 legal evasions (c3, Nc3, Nd2, Bd2, Qd2)",
+      "fen": "rnbqk1nr/pppp1ppp/8/4p3/1b1P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3",
+      "expected_moves": [
+        "c2c3",
+        "b1c3",
+        "b1d2",
+        "c1d2",
+        "d1d2"
+      ],
+      "target_outcome": "multiple_evasions",
+      "depth_results": {
+        "depth_3": {
+          "baseline": {
+            "completed_depth": 3,
+            "score": 128,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "b4d6",
+              "f3e5"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1659,
+            "elapsed": 0.25,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 3,
+            "score": 128,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "b4d6",
+              "f3e5"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1568,
+            "elapsed": 0.266,
+            "expected_match": true,
+            "see_evaluations": 1398,
+            "captures_ordered_see": 1398,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 3,
+            "score": 128,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "b4d6",
+              "f3e5"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1566,
+            "elapsed": 0.297,
+            "expected_match": true,
+            "see_evaluations": 594,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 669,
+            "qsearch_captures_pruned": 46,
+            "qsearch_captures_exempted": 623,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 3,
+            "score": 128,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "b4d6",
+              "f3e5"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 1487,
+            "elapsed": 0.281,
+            "expected_match": true,
+            "see_evaluations": 1326,
+            "captures_ordered_see": 1326,
+            "qsearch_captures_considered": 601,
+            "qsearch_captures_pruned": 38,
+            "qsearch_captures_exempted": 563,
+            "see_cache_hits": 530
+          }
+        },
+        "depth_4": {
+          "baseline": {
+            "completed_depth": 4,
+            "score": 125,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "b4d6",
+              "d4e5",
+              "d6c5"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 2649,
+            "elapsed": 0.406,
+            "expected_match": true,
+            "see_evaluations": 0,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_ordering_only": {
+            "completed_depth": 4,
+            "score": 125,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "b4d6",
+              "d4e5",
+              "d6c5"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 2509,
+            "elapsed": 0.422,
+            "expected_match": true,
+            "see_evaluations": 1924,
+            "captures_ordered_see": 1924,
+            "qsearch_captures_considered": 0,
+            "qsearch_captures_pruned": 0,
+            "qsearch_captures_exempted": 0,
+            "see_cache_hits": 0
+          },
+          "see_pruning_only": {
+            "completed_depth": 4,
+            "score": 125,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "b4d6",
+              "d4e5",
+              "d6c5"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 2534,
+            "elapsed": 0.469,
+            "expected_match": true,
+            "see_evaluations": 821,
+            "captures_ordered_see": 0,
+            "qsearch_captures_considered": 906,
+            "qsearch_captures_pruned": 60,
+            "qsearch_captures_exempted": 846,
+            "see_cache_hits": 0
+          },
+          "see_ordering_and_pruning": {
+            "completed_depth": 4,
+            "score": 125,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "b4d6",
+              "d4e5",
+              "d6c5"
+            ],
+            "pv_legal": true,
+            "legal_best_move": true,
+            "nodes": 2402,
+            "elapsed": 0.5,
+            "expected_match": true,
+            "see_evaluations": 1833,
+            "captures_ordered_see": 1833,
+            "qsearch_captures_considered": 855,
+            "qsearch_captures_pruned": 57,
+            "qsearch_captures_exempted": 798,
+            "see_cache_hits": 772
+          }
+        }
+      }
+    }
+  ],
+  "divergences": [],
+  "failures": [],
+  "summary": {
+    "total_searches": 160,
+    "valid_pv_and_legal_rate": "160/160 (100.00%)",
+    "divergences_count": 0,
+    "failures_count": 0
+  }
+}

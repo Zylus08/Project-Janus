@@ -73,7 +73,9 @@ def run_benchmark(
     enable_lmr: bool = True,
     enable_nmp: bool = True,
     enable_check_extensions: bool | None = None,
-    check_extension_policy: str = "bounded_all_checks",
+    check_extension_policy: str = "disabled",
+    enable_see_ordering: bool = False,
+    enable_see_pruning: bool = False,
 ) -> dict[str, Any]:
     if enable_check_extensions is not None:
         if not enable_check_extensions:
@@ -88,6 +90,8 @@ def run_benchmark(
         enable_lmr=enable_lmr,
         enable_nmp=enable_nmp,
         check_extension_policy=check_extension_policy,
+        enable_see_ordering=enable_see_ordering,
+        enable_see_pruning=enable_see_pruning,
     )
     rows: list[dict[str, Any]] = []
     for position in positions:
@@ -144,12 +148,18 @@ def run_benchmark(
             "check_extensions_suppressed": result.check_extensions_suppressed,
             "check_extensions_multiple_replies": result.check_extensions_multiple_replies,
             "check_extensions_terminal_mates": result.check_extensions_terminal_mates,
+            "see_evaluations": result.see_evaluations,
+            "captures_ordered_see": result.captures_ordered_see,
+            "qsearch_captures_considered": result.qsearch_captures_considered,
+            "qsearch_captures_pruned": result.qsearch_captures_pruned,
+            "qsearch_captures_exempted": result.qsearch_captures_exempted,
+            "see_cache_hits": result.see_cache_hits,
         })
 
     return {
         "metadata": {
             "engine": "Project Janus",
-            "engine_version": "0.2.1",
+            "engine_version": "0.2.2",
             "git_commit": git_commit(),
             "timestamp_utc": datetime.now(timezone.utc).isoformat(),
             "python_version": platform.python_version(),
@@ -167,6 +177,8 @@ def run_benchmark(
             "check_extensions_enabled": engine.enable_check_extensions,
             "check_extension_policy": engine.check_extension_policy,
             "max_check_extensions": 2,
+            "see_ordering_enabled": enable_see_ordering,
+            "see_pruning_enabled": enable_see_pruning,
             "transposition_table_policy": "cleared before each position (cold start)",
             "score_convention": "score_from_side_to_move is from the side-to-move perspective; mate scores remain encoded near +/-100000",
         },
@@ -207,6 +219,12 @@ def run_benchmark(
             "total_check_extensions_suppressed": sum(row["check_extensions_suppressed"] for row in rows),
             "total_check_extensions_multiple_replies": sum(row["check_extensions_multiple_replies"] for row in rows),
             "total_check_extensions_terminal_mates": sum(row["check_extensions_terminal_mates"] for row in rows),
+            "total_see_evaluations": sum(row["see_evaluations"] for row in rows),
+            "total_captures_ordered_see": sum(row["captures_ordered_see"] for row in rows),
+            "total_qsearch_captures_considered": sum(row["qsearch_captures_considered"] for row in rows),
+            "total_qsearch_captures_pruned": sum(row["qsearch_captures_pruned"] for row in rows),
+            "total_qsearch_captures_exempted": sum(row["qsearch_captures_exempted"] for row in rows),
+            "total_see_cache_hits": sum(row["see_cache_hits"] for row in rows),
         },
         "results": rows,
     }
@@ -238,11 +256,19 @@ def main() -> int:
                         help="Disable Late Move Reductions")
     parser.add_argument("--no-nmp", action="store_true",
                         help="Disable Null Move Pruning")
-    parser.add_argument("--check-extension-policy", type=str, default="bounded_all_checks",
+    parser.add_argument("--check-extension-policy", type=str, default="disabled",
                         choices=["disabled", "bounded_all_checks", "single_reply"],
                         help="Check extension policy: disabled, bounded_all_checks, single_reply")
     parser.add_argument("--no-check-extensions", action="store_true",
                         help="Disable Check Extensions (equivalent to --check-extension-policy disabled)")
+    parser.add_argument("--enable-see-ordering", action="store_true", default=False,
+                        help="Enable SEE-based capture move ordering")
+    parser.add_argument("--no-see-ordering", action="store_true", default=False,
+                        help="Disable SEE-based capture move ordering (default)")
+    parser.add_argument("--enable-see-pruning", action="store_true", default=False,
+                        help="Enable conservative SEE-based quiescence pruning")
+    parser.add_argument("--no-see-pruning", action="store_true", default=False,
+                        help="Disable conservative SEE-based quiescence pruning (default)")
     parser.add_argument("--out", type=Path, default=ROOT / "benchmark-results")
     args = parser.parse_args()
 
@@ -254,6 +280,8 @@ def main() -> int:
     try:
         positions = load_positions(args.positions)
         policy = "disabled" if args.no_check_extensions else args.check_extension_policy
+        see_ordering = args.enable_see_ordering and not args.no_see_ordering
+        see_pruning = args.enable_see_pruning and not args.no_see_pruning
         report = run_benchmark(
             positions,
             args.depth,
@@ -264,6 +292,8 @@ def main() -> int:
             enable_lmr=not args.no_lmr,
             enable_nmp=not args.no_nmp,
             check_extension_policy=policy,
+            enable_see_ordering=see_ordering,
+            enable_see_pruning=see_pruning,
         )
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         print(f"Benchmark error: {exc}", file=sys.stderr)

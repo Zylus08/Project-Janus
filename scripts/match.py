@@ -187,10 +187,13 @@ def main() -> int:
     parser.add_argument("--openings", type=Path, default=ROOT / "benchmarks" / "openings.json",
                         help="Path to opening positions JSON file")
     parser.add_argument("--seed", type=int, default=42, help="Random seed for deterministic opening sampling")
+    parser.add_argument("--hash", type=int, default=128, help="Hash size in MB for engines")
     parser.add_argument("--stockfish-threads", type=int, default=1, help="Stockfish UCI Threads option")
-    parser.add_argument("--stockfish-hash", type=int, default=128, help="Stockfish UCI Hash (MB) option")
+    parser.add_argument("--stockfish-hash", type=int, default=None, help="Stockfish UCI Hash (MB) option (overrides --hash)")
     parser.add_argument("--stockfish-skill", type=int, default=None, help="Stockfish UCI Skill Level option (0-20)")
     parser.add_argument("--stockfish-elo", type=int, default=None, help="Stockfish UCI_Elo limit (1320-3190)")
+    parser.add_argument("--match-name", default=None, help="Explicit output filename base (without extension)")
+    parser.add_argument("--resume", action="store_true", help="Resume an existing match from partial JSON/PGN")
     parser.add_argument("--out", type=Path, default=ROOT / "match-results")
     args = parser.parse_args()
 
@@ -222,16 +225,37 @@ def main() -> int:
         parser.error("Must provide --stockfish, --candidate-see, or custom --engine2-cmd")
 
     args.out.mkdir(parents=True, exist_ok=True)
-    stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-    prefix = "janus-see" if args.candidate_see else f"{engine1_name.lower()}-{engine2_name.lower()}"
-    pgn_path = args.out / f"{prefix}-{stamp}.pgn"
-    csv_path = args.out / f"{prefix}-{stamp}.csv"
-    json_path = args.out / f"{prefix}-{stamp}.json"
+    if args.match_name:
+        prefix = args.match_name
+        pgn_path = args.out / f"{prefix}.pgn"
+        csv_path = args.out / f"{prefix}.csv"
+        json_path = args.out / f"{prefix}.json"
+    else:
+        stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+        prefix = "janus-see" if args.candidate_see else f"{engine1_name.lower()}-{engine2_name.lower()}"
+        pgn_path = args.out / f"{prefix}-{stamp}.pgn"
+        csv_path = args.out / f"{prefix}-{stamp}.csv"
+        json_path = args.out / f"{prefix}-{stamp}.json"
+
     rows: list[dict[str, Any]] = []
+    start_index = 0
+
+    # Resume support
+    if (args.resume or args.match_name) and json_path.is_file():
+        try:
+            prev_report = json.loads(json_path.read_text(encoding="utf-8"))
+            existing_rows = prev_report.get("games", [])
+            if existing_rows:
+                rows = existing_rows
+                start_index = len(rows)
+                print(f"Resuming existing match: found {start_index} completed games in {json_path}")
+        except Exception as exc:
+            print(f"Warning: could not parse existing {json_path} for resume: {exc}")
 
     pairs_count = args.games // 2
     openings = load_openings(args.openings, count=pairs_count, seed=args.seed)
 
+    hash_mb = args.stockfish_hash if (is_stockfish_e2 and args.stockfish_hash is not None) else args.hash
     metadata: dict[str, Any] = {
         "engine1_name": engine1_name,
         "engine1_command": engine1_command,
@@ -239,8 +263,9 @@ def main() -> int:
         "engine2_command": engine2_command,
         "janus_command": engine1_command,
         "stockfish_command": engine2_command if is_stockfish_e2 else None,
+        "hash_mb": hash_mb,
         "stockfish_threads": args.stockfish_threads if is_stockfish_e2 else None,
-        "stockfish_hash_mb": args.stockfish_hash if is_stockfish_e2 else None,
+        "stockfish_hash_mb": hash_mb if is_stockfish_e2 else None,
         "stockfish_skill": args.stockfish_skill if is_stockfish_e2 else None,
         "stockfish_elo": args.stockfish_elo if is_stockfish_e2 else None,
         "depth_each_move": args.depth,
@@ -256,48 +281,70 @@ def main() -> int:
     start = time.monotonic()
     match_failed = False
 
-    try:
-        with (
-            chess.engine.SimpleEngine.popen_uci(engine1_command, cwd=str(ROOT)) as e1,
-            chess.engine.SimpleEngine.popen_uci(engine2_command, cwd=str(ROOT)) as e2,
-        ):
-            if is_stockfish_e2:
-                config: dict[str, Any] = {}
-                if "Threads" in e2.options: config["Threads"] = args.stockfish_threads
-                if "Hash" in e2.options: config["Hash"] = args.stockfish_hash
-                if args.stockfish_skill is not None and "Skill Level" in e2.options:
-                    config["Skill Level"] = args.stockfish_skill
-                if args.stockfish_elo is not None:
-                    if "UCI_LimitStrength" in e2.options: config["UCI_LimitStrength"] = True
-                    if "UCI_Elo" in e2.options: config["UCI_Elo"] = args.stockfish_elo
-                if config: e2.configure(config)
+    if start_index >= args.games:
+        print(f"Match is already complete ({start_index}/{args.games} games). Skipping search.")
+    else:
+        try:
+            with (
+                chess.engine.SimpleEngine.popen_uci(engine1_command, cwd=str(ROOT)) as e1,
+                chess.engine.SimpleEngine.popen_uci(engine2_command, cwd=str(ROOT)) as e2,
+            ):
+                # Configure hash and threads on both engines
+                for eng in (e1, e2):
+                    eng_cfg: dict[str, Any] = {}
+                    if "Hash" in eng.options: eng_cfg["Hash"] = hash_mb
+                    if "Threads" in eng.options: eng_cfg["Threads"] = 1
+                    if eng_cfg: eng.configure(eng_cfg)
 
-            with pgn_path.open("w", encoding="utf-8") as pgn_file:
-                for i in range(args.games):
-                    pair_index = i // 2
-                    opening = openings[pair_index]
-                    color = chess.WHITE if i % 2 == 0 else chess.BLACK
-                    game, row = play_one_game(
-                        e1, e2, i + 1, color, args.depth, args.max_plies,
-                        start_fen=opening.get("fen"), opening_id=opening.get("id", "startpos"),
-                        pair_number=pair_index + 1,
-                        engine1_name=engine1_name, engine2_name=engine2_name,
-                    )
-                    pgn_file.write(str(game) + "\n\n")
-                    pgn_file.flush()
-                    rows.append(row)
-                    elapsed_so_far = time.monotonic() - start
-                    # Save progress after every game to ensure partial persistence
-                    write_reports(json_path, csv_path, rows, metadata, elapsed_so_far)
+                if is_stockfish_e2:
+                    sf_cfg: dict[str, Any] = {}
+                    if args.stockfish_threads and "Threads" in e2.options: sf_cfg["Threads"] = args.stockfish_threads
+                    if args.stockfish_skill is not None and "Skill Level" in e2.options:
+                        sf_cfg["Skill Level"] = args.stockfish_skill
+                    if args.stockfish_elo is not None:
+                        if "UCI_LimitStrength" in e2.options: sf_cfg["UCI_LimitStrength"] = True
+                        if "UCI_Elo" in e2.options: sf_cfg["UCI_Elo"] = args.stockfish_elo
+                    if sf_cfg: e2.configure(sf_cfg)
 
-                    print(f"Game {row['game']} (Pair {row['pair']}, {row['opening_id']}): "
-                          f"{engine1_name} ({row['janus_color']}) {row['result']} {engine2_name}, "
-                          f"{row['plies']} plies, {row['duration_seconds']}s, termination={row['termination']}")
-    except (OSError, chess.engine.EngineError, RuntimeError) as exc:
-        print(f"Match failed: {exc}", file=sys.stderr)
-        match_failed = True
+                pgn_mode = "a" if (start_index > 0 and pgn_path.is_file()) else "w"
+                with pgn_path.open(pgn_mode, encoding="utf-8") as pgn_file:
+                    for i in range(start_index, args.games):
+                        pair_index = i // 2
+                        opening = openings[pair_index]
+                        color = chess.WHITE if i % 2 == 0 else chess.BLACK
+
+                        # Send ucinewgame to both engines before every game for a clean state
+                        try:
+                            e1.protocol.send_line("ucinewgame")
+                            e2.protocol.send_line("ucinewgame")
+                            e1.ping()
+                            e2.ping()
+                        except Exception:
+                            pass
+
+                        game, row = play_one_game(
+                            e1, e2, i + 1, color, args.depth, args.max_plies,
+                            start_fen=opening.get("fen"), opening_id=opening.get("id", "startpos"),
+                            pair_number=pair_index + 1,
+                            engine1_name=engine1_name, engine2_name=engine2_name,
+                        )
+                        pgn_file.write(str(game) + "\n\n")
+                        pgn_file.flush()
+                        rows.append(row)
+                        elapsed_so_far = time.monotonic() - start
+                        # Save progress after every game to ensure partial persistence
+                        write_reports(json_path, csv_path, rows, metadata, elapsed_so_far)
+
+                        print(f"Game {row['game']:03d}/{args.games:03d} (Pair {row['pair']:02d}, {row['opening_id']}): "
+                              f"{engine1_name} ({row['janus_color']}) {row['result']} {engine2_name}, "
+                              f"{row['plies']} plies, {row['duration_seconds']}s, termination={row['termination']}")
+        except (OSError, chess.engine.EngineError, RuntimeError) as exc:
+            print(f"Match failed: {exc}", file=sys.stderr)
+            match_failed = True
 
     elapsed = time.monotonic() - start
+    write_reports(json_path, csv_path, rows, metadata, elapsed)
+    summary = summarize(rows)
     write_reports(json_path, csv_path, rows, metadata, elapsed)
     summary = summarize(rows)
 

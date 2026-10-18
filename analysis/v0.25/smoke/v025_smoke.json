@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "engine1_name": "Janus-Baseline",
+    "engine1_command": [
+      "E:\\ChessXML\\project-janus\\.venv\\Scripts\\python.exe",
+      "-m",
+      "janus.uci",
+      "--name",
+      "Janus-Baseline"
+    ],
+    "engine2_name": "Janus-SEE",
+    "engine2_command": [
+      "E:\\ChessXML\\project-janus\\.venv\\Scripts\\python.exe",
+      "-m",
+      "janus.uci",
+      "--see",
+      "--name",
+      "Janus-SEE"
+    ],
+    "janus_command": [
+      "E:\\ChessXML\\project-janus\\.venv\\Scripts\\python.exe",
+      "-m",
+      "janus.uci",
+      "--name",
+      "Janus-Baseline"
+    ],
+    "stockfish_command": null,
+    "hash_mb": 128,
+    "stockfish_threads": null,
+    "stockfish_hash_mb": null,
+    "stockfish_skill": null,
+    "stockfish_elo": null,
+    "depth_each_move": 3,
+    "max_plies_per_game": 240,
+    "openings_path": "benchmarks\\openings.json",
+    "seed": 42,
+    "pairs_count": 1,
+    "timestamp_utc": "2026-10-17T20:44:37.816769+00:00",
+    "python_version": "3.12.8",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "method": "paired opening positions with alternating colours; fixed depth per move"
+  },
+  "summary": {
+    "games": 2,
+    "completed_games": 2,
+    "unfinished_games": 0,
+    "janus_wins": 0,
+    "draws": 2,
+    "janus_losses": 0,
+    "janus_score_points": 1.0,
+    "janus_score_percentage": 50.0,
+    "score_se": 0.0,
+    "score_ci_95": [
+      50.0,
+      50.0
+    ],
+    "by_color": {
+      "white": {
+        "wins": 0,
+        "draws": 1,
+        "losses": 0,
+        "unfinished": 0,
+        "games": 1
+      },
+      "black": {
+        "wins": 0,
+        "draws": 1,
+        "losses": 0,
+        "unfinished": 0,
+        "games": 1
+      }
+    }
+  },
+  "elapsed_seconds": 45.969,
+  "games": [
+    {
+      "game": 1,
+      "pair": 1,
+      "opening_id": "scotch_game",
+      "janus_color": "white",
+      "engine1_color": "white",
+      "white": "Janus-Baseline",
+      "black": "Janus-SEE",
+      "result": "1/2-1/2",
+      "termination": "threefold repetition",
+      "plies": 68,
+      "depth": 3,
+      "duration_seconds": 23.375,
+      "start_fen": "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"
+    },
+    {
+      "game": 2,
+      "pair": 1,
+      "opening_id": "scotch_game",
+      "janus_color": "black",
+      "engine1_color": "black",
+      "white": "Janus-SEE",
+      "black": "Janus-Baseline",
+      "result": "1/2-1/2",
+      "termination": "threefold repetition",
+      "plies": 97,
+      "depth": 3,
+      "duration_seconds": 22.187,
+      "start_fen": "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"
+    }
+  ]
+}

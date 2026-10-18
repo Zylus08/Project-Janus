@@ -148,6 +148,8 @@ def main() -> None:
             stop_search()
             board = chess.Board()
             engine.tt.clear()
+            engine.killers = [[None, None] for _ in range(engine.max_killers_ply)]
+            engine.history = [[0] * 64 for _ in range(64)]
 
         elif command == "position":
             stop_search()
@@ -195,7 +197,7 @@ def main() -> None:
 
         elif command == "quit":
             stop_search()
-            break
+            sys.exit(0)
 
         elif command == "debug":
             continue

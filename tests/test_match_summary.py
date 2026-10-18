@@ -133,5 +133,33 @@ class MatchSummaryTests(unittest.TestCase):
                 self.assertIn(key, meta)
                 self.assertEqual(meta[key], metadata[key])
 
+    def test_paired_statistical_analysis(self):
+        import analyze_v025_match
+        import json, tempfile
+        # Build synthetic 4-game (2-pair) match JSON
+        test_data = {
+            "metadata": {
+                "engine1_name": "Janus-Baseline",
+                "engine2_name": "Janus-SEE",
+            },
+            "games": [
+                {"game": 1, "pair": 1, "opening_id": "scotch", "janus_color": "white", "result": "1-0", "duration_seconds": 5.0, "termination": "checkmate"},
+                {"game": 2, "pair": 1, "opening_id": "scotch", "janus_color": "black", "result": "1/2-1/2", "duration_seconds": 6.0, "termination": "threefold repetition"},
+                {"game": 3, "pair": 2, "opening_id": "italian", "janus_color": "white", "result": "0-1", "duration_seconds": 4.0, "termination": "checkmate"},
+                {"game": 4, "pair": 2, "opening_id": "italian", "janus_color": "black", "result": "1-0", "duration_seconds": 4.5, "termination": "checkmate"},
+            ]
+        }
+        with tempfile.TemporaryDirectory() as tmpdir:
+            json_file = Path(tmpdir) / "test_match.json"
+            json_file.write_text(json.dumps(test_data), encoding="utf-8")
+            summary = analyze_v025_match.analyze_match(json_file)
+            self.assertEqual(summary["match"]["total_games"], 4)
+            self.assertEqual(summary["paired_analysis"]["sample_size_pairs"], 2)
+            self.assertEqual(summary["paired_analysis"]["treatment_pairs_won"], 1)
+            self.assertEqual(summary["paired_analysis"]["treatment_pairs_lost"], 1)
+            self.assertEqual(summary["paired_analysis"]["treatment_pairs_tied"], 0)
+            self.assertIn("p_value_two_sided", summary["paired_analysis"])
+            self.assertIn("paired_bootstrap_95_ci_pct", summary["paired_analysis"])
+
 if __name__ == "__main__":
     unittest.main()

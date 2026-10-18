@@ -1,0 +1,469 @@
+{
+  "arm_a": {
+    "name": "Janus-Baseline",
+    "role": "Control (SEE OFF)",
+    "wins": 20,
+    "draws": 60,
+    "losses": 20,
+    "points": 50.0,
+    "score_pct": 50.0,
+    "white_points": 23.5,
+    "black_points": 26.5
+  },
+  "arm_b": {
+    "name": "Janus-SEE",
+    "role": "Treatment (SEE ON)",
+    "wins": 20,
+    "draws": 60,
+    "losses": 20,
+    "points": 50.0,
+    "score_pct": 50.0,
+    "white_points": 23.5,
+    "black_points": 26.5
+  },
+  "match": {
+    "total_games": 100,
+    "opening_pairs": 50,
+    "mean_duration_s": 36.13,
+    "median_duration_s": 36.97,
+    "terminations": {
+      "threefold repetition": 60,
+      "checkmate": 40
+    },
+    "illegal_moves": 0,
+    "crashes": 0,
+    "incomplete_games": 0
+  },
+  "paired_analysis": {
+    "statistical_unit": "opening_pair",
+    "sample_size_pairs": 50,
+    "treatment_pairs_won": 6,
+    "treatment_pairs_tied": 38,
+    "treatment_pairs_lost": 6,
+    "mean_paired_difference_pct": 0.0,
+    "standard_error_pct": 3.5,
+    "degrees_of_freedom": 49,
+    "t_statistic": 0.0,
+    "t_critical_95": 2.0096,
+    "paired_t_95_ci_pct": [
+      -7.03,
+      7.03
+    ],
+    "p_value_two_sided": 1.0,
+    "paired_bootstrap_95_ci_pct": [
+      -7.0,
+      7.0
+    ],
+    "wilcoxon_test": {
+      "n_nonzero": 12,
+      "w_stat": 39.0,
+      "w_pos": 39.0,
+      "w_neg": 39.0,
+      "z_score": -0.0392,
+      "p_value": 1.03129
+    },
+    "statistically_significant_05": false
+  },
+  "pairs_detail": [
+    {
+      "pair": 1,
+      "opening_id": "scotch_game",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 2,
+      "opening_id": "italian_two_knights",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 3,
+      "opening_id": "b3_e5_nimzo_larsen",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 4,
+      "opening_id": "d4_e6_horwitz_defense",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 5,
+      "opening_id": "e4_d6_pirc_defense",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 6,
+      "opening_id": "queens_indian_defense",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 7,
+      "opening_id": "petroff_defense",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 8,
+      "opening_id": "d4_Nf6_indian_defense",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 9,
+      "opening_id": "sicilian_dragon",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 10,
+      "opening_id": "Nf3_d5_reti_opening",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 11,
+      "opening_id": "sicilian_scheveningen",
+      "arm_a_score": 0.5,
+      "arm_b_score": 1.5,
+      "delta_pct": 50.0,
+      "outcome": "Treatment (Arm B) won"
+    },
+    {
+      "pair": 12,
+      "opening_id": "ruy_lopez_berlin",
+      "arm_a_score": 1.5,
+      "arm_b_score": 0.5,
+      "delta_pct": -50.0,
+      "outcome": "Control (Arm A) won"
+    },
+    {
+      "pair": 13,
+      "opening_id": "c4_e5_english_reversed_sicilian",
+      "arm_a_score": 0.5,
+      "arm_b_score": 1.5,
+      "delta_pct": 50.0,
+      "outcome": "Treatment (Arm B) won"
+    },
+    {
+      "pair": 14,
+      "opening_id": "e4_c6_caro_kann",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 15,
+      "opening_id": "slav_defense",
+      "arm_a_score": 0.5,
+      "arm_b_score": 1.5,
+      "delta_pct": 50.0,
+      "outcome": "Treatment (Arm B) won"
+    },
+    {
+      "pair": 16,
+      "opening_id": "queens_gambit_declined",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 17,
+      "opening_id": "d4_f5_dutch_defense",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 18,
+      "opening_id": "four_knights_game",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 19,
+      "opening_id": "french_winawer",
+      "arm_a_score": 0.5,
+      "arm_b_score": 1.5,
+      "delta_pct": 50.0,
+      "outcome": "Treatment (Arm B) won"
+    },
+    {
+      "pair": 20,
+      "opening_id": "e4_e5_open_game",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 21,
+      "opening_id": "gruenfeld_defense",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 22,
+      "opening_id": "Nf3_c5_reti_anglo_slav",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 23,
+      "opening_id": "french_advance",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 24,
+      "opening_id": "london_system",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 25,
+      "opening_id": "catalan_opening",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 26,
+      "opening_id": "sicilian_classical",
+      "arm_a_score": 1.5,
+      "arm_b_score": 0.5,
+      "delta_pct": -50.0,
+      "outcome": "Control (Arm A) won"
+    },
+    {
+      "pair": 27,
+      "opening_id": "sicilian_najdorf",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 28,
+      "opening_id": "ruy_lopez_morphy",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 29,
+      "opening_id": "italian_giuoco_piano",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 30,
+      "opening_id": "kings_indian_classical",
+      "arm_a_score": 1.5,
+      "arm_b_score": 0.5,
+      "delta_pct": -50.0,
+      "outcome": "Control (Arm A) won"
+    },
+    {
+      "pair": 31,
+      "opening_id": "bogo_indian_defense",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 32,
+      "opening_id": "caro_kann_classical",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 33,
+      "opening_id": "sicilian_alapin",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 34,
+      "opening_id": "nimzo_indian_rubinstein",
+      "arm_a_score": 1.5,
+      "arm_b_score": 0.5,
+      "delta_pct": -50.0,
+      "outcome": "Control (Arm A) won"
+    },
+    {
+      "pair": 35,
+      "opening_id": "c4_c5_english_symmetrical",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 36,
+      "opening_id": "english_four_knights",
+      "arm_a_score": 0.5,
+      "arm_b_score": 1.5,
+      "delta_pct": 50.0,
+      "outcome": "Treatment (Arm B) won"
+    },
+    {
+      "pair": 37,
+      "opening_id": "benoni_defense",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 38,
+      "opening_id": "e4_e6_french_defense",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 39,
+      "opening_id": "philidor_defense",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 40,
+      "opening_id": "caro_kann_advance",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 41,
+      "opening_id": "e4_d5_scandinavian",
+      "arm_a_score": 0.5,
+      "arm_b_score": 1.5,
+      "delta_pct": 50.0,
+      "outcome": "Treatment (Arm B) won"
+    },
+    {
+      "pair": 42,
+      "opening_id": "french_tarrasch",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 43,
+      "opening_id": "e4_Nf6_alekhine",
+      "arm_a_score": 1.5,
+      "arm_b_score": 0.5,
+      "delta_pct": -50.0,
+      "outcome": "Control (Arm A) won"
+    },
+    {
+      "pair": 44,
+      "opening_id": "d4_d5_closed_game",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 45,
+      "opening_id": "c4_Nf6_english_anglo_indian",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 46,
+      "opening_id": "c4_e6_english_agincourt",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 47,
+      "opening_id": "Nf3_Nf6_reti_symmetrical",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 48,
+      "opening_id": "e4_c5_sicilian_defense",
+      "arm_a_score": 1.5,
+      "arm_b_score": 0.5,
+      "delta_pct": -50.0,
+      "outcome": "Control (Arm A) won"
+    },
+    {
+      "pair": 49,
+      "opening_id": "e4_g6_modern_defense",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    },
+    {
+      "pair": 50,
+      "opening_id": "queens_gambit_accepted",
+      "arm_a_score": 1.0,
+      "arm_b_score": 1.0,
+      "delta_pct": 0.0,
+      "outcome": "Tied"
+    }
+  ]
+}

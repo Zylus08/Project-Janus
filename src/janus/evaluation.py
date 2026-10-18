@@ -40,40 +40,70 @@ def _center_bonus(square: chess.Square) -> int:
     return CENTER_BONUS[square]
 
 
+# Precomputed piece-square tables combining base piece values and positional bonuses
+WHITE_PAWN_TABLE: tuple[int, ...] = tuple(
+    PIECE_VALUES[chess.PAWN] + WHITE_PAWN_RANK_BONUS[sq] for sq in chess.SQUARES
+)
+BLACK_PAWN_TABLE: tuple[int, ...] = tuple(
+    PIECE_VALUES[chess.PAWN] + BLACK_PAWN_RANK_BONUS[sq] for sq in chess.SQUARES
+)
+KNIGHT_TABLE: tuple[int, ...] = tuple(
+    PIECE_VALUES[chess.KNIGHT] + CENTER_BONUS[sq] for sq in chess.SQUARES
+)
+BISHOP_TABLE: tuple[int, ...] = tuple(
+    PIECE_VALUES[chess.BISHOP] + CENTER_BONUS[sq] for sq in chess.SQUARES
+)
+ROOK_VALUE: int = PIECE_VALUES[chess.ROOK]
+QUEEN_VALUE: int = PIECE_VALUES[chess.QUEEN]
+
+
 def evaluate_white(board: chess.Board) -> int:
     """Evaluate a non-terminal position from White's perspective."""
     score = 0
-    for piece_type, value in PIECE_VALUES.items():
-        w_mask = board.pieces_mask(piece_type, chess.WHITE)
-        for square in chess.scan_forward(w_mask):
-            score += value
-            if piece_type in (chess.KNIGHT, chess.BISHOP):
-                score += CENTER_BONUS[square]
-            elif piece_type == chess.PAWN:
-                score += WHITE_PAWN_RANK_BONUS[square]
+    occ_w = board.occupied_co[chess.WHITE]
+    occ_b = board.occupied_co[chess.BLACK]
 
-        b_mask = board.pieces_mask(piece_type, chess.BLACK)
-        for square in chess.scan_forward(b_mask):
-            score -= value
-            if piece_type in (chess.KNIGHT, chess.BISHOP):
-                score -= CENTER_BONUS[square]
-            elif piece_type == chess.PAWN:
-                score -= BLACK_PAWN_RANK_BONUS[square]
+    # Pawns
+    for square in chess.scan_forward(board.pawns & occ_w):
+        score += WHITE_PAWN_TABLE[square]
+    for square in chess.scan_forward(board.pawns & occ_b):
+        score -= BLACK_PAWN_TABLE[square]
 
-    # Bishop pair: a modest positional signal.
-    if board.pieces_mask(chess.BISHOP, chess.WHITE).bit_count() >= 2:
+    # Knights
+    for square in chess.scan_forward(board.knights & occ_w):
+        score += KNIGHT_TABLE[square]
+    for square in chess.scan_forward(board.knights & occ_b):
+        score -= KNIGHT_TABLE[square]
+
+    # Bishops
+    w_bishops = board.bishops & occ_w
+    w_bishop_cnt = w_bishops.bit_count()
+    for square in chess.scan_forward(w_bishops):
+        score += BISHOP_TABLE[square]
+    if w_bishop_cnt >= 2:
         score += 25
-    if board.pieces_mask(chess.BISHOP, chess.BLACK).bit_count() >= 2:
+
+    b_bishops = board.bishops & occ_b
+    b_bishop_cnt = b_bishops.bit_count()
+    for square in chess.scan_forward(b_bishops):
+        score -= BISHOP_TABLE[square]
+    if b_bishop_cnt >= 2:
         score -= 25
+
+    # Rooks (flat value, no square-dependent bonus)
+    score += (board.rooks & occ_w).bit_count() * ROOK_VALUE
+    score -= (board.rooks & occ_b).bit_count() * ROOK_VALUE
+
+    # Queens (flat value, no square-dependent bonus)
+    score += (board.queens & occ_w).bit_count() * QUEEN_VALUE
+    score -= (board.queens & occ_b).bit_count() * QUEEN_VALUE
 
     # Encourage castling rights as a small proxy for king safety / flexibility.
     score += 8 * (
         int(board.has_kingside_castling_rights(chess.WHITE))
         + int(board.has_queenside_castling_rights(chess.WHITE))
-    )
-    score -= 8 * (
-        int(board.has_kingside_castling_rights(chess.BLACK))
-        + int(board.has_queenside_castling_rights(chess.BLACK))
+        - int(board.has_kingside_castling_rights(chess.BLACK))
+        - int(board.has_queenside_castling_rights(chess.BLACK))
     )
     return score
 

@@ -1,0 +1,456 @@
+{
+  "match": {
+    "json_path": "analysis\\v0.26\\match\\janus-see-ordering-v026.json",
+    "total_games": 100,
+    "depth": 3,
+    "openings": "benchmarks\\openings.json",
+    "seed": 42,
+    "hash_mb": 128
+  },
+  "arm_a": {
+    "name": "Janus-Baseline",
+    "role": "control",
+    "wins": 23,
+    "draws": 54,
+    "losses": 23,
+    "points": 50.0,
+    "score_pct": 50.0
+  },
+  "arm_b": {
+    "name": "Janus-SEE-Ordering",
+    "role": "treatment",
+    "wins": 23,
+    "draws": 54,
+    "losses": 23,
+    "points": 50.0,
+    "score_pct": 50.0
+  },
+  "paired_analysis": {
+    "sample_size_pairs": 50,
+    "treatment_pairs_won": 0,
+    "treatment_pairs_tied": 50,
+    "treatment_pairs_lost": 0,
+    "mean_paired_difference_pct": 0.0,
+    "standard_error_pct": 0.0,
+    "degrees_of_freedom": 49,
+    "t_statistic": 0.0,
+    "p_value_two_sided": 1.0,
+    "paired_t_95_ci_pct": [
+      0.0,
+      0.0
+    ],
+    "paired_bootstrap_95_ci_pct": [
+      0.0,
+      0.0
+    ],
+    "wilcoxon_test": {
+      "w_stat": 0.0,
+      "p_value": 1.0,
+      "n_effective": 0,
+      "z_score": 0.0
+    },
+    "statistically_significant_05": false
+  },
+  "pairs": [
+    {
+      "pair": 1,
+      "opening_id": "scotch_game",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 2,
+      "opening_id": "italian_two_knights",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 3,
+      "opening_id": "b3_e5_nimzo_larsen",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 4,
+      "opening_id": "d4_e6_horwitz_defense",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 5,
+      "opening_id": "e4_d6_pirc_defense",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 6,
+      "opening_id": "queens_indian_defense",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 7,
+      "opening_id": "petroff_defense",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 8,
+      "opening_id": "d4_Nf6_indian_defense",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 9,
+      "opening_id": "sicilian_dragon",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 10,
+      "opening_id": "Nf3_d5_reti_opening",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 11,
+      "opening_id": "sicilian_scheveningen",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 12,
+      "opening_id": "ruy_lopez_berlin",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 13,
+      "opening_id": "c4_e5_english_reversed_sicilian",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 14,
+      "opening_id": "e4_c6_caro_kann",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 15,
+      "opening_id": "slav_defense",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 16,
+      "opening_id": "queens_gambit_declined",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 17,
+      "opening_id": "d4_f5_dutch_defense",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 18,
+      "opening_id": "four_knights_game",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 19,
+      "opening_id": "french_winawer",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 20,
+      "opening_id": "e4_e5_open_game",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 21,
+      "opening_id": "gruenfeld_defense",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 22,
+      "opening_id": "Nf3_c5_reti_anglo_slav",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 23,
+      "opening_id": "french_advance",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 24,
+      "opening_id": "london_system",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 25,
+      "opening_id": "catalan_opening",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 26,
+      "opening_id": "sicilian_classical",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 27,
+      "opening_id": "sicilian_najdorf",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 28,
+      "opening_id": "ruy_lopez_morphy",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 29,
+      "opening_id": "italian_giuoco_piano",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 30,
+      "opening_id": "kings_indian_classical",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 31,
+      "opening_id": "bogo_indian_defense",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 32,
+      "opening_id": "caro_kann_classical",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 33,
+      "opening_id": "sicilian_alapin",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 34,
+      "opening_id": "nimzo_indian_rubinstein",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 35,
+      "opening_id": "c4_c5_english_symmetrical",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 36,
+      "opening_id": "english_four_knights",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 37,
+      "opening_id": "benoni_defense",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 38,
+      "opening_id": "e4_e6_french_defense",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 39,
+      "opening_id": "philidor_defense",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 40,
+      "opening_id": "caro_kann_advance",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 41,
+      "opening_id": "e4_d5_scandinavian",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 42,
+      "opening_id": "french_tarrasch",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 43,
+      "opening_id": "e4_Nf6_alekhine",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 44,
+      "opening_id": "d4_d5_closed_game",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 45,
+      "opening_id": "c4_Nf6_english_anglo_indian",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 46,
+      "opening_id": "c4_e6_english_agincourt",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 47,
+      "opening_id": "Nf3_Nf6_reti_symmetrical",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 48,
+      "opening_id": "e4_c5_sicilian_defense",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 49,
+      "opening_id": "e4_g6_modern_defense",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    },
+    {
+      "pair": 50,
+      "opening_id": "queens_gambit_accepted",
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "verdict": "tie"
+    }
+  ]
+}

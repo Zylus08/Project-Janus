@@ -176,7 +176,11 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--stockfish", default=None, help="Full path to stockfish.exe")
     parser.add_argument("--candidate-see", action="store_true",
-                        help="Run Janus baseline (SEE OFF) vs Janus candidate (SEE ON)")
+                        help="Run Janus baseline (SEE OFF) vs Janus candidate (SEE Ordering + Pruning ON)")
+    parser.add_argument("--candidate-see-ordering", action="store_true",
+                        help="Run Janus baseline (SEE OFF) vs Janus candidate (SEE Ordering ON, Pruning OFF)")
+    parser.add_argument("--candidate-see-pruning", action="store_true",
+                        help="Run Janus baseline (SEE OFF) vs Janus candidate (SEE Pruning ON, Ordering OFF)")
     parser.add_argument("--engine1-name", default=None, help="Name of Engine 1 (Janus perspective)")
     parser.add_argument("--engine1-cmd", nargs="+", default=None, help="Command line for Engine 1")
     parser.add_argument("--engine2-name", default=None, help="Name of Engine 2")
@@ -209,6 +213,18 @@ def main() -> int:
         engine2_name = args.engine2_name or "Janus-SEE"
         engine2_command = args.engine2_cmd or [sys.executable, "-m", "janus.uci", "--see", "--name", engine2_name]
         is_stockfish_e2 = False
+    elif args.candidate_see_ordering:
+        engine1_name = args.engine1_name or "Janus-Baseline"
+        engine1_command = args.engine1_cmd or [sys.executable, "-m", "janus.uci", "--name", engine1_name]
+        engine2_name = args.engine2_name or "Janus-SEE-Ordering"
+        engine2_command = args.engine2_cmd or [sys.executable, "-m", "janus.uci", "--see-ordering", "--name", engine2_name]
+        is_stockfish_e2 = False
+    elif args.candidate_see_pruning:
+        engine1_name = args.engine1_name or "Janus-Baseline"
+        engine1_command = args.engine1_cmd or [sys.executable, "-m", "janus.uci", "--name", engine1_name]
+        engine2_name = args.engine2_name or "Janus-SEE-Pruning"
+        engine2_command = args.engine2_cmd or [sys.executable, "-m", "janus.uci", "--see-pruning", "--name", engine2_name]
+        is_stockfish_e2 = False
     elif args.stockfish:
         engine1_name = args.engine1_name or "Janus"
         engine1_command = args.engine1_cmd or [sys.executable, "-m", "janus.uci"]
@@ -222,7 +238,7 @@ def main() -> int:
         engine2_command = args.engine2_cmd
         is_stockfish_e2 = False
     else:
-        parser.error("Must provide --stockfish, --candidate-see, or custom --engine2-cmd")
+        parser.error("Must provide --stockfish, --candidate-see, --candidate-see-ordering, --candidate-see-pruning, or custom --engine2-cmd")
 
     args.out.mkdir(parents=True, exist_ok=True)
     if args.match_name:

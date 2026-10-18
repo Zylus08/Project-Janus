@@ -1,0 +1,2739 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-18T09:48:37Z",
+    "positions_count": 12,
+    "arms": {
+      "Arm_A": {
+        "label": "Baseline",
+        "ordering": false,
+        "pruning": false
+      },
+      "Arm_B": {
+        "label": "Ordering-only",
+        "ordering": true,
+        "pruning": false
+      },
+      "Arm_C": {
+        "label": "Pruning-only",
+        "ordering": false,
+        "pruning": true
+      },
+      "Arm_D": {
+        "label": "Combined",
+        "ordering": true,
+        "pruning": true
+      }
+    },
+    "depths": [
+      3,
+      4,
+      5
+    ]
+  },
+  "positions": [
+    {
+      "id": "pos01_winning_capture",
+      "category": "winning_capture",
+      "description": "Undefended hanging bishop on b4; axa4 captures and wins piece",
+      "fen": "rnbqk1nr/pppp1ppp/8/8/1b6/P7/1PPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "depths": {
+        "3": {
+          "Arm_A": {
+            "best_move": "a3b4",
+            "score": 462,
+            "nodes": 1255,
+            "elapsed_s": 0.0671,
+            "pv": [
+              "a3b4",
+              "b8c6",
+              "b4b5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "a3b4",
+            "score": 462,
+            "nodes": 1199,
+            "elapsed_s": 0.0664,
+            "pv": [
+              "a3b4",
+              "b8c6",
+              "b4b5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 253,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "a3b4",
+            "score": 462,
+            "nodes": 1228,
+            "elapsed_s": 0.0703,
+            "pv": [
+              "a3b4",
+              "b8c6",
+              "b4b5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 22,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "a3b4",
+            "score": 462,
+            "nodes": 1174,
+            "elapsed_s": 0.0664,
+            "pv": [
+              "a3b4",
+              "b8c6",
+              "b4b5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 246,
+            "see_pruned": 21,
+            "see_cache_hits": 88
+          }
+        },
+        "4": {
+          "Arm_A": {
+            "best_move": "a3b4",
+            "score": 454,
+            "nodes": 3152,
+            "elapsed_s": 0.2407,
+            "pv": [
+              "a3b4",
+              "b8c6",
+              "b4b5",
+              "c6e5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "a3b4",
+            "score": 454,
+            "nodes": 3185,
+            "elapsed_s": 0.245,
+            "pv": [
+              "a3b4",
+              "b8c6",
+              "b4b5",
+              "c6e5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 1480,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "a3b4",
+            "score": 454,
+            "nodes": 2869,
+            "elapsed_s": 0.2249,
+            "pv": [
+              "a3b4",
+              "b8c6",
+              "b4b5",
+              "c6e5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 270,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "a3b4",
+            "score": 454,
+            "nodes": 3067,
+            "elapsed_s": 0.2832,
+            "pv": [
+              "a3b4",
+              "b8c6",
+              "b4b5",
+              "c6e5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 1459,
+            "see_pruned": 106,
+            "see_cache_hits": 841
+          }
+        },
+        "5": {
+          "Arm_A": {
+            "best_move": "a3b4",
+            "score": 462,
+            "nodes": 10830,
+            "elapsed_s": 0.7109,
+            "pv": [
+              "a3b4",
+              "g8e7",
+              "g1f3",
+              "b8c6",
+              "b4b5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "a3b4",
+            "score": 462,
+            "nodes": 10351,
+            "elapsed_s": 0.6923,
+            "pv": [
+              "a3b4",
+              "g8e7",
+              "g1f3",
+              "b8c6",
+              "b4b5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 2948,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "a3b4",
+            "score": 462,
+            "nodes": 10049,
+            "elapsed_s": 2.4986,
+            "pv": [
+              "a3b4",
+              "g8e7",
+              "g1f3",
+              "b8c6",
+              "b4b5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 564,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "a3b4",
+            "score": 462,
+            "nodes": 9790,
+            "elapsed_s": 2.3165,
+            "pv": [
+              "a3b4",
+              "g8e7",
+              "g1f3",
+              "b8c6",
+              "b4b5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 2546,
+            "see_pruned": 360,
+            "see_cache_hits": 1264
+          }
+        }
+      }
+    },
+    {
+      "id": "pos02_losing_capture",
+      "category": "losing_capture",
+      "description": "Defended pawn f7 attacked by queen; capturing is losing",
+      "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/4P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+      "depths": {
+        "3": {
+          "Arm_A": {
+            "best_move": "g1f3",
+            "score": -49,
+            "nodes": 3936,
+            "elapsed_s": 0.7751,
+            "pv": [
+              "g1f3",
+              "g7g6",
+              "h5g5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "g1f3",
+            "score": -49,
+            "nodes": 3623,
+            "elapsed_s": 0.7826,
+            "pv": [
+              "g1f3",
+              "g7g6",
+              "h5g5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 1132,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "g1f3",
+            "score": -49,
+            "nodes": 3785,
+            "elapsed_s": 0.7741,
+            "pv": [
+              "g1f3",
+              "g7g6",
+              "h5g5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 101,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "g1f3",
+            "score": -49,
+            "nodes": 3502,
+            "elapsed_s": 0.9078,
+            "pv": [
+              "g1f3",
+              "g7g6",
+              "h5g5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 1072,
+            "see_pruned": 84,
+            "see_cache_hits": 362
+          }
+        },
+        "4": {
+          "Arm_A": {
+            "best_move": "g1f3",
+            "score": -57,
+            "nodes": 10975,
+            "elapsed_s": 2.9018,
+            "pv": [
+              "g1f3",
+              "g7g6",
+              "h5g5",
+              "f8d6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "g1f3",
+            "score": -57,
+            "nodes": 10108,
+            "elapsed_s": 3.819,
+            "pv": [
+              "g1f3",
+              "g7g6",
+              "h5g5",
+              "f8d6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 5470,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "g1f3",
+            "score": -57,
+            "nodes": 9549,
+            "elapsed_s": 2.4023,
+            "pv": [
+              "g1f3",
+              "g7g6",
+              "h5g5",
+              "f8d6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 756,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "g1f3",
+            "score": -57,
+            "nodes": 8684,
+            "elapsed_s": 1.7751,
+            "pv": [
+              "g1f3",
+              "g7g6",
+              "h5g5",
+              "f8d6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 4438,
+            "see_pruned": 746,
+            "see_cache_hits": 1368
+          }
+        },
+        "5": {
+          "Arm_A": {
+            "best_move": "g1f3",
+            "score": -57,
+            "nodes": 29496,
+            "elapsed_s": 7.45,
+            "pv": [
+              "g1f3",
+              "g7g6",
+              "h5g5",
+              "f8e7",
+              "g5h6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "g1f3",
+            "score": -57,
+            "nodes": 24961,
+            "elapsed_s": 6.685,
+            "pv": [
+              "g1f3",
+              "g7g6",
+              "h5g5",
+              "f8e7",
+              "g5h6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 10893,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "g1f3",
+            "score": -57,
+            "nodes": 26828,
+            "elapsed_s": 6.9409,
+            "pv": [
+              "g1f3",
+              "g7g6",
+              "h5g5",
+              "f8e7",
+              "g5h6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 1361,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "g1f3",
+            "score": -57,
+            "nodes": 22467,
+            "elapsed_s": 5.8128,
+            "pv": [
+              "g1f3",
+              "g7g6",
+              "h5g5",
+              "f8e7",
+              "g5h6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 8863,
+            "see_pruned": 1185,
+            "see_cache_hits": 2433
+          }
+        }
+      }
+    },
+    {
+      "id": "pos03_recapture_xray",
+      "category": "recapture_xray",
+      "description": "Doubled rooks on d-file; back-rank / recapture sequence",
+      "fen": "2r3k1/5ppp/8/3r4/8/8/3R1PPP/3R2K1 w - - 0 1",
+      "depths": {
+        "3": {
+          "Arm_A": {
+            "best_move": "d2d5",
+            "score": 505,
+            "nodes": 890,
+            "elapsed_s": 0.1556,
+            "pv": [
+              "d2d5",
+              "h7h6",
+              "h2h4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "d2d5",
+            "score": 505,
+            "nodes": 890,
+            "elapsed_s": 0.1237,
+            "pv": [
+              "d2d5",
+              "h7h6",
+              "h2h4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 66,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "d2d5",
+            "score": 505,
+            "nodes": 886,
+            "elapsed_s": 0.1236,
+            "pv": [
+              "d2d5",
+              "h7h6",
+              "h2h4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 2,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "d2d5",
+            "score": 505,
+            "nodes": 886,
+            "elapsed_s": 0.1603,
+            "pv": [
+              "d2d5",
+              "h7h6",
+              "h2h4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 64,
+            "see_pruned": 2,
+            "see_cache_hits": 15
+          }
+        },
+        "4": {
+          "Arm_A": {
+            "best_move": "d2d5",
+            "score": 500,
+            "nodes": 1630,
+            "elapsed_s": 0.3022,
+            "pv": [
+              "d2d5",
+              "h7h6",
+              "h2h4",
+              "g7g6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "d2d5",
+            "score": 500,
+            "nodes": 1582,
+            "elapsed_s": 0.2945,
+            "pv": [
+              "d2d5",
+              "h7h6",
+              "h2h4",
+              "g7g6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 255,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "d2d5",
+            "score": 500,
+            "nodes": 1622,
+            "elapsed_s": 0.3192,
+            "pv": [
+              "d2d5",
+              "h7h6",
+              "h2h4",
+              "g7g6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 4,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "d2d5",
+            "score": 500,
+            "nodes": 1574,
+            "elapsed_s": 0.3453,
+            "pv": [
+              "d2d5",
+              "h7h6",
+              "h2h4",
+              "g7g6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 251,
+            "see_pruned": 4,
+            "see_cache_hits": 45
+          }
+        },
+        "5": {
+          "Arm_A": {
+            "best_move": "d2d5",
+            "score": 505,
+            "nodes": 4581,
+            "elapsed_s": 0.8737,
+            "pv": [
+              "d2d5",
+              "g7g6",
+              "h2h4",
+              "h7h5",
+              "f2f4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "d2d5",
+            "score": 505,
+            "nodes": 4504,
+            "elapsed_s": 1.1624,
+            "pv": [
+              "d2d5",
+              "g7g6",
+              "h2h4",
+              "h7h5",
+              "f2f4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 531,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "d2d5",
+            "score": 505,
+            "nodes": 4491,
+            "elapsed_s": 0.9829,
+            "pv": [
+              "d2d5",
+              "g7g6",
+              "h2h4",
+              "h7h5",
+              "f2f4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 45,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "d2d5",
+            "score": 505,
+            "nodes": 4414,
+            "elapsed_s": 0.8844,
+            "pv": [
+              "d2d5",
+              "g7g6",
+              "h2h4",
+              "h7h5",
+              "f2f4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 486,
+            "see_pruned": 45,
+            "see_cache_hits": 131
+          }
+        }
+      }
+    },
+    {
+      "id": "pos04_pin_and_king_safety",
+      "category": "pins_and_legality",
+      "description": "Knight on e4 attacked; pawn on d3 and king safety",
+      "fen": "r1bqk2r/ppppbppp/2n5/4p3/2B1n3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 6",
+      "depths": {
+        "3": {
+          "Arm_A": {
+            "best_move": "d3e4",
+            "score": 211,
+            "nodes": 4699,
+            "elapsed_s": 0.8685,
+            "pv": [
+              "d3e4",
+              "h7h5",
+              "c1e3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "d3e4",
+            "score": 211,
+            "nodes": 4290,
+            "elapsed_s": 0.8543,
+            "pv": [
+              "d3e4",
+              "h7h5",
+              "c1e3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 1388,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "d3e4",
+            "score": 211,
+            "nodes": 4423,
+            "elapsed_s": 0.916,
+            "pv": [
+              "d3e4",
+              "h7h5",
+              "c1e3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 189,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "d3e4",
+            "score": 211,
+            "nodes": 4078,
+            "elapsed_s": 0.7899,
+            "pv": [
+              "d3e4",
+              "h7h5",
+              "c1e3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 1253,
+            "see_pruned": 125,
+            "see_cache_hits": 394
+          }
+        },
+        "4": {
+          "Arm_A": {
+            "best_move": "d3e4",
+            "score": 201,
+            "nodes": 15438,
+            "elapsed_s": 3.6971,
+            "pv": [
+              "d3e4",
+              "h7h5",
+              "c1e3",
+              "g7g5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "d3e4",
+            "score": 201,
+            "nodes": 14924,
+            "elapsed_s": 4.4539,
+            "pv": [
+              "d3e4",
+              "h7h5",
+              "c1e3",
+              "g7g5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 11863,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "d3e4",
+            "score": 201,
+            "nodes": 12486,
+            "elapsed_s": 3.4645,
+            "pv": [
+              "d3e4",
+              "h7h5",
+              "c1e3",
+              "g7g5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 1446,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "d3e4",
+            "score": 201,
+            "nodes": 12244,
+            "elapsed_s": 4.4293,
+            "pv": [
+              "d3e4",
+              "h7h5",
+              "c1e3",
+              "g7g5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 10146,
+            "see_pruned": 1364,
+            "see_cache_hits": 3903
+          }
+        },
+        "5": {
+          "Arm_A": {
+            "best_move": "d3e4",
+            "score": 206,
+            "nodes": 40918,
+            "elapsed_s": 11.3016,
+            "pv": [
+              "d3e4",
+              "g7g5",
+              "c1e3",
+              "g5g4",
+              "f3d2"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "d3e4",
+            "score": 206,
+            "nodes": 34995,
+            "elapsed_s": 10.7385,
+            "pv": [
+              "d3e4",
+              "g7g5",
+              "c1e3",
+              "g5g4",
+              "f3d2"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 20433,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "d3e4",
+            "score": 206,
+            "nodes": 32516,
+            "elapsed_s": 10.1409,
+            "pv": [
+              "d3e4",
+              "g7g5",
+              "c1e3",
+              "g5g4",
+              "f3d2"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 3338,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "d3e4",
+            "score": 206,
+            "nodes": 29170,
+            "elapsed_s": 7.8581,
+            "pv": [
+              "d3e4",
+              "g7g5",
+              "c1e3",
+              "g5g4",
+              "f3d2"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 15443,
+            "see_pruned": 2309,
+            "see_cache_hits": 5642
+          }
+        }
+      }
+    },
+    {
+      "id": "pos05_en_passant",
+      "category": "en_passant",
+      "description": "En passant capture exf6 available",
+      "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
+      "depths": {
+        "3": {
+          "Arm_A": {
+            "best_move": "g1f3",
+            "score": 7,
+            "nodes": 2814,
+            "elapsed_s": 0.6615,
+            "pv": [
+              "g1f3",
+              "c8e6",
+              "f1d3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "g1f3",
+            "score": 7,
+            "nodes": 2762,
+            "elapsed_s": 0.6058,
+            "pv": [
+              "g1f3",
+              "c8e6",
+              "f1d3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 559,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "g1f3",
+            "score": 7,
+            "nodes": 2627,
+            "elapsed_s": 0.5259,
+            "pv": [
+              "g1f3",
+              "c8e6",
+              "f1d3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 83,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "g1f3",
+            "score": 7,
+            "nodes": 2606,
+            "elapsed_s": 0.5302,
+            "pv": [
+              "g1f3",
+              "c8e6",
+              "f1d3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 434,
+            "see_pruned": 73,
+            "see_cache_hits": 127
+          }
+        },
+        "4": {
+          "Arm_A": {
+            "best_move": "g1f3",
+            "score": 2,
+            "nodes": 6009,
+            "elapsed_s": 0.5366,
+            "pv": [
+              "g1f3",
+              "g7g6",
+              "f1d3",
+              "b8d7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "g1f3",
+            "score": 2,
+            "nodes": 5832,
+            "elapsed_s": 0.4136,
+            "pv": [
+              "g1f3",
+              "g7g6",
+              "f1d3",
+              "b8d7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 2173,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "g1f3",
+            "score": 2,
+            "nodes": 5256,
+            "elapsed_s": 0.3125,
+            "pv": [
+              "g1f3",
+              "g7g6",
+              "f1d3",
+              "b8d7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 334,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "g1f3",
+            "score": 2,
+            "nodes": 5145,
+            "elapsed_s": 0.227,
+            "pv": [
+              "g1f3",
+              "g7g6",
+              "f1d3",
+              "b8d7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 1543,
+            "see_pruned": 313,
+            "see_cache_hits": 616
+          }
+        },
+        "5": {
+          "Arm_A": {
+            "best_move": "h2h4",
+            "score": 5,
+            "nodes": 33893,
+            "elapsed_s": 2.5291,
+            "pv": [
+              "h2h4",
+              "c8e6",
+              "f1d3",
+              "b8d7",
+              "g1f3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "g1e2",
+            "score": 5,
+            "nodes": 31284,
+            "elapsed_s": 8.4785,
+            "pv": [
+              "g1e2",
+              "b8c6",
+              "f2f4",
+              "c8e6",
+              "b1c3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 11700,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "g1f3",
+            "score": 5,
+            "nodes": 23545,
+            "elapsed_s": 6.1441,
+            "pv": [
+              "g1f3",
+              "b8c6",
+              "h2h4",
+              "c8e6",
+              "f1d3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 1445,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "g1f3",
+            "score": 5,
+            "nodes": 22585,
+            "elapsed_s": 5.3987,
+            "pv": [
+              "g1f3",
+              "b8c6",
+              "h2h4",
+              "c8e6",
+              "f1d3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 6721,
+            "see_pruned": 1311,
+            "see_cache_hits": 2652
+          }
+        }
+      }
+    },
+    {
+      "id": "pos06_promotion_capture",
+      "category": "promotion",
+      "description": "Passed pawn on 7th rank promotes with check",
+      "fen": "6k1/4P1p1/8/8/8/8/8/4K2R w K - 0 1",
+      "depths": {
+        "3": {
+          "Arm_A": {
+            "best_move": "e7e8q",
+            "score": 99999,
+            "nodes": 1019,
+            "elapsed_s": 0.1547,
+            "pv": [
+              "e7e8q"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "e7e8q",
+            "score": 99999,
+            "nodes": 1019,
+            "elapsed_s": 0.1516,
+            "pv": [
+              "e7e8q"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 71,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "e7e8q",
+            "score": 99999,
+            "nodes": 1017,
+            "elapsed_s": 0.1524,
+            "pv": [
+              "e7e8q"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 2,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "e7e8q",
+            "score": 99999,
+            "nodes": 1017,
+            "elapsed_s": 0.1608,
+            "pv": [
+              "e7e8q"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 71,
+            "see_pruned": 2,
+            "see_cache_hits": 6
+          }
+        },
+        "4": {
+          "Arm_A": {
+            "best_move": "e7e8q",
+            "score": 99999,
+            "nodes": 2304,
+            "elapsed_s": 0.4032,
+            "pv": [
+              "e7e8q"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "e7e8q",
+            "score": 99999,
+            "nodes": 2304,
+            "elapsed_s": 0.4106,
+            "pv": [
+              "e7e8q"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 321,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "e7e8q",
+            "score": 99999,
+            "nodes": 2298,
+            "elapsed_s": 0.3897,
+            "pv": [
+              "e7e8q"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 6,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "e7e8q",
+            "score": 99999,
+            "nodes": 2298,
+            "elapsed_s": 0.3931,
+            "pv": [
+              "e7e8q"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 321,
+            "see_pruned": 6,
+            "see_cache_hits": 20
+          }
+        },
+        "5": {
+          "Arm_A": {
+            "best_move": "e7e8q",
+            "score": 99999,
+            "nodes": 5012,
+            "elapsed_s": 0.8036,
+            "pv": [
+              "e7e8q"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "e7e8q",
+            "score": 99999,
+            "nodes": 5012,
+            "elapsed_s": 0.8179,
+            "pv": [
+              "e7e8q"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 373,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "e7e8q",
+            "score": 99999,
+            "nodes": 5005,
+            "elapsed_s": 0.8211,
+            "pv": [
+              "e7e8q"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 7,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "e7e8q",
+            "score": 99999,
+            "nodes": 5005,
+            "elapsed_s": 0.8779,
+            "pv": [
+              "e7e8q"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 373,
+            "see_pruned": 7,
+            "see_cache_hits": 23
+          }
+        }
+      }
+    },
+    {
+      "id": "pos07_scholar_mate",
+      "category": "checkmate_one",
+      "description": "White Queen captures f7 with bishop defense: Qxf7# mate in 1",
+      "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+      "depths": {
+        "3": {
+          "Arm_A": {
+            "best_move": "h5f7",
+            "score": 99999,
+            "nodes": 4955,
+            "elapsed_s": 0.929,
+            "pv": [
+              "h5f7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "h5f7",
+            "score": 99999,
+            "nodes": 4959,
+            "elapsed_s": 1.4986,
+            "pv": [
+              "h5f7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 1616,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "h5f7",
+            "score": 99999,
+            "nodes": 4681,
+            "elapsed_s": 0.5104,
+            "pv": [
+              "h5f7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 273,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "h5f7",
+            "score": 99999,
+            "nodes": 4673,
+            "elapsed_s": 0.5955,
+            "pv": [
+              "h5f7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 1614,
+            "see_pruned": 285,
+            "see_cache_hits": 369
+          }
+        },
+        "4": {
+          "Arm_A": {
+            "best_move": "h5f7",
+            "score": 99999,
+            "nodes": 16578,
+            "elapsed_s": 3.8538,
+            "pv": [
+              "h5f7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "h5f7",
+            "score": 99999,
+            "nodes": 14976,
+            "elapsed_s": 4.1618,
+            "pv": [
+              "h5f7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 9037,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "h5f7",
+            "score": 99999,
+            "nodes": 14479,
+            "elapsed_s": 4.0383,
+            "pv": [
+              "h5f7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 2098,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "h5f7",
+            "score": 99999,
+            "nodes": 13101,
+            "elapsed_s": 4.2918,
+            "pv": [
+              "h5f7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 9035,
+            "see_pruned": 1874,
+            "see_cache_hits": 3121
+          }
+        },
+        "5": {
+          "Arm_A": {
+            "best_move": "h5f7",
+            "score": 99999,
+            "nodes": 33736,
+            "elapsed_s": 6.3722,
+            "pv": [
+              "h5f7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "h5f7",
+            "score": 99999,
+            "nodes": 32171,
+            "elapsed_s": 6.7436,
+            "pv": [
+              "h5f7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 11325,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "h5f7",
+            "score": 99999,
+            "nodes": 31424,
+            "elapsed_s": 6.6696,
+            "pv": [
+              "h5f7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 2311,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "h5f7",
+            "score": 99999,
+            "nodes": 30086,
+            "elapsed_s": 5.7923,
+            "pv": [
+              "h5f7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 11323,
+            "see_pruned": 2084,
+            "see_cache_hits": 3630
+          }
+        }
+      }
+    },
+    {
+      "id": "pos08_check_evasion",
+      "category": "check_evasion",
+      "description": "White king in check from Qh4; must block or evade",
+      "fen": "rnb1kbnr/pppp1ppp/8/4p3/7q/5P2/PPPPP1PP/RNBQKBNR w KQkq - 1 3",
+      "depths": {
+        "3": {
+          "Arm_A": {
+            "best_move": "g2g3",
+            "score": 4,
+            "nodes": 329,
+            "elapsed_s": 0.0433,
+            "pv": [
+              "g2g3",
+              "f8e7",
+              "b1c3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "g2g3",
+            "score": 4,
+            "nodes": 329,
+            "elapsed_s": 0.0478,
+            "pv": [
+              "g2g3",
+              "f8e7",
+              "b1c3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 125,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "g2g3",
+            "score": 4,
+            "nodes": 300,
+            "elapsed_s": 0.0433,
+            "pv": [
+              "g2g3",
+              "f8e7",
+              "b1c3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 16,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "g2g3",
+            "score": 4,
+            "nodes": 300,
+            "elapsed_s": 0.0432,
+            "pv": [
+              "g2g3",
+              "f8e7",
+              "b1c3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 112,
+            "see_pruned": 16,
+            "see_cache_hits": 35
+          }
+        },
+        "4": {
+          "Arm_A": {
+            "best_move": "g2g3",
+            "score": 2,
+            "nodes": 1646,
+            "elapsed_s": 0.1971,
+            "pv": [
+              "g2g3",
+              "f8e7",
+              "e2e4",
+              "h4f6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "g2g3",
+            "score": 2,
+            "nodes": 1580,
+            "elapsed_s": 0.2069,
+            "pv": [
+              "g2g3",
+              "f8e7",
+              "e2e4",
+              "h4f6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 584,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "g2g3",
+            "score": 2,
+            "nodes": 1594,
+            "elapsed_s": 0.206,
+            "pv": [
+              "g2g3",
+              "f8e7",
+              "e2e4",
+              "h4f6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 35,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "g2g3",
+            "score": 2,
+            "nodes": 1534,
+            "elapsed_s": 0.2084,
+            "pv": [
+              "g2g3",
+              "f8e7",
+              "e2e4",
+              "h4f6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 564,
+            "see_pruned": 29,
+            "see_cache_hits": 213
+          }
+        },
+        "5": {
+          "Arm_A": {
+            "best_move": "g2g3",
+            "score": 4,
+            "nodes": 9713,
+            "elapsed_s": 2.0827,
+            "pv": [
+              "g2g3",
+              "h4d8",
+              "g1h3",
+              "g8e7",
+              "b1c3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "g2g3",
+            "score": 4,
+            "nodes": 9133,
+            "elapsed_s": 0.7048,
+            "pv": [
+              "g2g3",
+              "h4d8",
+              "g1h3",
+              "g8e7",
+              "b1c3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 3759,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "g2g3",
+            "score": 4,
+            "nodes": 8767,
+            "elapsed_s": 0.5719,
+            "pv": [
+              "g2g3",
+              "h4d8",
+              "g1h3",
+              "g8e7",
+              "b1c3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 443,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "g2g3",
+            "score": 4,
+            "nodes": 8229,
+            "elapsed_s": 0.5617,
+            "pv": [
+              "g2g3",
+              "h4d8",
+              "g1h3",
+              "g8e7",
+              "b1c3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 3060,
+            "see_pruned": 412,
+            "see_cache_hits": 1433
+          }
+        }
+      }
+    },
+    {
+      "id": "pos09_tactical_sacrifice",
+      "category": "tactical_sacrifice",
+      "description": "Classical opening structure with developed pieces",
+      "fen": "r1bq1rk1/ppp2ppp/2n1pn2/3p4/2PP4/2NBPN2/PP3PPP/R1BQK2R w KQ - 0 7",
+      "depths": {
+        "3": {
+          "Arm_A": {
+            "best_move": "h2h4",
+            "score": 398,
+            "nodes": 7811,
+            "elapsed_s": 0.4524,
+            "pv": [
+              "h2h4",
+              "c6b4",
+              "d3e2"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "h2h4",
+            "score": 398,
+            "nodes": 7039,
+            "elapsed_s": 0.457,
+            "pv": [
+              "h2h4",
+              "c6b4",
+              "d3e2"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 4450,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "h2h4",
+            "score": 398,
+            "nodes": 6359,
+            "elapsed_s": 0.365,
+            "pv": [
+              "h2h4",
+              "c6b4",
+              "d3e2"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 552,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "h2h4",
+            "score": 398,
+            "nodes": 5799,
+            "elapsed_s": 0.3493,
+            "pv": [
+              "h2h4",
+              "c6b4",
+              "d3e2"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 2790,
+            "see_pruned": 474,
+            "see_cache_hits": 1087
+          }
+        },
+        "4": {
+          "Arm_A": {
+            "best_move": "h2h4",
+            "score": 388,
+            "nodes": 17265,
+            "elapsed_s": 2.4844,
+            "pv": [
+              "h2h4",
+              "c6b4",
+              "d3e2",
+              "h7h5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "h2h4",
+            "score": 388,
+            "nodes": 15554,
+            "elapsed_s": 4.1258,
+            "pv": [
+              "h2h4",
+              "c6b4",
+              "d3e2",
+              "h7h5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 13473,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "h2h4",
+            "score": 388,
+            "nodes": 13488,
+            "elapsed_s": 3.5578,
+            "pv": [
+              "h2h4",
+              "c6b4",
+              "d3e2",
+              "h7h5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 1733,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "h2h4",
+            "score": 388,
+            "nodes": 12253,
+            "elapsed_s": 3.5942,
+            "pv": [
+              "h2h4",
+              "c6b4",
+              "d3e2",
+              "h7h5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 9727,
+            "see_pruned": 1542,
+            "see_cache_hits": 3497
+          }
+        },
+        "5": {
+          "Arm_A": {
+            "best_move": "h2h4",
+            "score": 398,
+            "nodes": 43497,
+            "elapsed_s": 9.4553,
+            "pv": [
+              "h2h4",
+              "c6b4",
+              "d3e2",
+              "h7h5",
+              "a2a4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "h2h4",
+            "score": 398,
+            "nodes": 39507,
+            "elapsed_s": 10.6156,
+            "pv": [
+              "h2h4",
+              "c6b4",
+              "d3e2",
+              "h7h5",
+              "a2a4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 32602,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "h2h4",
+            "score": 398,
+            "nodes": 33653,
+            "elapsed_s": 8.4114,
+            "pv": [
+              "h2h4",
+              "c6b4",
+              "d3e2",
+              "h7h5",
+              "a2a4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 4255,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "h2h4",
+            "score": 398,
+            "nodes": 30358,
+            "elapsed_s": 8.3206,
+            "pv": [
+              "h2h4",
+              "c6b4",
+              "d3e2",
+              "h7h5",
+              "a2a4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 21301,
+            "see_pruned": 3700,
+            "see_cache_hits": 8458
+          }
+        }
+      }
+    },
+    {
+      "id": "pos10_quiet_defense",
+      "category": "quiet_defense",
+      "description": "White Queen attacked by rook on d5; must retreat safely",
+      "fen": "3qk3/8/8/3r4/8/8/8/3QK3 w - - 0 1",
+      "depths": {
+        "3": {
+          "Arm_A": {
+            "best_move": "d1g4",
+            "score": -500,
+            "nodes": 906,
+            "elapsed_s": 0.1427,
+            "pv": [
+              "d1g4",
+              "e8f8",
+              "g4g6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "d1g4",
+            "score": -500,
+            "nodes": 903,
+            "elapsed_s": 0.1489,
+            "pv": [
+              "d1g4",
+              "e8f8",
+              "g4g6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 98,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "d1g4",
+            "score": -500,
+            "nodes": 898,
+            "elapsed_s": 0.1583,
+            "pv": [
+              "d1g4",
+              "e8f8",
+              "g4g6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 4,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "d1g4",
+            "score": -500,
+            "nodes": 895,
+            "elapsed_s": 0.1512,
+            "pv": [
+              "d1g4",
+              "e8f8",
+              "g4g6"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 94,
+            "see_pruned": 4,
+            "see_cache_hits": 26
+          }
+        },
+        "4": {
+          "Arm_A": {
+            "best_move": "d1g4",
+            "score": -500,
+            "nodes": 1688,
+            "elapsed_s": 0.2842,
+            "pv": [
+              "d1g4",
+              "e8f8",
+              "g4g6",
+              "f8e7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "d1g4",
+            "score": -500,
+            "nodes": 1685,
+            "elapsed_s": 0.2906,
+            "pv": [
+              "d1g4",
+              "e8f8",
+              "g4g6",
+              "f8e7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 180,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "d1g4",
+            "score": -500,
+            "nodes": 1648,
+            "elapsed_s": 0.2724,
+            "pv": [
+              "d1g4",
+              "e8f8",
+              "g4g6",
+              "f8e7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 20,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "d1g4",
+            "score": -500,
+            "nodes": 1645,
+            "elapsed_s": 0.2709,
+            "pv": [
+              "d1g4",
+              "e8f8",
+              "g4g6",
+              "f8e7"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 160,
+            "see_pruned": 20,
+            "see_cache_hits": 42
+          }
+        },
+        "5": {
+          "Arm_A": {
+            "best_move": "d1g4",
+            "score": -500,
+            "nodes": 4724,
+            "elapsed_s": 0.7804,
+            "pv": [
+              "d1g4",
+              "e8f8",
+              "g4g6",
+              "f8e7",
+              "e1f2"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "d1g4",
+            "score": -500,
+            "nodes": 4686,
+            "elapsed_s": 0.8208,
+            "pv": [
+              "d1g4",
+              "e8f8",
+              "g4g6",
+              "f8e7",
+              "e1f2"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 434,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "d1g4",
+            "score": -500,
+            "nodes": 4656,
+            "elapsed_s": 0.7925,
+            "pv": [
+              "d1g4",
+              "e8f8",
+              "g4g6",
+              "f8e7",
+              "e1f2"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 34,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "d1g4",
+            "score": -500,
+            "nodes": 4618,
+            "elapsed_s": 0.7839,
+            "pv": [
+              "d1g4",
+              "e8f8",
+              "g4g6",
+              "f8e7",
+              "e1f2"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 400,
+            "see_pruned": 34,
+            "see_cache_hits": 73
+          }
+        }
+      }
+    },
+    {
+      "id": "pos11_pruning_sensitivity",
+      "category": "pruning_sensitivity",
+      "description": "Open tactical position testing capture pruning interactions",
+      "fen": "r1k4r/ppp1b1pp/2n5/4p3/4N3/8/PPP2PPP/R1BR2K1 w - - 0 1",
+      "depths": {
+        "3": {
+          "Arm_A": {
+            "best_move": "c1e3",
+            "score": 2,
+            "nodes": 3436,
+            "elapsed_s": 0.5355,
+            "pv": [
+              "c1e3",
+              "h7h5",
+              "f2f4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "c1e3",
+            "score": 2,
+            "nodes": 3374,
+            "elapsed_s": 0.5355,
+            "pv": [
+              "c1e3",
+              "h7h5",
+              "f2f4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 498,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "c1e3",
+            "score": 2,
+            "nodes": 3331,
+            "elapsed_s": 0.5652,
+            "pv": [
+              "c1e3",
+              "h7h5",
+              "f2f4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 81,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "c1e3",
+            "score": 2,
+            "nodes": 3277,
+            "elapsed_s": 0.7074,
+            "pv": [
+              "c1e3",
+              "h7h5",
+              "f2f4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 460,
+            "see_pruned": 74,
+            "see_cache_hits": 162
+          }
+        },
+        "4": {
+          "Arm_A": {
+            "best_move": "c1e3",
+            "score": -8,
+            "nodes": 7630,
+            "elapsed_s": 1.8497,
+            "pv": [
+              "c1e3",
+              "h7h5",
+              "f2f4",
+              "b7b5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "c1e3",
+            "score": -8,
+            "nodes": 7274,
+            "elapsed_s": 1.7406,
+            "pv": [
+              "c1e3",
+              "h7h5",
+              "f2f4",
+              "b7b5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 2495,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "c1e3",
+            "score": -8,
+            "nodes": 7027,
+            "elapsed_s": 1.5376,
+            "pv": [
+              "c1e3",
+              "h7h5",
+              "f2f4",
+              "b7b5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 367,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "c1e3",
+            "score": -8,
+            "nodes": 6705,
+            "elapsed_s": 1.4915,
+            "pv": [
+              "c1e3",
+              "h7h5",
+              "f2f4",
+              "b7b5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 2082,
+            "see_pruned": 353,
+            "see_cache_hits": 873
+          }
+        },
+        "5": {
+          "Arm_A": {
+            "best_move": "f2f4",
+            "score": 2,
+            "nodes": 38834,
+            "elapsed_s": 7.6289,
+            "pv": [
+              "f2f4",
+              "h7h5",
+              "c2c4",
+              "a7a5",
+              "c1e3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "f2f4",
+            "score": 2,
+            "nodes": 36007,
+            "elapsed_s": 7.8392,
+            "pv": [
+              "f2f4",
+              "h7h5",
+              "c2c4",
+              "a7a5",
+              "c1e3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 11953,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "f2f4",
+            "score": 2,
+            "nodes": 36008,
+            "elapsed_s": 7.4998,
+            "pv": [
+              "f2f4",
+              "h7h5",
+              "c2c4",
+              "a7a5",
+              "c1e3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 1593,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "f2f4",
+            "score": 2,
+            "nodes": 33503,
+            "elapsed_s": 7.4011,
+            "pv": [
+              "f2f4",
+              "h7h5",
+              "c2c4",
+              "a7a5",
+              "c1e3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 10074,
+            "see_pruned": 1399,
+            "see_cache_hits": 4138
+          }
+        }
+      }
+    },
+    {
+      "id": "pos12_zwischenzug",
+      "category": "zwischenzug",
+      "description": "Italian game tactical development",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 1 5",
+      "depths": {
+        "3": {
+          "Arm_A": {
+            "best_move": "c1e3",
+            "score": 10,
+            "nodes": 7443,
+            "elapsed_s": 1.5752,
+            "pv": [
+              "c1e3",
+              "c5e3",
+              "f2e3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "c1e3",
+            "score": 10,
+            "nodes": 6113,
+            "elapsed_s": 1.4895,
+            "pv": [
+              "c1e3",
+              "c5e3",
+              "f2e3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 4350,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "c1e3",
+            "score": 10,
+            "nodes": 5320,
+            "elapsed_s": 1.184,
+            "pv": [
+              "c1e3",
+              "c5e3",
+              "f2e3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 540,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "c1e3",
+            "score": 10,
+            "nodes": 4645,
+            "elapsed_s": 1.0746,
+            "pv": [
+              "c1e3",
+              "c5e3",
+              "f2e3"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 2430,
+            "see_pruned": 443,
+            "see_cache_hits": 851
+          }
+        },
+        "4": {
+          "Arm_A": {
+            "best_move": "c1e3",
+            "score": 0,
+            "nodes": 19074,
+            "elapsed_s": 4.4105,
+            "pv": [
+              "c1e3",
+              "c5e3",
+              "f2e3",
+              "d7d5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "c1e3",
+            "score": 0,
+            "nodes": 15062,
+            "elapsed_s": 1.2803,
+            "pv": [
+              "c1e3",
+              "c5e3",
+              "f2e3",
+              "d7d5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 14857,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "c1e3",
+            "score": 0,
+            "nodes": 12413,
+            "elapsed_s": 0.9573,
+            "pv": [
+              "c1e3",
+              "c5e3",
+              "f2e3",
+              "d7d5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 1630,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "c1e3",
+            "score": 0,
+            "nodes": 9934,
+            "elapsed_s": 0.685,
+            "pv": [
+              "c1e3",
+              "c5e3",
+              "f2e3",
+              "d7d5"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 8513,
+            "see_pruned": 1502,
+            "see_cache_hits": 2904
+          }
+        },
+        "5": {
+          "Arm_A": {
+            "best_move": "b1c3",
+            "score": 13,
+            "nodes": 71476,
+            "elapsed_s": 16.4276,
+            "pv": [
+              "b1c3",
+              "d7d6",
+              "f3g5",
+              "h8f8",
+              "h2h4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_B": {
+            "best_move": "b1c3",
+            "score": 15,
+            "nodes": 54252,
+            "elapsed_s": 14.7423,
+            "pv": [
+              "b1c3",
+              "d7d6",
+              "f3g5",
+              "h8f8",
+              "h2h4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 50186,
+            "see_pruned": 0,
+            "see_cache_hits": 0
+          },
+          "Arm_C": {
+            "best_move": "b1c3",
+            "score": 13,
+            "nodes": 47361,
+            "elapsed_s": 11.1672,
+            "pv": [
+              "b1c3",
+              "d7d6",
+              "f3g5",
+              "h8f8",
+              "h2h4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 0,
+            "see_pruned": 6131,
+            "see_cache_hits": 0
+          },
+          "Arm_D": {
+            "best_move": "b1c3",
+            "score": 15,
+            "nodes": 36639,
+            "elapsed_s": 10.5176,
+            "pv": [
+              "b1c3",
+              "d7d6",
+              "f3g5",
+              "h8f8",
+              "h2h4"
+            ],
+            "move_legal": true,
+            "pv_legal": true,
+            "immutability_ok": true,
+            "see_ordered": 28975,
+            "see_pruned": 4926,
+            "see_cache_hits": 9506
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "total_evaluations": 144,
+    "legal_moves_count": 144,
+    "legal_moves_pct": 100.0,
+    "legal_pvs_count": 144,
+    "legal_pvs_pct": 100.0,
+    "immutability_passes": 144,
+    "immutability_pct": 100.0,
+    "forced_mate_detections": {
+      "Arm_A": 6,
+      "Arm_B": 6,
+      "Arm_C": 6,
+      "Arm_D": 6
+    },
+    "divergences_vs_baseline": 3
+  }
+}

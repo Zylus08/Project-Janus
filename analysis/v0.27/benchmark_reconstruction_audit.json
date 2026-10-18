@@ -1,0 +1,278 @@
+{
+  "metadata": {
+    "source_raw_runs": "E:\\ChessXML\\project-janus\\analysis\\v0.26\\benchmarks\\raw_factorial_benchmark.json",
+    "total_runs": 360,
+    "all_pv_valid": true,
+    "positions": [
+      "startpos",
+      "open_game",
+      "white_up_rook",
+      "mate_in_one",
+      "promotion_tactic",
+      "stalemate"
+    ],
+    "arms": [
+      "Arm_A",
+      "Arm_B",
+      "Arm_C",
+      "Arm_D"
+    ],
+    "depths": [
+      3,
+      4,
+      5
+    ],
+    "repetitions": 5
+  },
+  "by_depth": {
+    "3": {
+      "per_arm": {
+        "Arm_A": {
+          "median_total_nodes": 13439,
+          "iqr_total_nodes": 0,
+          "mean_total_nodes": 13439.0,
+          "median_total_time_s": 2.30522,
+          "iqr_total_time_s": 0.73246,
+          "mean_total_time_s": 1.9396,
+          "node_change_pct_vs_baseline": 0.0,
+          "time_change_pct_vs_baseline": 0.0
+        },
+        "Arm_B": {
+          "median_total_nodes": 10871,
+          "iqr_total_nodes": 0,
+          "mean_total_nodes": 10871.0,
+          "median_total_time_s": 2.04113,
+          "iqr_total_time_s": 0.25147,
+          "mean_total_time_s": 1.76821,
+          "node_change_pct_vs_baseline": -19.11,
+          "time_change_pct_vs_baseline": -11.46
+        },
+        "Arm_C": {
+          "median_total_nodes": 10507,
+          "iqr_total_nodes": 0,
+          "mean_total_nodes": 10507.0,
+          "median_total_time_s": 1.455,
+          "iqr_total_time_s": 0.75068,
+          "mean_total_time_s": 1.54317,
+          "node_change_pct_vs_baseline": -21.82,
+          "time_change_pct_vs_baseline": -36.88
+        },
+        "Arm_D": {
+          "median_total_nodes": 9403,
+          "iqr_total_nodes": 0,
+          "mean_total_nodes": 9403.0,
+          "median_total_time_s": 1.68453,
+          "iqr_total_time_s": 0.33806,
+          "mean_total_time_s": 1.46956,
+          "node_change_pct_vs_baseline": -30.03,
+          "time_change_pct_vs_baseline": -26.93
+        }
+      },
+      "factorial_effects": {
+        "ordering_effect_pruning_off": {
+          "raw_nodes": -2568,
+          "rel_pct_vs_A": -19.11,
+          "raw_time_s": -0.26409,
+          "rel_time_pct_vs_A": -11.46
+        },
+        "ordering_effect_pruning_on": {
+          "raw_nodes": -1104,
+          "rel_pct_vs_C": -10.51,
+          "raw_time_s": 0.22953,
+          "rel_time_pct_vs_C": 15.78
+        },
+        "pruning_effect_ordering_off": {
+          "raw_nodes": -2932,
+          "rel_pct_vs_A": -21.82,
+          "raw_time_s": -0.85022,
+          "rel_time_pct_vs_A": -36.88
+        },
+        "pruning_effect_ordering_on": {
+          "raw_nodes": -1468,
+          "rel_pct_vs_B": -13.5,
+          "raw_time_s": -0.3566,
+          "rel_time_pct_vs_B": -17.47
+        },
+        "combined_effect": {
+          "raw_nodes": -4036,
+          "rel_pct_vs_A": -30.03,
+          "raw_time_s": -0.62069,
+          "rel_time_pct_vs_A": -26.93
+        },
+        "interaction_effect": {
+          "raw_nodes_diff_in_diff": 1464,
+          "rel_pct_of_baseline_A": 10.89,
+          "raw_time_s_diff_in_diff": 0.49362,
+          "rel_time_pct_of_baseline_A": 21.41,
+          "interpretation": "Positive raw node interaction confirms sub-additive diminishing returns between ordering and pruning."
+        }
+      }
+    },
+    "4": {
+      "per_arm": {
+        "Arm_A": {
+          "median_total_nodes": 26409,
+          "iqr_total_nodes": 0,
+          "mean_total_nodes": 26409.0,
+          "median_total_time_s": 4.99353,
+          "iqr_total_time_s": 0.2929,
+          "mean_total_time_s": 4.385,
+          "node_change_pct_vs_baseline": 0.0,
+          "time_change_pct_vs_baseline": 0.0
+        },
+        "Arm_B": {
+          "median_total_nodes": 20085,
+          "iqr_total_nodes": 0,
+          "mean_total_nodes": 20085.0,
+          "median_total_time_s": 4.28971,
+          "iqr_total_time_s": 0.51696,
+          "mean_total_time_s": 4.1533,
+          "node_change_pct_vs_baseline": -23.95,
+          "time_change_pct_vs_baseline": -14.09
+        },
+        "Arm_C": {
+          "median_total_nodes": 19723,
+          "iqr_total_nodes": 0,
+          "mean_total_nodes": 19723.0,
+          "median_total_time_s": 4.16946,
+          "iqr_total_time_s": 0.73671,
+          "mean_total_time_s": 3.88009,
+          "node_change_pct_vs_baseline": -25.32,
+          "time_change_pct_vs_baseline": -16.5
+        },
+        "Arm_D": {
+          "median_total_nodes": 16684,
+          "iqr_total_nodes": 0,
+          "mean_total_nodes": 16684.0,
+          "median_total_time_s": 3.72427,
+          "iqr_total_time_s": 0.36636,
+          "mean_total_time_s": 3.16285,
+          "node_change_pct_vs_baseline": -36.82,
+          "time_change_pct_vs_baseline": -25.42
+        }
+      },
+      "factorial_effects": {
+        "ordering_effect_pruning_off": {
+          "raw_nodes": -6324,
+          "rel_pct_vs_A": -23.95,
+          "raw_time_s": -0.70382,
+          "rel_time_pct_vs_A": -14.09
+        },
+        "ordering_effect_pruning_on": {
+          "raw_nodes": -3039,
+          "rel_pct_vs_C": -15.41,
+          "raw_time_s": -0.44519,
+          "rel_time_pct_vs_C": -10.68
+        },
+        "pruning_effect_ordering_off": {
+          "raw_nodes": -6686,
+          "rel_pct_vs_A": -25.32,
+          "raw_time_s": -0.82407,
+          "rel_time_pct_vs_A": -16.5
+        },
+        "pruning_effect_ordering_on": {
+          "raw_nodes": -3401,
+          "rel_pct_vs_B": -16.93,
+          "raw_time_s": -0.56544,
+          "rel_time_pct_vs_B": -13.18
+        },
+        "combined_effect": {
+          "raw_nodes": -9725,
+          "rel_pct_vs_A": -36.82,
+          "raw_time_s": -1.26926,
+          "rel_time_pct_vs_A": -25.42
+        },
+        "interaction_effect": {
+          "raw_nodes_diff_in_diff": 3285,
+          "rel_pct_of_baseline_A": 12.44,
+          "raw_time_s_diff_in_diff": 0.25863,
+          "rel_time_pct_of_baseline_A": 5.18,
+          "interpretation": "Positive raw node interaction confirms sub-additive diminishing returns between ordering and pruning."
+        }
+      }
+    },
+    "5": {
+      "per_arm": {
+        "Arm_A": {
+          "median_total_nodes": 53707,
+          "iqr_total_nodes": 0,
+          "mean_total_nodes": 53707.0,
+          "median_total_time_s": 8.94756,
+          "iqr_total_time_s": 0.32137,
+          "mean_total_time_s": 8.302,
+          "node_change_pct_vs_baseline": 0.0,
+          "time_change_pct_vs_baseline": 0.0
+        },
+        "Arm_B": {
+          "median_total_nodes": 46784,
+          "iqr_total_nodes": 0,
+          "mean_total_nodes": 46784.0,
+          "median_total_time_s": 8.59262,
+          "iqr_total_time_s": 1.47569,
+          "mean_total_time_s": 8.18888,
+          "node_change_pct_vs_baseline": -12.89,
+          "time_change_pct_vs_baseline": -3.97
+        },
+        "Arm_C": {
+          "median_total_nodes": 45981,
+          "iqr_total_nodes": 0,
+          "mean_total_nodes": 45981.0,
+          "median_total_time_s": 7.7547,
+          "iqr_total_time_s": 1.25352,
+          "mean_total_time_s": 6.79672,
+          "node_change_pct_vs_baseline": -14.39,
+          "time_change_pct_vs_baseline": -13.33
+        },
+        "Arm_D": {
+          "median_total_nodes": 42521,
+          "iqr_total_nodes": 0,
+          "mean_total_nodes": 42521.0,
+          "median_total_time_s": 7.14628,
+          "iqr_total_time_s": 0.29213,
+          "mean_total_time_s": 7.13634,
+          "node_change_pct_vs_baseline": -20.83,
+          "time_change_pct_vs_baseline": -20.13
+        }
+      },
+      "factorial_effects": {
+        "ordering_effect_pruning_off": {
+          "raw_nodes": -6923,
+          "rel_pct_vs_A": -12.89,
+          "raw_time_s": -0.35494,
+          "rel_time_pct_vs_A": -3.97
+        },
+        "ordering_effect_pruning_on": {
+          "raw_nodes": -3460,
+          "rel_pct_vs_C": -7.52,
+          "raw_time_s": -0.60842,
+          "rel_time_pct_vs_C": -7.85
+        },
+        "pruning_effect_ordering_off": {
+          "raw_nodes": -7726,
+          "rel_pct_vs_A": -14.39,
+          "raw_time_s": -1.19286,
+          "rel_time_pct_vs_A": -13.33
+        },
+        "pruning_effect_ordering_on": {
+          "raw_nodes": -4263,
+          "rel_pct_vs_B": -9.11,
+          "raw_time_s": -1.44634,
+          "rel_time_pct_vs_B": -16.83
+        },
+        "combined_effect": {
+          "raw_nodes": -11186,
+          "rel_pct_vs_A": -20.83,
+          "raw_time_s": -1.80128,
+          "rel_time_pct_vs_A": -20.13
+        },
+        "interaction_effect": {
+          "raw_nodes_diff_in_diff": 3463,
+          "rel_pct_of_baseline_A": 6.45,
+          "raw_time_s_diff_in_diff": -0.25348,
+          "rel_time_pct_of_baseline_A": -2.83,
+          "interpretation": "Positive raw node interaction confirms sub-additive diminishing returns between ordering and pruning."
+        }
+      }
+    }
+  }
+}

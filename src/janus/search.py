@@ -802,7 +802,6 @@ class JanusSearch:
         for move in moves:
             is_capture = board.is_capture(move)
             is_promotion = move.promotion is not None
-            gives_check = board.gives_check(move)
 
             eligible_for_lmr = (
                 self.enable_lmr
@@ -812,11 +811,11 @@ class JanusSearch:
                 and not in_check
                 and not is_capture
                 and not is_promotion
-                and not gives_check
                 and (
                     ply >= len(self.killers)
                     or (move != self.killers[ply][0] and move != self.killers[ply][1])
                 )
+                and not board.gives_check(move)
             )
 
             board.push(move)

@@ -1,0 +1,2179 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-10-20T15:11:56.515157+00:00",
+    "python_version": "3.12.8",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "reps": 5,
+    "depths": [
+      4,
+      5
+    ],
+    "positions_count": 6,
+    "baseline_commit": "851afc7",
+    "candidate_commit": "05de411",
+    "description": "Cumulative matched comparison: pre-optimisation v0.27 vs v0.30"
+  },
+  "runs": [
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.18315550000988878,
+      "nodes": 2552,
+      "nps": 13933.515509292456,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.13497449998976663,
+      "nodes": 2552,
+      "nps": 18907.275079318577,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 1.3629272000107449,
+      "nodes": 18418,
+      "nps": 13513.561105725088,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 1.1198520000034478,
+      "nodes": 18418,
+      "nps": 16446.816186374,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.10655490000499412,
+      "nodes": 2291,
+      "nps": 21500.653652648758,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.09218890001648106,
+      "nodes": 2291,
+      "nps": 24851.148018800817,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.12372629999299534,
+      "nodes": 2712,
+      "nps": 21919.349403914428,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.08092440001200885,
+      "nodes": 2712,
+      "nps": 33512.76005256203,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.018894100008765236,
+      "nodes": 436,
+      "nps": 23075.98667296847,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.014598799985833466,
+      "nodes": 436,
+      "nps": 29865.468423643735,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 6.990000838413835e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 5.789997521787882e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.5944748999900185,
+      "nodes": 8798,
+      "nps": 14799.615593774814,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.44062140001915395,
+      "nodes": 8798,
+      "nps": 19967.255334438018,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 1.7845354000164662,
+      "nodes": 27480,
+      "nps": 15398.966027654278,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 1.4727869000053033,
+      "nodes": 27480,
+      "nps": 18658.503820139253,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.3067688000155613,
+      "nodes": 7213,
+      "nps": 23512.821380903504,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.2329023999918718,
+      "nodes": 7213,
+      "nps": 30970.05441013803,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.35013889998663217,
+      "nodes": 8992,
+      "nps": 25681.23679015186,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.2706602000107523,
+      "nodes": 8992,
+      "nps": 33222.468614309684,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.05109870000160299,
+      "nodes": 1224,
+      "nps": 23953.64265551966,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.03756610001437366,
+      "nodes": 1224,
+      "nps": 32582.567781368554,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 7.010000990703702e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 5.979998968541622e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.1656072000041604,
+      "nodes": 2552,
+      "nps": 15409.958020761707,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.12764140000217594,
+      "nodes": 2552,
+      "nps": 19993.513076137486,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 1.2859234999923501,
+      "nodes": 18418,
+      "nps": 14322.78047652879,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 1.0832630000077188,
+      "nodes": 18418,
+      "nps": 17002.33461298758,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.11209940002299845,
+      "nodes": 2291,
+      "nps": 20437.219106703298,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.08645979998982511,
+      "nodes": 2291,
+      "nps": 26497.863750200817,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.11560479999752715,
+      "nodes": 2712,
+      "nps": 23459.233527137378,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.08063849998870865,
+      "nodes": 2712,
+      "nps": 33631.577973049425,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.019774200016399845,
+      "nodes": 436,
+      "nps": 22048.93242904395,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.015707299986388534,
+      "nodes": 436,
+      "nps": 27757.794170724712,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 7.440001354552805e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 8.289999095723033e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.598855000018375,
+      "nodes": 8798,
+      "nps": 14691.36936275066,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.4384794000070542,
+      "nodes": 8798,
+      "nps": 20064.796658311563,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 1.8601567999867257,
+      "nodes": 27480,
+      "nps": 14772.948173076646,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 1.5568721999879926,
+      "nodes": 27480,
+      "nps": 17650.774418229023,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.3195897999976296,
+      "nodes": 7213,
+      "nps": 22569.556350213614,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.21682090000831522,
+      "nodes": 7213,
+      "nps": 33267.0881807214,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.3497802000201773,
+      "nodes": 8992,
+      "nps": 25707.572925743912,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.24809219999588095,
+      "nodes": 8992,
+      "nps": 36244.589713619745,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.04992700001457706,
+      "nodes": 1224,
+      "nps": 24515.793050706667,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.03853310001431964,
+      "nodes": 1224,
+      "nps": 31764.89821854816,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 7.199999527074397e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 5.910001345910132e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.1674234000092838,
+      "nodes": 2552,
+      "nps": 15242.791628042967,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.1277416999801062,
+      "nodes": 2552,
+      "nps": 19977.814608678564,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 1.2680036000092514,
+      "nodes": 18418,
+      "nps": 14525.19535422898,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 1.1046580000256654,
+      "nodes": 18418,
+      "nps": 16673.033644414903,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.10253760000341572,
+      "nodes": 2291,
+      "nps": 22343.0234365119,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.07452460000058636,
+      "nodes": 2291,
+      "nps": 30741.5269586415,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.11084689997369424,
+      "nodes": 2712,
+      "nps": 24466.17813076957,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.0783969999756664,
+      "nodes": 2712,
+      "nps": 34593.160463305685,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.019732599990675226,
+      "nodes": 436,
+      "nps": 22095.415718457516,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.014898000023094937,
+      "nodes": 436,
+      "nps": 29265.67319936308,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 7.129998994059861e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 5.889998283237219e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.6112755999783985,
+      "nodes": 8798,
+      "nps": 14392.853240520162,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.4611207999987528,
+      "nodes": 8798,
+      "nps": 19079.59909859585,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 1.8056118999957107,
+      "nodes": 27480,
+      "nps": 15219.217374489655,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 1.368353500001831,
+      "nodes": 27480,
+      "nps": 20082.529843321357,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.3371114000037778,
+      "nodes": 7213,
+      "nps": 21396.487926303198,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.23616860000765882,
+      "nodes": 7213,
+      "nps": 30541.740094856326,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.3649093999993056,
+      "nodes": 8992,
+      "nps": 24641.732989112123,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.29171130000031553,
+      "nodes": 8992,
+      "nps": 30824.99718039813,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.06339530000695959,
+      "nodes": 1224,
+      "nps": 19307.424996263577,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.04445850002230145,
+      "nodes": 1224,
+      "nps": 27531.293214706126,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 7.869998808018863e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 5.8999983593821526e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.1890277999918908,
+      "nodes": 2552,
+      "nps": 13500.659691904999,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.14628290000837296,
+      "nodes": 2552,
+      "nps": 17445.648123286646,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 1.413904899993213,
+      "nodes": 18418,
+      "nps": 13026.335788275726,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 1.123260599997593,
+      "nodes": 18418,
+      "nps": 16396.90736062448,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.10037209998699836,
+      "nodes": 2291,
+      "nps": 22825.067925217896,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.07712810000521131,
+      "nodes": 2291,
+      "nps": 29703.83037887883,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.11267160001443699,
+      "nodes": 2712,
+      "nps": 24069.951963516116,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.07841799999005161,
+      "nodes": 2712,
+      "nps": 34583.896558749955,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.019008400005986914,
+      "nodes": 436,
+      "nps": 22937.227744716904,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.014291200001025572,
+      "nodes": 436,
+      "nps": 30508.284816440297,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 6.72000169288367e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 5.699999746866524e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.5739289000048302,
+      "nodes": 8798,
+      "nps": 15329.424951289186,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.45040820000576787,
+      "nodes": 8798,
+      "nps": 19533.392153800338,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 1.7344943000061903,
+      "nodes": 27480,
+      "nps": 15843.234538102504,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 1.4262910000106785,
+      "nodes": 27480,
+      "nps": 19266.755521695264,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.29471380001632497,
+      "nodes": 7213,
+      "nps": 24474.591958708595,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.21893510001245886,
+      "nodes": 7213,
+      "nps": 32945.83645833643,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.33960650002700277,
+      "nodes": 8992,
+      "nps": 26477.70286871726,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.24695060000522062,
+      "nodes": 8992,
+      "nps": 36412.14072697092,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.05149189999792725,
+      "nodes": 1224,
+      "nps": 23770.728989399708,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.03770260000601411,
+      "nodes": 1224,
+      "nps": 32464.60455790196,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 6.940000457689166e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 6.570000550709665e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.16466629999922588,
+      "nodes": 2552,
+      "nps": 15498.010218314235,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.1574006000009831,
+      "nodes": 2552,
+      "nps": 16213.407064420724,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 1.3180778000096325,
+      "nodes": 18418,
+      "nps": 13973.378506083178,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 1.061443300015526,
+      "nodes": 18418,
+      "nps": 17351.84535973857,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.10287169998628087,
+      "nodes": 2291,
+      "nps": 22270.45922547728,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.07675649999873713,
+      "nodes": 2291,
+      "nps": 29847.63505419989,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.11109099999885075,
+      "nodes": 2712,
+      "nps": 24412.418648027797,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.07981600001221523,
+      "nodes": 2712,
+      "nps": 33978.14973921205,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.019066500011831522,
+      "nodes": 436,
+      "nps": 22867.332742215123,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.015197500004433095,
+      "nodes": 436,
+      "nps": 28688.92909181242,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 7.090001599863172e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 5.77000027988106e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.5911046999972314,
+      "nodes": 8798,
+      "nps": 14883.996016342297,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.45694859998184256,
+      "nodes": 8798,
+      "nps": 19253.80666523456,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 1.764462299994193,
+      "nodes": 27480,
+      "nps": 15574.14969993433,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 1.405254099983722,
+      "nodes": 27480,
+      "nps": 19555.182226700723,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.3025610000186134,
+      "nodes": 7213,
+      "nps": 23839.820728898503,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.21353970002382994,
+      "nodes": 7213,
+      "nps": 33778.26230529998,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.34318460000213236,
+      "nodes": 8992,
+      "nps": 26201.64191500472,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.25146959998528473,
+      "nodes": 8992,
+      "nps": 35757.80134269186,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 0.05222650000359863,
+      "nodes": 1224,
+      "nps": 23436.378082308045,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 0.0377781999995932,
+      "nodes": 1224,
+      "nps": 32399.637886748977,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "commit": "851afc7",
+      "elapsed_s": 7.09999876562506e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "commit": "05de411",
+      "elapsed_s": 5.77000027988106e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    }
+  ]
+}

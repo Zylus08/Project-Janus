@@ -1,0 +1,90 @@
+{
+  "depth_4": {
+    "depth": 4,
+    "total_time_s": 5.277482400000736,
+    "total_nodes": 26409,
+    "nps": 5004.090586829114,
+    "positions": {
+      "startpos": {
+        "elapsed_s": 0.5939999999973224,
+        "nodes": 2552,
+        "best_move": "g1f3",
+        "score": 0
+      },
+      "open_game": {
+        "elapsed_s": 3.9530000000013388,
+        "nodes": 18418,
+        "best_move": "c3a4",
+        "score": 9
+      },
+      "white_up_rook": {
+        "elapsed_s": 0.3280000000013388,
+        "nodes": 2291,
+        "best_move": "e2f4",
+        "score": 838
+      },
+      "mate_in_one": {
+        "elapsed_s": 0.3129999999946449,
+        "nodes": 2712,
+        "best_move": "g5g7",
+        "score": 99999
+      },
+      "promotion_tactic": {
+        "elapsed_s": 0.062000000005355105,
+        "nodes": 436,
+        "best_move": "a7a8q",
+        "score": 900
+      },
+      "stalemate": {
+        "elapsed_s": 0.0,
+        "nodes": 0,
+        "best_move": "None",
+        "score": 0
+      }
+    }
+  },
+  "depth_5": {
+    "depth": 5,
+    "total_time_s": 7.673262099997373,
+    "total_nodes": 53707,
+    "nps": 6999.2396063231545,
+    "positions": {
+      "startpos": {
+        "elapsed_s": 1.75,
+        "nodes": 8798,
+        "best_move": "g1f3",
+        "score": 10
+      },
+      "open_game": {
+        "elapsed_s": 4.7039999999979045,
+        "nodes": 27480,
+        "best_move": "c3a4",
+        "score": 21
+      },
+      "white_up_rook": {
+        "elapsed_s": 0.5310000000026776,
+        "nodes": 7213,
+        "best_move": "e2d4",
+        "score": 838
+      },
+      "mate_in_one": {
+        "elapsed_s": 0.6089999999967404,
+        "nodes": 8992,
+        "best_move": "g5g7",
+        "score": 99999
+      },
+      "promotion_tactic": {
+        "elapsed_s": 0.07800000000133878,
+        "nodes": 1224,
+        "best_move": "a7a8q",
+        "score": 900
+      },
+      "stalemate": {
+        "elapsed_s": 0.0,
+        "nodes": 0,
+        "best_move": "None",
+        "score": 0
+      }
+    }
+  }
+}

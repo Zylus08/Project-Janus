@@ -579,7 +579,14 @@ class JanusSearch:
         )
         return moves
 
-    def _quiescence(self, board: chess.Board, alpha: int, beta: int, ply: int) -> int:
+    def _quiescence(
+        self,
+        board: chess.Board,
+        alpha: int,
+        beta: int,
+        ply: int,
+        check_stalemate: bool = True,
+    ) -> int:
         self.nodes += 1
         self._check_stop()
 
@@ -599,7 +606,7 @@ class JanusSearch:
         )
 
         if not in_check:
-            if not any(board.generate_legal_moves()):
+            if check_stalemate and not any(board.generate_legal_moves()):
                 return 0
             stand_pat = evaluate_side_to_move(board)
             if stand_pat >= beta:
@@ -672,7 +679,7 @@ class JanusSearch:
         if depth <= 0:
             if not any(board.generate_legal_moves()):
                 return (-MATE_SCORE + ply if board.is_check() else 0), []
-            return self._quiescence(board, alpha, beta, ply), []
+            return self._quiescence(board, alpha, beta, ply, check_stalemate=False), []
 
         in_check = board.is_check()
 

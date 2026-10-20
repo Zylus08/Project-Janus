@@ -1,0 +1,26 @@
+{
+  "total_search_nodes": 89164,
+  "elapsed_s": 8.829993399995146,
+  "q_metrics": {
+    "q_nodes_total": 49294,
+    "q_nodes_root_entry": 21464,
+    "q_nodes_recursive": 27830,
+    "q_in_check_true": 4213,
+    "q_in_check_false": 44761,
+    "q_stand_pat_evals": 43993,
+    "q_stand_pat_cutoffs": 25045,
+    "q_quiescence_moves_calls": 18948,
+    "q_captures_generated_total": 36174,
+    "q_nodes_with_zero_captures": 5265,
+    "q_nodes_with_captures": 13683,
+    "q_stalemate_detected_in_q": 0,
+    "q_checkmate_detected_in_q": 0,
+    "negamax_leaf_any_legal_calls": 21661,
+    "negamax_leaf_stalemates": 113,
+    "negamax_leaf_mates": 84,
+    "q_any_legal_moves_calls": 43993,
+    "is_insufficient_material_calls": 49294,
+    "is_repetition_calls": 49294,
+    "is_seventyfive_moves_calls": 49294
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "description": "Curated diagnostic position suite for Project Janus v0.33 evaluation audit and feature ablation.",
+  "version": "0.33.0",
+  "positions": [
+    {
+      "id": "eq_01_startpos",
+      "category": "material_equality",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "expected_property": "near_zero",
+      "rationale": "Initial starting position with perfect symmetry; score should be 0 or small tempo/castling balance.",
+      "notes": "Both sides possess full castling rights and identical piece placement."
+    },
+    {
+      "id": "eq_02_symmetrical_four_knights",
+      "category": "material_equality",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R w KQkq - 4 4",
+      "expected_property": "near_zero",
+      "rationale": "Symmetrical Four Knights Game; equal material and identical central piece distribution.",
+      "notes": "Slight tempo advantage for White."
+    },
+    {
+      "id": "eq_03_symmetrical_pawn_endgame",
+      "category": "material_equality",
+      "fen": "8/5pk1/4p1p1/4P1P1/5PK1/8/8/8 w - - 0 40",
+      "expected_property": "near_zero",
+      "rationale": "Symmetrical 3 vs 3 kings and pawns; dead draw with equal material.",
+      "notes": "Evaluates handling of simplified symmetric pawn structures."
+    },
+    {
+      "id": "mat_01_white_up_queen",
+      "category": "clear_material_advantage",
+      "fen": "4k3/8/8/8/8/8/4Q3/4K3 w - - 0 1",
+      "expected_property": "large_white_advantage",
+      "rationale": "White is up a full queen; score should exceed +800 cp.",
+      "notes": "Basic material invariant."
+    },
+    {
+      "id": "mat_02_white_up_rook",
+      "category": "clear_material_advantage",
+      "fen": "4k3/8/8/8/8/8/4R3/4K3 w - - 0 1",
+      "expected_property": "moderate_white_advantage",
+      "rationale": "White is up a full rook; score should be near +500 cp.",
+      "notes": "Basic material invariant."
+    },
+    {
+      "id": "mat_03_black_up_minor",
+      "category": "clear_material_advantage",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/5N2/PPPP1PPP/R1BQKB1R w KQkq - 0 3",
+      "expected_property": "moderate_black_advantage",
+      "rationale": "White is missing knight on b1; Black is up a minor piece (-320 cp).",
+      "notes": "Evaluation from White perspective should be approximately -320 cp."
+    },
+    {
+      "id": "bp_01_white_bishop_pair",
+      "category": "bishop_pair",
+      "fen": "r1bqk2r/pppp1ppp/8/4n3/2B1P1b1/2N2N2/PPP2PPP/R2QK2R w KQkq - 0 8",
+      "expected_property": "bishop_pair_recognized",
+      "rationale": "White has two bishops (c4, c1) vs Black single bishop (g4); White should gain bishop pair bonus.",
+      "notes": "Baseline grants +25 cp for bishop pair."
+    },
+    {
+      "id": "bp_02_black_bishop_pair",
+      "category": "bishop_pair",
+      "fen": "r1b1k2r/pppp1ppp/2n5/4p3/2B1P3/2N2N2/PPP2PPP/R1BQK2R b KQkq - 0 6",
+      "expected_property": "bishop_pair_recognized",
+      "rationale": "White has two bishops (c1, c4) vs Black zero/one bishop; tests sign symmetry of pair bonus.",
+      "notes": "Side to move perspective flips score."
+    },
+    {
+      "id": "pawn_01_white_passed_pawn",
+      "category": "pawn_structure_passed",
+      "fen": "8/4k3/8/3P4/8/8/8/4K3 w - - 0 1",
+      "expected_property": "passed_pawn_advantage",
+      "rationale": "White has an advanced passed pawn on d5 with no opposing pawns on d/c/e files.",
+      "notes": "A passed pawn bonus should evaluate this higher than a standard pawn on rank 4."
+    },
+    {
+      "id": "pawn_02_white_protected_passed_pawn",
+      "category": "pawn_structure_passed",
+      "fen": "8/5k2/8/3P4/2P5/8/8/4K3 w - - 0 1",
+      "expected_property": "connected_passed_pawns",
+      "rationale": "White has protected passed pawns (c4 supporting d5).",
+      "notes": "High endgame conversion potential."
+    },
+    {
+      "id": "pawn_03_white_doubled_pawns",
+      "category": "pawn_structure_doubled",
+      "fen": "r1bqk2r/pp1p1ppp/2n2n2/4p3/1bP1P3/2N5/PP1P1PPP/R1BQKBNR w KQkq - 3 6",
+      "expected_property": "doubled_pawn_penalty",
+      "rationale": "After ...Bxc3 bxc3, White has doubled c-pawns (c2, c3 or c3, c4).",
+      "notes": "Doubled pawns generally impede mobility and pawn structure solidity."
+    },
+    {
+      "id": "pawn_04_isolated_queen_pawn",
+      "category": "pawn_structure_isolated",
+      "fen": "r1bq1rk1/pp3ppp/2n1pn2/8/3P4/2NB1N2/PP3PPP/R2Q1RK1 w - - 0 12",
+      "expected_property": "isolated_pawn_evaluated",
+      "rationale": "Classical Isolated Queen's Pawn (IQP) on d4; no friendly pawns on c or e files.",
+      "notes": "IQP provides piece activity but is statically vulnerable."
+    },
+    {
+      "id": "rook_01_open_file",
+      "category": "rook_open_file",
+      "fen": "r4rk1/pp1q1ppp/2n1pn2/8/3P4/2NB1N2/PP3PPP/R2Q1RK1 w - - 0 12",
+      "expected_property": "rook_open_file_bonus",
+      "rationale": "No pawns on e-file or d-file; rooks occupying open files control critical entry squares.",
+      "notes": "Baseline gives rooks flat 500 cp without file awareness."
+    },
+    {
+      "id": "rook_02_semi_open_file",
+      "category": "rook_semi_open_file",
+      "fen": "2r2rk1/pp1q1ppp/2n1pn2/8/3P4/2NB1N2/PP3PPP/R2QR1K1 b - - 0 13",
+      "expected_property": "semi_open_file_bonus",
+      "rationale": "Black rook on c8 has a semi-open file (no friendly c-pawn, opposing White pawn on c-file absent).",
+      "notes": "Pressure on semi-open file against enemy backward pawn."
+    },
+    {
+      "id": "king_01_exposed_uncastled_king",
+      "category": "king_safety_exposed",
+      "fen": "r1bqk2r/pppp1ppp/2n5/4p3/4n3/3P1N2/PPP1KPPP/RNBQ1B1R b kq - 0 6",
+      "expected_property": "uncastled_king_penalized",
+      "rationale": "White king is awkwardly displaced to e2, preventing castling and blocking pieces.",
+      "notes": "Baseline only evaluates castling rights (+8 cp), not king exposure."
+    },
+    {
+      "id": "king_02_shattered_kingside_shield",
+      "category": "king_safety_exposed",
+      "fen": "r1bq1rk1/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/R1BQ1RK1 w - - 0 7",
+      "expected_property": "castled_king_shield_intact",
+      "rationale": "White king on g1 safely tucked behind f2, g2, h2 pawn shield.",
+      "notes": "Positive control for king safety."
+    },
+    {
+      "id": "king_03_missing_g2_pawn",
+      "category": "king_safety_exposed",
+      "fen": "r1bq1rk1/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1P1P/R1BQ1RK1 w - - 0 7",
+      "expected_property": "open_g_file_near_king_penalized",
+      "rationale": "White king on g1 with open g-file; missing g2 pawn creates severe mating attack liability.",
+      "notes": "Static evaluation should penalize missing shield pawns near king."
+    },
+    {
+      "id": "mobility_01_active_knight_vs_trapped",
+      "category": "piece_mobility",
+      "fen": "4k3/8/8/4N3/8/8/8/N3K3 w - - 0 1",
+      "expected_property": "central_knight_superior_to_corner",
+      "rationale": "Knight on e5 (8 moves) vs Knight on a1 (1 move).",
+      "notes": "Baseline already handles this via CENTER_BONUS."
+    },
+    {
+      "id": "mobility_02_trapped_bishop",
+      "category": "piece_mobility",
+      "fen": "r1b1k2r/1pp1bppp/p1np4/4p3/B3P3/3P1N2/PPP2PPP/R1B1K2R w KQkq - 0 10",
+      "expected_property": "restricted_bishop_evaluated",
+      "rationale": "White bishop on a4 vs c1 bishop; evaluates piece freedom.",
+      "notes": "Baseline center bonus gives a4 lower score than c4."
+    },
+    {
+      "id": "endgame_01_kp_vs_k",
+      "category": "simplified_endgames",
+      "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
+      "expected_property": "kp_vs_k_win_detected",
+      "rationale": "Key squares: White king in front of passed pawn, winning endgame.",
+      "notes": "Endgame evaluation requires active king participation."
+    },
+    {
+      "id": "endgame_02_kq_vs_k",
+      "category": "simplified_endgames",
+      "fen": "8/8/8/4k3/8/8/8/4KQ2 w - - 0 1",
+      "expected_property": "elementary_mate_advantage",
+      "rationale": "KQ vs K elementary win; queen + king must drive enemy king to the edge.",
+      "notes": "Flat material gives +900 cp."
+    },
+    {
+      "id": "promo_01_race",
+      "category": "promotion_race",
+      "fen": "8/1P5k/8/8/8/8/K5p1/8 w - - 0 1",
+      "expected_property": "promotion_turn_tempo",
+      "rationale": "White pawn on b7, Black pawn on g2; White to move promotes with check or first queen.",
+      "notes": "Turn determines the winner."
+    },
+    {
+      "id": "tactics_01_mate_in_one",
+      "category": "tactical_override",
+      "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/5Q2/PPPP1PPP/RNB1K1NR w KQkq - 0 5",
+      "expected_property": "mate_in_one_found_in_search",
+      "rationale": "Scholar's mate threat: 5.Qxf7# is mate in one. Static eval must not override search mate.",
+      "notes": "Evaluation is near equal statically, but search delivers mate."
+    },
+    {
+      "id": "tactics_02_back_rank_mate",
+      "category": "tactical_override",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1",
+      "expected_property": "back_rank_mate_in_one",
+      "rationale": "1.Re8# is immediate back-rank mate.",
+      "notes": "Search must verify Re8# wins immediately."
+    }
+  ]
+}

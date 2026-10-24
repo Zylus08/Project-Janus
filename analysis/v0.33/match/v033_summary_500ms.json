@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-10-24T20:30:43.913910+00:00",
+    "baseline_commit": "05de411",
+    "baseline_name": "Janus-v0.30",
+    "candidate_commit": "def3740+eval",
+    "candidate_name": "Janus-v0.33",
+    "time_control": "fixed movetime 500ms",
+    "movetime_ms": 500,
+    "movetime_s": 0.5,
+    "max_plies": 200,
+    "total_games_requested": 100,
+    "pairs_requested": 50,
+    "seed": 42,
+    "python_version": "3.12.8",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "summary": {
+    "games_total": 100,
+    "completed_games": 100,
+    "unfinished_games": 0,
+    "candidate_wins": 33,
+    "draws": 38,
+    "candidate_losses": 29,
+    "candidate_points": 52.0,
+    "candidate_score_pct": 52.0,
+    "score_se_pct": 3.95,
+    "score_ci_95_wald": [
+      44.25,
+      59.75
+    ],
+    "delta_elo": 13.9,
+    "pairs_total": 50,
+    "pairs_completed": 50,
+    "pairs_won": 17,
+    "pairs_drawn": 21,
+    "pairs_lost": 12,
+    "pair_bootstrap_ci_95": [
+      45.0,
+      59.0
+    ],
+    "by_color": {
+      "white": {
+        "wins": 24,
+        "draws": 16,
+        "losses": 10,
+        "games": 50,
+        "score_pts": 32.0,
+        "score_pct": 64.0
+      },
+      "black": {
+        "wins": 9,
+        "draws": 22,
+        "losses": 19,
+        "games": 50,
+        "score_pts": 20.0,
+        "score_pct": 40.0
+      }
+    },
+    "search_stats": {
+      "candidate_avg_depth": 3.51,
+      "baseline_avg_depth": 3.74,
+      "candidate_avg_move_time_s": 0.5084,
+      "baseline_avg_move_time_s": 0.5067
+    }
+  },
+  "terminations": {
+    "checkmate": 62,
+    "threefold repetition": 37,
+    "move limit": 1
+  }
+}

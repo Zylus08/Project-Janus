@@ -1,0 +1,831 @@
+{
+  "timestamp": 1792869511.309083,
+  "configs": {
+    "baseline": {
+      "pawn_structure": false,
+      "rook_files": false,
+      "king_safety": false
+    },
+    "pawn_structure": {
+      "pawn_structure": true,
+      "rook_files": false,
+      "king_safety": false
+    },
+    "rook_files": {
+      "pawn_structure": false,
+      "rook_files": true,
+      "king_safety": false
+    },
+    "king_safety": {
+      "pawn_structure": false,
+      "rook_files": false,
+      "king_safety": true
+    },
+    "all_features": {
+      "pawn_structure": true,
+      "rook_files": true,
+      "king_safety": true
+    }
+  },
+  "microbenchmark": {
+    "baseline": {
+      "evaluations": 125000,
+      "elapsed_s": 1.1851,
+      "evals_per_sec": 105476.0,
+      "relative_speed_pct": 100.0
+    },
+    "pawn_structure": {
+      "evaluations": 125000,
+      "elapsed_s": 1.8792,
+      "evals_per_sec": 66519.0,
+      "relative_speed_pct": 63.1
+    },
+    "rook_files": {
+      "evaluations": 125000,
+      "elapsed_s": 1.3651,
+      "evals_per_sec": 91567.0,
+      "relative_speed_pct": 86.8
+    },
+    "king_safety": {
+      "evaluations": 125000,
+      "elapsed_s": 1.4495,
+      "evals_per_sec": 86235.0,
+      "relative_speed_pct": 81.8
+    },
+    "all_features": {
+      "evaluations": 125000,
+      "elapsed_s": 2.2858,
+      "evals_per_sec": 54685.0,
+      "relative_speed_pct": 51.8
+    }
+  },
+  "diagnostic_suite": {
+    "eq_01_startpos": {
+      "category": "material_equality",
+      "expected": "near_zero",
+      "scores_white": {
+        "baseline": 0,
+        "pawn_structure": 0,
+        "rook_files": 0,
+        "king_safety": 0,
+        "all_features": 0
+      }
+    },
+    "eq_02_symmetrical_four_knights": {
+      "category": "material_equality",
+      "expected": "near_zero",
+      "scores_white": {
+        "baseline": 0,
+        "pawn_structure": 0,
+        "rook_files": 0,
+        "king_safety": 0,
+        "all_features": 0
+      }
+    },
+    "eq_03_symmetrical_pawn_endgame": {
+      "category": "material_equality",
+      "expected": "near_zero",
+      "scores_white": {
+        "baseline": 30,
+        "pawn_structure": 30,
+        "rook_files": 30,
+        "king_safety": 30,
+        "all_features": 30
+      }
+    },
+    "mat_01_white_up_queen": {
+      "category": "clear_material_advantage",
+      "expected": "large_white_advantage",
+      "scores_white": {
+        "baseline": 900,
+        "pawn_structure": 900,
+        "rook_files": 900,
+        "king_safety": 900,
+        "all_features": 900
+      }
+    },
+    "mat_02_white_up_rook": {
+      "category": "clear_material_advantage",
+      "expected": "moderate_white_advantage",
+      "scores_white": {
+        "baseline": 500,
+        "pawn_structure": 500,
+        "rook_files": 518,
+        "king_safety": 500,
+        "all_features": 518
+      }
+    },
+    "mat_03_black_up_minor": {
+      "category": "clear_material_advantage",
+      "expected": "moderate_black_advantage",
+      "scores_white": {
+        "baseline": -322,
+        "pawn_structure": -322,
+        "rook_files": -322,
+        "king_safety": -322,
+        "all_features": -322
+      }
+    },
+    "bp_01_white_bishop_pair": {
+      "category": "bishop_pair",
+      "expected": "bishop_pair_recognized",
+      "scores_white": {
+        "baseline": -26,
+        "pawn_structure": -26,
+        "rook_files": -26,
+        "king_safety": -26,
+        "all_features": -26
+      }
+    },
+    "bp_02_black_bishop_pair": {
+      "category": "bishop_pair",
+      "expected": "bishop_pair_recognized",
+      "scores_white": {
+        "baseline": 1483,
+        "pawn_structure": 1483,
+        "rook_files": 1483,
+        "king_safety": 1483,
+        "all_features": 1483
+      }
+    },
+    "pawn_01_white_passed_pawn": {
+      "category": "pawn_structure_passed",
+      "expected": "passed_pawn_advantage",
+      "scores_white": {
+        "baseline": 120,
+        "pawn_structure": 118,
+        "rook_files": 120,
+        "king_safety": 120,
+        "all_features": 118
+      }
+    },
+    "pawn_02_white_protected_passed_pawn": {
+      "category": "pawn_structure_passed",
+      "expected": "connected_passed_pawns",
+      "scores_white": {
+        "baseline": 235,
+        "pawn_structure": 250,
+        "rook_files": 235,
+        "king_safety": 235,
+        "all_features": 250
+      }
+    },
+    "pawn_03_white_doubled_pawns": {
+      "category": "pawn_structure_doubled",
+      "expected": "doubled_pawn_penalty",
+      "scores_white": {
+        "baseline": 95,
+        "pawn_structure": 95,
+        "rook_files": 95,
+        "king_safety": 95,
+        "all_features": 95
+      }
+    },
+    "pawn_04_isolated_queen_pawn": {
+      "category": "pawn_structure_isolated",
+      "expected": "isolated_pawn_evaluated",
+      "scores_white": {
+        "baseline": 17,
+        "pawn_structure": 5,
+        "rook_files": 17,
+        "king_safety": 17,
+        "all_features": 5
+      }
+    },
+    "rook_01_open_file": {
+      "category": "rook_open_file",
+      "expected": "rook_open_file_bonus",
+      "scores_white": {
+        "baseline": 346,
+        "pawn_structure": 334,
+        "rook_files": 346,
+        "king_safety": 346,
+        "all_features": 334
+      }
+    },
+    "rook_02_semi_open_file": {
+      "category": "rook_semi_open_file",
+      "expected": "semi_open_file_bonus",
+      "scores_white": {
+        "baseline": 346,
+        "pawn_structure": 334,
+        "rook_files": 338,
+        "king_safety": 346,
+        "all_features": 326
+      }
+    },
+    "king_01_exposed_uncastled_king": {
+      "category": "king_safety_exposed",
+      "expected": "uncastled_king_penalized",
+      "scores_white": {
+        "baseline": 208,
+        "pawn_structure": 208,
+        "rook_files": 208,
+        "king_safety": 208,
+        "all_features": 208
+      }
+    },
+    "king_02_shattered_kingside_shield": {
+      "category": "king_safety_exposed",
+      "expected": "castled_king_shield_intact",
+      "scores_white": {
+        "baseline": 0,
+        "pawn_structure": 0,
+        "rook_files": 0,
+        "king_safety": 0,
+        "all_features": 0
+      }
+    },
+    "king_03_missing_g2_pawn": {
+      "category": "king_safety_exposed",
+      "expected": "open_g_file_near_king_penalized",
+      "scores_white": {
+        "baseline": -105,
+        "pawn_structure": -117,
+        "rook_files": -105,
+        "king_safety": -125,
+        "all_features": -137
+      }
+    },
+    "mobility_01_active_knight_vs_trapped": {
+      "category": "piece_mobility",
+      "expected": "central_knight_superior_to_corner",
+      "scores_white": {
+        "baseline": 636,
+        "pawn_structure": 636,
+        "rook_files": 636,
+        "king_safety": 636,
+        "all_features": 636
+      }
+    },
+    "mobility_02_trapped_bishop": {
+      "category": "piece_mobility",
+      "expected": "restricted_bishop_evaluated",
+      "scores_white": {
+        "baseline": -9,
+        "pawn_structure": -9,
+        "rook_files": -9,
+        "king_safety": -9,
+        "all_features": -9
+      }
+    },
+    "endgame_01_kp_vs_k": {
+      "category": "simplified_endgames",
+      "expected": "kp_vs_k_win_detected",
+      "scores_white": {
+        "baseline": 115,
+        "pawn_structure": 108,
+        "rook_files": 115,
+        "king_safety": 115,
+        "all_features": 108
+      }
+    },
+    "endgame_02_kq_vs_k": {
+      "category": "simplified_endgames",
+      "expected": "elementary_mate_advantage",
+      "scores_white": {
+        "baseline": 900,
+        "pawn_structure": 900,
+        "rook_files": 900,
+        "king_safety": 900,
+        "all_features": 900
+      }
+    },
+    "promo_01_race": {
+      "category": "promotion_race",
+      "expected": "promotion_turn_tempo",
+      "scores_white": {
+        "baseline": 0,
+        "pawn_structure": 0,
+        "rook_files": 0,
+        "king_safety": 0,
+        "all_features": 0
+      }
+    },
+    "tactics_01_mate_in_one": {
+      "category": "tactical_override",
+      "expected": "mate_in_one_found_in_search",
+      "scores_white": {
+        "baseline": -135,
+        "pawn_structure": -135,
+        "rook_files": -135,
+        "king_safety": -135,
+        "all_features": -135
+      }
+    },
+    "tactics_02_back_rank_mate": {
+      "category": "tactical_override",
+      "expected": "back_rank_mate_in_one",
+      "scores_white": {
+        "baseline": 500,
+        "pawn_structure": 500,
+        "rook_files": 518,
+        "king_safety": 500,
+        "all_features": 518
+      }
+    }
+  },
+  "search_benchmarks": {
+    "baseline": {
+      "depth_4": {
+        "startpos": {
+          "best_move": "g1f3",
+          "score": 0,
+          "nodes": 2552,
+          "time_s": 0.109,
+          "nps": 23413.0
+        },
+        "open_game": {
+          "best_move": "c3a4",
+          "score": 9,
+          "nodes": 18418,
+          "time_s": 0.844,
+          "nps": 21822.0
+        },
+        "white_up_rook": {
+          "best_move": "e2f4",
+          "score": 838,
+          "nodes": 2291,
+          "time_s": 0.063,
+          "nps": 36365.0
+        },
+        "mate_in_one": {
+          "best_move": "g5g7",
+          "score": 99999,
+          "nodes": 2712,
+          "time_s": 0.062,
+          "nps": 43742.0
+        },
+        "promotion_tactic": {
+          "best_move": "a7a8q",
+          "score": 900,
+          "nodes": 436,
+          "time_s": 0.016,
+          "nps": 27250.0
+        },
+        "stalemate": {
+          "best_move": null,
+          "score": 0,
+          "nodes": 0,
+          "time_s": 0.0,
+          "nps": 0
+        },
+        "summary": {
+          "total_nodes": 26409,
+          "total_time_s": 1.094,
+          "avg_nps": 24140.0
+        }
+      },
+      "depth_5": {
+        "startpos": {
+          "best_move": "g1f3",
+          "score": 10,
+          "nodes": 8798,
+          "time_s": 0.359,
+          "nps": 24507.0
+        },
+        "open_game": {
+          "best_move": "c3a4",
+          "score": 21,
+          "nodes": 27480,
+          "time_s": 1.125,
+          "nps": 24427.0
+        },
+        "white_up_rook": {
+          "best_move": "e2d4",
+          "score": 838,
+          "nodes": 7213,
+          "time_s": 0.172,
+          "nps": 41936.0
+        },
+        "mate_in_one": {
+          "best_move": "g5g7",
+          "score": 99999,
+          "nodes": 8992,
+          "time_s": 0.219,
+          "nps": 41059.0
+        },
+        "promotion_tactic": {
+          "best_move": "a7a8q",
+          "score": 900,
+          "nodes": 1224,
+          "time_s": 0.031,
+          "nps": 39484.0
+        },
+        "stalemate": {
+          "best_move": null,
+          "score": 0,
+          "nodes": 0,
+          "time_s": 0.0,
+          "nps": 0
+        },
+        "summary": {
+          "total_nodes": 53707,
+          "total_time_s": 1.906,
+          "avg_nps": 28178.0
+        }
+      }
+    },
+    "pawn_structure": {
+      "depth_4": {
+        "startpos": {
+          "best_move": "g1f3",
+          "score": 0,
+          "nodes": 2552,
+          "time_s": 0.125,
+          "nps": 20416.0
+        },
+        "open_game": {
+          "best_move": "c3a4",
+          "score": 9,
+          "nodes": 14601,
+          "time_s": 0.75,
+          "nps": 19468.0
+        },
+        "white_up_rook": {
+          "best_move": "e2f4",
+          "score": 838,
+          "nodes": 2291,
+          "time_s": 0.062,
+          "nps": 36952.0
+        },
+        "mate_in_one": {
+          "best_move": "g5g7",
+          "score": 99999,
+          "nodes": 2712,
+          "time_s": 0.079,
+          "nps": 34329.0
+        },
+        "promotion_tactic": {
+          "best_move": "a7a8q",
+          "score": 900,
+          "nodes": 436,
+          "time_s": 0.015,
+          "nps": 29067.0
+        },
+        "stalemate": {
+          "best_move": null,
+          "score": 0,
+          "nodes": 0,
+          "time_s": 0.0,
+          "nps": 0
+        },
+        "summary": {
+          "total_nodes": 22592,
+          "total_time_s": 1.031,
+          "avg_nps": 21913.0
+        }
+      },
+      "depth_5": {
+        "startpos": {
+          "best_move": "g1f3",
+          "score": 10,
+          "nodes": 8717,
+          "time_s": 0.391,
+          "nps": 22294.0
+        },
+        "open_game": {
+          "best_move": "c3a4",
+          "score": 21,
+          "nodes": 22608,
+          "time_s": 1.062,
+          "nps": 21288.0
+        },
+        "white_up_rook": {
+          "best_move": "e2d4",
+          "score": 838,
+          "nodes": 7213,
+          "time_s": 0.188,
+          "nps": 38367.0
+        },
+        "mate_in_one": {
+          "best_move": "g5g7",
+          "score": 99999,
+          "nodes": 8992,
+          "time_s": 0.219,
+          "nps": 41059.0
+        },
+        "promotion_tactic": {
+          "best_move": "a7a8q",
+          "score": 900,
+          "nodes": 1224,
+          "time_s": 0.031,
+          "nps": 39484.0
+        },
+        "stalemate": {
+          "best_move": null,
+          "score": 0,
+          "nodes": 0,
+          "time_s": 0.0,
+          "nps": 0
+        },
+        "summary": {
+          "total_nodes": 48754,
+          "total_time_s": 1.891,
+          "avg_nps": 25782.0
+        }
+      }
+    },
+    "rook_files": {
+      "depth_4": {
+        "startpos": {
+          "best_move": "g1f3",
+          "score": 0,
+          "nodes": 2552,
+          "time_s": 0.109,
+          "nps": 23413.0
+        },
+        "open_game": {
+          "best_move": "c3a4",
+          "score": 9,
+          "nodes": 18390,
+          "time_s": 0.875,
+          "nps": 21017.0
+        },
+        "white_up_rook": {
+          "best_move": "e2f4",
+          "score": 856,
+          "nodes": 2291,
+          "time_s": 0.063,
+          "nps": 36365.0
+        },
+        "mate_in_one": {
+          "best_move": "g5g7",
+          "score": 99999,
+          "nodes": 2712,
+          "time_s": 0.078,
+          "nps": 34769.0
+        },
+        "promotion_tactic": {
+          "best_move": "a7a8q",
+          "score": 900,
+          "nodes": 436,
+          "time_s": 0.0,
+          "nps": 0
+        },
+        "stalemate": {
+          "best_move": null,
+          "score": 0,
+          "nodes": 0,
+          "time_s": 0.0,
+          "nps": 0
+        },
+        "summary": {
+          "total_nodes": 26381,
+          "total_time_s": 1.125,
+          "avg_nps": 23450.0
+        }
+      },
+      "depth_5": {
+        "startpos": {
+          "best_move": "g1f3",
+          "score": 10,
+          "nodes": 8840,
+          "time_s": 0.375,
+          "nps": 23573.0
+        },
+        "open_game": {
+          "best_move": "c3a4",
+          "score": 21,
+          "nodes": 27424,
+          "time_s": 1.172,
+          "nps": 23399.0
+        },
+        "white_up_rook": {
+          "best_move": "e2d4",
+          "score": 856,
+          "nodes": 7213,
+          "time_s": 0.187,
+          "nps": 38572.0
+        },
+        "mate_in_one": {
+          "best_move": "g5g7",
+          "score": 99999,
+          "nodes": 8992,
+          "time_s": 0.203,
+          "nps": 44296.0
+        },
+        "promotion_tactic": {
+          "best_move": "a7a8q",
+          "score": 900,
+          "nodes": 1224,
+          "time_s": 0.032,
+          "nps": 38250.0
+        },
+        "stalemate": {
+          "best_move": null,
+          "score": 0,
+          "nodes": 0,
+          "time_s": 0.0,
+          "nps": 0
+        },
+        "summary": {
+          "total_nodes": 53693,
+          "total_time_s": 1.969,
+          "avg_nps": 27269.0
+        }
+      }
+    },
+    "king_safety": {
+      "depth_4": {
+        "startpos": {
+          "best_move": "g1f3",
+          "score": 0,
+          "nodes": 2552,
+          "time_s": 0.109,
+          "nps": 23413.0
+        },
+        "open_game": {
+          "best_move": "c3a4",
+          "score": 9,
+          "nodes": 17668,
+          "time_s": 0.859,
+          "nps": 20568.0
+        },
+        "white_up_rook": {
+          "best_move": "e2f4",
+          "score": 838,
+          "nodes": 2309,
+          "time_s": 0.063,
+          "nps": 36651.0
+        },
+        "mate_in_one": {
+          "best_move": "g5g7",
+          "score": 99999,
+          "nodes": 2712,
+          "time_s": 0.062,
+          "nps": 43742.0
+        },
+        "promotion_tactic": {
+          "best_move": "a7a8q",
+          "score": 900,
+          "nodes": 436,
+          "time_s": 0.016,
+          "nps": 27250.0
+        },
+        "stalemate": {
+          "best_move": null,
+          "score": 0,
+          "nodes": 0,
+          "time_s": 0.0,
+          "nps": 0
+        },
+        "summary": {
+          "total_nodes": 25677,
+          "total_time_s": 1.109,
+          "avg_nps": 23153.0
+        }
+      },
+      "depth_5": {
+        "startpos": {
+          "best_move": "g1f3",
+          "score": 10,
+          "nodes": 8798,
+          "time_s": 0.375,
+          "nps": 23461.0
+        },
+        "open_game": {
+          "best_move": "c3a4",
+          "score": 21,
+          "nodes": 25666,
+          "time_s": 1.125,
+          "nps": 22814.0
+        },
+        "white_up_rook": {
+          "best_move": "e2d4",
+          "score": 838,
+          "nodes": 7166,
+          "time_s": 0.187,
+          "nps": 38321.0
+        },
+        "mate_in_one": {
+          "best_move": "g5g7",
+          "score": 99999,
+          "nodes": 8992,
+          "time_s": 0.204,
+          "nps": 44078.0
+        },
+        "promotion_tactic": {
+          "best_move": "a7a8q",
+          "score": 900,
+          "nodes": 1224,
+          "time_s": 0.046,
+          "nps": 26609.0
+        },
+        "stalemate": {
+          "best_move": null,
+          "score": 0,
+          "nodes": 0,
+          "time_s": 0.0,
+          "nps": 0
+        },
+        "summary": {
+          "total_nodes": 51846,
+          "total_time_s": 1.937,
+          "avg_nps": 26766.0
+        }
+      }
+    },
+    "all_features": {
+      "depth_4": {
+        "startpos": {
+          "best_move": "g1f3",
+          "score": 0,
+          "nodes": 2552,
+          "time_s": 0.125,
+          "nps": 20416.0
+        },
+        "open_game": {
+          "best_move": "c3a4",
+          "score": 9,
+          "nodes": 13596,
+          "time_s": 0.735,
+          "nps": 18498.0
+        },
+        "white_up_rook": {
+          "best_move": "e2f4",
+          "score": 856,
+          "nodes": 2309,
+          "time_s": 0.062,
+          "nps": 37242.0
+        },
+        "mate_in_one": {
+          "best_move": "g5g7",
+          "score": 99999,
+          "nodes": 2712,
+          "time_s": 0.078,
+          "nps": 34769.0
+        },
+        "promotion_tactic": {
+          "best_move": "a7a8q",
+          "score": 900,
+          "nodes": 436,
+          "time_s": 0.016,
+          "nps": 27250.0
+        },
+        "stalemate": {
+          "best_move": null,
+          "score": 0,
+          "nodes": 0,
+          "time_s": 0.0,
+          "nps": 0
+        },
+        "summary": {
+          "total_nodes": 21605,
+          "total_time_s": 1.016,
+          "avg_nps": 21265.0
+        }
+      },
+      "depth_5": {
+        "startpos": {
+          "best_move": "g1f3",
+          "score": 10,
+          "nodes": 8753,
+          "time_s": 0.422,
+          "nps": 20742.0
+        },
+        "open_game": {
+          "best_move": "c3a4",
+          "score": 21,
+          "nodes": 21493,
+          "time_s": 1.047,
+          "nps": 20528.0
+        },
+        "white_up_rook": {
+          "best_move": "e2d4",
+          "score": 856,
+          "nodes": 7166,
+          "time_s": 0.203,
+          "nps": 35300.0
+        },
+        "mate_in_one": {
+          "best_move": "g5g7",
+          "score": 99999,
+          "nodes": 8992,
+          "time_s": 0.219,
+          "nps": 41059.0
+        },
+        "promotion_tactic": {
+          "best_move": "a7a8q",
+          "score": 900,
+          "nodes": 1224,
+          "time_s": 0.031,
+          "nps": 39484.0
+        },
+        "stalemate": {
+          "best_move": null,
+          "score": 0,
+          "nodes": 0,
+          "time_s": 0.0,
+          "nps": 0
+        },
+        "summary": {
+          "total_nodes": 47628,
+          "total_time_s": 1.922,
+          "avg_nps": 24780.0
+        }
+      }
+    }
+  },
+  "tactics_ok": true
+}

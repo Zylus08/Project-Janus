@@ -7,6 +7,7 @@ import threading
 import chess
 
 from .search import JanusSearch, MATE_SCORE, MATE_THRESHOLD
+from . import evaluation
 
 
 def _score_to_uci(score: int) -> str:
@@ -33,11 +34,24 @@ def main() -> None:
     parser.add_argument("--tt-policy", type=str, default="always_replace",
                         choices=["always_replace", "depth_preferred", "two_tier"])
     parser.add_argument("--tt-max-entries", type=int, default=200_000)
+    parser.add_argument("--eval-pawn-structure", action="store_true", help="Enable pawn structure evaluation")
+    parser.add_argument("--eval-rook-files", action="store_true", help="Enable rook file evaluation")
+    parser.add_argument("--eval-king-safety", action="store_true", help="Enable king safety evaluation")
+    parser.add_argument("--eval-all", action="store_true", help="Enable all evaluation improvements")
     args = parser.parse_args()
 
     engine_name = args.name
     see_ordering = args.see or args.see_ordering
     see_pruning = args.see or args.see_pruning
+
+    pawn_struct = args.eval_all or args.eval_pawn_structure
+    rook_files = args.eval_all or args.eval_rook_files
+    king_safety = args.eval_all or args.eval_king_safety
+    evaluation.set_evaluation_features(
+        pawn_structure=pawn_struct,
+        rook_files=rook_files,
+        king_safety=king_safety,
+    )
 
     board = chess.Board()
     engine = JanusSearch(
@@ -105,6 +119,9 @@ def main() -> None:
             emit(f"option name SEE_Pruning type check default {'true' if engine.enable_see_pruning else 'false'}")
             emit(f"option name CheckExtensions type combo default {engine.check_extension_policy} var disabled var single_reply var bounded_all_checks")
             emit(f"option name TT_Policy type combo default {engine.tt_replacement_policy} var always_replace var depth_preferred var two_tier")
+            emit(f"option name Eval_PawnStructure type check default {'true' if evaluation.ENABLE_PAWN_STRUCTURE else 'false'}")
+            emit(f"option name Eval_RookFiles type check default {'true' if evaluation.ENABLE_ROOK_FILES else 'false'}")
+            emit(f"option name Eval_KingSafety type check default {'true' if evaluation.ENABLE_KING_SAFETY else 'false'}")
             emit("uciok")
 
         elif command == "setoption":
@@ -132,6 +149,12 @@ def main() -> None:
                 elif opt_name in ("tt_policy", "tt policy"):
                     if opt_val.lower() in ("always_replace", "depth_preferred", "two_tier"):
                         engine.tt_replacement_policy = opt_val.lower()
+                elif opt_name in ("eval_pawnstructure", "eval_pawn_structure", "eval pawnstructure"):
+                    evaluation.set_evaluation_features(pawn_structure=(opt_val.lower() == "true"))
+                elif opt_name in ("eval_rookfiles", "eval_rook_files", "eval rookfiles"):
+                    evaluation.set_evaluation_features(rook_files=(opt_val.lower() == "true"))
+                elif opt_name in ("eval_kingsafety", "eval_king_safety", "eval kingsafety"):
+                    evaluation.set_evaluation_features(king_safety=(opt_val.lower() == "true"))
                 elif opt_name == "hash":
                     try:
                         mb = max(1, int(opt_val))

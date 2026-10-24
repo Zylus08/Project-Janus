@@ -1,0 +1,2809 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-10-21T18:28:09.509914+00:00",
+    "baseline_commit": "851afc7",
+    "baseline_name": "Janus-v0.27",
+    "candidate_commit": "05de411",
+    "candidate_name": "Janus-v0.30",
+    "time_control": "fixed movetime 1000ms",
+    "movetime_ms": 1000,
+    "movetime_s": 1.0,
+    "max_plies": 200,
+    "total_games_requested": 4,
+    "pairs_requested": 2,
+    "seed": 42,
+    "python_version": "3.12.8",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "summary": {
+    "games_total": 4,
+    "completed_games": 4,
+    "unfinished_games": 0,
+    "candidate_wins": 1,
+    "draws": 1,
+    "candidate_losses": 2,
+    "candidate_points": 1.5,
+    "candidate_score_pct": 37.5,
+    "score_se_pct": 23.94,
+    "score_ci_95_wald": [
+      0.0,
+      84.41
+    ],
+    "delta_elo": -88.7,
+    "pairs_total": 2,
+    "pairs_completed": 2,
+    "pairs_won": 0,
+    "pairs_drawn": 1,
+    "pairs_lost": 1,
+    "pair_bootstrap_ci_95": null,
+    "by_color": {
+      "white": {
+        "wins": 0,
+        "draws": 1,
+        "losses": 1,
+        "games": 2,
+        "score_pts": 0.5,
+        "score_pct": 25.0
+      },
+      "black": {
+        "wins": 1,
+        "draws": 0,
+        "losses": 1,
+        "games": 2,
+        "score_pts": 1.0,
+        "score_pct": 50.0
+      }
+    },
+    "search_stats": {
+      "candidate_avg_depth": 3.32,
+      "baseline_avg_depth": 2.91,
+      "candidate_avg_move_time_s": 1.0239,
+      "baseline_avg_move_time_s": 1.0216
+    }
+  },
+  "elapsed_seconds": 301.672,
+  "games": [
+    {
+      "game": 1,
+      "pair": 1,
+      "opening_id": "scotch_game",
+      "opening_name": "Scotch Game",
+      "candidate_color": "white",
+      "white": "Janus-v0.30",
+      "black": "Janus-v0.27",
+      "result": "1/2-1/2",
+      "candidate_score": 0.5,
+      "termination": "threefold repetition",
+      "plies": 55,
+      "duration_seconds": 50.219,
+      "movetime_ms": 1000,
+      "start_fen": "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3",
+      "avg_cand_depth": 4.16,
+      "avg_base_depth": 3.92,
+      "avg_cand_move_time": 1.0037,
+      "avg_base_move_time": 1.0025,
+      "avg_cand_nodes": 18360.0,
+      "avg_base_nodes": 14510.0,
+      "move_log": [
+        {
+          "ply": 1,
+          "engine": "Janus-v0.27",
+          "move": "g8f6",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 12544,
+          "score": "PovScore(Cp(-3), BLACK)"
+        },
+        {
+          "ply": 2,
+          "engine": "Janus-v0.30",
+          "move": "b1c3",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 17408,
+          "score": "PovScore(Cp(+10), WHITE)"
+        },
+        {
+          "ply": 3,
+          "engine": "Janus-v0.27",
+          "move": "f8b4",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 13312,
+          "score": "PovScore(Cp(-5), BLACK)"
+        },
+        {
+          "ply": 4,
+          "engine": "Janus-v0.30",
+          "move": "d1d3",
+          "time_s": 1.016,
+          "depth": 4,
+          "nodes": 15616,
+          "score": "PovScore(Cp(0), WHITE)"
+        },
+        {
+          "ply": 5,
+          "engine": "Janus-v0.27",
+          "move": "e5d4",
+          "time_s": 1.015,
+          "depth": 3,
+          "nodes": 14336,
+          "score": "PovScore(Cp(0), BLACK)"
+        },
+        {
+          "ply": 6,
+          "engine": "Janus-v0.30",
+          "move": "f3d4",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 16896,
+          "score": "PovScore(Cp(-8), WHITE)"
+        },
+        {
+          "ply": 7,
+          "engine": "Janus-v0.27",
+          "move": "c6d4",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 13312,
+          "score": "PovScore(Cp(+8), BLACK)"
+        },
+        {
+          "ply": 8,
+          "engine": "Janus-v0.30",
+          "move": "d3d4",
+          "time_s": 1.016,
+          "depth": 5,
+          "nodes": 18432,
+          "score": "PovScore(Cp(+4), WHITE)"
+        },
+        {
+          "ply": 9,
+          "engine": "Janus-v0.27",
+          "move": "d8e7",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 13568,
+          "score": "PovScore(Cp(-4), BLACK)"
+        },
+        {
+          "ply": 10,
+          "engine": "Janus-v0.30",
+          "move": "e4e5",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 16640,
+          "score": "PovScore(Cp(+2), WHITE)"
+        },
+        {
+          "ply": 11,
+          "engine": "Janus-v0.27",
+          "move": "b4c5",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 12800,
+          "score": "PovScore(Cp(+7), BLACK)"
+        },
+        {
+          "ply": 12,
+          "engine": "Janus-v0.30",
+          "move": "d4d3",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 19200,
+          "score": "PovScore(Cp(-105), WHITE)"
+        },
+        {
+          "ply": 13,
+          "engine": "Janus-v0.27",
+          "move": "e7e5",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 13824,
+          "score": "PovScore(Cp(+115), BLACK)"
+        },
+        {
+          "ply": 14,
+          "engine": "Janus-v0.30",
+          "move": "f1e2",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 16128,
+          "score": "PovScore(Cp(-109), WHITE)"
+        },
+        {
+          "ply": 15,
+          "engine": "Janus-v0.27",
+          "move": "g7g5",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 14336,
+          "score": "PovScore(Cp(+114), BLACK)"
+        },
+        {
+          "ply": 16,
+          "engine": "Janus-v0.30",
+          "move": "c1e3",
+          "time_s": 1.015,
+          "depth": 3,
+          "nodes": 17152,
+          "score": "PovScore(Cp(-107), WHITE)"
+        },
+        {
+          "ply": 17,
+          "engine": "Janus-v0.27",
+          "move": "h7h5",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 14080,
+          "score": "PovScore(Cp(+115), BLACK)"
+        },
+        {
+          "ply": 18,
+          "engine": "Janus-v0.30",
+          "move": "e3c5",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 16896,
+          "score": "PovScore(Cp(-107), WHITE)"
+        },
+        {
+          "ply": 19,
+          "engine": "Janus-v0.27",
+          "move": "e5c5",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 13568,
+          "score": "PovScore(Cp(+112), BLACK)"
+        },
+        {
+          "ply": 20,
+          "engine": "Janus-v0.30",
+          "move": "d3f3",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 17152,
+          "score": "PovScore(Cp(-109), WHITE)"
+        },
+        {
+          "ply": 21,
+          "engine": "Janus-v0.27",
+          "move": "c5e5",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 14080,
+          "score": "PovScore(Cp(+117), BLACK)"
+        },
+        {
+          "ply": 22,
+          "engine": "Janus-v0.30",
+          "move": "f3g3",
+          "time_s": 1.015,
+          "depth": 3,
+          "nodes": 17408,
+          "score": "PovScore(Cp(-112), WHITE)"
+        },
+        {
+          "ply": 23,
+          "engine": "Janus-v0.27",
+          "move": "e5g3",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 14080,
+          "score": "PovScore(Cp(+112), BLACK)"
+        },
+        {
+          "ply": 24,
+          "engine": "Janus-v0.30",
+          "move": "h2g3",
+          "time_s": 1.0,
+          "depth": 5,
+          "nodes": 19200,
+          "score": "PovScore(Cp(-107), WHITE)"
+        },
+        {
+          "ply": 25,
+          "engine": "Janus-v0.27",
+          "move": "d7d5",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 14848,
+          "score": "PovScore(Cp(+107), BLACK)"
+        },
+        {
+          "ply": 26,
+          "engine": "Janus-v0.30",
+          "move": "c3b5",
+          "time_s": 1.016,
+          "depth": 5,
+          "nodes": 18944,
+          "score": "PovScore(Cp(-101), WHITE)"
+        },
+        {
+          "ply": 27,
+          "engine": "Janus-v0.27",
+          "move": "e8d8",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 14080,
+          "score": "PovScore(Cp(+91), BLACK)"
+        },
+        {
+          "ply": 28,
+          "engine": "Janus-v0.30",
+          "move": "f2f4",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 19200,
+          "score": "PovScore(Cp(-103), WHITE)"
+        },
+        {
+          "ply": 29,
+          "engine": "Janus-v0.27",
+          "move": "h8g8",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 14336,
+          "score": "PovScore(Cp(+98), BLACK)"
+        },
+        {
+          "ply": 30,
+          "engine": "Janus-v0.30",
+          "move": "b5d4",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 17408,
+          "score": "PovScore(Cp(-98), WHITE)"
+        },
+        {
+          "ply": 31,
+          "engine": "Janus-v0.27",
+          "move": "c7c5",
+          "time_s": 1.0,
+          "depth": 5,
+          "nodes": 16384,
+          "score": "PovScore(Cp(+111), BLACK)"
+        },
+        {
+          "ply": 32,
+          "engine": "Janus-v0.30",
+          "move": "d4b3",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 19200,
+          "score": "PovScore(Cp(-111), WHITE)"
+        },
+        {
+          "ply": 33,
+          "engine": "Janus-v0.27",
+          "move": "b7b6",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 14592,
+          "score": "PovScore(Cp(+117), BLACK)"
+        },
+        {
+          "ply": 34,
+          "engine": "Janus-v0.30",
+          "move": "e2f3",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 17920,
+          "score": "PovScore(Cp(-120), WHITE)"
+        },
+        {
+          "ply": 35,
+          "engine": "Janus-v0.27",
+          "move": "g8e8",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 14848,
+          "score": "PovScore(Cp(+127), BLACK)"
+        },
+        {
+          "ply": 36,
+          "engine": "Janus-v0.30",
+          "move": "f3e2",
+          "time_s": 1.0,
+          "depth": 5,
+          "nodes": 17664,
+          "score": "PovScore(Cp(-127), WHITE)"
+        },
+        {
+          "ply": 37,
+          "engine": "Janus-v0.27",
+          "move": "c8g4",
+          "time_s": 1.0,
+          "depth": 5,
+          "nodes": 15872,
+          "score": "PovScore(Cp(+132), BLACK)"
+        },
+        {
+          "ply": 38,
+          "engine": "Janus-v0.30",
+          "move": "b3c1",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 17152,
+          "score": "PovScore(Cp(-132), WHITE)"
+        },
+        {
+          "ply": 39,
+          "engine": "Janus-v0.27",
+          "move": "f6e4",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 13312,
+          "score": "PovScore(Cp(+225), BLACK)"
+        },
+        {
+          "ply": 40,
+          "engine": "Janus-v0.30",
+          "move": "e2b5",
+          "time_s": 1.015,
+          "depth": 4,
+          "nodes": 17408,
+          "score": "PovScore(Cp(-225), WHITE)"
+        },
+        {
+          "ply": 41,
+          "engine": "Janus-v0.27",
+          "move": "e8e7",
+          "time_s": 1.016,
+          "depth": 5,
+          "nodes": 16640,
+          "score": "PovScore(Cp(+261), BLACK)"
+        },
+        {
+          "ply": 42,
+          "engine": "Janus-v0.30",
+          "move": "e1g1",
+          "time_s": 1.0,
+          "depth": 5,
+          "nodes": 19712,
+          "score": "PovScore(Cp(-261), WHITE)"
+        },
+        {
+          "ply": 43,
+          "engine": "Janus-v0.27",
+          "move": "e4g3",
+          "time_s": 1.015,
+          "depth": 5,
+          "nodes": 15872,
+          "score": "PovScore(Cp(+265), BLACK)"
+        },
+        {
+          "ply": 44,
+          "engine": "Janus-v0.30",
+          "move": "f1f2",
+          "time_s": 1.0,
+          "depth": 5,
+          "nodes": 20224,
+          "score": "PovScore(Cp(-265), WHITE)"
+        },
+        {
+          "ply": 45,
+          "engine": "Janus-v0.27",
+          "move": "g3e4",
+          "time_s": 1.016,
+          "depth": 5,
+          "nodes": 16640,
+          "score": "PovScore(Cp(+265), BLACK)"
+        },
+        {
+          "ply": 46,
+          "engine": "Janus-v0.30",
+          "move": "f2f1",
+          "time_s": 1.0,
+          "depth": 5,
+          "nodes": 19968,
+          "score": "PovScore(Cp(-265), WHITE)"
+        },
+        {
+          "ply": 47,
+          "engine": "Janus-v0.27",
+          "move": "e4g3",
+          "time_s": 1.0,
+          "depth": 5,
+          "nodes": 16384,
+          "score": "PovScore(Cp(+265), BLACK)"
+        },
+        {
+          "ply": 48,
+          "engine": "Janus-v0.30",
+          "move": "f1f2",
+          "time_s": 1.0,
+          "depth": 6,
+          "nodes": 23552,
+          "score": "PovScore(Cp(-265), WHITE)"
+        },
+        {
+          "ply": 49,
+          "engine": "Janus-v0.27",
+          "move": "g3e4",
+          "time_s": 1.0,
+          "depth": 5,
+          "nodes": 15104,
+          "score": "PovScore(Cp(+265), BLACK)"
+        },
+        {
+          "ply": 50,
+          "engine": "Janus-v0.30",
+          "move": "f2f1",
+          "time_s": 1.0,
+          "depth": 6,
+          "nodes": 22528,
+          "score": "PovScore(Cp(-265), WHITE)"
+        }
+      ]
+    },
+    {
+      "game": 2,
+      "pair": 1,
+      "opening_id": "scotch_game",
+      "opening_name": "Scotch Game",
+      "candidate_color": "black",
+      "white": "Janus-v0.27",
+      "black": "Janus-v0.30",
+      "result": "1-0",
+      "candidate_score": 0.0,
+      "termination": "checkmate",
+      "plies": 135,
+      "duration_seconds": 132.89,
+      "movetime_ms": 1000,
+      "start_fen": "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3",
+      "avg_cand_depth": 3.92,
+      "avg_base_depth": 3.37,
+      "avg_cand_move_time": 1.02,
+      "avg_base_move_time": 1.0222,
+      "avg_cand_nodes": 9590.0,
+      "avg_base_nodes": 8023.0,
+      "move_log": [
+        {
+          "ply": 1,
+          "engine": "Janus-v0.30",
+          "move": "g8f6",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 16384,
+          "score": "PovScore(Cp(-7), BLACK)"
+        },
+        {
+          "ply": 2,
+          "engine": "Janus-v0.27",
+          "move": "b1c3",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 14336,
+          "score": "PovScore(Cp(+10), WHITE)"
+        },
+        {
+          "ply": 3,
+          "engine": "Janus-v0.30",
+          "move": "f8d6",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 16384,
+          "score": "PovScore(Cp(-6), BLACK)"
+        },
+        {
+          "ply": 4,
+          "engine": "Janus-v0.27",
+          "move": "d4d5",
+          "time_s": 1.015,
+          "depth": 3,
+          "nodes": 14080,
+          "score": "PovScore(Cp(+15), WHITE)"
+        },
+        {
+          "ply": 5,
+          "engine": "Janus-v0.30",
+          "move": "c6a5",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 16128,
+          "score": "PovScore(Cp(-14), BLACK)"
+        },
+        {
+          "ply": 6,
+          "engine": "Janus-v0.27",
+          "move": "f1d3",
+          "time_s": 1.016,
+          "depth": 4,
+          "nodes": 14336,
+          "score": "PovScore(Cp(+21), WHITE)"
+        },
+        {
+          "ply": 7,
+          "engine": "Janus-v0.30",
+          "move": "c7c6",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 14848,
+          "score": "PovScore(Cp(-21), BLACK)"
+        },
+        {
+          "ply": 8,
+          "engine": "Janus-v0.27",
+          "move": "c1e3",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 13568,
+          "score": "PovScore(Cp(+14), WHITE)"
+        },
+        {
+          "ply": 9,
+          "engine": "Janus-v0.30",
+          "move": "f6g4",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 15616,
+          "score": "PovScore(Cp(-7), BLACK)"
+        },
+        {
+          "ply": 10,
+          "engine": "Janus-v0.27",
+          "move": "d5c6",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 13056,
+          "score": "PovScore(Cp(+7), WHITE)"
+        },
+        {
+          "ply": 11,
+          "engine": "Janus-v0.30",
+          "move": "d7c6",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 15872,
+          "score": "PovScore(Cp(-2), BLACK)"
+        },
+        {
+          "ply": 12,
+          "engine": "Janus-v0.27",
+          "move": "e3c1",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 14336,
+          "score": "PovScore(Cp(-9), WHITE)"
+        },
+        {
+          "ply": 13,
+          "engine": "Janus-v0.30",
+          "move": "d6c5",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 17152,
+          "score": "PovScore(Cp(+11), BLACK)"
+        },
+        {
+          "ply": 14,
+          "engine": "Janus-v0.27",
+          "move": "h1f1",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 14592,
+          "score": "PovScore(Cp(-11), WHITE)"
+        },
+        {
+          "ply": 15,
+          "engine": "Janus-v0.30",
+          "move": "d8b6",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 16128,
+          "score": "PovScore(Cp(+21), BLACK)"
+        },
+        {
+          "ply": 16,
+          "engine": "Janus-v0.27",
+          "move": "d1e2",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 14336,
+          "score": "PovScore(Cp(-11), WHITE)"
+        },
+        {
+          "ply": 17,
+          "engine": "Janus-v0.30",
+          "move": "b6c7",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 16128,
+          "score": "PovScore(Cp(+4), BLACK)"
+        },
+        {
+          "ply": 18,
+          "engine": "Janus-v0.27",
+          "move": "h2h3",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 12800,
+          "score": "PovScore(Cp(+3), WHITE)"
+        },
+        {
+          "ply": 19,
+          "engine": "Janus-v0.30",
+          "move": "g4f6",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 16640,
+          "score": "PovScore(Cp(-13), BLACK)"
+        },
+        {
+          "ply": 20,
+          "engine": "Janus-v0.27",
+          "move": "c1e3",
+          "time_s": 1.016,
+          "depth": 3,
+          "nodes": 13312,
+          "score": "PovScore(Cp(+13), WHITE)"
+        },
+        {
+          "ply": 21,
+          "engine": "Janus-v0.30",
+          "move": "b7b6",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 16128,
+          "score": "PovScore(Cp(-8), BLACK)"
+        },
+        {
+          "ply": 22,
+          "engine": "Janus-v0.27",
+          "move": "e3c5",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 14336,
+          "score": "PovScore(Cp(+8), WHITE)"
+        },
+        {
+          "ply": 23,
+          "engine": "Janus-v0.30",
+          "move": "b6c5",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 16896,
+          "score": "PovScore(Cp(-2), BLACK)"
+        },
+        {
+          "ply": 24,
+          "engine": "Janus-v0.27",
+          "move": "c3a4",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 13568,
+          "score": "PovScore(Cp(+4), WHITE)"
+        },
+        {
+          "ply": 25,
+          "engine": "Janus-v0.30",
+          "move": "c7e7",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 15616,
+          "score": "PovScore(Cp(+2), BLACK)"
+        },
+        {
+          "ply": 26,
+          "engine": "Janus-v0.27",
+          "move": "e2d2",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 14336,
+          "score": "PovScore(Cp(+91), WHITE)"
+        },
+        {
+          "ply": 27,
+          "engine": "Janus-v0.30",
+          "move": "c5c4",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 18176,
+          "score": "PovScore(Cp(-91), BLACK)"
+        },
+        {
+          "ply": 28,
+          "engine": "Janus-v0.27",
+          "move": "d2a5",
+          "time_s": 1.0,
+          "depth": 5,
+          "nodes": 15616,
+          "score": "PovScore(Cp(+101), WHITE)"
+        },
+        {
+          "ply": 29,
+          "engine": "Janus-v0.30",
+          "move": "c4d3",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 16640,
+          "score": "PovScore(Cp(-101), BLACK)"
+        },
+        {
+          "ply": 30,
+          "engine": "Janus-v0.27",
+          "move": "c2d3",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 13312,
+          "score": "PovScore(Cp(+91), WHITE)"
+        },
+        {
+          "ply": 31,
+          "engine": "Janus-v0.30",
+          "move": "f6d7",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 16640,
+          "score": "PovScore(Cp(-101), BLACK)"
+        },
+        {
+          "ply": 32,
+          "engine": "Janus-v0.27",
+          "move": "g2g4",
+          "time_s": 1.015,
+          "depth": 4,
+          "nodes": 14336,
+          "score": "PovScore(Cp(+96), WHITE)"
+        },
+        {
+          "ply": 33,
+          "engine": "Janus-v0.30",
+          "move": "e7d6",
+          "time_s": 1.016,
+          "depth": 4,
+          "nodes": 17664,
+          "score": "PovScore(Cp(-93), BLACK)"
+        },
+        {
+          "ply": 34,
+          "engine": "Janus-v0.27",
+          "move": "a5c3",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 13056,
+          "score": "PovScore(Cp(+93), WHITE)"
+        },
+        {
+          "ply": 35,
+          "engine": "Janus-v0.30",
+          "move": "c8a6",
+          "time_s": 1.0,
+          "depth": 5,
+          "nodes": 18176,
+          "score": "PovScore(Cp(-80), BLACK)"
+        },
+        {
+          "ply": 36,
+          "engine": "Janus-v0.27",
+          "move": "e1e2",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 13568,
+          "score": "PovScore(Cp(+90), WHITE)"
+        },
+        {
+          "ply": 37,
+          "engine": "Janus-v0.30",
+          "move": "a6b5",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 16384,
+          "score": "PovScore(Cp(-85), BLACK)"
+        },
+        {
+          "ply": 38,
+          "engine": "Janus-v0.27",
+          "move": "b2b3",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 12800,
+          "score": "PovScore(Cp(+85), WHITE)"
+        },
+        {
+          "ply": 39,
+          "engine": "Janus-v0.30",
+          "move": "a7a5",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 15616,
+          "score": "PovScore(Cp(-80), BLACK)"
+        },
+        {
+          "ply": 40,
+          "engine": "Janus-v0.27",
+          "move": "h3h4",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 12544,
+          "score": "PovScore(Cp(+83), WHITE)"
+        },
+        {
+          "ply": 41,
+          "engine": "Janus-v0.30",
+          "move": "d6g6",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 22784,
+          "score": "PovScore(Cp(-80), BLACK)"
+        },
+        {
+          "ply": 42,
+          "engine": "Janus-v0.27",
+          "move": "e2e3",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 21504,
+          "score": "PovScore(Cp(+83), WHITE)"
+        },
+        {
+          "ply": 43,
+          "engine": "Janus-v0.30",
+          "move": "f7f6",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 11776,
+          "score": "PovScore(Cp(-75), BLACK)"
+        },
+        {
+          "ply": 44,
+          "engine": "Janus-v0.27",
+          "move": "g4g5",
+          "time_s": 1.047,
+          "depth": 2,
+          "nodes": 4352,
+          "score": "PovScore(Cp(+75), WHITE)"
+        },
+        {
+          "ply": 45,
+          "engine": "Janus-v0.30",
+          "move": "h7h5",
+          "time_s": 1.0,
+          "depth": 2,
+          "nodes": 4352,
+          "score": "PovScore(Cp(-79), BLACK)"
+        },
+        {
+          "ply": 46,
+          "engine": "Janus-v0.27",
+          "move": "a4c5",
+          "time_s": 1.016,
+          "depth": 2,
+          "nodes": 3840,
+          "score": "PovScore(Cp(+79), WHITE)"
+        },
+        {
+          "ply": 47,
+          "engine": "Janus-v0.30",
+          "move": "d7c5",
+          "time_s": 1.031,
+          "depth": 2,
+          "nodes": 4864,
+          "score": "PovScore(Cp(-79), BLACK)"
+        },
+        {
+          "ply": 48,
+          "engine": "Janus-v0.27",
+          "move": "c3c5",
+          "time_s": 1.015,
+          "depth": 1,
+          "nodes": 3584,
+          "score": "PovScore(Cp(+79), WHITE)"
+        },
+        {
+          "ply": 49,
+          "engine": "Janus-v0.30",
+          "move": "g6h7",
+          "time_s": 1.016,
+          "depth": 1,
+          "nodes": 4608,
+          "score": "PovScore(Cp(-79), BLACK)"
+        },
+        {
+          "ply": 50,
+          "engine": "Janus-v0.27",
+          "move": "a2a4",
+          "time_s": 1.078,
+          "depth": 1,
+          "nodes": 3840,
+          "score": "PovScore(Cp(+89), WHITE)"
+        },
+        {
+          "ply": 51,
+          "engine": "Janus-v0.30",
+          "move": "b5a6",
+          "time_s": 1.047,
+          "depth": 2,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-223), BLACK)"
+        },
+        {
+          "ply": 52,
+          "engine": "Janus-v0.27",
+          "move": "c5c6",
+          "time_s": 1.0,
+          "depth": 2,
+          "nodes": 3584,
+          "score": "PovScore(Cp(+223), WHITE)"
+        },
+        {
+          "ply": 53,
+          "engine": "Janus-v0.30",
+          "move": "e8f7",
+          "time_s": 1.047,
+          "depth": 2,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-226), BLACK)"
+        },
+        {
+          "ply": 54,
+          "engine": "Janus-v0.27",
+          "move": "c6d7",
+          "time_s": 1.062,
+          "depth": 1,
+          "nodes": 3840,
+          "score": "PovScore(Cp(+223), WHITE)"
+        },
+        {
+          "ply": 55,
+          "engine": "Janus-v0.30",
+          "move": "f7f8",
+          "time_s": 1.063,
+          "depth": 3,
+          "nodes": 4352,
+          "score": "PovScore(Cp(-226), BLACK)"
+        },
+        {
+          "ply": 56,
+          "engine": "Janus-v0.27",
+          "move": "d7d6",
+          "time_s": 1.015,
+          "depth": 2,
+          "nodes": 5120,
+          "score": "PovScore(Cp(+223), WHITE)"
+        },
+        {
+          "ply": 57,
+          "engine": "Janus-v0.30",
+          "move": "f8f7",
+          "time_s": 1.0,
+          "depth": 4,
+          "nodes": 11520,
+          "score": "PovScore(Cp(-228), BLACK)"
+        },
+        {
+          "ply": 58,
+          "engine": "Janus-v0.27",
+          "move": "b3b4",
+          "time_s": 1.016,
+          "depth": 2,
+          "nodes": 11520,
+          "score": "PovScore(Cp(+228), WHITE)"
+        },
+        {
+          "ply": 59,
+          "engine": "Janus-v0.30",
+          "move": "a5b4",
+          "time_s": 1.047,
+          "depth": 3,
+          "nodes": 13824,
+          "score": "PovScore(Cp(-223), BLACK)"
+        },
+        {
+          "ply": 60,
+          "engine": "Janus-v0.27",
+          "move": "d6b4",
+          "time_s": 1.015,
+          "depth": 2,
+          "nodes": 3328,
+          "score": "PovScore(Cp(+223), WHITE)"
+        },
+        {
+          "ply": 61,
+          "engine": "Janus-v0.30",
+          "move": "g7g6",
+          "time_s": 1.032,
+          "depth": 2,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-228), BLACK)"
+        },
+        {
+          "ply": 62,
+          "engine": "Janus-v0.27",
+          "move": "a4a5",
+          "time_s": 1.015,
+          "depth": 1,
+          "nodes": 3328,
+          "score": "PovScore(Cp(+228), WHITE)"
+        },
+        {
+          "ply": 63,
+          "engine": "Janus-v0.30",
+          "move": "h8g8",
+          "time_s": 1.047,
+          "depth": 2,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-228), BLACK)"
+        },
+        {
+          "ply": 64,
+          "engine": "Janus-v0.27",
+          "move": "b4d6",
+          "time_s": 1.016,
+          "depth": 2,
+          "nodes": 3584,
+          "score": "PovScore(Cp(+341), WHITE)"
+        },
+        {
+          "ply": 65,
+          "engine": "Janus-v0.30",
+          "move": "h7h8",
+          "time_s": 1.047,
+          "depth": 2,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-341), BLACK)"
+        },
+        {
+          "ply": 66,
+          "engine": "Janus-v0.27",
+          "move": "g5f6",
+          "time_s": 1.046,
+          "depth": 2,
+          "nodes": 3584,
+          "score": "PovScore(Cp(+341), WHITE)"
+        },
+        {
+          "ply": 67,
+          "engine": "Janus-v0.30",
+          "move": "h8f6",
+          "time_s": 1.063,
+          "depth": 4,
+          "nodes": 4352,
+          "score": "PovScore(Cp(-341), BLACK)"
+        },
+        {
+          "ply": 68,
+          "engine": "Janus-v0.27",
+          "move": "f3e5",
+          "time_s": 1.047,
+          "depth": 3,
+          "nodes": 4096,
+          "score": "PovScore(Cp(+341), WHITE)"
+        },
+        {
+          "ply": 69,
+          "engine": "Janus-v0.30",
+          "move": "f7g7",
+          "time_s": 1.031,
+          "depth": 5,
+          "nodes": 5120,
+          "score": "PovScore(Cp(-343), BLACK)"
+        },
+        {
+          "ply": 70,
+          "engine": "Janus-v0.27",
+          "move": "d6f6",
+          "time_s": 1.016,
+          "depth": 3,
+          "nodes": 4096,
+          "score": "PovScore(Cp(+351), WHITE)"
+        },
+        {
+          "ply": 71,
+          "engine": "Janus-v0.30",
+          "move": "g7f6",
+          "time_s": 1.0,
+          "depth": 5,
+          "nodes": 5120,
+          "score": "PovScore(Cp(-343), BLACK)"
+        },
+        {
+          "ply": 72,
+          "engine": "Janus-v0.27",
+          "move": "f2f4",
+          "time_s": 1.015,
+          "depth": 4,
+          "nodes": 4096,
+          "score": "PovScore(Cp(+343), WHITE)"
+        },
+        {
+          "ply": 73,
+          "engine": "Janus-v0.30",
+          "move": "a6b5",
+          "time_s": 1.047,
+          "depth": 4,
+          "nodes": 4864,
+          "score": "PovScore(Cp(-344), BLACK)"
+        },
+        {
+          "ply": 74,
+          "engine": "Janus-v0.27",
+          "move": "f1f3",
+          "time_s": 1.047,
+          "depth": 3,
+          "nodes": 4352,
+          "score": "PovScore(Cp(+348), WHITE)"
+        },
+        {
+          "ply": 75,
+          "engine": "Janus-v0.30",
+          "move": "a8a6",
+          "time_s": 1.047,
+          "depth": 4,
+          "nodes": 5120,
+          "score": "PovScore(Cp(-343), BLACK)"
+        },
+        {
+          "ply": 76,
+          "engine": "Janus-v0.27",
+          "move": "f3g3",
+          "time_s": 1.031,
+          "depth": 3,
+          "nodes": 4096,
+          "score": "PovScore(Cp(+348), WHITE)"
+        },
+        {
+          "ply": 77,
+          "engine": "Janus-v0.30",
+          "move": "g8g7",
+          "time_s": 1.016,
+          "depth": 3,
+          "nodes": 4864,
+          "score": "PovScore(Cp(-348), BLACK)"
+        },
+        {
+          "ply": 78,
+          "engine": "Janus-v0.27",
+          "move": "d3d4",
+          "time_s": 1.109,
+          "depth": 3,
+          "nodes": 4096,
+          "score": "PovScore(Cp(+353), WHITE)"
+        },
+        {
+          "ply": 79,
+          "engine": "Janus-v0.30",
+          "move": "g7g8",
+          "time_s": 1.031,
+          "depth": 3,
+          "nodes": 4864,
+          "score": "PovScore(Cp(-353), BLACK)"
+        },
+        {
+          "ply": 80,
+          "engine": "Janus-v0.27",
+          "move": "g3g5",
+          "time_s": 1.032,
+          "depth": 3,
+          "nodes": 4352,
+          "score": "PovScore(Cp(+355), WHITE)"
+        },
+        {
+          "ply": 81,
+          "engine": "Janus-v0.30",
+          "move": "b5c6",
+          "time_s": 1.015,
+          "depth": 2,
+          "nodes": 5376,
+          "score": "PovScore(Cp(-355), BLACK)"
+        },
+        {
+          "ply": 82,
+          "engine": "Janus-v0.27",
+          "move": "f4f5",
+          "time_s": 1.016,
+          "depth": 2,
+          "nodes": 4096,
+          "score": "PovScore(Cp(+465), WHITE)"
+        },
+        {
+          "ply": 83,
+          "engine": "Janus-v0.30",
+          "move": "c6e8",
+          "time_s": 1.031,
+          "depth": 3,
+          "nodes": 4608,
+          "score": "PovScore(Cp(-465), BLACK)"
+        },
+        {
+          "ply": 84,
+          "engine": "Janus-v0.27",
+          "move": "e5g6",
+          "time_s": 1.015,
+          "depth": 3,
+          "nodes": 4352,
+          "score": "PovScore(Cp(+470), WHITE)"
+        },
+        {
+          "ply": 85,
+          "engine": "Janus-v0.30",
+          "move": "e8g6",
+          "time_s": 1.032,
+          "depth": 4,
+          "nodes": 4352,
+          "score": "PovScore(Cp(-470), BLACK)"
+        },
+        {
+          "ply": 86,
+          "engine": "Janus-v0.27",
+          "move": "e4e5",
+          "time_s": 1.062,
+          "depth": 3,
+          "nodes": 4096,
+          "score": "PovScore(Cp(+470), WHITE)"
+        },
+        {
+          "ply": 87,
+          "engine": "Janus-v0.30",
+          "move": "f6g7",
+          "time_s": 1.016,
+          "depth": 4,
+          "nodes": 4352,
+          "score": "PovScore(Cp(-360), BLACK)"
+        },
+        {
+          "ply": 88,
+          "engine": "Janus-v0.27",
+          "move": "f5g6",
+          "time_s": 1.031,
+          "depth": 2,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+470), WHITE)"
+        },
+        {
+          "ply": 89,
+          "engine": "Janus-v0.30",
+          "move": "g7h6",
+          "time_s": 1.016,
+          "depth": 4,
+          "nodes": 5376,
+          "score": "PovScore(Cp(-360), BLACK)"
+        },
+        {
+          "ply": 90,
+          "engine": "Janus-v0.27",
+          "move": "d4d5",
+          "time_s": 1.031,
+          "depth": 3,
+          "nodes": 4096,
+          "score": "PovScore(Cp(+360), WHITE)"
+        },
+        {
+          "ply": 91,
+          "engine": "Janus-v0.30",
+          "move": "g8g6",
+          "time_s": 1.031,
+          "depth": 5,
+          "nodes": 5376,
+          "score": "PovScore(Cp(-365), BLACK)"
+        },
+        {
+          "ply": 92,
+          "engine": "Janus-v0.27",
+          "move": "g5g6",
+          "time_s": 1.031,
+          "depth": 5,
+          "nodes": 4864,
+          "score": "PovScore(Cp(+365), WHITE)"
+        },
+        {
+          "ply": 93,
+          "engine": "Janus-v0.30",
+          "move": "a6g6",
+          "time_s": 1.032,
+          "depth": 6,
+          "nodes": 5632,
+          "score": "PovScore(Cp(-370), BLACK)"
+        },
+        {
+          "ply": 94,
+          "engine": "Janus-v0.27",
+          "move": "e5e6",
+          "time_s": 1.062,
+          "depth": 5,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+370), WHITE)"
+        },
+        {
+          "ply": 95,
+          "engine": "Janus-v0.30",
+          "move": "g6g3",
+          "time_s": 1.0,
+          "depth": 6,
+          "nodes": 5376,
+          "score": "PovScore(Cp(-370), BLACK)"
+        },
+        {
+          "ply": 96,
+          "engine": "Janus-v0.27",
+          "move": "e3f2",
+          "time_s": 1.031,
+          "depth": 5,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+370), WHITE)"
+        },
+        {
+          "ply": 97,
+          "engine": "Janus-v0.30",
+          "move": "g3h3",
+          "time_s": 1.016,
+          "depth": 5,
+          "nodes": 5632,
+          "score": "PovScore(Cp(-370), BLACK)"
+        },
+        {
+          "ply": 98,
+          "engine": "Janus-v0.27",
+          "move": "e6e7",
+          "time_s": 1.015,
+          "depth": 5,
+          "nodes": 4096,
+          "score": "PovScore(Cp(+375), WHITE)"
+        },
+        {
+          "ply": 99,
+          "engine": "Janus-v0.30",
+          "move": "h3h2",
+          "time_s": 1.016,
+          "depth": 4,
+          "nodes": 4864,
+          "score": "PovScore(Cp(-375), BLACK)"
+        },
+        {
+          "ply": 100,
+          "engine": "Janus-v0.27",
+          "move": "f2f1",
+          "time_s": 1.016,
+          "depth": 5,
+          "nodes": 4096,
+          "score": "PovScore(Cp(+520), WHITE)"
+        },
+        {
+          "ply": 101,
+          "engine": "Janus-v0.30",
+          "move": "h2h1",
+          "time_s": 1.046,
+          "depth": 5,
+          "nodes": 3840,
+          "score": "PovScore(Cp(-520), BLACK)"
+        },
+        {
+          "ply": 102,
+          "engine": "Janus-v0.27",
+          "move": "f1g2",
+          "time_s": 1.016,
+          "depth": 6,
+          "nodes": 3584,
+          "score": "PovScore(Cp(+520), WHITE)"
+        },
+        {
+          "ply": 103,
+          "engine": "Janus-v0.30",
+          "move": "h1a1",
+          "time_s": 1.062,
+          "depth": 6,
+          "nodes": 4352,
+          "score": "PovScore(Cp(-520), BLACK)"
+        },
+        {
+          "ply": 104,
+          "engine": "Janus-v0.27",
+          "move": "e7e8q",
+          "time_s": 1.063,
+          "depth": 6,
+          "nodes": 3840,
+          "score": "PovScore(Cp(+520), WHITE)"
+        },
+        {
+          "ply": 105,
+          "engine": "Janus-v0.30",
+          "move": "a1a2",
+          "time_s": 1.047,
+          "depth": 6,
+          "nodes": 4608,
+          "score": "PovScore(Cp(-525), BLACK)"
+        },
+        {
+          "ply": 106,
+          "engine": "Janus-v0.27",
+          "move": "g2g3",
+          "time_s": 1.062,
+          "depth": 6,
+          "nodes": 4096,
+          "score": "PovScore(Cp(+525), WHITE)"
+        },
+        {
+          "ply": 107,
+          "engine": "Janus-v0.30",
+          "move": "a2a3",
+          "time_s": 1.047,
+          "depth": 5,
+          "nodes": 4864,
+          "score": "PovScore(Cp(-525), BLACK)"
+        },
+        {
+          "ply": 108,
+          "engine": "Janus-v0.27",
+          "move": "g3f4",
+          "time_s": 1.094,
+          "depth": 5,
+          "nodes": 3840,
+          "score": "PovScore(Cp(+645), WHITE)"
+        },
+        {
+          "ply": 109,
+          "engine": "Janus-v0.30",
+          "move": "a3b3",
+          "time_s": 1.031,
+          "depth": 4,
+          "nodes": 4352,
+          "score": "PovScore(Cp(-645), BLACK)"
+        },
+        {
+          "ply": 110,
+          "engine": "Janus-v0.27",
+          "move": "e8e7",
+          "time_s": 1.016,
+          "depth": 4,
+          "nodes": 3840,
+          "score": "PovScore(Cp(+755), WHITE)"
+        },
+        {
+          "ply": 111,
+          "engine": "Janus-v0.30",
+          "move": "h6g6",
+          "time_s": 1.015,
+          "depth": 5,
+          "nodes": 4864,
+          "score": "PovScore(Cp(-755), BLACK)"
+        },
+        {
+          "ply": 112,
+          "engine": "Janus-v0.27",
+          "move": "a5a6",
+          "time_s": 1.016,
+          "depth": 5,
+          "nodes": 10496,
+          "score": "PovScore(Cp(+760), WHITE)"
+        },
+        {
+          "ply": 113,
+          "engine": "Janus-v0.30",
+          "move": "b3b6",
+          "time_s": 1.0,
+          "depth": 6,
+          "nodes": 25856,
+          "score": "PovScore(Cp(-1020), BLACK)"
+        },
+        {
+          "ply": 114,
+          "engine": "Janus-v0.27",
+          "move": "a6a7",
+          "time_s": 1.0,
+          "depth": 6,
+          "nodes": 28416,
+          "score": "PovScore(Cp(+1020), WHITE)"
+        },
+        {
+          "ply": 115,
+          "engine": "Janus-v0.30",
+          "move": "b6a6",
+          "time_s": 1.0,
+          "depth": 7,
+          "nodes": 19968,
+          "score": "PovScore(Cp(-1020), BLACK)"
+        },
+        {
+          "ply": 116,
+          "engine": "Janus-v0.27",
+          "move": "e7e8",
+          "time_s": 1.0,
+          "depth": 5,
+          "nodes": 8448,
+          "score": "PovScore(Cp(+1020), WHITE)"
+        },
+        {
+          "ply": 117,
+          "engine": "Janus-v0.30",
+          "move": "g6h7",
+          "time_s": 1.031,
+          "depth": 6,
+          "nodes": 5376,
+          "score": "PovScore(Cp(-1025), BLACK)"
+        },
+        {
+          "ply": 118,
+          "engine": "Janus-v0.27",
+          "move": "a7a8q",
+          "time_s": 1.015,
+          "depth": 4,
+          "nodes": 4096,
+          "score": "PovScore(Cp(+1020), WHITE)"
+        },
+        {
+          "ply": 119,
+          "engine": "Janus-v0.30",
+          "move": "a6a8",
+          "time_s": 1.063,
+          "depth": 5,
+          "nodes": 5632,
+          "score": "PovScore(Cp(-1135), BLACK)"
+        },
+        {
+          "ply": 120,
+          "engine": "Janus-v0.27",
+          "move": "e8a8",
+          "time_s": 1.015,
+          "depth": 5,
+          "nodes": 4864,
+          "score": "PovScore(Cp(+1135), WHITE)"
+        },
+        {
+          "ply": 121,
+          "engine": "Janus-v0.30",
+          "move": "h7g7",
+          "time_s": 1.016,
+          "depth": 5,
+          "nodes": 5632,
+          "score": "PovScore(Cp(-1135), BLACK)"
+        },
+        {
+          "ply": 122,
+          "engine": "Janus-v0.27",
+          "move": "d5d6",
+          "time_s": 1.031,
+          "depth": 4,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+1800), WHITE)"
+        },
+        {
+          "ply": 123,
+          "engine": "Janus-v0.30",
+          "move": "g7f7",
+          "time_s": 1.031,
+          "depth": 5,
+          "nodes": 6144,
+          "score": "PovScore(Cp(-1800), BLACK)"
+        },
+        {
+          "ply": 124,
+          "engine": "Janus-v0.27",
+          "move": "d6d7",
+          "time_s": 1.031,
+          "depth": 3,
+          "nodes": 3840,
+          "score": "PovScore(Cp(+1800), WHITE)"
+        },
+        {
+          "ply": 125,
+          "engine": "Janus-v0.30",
+          "move": "f7g7",
+          "time_s": 1.016,
+          "depth": 5,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-1915), BLACK)"
+        },
+        {
+          "ply": 126,
+          "engine": "Janus-v0.27",
+          "move": "d7d8q",
+          "time_s": 1.015,
+          "depth": 3,
+          "nodes": 3840,
+          "score": "PovScore(Cp(+1800), WHITE)"
+        },
+        {
+          "ply": 127,
+          "engine": "Janus-v0.30",
+          "move": "g7h7",
+          "time_s": 1.032,
+          "depth": 4,
+          "nodes": 4864,
+          "score": "PovScore(Mate(-2), BLACK)"
+        },
+        {
+          "ply": 128,
+          "engine": "Janus-v0.27",
+          "move": "f4g5",
+          "time_s": 1.046,
+          "depth": 3,
+          "nodes": 5120,
+          "score": "PovScore(Mate(+2), WHITE)"
+        },
+        {
+          "ply": 129,
+          "engine": "Janus-v0.30",
+          "move": "h7g7",
+          "time_s": 1.032,
+          "depth": 5,
+          "nodes": 5888,
+          "score": "PovScore(Mate(-1), BLACK)"
+        },
+        {
+          "ply": 130,
+          "engine": "Janus-v0.27",
+          "move": "d8g8",
+          "time_s": 1.015,
+          "depth": 3,
+          "nodes": 4608,
+          "score": "PovScore(Mate(+1), WHITE)"
+        }
+      ]
+    },
+    {
+      "game": 3,
+      "pair": 2,
+      "opening_id": "italian_two_knights",
+      "opening_name": "Two Knights Defense",
+      "candidate_color": "white",
+      "white": "Janus-v0.30",
+      "black": "Janus-v0.27",
+      "result": "0-1",
+      "candidate_score": 0.0,
+      "termination": "checkmate",
+      "plies": 74,
+      "duration_seconds": 70.125,
+      "movetime_ms": 1000,
+      "start_fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "avg_cand_depth": 2.85,
+      "avg_base_depth": 2.29,
+      "avg_cand_move_time": 1.0298,
+      "avg_base_move_time": 1.0276,
+      "avg_cand_nodes": 5813.0,
+      "avg_base_nodes": 4518.0,
+      "move_log": [
+        {
+          "ply": 1,
+          "engine": "Janus-v0.30",
+          "move": "b1c3",
+          "time_s": 1.031,
+          "depth": 3,
+          "nodes": 5632,
+          "score": "PovScore(Cp(+9), WHITE)"
+        },
+        {
+          "ply": 2,
+          "engine": "Janus-v0.27",
+          "move": "f8b4",
+          "time_s": 1.016,
+          "depth": 2,
+          "nodes": 2816,
+          "score": "PovScore(Cp(-9), BLACK)"
+        },
+        {
+          "ply": 3,
+          "engine": "Janus-v0.30",
+          "move": "f3g5",
+          "time_s": 1.031,
+          "depth": 2,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+12), WHITE)"
+        },
+        {
+          "ply": 4,
+          "engine": "Janus-v0.27",
+          "move": "h8f8",
+          "time_s": 1.047,
+          "depth": 2,
+          "nodes": 3840,
+          "score": "PovScore(Cp(-22), BLACK)"
+        },
+        {
+          "ply": 5,
+          "engine": "Janus-v0.30",
+          "move": "a2a3",
+          "time_s": 1.015,
+          "depth": 2,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+13), WHITE)"
+        },
+        {
+          "ply": 6,
+          "engine": "Janus-v0.27",
+          "move": "b4d6",
+          "time_s": 1.016,
+          "depth": 3,
+          "nodes": 4352,
+          "score": "PovScore(Cp(-13), BLACK)"
+        },
+        {
+          "ply": 7,
+          "engine": "Janus-v0.30",
+          "move": "h2h4",
+          "time_s": 1.047,
+          "depth": 2,
+          "nodes": 5376,
+          "score": "PovScore(Cp(+13), WHITE)"
+        },
+        {
+          "ply": 8,
+          "engine": "Janus-v0.27",
+          "move": "h7h6",
+          "time_s": 1.047,
+          "depth": 3,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-8), BLACK)"
+        },
+        {
+          "ply": 9,
+          "engine": "Janus-v0.30",
+          "move": "g5f3",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 14080,
+          "score": "PovScore(Cp(+18), WHITE)"
+        },
+        {
+          "ply": 10,
+          "engine": "Janus-v0.27",
+          "move": "c6a5",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 13312,
+          "score": "PovScore(Cp(-12), BLACK)"
+        },
+        {
+          "ply": 11,
+          "engine": "Janus-v0.30",
+          "move": "c4d3",
+          "time_s": 1.0,
+          "depth": 5,
+          "nodes": 17920,
+          "score": "PovScore(Cp(+28), WHITE)"
+        },
+        {
+          "ply": 12,
+          "engine": "Janus-v0.27",
+          "move": "a5c6",
+          "time_s": 1.078,
+          "depth": 3,
+          "nodes": 4608,
+          "score": "PovScore(Cp(-22), BLACK)"
+        },
+        {
+          "ply": 13,
+          "engine": "Janus-v0.30",
+          "move": "c3b5",
+          "time_s": 1.031,
+          "depth": 4,
+          "nodes": 5120,
+          "score": "PovScore(Cp(+32), WHITE)"
+        },
+        {
+          "ply": 14,
+          "engine": "Janus-v0.27",
+          "move": "d6c5",
+          "time_s": 1.0,
+          "depth": 2,
+          "nodes": 3328,
+          "score": "PovScore(Cp(-28), BLACK)"
+        },
+        {
+          "ply": 15,
+          "engine": "Janus-v0.30",
+          "move": "b2b4",
+          "time_s": 1.016,
+          "depth": 4,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+37), WHITE)"
+        },
+        {
+          "ply": 16,
+          "engine": "Janus-v0.27",
+          "move": "c5e7",
+          "time_s": 1.062,
+          "depth": 2,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-42), BLACK)"
+        },
+        {
+          "ply": 17,
+          "engine": "Janus-v0.30",
+          "move": "c2c4",
+          "time_s": 1.032,
+          "depth": 3,
+          "nodes": 5376,
+          "score": "PovScore(Cp(+37), WHITE)"
+        },
+        {
+          "ply": 18,
+          "engine": "Janus-v0.27",
+          "move": "d7d6",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 4352,
+          "score": "PovScore(Cp(-30), BLACK)"
+        },
+        {
+          "ply": 19,
+          "engine": "Janus-v0.30",
+          "move": "h4h5",
+          "time_s": 1.015,
+          "depth": 2,
+          "nodes": 5888,
+          "score": "PovScore(Cp(+30), WHITE)"
+        },
+        {
+          "ply": 20,
+          "engine": "Janus-v0.27",
+          "move": "c8e6",
+          "time_s": 1.0,
+          "depth": 1,
+          "nodes": 3840,
+          "score": "PovScore(Cp(-30), BLACK)"
+        },
+        {
+          "ply": 21,
+          "engine": "Janus-v0.30",
+          "move": "g2g3",
+          "time_s": 1.016,
+          "depth": 2,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+29), WHITE)"
+        },
+        {
+          "ply": 22,
+          "engine": "Janus-v0.27",
+          "move": "a7a5",
+          "time_s": 1.031,
+          "depth": 1,
+          "nodes": 3840,
+          "score": "PovScore(Cp(-29), BLACK)"
+        },
+        {
+          "ply": 23,
+          "engine": "Janus-v0.30",
+          "move": "b4a5",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 5632,
+          "score": "PovScore(Cp(+32), WHITE)"
+        },
+        {
+          "ply": 24,
+          "engine": "Janus-v0.27",
+          "move": "c6a5",
+          "time_s": 1.0,
+          "depth": 2,
+          "nodes": 3584,
+          "score": "PovScore(Cp(-32), BLACK)"
+        },
+        {
+          "ply": 25,
+          "engine": "Janus-v0.30",
+          "move": "c4c5",
+          "time_s": 1.015,
+          "depth": 2,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+26), WHITE)"
+        },
+        {
+          "ply": 26,
+          "engine": "Janus-v0.27",
+          "move": "a5c4",
+          "time_s": 1.063,
+          "depth": 1,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-26), BLACK)"
+        },
+        {
+          "ply": 27,
+          "engine": "Janus-v0.30",
+          "move": "d1e2",
+          "time_s": 1.015,
+          "depth": 2,
+          "nodes": 4864,
+          "score": "PovScore(Cp(+34), WHITE)"
+        },
+        {
+          "ply": 28,
+          "engine": "Janus-v0.27",
+          "move": "a8a4",
+          "time_s": 1.032,
+          "depth": 2,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-34), BLACK)"
+        },
+        {
+          "ply": 29,
+          "engine": "Janus-v0.30",
+          "move": "b5c3",
+          "time_s": 1.031,
+          "depth": 2,
+          "nodes": 5632,
+          "score": "PovScore(Cp(+212), WHITE)"
+        },
+        {
+          "ply": 30,
+          "engine": "Janus-v0.27",
+          "move": "d8a8",
+          "time_s": 1.0,
+          "depth": 2,
+          "nodes": 4608,
+          "score": "PovScore(Cp(-212), BLACK)"
+        },
+        {
+          "ply": 31,
+          "engine": "Janus-v0.30",
+          "move": "c3a4",
+          "time_s": 1.047,
+          "depth": 3,
+          "nodes": 5632,
+          "score": "PovScore(Cp(+197), WHITE)"
+        },
+        {
+          "ply": 32,
+          "engine": "Janus-v0.27",
+          "move": "a8a4",
+          "time_s": 1.016,
+          "depth": 3,
+          "nodes": 4864,
+          "score": "PovScore(Cp(-197), BLACK)"
+        },
+        {
+          "ply": 33,
+          "engine": "Janus-v0.30",
+          "move": "c5d6",
+          "time_s": 1.047,
+          "depth": 3,
+          "nodes": 5376,
+          "score": "PovScore(Cp(+190), WHITE)"
+        },
+        {
+          "ply": 34,
+          "engine": "Janus-v0.27",
+          "move": "e7d6",
+          "time_s": 1.016,
+          "depth": 2,
+          "nodes": 4864,
+          "score": "PovScore(Cp(-195), BLACK)"
+        },
+        {
+          "ply": 35,
+          "engine": "Janus-v0.30",
+          "move": "e2f1",
+          "time_s": 1.031,
+          "depth": 2,
+          "nodes": 4864,
+          "score": "PovScore(Cp(+188), WHITE)"
+        },
+        {
+          "ply": 36,
+          "engine": "Janus-v0.27",
+          "move": "c7c5",
+          "time_s": 1.047,
+          "depth": 1,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-188), BLACK)"
+        },
+        {
+          "ply": 37,
+          "engine": "Janus-v0.30",
+          "move": "f1g2",
+          "time_s": 1.031,
+          "depth": 2,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+178), WHITE)"
+        },
+        {
+          "ply": 38,
+          "engine": "Janus-v0.27",
+          "move": "b7b5",
+          "time_s": 1.047,
+          "depth": 1,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-178), BLACK)"
+        },
+        {
+          "ply": 39,
+          "engine": "Janus-v0.30",
+          "move": "g2f1",
+          "time_s": 1.063,
+          "depth": 2,
+          "nodes": 5120,
+          "score": "PovScore(Cp(+178), WHITE)"
+        },
+        {
+          "ply": 40,
+          "engine": "Janus-v0.27",
+          "move": "f8h8",
+          "time_s": 1.047,
+          "depth": 1,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-178), BLACK)"
+        },
+        {
+          "ply": 41,
+          "engine": "Janus-v0.30",
+          "move": "f1g2",
+          "time_s": 1.062,
+          "depth": 2,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+168), WHITE)"
+        },
+        {
+          "ply": 42,
+          "engine": "Janus-v0.27",
+          "move": "g7g5",
+          "time_s": 1.031,
+          "depth": 1,
+          "nodes": 3584,
+          "score": "PovScore(Cp(-168), BLACK)"
+        },
+        {
+          "ply": 43,
+          "engine": "Janus-v0.30",
+          "move": "g2h2",
+          "time_s": 1.032,
+          "depth": 2,
+          "nodes": 4352,
+          "score": "PovScore(Cp(+163), WHITE)"
+        },
+        {
+          "ply": 44,
+          "engine": "Janus-v0.27",
+          "move": "g5g4",
+          "time_s": 1.0,
+          "depth": 1,
+          "nodes": 3840,
+          "score": "PovScore(Cp(-163), BLACK)"
+        },
+        {
+          "ply": 45,
+          "engine": "Janus-v0.30",
+          "move": "h2h4",
+          "time_s": 1.062,
+          "depth": 2,
+          "nodes": 4864,
+          "score": "PovScore(Cp(+158), WHITE)"
+        },
+        {
+          "ply": 46,
+          "engine": "Janus-v0.27",
+          "move": "d6e7",
+          "time_s": 1.016,
+          "depth": 2,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-122), BLACK)"
+        },
+        {
+          "ply": 47,
+          "engine": "Janus-v0.30",
+          "move": "d3c4",
+          "time_s": 1.031,
+          "depth": 2,
+          "nodes": 5376,
+          "score": "PovScore(Cp(+122), WHITE)"
+        },
+        {
+          "ply": 48,
+          "engine": "Janus-v0.27",
+          "move": "a4c4",
+          "time_s": 1.016,
+          "depth": 2,
+          "nodes": 4352,
+          "score": "PovScore(Cp(-22), BLACK)"
+        },
+        {
+          "ply": 49,
+          "engine": "Janus-v0.30",
+          "move": "f3g1",
+          "time_s": 1.047,
+          "depth": 2,
+          "nodes": 5632,
+          "score": "PovScore(Cp(-8), WHITE)"
+        },
+        {
+          "ply": 50,
+          "engine": "Janus-v0.27",
+          "move": "c4d4",
+          "time_s": 1.047,
+          "depth": 3,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+214), BLACK)"
+        },
+        {
+          "ply": 51,
+          "engine": "Janus-v0.30",
+          "move": "c1b2",
+          "time_s": 1.015,
+          "depth": 3,
+          "nodes": 5376,
+          "score": "PovScore(Cp(-345), WHITE)"
+        },
+        {
+          "ply": 52,
+          "engine": "Janus-v0.27",
+          "move": "d4b2",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+345), BLACK)"
+        },
+        {
+          "ply": 53,
+          "engine": "Janus-v0.30",
+          "move": "a1d1",
+          "time_s": 1.016,
+          "depth": 4,
+          "nodes": 4864,
+          "score": "PovScore(Cp(-475), WHITE)"
+        },
+        {
+          "ply": 54,
+          "engine": "Janus-v0.27",
+          "move": "e6b3",
+          "time_s": 1.046,
+          "depth": 3,
+          "nodes": 4864,
+          "score": "PovScore(Cp(+475), BLACK)"
+        },
+        {
+          "ply": 55,
+          "engine": "Janus-v0.30",
+          "move": "g1e2",
+          "time_s": 1.047,
+          "depth": 3,
+          "nodes": 4864,
+          "score": "PovScore(Cp(-475), WHITE)"
+        },
+        {
+          "ply": 56,
+          "engine": "Janus-v0.27",
+          "move": "b3d1",
+          "time_s": 1.016,
+          "depth": 3,
+          "nodes": 4864,
+          "score": "PovScore(Cp(+483), BLACK)"
+        },
+        {
+          "ply": 57,
+          "engine": "Janus-v0.30",
+          "move": "e1d1",
+          "time_s": 1.047,
+          "depth": 2,
+          "nodes": 5632,
+          "score": "PovScore(Cp(-483), WHITE)"
+        },
+        {
+          "ply": 58,
+          "engine": "Janus-v0.27",
+          "move": "f6e4",
+          "time_s": 1.015,
+          "depth": 3,
+          "nodes": 4352,
+          "score": "PovScore(Cp(+1038), BLACK)"
+        },
+        {
+          "ply": 59,
+          "engine": "Janus-v0.30",
+          "move": "h4e7",
+          "time_s": 1.032,
+          "depth": 3,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-1148), WHITE)"
+        },
+        {
+          "ply": 60,
+          "engine": "Janus-v0.27",
+          "move": "e8e7",
+          "time_s": 1.031,
+          "depth": 5,
+          "nodes": 4608,
+          "score": "PovScore(Mate(+5), BLACK)"
+        },
+        {
+          "ply": 61,
+          "engine": "Janus-v0.30",
+          "move": "d1e1",
+          "time_s": 1.031,
+          "depth": 4,
+          "nodes": 5376,
+          "score": "PovScore(Mate(-4), WHITE)"
+        },
+        {
+          "ply": 62,
+          "engine": "Janus-v0.27",
+          "move": "b2b1",
+          "time_s": 1.047,
+          "depth": 3,
+          "nodes": 5120,
+          "score": "PovScore(Mate(+4), BLACK)"
+        },
+        {
+          "ply": 63,
+          "engine": "Janus-v0.30",
+          "move": "e2c1",
+          "time_s": 1.015,
+          "depth": 5,
+          "nodes": 6400,
+          "score": "PovScore(Mate(-3), WHITE)"
+        },
+        {
+          "ply": 64,
+          "engine": "Janus-v0.27",
+          "move": "b1c1",
+          "time_s": 1.032,
+          "depth": 3,
+          "nodes": 4352,
+          "score": "PovScore(Mate(+3), BLACK)"
+        },
+        {
+          "ply": 65,
+          "engine": "Janus-v0.30",
+          "move": "e1e2",
+          "time_s": 1.015,
+          "depth": 5,
+          "nodes": 5376,
+          "score": "PovScore(Mate(-2), WHITE)"
+        },
+        {
+          "ply": 66,
+          "engine": "Janus-v0.27",
+          "move": "c1d2",
+          "time_s": 1.031,
+          "depth": 3,
+          "nodes": 4096,
+          "score": "PovScore(Mate(+2), BLACK)"
+        },
+        {
+          "ply": 67,
+          "engine": "Janus-v0.30",
+          "move": "e2f1",
+          "time_s": 1.047,
+          "depth": 5,
+          "nodes": 6656,
+          "score": "PovScore(Mate(-1), WHITE)"
+        },
+        {
+          "ply": 68,
+          "engine": "Janus-v0.27",
+          "move": "d2f2",
+          "time_s": 1.047,
+          "depth": 3,
+          "nodes": 5376,
+          "score": "PovScore(Mate(+1), BLACK)"
+        }
+      ]
+    },
+    {
+      "game": 4,
+      "pair": 2,
+      "opening_id": "italian_two_knights",
+      "opening_name": "Two Knights Defense",
+      "candidate_color": "black",
+      "white": "Janus-v0.27",
+      "black": "Janus-v0.30",
+      "result": "0-1",
+      "candidate_score": 1.0,
+      "termination": "checkmate",
+      "plies": 52,
+      "duration_seconds": 47.844,
+      "movetime_ms": 1000,
+      "start_fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "avg_cand_depth": 2.35,
+      "avg_base_depth": 2.04,
+      "avg_cand_move_time": 1.042,
+      "avg_base_move_time": 1.034,
+      "avg_cand_nodes": 5120.0,
+      "avg_base_nodes": 4241.0,
+      "move_log": [
+        {
+          "ply": 1,
+          "engine": "Janus-v0.27",
+          "move": "b1c3",
+          "time_s": 1.047,
+          "depth": 3,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+9), WHITE)"
+        },
+        {
+          "ply": 2,
+          "engine": "Janus-v0.30",
+          "move": "f8b4",
+          "time_s": 1.0,
+          "depth": 2,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-9), BLACK)"
+        },
+        {
+          "ply": 3,
+          "engine": "Janus-v0.27",
+          "move": "f3g5",
+          "time_s": 1.015,
+          "depth": 2,
+          "nodes": 3584,
+          "score": "PovScore(Cp(+12), WHITE)"
+        },
+        {
+          "ply": 4,
+          "engine": "Janus-v0.30",
+          "move": "h8f8",
+          "time_s": 1.0,
+          "depth": 2,
+          "nodes": 4352,
+          "score": "PovScore(Cp(-22), BLACK)"
+        },
+        {
+          "ply": 5,
+          "engine": "Janus-v0.27",
+          "move": "a2a3",
+          "time_s": 1.047,
+          "depth": 2,
+          "nodes": 3584,
+          "score": "PovScore(Cp(+13), WHITE)"
+        },
+        {
+          "ply": 6,
+          "engine": "Janus-v0.30",
+          "move": "b4d6",
+          "time_s": 1.015,
+          "depth": 3,
+          "nodes": 5376,
+          "score": "PovScore(Cp(-13), BLACK)"
+        },
+        {
+          "ply": 7,
+          "engine": "Janus-v0.27",
+          "move": "h2h4",
+          "time_s": 1.047,
+          "depth": 2,
+          "nodes": 4096,
+          "score": "PovScore(Cp(+13), WHITE)"
+        },
+        {
+          "ply": 8,
+          "engine": "Janus-v0.30",
+          "move": "h7h6",
+          "time_s": 1.047,
+          "depth": 3,
+          "nodes": 5120,
+          "score": "PovScore(Cp(-8), BLACK)"
+        },
+        {
+          "ply": 9,
+          "engine": "Janus-v0.27",
+          "move": "g5f3",
+          "time_s": 1.0,
+          "depth": 2,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+8), WHITE)"
+        },
+        {
+          "ply": 10,
+          "engine": "Janus-v0.30",
+          "move": "c6a5",
+          "time_s": 1.015,
+          "depth": 3,
+          "nodes": 4352,
+          "score": "PovScore(Cp(-12), BLACK)"
+        },
+        {
+          "ply": 11,
+          "engine": "Janus-v0.27",
+          "move": "c4d3",
+          "time_s": 1.047,
+          "depth": 3,
+          "nodes": 4864,
+          "score": "PovScore(Cp(+22), WHITE)"
+        },
+        {
+          "ply": 12,
+          "engine": "Janus-v0.30",
+          "move": "a5c6",
+          "time_s": 1.063,
+          "depth": 3,
+          "nodes": 5120,
+          "score": "PovScore(Cp(-22), BLACK)"
+        },
+        {
+          "ply": 13,
+          "engine": "Janus-v0.27",
+          "move": "c3b5",
+          "time_s": 1.047,
+          "depth": 3,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+28), WHITE)"
+        },
+        {
+          "ply": 14,
+          "engine": "Janus-v0.30",
+          "move": "d6e7",
+          "time_s": 1.062,
+          "depth": 3,
+          "nodes": 4864,
+          "score": "PovScore(Cp(-22), BLACK)"
+        },
+        {
+          "ply": 15,
+          "engine": "Janus-v0.27",
+          "move": "c2c4",
+          "time_s": 1.031,
+          "depth": 3,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+27), WHITE)"
+        },
+        {
+          "ply": 16,
+          "engine": "Janus-v0.30",
+          "move": "a7a5",
+          "time_s": 1.016,
+          "depth": 3,
+          "nodes": 5376,
+          "score": "PovScore(Cp(-22), BLACK)"
+        },
+        {
+          "ply": 17,
+          "engine": "Janus-v0.27",
+          "move": "h4h5",
+          "time_s": 1.0,
+          "depth": 3,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+27), WHITE)"
+        },
+        {
+          "ply": 18,
+          "engine": "Janus-v0.30",
+          "move": "d7d6",
+          "time_s": 1.047,
+          "depth": 3,
+          "nodes": 5632,
+          "score": "PovScore(Cp(-15), BLACK)"
+        },
+        {
+          "ply": 19,
+          "engine": "Janus-v0.27",
+          "move": "a3a4",
+          "time_s": 1.031,
+          "depth": 2,
+          "nodes": 4096,
+          "score": "PovScore(Cp(+15), WHITE)"
+        },
+        {
+          "ply": 20,
+          "engine": "Janus-v0.30",
+          "move": "c8g4",
+          "time_s": 1.031,
+          "depth": 2,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+91), BLACK)"
+        },
+        {
+          "ply": 21,
+          "engine": "Janus-v0.27",
+          "move": "b2b4",
+          "time_s": 1.032,
+          "depth": 2,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-91), WHITE)"
+        },
+        {
+          "ply": 22,
+          "engine": "Janus-v0.30",
+          "move": "a5b4",
+          "time_s": 1.062,
+          "depth": 1,
+          "nodes": 4864,
+          "score": "PovScore(Cp(+91), BLACK)"
+        },
+        {
+          "ply": 23,
+          "engine": "Janus-v0.27",
+          "move": "a4a5",
+          "time_s": 1.031,
+          "depth": 1,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-202), WHITE)"
+        },
+        {
+          "ply": 24,
+          "engine": "Janus-v0.30",
+          "move": "f6h5",
+          "time_s": 1.016,
+          "depth": 2,
+          "nodes": 4864,
+          "score": "PovScore(Cp(+202), BLACK)"
+        },
+        {
+          "ply": 25,
+          "engine": "Janus-v0.27",
+          "move": "d1b3",
+          "time_s": 1.016,
+          "depth": 1,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-202), WHITE)"
+        },
+        {
+          "ply": 26,
+          "engine": "Janus-v0.30",
+          "move": "g7g5",
+          "time_s": 1.015,
+          "depth": 1,
+          "nodes": 4864,
+          "score": "PovScore(Cp(+212), BLACK)"
+        },
+        {
+          "ply": 27,
+          "engine": "Janus-v0.27",
+          "move": "b3b2",
+          "time_s": 1.047,
+          "depth": 1,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-212), WHITE)"
+        },
+        {
+          "ply": 28,
+          "engine": "Janus-v0.30",
+          "move": "h5f4",
+          "time_s": 1.015,
+          "depth": 2,
+          "nodes": 4864,
+          "score": "PovScore(Cp(+232), BLACK)"
+        },
+        {
+          "ply": 29,
+          "engine": "Janus-v0.27",
+          "move": "b5c7",
+          "time_s": 1.047,
+          "depth": 0,
+          "nodes": 4352,
+          "score": "PovScore(Cp(0), WHITE)"
+        },
+        {
+          "ply": 30,
+          "engine": "Janus-v0.30",
+          "move": "d8c7",
+          "time_s": 1.016,
+          "depth": 3,
+          "nodes": 4864,
+          "score": "PovScore(Cp(+467), BLACK)"
+        },
+        {
+          "ply": 31,
+          "engine": "Janus-v0.27",
+          "move": "d3f1",
+          "time_s": 1.031,
+          "depth": 1,
+          "nodes": 4096,
+          "score": "PovScore(Cp(-467), WHITE)"
+        },
+        {
+          "ply": 32,
+          "engine": "Janus-v0.30",
+          "move": "a8a5",
+          "time_s": 1.063,
+          "depth": 1,
+          "nodes": 4864,
+          "score": "PovScore(Cp(+467), BLACK)"
+        },
+        {
+          "ply": 33,
+          "engine": "Janus-v0.27",
+          "move": "a1a5",
+          "time_s": 1.015,
+          "depth": 3,
+          "nodes": 4608,
+          "score": "PovScore(Cp(-467), WHITE)"
+        },
+        {
+          "ply": 34,
+          "engine": "Janus-v0.30",
+          "move": "c7a5",
+          "time_s": 1.031,
+          "depth": 3,
+          "nodes": 6400,
+          "score": "PovScore(Cp(+477), BLACK)"
+        },
+        {
+          "ply": 35,
+          "engine": "Janus-v0.27",
+          "move": "h1h6",
+          "time_s": 1.032,
+          "depth": 3,
+          "nodes": 4608,
+          "score": "PovScore(Cp(-477), WHITE)"
+        },
+        {
+          "ply": 36,
+          "engine": "Janus-v0.30",
+          "move": "f7f5",
+          "time_s": 1.015,
+          "depth": 2,
+          "nodes": 6400,
+          "score": "PovScore(Cp(+472), BLACK)"
+        },
+        {
+          "ply": 37,
+          "engine": "Janus-v0.27",
+          "move": "e4f5",
+          "time_s": 1.063,
+          "depth": 2,
+          "nodes": 4352,
+          "score": "PovScore(Cp(-481), WHITE)"
+        },
+        {
+          "ply": 38,
+          "engine": "Janus-v0.30",
+          "move": "f8f5",
+          "time_s": 1.016,
+          "depth": 2,
+          "nodes": 4864,
+          "score": "PovScore(Cp(+477), BLACK)"
+        },
+        {
+          "ply": 39,
+          "engine": "Janus-v0.27",
+          "move": "h6h8",
+          "time_s": 1.047,
+          "depth": 2,
+          "nodes": 4352,
+          "score": "PovScore(Cp(-477), WHITE)"
+        },
+        {
+          "ply": 40,
+          "engine": "Janus-v0.30",
+          "move": "e8d7",
+          "time_s": 1.031,
+          "depth": 3,
+          "nodes": 4608,
+          "score": "PovScore(Cp(+482), BLACK)"
+        },
+        {
+          "ply": 41,
+          "engine": "Janus-v0.27",
+          "move": "b2b3",
+          "time_s": 1.031,
+          "depth": 2,
+          "nodes": 4352,
+          "score": "PovScore(Cp(-482), WHITE)"
+        },
+        {
+          "ply": 42,
+          "engine": "Janus-v0.30",
+          "move": "e5e4",
+          "time_s": 1.016,
+          "depth": 3,
+          "nodes": 6144,
+          "score": "PovScore(Cp(+502), BLACK)"
+        },
+        {
+          "ply": 43,
+          "engine": "Janus-v0.27",
+          "move": "f3h2",
+          "time_s": 1.031,
+          "depth": 3,
+          "nodes": 5120,
+          "score": "PovScore(Cp(-502), WHITE)"
+        },
+        {
+          "ply": 44,
+          "engine": "Janus-v0.30",
+          "move": "c6d4",
+          "time_s": 1.031,
+          "depth": 2,
+          "nodes": 5888,
+          "score": "PovScore(Cp(+502), BLACK)"
+        },
+        {
+          "ply": 45,
+          "engine": "Janus-v0.27",
+          "move": "b3g3",
+          "time_s": 1.047,
+          "depth": 1,
+          "nodes": 2048,
+          "score": "PovScore(Cp(-502), WHITE)"
+        },
+        {
+          "ply": 46,
+          "engine": "Janus-v0.30",
+          "move": "d4c2",
+          "time_s": 1.344,
+          "depth": 2,
+          "nodes": 5376,
+          "score": "PovScore(Mate(+1), BLACK)"
+        }
+      ]
+    }
+  ]
+}

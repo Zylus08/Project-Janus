@@ -1,0 +1,1591 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-10-21T20:00:07.218689+00:00",
+    "baseline_commit": "851afc7",
+    "baseline_name": "Janus-v0.27",
+    "candidate_commit": "05de411",
+    "candidate_name": "Janus-v0.30",
+    "time_control": "fixed movetime 500ms",
+    "movetime_ms": 500,
+    "movetime_s": 0.5,
+    "max_plies": 200,
+    "total_games_requested": 2,
+    "pairs_requested": 1,
+    "seed": 42,
+    "python_version": "3.12.8",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "summary": {
+    "games_total": 2,
+    "completed_games": 2,
+    "unfinished_games": 0,
+    "candidate_wins": 1,
+    "draws": 0,
+    "candidate_losses": 1,
+    "candidate_points": 1.0,
+    "candidate_score_pct": 50.0,
+    "score_se_pct": 50.0,
+    "score_ci_95_wald": [
+      0.0,
+      100.0
+    ],
+    "delta_elo": -0.0,
+    "pairs_total": 1,
+    "pairs_completed": 1,
+    "pairs_won": 0,
+    "pairs_drawn": 1,
+    "pairs_lost": 0,
+    "pair_bootstrap_ci_95": null,
+    "by_color": {
+      "white": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 1,
+        "games": 1,
+        "score_pts": 0.0,
+        "score_pct": 0.0
+      },
+      "black": {
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "games": 1,
+        "score_pts": 1.0,
+        "score_pct": 100.0
+      }
+    },
+    "search_stats": {
+      "candidate_avg_depth": 3.94,
+      "baseline_avg_depth": 3.64,
+      "candidate_avg_move_time_s": 0.5015,
+      "baseline_avg_move_time_s": 0.5031
+    }
+  },
+  "elapsed_seconds": 82.844,
+  "games": [
+    {
+      "game": 1,
+      "pair": 1,
+      "opening_id": "scotch_game",
+      "opening_name": "Scotch Game",
+      "candidate_color": "white",
+      "white": "Janus-v0.30",
+      "black": "Janus-v0.27",
+      "result": "0-1",
+      "candidate_score": 0.0,
+      "termination": "checkmate",
+      "plies": 64,
+      "duration_seconds": 29.625,
+      "movetime_ms": 500,
+      "start_fen": "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3",
+      "avg_cand_depth": 3.48,
+      "avg_base_depth": 2.83,
+      "avg_cand_move_time": 0.5011,
+      "avg_base_move_time": 0.5026,
+      "avg_cand_nodes": 9693.0,
+      "avg_base_nodes": 7953.0,
+      "move_log": [
+        {
+          "ply": 1,
+          "engine": "Janus-v0.27",
+          "move": "g8f6",
+          "time_s": 0.516,
+          "depth": 3,
+          "nodes": 7680,
+          "score": "PovScore(Cp(-3), BLACK)"
+        },
+        {
+          "ply": 2,
+          "engine": "Janus-v0.30",
+          "move": "b1c3",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9472,
+          "score": "PovScore(Cp(+10), WHITE)"
+        },
+        {
+          "ply": 3,
+          "engine": "Janus-v0.27",
+          "move": "f8d6",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 6656,
+          "score": "PovScore(Cp(-10), BLACK)"
+        },
+        {
+          "ply": 4,
+          "engine": "Janus-v0.30",
+          "move": "f1b5",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 8192,
+          "score": "PovScore(Cp(+6), WHITE)"
+        },
+        {
+          "ply": 5,
+          "engine": "Janus-v0.27",
+          "move": "e5d4",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 6912,
+          "score": "PovScore(Cp(-6), BLACK)"
+        },
+        {
+          "ply": 6,
+          "engine": "Janus-v0.30",
+          "move": "f3d4",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9984,
+          "score": "PovScore(Cp(+5), WHITE)"
+        },
+        {
+          "ply": 7,
+          "engine": "Janus-v0.27",
+          "move": "a7a6",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 7680,
+          "score": "PovScore(Cp(-5), BLACK)"
+        },
+        {
+          "ply": 8,
+          "engine": "Janus-v0.30",
+          "move": "b5c4",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 9984,
+          "score": "PovScore(Cp(+3), WHITE)"
+        },
+        {
+          "ply": 9,
+          "engine": "Janus-v0.27",
+          "move": "b7b5",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 7936,
+          "score": "PovScore(Cp(+10), BLACK)"
+        },
+        {
+          "ply": 10,
+          "engine": "Janus-v0.30",
+          "move": "d4c6",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9728,
+          "score": "PovScore(Cp(-10), WHITE)"
+        },
+        {
+          "ply": 11,
+          "engine": "Janus-v0.27",
+          "move": "d7c6",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 7680,
+          "score": "PovScore(Cp(+15), BLACK)"
+        },
+        {
+          "ply": 12,
+          "engine": "Janus-v0.30",
+          "move": "c4d3",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9984,
+          "score": "PovScore(Cp(-15), WHITE)"
+        },
+        {
+          "ply": 13,
+          "engine": "Janus-v0.27",
+          "move": "b5b4",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 7424,
+          "score": "PovScore(Cp(+27), BLACK)"
+        },
+        {
+          "ply": 14,
+          "engine": "Janus-v0.30",
+          "move": "c3e2",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9728,
+          "score": "PovScore(Cp(-15), WHITE)"
+        },
+        {
+          "ply": 15,
+          "engine": "Janus-v0.27",
+          "move": "c8e6",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 7424,
+          "score": "PovScore(Cp(+15), BLACK)"
+        },
+        {
+          "ply": 16,
+          "engine": "Janus-v0.30",
+          "move": "e2d4",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9216,
+          "score": "PovScore(Cp(-7), WHITE)"
+        },
+        {
+          "ply": 17,
+          "engine": "Janus-v0.27",
+          "move": "e6d7",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 7936,
+          "score": "PovScore(Cp(+7), BLACK)"
+        },
+        {
+          "ply": 18,
+          "engine": "Janus-v0.30",
+          "move": "d4f5",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9472,
+          "score": "PovScore(Cp(+5), WHITE)"
+        },
+        {
+          "ply": 19,
+          "engine": "Janus-v0.27",
+          "move": "d6f8",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 6912,
+          "score": "PovScore(Cp(+3), BLACK)"
+        },
+        {
+          "ply": 20,
+          "engine": "Janus-v0.30",
+          "move": "g2g4",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 8960,
+          "score": "PovScore(Cp(-3), WHITE)"
+        },
+        {
+          "ply": 21,
+          "engine": "Janus-v0.27",
+          "move": "g7g6",
+          "time_s": 0.516,
+          "depth": 3,
+          "nodes": 7424,
+          "score": "PovScore(Cp(+14), BLACK)"
+        },
+        {
+          "ply": 22,
+          "engine": "Janus-v0.30",
+          "move": "f5e3",
+          "time_s": 0.516,
+          "depth": 3,
+          "nodes": 9472,
+          "score": "PovScore(Cp(-9), WHITE)"
+        },
+        {
+          "ply": 23,
+          "engine": "Janus-v0.27",
+          "move": "f8c5",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 6912,
+          "score": "PovScore(Cp(+9), BLACK)"
+        },
+        {
+          "ply": 24,
+          "engine": "Janus-v0.30",
+          "move": "g4g5",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 8704,
+          "score": "PovScore(Cp(-3), WHITE)"
+        },
+        {
+          "ply": 25,
+          "engine": "Janus-v0.27",
+          "move": "f6h5",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 6912,
+          "score": "PovScore(Cp(+3), BLACK)"
+        },
+        {
+          "ply": 26,
+          "engine": "Janus-v0.30",
+          "move": "h2h4",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9216,
+          "score": "PovScore(Cp(-3), WHITE)"
+        },
+        {
+          "ply": 27,
+          "engine": "Janus-v0.27",
+          "move": "h5f4",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 7424,
+          "score": "PovScore(Cp(+10), BLACK)"
+        },
+        {
+          "ply": 28,
+          "engine": "Janus-v0.30",
+          "move": "d3c4",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8192,
+          "score": "PovScore(Cp(-18), WHITE)"
+        },
+        {
+          "ply": 29,
+          "engine": "Janus-v0.27",
+          "move": "f7f6",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 7680,
+          "score": "PovScore(Cp(+18), BLACK)"
+        },
+        {
+          "ply": 30,
+          "engine": "Janus-v0.30",
+          "move": "g5f6",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9728,
+          "score": "PovScore(Cp(-13), WHITE)"
+        },
+        {
+          "ply": 31,
+          "engine": "Janus-v0.27",
+          "move": "d8f6",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 7680,
+          "score": "PovScore(Cp(+23), BLACK)"
+        },
+        {
+          "ply": 32,
+          "engine": "Janus-v0.30",
+          "move": "f2f3",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 8192,
+          "score": "PovScore(Cp(-23), WHITE)"
+        },
+        {
+          "ply": 33,
+          "engine": "Janus-v0.27",
+          "move": "d7h3",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 7424,
+          "score": "PovScore(Cp(+125), BLACK)"
+        },
+        {
+          "ply": 34,
+          "engine": "Janus-v0.30",
+          "move": "a2a4",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 8192,
+          "score": "PovScore(Cp(-126), WHITE)"
+        },
+        {
+          "ply": 35,
+          "engine": "Janus-v0.27",
+          "move": "f6h4",
+          "time_s": 0.515,
+          "depth": 1,
+          "nodes": 7168,
+          "score": "PovScore(Cp(+126), BLACK)"
+        },
+        {
+          "ply": 36,
+          "engine": "Janus-v0.30",
+          "move": "e1d2",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9728,
+          "score": "PovScore(Cp(-1022), WHITE)"
+        },
+        {
+          "ply": 37,
+          "engine": "Janus-v0.27",
+          "move": "h4f2",
+          "time_s": 0.516,
+          "depth": 3,
+          "nodes": 8448,
+          "score": "PovScore(Cp(+1022), BLACK)"
+        },
+        {
+          "ply": 38,
+          "engine": "Janus-v0.30",
+          "move": "d1e2",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 10240,
+          "score": "PovScore(Cp(-1808), WHITE)"
+        },
+        {
+          "ply": 39,
+          "engine": "Janus-v0.27",
+          "move": "c5e3",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8192,
+          "score": "PovScore(Cp(+1625), BLACK)"
+        },
+        {
+          "ply": 40,
+          "engine": "Janus-v0.30",
+          "move": "d2d1",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 11264,
+          "score": "PovScore(Cp(-1804), WHITE)"
+        },
+        {
+          "ply": 41,
+          "engine": "Janus-v0.27",
+          "move": "a8d8",
+          "time_s": 0.515,
+          "depth": 3,
+          "nodes": 8704,
+          "score": "PovScore(Cp(+1803), BLACK)"
+        },
+        {
+          "ply": 42,
+          "engine": "Janus-v0.30",
+          "move": "c1d2",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9728,
+          "score": "PovScore(Cp(-1804), WHITE)"
+        },
+        {
+          "ply": 43,
+          "engine": "Janus-v0.27",
+          "move": "d8d2",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8704,
+          "score": "PovScore(Cp(+1803), BLACK)"
+        },
+        {
+          "ply": 44,
+          "engine": "Janus-v0.30",
+          "move": "d1c1",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9728,
+          "score": "PovScore(Cp(-1803), WHITE)"
+        },
+        {
+          "ply": 45,
+          "engine": "Janus-v0.27",
+          "move": "d2e2",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8448,
+          "score": "PovScore(Cp(+1803), BLACK)"
+        },
+        {
+          "ply": 46,
+          "engine": "Janus-v0.30",
+          "move": "c1b1",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 11264,
+          "score": "PovScore(Cp(-2131), WHITE)"
+        },
+        {
+          "ply": 47,
+          "engine": "Janus-v0.27",
+          "move": "e2c2",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 8192,
+          "score": "PovScore(Cp(+2131), BLACK)"
+        },
+        {
+          "ply": 48,
+          "engine": "Janus-v0.30",
+          "move": "a1a2",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9728,
+          "score": "PovScore(Cp(-2108), WHITE)"
+        },
+        {
+          "ply": 49,
+          "engine": "Janus-v0.27",
+          "move": "f2d2",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8704,
+          "score": "PovScore(Cp(+2136), BLACK)"
+        },
+        {
+          "ply": 50,
+          "engine": "Janus-v0.30",
+          "move": "c4f7",
+          "time_s": 0.516,
+          "depth": 3,
+          "nodes": 7936,
+          "score": "PovScore(Cp(-2131), WHITE)"
+        },
+        {
+          "ply": 51,
+          "engine": "Janus-v0.27",
+          "move": "e8f7",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 8448,
+          "score": "PovScore(Cp(+2746), BLACK)"
+        },
+        {
+          "ply": 52,
+          "engine": "Janus-v0.30",
+          "move": "a2a3",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 10752,
+          "score": "PovScore(Cp(-2746), WHITE)"
+        },
+        {
+          "ply": 53,
+          "engine": "Janus-v0.27",
+          "move": "e3d4",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9728,
+          "score": "PovScore(Cp(+2750), BLACK)"
+        },
+        {
+          "ply": 54,
+          "engine": "Janus-v0.30",
+          "move": "a3c3",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 11520,
+          "score": "PovScore(Cp(-3245), WHITE)"
+        },
+        {
+          "ply": 55,
+          "engine": "Janus-v0.27",
+          "move": "c2b2",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9728,
+          "score": "PovScore(Cp(+2750), BLACK)"
+        },
+        {
+          "ply": 56,
+          "engine": "Janus-v0.30",
+          "move": "b1a1",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 11776,
+          "score": "PovScore(Mate(-2), WHITE)"
+        },
+        {
+          "ply": 57,
+          "engine": "Janus-v0.27",
+          "move": "b2b3",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9728,
+          "score": "PovScore(Mate(+2), BLACK)"
+        },
+        {
+          "ply": 58,
+          "engine": "Janus-v0.30",
+          "move": "h1c1",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 11008,
+          "score": "PovScore(Mate(-1), WHITE)"
+        },
+        {
+          "ply": 59,
+          "engine": "Janus-v0.27",
+          "move": "d2b2",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 8704,
+          "score": "PovScore(Mate(+1), BLACK)"
+        }
+      ]
+    },
+    {
+      "game": 2,
+      "pair": 1,
+      "opening_id": "scotch_game",
+      "opening_name": "Scotch Game",
+      "candidate_color": "black",
+      "white": "Janus-v0.27",
+      "black": "Janus-v0.30",
+      "result": "0-1",
+      "candidate_score": 1.0,
+      "termination": "checkmate",
+      "plies": 110,
+      "duration_seconds": 52.812,
+      "movetime_ms": 500,
+      "start_fen": "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3",
+      "avg_cand_depth": 4.4,
+      "avg_base_depth": 4.44,
+      "avg_cand_move_time": 0.502,
+      "avg_base_move_time": 0.5036,
+      "avg_cand_nodes": 10027.0,
+      "avg_base_nodes": 7877.0,
+      "move_log": [
+        {
+          "ply": 1,
+          "engine": "Janus-v0.30",
+          "move": "g8f6",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8704,
+          "score": "PovScore(Cp(-3), BLACK)"
+        },
+        {
+          "ply": 2,
+          "engine": "Janus-v0.27",
+          "move": "b1c3",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 7936,
+          "score": "PovScore(Cp(+10), WHITE)"
+        },
+        {
+          "ply": 3,
+          "engine": "Janus-v0.30",
+          "move": "f8b4",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8192,
+          "score": "PovScore(Cp(-5), BLACK)"
+        },
+        {
+          "ply": 4,
+          "engine": "Janus-v0.27",
+          "move": "c1g5",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 6144,
+          "score": "PovScore(Cp(+5), WHITE)"
+        },
+        {
+          "ply": 5,
+          "engine": "Janus-v0.30",
+          "move": "h7h6",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8960,
+          "score": "PovScore(Cp(+9), BLACK)"
+        },
+        {
+          "ply": 6,
+          "engine": "Janus-v0.27",
+          "move": "g5f6",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 7680,
+          "score": "PovScore(Cp(-30), WHITE)"
+        },
+        {
+          "ply": 7,
+          "engine": "Janus-v0.30",
+          "move": "d8f6",
+          "time_s": 0.515,
+          "depth": 3,
+          "nodes": 8448,
+          "score": "PovScore(Cp(+35), BLACK)"
+        },
+        {
+          "ply": 8,
+          "engine": "Janus-v0.27",
+          "move": "d4d5",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 6912,
+          "score": "PovScore(Cp(-26), WHITE)"
+        },
+        {
+          "ply": 9,
+          "engine": "Janus-v0.30",
+          "move": "c6d4",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9216,
+          "score": "PovScore(Cp(+33), BLACK)"
+        },
+        {
+          "ply": 10,
+          "engine": "Janus-v0.27",
+          "move": "a2a3",
+          "time_s": 0.516,
+          "depth": 3,
+          "nodes": 7424,
+          "score": "PovScore(Cp(-25), WHITE)"
+        },
+        {
+          "ply": 11,
+          "engine": "Janus-v0.30",
+          "move": "b4d6",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 8960,
+          "score": "PovScore(Cp(+25), BLACK)"
+        },
+        {
+          "ply": 12,
+          "engine": "Janus-v0.27",
+          "move": "c3b5",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 6912,
+          "score": "PovScore(Cp(-24), WHITE)"
+        },
+        {
+          "ply": 13,
+          "engine": "Janus-v0.30",
+          "move": "d4b5",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8704,
+          "score": "PovScore(Cp(+31), BLACK)"
+        },
+        {
+          "ply": 14,
+          "engine": "Janus-v0.27",
+          "move": "f1b5",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 8192,
+          "score": "PovScore(Cp(-31), WHITE)"
+        },
+        {
+          "ply": 15,
+          "engine": "Janus-v0.30",
+          "move": "f6g6",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8704,
+          "score": "PovScore(Cp(+122), BLACK)"
+        },
+        {
+          "ply": 16,
+          "engine": "Janus-v0.27",
+          "move": "f3d2",
+          "time_s": 0.516,
+          "depth": 3,
+          "nodes": 7168,
+          "score": "PovScore(Cp(-126), WHITE)"
+        },
+        {
+          "ply": 17,
+          "engine": "Janus-v0.30",
+          "move": "g6g2",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9728,
+          "score": "PovScore(Cp(+126), BLACK)"
+        },
+        {
+          "ply": 18,
+          "engine": "Janus-v0.27",
+          "move": "d1f3",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 6912,
+          "score": "PovScore(Cp(-136), WHITE)"
+        },
+        {
+          "ply": 19,
+          "engine": "Janus-v0.30",
+          "move": "g2f3",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 9728,
+          "score": "PovScore(Cp(+137), BLACK)"
+        },
+        {
+          "ply": 20,
+          "engine": "Janus-v0.27",
+          "move": "d2f3",
+          "time_s": 0.515,
+          "depth": 4,
+          "nodes": 7168,
+          "score": "PovScore(Cp(-137), WHITE)"
+        },
+        {
+          "ply": 21,
+          "engine": "Janus-v0.30",
+          "move": "a7a6",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9216,
+          "score": "PovScore(Cp(+137), BLACK)"
+        },
+        {
+          "ply": 22,
+          "engine": "Janus-v0.27",
+          "move": "b5d3",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 6912,
+          "score": "PovScore(Cp(-132), WHITE)"
+        },
+        {
+          "ply": 23,
+          "engine": "Janus-v0.30",
+          "move": "g7g5",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 8704,
+          "score": "PovScore(Cp(+132), BLACK)"
+        },
+        {
+          "ply": 24,
+          "engine": "Janus-v0.27",
+          "move": "h2h4",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 7168,
+          "score": "PovScore(Cp(-132), WHITE)"
+        },
+        {
+          "ply": 25,
+          "engine": "Janus-v0.30",
+          "move": "g5g4",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 9984,
+          "score": "PovScore(Cp(+137), BLACK)"
+        },
+        {
+          "ply": 26,
+          "engine": "Janus-v0.27",
+          "move": "f3d2",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 7168,
+          "score": "PovScore(Cp(-137), WHITE)"
+        },
+        {
+          "ply": 27,
+          "engine": "Janus-v0.30",
+          "move": "b7b5",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9728,
+          "score": "PovScore(Cp(+132), BLACK)"
+        },
+        {
+          "ply": 28,
+          "engine": "Janus-v0.27",
+          "move": "c2c4",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 8448,
+          "score": "PovScore(Cp(-132), WHITE)"
+        },
+        {
+          "ply": 29,
+          "engine": "Janus-v0.30",
+          "move": "c7c6",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 10496,
+          "score": "PovScore(Cp(+132), BLACK)"
+        },
+        {
+          "ply": 30,
+          "engine": "Janus-v0.27",
+          "move": "b2b4",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 7680,
+          "score": "PovScore(Cp(-132), WHITE)"
+        },
+        {
+          "ply": 31,
+          "engine": "Janus-v0.30",
+          "move": "c6d5",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9984,
+          "score": "PovScore(Cp(+129), BLACK)"
+        },
+        {
+          "ply": 32,
+          "engine": "Janus-v0.27",
+          "move": "c4c5",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 8704,
+          "score": "PovScore(Cp(-123), WHITE)"
+        },
+        {
+          "ply": 33,
+          "engine": "Janus-v0.30",
+          "move": "d6f8",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 10496,
+          "score": "PovScore(Cp(+128), BLACK)"
+        },
+        {
+          "ply": 34,
+          "engine": "Janus-v0.27",
+          "move": "e4d5",
+          "time_s": 0.531,
+          "depth": 4,
+          "nodes": 7424,
+          "score": "PovScore(Cp(-128), WHITE)"
+        },
+        {
+          "ply": 35,
+          "engine": "Janus-v0.30",
+          "move": "a6a5",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 10496,
+          "score": "PovScore(Cp(+124), BLACK)"
+        },
+        {
+          "ply": 36,
+          "engine": "Janus-v0.27",
+          "move": "a1d1",
+          "time_s": 0.516,
+          "depth": 3,
+          "nodes": 7424,
+          "score": "PovScore(Cp(-124), WHITE)"
+        },
+        {
+          "ply": 37,
+          "engine": "Janus-v0.30",
+          "move": "c8b7",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 10752,
+          "score": "PovScore(Cp(+144), BLACK)"
+        },
+        {
+          "ply": 38,
+          "engine": "Janus-v0.27",
+          "move": "d3e4",
+          "time_s": 0.516,
+          "depth": 3,
+          "nodes": 6912,
+          "score": "PovScore(Cp(-144), WHITE)"
+        },
+        {
+          "ply": 39,
+          "engine": "Janus-v0.30",
+          "move": "f7f5",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 10496,
+          "score": "PovScore(Cp(+144), BLACK)"
+        },
+        {
+          "ply": 40,
+          "engine": "Janus-v0.27",
+          "move": "e4f5",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 7424,
+          "score": "PovScore(Cp(-135), WHITE)"
+        },
+        {
+          "ply": 41,
+          "engine": "Janus-v0.30",
+          "move": "b7d5",
+          "time_s": 0.515,
+          "depth": 4,
+          "nodes": 8448,
+          "score": "PovScore(Cp(+135), BLACK)"
+        },
+        {
+          "ply": 42,
+          "engine": "Janus-v0.27",
+          "move": "f5e4",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 7424,
+          "score": "PovScore(Cp(-135), WHITE)"
+        },
+        {
+          "ply": 43,
+          "engine": "Janus-v0.30",
+          "move": "d5c6",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9728,
+          "score": "PovScore(Cp(+127), BLACK)"
+        },
+        {
+          "ply": 44,
+          "engine": "Janus-v0.27",
+          "move": "e4g6",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 7424,
+          "score": "PovScore(Cp(-129), WHITE)"
+        },
+        {
+          "ply": 45,
+          "engine": "Janus-v0.30",
+          "move": "e8e7",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 9472,
+          "score": "PovScore(Cp(+129), BLACK)"
+        },
+        {
+          "ply": 46,
+          "engine": "Janus-v0.27",
+          "move": "g6e4",
+          "time_s": 0.516,
+          "depth": 4,
+          "nodes": 7936,
+          "score": "PovScore(Cp(-129), WHITE)"
+        },
+        {
+          "ply": 47,
+          "engine": "Janus-v0.30",
+          "move": "h6h5",
+          "time_s": 0.516,
+          "depth": 5,
+          "nodes": 11264,
+          "score": "PovScore(Cp(+121), BLACK)"
+        },
+        {
+          "ply": 48,
+          "engine": "Janus-v0.27",
+          "move": "e4c6",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 8704,
+          "score": "PovScore(Cp(-121), WHITE)"
+        },
+        {
+          "ply": 49,
+          "engine": "Janus-v0.30",
+          "move": "d7c6",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 9216,
+          "score": "PovScore(Cp(+121), BLACK)"
+        },
+        {
+          "ply": 50,
+          "engine": "Janus-v0.27",
+          "move": "f2f3",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 6912,
+          "score": "PovScore(Cp(-119), WHITE)"
+        },
+        {
+          "ply": 51,
+          "engine": "Janus-v0.30",
+          "move": "g4g3",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 10496,
+          "score": "PovScore(Cp(+127), BLACK)"
+        },
+        {
+          "ply": 52,
+          "engine": "Janus-v0.27",
+          "move": "h1g1",
+          "time_s": 0.516,
+          "depth": 5,
+          "nodes": 8192,
+          "score": "PovScore(Cp(-124), WHITE)"
+        },
+        {
+          "ply": 53,
+          "engine": "Janus-v0.30",
+          "move": "h8g8",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 10496,
+          "score": "PovScore(Cp(+129), BLACK)"
+        },
+        {
+          "ply": 54,
+          "engine": "Janus-v0.27",
+          "move": "d2e4",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 8448,
+          "score": "PovScore(Cp(-124), WHITE)"
+        },
+        {
+          "ply": 55,
+          "engine": "Janus-v0.30",
+          "move": "g3g2",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9728,
+          "score": "PovScore(Cp(+124), BLACK)"
+        },
+        {
+          "ply": 56,
+          "engine": "Janus-v0.27",
+          "move": "b4a5",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 7680,
+          "score": "PovScore(Cp(-109), WHITE)"
+        },
+        {
+          "ply": 57,
+          "engine": "Janus-v0.30",
+          "move": "a8a5",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 9984,
+          "score": "PovScore(Cp(+117), BLACK)"
+        },
+        {
+          "ply": 58,
+          "engine": "Janus-v0.27",
+          "move": "e1f2",
+          "time_s": 0.515,
+          "depth": 5,
+          "nodes": 7936,
+          "score": "PovScore(Cp(-117), WHITE)"
+        },
+        {
+          "ply": 59,
+          "engine": "Janus-v0.30",
+          "move": "a5a3",
+          "time_s": 0.516,
+          "depth": 5,
+          "nodes": 8960,
+          "score": "PovScore(Cp(+117), BLACK)"
+        },
+        {
+          "ply": 60,
+          "engine": "Janus-v0.27",
+          "move": "g1g2",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 7680,
+          "score": "PovScore(Cp(-117), WHITE)"
+        },
+        {
+          "ply": 61,
+          "engine": "Janus-v0.30",
+          "move": "a3a2",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 10240,
+          "score": "PovScore(Cp(+117), BLACK)"
+        },
+        {
+          "ply": 62,
+          "engine": "Janus-v0.27",
+          "move": "d1d2",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 8192,
+          "score": "PovScore(Cp(-122), WHITE)"
+        },
+        {
+          "ply": 63,
+          "engine": "Janus-v0.30",
+          "move": "g8g2",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 9472,
+          "score": "PovScore(Cp(+122), BLACK)"
+        },
+        {
+          "ply": 64,
+          "engine": "Janus-v0.27",
+          "move": "f2g2",
+          "time_s": 0.5,
+          "depth": 7,
+          "nodes": 7936,
+          "score": "PovScore(Cp(-121), WHITE)"
+        },
+        {
+          "ply": 65,
+          "engine": "Janus-v0.30",
+          "move": "a2d2",
+          "time_s": 0.5,
+          "depth": 7,
+          "nodes": 10240,
+          "score": "PovScore(Cp(+126), BLACK)"
+        },
+        {
+          "ply": 66,
+          "engine": "Janus-v0.27",
+          "move": "e4d2",
+          "time_s": 0.5,
+          "depth": 7,
+          "nodes": 7936,
+          "score": "PovScore(Cp(-126), WHITE)"
+        },
+        {
+          "ply": 67,
+          "engine": "Janus-v0.30",
+          "move": "e7e6",
+          "time_s": 0.5,
+          "depth": 7,
+          "nodes": 9984,
+          "score": "PovScore(Cp(+138), BLACK)"
+        },
+        {
+          "ply": 68,
+          "engine": "Janus-v0.27",
+          "move": "d2e4",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 8192,
+          "score": "PovScore(Cp(-138), WHITE)"
+        },
+        {
+          "ply": 69,
+          "engine": "Janus-v0.30",
+          "move": "b5b4",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 9984,
+          "score": "PovScore(Cp(+143), BLACK)"
+        },
+        {
+          "ply": 70,
+          "engine": "Janus-v0.27",
+          "move": "g2h3",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 8448,
+          "score": "PovScore(Cp(-143), WHITE)"
+        },
+        {
+          "ply": 71,
+          "engine": "Janus-v0.30",
+          "move": "f8e7",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 10496,
+          "score": "PovScore(Cp(+143), BLACK)"
+        },
+        {
+          "ply": 72,
+          "engine": "Janus-v0.27",
+          "move": "e4g3",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 8704,
+          "score": "PovScore(Cp(-148), WHITE)"
+        },
+        {
+          "ply": 73,
+          "engine": "Janus-v0.30",
+          "move": "e7c5",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 10752,
+          "score": "PovScore(Cp(+148), BLACK)"
+        },
+        {
+          "ply": 74,
+          "engine": "Janus-v0.27",
+          "move": "g3h5",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 7936,
+          "score": "PovScore(Cp(-148), WHITE)"
+        },
+        {
+          "ply": 75,
+          "engine": "Janus-v0.30",
+          "move": "b4b3",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 11264,
+          "score": "PovScore(Cp(+157), BLACK)"
+        },
+        {
+          "ply": 76,
+          "engine": "Janus-v0.27",
+          "move": "h5g7",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 7680,
+          "score": "PovScore(Cp(-157), WHITE)"
+        },
+        {
+          "ply": 77,
+          "engine": "Janus-v0.30",
+          "move": "e6f7",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 11520,
+          "score": "PovScore(Cp(+157), BLACK)"
+        },
+        {
+          "ply": 78,
+          "engine": "Janus-v0.27",
+          "move": "g7e6",
+          "time_s": 0.516,
+          "depth": 5,
+          "nodes": 8448,
+          "score": "PovScore(Cp(-581), WHITE)"
+        },
+        {
+          "ply": 79,
+          "engine": "Janus-v0.30",
+          "move": "f7e6",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 10496,
+          "score": "PovScore(Cp(+581), BLACK)"
+        },
+        {
+          "ply": 80,
+          "engine": "Janus-v0.27",
+          "move": "f3f4",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 8192,
+          "score": "PovScore(Cp(-1231), WHITE)"
+        },
+        {
+          "ply": 81,
+          "engine": "Janus-v0.30",
+          "move": "b3b2",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 11520,
+          "score": "PovScore(Cp(+1231), BLACK)"
+        },
+        {
+          "ply": 82,
+          "engine": "Janus-v0.27",
+          "move": "f4e5",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 8704,
+          "score": "PovScore(Cp(-1235), WHITE)"
+        },
+        {
+          "ply": 83,
+          "engine": "Janus-v0.30",
+          "move": "b2b1q",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 12288,
+          "score": "PovScore(Cp(+1235), BLACK)"
+        },
+        {
+          "ply": 84,
+          "engine": "Janus-v0.27",
+          "move": "h3g4",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 8704,
+          "score": "PovScore(Cp(-1236), WHITE)"
+        },
+        {
+          "ply": 85,
+          "engine": "Janus-v0.30",
+          "move": "b1g6",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 10240,
+          "score": "PovScore(Cp(+1240), BLACK)"
+        },
+        {
+          "ply": 86,
+          "engine": "Janus-v0.27",
+          "move": "g4f4",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 7936,
+          "score": "PovScore(Cp(-1245), WHITE)"
+        },
+        {
+          "ply": 87,
+          "engine": "Janus-v0.30",
+          "move": "c5e7",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9984,
+          "score": "PovScore(Cp(+1343), BLACK)"
+        },
+        {
+          "ply": 88,
+          "engine": "Janus-v0.27",
+          "move": "f4f3",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 7936,
+          "score": "PovScore(Cp(-1347), WHITE)"
+        },
+        {
+          "ply": 89,
+          "engine": "Janus-v0.30",
+          "move": "e7h4",
+          "time_s": 0.515,
+          "depth": 4,
+          "nodes": 10496,
+          "score": "PovScore(Cp(+1355), BLACK)"
+        },
+        {
+          "ply": 90,
+          "engine": "Janus-v0.27",
+          "move": "f3f4",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 8960,
+          "score": "PovScore(Cp(-1360), WHITE)"
+        },
+        {
+          "ply": 91,
+          "engine": "Janus-v0.30",
+          "move": "h4g3",
+          "time_s": 0.516,
+          "depth": 4,
+          "nodes": 11264,
+          "score": "PovScore(Cp(+1360), BLACK)"
+        },
+        {
+          "ply": 92,
+          "engine": "Janus-v0.27",
+          "move": "f4f3",
+          "time_s": 0.516,
+          "depth": 6,
+          "nodes": 8960,
+          "score": "PovScore(Cp(-1365), WHITE)"
+        },
+        {
+          "ply": 93,
+          "engine": "Janus-v0.30",
+          "move": "c6c5",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 11520,
+          "score": "PovScore(Cp(+1360), BLACK)"
+        },
+        {
+          "ply": 94,
+          "engine": "Janus-v0.27",
+          "move": "f3g2",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 8448,
+          "score": "PovScore(Cp(-1365), WHITE)"
+        },
+        {
+          "ply": 95,
+          "engine": "Janus-v0.30",
+          "move": "c5c4",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 11264,
+          "score": "PovScore(Cp(+1365), BLACK)"
+        },
+        {
+          "ply": 96,
+          "engine": "Janus-v0.27",
+          "move": "g2f3",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 8192,
+          "score": "PovScore(Cp(-1375), WHITE)"
+        },
+        {
+          "ply": 97,
+          "engine": "Janus-v0.30",
+          "move": "c4c3",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 11008,
+          "score": "PovScore(Cp(+1375), BLACK)"
+        },
+        {
+          "ply": 98,
+          "engine": "Janus-v0.27",
+          "move": "f3e3",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 8192,
+          "score": "PovScore(Cp(-2021), WHITE)"
+        },
+        {
+          "ply": 99,
+          "engine": "Janus-v0.30",
+          "move": "c3c2",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 10240,
+          "score": "PovScore(Cp(+2021), BLACK)"
+        },
+        {
+          "ply": 100,
+          "engine": "Janus-v0.27",
+          "move": "e3d2",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 8448,
+          "score": "PovScore(Cp(-2145), WHITE)"
+        },
+        {
+          "ply": 101,
+          "engine": "Janus-v0.30",
+          "move": "g6e4",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 10240,
+          "score": "PovScore(Cp(+2145), BLACK)"
+        },
+        {
+          "ply": 102,
+          "engine": "Janus-v0.27",
+          "move": "d2c1",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 8704,
+          "score": "PovScore(Mate(-2), WHITE)"
+        },
+        {
+          "ply": 103,
+          "engine": "Janus-v0.30",
+          "move": "e4c4",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9984,
+          "score": "PovScore(Mate(+2), BLACK)"
+        },
+        {
+          "ply": 104,
+          "engine": "Janus-v0.27",
+          "move": "c1d2",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 8704,
+          "score": "PovScore(Mate(-1), WHITE)"
+        },
+        {
+          "ply": 105,
+          "engine": "Janus-v0.30",
+          "move": "c2c1q",
+          "time_s": 0.515,
+          "depth": 3,
+          "nodes": 9472,
+          "score": "PovScore(Mate(+1), BLACK)"
+        }
+      ]
+    }
+  ]
+}

@@ -14,46 +14,46 @@
     "seed": 42,
     "python_version": "3.12.8",
     "platform": "Windows-11-10.0.26200-SP0",
-    "elapsed_seconds": 1001.1,
-    "last_updated_utc": "2026-10-25T08:47:21.866125+00:00"
+    "elapsed_seconds": 2828.0,
+    "last_updated_utc": "2026-10-25T09:17:48.703464+00:00"
   },
   "summary": {
-    "total_completed": 22,
+    "total_completed": 100,
     "unfinished": 0,
-    "candidate_wins": 7,
-    "candidate_draws": 11,
-    "candidate_losses": 4,
-    "candidate_score": 12.5,
-    "candidate_score_pct": 56.82,
-    "estimated_elo_diff": 47.7,
+    "candidate_wins": 41,
+    "candidate_draws": 23,
+    "candidate_losses": 36,
+    "candidate_score": 52.5,
+    "candidate_score_pct": 52.5,
+    "estimated_elo_diff": 17.4,
     "elo_95_ci": [
-      -98.9,
-      194.2
+      -50.8,
+      85.6
     ],
     "by_color": {
       "white": {
-        "wins": 4,
-        "draws": 4,
-        "losses": 3,
-        "games": 11,
-        "score_pts": 6.0
+        "wins": 14,
+        "draws": 11,
+        "losses": 25,
+        "games": 50,
+        "score_pts": 19.5
       },
       "black": {
-        "wins": 3,
-        "draws": 7,
-        "losses": 1,
-        "games": 11,
-        "score_pts": 6.5
+        "wins": 27,
+        "draws": 12,
+        "losses": 11,
+        "games": 50,
+        "score_pts": 33.0
       }
     },
     "pairs_summary": {
-      "total_pairs": 11,
-      "completed_pairs": 11,
-      "pairs_won": 5,
-      "pairs_drawn": 3,
-      "pairs_lost": 3,
-      "decisive_pairs": 8,
-      "sign_test_p_value": 0.7266
+      "total_pairs": 50,
+      "completed_pairs": 50,
+      "pairs_won": 11,
+      "pairs_drawn": 30,
+      "pairs_lost": 9,
+      "decisive_pairs": 20,
+      "sign_test_p_value": 0.8238
     }
   }
 }

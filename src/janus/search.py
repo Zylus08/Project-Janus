@@ -9,7 +9,7 @@ from typing import Optional
 import chess
 import chess.polyglot
 
-from .evaluation import evaluate_side_to_move
+from .evaluation import evaluate_side_to_move, EvaluationConfig
 from .see import static_exchange_evaluation
 
 MATE_SCORE = 100_000
@@ -133,7 +133,9 @@ class JanusSearch:
         enable_see_ordering: bool = False,
         enable_see_pruning: bool = False,
         tt_replacement_policy: str = "always_replace",
+        eval_config: Optional[EvaluationConfig] = None,
     ) -> None:
+        self.eval_config = eval_config
         valid_tt_policies = ("always_replace", "depth_preferred", "two_tier")
         if tt_replacement_policy not in valid_tt_policies:
             raise ValueError(
@@ -599,7 +601,7 @@ class JanusSearch:
 
         in_check = board.is_check()
         if ply >= self.qsearch_max_ply and not in_check:
-            return evaluate_side_to_move(board)
+            return evaluate_side_to_move(board, config=self.eval_config)
 
         node_see: Optional[dict[chess.Move, int]] = (
             {} if (self.enable_see_ordering or self.enable_see_pruning) else None
@@ -608,7 +610,7 @@ class JanusSearch:
         if not in_check:
             if check_stalemate and not any(board.generate_legal_moves()):
                 return 0
-            stand_pat = evaluate_side_to_move(board)
+            stand_pat = evaluate_side_to_move(board, config=self.eval_config)
             if stand_pat >= beta:
                 return beta
             alpha = max(alpha, stand_pat)

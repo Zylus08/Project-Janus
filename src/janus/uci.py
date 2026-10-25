@@ -37,6 +37,7 @@ def main() -> None:
     parser.add_argument("--eval-pawn-structure", action="store_true", help="Enable pawn structure evaluation")
     parser.add_argument("--eval-rook-files", action="store_true", help="Enable rook file evaluation")
     parser.add_argument("--eval-king-safety", action="store_true", help="Enable king safety evaluation")
+    parser.add_argument("--eval-tapered", action="store_true", help="Enable tapered evaluation")
     parser.add_argument("--eval-all", action="store_true", help="Enable all evaluation improvements")
     args = parser.parse_args()
 
@@ -47,10 +48,12 @@ def main() -> None:
     pawn_struct = args.eval_all or args.eval_pawn_structure
     rook_files = args.eval_all or args.eval_rook_files
     king_safety = args.eval_all or args.eval_king_safety
+    tapered_eval = args.eval_all or args.eval_tapered
     evaluation.set_evaluation_features(
         pawn_structure=pawn_struct,
         rook_files=rook_files,
         king_safety=king_safety,
+        tapered_eval=tapered_eval,
     )
 
     board = chess.Board()
@@ -122,6 +125,7 @@ def main() -> None:
             emit(f"option name Eval_PawnStructure type check default {'true' if evaluation.ENABLE_PAWN_STRUCTURE else 'false'}")
             emit(f"option name Eval_RookFiles type check default {'true' if evaluation.ENABLE_ROOK_FILES else 'false'}")
             emit(f"option name Eval_KingSafety type check default {'true' if evaluation.ENABLE_KING_SAFETY else 'false'}")
+            emit(f"option name Eval_Tapered type check default {'true' if evaluation.ENABLE_TAPERED_EVAL else 'false'}")
             emit("uciok")
 
         elif command == "setoption":
@@ -155,6 +159,8 @@ def main() -> None:
                     evaluation.set_evaluation_features(rook_files=(opt_val.lower() == "true"))
                 elif opt_name in ("eval_kingsafety", "eval_king_safety", "eval kingsafety"):
                     evaluation.set_evaluation_features(king_safety=(opt_val.lower() == "true"))
+                elif opt_name in ("eval_tapered", "eval_tapered_eval", "eval tapered"):
+                    evaluation.set_evaluation_features(tapered_eval=(opt_val.lower() == "true"))
                 elif opt_name == "hash":
                     try:
                         mb = max(1, int(opt_val))

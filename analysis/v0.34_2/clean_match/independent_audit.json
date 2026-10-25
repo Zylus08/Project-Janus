@@ -1,0 +1,383 @@
+{
+  "audit_timestamp_utc": "2026-10-25T19:07:12.173085+00:00",
+  "audit_passed": true,
+  "errors": [],
+  "findings": [
+    "Found 100 valid games in JSON, 100 in CSV, 100 attempts in attempts.json.",
+    "All moves across all valid games verified strictly legal from their starting positions.",
+    "Consolidated PGN matches valid games count (100).",
+    "Per-game PGN directory contains exactly 100 individual PGN files.",
+    "Total attempts: 100 (Valid: 100, Infrastructure Failures: 0)."
+  ],
+  "counts": {
+    "expected_games": 100,
+    "expected_pairs": 50,
+    "valid_completed_games": 100,
+    "total_attempts": 100,
+    "infrastructure_failures": 0,
+    "complete_valid_pairs": 50,
+    "incomplete_pairs": 0
+  },
+  "playing_strength": {
+    "candidate_wins": 38,
+    "candidate_draws": 43,
+    "candidate_losses": 19,
+    "candidate_score": 59.5,
+    "candidate_score_pct": 59.5,
+    "estimated_elo_diff": 66.8,
+    "elo_analytical_95_ci": [
+      -2.5,
+      136.2
+    ],
+    "elo_bootstrap_95_ci": [
+      20.9,
+      115.2
+    ],
+    "score_pct_bootstrap_95_ci": [
+      53.0,
+      66.0
+    ],
+    "by_color": {
+      "white": {
+        "wins": 19,
+        "draws": 27,
+        "losses": 4,
+        "score_pts": 32.5,
+        "score_pct": 65.0,
+        "games": 50
+      },
+      "black": {
+        "wins": 19,
+        "draws": 16,
+        "losses": 15,
+        "score_pts": 27.0,
+        "score_pct": 54.0,
+        "games": 50
+      }
+    }
+  },
+  "paired_analysis": {
+    "total_pairs": 50,
+    "pairs_won": 22,
+    "pairs_drawn": 18,
+    "pairs_lost": 10,
+    "decisive_pairs": 32,
+    "paired_sign_test_p": 0.0501,
+    "paired_t_stat": 2.78,
+    "paired_t_test_p": 0.0054,
+    "pair_results": [
+      {
+        "pair": 1,
+        "score": 1.5,
+        "outcome": "won",
+        "opening_id": "scotch_game"
+      },
+      {
+        "pair": 2,
+        "score": 2.0,
+        "outcome": "won",
+        "opening_id": "italian_two_knights"
+      },
+      {
+        "pair": 3,
+        "score": 0.5,
+        "outcome": "lost",
+        "opening_id": "b3_e5_nimzo_larsen"
+      },
+      {
+        "pair": 4,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "d4_e6_horwitz_defense"
+      },
+      {
+        "pair": 5,
+        "score": 1.5,
+        "outcome": "won",
+        "opening_id": "e4_d6_pirc_defense"
+      },
+      {
+        "pair": 6,
+        "score": 0.5,
+        "outcome": "lost",
+        "opening_id": "queens_indian_defense"
+      },
+      {
+        "pair": 7,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "petroff_defense"
+      },
+      {
+        "pair": 8,
+        "score": 2.0,
+        "outcome": "won",
+        "opening_id": "d4_Nf6_indian_defense"
+      },
+      {
+        "pair": 9,
+        "score": 1.5,
+        "outcome": "won",
+        "opening_id": "sicilian_dragon"
+      },
+      {
+        "pair": 10,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "Nf3_d5_reti_opening"
+      },
+      {
+        "pair": 11,
+        "score": 0.5,
+        "outcome": "lost",
+        "opening_id": "sicilian_scheveningen"
+      },
+      {
+        "pair": 12,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "ruy_lopez_berlin"
+      },
+      {
+        "pair": 13,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "c4_e5_english_reversed_sicilian"
+      },
+      {
+        "pair": 14,
+        "score": 1.5,
+        "outcome": "won",
+        "opening_id": "e4_c6_caro_kann"
+      },
+      {
+        "pair": 15,
+        "score": 0.5,
+        "outcome": "lost",
+        "opening_id": "slav_defense"
+      },
+      {
+        "pair": 16,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "queens_gambit_declined"
+      },
+      {
+        "pair": 17,
+        "score": 1.5,
+        "outcome": "won",
+        "opening_id": "d4_f5_dutch_defense"
+      },
+      {
+        "pair": 18,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "four_knights_game"
+      },
+      {
+        "pair": 19,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "french_winawer"
+      },
+      {
+        "pair": 20,
+        "score": 1.5,
+        "outcome": "won",
+        "opening_id": "e4_e5_open_game"
+      },
+      {
+        "pair": 21,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "gruenfeld_defense"
+      },
+      {
+        "pair": 22,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "Nf3_c5_reti_anglo_slav"
+      },
+      {
+        "pair": 23,
+        "score": 0.5,
+        "outcome": "lost",
+        "opening_id": "french_advance"
+      },
+      {
+        "pair": 24,
+        "score": 2.0,
+        "outcome": "won",
+        "opening_id": "london_system"
+      },
+      {
+        "pair": 25,
+        "score": 1.5,
+        "outcome": "won",
+        "opening_id": "catalan_opening"
+      },
+      {
+        "pair": 26,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "sicilian_classical"
+      },
+      {
+        "pair": 27,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "sicilian_najdorf"
+      },
+      {
+        "pair": 28,
+        "score": 2.0,
+        "outcome": "won",
+        "opening_id": "ruy_lopez_morphy"
+      },
+      {
+        "pair": 29,
+        "score": 1.5,
+        "outcome": "won",
+        "opening_id": "italian_giuoco_piano"
+      },
+      {
+        "pair": 30,
+        "score": 0.5,
+        "outcome": "lost",
+        "opening_id": "kings_indian_classical"
+      },
+      {
+        "pair": 31,
+        "score": 1.5,
+        "outcome": "won",
+        "opening_id": "bogo_indian_defense"
+      },
+      {
+        "pair": 32,
+        "score": 1.5,
+        "outcome": "won",
+        "opening_id": "caro_kann_classical"
+      },
+      {
+        "pair": 33,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "sicilian_alapin"
+      },
+      {
+        "pair": 34,
+        "score": 1.5,
+        "outcome": "won",
+        "opening_id": "nimzo_indian_rubinstein"
+      },
+      {
+        "pair": 35,
+        "score": 0.5,
+        "outcome": "lost",
+        "opening_id": "c4_c5_english_symmetrical"
+      },
+      {
+        "pair": 36,
+        "score": 2.0,
+        "outcome": "won",
+        "opening_id": "english_four_knights"
+      },
+      {
+        "pair": 37,
+        "score": 1.5,
+        "outcome": "won",
+        "opening_id": "benoni_defense"
+      },
+      {
+        "pair": 38,
+        "score": 0.5,
+        "outcome": "lost",
+        "opening_id": "e4_e6_french_defense"
+      },
+      {
+        "pair": 39,
+        "score": 1.5,
+        "outcome": "won",
+        "opening_id": "philidor_defense"
+      },
+      {
+        "pair": 40,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "caro_kann_advance"
+      },
+      {
+        "pair": 41,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "e4_d5_scandinavian"
+      },
+      {
+        "pair": 42,
+        "score": 0.5,
+        "outcome": "lost",
+        "opening_id": "french_tarrasch"
+      },
+      {
+        "pair": 43,
+        "score": 1.5,
+        "outcome": "won",
+        "opening_id": "e4_Nf6_alekhine"
+      },
+      {
+        "pair": 44,
+        "score": 1.5,
+        "outcome": "won",
+        "opening_id": "d4_d5_closed_game"
+      },
+      {
+        "pair": 45,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "c4_Nf6_english_anglo_indian"
+      },
+      {
+        "pair": 46,
+        "score": 2.0,
+        "outcome": "won",
+        "opening_id": "c4_e6_english_agincourt"
+      },
+      {
+        "pair": 47,
+        "score": 2.0,
+        "outcome": "won",
+        "opening_id": "Nf3_Nf6_reti_symmetrical"
+      },
+      {
+        "pair": 48,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "e4_c5_sicilian_defense"
+      },
+      {
+        "pair": 49,
+        "score": 0.5,
+        "outcome": "lost",
+        "opening_id": "e4_g6_modern_defense"
+      },
+      {
+        "pair": 50,
+        "score": 1.0,
+        "outcome": "drawn",
+        "opening_id": "queens_gambit_accepted"
+      }
+    ]
+  },
+  "performance_telemetry": {
+    "avg_candidate_depth": 3.18,
+    "avg_reference_depth": 3.49,
+    "avg_candidate_movetime_s": 0.5138,
+    "avg_reference_movetime_s": 0.5115,
+    "avg_candidate_nodes": 4662.0,
+    "avg_reference_nodes": 5586.0
+  },
+  "infrastructure_audit": {
+    "failure_count": 0,
+    "failures": []
+  }
+}

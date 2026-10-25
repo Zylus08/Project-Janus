@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-10-25T12:50:42.438935+00:00",
+    "baseline_commit": "05de4112c27ec6b2f36a9c3be29b47a993a0a7dc",
+    "baseline_name": "Janus-v0.30",
+    "candidate_commit": "f2e47be",
+    "candidate_name": "Janus-v0.34",
+    "candidate_config": "CONFIG_V034_TAPERED",
+    "time_control": "fixed movetime 500ms",
+    "movetime_ms": 500,
+    "max_plies": 200,
+    "total_games_requested": 4,
+    "pairs_requested": 2,
+    "seed": 42,
+    "python_version": "3.12.8",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "output_directory": "E:\\ChessXML\\project-janus\\analysis\\v0.34_2\\smoke_match",
+    "elapsed_seconds": 208.3,
+    "last_updated_utc": "2026-10-25T12:54:10.923660+00:00"
+  },
+  "summary": {
+    "planned_games": 4,
+    "planned_pairs": 2,
+    "attempted_games": 4,
+    "valid_completed_games": 4,
+    "infrastructure_failures": 0,
+    "retried_attempts": 0,
+    "complete_valid_pairs": 2,
+    "incomplete_pairs": 0,
+    "target_met": true,
+    "candidate_wins": 4,
+    "candidate_draws": 0,
+    "candidate_losses": 0,
+    "candidate_score": 4.0,
+    "candidate_score_pct": 100.0,
+    "estimated_elo_diff": null,
+    "elo_95_ci": null,
+    "by_color": {
+      "white": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 0,
+        "games": 2,
+        "score_pts": 2.0
+      },
+      "black": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 0,
+        "games": 2,
+        "score_pts": 2.0
+      }
+    },
+    "pairs_summary": {
+      "total_planned_pairs": 2,
+      "completed_valid_pairs": 2,
+      "pairs_won": 2,
+      "pairs_drawn": 0,
+      "pairs_lost": 0,
+      "decisive_pairs": 2,
+      "sign_test_p_value": 0.5
+    }
+  }
+}

@@ -1,0 +1,2165 @@
+{
+  "environment": {
+    "python_version": "3.12.8",
+    "python_executable": "E:\\ChessXML\\project-janus\\.venv\\Scripts\\python.exe",
+    "chess_version": "1.11.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel"
+  },
+  "microbenchmark": {
+    "v030_baseline": {
+      "rounds": 5,
+      "evals_per_round": 20000,
+      "round_times_s": [
+        0.2739,
+        0.2693,
+        0.262,
+        0.2667,
+        0.2607
+      ],
+      "round_eps": [
+        73014.8,
+        74272.4,
+        74978.8,
+        76330.0,
+        76718.1
+      ],
+      "median_eps": 74978.8,
+      "mean_eps": 75062.8,
+      "std_dev_eps": 1514.3,
+      "min_eps": 73014.8,
+      "max_eps": 76718.1,
+      "config": {
+        "enable_pawn_structure": false,
+        "enable_rook_files": false,
+        "enable_king_safety": false,
+        "enable_tapered_eval": false
+      },
+      "speed_relative_to_baseline_pct": 100.0,
+      "overhead_relative_to_static_pct": 0.0
+    },
+    "tapering_math_only": {
+      "rounds": 5,
+      "evals_per_round": 20000,
+      "round_times_s": [
+        0.3269,
+        0.33,
+        0.3256,
+        0.3237,
+        0.3549
+      ],
+      "round_eps": [
+        56352.1,
+        60599.7,
+        61175.3,
+        61418.3,
+        61777.8
+      ],
+      "median_eps": 61175.3,
+      "mean_eps": 60264.6,
+      "std_dev_eps": 2228.8,
+      "min_eps": 56352.1,
+      "max_eps": 61777.8,
+      "config": {
+        "enable_pawn_structure": false,
+        "enable_rook_files": false,
+        "enable_king_safety": false,
+        "enable_tapered_eval": true
+      },
+      "speed_relative_to_baseline_pct": 81.59,
+      "overhead_relative_to_static_pct": 0.0
+    },
+    "v033_static_all": {
+      "rounds": 5,
+      "evals_per_round": 20000,
+      "round_times_s": [
+        0.5082,
+        0.4878,
+        0.517,
+        0.5055,
+        0.5016
+      ],
+      "round_eps": [
+        38686.1,
+        39355.3,
+        39565.8,
+        39870.6,
+        40996.8
+      ],
+      "median_eps": 39565.8,
+      "mean_eps": 39694.9,
+      "std_dev_eps": 847.9,
+      "min_eps": 38686.1,
+      "max_eps": 40996.8,
+      "config": {
+        "enable_pawn_structure": true,
+        "enable_rook_files": true,
+        "enable_king_safety": true,
+        "enable_tapered_eval": false
+      },
+      "speed_relative_to_baseline_pct": 52.77,
+      "overhead_relative_to_static_pct": 0.0
+    },
+    "v034_tapered_all": {
+      "rounds": 5,
+      "evals_per_round": 20000,
+      "round_times_s": [
+        0.5123,
+        0.5121,
+        0.5306,
+        0.5105,
+        0.5208
+      ],
+      "round_eps": [
+        37692.4,
+        38402.4,
+        39040.4,
+        39057.2,
+        39180.8
+      ],
+      "median_eps": 39040.4,
+      "mean_eps": 38674.7,
+      "std_dev_eps": 627.5,
+      "min_eps": 37692.4,
+      "max_eps": 39180.8,
+      "config": {
+        "enable_pawn_structure": true,
+        "enable_rook_files": true,
+        "enable_king_safety": true,
+        "enable_tapered_eval": true
+      },
+      "speed_relative_to_baseline_pct": 52.07,
+      "overhead_relative_to_static_pct": 1.33
+    }
+  },
+  "search_benchmark": {
+    "depth_4": {
+      "v030_baseline": {
+        "summary": {
+          "total_nodes": 166436,
+          "total_elapsed_s": 9.328,
+          "mean_nodes_per_pos": 6934.8,
+          "mean_elapsed_s": 0.3887,
+          "overall_nps": 17842,
+          "move_agreement_with_baseline_pct": 100.0,
+          "mean_abs_score_diff_cp": 0.0
+        },
+        "positions": [
+          {
+            "id": "eq_01_startpos",
+            "best_move": "g1f3",
+            "score_cp": 0,
+            "nodes": 2552,
+            "elapsed_s": 0.14,
+            "nps": 18228,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "eq_02_symmetrical_four_knights",
+            "best_move": "f1c4",
+            "score_cp": 8,
+            "nodes": 15393,
+            "elapsed_s": 0.891,
+            "nps": 17276,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "eq_03_symmetrical_pawn_endgame",
+            "best_move": "g4h4",
+            "score_cp": 30,
+            "nodes": 300,
+            "elapsed_s": 0.016,
+            "nps": 18750,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "mat_01_white_up_queen",
+            "best_move": "e2e6",
+            "score_cp": 900,
+            "nodes": 2837,
+            "elapsed_s": 0.093,
+            "nps": 30505,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "mat_02_white_up_rook",
+            "best_move": "e2e6",
+            "score_cp": 500,
+            "nodes": 1378,
+            "elapsed_s": 0.032,
+            "nps": 43062,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "mat_03_black_up_minor",
+            "best_move": "f1d3",
+            "score_cp": -328,
+            "nodes": 12735,
+            "elapsed_s": 0.75,
+            "nps": 16980,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "bp_01_white_bishop_pair",
+            "best_move": "d1d4",
+            "score_cp": -18,
+            "nodes": 11324,
+            "elapsed_s": 0.609,
+            "nps": 18594,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "bp_02_black_bishop_pair",
+            "best_move": "f7f6",
+            "score_cp": -1514,
+            "nodes": 12746,
+            "elapsed_s": 0.813,
+            "nps": 15677,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_01_white_passed_pawn",
+            "best_move": "e1f2",
+            "score_cp": 0,
+            "nodes": 613,
+            "elapsed_s": 0.015,
+            "nps": 40866,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_02_white_protected_passed_pawn",
+            "best_move": "d5d6",
+            "score_cp": 245,
+            "nodes": 453,
+            "elapsed_s": 0.016,
+            "nps": 28312,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_03_white_doubled_pawns",
+            "best_move": "f1d3",
+            "score_cp": 101,
+            "nodes": 8823,
+            "elapsed_s": 0.515,
+            "nps": 17132,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_04_isolated_queen_pawn",
+            "best_move": "h2h4",
+            "score_cp": 7,
+            "nodes": 18968,
+            "elapsed_s": 1.141,
+            "nps": 16624,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "rook_01_open_file",
+            "best_move": "f3e5",
+            "score_cp": 346,
+            "nodes": 12059,
+            "elapsed_s": 0.641,
+            "nps": 18812,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "rook_02_semi_open_file",
+            "best_move": "h7h5",
+            "score_cp": -327,
+            "nodes": 14334,
+            "elapsed_s": 0.781,
+            "nps": 18353,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "king_01_exposed_uncastled_king",
+            "best_move": "e4f6",
+            "score_cp": -220,
+            "nodes": 8718,
+            "elapsed_s": 0.531,
+            "nps": 16418,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "king_02_shattered_kingside_shield",
+            "best_move": "d2d4",
+            "score_cp": 8,
+            "nodes": 5922,
+            "elapsed_s": 0.328,
+            "nps": 18054,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "king_03_missing_g2_pawn",
+            "best_move": "d2d4",
+            "score_cp": -97,
+            "nodes": 5293,
+            "elapsed_s": 0.282,
+            "nps": 18769,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "mobility_01_active_knight_vs_trapped",
+            "best_move": "a1b3",
+            "score_cp": 660,
+            "nodes": 1074,
+            "elapsed_s": 0.031,
+            "nps": 34645,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "mobility_02_trapped_bishop",
+            "best_move": "c2c4",
+            "score_cp": -7,
+            "nodes": 8724,
+            "elapsed_s": 0.515,
+            "nps": 16939,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "endgame_01_kp_vs_k",
+            "best_move": "e5f6",
+            "score_cp": 120,
+            "nodes": 330,
+            "elapsed_s": 0.016,
+            "nps": 20624,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "endgame_02_kq_vs_k",
+            "best_move": "f1f8",
+            "score_cp": 900,
+            "nodes": 2180,
+            "elapsed_s": 0.078,
+            "nps": 27948,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "promo_01_race",
+            "best_move": "b7b8q",
+            "score_cp": 0,
+            "nodes": 794,
+            "elapsed_s": 0.031,
+            "nps": 25612,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "tactics_01_mate_in_one",
+            "best_move": "f3f7",
+            "score_cp": 99999,
+            "nodes": 17246,
+            "elapsed_s": 1.0,
+            "nps": 17246,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "tactics_02_back_rank_mate",
+            "best_move": "e1e8",
+            "score_cp": 99999,
+            "nodes": 1640,
+            "elapsed_s": 0.063,
+            "nps": 26031,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          }
+        ]
+      },
+      "tapering_math_only": {
+        "summary": {
+          "total_nodes": 168581,
+          "total_elapsed_s": 10.281,
+          "mean_nodes_per_pos": 7024.2,
+          "mean_elapsed_s": 0.4284,
+          "overall_nps": 16397,
+          "move_agreement_with_baseline_pct": 75.0,
+          "mean_abs_score_diff_cp": 1.5
+        },
+        "positions": [
+          {
+            "id": "eq_01_startpos",
+            "best_move": "g1f3",
+            "score_cp": 0,
+            "nodes": 2552,
+            "elapsed_s": 0.141,
+            "nps": 18099,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "eq_02_symmetrical_four_knights",
+            "best_move": "f1c4",
+            "score_cp": 8,
+            "nodes": 15401,
+            "elapsed_s": 1.062,
+            "nps": 14501,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "eq_03_symmetrical_pawn_endgame",
+            "best_move": "g4f3",
+            "score_cp": 36,
+            "nodes": 309,
+            "elapsed_s": 0.016,
+            "nps": 19312,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 6
+          },
+          {
+            "id": "mat_01_white_up_queen",
+            "best_move": "e2e6",
+            "score_cp": 903,
+            "nodes": 3078,
+            "elapsed_s": 0.125,
+            "nps": 24624,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 3
+          },
+          {
+            "id": "mat_02_white_up_rook",
+            "best_move": "e1d2",
+            "score_cp": 500,
+            "nodes": 1506,
+            "elapsed_s": 0.062,
+            "nps": 24290,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "mat_03_black_up_minor",
+            "best_move": "f1d3",
+            "score_cp": -328,
+            "nodes": 12778,
+            "elapsed_s": 0.891,
+            "nps": 14341,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "bp_01_white_bishop_pair",
+            "best_move": "d1d4",
+            "score_cp": -18,
+            "nodes": 11332,
+            "elapsed_s": 0.703,
+            "nps": 16119,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "bp_02_black_bishop_pair",
+            "best_move": "f7f6",
+            "score_cp": -1510,
+            "nodes": 13027,
+            "elapsed_s": 0.906,
+            "nps": 14378,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 4
+          },
+          {
+            "id": "pawn_01_white_passed_pawn",
+            "best_move": "e1e2",
+            "score_cp": 0,
+            "nodes": 530,
+            "elapsed_s": 0.031,
+            "nps": 17096,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_02_white_protected_passed_pawn",
+            "best_move": "c4c5",
+            "score_cp": 240,
+            "nodes": 499,
+            "elapsed_s": 0.016,
+            "nps": 31187,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 5
+          },
+          {
+            "id": "pawn_03_white_doubled_pawns",
+            "best_move": "f1d3",
+            "score_cp": 101,
+            "nodes": 8823,
+            "elapsed_s": 0.578,
+            "nps": 15264,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_04_isolated_queen_pawn",
+            "best_move": "h2h4",
+            "score_cp": 7,
+            "nodes": 18970,
+            "elapsed_s": 1.203,
+            "nps": 15768,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "rook_01_open_file",
+            "best_move": "f3e5",
+            "score_cp": 346,
+            "nodes": 12149,
+            "elapsed_s": 0.688,
+            "nps": 17658,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "rook_02_semi_open_file",
+            "best_move": "h7h5",
+            "score_cp": -327,
+            "nodes": 14305,
+            "elapsed_s": 0.828,
+            "nps": 17276,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "king_01_exposed_uncastled_king",
+            "best_move": "e4f6",
+            "score_cp": -221,
+            "nodes": 8519,
+            "elapsed_s": 0.531,
+            "nps": 16043,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 1
+          },
+          {
+            "id": "king_02_shattered_kingside_shield",
+            "best_move": "d2d4",
+            "score_cp": 8,
+            "nodes": 5927,
+            "elapsed_s": 0.344,
+            "nps": 17229,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "king_03_missing_g2_pawn",
+            "best_move": "d2d4",
+            "score_cp": -97,
+            "nodes": 5195,
+            "elapsed_s": 0.281,
+            "nps": 18487,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "mobility_01_active_knight_vs_trapped",
+            "best_move": "a1b3",
+            "score_cp": 655,
+            "nodes": 1166,
+            "elapsed_s": 0.047,
+            "nps": 24808,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 5
+          },
+          {
+            "id": "mobility_02_trapped_bishop",
+            "best_move": "c2c4",
+            "score_cp": -7,
+            "nodes": 8774,
+            "elapsed_s": 0.531,
+            "nps": 16523,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "endgame_01_kp_vs_k",
+            "best_move": "e5d5",
+            "score_cp": 126,
+            "nodes": 387,
+            "elapsed_s": 0.016,
+            "nps": 24187,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 6
+          },
+          {
+            "id": "endgame_02_kq_vs_k",
+            "best_move": "f1c4",
+            "score_cp": 895,
+            "nodes": 2628,
+            "elapsed_s": 0.094,
+            "nps": 27957,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 5
+          },
+          {
+            "id": "promo_01_race",
+            "best_move": "b7b8q",
+            "score_cp": 0,
+            "nodes": 1840,
+            "elapsed_s": 0.078,
+            "nps": 23589,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "tactics_01_mate_in_one",
+            "best_move": "f3f7",
+            "score_cp": 99999,
+            "nodes": 17246,
+            "elapsed_s": 1.047,
+            "nps": 16471,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "tactics_02_back_rank_mate",
+            "best_move": "e1e8",
+            "score_cp": 99999,
+            "nodes": 1640,
+            "elapsed_s": 0.062,
+            "nps": 26451,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          }
+        ]
+      },
+      "v033_static_all": {
+        "summary": {
+          "total_nodes": 162842,
+          "total_elapsed_s": 10.345,
+          "mean_nodes_per_pos": 6785.1,
+          "mean_elapsed_s": 0.431,
+          "overall_nps": 15741,
+          "move_agreement_with_baseline_pct": 87.5,
+          "mean_abs_score_diff_cp": 6.5
+        },
+        "positions": [
+          {
+            "id": "eq_01_startpos",
+            "best_move": "g1f3",
+            "score_cp": 0,
+            "nodes": 2552,
+            "elapsed_s": 0.156,
+            "nps": 16358,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "eq_02_symmetrical_four_knights",
+            "best_move": "d2d4",
+            "score_cp": 5,
+            "nodes": 18205,
+            "elapsed_s": 1.266,
+            "nps": 14379,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 3
+          },
+          {
+            "id": "eq_03_symmetrical_pawn_endgame",
+            "best_move": "g4h4",
+            "score_cp": 26,
+            "nodes": 300,
+            "elapsed_s": 0.0,
+            "nps": 3000000,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 4
+          },
+          {
+            "id": "mat_01_white_up_queen",
+            "best_move": "e2e6",
+            "score_cp": 924,
+            "nodes": 2913,
+            "elapsed_s": 0.094,
+            "nps": 30989,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 24
+          },
+          {
+            "id": "mat_02_white_up_rook",
+            "best_move": "e2e6",
+            "score_cp": 518,
+            "nodes": 1395,
+            "elapsed_s": 0.047,
+            "nps": 29680,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 18
+          },
+          {
+            "id": "mat_03_black_up_minor",
+            "best_move": "f1d3",
+            "score_cp": -328,
+            "nodes": 12006,
+            "elapsed_s": 0.813,
+            "nps": 14767,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "bp_01_white_bishop_pair",
+            "best_move": "d1d4",
+            "score_cp": -6,
+            "nodes": 9751,
+            "elapsed_s": 0.625,
+            "nps": 15601,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 12
+          },
+          {
+            "id": "bp_02_black_bishop_pair",
+            "best_move": "f7f6",
+            "score_cp": -1514,
+            "nodes": 13285,
+            "elapsed_s": 0.921,
+            "nps": 14424,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_01_white_passed_pawn",
+            "best_move": "e1f2",
+            "score_cp": 0,
+            "nodes": 612,
+            "elapsed_s": 0.032,
+            "nps": 19125,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_02_white_protected_passed_pawn",
+            "best_move": "d5d6",
+            "score_cp": 275,
+            "nodes": 432,
+            "elapsed_s": 0.015,
+            "nps": 28800,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 30
+          },
+          {
+            "id": "pawn_03_white_doubled_pawns",
+            "best_move": "f1d3",
+            "score_cp": 99,
+            "nodes": 8393,
+            "elapsed_s": 0.594,
+            "nps": 14129,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 2
+          },
+          {
+            "id": "pawn_04_isolated_queen_pawn",
+            "best_move": "a1c1",
+            "score_cp": 8,
+            "nodes": 13338,
+            "elapsed_s": 0.859,
+            "nps": 15527,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 1
+          },
+          {
+            "id": "rook_01_open_file",
+            "best_move": "f3e5",
+            "score_cp": 335,
+            "nodes": 15104,
+            "elapsed_s": 0.954,
+            "nps": 15832,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 11
+          },
+          {
+            "id": "rook_02_semi_open_file",
+            "best_move": "f8d8",
+            "score_cp": -312,
+            "nodes": 16476,
+            "elapsed_s": 1.062,
+            "nps": 15514,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 15
+          },
+          {
+            "id": "king_01_exposed_uncastled_king",
+            "best_move": "e4f6",
+            "score_cp": -223,
+            "nodes": 8246,
+            "elapsed_s": 0.531,
+            "nps": 15529,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 3
+          },
+          {
+            "id": "king_02_shattered_kingside_shield",
+            "best_move": "d2d4",
+            "score_cp": 8,
+            "nodes": 3932,
+            "elapsed_s": 0.25,
+            "nps": 15728,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "king_03_missing_g2_pawn",
+            "best_move": "d2d4",
+            "score_cp": -129,
+            "nodes": 3769,
+            "elapsed_s": 0.203,
+            "nps": 18566,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 32
+          },
+          {
+            "id": "mobility_01_active_knight_vs_trapped",
+            "best_move": "a1b3",
+            "score_cp": 660,
+            "nodes": 1078,
+            "elapsed_s": 0.032,
+            "nps": 33687,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "mobility_02_trapped_bishop",
+            "best_move": "c2c4",
+            "score_cp": -7,
+            "nodes": 8871,
+            "elapsed_s": 0.593,
+            "nps": 14959,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "endgame_01_kp_vs_k",
+            "best_move": "e5f6",
+            "score_cp": 118,
+            "nodes": 334,
+            "elapsed_s": 0.0,
+            "nps": 3340000,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 2
+          },
+          {
+            "id": "endgame_02_kq_vs_k",
+            "best_move": "f1f8",
+            "score_cp": 900,
+            "nodes": 2180,
+            "elapsed_s": 0.079,
+            "nps": 27594,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "promo_01_race",
+            "best_move": "b7b8q",
+            "score_cp": 0,
+            "nodes": 784,
+            "elapsed_s": 0.031,
+            "nps": 25290,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "tactics_01_mate_in_one",
+            "best_move": "f3f7",
+            "score_cp": 99999,
+            "nodes": 17246,
+            "elapsed_s": 1.125,
+            "nps": 15329,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "tactics_02_back_rank_mate",
+            "best_move": "e1e8",
+            "score_cp": 99999,
+            "nodes": 1640,
+            "elapsed_s": 0.063,
+            "nps": 26031,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          }
+        ]
+      },
+      "v034_tapered_all": {
+        "summary": {
+          "total_nodes": 164333,
+          "total_elapsed_s": 10.766,
+          "mean_nodes_per_pos": 6847.2,
+          "mean_elapsed_s": 0.4486,
+          "overall_nps": 15264,
+          "move_agreement_with_baseline_pct": 62.5,
+          "mean_abs_score_diff_cp": 8.8
+        },
+        "positions": [
+          {
+            "id": "eq_01_startpos",
+            "best_move": "g1f3",
+            "score_cp": 0,
+            "nodes": 2552,
+            "elapsed_s": 0.156,
+            "nps": 16358,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "eq_02_symmetrical_four_knights",
+            "best_move": "d2d4",
+            "score_cp": 5,
+            "nodes": 17945,
+            "elapsed_s": 1.282,
+            "nps": 13997,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 3
+          },
+          {
+            "id": "eq_03_symmetrical_pawn_endgame",
+            "best_move": "g4f3",
+            "score_cp": 36,
+            "nodes": 309,
+            "elapsed_s": 0.015,
+            "nps": 20600,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 6
+          },
+          {
+            "id": "mat_01_white_up_queen",
+            "best_move": "e2e6",
+            "score_cp": 907,
+            "nodes": 3057,
+            "elapsed_s": 0.094,
+            "nps": 32521,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 7
+          },
+          {
+            "id": "mat_02_white_up_rook",
+            "best_move": "e1d2",
+            "score_cp": 520,
+            "nodes": 1506,
+            "elapsed_s": 0.062,
+            "nps": 24290,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 20
+          },
+          {
+            "id": "mat_03_black_up_minor",
+            "best_move": "f1d3",
+            "score_cp": -328,
+            "nodes": 12105,
+            "elapsed_s": 0.86,
+            "nps": 14075,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "bp_01_white_bishop_pair",
+            "best_move": "d1d4",
+            "score_cp": -5,
+            "nodes": 9769,
+            "elapsed_s": 0.609,
+            "nps": 16041,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 13
+          },
+          {
+            "id": "bp_02_black_bishop_pair",
+            "best_move": "f7f6",
+            "score_cp": -1510,
+            "nodes": 12970,
+            "elapsed_s": 0.906,
+            "nps": 14315,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 4
+          },
+          {
+            "id": "pawn_01_white_passed_pawn",
+            "best_move": "e1e2",
+            "score_cp": 0,
+            "nodes": 530,
+            "elapsed_s": 0.032,
+            "nps": 16562,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_02_white_protected_passed_pawn",
+            "best_move": "c4c5",
+            "score_cp": 314,
+            "nodes": 567,
+            "elapsed_s": 0.015,
+            "nps": 37800,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 69
+          },
+          {
+            "id": "pawn_03_white_doubled_pawns",
+            "best_move": "f1d3",
+            "score_cp": 99,
+            "nodes": 8392,
+            "elapsed_s": 0.625,
+            "nps": 13427,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 2
+          },
+          {
+            "id": "pawn_04_isolated_queen_pawn",
+            "best_move": "a1c1",
+            "score_cp": 8,
+            "nodes": 13414,
+            "elapsed_s": 0.891,
+            "nps": 15054,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 1
+          },
+          {
+            "id": "rook_01_open_file",
+            "best_move": "f3e5",
+            "score_cp": 333,
+            "nodes": 15001,
+            "elapsed_s": 1.0,
+            "nps": 15001,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 13
+          },
+          {
+            "id": "rook_02_semi_open_file",
+            "best_move": "f8d8",
+            "score_cp": -311,
+            "nodes": 16904,
+            "elapsed_s": 1.156,
+            "nps": 14622,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 16
+          },
+          {
+            "id": "king_01_exposed_uncastled_king",
+            "best_move": "e4f6",
+            "score_cp": -224,
+            "nodes": 8330,
+            "elapsed_s": 0.516,
+            "nps": 16143,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 4
+          },
+          {
+            "id": "king_02_shattered_kingside_shield",
+            "best_move": "d2d4",
+            "score_cp": 8,
+            "nodes": 3783,
+            "elapsed_s": 0.219,
+            "nps": 17273,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "king_03_missing_g2_pawn",
+            "best_move": "d2d4",
+            "score_cp": -127,
+            "nodes": 3525,
+            "elapsed_s": 0.218,
+            "nps": 16169,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 30
+          },
+          {
+            "id": "mobility_01_active_knight_vs_trapped",
+            "best_move": "a1b3",
+            "score_cp": 655,
+            "nodes": 1170,
+            "elapsed_s": 0.063,
+            "nps": 18571,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 5
+          },
+          {
+            "id": "mobility_02_trapped_bishop",
+            "best_move": "c2c4",
+            "score_cp": -7,
+            "nodes": 8770,
+            "elapsed_s": 0.594,
+            "nps": 14764,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "endgame_01_kp_vs_k",
+            "best_move": "e5d5",
+            "score_cp": 133,
+            "nodes": 376,
+            "elapsed_s": 0.015,
+            "nps": 25066,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 13
+          },
+          {
+            "id": "endgame_02_kq_vs_k",
+            "best_move": "f1c4",
+            "score_cp": 895,
+            "nodes": 2628,
+            "elapsed_s": 0.11,
+            "nps": 23890,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 5
+          },
+          {
+            "id": "promo_01_race",
+            "best_move": "b7b8q",
+            "score_cp": 0,
+            "nodes": 1844,
+            "elapsed_s": 0.078,
+            "nps": 23641,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "tactics_01_mate_in_one",
+            "best_move": "f3f7",
+            "score_cp": 99999,
+            "nodes": 17246,
+            "elapsed_s": 1.187,
+            "nps": 14529,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "tactics_02_back_rank_mate",
+            "best_move": "e1e8",
+            "score_cp": 99999,
+            "nodes": 1640,
+            "elapsed_s": 0.063,
+            "nps": 26031,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          }
+        ]
+      }
+    },
+    "depth_5": {
+      "v030_baseline": {
+        "summary": {
+          "total_nodes": 433831,
+          "total_elapsed_s": 22.875,
+          "mean_nodes_per_pos": 18076.3,
+          "mean_elapsed_s": 0.9531,
+          "overall_nps": 18965,
+          "move_agreement_with_baseline_pct": 100.0,
+          "mean_abs_score_diff_cp": 0.0
+        },
+        "positions": [
+          {
+            "id": "eq_01_startpos",
+            "best_move": "g1f3",
+            "score_cp": 10,
+            "nodes": 8798,
+            "elapsed_s": 0.469,
+            "nps": 18759,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "eq_02_symmetrical_four_knights",
+            "best_move": "f1c4",
+            "score_cp": 6,
+            "nodes": 48124,
+            "elapsed_s": 2.734,
+            "nps": 17602,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "eq_03_symmetrical_pawn_endgame",
+            "best_move": "g4h4",
+            "score_cp": 30,
+            "nodes": 560,
+            "elapsed_s": 0.031,
+            "nps": 18064,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "mat_01_white_up_queen",
+            "best_move": "e2e6",
+            "score_cp": 900,
+            "nodes": 6840,
+            "elapsed_s": 0.203,
+            "nps": 33694,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "mat_02_white_up_rook",
+            "best_move": "e2e6",
+            "score_cp": 500,
+            "nodes": 3192,
+            "elapsed_s": 0.094,
+            "nps": 33957,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "mat_03_black_up_minor",
+            "best_move": "f1d3",
+            "score_cp": -327,
+            "nodes": 26773,
+            "elapsed_s": 1.422,
+            "nps": 18827,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "bp_01_white_bishop_pair",
+            "best_move": "c4e2",
+            "score_cp": -11,
+            "nodes": 28428,
+            "elapsed_s": 1.344,
+            "nps": 21151,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "bp_02_black_bishop_pair",
+            "best_move": "f7f6",
+            "score_cp": -1504,
+            "nodes": 23915,
+            "elapsed_s": 1.406,
+            "nps": 17009,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_01_white_passed_pawn",
+            "best_move": "e1f2",
+            "score_cp": 0,
+            "nodes": 785,
+            "elapsed_s": 0.031,
+            "nps": 25322,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_02_white_protected_passed_pawn",
+            "best_move": "d5d6",
+            "score_cp": 245,
+            "nodes": 1314,
+            "elapsed_s": 0.032,
+            "nps": 41062,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_03_white_doubled_pawns",
+            "best_move": "f1d3",
+            "score_cp": 109,
+            "nodes": 28823,
+            "elapsed_s": 1.703,
+            "nps": 16924,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_04_isolated_queen_pawn",
+            "best_move": "h2h4",
+            "score_cp": 17,
+            "nodes": 36479,
+            "elapsed_s": 1.875,
+            "nps": 19455,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "rook_01_open_file",
+            "best_move": "f3e5",
+            "score_cp": 351,
+            "nodes": 35317,
+            "elapsed_s": 1.797,
+            "nps": 19653,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "rook_02_semi_open_file",
+            "best_move": "h7h5",
+            "score_cp": -331,
+            "nodes": 41807,
+            "elapsed_s": 2.281,
+            "nps": 18328,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "king_01_exposed_uncastled_king",
+            "best_move": "e4d6",
+            "score_cp": -217,
+            "nodes": 32305,
+            "elapsed_s": 1.781,
+            "nps": 18138,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "king_02_shattered_kingside_shield",
+            "best_move": "d2d4",
+            "score_cp": 8,
+            "nodes": 16610,
+            "elapsed_s": 0.891,
+            "nps": 18641,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "king_03_missing_g2_pawn",
+            "best_move": "d2d4",
+            "score_cp": -97,
+            "nodes": 17680,
+            "elapsed_s": 0.922,
+            "nps": 19175,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "mobility_01_active_knight_vs_trapped",
+            "best_move": "a1b3",
+            "score_cp": 656,
+            "nodes": 3361,
+            "elapsed_s": 0.109,
+            "nps": 30834,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "mobility_02_trapped_bishop",
+            "best_move": "c2c4",
+            "score_cp": -1,
+            "nodes": 27165,
+            "elapsed_s": 1.609,
+            "nps": 16883,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "endgame_01_kp_vs_k",
+            "best_move": "e5f6",
+            "score_cp": 125,
+            "nodes": 721,
+            "elapsed_s": 0.032,
+            "nps": 22531,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "endgame_02_kq_vs_k",
+            "best_move": "f1f8",
+            "score_cp": 900,
+            "nodes": 7249,
+            "elapsed_s": 0.25,
+            "nps": 28996,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "promo_01_race",
+            "best_move": "b7b8q",
+            "score_cp": 0,
+            "nodes": 2008,
+            "elapsed_s": 0.062,
+            "nps": 32387,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "tactics_01_mate_in_one",
+            "best_move": "f3f7",
+            "score_cp": 99999,
+            "nodes": 32133,
+            "elapsed_s": 1.688,
+            "nps": 19036,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "tactics_02_back_rank_mate",
+            "best_move": "e1e8",
+            "score_cp": 99999,
+            "nodes": 3444,
+            "elapsed_s": 0.109,
+            "nps": 31596,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          }
+        ]
+      },
+      "tapering_math_only": {
+        "summary": {
+          "total_nodes": 443833,
+          "total_elapsed_s": 23.469,
+          "mean_nodes_per_pos": 18493.0,
+          "mean_elapsed_s": 0.9779,
+          "overall_nps": 18911,
+          "move_agreement_with_baseline_pct": 70.83,
+          "mean_abs_score_diff_cp": 1.8
+        },
+        "positions": [
+          {
+            "id": "eq_01_startpos",
+            "best_move": "g1f3",
+            "score_cp": 10,
+            "nodes": 8798,
+            "elapsed_s": 0.469,
+            "nps": 18759,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "eq_02_symmetrical_four_knights",
+            "best_move": "f1c4",
+            "score_cp": 6,
+            "nodes": 48135,
+            "elapsed_s": 2.906,
+            "nps": 16564,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "eq_03_symmetrical_pawn_endgame",
+            "best_move": "g4f3",
+            "score_cp": 36,
+            "nodes": 604,
+            "elapsed_s": 0.016,
+            "nps": 37749,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 6
+          },
+          {
+            "id": "mat_01_white_up_queen",
+            "best_move": "e2e6",
+            "score_cp": 905,
+            "nodes": 8153,
+            "elapsed_s": 0.265,
+            "nps": 30766,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 5
+          },
+          {
+            "id": "mat_02_white_up_rook",
+            "best_move": "e1d2",
+            "score_cp": 503,
+            "nodes": 3402,
+            "elapsed_s": 0.094,
+            "nps": 36191,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 3
+          },
+          {
+            "id": "mat_03_black_up_minor",
+            "best_move": "f1d3",
+            "score_cp": -327,
+            "nodes": 26835,
+            "elapsed_s": 1.516,
+            "nps": 17701,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "bp_01_white_bishop_pair",
+            "best_move": "c4e2",
+            "score_cp": -11,
+            "nodes": 28439,
+            "elapsed_s": 1.344,
+            "nps": 21159,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "bp_02_black_bishop_pair",
+            "best_move": "f7f6",
+            "score_cp": -1500,
+            "nodes": 23727,
+            "elapsed_s": 1.359,
+            "nps": 17459,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 4
+          },
+          {
+            "id": "pawn_01_white_passed_pawn",
+            "best_move": "e1e2",
+            "score_cp": 0,
+            "nodes": 690,
+            "elapsed_s": 0.016,
+            "nps": 43124,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_02_white_protected_passed_pawn",
+            "best_move": "c4c5",
+            "score_cp": 241,
+            "nodes": 1723,
+            "elapsed_s": 0.062,
+            "nps": 27790,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 4
+          },
+          {
+            "id": "pawn_03_white_doubled_pawns",
+            "best_move": "f1d3",
+            "score_cp": 109,
+            "nodes": 28822,
+            "elapsed_s": 1.781,
+            "nps": 16183,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_04_isolated_queen_pawn",
+            "best_move": "h2h4",
+            "score_cp": 17,
+            "nodes": 36481,
+            "elapsed_s": 1.907,
+            "nps": 19130,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "rook_01_open_file",
+            "best_move": "f3e5",
+            "score_cp": 351,
+            "nodes": 35339,
+            "elapsed_s": 1.796,
+            "nps": 19676,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "rook_02_semi_open_file",
+            "best_move": "h7h5",
+            "score_cp": -331,
+            "nodes": 41796,
+            "elapsed_s": 2.235,
+            "nps": 18700,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "king_01_exposed_uncastled_king",
+            "best_move": "e4d6",
+            "score_cp": -218,
+            "nodes": 34906,
+            "elapsed_s": 2.0,
+            "nps": 17453,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 1
+          },
+          {
+            "id": "king_02_shattered_kingside_shield",
+            "best_move": "d2d4",
+            "score_cp": 8,
+            "nodes": 16635,
+            "elapsed_s": 0.844,
+            "nps": 19709,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "king_03_missing_g2_pawn",
+            "best_move": "d2d4",
+            "score_cp": -97,
+            "nodes": 17745,
+            "elapsed_s": 0.921,
+            "nps": 19267,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "mobility_01_active_knight_vs_trapped",
+            "best_move": "a1b3",
+            "score_cp": 651,
+            "nodes": 2932,
+            "elapsed_s": 0.094,
+            "nps": 31191,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 5
+          },
+          {
+            "id": "mobility_02_trapped_bishop",
+            "best_move": "c2c4",
+            "score_cp": -6,
+            "nodes": 28490,
+            "elapsed_s": 1.594,
+            "nps": 17873,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 5
+          },
+          {
+            "id": "endgame_01_kp_vs_k",
+            "best_move": "e5d5",
+            "score_cp": 131,
+            "nodes": 842,
+            "elapsed_s": 0.031,
+            "nps": 27161,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 6
+          },
+          {
+            "id": "endgame_02_kq_vs_k",
+            "best_move": "f1c4",
+            "score_cp": 898,
+            "nodes": 9345,
+            "elapsed_s": 0.313,
+            "nps": 29856,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 2
+          },
+          {
+            "id": "promo_01_race",
+            "best_move": "a2a3",
+            "score_cp": 2,
+            "nodes": 4417,
+            "elapsed_s": 0.172,
+            "nps": 25680,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 2
+          },
+          {
+            "id": "tactics_01_mate_in_one",
+            "best_move": "f3f7",
+            "score_cp": 99999,
+            "nodes": 32133,
+            "elapsed_s": 1.625,
+            "nps": 19774,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "tactics_02_back_rank_mate",
+            "best_move": "e1e8",
+            "score_cp": 99999,
+            "nodes": 3444,
+            "elapsed_s": 0.109,
+            "nps": 31596,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          }
+        ]
+      },
+      "v033_static_all": {
+        "summary": {
+          "total_nodes": 474633,
+          "total_elapsed_s": 28.437,
+          "mean_nodes_per_pos": 19776.4,
+          "mean_elapsed_s": 1.1849,
+          "overall_nps": 16690,
+          "move_agreement_with_baseline_pct": 79.17,
+          "mean_abs_score_diff_cp": 6.7
+        },
+        "positions": [
+          {
+            "id": "eq_01_startpos",
+            "best_move": "g1f3",
+            "score_cp": 10,
+            "nodes": 8753,
+            "elapsed_s": 0.5,
+            "nps": 17506,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "eq_02_symmetrical_four_knights",
+            "best_move": "f1c4",
+            "score_cp": 5,
+            "nodes": 70294,
+            "elapsed_s": 4.719,
+            "nps": 14895,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 1
+          },
+          {
+            "id": "eq_03_symmetrical_pawn_endgame",
+            "best_move": "g4h4",
+            "score_cp": 26,
+            "nodes": 560,
+            "elapsed_s": 0.031,
+            "nps": 18064,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 4
+          },
+          {
+            "id": "mat_01_white_up_queen",
+            "best_move": "e2e6",
+            "score_cp": 924,
+            "nodes": 6923,
+            "elapsed_s": 0.219,
+            "nps": 31611,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 24
+          },
+          {
+            "id": "mat_02_white_up_rook",
+            "best_move": "e2e6",
+            "score_cp": 518,
+            "nodes": 3228,
+            "elapsed_s": 0.109,
+            "nps": 29614,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 18
+          },
+          {
+            "id": "mat_03_black_up_minor",
+            "best_move": "f1d3",
+            "score_cp": -327,
+            "nodes": 29635,
+            "elapsed_s": 1.891,
+            "nps": 15671,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "bp_01_white_bishop_pair",
+            "best_move": "d1d4",
+            "score_cp": -6,
+            "nodes": 19211,
+            "elapsed_s": 0.984,
+            "nps": 19523,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 5
+          },
+          {
+            "id": "bp_02_black_bishop_pair",
+            "best_move": "f7f6",
+            "score_cp": -1504,
+            "nodes": 24176,
+            "elapsed_s": 1.5,
+            "nps": 16117,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_01_white_passed_pawn",
+            "best_move": "e1f2",
+            "score_cp": 0,
+            "nodes": 784,
+            "elapsed_s": 0.031,
+            "nps": 25290,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_02_white_protected_passed_pawn",
+            "best_move": "d5d6",
+            "score_cp": 275,
+            "nodes": 1026,
+            "elapsed_s": 0.032,
+            "nps": 32062,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 30
+          },
+          {
+            "id": "pawn_03_white_doubled_pawns",
+            "best_move": "f1d3",
+            "score_cp": 109,
+            "nodes": 26450,
+            "elapsed_s": 1.718,
+            "nps": 15395,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_04_isolated_queen_pawn",
+            "best_move": "a1c1",
+            "score_cp": 14,
+            "nodes": 37925,
+            "elapsed_s": 2.266,
+            "nps": 16736,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 3
+          },
+          {
+            "id": "rook_01_open_file",
+            "best_move": "f3e5",
+            "score_cp": 335,
+            "nodes": 39063,
+            "elapsed_s": 2.391,
+            "nps": 16337,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 16
+          },
+          {
+            "id": "rook_02_semi_open_file",
+            "best_move": "f8d8",
+            "score_cp": -316,
+            "nodes": 48459,
+            "elapsed_s": 2.968,
+            "nps": 16327,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 15
+          },
+          {
+            "id": "king_01_exposed_uncastled_king",
+            "best_move": "e4d6",
+            "score_cp": -217,
+            "nodes": 33864,
+            "elapsed_s": 2.047,
+            "nps": 16543,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "king_02_shattered_kingside_shield",
+            "best_move": "d2d3",
+            "score_cp": 7,
+            "nodes": 26699,
+            "elapsed_s": 1.719,
+            "nps": 15531,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 1
+          },
+          {
+            "id": "king_03_missing_g2_pawn",
+            "best_move": "d2d3",
+            "score_cp": -130,
+            "nodes": 22990,
+            "elapsed_s": 1.406,
+            "nps": 16351,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 33
+          },
+          {
+            "id": "mobility_01_active_knight_vs_trapped",
+            "best_move": "a1b3",
+            "score_cp": 656,
+            "nodes": 3369,
+            "elapsed_s": 0.125,
+            "nps": 26952,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "mobility_02_trapped_bishop",
+            "best_move": "c2c4",
+            "score_cp": 1,
+            "nodes": 25637,
+            "elapsed_s": 1.578,
+            "nps": 16246,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 2
+          },
+          {
+            "id": "endgame_01_kp_vs_k",
+            "best_move": "e5f6",
+            "score_cp": 133,
+            "nodes": 695,
+            "elapsed_s": 0.016,
+            "nps": 43437,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 8
+          },
+          {
+            "id": "endgame_02_kq_vs_k",
+            "best_move": "f1f8",
+            "score_cp": 900,
+            "nodes": 7308,
+            "elapsed_s": 0.234,
+            "nps": 31230,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "promo_01_race",
+            "best_move": "b7b8q",
+            "score_cp": 0,
+            "nodes": 2007,
+            "elapsed_s": 0.078,
+            "nps": 25730,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "tactics_01_mate_in_one",
+            "best_move": "f3f7",
+            "score_cp": 99999,
+            "nodes": 32133,
+            "elapsed_s": 1.766,
+            "nps": 18195,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "tactics_02_back_rank_mate",
+            "best_move": "e1e8",
+            "score_cp": 99999,
+            "nodes": 3444,
+            "elapsed_s": 0.109,
+            "nps": 31596,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          }
+        ]
+      },
+      "v034_tapered_all": {
+        "summary": {
+          "total_nodes": 480014,
+          "total_elapsed_s": 29.515,
+          "mean_nodes_per_pos": 20000.6,
+          "mean_elapsed_s": 1.2298,
+          "overall_nps": 16263,
+          "move_agreement_with_baseline_pct": 54.17,
+          "mean_abs_score_diff_cp": 10.0
+        },
+        "positions": [
+          {
+            "id": "eq_01_startpos",
+            "best_move": "g1f3",
+            "score_cp": 10,
+            "nodes": 8753,
+            "elapsed_s": 0.531,
+            "nps": 16483,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "eq_02_symmetrical_four_knights",
+            "best_move": "f1c4",
+            "score_cp": 5,
+            "nodes": 73982,
+            "elapsed_s": 5.125,
+            "nps": 14435,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 1
+          },
+          {
+            "id": "eq_03_symmetrical_pawn_endgame",
+            "best_move": "g4f3",
+            "score_cp": 36,
+            "nodes": 604,
+            "elapsed_s": 0.016,
+            "nps": 37749,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 6
+          },
+          {
+            "id": "mat_01_white_up_queen",
+            "best_move": "e2e6",
+            "score_cp": 909,
+            "nodes": 8127,
+            "elapsed_s": 0.265,
+            "nps": 30667,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 9
+          },
+          {
+            "id": "mat_02_white_up_rook",
+            "best_move": "e1d2",
+            "score_cp": 523,
+            "nodes": 3402,
+            "elapsed_s": 0.11,
+            "nps": 30927,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 23
+          },
+          {
+            "id": "mat_03_black_up_minor",
+            "best_move": "f1d3",
+            "score_cp": -327,
+            "nodes": 27775,
+            "elapsed_s": 1.796,
+            "nps": 15464,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "bp_01_white_bishop_pair",
+            "best_move": "d1d4",
+            "score_cp": -5,
+            "nodes": 19233,
+            "elapsed_s": 1.063,
+            "nps": 18093,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 6
+          },
+          {
+            "id": "bp_02_black_bishop_pair",
+            "best_move": "f7f6",
+            "score_cp": -1500,
+            "nodes": 23712,
+            "elapsed_s": 1.5,
+            "nps": 15808,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 4
+          },
+          {
+            "id": "pawn_01_white_passed_pawn",
+            "best_move": "e1e2",
+            "score_cp": 0,
+            "nodes": 690,
+            "elapsed_s": 0.031,
+            "nps": 22258,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_02_white_protected_passed_pawn",
+            "best_move": "d5d6",
+            "score_cp": 320,
+            "nodes": 1889,
+            "elapsed_s": 0.063,
+            "nps": 29984,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 75
+          },
+          {
+            "id": "pawn_03_white_doubled_pawns",
+            "best_move": "f1d3",
+            "score_cp": 109,
+            "nodes": 26449,
+            "elapsed_s": 1.765,
+            "nps": 14985,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "pawn_04_isolated_queen_pawn",
+            "best_move": "a1c1",
+            "score_cp": 14,
+            "nodes": 38205,
+            "elapsed_s": 2.407,
+            "nps": 15872,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 3
+          },
+          {
+            "id": "rook_01_open_file",
+            "best_move": "f3e5",
+            "score_cp": 333,
+            "nodes": 42072,
+            "elapsed_s": 2.625,
+            "nps": 16027,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 18
+          },
+          {
+            "id": "rook_02_semi_open_file",
+            "best_move": "f8d8",
+            "score_cp": -315,
+            "nodes": 51258,
+            "elapsed_s": 3.312,
+            "nps": 15476,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 16
+          },
+          {
+            "id": "king_01_exposed_uncastled_king",
+            "best_move": "e4d6",
+            "score_cp": -218,
+            "nodes": 33292,
+            "elapsed_s": 1.984,
+            "nps": 16780,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 1
+          },
+          {
+            "id": "king_02_shattered_kingside_shield",
+            "best_move": "c2c4",
+            "score_cp": 7,
+            "nodes": 18122,
+            "elapsed_s": 1.109,
+            "nps": 16340,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 1
+          },
+          {
+            "id": "king_03_missing_g2_pawn",
+            "best_move": "d2d3",
+            "score_cp": -125,
+            "nodes": 25517,
+            "elapsed_s": 1.641,
+            "nps": 15549,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 28
+          },
+          {
+            "id": "mobility_01_active_knight_vs_trapped",
+            "best_move": "a1b3",
+            "score_cp": 651,
+            "nodes": 2931,
+            "elapsed_s": 0.109,
+            "nps": 26889,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 5
+          },
+          {
+            "id": "mobility_02_trapped_bishop",
+            "best_move": "c2c4",
+            "score_cp": 1,
+            "nodes": 23830,
+            "elapsed_s": 1.579,
+            "nps": 15091,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 2
+          },
+          {
+            "id": "endgame_01_kp_vs_k",
+            "best_move": "e5d5",
+            "score_cp": 163,
+            "nodes": 823,
+            "elapsed_s": 0.031,
+            "nps": 26548,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 38
+          },
+          {
+            "id": "endgame_02_kq_vs_k",
+            "best_move": "f1c4",
+            "score_cp": 898,
+            "nodes": 9345,
+            "elapsed_s": 0.312,
+            "nps": 29951,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 2
+          },
+          {
+            "id": "promo_01_race",
+            "best_move": "a2a3",
+            "score_cp": 2,
+            "nodes": 4426,
+            "elapsed_s": 0.203,
+            "nps": 21802,
+            "agrees_with_baseline": false,
+            "abs_score_diff_from_baseline": 2
+          },
+          {
+            "id": "tactics_01_mate_in_one",
+            "best_move": "f3f7",
+            "score_cp": 99999,
+            "nodes": 32133,
+            "elapsed_s": 1.813,
+            "nps": 17723,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          },
+          {
+            "id": "tactics_02_back_rank_mate",
+            "best_move": "e1e8",
+            "score_cp": 99999,
+            "nodes": 3444,
+            "elapsed_s": 0.125,
+            "nps": 27552,
+            "agrees_with_baseline": true,
+            "abs_score_diff_from_baseline": 0
+          }
+        ]
+      }
+    }
+  }
+}

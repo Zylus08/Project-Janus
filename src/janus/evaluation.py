@@ -180,6 +180,12 @@ class EvaluationConfig:
     # King centralization weight (Endgame)
     king_center_bonus_eg: int = 12
 
+    def __post_init__(self) -> None:
+        if not isinstance(self.passed_pawn_bonus_mg, tuple):
+            object.__setattr__(self, "passed_pawn_bonus_mg", tuple(self.passed_pawn_bonus_mg))
+        if not isinstance(self.passed_pawn_bonus_eg, tuple):
+            object.__setattr__(self, "passed_pawn_bonus_eg", tuple(self.passed_pawn_bonus_eg))
+
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
 

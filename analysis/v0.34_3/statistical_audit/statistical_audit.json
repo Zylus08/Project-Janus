@@ -1,0 +1,274 @@
+{
+  "audit_timestamp_utc": "2026-10-26T14:00:18.224571+00:00",
+  "authoritative_dataset": {
+    "directory": "E:\\ChessXML\\project-janus\\analysis\\v0.34_2\\clean_match",
+    "checksums": {
+      "clean_match_500ms.json": "2fd97cbdc2da4b401e6b2967b2f59e047a98d3bae97c6d8adc8e5baae0bf9197",
+      "clean_match_500ms.csv": "8c81aa61da71ea1c81fd5a2ad2750df94221e919a3aa40afe03b39f489acdd36",
+      "clean_match_500ms.pgn": "33c5d9d23d3516d833524a1814bcfd2a74626de6a9948d2cd2591bd6bd5f0098",
+      "clean_match_500ms_summary.json": "930c084c70b311cfdaf538131b1fea983dc6f85ae6ce3eb49d6b80a20cfb1dbb",
+      "attempts.json": "580975d190e3fc1465edcd9a1e8663d9659618202fef7194c0300bda5249d9f5",
+      "manifest.json": "5a432092c052b21fea4521f0c8156f42171ad0dc43d0a4704ed53049f061c637",
+      "independent_audit.json": "6afb0b3d48aab463c44f83102fc7a1132a20172da21887d66918799a0e6693d4"
+    }
+  },
+  "verdict": "SUPPORTED",
+  "verdict_explanation": "The clean 100-game match dataset is structurally intact with 0 infrastructure failures across 50 complete opening pairs. All reported metrics reproduce exactly from raw game records. The reported t-test p-value of 0.0054 was mathematically reconciled as a standard normal (Z) approximation to t=2.780; the exact Student-t p-value with df=49 is p=0.0077, which remains statistically significant at alpha=0.01. The pair-level bootstrap 95% confidence interval ([+20.9, +115.2] Elo) and paired delta-method interval ([+18.5, +115.1] Elo) strictly exclude zero, confirming that Janus v0.34's tapered evaluation provides a statistically validated strength improvement over baseline Janus v0.30 under 500 ms movetime.",
+  "recomputed_statistics": {
+    "games_total": 100,
+    "candidate_wins": 38,
+    "candidate_draws": 43,
+    "candidate_losses": 19,
+    "candidate_score": 59.5,
+    "candidate_score_pct": 59.5,
+    "elo_point_estimate": 66.8248,
+    "elo_analytical_naive_ci": [
+      -2.5,
+      136.2
+    ],
+    "elo_analytical_paired_ci": [
+      18.5,
+      115.1
+    ],
+    "by_color": {
+      "white": {
+        "wins": 19,
+        "draws": 27,
+        "losses": 4,
+        "pts": 32.5,
+        "games": 50
+      },
+      "black": {
+        "wins": 19,
+        "draws": 16,
+        "losses": 15,
+        "pts": 27.0,
+        "games": 50
+      }
+    },
+    "complete_pairs": 50,
+    "pair_outcomes": {
+      "won": 22,
+      "drawn": 18,
+      "lost": 10
+    },
+    "decisive_pairs": 32,
+    "paired_t_statistic": 2.7799,
+    "paired_t_degrees_of_freedom": 49,
+    "paired_t_test_p_exact_student_t": 0.007692,
+    "paired_t_test_p_normal_approx": 0.005438,
+    "paired_sign_test_p": 0.050102,
+    "paired_wilcoxon": {
+      "n_nonzero": 32,
+      "w_positive": 398.0,
+      "w_negative": 130.0,
+      "w_stat": 130.0,
+      "z_stat": -2.8402,
+      "p_value": 0.0045
+    },
+    "bootstrap_seed_42": {
+      "seed": 42,
+      "n_resamples": 10000,
+      "score_pct_95_ci": [
+        53.0,
+        66.0
+      ],
+      "elo_95_ci": [
+        20.9,
+        115.2
+      ]
+    },
+    "bootstrap_sensitivity": [
+      {
+        "seed": 42,
+        "n_resamples": 10000,
+        "score_pct_95_ci": [
+          53.0,
+          66.0
+        ],
+        "elo_95_ci": [
+          20.9,
+          115.2
+        ]
+      },
+      {
+        "seed": 123,
+        "n_resamples": 10000,
+        "score_pct_95_ci": [
+          53.0,
+          66.0
+        ],
+        "elo_95_ci": [
+          20.9,
+          115.2
+        ]
+      },
+      {
+        "seed": 999,
+        "n_resamples": 10000,
+        "score_pct_95_ci": [
+          52.5,
+          66.0
+        ],
+        "elo_95_ci": [
+          17.4,
+          115.2
+        ]
+      },
+      {
+        "seed": 2026,
+        "n_resamples": 10000,
+        "score_pct_95_ci": [
+          53.0,
+          66.0
+        ],
+        "elo_95_ci": [
+          20.9,
+          115.2
+        ]
+      },
+      {
+        "seed": 7777,
+        "n_resamples": 10000,
+        "score_pct_95_ci": [
+          53.0,
+          66.0
+        ],
+        "elo_95_ci": [
+          20.9,
+          115.2
+        ]
+      }
+    ]
+  },
+  "reconciliation_rows": [
+    {
+      "Metric": "Valid Completed Games",
+      "Reported_Value": "100",
+      "Recomputed_Value": "100",
+      "Method_and_Assumptions": "Count of game records with status='valid_chess'",
+      "Agreement_Status": "EXACT AGREEMENT",
+      "Interpretation": "Primary dataset matches planned 100-game target"
+    },
+    {
+      "Metric": "Candidate Wins / Draws / Losses",
+      "Reported_Value": "38W / 43D / 19L",
+      "Recomputed_Value": "38W / 43D / 19L",
+      "Method_and_Assumptions": "FIDE chess termination rules from moves",
+      "Agreement_Status": "EXACT AGREEMENT",
+      "Interpretation": "Candidate achieves clear majority of decisive games (38 vs 19)"
+    },
+    {
+      "Metric": "Candidate Score Percentage",
+      "Reported_Value": "59.50%",
+      "Recomputed_Value": "59.50%",
+      "Method_and_Assumptions": "(Wins + 0.5 * Draws) / Total Games",
+      "Agreement_Status": "EXACT AGREEMENT",
+      "Interpretation": "+9.5% score advantage above 50% baseline"
+    },
+    {
+      "Metric": "Candidate Score as White",
+      "Reported_Value": "65.0% (32.5/50)",
+      "Recomputed_Value": "65.0% (32.5/50)",
+      "Method_and_Assumptions": "Subset where Candidate had White pieces (N=50)",
+      "Agreement_Status": "EXACT AGREEMENT",
+      "Interpretation": "Strong performance with first-move advantage (19W/27D/4L)"
+    },
+    {
+      "Metric": "Candidate Score as Black",
+      "Reported_Value": "54.0% (27.0/50)",
+      "Recomputed_Value": "54.0% (27.0/50)",
+      "Method_and_Assumptions": "Subset where Candidate had Black pieces (N=50)",
+      "Agreement_Status": "EXACT AGREEMENT",
+      "Interpretation": "Positive performance (>50%) even without move advantage (19W/16D/15L)"
+    },
+    {
+      "Metric": "Elo Difference Point Estimate",
+      "Reported_Value": "+66.8 Elo",
+      "Recomputed_Value": "+66.8 Elo (+66.8248)",
+      "Method_and_Assumptions": "Logistic transformation: 400 * log10(p / (1 - p))",
+      "Agreement_Status": "EXACT AGREEMENT",
+      "Interpretation": "Estimated playing-strength difference of approximately +67 Elo"
+    },
+    {
+      "Metric": "Analytical Elo 95% CI (Naive i.i.d.)",
+      "Reported_Value": "[-2.5, +136.2]",
+      "Recomputed_Value": "[-2.5, 136.2]",
+      "Method_and_Assumptions": "Delta method assuming N=100 independent Bernoulli trials (SE=0.0491)",
+      "Agreement_Status": "EXACT AGREEMENT",
+      "Interpretation": "Reproduced exactly. Inappropriate for paired match because it ignores pairing variance reduction"
+    },
+    {
+      "Metric": "Analytical Elo 95% CI (Paired Design)",
+      "Reported_Value": "Not originally reported",
+      "Recomputed_Value": "[18.5, 115.1]",
+      "Method_and_Assumptions": "Delta method using empirical pair score variance (Var=0.2336, SE=0.0342)",
+      "Agreement_Status": "NEW AUDIT BENCHMARK",
+      "Interpretation": "Appropriate parametric interval strictly excludes zero (+18.5 to +115.1)"
+    },
+    {
+      "Metric": "Complete Valid Opening Pairs",
+      "Reported_Value": "50 / 50",
+      "Recomputed_Value": "50 / 50",
+      "Method_and_Assumptions": "Pairs with exactly 2 colour-reversed games valid",
+      "Agreement_Status": "EXACT AGREEMENT",
+      "Interpretation": "100% paired design completion"
+    },
+    {
+      "Metric": "Pair Outcomes (Won / Drawn / Lost)",
+      "Reported_Value": "22W / 18D / 10L",
+      "Recomputed_Value": "22W / 18D / 10L",
+      "Method_and_Assumptions": "Won: score > 1.0; Drawn: score == 1.0; Lost: score < 1.0",
+      "Agreement_Status": "EXACT AGREEMENT",
+      "Interpretation": "Net +12 decisive pair difference (2.2 : 1 decisive win ratio)"
+    },
+    {
+      "Metric": "Paired t-Statistic",
+      "Reported_Value": "2.780",
+      "Recomputed_Value": "2.7799 (rounds to 2.780)",
+      "Method_and_Assumptions": "mean(diff) / (sd(diff) / sqrt(50)), where diff = pair_score - 1.0",
+      "Agreement_Status": "EXACT AGREEMENT",
+      "Interpretation": "Pair score differential is 2.78 standard errors above zero"
+    },
+    {
+      "Metric": "Paired t-Test p-Value",
+      "Reported_Value": "0.0054",
+      "Recomputed_Value": "Student-t (df=49): 0.0077 (0.0077) | Normal Z approx: 0.0054 (0.0054)",
+      "Method_and_Assumptions": "Reported value derived from Normal Z approximation (erfc). Exact Student-t df=49 yields p=0.0077",
+      "Agreement_Status": "RECONCILED DISCREPANCY",
+      "Interpretation": "Discrepancy explained: previous script used normal Z CDF instead of Student-t df=49. Both are p < 0.01"
+    },
+    {
+      "Metric": "Paired Sign Test p-Value",
+      "Reported_Value": "0.0501",
+      "Recomputed_Value": "0.0501 (0.050102)",
+      "Method_and_Assumptions": "Exact 2-tailed binomial test on 32 decisive pairs (k=10, p=0.5)",
+      "Agreement_Status": "EXACT AGREEMENT",
+      "Interpretation": "p=0.0502 is marginally above 0.05 alpha threshold because sign test discards pair sweep magnitude and 18 ties"
+    },
+    {
+      "Metric": "Paired Wilcoxon Signed-Rank Test",
+      "Reported_Value": "Not originally reported",
+      "Recomputed_Value": "W=130.0, Z=-2.8402, p=0.0045",
+      "Method_and_Assumptions": "Wilcoxon signed-rank test with tie correction on pair differentials",
+      "Agreement_Status": "NEW AUDIT BENCHMARK",
+      "Interpretation": "Statistically significant (p=0.0045) because Candidate had 7 sweeps (+1.0) and 0 swept losses (-1.0)"
+    },
+    {
+      "Metric": "Pair Bootstrap Score % 95% CI",
+      "Reported_Value": "[53.0%, 66.0%]",
+      "Recomputed_Value": "[53.0%, 66.0%]",
+      "Method_and_Assumptions": "10,000 resamples of 50 pairs, seed 42, percentile method [250, 9750]",
+      "Agreement_Status": "EXACT AGREEMENT",
+      "Interpretation": "Strictly excludes 50% baseline under all sampled seeds"
+    },
+    {
+      "Metric": "Pair Bootstrap Elo 95% CI",
+      "Reported_Value": "[+20.9, +115.2]",
+      "Recomputed_Value": "[20.9, 115.2]",
+      "Method_and_Assumptions": "10,000 resamples of 50 pairs, seed 42, logistic transform",
+      "Agreement_Status": "EXACT AGREEMENT",
+      "Interpretation": "Strictly excludes 0 Elo (+20.9 to +115.2) with minimal Monte Carlo variance across seeds"
+    }
+  ]
+}

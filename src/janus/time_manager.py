@@ -39,6 +39,47 @@ class TimeManagerConfig:
             policy_name="reference",
         )
 
+    @classmethod
+    def arm_a_original_reference(cls) -> TimeManagerConfig:
+        """Arm A: Original reference baseline (reserve=0ms, mtg=40, inc_weight=0.0, max_ratio=0.20)."""
+        return cls(
+            safety_reserve_ms=0,
+            default_moves_to_go=40,
+            increment_weight=0.0,
+            min_allocation_ms=10,
+            max_allocation_ratio=0.20,
+            policy_name="arm_a",
+        )
+
+    @classmethod
+    def arm_b_matched_reference(cls) -> TimeManagerConfig:
+        """Arm B: Matched reference baseline (reserve=50ms, mtg=30, inc_weight=0.0, max_ratio=0.20)."""
+        return cls(
+            safety_reserve_ms=50,
+            default_moves_to_go=30,
+            increment_weight=0.0,
+            min_allocation_ms=10,
+            max_allocation_ratio=0.20,
+            policy_name="arm_b",
+        )
+
+    @classmethod
+    def arm_c_adaptive(cls) -> TimeManagerConfig:
+        """Arm C: Adaptive policy (reserve=50ms, mtg=30, inc_weight=0.85, max_ratio=0.20)."""
+        return cls(
+            safety_reserve_ms=50,
+            default_moves_to_go=30,
+            increment_weight=0.85,
+            min_allocation_ms=10,
+            max_allocation_ratio=0.20,
+            policy_name="arm_c",
+        )
+
+    @classmethod
+    def matched_reference(cls) -> TimeManagerConfig:
+        """Alias for Arm B matched reference baseline."""
+        return cls.arm_b_matched_reference()
+
 
 class TimeManager:
     """Computes search time budgets according to game clock constraints and UCI parameters."""

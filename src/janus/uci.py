@@ -41,8 +41,12 @@ def main() -> None:
     parser.add_argument("--eval-tapered", action="store_true", help="Enable tapered evaluation")
     parser.add_argument("--eval-all", action="store_true", help="Enable all evaluation improvements")
     parser.add_argument("--time-policy", type=str, default="adaptive",
-                        choices=["adaptive", "reference"],
-                        help="Time allocation policy: adaptive or reference")
+                        choices=["adaptive", "reference", "matched_reference", "arm_a", "arm_b", "arm_c"],
+                        help="Time allocation policy: adaptive, reference, matched_reference, arm_a, arm_b, or arm_c")
+    parser.add_argument("--time-reserve", type=int, default=None, help="Override safety reserve in ms")
+    parser.add_argument("--time-mtg", type=int, default=None, help="Override default moves-to-go")
+    parser.add_argument("--time-inc-weight", type=float, default=None, help="Override increment weight")
+    parser.add_argument("--time-max-ratio", type=float, default=None, help="Override max allocation ratio")
     args = parser.parse_args()
 
     engine_name = args.name
@@ -60,10 +64,31 @@ def main() -> None:
         tapered_eval=tapered_eval,
     )
 
-    if args.time_policy == "reference":
-        tm = TimeManager(config=TimeManagerConfig.reference_baseline())
+    if args.time_policy in ("arm_a",):
+        tm_cfg = TimeManagerConfig.arm_a_original_reference()
+    elif args.time_policy in ("matched_reference", "arm_b"):
+        tm_cfg = TimeManagerConfig.arm_b_matched_reference()
+    elif args.time_policy in ("arm_c",):
+        tm_cfg = TimeManagerConfig.arm_c_adaptive()
+    elif args.time_policy == "reference":
+        tm_cfg = TimeManagerConfig.reference_baseline()
     else:
-        tm = TimeManager(config=TimeManagerConfig())
+        tm_cfg = TimeManagerConfig()
+
+    overrides = {}
+    if args.time_reserve is not None:
+        overrides["safety_reserve_ms"] = args.time_reserve
+    if args.time_mtg is not None:
+        overrides["default_moves_to_go"] = args.time_mtg
+    if args.time_inc_weight is not None:
+        overrides["increment_weight"] = args.time_inc_weight
+    if args.time_max_ratio is not None:
+        overrides["max_allocation_ratio"] = args.time_max_ratio
+    if overrides:
+        from dataclasses import replace
+        tm_cfg = replace(tm_cfg, **overrides)
+
+    tm = TimeManager(config=tm_cfg)
 
     board = chess.Board()
     engine = JanusSearch(
@@ -136,7 +161,7 @@ def main() -> None:
             emit(f"option name Eval_RookFiles type check default {'true' if evaluation.ENABLE_ROOK_FILES else 'false'}")
             emit(f"option name Eval_KingSafety type check default {'true' if evaluation.ENABLE_KING_SAFETY else 'false'}")
             emit(f"option name Eval_Tapered type check default {'true' if evaluation.ENABLE_TAPERED_EVAL else 'false'}")
-            emit(f"option name Time_Policy type combo default {engine.time_manager.config.policy_name} var adaptive var reference")
+            emit(f"option name Time_Policy type combo default {engine.time_manager.config.policy_name} var adaptive var reference var matched_reference var arm_a var arm_b var arm_c")
             emit("uciok")
 
         elif command == "setoption":
@@ -173,7 +198,13 @@ def main() -> None:
                 elif opt_name in ("eval_tapered", "eval_tapered_eval", "eval tapered"):
                     evaluation.set_evaluation_features(tapered_eval=(opt_val.lower() == "true"))
                 elif opt_name in ("time_policy", "time policy"):
-                    if opt_val.lower() == "reference":
+                    if opt_val.lower() in ("arm_a",):
+                        engine.time_manager = TimeManager(config=TimeManagerConfig.arm_a_original_reference())
+                    elif opt_val.lower() in ("matched_reference", "arm_b"):
+                        engine.time_manager = TimeManager(config=TimeManagerConfig.arm_b_matched_reference())
+                    elif opt_val.lower() in ("arm_c",):
+                        engine.time_manager = TimeManager(config=TimeManagerConfig.arm_c_adaptive())
+                    elif opt_val.lower() == "reference":
                         engine.time_manager = TimeManager(config=TimeManagerConfig.reference_baseline())
                     elif opt_val.lower() == "adaptive":
                         engine.time_manager = TimeManager(config=TimeManagerConfig())

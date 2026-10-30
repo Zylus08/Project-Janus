@@ -1,0 +1,37 @@
+{
+  "milestone": "v0.37",
+  "qualification_type": "three_arm_fischer_pilot",
+  "target_games": 6,
+  "valid_games": 6,
+  "infrastructure_failures": 0,
+  "qualification_passed": true,
+  "comparisons": {
+    "b_vs_c": {
+      "comparison": "b_vs_c",
+      "title": "Primary: Arm B vs Arm C (Increment Weight Isolation)",
+      "candidate_arm": "arm_c",
+      "base_arm": "arm_b",
+      "valid_games": 2,
+      "infrastructure_failures": 0,
+      "passed": true
+    },
+    "a_vs_b": {
+      "comparison": "a_vs_b",
+      "title": "Secondary: Arm A vs Arm B (Reserve & Horizon Combined)",
+      "candidate_arm": "arm_b",
+      "base_arm": "arm_a",
+      "valid_games": 2,
+      "infrastructure_failures": 0,
+      "passed": true
+    },
+    "a_vs_c": {
+      "comparison": "a_vs_c",
+      "title": "Contextual: Arm A vs Arm C (Combined Policy Reproduction)",
+      "candidate_arm": "arm_c",
+      "base_arm": "arm_a",
+      "valid_games": 2,
+      "infrastructure_failures": 0,
+      "passed": true
+    }
+  }
+}

@@ -1,0 +1,56 @@
+[Event "Janus v0.36 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.30"]
+[Round "1"]
+[White "Candidate"]
+[Black "Reference"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/8/PP2PPPP/RNBQKBNR w KQkq - 0 4"]
+[Termination "max_plies_reached"]
+
+4. Bf4 exd5 5. cxd5 h5 6. Nf3 b5 7. Nc3 b4 8. Nb5 d6 9. a3 Qd7 10. e3 Ba6 11. a4 Be7 12. Bc4 Ne4 13. h4 f5 14. g3 g6 15. b3 Bf6 16. Rc1 Qd8 17. Bd3 Rg8 18. Bxe4 Bxb5 19. Bxf5 Bxa4 20. Be6 Bxb3 21. Qxb3 Rf8 22. Qa4+ Ke7 23. e4 a5 1/2-1/2
+
+[Event "Janus v0.36 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.30"]
+[Round "2"]
+[White "Reference"]
+[Black "Candidate"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/8/PP2PPPP/RNBQKBNR w KQkq - 0 4"]
+[Termination "threefold_repetition"]
+
+4. Bf4 exd5 5. cxd5 h5 6. Nf3 b5 7. Nc3 b4 8. Nb5 d6 9. h4 a6 10. Qa4 Bd7 11. e3 Nxd5 12. Bg5 f6 13. Qb3 fxg5 14. Qxd5 Bc6 15. Qe6+ Be7 16. Qg6+ Kf8 17. Qf5+ Ke8 18. Qg6+ Kf8 19. Qf5+ Ke8 20. Qg6+ 1/2-1/2
+
+[Event "Janus v0.36 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.30"]
+[Round "3"]
+[White "Candidate"]
+[Black "Reference"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pp1ppppp/8/2p5/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2"]
+[Termination "max_plies_reached"]
+
+2. d4 e6 3. Be3 b6 4. Nc3 Nf6 5. h4 Nc6 6. a4 h5 7. dxc5 Bxc5 8. Bxc5 bxc5 9. e4 d5 10. Bb5 Qd7 11. Ne5 Nxe5 12. Bxd7+ Bxd7 13. exd5 exd5 14. Qe2 Ne4 15. f3 f5 16. Nxd5 Nxf3+ 17. gxf3 Bxa4 18. Rxa4 Rd8 19. fxe4 Kf8 20. Rxa7 g6 21. Nf4 Rd6 1/2-1/2
+
+[Event "Janus v0.36 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.30"]
+[Round "4"]
+[White "Reference"]
+[Black "Candidate"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pp1ppppp/8/2p5/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2"]
+[Termination "max_plies_reached"]
+
+2. d4 cxd4 3. Nxd4 e5 4. Nf5 d5 5. g4 h5 6. f3 g6 7. Ne3 Qh4+ 8. Kd2 hxg4 9. Nxd5 Bh6+ 10. Kd3 Bf5+ 11. e4 Bxc1 12. Nc7+ Kf8 13. Nxa8 Qd8+ 14. Ke2 gxf3+ 15. Kf2 Qxd1 16. exf5 Qxc2+ 17. Kg3 Bxb2 18. Na3 Qa4 19. Rb1 Qxa3 20. Bd3 Qxd3 21. Rxb2 b6 1/2-1/2
+

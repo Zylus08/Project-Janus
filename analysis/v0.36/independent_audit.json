@@ -1,0 +1,49 @@
+{
+  "timestamp_utc": "2026-10-30T07:31:44.808455+00:00",
+  "verdict": "VERIFIED_VALID",
+  "audit_checks": {
+    "target_games_met": true,
+    "attempt_accounting": true,
+    "candidate_policy_adaptive": true,
+    "reference_policy_reference": true,
+    "eval_all_enabled": true,
+    "time_control_parameters": true,
+    "opening_pair_symmetry": true,
+    "no_duplicate_games": true,
+    "csv_agreement": true,
+    "pgn_game_count": true,
+    "move_legality": true,
+    "moves_telemetry_valid": true,
+    "clock_accounting_consistent": true,
+    "statistics_reproducible": true,
+    "frozen_hashes_verified": true
+  },
+  "audit_notes": [],
+  "verified_sample": {
+    "valid_games": 100,
+    "opening_pairs": 50,
+    "total_moves_replayed": 8190,
+    "infrastructure_failures": 0
+  },
+  "independently_computed_statistics": {
+    "candidate_wins": 36,
+    "candidate_draws": 58,
+    "candidate_losses": 6,
+    "candidate_score": 65.0,
+    "candidate_score_pct": 65.0,
+    "estimated_elo_diff": 107.5,
+    "pairs_won": 27,
+    "pairs_drawn": 19,
+    "pairs_lost": 4,
+    "decisive_pairs": 31,
+    "mean_paired_delta": 0.15,
+    "se_paired_delta": 0.0295,
+    "t_statistic": 5.0932,
+    "t_test_two_sided_p_value": 1e-05,
+    "bootstrap_ci_95_score": [
+      0.595,
+      0.705
+    ],
+    "sign_test_p_value": 3e-05
+  }
+}

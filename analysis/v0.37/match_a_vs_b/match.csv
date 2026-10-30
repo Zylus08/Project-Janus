@@ -1,0 +1,101 @@
+comparison,game,pair,attempt_number,status,result,termination_reason,plies,candidate_arm,base_arm,candidate_color,candidate_won,candidate_points,opening_id,opening_name,duration_seconds,mean_cand_depth,mean_base_depth,mean_cand_time,mean_base_time
+a_vs_b,1,1,1,completed,1/2-1/2,max_plies_adjudication_draw,200,arm_b,arm_a,white,False,0.5,scotch_game,Scotch Game,19.42,2.89,3.13,0.102,0.093
+a_vs_b,2,1,1,completed,1/2-1/2,draw_fivefold_repetition,92,arm_b,arm_a,black,False,0.5,scotch_game,Scotch Game,8.95,2.67,2.8,0.103,0.091
+a_vs_b,3,2,1,completed,1/2-1/2,max_plies_adjudication_draw,200,arm_b,arm_a,white,False,0.5,italian_two_knights,Two Knights Defense,19.42,2.9,3.17,0.101,0.093
+a_vs_b,4,2,1,completed,1-0,checkmate_white_wins,161,arm_b,arm_a,black,False,0.0,italian_two_knights,Two Knights Defense,15.61,2.48,1.94,0.102,0.092
+a_vs_b,5,3,1,completed,0-1,checkmate_black_wins,122,arm_b,arm_a,white,False,0.0,b3_e5_nimzo_larsen,Nimzo-Larsen Attack,11.88,2.36,2.02,0.102,0.092
+a_vs_b,6,3,1,completed,0-1,checkmate_black_wins,76,arm_b,arm_a,black,True,1.0,b3_e5_nimzo_larsen,Nimzo-Larsen Attack,7.41,1.79,1.82,0.104,0.091
+a_vs_b,7,4,1,completed,1-0,checkmate_white_wins,89,arm_b,arm_a,white,True,1.0,d4_e6_horwitz_defense,Horwitz Defense,8.69,2.02,2.0,0.103,0.092
+a_vs_b,8,4,1,completed,0-1,checkmate_black_wins,146,arm_b,arm_a,black,True,1.0,d4_e6_horwitz_defense,Horwitz Defense,14.31,2.18,2.44,0.102,0.094
+a_vs_b,9,5,1,completed,0-1,checkmate_black_wins,76,arm_b,arm_a,white,False,0.0,e4_d6_pirc_defense,Pirc Defense,7.44,2.08,2.11,0.104,0.092
+a_vs_b,10,5,1,completed,0-1,checkmate_black_wins,104,arm_b,arm_a,black,True,1.0,e4_d6_pirc_defense,Pirc Defense,10.09,2.02,2.06,0.102,0.092
+a_vs_b,11,6,1,completed,0-1,checkmate_black_wins,64,arm_b,arm_a,white,False,0.0,queens_indian_defense,Queen's Indian Defense,6.22,1.88,1.56,0.104,0.09
+a_vs_b,12,6,1,completed,0-1,checkmate_black_wins,70,arm_b,arm_a,black,True,1.0,queens_indian_defense,Queen's Indian Defense,6.8,1.71,1.94,0.104,0.091
+a_vs_b,13,7,1,completed,1/2-1/2,max_plies_adjudication_draw,200,arm_b,arm_a,white,False,0.5,petroff_defense,Petroff Defense,19.42,2.89,3.14,0.101,0.093
+a_vs_b,14,7,1,completed,1/2-1/2,draw_fivefold_repetition,77,arm_b,arm_a,black,False,0.5,petroff_defense,Petroff Defense,7.48,2.5,2.33,0.104,0.091
+a_vs_b,15,8,1,completed,0-1,checkmate_black_wins,112,arm_b,arm_a,white,False,0.0,d4_Nf6_indian_defense,Indian Defense,10.89,2.41,2.05,0.103,0.092
+a_vs_b,16,8,1,completed,1-0,checkmate_white_wins,163,arm_b,arm_a,black,False,0.0,d4_Nf6_indian_defense,Indian Defense,15.83,3.14,2.45,0.102,0.093
+a_vs_b,17,9,1,completed,0-1,checkmate_black_wins,118,arm_b,arm_a,white,False,0.0,sicilian_dragon,Sicilian Dragon,11.47,2.61,1.85,0.102,0.092
+a_vs_b,18,9,1,completed,1/2-1/2,draw_fivefold_repetition,75,arm_b,arm_a,black,False,0.5,sicilian_dragon,Sicilian Dragon,7.31,2.05,2.11,0.104,0.091
+a_vs_b,19,10,1,completed,0-1,checkmate_black_wins,142,arm_b,arm_a,white,False,0.0,Nf3_d5_reti_opening,Reti Opening (1.Nf3 d5),13.83,2.51,2.24,0.102,0.093
+a_vs_b,20,10,1,completed,1-0,checkmate_white_wins,67,arm_b,arm_a,black,False,0.0,Nf3_d5_reti_opening,Reti Opening (1.Nf3 d5),6.69,1.45,1.29,0.105,0.094
+a_vs_b,21,11,1,completed,1-0,checkmate_white_wins,109,arm_b,arm_a,white,True,1.0,sicilian_scheveningen,Sicilian Scheveningen,10.8,1.78,2.11,0.103,0.094
+a_vs_b,22,11,1,completed,1-0,checkmate_white_wins,45,arm_b,arm_a,black,False,0.0,sicilian_scheveningen,Sicilian Scheveningen,4.51,1.14,0.96,0.107,0.094
+a_vs_b,23,12,1,completed,1/2-1/2,draw_fivefold_repetition,75,arm_b,arm_a,white,False,0.5,ruy_lopez_berlin,Ruy Lopez (Berlin Defense),7.55,1.24,1.05,0.105,0.095
+a_vs_b,24,12,1,completed,1-0,checkmate_white_wins,87,arm_b,arm_a,black,False,0.0,ruy_lopez_berlin,Ruy Lopez (Berlin Defense),8.72,1.88,1.5,0.104,0.096
+a_vs_b,25,13,1,completed,0-1,checkmate_black_wins,72,arm_b,arm_a,white,False,0.0,c4_e5_english_reversed_sicilian,English (Reversed Sicilian),7.12,1.67,1.47,0.105,0.093
+a_vs_b,26,13,1,completed,0-1,checkmate_black_wins,110,arm_b,arm_a,black,True,1.0,c4_e5_english_reversed_sicilian,English (Reversed Sicilian),10.98,1.6,1.91,0.103,0.096
+a_vs_b,27,14,1,completed,1-0,checkmate_white_wins,165,arm_b,arm_a,white,True,1.0,e4_c6_caro_kann,Caro-Kann Defense,16.64,1.58,1.62,0.103,0.098
+a_vs_b,28,14,1,completed,1-0,checkmate_white_wins,19,arm_b,arm_a,black,False,0.0,e4_c6_caro_kann,Caro-Kann Defense,1.88,1.33,1.3,0.115,0.083
+a_vs_b,29,15,1,completed,1-0,checkmate_white_wins,97,arm_b,arm_a,white,True,1.0,slav_defense,Slav Defense,9.64,1.73,1.98,0.103,0.095
+a_vs_b,30,15,1,completed,0-1,checkmate_black_wins,58,arm_b,arm_a,black,True,1.0,slav_defense,Slav Defense,5.78,1.31,1.21,0.106,0.093
+a_vs_b,31,16,1,completed,1/2-1/2,max_plies_adjudication_draw,200,arm_b,arm_a,white,False,0.5,queens_gambit_declined,Queen's Gambit Declined,20.05,2.08,2.74,0.102,0.098
+a_vs_b,32,16,1,completed,1/2-1/2,draw_fivefold_repetition,140,arm_b,arm_a,black,False,0.5,queens_gambit_declined,Queen's Gambit Declined,13.88,3.56,2.27,0.101,0.096
+a_vs_b,33,17,1,completed,1-0,checkmate_white_wins,37,arm_b,arm_a,white,True,1.0,d4_f5_dutch_defense,Dutch Defense,3.7,1.42,1.5,0.109,0.089
+a_vs_b,34,17,1,completed,1-0,checkmate_white_wins,37,arm_b,arm_a,black,False,0.0,d4_f5_dutch_defense,Dutch Defense,3.67,1.61,1.42,0.108,0.091
+a_vs_b,35,18,1,completed,1/2-1/2,draw_fivefold_repetition,51,arm_b,arm_a,white,False,0.5,four_knights_game,Four Knights Game,5.06,1.08,1.32,0.105,0.093
+a_vs_b,36,18,1,completed,1-0,checkmate_white_wins,47,arm_b,arm_a,black,False,0.0,four_knights_game,Four Knights Game,4.72,1.3,1.04,0.108,0.093
+a_vs_b,37,19,1,completed,0-1,checkmate_black_wins,82,arm_b,arm_a,white,False,0.0,french_winawer,French Winawer,8.11,2.1,1.68,0.104,0.094
+a_vs_b,38,19,1,completed,0-1,checkmate_black_wins,116,arm_b,arm_a,black,True,1.0,french_winawer,French Winawer,11.51,1.67,2.09,0.102,0.096
+a_vs_b,39,20,1,completed,1/2-1/2,draw_fivefold_repetition,55,arm_b,arm_a,white,False,0.5,e4_e5_open_game,King's Pawn Game,5.5,1.11,1.33,0.105,0.095
+a_vs_b,40,20,1,completed,1-0,checkmate_white_wins,63,arm_b,arm_a,black,False,0.0,e4_e5_open_game,King's Pawn Game,6.25,1.55,1.12,0.105,0.093
+a_vs_b,41,21,1,completed,0-1,checkmate_black_wins,168,arm_b,arm_a,white,False,0.0,gruenfeld_defense,Gruenfeld Defense,16.72,2.36,2.14,0.102,0.097
+a_vs_b,42,21,1,completed,1-0,checkmate_white_wins,61,arm_b,arm_a,black,False,0.0,gruenfeld_defense,Gruenfeld Defense,6.12,1.23,1.26,0.105,0.095
+a_vs_b,43,22,1,completed,0-1,checkmate_black_wins,128,arm_b,arm_a,white,False,0.0,Nf3_c5_reti_anglo_slav,Reti Opening (1.Nf3 c5),12.7,2.16,1.8,0.103,0.095
+a_vs_b,44,22,1,completed,0-1,checkmate_black_wins,106,arm_b,arm_a,black,True,1.0,Nf3_c5_reti_anglo_slav,Reti Opening (1.Nf3 c5),10.49,1.81,2.28,0.103,0.094
+a_vs_b,45,23,1,completed,0-1,checkmate_black_wins,79,arm_b,arm_a,white,False,0.0,french_advance,French Advance,7.81,1.72,1.5,0.104,0.093
+a_vs_b,46,23,1,completed,0-1,checkmate_black_wins,79,arm_b,arm_a,black,True,1.0,french_advance,French Advance,7.89,1.5,1.64,0.105,0.095
+a_vs_b,47,24,1,completed,0-1,checkmate_black_wins,56,arm_b,arm_a,white,False,0.0,london_system,London System,5.61,1.64,1.43,0.105,0.094
+a_vs_b,48,24,1,completed,0-1,checkmate_black_wins,90,arm_b,arm_a,black,True,1.0,london_system,London System,9.03,1.4,1.38,0.103,0.096
+a_vs_b,49,25,1,completed,1/2-1/2,draw_fivefold_repetition,70,arm_b,arm_a,white,False,0.5,catalan_opening,Catalan Opening,6.92,1.46,1.23,0.104,0.094
+a_vs_b,50,25,1,completed,1/2-1/2,draw_fivefold_repetition,115,arm_b,arm_a,black,False,0.5,catalan_opening,Catalan Opening,11.19,3.05,3.23,0.102,0.092
+a_vs_b,51,26,1,completed,1/2-1/2,draw_fivefold_repetition,120,arm_b,arm_a,white,False,0.5,sicilian_classical,Sicilian Classical,12.3,2.93,3.02,0.106,0.098
+a_vs_b,52,26,1,completed,1-0,checkmate_white_wins,87,arm_b,arm_a,black,False,0.0,sicilian_classical,Sicilian Classical,8.58,2.44,2.14,0.103,0.094
+a_vs_b,53,27,1,completed,0-1,checkmate_black_wins,94,arm_b,arm_a,white,False,0.0,sicilian_najdorf,Sicilian Najdorf,9.38,1.79,1.47,0.104,0.095
+a_vs_b,54,27,1,completed,1-0,checkmate_white_wins,123,arm_b,arm_a,black,False,0.0,sicilian_najdorf,Sicilian Najdorf,12.16,2.48,2.11,0.103,0.095
+a_vs_b,55,28,1,completed,0-1,checkmate_black_wins,82,arm_b,arm_a,white,False,0.0,ruy_lopez_morphy,Ruy Lopez (Morphy Defense),8.09,1.83,1.56,0.103,0.094
+a_vs_b,56,28,1,completed,0-1,checkmate_black_wins,58,arm_b,arm_a,black,True,1.0,ruy_lopez_morphy,Ruy Lopez (Morphy Defense),5.76,1.48,1.45,0.106,0.093
+a_vs_b,57,29,1,completed,1-0,checkmate_white_wins,89,arm_b,arm_a,white,True,1.0,italian_giuoco_piano,Giuoco Piano,8.83,1.53,1.77,0.104,0.094
+a_vs_b,58,29,1,completed,0-1,checkmate_black_wins,116,arm_b,arm_a,black,True,1.0,italian_giuoco_piano,Giuoco Piano,11.59,1.88,1.79,0.104,0.096
+a_vs_b,59,30,1,completed,1/2-1/2,draw_insufficient_material,160,arm_b,arm_a,white,False,0.5,kings_indian_classical,King's Indian Classical,16.03,2.46,2.12,0.103,0.096
+a_vs_b,60,30,1,completed,0-1,checkmate_black_wins,105,arm_b,arm_a,black,True,1.0,kings_indian_classical,King's Indian Classical,10.81,1.77,2.0,0.107,0.098
+a_vs_b,61,31,1,completed,1-0,checkmate_white_wins,80,arm_b,arm_a,white,True,1.0,bogo_indian_defense,Bogo-Indian Defense,8.17,1.5,1.57,0.107,0.097
+a_vs_b,62,31,1,completed,1-0,checkmate_white_wins,64,arm_b,arm_a,black,False,0.0,bogo_indian_defense,Bogo-Indian Defense,6.52,1.25,1.22,0.107,0.096
+a_vs_b,63,32,1,completed,0-1,checkmate_black_wins,68,arm_b,arm_a,white,False,0.0,caro_kann_classical,Caro-Kann Classical,7.0,1.18,1.12,0.108,0.097
+a_vs_b,64,32,1,completed,0-1,checkmate_black_wins,94,arm_b,arm_a,black,True,1.0,caro_kann_classical,Caro-Kann Classical,9.59,1.55,1.77,0.107,0.096
+a_vs_b,65,33,1,completed,1/2-1/2,draw_fivefold_repetition,114,arm_b,arm_a,white,False,0.5,sicilian_alapin,Sicilian Alapin,11.58,2.63,2.23,0.105,0.098
+a_vs_b,66,33,1,completed,0-1,checkmate_black_wins,51,arm_b,arm_a,black,True,1.0,sicilian_alapin,Sicilian Alapin,5.22,1.5,1.32,0.109,0.093
+a_vs_b,67,34,1,completed,1-0,checkmate_white_wins,115,arm_b,arm_a,white,True,1.0,nimzo_indian_rubinstein,Nimzo-Indian Rubinstein,11.95,1.71,1.95,0.109,0.098
+a_vs_b,68,34,1,completed,0-1,checkmate_black_wins,110,arm_b,arm_a,black,True,1.0,nimzo_indian_rubinstein,Nimzo-Indian Rubinstein,11.3,1.98,2.16,0.107,0.097
+a_vs_b,69,35,1,completed,0-1,checkmate_black_wins,106,arm_b,arm_a,white,False,0.0,c4_c5_english_symmetrical,English (Symmetrical),10.98,2.3,1.91,0.109,0.098
+a_vs_b,70,35,1,completed,1-0,checkmate_white_wins,49,arm_b,arm_a,black,False,0.0,c4_c5_english_symmetrical,English (Symmetrical),4.91,1.88,1.68,0.107,0.093
+a_vs_b,71,36,1,completed,0-1,checkmate_black_wins,84,arm_b,arm_a,white,False,0.0,english_four_knights,English Four Knights,8.61,1.57,1.48,0.107,0.096
+a_vs_b,72,36,1,completed,0-1,checkmate_black_wins,94,arm_b,arm_a,black,True,1.0,english_four_knights,English Four Knights,9.67,1.64,1.7,0.107,0.097
+a_vs_b,73,37,1,completed,0-1,checkmate_black_wins,90,arm_b,arm_a,white,False,0.0,benoni_defense,Modern Benoni,9.28,1.82,1.42,0.107,0.098
+a_vs_b,74,37,1,completed,1-0,checkmate_white_wins,65,arm_b,arm_a,black,False,0.0,benoni_defense,Modern Benoni,6.64,1.47,1.27,0.108,0.095
+a_vs_b,75,38,1,completed,0-1,checkmate_black_wins,88,arm_b,arm_a,white,False,0.0,e4_e6_french_defense,French Defense,9.16,1.61,1.36,0.11,0.097
+a_vs_b,76,38,1,completed,0-1,checkmate_black_wins,62,arm_b,arm_a,black,True,1.0,e4_e6_french_defense,French Defense,6.33,1.52,1.32,0.108,0.096
+a_vs_b,77,39,1,completed,1-0,checkmate_white_wins,171,arm_b,arm_a,white,True,1.0,philidor_defense,Philidor Defense,17.7,2.14,2.13,0.107,0.099
+a_vs_b,78,39,1,completed,0-1,checkmate_black_wins,78,arm_b,arm_a,black,True,1.0,philidor_defense,Philidor Defense,8.03,1.9,1.49,0.109,0.097
+a_vs_b,79,40,1,completed,1-0,checkmate_white_wins,70,arm_b,arm_a,white,True,1.0,caro_kann_advance,Caro-Kann Advance,7.25,1.29,1.29,0.109,0.097
+a_vs_b,80,40,1,completed,1/2-1/2,draw_fivefold_repetition,81,arm_b,arm_a,black,False,0.5,caro_kann_advance,Caro-Kann Advance,8.33,1.44,1.15,0.108,0.097
+a_vs_b,81,41,1,completed,1/2-1/2,draw_fivefold_repetition,104,arm_b,arm_a,white,False,0.5,e4_d5_scandinavian,Scandinavian Defense,10.56,1.69,1.79,0.105,0.098
+a_vs_b,82,41,1,completed,1-0,checkmate_white_wins,79,arm_b,arm_a,black,False,0.0,e4_d5_scandinavian,Scandinavian Defense,8.09,1.62,1.48,0.108,0.097
+a_vs_b,83,42,1,completed,0-1,checkmate_black_wins,113,arm_b,arm_a,white,False,0.0,french_tarrasch,French Tarrasch,11.74,1.98,1.74,0.109,0.098
+a_vs_b,84,42,1,completed,0-1,checkmate_black_wins,87,arm_b,arm_a,black,True,1.0,french_tarrasch,French Tarrasch,8.97,1.5,1.6,0.108,0.097
+a_vs_b,85,43,1,completed,1-0,checkmate_white_wins,121,arm_b,arm_a,white,True,1.0,e4_Nf6_alekhine,Alekhine Defense,8295.5,1.33,1.78,135.878,0.115
+a_vs_b,86,43,1,completed,1/2-1/2,draw_fivefold_repetition,57,arm_b,arm_a,black,False,0.5,e4_Nf6_alekhine,Alekhine Defense,10.39,1.11,0.86,0.173,0.191
+a_vs_b,87,44,1,completed,1-0,checkmate_white_wins,35,arm_b,arm_a,white,True,1.0,d4_d5_closed_game,Queen's Pawn Game,3.69,1.61,1.47,0.114,0.095
+a_vs_b,88,44,1,completed,1-0,checkmate_white_wins,141,arm_b,arm_a,black,False,0.0,d4_d5_closed_game,Queen's Pawn Game,17.31,1.29,1.32,0.134,0.11
+a_vs_b,89,45,1,completed,0-1,checkmate_black_wins,84,arm_b,arm_a,white,False,0.0,c4_Nf6_english_anglo_indian,English (Anglo-Indian),11.92,1.17,1.14,0.144,0.138
+a_vs_b,90,45,1,completed,1/2-1/2,draw_fivefold_repetition,142,arm_b,arm_a,black,False,0.5,c4_Nf6_english_anglo_indian,English (Anglo-Indian),16.34,2.08,1.66,0.121,0.108
+a_vs_b,91,46,1,completed,1-0,checkmate_white_wins,123,arm_b,arm_a,white,True,1.0,c4_e6_english_agincourt,English (Agincourt Defense),13.19,1.47,1.61,0.111,0.102
+a_vs_b,92,46,1,completed,0-1,checkmate_black_wins,176,arm_b,arm_a,black,True,1.0,c4_e6_english_agincourt,English (Agincourt Defense),19.09,1.64,1.84,0.11,0.105
+a_vs_b,93,47,1,completed,0-1,checkmate_black_wins,88,arm_b,arm_a,white,False,0.0,Nf3_Nf6_reti_symmetrical,Reti Opening (1.Nf3 Nf6),9.3,1.05,0.89,0.114,0.097
+a_vs_b,94,47,1,completed,1/2-1/2,draw_fivefold_repetition,86,arm_b,arm_a,black,False,0.5,Nf3_Nf6_reti_symmetrical,Reti Opening (1.Nf3 Nf6),9.11,1.23,1.07,0.113,0.098
+a_vs_b,95,48,1,completed,1-0,checkmate_white_wins,63,arm_b,arm_a,white,True,1.0,e4_c5_sicilian_defense,Sicilian Defense,6.7,1.62,1.81,0.115,0.097
+a_vs_b,96,48,1,completed,1-0,checkmate_white_wins,41,arm_b,arm_a,black,False,0.0,e4_c5_sicilian_defense,Sicilian Defense,4.17,1.3,1.43,0.111,0.093
+a_vs_b,97,49,1,completed,0-1,checkmate_black_wins,82,arm_b,arm_a,white,False,0.0,e4_g6_modern_defense,Modern Defense,8.53,1.56,1.24,0.109,0.097
+a_vs_b,98,49,1,completed,0-1,checkmate_black_wins,58,arm_b,arm_a,black,True,1.0,e4_g6_modern_defense,Modern Defense,6.12,1.38,1.24,0.113,0.096
+a_vs_b,99,50,1,completed,1-0,checkmate_white_wins,57,arm_b,arm_a,white,True,1.0,queens_gambit_accepted,Queen's Gambit Accepted,6.39,1.38,1.36,0.121,0.103
+a_vs_b,100,50,1,completed,0-1,checkmate_black_wins,118,arm_b,arm_a,black,True,1.0,queens_gambit_accepted,Queen's Gambit Accepted,12.62,1.68,1.95,0.11,0.101

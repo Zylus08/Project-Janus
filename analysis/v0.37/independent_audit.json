@@ -1,0 +1,98 @@
+{
+  "milestone": "v0.37",
+  "comparisons": {
+    "b_vs_c": {
+      "passed": true,
+      "checks": {
+        "game_count_100": true,
+        "pairs_count_50": true,
+        "candidate_arm_correct": true,
+        "base_arm_correct": true,
+        "time_control_3000_100": true,
+        "color_reversal_valid": true,
+        "pgn_game_count_match": true,
+        "all_moves_legal": true,
+        "csv_game_count_match": true,
+        "clocks_non_negative": true
+      },
+      "errors": [],
+      "recalculated_stats": {
+        "candidate_points": 70.5,
+        "score_percentage": 70.5,
+        "mean_pair_delta": 0.205,
+        "std_pair_delta": 0.3222,
+        "standard_error": 0.04556,
+        "t_statistic": 4.4992,
+        "degrees_of_freedom": 49,
+        "t_p_value": 4.203333196128867e-05,
+        "pairs_count": 50
+      }
+    },
+    "a_vs_b": {
+      "passed": true,
+      "checks": {
+        "game_count_100": true,
+        "pairs_count_50": true,
+        "candidate_arm_correct": true,
+        "base_arm_correct": true,
+        "time_control_3000_100": true,
+        "color_reversal_valid": true,
+        "pgn_game_count_match": true,
+        "all_moves_legal": true,
+        "csv_game_count_match": true,
+        "clocks_non_negative": true
+      },
+      "errors": [],
+      "recalculated_stats": {
+        "candidate_points": 48.5,
+        "score_percentage": 48.5,
+        "mean_pair_delta": -0.015,
+        "std_pair_delta": 0.2875,
+        "standard_error": 0.04066,
+        "t_statistic": -0.3689,
+        "degrees_of_freedom": 49,
+        "t_p_value": 0.7138096724565806,
+        "pairs_count": 50
+      }
+    },
+    "a_vs_c": {
+      "passed": true,
+      "checks": {
+        "game_count_100": true,
+        "pairs_count_50": true,
+        "candidate_arm_correct": true,
+        "base_arm_correct": true,
+        "time_control_3000_100": true,
+        "color_reversal_valid": true,
+        "pgn_game_count_match": true,
+        "all_moves_legal": true,
+        "csv_game_count_match": true,
+        "clocks_non_negative": true
+      },
+      "errors": [],
+      "recalculated_stats": {
+        "candidate_points": 74.0,
+        "score_percentage": 74.0,
+        "mean_pair_delta": 0.24,
+        "std_pair_delta": 0.2718,
+        "standard_error": 0.03844,
+        "t_statistic": 6.2437,
+        "degrees_of_freedom": 49,
+        "t_p_value": 9.84542447568515e-08,
+        "pairs_count": 50
+      }
+    }
+  },
+  "overall_checks": {
+    "single_parameter_difference_b_vs_c": true,
+    "qualification_passed": true,
+    "statistical_analysis_reconciled": true,
+    "sha256_manifest_verified": true,
+    "total_games_300": true
+  },
+  "sha256_verification": {
+    "errors": []
+  },
+  "verdict": "VERIFIED_VALID",
+  "limitations": []
+}

@@ -1,0 +1,280 @@
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "1"]
+[White "Candidate"]
+[Black "Reference"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"]
+[Termination "max_plies_reached"]
+
+3... Nf6 4. d5 Ne7 5. Bd3 d6 6. Be3 h5 7. Nc3 c5 8. h4 a5 9. a4 Bd7 10. g3 g6 11. b3 b6 12. Ng5 Bg7 13. f4 exf4 14. Bxf4 Rg8 15. Bxd6 Rh8 16. Be5 Rg8 17. d6 Rh8 18. dxe7 Rg8 19. exd8=Q+ Rxd8 20. Nd5 Nxe4 21. Bxg7 Nxg5 22. Nf6+ Ke7 23. Nxg8+ Rxg8 24. Be5 Bg4 25. Be2 Bxe2 26. Qxe2 Ne6 27. Bc7 Re8 28. Bxb6 f5 29. Rd1 c4 30. Qxc4 Ra8 31. Rd5 Re8 32. Bxa5 Kf6 33. O-O Re7 34. b4 Re8 35. b5 Re7 36. b6 Re8 37. b7 Ke7 38. Qb4+ Kf6 39. b8=Q Rxb8 40. Qxb8 Ke7 41. c4 Kf6 42. Qd6 Kf7 43. Rdxf5+ gxf5 44. Rxf5+ Kg7 45. Qe7+ Kh8 46. Rxh5+ Kg8 47. Qxe6+ Kf8 48. Rf5+ Kg7 49. h5 Kh8 50. h6 Kh7 51. c5 Kh8 52. c6 Kh7 53. c7 1/2-1/2
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "2"]
+[White "Reference"]
+[Black "Candidate"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"]
+[Termination "threefold_repetition"]
+
+3... Nf6 4. Nc3 Bd6 5. Bc4 h5 6. Bxf7+ Kxf7 7. Be3 Rf8 8. h4 a5 9. a4 g6 10. d5 Ne7 11. Ng5+ Ke8 12. Nb5 Bb4+ 13. c3 Bd6 14. Nxd6+ cxd6 15. b4 Ng4 16. Nh7 Nxe3 17. fxe3 Rf7 18. Ng5 Rf8 19. g4 hxg4 20. Qxg4 b6 21. Rf1 Rxf1+ 22. Kxf1 Qc7 23. Ra3 Qc4+ 24. Qe2 Qxe2+ 25. Kxe2 Bb7 26. Rb3 axb4 27. Rxb4 Ra6 28. c4 Kd8 29. Kd3 Ke8 30. Nf3 Kf7 31. Nd2 Kf6 32. Nf3 Bc8 33. Ng5 Bb7 34. Nf3 Bc8 35. Ng5 Bb7 1/2-1/2
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "3"]
+[White "Candidate"]
+[Black "Reference"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"]
+[Termination "checkmate"]
+
+4. Nc3 Bd6 5. h4 h5 6. Ng5 Rf8 7. a4 a5 8. Nd5 Nd4 9. c3 Nxd5 10. Bxd5 Rh8 11. Nxf7 Nf3+ 12. gxf3 Qe7 13. Nxh8 Qf8 14. Nf7 c5 15. d4 Qe7 16. Nxd6+ Qxd6 17. f4 exd4 18. Qxh5+ g6 19. Qh8+ Qf8 20. Qe5+ Qe7 21. cxd4 Qxe5 22. dxe5 Ra6 23. Be3 b6 24. Rg1 Ke7 25. Rc1 Ke8 26. f3 Ke7 27. b3 Ke8 28. Rxg6 Ke7 29. Rg8 Bb7 30. Bxb7 Ra7 31. Bd5 Rc7 32. Rg6 Rc8 33. Rxb6 c4 34. Rxc4 Rxc4 35. Bxc4 Kf8 36. Ra6 Ke8 37. h5 Kf8 38. h6 d6 39. exd6 Ke8 40. h7 Kd7 41. e5 Kd8 42. Ra7 Ke8 43. h8=Q# 1-0
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "4"]
+[White "Reference"]
+[Black "Candidate"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"]
+[Termination "checkmate"]
+
+4. Nc3 Bb4 5. d3 d5 6. Bb5 Bg4 7. Bxc6+ bxc6 8. Ng5 Bxd1 9. Nxh7 Bxc2 10. Nxf6+ Qxf6 11. exd5 cxd5 12. Ke2 c6 13. Be3 g5 14. Rhc1 Bxc3 15. Rxc2 Bd4 16. Bxd4 exd4 17. Rac1 Qe7+ 18. Kf1 Rb8 19. Rxc6 Rxh2 20. Kg1 Qe5 21. g3 Rh8 22. b3 f5 23. R6c5 f4 24. Kg2 a6 25. gxf4 gxf4 26. R1c2 Qf5 27. Re2+ Kd7 28. Rd2 Qh3+ 29. Kg1 Rhg8# 0-1
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "5"]
+[White "Candidate"]
+[Black "Reference"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppp1ppp/8/4p3/8/1P6/P1PPPPPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "checkmate"]
+
+2. Nf3 Bd6 3. Nc3 Ne7 4. Nb5 Nbc6 5. Nxd6+ cxd6 6. h4 e4 7. Ng5 f5 8. g4 h6 9. Nh3 fxg4 10. Nf4 b5 11. e3 a6 12. Bg2 d5 13. Qxg4 O-O 14. d4 d6 15. Qh5 Bf5 16. a4 b4 17. Bd2 Rc8 18. a5 Kh8 19. Rg1 Kg8 20. Qe8 Qxe8 21. h5 Rf7 22. c3 bxc3 23. Bxc3 Qf8 24. Bf1 Nd8 25. Rc1 Rc6 26. Be2 Ne6 27. Nxe6 Bxe6 28. Rg2 Nf5 29. b4 Rfc7 30. Kd2 Qe8 31. Rg6 Qc8 32. Bb2 Rc2+ 33. Rxc2 Rxc2+ 34. Ke1 Rxb2 35. Bxa6 Qc1# 0-1
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "6"]
+[White "Reference"]
+[Black "Candidate"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppp1ppp/8/4p3/8/1P6/P1PPPPPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "checkmate"]
+
+2. Nf3 Bd6 3. Nc3 Ne7 4. Nb5 Nbc6 5. Nxd6+ cxd6 6. h4 e4 7. Ng5 f5 8. g4 h6 9. Nh3 fxg4 10. Nf4 b5 11. d4 Nf5 12. d5 Ne5 13. Bg2 Qa5+ 14. Bd2 Qd8 15. h5 e3 16. fxe3 O-O 17. a4 Ng3 18. Rg1 Qb6 19. a5 Qd8 20. e4 a6 21. b4 Kh8 22. e3 Kg8 23. c3 Kh8 24. Ng6+ Nxg6 25. hxg6 Qh4 26. Qb3 Nxe4+ 27. Kd1 Qf2 28. Bxe4 Qxg1+ 29. Be1 Qxe3 30. Qc2 Re8 31. Bg3 Qxg3 32. Ra3 Qe5 33. Bg2 Qe1# 0-1
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "7"]
+[White "Candidate"]
+[Black "Reference"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "checkmate"]
+
+2. Nf3 Ne7 3. Nc3 Nbc6 4. Bf4 h5 5. h4 f5 6. e4 d5 7. e5 a5 8. Bd3 Nb4 9. Be2 a4 10. a3 Nbc6 11. b3 Ng6 12. Bg5 Rg8 13. Bxd8 Nxd8 14. Bb5+ c6 15. Bxa4 b5 16. Nxb5 cxb5 17. Bxb5+ Ke7 18. b4 Nf4 19. g3 Ng2+ 20. Kf1 Rb8 21. Bd3 Nxh4 22. Rxh4 g6 23. c4 dxc4 24. Bxc4 Bd7 25. Rc1 Bh6 26. Nd2 Rc8 27. f4 Nc6 28. d5 exd5 29. Bxd5 Rgd8 30. e6 Be8 31. Nf3 Rd6 32. b5 Rcd8 33. Rc5 Na5 34. Rc7+ Kf6 35. Qd4# 1-0
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "8"]
+[White "Reference"]
+[Black "Candidate"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "threefold_repetition"]
+
+2. Nf3 Ne7 3. Bf4 Nd5 4. Be5 Nc6 5. Bg3 Bd6 6. Bxd6 cxd6 7. Nbd2 h5 8. h4 f5 9. e4 fxe4 10. Nxe4 Qa5+ 11. c3 Qc7 12. Bc4 Nf6 13. Nxf6+ gxf6 14. d5 Ne5 15. Nxe5 dxe5 16. b3 exd5 17. Qxd5 d6 18. O-O-O Bf5 19. Qxd6 Qxd6 20. Rxd6 Ke7 21. Rhd1 Rhd8 22. R6d5 Be4 23. Rxd8 Rxd8 24. f3 Rxd1+ 25. Kxd1 Bf5 26. a4 a5 27. b4 b6 28. b5 Be6 29. Bxe6 Kxe6 30. c4 f5 31. Ke2 f4 32. Kd2 Kf6 33. Kc3 Ke6 34. Kd2 Kf7 35. Kd3 Ke7 36. Kc3 Ke6 1/2-1/2
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "9"]
+[White "Candidate"]
+[Black "Reference"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/ppp1pppp/3p4/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "threefold_repetition"]
+
+2. Nf3 Nf6 3. Bd3 Be6 4. Nd4 Bd7 5. Nc3 Nc6 6. Nxc6 Bxc6 7. h4 h5 8. f4 e5 9. f5 a5 10. a4 Be7 11. g3 g6 12. Bb5 Qd7 13. Bxc6 Qxc6 14. Qf3 b6 15. d3 Nd7 16. Be3 Nc5 17. f6 Bd8 18. d4 Ne6 19. d5 Qd7 20. dxe6 Qxe6 21. Nd5 c5 22. O-O-O Qg4 23. Qg2 Qc8 24. c3 Qe6 25. Qf3 Qg4 26. Qg2 Qe6 27. Qf3 Qg4 28. Qg2 1/2-1/2
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "10"]
+[White "Reference"]
+[Black "Candidate"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/ppp1pppp/3p4/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "max_plies_reached"]
+
+2. Nf3 Nf6 3. Bd3 Be6 4. Nd4 Bg4 5. f3 Bd7 6. Nc3 e5 7. Nf5 g6 8. Ne3 Nc6 9. h4 h5 10. a4 a5 11. g4 Nd4 12. Nf5 gxf5 13. exf5 c5 14. g5 c4 15. Bxc4 Bxf5 16. d3 d5 17. Ba2 Rg8 18. gxf6 Bb4 19. Be3 Qb6 20. Bg5 Qd8 21. Bh6 Qxf6 22. Be3 Rh8 23. Bxd5 Rg8 24. Bxb7 Rh8 25. Bxa8 Rg8 26. Bd5 Bd6 27. Ne4 Bb4+ 28. c3 Qd8 29. Ba8 Qxa8 30. Nf6+ Kf8 31. Nxg8 Nxf3+ 32. Kf2 Bd6 33. Qxf3 Qxf3+ 34. Kxf3 Bg4+ 35. Ke4 Kxg8 36. Kd5 Bc7 37. Rhg1 f5 38. c4 f4 39. Kc6 Bd8 40. Bb6 Bxh4 41. Kd5 Bf6 42. Raf1 Kf7 43. Bxa5 Be2 44. Rf2 Bxd3 45. Bc3 Bh4 46. Rh2 Bf6 47. Rxh5 Bg6 48. Rh6 Bd3 49. Bxe5 Bxc4+ 50. Kxc4 Bxe5 51. Rh7+ Kf8 1/2-1/2
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "11"]
+[White "Candidate"]
+[Black "Reference"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 0 4"]
+[Termination "threefold_repetition"]
+
+4. Bf4 Bd6 5. Bxd6 cxd6 6. Nc3 Nc6 7. d5 Ne5 8. e4 h5 9. h4 Rg8 10. b4 a5 11. b5 g6 12. a4 Nfg4 13. Nd4 f5 14. f4 Ne3 15. Nxe6 dxe6 16. Ne2 Nxd1 17. fxe5 Rh8 18. Rxd1 fxe4 19. dxe6 Bxe6 20. Nf4 Bg4 21. Rxd6 Qb8 22. Nd5 Rf8 23. Nxb6 Ra7 24. Be2 Bxe2 25. Kxe2 Raf7 26. Rhd1 Rf2+ 27. Ke3 R8f4 28. Nd5 Qa7+ 29. b6 Qf7 30. Nxf4 Qxf4+ 31. Kd4 e3+ 32. Kd5 Rxg2 33. Re6+ Kd7 34. Rd6+ Ke8 35. Re6+ Kd7 36. Rd6+ 1/2-1/2
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "12"]
+[White "Reference"]
+[Black "Candidate"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 0 4"]
+[Termination "checkmate"]
+
+4. Bf4 Bd6 5. Bxd6 cxd6 6. Nc3 h5 7. h4 Nc6 8. d5 Ne5 9. e4 a5 10. a4 g6 11. Nd4 Qe7 12. f4 Neg4 13. Bd3 e5 14. Nde2 Ne3 15. Bc2 Nxd1 16. Rxd1 Bb7 17. Bd3 Rc8 18. f5 gxf5 19. exf5 e4 20. Bc2 Rxc4 21. g3 e3 22. Bd3 Rc8 23. Nf4 Rg8 24. Rh3 Rg7 25. Ke2 Kd8 26. Rc1 Ke8 27. b3 Kd8 28. Bc4 Ke8 29. Kd3 Kd8 30. Kd4 Ke8 31. Nd3 e2 32. Ba6 Bxa6 33. Rh2 Rg4+ 34. Nf4 Qe5# 0-1
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "13"]
+[White "Candidate"]
+[Black "Reference"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3"]
+[Termination "max_plies_reached"]
+
+3. Bc4 Bd6 4. Nc3 Nc6 5. h4 h5 6. Ng5 Rf8 7. a4 a5 8. Nd5 Nd4 9. g3 c5 10. f3 Nxd5 11. Bxd5 f5 12. c3 Nc6 13. f4 Rh8 14. Bf7+ Kf8 15. exf5 exf4 16. gxf4 Qe7+ 17. Kf2 Bxf4 18. Bxh5 Bxg5 19. hxg5 Qxg5 20. Bg6 Rxh1 21. Qxh1 Qf4+ 22. Qf3 Qh4+ 23. Qg3 Qxg3+ 24. Kxg3 Ne7 25. Bh7 d5 26. Kf4 c4 27. Ra3 Bd7 28. b3 Re8 29. Ke5 b6 30. Bb2 Kf7 31. Bc1 Rh8 32. Bg6+ Nxg6+ 33. fxg6+ Kxg6 34. Kxd5 Rh1 35. Kd6 Bf5 36. Bb2 Rb1 37. Ba1 cxb3 38. c4 b2 39. Rg3+ Kf6 40. Bxb2+ Rxb2 41. Kc7 Rxd2 42. Kxb6 Rd4 43. Kc5 Rd8 44. Kb5 Bd3 45. Rf3+ Ke5 46. Kxa5 Bxc4 47. Re3+ Kd4 48. Re1 g5 49. Rd1+ Bd3 50. Rg1 Rd5+ 51. Kb4 Be2 52. Re1 Bc4 1/2-1/2
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "14"]
+[White "Reference"]
+[Black "Candidate"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3"]
+[Termination "checkmate"]
+
+3. Bc4 Bd6 4. Nc3 Nc6 5. h4 h5 6. d4 a5 7. Bxf7+ Kxf7 8. Be3 Rf8 9. a4 g6 10. d5 Ne7 11. Ng5+ Ke8 12. g3 c5 13. f3 b6 14. Nb5 Bb8 15. c4 d6 16. b3 Bd7 17. Ne6 Bxe6 18. dxe6 Ra6 19. Nc3 Qc8 20. Bh6 Rg8 21. Be3 Qxe6 22. Nd5 Rf8 23. Qd3 Nexd5 24. exd5 Qg8 25. Qc3 Bc7 26. Qd3 Qh7 27. Qe2 Rf7 28. g4 e4 29. g5 exf3 30. Qxf3 Nd7 31. Qh3 Qh8 32. Qe6+ Kd8 33. Ra3 Qc3+ 34. Bd2 Qg3+ 35. Kd1 Ne5 36. Re1 Nxc4 37. Qe8# 1-0
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "15"]
+[White "Candidate"]
+[Black "Reference"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"]
+[Termination "threefold_repetition"]
+
+2. Nf3 Nc6 3. d5 Nb4 4. Nc3 h5 5. a3 Na6 6. Be3 e6 7. h4 Bd6 8. b4 exd5 9. Nxd5 c5 10. Bg5 cxb4 11. Nxf6+ gxf6 12. Qxd6 fxg5 13. Qe5+ Kf8 14. Qxh8+ Ke7 15. Qe5+ Kf8 16. Qh8+ Ke7 17. Qe5+ Kf8 1/2-1/2
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "16"]
+[White "Reference"]
+[Black "Candidate"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"]
+[Termination "checkmate"]
+
+2. Nf3 h5 3. Bf4 Nd5 4. Be5 Nc6 5. Bg3 f5 6. c4 Nf6 7. d5 Nb4 8. Be5 Ng4 9. Bd4 a5 10. Nc3 e6 11. h3 Nf6 12. a3 Na6 13. Ne5 Bd6 14. Nf7 Kxf7 15. Ba7 Rxa7 16. h4 Nc5 17. b4 Nfe4 18. Nxe4 Nxe4 19. Rh3 axb4 20. Rg3 Nxg3 21. fxg3 Bxg3+ 22. Kd2 exd5 23. cxd5 Rxa3 24. Rxa3 bxa3 25. Qa4 Qe7 26. Qa5 Qd6 27. e3 b6 28. Qa8 Qb4+ 29. Ke2 Qe1+ 30. Kd3 Ba6+ 31. Qxa6 Qxf1+ 32. Kc3 Qxa6 33. Kd4 a2 34. Kc3 a1=Q+ 35. Kd2 Q6a2+ 36. Kd3 Qxd5+ 37. Ke2 Qdd1# 0-1
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "17"]
+[White "Candidate"]
+[Black "Reference"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pp2pp1p/3p1np1/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6"]
+[Termination "max_plies_reached"]
+
+6. Bc4 Nbd7 7. Bf4 h5 8. h4 e5 9. Be3 exd4 10. Bxd4 a5 11. f4 Be7 12. a4 b6 13. f5 Ne5 14. Bb5+ Bd7 15. g3 Rg8 16. Bxd7+ Nfxd7 17. Ne2 Nf3+ 18. Kf2 Nxd4 19. Nxd4 Ne5 20. c3 d5 21. Re1 Rh8 22. exd5 Qxd5 23. b3 Ng4+ 24. Kf1 gxf5 25. c4 Qd7 26. Ke2 Rd8 27. c5 Qxd4 28. Qxd4 Rxd4 29. cxb6 Rb4 30. Rad1 Rxb3 31. Rd5 f4 32. gxf4 Rxb6 33. Kd3 Kf8 34. Rxa5 Rd6+ 35. Kc4 Bxh4 36. Ra8+ Bd8 37. Kc5 Rhh6 38. a5 Rc6+ 39. Kb5 Rcd6 40. a6 Rhe6 41. Rxe6 Rd5+ 42. Kc4 fxe6 43. a7 Ne3+ 44. Kb4 h4 45. Rc8 Rd4+ 46. Kc3 Rc4+ 47. Rxc4 Bf6+ 48. Kd3 Nxc4 49. a8=Q+ Ke7 50. Kxc4 Kd7 51. Qf8 Be7 52. Qh6 Bd8 53. Kd4 Be7 54. Ke4 Bd8 55. Ke5 Bc7+ 1/2-1/2
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "18"]
+[White "Reference"]
+[Black "Candidate"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pp2pp1p/3p1np1/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6"]
+[Termination "checkmate"]
+
+6. Bc4 e5 7. Bb5+ Nbd7 8. Nf3 a6 9. Bc4 b5 10. Bd3 Nc5 11. Be3 Nxd3+ 12. cxd3 Ng4 13. Bg5 f6 14. Bd2 Be6 15. Rc1 Rc8 16. O-O h5 17. b4 Be7 18. a4 Rg8 19. axb5 axb5 20. Nxb5 Rxc1 21. Qxc1 Bd7 22. Qc4 Rh8 23. Rc1 Qb6 24. Nc7+ Kd8 25. d4 g5 26. Nd5 Rg8 27. Nxb6 Rh8 28. Qc8+ Bxc8 29. Rxc8# 1-0
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "19"]
+[White "Candidate"]
+[Black "Reference"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/ppp1pppp/8/3p4/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2"]
+[Termination "threefold_repetition"]
+
+2. Nc3 Nf6 3. d4 Nbd7 4. Bf4 h5 5. h4 c5 6. Ne5 e6 7. a4 a5 8. g3 Be7 9. f3 g6 10. e3 b6 11. Bb5 c4 12. e4 Rg8 13. Nxf7 Kxf7 14. e5 Ne8 15. b3 Bb4 16. Qd2 Rh8 17. bxc4 Rg8 18. cxd5 exd5 19. g4 Rf8 20. g5 Nc7 21. Bc6 Rb8 22. Rb1 Qe8 23. Be3 Qd8 24. f4 Qe7 25. Qd3 Re8 26. Qd2 Rf8 27. Qd3 Re8 28. Qd2 1/2-1/2
+
+[Event "Janus v0.35 Match - fischer_increment"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.29"]
+[Round "20"]
+[White "Reference"]
+[Black "Candidate"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/ppp1pppp/8/3p4/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2"]
+[Termination "checkmate"]
+
+2. Nc3 Nf6 3. h4 d4 4. Nb5 Nc6 5. c4 Be6 6. c5 a6 7. Na3 Ne4 8. Qc2 Qd5 9. Ng5 Nxg5 10. hxg5 Qxg5 11. d3 Qf5 12. e4 Qe5 13. f4 Qf6 14. f5 Bd7 15. Nc4 e6 16. Qb3 Bxc5 17. Qxb7 Rb8 18. Qxc7 exf5 19. e5 Bb4+ 20. Bd2 Bxd2+ 21. Kxd2 Qg5+ 22. Ke2 h5 23. a4 Rc8 24. Nd6+ Ke7 25. Nxc8+ Rxc8 26. Qd6+ Ke8 27. b4 Qe3+ 28. Kd1 Nxe5 29. Qxa6 Rc6 30. Qa8+ Rc8 31. Qb7 g6 32. Qa6 f4 33. a5 Bg4+ 34. Be2 Qxe2# 0-1
+

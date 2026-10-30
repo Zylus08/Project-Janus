@@ -1,0 +1,35 @@
+{
+  "timestamp_utc": "2026-10-29T19:36:40.723530+00:00",
+  "verdict": "VERIFIED_VALID",
+  "audit_checks": {
+    "engine_identity": true,
+    "attempt_counts": true,
+    "csv_agreement": true,
+    "pgn_game_count": true,
+    "move_legality": true,
+    "clock_consistency": true,
+    "opening_pair_symmetry": true,
+    "statistics_reproducible": true
+  },
+  "match_size": {
+    "total_games": 20,
+    "total_pairs": 10,
+    "infrastructure_failures": 0
+  },
+  "statistics": {
+    "candidate_wins": 7,
+    "candidate_draws": 10,
+    "candidate_losses": 3,
+    "candidate_score": 12.0,
+    "candidate_score_pct": 60.0,
+    "estimated_elo_diff": 70.4,
+    "elo_95_ci": [
+      -85.0,
+      225.8
+    ],
+    "pairs_won": 5,
+    "pairs_drawn": 3,
+    "pairs_lost": 2,
+    "sign_test_p_value": 0.4531
+  }
+}

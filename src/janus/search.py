@@ -11,6 +11,7 @@ import chess.polyglot
 
 from .evaluation import evaluate_side_to_move, EvaluationConfig
 from .see import static_exchange_evaluation
+from .time_manager import TimeManager, TimeManagerConfig
 
 MATE_SCORE = 100_000
 MATE_THRESHOLD = MATE_SCORE - 1_000
@@ -134,7 +135,9 @@ class JanusSearch:
         enable_see_pruning: bool = False,
         tt_replacement_policy: str = "always_replace",
         eval_config: Optional[EvaluationConfig] = None,
+        time_manager: Optional[TimeManager] = None,
     ) -> None:
+        self.time_manager = time_manager or TimeManager()
         self.eval_config = eval_config
         valid_tt_policies = ("always_replace", "depth_preferred", "two_tier")
         if tt_replacement_policy not in valid_tt_policies:
@@ -472,7 +475,7 @@ class JanusSearch:
     def _check_stop(self) -> None:
         if self.stop_event is not None and self.stop_event.is_set():
             raise SearchTimeout
-        if self.deadline is not None and (self.nodes & 255) == 0:
+        if self.deadline is not None and (self.nodes & 127) == 0:
             if time.monotonic() >= self.deadline:
                 raise SearchTimeout
 
@@ -936,7 +939,21 @@ class JanusSearch:
         max_depth: int = 5,
         time_limit: Optional[float] = None,
         stop_event: Optional[threading.Event] = None,
+        wtime: Optional[int | float] = None,
+        btime: Optional[int | float] = None,
+        winc: Optional[int | float] = None,
+        binc: Optional[int | float] = None,
+        movestogo: Optional[int | float] = None,
     ) -> SearchResult:
+        if time_limit is None and (wtime is not None or btime is not None):
+            time_limit = self.time_manager.allocate_time(
+                board.turn,
+                wtime=wtime,
+                btime=btime,
+                winc=winc,
+                binc=binc,
+                movestogo=movestogo,
+            )
         start = time.monotonic()
         self.deadline = None if time_limit is None else start + max(0.001, time_limit)
         self.stop_event = stop_event
@@ -1026,6 +1043,10 @@ class JanusSearch:
         completed_depth = 0
 
         for depth in range(1, max_depth + 1):
+            if self.stop_event is not None and self.stop_event.is_set():
+                break
+            if self.deadline is not None and time.monotonic() >= self.deadline:
+                break
             use_aspiration = (
                 self.enable_aspiration
                 and depth >= 2

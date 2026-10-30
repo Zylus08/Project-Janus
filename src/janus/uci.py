@@ -7,6 +7,7 @@ import threading
 import chess
 
 from .search import JanusSearch, MATE_SCORE, MATE_THRESHOLD
+from .time_manager import TimeManager, TimeManagerConfig
 from . import evaluation
 
 
@@ -39,6 +40,9 @@ def main() -> None:
     parser.add_argument("--eval-king-safety", action="store_true", help="Enable king safety evaluation")
     parser.add_argument("--eval-tapered", action="store_true", help="Enable tapered evaluation")
     parser.add_argument("--eval-all", action="store_true", help="Enable all evaluation improvements")
+    parser.add_argument("--time-policy", type=str, default="adaptive",
+                        choices=["adaptive", "reference"],
+                        help="Time allocation policy: adaptive or reference")
     args = parser.parse_args()
 
     engine_name = args.name
@@ -56,6 +60,11 @@ def main() -> None:
         tapered_eval=tapered_eval,
     )
 
+    if args.time_policy == "reference":
+        tm = TimeManager(config=TimeManagerConfig.reference_baseline())
+    else:
+        tm = TimeManager(config=TimeManagerConfig())
+
     board = chess.Board()
     engine = JanusSearch(
         tt_max_entries=args.tt_max_entries,
@@ -63,6 +72,7 @@ def main() -> None:
         enable_see_pruning=see_pruning,
         check_extension_policy=args.check_extensions,
         tt_replacement_policy=args.tt_policy,
+        time_manager=tm,
     )
     search_thread: threading.Thread | None = None
     stop_event: threading.Event | None = None
@@ -126,6 +136,7 @@ def main() -> None:
             emit(f"option name Eval_RookFiles type check default {'true' if evaluation.ENABLE_ROOK_FILES else 'false'}")
             emit(f"option name Eval_KingSafety type check default {'true' if evaluation.ENABLE_KING_SAFETY else 'false'}")
             emit(f"option name Eval_Tapered type check default {'true' if evaluation.ENABLE_TAPERED_EVAL else 'false'}")
+            emit(f"option name Time_Policy type combo default {engine.time_manager.config.policy_name} var adaptive var reference")
             emit("uciok")
 
         elif command == "setoption":
@@ -161,6 +172,11 @@ def main() -> None:
                     evaluation.set_evaluation_features(king_safety=(opt_val.lower() == "true"))
                 elif opt_name in ("eval_tapered", "eval_tapered_eval", "eval tapered"):
                     evaluation.set_evaluation_features(tapered_eval=(opt_val.lower() == "true"))
+                elif opt_name in ("time_policy", "time policy"):
+                    if opt_val.lower() == "reference":
+                        engine.time_manager = TimeManager(config=TimeManagerConfig.reference_baseline())
+                    elif opt_val.lower() == "adaptive":
+                        engine.time_manager = TimeManager(config=TimeManagerConfig())
                 elif opt_name == "hash":
                     try:
                         mb = max(1, int(opt_val))
@@ -207,18 +223,86 @@ def main() -> None:
         elif command == "go":
             depth = 5
             time_limit = None
-            if "depth" in parts:
-                try:
-                    depth = max(1, int(parts[parts.index("depth") + 1]))
-                except (ValueError, IndexError):
-                    depth = 5
-            if "movetime" in parts:
-                try:
-                    time_limit = max(1, int(parts[parts.index("movetime") + 1])) / 1000.0
+            movetime_val = None
+            wtime_val = None
+            btime_val = None
+            winc_val = None
+            binc_val = None
+            movestogo_val = None
+            has_depth = False
+
+            i = 1
+            while i < len(parts):
+                token = parts[i].lower()
+                if token == "depth" and i + 1 < len(parts):
+                    try:
+                        depth = max(1, int(parts[i + 1]))
+                        has_depth = True
+                    except ValueError:
+                        pass
+                    i += 2
+                elif token == "movetime" and i + 1 < len(parts):
+                    try:
+                        movetime_val = int(parts[i + 1])
+                    except ValueError:
+                        pass
+                    i += 2
+                elif token == "wtime" and i + 1 < len(parts):
+                    try:
+                        wtime_val = int(parts[i + 1])
+                    except ValueError:
+                        pass
+                    i += 2
+                elif token == "btime" and i + 1 < len(parts):
+                    try:
+                        btime_val = int(parts[i + 1])
+                    except ValueError:
+                        pass
+                    i += 2
+                elif token == "winc" and i + 1 < len(parts):
+                    try:
+                        winc_val = int(parts[i + 1])
+                    except ValueError:
+                        pass
+                    i += 2
+                elif token == "binc" and i + 1 < len(parts):
+                    try:
+                        binc_val = int(parts[i + 1])
+                    except ValueError:
+                        pass
+                    i += 2
+                elif token == "movestogo" and i + 1 < len(parts):
+                    try:
+                        movestogo_val = int(parts[i + 1])
+                    except ValueError:
+                        pass
+                    i += 2
+                elif token == "infinite":
                     depth = 64
-                except (ValueError, IndexError):
-                    time_limit = 1.0
+                    time_limit = None
+                    i += 1
+                else:
+                    i += 1
+
+            if movetime_val is not None:
+                time_limit = engine.time_manager.allocate_time(
+                    board.turn,
+                    movetime=movetime_val,
+                )
+                if not has_depth:
                     depth = 64
+            elif wtime_val is not None or btime_val is not None:
+                time_limit = engine.time_manager.allocate_time(
+                    board.turn,
+                    wtime=wtime_val,
+                    btime=btime_val,
+                    winc=winc_val,
+                    binc=binc_val,
+                    movestogo=movestogo_val,
+                )
+                if not has_depth:
+                    depth = 64
+
             start_search(board, depth, time_limit)
 
         elif command == "stop":

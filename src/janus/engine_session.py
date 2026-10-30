@@ -209,7 +209,16 @@ class SupervisedEngineSession:
                 return
         raise EngineTimeoutError(f"{self.name} timed out waiting for readyok after ucinewgame")
 
-    def play_move(self, board: chess.Board, movetime_ms: int) -> MoveResult:
+    def play_move(
+        self,
+        board: chess.Board,
+        movetime_ms: Optional[int] = None,
+        wtime: Optional[int] = None,
+        btime: Optional[int] = None,
+        winc: Optional[int] = None,
+        binc: Optional[int] = None,
+        movestogo: Optional[int] = None,
+    ) -> MoveResult:
         """Instruct engine to search from board position and return legal bestmove."""
         if not self.is_alive():
             raise EngineProcessError(f"{self.name} is not running")
@@ -229,9 +238,26 @@ class SupervisedEngineSession:
                 self._send_line(f"position fen {board.fen()}")
 
         t_start = time.monotonic()
-        self._send_line(f"go movetime {movetime_ms}")
+        if movetime_ms is not None:
+            self._send_line(f"go movetime {movetime_ms}")
+            time_budget_s = (movetime_ms / 1000.0) + self.move_timeout_padding
+        else:
+            parts = ["go"]
+            if wtime is not None:
+                parts.extend(["wtime", str(int(wtime))])
+            if btime is not None:
+                parts.extend(["btime", str(int(btime))])
+            if winc is not None:
+                parts.extend(["winc", str(int(winc))])
+            if binc is not None:
+                parts.extend(["binc", str(int(binc))])
+            if movestogo is not None:
+                parts.extend(["movestogo", str(int(movestogo))])
+            self._send_line(" ".join(parts))
+            active_clock = wtime if board.turn == chess.WHITE else btime
+            clock_s = (float(active_clock) / 1000.0) if active_clock is not None else 10.0
+            time_budget_s = clock_s + self.move_timeout_padding
 
-        time_budget_s = (movetime_ms / 1000.0) + self.move_timeout_padding
         deadline = t_start + time_budget_s
 
         bestmove_str: Optional[str] = None

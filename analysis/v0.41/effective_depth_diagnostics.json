@@ -1,0 +1,1233 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-31T22:43:13Z",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+    "positions_count": 16,
+    "max_depth": 4,
+    "time_limit": null
+  },
+  "summary": {
+    "baseline": {
+      "total_nodes": 86381,
+      "total_time_sec": 8.1924,
+      "mean_nps": 10544,
+      "tactical_accuracy_pct": 81.25,
+      "tactical_success_count": "13/16",
+      "rfp_cutoffs_total": 0,
+      "countermove_cutoffs_total": 0
+    },
+    "ord1": {
+      "total_nodes": 85480,
+      "total_time_sec": 8.3336,
+      "mean_nps": 10257,
+      "tactical_accuracy_pct": 81.25,
+      "tactical_success_count": "13/16",
+      "rfp_cutoffs_total": 0,
+      "countermove_cutoffs_total": 1481
+    },
+    "rfp": {
+      "total_nodes": 73840,
+      "total_time_sec": 7.0763,
+      "mean_nps": 10434,
+      "tactical_accuracy_pct": 81.25,
+      "tactical_success_count": "13/16",
+      "rfp_cutoffs_total": 1632,
+      "countermove_cutoffs_total": 0
+    }
+  },
+  "positions": [
+    {
+      "id": "pos_01_mate_in_one_queen",
+      "category": "mate_in_one",
+      "description": "White delivers mate in one with Queen supported by King",
+      "fen": "8/7k/5K2/6Q1/8/8/8/8 w - - 0 1",
+      "expected_best_moves": [
+        "g5g7"
+      ],
+      "provenance": "benchmarks/positions.json (mate_in_one)"
+    },
+    {
+      "id": "pos_02_mate_in_one_scholars",
+      "category": "mate_in_one",
+      "description": "Scholar's mate pattern against f7 pawn",
+      "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+      "expected_best_moves": [
+        "h5f7"
+      ],
+      "provenance": "tests/test_selective_search_reliability.py (Part B LMR)"
+    },
+    {
+      "id": "pos_03_mate_in_one_back_rank",
+      "category": "mate_in_one",
+      "description": "Back rank mate with Queen along open 8th rank",
+      "fen": "6k1/5ppp/8/8/8/8/4QPPP/6K1 w - - 0 1",
+      "expected_best_moves": [
+        "e2e8"
+      ],
+      "provenance": "standard back-rank tactical motif"
+    },
+    {
+      "id": "pos_04_knight_fork",
+      "category": "fork_and_skewer",
+      "description": "Knight fork attacking uncastled King and Rook",
+      "fen": "r3k2r/ppp2ppp/8/3N4/8/8/PPP2PPP/R1B1K2R w KQkq - 0 1",
+      "expected_best_moves": [
+        "d5c7"
+      ],
+      "provenance": "tests/test_tactics_lmr.py (knight_fork)"
+    },
+    {
+      "id": "pos_05_pin_skewer",
+      "category": "fork_and_skewer",
+      "description": "Rook pins Knight along file to King; winning capture or pawn lever",
+      "fen": "4k3/8/8/4n3/8/8/8/4R1K1 w - - 0 1",
+      "expected_best_moves": [
+        "e1e5",
+        "f2f4"
+      ],
+      "provenance": "tests/test_tactics_lmr.py (pin_skewer)"
+    },
+    {
+      "id": "pos_06_passed_pawn_promotion",
+      "category": "pawn_endgame",
+      "description": "Passed pawn on 7th rank promotes with King support",
+      "fen": "8/P7/8/8/8/4k3/8/4K3 w - - 0 1",
+      "expected_best_moves": [
+        "a7a8q",
+        "a7a8r"
+      ],
+      "provenance": "benchmarks/positions.json (promotion_tactic)"
+    },
+    {
+      "id": "pos_07_defensive_move_against_mate",
+      "category": "tactical_defense",
+      "description": "Black must defend against combined Queen and Bishop mate threat on f7/h7",
+      "fen": "r2qk3/pp2pp2/2P2n1Q/1B2p2b/4P2p/2N5/PPP3PP/2K4R b q - 0 19",
+      "expected_best_moves": [
+        "e7e6",
+        "d8a5"
+      ],
+      "provenance": "tests/test_tactics_lmr.py (defensive_move)"
+    },
+    {
+      "id": "pos_08_overworked_deflection",
+      "category": "deflection",
+      "description": "White Queen recaptures rook on d1 resolving back-rank pin",
+      "fen": "3r2k1/p4ppp/1p6/8/8/1Q2B3/PP3PPP/3r2K1 w - - 0 1",
+      "expected_best_moves": [
+        "b3d1"
+      ],
+      "provenance": "tactical deflection and evasion motif"
+    },
+    {
+      "id": "pos_09_trebuchet_zugzwang",
+      "category": "pawn_endgame",
+      "description": "Tr\u00e9buchet pawn zugzwang; whoever moves loses pawn",
+      "fen": "8/8/8/3k4/3p4/3K4/8/8 w - - 0 1",
+      "expected_best_moves": [
+        "d3d2",
+        "d3e2"
+      ],
+      "provenance": "tests/test_selective_search_reliability.py (trebuchet)"
+    },
+    {
+      "id": "pos_10_opposition_endgame",
+      "category": "pawn_endgame",
+      "description": "Direct King opposition in king-and-pawn endgame",
+      "fen": "8/8/4k3/8/4K3/8/8/8 w - - 0 1",
+      "expected_best_moves": [
+        "e4d4",
+        "e4f4"
+      ],
+      "provenance": "tests/test_selective_search_reliability.py (opposition)"
+    },
+    {
+      "id": "pos_11_smothered_mate_pattern",
+      "category": "mating_attack",
+      "description": "Knight delivers smothered mate pattern to trapped corner King",
+      "fen": "6rk/5Npp/8/8/8/8/8/6K1 w - - 0 1",
+      "expected_best_moves": [
+        "f7h6"
+      ],
+      "provenance": "classic Philidor smothered mate geometry"
+    },
+    {
+      "id": "pos_12_poisoned_rook_capture",
+      "category": "tactical_defense",
+      "description": "Queen capture vs recapture material balance evaluation",
+      "fen": "3qk3/8/8/3r4/8/8/8/3QK3 w - - 0 1",
+      "expected_best_moves": [
+        "d1a4",
+        "d1e2",
+        "d1d5",
+        "d1f3",
+        "d1g4"
+      ],
+      "provenance": "tests/test_evaluation_tactical.py (quiet_queen_retreats)"
+    },
+    {
+      "id": "pos_13_central_fork_trick",
+      "category": "tactical_opening",
+      "description": "Standard Italian/Four Knights open middlegame position",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+      "expected_best_moves": [
+        "c1g5",
+        "c3d5",
+        "h2h3",
+        "a2a3"
+      ],
+      "provenance": "benchmarks/positions.json (open_game)"
+    },
+    {
+      "id": "pos_14_tactical_discovery_threat",
+      "category": "tactical_middlegame",
+      "description": "Bishop pair active in open center with pin against Black Queen/King",
+      "fen": "r1bq1rk1/ppp2ppp/2n1pn2/3p4/2PP4/2NBPN2/PP3PPP/R1BQK2R w KQ - 0 7",
+      "expected_best_moves": [
+        "e1g1",
+        "c1d2",
+        "c4d5",
+        "a2a3"
+      ],
+      "provenance": "tests/test_selective_search_reliability.py (NMP PV legality)"
+    },
+    {
+      "id": "pos_15_material_conversion",
+      "category": "material_endgame",
+      "description": "White has rook against minor piece; technical conversion",
+      "fen": "4k3/8/8/8/8/8/4N3/4K2R w K - 0 1",
+      "expected_best_moves": [
+        "e1g1",
+        "h1h7",
+        "e1f2",
+        "h1h4"
+      ],
+      "provenance": "benchmarks/positions.json (white_up_rook)"
+    },
+    {
+      "id": "pos_16_stalemate_detection",
+      "category": "terminal",
+      "description": "Black King stalemated in corner",
+      "fen": "7k/5Q2/6K1/8/8/8/8/8 b - - 0 1",
+      "expected_best_moves": [],
+      "provenance": "benchmarks/positions.json (stalemate)"
+    }
+  ],
+  "detailed_results": {
+    "baseline": [
+      {
+        "position_id": "pos_01_mate_in_one_queen",
+        "category": "mate_in_one",
+        "description": "White delivers mate in one with Queen supported by King",
+        "completed_depth": 4,
+        "nodes": 2712,
+        "elapsed_sec": 0.0762,
+        "nps": 35570,
+        "score_cp": 99999,
+        "best_move": "g5g7",
+        "expected_moves": [
+          "g5g7"
+        ],
+        "tactical_success": true,
+        "pv": "g5g7",
+        "beta_cutoffs": 336,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_02_mate_in_one_scholars",
+        "category": "mate_in_one",
+        "description": "Scholar's mate pattern against f7 pawn",
+        "completed_depth": 4,
+        "nodes": 16573,
+        "elapsed_sec": 0.9531,
+        "nps": 17387,
+        "score_cp": 99999,
+        "best_move": "h5f7",
+        "expected_moves": [
+          "h5f7"
+        ],
+        "tactical_success": true,
+        "pv": "h5f7",
+        "beta_cutoffs": 1410,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_03_mate_in_one_back_rank",
+        "category": "mate_in_one",
+        "description": "Back rank mate with Queen along open 8th rank",
+        "completed_depth": 4,
+        "nodes": 3137,
+        "elapsed_sec": 0.2151,
+        "nps": 14585,
+        "score_cp": 99999,
+        "best_move": "e2e8",
+        "expected_moves": [
+          "e2e8"
+        ],
+        "tactical_success": true,
+        "pv": "e2e8",
+        "beta_cutoffs": 328,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_04_knight_fork",
+        "category": "fork_and_skewer",
+        "description": "Knight fork attacking uncastled King and Rook",
+        "completed_depth": 4,
+        "nodes": 5565,
+        "elapsed_sec": 0.5231,
+        "nps": 10638,
+        "score_cp": 941,
+        "best_move": "d5c7",
+        "expected_moves": [
+          "d5c7"
+        ],
+        "tactical_success": true,
+        "pv": "d5c7 e8e7 c7a8 h8a8",
+        "beta_cutoffs": 639,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_05_pin_skewer",
+        "category": "fork_and_skewer",
+        "description": "Rook pins Knight along file to King; winning capture or pawn lever",
+        "completed_depth": 4,
+        "nodes": 1361,
+        "elapsed_sec": 0.1214,
+        "nps": 11209,
+        "score_cp": 514,
+        "best_move": "e1e5",
+        "expected_moves": [
+          "e1e5",
+          "f2f4"
+        ],
+        "tactical_success": true,
+        "pv": "e1e5 e8d7 g1f2 d7d6",
+        "beta_cutoffs": 180,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_06_passed_pawn_promotion",
+        "category": "pawn_endgame",
+        "description": "Passed pawn on 7th rank promotes with King support",
+        "completed_depth": 4,
+        "nodes": 510,
+        "elapsed_sec": 0.0357,
+        "nps": 14304,
+        "score_cp": 895,
+        "best_move": "a7a8q",
+        "expected_moves": [
+          "a7a8q",
+          "a7a8r"
+        ],
+        "tactical_success": true,
+        "pv": "a7a8q e3d4 e1e2 d4e5",
+        "beta_cutoffs": 84,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_07_defensive_move_against_mate",
+        "category": "tactical_defense",
+        "description": "Black must defend against combined Queen and Bishop mate threat on f7/h7",
+        "completed_depth": 4,
+        "nodes": 22052,
+        "elapsed_sec": 2.4155,
+        "nps": 9129,
+        "score_cp": -894,
+        "best_move": "e7e6",
+        "expected_moves": [
+          "e7e6",
+          "d8a5"
+        ],
+        "tactical_success": true,
+        "pv": "e7e6 c6c7 e8e7 c7d8q",
+        "beta_cutoffs": 781,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_08_overworked_deflection",
+        "category": "deflection",
+        "description": "White Queen recaptures rook on d1 resolving back-rank pin",
+        "completed_depth": 4,
+        "nodes": 154,
+        "elapsed_sec": 0.0148,
+        "nps": 10387,
+        "score_cp": -99998,
+        "best_move": "b3d1",
+        "expected_moves": [
+          "b3d1"
+        ],
+        "tactical_success": true,
+        "pv": "b3d1 d8d1",
+        "beta_cutoffs": 24,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_09_trebuchet_zugzwang",
+        "category": "pawn_endgame",
+        "description": "Tr\u00e9buchet pawn zugzwang; whoever moves loses pawn",
+        "completed_depth": 4,
+        "nodes": 247,
+        "elapsed_sec": 0.017,
+        "nps": 14500,
+        "score_cp": -163,
+        "best_move": "d3e2",
+        "expected_moves": [
+          "d3d2",
+          "d3e2"
+        ],
+        "tactical_success": true,
+        "pv": "d3e2 d5e4 e2d2 d4d3",
+        "beta_cutoffs": 32,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_10_opposition_endgame",
+        "category": "pawn_endgame",
+        "description": "Direct King opposition in king-and-pawn endgame",
+        "completed_depth": 4,
+        "nodes": 4,
+        "elapsed_sec": 0.0002,
+        "nps": 16339,
+        "score_cp": 0,
+        "best_move": "e4f4",
+        "expected_moves": [
+          "e4d4",
+          "e4f4"
+        ],
+        "tactical_success": true,
+        "pv": "e4f4",
+        "beta_cutoffs": 0,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_11_smothered_mate_pattern",
+        "category": "mating_attack",
+        "description": "Knight delivers smothered mate pattern to trapped corner King",
+        "completed_depth": 4,
+        "nodes": 325,
+        "elapsed_sec": 0.0307,
+        "nps": 10576,
+        "score_cp": 99999,
+        "best_move": "g1h2",
+        "expected_moves": [
+          "f7h6"
+        ],
+        "tactical_success": false,
+        "pv": "g1h2",
+        "beta_cutoffs": 58,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_12_poisoned_rook_capture",
+        "category": "tactical_defense",
+        "description": "Queen capture vs recapture material balance evaluation",
+        "completed_depth": 4,
+        "nodes": 2312,
+        "elapsed_sec": 0.16,
+        "nps": 14451,
+        "score_cp": -521,
+        "best_move": "d1g4",
+        "expected_moves": [
+          "d1a4",
+          "d1e2",
+          "d1d5",
+          "d1f3",
+          "d1g4"
+        ],
+        "tactical_success": true,
+        "pv": "d1g4 e8e7 e1e2 e7d6",
+        "beta_cutoffs": 227,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_13_central_fork_trick",
+        "category": "tactical_opening",
+        "description": "Standard Italian/Four Knights open middlegame position",
+        "completed_depth": 4,
+        "nodes": 13550,
+        "elapsed_sec": 1.6521,
+        "nps": 8201,
+        "score_cp": 9,
+        "best_move": "c3a4",
+        "expected_moves": [
+          "c1g5",
+          "c3d5",
+          "h2h3",
+          "a2a3"
+        ],
+        "tactical_success": false,
+        "pv": "c3a4 c5b4 c2c3 b4a5",
+        "beta_cutoffs": 520,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_14_tactical_discovery_threat",
+        "category": "tactical_middlegame",
+        "description": "Bishop pair active in open center with pin against Black Queen/King",
+        "completed_depth": 4,
+        "nodes": 15453,
+        "elapsed_sec": 1.824,
+        "nps": 8472,
+        "score_cp": 365,
+        "best_move": "h2h4",
+        "expected_moves": [
+          "e1g1",
+          "c1d2",
+          "c4d5",
+          "a2a3"
+        ],
+        "tactical_success": false,
+        "pv": "h2h4 c6b4 d3e2 a7a5",
+        "beta_cutoffs": 1239,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_15_material_conversion",
+        "category": "material_endgame",
+        "description": "White has rook against minor piece; technical conversion",
+        "completed_depth": 4,
+        "nodes": 2426,
+        "elapsed_sec": 0.1533,
+        "nps": 15822,
+        "score_cp": 850,
+        "best_move": "h1h7",
+        "expected_moves": [
+          "e1g1",
+          "h1h7",
+          "e1f2",
+          "h1h4"
+        ],
+        "tactical_success": true,
+        "pv": "h1h7 e8d8 e2d4 d8e8",
+        "beta_cutoffs": 394,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_16_stalemate_detection",
+        "category": "terminal",
+        "description": "Black King stalemated in corner",
+        "completed_depth": 0,
+        "nodes": 0,
+        "elapsed_sec": 0.0002,
+        "nps": 0,
+        "score_cp": 0,
+        "best_move": null,
+        "expected_moves": [],
+        "tactical_success": true,
+        "pv": "",
+        "beta_cutoffs": 0,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      }
+    ],
+    "ord1": [
+      {
+        "position_id": "pos_01_mate_in_one_queen",
+        "category": "mate_in_one",
+        "description": "White delivers mate in one with Queen supported by King",
+        "completed_depth": 4,
+        "nodes": 2712,
+        "elapsed_sec": 0.0766,
+        "nps": 35413,
+        "score_cp": 99999,
+        "best_move": "g5g7",
+        "expected_moves": [
+          "g5g7"
+        ],
+        "tactical_success": true,
+        "pv": "g5g7",
+        "beta_cutoffs": 336,
+        "countermove_cutoffs": 109,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_02_mate_in_one_scholars",
+        "category": "mate_in_one",
+        "description": "Scholar's mate pattern against f7 pawn",
+        "completed_depth": 4,
+        "nodes": 16573,
+        "elapsed_sec": 0.9468,
+        "nps": 17503,
+        "score_cp": 99999,
+        "best_move": "h5f7",
+        "expected_moves": [
+          "h5f7"
+        ],
+        "tactical_success": true,
+        "pv": "h5f7",
+        "beta_cutoffs": 1410,
+        "countermove_cutoffs": 451,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_03_mate_in_one_back_rank",
+        "category": "mate_in_one",
+        "description": "Back rank mate with Queen along open 8th rank",
+        "completed_depth": 4,
+        "nodes": 3137,
+        "elapsed_sec": 0.2157,
+        "nps": 14542,
+        "score_cp": 99999,
+        "best_move": "e2e8",
+        "expected_moves": [
+          "e2e8"
+        ],
+        "tactical_success": true,
+        "pv": "e2e8",
+        "beta_cutoffs": 328,
+        "countermove_cutoffs": 212,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_04_knight_fork",
+        "category": "fork_and_skewer",
+        "description": "Knight fork attacking uncastled King and Rook",
+        "completed_depth": 4,
+        "nodes": 5488,
+        "elapsed_sec": 0.619,
+        "nps": 8865,
+        "score_cp": 941,
+        "best_move": "d5c7",
+        "expected_moves": [
+          "d5c7"
+        ],
+        "tactical_success": true,
+        "pv": "d5c7 e8e7 c7a8 h8a8",
+        "beta_cutoffs": 639,
+        "countermove_cutoffs": 369,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_05_pin_skewer",
+        "category": "fork_and_skewer",
+        "description": "Rook pins Knight along file to King; winning capture or pawn lever",
+        "completed_depth": 4,
+        "nodes": 1342,
+        "elapsed_sec": 0.1255,
+        "nps": 10693,
+        "score_cp": 514,
+        "best_move": "e1e5",
+        "expected_moves": [
+          "e1e5",
+          "f2f4"
+        ],
+        "tactical_success": true,
+        "pv": "e1e5 e8d7 g1f2 d7d6",
+        "beta_cutoffs": 180,
+        "countermove_cutoffs": 52,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_06_passed_pawn_promotion",
+        "category": "pawn_endgame",
+        "description": "Passed pawn on 7th rank promotes with King support",
+        "completed_depth": 4,
+        "nodes": 498,
+        "elapsed_sec": 0.0324,
+        "nps": 15359,
+        "score_cp": 895,
+        "best_move": "a7a8q",
+        "expected_moves": [
+          "a7a8q",
+          "a7a8r"
+        ],
+        "tactical_success": true,
+        "pv": "a7a8q e3d4 e1e2 d4e5",
+        "beta_cutoffs": 82,
+        "countermove_cutoffs": 7,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_07_defensive_move_against_mate",
+        "category": "tactical_defense",
+        "description": "Black must defend against combined Queen and Bishop mate threat on f7/h7",
+        "completed_depth": 4,
+        "nodes": 22051,
+        "elapsed_sec": 2.7305,
+        "nps": 8075,
+        "score_cp": -894,
+        "best_move": "e7e6",
+        "expected_moves": [
+          "e7e6",
+          "d8a5"
+        ],
+        "tactical_success": true,
+        "pv": "e7e6 c6c7 e8e7 c7d8q",
+        "beta_cutoffs": 781,
+        "countermove_cutoffs": 34,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_08_overworked_deflection",
+        "category": "deflection",
+        "description": "White Queen recaptures rook on d1 resolving back-rank pin",
+        "completed_depth": 4,
+        "nodes": 154,
+        "elapsed_sec": 0.0147,
+        "nps": 10486,
+        "score_cp": -99998,
+        "best_move": "b3d1",
+        "expected_moves": [
+          "b3d1"
+        ],
+        "tactical_success": true,
+        "pv": "b3d1 d8d1",
+        "beta_cutoffs": 24,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_09_trebuchet_zugzwang",
+        "category": "pawn_endgame",
+        "description": "Tr\u00e9buchet pawn zugzwang; whoever moves loses pawn",
+        "completed_depth": 4,
+        "nodes": 232,
+        "elapsed_sec": 0.0154,
+        "nps": 15077,
+        "score_cp": -163,
+        "best_move": "d3e2",
+        "expected_moves": [
+          "d3d2",
+          "d3e2"
+        ],
+        "tactical_success": true,
+        "pv": "d3e2 d5e4 e2d2 d4d3",
+        "beta_cutoffs": 29,
+        "countermove_cutoffs": 3,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_10_opposition_endgame",
+        "category": "pawn_endgame",
+        "description": "Direct King opposition in king-and-pawn endgame",
+        "completed_depth": 4,
+        "nodes": 4,
+        "elapsed_sec": 0.0004,
+        "nps": 10822,
+        "score_cp": 0,
+        "best_move": "e4f4",
+        "expected_moves": [
+          "e4d4",
+          "e4f4"
+        ],
+        "tactical_success": true,
+        "pv": "e4f4",
+        "beta_cutoffs": 0,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_11_smothered_mate_pattern",
+        "category": "mating_attack",
+        "description": "Knight delivers smothered mate pattern to trapped corner King",
+        "completed_depth": 4,
+        "nodes": 325,
+        "elapsed_sec": 0.0257,
+        "nps": 12635,
+        "score_cp": 99999,
+        "best_move": "g1h2",
+        "expected_moves": [
+          "f7h6"
+        ],
+        "tactical_success": false,
+        "pv": "g1h2",
+        "beta_cutoffs": 58,
+        "countermove_cutoffs": 18,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_12_poisoned_rook_capture",
+        "category": "tactical_defense",
+        "description": "Queen capture vs recapture material balance evaluation",
+        "completed_depth": 4,
+        "nodes": 2126,
+        "elapsed_sec": 0.1492,
+        "nps": 14250,
+        "score_cp": -521,
+        "best_move": "d1g4",
+        "expected_moves": [
+          "d1a4",
+          "d1e2",
+          "d1d5",
+          "d1f3",
+          "d1g4"
+        ],
+        "tactical_success": true,
+        "pv": "d1g4 e8e7 e1e2 e7d6",
+        "beta_cutoffs": 227,
+        "countermove_cutoffs": 37,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_13_central_fork_trick",
+        "category": "tactical_opening",
+        "description": "Standard Italian/Four Knights open middlegame position",
+        "completed_depth": 4,
+        "nodes": 12827,
+        "elapsed_sec": 1.5447,
+        "nps": 8303,
+        "score_cp": 9,
+        "best_move": "c3a4",
+        "expected_moves": [
+          "c1g5",
+          "c3d5",
+          "h2h3",
+          "a2a3"
+        ],
+        "tactical_success": false,
+        "pv": "c3a4 c5b4 c2c3 b4a5",
+        "beta_cutoffs": 520,
+        "countermove_cutoffs": 44,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_14_tactical_discovery_threat",
+        "category": "tactical_middlegame",
+        "description": "Bishop pair active in open center with pin against Black Queen/King",
+        "completed_depth": 4,
+        "nodes": 15627,
+        "elapsed_sec": 1.6748,
+        "nps": 9330,
+        "score_cp": 365,
+        "best_move": "h2h4",
+        "expected_moves": [
+          "e1g1",
+          "c1d2",
+          "c4d5",
+          "a2a3"
+        ],
+        "tactical_success": false,
+        "pv": "h2h4 c6b4 d3e2 a7a5",
+        "beta_cutoffs": 1239,
+        "countermove_cutoffs": 53,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_15_material_conversion",
+        "category": "material_endgame",
+        "description": "White has rook against minor piece; technical conversion",
+        "completed_depth": 4,
+        "nodes": 2384,
+        "elapsed_sec": 0.1621,
+        "nps": 14710,
+        "score_cp": 850,
+        "best_move": "h1h7",
+        "expected_moves": [
+          "e1g1",
+          "h1h7",
+          "e1f2",
+          "h1h4"
+        ],
+        "tactical_success": true,
+        "pv": "h1h7 e8d8 e2d4 d8e8",
+        "beta_cutoffs": 393,
+        "countermove_cutoffs": 92,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_16_stalemate_detection",
+        "category": "terminal",
+        "description": "Black King stalemated in corner",
+        "completed_depth": 0,
+        "nodes": 0,
+        "elapsed_sec": 0.0001,
+        "nps": 0,
+        "score_cp": 0,
+        "best_move": null,
+        "expected_moves": [],
+        "tactical_success": true,
+        "pv": "",
+        "beta_cutoffs": 0,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      }
+    ],
+    "rfp": [
+      {
+        "position_id": "pos_01_mate_in_one_queen",
+        "category": "mate_in_one",
+        "description": "White delivers mate in one with Queen supported by King",
+        "completed_depth": 4,
+        "nodes": 2712,
+        "elapsed_sec": 0.0788,
+        "nps": 34428,
+        "score_cp": 99999,
+        "best_move": "g5g7",
+        "expected_moves": [
+          "g5g7"
+        ],
+        "tactical_success": true,
+        "pv": "g5g7",
+        "beta_cutoffs": 336,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_02_mate_in_one_scholars",
+        "category": "mate_in_one",
+        "description": "Scholar's mate pattern against f7 pawn",
+        "completed_depth": 4,
+        "nodes": 16573,
+        "elapsed_sec": 1.2246,
+        "nps": 13533,
+        "score_cp": 99999,
+        "best_move": "h5f7",
+        "expected_moves": [
+          "h5f7"
+        ],
+        "tactical_success": true,
+        "pv": "h5f7",
+        "beta_cutoffs": 1410,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_03_mate_in_one_back_rank",
+        "category": "mate_in_one",
+        "description": "Back rank mate with Queen along open 8th rank",
+        "completed_depth": 4,
+        "nodes": 3137,
+        "elapsed_sec": 0.1885,
+        "nps": 16643,
+        "score_cp": 99999,
+        "best_move": "e2e8",
+        "expected_moves": [
+          "e2e8"
+        ],
+        "tactical_success": true,
+        "pv": "e2e8",
+        "beta_cutoffs": 328,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_04_knight_fork",
+        "category": "fork_and_skewer",
+        "description": "Knight fork attacking uncastled King and Rook",
+        "completed_depth": 4,
+        "nodes": 1727,
+        "elapsed_sec": 0.1895,
+        "nps": 9112,
+        "score_cp": 941,
+        "best_move": "d5c7",
+        "expected_moves": [
+          "d5c7"
+        ],
+        "tactical_success": true,
+        "pv": "d5c7 e8e7 c7a8 h8a8",
+        "beta_cutoffs": 41,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 653,
+        "rfp_cutoffs": 616
+      },
+      {
+        "position_id": "pos_05_pin_skewer",
+        "category": "fork_and_skewer",
+        "description": "Rook pins Knight along file to King; winning capture or pawn lever",
+        "completed_depth": 4,
+        "nodes": 611,
+        "elapsed_sec": 0.0695,
+        "nps": 8788,
+        "score_cp": 514,
+        "best_move": "e1e5",
+        "expected_moves": [
+          "e1e5",
+          "f2f4"
+        ],
+        "tactical_success": true,
+        "pv": "e1e5 e8d7 g1f2 d7d6",
+        "beta_cutoffs": 54,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 198,
+        "rfp_cutoffs": 146
+      },
+      {
+        "position_id": "pos_06_passed_pawn_promotion",
+        "category": "pawn_endgame",
+        "description": "Passed pawn on 7th rank promotes with King support",
+        "completed_depth": 4,
+        "nodes": 310,
+        "elapsed_sec": 0.0239,
+        "nps": 12953,
+        "score_cp": 895,
+        "best_move": "a7a8q",
+        "expected_moves": [
+          "a7a8q",
+          "a7a8r"
+        ],
+        "tactical_success": true,
+        "pv": "a7a8q e3d4 e1e2 d4e5",
+        "beta_cutoffs": 50,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 75,
+        "rfp_cutoffs": 31
+      },
+      {
+        "position_id": "pos_07_defensive_move_against_mate",
+        "category": "tactical_defense",
+        "description": "Black must defend against combined Queen and Bishop mate threat on f7/h7",
+        "completed_depth": 4,
+        "nodes": 19210,
+        "elapsed_sec": 2.219,
+        "nps": 8656,
+        "score_cp": -894,
+        "best_move": "e7e6",
+        "expected_moves": [
+          "e7e6",
+          "d8a5"
+        ],
+        "tactical_success": true,
+        "pv": "e7e6 c6c7 e8e7 c7d8q",
+        "beta_cutoffs": 507,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 665,
+        "rfp_cutoffs": 339
+      },
+      {
+        "position_id": "pos_08_overworked_deflection",
+        "category": "deflection",
+        "description": "White Queen recaptures rook on d1 resolving back-rank pin",
+        "completed_depth": 4,
+        "nodes": 154,
+        "elapsed_sec": 0.0138,
+        "nps": 11185,
+        "score_cp": -99998,
+        "best_move": "b3d1",
+        "expected_moves": [
+          "b3d1"
+        ],
+        "tactical_success": true,
+        "pv": "b3d1 d8d1",
+        "beta_cutoffs": 24,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_09_trebuchet_zugzwang",
+        "category": "pawn_endgame",
+        "description": "Tr\u00e9buchet pawn zugzwang; whoever moves loses pawn",
+        "completed_depth": 4,
+        "nodes": 247,
+        "elapsed_sec": 0.0181,
+        "nps": 13666,
+        "score_cp": -163,
+        "best_move": "d3e2",
+        "expected_moves": [
+          "d3d2",
+          "d3e2"
+        ],
+        "tactical_success": true,
+        "pv": "d3e2 d5e4 e2d2 d4d3",
+        "beta_cutoffs": 32,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 40,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_10_opposition_endgame",
+        "category": "pawn_endgame",
+        "description": "Direct King opposition in king-and-pawn endgame",
+        "completed_depth": 4,
+        "nodes": 4,
+        "elapsed_sec": 0.0002,
+        "nps": 17574,
+        "score_cp": 0,
+        "best_move": "e4f4",
+        "expected_moves": [
+          "e4d4",
+          "e4f4"
+        ],
+        "tactical_success": true,
+        "pv": "e4f4",
+        "beta_cutoffs": 0,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_11_smothered_mate_pattern",
+        "category": "mating_attack",
+        "description": "Knight delivers smothered mate pattern to trapped corner King",
+        "completed_depth": 4,
+        "nodes": 325,
+        "elapsed_sec": 0.0284,
+        "nps": 11445,
+        "score_cp": 99999,
+        "best_move": "g1h2",
+        "expected_moves": [
+          "f7h6"
+        ],
+        "tactical_success": false,
+        "pv": "g1h2",
+        "beta_cutoffs": 58,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_12_poisoned_rook_capture",
+        "category": "tactical_defense",
+        "description": "Queen capture vs recapture material balance evaluation",
+        "completed_depth": 4,
+        "nodes": 2272,
+        "elapsed_sec": 0.1612,
+        "nps": 14097,
+        "score_cp": -521,
+        "best_move": "d1g4",
+        "expected_moves": [
+          "d1a4",
+          "d1e2",
+          "d1d5",
+          "d1f3",
+          "d1g4"
+        ],
+        "tactical_success": true,
+        "pv": "d1g4 e8e7 e1e2 e7d6",
+        "beta_cutoffs": 208,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 208,
+        "rfp_cutoffs": 19
+      },
+      {
+        "position_id": "pos_13_central_fork_trick",
+        "category": "tactical_opening",
+        "description": "Standard Italian/Four Knights open middlegame position",
+        "completed_depth": 4,
+        "nodes": 9981,
+        "elapsed_sec": 1.0554,
+        "nps": 9457,
+        "score_cp": 9,
+        "best_move": "c3a4",
+        "expected_moves": [
+          "c1g5",
+          "c3d5",
+          "h2h3",
+          "a2a3"
+        ],
+        "tactical_success": false,
+        "pv": "c3a4 c5b4 c2c3 b4a5",
+        "beta_cutoffs": 320,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 553,
+        "rfp_cutoffs": 200
+      },
+      {
+        "position_id": "pos_14_tactical_discovery_threat",
+        "category": "tactical_middlegame",
+        "description": "Bishop pair active in open center with pin against Black Queen/King",
+        "completed_depth": 4,
+        "nodes": 14151,
+        "elapsed_sec": 1.6206,
+        "nps": 8731,
+        "score_cp": 365,
+        "best_move": "h2h4",
+        "expected_moves": [
+          "e1g1",
+          "c1d2",
+          "c4d5",
+          "a2a3"
+        ],
+        "tactical_success": false,
+        "pv": "h2h4 c6b4 d3e2 a7a5",
+        "beta_cutoffs": 958,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 1266,
+        "rfp_cutoffs": 281
+      },
+      {
+        "position_id": "pos_15_material_conversion",
+        "category": "material_endgame",
+        "description": "White has rook against minor piece; technical conversion",
+        "completed_depth": 4,
+        "nodes": 2426,
+        "elapsed_sec": 0.1846,
+        "nps": 13142,
+        "score_cp": 850,
+        "best_move": "h1h7",
+        "expected_moves": [
+          "e1g1",
+          "h1h7",
+          "e1f2",
+          "h1h4"
+        ],
+        "tactical_success": true,
+        "pv": "h1h7 e8d8 e2d4 d8e8",
+        "beta_cutoffs": 394,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 392,
+        "rfp_cutoffs": 0
+      },
+      {
+        "position_id": "pos_16_stalemate_detection",
+        "category": "terminal",
+        "description": "Black King stalemated in corner",
+        "completed_depth": 0,
+        "nodes": 0,
+        "elapsed_sec": 0.0002,
+        "nps": 0,
+        "score_cp": 0,
+        "best_move": null,
+        "expected_moves": [],
+        "tactical_success": true,
+        "pv": "",
+        "beta_cutoffs": 0,
+        "countermove_cutoffs": 0,
+        "rfp_considered": 0,
+        "rfp_cutoffs": 0
+      }
+    ]
+  }
+}

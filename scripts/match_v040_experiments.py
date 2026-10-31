@@ -501,6 +501,7 @@ if __name__ == "__main__":
     parser.add_argument("--inc-time", type=int, default=100)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--stockfish", type=str, default=STOCKFISH_PATH)
+    parser.add_argument("--output-dir", type=str, default=None)
     args = parser.parse_args()
 
     run_experiment_match(
@@ -510,5 +511,6 @@ if __name__ == "__main__":
         inc_time_ms=args.inc_time,
         stockfish_path=args.stockfish,
         seed=args.seed,
+        output_dir=Path(args.output_dir) if args.output_dir else None,
     )
 

@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-10-31T22:49:58.359798+00:00",
+  "audit_version": "v0.41.0",
+  "verdict": "VERIFIED_VALID",
+  "pgn_legality_audit": {
+    "status": "valid",
+    "games_count": 50,
+    "total_plies": 4671,
+    "illegal_moves": 0
+  },
+  "clock_telemetry_audit": {
+    "status": "valid",
+    "total_moves": 4671,
+    "negative_clocks": 0
+  },
+  "attempt_accounting_audit": {
+    "total_attempts": 50,
+    "completed_games": 50,
+    "infrastructure_failures": 0,
+    "matches_expected": true
+  },
+  "recomputed_statistics": {
+    "games": 50,
+    "wins": 33,
+    "draws": 8,
+    "losses": 9,
+    "score": 37.0,
+    "score_pct": 74.0,
+    "complete_pairs": 25,
+    "mean_pair_diff": 0.48,
+    "t_statistic": 3.868,
+    "bootstrap_95_ci_lower_pct": 61.0,
+    "bootstrap_95_ci_upper_pct": 85.0
+  }
+}

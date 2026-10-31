@@ -1,0 +1,50 @@
+[
+  {
+    "id": "startpos_symmetric",
+    "description": "Standard initial position (perfect White/Black symmetry)",
+    "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "score_k0_cp": 0,
+    "score_k1_cp": 0,
+    "delta_cp": 0
+  },
+  {
+    "id": "both_castled",
+    "description": "Both White and Black castled kingside behind intact pawn shields",
+    "fen": "r1bq1rk1/pppp1ppp/2n2n2/4p3/4P3/2N2N2/PPPPBPPP/R1BQ1RK1 w - - 4 6",
+    "score_k0_cp": 362,
+    "score_k1_cp": 362,
+    "delta_cp": 0
+  },
+  {
+    "id": "white_uncastled_open_e_file",
+    "description": "White king stranded on e1 with wide-open e-file; Black castled kingside",
+    "fen": "r1bq1rk1/ppp2ppp/2n5/8/8/2N2N2/PPP2PPP/R1BQKB1R w - - 0 8",
+    "score_k0_cp": 619,
+    "score_k1_cp": 655,
+    "delta_cp": -36
+  },
+  {
+    "id": "black_uncastled_open_e_file",
+    "description": "Black king stranded on e8 with wide-open e-file; White castled kingside",
+    "fen": "r1bqkb1r/ppp2ppp/2n5/8/8/2N2N2/PPP2PPP/R1BQ1RK1 b - - 0 8",
+    "score_k0_cp": 25,
+    "score_k1_cp": -10,
+    "delta_cp": 35
+  },
+  {
+    "id": "pure_endgame_uncastled_kings",
+    "description": "Pure pawn endgame (game phase = 0); uncastled central kings",
+    "fen": "8/4k3/4p3/4P3/8/4K3/8/8 w - - 0 40",
+    "score_k0_cp": 13,
+    "score_k1_cp": 13,
+    "delta_cp": 0
+  },
+  {
+    "id": "white_uncastled_semi_open_e_file",
+    "description": "White king on e1 with semi-open e-file (White pawn gone, Black e7 pawn intact)",
+    "fen": "r1bq1rk1/pppp1ppp/2n2n2/8/8/2N2N2/PPPP1PPP/R1BQKB1R w - - 0 6",
+    "score_k0_cp": 294,
+    "score_k1_cp": 331,
+    "delta_cp": -37
+  }
+]

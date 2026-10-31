@@ -106,6 +106,9 @@ class SearchResult:
     tt_same_key_overwrites: int = 0
     tt_same_key_rejected: int = 0
     tt_clears: int = 0
+    countermove_cutoffs: int = 0
+    rfp_considered: int = 0
+    rfp_cutoffs: int = 0
 
 
 class SearchTimeout(Exception):
@@ -138,6 +141,11 @@ class JanusSearch:
         tt_replacement_policy: str = "always_replace",
         eval_config: Optional[EvaluationConfig] = None,
         time_manager: Optional[TimeManager] = None,
+        enable_countermoves: bool = False,
+        enable_history_malus: bool = False,
+        enable_rfp: bool = False,
+        rfp_max_depth: int = 2,
+        rfp_margin_per_depth: int = 120,
     ) -> None:
         self.time_manager = time_manager or TimeManager()
         self.eval_config = eval_config
@@ -194,6 +202,17 @@ class JanusSearch:
             [None, None] for _ in range(self.max_killers_ply)
         ]
         self.history: list[list[int]] = [[0] * 64 for _ in range(64)]
+        self.enable_countermoves = enable_countermoves
+        self.enable_history_malus = enable_history_malus
+        self.enable_rfp = enable_rfp
+        self.rfp_max_depth = rfp_max_depth
+        self.rfp_margin_per_depth = rfp_margin_per_depth
+        self.countermoves: list[list[Optional[chess.Move]]] = [
+            [None] * 64 for _ in range(64)
+        ]
+        self.countermove_cutoffs = 0
+        self.rfp_considered = 0
+        self.rfp_cutoffs = 0
         self.nodes = 0
         self.scout_searches = 0
         self.scout_fail_highs = 0
@@ -504,6 +523,7 @@ class JanusSearch:
         tt_move: Optional[chess.Move] = None,
         ply: int = 0,
         node_see: Optional[dict[chess.Move, int]] = None,
+        prev_move: Optional[chess.Move] = None,
     ) -> int:
         if tt_move is not None and move == tt_move:
             return 10_000_000
@@ -550,6 +570,10 @@ class JanusSearch:
             if move == self.killers[ply][1]:
                 return 600_000
 
+        if score == 0 and self.enable_countermoves and prev_move is not None:
+            if move == self.countermoves[prev_move.from_square][prev_move.to_square]:
+                return 550_000
+
         if score == 0 and self.enable_history:
             return self.history[move.from_square][move.to_square]
 
@@ -581,6 +605,7 @@ class JanusSearch:
         board: chess.Board,
         tt_move: Optional[chess.Move] = None,
         ply: int = 0,
+        prev_move: Optional[chess.Move] = None,
     ) -> list[chess.Move]:
         moves = list(board.legal_moves)
         if len(moves) <= 1:
@@ -588,7 +613,9 @@ class JanusSearch:
 
         node_see: Optional[dict[chess.Move, int]] = {} if self.enable_see_ordering else None
         moves.sort(
-            key=lambda move: self._move_order_score(board, move, tt_move, ply, node_see=node_see),
+            key=lambda move: self._move_order_score(
+                board, move, tt_move, ply, node_see=node_see, prev_move=prev_move
+            ),
             reverse=True,
         )
         return moves
@@ -672,7 +699,10 @@ class JanusSearch:
 
             board.push(move)
             try:
-                score = -self._quiescence(board, -beta, -alpha, ply + 1, check_stalemate=False, qply=qply + 1)
+                if self.enable_qsearch_checks:
+                    score = -self._quiescence(board, -beta, -alpha, ply + 1, check_stalemate=False, qply=qply + 1)
+                else:
+                    score = -self._quiescence(board, -beta, -alpha, ply + 1, check_stalemate=False)
             finally:
                 board.pop()
 
@@ -776,6 +806,24 @@ class JanusSearch:
                         self.tt_cutoffs += 1
                         return tt_score, ([] if tt_move is None else [tt_move])
 
+        # Reverse Futility Pruning (RFP / Static Null Move Pruning)
+        if (
+            self.enable_rfp
+            and ply > 0
+            and not in_check
+            and depth <= self.rfp_max_depth
+            and abs(beta) < MATE_THRESHOLD
+            and abs(alpha) < MATE_THRESHOLD
+            and board.halfmove_clock < 140
+        ):
+            self.rfp_considered += 1
+            static_eval = evaluate_side_to_move(board, config=self.eval_config)
+            rfp_margin = self.rfp_margin_per_depth * depth
+            if static_eval - rfp_margin >= beta:
+                self.rfp_cutoffs += 1
+                self._store_tt(key, depth, beta, "lower", tt_move, ply)
+                return beta, []
+
         # Conservative Null Move Pruning (NMP)
         if (
             self.enable_nmp
@@ -825,7 +873,9 @@ class JanusSearch:
         best_move = None
         best_pv: list[chess.Move] = []
 
-        moves = self._ordered_moves(board, tt_move, ply)
+        prev_move = board.peek() if board.move_stack and board.peek() != chess.Move.null() else None
+        moves = self._ordered_moves(board, tt_move, ply, prev_move=prev_move)
+        searched_quiets: list[chess.Move] = []
         if not moves:
             if in_check:
                 if extension > 0:
@@ -944,7 +994,20 @@ class JanusSearch:
                         self.killers[ply][1] = self.killers[ply][0]
                         self.killers[ply][0] = move
                     self._update_history(move, depth)
+                    if self.enable_countermoves and prev_move is not None:
+                        if move == self.countermoves[prev_move.from_square][prev_move.to_square]:
+                            self.countermove_cutoffs += 1
+                        self.countermoves[prev_move.from_square][prev_move.to_square] = move
+                    if self.enable_history_malus:
+                        bonus = depth * depth
+                        for bad_move in searched_quiets:
+                            bf = bad_move.from_square
+                            bt = bad_move.to_square
+                            self.history[bf][bt] = max(-MAX_HISTORY_SCORE, self.history[bf][bt] - bonus)
                 break
+
+            if not is_capture and not is_promotion:
+                searched_quiets.append(move)
 
         # Bound flags must be compared against the original search window.
         if best_score <= alpha_original:
@@ -1029,6 +1092,10 @@ class JanusSearch:
         self._extensions_at_ply = [0] * 256
         self.killers = [[None, None] for _ in range(self.max_killers_ply)]
         self.history = [[0] * 64 for _ in range(64)]
+        self.countermoves = [[None] * 64 for _ in range(64)]
+        self.countermove_cutoffs = 0
+        self.rfp_considered = 0
+        self.rfp_cutoffs = 0
 
         legal_moves = list(board.legal_moves)
         if not legal_moves:
@@ -1183,4 +1250,7 @@ class JanusSearch:
             tt_same_key_overwrites=self.tt_same_key_overwrites,
             tt_same_key_rejected=self.tt_same_key_rejected,
             tt_clears=self.tt_clears,
+            countermove_cutoffs=self.countermove_cutoffs,
+            rfp_considered=self.rfp_considered,
+            rfp_cutoffs=self.rfp_cutoffs,
         )

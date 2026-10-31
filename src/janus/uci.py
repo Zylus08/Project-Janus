@@ -38,6 +38,13 @@ def main() -> None:
     parser.add_argument("--eval-pawn-structure", action="store_true", help="Enable pawn structure evaluation")
     parser.add_argument("--eval-rook-files", action="store_true", help="Enable rook file evaluation")
     parser.add_argument("--eval-king-safety", action="store_true", help="Enable king safety evaluation")
+    parser.add_argument("--disable-uncastled-king-safety", action="store_true", help="Disable v0.39 uncastled king safety terms (K1)")
+    parser.add_argument("--enable-countermove", action="store_true", help="Enable countermove heuristic")
+    parser.add_argument("--enable-history-penalty", action="store_true", help="Enable quiet history penalty")
+    parser.add_argument("--enable-ord1", action="store_true", help="Enable Candidate ORD1 (countermove + history penalty)")
+    parser.add_argument("--enable-rfp", action="store_true", help="Enable reverse futility pruning")
+    parser.add_argument("--rfp-max-depth", type=int, default=2, help="Max depth for reverse futility pruning")
+    parser.add_argument("--rfp-margin", type=int, default=120, help="Per-depth margin (cp) for reverse futility pruning")
     parser.add_argument("--eval-tapered", action="store_true", help="Enable tapered evaluation")
     parser.add_argument("--eval-all", action="store_true", help="Enable all evaluation improvements")
     parser.add_argument("--enable-qsearch-checks", action="store_true", help="Enable checking exploration in quiescence")
@@ -58,11 +65,13 @@ def main() -> None:
     pawn_struct = args.eval_all or args.eval_pawn_structure
     rook_files = args.eval_all or args.eval_rook_files
     king_safety = args.eval_all or args.eval_king_safety
+    uncastled_ks = not args.disable_uncastled_king_safety
     tapered_eval = args.eval_all or args.eval_tapered
     evaluation.set_evaluation_features(
         pawn_structure=pawn_struct,
         rook_files=rook_files,
         king_safety=king_safety,
+        uncastled_king_safety=uncastled_ks,
         tapered_eval=tapered_eval,
     )
 
@@ -93,6 +102,10 @@ def main() -> None:
     tm = TimeManager(config=tm_cfg)
 
     board = chess.Board()
+    enable_countermoves = args.enable_ord1 or args.enable_countermove
+    enable_history_malus = args.enable_ord1 or args.enable_history_penalty
+    enable_rfp = args.enable_rfp
+
     engine = JanusSearch(
         tt_max_entries=args.tt_max_entries,
         enable_see_ordering=see_ordering,
@@ -101,6 +114,11 @@ def main() -> None:
         tt_replacement_policy=args.tt_policy,
         enable_qsearch_checks=args.enable_qsearch_checks,
         qsearch_checks_max_ply=args.qsearch_checks_max_ply,
+        enable_countermoves=enable_countermoves,
+        enable_history_malus=enable_history_malus,
+        enable_rfp=enable_rfp,
+        rfp_max_depth=args.rfp_max_depth,
+        rfp_margin_per_depth=args.rfp_margin,
         time_manager=tm,
     )
     search_thread: threading.Thread | None = None

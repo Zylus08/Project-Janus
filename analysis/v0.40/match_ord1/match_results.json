@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-10-31T19:08:10.473513+00:00",
+    "candidate_id": "ord1",
+    "title": "Janus v0.40 Candidate ORD1 vs Stockfish 19 Elo 1320",
+    "janus_cmd": [
+      "E:\\ChessXML\\project-janus\\.venv\\Scripts\\python.exe",
+      "-m",
+      "janus.uci",
+      "--name",
+      "Janus-v0.40-ORD1",
+      "--eval-all",
+      "--time-policy",
+      "arm_c",
+      "--enable-ord1"
+    ],
+    "stockfish_path": "E:\\ChessXML\\tools\\stockfish\\stockfish.exe",
+    "stockfish_options": {
+      "Threads": 1,
+      "Hash": 64,
+      "UCI_LimitStrength": true,
+      "UCI_Elo": 1320
+    },
+    "time_mode": "fischer_increment",
+    "base_time_ms": 3000,
+    "inc_time_ms": 100,
+    "max_plies": 200,
+    "total_games_requested": 2,
+    "pairs_requested": 1,
+    "seed": 42,
+    "python_version": "3.13.2",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "match_summary": {
+    "valid_games": 2,
+    "complete_pairs": 1,
+    "total_attempts": 2,
+    "infrastructure_failures": 0,
+    "janus_wins": 1,
+    "draws": 0,
+    "stockfish_wins": 1,
+    "janus_points": 1.0,
+    "janus_score_pct": 50.0
+  },
+  "valid_games": [
+    {
+      "candidate": "ord1",
+      "game": 1,
+      "pair": 1,
+      "attempt_number": 1,
+      "status": "completed",
+      "result": "1-0",
+      "termination_reason": "checkmate_white_wins",
+      "plies": 72,
+      "janus_color": "white",
+      "janus_won": true,
+      "janus_points": 1.0,
+      "opening_id": "scotch_game",
+      "opening_name": "Scotch Game",
+      "duration_seconds": 11.59,
+      "mean_janus_depth": 2.86,
+      "mean_sf_depth": 20.25,
+      "mean_janus_time": 0.151,
+      "mean_sf_time": 0.17,
+      "infrastructure_error": null
+    },
+    {
+      "candidate": "ord1",
+      "game": 2,
+      "pair": 1,
+      "attempt_number": 1,
+      "status": "completed",
+      "result": "1-0",
+      "termination_reason": "checkmate_white_wins",
+      "plies": 132,
+      "janus_color": "black",
+      "janus_won": false,
+      "janus_points": 0.0,
+      "opening_id": "scotch_game",
+      "opening_name": "Scotch Game",
+      "duration_seconds": 18.27,
+      "mean_janus_depth": 3.35,
+      "mean_sf_depth": 14.94,
+      "mean_janus_time": 0.136,
+      "mean_sf_time": 0.141,
+      "infrastructure_error": null
+    }
+  ]
+}

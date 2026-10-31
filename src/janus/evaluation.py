@@ -146,6 +146,7 @@ class EvaluationConfig:
     enable_pawn_structure: bool = False
     enable_rook_files: bool = False
     enable_king_safety: bool = False
+    enable_uncastled_king_safety: bool = True
     enable_tapered_eval: bool = False
 
     # Base piece values (centipawns)
@@ -219,6 +220,7 @@ CONFIG_V034_TAPERED = EvaluationConfig(
     enable_pawn_structure=True,
     enable_rook_files=True,
     enable_king_safety=True,
+    enable_uncastled_king_safety=True,
     enable_tapered_eval=True,
 )
 
@@ -228,6 +230,7 @@ DEFAULT_CONFIG: EvaluationConfig = CONFIG_V030
 ENABLE_PAWN_STRUCTURE: bool = False
 ENABLE_ROOK_FILES: bool = False
 ENABLE_KING_SAFETY: bool = False
+ENABLE_UNCASTLED_KING_SAFETY: bool = True
 ENABLE_TAPERED_EVAL: bool = False
 
 
@@ -236,16 +239,19 @@ def set_evaluation_features(
     pawn_structure: bool | None = None,
     rook_files: bool | None = None,
     king_safety: bool | None = None,
+    uncastled_king_safety: bool | None = None,
     tapered_eval: bool | None = None,
 ) -> None:
     """Globally toggle evaluation candidate features and update DEFAULT_CONFIG."""
-    global ENABLE_PAWN_STRUCTURE, ENABLE_ROOK_FILES, ENABLE_KING_SAFETY, ENABLE_TAPERED_EVAL, DEFAULT_CONFIG
+    global ENABLE_PAWN_STRUCTURE, ENABLE_ROOK_FILES, ENABLE_KING_SAFETY, ENABLE_UNCASTLED_KING_SAFETY, ENABLE_TAPERED_EVAL, DEFAULT_CONFIG
     if pawn_structure is not None:
         ENABLE_PAWN_STRUCTURE = pawn_structure
     if rook_files is not None:
         ENABLE_ROOK_FILES = rook_files
     if king_safety is not None:
         ENABLE_KING_SAFETY = king_safety
+    if uncastled_king_safety is not None:
+        ENABLE_UNCASTLED_KING_SAFETY = uncastled_king_safety
     if tapered_eval is not None:
         ENABLE_TAPERED_EVAL = tapered_eval
 
@@ -253,6 +259,7 @@ def set_evaluation_features(
         enable_pawn_structure=ENABLE_PAWN_STRUCTURE,
         enable_rook_files=ENABLE_ROOK_FILES,
         enable_king_safety=ENABLE_KING_SAFETY,
+        enable_uncastled_king_safety=ENABLE_UNCASTLED_KING_SAFETY,
         enable_tapered_eval=ENABLE_TAPERED_EVAL,
     )
 
@@ -335,7 +342,7 @@ def _compute_king_safety_mg(board: chess.Board, cfg: EvaluationConfig, occ_w: in
                 score -= cfg.king_open_file_penalty_mg
             if not c_pawn:
                 score -= cfg.king_open_file_penalty_mg
-        else:
+        elif cfg.enable_uncastled_king_safety:
             # Uncastled / Central King Exposure
             f_mask = FILE_MASKS[kf]
             if not (w_pawns & f_mask):
@@ -370,7 +377,7 @@ def _compute_king_safety_mg(board: chess.Board, cfg: EvaluationConfig, occ_w: in
                 score += cfg.king_open_file_penalty_mg
             if not c_pawn:
                 score += cfg.king_open_file_penalty_mg
-        else:
+        elif cfg.enable_uncastled_king_safety:
             # Uncastled / Central King Exposure
             f_mask = FILE_MASKS[kf]
             if not (b_pawns & f_mask):

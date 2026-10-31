@@ -1,0 +1,63 @@
+{
+  "milestone": "v0.40",
+  "baseline_identification": {
+    "git_head_commit": "790f533",
+    "git_branch": "v0.3-benchmark-harness",
+    "git_status": "clean",
+    "timestamp_utc": "2026-10-31T18:30:00.000000+00:00",
+    "prior_milestone": "v0.39"
+  },
+  "runtime_environment": {
+    "python_version": "3.13.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "compiler": "MSC v.1942 64 bit (AMD64)"
+  },
+  "external_engine": {
+    "engine_name": "Stockfish 19",
+    "executable_path": "E:\\ChessXML\\tools\\stockfish\\stockfish.exe",
+    "sha256_hash": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+    "calibrated_options": {
+      "Threads": 1,
+      "Hash": 64,
+      "UCI_LimitStrength": true,
+      "UCI_Elo": 1320
+    }
+  },
+  "search_configuration": {
+    "tt_max_entries": 200000,
+    "tt_replacement_policy": "always_replace",
+    "qsearch_max_ply": 12,
+    "qsearch_hard_limit_offset": 8,
+    "enable_history": true,
+    "enable_pvs": true,
+    "enable_aspiration": true,
+    "aspiration_delta": 35,
+    "enable_lmr": true,
+    "enable_nmp": true,
+    "nmp_reduction": 2,
+    "check_extension_policy": "disabled",
+    "enable_see_ordering": false,
+    "enable_see_pruning": false,
+    "enable_qsearch_checks": false,
+    "qsearch_checks_max_ply": 1,
+    "fail_low_check_evasions": "fixed_in_v039",
+    "root_fallback_move_ordering": "enabled_in_v039"
+  },
+  "evaluation_configuration": {
+    "config_name": "CONFIG_V034_TAPERED",
+    "enable_pawn_structure": true,
+    "enable_rook_files": true,
+    "enable_king_safety": true,
+    "enable_tapered_eval": true,
+    "calibrated_uncastled_king_safety": "enabled_in_v039"
+  },
+  "time_management": {
+    "policy": "arm_c",
+    "description": "Adaptive Fischer increment time manager",
+    "safety_reserve_ms": 200,
+    "default_moves_to_go": 28,
+    "increment_weight": 0.75,
+    "max_allocation_ratio": 2.5
+  }
+}
+

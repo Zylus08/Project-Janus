@@ -218,6 +218,7 @@ class SupervisedEngineSession:
         winc: Optional[int] = None,
         binc: Optional[int] = None,
         movestogo: Optional[int] = None,
+        depth: Optional[int] = None,
     ) -> MoveResult:
         """Instruct engine to search from board position and return legal bestmove."""
         if not self.is_alive():
@@ -238,7 +239,10 @@ class SupervisedEngineSession:
                 self._send_line(f"position fen {board.fen()}")
 
         t_start = time.monotonic()
-        if movetime_ms is not None:
+        if depth is not None:
+            self._send_line(f"go depth {depth}")
+            time_budget_s = 60.0
+        elif movetime_ms is not None:
             self._send_line(f"go movetime {movetime_ms}")
             time_budget_s = (movetime_ms / 1000.0) + self.move_timeout_padding
         else:

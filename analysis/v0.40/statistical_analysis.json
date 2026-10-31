@@ -1,0 +1,88 @@
+{
+  "benchmark_target": "Stockfish 19 Elo 1320 (Threads=1, Hash=64)",
+  "time_control": "3000ms + 100ms Fischer increment",
+  "k0_baseline": {
+    "candidate": "k0_baseline",
+    "valid_games": 50,
+    "complete_pairs": 25,
+    "infrastructure_failures": 0,
+    "wins": 21,
+    "draws": 3,
+    "losses": 26,
+    "score": 22.5,
+    "score_pct": 45.0,
+    "white_record": "13W / 1D / 11L (13.5/25)",
+    "black_record": "9.0/25",
+    "mean_pair_difference": -0.1,
+    "std_error": 0.1444,
+    "t_statistic": -0.6928,
+    "p_value_approx": 0.4884,
+    "estimated_elo_delta": -34.9,
+    "bootstrap_95ci_score_pct": [
+      31.0,
+      59.0
+    ],
+    "bootstrap_95ci_elo_delta": [
+      -136.7,
+      63.0
+    ]
+  },
+  "k1_ablation": {
+    "candidate": "k1_ablation",
+    "valid_games": 50,
+    "complete_pairs": 25,
+    "infrastructure_failures": 0,
+    "wins": 22,
+    "draws": 2,
+    "losses": 26,
+    "score": 23.0,
+    "score_pct": 46.0,
+    "white_record": "9W / 2D / 14L (10.0/25)",
+    "black_record": "13.0/25",
+    "mean_pair_difference": -0.08,
+    "std_error": 0.1434,
+    "t_statistic": -0.5578,
+    "p_value_approx": 0.577,
+    "estimated_elo_delta": -27.9,
+    "bootstrap_95ci_score_pct": [
+      32.0,
+      60.0
+    ],
+    "bootstrap_95ci_elo_delta": [
+      -130.9,
+      70.4
+    ],
+    "mean_game_duration_seconds": 13.1,
+    "mean_game_plies": 85.8,
+    "mean_janus_depth": 2.29
+  },
+  "ord1_move_ordering": {
+    "candidate": "ord1_move_ordering",
+    "valid_games": 50,
+    "complete_pairs": 25,
+    "infrastructure_failures": 0,
+    "wins": 20,
+    "draws": 5,
+    "losses": 25,
+    "score": 22.5,
+    "score_pct": 45.0,
+    "white_record": "9W / 3D / 13L (10.5/25)",
+    "black_record": "12.0/25",
+    "mean_pair_difference": -0.1,
+    "std_error": 0.1581,
+    "t_statistic": -0.6325,
+    "p_value_approx": 0.5271,
+    "estimated_elo_delta": -34.9,
+    "bootstrap_95ci_score_pct": [
+      30.0,
+      60.0
+    ],
+    "bootstrap_95ci_elo_delta": [
+      -147.2,
+      70.4
+    ],
+    "mean_game_duration_seconds": 12.8,
+    "mean_game_plies": 81.7,
+    "mean_janus_depth": 1.97
+  }
+}

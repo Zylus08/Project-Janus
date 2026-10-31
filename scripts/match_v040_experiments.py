@@ -418,6 +418,7 @@ def run_experiment_match(
                     for r in move_rows:
                         moves_writer.writerow(r)
                     moves_f.flush()
+                    attempts_path.write_text(json.dumps(attempts, indent=2), encoding="utf-8")
 
                     pts = att_rec['janus_points']
                     res = att_rec['result']

@@ -59,7 +59,7 @@ def bootstrap_pair_stats(
 
 
 def analyze_candidate_match(match_dir: Path, candidate_name: str) -> dict[str, Any]:
-    att_path = match_dir / "attempts.json"
+    att_path = (match_dir / "attempt_log.json") if (match_dir / "attempt_log.json").is_file() else (match_dir / "attempts.json")
     if not att_path.is_file():
         return {"candidate": candidate_name, "status": "no_data"}
 

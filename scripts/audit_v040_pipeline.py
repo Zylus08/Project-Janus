@@ -176,10 +176,14 @@ def main() -> None:
             continue
 
         print(f"\nAuditing match directory: {m}")
-        pgn_audit = audit_pgn_file(m_dir / "games.pgn")
-        moves_audit = audit_moves_csv(m_dir / "moves.csv")
-        att_audit = audit_attempts(m_dir / "attempts.json", expected_games=50)
-        stats = recompute_statistics(m_dir / "attempts.json")
+        pgn_file = (m_dir / "match_results.pgn") if (m_dir / "match_results.pgn").is_file() else (m_dir / "games.pgn")
+        moves_file = (m_dir / "match_moves.csv") if (m_dir / "match_moves.csv").is_file() else (m_dir / "moves.csv")
+        att_file = (m_dir / "attempt_log.json") if (m_dir / "attempt_log.json").is_file() else (m_dir / "attempts.json")
+
+        pgn_audit = audit_pgn_file(pgn_file)
+        moves_audit = audit_moves_csv(moves_file)
+        att_audit = audit_attempts(att_file, expected_games=50)
+        stats = recompute_statistics(att_file)
 
         print(f"  PGN Check: {pgn_audit['games_count']} games, {pgn_audit['total_plies']} plies, {pgn_audit['illegal_moves']} illegal moves -> {pgn_audit['status']}")
         print(f"  Clock Check: {moves_audit['total_moves']} moves, {moves_audit['negative_clocks']} negative clocks -> {moves_audit['status']}")

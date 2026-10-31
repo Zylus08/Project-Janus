@@ -133,12 +133,16 @@ class JanusSearch:
         max_check_extensions: int = 2,
         enable_see_ordering: bool = False,
         enable_see_pruning: bool = False,
+        enable_qsearch_checks: bool = False,
+        qsearch_checks_max_ply: int = 1,
         tt_replacement_policy: str = "always_replace",
         eval_config: Optional[EvaluationConfig] = None,
         time_manager: Optional[TimeManager] = None,
     ) -> None:
         self.time_manager = time_manager or TimeManager()
         self.eval_config = eval_config
+        self.enable_qsearch_checks = enable_qsearch_checks
+        self.qsearch_checks_max_ply = qsearch_checks_max_ply
         valid_tt_policies = ("always_replace", "depth_preferred", "two_tier")
         if tt_replacement_policy not in valid_tt_policies:
             raise ValueError(
@@ -551,8 +555,7 @@ class JanusSearch:
 
         return score
 
-    @staticmethod
-    def _quiescence_moves(board: chess.Board) -> list[chess.Move]:
+    def _quiescence_moves(self, board: chess.Board, include_checks: bool = False) -> list[chess.Move]:
         moves = list(board.generate_legal_captures())
         pawn_mask = board.pawns & board.occupied_co[board.turn]
         seventh_rank = chess.BB_RANK_7 if board.turn == chess.WHITE else chess.BB_RANK_2
@@ -565,6 +568,12 @@ class JanusSearch:
             ):
                 if move.promotion is not None:
                     moves.append(move)
+        if include_checks:
+            cap_set = set(moves)
+            for move in board.legal_moves:
+                if move not in cap_set and board.gives_check(move):
+                    if not self.enable_see_pruning or self._see(board, move) >= 0:
+                        moves.append(move)
         return moves
 
     def _ordered_moves(
@@ -591,6 +600,7 @@ class JanusSearch:
         beta: int,
         ply: int,
         check_stalemate: bool = True,
+        qply: int = 0,
     ) -> int:
         self.nodes += 1
         self._check_stop()
@@ -603,6 +613,12 @@ class JanusSearch:
             return 0
 
         in_check = board.is_check()
+
+        # Hard ply ceiling to prevent unbounded check evasion recursion
+        qsearch_hard_limit = self.qsearch_max_ply + 8
+        if ply >= qsearch_hard_limit:
+            return evaluate_side_to_move(board, config=self.eval_config)
+
         if ply >= self.qsearch_max_ply and not in_check:
             return evaluate_side_to_move(board, config=self.eval_config)
 
@@ -615,9 +631,12 @@ class JanusSearch:
                 return 0
             stand_pat = evaluate_side_to_move(board, config=self.eval_config)
             if stand_pat >= beta:
-                return beta
+                return stand_pat
             alpha = max(alpha, stand_pat)
-            moves = self._quiescence_moves(board)
+            moves = self._quiescence_moves(
+                board,
+                include_checks=(self.enable_qsearch_checks and qply < self.qsearch_checks_max_ply),
+            )
             moves.sort(
                 key=lambda move: self._move_order_score(board, move, None, ply, node_see=node_see),
                 reverse=True,
@@ -627,6 +646,8 @@ class JanusSearch:
 
         if in_check and not moves:
             return -MATE_SCORE + ply
+
+        best_score = -INF if in_check else alpha
 
         for move in moves:
             if not in_check and self.enable_see_pruning:
@@ -651,15 +672,18 @@ class JanusSearch:
 
             board.push(move)
             try:
-                score = -self._quiescence(board, -beta, -alpha, ply + 1)
+                score = -self._quiescence(board, -beta, -alpha, ply + 1, check_stalemate=False, qply=qply + 1)
             finally:
                 board.pop()
 
+            if score > best_score:
+                best_score = score
             if score >= beta:
-                return beta
-            alpha = max(alpha, score)
+                return score
+            if score > alpha:
+                alpha = score
 
-        return alpha
+        return best_score if in_check else alpha
 
     def _negamax(
         self,
@@ -1037,7 +1061,8 @@ class JanusSearch:
                 tt_clears=0,
             )
 
-        best_move = legal_moves[0]
+        ordered_root = self._ordered_moves(board, None, 0)
+        best_move = ordered_root[0] if ordered_root else legal_moves[0]
         best_score = 0
         best_pv: list[chess.Move] = [best_move]
         completed_depth = 0

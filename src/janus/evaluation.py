@@ -302,6 +302,87 @@ def evaluation_config(
         DEFAULT_CONFIG = old_cfg
 
 
+def _compute_king_safety_mg(board: chess.Board, cfg: EvaluationConfig, occ_w: int, occ_b: int) -> int:
+    """Compute middlegame king safety score from White's perspective."""
+    w_pawns = board.pawns & occ_w
+    b_pawns = board.pawns & occ_b
+    all_pawns = board.pawns
+
+    score = 0
+
+    w_king = board.king(chess.WHITE)
+    if w_king is not None:
+        kf = chess.square_file(w_king)
+        if w_king in (chess.G1, chess.H1):
+            f_pawn = bool(w_pawns & ((1 << chess.F2) | (1 << chess.F3)))
+            g_pawn = bool(w_pawns & ((1 << chess.G2) | (1 << chess.G3)))
+            h_pawn = bool(w_pawns & ((1 << chess.H2) | (1 << chess.H3)))
+            score += (f_pawn + g_pawn + h_pawn) * cfg.king_shield_bonus_mg
+            if not f_pawn:
+                score -= cfg.king_open_file_penalty_mg
+            if not g_pawn:
+                score -= cfg.king_open_file_penalty_mg
+            if not h_pawn:
+                score -= cfg.king_open_file_penalty_mg
+        elif w_king in (chess.B1, chess.C1):
+            a_pawn = bool(w_pawns & ((1 << chess.A2) | (1 << chess.A3)))
+            b_pawn = bool(w_pawns & ((1 << chess.B2) | (1 << chess.B3)))
+            c_pawn = bool(w_pawns & ((1 << chess.C2) | (1 << chess.C3)))
+            score += (a_pawn + b_pawn + c_pawn) * cfg.king_shield_bonus_mg
+            if not a_pawn:
+                score -= cfg.king_open_file_penalty_mg
+            if not b_pawn:
+                score -= cfg.king_open_file_penalty_mg
+            if not c_pawn:
+                score -= cfg.king_open_file_penalty_mg
+        else:
+            # Uncastled / Central King Exposure
+            f_mask = FILE_MASKS[kf]
+            if not (w_pawns & f_mask):
+                score -= cfg.king_open_file_penalty_mg
+                if not (all_pawns & f_mask):
+                    score -= cfg.king_open_file_penalty_mg
+            if not (board.has_kingside_castling_rights(chess.WHITE) or board.has_queenside_castling_rights(chess.WHITE)):
+                score -= 15
+
+    b_king = board.king(chess.BLACK)
+    if b_king is not None:
+        kf = chess.square_file(b_king)
+        if b_king in (chess.G8, chess.H8):
+            f_pawn = bool(b_pawns & ((1 << chess.F7) | (1 << chess.F6)))
+            g_pawn = bool(b_pawns & ((1 << chess.G7) | (1 << chess.G6)))
+            h_pawn = bool(b_pawns & ((1 << chess.H7) | (1 << chess.H6)))
+            score -= (f_pawn + g_pawn + h_pawn) * cfg.king_shield_bonus_mg
+            if not f_pawn:
+                score += cfg.king_open_file_penalty_mg
+            if not g_pawn:
+                score += cfg.king_open_file_penalty_mg
+            if not h_pawn:
+                score += cfg.king_open_file_penalty_mg
+        elif b_king in (chess.B8, chess.C8):
+            a_pawn = bool(b_pawns & ((1 << chess.A7) | (1 << chess.A6)))
+            b_pawn = bool(b_pawns & ((1 << chess.B7) | (1 << chess.B6)))
+            c_pawn = bool(b_pawns & ((1 << chess.C7) | (1 << chess.C6)))
+            score -= (a_pawn + b_pawn + c_pawn) * cfg.king_shield_bonus_mg
+            if not a_pawn:
+                score += cfg.king_open_file_penalty_mg
+            if not b_pawn:
+                score += cfg.king_open_file_penalty_mg
+            if not c_pawn:
+                score += cfg.king_open_file_penalty_mg
+        else:
+            # Uncastled / Central King Exposure
+            f_mask = FILE_MASKS[kf]
+            if not (b_pawns & f_mask):
+                score += cfg.king_open_file_penalty_mg
+                if not (all_pawns & f_mask):
+                    score += cfg.king_open_file_penalty_mg
+            if not (board.has_kingside_castling_rights(chess.BLACK) or board.has_queenside_castling_rights(chess.BLACK)):
+                score += 15
+
+    return score
+
+
 def evaluate_white(board: chess.Board, config: EvaluationConfig | None = None) -> int:
     """Evaluate a non-terminal position from White's perspective."""
     cfg = config if config is not None else DEFAULT_CONFIG
@@ -410,50 +491,7 @@ def _evaluate_white_static(board: chess.Board, cfg: EvaluationConfig) -> int:
 
     # King Safety
     if cfg.enable_king_safety:
-        w_pawns = board.pawns & occ_w
-        b_pawns = board.pawns & occ_b
-
-        w_king = board.king(chess.WHITE)
-        if w_king is not None:
-            if w_king in (chess.G1, chess.H1):
-                f_pawn = bool(w_pawns & ((1 << chess.F2) | (1 << chess.F3)))
-                g_pawn = bool(w_pawns & ((1 << chess.G2) | (1 << chess.G3)))
-                h_pawn = bool(w_pawns & ((1 << chess.H2) | (1 << chess.H3)))
-                score += (f_pawn + g_pawn + h_pawn) * cfg.king_shield_bonus_mg
-                if not g_pawn:
-                    score -= cfg.king_open_file_penalty_mg
-                if not h_pawn:
-                    score -= cfg.king_open_file_penalty_mg
-            elif w_king in (chess.B1, chess.C1):
-                a_pawn = bool(w_pawns & ((1 << chess.A2) | (1 << chess.A3)))
-                b_pawn = bool(w_pawns & ((1 << chess.B2) | (1 << chess.B3)))
-                c_pawn = bool(w_pawns & ((1 << chess.C2) | (1 << chess.C3)))
-                score += (a_pawn + b_pawn + c_pawn) * cfg.king_shield_bonus_mg
-                if not b_pawn:
-                    score -= cfg.king_open_file_penalty_mg
-                if not c_pawn:
-                    score -= cfg.king_open_file_penalty_mg
-
-        b_king = board.king(chess.BLACK)
-        if b_king is not None:
-            if b_king in (chess.G8, chess.H8):
-                f_pawn = bool(b_pawns & ((1 << chess.F7) | (1 << chess.F6)))
-                g_pawn = bool(b_pawns & ((1 << chess.G7) | (1 << chess.G6)))
-                h_pawn = bool(b_pawns & ((1 << chess.H7) | (1 << chess.H6)))
-                score -= (f_pawn + g_pawn + h_pawn) * cfg.king_shield_bonus_mg
-                if not g_pawn:
-                    score += cfg.king_open_file_penalty_mg
-                if not h_pawn:
-                    score += cfg.king_open_file_penalty_mg
-            elif b_king in (chess.B8, chess.C8):
-                a_pawn = bool(b_pawns & ((1 << chess.A7) | (1 << chess.A6)))
-                b_pawn = bool(b_pawns & ((1 << chess.B7) | (1 << chess.B6)))
-                c_pawn = bool(b_pawns & ((1 << chess.C7) | (1 << chess.C6)))
-                score -= (a_pawn + b_pawn + c_pawn) * cfg.king_shield_bonus_mg
-                if not b_pawn:
-                    score += cfg.king_open_file_penalty_mg
-                if not c_pawn:
-                    score += cfg.king_open_file_penalty_mg
+        score += _compute_king_safety_mg(board, cfg, occ_w, occ_b)
 
     return score
 
@@ -586,47 +624,9 @@ def _evaluate_white_tapered(board: chess.Board, cfg: EvaluationConfig) -> int:
     w_king = board.king(chess.WHITE)
     b_king = board.king(chess.BLACK)
 
-    # Middlegame: Castled King Shield & Exposure
+    # Middlegame: King Shield & Central Exposure
     if cfg.enable_king_safety:
-        if w_king is not None:
-            if w_king in (chess.G1, chess.H1):
-                f_pawn = bool(w_pawns & ((1 << chess.F2) | (1 << chess.F3)))
-                g_pawn = bool(w_pawns & ((1 << chess.G2) | (1 << chess.G3)))
-                h_pawn = bool(w_pawns & ((1 << chess.H2) | (1 << chess.H3)))
-                mg_score += (f_pawn + g_pawn + h_pawn) * cfg.king_shield_bonus_mg
-                if not g_pawn:
-                    mg_score -= cfg.king_open_file_penalty_mg
-                if not h_pawn:
-                    mg_score -= cfg.king_open_file_penalty_mg
-            elif w_king in (chess.B1, chess.C1):
-                a_pawn = bool(w_pawns & ((1 << chess.A2) | (1 << chess.A3)))
-                b_pawn = bool(w_pawns & ((1 << chess.B2) | (1 << chess.B3)))
-                c_pawn = bool(w_pawns & ((1 << chess.C2) | (1 << chess.C3)))
-                mg_score += (a_pawn + b_pawn + c_pawn) * cfg.king_shield_bonus_mg
-                if not b_pawn:
-                    mg_score -= cfg.king_open_file_penalty_mg
-                if not c_pawn:
-                    mg_score -= cfg.king_open_file_penalty_mg
-
-        if b_king is not None:
-            if b_king in (chess.G8, chess.H8):
-                f_pawn = bool(b_pawns & ((1 << chess.F7) | (1 << chess.F6)))
-                g_pawn = bool(b_pawns & ((1 << chess.G7) | (1 << chess.G6)))
-                h_pawn = bool(b_pawns & ((1 << chess.H7) | (1 << chess.H6)))
-                mg_score -= (f_pawn + g_pawn + h_pawn) * cfg.king_shield_bonus_mg
-                if not g_pawn:
-                    mg_score += cfg.king_open_file_penalty_mg
-                if not h_pawn:
-                    mg_score += cfg.king_open_file_penalty_mg
-            elif b_king in (chess.B8, chess.C8):
-                a_pawn = bool(b_pawns & ((1 << chess.A7) | (1 << chess.A6)))
-                b_pawn = bool(b_pawns & ((1 << chess.B7) | (1 << chess.B6)))
-                c_pawn = bool(b_pawns & ((1 << chess.C7) | (1 << chess.C6)))
-                mg_score -= (a_pawn + b_pawn + c_pawn) * cfg.king_shield_bonus_mg
-                if not b_pawn:
-                    mg_score += cfg.king_open_file_penalty_mg
-                if not c_pawn:
-                    mg_score += cfg.king_open_file_penalty_mg
+        mg_score += _compute_king_safety_mg(board, cfg, occ_w, occ_b)
 
     # Endgame: King Centralization (Active King)
     if w_king is not None and b_king is not None:

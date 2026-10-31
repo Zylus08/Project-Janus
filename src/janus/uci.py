@@ -40,6 +40,8 @@ def main() -> None:
     parser.add_argument("--eval-king-safety", action="store_true", help="Enable king safety evaluation")
     parser.add_argument("--eval-tapered", action="store_true", help="Enable tapered evaluation")
     parser.add_argument("--eval-all", action="store_true", help="Enable all evaluation improvements")
+    parser.add_argument("--enable-qsearch-checks", action="store_true", help="Enable checking exploration in quiescence")
+    parser.add_argument("--qsearch-checks-max-ply", type=int, default=1, help="Max quiescence ply for check exploration")
     parser.add_argument("--time-policy", type=str, default="adaptive",
                         choices=["adaptive", "reference", "matched_reference", "arm_a", "arm_b", "arm_c"],
                         help="Time allocation policy: adaptive, reference, matched_reference, arm_a, arm_b, or arm_c")
@@ -97,6 +99,8 @@ def main() -> None:
         enable_see_pruning=see_pruning,
         check_extension_policy=args.check_extensions,
         tt_replacement_policy=args.tt_policy,
+        enable_qsearch_checks=args.enable_qsearch_checks,
+        qsearch_checks_max_ply=args.qsearch_checks_max_ply,
         time_manager=tm,
     )
     search_thread: threading.Thread | None = None

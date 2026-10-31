@@ -1,0 +1,28 @@
+[Event "Janus v0.38 External Benchmark - historical_depth3"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "1"]
+[White "Janus-v0.38"]
+[Black "Stockfish-19"]
+[Result "0-1"]
+[TimeControl "depth 3"]
+[SetUp "1"]
+[FEN "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"]
+[Termination "checkmate_black_wins"]
+
+3... exd4 4. Nxd4 Nf6 5. Nxc6 dxc6 6. Qxd8+ Kxd8 7. Bd3 Nd7 8. Bg5+ f6 9. Bf4 Bd6 10. Bxd6 cxd6 11. Nc3 b5 12. O-O-O Kc7 13. Bxb5 cxb5 14. Nxb5+ Kc6 15. Nxd6 Ne5 16. f4 Ng4 17. Nxc8 Raxc8 18. Rd2 Rhe8 19. Rd4 Ne3 20. g3 Rcd8 21. Rxd8 Rxd8 22. Re1 Ng4 23. h4 h5 24. Rd1 Re8 25. Re1 Rd8 26. Rd1 Re8 27. Re1 Nf2 28. e5 Ng4 29. e6 Nh6 30. Re3 Re7 31. Ra3 Nf5 32. c4 Kd6 33. Ra6+ Kc7 34. Rxa7+ Kd6 35. Ra6+ Kc7 36. Ra7+ Kd6 37. Ra6+ Kc7 38. Ra7+ Kd6 39. Ra6+ Kc7 40. Ra7+ Kd6 41. Ra6+ Kc7 42. c5 Kb7 43. Rb6+ Kc7 44. Ra6 Nxg3 45. Ra7+ Kd8 46. Ra8+ Kc7 47. Ra7+ Kd8 48. Ra8+ Kc7 49. Ra7+ Kd8 50. Ra8+ Kc7 51. Ra7+ Kd8 52. Ra8+ Kc7 53. Kc2 Kb7 54. Ra3 Nf5 55. c6+ Kxc6 56. Rc3+ Kd5 57. b4 Kxe6 58. Rc6+ Kd7 59. Rc5 g6 60. a4 Re4 61. Kc3 Rxf4 62. a5 Rf3+ 63. Kd2 Ra3 64. Rc4 Nd6 65. Rd4 Ke6 66. Rd3 Ra2+ 67. Kc3 g5 68. Re3+ Kd5 69. Rd3+ Ke5 70. Re3+ Kd5 71. Rd3+ Kc6 72. hxg5 fxg5 73. Kb3 Re2 74. a6 Re7 75. Rc3+ Kb6 76. Kc2 Rg7 77. Ra3 Nb5 78. Ra1 Rc7+ 79. Kd3 Rd7+ 80. Kc4 Rd4+ 81. Kb3 Rd7 82. Kc4 Rd4+ 83. Kb3 Rf4 84. Ra5 Rf7 85. Kc4 Rc7+ 86. Kd5 Re7 87. Kc4 Rc7+ 88. Kd5 g4 89. Ra1 Ka7 90. Ke5 g3 91. Rg1 h4 92. Ra1 g2 93. Rg1 h3 94. Kd5 h2 95. Rxg2 h1=Q 96. Ke6 Qxg2 97. Ke5 Qg4 98. Kf6 Rh7 99. Ke5 Rh6 100. Kd5 Qd4# 0-1
+
+[Event "Janus v0.38 External Benchmark - historical_depth3"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "2"]
+[White "Stockfish-19"]
+[Black "Janus-v0.38"]
+[Result "1-0"]
+[TimeControl "depth 3"]
+[SetUp "1"]
+[FEN "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"]
+[Termination "checkmate_white_wins"]
+
+3... Nf6 4. d5 Na5 5. Bd3 Bd6 6. Nh4 Nxd5 7. Nf5 Nf4 8. Nxd6+ cxd6 9. Nc3 Nxg2+ 10. Kf1 Nf4 11. Rg1 Nxd3 12. Qxd3 Qf6 13. Nd5 Qd8 14. Rxg7 f6 15. Qg3 Kf8 16. Bh6 Ke8 17. Qf3 Qb6 18. Nxb6 axb6 19. Qg2 b5 20. Rg8+ Rxg8 21. Qxg8+ Ke7 22. Bf8+ Ke8 23. Bxd6# 1-0
+

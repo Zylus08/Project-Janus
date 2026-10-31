@@ -1,0 +1,31 @@
+{
+  "milestone": "v0.38",
+  "qualification_type": "external_stockfish_pilot",
+  "target_games": 6,
+  "valid_games": 6,
+  "infrastructure_failures": 0,
+  "qualification_passed": true,
+  "modes": {
+    "primary_fischer": {
+      "mode": "primary_fischer",
+      "title": "Primary Benchmark: Janus Adaptive vs Stockfish 19 (Fischer 3000ms+100ms)",
+      "valid_games": 2,
+      "infrastructure_failures": 0,
+      "passed": true
+    },
+    "historical_depth3": {
+      "mode": "historical_depth3",
+      "title": "Historical Comparison Benchmark: Janus vs Stockfish 19 (Fixed Depth 3)",
+      "valid_games": 2,
+      "infrastructure_failures": 0,
+      "passed": true
+    },
+    "calibrated_elo": {
+      "mode": "calibrated_elo",
+      "title": "Calibrated Opponent Benchmark: Janus Adaptive vs Stockfish 19 (Elo 1320)",
+      "valid_games": 2,
+      "infrastructure_failures": 0,
+      "passed": true
+    }
+  }
+}

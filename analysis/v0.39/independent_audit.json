@@ -1,0 +1,32 @@
+{
+  "milestone": "v0.39",
+  "audit_timestamp_utc": "2026-10-31T18:12:30.086799+00:00",
+  "audit_verdict": "VERIFIED_VALID",
+  "candidate": "Candidate Q0+K0 (Quiescence fail-low fix + Calibrated king safety)",
+  "opponent": "Stockfish 19 (Elo 1320 calibrated)",
+  "match_audit": {
+    "passed": true,
+    "valid_games": 50,
+    "complete_pairs": 25,
+    "total_moves_verified": 3714,
+    "total_attempts": 50,
+    "infrastructure_failures": 0,
+    "janus_points": 22.5,
+    "score_pct": 45.0,
+    "mean_pair_score": 0.9,
+    "std_pair_score": 0.7217,
+    "t_stat": -0.6928,
+    "elo_diff": -34.9,
+    "flagged_losses": 0,
+    "negative_clocks": 0,
+    "errors": [],
+    "warnings": []
+  },
+  "standards_compliance": {
+    "pgn_move_legality": "100% VALID",
+    "pair_symmetry_and_color_reversal": "100% BALANCED",
+    "clock_management_reserve": "ZERO NEGATIVE CLOCKS",
+    "time_forfeit_disqualifications": "ZERO FORFEITS",
+    "test_suite_coverage": "402/402 PASSED"
+  }
+}

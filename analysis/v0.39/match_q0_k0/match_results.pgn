@@ -1,0 +1,700 @@
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "1"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"]
+[Termination "checkmate_white_wins"]
+
+3... exd4 4. Nxd4 d5 5. Nxc6 bxc6 6. Bd3 Bc5 7. Nc3 Qe7 8. Bf4 Nf6 9. Qe2 Bg4 10. f3 dxe4 11. Nxe4 O-O 12. Nxc5 Rfe8 13. Qxe7 Rxe7+ 14. Kf2 Bd7 15. Bxc7 Rc8 16. Bd6 g6 17. Bxe7 Be8 18. Bxf6 a5 19. Rhe1 Rb8 20. Bc3 f5 21. Bxa5 Rxb2 22. Rxe8+ Kg7 23. Rc8 Rb1 24. Rxb1 g5 25. Bxf5 Kf7 26. Bxh7 g4 27. fxg4 Ke7 28. Rxc6 Kf7 29. Be4 Ke7 30. Re6+ Kf8 31. h4 Kg8 32. c4 Kf8 33. a4 Kf7 34. h5 Kg8 35. h6 Kf8 36. h7 Kf7 37. Rb7+ Kf8 38. h8=Q# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "2"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"]
+[Termination "checkmate_white_wins"]
+
+3... Bd6 4. Bg5 f6 5. Be3 Nge7 6. c3 h5 7. d5 Na5 8. Be2 c5 9. h3 g6 10. O-O b6 11. Na3 a6 12. Nh4 b5 13. b3 c4 14. f4 Bxa3 15. fxe5 fxe5 16. d6 cxb3 17. Bg5 bxa2 18. Kh1 Bxd6 19. Qxd6 Rg8 20. Rf6 Rh8 21. Nxg6 Nxg6 22. Re6+ Kf7 23. Rf6+ Ke8 24. Rxg6 Nc4 25. Rg8+ Rxg8 26. Bxh5+ Rg6 27. Bxg6# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "3"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"]
+[Termination "checkmate_black_wins"]
+
+4. Nc3 d6 5. h4 Be7 6. d4 O-O 7. Be3 exd4 8. Nxd4 Ne5 9. Bb5 c6 10. Be2 Neg4 11. Bf4 d5 12. Bxg4 Bxg4 13. Qxg4 Nxg4 14. exd5 Bb4 15. dxc6 Re8+ 16. Kd2 Qxd4+ 17. Kc1 Qxf4+ 18. Kb1 Bxc3 19. bxc3 a6 20. cxb7 Nxf2 21. bxa8=Q Rb8+ 22. Qxb8+ Qxb8+ 23. Kc1 Nxh1 24. h5 Qe8 25. Kd2 a5 26. Rxh1 a4 27. Re1 Qd8+ 28. Ke2 g5 29. c4 Qa8 30. Kf2 Qa7+ 31. Kf3 Qa8+ 32. Kf2 Qc6 33. g4 h6 34. a3 f6 35. Re7 Qc5+ 36. Re3 Kf7 37. Kf3 Qxc4 38. Re4 Qc6 39. c4 Qc5 40. Ke2 Qxa3 41. Re3 Qb2+ 42. Kf3 Qb7+ 43. Re4 a3 44. c5 Qb3+ 45. Re3 Qb7+ 46. Kf2 a2 47. c6 Qb8 48. c7 Qxc7 49. Re1 Qc2+ 50. Kg1 f5 51. gxf5 Qc5+ 52. Kf1 Qc4+ 53. Kg2 Qd5+ 54. Kg3 Qd3+ 55. Kg4 Qd4+ 56. Kf3 Qc3+ 57. Kf2 Qb2+ 58. Ke3 Qc3+ 59. Kf2 Qb2+ 60. Ke3 g4 61. Rh1 Qc3+ 62. Kf4 Qc4+ 63. Ke5 Qe2+ 64. Kd6 Qe7+ 65. Kd5 Qb7+ 66. Ke5 Qc7+ 67. Kd4 Qd6+ 68. Ke3 Qe5+ 69. Kf2 Qb2+ 70. Kg3 Qb3+ 71. Kh4 g3 72. Kh3 Qd3 73. Ra1 Qb3 74. Re1 Qb2 75. Kxg3 Qa3+ 76. Kf4 Qd6+ 77. Kf3 Qd3+ 78. Kg4 Qd2 79. Rg1 Qe2+ 80. Kh4 Qh2+ 81. Kg4 Qe2+ 82. Kh4 Qh2+ 83. Kg4 Qxg1+ 84. Kf4 Qf2+ 85. Ke5 Qe3+ 86. Kd5 a1=Q 87. Kd6 Qf4+ 88. Kc6 Qfe5 89. Kb6 Qh1 90. Ka6 Qb1 91. Ka7 Qa5# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "4"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"]
+[Termination "max_plies_reached"]
+
+4. Nc3 Bb4 5. d3 d5 6. Bb3 dxe4 7. dxe4 Qxd1+ 8. Kxd1 Bxc3 9. Ng5 Bg4+ 10. f3 Nxe4 11. Nxe4 Bxf3+ 12. gxf3 O-O-O+ 13. Bd2 Bxb2 14. Rc1 Bxc1 15. Kxc1 f6 16. h4 h5 17. c3 Rd3 18. Rg1 f5 19. Ng5 Rhd8 20. Rg2 g6 21. Bc4 R3d7 22. Be6 b6 23. Nh7 Ne7 24. Kc2 Nd5 25. Rxg6 a6 26. Rg7 c5 27. Bg5 Nxc3 28. Kxc3 Rh8 29. a3 Rd8 30. Nf8 Rxf8 31. Rxd7 Kb8 32. Kc2 f4 33. Be7 Rh8 34. Bh3 Rg8 35. Bf6 Re8 36. Bg5 Rg8 37. Kb1 c4 38. a4 c3 39. Kc1 Kc8 40. Rg7+ Kb8 41. Rd7 Rg6 42. Re7 Rg8 43. Kc2 Rd8 44. Bd7 Kc7 45. Be8+ Kc8 46. a5 Rxe8 47. Rxe8+ Kd7 48. Rd8+ Ke6 49. Re8+ Kf7 50. Rxe5 bxa5 51. Kd3 a4 52. Re1 a3 53. Bxf4 a2 54. Bh6 Kg6 55. Bg5 a5 56. Rg1 a4 57. Ra1 a3 58. Rxa2 Kf5 59. Kd4 c2 60. Ra1 a2 61. Bc1 Ke6 62. Rxa2 Kf5 63. Kd5 Kf6 64. Ra3 Kf5 65. Ra2 Kg6 66. Ra7 Kf5 67. Ra3 Kf6 68. Ra5 Kf5 69. Ra3 Kg6 70. f4 Kf5 71. Ra1 Kg4 72. Ra8 Kxh4 73. Ke5 Kg4 74. Rb8 h4 75. f5 h3 76. Rg8+ Kf3 77. Rg1 h2 78. Re1 Kg2 79. f6 h1=Q 80. Rxh1 Kxh1 81. f7 Kg2 82. f8=Q Kg3 83. Bf4+ Kg4 84. Bc1 Kh3 85. Qf6 Kg3 86. Qf7 Kh3 87. Qf4 Kg2 88. Qg4+ Kf1 89. Kd5 Ke1 90. Qg3+ Kd1 91. Qg1+ Ke2 92. Qh2+ Kf3 93. Qh3+ Kf2 94. Qh2+ Kf3 95. Qh5+ Kg3 96. Qg5+ Kf3 97. Qf5+ Ke2 98. Qh5+ Kf1 99. Qh1+ Ke2 100. Qe4+ Kf2 101. Qf5+ Ke2 102. Qxc2+ Kf3 103. Kd4 Kg4 1/2-1/2
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "5"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppp1ppp/8/4p3/8/1P6/P1PPPPPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "checkmate_white_wins"]
+
+2. Nf3 e4 3. Ne5 Qg5 4. d4 Qh4 5. g3 Qe7 6. Nd2 Nf6 7. f3 d6 8. Ba3 Nbd7 9. Nxd7 Kxd7 10. fxe4 h5 11. e5 Nd5 12. h4 Kd8 13. e4 Nc3 14. Qf3 Nb5 15. Bxb5 Bg4 16. exd6 Qe8 17. Qd3 c6 18. Bc4 c5 19. Bb5 a6 20. Bxe8 Rh6 21. Bxf7 Rc8 22. dxc5 Bxd6 23. cxd6 b5 24. e5 Rc6 25. Bd5 Re6 26. Bxc6 Rxe5+ 27. Ne4 b4 28. Bxb4 Bd7 29. Qd4 Bxc6 30. Qxe5 Bxe4 31. Qxe4 g5 32. hxg5 h4 33. gxh4 a5 34. Qe7+ Kc8 35. Qc7# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "6"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppp1ppp/8/4p3/8/1P6/P1PPPPPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "checkmate_white_wins"]
+
+2. e4 Ne7 3. Bb2 Nbc6 4. Nf3 d5 5. Nc3 d4 6. Ne2 f5 7. Ng5 h5 8. h4 fxe4 9. Nxe4 Bf5 10. N2g3 Qd5 11. Bc4 Qd8 12. O-O Bg4 13. f3 Bd7 14. Ng5 Nf5 15. f4 Nxg3 16. Bf7+ Ke7 17. Ba3+ Kf6 18. fxe5+ Kxe5 19. Qe1+ Ne4 20. Qxe4# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "7"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "checkmate_black_wins"]
+
+2. Nf3 b6 3. Be3 Bb7 4. Nc3 d5 5. h4 Be7 6. a4 Bb4 7. g4 Nc6 8. h5 Qe7 9. g5 O-O-O 10. Ne5 Nxe5 11. dxe5 d4 12. Bg2 Bxg2 13. h6 dxc3 14. Qxd8+ Kxd8 15. hxg7 cxb2+ 16. Kd1 Qd7+ 17. Bd4 bxa1=R# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "8"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "max_plies_reached"]
+
+2. c3 Ne7 3. e4 f5 4. Qh5+ g6 5. Qf3 fxe4 6. Qxe4 Nbc6 7. a4 d5 8. Qf3 h5 9. Bd3 a5 10. Qe2 Bd7 11. Nf3 b6 12. Na3 h4 13. Bg5 Qc8 14. Nb5 Nxd4 15. Nfxd4 Bxb5 16. Nxb5 Rg8 17. Bxh4 Rg7 18. Bg5 c5 19. Kd1 Nf5 20. Bf4 c4 21. Bb1 Bc5 22. Qf3 g5 23. Be5 g4 24. Qe2 Rf7 25. Re1 Qd8 26. g3 Qg5 27. Bc2 Ne3+ 28. fxe3 Qxe5 29. Nd4 Rg7 30. Qg2 Rf7 31. Bg6 Ra7 32. Bxf7+ Rxf7 33. Qe2 Qe4 34. b3 e5 35. Rc1 exd4 36. exd4 Qxe2+ 37. Rxe2+ Be7 38. Kc2 cxb3+ 39. Kxb3 Kd7 40. Rb1 Bd6 41. Kb2 Rf8 42. Ka1 Rf3 43. Kb2 Rf7 44. Kb3 Rf8 45. Kc2 Kc6 46. Kd2 Rf5 47. Rb3 Rf3 48. Rb1 Rf5 49. Kc2 Rf7 50. Rg1 Rf6 51. Rd1 Kd7 52. Rb1 Kc7 53. Rh1 Kd8 54. Rhe1 Rf3 55. Rc1 Kd7 56. Rce1 Kd8 57. Re8+ Kd7 58. R8e3 Rf2+ 59. R3e2 Rxe2+ 60. Rxe2 Kc6 61. Kb3 Kc7 62. Re6 Kc6 63. Rg6 Kc7 64. Rxg4 Kc6 65. Rg5 Be7 66. Rg8 Kd7 67. Rg4 Bf8 68. h3 Bd6 69. Rg5 Ke7 70. Rg4 Ke6 71. Rg6+ Kd7 72. h4 Ke7 73. Kc2 Bc7 74. Rg7+ Kd8 75. Rg8+ Kd7 76. c4 dxc4 77. g4 Bd6 78. h5 Bb4 79. Rg7+ Kc6 80. Rg8 Kd5 81. Re8 Kxd4 82. Re2 Bf8 83. Re6 Bc5 84. Rg6 c3 85. Rg8 Kc4 86. h6 Bd4 87. g5 Be5 88. h7 Kd5 89. Rd8+ Ke4 90. Rd7 Kf5 91. Kd3 Kxg5 92. Rf7 Kg4 93. Rf8 Kg5 94. h8=Q Bxh8 95. Rg8+ Bg7 96. Rxg7+ Kf6 97. Rb7 c2 98. Rxb6+ Ke5 99. Rb5+ Kf4 100. Rc5 c1=Q 101. Rxc1 Ke5 1/2-1/2
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "9"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/ppp1pppp/3p4/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "checkmate_white_wins"]
+
+2. Bd3 Nc6 3. Nf3 Nf6 4. Nc3 Bg4 5. h3 Bxf3 6. Qxf3 Ne5 7. Qg3 c6 8. Be2 Ng6 9. f4 Qa5 10. a4 e5 11. f5 Ne7 12. h4 O-O-O 13. h5 d5 14. Qxe5 Neg8 15. g4 Re8 16. Qf4 Nxe4 17. Nxe4 Qb4 18. Bd3 dxe4 19. Qe3 Nf6 20. Be2 Bc5 21. Qg5 e3 22. Qxf6 Bd4 23. Qxf7 exd2+ 24. Bxd2 Qd6 25. h6 Rhf8 26. Qb3 Qe5 27. Qf3 g5 28. Bxg5 Bxb2 29. Rd1 Qxe2+ 30. Qxe2 Bh8 31. Be3 Rf7 32. c4 b6 33. Qf3 Rc7 34. Rd6 Bb2 35. f6 Bc1 36. f7 Rxe3+ 37. Qxe3 Rxf7 38. Qe6+ Kb8 39. Qxf7 b5 40. Rd8# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "10"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/ppp1pppp/3p4/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "checkmate_white_wins"]
+
+2. Bc4 Nf6 3. Nc3 Nbd7 4. Nf3 h5 5. Ng5 Ne5 6. Bb3 c5 7. d3 a5 8. a4 Bd7 9. h3 g6 10. f4 Nxe4 11. dxe4 Bxa4 12. Bxa4+ Nd7 13. Nb5 Rg8 14. c3 Rh8 15. Rf1 f5 16. e5 dxe5 17. Qd5 Qb8 18. Bd2 Rh6 19. Qf7+ Kd8 20. Ne6+ Kc8 21. Qe8# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "11"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 0 4"]
+[Termination "checkmate_white_wins"]
+
+4. Be3 Bb7 5. Nbd2 Nc6 6. h4 Ng4 7. Bf4 Bd6 8. Bxd6 Nxf2 9. Bxc7 Nxh1 10. Bxd8 Nf2 11. Kxf2 g6 12. Bf6 Rg8 13. d5 Rg7 14. dxc6 Bxc6 15. Bxg7 Bxf3 16. exf3 g5 17. hxg5 f5 18. gxf6 Rb8 19. Qc2 Kf7 20. Qd3 d5 21. cxd5 Re8 22. dxe6+ Kxe6 23. Re1+ Kf7 24. Qd7+ Re7 25. fxe7 Kxg7 26. Re6 a5 27. e8=Q# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "12"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 0 4"]
+[Termination "checkmate_black_wins"]
+
+4. a3 Bd6 5. b4 a5 6. b5 h5 7. Nc3 c5 8. Bb2 g6 9. e4 h4 10. Be2 h3 11. g3 Bb7 12. O-O Nxe4 13. d5 Nxc3 14. Qc2 Nxe2+ 15. Kh1 Nd4 16. Rfd1 Nxc2 17. Rac1 Nd4 18. Nh4 exd5 19. cxd5 Bxd5+ 20. Kg1 Ne2+ 21. Kf1 Rxh4 22. Rxd5 Nxc1 23. f4 Bxf4 24. gxh4 Qxh4 25. Rh5 Qxh5 26. Bxc1 Bxc1 27. Ke1 a4 28. Kf2 f5 29. Kg3 Qe2 30. Kxh3 Qg4# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "13"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3"]
+[Termination "checkmate_white_wins"]
+
+3. d4 d6 4. dxe5 Nxe4 5. Nbd2 Nc5 6. b4 Na4 7. c4 Nb6 8. b5 dxe5 9. Nxe5 Qd4 10. Nxf7 Bc5 11. Qh5 g6 12. Qxc5 Qxa1 13. Nxh8 Qxc1+ 14. Ke2 Qc3 15. Qe3+ Qxe3+ 16. Kxe3 a6 17. c5 Nd5+ 18. Kd4 Ne7 19. a4 Bf5 20. Bc4 Bc2 21. Bf7+ Kd7 22. Bb3 Nbc6+ 23. bxc6+ Nxc6+ 24. Kc3 Bxb3 25. Nxg6 Be6 26. Nf4 Bg8 27. Re1 b5 28. cxb6 Rf8 29. g3 cxb6 30. Nc4 Bxc4 31. Rd1+ Ke7 32. Kxc4 Rc8 33. Nd5+ Ke6 34. Nxb6 Ne5+ 35. Kb4 Rc7 36. f4 Rc6 37. a5 Ng4 38. Re1+ Kf6 39. Nd5+ Kf7 40. Re7+ Kg6 41. h3 Nf6 42. Nxf6 h5 43. Nd5 Rc1 44. Re6+ Kh7 45. Rxa6 Kg7 46. Ra7+ Kh6 47. Re7 h4 48. Re6+ Kh5 49. g4# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "14"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3"]
+[Termination "checkmate_black_wins"]
+
+3. Nxe5 Qe7 4. Nf3 Nxe4 5. Bc4 Nc3+ 6. Be2 Nxd1 7. Rf1 Nxb2 8. Na3 Qxa3 9. Bd1 Bd6 10. Nh4 Bxh2 11. g4 O-O 12. Nf5 Re8+ 13. Be2 Be5 14. Ne3 Nc6 15. c3 a5 16. Rb1 Bxc3 17. Rh1 Qxa2 18. Rh5 Qxb1 19. Kf1 Qxc1+ 20. Nd1 Nxd1 21. Rxa5 Ne3# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "15"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"]
+[Termination "checkmate_white_wins"]
+
+2. Nf3 e6 3. Nc3 d5 4. Be3 Bd6 5. Nb5 Be7 6. h4 a6 7. Nc3 Nbd7 8. a4 Ng4 9. Bf4 c5 10. e4 Ndf6 11. e5 Ne4 12. Nxe4 dxe4 13. Ng5 Qa5+ 14. c3 h5 15. Nxe4 Bd7 16. Nd6+ Bxd6 17. exd6 Qb6 18. dxc5 Qxb2 19. Bd2 Rc8 20. f3 Nh6 21. Rb1 Qa3 22. Rxb7 Nf5 23. Rxd7 Qxc5 24. Rc7 Ng3 25. d7+ Ke7 26. Bg5+ Kf8 27. dxc8=Q# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "16"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"]
+[Termination "checkmate_black_wins"]
+
+2. Nf3 h5 3. Nbd2 Nc6 4. e4 d5 5. Bd3 dxe4 6. d5 exf3 7. Nxf3 Nxd5 8. Ng5 Ne5 9. O-O Nxd3 10. Qxd3 f5 11. Rd1 e6 12. Qxd5 exd5 13. Rd3 Bd6 14. Re3+ Be7 15. Nh3 d4 16. Re2 c5 17. Bf4 b5 18. Bc7 Qxc7 19. Rd1 a5 20. Nf4 Qxf4 21. Rde1 Ra7 22. h3 g5 23. g3 Qb8 24. h4 gxh4 25. b4 hxg3 26. Rxe7+ Rxe7 27. Rxe7+ Kxe7 28. a3 Qf4 29. fxg3 Qxg3+ 30. Kf1 Qxa3 31. Kg1 Qc1+ 32. Kg2 Qxc2+ 33. Kg1 Rg8+ 34. Kh1 Bb7# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "17"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pp2pp1p/3p1np1/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6"]
+[Termination "checkmate_black_wins"]
+
+6. Bc4 Bg7 7. Bf4 Nbd7 8. h4 Nb6 9. Bd3 Bd7 10. b4 e5 11. Ncb5 Qb8 12. Bg3 O-O 13. Nf3 Nxe4 14. Bxe4 Bxb5 15. h5 Qc8 16. hxg6 Qc3+ 17. Nd2 f5 18. gxh7+ Kh8 19. Bxb7 Rab8 20. a4 Bxa4 21. Bf3 e4 22. Rxa4 Nxa4 23. Bxd6 exf3 24. Bxb8 Rxb8 25. Qxf3 Re8+ 26. Kd1 Qa1+ 27. Nb1 Nc3+ 28. Kd2 Ne4+ 29. Ke2 Nc3+ 30. Kd2 Na4 31. Qxf5 Qb2 32. Qa5 Qa1 33. Qxa7 Bf6 34. b5 Bg5+ 35. f4 Be7 36. g4 Bb4+ 37. c3 Qa2+ 38. Kd3 Qe2+ 39. Kd4 Qe4# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "18"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pp2pp1p/3p1np1/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6"]
+[Termination "checkmate_black_wins"]
+
+6. Bb5+ Nbd7 7. f3 e5 8. Nde2 a6 9. Bxd7+ Nxd7 10. h4 Be7 11. g3 f5 12. Nd5 Qa5+ 13. Nec3 Bd8 14. Bg5 Bxg5 15. b4 Qd8 16. hxg5 Qxg5 17. Qd3 Qxg3+ 18. Kd2 Qg5+ 19. Kd1 O-O 20. exf5 Rxf5 21. Qc4 Rxf3 22. Nc7+ Rf7 23. Nxa8 Qd8 24. a3 b5 25. Qc6 Nb8 26. Qb6 Qxb6 27. Nxb6 Bg4+ 28. Kd2 Nd7 29. Nxd7 Bxd7 30. Rh2 h5 31. a4 bxa4 32. Ra3 Rf3 33. Kc1 e4 34. Re2 d5 35. Rd2 Be6 36. Rd1 h4 37. Kb2 Rf5 38. Ne2 Rf2 39. Ng1 a5 40. bxa5 g5 41. Re1 Bd7 42. Rd1 Rf5 43. Ne2 g4 44. a6 h3 45. a7 Bc6 46. Rc3 Bb7 47. Rg1 h2 48. Rxg4+ Kf8 49. a8=Q+ Bxa8 50. Rh4 a3+ 51. Ka2 Rf2 52. Rc8+ Ke7 53. Ng3 Bb7 54. Rh7+ Rf7 55. Rxf7+ Kxf7 56. Rc7+ Kf8 57. Rh7 Bc6 58. Rh8+ Ke7 59. Ne2 h1=Q 60. Rxh1 Bb5 61. Rh7+ Kf6 62. Nc3 Bc4+ 63. Kb1 e3 64. Kc1 a2 65. Ra7 e2 66. Kd2 a1=Q 67. Nxd5+ Ke5 68. Rxa1 Kxd5 69. Rh1 Ke5 70. Re1 Ke4 71. Rh1 Kd5 72. Kc3 Kc5 73. Rh5+ Kd6 74. Rg5 e1=Q+ 75. Kxc4 Qh4+ 76. Kb3 Qxg5 77. c4 Kc5 78. Kc2 Kxc4 79. Kb2 Qd2+ 80. Ka3 Qh2 81. Ka4 Qa2# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "19"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/ppp1pppp/8/3p4/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2"]
+[Termination "checkmate_white_wins"]
+
+2. Nc3 e6 3. d4 a6 4. Be3 f5 5. h4 Bd6 6. a4 f4 7. Bd2 Qe7 8. Ne5 Qf8 9. g3 Bxe5 10. dxe5 d4 11. Na2 Nc6 12. Bxf4 Qf7 13. c3 d3 14. exd3 Bd7 15. Nb4 Nge7 16. Nxc6 Ng6 17. Nd4 a5 18. Qh5 Bc6 19. Nxc6 h6 20. Nd4 O-O-O 21. Be2 c5 22. Nb5 Kb8 23. d4 Rdf8 24. Nd6 Nxf4 25. Qxf7 Rxf7 26. Nxf7 c4 27. Nxh8 Ng2+ 28. Kf1 Nf4 29. gxf4 b5 30. axb5 Kc8 31. Rxa5 h5 32. Bxc4 Kb7 33. b4 Kc7 34. Rg1 g6 35. Bxe6 Kb8 36. d5 g5 37. Rxg5 Kc7 38. d6+ Kb7 39. d7 Kc7 40. Nf7 Kb8 41. Bd5 Kc7 42. d8=Q# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "20"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/ppp1pppp/8/3p4/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2"]
+[Termination "checkmate_white_wins"]
+
+2. d4 Nf6 3. e3 Be6 4. Nbd2 Nbd7 5. c4 h5 6. Be2 c5 7. O-O a5 8. Ng5 Qb6 9. a4 cxd4 10. cxd5 Bxd5 11. Ndf3 dxe3 12. Bxe3 Qxb2 13. Rc1 Rd8 14. Nd4 e5 15. Rc2 Qb6 16. Nde6 Bxe6 17. Bxb6 Nxb6 18. Qb1 Bf5 19. Qb3 Nfd5 20. Rcc1 Bd6 21. Bd3 Bd7 22. Bc4 Nxc4 23. Qxc4 Bc6 24. Rfe1 f5 25. h4 g6 26. Qa2 f4 27. Red1 Be7 28. Qb1 Rd6 29. Qb2 Bf6 30. Qa3 Rd8 31. Ne4 Bxh4 32. Qc5 f3 33. gxf3 Rf8 34. Nd6+ Kd7 35. Rxd5 Bxd5 36. Qxd5 Ke7 37. Qxe5+ Kd7 38. Nc4 Rxf3 39. Nb6# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "21"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pp3ppp/3ppn2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6"]
+[Termination "checkmate_black_wins"]
+
+6. Bc4 Bd7 7. Bf4 Qc7 8. b3 e5 9. Ncb5 Qa5+ 10. Bd2 Qd8 11. Nf5 d5 12. Nbd6+ Bxd6 13. Nxd6+ Kf8 14. exd5 Bg4 15. Nxb7 Qc7 16. Bb4+ Kg8 17. d6 Qb6 18. Bxf7+ Kxf7 19. Bc5 Qxb7 20. f3 Bd7 21. O-O Rc8 22. b4 Kf8 23. Re1 Re8 24. c4 Kf7 25. a4 Nc6 26. b5 Na5 27. Qd3 h6 28. Bb4 Nxc4 29. Qxc4+ Kg6 30. Rac1 e4 31. Qc2 Rec8 32. Bc5 a6 33. b6 Re8 34. a5 Rac8 35. h3 Kf7 36. Qc4+ Be6 37. Qc3 Qd5 38. Red1 Qg5 39. fxe4 Bxh3 40. Qxh3 Rxc5 41. Qb3+ Kg6 42. Qa3 Rxa5 43. Qb4 Qe3+ 44. Kf1 Rh5 45. b7 Rh1# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "22"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pp3ppp/3ppn2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6"]
+[Termination "checkmate_black_wins"]
+
+6. Bg5 e5 7. Nb3 h6 8. Be3 Ng4 9. Bb5+ Nc6 10. Qe2 Nxe3 11. fxe3 a6 12. Ba4 b5 13. Nxb5 axb5 14. Qxb5 Qh4+ 15. g3 Qd8 16. Qxc6+ Bd7 17. Qxd7+ Qxd7 18. Nc5 Qxa4 19. Nxa4 Rxa4 20. c3 Rxe4 21. a4 Rxe3+ 22. Kf2 Re4 23. Kf3 Rc4 24. Ke3 e4 25. a5 g5 26. a6 d5 27. Ra5 Bc5+ 28. Rxc5 Rxc5 29. Kd4 Ra5 30. Rf1 Rxa6 31. c4 dxc4 32. Kxe4 O-O 33. Rf5 Rb8 34. Ke3 Rxb2 35. Rc5 Ra3+ 36. Kd4 Rxh2 37. g4 Rh4 38. Kd5 c3 39. Rc4 f6 40. Rc8+ Kf7 41. Rc4 h5 42. Rc7+ Kg6 43. Rxc3 Rxc3 44. Kd4 Rc8 45. Kd3 hxg4 46. Ke2 f5 47. Kd2 g3 48. Kd1 Rh2 49. Ke1 Rc1# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "23"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"]
+[Termination "checkmate_white_wins"]
+
+4. Nc3 Nd4 5. Bc4 Bd6 6. Nxd4 Bb4 7. Nf3 c6 8. Nxe5 d6 9. Nxf7 Qe7 10. Nxh8 Bxc3 11. dxc3 Kd8 12. Nf7+ Kd7 13. e5 c5 14. Qxd6+ Ke8 15. Bg5 Bg4 16. Qxe7+ Kxe7 17. exf6+ Kd7 18. Ne5+ Kc7 19. fxg7 b5 20. g8=Q Rxg8 21. Bxg8 a6 22. Nxg4 h6 23. Bf4+ Kb7 24. Bd5+ Kb6 25. Nxh6 Ka7 26. O-O-O a5 27. Rhe1 Ka6 28. h4 Ka7 29. g4 Kb6 30. h5 Ka7 31. g5 a4 32. g6 Kb6 33. g7 Ka5 34. a3 Ka6 35. Nf5 c4 36. h6 Kb6 37. h7 Ka5 38. h8=Q b4 39. cxb4+ Ka6 40. Bxc4+ Ka7 41. Qb8# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "24"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"]
+[Termination "checkmate_black_wins"]
+
+4. O-O Nxe4 5. d4 exd4 6. Re1 f5 7. Ng5 Bb4 8. c3 dxc3 9. bxc3 Bd6 10. Bxc6 dxc6 11. Qh5+ g6 12. Qe2 O-O 13. Qc4+ Kg7 14. Qd4+ Nf6 15. Bb2 Kh8 16. Nd2 c5 17. Qc4 Bxh2+ 18. Kxh2 Qxd2 19. Qh4 Qxb2 20. Re7 Qxa1 21. Nxh7 Ng4+ 22. Kh3 Qh1+ 23. Kg3 f4+ 24. Kf3 Qxh4 25. Rd7 Qxf2+ 26. Kxg4 Qg3# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "25"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "checkmate_black_wins"]
+
+2. Nf3 d6 3. Nc3 f5 4. h4 Nf6 5. d4 Nbd7 6. Be3 f4 7. Bd2 c6 8. e4 Ng4 9. Bd3 Qf6 10. d5 Be7 11. b4 Qg6 12. h5 Qf6 13. a4 a5 14. b5 Nc5 15. Be2 O-O 16. dxc6 bxc6 17. bxc6 Be6 18. c7 Qf7 19. Nxe5 Nxe5 20. Bxf4 Qxf4 21. Qxd6 Ned3+ 22. Qxd3 Nxd3+ 23. Bxd3 Qxf2+ 24. Kd1 Rac8 25. Ra2 Qc5 26. Nd5 h6 27. Nxe7+ Kf7 28. Nxc8 Rxc8 29. Rf1+ Ke7 30. Raf2 Qxh5+ 31. Be2 Qg5 32. e5 h5 33. Rh1 Qg3 34. Rf3 Qxg2 35. Rxh5 Rxc7 36. Rf4 Rb7 37. Rh7 Qg1+ 38. Kc2 Qb1+ 39. Kc3 Qc1+ 40. Kd3 Rb3+ 41. Ke4 Qe3# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "26"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "checkmate_black_wins"]
+
+2. e3 Ne7 3. d4 Nbc6 4. d5 Nb4 5. Qb3 c5 6. a3 Qa5 7. Qc3 Nc2+ 8. Kd1 Qxc3 9. Nf3 Qb3 10. Nd4 Nxd4+ 11. Kd2 Qc2+ 12. Ke1 Qxc1# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "27"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "1/2-1/2"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "max_plies_reached"]
+
+2. Nf3 d5 3. Nc3 g6 4. Bd3 Nf6 5. e5 Nfd7 6. h4 d4 7. Ne4 c5 8. g4 h5 9. g5 Qb6 10. c4 Nc6 11. Qa4 Qc7 12. Qxc6 Qxc6 13. b4 Nb8 14. bxc5 Qa4 15. Nxd4 Bg7 16. f4 O-O 17. a3 Bg4 18. Nc3 Qe8 19. Be4 Na6 20. Bxb7 Bxe5 21. fxe5 Qd7 22. Bxa8 e6 23. Nxe6 Bxe6 24. c6 Qd3 25. Bb7 Qg3+ 26. Ke2 Bxc4+ 27. d3 Qxe5+ 28. Kd2 Nc5 29. dxc4 Re8 30. Kc2 Qe6 31. Nd5 Qe2+ 32. Bd2 Qd3+ 33. Kc1 Kf8 34. Bc8 Nb3+ 35. Kb2 Nxd2 36. Ba6 Qb3+ 37. Kc1 Nxc4 38. Bxc4 Re1+ 39. Rxe1 Qxc4+ 40. Kb2 Qxd5 41. Rad1 Qg2+ 42. Kc3 Qh3+ 43. Rd3 Qh2 44. Rd8+ Kg7 45. Re4 Qc7 46. Rde8 Qxc6+ 47. Kb4 a6 48. R4e7 Qd6+ 49. Kc4 Qxa3 50. Kd5 Qa2+ 51. Ke5 Qh2+ 52. Kd5 Qa2+ 53. Ke5 Qc4 54. Kd6 Qxh4 55. Re5 Qa4 56. Re4 Qa3+ 57. Kd7 Qd3+ 58. Kc7 h4 59. Rxh4 Qg3+ 60. Kd7 Qxh4 61. Ra8 Qd4+ 62. Kc7 Qf4+ 63. Kb6 Qd6+ 64. Kb7 Qd5+ 65. Ka7 Qb5 66. Rb8 Qxg5 67. Kxa6 Qg2 68. Rb7 Qd5 69. Rb5 Qd2 70. Rb7 g5 71. Kb5 Qc2 72. Re7 g4 73. Re3 Qf5+ 74. Kc4 Qc2+ 75. Rc3 Qf5 76. Kd4 Qf2+ 77. Kd5 Qd2+ 78. Kc4 Qd6 79. Rd3 Qc6+ 80. Kd4 Qf6+ 81. Kd5 Qf5+ 82. Kd4 Qg6 83. Re3 Qb6+ 84. Ke4 Qb7+ 85. Kf5 Qb5+ 86. Kxg4 Qf1 87. Rf3 Qc4+ 88. Kf5 Qc5+ 89. Ke4 Qc1 90. Rh3 Qc6+ 91. Kf4 Qd6+ 92. Kg5 Qd8+ 93. Kf4 Qb8+ 94. Ke4 Qa8+ 95. Ke5 Qb8+ 96. Ke4 Qb4+ 97. Kf5 Qb1+ 98. Kf4 Qc1+ 99. Ke5 f6+ 100. Ke4 Qc6+ 101. Kf4 Qc4+ 1/2-1/2
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "28"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "checkmate_black_wins"]
+
+2. d4 d5 3. Bd3 dxe4 4. Bc4 b5 5. Be2 Nf6 6. c4 Bd7 7. Qc2 h5 8. a3 a5 9. Nc3 Qb6 10. Nxe4 Qxd4 11. Nxf6+ Qxf6 12. Be3 Bf5 13. Qd1 Qxb2 14. Nf3 Nd7 15. Bd4 Qc2 16. Qxc2 Bxc2 17. Kd2 Ba4 18. Rhb1 c5 19. Bc3 b4 20. Bxb4 cxb4 21. Nd4 e5 22. Nb5 Bxb5 23. Bf3 e4 24. g3 exf3 25. Re1+ Kd8 26. Kc2 Rc8 27. Rad1 Ba4+ 28. Kc1 Rxc4+ 29. Kb2 Bxd1 30. a4 Bxa4 31. Re4 Rxe4 32. Ka2 Bc5 33. Kb1 b3 34. h3 Bxf2 35. g4 hxg4 36. hxg4 g5 37. Kb2 Nf6 38. Ka1 Bd4+ 39. Kb1 Rh1# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "29"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3"]
+[Termination "checkmate_black_wins"]
+
+3. cxd5 cxd5 4. Nf3 h5 5. Bf4 Nf6 6. Nc3 g6 7. Rc1 Bd7 8. h4 Bg7 9. b4 O-O 10. Ne5 Nc6 11. Nxd7 Qxd7 12. b5 Nd8 13. a4 Qf5 14. g3 Rc8 15. a5 Ne6 16. Be5 Ng4 17. Bxg7 Qxf2+ 18. Kd2 Kxg7 19. Nxd5 Rcd8 20. Nb4 Qe3+ 21. Ke1 Qxg3+ 22. Kd2 Qe3+ 23. Ke1 Qg3+ 24. Kd2 Nf2 25. d5 Kg8 26. Qa4 Qf4+ 27. e3 Qg3 28. Bc4 Nc7 29. Rhg1 Qf3 30. Qb3 Rd6 31. Qa4 Re8 32. Qb3 Red8 33. Rxg6+ Rxg6 34. Qa4 Qg2 35. Qb3 Ne6 36. Qa4 Nc5 37. Qa3 a6 38. Nxa6 Ng4+ 39. Ke1 Qf2+ 40. Kd1 Ne4 41. Qxe7 Qd2# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "30"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3"]
+[Termination "checkmate_white_wins"]
+
+3. Nd2 Be6 4. Ngf3 dxc4 5. e4 Nf6 6. Ng5 Qxd4 7. Nxe6 fxe6 8. Qc2 b5 9. Nf3 Qxe4+ 10. Kd1 Ng4 11. h3 Qxc2+ 12. Kxc2 Nxf2 13. Rg1 Nd7 14. g4 h5 15. g5 Rd8 16. Be3 Ne4 17. Nd4 Ne5 18. Nxe6 Rd7 19. Bf4 Nf3 20. Bg2 Nxg1 21. Bxe4 Nxh3 22. Bg6# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "31"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4"]
+[Termination "checkmate_black_wins"]
+
+4. cxd5 c5 5. dxe6 Bxe6 6. Nf3 Nc6 7. Be3 Qb6 8. b3 Qa5 9. Rc1 cxd4 10. Nxd4 Rd8 11. h4 Bb4 12. Nxe6 Rxd1+ 13. Kxd1 fxe6 14. Na4 e5 15. h5 O-O 16. h6 Ng4 17. hxg7 Rd8+ 18. Kc2 Ba3 19. Bg5 Rd4 20. f3 Rc4+ 21. bxc4 Nd4+ 22. Kb1 Qb4+ 23. Ka1 Nf2 24. Be7 Qxa4 25. Bxa3 Nb3+ 26. Kb2 Nxc1 27. Rh6 e4 28. fxe4 Qa5 29. Bf8 Qd2+ 30. Kb1 Nd1 31. Ba3 Nc3+ 32. Ka1 Qxa2# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "32"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4"]
+[Termination "checkmate_black_wins"]
+
+4. e3 Nc6 5. cxd5 Nxd5 6. Nf3 Bb4 7. Bd2 Nxc3 8. Qb3 Nd5 9. h4 Bxd2+ 10. Kxd2 h5 11. Bb5 Bd7 12. Rhc1 a6 13. Bd3 b5 14. Rc5 g6 15. Qc2 Ncb4 16. Qb1 Nxd3 17. Rxd5 exd5 18. b4 Nxf2 19. Qe1 Ne4+ 20. Ke2 f5 21. Qf1 Ng3+ 22. Ke1 Nxf1 23. Kxf1 a5 24. bxa5 Rxa5 25. Rb1 Rxa2 26. Kg1 c6 27. Ng5 Ra3 28. Nf7 Kxf7 29. g3 Re8 30. Rc1 Rexe3 31. Kh1 Rxg3 32. Rc2 Ra1+ 33. Kh2 Qxh4# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "33"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/ppppp1pp/8/5p2/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "checkmate_black_wins"]
+
+2. Nf3 Nf6 3. Nc3 g6 4. Bf4 Bg7 5. h4 c6 6. b4 a5 7. a3 Na6 8. Ne5 Nc7 9. g3 Nh5 10. Be3 O-O 11. Bh3 d6 12. Nc4 a4 13. Nb6 Ra6 14. Nbxa4 b5 15. Nb2 f4 16. Bxc8 fxe3 17. Bxa6 exf2+ 18. Kd2 Bxd4 19. g4 Nf6 20. Bb7 Nxg4 21. Bxc6 e6 22. Nd3 Be3# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "34"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/ppppp1pp/8/5p2/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "checkmate_white_wins"]
+
+2. e3 Nf6 3. c4 Nc6 4. a3 d5 5. Qc2 e5 6. Nf3 exd4 7. cxd5 dxe3 8. dxc6 bxc6 9. Bxe3 Bxa3 10. bxa3 Rg8 11. Nc3 Be6 12. Qa4 Rh8 13. Rc1 Rg8 14. Rd1 Qxd1+ 15. Kxd1 Rh8 16. Qxc6+ Kf7 17. Qxc7+ Kg8 18. Bc4 Bxc4 19. Nd2 Kf8 20. Qd6+ Kg8 21. Qf4 Be6 22. Qd4 Rc8 23. h3 a5 24. g4 Rxc3 25. gxf5 Rxe3 26. fxe3 Bxf5 27. h4 h6 28. Rf1 Be6 29. Ke2 Nd5 30. Ke1 g6 31. h5 gxh5 32. Qa7 h4 33. e4 Rh7 34. Rg1+ Kh8 35. Qd4+ Nf6 36. Qxf6+ Rg7 37. Qxg7# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "35"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R w KQkq - 4 4"]
+[Termination "checkmate_black_wins"]
+
+4. d4 d6 5. dxe5 dxe5 6. Qxd8+ Kxd8 7. Bb5 Nd4 8. Nxe5 Nxc2+ 9. Ke2 Ke7 10. Nxf7 Nd4+ 11. Ke3 Nf5+ 12. Kf4 Kxf7 13. exf5 Bd6+ 14. Kf3 b6 15. Bc4+ Kf8 16. g4 Bb7+ 17. Nd5 Bxd5+ 18. Bxd5 Nxd5 19. Rd1 Ne7 20. Bf4 Bxf4 21. Kxf4 c6 22. Rac1 Kf7 23. h4 h5 24. g5 Ke8 25. b4 Rc8 26. a4 Rf8 27. f6 Ng6+ 28. Kg3 gxf6 29. Rd6 Rd8 30. Rdxc6 Rf7 31. gxf6 Rh7 32. f4 Rhd7 33. f5 Rd3+ 34. Kf2 Nf8 35. R1c3 Rd2+ 36. Kf3 R2d6 37. b5 Rd1 38. Kf4 Rf1+ 39. Ke5 Nd7+ 40. Ke4 Kf8 41. Re6 Rh1 42. Rxb6 Nxb6 43. a5 Nd7 44. Rc6 Re1+ 45. Kf4 Rde8 46. a6 R1e4+ 47. Kg5 Re1 48. Kxh5 Kf7 49. Rc7 Rd8 50. Kg5 Re4 51. Rxa7 Rg8+ 52. Kh5 Rd4 53. b6 Kxf6 54. Ra8 Rg1 55. b7 Rb4 56. Rd8 Rg7 57. Rxd7 Rxd7 58. b8=Q Rh7# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "36"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R w KQkq - 4 4"]
+[Termination "checkmate_white_wins"]
+
+4. Bb5 Bd6 5. a3 a6 6. Be2 h5 7. d4 exd4 8. Nxd4 b5 9. Nf5 Nxe4 10. Nxe4 Bxa3 11. Rxa3 Rg8 12. Nfd6+ cxd6 13. Ng5 Qxg5 14. Bxg5 Rh8 15. Re3+ Ne5 16. f4 Rg8 17. fxe5 dxe5 18. b3 Rh8 19. Rxe5+ Kf8 20. Qd6+ Kg8 21. Qe7 g6 22. Bf6 Rh7 23. Qe8# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "37"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqk1nr/ppp2ppp/4p3/3p4/1b1PP3/2N5/PPP2PPP/R1BQKBNR w KQkq - 2 4"]
+[Termination "checkmate_white_wins"]
+
+4. Bd3 dxe4 5. Bxe4 a6 6. a3 Bxc3+ 7. bxc3 Nf6 8. Bg5 O-O 9. Nf3 h6 10. Bh4 g5 11. Bxg5 hxg5 12. Nxg5 e5 13. dxe5 Ng4 14. f4 Qxd1+ 15. Rxd1 f6 16. Bd5+ Kg7 17. Ne6+ Kh6 18. Nxf8 a5 19. exf6 Nxf6 20. c4 Kg7 21. Ne6+ Kf7 22. Nxc7+ Nxd5 23. cxd5 Na6 24. Nxa8 Kg8 25. d6 a4 26. d7 Kh7 27. dxc8=Q b5 28. Rd7+ Kg6 29. Qxa6+ Kf5 30. Qxb5+ Kxf4 31. O-O+ Kg4 32. Rd4# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "38"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqk1nr/ppp2ppp/4p3/3p4/1b1PP3/2N5/PPP2PPP/R1BQKBNR w KQkq - 2 4"]
+[Termination "checkmate_black_wins"]
+
+4. e5 Ne7 5. a3 Bxc3+ 6. Ke2 Ba5 7. Kf3 Nd7 8. h4 c5 9. h5 cxd4 10. Qe2 f5 11. Bg5 h6 12. Bxe7 Qxe7 13. Re1 Bxe1 14. g3 Nxe5+ 15. Kg2 Bxf2 16. a4 Bxg1 17. Rh2 Bxh2 18. Kxh2 Rg8 19. c3 dxc3 20. b3 Qc7 21. Qxe5 Qxe5 22. b4 c2 23. Ba6 c1=Q 24. Bb5+ Bd7 25. Bxd7+ Kxd7 26. Kg2 Qxg3+ 27. Kxg3 Rh8 28. Kh2 Qf4+ 29. Kg1 Qxb4 30. a5 Qxa5 31. Kh1 Rhc8 32. Kg1 b5 33. Kh1 f4 34. Kh2 f3 35. Kh3 f2 36. Kg3 f1=Q 37. Kg4 Rh8 38. Kg3 Rhf8 39. Kh2 Qc7# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "39"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "checkmate_black_wins"]
+
+2. d4 exd4 3. Qxd4 d6 4. Nf3 Nd7 5. Bd3 Ne7 6. Bf4 Ng6 7. Bxd6 cxd6 8. Nc3 Nge5 9. Nxe5 dxe5 10. Qd5 Bc5 11. Rd1 O-O 12. O-O Bd4 13. a4 Re8 14. a5 Re7 15. a6 Qf8 16. Qxd4 exd4 17. Nd5 Nf6 18. Nxe7+ Kh8 19. Nxc8 Rxc8 20. axb7 Rd8 21. b8=Q Rxb8 22. Ba6 g5 23. Rxd4 Qc5 24. Bc8 Qxc8 25. Rd8+ Qxd8 26. e5 Nd5 27. c4 Nb6 28. c5 g4 29. cxb6 Rxb6 30. Ra1 f5 31. exf6 g3 32. hxg3 Rxf6 33. Rxa7 Qd1+ 34. Kh2 Rh6# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "40"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"]
+[Termination "checkmate_white_wins"]
+
+2. c3 Ne7 3. d4 Nbc6 4. d5 Nb8 5. Be2 f5 6. exf5 Nxf5 7. Nd2 Bd6 8. Ne4 Be7 9. Nf3 d6 10. g4 Nh4 11. Be3 Nxf3+ 12. Bxf3 Nd7 13. c4 g5 14. Qe2 Rg8 15. h3 Rf8 16. O-O Rxf3 17. Qxf3 Rb8 18. Rae1 a5 19. Qe2 c5 20. Qd3 h6 21. Bc1 b6 22. Re2 a4 23. h4 gxh4 24. f3 Bf8 25. f4 exf4 26. Nxd6# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "41"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4"]
+[Termination "checkmate_black_wins"]
+
+4. cxd5 Bg7 5. e4 c6 6. Qa4 O-O 7. dxc6 bxc6 8. Nf3 c5 9. dxc5 Qc7 10. Be3 Bb7 11. Qxa7 Nfd7 12. Qxa8 Bxc3+ 13. bxc3 Bxa8 14. Ng5 Bb7 15. Nxh7 Nxc5 16. Nxf8 Kxf8 17. Bh6+ Kg8 18. Bf8 Bxe4 19. Bh6 Nbd7 20. O-O-O Qa5 21. Rxd7 Qxc3+ 22. Kd1 Bc2+ 23. Kc1 Bb3+ 24. Kb1 Qc2+ 25. Ka1 Qxa2# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "42"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4"]
+[Termination "checkmate_white_wins"]
+
+4. cxd5 Nxd5 5. Bd2 Be6 6. e4 Nxc3 7. bxc3 Nd7 8. Bd3 h5 9. Qb1 b6 10. f4 c5 11. Nf3 cxd4 12. cxd4 Rc8 13. d5 Nc5 14. Bc3 Nxd3+ 15. Qxd3 f6 16. Rd1 Bd7 17. O-O a5 18. Ba1 Bh6 19. d6 Bf8 20. Qb3 exd6 21. Kh1 Be7 22. Nh4 a4 23. Qb1 Kf7 24. e5 fxe5 25. fxe5+ Kg8 26. Qxg6# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "43"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pp1ppppp/8/2p5/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2"]
+[Termination "checkmate_black_wins"]
+
+2. d4 e6 3. Be3 Qb6 4. b3 Qb4+ 5. c3 Qa5 6. h4 cxd4 7. b4 Qb6 8. Bxd4 Qc7 9. Nbd2 Nf6 10. e4 Be7 11. Bd3 d6 12. a4 O-O 13. h5 e5 14. Be3 h6 15. Nxe5 dxe5 16. Bxa7 Rxa7 17. Ba6 Nxa6 18. Nc4 b6 19. Nxb6 Qxc3+ 20. Kf1 Rd8 21. Qxd8+ Ne8 22. Nxc8 Bxd8 23. Rd1 Kf8 24. Nxa7 Be7 25. b5 Nc5 26. Rh3 Qc4+ 27. Kg1 Qc2 28. Rd5 Qc1+ 29. Kh2 Nxe4 30. Rxe5 Qf4+ 31. Kg1 Qxf2+ 32. Kh1 Qe1+ 33. Kh2 Bf6 34. Rd5 Bh4 35. Rhd3 Bg3+ 36. Kh3 Qh1+ 37. Kg4 Bc7 38. Kf3 Ng5+ 39. Ke2 Qxg2+ 40. Ke3 Qh3+ 41. Kf2 Qh2+ 42. Kf1 Ne4 43. Nc6 Qf2# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "44"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pp1ppppp/8/2p5/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2"]
+[Termination "checkmate_black_wins"]
+
+2. c3 d5 3. b4 Nd7 4. bxc5 Nxc5 5. a4 Nf6 6. e3 Be6 7. d4 Nce4 8. Ba3 h5 9. Bb5+ Nd7 10. O-O g5 11. Nfd2 Nxd2 12. Bxd7+ Qxd7 13. h3 Nxf1 14. f3 Nxe3 15. Qc1 Nxg2 16. Kf2 Bxh3 17. Bxe7 Bxe7 18. Kg3 Qxa4 19. Qxg5 Bxg5 20. Kxh3 Nf4+ 21. Kg3 Qxa1 22. Kh2 Qxb1 23. c4 dxc4 24. Kg3 Qg1# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "45"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/ppp2ppp/4p3/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3"]
+[Termination "checkmate_black_wins"]
+
+3... b6 4. Nf3 a6 5. Bd3 c5 6. Bf4 a5 7. Nc3 Ba6 8. Nb5 Be7 9. Nd6+ Bxd6 10. exd6 Bxd3 11. Qxd3 Nf6 12. dxc5 Qc8 13. cxb6 Qb7 14. Qxh7 Rxh7 15. Be3 Nc6 16. O-O-O Ng4 17. Bc5 Qb8 18. Rxd5 exd5 19. Re1+ Kd7 20. Bd4 Rh5 21. Bxg7 a4 22. Bh8 d4 23. Nxd4 Nxf2 24. Nxc6 Kxc6 25. Bd4 a3 26. Bxf2 f6 27. bxa3 Qd8 28. Bc5 Rh7 29. Bd4 Rd7 30. Bxf6 Qb8 31. Bh8 Qxh8 32. h4 Qh6+ 33. Kb1 Qxh4 34. g3 Qxg3 35. Re6 Qg1+ 36. Kb2 Qd4+ 37. Kc1 Qa1+ 38. Kd2 Qd4+ 39. Kc1 Qa1+ 40. Kd2 Qh8 41. Re8 Qh6+ 42. Re3 Rxd6+ 43. Ke2 Qh5+ 44. Rf3 Qh2+ 45. Rf2 Re6+ 46. Kf1 Qh1# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "46"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/ppp2ppp/4p3/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3"]
+[Termination "checkmate_white_wins"]
+
+3... Ne7 4. c3 Nd7 5. Nf3 h5 6. Bg5 f6 7. Bd3 fxg5 8. h4 g4 9. Ng5 Nb6 10. b3 a5 11. f3 g3 12. Qd2 Bd7 13. Qf4 Rg8 14. Qf7# 1-0
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "47"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/ppp1pppp/5n2/3p4/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq - 2 3"]
+[Termination "checkmate_black_wins"]
+
+3. Nf3 Nbd7 4. Nc3 c6 5. h4 e6 6. a4 a6 7. h5 Qb6 8. Nxd5 exd5 9. Bb8 Nxb8 10. b3 Bf5 11. Ne5 Bb4+ 12. Qd2 g6 13. Qxb4 Qxb4+ 14. Kd1 Qxd4+ 15. Nd3 Qxa1+ 16. Kd2 Nxh5 17. Ke3 d4+ 18. Kf3 Be4+ 19. Kxe4 Ng3+ 20. fxg3 a5 21. g4 c5 22. Nxc5 d3 23. cxd3 Qf6 24. Nxb7 Qc6+ 25. Ke5 Qc7+ 26. Nd6+ Kf8 27. d4 g5 28. Kd5 Ra7 29. e4 Qc6+ 30. Ke5 f6+ 31. Kxf6 Qxd6+ 32. Kxg5 Ra8 33. d5 h6+ 34. Kf5 Rh7 35. g5 Qd7+ 36. Kg6 Qf7# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "48"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/ppp1pppp/5n2/3p4/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq - 2 3"]
+[Termination "checkmate_black_wins"]
+
+3. e3 Be6 4. Nf3 Nbd7 5. h3 Nh5 6. Bd3 Nxf4 7. exf4 h5 8. f5 Bxf5 9. Bxf5 b5 10. O-O a5 11. Re1 g6 12. Bxd7+ Qxd7 13. Qd3 Qxh3 14. Rxe7+ Bxe7 15. Qxb5+ Qd7 16. c4 Qxb5 17. cxb5 f5 18. Nc3 Rd8 19. Rd1 g5 20. Rc1 h4 21. Na4 g4 22. Nd2 Bd6 23. Nc5 Rb8 24. Nf3 gxf3 25. Re1+ Kd8 26. Nb7+ Rxb7 27. a3 fxg2 28. Ra1 h3 29. b6 Rxb6 30. Ra2 h2+ 31. Kxg2 h1=Q# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "49"]
+[White "Janus-v0.39-Q0_K0"]
+[Black "Stockfish-19-Elo1320"]
+[Result "0-1"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3"]
+[Termination "checkmate_black_wins"]
+
+3... Bb4+ 4. Bd2 a5 5. a3 Bd6 6. c5 Bxc5 7. dxc5 Na6 8. b4 Ne4 9. Bf4 O-O 10. Nf3 Qf6 11. bxa5 Qxa1 12. Bxc7 Qa2 13. Qxd7 Qxb1+ 14. Qd1 Qa2 15. Bd8 Naxc5 16. Be7 Qxa3 17. Bxf8 Qxa5+ 18. Nd2 Nb3 19. Qxb3 Qxd2# 0-1
+
+[Event "Janus v0.39 Strength Validation - q0_k0"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "50"]
+[White "Stockfish-19-Elo1320"]
+[Black "Janus-v0.39-Q0_K0"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3"]
+[Termination "checkmate_white_wins"]
+
+3... Nc6 4. Nf3 Bd6 5. Nbd2 h5 6. a3 a5 7. b3 g5 8. Bb2 Nxd4 9. e3 Nxf3+ 10. Nxf3 Bxg3 11. hxg3 Rg8 12. Qe2 Rh8 13. Bg2 Rg8 14. Nd2 Rh8 15. c5 Rg8 16. Rc1 Rh8 17. a4 Rg8 18. Bd4 Rh8 19. Nc4 Rg8 20. Nb2 Rh8 21. f3 Rg8 22. g4 h4 23. Kf2 Nd5 24. Qd2 f6 25. f4 gxf4 26. Nc4 fxe3+ 27. Bxe3 Nxe3 28. Nxe3 Rxg4 29. Rcg1 Rxg2+ 30. Nxg2 Qe7 31. Rxh4 Qxc5+ 32. Qd4 Qxd4+ 33. Rxd4 d5 34. Rh4 f5 35. Rh7 c5 36. Rgh1 d4 37. Ne1 f4 38. R1h5 b6 39. Kf3 c4 40. Kxf4 cxb3 41. Nf3 b2 42. Rb5 b1=Q 43. Rh8+ Ke7 44. Rxb1 d3 45. Rh6 Rb8 46. Rh7+ Kd6 47. Rh5 Rb7 48. Rg5 Rf7+ 49. Ke4 Rxf3 50. Kxf3 Bb7+ 51. Kg3 Bc8 52. Rg4 Kc5 53. Rh4 d2 54. Rh5+ Kd4 55. Rh8 d1=Q 56. Rd8+ Ke5 57. Rbxd1 Bb7 58. R8d3 Bd5 59. Re1+ Be4 60. Rd2 Kf5 61. Rf1+ Ke5 62. Re2 Kd5 63. Rd1+ Ke5 64. Ra1 Kd5 65. Ree1 e5 66. Rad1+ Ke6 67. Rxe4 Kf5 68. Re2 e4 69. Red2 e3 70. Rd8 e2 71. Re1 b5 72. axb5 a4 73. Kh3 a3 74. Rh8 a2 75. Rf8+ Kg5 76. Rg1+ Kh5 77. Rh8# 1-0
+

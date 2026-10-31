@@ -505,6 +505,7 @@ class JanusSearch:
     def _terminal_score(self, board: chess.Board, ply: int = 0) -> Optional[int]:
         if (
             board.is_insufficient_material()
+            or (ply > 0 and board.is_repetition(3))
             or board.is_fivefold_repetition()
             or board.is_seventyfive_moves()
         ):
@@ -634,6 +635,7 @@ class JanusSearch:
 
         if (
             board.is_insufficient_material()
+            or (ply > 0 and board.is_repetition(3))
             or board.is_fivefold_repetition()
             or board.is_seventyfive_moves()
         ):
@@ -730,6 +732,7 @@ class JanusSearch:
         # Fast rule-mandated draws that do not require move generation
         if (
             board.is_insufficient_material()
+            or (ply > 0 and board.is_repetition(3))
             or board.is_fivefold_repetition()
             or board.is_seventyfive_moves()
         ):

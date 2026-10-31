@@ -107,3 +107,4 @@ The empirical diagnostics establish that:
 1. Janus's shallow completed depth in Blitz matches (depth 2–3) is a function of pure-Python interpreter overhead (~10,000–12,000 NPS).
 2. Reverse Futility Pruning is a safe, highly effective selective search enhancement that expands practical depth without inducing tactical blunders.
 3. Move ordering heuristics (`ord1`) in pure Python incur overhead that counteracts node reductions, whereas frontier pruning (`rfp`) delivers immediate, clean runtime dividends.
+

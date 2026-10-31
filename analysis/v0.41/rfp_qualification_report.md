@@ -132,3 +132,4 @@ Candidate `rfp` satisfies all four gates conclusively with overwhelming statisti
 
 ### Production Recommendation
 Enable Candidate RFP (`--enable-rfp`, `rfp_max_depth=2`, `rfp_margin_per_depth=120`) as a **qualified, supported search feature** for Project Janus.
+

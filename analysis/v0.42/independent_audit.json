@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-11-02T20:32:14.068799+00:00",
+  "milestone": "v0.42",
+  "verdict": "VERIFIED_VALID",
+  "ablation_statistics": {
+    "pairs_count": 25,
+    "k0_points": 22.5,
+    "k0_score_pct": 45.0,
+    "rfp_points": 37.0,
+    "rfp_score_pct": 74.0,
+    "mean_paired_delta": 0.58,
+    "se": 0.2095,
+    "t_statistic": 2.7682,
+    "bootstrap_95_ci": [
+      0.18,
+      0.98
+    ],
+    "bootstrap_95_ci_pct": [
+      9.0,
+      49.0
+    ],
+    "status": "verified"
+  },
+  "test_results": {
+    "tests_run": 21,
+    "was_successful": true,
+    "errors": 0,
+    "failures": 0
+  },
+  "artifact_count": 12
+}

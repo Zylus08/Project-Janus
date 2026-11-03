@@ -110,6 +110,7 @@ class SearchResult:
     rfp_considered: int = 0
     rfp_cutoffs: int = 0
     rfp_events: list[dict] = field(default_factory=list)
+    iteration_records: list[dict] = field(default_factory=list)
 
 
 class SearchTimeout(Exception):
@@ -148,6 +149,7 @@ class JanusSearch:
         rfp_max_depth: int = 2,
         rfp_margin_per_depth: int = 120,
         diagnostic_rfp: bool = False,
+        diagnostic_iterations: bool = False,
     ) -> None:
         self.time_manager = time_manager or TimeManager()
         self.eval_config = eval_config
@@ -211,6 +213,8 @@ class JanusSearch:
         self.rfp_margin_per_depth = rfp_margin_per_depth
         self.diagnostic_rfp = diagnostic_rfp
         self.rfp_events: list[dict] = []
+        self.diagnostic_iterations = diagnostic_iterations
+        self.iteration_records: list[dict] = []
         self.countermoves: list[list[Optional[chess.Move]]] = [
             [None] * 64 for _ in range(64)
         ]
@@ -264,6 +268,47 @@ class JanusSearch:
         self.tt_clears = 0
         self.deadline: Optional[float] = None
         self.stop_event: Optional[threading.Event] = None
+
+    def flush_iteration_telemetry(self, filepath: str) -> int:
+        """Flush recorded iteration telemetry records to a JSONL file and clear buffer."""
+        import json
+        from pathlib import Path
+        p = Path(filepath)
+        p.parent.mkdir(parents=True, exist_ok=True)
+        count = len(self.iteration_records)
+        with open(p, "a", encoding="utf-8") as f:
+            for rec in self.iteration_records:
+                f.write(json.dumps(rec) + "\n")
+        self.iteration_records.clear()
+        return count
+
+    def _record_iteration(
+        self, depth: int, start_t: float, end_t: float, nodes_start: int,
+        score: int, pv: list[chess.Move], completed: bool, aborted: bool,
+        abort_reason: Optional[str], published: bool, prev_depth: int, retries: int
+    ) -> None:
+        elapsed = end_t - start_t
+        nodes_consumed = self.nodes - nodes_start
+        nps = int(nodes_consumed / elapsed) if elapsed > 0 else 0
+        self.iteration_records.append({
+            "iteration_depth": depth,
+            "iteration_start_time": start_t,
+            "iteration_end_time": end_t,
+            "iteration_elapsed_s": elapsed,
+            "nodes_consumed": nodes_consumed,
+            "cumulative_nodes": self.nodes,
+            "nps": nps,
+            "best_move": pv[0].uci() if pv else None,
+            "pv": [m.uci() for m in pv],
+            "score": score,
+            "aspiration_retries": retries,
+            "completed": completed,
+            "aborted": aborted,
+            "abort_reason": abort_reason,
+            "published": published,
+            "prev_completed_depth": prev_depth,
+            "rfp_enabled": self.enable_rfp,
+        })
 
     def flush_rfp_telemetry(self, filepath: str) -> int:
         """Flush recorded RFP diagnostic events to a JSONL file and clear buffer."""
@@ -1133,6 +1178,7 @@ class JanusSearch:
         self.rfp_considered = 0
         self.rfp_cutoffs = 0
         self.rfp_events = []
+        self.iteration_records = []
 
         legal_moves = list(board.legal_moves)
         if not legal_moves:
@@ -1172,9 +1218,27 @@ class JanusSearch:
         completed_depth = 0
 
         for depth in range(1, max_depth + 1):
+            iter_start = time.monotonic()
+            iter_nodes_start = self.nodes
+            retries = 0
+
             if self.stop_event is not None and self.stop_event.is_set():
+                if self.diagnostic_iterations:
+                    self._record_iteration(
+                        depth=depth, start_t=iter_start, end_t=time.monotonic(),
+                        nodes_start=iter_nodes_start, score=best_score, pv=best_pv,
+                        completed=False, aborted=True, abort_reason="stop_event",
+                        published=False, prev_depth=completed_depth, retries=0
+                    )
                 break
             if self.deadline is not None and time.monotonic() >= self.deadline:
+                if self.diagnostic_iterations:
+                    self._record_iteration(
+                        depth=depth, start_t=iter_start, end_t=time.monotonic(),
+                        nodes_start=iter_nodes_start, score=best_score, pv=best_pv,
+                        completed=False, aborted=True, abort_reason="timeout",
+                        published=False, prev_depth=completed_depth, retries=0
+                    )
                 break
             use_aspiration = (
                 self.enable_aspiration
@@ -1186,6 +1250,13 @@ class JanusSearch:
                 try:
                     score, pv = self._negamax(board, depth, -INF, INF, 0)
                 except SearchTimeout:
+                    if self.diagnostic_iterations:
+                        self._record_iteration(
+                            depth=depth, start_t=iter_start, end_t=time.monotonic(),
+                            nodes_start=iter_nodes_start, score=best_score, pv=best_pv,
+                            completed=False, aborted=True, abort_reason="timeout",
+                            published=False, prev_depth=completed_depth, retries=0
+                        )
                     break
             else:
                 self.aspiration_iterations += 1
@@ -1223,14 +1294,31 @@ class JanusSearch:
                         else:
                             break
                 except SearchTimeout:
+                    if self.diagnostic_iterations:
+                        self._record_iteration(
+                            depth=depth, start_t=iter_start, end_t=time.monotonic(),
+                            nodes_start=iter_nodes_start, score=best_score, pv=best_pv,
+                            completed=False, aborted=True, abort_reason="timeout",
+                            published=False, prev_depth=completed_depth, retries=retries
+                        )
                     break
 
             # Only publish results from fully completed iterations.
+            iter_end = time.monotonic()
             if pv:
                 best_pv = pv
                 best_move = pv[0]
             best_score = score
+            prev_comp = completed_depth
             completed_depth = depth
+
+            if self.diagnostic_iterations:
+                self._record_iteration(
+                    depth=depth, start_t=iter_start, end_t=iter_end,
+                    nodes_start=iter_nodes_start, score=best_score, pv=best_pv,
+                    completed=True, aborted=False, abort_reason=None,
+                    published=True, prev_depth=prev_comp, retries=retries
+                )
 
         return SearchResult(
             best_move=best_move,
@@ -1291,4 +1379,5 @@ class JanusSearch:
             rfp_considered=self.rfp_considered,
             rfp_cutoffs=self.rfp_cutoffs,
             rfp_events=list(self.rfp_events) if self.diagnostic_rfp else [],
+            iteration_records=list(self.iteration_records) if self.diagnostic_iterations else [],
         )

@@ -1,0 +1,39 @@
+{
+  "configurations": {
+    "K0_no_diagnostics": {
+      "mean_elapsed_s": 0.5015025799977593,
+      "mean_nodes": 11032.0,
+      "nps": 21997
+    },
+    "K0_diag_disabled": {
+      "mean_elapsed_s": 2.0468756999995095,
+      "mean_nodes": 11032.0,
+      "nps": 5389
+    },
+    "K0_diag_enabled": {
+      "mean_elapsed_s": 2.55623784000054,
+      "mean_nodes": 11032.0,
+      "nps": 4315
+    },
+    "RFP_no_diagnostics": {
+      "mean_elapsed_s": 2.192691099998774,
+      "mean_nodes": 10130.0,
+      "nps": 4619
+    },
+    "RFP_diag_disabled": {
+      "mean_elapsed_s": 2.560821740003303,
+      "mean_nodes": 10130.0,
+      "nps": 3955
+    },
+    "RFP_diag_enabled": {
+      "mean_elapsed_s": 2.4216480000002774,
+      "mean_nodes": 10130.0,
+      "nps": 4183
+    }
+  },
+  "overhead_analysis": {
+    "k0_diagnostic_overhead_pct": 24.88485939821127,
+    "rfp_diagnostic_overhead_pct": -5.434729713082099,
+    "disabled_overhead_vs_bare_code_pct": 308.1485881904446
+  }
+}

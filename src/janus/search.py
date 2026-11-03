@@ -1,7 +1,7 @@
 """Single-threaded alpha-beta search for Project Janus."""
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import threading
 import time
 from typing import Optional
@@ -109,6 +109,7 @@ class SearchResult:
     countermove_cutoffs: int = 0
     rfp_considered: int = 0
     rfp_cutoffs: int = 0
+    rfp_events: list[dict] = field(default_factory=list)
 
 
 class SearchTimeout(Exception):
@@ -146,6 +147,7 @@ class JanusSearch:
         enable_rfp: bool = False,
         rfp_max_depth: int = 2,
         rfp_margin_per_depth: int = 120,
+        diagnostic_rfp: bool = False,
     ) -> None:
         self.time_manager = time_manager or TimeManager()
         self.eval_config = eval_config
@@ -207,6 +209,8 @@ class JanusSearch:
         self.enable_rfp = enable_rfp
         self.rfp_max_depth = rfp_max_depth
         self.rfp_margin_per_depth = rfp_margin_per_depth
+        self.diagnostic_rfp = diagnostic_rfp
+        self.rfp_events: list[dict] = []
         self.countermoves: list[list[Optional[chess.Move]]] = [
             [None] * 64 for _ in range(64)
         ]
@@ -260,6 +264,19 @@ class JanusSearch:
         self.tt_clears = 0
         self.deadline: Optional[float] = None
         self.stop_event: Optional[threading.Event] = None
+
+    def flush_rfp_telemetry(self, filepath: str) -> int:
+        """Flush recorded RFP diagnostic events to a JSONL file and clear buffer."""
+        import json
+        from pathlib import Path
+        p = Path(filepath)
+        p.parent.mkdir(parents=True, exist_ok=True)
+        count = len(self.rfp_events)
+        with open(p, "a", encoding="utf-8") as f:
+            for ev in self.rfp_events:
+                f.write(json.dumps(ev) + "\n")
+        self.rfp_events.clear()
+        return count
 
     def _probe_tt(
         self, key: int, effective_depth: int
@@ -811,7 +828,7 @@ class JanusSearch:
 
         # Reverse Futility Pruning (RFP / Static Null Move Pruning)
         if (
-            self.enable_rfp
+            (self.enable_rfp or self.diagnostic_rfp)
             and ply > 0
             and not in_check
             and depth <= self.rfp_max_depth
@@ -819,10 +836,26 @@ class JanusSearch:
             and abs(alpha) < MATE_THRESHOLD
             and board.halfmove_clock < 140
         ):
-            self.rfp_considered += 1
+            if self.enable_rfp:
+                self.rfp_considered += 1
             static_eval = evaluate_side_to_move(board, config=self.eval_config)
             rfp_margin = self.rfp_margin_per_depth * depth
-            if static_eval - rfp_margin >= beta:
+            cutoff_eligible = (static_eval - rfp_margin >= beta)
+            if self.diagnostic_rfp:
+                self.rfp_events.append({
+                    "fen": board.fen(),
+                    "ply": ply,
+                    "depth": depth,
+                    "static_eval": static_eval,
+                    "beta": beta,
+                    "alpha": alpha,
+                    "margin": rfp_margin,
+                    "cutoff": cutoff_eligible,
+                    "reason": "static_eval_ge_beta_plus_margin" if cutoff_eligible else "below_margin",
+                    "best_move": tt_move.uci() if tt_move else None,
+                    "rfp_enabled": self.enable_rfp,
+                })
+            if self.enable_rfp and cutoff_eligible:
                 self.rfp_cutoffs += 1
                 self._store_tt(key, depth, beta, "lower", tt_move, ply)
                 return beta, []
@@ -1099,6 +1132,7 @@ class JanusSearch:
         self.countermove_cutoffs = 0
         self.rfp_considered = 0
         self.rfp_cutoffs = 0
+        self.rfp_events = []
 
         legal_moves = list(board.legal_moves)
         if not legal_moves:
@@ -1256,4 +1290,5 @@ class JanusSearch:
             countermove_cutoffs=self.countermove_cutoffs,
             rfp_considered=self.rfp_considered,
             rfp_cutoffs=self.rfp_cutoffs,
+            rfp_events=list(self.rfp_events) if self.diagnostic_rfp else [],
         )

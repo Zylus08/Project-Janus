@@ -112,3 +112,4 @@ The observed rating difference of $-12.7\text{ Elo}$ is well within standard sam
 The preregistered null hypothesis ($H_0: \mu_\Delta \le 0$) **cannot be rejected** ($t = -0.3940$, $p = 0.6528$). 
 
 Candidate RFP does **not** provide a reproducible playing strength gain over Baseline K0 in a 100-pair matched ablation.
+

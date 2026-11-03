@@ -58,3 +58,4 @@ Both engines were subjected to strictly identical hardware, CPU temperatures, th
 - [x] Clocks non-negative throughout in `match_moves.csv`.
 - [x] All 400 attempts logged with zero unrecorded exclusions in `attempt_log.json`.
 - [x] Master opening hash matched frozen preregistration digest (`2f929719ab8377e1...`).
+

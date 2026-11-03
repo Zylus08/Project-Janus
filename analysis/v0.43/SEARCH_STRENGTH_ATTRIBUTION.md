@@ -57,3 +57,4 @@ When playing Black, Janus is frequently defending against active piece pressure.
 
 1. **Do Not Enable RFP by Default:** The hypothesized strength improvement is not supported by independent 100-pair replication.
 2. **Refine Guard Conditions:** If RFP is investigated in future milestones, it requires dynamic margin scaling, verification searches, or strict tactical checks beyond the current static margin formula.
+

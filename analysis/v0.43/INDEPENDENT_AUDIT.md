@@ -56,3 +56,4 @@ The v0.43 independent audit was executed via a clean-room pipeline verifying:
 $$\mathbf{VERIFIED\_VALID}$$
 
 The experimental pipeline, data integrity, and statistical calculations are 100% sound and verified.
+

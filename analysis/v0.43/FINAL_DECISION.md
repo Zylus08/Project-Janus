@@ -51,3 +51,4 @@
 
 - The programmatic default in `JanusSearch` and `src/janus/uci.py` remains `enable_rfp = False`.
 - RFP remains accessible via `--enable-rfp` for experimental evaluation and parameter tuning.
+

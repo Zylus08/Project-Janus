@@ -84,3 +84,4 @@ with open(out_path, "w", encoding="utf-8") as f:
     json.dump(all_100, f, indent=2)
 
 print(f"Generated and validated 100-opening master suite at: {out_path}")
+

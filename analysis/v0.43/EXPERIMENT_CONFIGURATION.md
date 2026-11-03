@@ -80,3 +80,4 @@
 1. **Source Code Level:** In `JanusSearch._negamax`, the execution path between K0 and RFP diverges if and only if `self.enable_rfp` evaluates `True`. When `self.enable_rfp` is `False`, lines 812–828 are completely bypassed.
 2. **Harness Level:** Both engines are spawned via `SupervisedEngineSession` using the exact same virtual environment Python binary (`.venv/Scripts/python.exe`), working directory (`E:\ChessXML\project-janus`), and standard library packages.
 3. **Conclusion:** All non-RFP parameters are strictly held invariant. Any observed playing-strength delta between K0 and RFP is causally attributable to the treatment variable.
+

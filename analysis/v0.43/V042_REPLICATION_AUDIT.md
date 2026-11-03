@@ -97,3 +97,4 @@ Our forensic audit detected a narrative categorization error in Section 3 of `an
   - Pairs where K0 strictly outperformed RFP ($\Delta_i < 0$): **5 pairs** (20.0%) (Pairs 3, 7, 12, 14, 19)
 
 **Significance of Finding:** The raw mathematical metrics ($\bar{\Delta} = +0.58$, $t = 2.7682$, $p = 0.0053$) are 100% verified and unchanged. However, recognizing that K0 outperformed RFP in 5 pairs (not 1) highlights that RFP does entail selective pruning risk in specific sharp openings (`b3_e5`, `french_winawer`, `sicilian_najdorf`, `nimzo_indian_rubinstein`, `vienna_game`). This finding strengthens the justification for an independent replication.
+

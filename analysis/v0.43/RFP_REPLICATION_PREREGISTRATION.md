@@ -74,3 +74,4 @@ $$\bar{\Delta} = \frac{1}{N}\sum_{i=1}^N \Delta_i$$
 - **Prohibited Exclusions:** Games cannot be excluded due to tactical errors, checkmates, or unfavorable game outcomes.
 - **Retry Policy:** Up to 3 automatic retries per slot. Both the failed attempt and replacement game must be logged in `attempt_log.json`.
 - **Integrity Validation:** Every completed game must be verified for 100% legal moves via `python-chess`.
+

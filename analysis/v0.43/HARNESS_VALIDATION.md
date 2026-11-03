@@ -51,3 +51,4 @@ A 1-pair smoke test (4 games total) was conducted in `analysis/v0.43/smoke_test/
 - **Retry Mechanism:** Clean pass on first attempts; attempt log properly serialized.
 
 **Verdict:** The replication harness is robust, accurate, and qualified for the full replication experiment.
+

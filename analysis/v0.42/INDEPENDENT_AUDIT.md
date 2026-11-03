@@ -69,3 +69,4 @@ All artifacts in `analysis/v0.42/` are cryptographically hashed and indexed in `
 $$\mathbf{VERIFIED\_VALID}$$
 
 Candidate RFP meets all preregistered empirical and correctness criteria.
+

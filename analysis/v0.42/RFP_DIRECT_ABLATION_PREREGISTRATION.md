@@ -74,3 +74,4 @@ where $\text{score}_i \in \{0.0, 0.5, 1.0, 1.5, 2.0\}$ is the total points score
 - Git Branch: `v0.3-benchmark-harness`
 - Starting Commit: `1d509d0`
 - Openings Hash (SHA-256): Frozen in `analysis/v0.42/v041_reference_manifest.json`
+

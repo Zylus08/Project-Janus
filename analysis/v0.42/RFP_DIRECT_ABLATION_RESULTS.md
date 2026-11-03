@@ -85,3 +85,4 @@ Why does RFP provide such a substantial competitive boost under Fischer 3000 ms 
 The preregistered null hypothesis ($H_0: \mu_\Delta \le 0$) is **decisively rejected** ($t = 2.7682$, one-tailed $p = 0.005345 < 0.01$). 
 
 The playing strength improvement of Candidate RFP is causally verified and statistically robust.
+

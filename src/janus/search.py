@@ -111,6 +111,8 @@ class SearchResult:
     rfp_cutoffs: int = 0
     rfp_events: list[dict] = field(default_factory=list)
     iteration_records: list[dict] = field(default_factory=list)
+    ordering_stats: dict = field(default_factory=dict)
+    ordering_events: list[dict] = field(default_factory=list)
 
 
 class SearchTimeout(Exception):
@@ -150,6 +152,7 @@ class JanusSearch:
         rfp_margin_per_depth: int = 120,
         diagnostic_rfp: bool = False,
         diagnostic_iterations: bool = False,
+        diagnostic_ordering: bool = False,
     ) -> None:
         self.time_manager = time_manager or TimeManager()
         self.eval_config = eval_config
@@ -215,6 +218,18 @@ class JanusSearch:
         self.rfp_events: list[dict] = []
         self.diagnostic_iterations = diagnostic_iterations
         self.iteration_records: list[dict] = []
+        self.diagnostic_ordering = diagnostic_ordering
+        self.ordering_events: list[dict] = []
+        self.ordering_total_cutoffs = 0
+        self.first_move_cutoffs = 0
+        self.late_move_cutoffs = 0
+        self.tt_cutoffs_count = 0
+        self.killer_cutoffs = 0
+        self.countermove_cutoffs_count = 0
+        self.capture_cutoffs = 0
+        self.quiet_cutoffs = 0
+        self.total_movegen_time = 0.0
+        self.total_ordering_time = 0.0
         self.countermoves: list[list[Optional[chess.Move]]] = [
             [None] * 64 for _ in range(64)
         ]
@@ -268,6 +283,19 @@ class JanusSearch:
         self.tt_clears = 0
         self.deadline: Optional[float] = None
         self.stop_event: Optional[threading.Event] = None
+
+    def flush_ordering_telemetry(self, filepath: str) -> int:
+        """Flush recorded move ordering telemetry records to a JSONL file and clear buffer."""
+        import json
+        from pathlib import Path
+        p = Path(filepath)
+        p.parent.mkdir(parents=True, exist_ok=True)
+        count = len(self.ordering_events)
+        with open(p, "a", encoding="utf-8") as f:
+            for rec in self.ordering_events:
+                f.write(json.dumps(rec) + "\n")
+        self.ordering_events.clear()
+        return count
 
     def flush_iteration_telemetry(self, filepath: str) -> int:
         """Flush recorded iteration telemetry records to a JSONL file and clear buffer."""
@@ -675,12 +703,22 @@ class JanusSearch:
             return moves
 
         node_see: Optional[dict[chess.Move, int]] = {} if self.enable_see_ordering else None
-        moves.sort(
-            key=lambda move: self._move_order_score(
-                board, move, tt_move, ply, node_see=node_see, prev_move=prev_move
-            ),
-            reverse=True,
-        )
+        if self.diagnostic_ordering:
+            t0 = time.perf_counter()
+            moves.sort(
+                key=lambda move: self._move_order_score(
+                    board, move, tt_move, ply, node_see=node_see, prev_move=prev_move
+                ),
+                reverse=True,
+            )
+            self.total_ordering_time += (time.perf_counter() - t0)
+        else:
+            moves.sort(
+                key=lambda move: self._move_order_score(
+                    board, move, tt_move, ply, node_see=node_see, prev_move=prev_move
+                ),
+                reverse=True,
+            )
         return moves
 
     def _quiescence(
@@ -956,6 +994,7 @@ class JanusSearch:
 
         prev_move = board.peek() if board.move_stack and board.peek() != chess.Move.null() else None
         moves = self._ordered_moves(board, tt_move, ply, prev_move=prev_move)
+        total_legal_count = len(moves)
         searched_quiets: list[chess.Move] = []
         if not moves:
             if in_check:
@@ -1068,6 +1107,33 @@ class JanusSearch:
             alpha = max(alpha, score)
             if alpha >= beta:
                 self.beta_cutoffs += 1
+                if self.diagnostic_ordering:
+                    self.ordering_total_cutoffs += 1
+                    cutoff_idx = moves_searched - 1
+                    if cutoff_idx == 0:
+                        self.first_move_cutoffs += 1
+                    else:
+                        self.late_move_cutoffs += 1
+                    if tt_move is not None and move == tt_move:
+                        self.tt_cutoffs_count += 1
+                    if is_capture:
+                        self.capture_cutoffs += 1
+                    else:
+                        self.quiet_cutoffs += 1
+                        if ply < len(self.killers) and (move == self.killers[ply][0] or move == self.killers[ply][1]):
+                            self.killer_cutoffs += 1
+                    self.ordering_events.append({
+                        "depth": depth,
+                        "ply": ply,
+                        "legal_moves": total_legal_count,
+                        "searched_moves": moves_searched,
+                        "cutoff_index": cutoff_idx,
+                        "is_first_move": (cutoff_idx == 0),
+                        "move": move.uci(),
+                        "is_capture": is_capture,
+                        "is_tt_move": (tt_move is not None and move == tt_move),
+                    })
+
                 if eligible_for_lmr:
                     self.lmr_cutoffs += 1
                 if not is_capture and not is_promotion:
@@ -1179,6 +1245,17 @@ class JanusSearch:
         self.rfp_cutoffs = 0
         self.rfp_events = []
         self.iteration_records = []
+        self.ordering_events = []
+        self.ordering_total_cutoffs = 0
+        self.first_move_cutoffs = 0
+        self.late_move_cutoffs = 0
+        self.tt_cutoffs_count = 0
+        self.killer_cutoffs = 0
+        self.countermove_cutoffs_count = 0
+        self.capture_cutoffs = 0
+        self.quiet_cutoffs = 0
+        self.total_movegen_time = 0.0
+        self.total_ordering_time = 0.0
 
         legal_moves = list(board.legal_moves)
         if not legal_moves:
@@ -1380,4 +1457,17 @@ class JanusSearch:
             rfp_cutoffs=self.rfp_cutoffs,
             rfp_events=list(self.rfp_events) if self.diagnostic_rfp else [],
             iteration_records=list(self.iteration_records) if self.diagnostic_iterations else [],
+            ordering_stats={
+                "total_cutoffs": self.ordering_total_cutoffs,
+                "first_move_cutoffs": self.first_move_cutoffs,
+                "late_move_cutoffs": self.late_move_cutoffs,
+                "first_move_cutoff_rate": (self.first_move_cutoffs / self.ordering_total_cutoffs) if self.ordering_total_cutoffs > 0 else 0.0,
+                "tt_cutoffs": self.tt_cutoffs_count,
+                "killer_cutoffs": self.killer_cutoffs,
+                "countermove_cutoffs": self.countermove_cutoffs,
+                "capture_cutoffs": self.capture_cutoffs,
+                "quiet_cutoffs": self.quiet_cutoffs,
+                "total_ordering_time_s": self.total_ordering_time,
+            } if self.diagnostic_ordering else {},
+            ordering_events=list(self.ordering_events) if self.diagnostic_ordering else [],
         )

@@ -1,0 +1,50 @@
+{
+  "milestone": "v0.46",
+  "commit": "bd874ac2d6e63694280d66e21292dd4108d70b02",
+  "configurations": {
+    "k0": {
+      "enable_rfp": false,
+      "rfp_max_depth": 2,
+      "rfp_margin_per_depth": 120,
+      "enable_nmp": true,
+      "nmp_reduction": 2,
+      "enable_lmr": true,
+      "enable_pvs": true,
+      "enable_aspiration": true,
+      "aspiration_delta": 35,
+      "max_aspiration_retries": 3,
+      "enable_history": true,
+      "enable_history_malus": false,
+      "enable_countermoves": false,
+      "check_extension_policy": "disabled",
+      "enable_see_ordering": false,
+      "enable_see_pruning": false,
+      "tt_max_entries": 200000,
+      "tt_replacement_policy": "always_replace",
+      "qsearch_max_ply": 12,
+      "max_killers_ply": 64
+    },
+    "rfp": {
+      "enable_rfp": true,
+      "rfp_max_depth": 2,
+      "rfp_margin_per_depth": 120,
+      "enable_nmp": true,
+      "nmp_reduction": 2,
+      "enable_lmr": true,
+      "enable_pvs": true,
+      "enable_aspiration": true,
+      "aspiration_delta": 35,
+      "max_aspiration_retries": 3,
+      "enable_history": true,
+      "enable_history_malus": false,
+      "enable_countermoves": false,
+      "check_extension_policy": "disabled",
+      "enable_see_ordering": false,
+      "enable_see_pruning": false,
+      "tt_max_entries": 200000,
+      "tt_replacement_policy": "always_replace",
+      "qsearch_max_ply": 12,
+      "max_killers_ply": 64
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "total_evaluations": 148,
+  "total_move_disagreements": 4,
+  "total_score_only_differences": 2,
+  "total_perfect_agreements": 142,
+  "disagreements": [
+    {
+      "pos_id": "control_p31_white_ply7",
+      "depth": 5,
+      "category": "control",
+      "k0_move": "a2a4",
+      "l1_move": "h2h4",
+      "k0_score": 15,
+      "l1_score": 15,
+      "score_diff_cp": 0,
+      "k0_nodes": 59558,
+      "l1_nodes": 57399,
+      "node_delta": -2159,
+      "sf19_move": "e1g1",
+      "sf19_score": 0,
+      "k0_matches_sf": false,
+      "l1_matches_sf": false,
+      "classification": "alternate_equal_line"
+    },
+    {
+      "pos_id": "control_p7_white_ply3",
+      "depth": 5,
+      "category": "control",
+      "k0_move": "b1c3",
+      "l1_move": "d2d4",
+      "k0_score": 27,
+      "l1_score": 27,
+      "score_diff_cp": 0,
+      "k0_nodes": 30430,
+      "l1_nodes": 28143,
+      "node_delta": -2287,
+      "sf19_move": "d2d4",
+      "sf19_score": 105,
+      "k0_matches_sf": false,
+      "l1_matches_sf": true,
+      "classification": "alternate_equal_line"
+    },
+    {
+      "pos_id": "control_p8_white_ply3",
+      "depth": 3,
+      "category": "control",
+      "k0_move": "f1d3",
+      "l1_move": "b1c3",
+      "k0_score": 24,
+      "l1_score": 24,
+      "score_diff_cp": 0,
+      "k0_nodes": 3160,
+      "l1_nodes": 2802,
+      "node_delta": -358,
+      "sf19_move": "d2d4",
+      "sf19_score": 63,
+      "k0_matches_sf": false,
+      "l1_matches_sf": false,
+      "classification": "alternate_equal_line"
+    },
+    {
+      "pos_id": "control_p8_white_ply3",
+      "depth": 4,
+      "category": "control",
+      "k0_move": "f1d3",
+      "l1_move": "b1c3",
+      "k0_score": 12,
+      "l1_score": 15,
+      "score_diff_cp": 3,
+      "k0_nodes": 6698,
+      "l1_nodes": 6084,
+      "node_delta": -614,
+      "sf19_move": "d2d4",
+      "sf19_score": 63,
+      "k0_matches_sf": false,
+      "l1_matches_sf": false,
+      "classification": "alternate_equal_line"
+    }
+  ],
+  "score_only_differences": [
+    {
+      "pos_id": "divergence_p11_black_ply4",
+      "depth": 4,
+      "move": "b8c6",
+      "k0_score": 12,
+      "l1_score": 1,
+      "score_diff_cp": 11
+    },
+    {
+      "pos_id": "divergence_p11_black_ply4",
+      "depth": 5,
+      "move": "d7d5",
+      "k0_score": 11,
+      "l1_score": 10,
+      "score_diff_cp": 1
+    }
+  ]
+}

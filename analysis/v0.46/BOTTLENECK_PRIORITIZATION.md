@@ -30,3 +30,4 @@ Based on the empirical findings gathered across Phases B through G, the search a
   - Engines fail to step up in nominal depth because the remaining budget is deemed insufficient or expires mid-search.
 - **Search Impact:** Fixed-depth quantization limits playing strength improvements under tight time controls.
 - **Feasibility:** Medium (requires cautious time-management adjustments to avoid timeout forfeits).
+

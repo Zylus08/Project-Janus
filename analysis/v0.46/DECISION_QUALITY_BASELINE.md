@@ -28,3 +28,4 @@
 ### 2. K0 vs RFP Decision Equivalence at Fixed Depth
 - Across all 148 position-depth trials ($37 \times 4$), **K0 and RFP produced $0$ move disagreements** ($100\%$ move identity).
 - This confirms the v0.44/v0.45 finding: RFP preserves fixed-depth decision quality completely while pruning ~9–10% of search nodes.
+

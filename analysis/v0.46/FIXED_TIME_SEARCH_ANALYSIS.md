@@ -24,3 +24,4 @@
    Across tight time controls ($\le 250\text{ms}$), move agreement between K0 and RFP is $99.2\%$. Disagreements only emerge when an engine completes an additional depth ply right before the timer cutoff (as seen at $500\text{ms}$ and $1000\text{ms}$).
 3. **Move Ordering Impact on Time Utilization:**
    Because move ordering currently sorts all 35+ legal moves eagerly, nodes that fail high on move 0 waste $\sim 7.4\%$ of CPU time sorting unsearched moves. Reducing this overhead directly frees budget to deepen search iterations.
+

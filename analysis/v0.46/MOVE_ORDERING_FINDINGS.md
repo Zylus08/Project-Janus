@@ -34,3 +34,4 @@ As documented in `SEARCH_ARCHITECTURE_AUDIT.md`, `JanusSearch._ordered_moves` ca
 
 ### Finding 3: Quiet Move Discrimination Outside Killer Moves
 When killer moves fail to refute ($7.39\%$ of quiet cutoffs), the butterfly history heuristic provides weak discrimination. Unpromising quiet moves are frequently evaluated ahead of the refutation.
+

@@ -107,3 +107,4 @@ The move ordering score is computed in `_move_order_score` (lines 582–643):
 The search pipeline and move-ordering mechanisms are verified to be structurally sound and free of state-corruption defects.
 
 **Gate B Status:** **PASS** — Proceeding to Phase C (Move-Ordering Instrumentation).
+

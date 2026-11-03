@@ -29,3 +29,4 @@ In accordance with Phase L of the v0.46 specification, the final decision catego
 - **Production Default:** **K0 (`enable_rfp=False`) remains the production default.**
 - **RFP Status:** Retained in codebase, disabled by default.
 - **Next Milestone Focus:** Implement a staged/lazy move selection architecture (`MovePicker`) and evaluate history aging to address the confirmed bottlenecks without altering search semantics.
+

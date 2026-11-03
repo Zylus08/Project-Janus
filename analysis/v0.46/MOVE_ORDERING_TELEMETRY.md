@@ -42,3 +42,4 @@ In accordance with Phase C of the v0.46 specification, non-invasive move-orderin
 
 ## 4. Gate C Validation
 Gate C is fully satisfied. The search engine is now equipped to record precise move-ordering behavior across all benchmark positions.
+

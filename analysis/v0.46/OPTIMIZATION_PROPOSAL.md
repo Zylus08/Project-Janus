@@ -37,3 +37,4 @@
 - **Risk Assessment:** High risk if hard time limits are exceeded. Must maintain strict hard deadline aborts.
 - **Expected Benefit:** Better utilization of search budget; avoiding wasted cycles on stable single-reply positions.
 - **Validation Criteria:** Zero time forfeiture across 200+ games at blitz time control (e.g., 5s+0.1s).
+

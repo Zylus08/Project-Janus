@@ -40,3 +40,4 @@
    Cumulative time spent in `moves.sort()` at depth 5 accounts for 14.305 seconds out of ~193 seconds total search time (~7.4% of total runtime purely executing Python lambda comparison sorts).
 3. **Branching Factor:**
    Effective branching factor from depth 3 to 4 is approximately $2.23$, and from depth 4 to 5 is approximately $3.09$ for K0.
+

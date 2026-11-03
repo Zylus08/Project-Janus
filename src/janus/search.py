@@ -153,6 +153,7 @@ class JanusSearch:
         diagnostic_rfp: bool = False,
         diagnostic_iterations: bool = False,
         diagnostic_ordering: bool = False,
+        enable_lazy_move_selection: bool = False,
     ) -> None:
         self.time_manager = time_manager or TimeManager()
         self.eval_config = eval_config
@@ -219,6 +220,10 @@ class JanusSearch:
         self.diagnostic_iterations = diagnostic_iterations
         self.iteration_records: list[dict] = []
         self.diagnostic_ordering = diagnostic_ordering
+        self.enable_lazy_move_selection = enable_lazy_move_selection
+        self.lazy_sorts_deferred = 0
+        self.lazy_sorts_executed = 0
+        self.lazy_sorts_saved = 0
         self.ordering_events: list[dict] = []
         self.ordering_total_cutoffs = 0
         self.first_move_cutoffs = 0
@@ -721,6 +726,83 @@ class JanusSearch:
             )
         return moves
 
+    def _select_ordered_moves(
+        self,
+        board: chess.Board,
+        tt_move: Optional[chess.Move] = None,
+        ply: int = 0,
+        prev_move: Optional[chess.Move] = None,
+    ):
+        moves = list(board.legal_moves)
+        total_legal_count = len(moves)
+        if total_legal_count <= 1:
+            return moves, None, total_legal_count
+
+        if not self.enable_lazy_move_selection:
+            node_see: Optional[dict[chess.Move, int]] = {} if self.enable_see_ordering else None
+            if self.diagnostic_ordering:
+                t0 = time.perf_counter()
+                moves.sort(
+                    key=lambda move: self._move_order_score(
+                        board, move, tt_move, ply, node_see=node_see, prev_move=prev_move
+                    ),
+                    reverse=True,
+                )
+                self.total_ordering_time += (time.perf_counter() - t0)
+            else:
+                moves.sort(
+                    key=lambda move: self._move_order_score(
+                        board, move, tt_move, ply, node_see=node_see, prev_move=prev_move
+                    ),
+                    reverse=True,
+                )
+            return moves, None, total_legal_count
+
+        # Lazy Candidate (L1):
+        if tt_move is not None and tt_move in moves:
+            self.lazy_sorts_deferred += 1
+            rem = [m for m in moves if m != tt_move]
+            def rest_provider():
+                self.lazy_sorts_executed += 1
+                node_see: Optional[dict[chess.Move, int]] = {} if self.enable_see_ordering else None
+                if self.diagnostic_ordering:
+                    t0 = time.perf_counter()
+                    rem.sort(
+                        key=lambda move: self._move_order_score(
+                            board, move, None, ply, node_see=node_see, prev_move=prev_move
+                        ),
+                        reverse=True,
+                    )
+                    self.total_ordering_time += (time.perf_counter() - t0)
+                else:
+                    rem.sort(
+                        key=lambda move: self._move_order_score(
+                            board, move, None, ply, node_see=node_see, prev_move=prev_move
+                        ),
+                        reverse=True,
+                    )
+                return rem
+            return [tt_move], rest_provider, total_legal_count
+        else:
+            node_see: Optional[dict[chess.Move, int]] = {} if self.enable_see_ordering else None
+            if self.diagnostic_ordering:
+                t0 = time.perf_counter()
+                moves.sort(
+                    key=lambda move: self._move_order_score(
+                        board, move, None, ply, node_see=node_see, prev_move=prev_move
+                    ),
+                    reverse=True,
+                )
+                self.total_ordering_time += (time.perf_counter() - t0)
+            else:
+                moves.sort(
+                    key=lambda move: self._move_order_score(
+                        board, move, None, ply, node_see=node_see, prev_move=prev_move
+                    ),
+                    reverse=True,
+                )
+            return moves, None, total_legal_count
+
     def _quiescence(
         self,
         board: chess.Board,
@@ -993,19 +1075,33 @@ class JanusSearch:
         best_pv: list[chess.Move] = []
 
         prev_move = board.peek() if board.move_stack and board.peek() != chess.Move.null() else None
-        moves = self._ordered_moves(board, tt_move, ply, prev_move=prev_move)
-        total_legal_count = len(moves)
         searched_quiets: list[chess.Move] = []
-        if not moves:
-            if in_check:
-                if extension > 0:
-                    self.check_extensions_terminal_mates += 1
-                return -MATE_SCORE + ply, []
-            return 0, []
+        if not self.enable_lazy_move_selection:
+            candidate_iter = self._ordered_moves(board, tt_move, ply, prev_move=prev_move)
+            total_legal_count = len(candidate_iter)
+            if total_legal_count == 0:
+                if in_check:
+                    if extension > 0:
+                        self.check_extensions_terminal_mates += 1
+                    return -MATE_SCORE + ply, []
+                return 0, []
+        else:
+            phase1_moves, rest_provider, total_legal_count = self._select_ordered_moves(board, tt_move, ply, prev_move=prev_move)
+            if total_legal_count == 0:
+                if in_check:
+                    if extension > 0:
+                        self.check_extensions_terminal_mates += 1
+                    return -MATE_SCORE + ply, []
+                return 0, []
+            def _lazy_iter():
+                yield from phase1_moves
+                if rest_provider is not None:
+                    yield from rest_provider()
+            candidate_iter = _lazy_iter()
 
         moves_searched = 0
 
-        for move in moves:
+        for move in candidate_iter:
             is_capture = board.is_capture(move)
             is_promotion = move.promotion is not None
 
@@ -1256,6 +1352,9 @@ class JanusSearch:
         self.quiet_cutoffs = 0
         self.total_movegen_time = 0.0
         self.total_ordering_time = 0.0
+        self.lazy_sorts_deferred = 0
+        self.lazy_sorts_executed = 0
+        self.lazy_sorts_saved = 0
 
         legal_moves = list(board.legal_moves)
         if not legal_moves:
@@ -1468,6 +1567,10 @@ class JanusSearch:
                 "capture_cutoffs": self.capture_cutoffs,
                 "quiet_cutoffs": self.quiet_cutoffs,
                 "total_ordering_time_s": self.total_ordering_time,
+                "lazy_selection_enabled": self.enable_lazy_move_selection,
+                "lazy_sorts_deferred": self.lazy_sorts_deferred,
+                "lazy_sorts_executed": self.lazy_sorts_executed,
+                "lazy_sorts_saved": self.lazy_sorts_deferred - self.lazy_sorts_executed,
             } if self.diagnostic_ordering else {},
             ordering_events=list(self.ordering_events) if self.diagnostic_ordering else [],
         )

@@ -46,6 +46,7 @@ def main() -> None:
     parser.add_argument("--diag-rfp", action="store_true", help="Enable reverse futility pruning diagnostics")
     parser.add_argument("--diag-iterations", action="store_true", help="Enable iteration-level search telemetry")
     parser.add_argument("--diag-ordering", action="store_true", help="Enable move-ordering diagnostic telemetry")
+    parser.add_argument("--enable-lazy-move-selection", action="store_true", help="Enable candidate L1 lazy move selection")
     parser.add_argument("--rfp-max-depth", type=int, default=2, help="Max depth for reverse futility pruning")
     parser.add_argument("--rfp-margin", type=int, default=120, help="Per-depth margin (cp) for reverse futility pruning")
     parser.add_argument("--eval-tapered", action="store_true", help="Enable tapered evaluation")
@@ -125,6 +126,7 @@ def main() -> None:
         diagnostic_rfp=args.diag_rfp,
         diagnostic_iterations=args.diag_iterations,
         diagnostic_ordering=args.diag_ordering,
+        enable_lazy_move_selection=args.enable_lazy_move_selection,
         time_manager=tm,
     )
     search_thread: threading.Thread | None = None

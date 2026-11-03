@@ -1,0 +1,27 @@
+{
+  "milestone": "v0.47",
+  "title": "Lazy Move Selection, Ordering Efficiency & Controlled Strength Validation",
+  "baseline_commit": "9858aacad01692c0119c58ec8c740f66cb75527c",
+  "production_configuration": "K0 (enable_lazy_move_selection=False, enable_rfp=False)",
+  "experimental_configuration": "Candidate L1 (enable_lazy_move_selection=True)",
+  "final_decision": "Category B (Retained as Configurable Experimental Feature)",
+  "key_findings": {
+    "depth5_time_saved_pct": -20.41,
+    "depth5_nps_gain_pct": 25.7,
+    "depth5_lazy_sorts_saved": 14510,
+    "depth5_move_agreement": "35/37 (94.6%)",
+    "depth5_score_agreement": "36/37 (97.3%)",
+    "fixed_time_mean_agreement": "96.6%",
+    "match_k0_score": "27.0/50 (54.0%)",
+    "match_l1_score": "23.0/50 (46.0%)",
+    "match_mean_paired_delta": -0.16,
+    "match_bootstrap_95ci": [
+      -0.44,
+      0.08
+    ],
+    "match_t_stat": -1.1628,
+    "match_p_value": 0.2562
+  },
+  "total_regression_tests_passed": 473,
+  "artifacts_count": 28
+}

@@ -1,0 +1,542 @@
+{
+  "metadata": {
+    "wall_duration_s": 11.33,
+    "depths": [
+      4,
+      5
+    ],
+    "positions_count": 6
+  },
+  "results_by_depth": {
+    "4": [
+      {
+        "position_id": "startpos",
+        "nodes": 2552,
+        "elapsed_s": 0.3436,
+        "score": 0,
+        "best_move": "g1f3"
+      },
+      {
+        "position_id": "open_game",
+        "nodes": 18418,
+        "elapsed_s": 2.5046,
+        "score": 9,
+        "best_move": "c3a4"
+      },
+      {
+        "position_id": "white_up_rook",
+        "nodes": 2291,
+        "elapsed_s": 0.5038,
+        "score": 838,
+        "best_move": "e2f4"
+      },
+      {
+        "position_id": "mate_in_one",
+        "nodes": 2712,
+        "elapsed_s": 0.4491,
+        "score": 99999,
+        "best_move": "g5g7"
+      },
+      {
+        "position_id": "promotion_tactic",
+        "nodes": 436,
+        "elapsed_s": 0.1078,
+        "score": 900,
+        "best_move": "a7a8q"
+      },
+      {
+        "position_id": "stalemate",
+        "nodes": 0,
+        "elapsed_s": 0.0002,
+        "score": 0,
+        "best_move": null
+      }
+    ],
+    "5": [
+      {
+        "position_id": "startpos",
+        "nodes": 8798,
+        "elapsed_s": 1.765,
+        "score": 10,
+        "best_move": "g1f3"
+      },
+      {
+        "position_id": "open_game",
+        "nodes": 27480,
+        "elapsed_s": 3.4678,
+        "score": 21,
+        "best_move": "c3a4"
+      },
+      {
+        "position_id": "white_up_rook",
+        "nodes": 7213,
+        "elapsed_s": 0.6093,
+        "score": 838,
+        "best_move": "e2d4"
+      },
+      {
+        "position_id": "mate_in_one",
+        "nodes": 8992,
+        "elapsed_s": 1.3694,
+        "score": 99999,
+        "best_move": "g5g7"
+      },
+      {
+        "position_id": "promotion_tactic",
+        "nodes": 1224,
+        "elapsed_s": 0.2053,
+        "score": 900,
+        "best_move": "a7a8q"
+      },
+      {
+        "position_id": "stalemate",
+        "nodes": 0,
+        "elapsed_s": 0.0002,
+        "score": 0,
+        "best_move": null
+      }
+    ]
+  },
+  "top_exclusive_time_functions": [
+    {
+      "file": "E:\\ChessXML\\project-janus\\src\\janus\\evaluation.py",
+      "line": 43,
+      "function": "evaluate_white",
+      "call_count": 44761,
+      "ncalls": 44761,
+      "tottime": 1.0536,
+      "cumtime": 2.2261,
+      "percall_tottime": 2.4e-05,
+      "percall_cumtime": 5e-05
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 1819,
+      "function": "generate_pseudo_legal_moves",
+      "call_count": 323389,
+      "ncalls": 323389,
+      "tottime": 0.8329,
+      "cumtime": 1.676,
+      "percall_tottime": 3e-06,
+      "percall_cumtime": 5e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 2310,
+      "function": "push",
+      "call_count": 89047,
+      "ncalls": 89047,
+      "tottime": 0.7248,
+      "cumtime": 1.609,
+      "percall_tottime": 8e-06,
+      "percall_cumtime": 1.8e-05
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 405,
+      "function": "scan_forward",
+      "call_count": 1612798,
+      "ncalls": 1612798,
+      "tottime": 0.5557,
+      "cumtime": 0.7118,
+      "percall_tottime": 0.0,
+      "percall_cumtime": 0.0
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3702,
+      "function": "generate_legal_moves",
+      "call_count": 325421,
+      "ncalls": 325421,
+      "tottime": 0.5027,
+      "cumtime": 3.4309,
+      "percall_tottime": 2e-06,
+      "percall_cumtime": 1.1e-05
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 414,
+      "function": "scan_reversed",
+      "call_count": 1565132,
+      "ncalls": 1565132,
+      "tottime": 0.493,
+      "cumtime": 0.6286,
+      "percall_tottime": 0.0,
+      "percall_cumtime": 0.0
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 905,
+      "function": "attackers_mask",
+      "call_count": 256557,
+      "ncalls": 256557,
+      "tottime": 0.4867,
+      "cumtime": 0.4867,
+      "percall_tottime": 2e-06,
+      "percall_cumtime": 2e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\src\\janus\\search.py",
+      "line": 652,
+      "function": "_negamax",
+      "call_count": 45,
+      "ncalls": 30822,
+      "tottime": 0.4438,
+      "cumtime": 11.3229,
+      "percall_tottime": 0.009863,
+      "percall_cumtime": 0.251621
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\src\\janus\\search.py",
+      "line": 582,
+      "function": "_quiescence",
+      "call_count": 21464,
+      "ncalls": 49294,
+      "tottime": 0.3487,
+      "cumtime": 6.3268,
+      "percall_tottime": 1.6e-05,
+      "percall_cumtime": 0.000295
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'bit_length' of 'int' objects>",
+      "call_count": 2162891,
+      "ncalls": 2162891,
+      "tottime": 0.3383,
+      "cumtime": 0.3383,
+      "percall_tottime": 0.0,
+      "percall_cumtime": 0.0
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\src\\janus\\search.py",
+      "line": 491,
+      "function": "_move_order_score",
+      "call_count": 164342,
+      "ncalls": 164342,
+      "tottime": 0.29,
+      "cumtime": 0.7233,
+      "percall_tottime": 2e-06,
+      "percall_cumtime": 4e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 1014,
+      "function": "_remove_piece_at",
+      "call_count": 178042,
+      "ncalls": 178042,
+      "tottime": 0.2426,
+      "cumtime": 0.3233,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 2e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 799,
+      "function": "pieces_mask",
+      "call_count": 628706,
+      "ncalls": 628706,
+      "tottime": 0.2226,
+      "cumtime": 0.2226,
+      "percall_tottime": 0.0,
+      "percall_cumtime": 0.0
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 835,
+      "function": "piece_type_at",
+      "call_count": 522040,
+      "ncalls": 522040,
+      "tottime": 0.2195,
+      "cumtime": 0.2195,
+      "percall_tottime": 0.0,
+      "percall_cumtime": 0.0
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3645,
+      "function": "_slider_blockers",
+      "call_count": 94713,
+      "ncalls": 94713,
+      "tottime": 0.2173,
+      "cumtime": 0.3052,
+      "percall_tottime": 2e-06,
+      "percall_cumtime": 3e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3664,
+      "function": "_is_safe",
+      "call_count": 244638,
+      "ncalls": 244638,
+      "tottime": 0.2142,
+      "cumtime": 0.6351,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 3e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 875,
+      "function": "attacks_mask",
+      "call_count": 229460,
+      "ncalls": 229460,
+      "tottime": 0.204,
+      "cumtime": 0.204,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 1e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\polyglot.py",
+      "line": 225,
+      "function": "hash_board",
+      "call_count": 9048,
+      "ncalls": 9048,
+      "tottime": 0.1834,
+      "cumtime": 0.3763,
+      "percall_tottime": 2e-05,
+      "percall_cumtime": 4.2e-05
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3311,
+      "function": "is_capture",
+      "call_count": 193649,
+      "ncalls": 193649,
+      "tottime": 0.1669,
+      "cumtime": 0.2021,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 1e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 2110,
+      "function": "is_insufficient_material",
+      "call_count": 80116,
+      "ncalls": 80116,
+      "tottime": 0.1542,
+      "cumtime": 0.3425,
+      "percall_tottime": 2e-06,
+      "percall_cumtime": 4e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3421,
+      "function": "has_kingside_castling_rights",
+      "call_count": 107618,
+      "ncalls": 107618,
+      "tottime": 0.1409,
+      "cumtime": 0.1583,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 1e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3341,
+      "function": "is_castling",
+      "call_count": 72823,
+      "ncalls": 72823,
+      "tottime": 0.1356,
+      "cumtime": 0.176,
+      "percall_tottime": 2e-06,
+      "percall_cumtime": 2e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 1052,
+      "function": "_set_piece_at",
+      "call_count": 89004,
+      "ncalls": 89004,
+      "tottime": 0.1179,
+      "cumtime": 0.2299,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 3e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 2431,
+      "function": "pop",
+      "call_count": 89047,
+      "ncalls": 89047,
+      "tottime": 0.1143,
+      "cumtime": 0.2347,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 3e-06
+    },
+    {
+      "file": "<string>",
+      "line": 2,
+      "function": "__eq__",
+      "call_count": 257384,
+      "ncalls": 257384,
+      "tottime": 0.104,
+      "cumtime": 0.104,
+      "percall_tottime": 0.0,
+      "percall_cumtime": 0.0
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 825,
+      "function": "piece_at",
+      "call_count": 94992,
+      "ncalls": 94992,
+      "tottime": 0.0999,
+      "cumtime": 0.1545,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 2e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 2258,
+      "function": "is_repetition",
+      "call_count": 79683,
+      "ncalls": 79683,
+      "tottime": 0.099,
+      "cumtime": 0.099,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 1e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 1906,
+      "function": "checkers_mask",
+      "call_count": 88703,
+      "ncalls": 88703,
+      "tottime": 0.0973,
+      "cumtime": 0.4193,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 5e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3768,
+      "function": "_from_chess960",
+      "call_count": 89206,
+      "ncalls": 89206,
+      "tottime": 0.095,
+      "cumtime": 0.1298,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 1e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 411,
+      "function": "msb",
+      "call_count": 233126,
+      "ncalls": 233126,
+      "tottime": 0.0946,
+      "cumtime": 0.1413,
+      "percall_tottime": 0.0,
+      "percall_cumtime": 1e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 2115,
+      "function": "<genexpr>",
+      "call_count": 160665,
+      "ncalls": 160665,
+      "tottime": 0.0889,
+      "cumtime": 0.1411,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 1e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3304,
+      "function": "is_en_passant",
+      "call_count": 362816,
+      "ncalls": 362816,
+      "tottime": 0.0842,
+      "cumtime": 0.0842,
+      "percall_tottime": 0.0,
+      "percall_cumtime": 0.0
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3442,
+      "function": "has_queenside_castling_rights",
+      "call_count": 107618,
+      "ncalls": 107618,
+      "tottime": 0.0826,
+      "cumtime": 0.0974,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 1e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\src\\janus\\search.py",
+      "line": 565,
+      "function": "_ordered_moves",
+      "call_count": 10079,
+      "ncalls": 10079,
+      "tottime": 0.0808,
+      "cumtime": 1.82,
+      "percall_tottime": 8e-06,
+      "percall_cumtime": 0.000181
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 1567,
+      "function": "restore",
+      "call_count": 89047,
+      "ncalls": 89047,
+      "tottime": 0.079,
+      "cumtime": 0.079,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 1e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 864,
+      "function": "king",
+      "call_count": 88707,
+      "ncalls": 88707,
+      "tottime": 0.0768,
+      "cumtime": 0.1373,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 2e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3316,
+      "function": "is_zeroing",
+      "call_count": 88794,
+      "ncalls": 88794,
+      "tottime": 0.0766,
+      "cumtime": 0.0766,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 1e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3738,
+      "function": "generate_castling_moves",
+      "call_count": 24654,
+      "ncalls": 24654,
+      "tottime": 0.0754,
+      "cumtime": 0.1015,
+      "percall_tottime": 3e-06,
+      "percall_cumtime": 4e-06
+    },
+    {
+      "file": "E:\\ChessXML\\project-janus\\.venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 1547,
+      "function": "__init__",
+      "call_count": 89047,
+      "ncalls": 89047,
+      "tottime": 0.0728,
+      "cumtime": 0.0728,
+      "percall_tottime": 1e-06,
+      "percall_cumtime": 1e-06
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'sort' of 'list' objects>",
+      "call_count": 28234,
+      "ncalls": 28234,
+      "tottime": 0.0721,
+      "cumtime": 0.8841,
+      "percall_tottime": 3e-06,
+      "percall_cumtime": 3.1e-05
+    }
+  ]
+}

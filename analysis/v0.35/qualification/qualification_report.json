@@ -1,0 +1,28 @@
+{
+  "qualification_passed": true,
+  "modes_tested": [
+    "fixed_movetime",
+    "clock_only",
+    "fischer_increment"
+  ],
+  "summary": {
+    "fixed_movetime": {
+      "valid_games": 2,
+      "attempts": 2,
+      "target_met": true,
+      "infra_failures": 0
+    },
+    "clock_only": {
+      "valid_games": 2,
+      "attempts": 2,
+      "target_met": true,
+      "infra_failures": 0
+    },
+    "fischer_increment": {
+      "valid_games": 2,
+      "attempts": 2,
+      "target_met": true,
+      "infra_failures": 0
+    }
+  }
+}

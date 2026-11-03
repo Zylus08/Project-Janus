@@ -1,0 +1,54 @@
+{
+  "milestone": "v0.39",
+  "candidate": "q0_k0",
+  "opponent": "Stockfish 19 (Elo 1320 calibrated)",
+  "match_conditions": "3000ms + 100ms Fischer increment, 25 pairs",
+  "sample_size": {
+    "valid_games": 50,
+    "complete_pairs": 25,
+    "degrees_of_freedom": 24
+  },
+  "game_results": {
+    "wins": 21,
+    "draws": 3,
+    "losses": 26,
+    "total_points": 22.5,
+    "score_pct": 45.0
+  },
+  "color_breakdown": {
+    "white_points": 9.5,
+    "white_score_pct": 38.0,
+    "black_points": 13.0,
+    "black_score_pct": 52.0
+  },
+  "paired_statistics": {
+    "mean_pair_score": 0.9,
+    "std_pair_score": 0.7217,
+    "t_statistic_vs_equal": -0.6928,
+    "p_value_vs_equal": 0.4884223166225937,
+    "pairs_won": 6,
+    "pairs_drawn": 10,
+    "pairs_lost": 9,
+    "bootstrap_95_ci_pct": [
+      31.0,
+      58.0
+    ]
+  },
+  "elo_rating": {
+    "elo_difference_vs_sf1320": -34.9,
+    "elo_95_ci": [
+      -139.0,
+      56.1
+    ],
+    "calibrated_anchor_rating": 1285.1
+  },
+  "baseline_comparison": {
+    "baseline_score_pct": 56.0,
+    "candidate_score_pct": 45.0,
+    "score_delta_pct": -11.0,
+    "baseline_elo_diff": 41.9,
+    "candidate_elo_diff": -34.9,
+    "elo_delta": -76.8,
+    "verdict": "STRENGTH_REGRESSED"
+  }
+}

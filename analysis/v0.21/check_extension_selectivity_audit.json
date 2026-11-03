@@ -1,0 +1,1982 @@
+{
+  "timestamp": "2026-10-16T09:43:39Z",
+  "engine": "Janus v0.21",
+  "suite_size": 16,
+  "policies": [
+    "disabled",
+    "bounded_all_checks",
+    "single_reply"
+  ],
+  "depths": [
+    3,
+    4
+  ],
+  "positions": [
+    {
+      "id": "mate_in_one_scholar",
+      "category": "forced_mate",
+      "description": "Scholar's mate motif (White Queen delivers mate on f7)",
+      "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+      "expected_move": "h5f7",
+      "target_outcome": "mate",
+      "results": {
+        "depth_3": {
+          "disabled": {
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_valid": true,
+            "nodes": 4955,
+            "elapsed_s": 0.22,
+            "check_extensions_eligible": 6,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_valid": true,
+            "nodes": 5589,
+            "elapsed_s": 0.2792,
+            "check_extensions_eligible": 10,
+            "check_extensions_applied": 10,
+            "check_extension_plies": 10,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 2
+          },
+          "single_reply": {
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_valid": true,
+            "nodes": 5233,
+            "elapsed_s": 0.2175,
+            "check_extensions_eligible": 9,
+            "check_extensions_applied": 2,
+            "check_extension_plies": 2,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 5,
+            "check_extensions_terminal_mates": 0
+          }
+        },
+        "depth_4": {
+          "disabled": {
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_valid": true,
+            "nodes": 16578,
+            "elapsed_s": 0.9092,
+            "check_extensions_eligible": 143,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_valid": true,
+            "nodes": 26355,
+            "elapsed_s": 1.2687,
+            "check_extensions_eligible": 158,
+            "check_extensions_applied": 147,
+            "check_extension_plies": 147,
+            "check_extensions_suppressed": 11,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 8
+          },
+          "single_reply": {
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_valid": true,
+            "nodes": 20429,
+            "elapsed_s": 1.8894,
+            "check_extensions_eligible": 146,
+            "check_extensions_applied": 50,
+            "check_extension_plies": 50,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 88,
+            "check_extensions_terminal_mates": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "mate_in_two_smothered",
+      "category": "forced_mate",
+      "description": "Smothered mate pattern with Queen sacrifice threat",
+      "fen": "6k1/5ppp/8/8/8/8/1Q4PP/6K1 w - - 0 1",
+      "expected_move": "b2b8",
+      "target_outcome": "mate",
+      "results": {
+        "depth_3": {
+          "disabled": {
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_valid": true,
+            "nodes": 1572,
+            "elapsed_s": 0.0861,
+            "check_extensions_eligible": 4,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_valid": true,
+            "nodes": 1592,
+            "elapsed_s": 0.1039,
+            "check_extensions_eligible": 4,
+            "check_extensions_applied": 4,
+            "check_extension_plies": 4,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 2
+          },
+          "single_reply": {
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_valid": true,
+            "nodes": 1592,
+            "elapsed_s": 0.1015,
+            "check_extensions_eligible": 4,
+            "check_extensions_applied": 2,
+            "check_extension_plies": 2,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          }
+        },
+        "depth_4": {
+          "disabled": {
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_valid": true,
+            "nodes": 3020,
+            "elapsed_s": 0.2321,
+            "check_extensions_eligible": 49,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_valid": true,
+            "nodes": 3186,
+            "elapsed_s": 0.2493,
+            "check_extensions_eligible": 49,
+            "check_extensions_applied": 49,
+            "check_extension_plies": 49,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 33
+          },
+          "single_reply": {
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_valid": true,
+            "nodes": 3186,
+            "elapsed_s": 0.2535,
+            "check_extensions_eligible": 49,
+            "check_extensions_applied": 16,
+            "check_extension_plies": 16,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "tactical_fork_knight",
+      "category": "forks_and_pins",
+      "description": "Royal fork winning queen",
+      "fen": "r1b1k2r/pppp1ppp/8/4q3/1b2N3/8/PPP1PPPP/R2QKB1R w KQkq - 0 1",
+      "expected_move": "c2c3",
+      "target_outcome": "evasion_preserving_equality",
+      "results": {
+        "depth_3": {
+          "disabled": {
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4"
+            ],
+            "pv_valid": true,
+            "nodes": 735,
+            "elapsed_s": 0.0667,
+            "check_extensions_eligible": 7,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4",
+              "e4b4"
+            ],
+            "pv_valid": true,
+            "nodes": 3131,
+            "elapsed_s": 0.2943,
+            "check_extensions_eligible": 16,
+            "check_extensions_applied": 12,
+            "check_extension_plies": 12,
+            "check_extensions_suppressed": 4,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4"
+            ],
+            "pv_valid": true,
+            "nodes": 735,
+            "elapsed_s": 0.07,
+            "check_extensions_eligible": 7,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 7,
+            "check_extensions_terminal_mates": 0
+          }
+        },
+        "depth_4": {
+          "disabled": {
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4",
+              "e4b4"
+            ],
+            "pv_valid": true,
+            "nodes": 2194,
+            "elapsed_s": 0.2045,
+            "check_extensions_eligible": 13,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4",
+              "e4b4",
+              "d1d2",
+              "b4d2"
+            ],
+            "pv_valid": true,
+            "nodes": 7502,
+            "elapsed_s": 0.6298,
+            "check_extensions_eligible": 36,
+            "check_extensions_applied": 27,
+            "check_extension_plies": 27,
+            "check_extensions_suppressed": 9,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4",
+              "e4b4"
+            ],
+            "pv_valid": true,
+            "nodes": 2194,
+            "elapsed_s": 0.225,
+            "check_extensions_eligible": 13,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 13,
+            "check_extensions_terminal_mates": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "absolute_pin_skewer",
+      "category": "forks_and_pins",
+      "description": "Absolute pin on rook along e-file",
+      "fen": "4k3/4r3/8/8/8/8/4R3/4K3 w - - 0 1",
+      "expected_move": "e2e7",
+      "target_outcome": "equal_or_winning_trade",
+      "results": {
+        "depth_3": {
+          "disabled": {
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 168,
+            "elapsed_s": 0.0109,
+            "check_extensions_eligible": 8,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 213,
+            "elapsed_s": 0.0213,
+            "check_extensions_eligible": 10,
+            "check_extensions_applied": 10,
+            "check_extension_plies": 10,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 168,
+            "elapsed_s": 0.0207,
+            "check_extensions_eligible": 8,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 8,
+            "check_extensions_terminal_mates": 0
+          }
+        },
+        "depth_4": {
+          "disabled": {
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 233,
+            "elapsed_s": 0.0196,
+            "check_extensions_eligible": 11,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 274,
+            "elapsed_s": 0.0323,
+            "check_extensions_eligible": 11,
+            "check_extensions_applied": 11,
+            "check_extension_plies": 11,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 233,
+            "elapsed_s": 0.0158,
+            "check_extensions_eligible": 11,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 11,
+            "check_extensions_terminal_mates": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "promotion_passed_pawn",
+      "category": "promotion",
+      "description": "Queen promotion with unstoppable 7th rank pawn",
+      "fen": "8/1P6/8/8/8/8/k7/7K w - - 0 1",
+      "expected_move": "b7b8q",
+      "target_outcome": "promotion",
+      "results": {
+        "depth_3": {
+          "disabled": {
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8"
+            ],
+            "pv_valid": true,
+            "nodes": 209,
+            "elapsed_s": 0.0112,
+            "check_extensions_eligible": 0,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8"
+            ],
+            "pv_valid": true,
+            "nodes": 209,
+            "elapsed_s": 0.0108,
+            "check_extensions_eligible": 0,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8"
+            ],
+            "pv_valid": true,
+            "nodes": 209,
+            "elapsed_s": 0.0107,
+            "check_extensions_eligible": 0,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          }
+        },
+        "depth_4": {
+          "disabled": {
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8",
+              "a3b4"
+            ],
+            "pv_valid": true,
+            "nodes": 435,
+            "elapsed_s": 0.0267,
+            "check_extensions_eligible": 11,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8",
+              "a3b4"
+            ],
+            "pv_valid": true,
+            "nodes": 756,
+            "elapsed_s": 0.0422,
+            "check_extensions_eligible": 11,
+            "check_extensions_applied": 11,
+            "check_extension_plies": 11,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8",
+              "a3b4"
+            ],
+            "pv_valid": true,
+            "nodes": 435,
+            "elapsed_s": 0.0392,
+            "check_extensions_eligible": 11,
+            "check_extensions_applied": 1,
+            "check_extension_plies": 1,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 10,
+            "check_extensions_terminal_mates": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "defensive_block_promotion",
+      "category": "defensive_resource",
+      "description": "Black rook must blockade or capture white pawn before promotion",
+      "fen": "8/1P6/8/8/8/8/1r6/k6K b - - 0 1",
+      "expected_move": "b2b7",
+      "target_outcome": "defensive_capture",
+      "results": {
+        "depth_3": {
+          "disabled": {
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8"
+            ],
+            "pv_valid": true,
+            "nodes": 570,
+            "elapsed_s": 0.0503,
+            "check_extensions_eligible": 4,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8"
+            ],
+            "pv_valid": true,
+            "nodes": 676,
+            "elapsed_s": 0.036,
+            "check_extensions_eligible": 6,
+            "check_extensions_applied": 6,
+            "check_extension_plies": 6,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8"
+            ],
+            "pv_valid": true,
+            "nodes": 570,
+            "elapsed_s": 0.0302,
+            "check_extensions_eligible": 4,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 4,
+            "check_extensions_terminal_mates": 0
+          }
+        },
+        "depth_4": {
+          "disabled": {
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8",
+              "h2h3"
+            ],
+            "pv_valid": true,
+            "nodes": 1206,
+            "elapsed_s": 0.0753,
+            "check_extensions_eligible": 29,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8",
+              "h2h3"
+            ],
+            "pv_valid": true,
+            "nodes": 1799,
+            "elapsed_s": 0.1171,
+            "check_extensions_eligible": 38,
+            "check_extensions_applied": 36,
+            "check_extension_plies": 36,
+            "check_extensions_suppressed": 2,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8",
+              "h2h3"
+            ],
+            "pv_valid": true,
+            "nodes": 1206,
+            "elapsed_s": 0.093,
+            "check_extensions_eligible": 29,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 29,
+            "check_extensions_terminal_mates": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "trebuchet_zugzwang",
+      "category": "zugzwang",
+      "description": "Mutual zugzwang (Tr\u00e9buchet); White to move loses d3 pawn",
+      "fen": "8/8/8/3k4/3p4/3K4/8/8 w - - 0 1",
+      "expected_move": null,
+      "target_outcome": "preserves_material_guard_against_nmp",
+      "results": {
+        "depth_3": {
+          "disabled": {
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2f3"
+            ],
+            "pv_valid": true,
+            "nodes": 99,
+            "elapsed_s": 0.0062,
+            "check_extensions_eligible": 1,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2f3"
+            ],
+            "pv_valid": true,
+            "nodes": 99,
+            "elapsed_s": 0.0079,
+            "check_extensions_eligible": 1,
+            "check_extensions_applied": 1,
+            "check_extension_plies": 1,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2f3"
+            ],
+            "pv_valid": true,
+            "nodes": 99,
+            "elapsed_s": 0.0059,
+            "check_extensions_eligible": 1,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 1,
+            "check_extensions_terminal_mates": 0
+          }
+        },
+        "depth_4": {
+          "disabled": {
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2d3",
+              "e6e5"
+            ],
+            "pv_valid": true,
+            "nodes": 278,
+            "elapsed_s": 0.0189,
+            "check_extensions_eligible": 2,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2d3",
+              "e6e5"
+            ],
+            "pv_valid": true,
+            "nodes": 278,
+            "elapsed_s": 0.0179,
+            "check_extensions_eligible": 2,
+            "check_extensions_applied": 2,
+            "check_extension_plies": 2,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2d3",
+              "e6e5"
+            ],
+            "pv_valid": true,
+            "nodes": 278,
+            "elapsed_s": 0.0217,
+            "check_extensions_eligible": 2,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 2,
+            "check_extensions_terminal_mates": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "king_pawn_opposition",
+      "category": "endgame_opposition",
+      "description": "Distant opposition in king-and-pawn endgame",
+      "fen": "8/8/4k3/8/8/4K3/8/8 w - - 0 1",
+      "expected_move": null,
+      "target_outcome": "opposition_defense",
+      "results": {
+        "depth_3": {
+          "disabled": {
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_valid": true,
+            "nodes": 3,
+            "elapsed_s": 0.0001,
+            "check_extensions_eligible": 0,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_valid": true,
+            "nodes": 3,
+            "elapsed_s": 0.0001,
+            "check_extensions_eligible": 0,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_valid": true,
+            "nodes": 3,
+            "elapsed_s": 0.0001,
+            "check_extensions_eligible": 0,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          }
+        },
+        "depth_4": {
+          "disabled": {
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_valid": true,
+            "nodes": 4,
+            "elapsed_s": 0.0001,
+            "check_extensions_eligible": 0,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_valid": true,
+            "nodes": 4,
+            "elapsed_s": 0.0001,
+            "check_extensions_eligible": 0,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_valid": true,
+            "nodes": 4,
+            "elapsed_s": 0.0001,
+            "check_extensions_eligible": 0,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "stalemate_defense",
+      "category": "draw_defense",
+      "description": "Black king in corner is stalemated",
+      "fen": "7k/5K2/6Q1/8/8/8/8/8 b - - 0 1",
+      "expected_move": null,
+      "target_outcome": "stalemate_draw",
+      "results": {
+        "depth_3": {
+          "disabled": {
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "pv_valid": true,
+            "nodes": 0,
+            "elapsed_s": 0.0001,
+            "check_extensions_eligible": 0,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "pv_valid": true,
+            "nodes": 0,
+            "elapsed_s": 0.0001,
+            "check_extensions_eligible": 0,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "pv_valid": true,
+            "nodes": 0,
+            "elapsed_s": 0.0001,
+            "check_extensions_eligible": 0,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          }
+        },
+        "depth_4": {
+          "disabled": {
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "pv_valid": true,
+            "nodes": 0,
+            "elapsed_s": 0.0001,
+            "check_extensions_eligible": 0,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "pv_valid": true,
+            "nodes": 0,
+            "elapsed_s": 0.0001,
+            "check_extensions_eligible": 0,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "pv_valid": true,
+            "nodes": 0,
+            "elapsed_s": 0.0001,
+            "check_extensions_eligible": 0,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "rook_endgame_lucena",
+      "category": "low_material_endgame",
+      "description": "Lucena position bridge-building setup",
+      "fen": "1K1k4/1P1r4/8/8/8/8/8/2R5 w - - 0 1",
+      "expected_move": null,
+      "target_outcome": "winning_technique",
+      "results": {
+        "depth_3": {
+          "disabled": {
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7"
+            ],
+            "pv_valid": true,
+            "nodes": 612,
+            "elapsed_s": 0.0486,
+            "check_extensions_eligible": 14,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7"
+            ],
+            "pv_valid": true,
+            "nodes": 730,
+            "elapsed_s": 0.0543,
+            "check_extensions_eligible": 15,
+            "check_extensions_applied": 15,
+            "check_extension_plies": 15,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7"
+            ],
+            "pv_valid": true,
+            "nodes": 687,
+            "elapsed_s": 0.0485,
+            "check_extensions_eligible": 15,
+            "check_extensions_applied": 2,
+            "check_extension_plies": 2,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 13,
+            "check_extensions_terminal_mates": 0
+          }
+        },
+        "depth_4": {
+          "disabled": {
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7",
+              "d8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 867,
+            "elapsed_s": 0.0599,
+            "check_extensions_eligible": 19,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7",
+              "d8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 1004,
+            "elapsed_s": 0.0703,
+            "check_extensions_eligible": 22,
+            "check_extensions_applied": 22,
+            "check_extension_plies": 22,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7",
+              "d8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 935,
+            "elapsed_s": 0.0665,
+            "check_extensions_eligible": 22,
+            "check_extensions_applied": 3,
+            "check_extension_plies": 3,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 19,
+            "check_extensions_terminal_mates": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "discovered_check_defense",
+      "category": "checks_counterchecks",
+      "description": "Discovered check response required",
+      "fen": "r1bqk2r/ppppbppp/2n5/4P3/2B1n3/5N2/PPP2PPP/RNBQK2R w KQkq - 1 6",
+      "expected_move": null,
+      "target_outcome": "tactical_defense",
+      "results": {
+        "depth_3": {
+          "disabled": {
+            "score": 84,
+            "best_move": "c4f7",
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5"
+            ],
+            "pv_valid": true,
+            "nodes": 9400,
+            "elapsed_s": 0.8381,
+            "check_extensions_eligible": 8,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 209,
+            "best_move": "d1d5",
+            "pv": [
+              "d1d5",
+              "c6e5",
+              "f3e5"
+            ],
+            "pv_valid": true,
+            "nodes": 12335,
+            "elapsed_s": 1.2244,
+            "check_extensions_eligible": 30,
+            "check_extensions_applied": 30,
+            "check_extension_plies": 30,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 84,
+            "best_move": "c4f7",
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5"
+            ],
+            "pv_valid": true,
+            "nodes": 9400,
+            "elapsed_s": 0.9916,
+            "check_extensions_eligible": 8,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 8,
+            "check_extensions_terminal_mates": 0
+          }
+        },
+        "depth_4": {
+          "disabled": {
+            "score": 209,
+            "best_move": "d1d5",
+            "pv": [
+              "d1d5",
+              "c6e5",
+              "d5e5",
+              "e4f6"
+            ],
+            "pv_valid": true,
+            "nodes": 17594,
+            "elapsed_s": 1.9604,
+            "check_extensions_eligible": 34,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 209,
+            "best_move": "d1d5",
+            "pv": [
+              "d1d5",
+              "c6e5",
+              "d5e5",
+              "e4f6"
+            ],
+            "pv_valid": true,
+            "nodes": 19116,
+            "elapsed_s": 2.1138,
+            "check_extensions_eligible": 58,
+            "check_extensions_applied": 48,
+            "check_extension_plies": 48,
+            "check_extensions_suppressed": 10,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 1
+          },
+          "single_reply": {
+            "score": 209,
+            "best_move": "d1d5",
+            "pv": [
+              "d1d5",
+              "c6e5",
+              "d5e5",
+              "e4f6"
+            ],
+            "pv_valid": true,
+            "nodes": 17742,
+            "elapsed_s": 1.9052,
+            "check_extensions_eligible": 34,
+            "check_extensions_applied": 2,
+            "check_extension_plies": 2,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 30,
+            "check_extensions_terminal_mates": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "seventyfive_move_near_draw",
+      "category": "draw_rules",
+      "description": "Near seventy-five move threshold (halfmove clock 146)",
+      "fen": "8/8/8/8/8/4k3/4r3/4K3 w - - 146 73",
+      "expected_move": null,
+      "target_outcome": "avoids_invalid_cutoffs",
+      "results": {
+        "depth_3": {
+          "disabled": {
+            "score": -500,
+            "best_move": "e1f1",
+            "pv": [
+              "e1f1",
+              "e3f3",
+              "f1g1"
+            ],
+            "pv_valid": true,
+            "nodes": 95,
+            "elapsed_s": 0.0056,
+            "check_extensions_eligible": 5,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 0,
+            "best_move": "e1f1",
+            "pv": [
+              "e1f1",
+              "e3f3",
+              "f1g1",
+              "f3g4"
+            ],
+            "pv_valid": true,
+            "nodes": 364,
+            "elapsed_s": 0.0222,
+            "check_extensions_eligible": 10,
+            "check_extensions_applied": 10,
+            "check_extension_plies": 10,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": -500,
+            "best_move": "e1f1",
+            "pv": [
+              "e1f1",
+              "e3f3",
+              "f1g1"
+            ],
+            "pv_valid": true,
+            "nodes": 95,
+            "elapsed_s": 0.0066,
+            "check_extensions_eligible": 5,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 5,
+            "check_extensions_terminal_mates": 0
+          }
+        },
+        "depth_4": {
+          "disabled": {
+            "score": 0,
+            "best_move": "e1f1",
+            "pv": [
+              "e1f1",
+              "e3f3",
+              "f1g1",
+              "f3g4"
+            ],
+            "pv_valid": true,
+            "nodes": 349,
+            "elapsed_s": 0.0211,
+            "check_extensions_eligible": 11,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 0,
+            "best_move": "e1f1",
+            "pv": [
+              "e1f1",
+              "e3f3",
+              "f1g1",
+              "f3g4"
+            ],
+            "pv_valid": true,
+            "nodes": 431,
+            "elapsed_s": 0.0332,
+            "check_extensions_eligible": 13,
+            "check_extensions_applied": 13,
+            "check_extension_plies": 13,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 0,
+            "best_move": "e1f1",
+            "pv": [
+              "e1f1",
+              "e3f3",
+              "f1g1",
+              "f3g4"
+            ],
+            "pv_valid": true,
+            "nodes": 349,
+            "elapsed_s": 0.0366,
+            "check_extensions_eligible": 11,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 11,
+            "check_extensions_terminal_mates": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "forced_single_evasion",
+      "category": "check_extension_selectivity",
+      "description": "White king in check with exactly 1 legal evasion (Kh1-h2)",
+      "fen": "8/8/8/8/8/7P/6P1/4r2K w - - 0 1",
+      "expected_move": "h1h2",
+      "target_outcome": "forced_single_evasion",
+      "results": {
+        "depth_3": {
+          "disabled": {
+            "score": -280,
+            "best_move": "h1h2",
+            "pv": [
+              "h1h2",
+              "e1e2",
+              "h3h4"
+            ],
+            "pv_valid": true,
+            "nodes": 119,
+            "elapsed_s": 0.0124,
+            "check_extensions_eligible": 4,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": -280,
+            "best_move": "h1h2",
+            "pv": [
+              "h1h2",
+              "e1e2",
+              "h3h4",
+              "e2e8"
+            ],
+            "pv_valid": true,
+            "nodes": 241,
+            "elapsed_s": 0.0191,
+            "check_extensions_eligible": 5,
+            "check_extensions_applied": 5,
+            "check_extension_plies": 5,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": -280,
+            "best_move": "h1h2",
+            "pv": [
+              "h1h2",
+              "e1e2",
+              "h3h4",
+              "e2e8"
+            ],
+            "pv_valid": true,
+            "nodes": 241,
+            "elapsed_s": 0.0201,
+            "check_extensions_eligible": 5,
+            "check_extensions_applied": 3,
+            "check_extension_plies": 3,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 2,
+            "check_extensions_terminal_mates": 0
+          }
+        },
+        "depth_4": {
+          "disabled": {
+            "score": -280,
+            "best_move": "h1h2",
+            "pv": [
+              "h1h2",
+              "e1e2",
+              "h3h4",
+              "e2e8"
+            ],
+            "pv_valid": true,
+            "nodes": 244,
+            "elapsed_s": 0.0217,
+            "check_extensions_eligible": 6,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": -275,
+            "best_move": "h1h2",
+            "pv": [
+              "h1h2",
+              "e1e2",
+              "h3h4",
+              "e2e4",
+              "h4h5"
+            ],
+            "pv_valid": true,
+            "nodes": 783,
+            "elapsed_s": 0.0547,
+            "check_extensions_eligible": 10,
+            "check_extensions_applied": 10,
+            "check_extension_plies": 10,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": -275,
+            "best_move": "h1h2",
+            "pv": [
+              "h1h2",
+              "e1e2",
+              "h3h4",
+              "e2e4",
+              "h4h5"
+            ],
+            "pv_valid": true,
+            "nodes": 752,
+            "elapsed_s": 0.0521,
+            "check_extensions_eligible": 10,
+            "check_extensions_applied": 4,
+            "check_extension_plies": 4,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 6,
+            "check_extensions_terminal_mates": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "multiple_check_evasions",
+      "category": "check_extension_selectivity",
+      "description": "White king in check with 5 legal evasions (c3, Nc3, Nd2, Bd2, Qd2)",
+      "fen": "rnbqk1nr/pppp1ppp/8/4p3/1b1P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3",
+      "expected_move": null,
+      "target_outcome": "multiple_evasions",
+      "results": {
+        "depth_3": {
+          "disabled": {
+            "score": 128,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "b4d6",
+              "f3e5"
+            ],
+            "pv_valid": true,
+            "nodes": 1659,
+            "elapsed_s": 0.1604,
+            "check_extensions_eligible": 8,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 125,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "b4d6",
+              "d4e5",
+              "d6c5"
+            ],
+            "pv_valid": true,
+            "nodes": 2686,
+            "elapsed_s": 0.2688,
+            "check_extensions_eligible": 9,
+            "check_extensions_applied": 9,
+            "check_extension_plies": 9,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 128,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "b4d6",
+              "f3e5"
+            ],
+            "pv_valid": true,
+            "nodes": 1659,
+            "elapsed_s": 0.1841,
+            "check_extensions_eligible": 8,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 8,
+            "check_extensions_terminal_mates": 0
+          }
+        },
+        "depth_4": {
+          "disabled": {
+            "score": 125,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "b4d6",
+              "d4e5",
+              "d6c5"
+            ],
+            "pv_valid": true,
+            "nodes": 2649,
+            "elapsed_s": 0.3086,
+            "check_extensions_eligible": 12,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 129,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "b4e7",
+              "d4e5",
+              "b8c6",
+              "c1f4"
+            ],
+            "pv_valid": true,
+            "nodes": 7846,
+            "elapsed_s": 0.782,
+            "check_extensions_eligible": 19,
+            "check_extensions_applied": 18,
+            "check_extension_plies": 18,
+            "check_extensions_suppressed": 1,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 125,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "b4d6",
+              "d4e5",
+              "d6c5"
+            ],
+            "pv_valid": true,
+            "nodes": 2649,
+            "elapsed_s": 0.286,
+            "check_extensions_eligible": 12,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 12,
+            "check_extensions_terminal_mates": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "consecutive_checks_threat",
+      "category": "check_extension_selectivity",
+      "description": "Complex middlegame with multiple check and countercheck motifs",
+      "fen": "r1b1k2r/pppp1ppp/2n5/4p3/2B1P1nq/3P4/PPP2PPP/RNBQK2R w KQkq - 1 7",
+      "expected_move": null,
+      "target_outcome": "tactical_stability",
+      "results": {
+        "depth_3": {
+          "disabled": {
+            "score": 42,
+            "best_move": "g2g3",
+            "pv": [
+              "g2g3",
+              "h4h3",
+              "d1f3"
+            ],
+            "pv_valid": true,
+            "nodes": 4430,
+            "elapsed_s": 0.3472,
+            "check_extensions_eligible": 4,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 42,
+            "best_move": "g2g3",
+            "pv": [
+              "g2g3",
+              "h4h3",
+              "d1f3"
+            ],
+            "pv_valid": true,
+            "nodes": 5055,
+            "elapsed_s": 0.4751,
+            "check_extensions_eligible": 5,
+            "check_extensions_applied": 5,
+            "check_extension_plies": 5,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 42,
+            "best_move": "g2g3",
+            "pv": [
+              "g2g3",
+              "h4h3",
+              "d1f3"
+            ],
+            "pv_valid": true,
+            "nodes": 4430,
+            "elapsed_s": 0.4369,
+            "check_extensions_eligible": 4,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 4,
+            "check_extensions_terminal_mates": 0
+          }
+        },
+        "depth_4": {
+          "disabled": {
+            "score": 37,
+            "best_move": "g2g3",
+            "pv": [
+              "g2g3",
+              "h4h3",
+              "d1f3",
+              "f7f6"
+            ],
+            "pv_valid": true,
+            "nodes": 11871,
+            "elapsed_s": 1.1559,
+            "check_extensions_eligible": 24,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": 37,
+            "best_move": "g2g3",
+            "pv": [
+              "g2g3",
+              "h4h3",
+              "d1f3",
+              "f7f6"
+            ],
+            "pv_valid": true,
+            "nodes": 14086,
+            "elapsed_s": 1.4336,
+            "check_extensions_eligible": 27,
+            "check_extensions_applied": 25,
+            "check_extension_plies": 25,
+            "check_extensions_suppressed": 2,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": 37,
+            "best_move": "g2g3",
+            "pv": [
+              "g2g3",
+              "h4h3",
+              "d1f3",
+              "f7f6"
+            ],
+            "pv_valid": true,
+            "nodes": 11871,
+            "elapsed_s": 1.2934,
+            "check_extensions_eligible": 24,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 24,
+            "check_extensions_terminal_mates": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "endgame_zugzwang_kp",
+      "category": "endgame_zugzwang",
+      "description": "King and pawn endgame with reciprocal zugzwang pressure",
+      "fen": "8/8/p1p5/1p5p/1P5p/8/PPP2k1p/4K1br w - - 0 1",
+      "expected_move": null,
+      "target_outcome": "endgame_accuracy",
+      "results": {
+        "depth_3": {
+          "disabled": {
+            "score": -1095,
+            "best_move": "e1d2",
+            "pv": [
+              "e1d2",
+              "h4h3",
+              "c2c3"
+            ],
+            "pv_valid": true,
+            "nodes": 101,
+            "elapsed_s": 0.0065,
+            "check_extensions_eligible": 3,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": -1106,
+            "best_move": "e1d2",
+            "pv": [
+              "e1d2",
+              "f2f3",
+              "c2c3",
+              "g1e3"
+            ],
+            "pv_valid": true,
+            "nodes": 500,
+            "elapsed_s": 0.0365,
+            "check_extensions_eligible": 3,
+            "check_extensions_applied": 3,
+            "check_extension_plies": 3,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": -1095,
+            "best_move": "e1d2",
+            "pv": [
+              "e1d2",
+              "h4h3",
+              "c2c3"
+            ],
+            "pv_valid": true,
+            "nodes": 101,
+            "elapsed_s": 0.0067,
+            "check_extensions_eligible": 3,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 3,
+            "check_extensions_terminal_mates": 0
+          }
+        },
+        "depth_4": {
+          "disabled": {
+            "score": -1106,
+            "best_move": "e1d2",
+            "pv": [
+              "e1d2",
+              "f2f3",
+              "c2c3",
+              "g1e3"
+            ],
+            "pv_valid": true,
+            "nodes": 505,
+            "elapsed_s": 0.0368,
+            "check_extensions_eligible": 4,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "bounded_all_checks": {
+            "score": -1101,
+            "best_move": "e1d2",
+            "pv": [
+              "e1d2",
+              "f2f3",
+              "d2d3",
+              "g1e3",
+              "c2c4"
+            ],
+            "pv_valid": true,
+            "nodes": 1064,
+            "elapsed_s": 0.0738,
+            "check_extensions_eligible": 7,
+            "check_extensions_applied": 7,
+            "check_extension_plies": 7,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 0,
+            "check_extensions_terminal_mates": 0
+          },
+          "single_reply": {
+            "score": -1106,
+            "best_move": "e1d2",
+            "pv": [
+              "e1d2",
+              "f2f3",
+              "c2c3",
+              "g1e3"
+            ],
+            "pv_valid": true,
+            "nodes": 505,
+            "elapsed_s": 0.0361,
+            "check_extensions_eligible": 4,
+            "check_extensions_applied": 0,
+            "check_extension_plies": 0,
+            "check_extensions_suppressed": 0,
+            "check_extensions_multiple_replies": 4,
+            "check_extensions_terminal_mates": 0
+          }
+        }
+      }
+    }
+  ],
+  "divergences": [
+    {
+      "position_id": "discovered_check_defense",
+      "depth": 3,
+      "policy": "bounded_all_checks",
+      "baseline_move": "c4f7",
+      "candidate_move": "d1d5",
+      "baseline_score": 84,
+      "candidate_score": 209,
+      "score_delta": 125
+    },
+    {
+      "position_id": "seventyfive_move_near_draw",
+      "depth": 3,
+      "policy": "bounded_all_checks",
+      "baseline_move": "e1f1",
+      "candidate_move": "e1f1",
+      "baseline_score": -500,
+      "candidate_score": 0,
+      "score_delta": 500
+    }
+  ],
+  "summary": {
+    "total_positions": 16,
+    "total_evaluations": 96,
+    "total_divergences": 2,
+    "pv_legality_failures": 0,
+    "pv_legality_pass_rate": 1.0,
+    "forced_mates_found_depth4": {
+      "disabled": 2,
+      "bounded_all_checks": 2,
+      "single_reply": 2
+    },
+    "forced_mates_total": 2
+  }
+}

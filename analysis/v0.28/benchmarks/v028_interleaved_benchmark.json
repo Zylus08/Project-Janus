@@ -1,0 +1,2056 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-10-18T21:00:18.852188+00:00",
+    "python_version": "3.12.8",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "reps": 5,
+    "depths": [
+      4,
+      5
+    ],
+    "positions_count": 6
+  },
+  "runs": [
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "elapsed_s": 0.21310839999932796,
+      "nodes": 2552,
+      "nps": 11975.126273802665,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "elapsed_s": 0.16265289999864763,
+      "nodes": 2552,
+      "nps": 15689.852440511166,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "elapsed_s": 1.349833000000217,
+      "nodes": 18418,
+      "nps": 13644.6508568075,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "elapsed_s": 1.186829400001443,
+      "nodes": 18418,
+      "nps": 15518.658368235238,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "elapsed_s": 0.10541620000003604,
+      "nodes": 2291,
+      "nps": 21732.90253299983,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "elapsed_s": 0.09682109999994282,
+      "nodes": 2291,
+      "nps": 23662.19759950417,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "elapsed_s": 0.12888910000037868,
+      "nodes": 2712,
+      "nps": 21041.344846011278,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "elapsed_s": 0.11898330000258284,
+      "nodes": 2712,
+      "nps": 22793.11466349588,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "elapsed_s": 0.021244499999738764,
+      "nodes": 436,
+      "nps": 20522.958883728086,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "elapsed_s": 0.024773999997705687,
+      "nodes": 436,
+      "nps": 17599.095827899324,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "elapsed_s": 8.569999772589654e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "elapsed_s": 7.080000068526715e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "elapsed_s": 0.5878978000037023,
+      "nodes": 8798,
+      "nps": 14965.186125793623,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "elapsed_s": 0.5642948999957298,
+      "nodes": 8798,
+      "nps": 15591.138605127528,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "elapsed_s": 1.8934389999994892,
+      "nodes": 27480,
+      "nps": 14513.27452323915,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "elapsed_s": 1.5792223000025842,
+      "nodes": 27480,
+      "nps": 17400.970085057077,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "elapsed_s": 0.32454000000143424,
+      "nodes": 7213,
+      "nps": 22225.30350640329,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "elapsed_s": 0.29343620000145165,
+      "nodes": 7213,
+      "nps": 24581.152563876974,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "elapsed_s": 0.3484584000034374,
+      "nodes": 8992,
+      "nps": 25805.08892858171,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "elapsed_s": 0.3746045000007143,
+      "nodes": 8992,
+      "nps": 24003.982867218234,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "elapsed_s": 0.05882500000006985,
+      "nodes": 1224,
+      "nps": 20807.479812979967,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "elapsed_s": 0.05180839999957243,
+      "nodes": 1224,
+      "nps": 23625.51246535507,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "elapsed_s": 6.900000153109431e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 1,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "elapsed_s": 7.850000110920519e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "elapsed_s": 0.17794310000317637,
+      "nodes": 2552,
+      "nps": 14341.663149368791,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "elapsed_s": 0.16473649999534246,
+      "nodes": 2552,
+      "nps": 15491.405973006298,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "elapsed_s": 1.4121990999992704,
+      "nodes": 18418,
+      "nps": 13042.070342637604,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "elapsed_s": 1.1636196999970707,
+      "nodes": 18418,
+      "nps": 15828.195414744496,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "elapsed_s": 0.10692959999869345,
+      "nodes": 2291,
+      "nps": 21425.311607150812,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "elapsed_s": 0.10313850000238745,
+      "nodes": 2291,
+      "nps": 22212.849711281124,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "elapsed_s": 0.1212842000022647,
+      "nodes": 2712,
+      "nps": 22360.703207419927,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "elapsed_s": 0.11357139999745414,
+      "nodes": 2712,
+      "nps": 23879.25129091297,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "elapsed_s": 0.020281899996916763,
+      "nodes": 436,
+      "nps": 21496.99979125626,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "elapsed_s": 0.01932900000247173,
+      "nodes": 436,
+      "nps": 22556.779965039357,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "elapsed_s": 7.270000060088933e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "elapsed_s": 5.740000051446259e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "elapsed_s": 0.5837285000015981,
+      "nodes": 8798,
+      "nps": 15072.075459697295,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "elapsed_s": 0.5321320000002743,
+      "nodes": 8798,
+      "nps": 16533.491690023275,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "elapsed_s": 1.8688376999998582,
+      "nodes": 27480,
+      "nps": 14704.326651801859,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "elapsed_s": 1.6217476000019815,
+      "nodes": 27480,
+      "nps": 16944.683623990826,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "elapsed_s": 0.32729159999871626,
+      "nodes": 7213,
+      "nps": 22038.451338281495,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "elapsed_s": 0.2872181999991881,
+      "nodes": 7213,
+      "nps": 25113.311064620524,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "elapsed_s": 0.3665961000006064,
+      "nodes": 8992,
+      "nps": 24528.356957384778,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "elapsed_s": 0.3570707000035327,
+      "nodes": 8992,
+      "nps": 25182.687910016244,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "elapsed_s": 0.06416639999952167,
+      "nodes": 1224,
+      "nps": 19075.403949872896,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "elapsed_s": 0.05311269999947399,
+      "nodes": 1224,
+      "nps": 23045.335673240526,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "elapsed_s": 6.81000019540079e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 2,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "elapsed_s": 5.669999518431723e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "elapsed_s": 0.17116800000076182,
+      "nodes": 2552,
+      "nps": 14909.32884644701,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "elapsed_s": 0.16846779999468708,
+      "nodes": 2552,
+      "nps": 15148.295401735415,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "elapsed_s": 1.3548139999984414,
+      "nodes": 18418,
+      "nps": 13594.486032784713,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "elapsed_s": 1.3218999999953667,
+      "nodes": 18418,
+      "nps": 13932.975262928025,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "elapsed_s": 0.121626499996637,
+      "nodes": 2291,
+      "nps": 18836.355564480986,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "elapsed_s": 0.11060690000158502,
+      "nodes": 2291,
+      "nps": 20712.99349287585,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "elapsed_s": 0.12466940000012983,
+      "nodes": 2712,
+      "nps": 21753.533746028905,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "elapsed_s": 0.1393979999993462,
+      "nodes": 2712,
+      "nps": 19455.085438906724,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "elapsed_s": 0.027113700001791585,
+      "nodes": 436,
+      "nps": 16080.431662635145,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "elapsed_s": 0.022459699997853022,
+      "nodes": 436,
+      "nps": 19412.547809707088,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "elapsed_s": 6.890000076964498e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "elapsed_s": 5.370000144466758e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "elapsed_s": 0.5946285999962129,
+      "nodes": 8798,
+      "nps": 14795.790179039544,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "elapsed_s": 0.5965530000030412,
+      "nodes": 8798,
+      "nps": 14748.060943378288,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "elapsed_s": 2.2226325000010547,
+      "nodes": 27480,
+      "nps": 12363.717348678632,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "elapsed_s": 1.8127316999962204,
+      "nodes": 27480,
+      "nps": 15159.44141102475,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "elapsed_s": 0.3508002000016859,
+      "nodes": 7213,
+      "nps": 20561.561823412118,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "elapsed_s": 0.30027039999549743,
+      "nodes": 7213,
+      "nps": 24021.681791172756,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "elapsed_s": 0.3738163000016357,
+      "nodes": 8992,
+      "nps": 24054.59580002438,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "elapsed_s": 0.3418789999996079,
+      "nodes": 8992,
+      "nps": 26301.703234215358,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "elapsed_s": 0.05161239999870304,
+      "nodes": 1224,
+      "nps": 23715.231224100364,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "elapsed_s": 0.04786040000180947,
+      "nodes": 1224,
+      "nps": 25574.37881742994,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "elapsed_s": 6.690000009257346e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 3,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "elapsed_s": 5.509999755304307e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "elapsed_s": 0.16671620000124676,
+      "nodes": 2552,
+      "nps": 15307.450625559575,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "elapsed_s": 0.15516419999767095,
+      "nodes": 2552,
+      "nps": 16447.09282191579,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "elapsed_s": 1.3515505000032135,
+      "nodes": 18418,
+      "nps": 13627.311743036023,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "elapsed_s": 1.3006944999942789,
+      "nodes": 18418,
+      "nps": 14160.127531930835,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "elapsed_s": 0.16663580000022193,
+      "nodes": 2291,
+      "nps": 13748.546230743626,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "elapsed_s": 0.1097756000017398,
+      "nodes": 2291,
+      "nps": 20869.847215261776,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "elapsed_s": 0.1180367999986629,
+      "nodes": 2712,
+      "nps": 22975.88548682039,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "elapsed_s": 0.11643189999449532,
+      "nodes": 2712,
+      "nps": 23292.58562411348,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "elapsed_s": 0.020830199995543808,
+      "nodes": 436,
+      "nps": 20931.148049143707,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "elapsed_s": 0.019147800005157478,
+      "nodes": 436,
+      "nps": 22770.23991699114,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "elapsed_s": 6.55999974696897e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "elapsed_s": 5.740000051446259e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "elapsed_s": 0.6252566999974078,
+      "nodes": 8798,
+      "nps": 14071.020750415748,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "elapsed_s": 0.5931012000000919,
+      "nodes": 8798,
+      "nps": 14833.893440105392,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "elapsed_s": 1.9096857000040472,
+      "nodes": 27480,
+      "nps": 14389.80246851184,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "elapsed_s": 1.661251199999242,
+      "nodes": 27480,
+      "nps": 16541.748773462157,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "elapsed_s": 0.30052989999967394,
+      "nodes": 7213,
+      "nps": 24000.93967358265,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "elapsed_s": 0.29032079999888083,
+      "nodes": 7213,
+      "nps": 24844.930160111868,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "elapsed_s": 0.4375170999992406,
+      "nodes": 8992,
+      "nps": 20552.339554306807,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "elapsed_s": 0.35213020000082906,
+      "nodes": 8992,
+      "nps": 25536.0091238378,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "elapsed_s": 0.06668160000117496,
+      "nodes": 1224,
+      "nps": 18355.888280701613,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "elapsed_s": 0.04911250000441214,
+      "nodes": 1224,
+      "nps": 24922.372102622325,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "elapsed_s": 6.930000381544232e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 4,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "elapsed_s": 5.4700001783203334e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "elapsed_s": 0.1878696999992826,
+      "nodes": 2552,
+      "nps": 13583.882872063696,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "elapsed_s": 0.1667955999946571,
+      "nodes": 2552,
+      "nps": 15300.163793779617,
+      "best_move": "g1f3",
+      "score": 0,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "elapsed_s": 1.4879861000008532,
+      "nodes": 18418,
+      "nps": 12377.803798025694,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "elapsed_s": 1.2315816000045743,
+      "nodes": 18418,
+      "nps": 14954.754114491148,
+      "best_move": "c3a4",
+      "score": 9,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "elapsed_s": 0.11131879999447847,
+      "nodes": 2291,
+      "nps": 20580.530872715444,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "elapsed_s": 0.1136428000027081,
+      "nodes": 2291,
+      "nps": 20159.658156481586,
+      "best_move": "e2f4",
+      "score": 838,
+      "pv": [
+        "e2f4",
+        "e8f8",
+        "f4d5",
+        "f8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "elapsed_s": 0.13576869999815244,
+      "nodes": 2712,
+      "nps": 19975.148911618842,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "elapsed_s": 0.10931160000473028,
+      "nodes": 2712,
+      "nps": 24809.809753792302,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "elapsed_s": 0.02014890000282321,
+      "nodes": 436,
+      "nps": 21638.89839836958,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "elapsed_s": 0.02077330000611255,
+      "nodes": 436,
+      "nps": 20988.48039895957,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "elapsed_s": 6.470000516856089e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 4,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "elapsed_s": 5.4700001783203334e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "baseline",
+      "elapsed_s": 0.5799342000027536,
+      "nodes": 8798,
+      "nps": 15170.686605408382,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "startpos",
+      "arm": "candidate",
+      "elapsed_s": 0.579679299997224,
+      "nodes": 8798,
+      "nps": 15177.357549324484,
+      "best_move": "g1f3",
+      "score": 10,
+      "pv": [
+        "g1f3",
+        "g8f6",
+        "b1c3",
+        "b8c6",
+        "h2h4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "baseline",
+      "elapsed_s": 1.9035260000018752,
+      "nodes": 27480,
+      "nps": 14436.367036737574,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "open_game",
+      "arm": "candidate",
+      "elapsed_s": 1.5772993999999017,
+      "nodes": 27480,
+      "nps": 17422.183765492915,
+      "best_move": "c3a4",
+      "score": 21,
+      "pv": [
+        "c3a4",
+        "c5b4",
+        "c2c3",
+        "b4a5",
+        "c1e3"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "baseline",
+      "elapsed_s": 0.33747289999882923,
+      "nodes": 7213,
+      "nps": 21373.568070280675,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "white_up_rook",
+      "arm": "candidate",
+      "elapsed_s": 0.2843092999974033,
+      "nodes": 7213,
+      "nps": 25370.256970369523,
+      "best_move": "e2d4",
+      "score": 838,
+      "pv": [
+        "e2d4",
+        "e8f8",
+        "d4e6",
+        "f8g8",
+        "e6d4"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "baseline",
+      "elapsed_s": 0.36445659999299096,
+      "nodes": 8992,
+      "nps": 24672.347819117364,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "mate_in_one",
+      "arm": "candidate",
+      "elapsed_s": 0.32654180000099586,
+      "nodes": 8992,
+      "nps": 27537.05651151729,
+      "best_move": "g5g7",
+      "score": 99999,
+      "pv": [
+        "g5g7"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "baseline",
+      "elapsed_s": 0.05814739999914309,
+      "nodes": 1224,
+      "nps": 21049.95236275462,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "promotion_tactic",
+      "arm": "candidate",
+      "elapsed_s": 0.04729580000275746,
+      "nodes": 1224,
+      "nps": 25879.676417961804,
+      "best_move": "a7a8q",
+      "score": 900,
+      "pv": [
+        "a7a8q",
+        "e3f4",
+        "a8h8",
+        "f4g5",
+        "h8g8"
+      ],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "baseline",
+      "elapsed_s": 6.579999899258837e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    },
+    {
+      "rep": 5,
+      "depth": 5,
+      "position_id": "stalemate",
+      "arm": "candidate",
+      "elapsed_s": 5.390000296756625e-05,
+      "nodes": 0,
+      "nps": 0.0,
+      "best_move": "None",
+      "score": 0,
+      "pv": [],
+      "pv_legal": true
+    }
+  ]
+}

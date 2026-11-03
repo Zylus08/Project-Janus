@@ -1,0 +1,228 @@
+{
+  "milestone": "v0.37",
+  "description": "Project Janus v0.37 Time-Management Ablation Statistical Assessment",
+  "comparisons": {
+    "b_vs_c": {
+      "valid_games": 100,
+      "complete_pairs": 50,
+      "candidate_wins": 64,
+      "draws": 13,
+      "candidate_losses": 23,
+      "candidate_points": 70.5,
+      "score_percentage": 70.5,
+      "elo_differential": 151.3,
+      "color_performance": {
+        "white": {
+          "games": 50,
+          "wins": 35,
+          "draws": 3,
+          "losses": 12,
+          "score_percentage": 73.0
+        },
+        "black": {
+          "games": 50,
+          "wins": 29,
+          "draws": 10,
+          "losses": 11,
+          "score_percentage": 68.0
+        }
+      },
+      "paired_analysis": {
+        "mean_pair_delta": 0.205,
+        "std_pair_delta": 0.3222,
+        "standard_error": 0.04556,
+        "degrees_of_freedom": 49,
+        "t_statistic": 4.4992,
+        "t_test_p_value": 4.203333196128867e-05,
+        "t_ci_95_score": [
+          0.6134,
+          0.7966
+        ],
+        "t_ci_95_elo": [
+          80.2,
+          237.1
+        ]
+      },
+      "bootstrap_analysis": {
+        "resamples": 10000,
+        "seed": 42,
+        "bootstrap_ci_95_delta": [
+          0.115,
+          0.29
+        ],
+        "bootstrap_ci_95_score": [
+          0.615,
+          0.79
+        ],
+        "bootstrap_ci_95_elo": [
+          81.4,
+          230.2
+        ]
+      },
+      "sign_test": {
+        "pairs_won": 29,
+        "pairs_tied": 13,
+        "pairs_lost": 8,
+        "decisive_pairs": 37,
+        "sign_test_p_value": 0.0007528970600105822
+      }
+    },
+    "a_vs_b": {
+      "valid_games": 100,
+      "complete_pairs": 50,
+      "candidate_wins": 38,
+      "draws": 21,
+      "candidate_losses": 41,
+      "candidate_points": 48.5,
+      "score_percentage": 48.5,
+      "elo_differential": -10.4,
+      "color_performance": {
+        "white": {
+          "games": 50,
+          "wins": 15,
+          "draws": 12,
+          "losses": 23,
+          "score_percentage": 42.0
+        },
+        "black": {
+          "games": 50,
+          "wins": 23,
+          "draws": 9,
+          "losses": 18,
+          "score_percentage": 55.0
+        }
+      },
+      "paired_analysis": {
+        "mean_pair_delta": -0.015,
+        "std_pair_delta": 0.2875,
+        "standard_error": 0.04066,
+        "degrees_of_freedom": 49,
+        "t_statistic": -0.3689,
+        "t_test_p_value": 0.7138096724565806,
+        "t_ci_95_score": [
+          0.4033,
+          0.5667
+        ],
+        "t_ci_95_elo": [
+          -68.1,
+          46.6
+        ]
+      },
+      "bootstrap_analysis": {
+        "resamples": 10000,
+        "seed": 42,
+        "bootstrap_ci_95_delta": [
+          -0.09,
+          0.065
+        ],
+        "bootstrap_ci_95_score": [
+          0.41,
+          0.565
+        ],
+        "bootstrap_ci_95_elo": [
+          -63.2,
+          45.4
+        ]
+      },
+      "sign_test": {
+        "pairs_won": 11,
+        "pairs_tied": 24,
+        "pairs_lost": 15,
+        "decisive_pairs": 26,
+        "sign_test_p_value": 0.557197093963623
+      }
+    },
+    "a_vs_c": {
+      "valid_games": 100,
+      "complete_pairs": 50,
+      "candidate_wins": 65,
+      "draws": 18,
+      "candidate_losses": 17,
+      "candidate_points": 74.0,
+      "score_percentage": 74.0,
+      "elo_differential": 181.7,
+      "color_performance": {
+        "white": {
+          "games": 50,
+          "wins": 30,
+          "draws": 11,
+          "losses": 9,
+          "score_percentage": 71.0
+        },
+        "black": {
+          "games": 50,
+          "wins": 35,
+          "draws": 7,
+          "losses": 8,
+          "score_percentage": 77.0
+        }
+      },
+      "paired_analysis": {
+        "mean_pair_delta": 0.24,
+        "std_pair_delta": 0.2718,
+        "standard_error": 0.03844,
+        "degrees_of_freedom": 49,
+        "t_statistic": 6.2437,
+        "t_test_p_value": 9.84542447568515e-08,
+        "t_ci_95_score": [
+          0.6628,
+          0.8172
+        ],
+        "t_ci_95_elo": [
+          117.4,
+          260.2
+        ]
+      },
+      "bootstrap_analysis": {
+        "resamples": 10000,
+        "seed": 42,
+        "bootstrap_ci_95_delta": [
+          0.165,
+          0.315
+        ],
+        "bootstrap_ci_95_score": [
+          0.665,
+          0.815
+        ],
+        "bootstrap_ci_95_elo": [
+          119.1,
+          257.6
+        ]
+      },
+      "sign_test": {
+        "pairs_won": 33,
+        "pairs_tied": 12,
+        "pairs_lost": 5,
+        "decisive_pairs": 38,
+        "sign_test_p_value": 4.255962267052382e-06
+      }
+    }
+  },
+  "multiple_comparison_correction": {
+    "method": "Holm-Bonferroni step-down",
+    "family_wise_alpha": 0.05,
+    "results": {
+      "a_vs_c": {
+        "rank": 1,
+        "raw_p_value": 9.84542447568515e-08,
+        "holm_threshold": 0.016667,
+        "holm_adjusted_p_value": 2.953627342705545e-07,
+        "significant_at_alpha_0_05": true
+      },
+      "b_vs_c": {
+        "rank": 2,
+        "raw_p_value": 4.203333196128867e-05,
+        "holm_threshold": 0.025,
+        "holm_adjusted_p_value": 8.406666392257733e-05,
+        "significant_at_alpha_0_05": true
+      },
+      "a_vs_b": {
+        "rank": 3,
+        "raw_p_value": 0.7138096724565806,
+        "holm_threshold": 0.05,
+        "holm_adjusted_p_value": 0.7138096724565806,
+        "significant_at_alpha_0_05": false
+      }
+    }
+  }
+}

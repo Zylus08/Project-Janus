@@ -1,0 +1,61 @@
+{
+  "milestone": "v0.36",
+  "experiment_name": "extended_fischer_validation",
+  "timestamp_frozen_utc": "2026-10-30T12:13:30Z",
+  "baseline_commit": "02828fb",
+  "branch": "v0.3-benchmark-harness",
+  "target_games": 100,
+  "target_pairs": 50,
+  "time_control": {
+    "mode": "fischer_increment",
+    "base_time_ms": 3000,
+    "inc_time_ms": 100
+  },
+  "policies": {
+    "candidate": {
+      "name": "Janus-v0.36-Adaptive",
+      "cmd_flag": "--time-policy adaptive",
+      "config": {
+        "safety_reserve_ms": 50,
+        "default_moves_to_go": 30,
+        "increment_weight": 0.85,
+        "min_allocation_ms": 10,
+        "max_allocation_ratio": 0.20,
+        "policy_name": "adaptive"
+      }
+    },
+    "reference": {
+      "name": "Janus-v0.36-Reference",
+      "cmd_flag": "--time-policy reference",
+      "config": {
+        "safety_reserve_ms": 0,
+        "default_moves_to_go": 40,
+        "increment_weight": 0.0,
+        "min_allocation_ms": 10,
+        "max_allocation_ratio": 0.50,
+        "policy_name": "reference"
+      }
+    }
+  },
+  "openings": {
+    "file": "benchmarks/openings.json",
+    "sha256": "e883cd4908b73df70b4c1363b00b581caec249494aa1a7720d184c68aaf53af3",
+    "count": 50,
+    "seed": 42
+  },
+  "frozen_hashes": {
+    "analysis/v0.36/preregistration.md": "36479ba6b326ea9990309672b1170236798cd07faa4201dcb38de7d793aad79f",
+    "benchmarks/openings.json": "e883cd4908b73df70b4c1363b00b581caec249494aa1a7720d184c68aaf53af3",
+    "src/janus/time_manager.py": "10dc5ab356eb3d26fdc2c6f17c8460c239b3790476f76b6cce1947df6381c835",
+    "src/janus/search.py": "6c00cc841fb417ebed39895cfe2d19a9f87fbd16fad355b17350842de824b7c9",
+    "src/janus/uci.py": "ee8c5ef0b689e2e134877c96b7230dea02527fbfbe4bcb71fbc908398901be6a",
+    "src/janus/engine_session.py": "bfad2fa36cc031e951e24504752088b511ed818d9658fc405f1b680910d9612b",
+    "src/janus/evaluation.py": "957f80b6456ea4fe7a554f8ca7878080740ae4a5d8ab04e91352cebd0f7eb576"
+  },
+  "primary_endpoint": {
+    "metric": "adaptive_match_score",
+    "null_value": 0.50,
+    "alpha": 0.05,
+    "two_sided": true
+  }
+}

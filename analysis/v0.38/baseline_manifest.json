@@ -1,0 +1,69 @@
+{
+  "milestone": "v0.38",
+  "experiment_name": "external_engine_strength_benchmark",
+  "timestamp_created_utc": "2026-10-30T16:15:00Z",
+  "baseline_commit": "b8e0ce6",
+  "branch": "v0.3-benchmark-harness",
+  "janus_engine": {
+    "name": "Janus-v0.38-Adaptive",
+    "version": "Janus 0.2.3",
+    "core": "v0.34 Tapered Evaluation Baseline",
+    "evaluation_config": "CONFIG_V034_TAPERED",
+    "evaluation_flags": [
+      "--eval-all",
+      "--eval-pawn-structure",
+      "--eval-rook-files",
+      "--eval-king-safety",
+      "--eval-tapered"
+    ],
+    "time_policy": "arm_c",
+    "time_policy_details": {
+      "policy_name": "arm_c",
+      "safety_reserve_ms": 50,
+      "default_moves_to_go": 30,
+      "increment_weight": 0.85,
+      "min_allocation_ms": 10,
+      "max_allocation_ratio": 0.20
+    },
+    "search_heuristics": {
+      "see_ordering": true,
+      "see_pruning": true,
+      "check_extensions": "disabled",
+      "tt_policy": "always_replace",
+      "tt_max_entries": 200000,
+      "killer_heuristic": true,
+      "history_heuristic": true
+    }
+  },
+  "opponent_engine": {
+    "name": "Stockfish 19",
+    "binary_path": "E:\\ChessXML\\tools\\stockfish\\stockfish.exe",
+    "binary_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+    "threads": 1,
+    "hash_mb": 64,
+    "options_supported": [
+      "Threads",
+      "Hash",
+      "Skill Level",
+      "UCI_LimitStrength",
+      "UCI_Elo",
+      "MultiPV",
+      "Move Overhead"
+    ]
+  },
+  "runtime_environment": {
+    "os": "Windows 11 (AMD64 / Intel64)",
+    "python_version": "3.12.8",
+    "cpu_cores": 16,
+    "python_chess_version": "1.11.2"
+  },
+  "frozen_hashes": {
+    "src/janus/time_manager.py": "7ab6de9760472812a279b039938c4a5e26c81bea6e80f95e76505ee3d5e17983",
+    "src/janus/search.py": "6c00cc841fb417ebed39895cfe2d19a9f87fbd16fad355b17350842de824b7c9",
+    "src/janus/uci.py": "e003bbe83acd0fd85b8256c5072281900a902764cf195bd2b688589ea8df17ca",
+    "src/janus/engine_session.py": "bfad2fa36cc031e951e24504752088b511ed818d9658fc405f1b680910d9612b",
+    "src/janus/evaluation.py": "957f80b6456ea4fe7a554f8ca7878080740ae4a5d8ab04e91352cebd0f7eb576",
+    "benchmarks/openings.json": "e883cd4908b73df70b4c1363b00b581caec249494aa1a7720d184c68aaf53af3",
+    "stockfish_binary": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0"
+  }
+}

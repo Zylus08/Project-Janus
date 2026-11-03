@@ -1,0 +1,130 @@
+{
+  "timestamp_utc": "2026-10-30T07:30:43.190747+00:00",
+  "total_moves_analyzed": 8190,
+  "adaptive_policy": {
+    "move_count": 4101,
+    "actual_time_ms": {
+      "median": 141.0,
+      "p25": 125.0,
+      "p75": 171.0,
+      "p95": 188.0,
+      "p99": 188.0,
+      "max": 219.0
+    },
+    "target_alloc_ms": {
+      "median": 137.9,
+      "p25": 122.4,
+      "p75": 157.3,
+      "p95": 177.5,
+      "p99": 183.3
+    },
+    "actual_to_target_ratio": {
+      "median": 1.056,
+      "mean": 1.06
+    },
+    "remaining_clock_ms": {
+      "median": 1596.0,
+      "p25": 1146.0,
+      "p75": 2147.0,
+      "min": 714.0
+    },
+    "overshoot_ms": {
+      "median": 7.8,
+      "mean": 8.1,
+      "max": 35.7
+    },
+    "emergency_allocations_count": 0,
+    "deadline_stops_count": 4101,
+    "fallback_moves_count": 17,
+    "median_depth": 2,
+    "mean_depth": 2.63,
+    "mean_nodes": 2982
+  },
+  "reference_policy": {
+    "move_count": 4089,
+    "actual_time_ms": {
+      "median": 94.0,
+      "p25": 93.0,
+      "p75": 94.0,
+      "p95": 94.0,
+      "p99": 110.0,
+      "max": 110.0
+    },
+    "target_alloc_ms": {
+      "median": 80.6,
+      "p25": 78.9,
+      "p75": 82.3,
+      "p95": 84.2,
+      "p99": 85.0
+    },
+    "actual_to_target_ratio": {
+      "median": 1.149,
+      "mean": 1.138
+    },
+    "remaining_clock_ms": {
+      "median": 3229.0,
+      "p25": 3163.0,
+      "p75": 3300.0,
+      "min": 3006.0
+    },
+    "overshoot_ms": {
+      "median": 12.2,
+      "mean": 11.2,
+      "max": 32.0
+    },
+    "emergency_allocations_count": 0,
+    "deadline_stops_count": 4089,
+    "fallback_moves_count": 53,
+    "median_depth": 2,
+    "mean_depth": 2.32,
+    "mean_nodes": 1751
+  },
+  "phase_breakdown": {
+    "adaptive": {
+      "opening (plies 1-20)": {
+        "move_count": 1000,
+        "mean_duration_ms": 178.8,
+        "mean_depth": 2.46,
+        "mean_nodes": 3489,
+        "mean_clock_after_ms": 2546.9
+      },
+      "middlegame (plies 21-60)": {
+        "move_count": 1859,
+        "mean_duration_ms": 149.2,
+        "mean_depth": 2.37,
+        "mean_nodes": 2906,
+        "mean_clock_after_ms": 1668.8
+      },
+      "endgame (plies > 60)": {
+        "move_count": 1242,
+        "mean_duration_ms": 124.9,
+        "mean_depth": 3.15,
+        "mean_nodes": 2689,
+        "mean_clock_after_ms": 995.0
+      }
+    },
+    "reference": {
+      "opening (plies 1-20)": {
+        "move_count": 999,
+        "mean_duration_ms": 84.0,
+        "mean_depth": 1.8,
+        "mean_nodes": 1538,
+        "mean_clock_after_ms": 3104.6
+      },
+      "middlegame (plies 21-60)": {
+        "move_count": 1856,
+        "mean_duration_ms": 94.0,
+        "mean_depth": 2.04,
+        "mean_nodes": 1735,
+        "mean_clock_after_ms": 3223.3
+      },
+      "endgame (plies > 60)": {
+        "move_count": 1234,
+        "mean_duration_ms": 94.3,
+        "mean_depth": 3.15,
+        "mean_nodes": 1946,
+        "mean_clock_after_ms": 3334.4
+      }
+    }
+  }
+}

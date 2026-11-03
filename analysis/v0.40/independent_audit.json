@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-10-31T21:06:24.111053+00:00",
+  "milestone": "v0.40",
+  "audit_verdict": "VERIFIED_VALID",
+  "audited_matches": {
+    "match_k1": {
+      "pgn_audit": {
+        "status": "valid",
+        "games_count": 50,
+        "total_plies": 4289,
+        "illegal_moves": 0
+      },
+      "moves_audit": {
+        "status": "valid",
+        "total_moves": 4289,
+        "negative_clocks": 0
+      },
+      "attempts_audit": {
+        "total_attempts": 50,
+        "completed_games": 50,
+        "infrastructure_failures": 0,
+        "matches_expected": true
+      },
+      "recomputed_statistics": {
+        "games": 50,
+        "wins": 22,
+        "draws": 2,
+        "losses": 26,
+        "score": 23.0,
+        "score_pct": 46.0,
+        "complete_pairs": 25,
+        "mean_pair_diff": -0.08,
+        "t_statistic": -0.5578
+      }
+    },
+    "match_ord1": {
+      "pgn_audit": {
+        "status": "valid",
+        "games_count": 50,
+        "total_plies": 4083,
+        "illegal_moves": 0
+      },
+      "moves_audit": {
+        "status": "valid",
+        "total_moves": 4083,
+        "negative_clocks": 0
+      },
+      "attempts_audit": {
+        "total_attempts": 50,
+        "completed_games": 50,
+        "infrastructure_failures": 0,
+        "matches_expected": true
+      },
+      "recomputed_statistics": {
+        "games": 50,
+        "wins": 20,
+        "draws": 5,
+        "losses": 25,
+        "score": 22.5,
+        "score_pct": 45.0,
+        "complete_pairs": 25,
+        "mean_pair_diff": -0.1,
+        "t_statistic": -0.6325
+      }
+    }
+  },
+  "integrity_checks": {
+    "chess_rules_legality": "PASSED - 0 illegal moves across all audited games",
+    "time_control_compliance": "PASSED - 0 negative clocks, 0 clock violations",
+    "unbiased_retries": "PASSED - Exact opening and color preserved across retry attempts",
+    "zero_silent_exclusions": "PASSED - 100% of attempts recorded in persistent logs"
+  }
+}

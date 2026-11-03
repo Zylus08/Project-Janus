@@ -1,0 +1,51 @@
+candidate,game,pair,attempt_number,status,result,termination_reason,plies,janus_color,janus_won,janus_points,opening_id,opening_name,duration_seconds,mean_janus_depth,mean_sf_depth,mean_janus_time,mean_sf_time
+ord1,1,1,1,completed,0-1,checkmate_black_wins,67,white,False,0.0,scotch_game,Scotch Game,11.17,2.03,12.38,0.155,0.177
+ord1,2,1,1,completed,1-0,checkmate_white_wins,38,black,False,0.0,scotch_game,Scotch Game,8.31,1.0,10.68,0.193,0.243
+ord1,3,2,1,completed,0-1,checkmate_black_wins,46,white,False,0.0,italian_two_knights,Two Knights Defense,9.94,1.09,9.87,0.21,0.22
+ord1,4,2,1,completed,1-0,checkmate_white_wins,37,black,False,0.0,italian_two_knights,Two Knights Defense,8.21,1.61,11.74,0.199,0.241
+ord1,5,3,1,completed,0-1,checkmate_black_wins,60,white,False,0.0,b3_e5_nimzo_larsen,Nimzo-Larsen Attack,11.44,1.13,9.8,0.189,0.19
+ord1,6,3,1,completed,1-0,checkmate_white_wins,19,black,False,0.0,b3_e5_nimzo_larsen,Nimzo-Larsen Attack,4.93,1.33,11.1,0.194,0.317
+ord1,7,4,1,completed,0-1,checkmate_black_wins,72,white,False,0.0,d4_e6_horwitz_defense,Horwitz Defense,13.01,1.14,9.22,0.184,0.175
+ord1,8,4,1,completed,1-0,checkmate_white_wins,63,black,False,0.0,d4_e6_horwitz_defense,Horwitz Defense,11.58,1.45,10.06,0.189,0.176
+ord1,9,5,1,completed,1-0,checkmate_white_wins,77,white,True,1.0,e4_d6_pirc_defense,Pirc Defense,12.04,2.38,25.82,0.15,0.162
+ord1,10,5,1,completed,0-1,checkmate_black_wins,96,black,True,1.0,e4_d6_pirc_defense,Pirc Defense,13.92,2.33,31.1,0.145,0.144
+ord1,11,6,1,completed,1-0,checkmate_white_wins,39,white,True,1.0,queens_indian_defense,Queen's Indian Defense,7.97,2.3,11.63,0.165,0.245
+ord1,12,6,1,completed,0-1,checkmate_black_wins,96,black,True,1.0,queens_indian_defense,Queen's Indian Defense,14.47,2.38,12.77,0.145,0.155
+ord1,13,7,1,completed,1-0,checkmate_white_wins,63,white,True,1.0,petroff_defense,Petroff Defense,10.75,2.34,12.81,0.154,0.186
+ord1,14,7,1,completed,0-1,checkmate_black_wins,80,black,True,1.0,petroff_defense,Petroff Defense,12.56,2.3,22.27,0.15,0.163
+ord1,15,8,1,completed,0-1,checkmate_black_wins,112,white,False,0.0,d4_Nf6_indian_defense,Indian Defense,16.28,2.82,13.21,0.141,0.149
+ord1,16,8,1,completed,0-1,checkmate_black_wins,74,black,True,1.0,d4_Nf6_indian_defense,Indian Defense,11.72,2.16,18.92,0.151,0.165
+ord1,17,9,1,completed,1-0,checkmate_white_wins,59,white,True,1.0,sicilian_dragon,Sicilian Dragon,10.05,2.17,22.28,0.157,0.183
+ord1,18,9,1,completed,1-0,checkmate_white_wins,41,black,False,0.0,sicilian_dragon,Sicilian Dragon,7.97,2.2,11.86,0.165,0.221
+ord1,19,10,1,completed,0-1,checkmate_black_wins,88,white,False,0.0,Nf3_d5_reti_opening,Reti Opening (1.Nf3 d5),13.61,2.0,12.2,0.147,0.162
+ord1,20,10,1,completed,0-1,checkmate_black_wins,68,black,True,1.0,Nf3_d5_reti_opening,Reti Opening (1.Nf3 d5),11.28,2.53,15.09,0.155,0.177
+ord1,21,11,1,completed,0-1,checkmate_black_wins,96,white,False,0.0,sicilian_scheveningen,Sicilian Scheveningen,14.02,2.67,18.21,0.145,0.147
+ord1,22,11,1,completed,0-1,checkmate_black_wins,62,black,True,1.0,sicilian_scheveningen,Sicilian Scheveningen,10.64,2.71,11.45,0.156,0.187
+ord1,23,12,1,completed,1-0,checkmate_white_wins,71,white,True,1.0,ruy_lopez_berlin,Ruy Lopez (Berlin Defense),11.29,3.03,28.06,0.152,0.166
+ord1,24,12,1,completed,0-1,checkmate_black_wins,58,black,True,1.0,ruy_lopez_berlin,Ruy Lopez (Berlin Defense),10.1,2.38,27.52,0.157,0.191
+ord1,25,13,1,completed,0-1,checkmate_black_wins,90,white,False,0.0,c4_e5_english_reversed_sicilian,English (Reversed Sicilian),13.86,2.42,11.89,0.147,0.16
+ord1,26,13,1,completed,1-0,checkmate_white_wins,65,black,False,0.0,c4_e5_english_reversed_sicilian,English (Reversed Sicilian),10.54,2.22,12.61,0.155,0.168
+ord1,27,14,1,completed,1-0,checkmate_white_wins,161,white,True,1.0,e4_c6_caro_kann,Caro-Kann Defense,21.46,2.11,14.05,0.136,0.129
+ord1,28,14,1,completed,0-1,checkmate_black_wins,102,black,True,1.0,e4_c6_caro_kann,Caro-Kann Defense,15.12,1.76,20.39,0.151,0.144
+ord1,29,15,1,completed,0-1,checkmate_black_wins,42,white,False,0.0,slav_defense,Slav Defense,8.45,1.71,11.14,0.174,0.227
+ord1,30,15,1,completed,0-1,checkmate_black_wins,54,black,True,1.0,slav_defense,Slav Defense,9.87,1.93,11.22,0.165,0.198
+ord1,31,16,1,completed,1-0,checkmate_white_wins,57,white,True,1.0,queens_gambit_declined,Queen's Gambit Declined,10.29,1.45,11.25,0.166,0.193
+ord1,32,16,1,completed,0-1,checkmate_black_wins,98,black,True,1.0,queens_gambit_declined,Queen's Gambit Declined,15.0,1.67,13.18,0.152,0.152
+ord1,33,17,1,completed,1/2-1/2,max_plies_reached,200,white,False,0.5,d4_f5_dutch_defense,Dutch Defense,25.12,2.13,13.64,0.129,0.12
+ord1,34,17,1,completed,1-0,checkmate_white_wins,53,black,False,0.0,d4_f5_dutch_defense,Dutch Defense,9.55,1.69,11.41,0.169,0.189
+ord1,35,18,1,completed,1-0,checkmate_white_wins,47,white,True,1.0,four_knights_game,Four Knights Game,9.31,2.0,11.78,0.174,0.221
+ord1,36,18,1,completed,1-0,checkmate_white_wins,57,black,False,0.0,four_knights_game,Four Knights Game,10.1,1.39,11.76,0.163,0.189
+ord1,37,19,1,completed,0-1,checkmate_black_wins,66,white,False,0.0,french_winawer,French Winawer,11.21,1.76,11.39,0.159,0.178
+ord1,38,19,1,completed,1-0,checkmate_white_wins,53,black,False,0.0,french_winawer,French Winawer,9.84,1.77,11.41,0.168,0.2
+ord1,39,20,1,completed,0-1,checkmate_black_wins,88,white,False,0.0,e4_e5_open_game,King's Pawn Game,13.43,2.18,11.86,0.147,0.158
+ord1,40,20,1,completed,1/2-1/2,max_plies_reached,200,black,False,0.5,e4_e5_open_game,King's Pawn Game,25.6,2.79,12.81,0.129,0.126
+ord1,41,21,1,completed,1/2-1/2,max_plies_reached,200,white,False,0.5,gruenfeld_defense,Gruenfeld Defense,25.92,2.03,11.35,0.129,0.128
+ord1,42,21,1,completed,1-0,checkmate_white_wins,25,black,False,0.0,gruenfeld_defense,Gruenfeld Defense,5.62,1.58,12.31,0.179,0.265
+ord1,43,22,1,completed,0-1,checkmate_black_wins,128,white,False,0.0,Nf3_c5_reti_anglo_slav,Reti Opening (1.Nf3 c5),18.03,1.64,11.8,0.141,0.137
+ord1,44,22,1,completed,1-0,checkmate_white_wins,75,black,False,0.0,Nf3_c5_reti_anglo_slav,Reti Opening (1.Nf3 c5),12.32,1.86,11.58,0.157,0.168
+ord1,45,23,1,completed,1-0,checkmate_white_wins,48,white,True,1.0,french_advance,French Advance,8.79,1.58,22.96,0.166,0.197
+ord1,46,23,1,completed,1/2-1/2,max_plies_reached,200,black,False,0.5,french_advance,French Advance,25.98,1.93,11.47,0.129,0.128
+ord1,47,24,1,completed,0-1,checkmate_black_wins,58,white,False,0.0,london_system,London System,10.22,1.38,11.41,0.161,0.188
+ord1,48,24,1,completed,1-0,checkmate_white_wins,71,black,False,0.0,london_system,London System,11.78,1.57,11.5,0.156,0.174
+ord1,49,25,1,completed,1/2-1/2,max_plies_reached,200,white,False,0.5,catalan_opening,Catalan Opening,26.1,2.3,11.73,0.129,0.129
+ord1,50,25,1,completed,0-1,checkmate_black_wins,63,black,True,1.0,catalan_opening,Catalan Opening,10.88,2.06,12.87,0.159,0.184

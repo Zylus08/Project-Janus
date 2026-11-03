@@ -1,0 +1,1668 @@
+{
+  "timestamp": "2026-10-16T01:15:01Z",
+  "engine": "Janus v0.20",
+  "suite_size": 12,
+  "configurations": [
+    "lmr_off_nmp_off",
+    "lmr_on_nmp_off",
+    "lmr_off_nmp_on",
+    "lmr_on_nmp_on"
+  ],
+  "depths": [
+    3,
+    4
+  ],
+  "positions": [
+    {
+      "id": "mate_in_one_scholar",
+      "category": "forced_mate",
+      "description": "Scholar's mate motif (White Queen delivers mate on f7)",
+      "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+      "expected_move": "h5f7",
+      "target_outcome": "mate",
+      "results": {
+        "depth_3": {
+          "lmr_off_nmp_off": {
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_valid": true,
+            "nodes": 4955,
+            "elapsed_s": 0.2167,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_valid": true,
+            "nodes": 4955,
+            "elapsed_s": 0.2172,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_valid": true,
+            "nodes": 4955,
+            "elapsed_s": 0.2106,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_valid": true,
+            "nodes": 4955,
+            "elapsed_s": 0.2046,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        },
+        "depth_4": {
+          "lmr_off_nmp_off": {
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_valid": true,
+            "nodes": 16578,
+            "elapsed_s": 0.9333,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_valid": true,
+            "nodes": 16578,
+            "elapsed_s": 0.913,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_valid": true,
+            "nodes": 16578,
+            "elapsed_s": 0.9391,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": 99999,
+            "best_move": "h5f7",
+            "pv": [
+              "h5f7"
+            ],
+            "pv_valid": true,
+            "nodes": 16578,
+            "elapsed_s": 0.9186,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "mate_in_two_smothered",
+      "category": "forced_mate",
+      "description": "Smothered mate pattern with Queen sacrifice threat",
+      "fen": "6k1/5ppp/8/8/8/8/1Q4PP/6K1 w - - 0 1",
+      "expected_move": "b2b8",
+      "target_outcome": "mate",
+      "results": {
+        "depth_3": {
+          "lmr_off_nmp_off": {
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_valid": true,
+            "nodes": 1572,
+            "elapsed_s": 0.0479,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_valid": true,
+            "nodes": 1572,
+            "elapsed_s": 0.0494,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_valid": true,
+            "nodes": 1572,
+            "elapsed_s": 0.0485,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_valid": true,
+            "nodes": 1572,
+            "elapsed_s": 0.0482,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        },
+        "depth_4": {
+          "lmr_off_nmp_off": {
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_valid": true,
+            "nodes": 3020,
+            "elapsed_s": 0.1113,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_valid": true,
+            "nodes": 3020,
+            "elapsed_s": 0.1168,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_valid": true,
+            "nodes": 3020,
+            "elapsed_s": 0.1086,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": 99999,
+            "best_move": "b2b8",
+            "pv": [
+              "b2b8"
+            ],
+            "pv_valid": true,
+            "nodes": 3020,
+            "elapsed_s": 0.1108,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "tactical_fork_knight",
+      "category": "forks_and_pins",
+      "description": "Royal fork winning queen",
+      "fen": "r1b1k2r/pppp1ppp/8/4q3/1b2N3/8/PPP1PPPP/R2QKB1R w KQkq - 0 1",
+      "expected_move": "c2c3",
+      "target_outcome": "evasion_preserving_equality",
+      "results": {
+        "depth_3": {
+          "lmr_off_nmp_off": {
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4"
+            ],
+            "pv_valid": true,
+            "nodes": 735,
+            "elapsed_s": 0.0393,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4"
+            ],
+            "pv_valid": true,
+            "nodes": 735,
+            "elapsed_s": 0.0392,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4"
+            ],
+            "pv_valid": true,
+            "nodes": 735,
+            "elapsed_s": 0.0399,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4"
+            ],
+            "pv_valid": true,
+            "nodes": 735,
+            "elapsed_s": 0.0401,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        },
+        "depth_4": {
+          "lmr_off_nmp_off": {
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4",
+              "e4b4"
+            ],
+            "pv_valid": true,
+            "nodes": 5116,
+            "elapsed_s": 0.2117,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4",
+              "e4b4"
+            ],
+            "pv_valid": true,
+            "nodes": 2186,
+            "elapsed_s": 0.114,
+            "lmr_reduced_searches": 41,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4",
+              "e4b4"
+            ],
+            "pv_valid": true,
+            "nodes": 5124,
+            "elapsed_s": 0.2109,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 4,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": -121,
+            "best_move": "c2c3",
+            "pv": [
+              "c2c3",
+              "e5e4",
+              "c3b4",
+              "e4b4"
+            ],
+            "pv_valid": true,
+            "nodes": 2194,
+            "elapsed_s": 0.1134,
+            "lmr_reduced_searches": 41,
+            "lmr_researches": 0,
+            "nmp_attempts": 4,
+            "nmp_cutoffs": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "absolute_pin_skewer",
+      "category": "forks_and_pins",
+      "description": "Absolute pin on rook along e-file",
+      "fen": "4k3/4r3/8/8/8/8/4R3/4K3 w - - 0 1",
+      "expected_move": "e2e7",
+      "target_outcome": "equal_or_winning_trade",
+      "results": {
+        "depth_3": {
+          "lmr_off_nmp_off": {
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 168,
+            "elapsed_s": 0.006,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 168,
+            "elapsed_s": 0.0058,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 168,
+            "elapsed_s": 0.0064,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 168,
+            "elapsed_s": 0.0059,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        },
+        "depth_4": {
+          "lmr_off_nmp_off": {
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 285,
+            "elapsed_s": 0.0116,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 285,
+            "elapsed_s": 0.0114,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 233,
+            "elapsed_s": 0.0088,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 8,
+            "nmp_cutoffs": 8
+          },
+          "lmr_on_nmp_on": {
+            "score": 0,
+            "best_move": "e2e7",
+            "pv": [
+              "e2e7",
+              "e8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 233,
+            "elapsed_s": 0.0078,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 8,
+            "nmp_cutoffs": 8
+          }
+        }
+      }
+    },
+    {
+      "id": "promotion_passed_pawn",
+      "category": "promotion",
+      "description": "Queen promotion with unstoppable 7th rank pawn",
+      "fen": "8/1P6/8/8/8/8/k7/7K w - - 0 1",
+      "expected_move": "b7b8q",
+      "target_outcome": "promotion",
+      "results": {
+        "depth_3": {
+          "lmr_off_nmp_off": {
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8"
+            ],
+            "pv_valid": true,
+            "nodes": 209,
+            "elapsed_s": 0.0072,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8"
+            ],
+            "pv_valid": true,
+            "nodes": 209,
+            "elapsed_s": 0.006,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8"
+            ],
+            "pv_valid": true,
+            "nodes": 209,
+            "elapsed_s": 0.0062,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8"
+            ],
+            "pv_valid": true,
+            "nodes": 209,
+            "elapsed_s": 0.0061,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        },
+        "depth_4": {
+          "lmr_off_nmp_off": {
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8",
+              "a3b4"
+            ],
+            "pv_valid": true,
+            "nodes": 435,
+            "elapsed_s": 0.0145,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8",
+              "a3b4"
+            ],
+            "pv_valid": true,
+            "nodes": 435,
+            "elapsed_s": 0.0142,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8",
+              "a3b4"
+            ],
+            "pv_valid": true,
+            "nodes": 435,
+            "elapsed_s": 0.0143,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": 900,
+            "best_move": "b7b8q",
+            "pv": [
+              "b7b8q",
+              "a2a3",
+              "b8h8",
+              "a3b4"
+            ],
+            "pv_valid": true,
+            "nodes": 435,
+            "elapsed_s": 0.0141,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "defensive_block_promotion",
+      "category": "defensive_resource",
+      "description": "Black rook must blockade or capture white pawn before promotion",
+      "fen": "8/1P6/8/8/8/8/1r6/k6K b - - 0 1",
+      "expected_move": "b2b7",
+      "target_outcome": "defensive_capture",
+      "results": {
+        "depth_3": {
+          "lmr_off_nmp_off": {
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8"
+            ],
+            "pv_valid": true,
+            "nodes": 570,
+            "elapsed_s": 0.0166,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8"
+            ],
+            "pv_valid": true,
+            "nodes": 570,
+            "elapsed_s": 0.0166,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8"
+            ],
+            "pv_valid": true,
+            "nodes": 570,
+            "elapsed_s": 0.0169,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8"
+            ],
+            "pv_valid": true,
+            "nodes": 570,
+            "elapsed_s": 0.0167,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        },
+        "depth_4": {
+          "lmr_off_nmp_off": {
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8",
+              "h2h3"
+            ],
+            "pv_valid": true,
+            "nodes": 1206,
+            "elapsed_s": 0.0431,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8",
+              "h2h3"
+            ],
+            "pv_valid": true,
+            "nodes": 1206,
+            "elapsed_s": 0.0435,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8",
+              "h2h3"
+            ],
+            "pv_valid": true,
+            "nodes": 1206,
+            "elapsed_s": 0.0429,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": 500,
+            "best_move": "b2b7",
+            "pv": [
+              "b2b7",
+              "h1h2",
+              "b7b8",
+              "h2h3"
+            ],
+            "pv_valid": true,
+            "nodes": 1206,
+            "elapsed_s": 0.0434,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "trebuchet_zugzwang",
+      "category": "zugzwang",
+      "description": "Mutual zugzwang (Tr\u00e9buchet); White to move loses d3 pawn",
+      "fen": "8/8/8/3k4/3p4/3K4/8/8 w - - 0 1",
+      "expected_move": null,
+      "target_outcome": "preserves_material_guard_against_nmp",
+      "results": {
+        "depth_3": {
+          "lmr_off_nmp_off": {
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2f3"
+            ],
+            "pv_valid": true,
+            "nodes": 99,
+            "elapsed_s": 0.0033,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2f3"
+            ],
+            "pv_valid": true,
+            "nodes": 99,
+            "elapsed_s": 0.0032,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2f3"
+            ],
+            "pv_valid": true,
+            "nodes": 99,
+            "elapsed_s": 0.0032,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2f3"
+            ],
+            "pv_valid": true,
+            "nodes": 99,
+            "elapsed_s": 0.004,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        },
+        "depth_4": {
+          "lmr_off_nmp_off": {
+            "score": -125,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e4",
+              "e2f2",
+              "d4d3"
+            ],
+            "pv_valid": true,
+            "nodes": 389,
+            "elapsed_s": 0.0136,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2d3",
+              "e6e5"
+            ],
+            "pv_valid": true,
+            "nodes": 278,
+            "elapsed_s": 0.0096,
+            "lmr_reduced_searches": 4,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": -125,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e4",
+              "e2f2",
+              "d4d3"
+            ],
+            "pv_valid": true,
+            "nodes": 389,
+            "elapsed_s": 0.0136,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": -120,
+            "best_move": "d3e2",
+            "pv": [
+              "d3e2",
+              "d5e6",
+              "e2d3",
+              "e6e5"
+            ],
+            "pv_valid": true,
+            "nodes": 278,
+            "elapsed_s": 0.0096,
+            "lmr_reduced_searches": 4,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "king_pawn_opposition",
+      "category": "endgame_opposition",
+      "description": "Distant opposition in king-and-pawn endgame",
+      "fen": "8/8/4k3/8/8/4K3/8/8 w - - 0 1",
+      "expected_move": null,
+      "target_outcome": "opposition_defense",
+      "results": {
+        "depth_3": {
+          "lmr_off_nmp_off": {
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_valid": true,
+            "nodes": 3,
+            "elapsed_s": 0.0002,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_valid": true,
+            "nodes": 3,
+            "elapsed_s": 0.0002,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_valid": true,
+            "nodes": 3,
+            "elapsed_s": 0.0001,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_valid": true,
+            "nodes": 3,
+            "elapsed_s": 0.0001,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        },
+        "depth_4": {
+          "lmr_off_nmp_off": {
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_valid": true,
+            "nodes": 4,
+            "elapsed_s": 0.0001,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_valid": true,
+            "nodes": 4,
+            "elapsed_s": 0.0001,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_valid": true,
+            "nodes": 4,
+            "elapsed_s": 0.0001,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": 0,
+            "best_move": "e3f4",
+            "pv": [
+              "e3f4"
+            ],
+            "pv_valid": true,
+            "nodes": 4,
+            "elapsed_s": 0.0001,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "stalemate_defense",
+      "category": "draw_defense",
+      "description": "Black king in corner is stalemated",
+      "fen": "7k/5K2/6Q1/8/8/8/8/8 b - - 0 1",
+      "expected_move": null,
+      "target_outcome": "stalemate_draw",
+      "results": {
+        "depth_3": {
+          "lmr_off_nmp_off": {
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "pv_valid": true,
+            "nodes": 0,
+            "elapsed_s": 0.0001,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "pv_valid": true,
+            "nodes": 0,
+            "elapsed_s": 0.0,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "pv_valid": true,
+            "nodes": 0,
+            "elapsed_s": 0.0,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "pv_valid": true,
+            "nodes": 0,
+            "elapsed_s": 0.0,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        },
+        "depth_4": {
+          "lmr_off_nmp_off": {
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "pv_valid": true,
+            "nodes": 0,
+            "elapsed_s": 0.0,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "pv_valid": true,
+            "nodes": 0,
+            "elapsed_s": 0.0,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "pv_valid": true,
+            "nodes": 0,
+            "elapsed_s": 0.0,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": 0,
+            "best_move": null,
+            "pv": [],
+            "pv_valid": true,
+            "nodes": 0,
+            "elapsed_s": 0.0,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "rook_endgame_lucena",
+      "category": "low_material_endgame",
+      "description": "Lucena position bridge-building setup",
+      "fen": "1K1k4/1P1r4/8/8/8/8/8/2R5 w - - 0 1",
+      "expected_move": null,
+      "target_outcome": "winning_technique",
+      "results": {
+        "depth_3": {
+          "lmr_off_nmp_off": {
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7"
+            ],
+            "pv_valid": true,
+            "nodes": 612,
+            "elapsed_s": 0.0235,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7"
+            ],
+            "pv_valid": true,
+            "nodes": 612,
+            "elapsed_s": 0.0233,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7"
+            ],
+            "pv_valid": true,
+            "nodes": 612,
+            "elapsed_s": 0.0245,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7"
+            ],
+            "pv_valid": true,
+            "nodes": 612,
+            "elapsed_s": 0.0234,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        },
+        "depth_4": {
+          "lmr_off_nmp_off": {
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7",
+              "d8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 971,
+            "elapsed_s": 0.0414,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7",
+              "d8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 913,
+            "elapsed_s": 0.0391,
+            "lmr_reduced_searches": 11,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7",
+              "d8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 925,
+            "elapsed_s": 0.0365,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 15,
+            "nmp_cutoffs": 14
+          },
+          "lmr_on_nmp_on": {
+            "score": 500,
+            "best_move": "b8a8",
+            "pv": [
+              "b8a8",
+              "d7b7",
+              "a8b7",
+              "d8e7"
+            ],
+            "pv_valid": true,
+            "nodes": 867,
+            "elapsed_s": 0.0337,
+            "lmr_reduced_searches": 11,
+            "lmr_researches": 0,
+            "nmp_attempts": 15,
+            "nmp_cutoffs": 14
+          }
+        }
+      }
+    },
+    {
+      "id": "discovered_check_defense",
+      "category": "checks_counterchecks",
+      "description": "Discovered check response required",
+      "fen": "r1bqk2r/ppppbppp/2n5/4P3/2B1n3/5N2/PPP2PPP/RNBQK2R w KQkq - 1 6",
+      "expected_move": null,
+      "target_outcome": "tactical_defense",
+      "results": {
+        "depth_3": {
+          "lmr_off_nmp_off": {
+            "score": 84,
+            "best_move": "c4f7",
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5"
+            ],
+            "pv_valid": true,
+            "nodes": 9400,
+            "elapsed_s": 0.4548,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 84,
+            "best_move": "c4f7",
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5"
+            ],
+            "pv_valid": true,
+            "nodes": 9400,
+            "elapsed_s": 0.4535,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 84,
+            "best_move": "c4f7",
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5"
+            ],
+            "pv_valid": true,
+            "nodes": 9400,
+            "elapsed_s": 0.4471,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": 84,
+            "best_move": "c4f7",
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5"
+            ],
+            "pv_valid": true,
+            "nodes": 9400,
+            "elapsed_s": 0.4459,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        },
+        "depth_4": {
+          "lmr_off_nmp_off": {
+            "score": 209,
+            "best_move": "d1d5",
+            "pv": [
+              "d1d5",
+              "c6e5",
+              "d5e5",
+              "e4f6"
+            ],
+            "pv_valid": true,
+            "nodes": 37984,
+            "elapsed_s": 2.0531,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 209,
+            "best_move": "d1d5",
+            "pv": [
+              "d1d5",
+              "c6e5",
+              "d5e5",
+              "e4f6"
+            ],
+            "pv_valid": true,
+            "nodes": 30358,
+            "elapsed_s": 1.7628,
+            "lmr_reduced_searches": 128,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 209,
+            "best_move": "d1d5",
+            "pv": [
+              "d1d5",
+              "c6e5",
+              "d5e5",
+              "e4f6"
+            ],
+            "pv_valid": true,
+            "nodes": 25200,
+            "elapsed_s": 1.2623,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 45,
+            "nmp_cutoffs": 34
+          },
+          "lmr_on_nmp_on": {
+            "score": 209,
+            "best_move": "d1d5",
+            "pv": [
+              "d1d5",
+              "c6e5",
+              "d5e5",
+              "e4f6"
+            ],
+            "pv_valid": true,
+            "nodes": 17594,
+            "elapsed_s": 0.9559,
+            "lmr_reduced_searches": 128,
+            "lmr_researches": 0,
+            "nmp_attempts": 45,
+            "nmp_cutoffs": 34
+          }
+        }
+      }
+    },
+    {
+      "id": "seventyfive_move_near_draw",
+      "category": "draw_rules",
+      "description": "Near seventy-five move threshold (halfmove clock 146)",
+      "fen": "8/8/8/8/8/4k3/4r3/4K3 w - - 146 73",
+      "expected_move": null,
+      "target_outcome": "avoids_invalid_cutoffs",
+      "results": {
+        "depth_3": {
+          "lmr_off_nmp_off": {
+            "score": -500,
+            "best_move": "e1f1",
+            "pv": [
+              "e1f1",
+              "e3f3",
+              "f1g1"
+            ],
+            "pv_valid": true,
+            "nodes": 95,
+            "elapsed_s": 0.0032,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": -500,
+            "best_move": "e1f1",
+            "pv": [
+              "e1f1",
+              "e3f3",
+              "f1g1"
+            ],
+            "pv_valid": true,
+            "nodes": 95,
+            "elapsed_s": 0.0032,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": -500,
+            "best_move": "e1f1",
+            "pv": [
+              "e1f1",
+              "e3f3",
+              "f1g1"
+            ],
+            "pv_valid": true,
+            "nodes": 95,
+            "elapsed_s": 0.0032,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": -500,
+            "best_move": "e1f1",
+            "pv": [
+              "e1f1",
+              "e3f3",
+              "f1g1"
+            ],
+            "pv_valid": true,
+            "nodes": 95,
+            "elapsed_s": 0.0032,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        },
+        "depth_4": {
+          "lmr_off_nmp_off": {
+            "score": 0,
+            "best_move": "e1f1",
+            "pv": [
+              "e1f1",
+              "e3f3",
+              "f1g1",
+              "f3g4"
+            ],
+            "pv_valid": true,
+            "nodes": 320,
+            "elapsed_s": 0.011,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_off": {
+            "score": 0,
+            "best_move": "e1f1",
+            "pv": [
+              "e1f1",
+              "e3f3",
+              "f1g1",
+              "f3g4"
+            ],
+            "pv_valid": true,
+            "nodes": 349,
+            "elapsed_s": 0.0116,
+            "lmr_reduced_searches": 9,
+            "lmr_researches": 7,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_off_nmp_on": {
+            "score": 0,
+            "best_move": "e1f1",
+            "pv": [
+              "e1f1",
+              "e3f3",
+              "f1g1",
+              "f3g4"
+            ],
+            "pv_valid": true,
+            "nodes": 320,
+            "elapsed_s": 0.0102,
+            "lmr_reduced_searches": 0,
+            "lmr_researches": 0,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          },
+          "lmr_on_nmp_on": {
+            "score": 0,
+            "best_move": "e1f1",
+            "pv": [
+              "e1f1",
+              "e3f3",
+              "f1g1",
+              "f3g4"
+            ],
+            "pv_valid": true,
+            "nodes": 349,
+            "elapsed_s": 0.0118,
+            "lmr_reduced_searches": 9,
+            "lmr_researches": 7,
+            "nmp_attempts": 0,
+            "nmp_cutoffs": 0
+          }
+        }
+      }
+    }
+  ],
+  "divergences": [],
+  "summary": {
+    "total_positions": 12,
+    "total_evaluations": 96,
+    "total_divergences": 0,
+    "pv_legality_pass_rate": 1.0
+  }
+}

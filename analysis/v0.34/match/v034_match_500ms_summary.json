@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-10-25T08:30:40.541308+00:00",
+    "baseline_commit": "05de411",
+    "baseline_name": "Janus-v0.30",
+    "candidate_commit": "HEAD",
+    "candidate_name": "Janus-v0.34",
+    "time_control": "fixed movetime 500ms",
+    "movetime_ms": 500,
+    "movetime_s": 0.5,
+    "max_plies": 200,
+    "total_games_requested": 100,
+    "pairs_requested": 50,
+    "seed": 42,
+    "python_version": "3.12.8",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "elapsed_seconds": 2828.0,
+    "last_updated_utc": "2026-10-25T09:17:48.703464+00:00"
+  },
+  "summary": {
+    "total_completed": 100,
+    "unfinished": 0,
+    "candidate_wins": 41,
+    "candidate_draws": 23,
+    "candidate_losses": 36,
+    "candidate_score": 52.5,
+    "candidate_score_pct": 52.5,
+    "estimated_elo_diff": 17.4,
+    "elo_95_ci": [
+      -50.8,
+      85.6
+    ],
+    "by_color": {
+      "white": {
+        "wins": 14,
+        "draws": 11,
+        "losses": 25,
+        "games": 50,
+        "score_pts": 19.5
+      },
+      "black": {
+        "wins": 27,
+        "draws": 12,
+        "losses": 11,
+        "games": 50,
+        "score_pts": 33.0
+      }
+    },
+    "pairs_summary": {
+      "total_pairs": 50,
+      "completed_pairs": 50,
+      "pairs_won": 11,
+      "pairs_drawn": 30,
+      "pairs_lost": 9,
+      "decisive_pairs": 20,
+      "sign_test_p_value": 0.8238
+    }
+  }
+}

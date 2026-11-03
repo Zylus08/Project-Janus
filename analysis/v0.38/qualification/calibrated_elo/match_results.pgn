@@ -1,0 +1,28 @@
+[Event "Janus v0.38 External Benchmark - calibrated_elo"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "1"]
+[White "Janus-v0.38"]
+[Black "Stockfish-19"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"]
+[Termination "checkmate_white_wins"]
+
+3... exd4 4. Nxd4 Nf6 5. Nxc6 dxc6 6. Qxd8+ Kxd8 7. Bd3 Nd7 8. Bf4 Nc5 9. Bg5+ Ke8 10. Nc3 Nxd3+ 11. cxd3 f5 12. e5 Be6 13. h4 Bf7 14. f4 Kd7 15. a4 h6 16. e6+ Bxe6 17. Bxh6 gxh6 18. Rc1 Bg8 19. Kd2 Bg7 20. Rhe1 Rd8 21. b4 b6 22. h5 Bf6 23. a5 Bg7 24. a6 Bf8 25. Rb1 b5 26. d4 Bd6 27. g3 Bc4 28. Ne2 Rde8 29. Nc3 Reg8 30. Re3 Bf7 31. Rbe1 Rf8 32. d5 Bxb4 33. dxc6+ Kc8 34. Re5 Bc4 35. Kc2 Ba5 36. Rd1 Bb6 37. Nxb5 Rd8 38. Rxd8+ Rxd8 39. Kc3 Bd5 40. Rxf5 Bxc6 41. Re5 Bd7 42. f5 Rf8 43. g4 Kd8 44. Nd4 Rf7 45. Ne6+ Ke7 46. Ng5+ Kf8 47. Nxf7 Kg7 48. Re7 Bxf5 49. Nd6+ Kg8 50. Nxf5 Kf8 51. Re5 Ba5+ 52. Rxa5 c6 53. Rc5 Kf7 54. Rxc6 Kf8 55. Nxh6 Ke7 56. Rc7+ Ke8 57. Nf7 Kf8 58. h6 Ke8 59. h7 Kf8 60. h8=Q# 1-0
+
+[Event "Janus v0.38 External Benchmark - calibrated_elo"]
+[Site "Local Subprocess Session"]
+[Date "2026.10.31"]
+[Round "2"]
+[White "Stockfish-19"]
+[Black "Janus-v0.38"]
+[Result "1-0"]
+[TimeControl "3.0+0.1"]
+[SetUp "1"]
+[FEN "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"]
+[Termination "checkmate_white_wins"]
+
+3... Nf6 4. d5 Bb4+ 5. c3 Bd6 6. dxc6 Nxe4 7. Qc2 f5 8. cxd7+ Bxd7 9. Nbd2 Bc6 10. Be2 h5 11. Nc4 Bc5 12. Rf1 Nxf2 13. Rxf2 Bxf2+ 14. Kxf2 e4 15. Bg5 Qc8 16. Nfe5 Bd5 17. Rd1 Qe6 18. Kf1 b5 19. Na5 Qxe5 20. Bxb5+ Kf7 21. Qf2 Bxa2 22. c4 Rhb8 23. h4 Rxb5 24. Bf4 Qxb2 25. cxb5 Qxb5+ 26. Kg1 Qxa5 27. Rd7+ Kf8 28. Bxc7 Qb5 29. Bd6+ Ke8 30. Re7+ Kd8 31. Rxg7 Qb1+ 32. Kh2 Be6 33. Qc5 Qe1 34. Qc7+ Ke8 35. Qe7# 1-0
+

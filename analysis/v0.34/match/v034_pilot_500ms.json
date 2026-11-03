@@ -1,0 +1,1270 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-10-25T08:29:04.432840+00:00",
+    "baseline_commit": "05de411",
+    "baseline_name": "Janus-v0.30",
+    "candidate_commit": "HEAD",
+    "candidate_name": "Janus-v0.34",
+    "time_control": "fixed movetime 500ms",
+    "movetime_ms": 500,
+    "movetime_s": 0.5,
+    "max_plies": 200,
+    "total_games_requested": 2,
+    "pairs_requested": 1,
+    "seed": 42,
+    "python_version": "3.12.8",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "elapsed_seconds": 65.2,
+    "last_updated_utc": "2026-10-25T08:30:09.780067+00:00"
+  },
+  "summary": {
+    "total_completed": 2,
+    "unfinished": 0,
+    "candidate_wins": 1,
+    "candidate_draws": 1,
+    "candidate_losses": 0,
+    "candidate_score": 1.5,
+    "candidate_score_pct": 75.0,
+    "estimated_elo_diff": 190.8,
+    "elo_95_ci": [
+      -365.2,
+      746.9
+    ],
+    "by_color": {
+      "white": {
+        "wins": 0,
+        "draws": 1,
+        "losses": 0,
+        "games": 1,
+        "score_pts": 0.5
+      },
+      "black": {
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "games": 1,
+        "score_pts": 1.0
+      }
+    },
+    "pairs_summary": {
+      "total_pairs": 1,
+      "completed_pairs": 1,
+      "pairs_won": 1,
+      "pairs_drawn": 0,
+      "pairs_lost": 0,
+      "decisive_pairs": 1,
+      "sign_test_p_value": 1.0
+    }
+  },
+  "games": [
+    {
+      "game": 1,
+      "pair": 1,
+      "opening_id": "scotch_game",
+      "opening_name": "Scotch Game",
+      "candidate_color": "white",
+      "white": "Janus-v0.34",
+      "black": "Janus-v0.30",
+      "result": "1/2-1/2",
+      "candidate_score": 0.5,
+      "termination": "unknown draw",
+      "plies": 91,
+      "duration_seconds": 43.19,
+      "movetime_ms": 500,
+      "start_fen": "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3",
+      "avg_cand_depth": 4.88,
+      "avg_base_depth": 5.42,
+      "avg_cand_move_time": 0.5022,
+      "avg_base_move_time": 0.5018,
+      "avg_cand_nodes": 10222.0,
+      "avg_base_nodes": 11841.0,
+      "moves": [
+        {
+          "ply": 1,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "g8f6",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 10240
+        },
+        {
+          "ply": 2,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "d4d5",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9216
+        },
+        {
+          "ply": 3,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "c6a5",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 10240
+        },
+        {
+          "ply": 4,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "f1d3",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8960
+        },
+        {
+          "ply": 5,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "f8d6",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9984
+        },
+        {
+          "ply": 6,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "b1c3",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8960
+        },
+        {
+          "ply": 7,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "c7c6",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 10240
+        },
+        {
+          "ply": 8,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "c1e3",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9472
+        },
+        {
+          "ply": 9,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "c6d5",
+          "time_s": 0.515,
+          "depth": 3,
+          "nodes": 11264
+        },
+        {
+          "ply": 10,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "e4d5",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9984
+        },
+        {
+          "ply": 11,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "h7h5",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 10496
+        },
+        {
+          "ply": 12,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "h2h4",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9984
+        },
+        {
+          "ply": 13,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "d6b4",
+          "time_s": 0.516,
+          "depth": 3,
+          "nodes": 11264
+        },
+        {
+          "ply": 14,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "f3e5",
+          "time_s": 0.516,
+          "depth": 3,
+          "nodes": 8960
+        },
+        {
+          "ply": 15,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "f6d5",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 11008
+        },
+        {
+          "ply": 16,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "d1f3",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9472
+        },
+        {
+          "ply": 17,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "d5f6",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 11264
+        },
+        {
+          "ply": 18,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "a2a3",
+          "time_s": 0.515,
+          "depth": 3,
+          "nodes": 9472
+        },
+        {
+          "ply": 19,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "b4d6",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 11520
+        },
+        {
+          "ply": 20,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "f3g3",
+          "time_s": 0.516,
+          "depth": 2,
+          "nodes": 9472
+        },
+        {
+          "ply": 21,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "f6g4",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 10752
+        },
+        {
+          "ply": 22,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "e3f4",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 10496
+        },
+        {
+          "ply": 23,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "g4e5",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 10752
+        },
+        {
+          "ply": 24,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "f4e5",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8704
+        },
+        {
+          "ply": 25,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "d8e7",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 11264
+        },
+        {
+          "ply": 26,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "f2f4",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9728
+        },
+        {
+          "ply": 27,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "d6e5",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 11776
+        },
+        {
+          "ply": 28,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "f4e5",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9216
+        },
+        {
+          "ply": 29,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "a5c6",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 14336
+        },
+        {
+          "ply": 30,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "g3g7",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9984
+        },
+        {
+          "ply": 31,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "e7e5",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 10240
+        },
+        {
+          "ply": 32,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "g7e5",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 11264
+        },
+        {
+          "ply": 33,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "c6e5",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 11008
+        },
+        {
+          "ply": 34,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "d3e4",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9728
+        },
+        {
+          "ply": 35,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "a7a5",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 12288
+        },
+        {
+          "ply": 36,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "e1c1",
+          "time_s": 0.515,
+          "depth": 4,
+          "nodes": 9728
+        },
+        {
+          "ply": 37,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "h8f8",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 12032
+        },
+        {
+          "ply": 38,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "h1e1",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 11008
+        },
+        {
+          "ply": 39,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "f7f5",
+          "time_s": 0.516,
+          "depth": 4,
+          "nodes": 12544
+        },
+        {
+          "ply": 40,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "e4b7",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 10752
+        },
+        {
+          "ply": 41,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "c8b7",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 12288
+        },
+        {
+          "ply": 42,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "e1e5",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 9984
+        },
+        {
+          "ply": 43,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "e8d8",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 11776
+        },
+        {
+          "ply": 44,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "g2g3",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 9472
+        },
+        {
+          "ply": 45,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "b7f3",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 11008
+        },
+        {
+          "ply": 46,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "d1d3",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9728
+        },
+        {
+          "ply": 47,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "f3c6",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 12544
+        },
+        {
+          "ply": 48,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "b2b3",
+          "time_s": 0.515,
+          "depth": 3,
+          "nodes": 9472
+        },
+        {
+          "ply": 49,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "f8f7",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 10752
+        },
+        {
+          "ply": 50,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "a3a4",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9472
+        },
+        {
+          "ply": 51,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "d8c8",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 11264
+        },
+        {
+          "ply": 52,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "c3d5",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8704
+        },
+        {
+          "ply": 53,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "c8d8",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 11008
+        },
+        {
+          "ply": 54,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "d3f3",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9216
+        },
+        {
+          "ply": 55,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "d7d6",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 12288
+        },
+        {
+          "ply": 56,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "e5f5",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 11008
+        },
+        {
+          "ply": 57,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "c6d5",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 11776
+        },
+        {
+          "ply": 58,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "f5f7",
+          "time_s": 0.516,
+          "depth": 5,
+          "nodes": 10240
+        },
+        {
+          "ply": 59,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "d5f3",
+          "time_s": 0.5,
+          "depth": 7,
+          "nodes": 12800
+        },
+        {
+          "ply": 60,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "f7f3",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 11264
+        },
+        {
+          "ply": 61,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "a8c8",
+          "time_s": 0.5,
+          "depth": 7,
+          "nodes": 13312
+        },
+        {
+          "ply": 62,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "c2c4",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 11264
+        },
+        {
+          "ply": 63,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "d8e8",
+          "time_s": 0.5,
+          "depth": 7,
+          "nodes": 13056
+        },
+        {
+          "ply": 64,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "c1d2",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 10752
+        },
+        {
+          "ply": 65,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "e8d8",
+          "time_s": 0.516,
+          "depth": 6,
+          "nodes": 13056
+        },
+        {
+          "ply": 66,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "f3f8",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 11008
+        },
+        {
+          "ply": 67,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "d8d7",
+          "time_s": 0.515,
+          "depth": 8,
+          "nodes": 13568
+        },
+        {
+          "ply": 68,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "f8c8",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 10752
+        },
+        {
+          "ply": 69,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "d7c8",
+          "time_s": 0.5,
+          "depth": 9,
+          "nodes": 13568
+        },
+        {
+          "ply": 70,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "d2e3",
+          "time_s": 0.5,
+          "depth": 8,
+          "nodes": 11776
+        },
+        {
+          "ply": 71,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "c8c7",
+          "time_s": 0.5,
+          "depth": 8,
+          "nodes": 12800
+        },
+        {
+          "ply": 72,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "e3f4",
+          "time_s": 0.5,
+          "depth": 7,
+          "nodes": 11776
+        },
+        {
+          "ply": 73,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "c7c6",
+          "time_s": 0.5,
+          "depth": 9,
+          "nodes": 12288
+        },
+        {
+          "ply": 74,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "f4e4",
+          "time_s": 0.5,
+          "depth": 7,
+          "nodes": 10496
+        },
+        {
+          "ply": 75,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "c6c5",
+          "time_s": 0.5,
+          "depth": 9,
+          "nodes": 12288
+        },
+        {
+          "ply": 76,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "e4d3",
+          "time_s": 0.5,
+          "depth": 9,
+          "nodes": 11008
+        },
+        {
+          "ply": 77,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "d6d5",
+          "time_s": 0.5,
+          "depth": 10,
+          "nodes": 12800
+        },
+        {
+          "ply": 78,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "c4d5",
+          "time_s": 0.5,
+          "depth": 9,
+          "nodes": 11520
+        },
+        {
+          "ply": 79,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "c5d5",
+          "time_s": 0.5,
+          "depth": 10,
+          "nodes": 12544
+        },
+        {
+          "ply": 80,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "d3e3",
+          "time_s": 0.5,
+          "depth": 9,
+          "nodes": 11264
+        },
+        {
+          "ply": 81,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "d5c5",
+          "time_s": 0.5,
+          "depth": 10,
+          "nodes": 12800
+        },
+        {
+          "ply": 82,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "e3d3",
+          "time_s": 0.5,
+          "depth": 10,
+          "nodes": 11776
+        },
+        {
+          "ply": 83,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "c5d5",
+          "time_s": 0.5,
+          "depth": 10,
+          "nodes": 12800
+        },
+        {
+          "ply": 84,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "d3e3",
+          "time_s": 0.5,
+          "depth": 10,
+          "nodes": 11520
+        },
+        {
+          "ply": 85,
+          "player": "Janus-v0.30",
+          "color": "black",
+          "move": "d5c5",
+          "time_s": 0.5,
+          "depth": 11,
+          "nodes": 12288
+        },
+        {
+          "ply": 86,
+          "player": "Janus-v0.34",
+          "color": "white",
+          "move": "e3d3",
+          "time_s": 0.5,
+          "depth": 11,
+          "nodes": 11520
+        }
+      ]
+    },
+    {
+      "game": 2,
+      "pair": 1,
+      "opening_id": "scotch_game",
+      "opening_name": "Scotch Game",
+      "candidate_color": "black",
+      "white": "Janus-v0.30",
+      "black": "Janus-v0.34",
+      "result": "0-1",
+      "candidate_score": 1.0,
+      "termination": "checkmate",
+      "plies": 48,
+      "duration_seconds": 21.62,
+      "movetime_ms": 500,
+      "start_fen": "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3",
+      "avg_cand_depth": 3.68,
+      "avg_base_depth": 4.05,
+      "avg_cand_move_time": 0.5043,
+      "avg_base_move_time": 0.5014,
+      "avg_cand_nodes": 9530.0,
+      "avg_base_nodes": 11447.0,
+      "moves": [
+        {
+          "ply": 1,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "g8f6",
+          "time_s": 0.516,
+          "depth": 3,
+          "nodes": 8704
+        },
+        {
+          "ply": 2,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "b1c3",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 11264
+        },
+        {
+          "ply": 3,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "f8b4",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8448
+        },
+        {
+          "ply": 4,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "d1d3",
+          "time_s": 0.515,
+          "depth": 3,
+          "nodes": 10240
+        },
+        {
+          "ply": 5,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "d7d5",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 7424
+        },
+        {
+          "ply": 6,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "d4e5",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 10240
+        },
+        {
+          "ply": 7,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "f6e4",
+          "time_s": 0.516,
+          "depth": 3,
+          "nodes": 9472
+        },
+        {
+          "ply": 8,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "a2a3",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 11264
+        },
+        {
+          "ply": 9,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "b4c3",
+          "time_s": 0.515,
+          "depth": 3,
+          "nodes": 10240
+        },
+        {
+          "ply": 10,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "b2c3",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 10752
+        },
+        {
+          "ply": 11,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "c8g4",
+          "time_s": 0.516,
+          "depth": 3,
+          "nodes": 9472
+        },
+        {
+          "ply": 12,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "c1f4",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 10240
+        },
+        {
+          "ply": 13,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "g7g5",
+          "time_s": 0.5,
+          "depth": 2,
+          "nodes": 8448
+        },
+        {
+          "ply": 14,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "f4e3",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 11264
+        },
+        {
+          "ply": 15,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "g4f3",
+          "time_s": 0.516,
+          "depth": 3,
+          "nodes": 9984
+        },
+        {
+          "ply": 16,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "g2f3",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 11776
+        },
+        {
+          "ply": 17,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "c6e5",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8704
+        },
+        {
+          "ply": 18,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "d3b5",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 12288
+        },
+        {
+          "ply": 19,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "c7c6",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 9728
+        },
+        {
+          "ply": 20,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "b5b7",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9984
+        },
+        {
+          "ply": 21,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "e5f3",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 8192
+        },
+        {
+          "ply": 22,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "e1e2",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 11520
+        },
+        {
+          "ply": 23,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "f3e5",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8960
+        },
+        {
+          "ply": 24,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "e3d4",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 12544
+        },
+        {
+          "ply": 25,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "e4d6",
+          "time_s": 0.5,
+          "depth": 3,
+          "nodes": 8704
+        },
+        {
+          "ply": 26,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "b7a8",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 11008
+        },
+        {
+          "ply": 27,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "d8a8",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 10752
+        },
+        {
+          "ply": 28,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "d4e5",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 12544
+        },
+        {
+          "ply": 29,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "e8e7",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 10496
+        },
+        {
+          "ply": 30,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "e5h8",
+          "time_s": 0.515,
+          "depth": 4,
+          "nodes": 11008
+        },
+        {
+          "ply": 31,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "a8h8",
+          "time_s": 0.516,
+          "depth": 5,
+          "nodes": 10752
+        },
+        {
+          "ply": 32,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "e2d3",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 12032
+        },
+        {
+          "ply": 33,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "d6e4",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 10752
+        },
+        {
+          "ply": 34,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "d3e3",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 11520
+        },
+        {
+          "ply": 35,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "h8c3",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9984
+        },
+        {
+          "ply": 36,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "f1d3",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 11520
+        },
+        {
+          "ply": 37,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "c3c5",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 9728
+        },
+        {
+          "ply": 38,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "e3f3",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 11776
+        },
+        {
+          "ply": 39,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "c5f2",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 11008
+        },
+        {
+          "ply": 40,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "f3g4",
+          "time_s": 0.5,
+          "depth": 5,
+          "nodes": 12544
+        },
+        {
+          "ply": 41,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "f7f5",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 8960
+        },
+        {
+          "ply": 42,
+          "player": "Janus-v0.30",
+          "color": "white",
+          "move": "g4h5",
+          "time_s": 0.5,
+          "depth": 6,
+          "nodes": 13056
+        },
+        {
+          "ply": 43,
+          "player": "Janus-v0.34",
+          "color": "black",
+          "move": "f2h4",
+          "time_s": 0.5,
+          "depth": 4,
+          "nodes": 10752
+        }
+      ]
+    }
+  ]
+}

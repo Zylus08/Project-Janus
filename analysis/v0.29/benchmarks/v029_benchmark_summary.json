@@ -1,0 +1,176 @@
+{
+  "depth_4": {
+    "depth": 4,
+    "total_nodes": 26409,
+    "baseline_median_s": 5.297141900009592,
+    "baseline_iqr_s": 2.2648803499905625,
+    "candidate_median_s": 5.0050404999929015,
+    "candidate_iqr_s": 2.0759611499997845,
+    "suite_speedup_pct": 5.514320845665125,
+    "baseline_nps": 4985.518700179087,
+    "candidate_nps": 5276.4807797334415,
+    "nps_gain_pct": 5.8361445829879735,
+    "positions": [
+      {
+        "position_id": "mate_in_one",
+        "nodes": 2712,
+        "base_median": 0.3943412000007811,
+        "base_iqr": 0.11279229999854579,
+        "cand_median": 0.31550370000331895,
+        "cand_iqr": 0.06875040000522858,
+        "speedup_pct": 19.992204719493166,
+        "best_move": "g5g7",
+        "score": 99999
+      },
+      {
+        "position_id": "open_game",
+        "nodes": 18418,
+        "base_median": 3.914357100002235,
+        "base_iqr": 1.8139592000006814,
+        "cand_median": 3.7865921999982675,
+        "cand_iqr": 1.8126688500015007,
+        "speedup_pct": 3.2640072619816523,
+        "best_move": "c3a4",
+        "score": 9
+      },
+      {
+        "position_id": "promotion_tactic",
+        "nodes": 436,
+        "base_median": 0.07432919999700971,
+        "base_iqr": 0.037278850002621766,
+        "cand_median": 0.0767111000022851,
+        "cand_iqr": 0.03595109999878332,
+        "speedup_pct": -3.2045279720099344,
+        "best_move": "a7a8q",
+        "score": 900
+      },
+      {
+        "position_id": "stalemate",
+        "nodes": 0,
+        "base_median": 0.00023360000341199338,
+        "base_iqr": 0.00031970000054570846,
+        "cand_median": 0.0001933999956236221,
+        "cand_iqr": 7.200000618468039e-05,
+        "speedup_pct": 17.208907192296454,
+        "best_move": "None",
+        "score": 0
+      },
+      {
+        "position_id": "startpos",
+        "nodes": 2552,
+        "base_median": 0.5673875000065891,
+        "base_iqr": 0.32931865000136895,
+        "cand_median": 0.5078544999996666,
+        "cand_iqr": 0.2718946999993932,
+        "speedup_pct": 10.492476483220226,
+        "best_move": "g1f3",
+        "score": 0
+      },
+      {
+        "position_id": "white_up_rook",
+        "nodes": 2291,
+        "base_median": 0.34942760000558337,
+        "base_iqr": 0.14651419999427162,
+        "cand_median": 0.3387531999978819,
+        "cand_iqr": 0.04458650000378839,
+        "speedup_pct": 3.0548245208824136,
+        "best_move": "e2f4",
+        "score": 838
+      }
+    ]
+  },
+  "depth_5": {
+    "depth": 5,
+    "total_nodes": 53707,
+    "baseline_median_s": 11.14325269999972,
+    "baseline_iqr_s": 1.0051073500071652,
+    "candidate_median_s": 9.586087100004079,
+    "candidate_iqr_s": 1.5836709499999415,
+    "suite_speedup_pct": 13.97406701542074,
+    "baseline_nps": 4819.687881618384,
+    "candidate_nps": 5602.598791323016,
+    "nps_gain_pct": 16.244016810518872,
+    "positions": [
+      {
+        "position_id": "mate_in_one",
+        "nodes": 8992,
+        "base_median": 1.2280641999968793,
+        "base_iqr": 0.1107725500005472,
+        "cand_median": 1.0818194000021322,
+        "cand_iqr": 0.20997830000487738,
+        "speedup_pct": 11.908563086125202,
+        "best_move": "g5g7",
+        "score": 99999
+      },
+      {
+        "position_id": "open_game",
+        "nodes": 27480,
+        "base_median": 6.391526299994439,
+        "base_iqr": 0.6001914000007673,
+        "cand_median": 5.4774558000062825,
+        "cand_iqr": 0.4789357999979984,
+        "speedup_pct": 14.301286689361689,
+        "best_move": "c3a4",
+        "score": 21
+      },
+      {
+        "position_id": "promotion_tactic",
+        "nodes": 1224,
+        "base_median": 0.17672400000446942,
+        "base_iqr": 0.01701130000219564,
+        "cand_median": 0.15990469999815105,
+        "cand_iqr": 0.026706950000516372,
+        "speedup_pct": 9.517269870472038,
+        "best_move": "a7a8q",
+        "score": 900
+      },
+      {
+        "position_id": "stalemate",
+        "nodes": 0,
+        "base_median": 0.00019449999672360718,
+        "base_iqr": 3.510000169626437e-05,
+        "cand_median": 0.00017360000492772087,
+        "cand_iqr": 0.00010945000394713134,
+        "speedup_pct": 10.745497248303861,
+        "best_move": "None",
+        "score": 0
+      },
+      {
+        "position_id": "startpos",
+        "nodes": 8798,
+        "base_median": 2.0925709000002826,
+        "base_iqr": 0.7434034500001871,
+        "cand_median": 1.9427885999975842,
+        "cand_iqr": 0.7588750499962771,
+        "speedup_pct": 7.157812430760559,
+        "best_move": "g1f3",
+        "score": 10
+      },
+      {
+        "position_id": "white_up_rook",
+        "nodes": 7213,
+        "base_median": 1.083336000003328,
+        "base_iqr": 0.1303768499965372,
+        "cand_median": 0.9308538000041153,
+        "cand_iqr": 0.14457709999987856,
+        "speedup_pct": 14.075245353126299,
+        "best_move": "e2d4",
+        "score": 838
+      }
+    ]
+  },
+  "call_counts": {
+    "depth_4": {
+      "eager_calls": 8241,
+      "lazy_calls": 51,
+      "calls_avoided": 8190,
+      "reduction_pct": 99.381143065162
+    },
+    "depth_5": {
+      "eager_calls": 22241,
+      "lazy_calls": 1779,
+      "calls_avoided": 20462,
+      "reduction_pct": 92.00125893619891
+    }
+  }
+}

@@ -1,11 +1,14 @@
 """UCI interface for Project Janus with interruptible background search."""
 from __future__ import annotations
 
+import argparse
 import sys
 import threading
 import chess
 
 from .search import JanusSearch, MATE_SCORE, MATE_THRESHOLD
+from .time_manager import TimeManager, TimeManagerConfig
+from . import evaluation
 
 
 def _score_to_uci(score: int) -> str:
@@ -22,8 +25,102 @@ def _score_to_uci(score: int) -> str:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Janus UCI Engine")
+    parser.add_argument("--name", type=str, default="Janus 0.2.3")
+    parser.add_argument("--see", action="store_true", help="Enable both SEE ordering and SEE pruning")
+    parser.add_argument("--see-ordering", action="store_true", help="Enable SEE capture ordering")
+    parser.add_argument("--see-pruning", action="store_true", help="Enable SEE quiescence pruning")
+    parser.add_argument("--check-extensions", type=str, default="disabled",
+                        choices=["disabled", "single_reply", "bounded_all_checks"])
+    parser.add_argument("--tt-policy", type=str, default="always_replace",
+                        choices=["always_replace", "depth_preferred", "two_tier"])
+    parser.add_argument("--tt-max-entries", type=int, default=200_000)
+    parser.add_argument("--eval-pawn-structure", action="store_true", help="Enable pawn structure evaluation")
+    parser.add_argument("--eval-rook-files", action="store_true", help="Enable rook file evaluation")
+    parser.add_argument("--eval-king-safety", action="store_true", help="Enable king safety evaluation")
+    parser.add_argument("--disable-uncastled-king-safety", action="store_true", help="Disable v0.39 uncastled king safety terms (K1)")
+    parser.add_argument("--enable-countermove", action="store_true", help="Enable countermove heuristic")
+    parser.add_argument("--enable-history-penalty", action="store_true", help="Enable quiet history penalty")
+    parser.add_argument("--enable-ord1", action="store_true", help="Enable Candidate ORD1 (countermove + history penalty)")
+    parser.add_argument("--enable-rfp", action="store_true", help="Enable reverse futility pruning")
+    parser.add_argument("--rfp-max-depth", type=int, default=2, help="Max depth for reverse futility pruning")
+    parser.add_argument("--rfp-margin", type=int, default=120, help="Per-depth margin (cp) for reverse futility pruning")
+    parser.add_argument("--eval-tapered", action="store_true", help="Enable tapered evaluation")
+    parser.add_argument("--eval-all", action="store_true", help="Enable all evaluation improvements")
+    parser.add_argument("--enable-qsearch-checks", action="store_true", help="Enable checking exploration in quiescence")
+    parser.add_argument("--qsearch-checks-max-ply", type=int, default=1, help="Max quiescence ply for check exploration")
+    parser.add_argument("--time-policy", type=str, default="adaptive",
+                        choices=["adaptive", "reference", "matched_reference", "arm_a", "arm_b", "arm_c"],
+                        help="Time allocation policy: adaptive, reference, matched_reference, arm_a, arm_b, or arm_c")
+    parser.add_argument("--time-reserve", type=int, default=None, help="Override safety reserve in ms")
+    parser.add_argument("--time-mtg", type=int, default=None, help="Override default moves-to-go")
+    parser.add_argument("--time-inc-weight", type=float, default=None, help="Override increment weight")
+    parser.add_argument("--time-max-ratio", type=float, default=None, help="Override max allocation ratio")
+    args = parser.parse_args()
+
+    engine_name = args.name
+    see_ordering = args.see or args.see_ordering
+    see_pruning = args.see or args.see_pruning
+
+    pawn_struct = args.eval_all or args.eval_pawn_structure
+    rook_files = args.eval_all or args.eval_rook_files
+    king_safety = args.eval_all or args.eval_king_safety
+    uncastled_ks = not args.disable_uncastled_king_safety
+    tapered_eval = args.eval_all or args.eval_tapered
+    evaluation.set_evaluation_features(
+        pawn_structure=pawn_struct,
+        rook_files=rook_files,
+        king_safety=king_safety,
+        uncastled_king_safety=uncastled_ks,
+        tapered_eval=tapered_eval,
+    )
+
+    if args.time_policy in ("arm_a",):
+        tm_cfg = TimeManagerConfig.arm_a_original_reference()
+    elif args.time_policy in ("matched_reference", "arm_b"):
+        tm_cfg = TimeManagerConfig.arm_b_matched_reference()
+    elif args.time_policy in ("arm_c",):
+        tm_cfg = TimeManagerConfig.arm_c_adaptive()
+    elif args.time_policy == "reference":
+        tm_cfg = TimeManagerConfig.reference_baseline()
+    else:
+        tm_cfg = TimeManagerConfig()
+
+    overrides = {}
+    if args.time_reserve is not None:
+        overrides["safety_reserve_ms"] = args.time_reserve
+    if args.time_mtg is not None:
+        overrides["default_moves_to_go"] = args.time_mtg
+    if args.time_inc_weight is not None:
+        overrides["increment_weight"] = args.time_inc_weight
+    if args.time_max_ratio is not None:
+        overrides["max_allocation_ratio"] = args.time_max_ratio
+    if overrides:
+        from dataclasses import replace
+        tm_cfg = replace(tm_cfg, **overrides)
+
+    tm = TimeManager(config=tm_cfg)
+
     board = chess.Board()
-    engine = JanusSearch()
+    enable_countermoves = args.enable_ord1 or args.enable_countermove
+    enable_history_malus = args.enable_ord1 or args.enable_history_penalty
+    enable_rfp = args.enable_rfp
+
+    engine = JanusSearch(
+        tt_max_entries=args.tt_max_entries,
+        enable_see_ordering=see_ordering,
+        enable_see_pruning=see_pruning,
+        check_extension_policy=args.check_extensions,
+        tt_replacement_policy=args.tt_policy,
+        enable_qsearch_checks=args.enable_qsearch_checks,
+        qsearch_checks_max_ply=args.qsearch_checks_max_ply,
+        enable_countermoves=enable_countermoves,
+        enable_history_malus=enable_history_malus,
+        enable_rfp=enable_rfp,
+        rfp_max_depth=args.rfp_max_depth,
+        rfp_margin_per_depth=args.rfp_margin,
+        time_manager=tm,
+    )
     search_thread: threading.Thread | None = None
     stop_event: threading.Event | None = None
     output_lock = threading.Lock()
@@ -75,9 +172,72 @@ def main() -> None:
         command = parts[0]
 
         if command == "uci":
-            emit("id name Janus 0.2.0")
+            emit(f"id name {engine_name}")
             emit("id author Project Janus")
+            emit("option name Hash type spin default 16 min 1 max 1024")
+            emit(f"option name SEE_Ordering type check default {'true' if engine.enable_see_ordering else 'false'}")
+            emit(f"option name SEE_Pruning type check default {'true' if engine.enable_see_pruning else 'false'}")
+            emit(f"option name CheckExtensions type combo default {engine.check_extension_policy} var disabled var single_reply var bounded_all_checks")
+            emit(f"option name TT_Policy type combo default {engine.tt_replacement_policy} var always_replace var depth_preferred var two_tier")
+            emit(f"option name Eval_PawnStructure type check default {'true' if evaluation.ENABLE_PAWN_STRUCTURE else 'false'}")
+            emit(f"option name Eval_RookFiles type check default {'true' if evaluation.ENABLE_ROOK_FILES else 'false'}")
+            emit(f"option name Eval_KingSafety type check default {'true' if evaluation.ENABLE_KING_SAFETY else 'false'}")
+            emit(f"option name Eval_Tapered type check default {'true' if evaluation.ENABLE_TAPERED_EVAL else 'false'}")
+            emit(f"option name Time_Policy type combo default {engine.time_manager.config.policy_name} var adaptive var reference var matched_reference var arm_a var arm_b var arm_c")
             emit("uciok")
+
+        elif command == "setoption":
+            try:
+                name_idx = parts.index("name") + 1
+                if "value" in parts:
+                    val_idx = parts.index("value")
+                    opt_name = " ".join(parts[name_idx:val_idx]).lower()
+                    opt_val = " ".join(parts[val_idx + 1:])
+                else:
+                    opt_name = " ".join(parts[name_idx:]).lower()
+                    opt_val = ""
+
+                if opt_name in ("see_ordering", "see ordering"):
+                    engine.enable_see_ordering = (opt_val.lower() == "true")
+                elif opt_name in ("see_pruning", "see pruning"):
+                    engine.enable_see_pruning = (opt_val.lower() == "true")
+                elif opt_name == "see":
+                    val_bool = (opt_val.lower() == "true")
+                    engine.enable_see_ordering = val_bool
+                    engine.enable_see_pruning = val_bool
+                elif opt_name in ("checkextensions", "check extensions"):
+                    if opt_val.lower() in ("disabled", "single_reply", "bounded_all_checks"):
+                        engine.check_extension_policy = opt_val.lower()
+                elif opt_name in ("tt_policy", "tt policy"):
+                    if opt_val.lower() in ("always_replace", "depth_preferred", "two_tier"):
+                        engine.tt_replacement_policy = opt_val.lower()
+                elif opt_name in ("eval_pawnstructure", "eval_pawn_structure", "eval pawnstructure"):
+                    evaluation.set_evaluation_features(pawn_structure=(opt_val.lower() == "true"))
+                elif opt_name in ("eval_rookfiles", "eval_rook_files", "eval rookfiles"):
+                    evaluation.set_evaluation_features(rook_files=(opt_val.lower() == "true"))
+                elif opt_name in ("eval_kingsafety", "eval_king_safety", "eval kingsafety"):
+                    evaluation.set_evaluation_features(king_safety=(opt_val.lower() == "true"))
+                elif opt_name in ("eval_tapered", "eval_tapered_eval", "eval tapered"):
+                    evaluation.set_evaluation_features(tapered_eval=(opt_val.lower() == "true"))
+                elif opt_name in ("time_policy", "time policy"):
+                    if opt_val.lower() in ("arm_a",):
+                        engine.time_manager = TimeManager(config=TimeManagerConfig.arm_a_original_reference())
+                    elif opt_val.lower() in ("matched_reference", "arm_b"):
+                        engine.time_manager = TimeManager(config=TimeManagerConfig.arm_b_matched_reference())
+                    elif opt_val.lower() in ("arm_c",):
+                        engine.time_manager = TimeManager(config=TimeManagerConfig.arm_c_adaptive())
+                    elif opt_val.lower() == "reference":
+                        engine.time_manager = TimeManager(config=TimeManagerConfig.reference_baseline())
+                    elif opt_val.lower() == "adaptive":
+                        engine.time_manager = TimeManager(config=TimeManagerConfig())
+                elif opt_name == "hash":
+                    try:
+                        mb = max(1, int(opt_val))
+                        engine.tt_max_entries = mb * 16384
+                    except ValueError:
+                        pass
+            except (ValueError, IndexError):
+                pass
 
         elif command == "isready":
             emit("readyok")
@@ -86,6 +246,8 @@ def main() -> None:
             stop_search()
             board = chess.Board()
             engine.tt.clear()
+            engine.killers = [[None, None] for _ in range(engine.max_killers_ply)]
+            engine.history = [[0] * 64 for _ in range(64)]
 
         elif command == "position":
             stop_search()
@@ -114,18 +276,86 @@ def main() -> None:
         elif command == "go":
             depth = 5
             time_limit = None
-            if "depth" in parts:
-                try:
-                    depth = max(1, int(parts[parts.index("depth") + 1]))
-                except (ValueError, IndexError):
-                    depth = 5
-            if "movetime" in parts:
-                try:
-                    time_limit = max(1, int(parts[parts.index("movetime") + 1])) / 1000.0
+            movetime_val = None
+            wtime_val = None
+            btime_val = None
+            winc_val = None
+            binc_val = None
+            movestogo_val = None
+            has_depth = False
+
+            i = 1
+            while i < len(parts):
+                token = parts[i].lower()
+                if token == "depth" and i + 1 < len(parts):
+                    try:
+                        depth = max(1, int(parts[i + 1]))
+                        has_depth = True
+                    except ValueError:
+                        pass
+                    i += 2
+                elif token == "movetime" and i + 1 < len(parts):
+                    try:
+                        movetime_val = int(parts[i + 1])
+                    except ValueError:
+                        pass
+                    i += 2
+                elif token == "wtime" and i + 1 < len(parts):
+                    try:
+                        wtime_val = int(parts[i + 1])
+                    except ValueError:
+                        pass
+                    i += 2
+                elif token == "btime" and i + 1 < len(parts):
+                    try:
+                        btime_val = int(parts[i + 1])
+                    except ValueError:
+                        pass
+                    i += 2
+                elif token == "winc" and i + 1 < len(parts):
+                    try:
+                        winc_val = int(parts[i + 1])
+                    except ValueError:
+                        pass
+                    i += 2
+                elif token == "binc" and i + 1 < len(parts):
+                    try:
+                        binc_val = int(parts[i + 1])
+                    except ValueError:
+                        pass
+                    i += 2
+                elif token == "movestogo" and i + 1 < len(parts):
+                    try:
+                        movestogo_val = int(parts[i + 1])
+                    except ValueError:
+                        pass
+                    i += 2
+                elif token == "infinite":
                     depth = 64
-                except (ValueError, IndexError):
-                    time_limit = 1.0
+                    time_limit = None
+                    i += 1
+                else:
+                    i += 1
+
+            if movetime_val is not None:
+                time_limit = engine.time_manager.allocate_time(
+                    board.turn,
+                    movetime=movetime_val,
+                )
+                if not has_depth:
                     depth = 64
+            elif wtime_val is not None or btime_val is not None:
+                time_limit = engine.time_manager.allocate_time(
+                    board.turn,
+                    wtime=wtime_val,
+                    btime=btime_val,
+                    winc=winc_val,
+                    binc=binc_val,
+                    movestogo=movestogo_val,
+                )
+                if not has_depth:
+                    depth = 64
+
             start_search(board, depth, time_limit)
 
         elif command == "stop":
@@ -133,7 +363,7 @@ def main() -> None:
 
         elif command == "quit":
             stop_search()
-            break
+            sys.exit(0)
 
         elif command == "debug":
             continue

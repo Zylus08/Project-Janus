@@ -1,0 +1,1441 @@
+{
+  "metadata": {
+    "match_pgn": "E:\\ChessXML\\project-janus\\analysis\\v0.26\\match\\janus-see-ordering-v026.pgn",
+    "match_csv": "E:\\ChessXML\\project-janus\\analysis\\v0.26\\match\\janus-see-ordering-v026.csv",
+    "match_json": "E:\\ChessXML\\project-janus\\analysis\\v0.26\\match\\janus-see-ordering-v026.json",
+    "total_games": 100,
+    "total_pairs": 50
+  },
+  "reconciliation": {
+    "pgn_games_count": 100,
+    "csv_rows_count": 100,
+    "json_games_count": 100,
+    "reconciliation_mismatches": 0,
+    "all_formats_reconciled": true
+  },
+  "summary": {
+    "tied_score_pairs": 50,
+    "identical_move_sequence_pairs": 48,
+    "divergent_pairs": 2,
+    "identical_move_sequences_pct": 96.0,
+    "divergent_pct": 4.0
+  },
+  "pairs": [
+    {
+      "pair": 1,
+      "opening_id": "scotch_game",
+      "starting_fen": "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3",
+      "game1": {
+        "game_num": 1,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 92
+      },
+      "game2": {
+        "game_num": 2,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 92
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 2,
+      "opening_id": "italian_two_knights",
+      "starting_fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "game1": {
+        "game_num": 3,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 48
+      },
+      "game2": {
+        "game_num": 4,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 48
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 3,
+      "opening_id": "b3_e5_nimzo_larsen",
+      "starting_fen": "rnbqkbnr/pppp1ppp/8/4p3/8/1P6/P1PPPPPP/RNBQKBNR w KQkq - 0 2",
+      "game1": {
+        "game_num": 5,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 113
+      },
+      "game2": {
+        "game_num": 6,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 113
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 4,
+      "opening_id": "d4_e6_horwitz_defense",
+      "starting_fen": "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+      "game1": {
+        "game_num": 7,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 86
+      },
+      "game2": {
+        "game_num": 8,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 86
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 5,
+      "opening_id": "e4_d6_pirc_defense",
+      "starting_fen": "rnbqkbnr/ppp1pppp/3p4/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "game1": {
+        "game_num": 9,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 93
+      },
+      "game2": {
+        "game_num": 10,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 93
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 6,
+      "opening_id": "queens_indian_defense",
+      "starting_fen": "rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 0 4",
+      "game1": {
+        "game_num": 11,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 62
+      },
+      "game2": {
+        "game_num": 12,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 62
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 7,
+      "opening_id": "petroff_defense",
+      "starting_fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "game1": {
+        "game_num": 13,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 50
+      },
+      "game2": {
+        "game_num": 14,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 50
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 8,
+      "opening_id": "d4_Nf6_indian_defense",
+      "starting_fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
+      "game1": {
+        "game_num": 15,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 89
+      },
+      "game2": {
+        "game_num": 16,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 89
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 9,
+      "opening_id": "sicilian_dragon",
+      "starting_fen": "rnbqkb1r/pp2pp1p/3p1np1/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+      "game1": {
+        "game_num": 17,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 55
+      },
+      "game2": {
+        "game_num": 18,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 55
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 10,
+      "opening_id": "Nf3_d5_reti_opening",
+      "starting_fen": "rnbqkbnr/ppp1pppp/8/3p4/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2",
+      "game1": {
+        "game_num": 19,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 86
+      },
+      "game2": {
+        "game_num": 20,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 86
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 11,
+      "opening_id": "sicilian_scheveningen",
+      "starting_fen": "rnbqkb1r/pp3ppp/3ppn2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+      "game1": {
+        "game_num": 21,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 90
+      },
+      "game2": {
+        "game_num": 22,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 90
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 12,
+      "opening_id": "ruy_lopez_berlin",
+      "starting_fen": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "game1": {
+        "game_num": 23,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 32
+      },
+      "game2": {
+        "game_num": 24,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 32
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 13,
+      "opening_id": "c4_e5_english_reversed_sicilian",
+      "starting_fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+      "game1": {
+        "game_num": 25,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 149
+      },
+      "game2": {
+        "game_num": 26,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 149
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 14,
+      "opening_id": "e4_c6_caro_kann",
+      "starting_fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "game1": {
+        "game_num": 27,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 130
+      },
+      "game2": {
+        "game_num": 28,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 130
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 15,
+      "opening_id": "slav_defense",
+      "starting_fen": "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+      "game1": {
+        "game_num": 29,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 99
+      },
+      "game2": {
+        "game_num": 30,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 99
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 16,
+      "opening_id": "queens_gambit_declined",
+      "starting_fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+      "game1": {
+        "game_num": 31,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 88
+      },
+      "game2": {
+        "game_num": 32,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 88
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 17,
+      "opening_id": "d4_f5_dutch_defense",
+      "starting_fen": "rnbqkbnr/ppppp1pp/8/5p2/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+      "game1": {
+        "game_num": 33,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 74
+      },
+      "game2": {
+        "game_num": 34,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 74
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 18,
+      "opening_id": "four_knights_game",
+      "starting_fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R w KQkq - 4 4",
+      "game1": {
+        "game_num": 35,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 101
+      },
+      "game2": {
+        "game_num": 36,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 101
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 19,
+      "opening_id": "french_winawer",
+      "starting_fen": "rnbqk1nr/ppp2ppp/4p3/3p4/1b1PP3/2N5/PPP2PPP/R1BQKBNR w KQkq - 2 4",
+      "game1": {
+        "game_num": 37,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 63
+      },
+      "game2": {
+        "game_num": 38,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 63
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 20,
+      "opening_id": "e4_e5_open_game",
+      "starting_fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "game1": {
+        "game_num": 39,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 52
+      },
+      "game2": {
+        "game_num": 40,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 52
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 21,
+      "opening_id": "gruenfeld_defense",
+      "starting_fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+      "game1": {
+        "game_num": 41,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 93
+      },
+      "game2": {
+        "game_num": 42,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 93
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 22,
+      "opening_id": "Nf3_c5_reti_anglo_slav",
+      "starting_fen": "rnbqkbnr/pp1ppppp/8/2p5/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2",
+      "game1": {
+        "game_num": 43,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 117
+      },
+      "game2": {
+        "game_num": 44,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 117
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 23,
+      "opening_id": "french_advance",
+      "starting_fen": "rnbqkbnr/ppp2ppp/4p3/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+      "game1": {
+        "game_num": 45,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 34
+      },
+      "game2": {
+        "game_num": 46,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 34
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 24,
+      "opening_id": "london_system",
+      "starting_fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq - 2 3",
+      "game1": {
+        "game_num": 47,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 84
+      },
+      "game2": {
+        "game_num": 48,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 84
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 25,
+      "opening_id": "catalan_opening",
+      "starting_fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+      "game1": {
+        "game_num": 49,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 63
+      },
+      "game2": {
+        "game_num": 50,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 63
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 26,
+      "opening_id": "sicilian_classical",
+      "starting_fen": "r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5",
+      "game1": {
+        "game_num": 51,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 35
+      },
+      "game2": {
+        "game_num": 52,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 35
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 27,
+      "opening_id": "sicilian_najdorf",
+      "starting_fen": "rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5",
+      "game1": {
+        "game_num": 53,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 74
+      },
+      "game2": {
+        "game_num": 54,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 74
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 28,
+      "opening_id": "ruy_lopez_morphy",
+      "starting_fen": "r1bqkbnr/1ppp1ppp/p1n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+      "game1": {
+        "game_num": 55,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 68
+      },
+      "game2": {
+        "game_num": 56,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 68
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 29,
+      "opening_id": "italian_giuoco_piano",
+      "starting_fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "game1": {
+        "game_num": 57,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 75
+      },
+      "game2": {
+        "game_num": 58,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 75
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 30,
+      "opening_id": "kings_indian_classical",
+      "starting_fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP2BPPP/R1BQK2R b KQ - 3 6",
+      "game1": {
+        "game_num": 59,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 73
+      },
+      "game2": {
+        "game_num": 60,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 86
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": false,
+      "divergence_ply": 31,
+      "divergence_detail": {
+        "ply": 31,
+        "turn": "Black",
+        "fen_before_move": "r1b2r2/ppp3bk/4p2p/3Pp3/P1P1P3/7P/1P1BB1q1/R1QKR3 b - - 3 21",
+        "game1_mover": "Janus-SEE-Ordering",
+        "game1_move": "g2e4",
+        "game2_mover": "Janus-Baseline",
+        "game2_move": "e6d5"
+      }
+    },
+    {
+      "pair": 31,
+      "opening_id": "bogo_indian_defense",
+      "starting_fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/5N2/PP1BPPPP/RN1QKB1R b KQkq - 3 4",
+      "game1": {
+        "game_num": 61,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 101
+      },
+      "game2": {
+        "game_num": 62,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 101
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 32,
+      "opening_id": "caro_kann_classical",
+      "starting_fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+      "game1": {
+        "game_num": 63,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 52
+      },
+      "game2": {
+        "game_num": 64,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 52
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 33,
+      "opening_id": "sicilian_alapin",
+      "starting_fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/2P5/PP1P1PPP/RNBQKBNR b KQkq - 0 2",
+      "game1": {
+        "game_num": 65,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 73
+      },
+      "game2": {
+        "game_num": 66,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 73
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 34,
+      "opening_id": "nimzo_indian_rubinstein",
+      "starting_fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+      "game1": {
+        "game_num": 67,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 48
+      },
+      "game2": {
+        "game_num": 68,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 48
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 35,
+      "opening_id": "c4_c5_english_symmetrical",
+      "starting_fen": "rnbqkbnr/pp1ppppp/8/2p5/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+      "game1": {
+        "game_num": 69,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 98
+      },
+      "game2": {
+        "game_num": 70,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 98
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 36,
+      "opening_id": "english_four_knights",
+      "starting_fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2P5/2N2N2/PP1PPPPP/R1BQKB1R w KQkq - 4 4",
+      "game1": {
+        "game_num": 71,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 145
+      },
+      "game2": {
+        "game_num": 72,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 145
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 37,
+      "opening_id": "benoni_defense",
+      "starting_fen": "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/8/PP2PPPP/RNBQKBNR w KQkq - 0 4",
+      "game1": {
+        "game_num": 73,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 126
+      },
+      "game2": {
+        "game_num": 74,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 126
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 38,
+      "opening_id": "e4_e6_french_defense",
+      "starting_fen": "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "game1": {
+        "game_num": 75,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 75
+      },
+      "game2": {
+        "game_num": 76,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 75
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 39,
+      "opening_id": "philidor_defense",
+      "starting_fen": "rnbqkbnr/ppp2ppp/3p4/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+      "game1": {
+        "game_num": 77,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 88
+      },
+      "game2": {
+        "game_num": 78,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 88
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 40,
+      "opening_id": "caro_kann_advance",
+      "starting_fen": "rnbqkbnr/pp2pppp/2p5/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+      "game1": {
+        "game_num": 79,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 86
+      },
+      "game2": {
+        "game_num": 80,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 86
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 41,
+      "opening_id": "e4_d5_scandinavian",
+      "starting_fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "game1": {
+        "game_num": 81,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 104
+      },
+      "game2": {
+        "game_num": 82,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 104
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 42,
+      "opening_id": "french_tarrasch",
+      "starting_fen": "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPPN1PPP/R1BQKBNR b KQkq - 1 3",
+      "game1": {
+        "game_num": 83,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 68
+      },
+      "game2": {
+        "game_num": 84,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 68
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 43,
+      "opening_id": "e4_Nf6_alekhine",
+      "starting_fen": "rnbqkb1r/pppppppp/5n2/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 1 2",
+      "game1": {
+        "game_num": 85,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 129
+      },
+      "game2": {
+        "game_num": 86,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 129
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 44,
+      "opening_id": "d4_d5_closed_game",
+      "starting_fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+      "game1": {
+        "game_num": 87,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 86
+      },
+      "game2": {
+        "game_num": 88,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 86
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 45,
+      "opening_id": "c4_Nf6_english_anglo_indian",
+      "starting_fen": "rnbqkb1r/pppppppp/5n2/8/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 1 2",
+      "game1": {
+        "game_num": 89,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 127
+      },
+      "game2": {
+        "game_num": 90,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 127
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": false,
+      "divergence_ply": 32,
+      "divergence_detail": {
+        "ply": 32,
+        "turn": "Black",
+        "fen_before_move": "r3k2r/1pp3p1/8/p2qp2p/PbNPp2P/1Q1nP1P1/1P2KP2/R1B4R b kq - 5 17",
+        "game1_mover": "Janus-SEE-Ordering",
+        "game1_move": "e5d4",
+        "game2_mover": "Janus-Baseline",
+        "game2_move": "d3c1"
+      }
+    },
+    {
+      "pair": 46,
+      "opening_id": "c4_e6_english_agincourt",
+      "starting_fen": "rnbqkbnr/pppp1ppp/4p3/8/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+      "game1": {
+        "game_num": 91,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 69
+      },
+      "game2": {
+        "game_num": 92,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 69
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 47,
+      "opening_id": "Nf3_Nf6_reti_symmetrical",
+      "starting_fen": "rnbqkb1r/pppppppp/5n2/8/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 2 2",
+      "game1": {
+        "game_num": 93,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 105
+      },
+      "game2": {
+        "game_num": 94,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1/2-1/2",
+        "termination": "threefold repetition",
+        "plies": 105
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 48,
+      "opening_id": "e4_c5_sicilian_defense",
+      "starting_fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "game1": {
+        "game_num": 95,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 120
+      },
+      "game2": {
+        "game_num": 96,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "0-1",
+        "termination": "checkmate",
+        "plies": 120
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 49,
+      "opening_id": "e4_g6_modern_defense",
+      "starting_fen": "rnbqkbnr/pppppp1p/6p1/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "game1": {
+        "game_num": 97,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 77
+      },
+      "game2": {
+        "game_num": 98,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 77
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    },
+    {
+      "pair": 50,
+      "opening_id": "queens_gambit_accepted",
+      "starting_fen": "rnbqkbnr/ppp1pppp/8/8/2pP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+      "game1": {
+        "game_num": 99,
+        "white": "Janus-Baseline",
+        "black": "Janus-SEE-Ordering",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 99
+      },
+      "game2": {
+        "game_num": 100,
+        "white": "Janus-SEE-Ordering",
+        "black": "Janus-Baseline",
+        "result": "1-0",
+        "termination": "checkmate",
+        "plies": 99
+      },
+      "treatment_points": 1.0,
+      "control_points": 1.0,
+      "pair_delta_pct": 0.0,
+      "score_tied": true,
+      "move_sequences_identical": true,
+      "divergence_ply": null,
+      "divergence_detail": null
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "milestone": "v0.38",
+  "audit_timestamp_utc": "2026-10-31T09:13:51.001582+00:00",
+  "final_verdict": "VERIFIED_VALID",
+  "total_games_verified": 200,
+  "total_moves_verified": 13237,
+  "arm_audits": {
+    "primary_fischer": {
+      "mode": "primary_fischer",
+      "passed": true,
+      "valid_games": 100,
+      "total_attempts": 100,
+      "infrastructure_failures": 0,
+      "complete_pairs": 50,
+      "moves_checked": 4278,
+      "errors": [],
+      "warnings": []
+    },
+    "historical_depth3": {
+      "mode": "historical_depth3",
+      "passed": true,
+      "valid_games": 50,
+      "total_attempts": 50,
+      "infrastructure_failures": 0,
+      "complete_pairs": 25,
+      "moves_checked": 4811,
+      "errors": [],
+      "warnings": []
+    },
+    "calibrated_elo": {
+      "mode": "calibrated_elo",
+      "passed": true,
+      "valid_games": 50,
+      "total_attempts": 50,
+      "infrastructure_failures": 0,
+      "complete_pairs": 25,
+      "moves_checked": 4148,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  "independent_recalculations": {
+    "primary_fischer": {
+      "n_pairs": 50,
+      "mean_pair_score": 0.0,
+      "score_pct": 0.0,
+      "t_statistic": 0.0,
+      "df": 49,
+      "standard_error": 0.0,
+      "sign_test_p": 0.0,
+      "boot_95_ci_pct": [
+        0.0,
+        0.0
+      ],
+      "elo": null
+    },
+    "historical_depth3": {
+      "n_pairs": 25,
+      "mean_pair_score": 0.13,
+      "score_pct": 13.0,
+      "t_statistic": -8.9959,
+      "df": 24,
+      "standard_error": 0.0411,
+      "sign_test_p": 6e-06,
+      "boot_95_ci_pct": [
+        6.0,
+        21.0
+      ],
+      "elo": -330.2
+    },
+    "calibrated_elo": {
+      "n_pairs": 25,
+      "mean_pair_score": 0.56,
+      "score_pct": 56.0,
+      "t_statistic": 0.7682,
+      "df": 24,
+      "standard_error": 0.0781,
+      "sign_test_p": 0.480682,
+      "boot_95_ci_pct": [
+        41.0,
+        71.0
+      ],
+      "elo": 41.9
+    }
+  },
+  "recalculation_discrepancies": [],
+  "sha256_manifest_entries": 23
+}

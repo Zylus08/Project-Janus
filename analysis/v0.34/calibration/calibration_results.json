@@ -1,0 +1,144 @@
+{
+  "uncalibrated_config": {
+    "doubled_pawn_penalty_eg": 15,
+    "king_center_bonus_eg": 12,
+    "isolated_pawn_penalty_eg": 18,
+    "rook_semi_open_file_bonus_mg": 10,
+    "isolated_pawn_penalty_mg": 12,
+    "king_shield_bonus_mg": 8,
+    "bishop_pair_bonus": 25,
+    "doubled_pawn_penalty_mg": 10,
+    "rook_open_file_bonus_mg": 18
+  },
+  "calibrated_config": {
+    "doubled_pawn_penalty_eg": 24,
+    "king_center_bonus_eg": 8,
+    "isolated_pawn_penalty_eg": 22,
+    "rook_semi_open_file_bonus_mg": 6,
+    "isolated_pawn_penalty_mg": 18,
+    "king_shield_bonus_mg": 18,
+    "bishop_pair_bonus": 18,
+    "doubled_pawn_penalty_mg": 16,
+    "rook_open_file_bonus_mg": 26
+  },
+  "uncalibrated_results": {
+    "train": {
+      "mse": 0.10511981935542351,
+      "mae": 0.23263991493688665,
+      "accuracy": 58.04953560371517,
+      "count": 646
+    },
+    "val": {
+      "mse": 0.09383189477543884,
+      "mae": 0.23903016565319715,
+      "accuracy": 36.283185840707965,
+      "count": 226
+    },
+    "test": {
+      "mse": 0.10386980273450727,
+      "mae": 0.2539814092591732,
+      "accuracy": 61.40350877192983,
+      "count": 228
+    }
+  },
+  "calibrated_results": {
+    "train": {
+      "mse": 0.10283160619463728,
+      "mae": 0.23083835721551335,
+      "accuracy": 58.204334365325074,
+      "count": 646
+    },
+    "val": {
+      "mse": 0.09484426506073246,
+      "mae": 0.24156642335997047,
+      "accuracy": 35.39823008849557,
+      "count": 226
+    },
+    "test": {
+      "mse": 0.1082201036598532,
+      "mae": 0.2593058232674025,
+      "accuracy": 58.77192982456141,
+      "count": 228
+    }
+  },
+  "out_of_sample_comparison": {
+    "val_mse_change": 0.0010123702852936206,
+    "test_mse_change": 0.004350300925345926,
+    "val_mae_change": 0.0025362577067733205,
+    "test_mae_change": 0.005324414008229306,
+    "val_accuracy_change": -0.8849557522123916,
+    "test_accuracy_change": -2.6315789473684177,
+    "generalization_verdict": "overfit_degradation"
+  },
+  "calibration_tuning_info": {
+    "initial_train_loss": 0.10511981935542351,
+    "initial_val_loss": 0.09383189477543884,
+    "final_train_loss": 0.10283160619463728,
+    "final_val_loss": 0.09484426506073246,
+    "tuning_history": [
+      {
+        "pass": 1,
+        "parameter": "doubled_pawn_penalty_mg",
+        "new_value": 16,
+        "train_loss": 0.10474894405168192,
+        "val_loss": 0.09383699029514997
+      },
+      {
+        "pass": 1,
+        "parameter": "doubled_pawn_penalty_eg",
+        "new_value": 24,
+        "train_loss": 0.10461513314091159,
+        "val_loss": 0.09368873476325332
+      },
+      {
+        "pass": 1,
+        "parameter": "isolated_pawn_penalty_mg",
+        "new_value": 18,
+        "train_loss": 0.10423718369442153,
+        "val_loss": 0.09426402651556412
+      },
+      {
+        "pass": 1,
+        "parameter": "king_shield_bonus_mg",
+        "new_value": 18,
+        "train_loss": 0.10331921328755868,
+        "val_loss": 0.09434964405449807
+      },
+      {
+        "pass": 1,
+        "parameter": "rook_open_file_bonus_mg",
+        "new_value": 26,
+        "train_loss": 0.1031554478795642,
+        "val_loss": 0.09450844282674183
+      },
+      {
+        "pass": 1,
+        "parameter": "rook_semi_open_file_bonus_mg",
+        "new_value": 6,
+        "train_loss": 0.10312851631919721,
+        "val_loss": 0.09459406422975358
+      },
+      {
+        "pass": 1,
+        "parameter": "bishop_pair_bonus",
+        "new_value": 18,
+        "train_loss": 0.10285139749298024,
+        "val_loss": 0.09445086475123192
+      },
+      {
+        "pass": 2,
+        "parameter": "isolated_pawn_penalty_eg",
+        "new_value": 22,
+        "train_loss": 0.10284468987057636,
+        "val_loss": 0.09476153291524823
+      },
+      {
+        "pass": 2,
+        "parameter": "king_center_bonus_eg",
+        "new_value": 8,
+        "train_loss": 0.10283160619463728,
+        "val_loss": 0.09484426506073246
+      }
+    ]
+  }
+}

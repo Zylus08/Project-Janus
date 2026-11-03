@@ -1,0 +1,130 @@
+{
+  "milestone": "v0.39",
+  "total_match_games": 100,
+  "sample_games_analyzed": 30,
+  "sampling_methodology": "Sequential prefix (Games 1-30)",
+  "eval_drop_threshold_cp": 150,
+  "total_blunders_detected": 120,
+  "mate_concessions_count": 24,
+  "taxonomy_summary": [
+    {
+      "category": "Shallow Search Horizon (Depth <= 1)",
+      "count": 48,
+      "share_of_sample_blunders_pct": 40.0,
+      "mean_centipawn_drop": 278.6,
+      "mean_ply": 22.6
+    },
+    {
+      "category": "Piece Coordination / Passivity",
+      "count": 32,
+      "share_of_sample_blunders_pct": 26.7,
+      "mean_centipawn_drop": 335.2,
+      "mean_ply": 20.9
+    },
+    {
+      "category": "King Safety / Central Exposure",
+      "count": 18,
+      "share_of_sample_blunders_pct": 15.0,
+      "mean_centipawn_drop": 246.1,
+      "mean_ply": 32.8
+    },
+    {
+      "category": "Pawn Structure Degradation",
+      "count": 12,
+      "share_of_sample_blunders_pct": 10.0,
+      "mean_centipawn_drop": 330.3,
+      "mean_ply": 22.8
+    },
+    {
+      "category": "Tactical Pins & Checks",
+      "count": 8,
+      "share_of_sample_blunders_pct": 6.7,
+      "mean_centipawn_drop": 272.1,
+      "mean_ply": 12.9
+    },
+    {
+      "category": "Hanging Pieces",
+      "count": 2,
+      "share_of_sample_blunders_pct": 1.7,
+      "mean_centipawn_drop": 211.0,
+      "mean_ply": 22.0
+    }
+  ],
+  "case_studies": [
+    {
+      "game": 1,
+      "pair": 1,
+      "ply": 16,
+      "janus_color": "white",
+      "fen_before": "r1b1k2r/p1p3pp/2p2q2/3p4/1b3Bn1/2NB4/PPP2PPP/R2QK2R w KQkq - 0 11",
+      "move_played": "f4c7",
+      "stockfish_best": "f4g3",
+      "is_mate_conceded": true,
+      "mate_plies": 1,
+      "eval_drop_cp": null,
+      "category": "Shallow Search Horizon (Depth <= 1)",
+      "clock_rem_ms": 2339.3,
+      "depth": 0.0
+    },
+    {
+      "game": 2,
+      "pair": 1,
+      "ply": 5,
+      "janus_color": "black",
+      "fen_before": "r1bqkb1r/pppp1ppp/2n5/4P3/4n3/5N2/PPP1QPPP/RNB1KB1R b KQkq - 1 5",
+      "move_played": "f8b4",
+      "stockfish_best": "e4c5",
+      "is_mate_conceded": false,
+      "mate_plies": null,
+      "eval_drop_cp": 301,
+      "category": "Tactical Pins & Checks",
+      "clock_rem_ms": 2730.6,
+      "depth": 2.0
+    },
+    {
+      "game": 2,
+      "pair": 1,
+      "ply": 7,
+      "janus_color": "black",
+      "fen_before": "r1bqk2r/pppp1ppp/2n5/4P3/1b2n3/2P2N2/PP2QPPP/RNB1KB1R b KQkq - 0 6",
+      "move_played": "e4f2",
+      "stockfish_best": "d7d5",
+      "is_mate_conceded": false,
+      "mate_plies": null,
+      "eval_drop_cp": 226,
+      "category": "Piece Coordination / Passivity",
+      "clock_rem_ms": 2643.2,
+      "depth": 2.0
+    },
+    {
+      "game": 2,
+      "pair": 1,
+      "ply": 15,
+      "janus_color": "black",
+      "fen_before": "r1bqk2r/ppp2Bpp/2nb4/8/8/2P2N2/PP3QPP/RNB1K2R b KQkq - 0 10",
+      "move_played": "e8f7",
+      "stockfish_best": "e8f8",
+      "is_mate_conceded": false,
+      "mate_plies": null,
+      "eval_drop_cp": 172,
+      "category": "King Safety / Central Exposure",
+      "clock_rem_ms": 2346.6,
+      "depth": 3.0
+    },
+    {
+      "game": 2,
+      "pair": 1,
+      "ply": 23,
+      "janus_color": "black",
+      "fen_before": "r1bq3r/ppp2Q1p/2nb3k/6N1/8/2P5/PP4PP/RNB1K2R b KQ - 0 14",
+      "move_played": "d8g5",
+      "stockfish_best": "d6e7",
+      "is_mate_conceded": true,
+      "mate_plies": 2,
+      "eval_drop_cp": null,
+      "category": "Shallow Search Horizon (Depth <= 1)",
+      "clock_rem_ms": 2063.2,
+      "depth": 1.0
+    }
+  ]
+}

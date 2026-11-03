@@ -1,0 +1,201 @@
+{
+  "milestone": "v0.37",
+  "description": "Project Janus v0.37 Move Telemetry and Time Diagnostics",
+  "arms": {
+    "arm_a": {
+      "total_moves": 9410,
+      "duration_ms": {
+        "median": 94.0,
+        "mean": 97.2,
+        "std": 22.6,
+        "p10": 78.0,
+        "p25": 93.0,
+        "p75": 94.0,
+        "p90": 110.0,
+        "p95": 125.0,
+        "p99": 156.0
+      },
+      "target_alloc_ms": {
+        "median": 78.8,
+        "mean": 78.7
+      },
+      "overshoot_ms": {
+        "mean": 18.49,
+        "max": 790.4,
+        "pct_moves_with_overshoot": 99.53
+      },
+      "remaining_clock_ms": {
+        "mean": 3149.9,
+        "median": 3154.0,
+        "min": 317.0,
+        "p10": 3043.0,
+        "p25": 3112.0,
+        "p75": 3213.0
+      },
+      "search_effort": {
+        "mean_depth": 1.86,
+        "mean_nodes_per_move": 872.7,
+        "total_nodes": 8212316
+      },
+      "safety_and_events": {
+        "emergency_allocations": 0,
+        "deadline_stops": 9410,
+        "fallback_moves": 505,
+        "time_forfeits": 0
+      },
+      "phases": {
+        "early_opening_plies_1_20": {
+          "moves": 2000,
+          "median_duration_ms": 78.0,
+          "mean_duration_ms": 84.5,
+          "mean_nodes": 1047.9,
+          "mean_depth": 1.53
+        },
+        "middlegame_plies_21_60": {
+          "moves": 3743,
+          "median_duration_ms": 94.0,
+          "mean_duration_ms": 101.3,
+          "mean_nodes": 752.9,
+          "mean_depth": 1.37
+        },
+        "endgame_plies_61_plus": {
+          "moves": 3667,
+          "median_duration_ms": 94.0,
+          "mean_duration_ms": 99.8,
+          "mean_nodes": 899.5,
+          "mean_depth": 2.53
+        }
+      }
+    },
+    "arm_b": {
+      "total_moves": 9082,
+      "duration_ms": {
+        "median": 109.0,
+        "mean": 1019.0,
+        "std": 86015.0,
+        "p10": 94.0,
+        "p25": 94.0,
+        "p75": 110.0,
+        "p90": 125.0,
+        "p95": 125.0,
+        "p99": 157.0
+      },
+      "target_alloc_ms": {
+        "median": 93.4,
+        "mean": 91.2
+      },
+      "overshoot_ms": {
+        "mean": 927.84,
+        "max": 8196849.0,
+        "pct_moves_with_overshoot": 98.5
+      },
+      "remaining_clock_ms": {
+        "mean": 2777.2,
+        "median": 2851.0,
+        "min": 100.0,
+        "p10": 2573.0,
+        "p25": 2793.0,
+        "p75": 2875.0
+      },
+      "search_effort": {
+        "mean_depth": 1.9,
+        "mean_nodes_per_move": 1004.6,
+        "total_nodes": 9124022
+      },
+      "safety_and_events": {
+        "emergency_allocations": 0,
+        "deadline_stops": 9081,
+        "fallback_moves": 419,
+        "time_forfeits": 0
+      },
+      "phases": {
+        "early_opening_plies_1_20": {
+          "moves": 1997,
+          "median_duration_ms": 109.0,
+          "mean_duration_ms": 111.1,
+          "mean_nodes": 1395.9,
+          "mean_depth": 1.7
+        },
+        "middlegame_plies_21_60": {
+          "moves": 3712,
+          "median_duration_ms": 109.0,
+          "mean_duration_ms": 107.8,
+          "mean_nodes": 849.4,
+          "mean_depth": 1.45
+        },
+        "endgame_plies_61_plus": {
+          "moves": 3373,
+          "median_duration_ms": 94.0,
+          "mean_duration_ms": 2559.2,
+          "mean_nodes": 943.8,
+          "mean_depth": 2.51
+        }
+      }
+    },
+    "arm_c": {
+      "total_moves": 8939,
+      "duration_ms": {
+        "median": 141.0,
+        "mean": 1993.1,
+        "std": 122604.5,
+        "p10": 110.0,
+        "p25": 125.0,
+        "p75": 172.0,
+        "p90": 187.0,
+        "p95": 188.0,
+        "p99": 204.0
+      },
+      "target_alloc_ms": {
+        "median": 132.4,
+        "mean": 132.7
+      },
+      "overshoot_ms": {
+        "mean": 1860.44,
+        "max": 8197013.0,
+        "pct_moves_with_overshoot": 99.78
+      },
+      "remaining_clock_ms": {
+        "mean": 1462.3,
+        "median": 1421.0,
+        "min": 100.0,
+        "p10": 452.0,
+        "p25": 844.0,
+        "p75": 2084.0
+      },
+      "search_effort": {
+        "mean_depth": 2.0,
+        "mean_nodes_per_move": 1418.1,
+        "total_nodes": 12676191
+      },
+      "safety_and_events": {
+        "emergency_allocations": 0,
+        "deadline_stops": 8939,
+        "fallback_moves": 282,
+        "time_forfeits": 0
+      },
+      "phases": {
+        "early_opening_plies_1_20": {
+          "moves": 1997,
+          "median_duration_ms": 172.0,
+          "mean_duration_ms": 180.1,
+          "mean_nodes": 2428.4,
+          "mean_depth": 2.09
+        },
+        "middlegame_plies_21_60": {
+          "moves": 3682,
+          "median_duration_ms": 156.0,
+          "mean_duration_ms": 2405.9,
+          "mean_nodes": 1153.5,
+          "mean_depth": 1.55
+        },
+        "endgame_plies_61_plus": {
+          "moves": 3260,
+          "median_duration_ms": 125.0,
+          "mean_duration_ms": 2637.5,
+          "mean_nodes": 1098.1,
+          "mean_depth": 2.46
+        }
+      }
+    }
+  }
+}

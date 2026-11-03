@@ -1,0 +1,98 @@
+{
+  "milestone": "v0.37",
+  "experiment_name": "time_management_ablation_study",
+  "timestamp_frozen_utc": "2026-10-30T10:00:00Z",
+  "baseline_commit": "42cb05a",
+  "branch": "v0.3-benchmark-harness",
+  "time_control": {
+    "mode": "fischer_increment",
+    "base_time_ms": 3000,
+    "inc_time_ms": 100
+  },
+  "arms": {
+    "arm_a": {
+      "name": "Janus-v0.37-ArmA",
+      "cmd_flag": "--time-policy arm_a",
+      "description": "Original Reference: reserve=0ms, mtg=40, inc_weight=0.00, max_ratio=0.20",
+      "config": {
+        "safety_reserve_ms": 0,
+        "default_moves_to_go": 40,
+        "increment_weight": 0.0,
+        "min_allocation_ms": 10,
+        "max_allocation_ratio": 0.20,
+        "policy_name": "arm_a"
+      }
+    },
+    "arm_b": {
+      "name": "Janus-v0.37-ArmB",
+      "cmd_flag": "--time-policy arm_b",
+      "description": "Matched Reference: reserve=50ms, mtg=30, inc_weight=0.00, max_ratio=0.20",
+      "config": {
+        "safety_reserve_ms": 50,
+        "default_moves_to_go": 30,
+        "increment_weight": 0.0,
+        "min_allocation_ms": 10,
+        "max_allocation_ratio": 0.20,
+        "policy_name": "arm_b"
+      }
+    },
+    "arm_c": {
+      "name": "Janus-v0.37-ArmC",
+      "cmd_flag": "--time-policy arm_c",
+      "description": "Adaptive Candidate: reserve=50ms, mtg=30, inc_weight=0.85, max_ratio=0.20",
+      "config": {
+        "safety_reserve_ms": 50,
+        "default_moves_to_go": 30,
+        "increment_weight": 0.85,
+        "min_allocation_ms": 10,
+        "max_allocation_ratio": 0.20,
+        "policy_name": "arm_c"
+      }
+    }
+  },
+  "comparisons": {
+    "b_vs_c": {
+      "title": "Primary: Arm B vs Arm C (Increment Weight Isolation)",
+      "candidate": "arm_c",
+      "baseline": "arm_b",
+      "target_games": 100,
+      "target_pairs": 50
+    },
+    "a_vs_b": {
+      "title": "Secondary: Arm A vs Arm B (Reserve & Horizon Combined)",
+      "candidate": "arm_b",
+      "baseline": "arm_a",
+      "target_games": 100,
+      "target_pairs": 50
+    },
+    "a_vs_c": {
+      "title": "Contextual: Arm A vs Arm C (Combined Policy Reproduction)",
+      "candidate": "arm_c",
+      "baseline": "arm_a",
+      "target_games": 100,
+      "target_pairs": 50
+    }
+  },
+  "openings": {
+    "file": "benchmarks/openings.json",
+    "sha256": "e883cd4908b73df70b4c1363b00b581caec249494aa1a7720d184c68aaf53af3",
+    "count": 50,
+    "seed": 42
+  },
+  "frozen_hashes": {
+    "analysis/v0.37/preregistration.md": "2551ac66cd2568cf2c09d28e721d5316af8dd5c90afd297bf8aedf0c418142c2",
+    "benchmarks/openings.json": "e883cd4908b73df70b4c1363b00b581caec249494aa1a7720d184c68aaf53af3",
+    "src/janus/time_manager.py": "7ab6de9760472812a279b039938c4a5e26c81bea6e80f95e76505ee3d5e17983",
+    "src/janus/search.py": "6c00cc841fb417ebed39895cfe2d19a9f87fbd16fad355b17350842de824b7c9",
+    "src/janus/uci.py": "e003bbe83acd0fd85b8256c5072281900a902764cf195bd2b688589ea8df17ca",
+    "src/janus/engine_session.py": "bfad2fa36cc031e951e24504752088b511ed818d9658fc405f1b680910d9612b",
+    "src/janus/evaluation.py": "957f80b6456ea4fe7a554f8ca7878080740ae4a5d8ab04e91352cebd0f7eb576"
+  },
+  "primary_endpoint": {
+    "comparison": "b_vs_c",
+    "metric": "paired_mean_score_difference",
+    "null_value": 0.00,
+    "alpha": 0.05,
+    "two_sided": true
+  }
+}

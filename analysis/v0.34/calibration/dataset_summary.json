@@ -1,0 +1,25 @@
+{
+  "total_samples": 1100,
+  "source": "v033_match_500ms.pgn (100 games, 50 opening pairs)",
+  "train_samples": 646,
+  "val_samples": 226,
+  "test_samples": 228,
+  "phase_distribution": {
+    "train": {
+      "opening_mg (16-24)": 273,
+      "midgame (9-15)": 163,
+      "endgame (0-8)": 210
+    },
+    "val": {
+      "opening_mg (16-24)": 75,
+      "midgame (9-15)": 62,
+      "endgame (0-8)": 89
+    },
+    "test": {
+      "opening_mg (16-24)": 86,
+      "midgame (9-15)": 62,
+      "endgame (0-8)": 80
+    }
+  },
+  "leakage_prevention": "Strict partitioning by Pair ID: Train (pairs 1-30), Val (pairs 31-40), Test (pairs 41-50)"
+}

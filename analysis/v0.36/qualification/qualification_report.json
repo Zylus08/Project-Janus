@@ -1,0 +1,58 @@
+{
+  "qualification_passed": true,
+  "timestamp_utc": "2026-10-30T06:47:52.148031+00:00",
+  "checks": {
+    "target_completion": true,
+    "zero_infrastructure_failures": true,
+    "policy_identity": true,
+    "opening_pair_symmetry": true,
+    "moves_csv_exists": true,
+    "pgn_moves_legal": true
+  },
+  "summary": {
+    "planned_games": 4,
+    "planned_pairs": 2,
+    "attempted_games": 4,
+    "valid_completed_games": 4,
+    "infrastructure_failures": 0,
+    "retried_attempts": 0,
+    "complete_valid_pairs": 2,
+    "incomplete_pairs": 0,
+    "target_met": true,
+    "candidate_wins": 0,
+    "candidate_draws": 4,
+    "candidate_losses": 0,
+    "candidate_score": 2.0,
+    "candidate_score_pct": 50.0,
+    "estimated_elo_diff": -0.0,
+    "elo_95_ci": [
+      -340.5,
+      340.5
+    ],
+    "by_color": {
+      "white": {
+        "wins": 0,
+        "draws": 2,
+        "losses": 0,
+        "games": 2,
+        "score_pts": 1.0
+      },
+      "black": {
+        "wins": 0,
+        "draws": 2,
+        "losses": 0,
+        "games": 2,
+        "score_pts": 1.0
+      }
+    },
+    "pairs_summary": {
+      "total_planned_pairs": 2,
+      "completed_valid_pairs": 2,
+      "pairs_won": 0,
+      "pairs_drawn": 2,
+      "pairs_lost": 0,
+      "decisive_pairs": 0,
+      "sign_test_p_value": null
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-10-30T07:30:43.137418+00:00",
+  "total_valid_games": 100,
+  "complete_opening_pairs": 50,
+  "candidate": {
+    "name": "Janus-v0.36-Adaptive",
+    "wins": 36,
+    "draws": 58,
+    "losses": 6,
+    "score": 65.0,
+    "score_pct": 65.0,
+    "estimated_elo": 107.5,
+    "elo_t_ci_95": [
+      63.8,
+      154.9
+    ],
+    "elo_bootstrap_ci_95": [
+      66.8,
+      151.3
+    ]
+  },
+  "colour_performance": {
+    "white": {
+      "games": 50,
+      "wins": 18,
+      "draws": 30,
+      "losses": 2,
+      "score": 33.0,
+      "score_pct": 66.0
+    },
+    "black": {
+      "games": 50,
+      "wins": 18,
+      "draws": 28,
+      "losses": 4,
+      "score": 32.0,
+      "score_pct": 64.0
+    }
+  },
+  "paired_inference": {
+    "pairs_count": 50,
+    "pairs_won": 27,
+    "pairs_drawn": 19,
+    "pairs_lost": 4,
+    "decisive_pairs": 31,
+    "mean_paired_score": 0.65,
+    "mean_paired_delta": 0.15,
+    "std_paired_delta": 0.2082,
+    "se_paired_delta": 0.0295,
+    "t_statistic": 5.0932,
+    "t_test_df": 49,
+    "t_test_two_sided_p_value": 1e-05,
+    "t_ci_95_delta": [
+      0.0908,
+      0.2092
+    ],
+    "t_ci_95_score": [
+      0.5908,
+      0.7092
+    ],
+    "bootstrap_samples": 10000,
+    "bootstrap_seed": 42,
+    "bootstrap_ci_95_delta": [
+      0.095,
+      0.205
+    ],
+    "bootstrap_ci_95_score": [
+      0.595,
+      0.705
+    ],
+    "paired_sign_test_p_value": 3e-05
+  }
+}

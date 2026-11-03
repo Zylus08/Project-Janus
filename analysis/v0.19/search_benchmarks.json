@@ -1,0 +1,1480 @@
+{
+  "metadata": {
+    "title": "Project Janus v0.19 Controlled Benchmark: Null Move Pruning (NMP)",
+    "date": "2026-10-16",
+    "base_commit": "a50d538532f29fee26667567c56a840aaa778bb4",
+    "positions_count": 6,
+    "depths": [
+      3,
+      4,
+      5
+    ],
+    "repetitions": 5,
+    "methodology": "Paired interleaved execution with strictly alternating order"
+  },
+  "paired_benchmarks": {
+    "depth_3": {
+      "depth": 3,
+      "baseline_nodes": 13439,
+      "candidate_nodes": 13439,
+      "node_delta": 0,
+      "node_percentage_delta": 0.0,
+      "baseline_time_stats": {
+        "median": 1.156,
+        "mean": 1.0028,
+        "min": 0.687,
+        "max": 1.25,
+        "iqr": 0.555,
+        "stdev": 0.29047
+      },
+      "candidate_time_stats": {
+        "median": 1.14,
+        "mean": 0.994,
+        "min": 0.703,
+        "max": 1.235,
+        "iqr": 0.508,
+        "stdev": 0.267308
+      },
+      "median_time_delta_seconds": -0.016,
+      "median_time_percentage_delta": -1.3841,
+      "candidate_totals": {
+        "nmp_considered": 0,
+        "nmp_attempts": 0,
+        "nmp_fail_highs": 0,
+        "nmp_fail_lows": 0,
+        "nmp_verifications": 0,
+        "nmp_verification_failures": 0,
+        "nmp_cutoffs": 0,
+        "lmr_considered": 0,
+        "lmr_reduced_searches": 0,
+        "lmr_reduced_plies": 0,
+        "lmr_researches": 0,
+        "lmr_fail_lows": 0,
+        "lmr_fail_highs": 0,
+        "lmr_cutoffs": 0,
+        "scout_searches": 355,
+        "scout_fail_highs": 6,
+        "researches": 3,
+        "beta_cutoffs": 350,
+        "aspiration_iterations": 8,
+        "aspiration_fail_lows": 0,
+        "aspiration_fail_highs": 0,
+        "aspiration_researches": 0,
+        "aspiration_fallbacks": 0
+      },
+      "baseline_totals": {
+        "nmp_considered": 0,
+        "nmp_attempts": 0,
+        "nmp_fail_highs": 0,
+        "nmp_fail_lows": 0,
+        "nmp_verifications": 0,
+        "nmp_verification_failures": 0,
+        "nmp_cutoffs": 0,
+        "lmr_considered": 0,
+        "lmr_reduced_searches": 0,
+        "lmr_reduced_plies": 0,
+        "lmr_researches": 0,
+        "lmr_fail_lows": 0,
+        "lmr_fail_highs": 0,
+        "lmr_cutoffs": 0,
+        "scout_searches": 355,
+        "scout_fail_highs": 6,
+        "researches": 3,
+        "beta_cutoffs": 350,
+        "aspiration_iterations": 8,
+        "aspiration_fail_lows": 0,
+        "aspiration_fail_highs": 0,
+        "aspiration_researches": 0,
+        "aspiration_fallbacks": 0
+      },
+      "per_position_comparison": [
+        {
+          "id": "startpos",
+          "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+          "baseline_score": 12,
+          "candidate_score": 12,
+          "score_match": true,
+          "baseline_move": "g1f3",
+          "candidate_move": "g1f3",
+          "move_match": true,
+          "baseline_nodes": 1144,
+          "candidate_nodes": 1144,
+          "node_delta": 0,
+          "node_pct": 0.0,
+          "pv_legal": true,
+          "candidate_pv": "g1f3 g8f6 b1c3",
+          "baseline_pv": "g1f3 g8f6 b1c3"
+        },
+        {
+          "id": "open_game",
+          "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+          "baseline_score": 12,
+          "candidate_score": 12,
+          "score_match": true,
+          "baseline_move": "c3a4",
+          "candidate_move": "c3a4",
+          "move_match": true,
+          "baseline_nodes": 9445,
+          "candidate_nodes": 9445,
+          "node_delta": 0,
+          "node_pct": 0.0,
+          "pv_legal": true,
+          "candidate_pv": "c3a4 c5b4 c1e3",
+          "baseline_pv": "c3a4 c5b4 c1e3"
+        },
+        {
+          "id": "white_up_rook",
+          "fen": "4k3/8/8/8/8/8/4N3/4K2R w K - 0 1",
+          "baseline_score": 838,
+          "candidate_score": 838,
+          "score_match": true,
+          "baseline_move": "e2f4",
+          "candidate_move": "e2f4",
+          "move_match": true,
+          "baseline_nodes": 1144,
+          "candidate_nodes": 1144,
+          "node_delta": 0,
+          "node_pct": 0.0,
+          "pv_legal": true,
+          "candidate_pv": "e2f4 e8f8 f4d5",
+          "baseline_pv": "e2f4 e8f8 f4d5"
+        },
+        {
+          "id": "mate_in_one",
+          "fen": "8/7k/5K2/6Q1/8/8/8/8 w - - 0 1",
+          "baseline_score": 99999,
+          "candidate_score": 99999,
+          "score_match": true,
+          "baseline_move": "g5g7",
+          "candidate_move": "g5g7",
+          "move_match": true,
+          "baseline_nodes": 1516,
+          "candidate_nodes": 1516,
+          "node_delta": 0,
+          "node_pct": 0.0,
+          "pv_legal": true,
+          "candidate_pv": "g5g7",
+          "baseline_pv": "g5g7"
+        },
+        {
+          "id": "promotion_tactic",
+          "fen": "8/P7/8/8/8/4k3/8/4K3 w - - 0 1",
+          "baseline_score": 900,
+          "candidate_score": 900,
+          "score_match": true,
+          "baseline_move": "a7a8q",
+          "candidate_move": "a7a8q",
+          "move_match": true,
+          "baseline_nodes": 190,
+          "candidate_nodes": 190,
+          "node_delta": 0,
+          "node_pct": 0.0,
+          "pv_legal": true,
+          "candidate_pv": "a7a8q e3f4 a8h8",
+          "baseline_pv": "a7a8q e3f4 a8h8"
+        },
+        {
+          "id": "stalemate",
+          "fen": "7k/5Q2/6K1/8/8/8/8/8 b - - 0 1",
+          "baseline_score": 0,
+          "candidate_score": 0,
+          "score_match": true,
+          "baseline_move": "",
+          "candidate_move": "",
+          "move_match": true,
+          "baseline_nodes": 0,
+          "candidate_nodes": 0,
+          "node_delta": 0,
+          "node_pct": 0,
+          "pv_legal": true,
+          "candidate_pv": "",
+          "baseline_pv": ""
+        }
+      ],
+      "raw_baseline_times": [
+        0.6869999999762513,
+        0.6869999999762513,
+        1.1560000000172295,
+        1.25,
+        1.2339999999967404
+      ],
+      "raw_candidate_times": [
+        0.7029999999795109,
+        0.7040000000270084,
+        1.1880000000237487,
+        1.1399999999557622,
+        1.2350000000442378
+      ]
+    },
+    "depth_4": {
+      "depth": 4,
+      "baseline_nodes": 45239,
+      "candidate_nodes": 26409,
+      "node_delta": -18830,
+      "node_percentage_delta": -41.6234,
+      "baseline_time_stats": {
+        "median": 4.828,
+        "mean": 4.8028,
+        "min": 4.64,
+        "max": 4.875,
+        "iqr": 0.141,
+        "stdev": 0.094333
+      },
+      "candidate_time_stats": {
+        "median": 2.641,
+        "mean": 2.6782,
+        "min": 2.594,
+        "max": 2.89,
+        "iqr": 0.187,
+        "stdev": 0.122944
+      },
+      "median_time_delta_seconds": -2.187,
+      "median_time_percentage_delta": -45.2983,
+      "candidate_totals": {
+        "nmp_considered": 56,
+        "nmp_attempts": 56,
+        "nmp_fail_highs": 27,
+        "nmp_fail_lows": 29,
+        "nmp_verifications": 0,
+        "nmp_verification_failures": 0,
+        "nmp_cutoffs": 27,
+        "lmr_considered": 51,
+        "lmr_reduced_searches": 51,
+        "lmr_reduced_plies": 51,
+        "lmr_researches": 0,
+        "lmr_fail_lows": 51,
+        "lmr_fail_highs": 0,
+        "lmr_cutoffs": 0,
+        "scout_searches": 2329,
+        "scout_fail_highs": 7,
+        "researches": 4,
+        "beta_cutoffs": 1719,
+        "aspiration_iterations": 12,
+        "aspiration_fail_lows": 0,
+        "aspiration_fail_highs": 0,
+        "aspiration_researches": 0,
+        "aspiration_fallbacks": 0
+      },
+      "baseline_totals": {
+        "nmp_considered": 0,
+        "nmp_attempts": 0,
+        "nmp_fail_highs": 0,
+        "nmp_fail_lows": 0,
+        "nmp_verifications": 0,
+        "nmp_verification_failures": 0,
+        "nmp_cutoffs": 0,
+        "lmr_considered": 55,
+        "lmr_reduced_searches": 55,
+        "lmr_reduced_plies": 55,
+        "lmr_researches": 2,
+        "lmr_fail_lows": 53,
+        "lmr_fail_highs": 2,
+        "lmr_cutoffs": 1,
+        "scout_searches": 3346,
+        "scout_fail_highs": 11,
+        "researches": 4,
+        "beta_cutoffs": 2660,
+        "aspiration_iterations": 12,
+        "aspiration_fail_lows": 0,
+        "aspiration_fail_highs": 0,
+        "aspiration_researches": 0,
+        "aspiration_fallbacks": 0
+      },
+      "per_position_comparison": [
+        {
+          "id": "startpos",
+          "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+          "baseline_score": 0,
+          "candidate_score": 0,
+          "score_match": true,
+          "baseline_move": "g1f3",
+          "candidate_move": "g1f3",
+          "move_match": true,
+          "baseline_nodes": 2512,
+          "candidate_nodes": 2552,
+          "node_delta": 40,
+          "node_pct": 1.59,
+          "pv_legal": true,
+          "candidate_pv": "g1f3 g8f6 b1c3 b8c6",
+          "baseline_pv": "g1f3 g8f6 b1c3 b8c6"
+        },
+        {
+          "id": "open_game",
+          "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+          "baseline_score": 9,
+          "candidate_score": 9,
+          "score_match": true,
+          "baseline_move": "c3a4",
+          "candidate_move": "c3a4",
+          "move_match": true,
+          "baseline_nodes": 37288,
+          "candidate_nodes": 18418,
+          "node_delta": -18870,
+          "node_pct": -50.61,
+          "pv_legal": true,
+          "candidate_pv": "c3a4 c5b4 c2c3 b4a5",
+          "baseline_pv": "c3a4 c5b4 c2c3 b4a5"
+        },
+        {
+          "id": "white_up_rook",
+          "fen": "4k3/8/8/8/8/8/4N3/4K2R w K - 0 1",
+          "baseline_score": 838,
+          "candidate_score": 838,
+          "score_match": true,
+          "baseline_move": "e2f4",
+          "candidate_move": "e2f4",
+          "move_match": true,
+          "baseline_nodes": 2291,
+          "candidate_nodes": 2291,
+          "node_delta": 0,
+          "node_pct": 0.0,
+          "pv_legal": true,
+          "candidate_pv": "e2f4 e8f8 f4d5 f8g8",
+          "baseline_pv": "e2f4 e8f8 f4d5 f8g8"
+        },
+        {
+          "id": "mate_in_one",
+          "fen": "8/7k/5K2/6Q1/8/8/8/8 w - - 0 1",
+          "baseline_score": 99999,
+          "candidate_score": 99999,
+          "score_match": true,
+          "baseline_move": "g5g7",
+          "candidate_move": "g5g7",
+          "move_match": true,
+          "baseline_nodes": 2712,
+          "candidate_nodes": 2712,
+          "node_delta": 0,
+          "node_pct": 0.0,
+          "pv_legal": true,
+          "candidate_pv": "g5g7",
+          "baseline_pv": "g5g7"
+        },
+        {
+          "id": "promotion_tactic",
+          "fen": "8/P7/8/8/8/4k3/8/4K3 w - - 0 1",
+          "baseline_score": 900,
+          "candidate_score": 900,
+          "score_match": true,
+          "baseline_move": "a7a8q",
+          "candidate_move": "a7a8q",
+          "move_match": true,
+          "baseline_nodes": 436,
+          "candidate_nodes": 436,
+          "node_delta": 0,
+          "node_pct": 0.0,
+          "pv_legal": true,
+          "candidate_pv": "a7a8q e3f4 a8h8 f4g5",
+          "baseline_pv": "a7a8q e3f4 a8h8 f4g5"
+        },
+        {
+          "id": "stalemate",
+          "fen": "7k/5Q2/6K1/8/8/8/8/8 b - - 0 1",
+          "baseline_score": 0,
+          "candidate_score": 0,
+          "score_match": true,
+          "baseline_move": "",
+          "candidate_move": "",
+          "move_match": true,
+          "baseline_nodes": 0,
+          "candidate_nodes": 0,
+          "node_delta": 0,
+          "node_pct": 0,
+          "pv_legal": true,
+          "candidate_pv": "",
+          "baseline_pv": ""
+        }
+      ],
+      "raw_baseline_times": [
+        4.811999999976251,
+        4.875,
+        4.85899999999674,
+        4.64000000001397,
+        4.827999999979511
+      ],
+      "raw_candidate_times": [
+        2.5939999999827705,
+        2.89000000001397,
+        2.672000000020489,
+        2.5939999999827705,
+        2.6410000000032596
+      ]
+    },
+    "depth_5": {
+      "depth": 5,
+      "baseline_nodes": 77878,
+      "candidate_nodes": 53707,
+      "node_delta": -24171,
+      "node_percentage_delta": -31.037,
+      "baseline_time_stats": {
+        "median": 8.219,
+        "mean": 7.9592,
+        "min": 7.203,
+        "max": 8.406,
+        "iqr": 0.8985,
+        "stdev": 0.504136
+      },
+      "candidate_time_stats": {
+        "median": 5.156,
+        "mean": 5.0936,
+        "min": 4.531,
+        "max": 5.515,
+        "iqr": 0.641,
+        "stdev": 0.369289
+      },
+      "median_time_delta_seconds": -3.063,
+      "median_time_percentage_delta": -37.2673,
+      "candidate_totals": {
+        "nmp_considered": 197,
+        "nmp_attempts": 197,
+        "nmp_fail_highs": 67,
+        "nmp_fail_lows": 130,
+        "nmp_verifications": 11,
+        "nmp_verification_failures": 9,
+        "nmp_cutoffs": 58,
+        "lmr_considered": 1634,
+        "lmr_reduced_searches": 1634,
+        "lmr_reduced_plies": 1634,
+        "lmr_researches": 19,
+        "lmr_fail_lows": 1615,
+        "lmr_fail_highs": 19,
+        "lmr_cutoffs": 0,
+        "scout_searches": 3815,
+        "scout_fail_highs": 15,
+        "researches": 8,
+        "beta_cutoffs": 3098,
+        "aspiration_iterations": 16,
+        "aspiration_fail_lows": 0,
+        "aspiration_fail_highs": 0,
+        "aspiration_researches": 0,
+        "aspiration_fallbacks": 0
+      },
+      "baseline_totals": {
+        "nmp_considered": 0,
+        "nmp_attempts": 0,
+        "nmp_fail_highs": 0,
+        "nmp_fail_lows": 0,
+        "nmp_verifications": 0,
+        "nmp_verification_failures": 0,
+        "nmp_cutoffs": 0,
+        "lmr_considered": 2568,
+        "lmr_reduced_searches": 2568,
+        "lmr_reduced_plies": 2568,
+        "lmr_researches": 21,
+        "lmr_fail_lows": 2547,
+        "lmr_fail_highs": 21,
+        "lmr_cutoffs": 1,
+        "scout_searches": 4923,
+        "scout_fail_highs": 19,
+        "researches": 8,
+        "beta_cutoffs": 4158,
+        "aspiration_iterations": 16,
+        "aspiration_fail_lows": 0,
+        "aspiration_fail_highs": 0,
+        "aspiration_researches": 0,
+        "aspiration_fallbacks": 0
+      },
+      "per_position_comparison": [
+        {
+          "id": "startpos",
+          "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+          "baseline_score": 10,
+          "candidate_score": 10,
+          "score_match": true,
+          "baseline_move": "g1f3",
+          "candidate_move": "g1f3",
+          "move_match": true,
+          "baseline_nodes": 8622,
+          "candidate_nodes": 8798,
+          "node_delta": 176,
+          "node_pct": 2.04,
+          "pv_legal": true,
+          "candidate_pv": "g1f3 g8f6 b1c3 b8c6 h2h4",
+          "baseline_pv": "g1f3 g8f6 b1c3 b8c6 h2h4"
+        },
+        {
+          "id": "open_game",
+          "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+          "baseline_score": 21,
+          "candidate_score": 21,
+          "score_match": true,
+          "baseline_move": "c3a4",
+          "candidate_move": "c3a4",
+          "move_match": true,
+          "baseline_nodes": 52122,
+          "candidate_nodes": 27480,
+          "node_delta": -24642,
+          "node_pct": -47.28,
+          "pv_legal": true,
+          "candidate_pv": "c3a4 c5b4 c2c3 b4a5 c1e3",
+          "baseline_pv": "c3a4 c5b4 c2c3 b4a5 c1e3"
+        },
+        {
+          "id": "white_up_rook",
+          "fen": "4k3/8/8/8/8/8/4N3/4K2R w K - 0 1",
+          "baseline_score": 838,
+          "candidate_score": 838,
+          "score_match": true,
+          "baseline_move": "e2d4",
+          "candidate_move": "e2d4",
+          "move_match": true,
+          "baseline_nodes": 6894,
+          "candidate_nodes": 7213,
+          "node_delta": 319,
+          "node_pct": 4.63,
+          "pv_legal": true,
+          "candidate_pv": "e2d4 e8f8 d4e6 f8g8 e6d4",
+          "baseline_pv": "e2d4 e8f8 d4e6 f8g8 e6d4"
+        },
+        {
+          "id": "mate_in_one",
+          "fen": "8/7k/5K2/6Q1/8/8/8/8 w - - 0 1",
+          "baseline_score": 99999,
+          "candidate_score": 99999,
+          "score_match": true,
+          "baseline_move": "g5g7",
+          "candidate_move": "g5g7",
+          "move_match": true,
+          "baseline_nodes": 8992,
+          "candidate_nodes": 8992,
+          "node_delta": 0,
+          "node_pct": 0.0,
+          "pv_legal": true,
+          "candidate_pv": "g5g7",
+          "baseline_pv": "g5g7"
+        },
+        {
+          "id": "promotion_tactic",
+          "fen": "8/P7/8/8/8/4k3/8/4K3 w - - 0 1",
+          "baseline_score": 900,
+          "candidate_score": 900,
+          "score_match": true,
+          "baseline_move": "a7a8q",
+          "candidate_move": "a7a8q",
+          "move_match": true,
+          "baseline_nodes": 1248,
+          "candidate_nodes": 1224,
+          "node_delta": -24,
+          "node_pct": -1.92,
+          "pv_legal": true,
+          "candidate_pv": "a7a8q e3f4 a8h8 f4g5 h8g8",
+          "baseline_pv": "a7a8q e3f4 a8h8 f4g5 h8g8"
+        },
+        {
+          "id": "stalemate",
+          "fen": "7k/5Q2/6K1/8/8/8/8/8 b - - 0 1",
+          "baseline_score": 0,
+          "candidate_score": 0,
+          "score_match": true,
+          "baseline_move": "",
+          "candidate_move": "",
+          "move_match": true,
+          "baseline_nodes": 0,
+          "candidate_nodes": 0,
+          "node_delta": 0,
+          "node_pct": 0,
+          "pv_legal": true,
+          "candidate_pv": "",
+          "baseline_pv": ""
+        }
+      ],
+      "raw_baseline_times": [
+        7.202999999979511,
+        8.40600000001723,
+        8.280999999959022,
+        8.21899999998277,
+        7.687000000034459
+      ],
+      "raw_candidate_times": [
+        4.98399999999674,
+        4.5310000000172295,
+        5.282000000006519,
+        5.1560000000172295,
+        5.514999999955762
+      ]
+    }
+  },
+  "four_way_ablation": {
+    "depth_3": {
+      "lmr_off_nmp_off": {
+        "nodes": 13439,
+        "elapsed": 0.938,
+        "totals": {
+          "nmp_considered": 0,
+          "nmp_attempts": 0,
+          "nmp_fail_highs": 0,
+          "nmp_fail_lows": 0,
+          "nmp_verifications": 0,
+          "nmp_verification_failures": 0,
+          "nmp_cutoffs": 0,
+          "lmr_considered": 0,
+          "lmr_reduced_searches": 0,
+          "lmr_reduced_plies": 0,
+          "lmr_researches": 0,
+          "lmr_fail_lows": 0,
+          "lmr_fail_highs": 0,
+          "lmr_cutoffs": 0,
+          "scout_searches": 355,
+          "scout_fail_highs": 6,
+          "researches": 3,
+          "beta_cutoffs": 350,
+          "aspiration_iterations": 8,
+          "aspiration_fail_lows": 0,
+          "aspiration_fail_highs": 0,
+          "aspiration_researches": 0,
+          "aspiration_fallbacks": 0
+        },
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 1144,
+            "score": 12,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3"
+          },
+          {
+            "id": "open_game",
+            "nodes": 9445,
+            "score": 12,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c1e3"
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 1144,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5"
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 1516,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7"
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 190,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8"
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": ""
+          }
+        ]
+      },
+      "lmr_on_nmp_off": {
+        "nodes": 13439,
+        "elapsed": 0.906,
+        "totals": {
+          "nmp_considered": 0,
+          "nmp_attempts": 0,
+          "nmp_fail_highs": 0,
+          "nmp_fail_lows": 0,
+          "nmp_verifications": 0,
+          "nmp_verification_failures": 0,
+          "nmp_cutoffs": 0,
+          "lmr_considered": 0,
+          "lmr_reduced_searches": 0,
+          "lmr_reduced_plies": 0,
+          "lmr_researches": 0,
+          "lmr_fail_lows": 0,
+          "lmr_fail_highs": 0,
+          "lmr_cutoffs": 0,
+          "scout_searches": 355,
+          "scout_fail_highs": 6,
+          "researches": 3,
+          "beta_cutoffs": 350,
+          "aspiration_iterations": 8,
+          "aspiration_fail_lows": 0,
+          "aspiration_fail_highs": 0,
+          "aspiration_researches": 0,
+          "aspiration_fallbacks": 0
+        },
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 1144,
+            "score": 12,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3"
+          },
+          {
+            "id": "open_game",
+            "nodes": 9445,
+            "score": 12,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c1e3"
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 1144,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5"
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 1516,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7"
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 190,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8"
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": ""
+          }
+        ]
+      },
+      "lmr_off_nmp_on": {
+        "nodes": 13439,
+        "elapsed": 1.141,
+        "totals": {
+          "nmp_considered": 0,
+          "nmp_attempts": 0,
+          "nmp_fail_highs": 0,
+          "nmp_fail_lows": 0,
+          "nmp_verifications": 0,
+          "nmp_verification_failures": 0,
+          "nmp_cutoffs": 0,
+          "lmr_considered": 0,
+          "lmr_reduced_searches": 0,
+          "lmr_reduced_plies": 0,
+          "lmr_researches": 0,
+          "lmr_fail_lows": 0,
+          "lmr_fail_highs": 0,
+          "lmr_cutoffs": 0,
+          "scout_searches": 355,
+          "scout_fail_highs": 6,
+          "researches": 3,
+          "beta_cutoffs": 350,
+          "aspiration_iterations": 8,
+          "aspiration_fail_lows": 0,
+          "aspiration_fail_highs": 0,
+          "aspiration_researches": 0,
+          "aspiration_fallbacks": 0
+        },
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 1144,
+            "score": 12,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3"
+          },
+          {
+            "id": "open_game",
+            "nodes": 9445,
+            "score": 12,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c1e3"
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 1144,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5"
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 1516,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7"
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 190,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8"
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": ""
+          }
+        ]
+      },
+      "lmr_on_nmp_on": {
+        "nodes": 13439,
+        "elapsed": 1.062,
+        "totals": {
+          "nmp_considered": 0,
+          "nmp_attempts": 0,
+          "nmp_fail_highs": 0,
+          "nmp_fail_lows": 0,
+          "nmp_verifications": 0,
+          "nmp_verification_failures": 0,
+          "nmp_cutoffs": 0,
+          "lmr_considered": 0,
+          "lmr_reduced_searches": 0,
+          "lmr_reduced_plies": 0,
+          "lmr_researches": 0,
+          "lmr_fail_lows": 0,
+          "lmr_fail_highs": 0,
+          "lmr_cutoffs": 0,
+          "scout_searches": 355,
+          "scout_fail_highs": 6,
+          "researches": 3,
+          "beta_cutoffs": 350,
+          "aspiration_iterations": 8,
+          "aspiration_fail_lows": 0,
+          "aspiration_fail_highs": 0,
+          "aspiration_researches": 0,
+          "aspiration_fallbacks": 0
+        },
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 1144,
+            "score": 12,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3"
+          },
+          {
+            "id": "open_game",
+            "nodes": 9445,
+            "score": 12,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c1e3"
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 1144,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5"
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 1516,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7"
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 190,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8"
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": ""
+          }
+        ]
+      }
+    },
+    "depth_4": {
+      "lmr_off_nmp_off": {
+        "nodes": 48229,
+        "elapsed": 6.062,
+        "totals": {
+          "nmp_considered": 0,
+          "nmp_attempts": 0,
+          "nmp_fail_highs": 0,
+          "nmp_fail_lows": 0,
+          "nmp_verifications": 0,
+          "nmp_verification_failures": 0,
+          "nmp_cutoffs": 0,
+          "lmr_considered": 0,
+          "lmr_reduced_searches": 0,
+          "lmr_reduced_plies": 0,
+          "lmr_researches": 0,
+          "lmr_fail_lows": 0,
+          "lmr_fail_highs": 0,
+          "lmr_cutoffs": 0,
+          "scout_searches": 3403,
+          "scout_fail_highs": 12,
+          "researches": 4,
+          "beta_cutoffs": 2713,
+          "aspiration_iterations": 12,
+          "aspiration_fail_lows": 0,
+          "aspiration_fail_highs": 0,
+          "aspiration_researches": 0,
+          "aspiration_fallbacks": 0
+        },
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 3287,
+            "score": 0,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3 b8c6"
+          },
+          {
+            "id": "open_game",
+            "nodes": 39475,
+            "score": 9,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c2c3 b4a5"
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 2319,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5 f8g8"
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 2712,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7"
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 436,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8 f4g5"
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": ""
+          }
+        ]
+      },
+      "lmr_on_nmp_off": {
+        "nodes": 45239,
+        "elapsed": 7.516,
+        "totals": {
+          "nmp_considered": 0,
+          "nmp_attempts": 0,
+          "nmp_fail_highs": 0,
+          "nmp_fail_lows": 0,
+          "nmp_verifications": 0,
+          "nmp_verification_failures": 0,
+          "nmp_cutoffs": 0,
+          "lmr_considered": 55,
+          "lmr_reduced_searches": 55,
+          "lmr_reduced_plies": 55,
+          "lmr_researches": 2,
+          "lmr_fail_lows": 53,
+          "lmr_fail_highs": 2,
+          "lmr_cutoffs": 1,
+          "scout_searches": 3346,
+          "scout_fail_highs": 11,
+          "researches": 4,
+          "beta_cutoffs": 2660,
+          "aspiration_iterations": 12,
+          "aspiration_fail_lows": 0,
+          "aspiration_fail_highs": 0,
+          "aspiration_researches": 0,
+          "aspiration_fallbacks": 0
+        },
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 2512,
+            "score": 0,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3 b8c6"
+          },
+          {
+            "id": "open_game",
+            "nodes": 37288,
+            "score": 9,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c2c3 b4a5"
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 2291,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5 f8g8"
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 2712,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7"
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 436,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8 f4g5"
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": ""
+          }
+        ]
+      },
+      "lmr_off_nmp_on": {
+        "nodes": 29521,
+        "elapsed": 3.829,
+        "totals": {
+          "nmp_considered": 56,
+          "nmp_attempts": 56,
+          "nmp_fail_highs": 27,
+          "nmp_fail_lows": 29,
+          "nmp_verifications": 0,
+          "nmp_verification_failures": 0,
+          "nmp_cutoffs": 27,
+          "lmr_considered": 0,
+          "lmr_reduced_searches": 0,
+          "lmr_reduced_plies": 0,
+          "lmr_researches": 0,
+          "lmr_fail_lows": 0,
+          "lmr_fail_highs": 0,
+          "lmr_cutoffs": 0,
+          "scout_searches": 2380,
+          "scout_fail_highs": 7,
+          "researches": 4,
+          "beta_cutoffs": 1770,
+          "aspiration_iterations": 12,
+          "aspiration_fail_lows": 0,
+          "aspiration_fail_highs": 0,
+          "aspiration_researches": 0,
+          "aspiration_fallbacks": 0
+        },
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 3327,
+            "score": 0,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3 b8c6"
+          },
+          {
+            "id": "open_game",
+            "nodes": 20727,
+            "score": 9,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c2c3 b4a5"
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 2319,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5 f8g8"
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 2712,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7"
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 436,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8 f4g5"
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": ""
+          }
+        ]
+      },
+      "lmr_on_nmp_on": {
+        "nodes": 26409,
+        "elapsed": 4.047,
+        "totals": {
+          "nmp_considered": 56,
+          "nmp_attempts": 56,
+          "nmp_fail_highs": 27,
+          "nmp_fail_lows": 29,
+          "nmp_verifications": 0,
+          "nmp_verification_failures": 0,
+          "nmp_cutoffs": 27,
+          "lmr_considered": 51,
+          "lmr_reduced_searches": 51,
+          "lmr_reduced_plies": 51,
+          "lmr_researches": 0,
+          "lmr_fail_lows": 51,
+          "lmr_fail_highs": 0,
+          "lmr_cutoffs": 0,
+          "scout_searches": 2329,
+          "scout_fail_highs": 7,
+          "researches": 4,
+          "beta_cutoffs": 1719,
+          "aspiration_iterations": 12,
+          "aspiration_fail_lows": 0,
+          "aspiration_fail_highs": 0,
+          "aspiration_researches": 0,
+          "aspiration_fallbacks": 0
+        },
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 2552,
+            "score": 0,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3 b8c6"
+          },
+          {
+            "id": "open_game",
+            "nodes": 18418,
+            "score": 9,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c2c3 b4a5"
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 2291,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4d5 f8g8"
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 2712,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7"
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 436,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8 f4g5"
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": ""
+          }
+        ]
+      }
+    },
+    "depth_5": {
+      "lmr_off_nmp_off": {
+        "nodes": 189535,
+        "elapsed": 25.422,
+        "totals": {
+          "nmp_considered": 0,
+          "nmp_attempts": 0,
+          "nmp_fail_highs": 0,
+          "nmp_fail_lows": 0,
+          "nmp_verifications": 0,
+          "nmp_verification_failures": 0,
+          "nmp_cutoffs": 0,
+          "lmr_considered": 0,
+          "lmr_reduced_searches": 0,
+          "lmr_reduced_plies": 0,
+          "lmr_researches": 0,
+          "lmr_fail_lows": 0,
+          "lmr_fail_highs": 0,
+          "lmr_cutoffs": 0,
+          "scout_searches": 8071,
+          "scout_fail_highs": 22,
+          "researches": 5,
+          "beta_cutoffs": 6292,
+          "aspiration_iterations": 16,
+          "aspiration_fail_lows": 0,
+          "aspiration_fail_highs": 0,
+          "aspiration_researches": 0,
+          "aspiration_fallbacks": 0
+        },
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 19408,
+            "score": 10,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3 b8c6 h2h4"
+          },
+          {
+            "id": "open_game",
+            "nodes": 132886,
+            "score": 21,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c2c3 b4a5 c1e3"
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 16111,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4g6 f8g8 g6e5"
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 18136,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7"
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 2994,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8 f4g5 h8g8"
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": ""
+          }
+        ]
+      },
+      "lmr_on_nmp_off": {
+        "nodes": 77878,
+        "elapsed": 12.188,
+        "totals": {
+          "nmp_considered": 0,
+          "nmp_attempts": 0,
+          "nmp_fail_highs": 0,
+          "nmp_fail_lows": 0,
+          "nmp_verifications": 0,
+          "nmp_verification_failures": 0,
+          "nmp_cutoffs": 0,
+          "lmr_considered": 2568,
+          "lmr_reduced_searches": 2568,
+          "lmr_reduced_plies": 2568,
+          "lmr_researches": 21,
+          "lmr_fail_lows": 2547,
+          "lmr_fail_highs": 21,
+          "lmr_cutoffs": 1,
+          "scout_searches": 4923,
+          "scout_fail_highs": 19,
+          "researches": 8,
+          "beta_cutoffs": 4158,
+          "aspiration_iterations": 16,
+          "aspiration_fail_lows": 0,
+          "aspiration_fail_highs": 0,
+          "aspiration_researches": 0,
+          "aspiration_fallbacks": 0
+        },
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 8622,
+            "score": 10,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3 b8c6 h2h4"
+          },
+          {
+            "id": "open_game",
+            "nodes": 52122,
+            "score": 21,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c2c3 b4a5 c1e3"
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 6894,
+            "score": 838,
+            "best_move": "e2d4",
+            "pv": "e2d4 e8f8 d4e6 f8g8 e6d4"
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 8992,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7"
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 1248,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8 f4g5 h8g8"
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": ""
+          }
+        ]
+      },
+      "lmr_off_nmp_on": {
+        "nodes": 108860,
+        "elapsed": 11.25,
+        "totals": {
+          "nmp_considered": 223,
+          "nmp_attempts": 223,
+          "nmp_fail_highs": 58,
+          "nmp_fail_lows": 165,
+          "nmp_verifications": 2,
+          "nmp_verification_failures": 0,
+          "nmp_cutoffs": 58,
+          "lmr_considered": 0,
+          "lmr_reduced_searches": 0,
+          "lmr_reduced_plies": 0,
+          "lmr_researches": 0,
+          "lmr_fail_lows": 0,
+          "lmr_fail_highs": 0,
+          "lmr_cutoffs": 0,
+          "scout_searches": 6029,
+          "scout_fail_highs": 17,
+          "researches": 5,
+          "beta_cutoffs": 4428,
+          "aspiration_iterations": 16,
+          "aspiration_fail_lows": 0,
+          "aspiration_fail_highs": 0,
+          "aspiration_researches": 0,
+          "aspiration_fallbacks": 0
+        },
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 19588,
+            "score": 10,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3 b8c6 h2h4"
+          },
+          {
+            "id": "open_game",
+            "nodes": 52007,
+            "score": 21,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c2c3 b4a5 c1e3"
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 16159,
+            "score": 838,
+            "best_move": "e2f4",
+            "pv": "e2f4 e8f8 f4g6 f8g8 g6e5"
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 18136,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7"
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 2970,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8 f4g5 h8g8"
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": ""
+          }
+        ]
+      },
+      "lmr_on_nmp_on": {
+        "nodes": 53707,
+        "elapsed": 5.625,
+        "totals": {
+          "nmp_considered": 197,
+          "nmp_attempts": 197,
+          "nmp_fail_highs": 67,
+          "nmp_fail_lows": 130,
+          "nmp_verifications": 11,
+          "nmp_verification_failures": 9,
+          "nmp_cutoffs": 58,
+          "lmr_considered": 1634,
+          "lmr_reduced_searches": 1634,
+          "lmr_reduced_plies": 1634,
+          "lmr_researches": 19,
+          "lmr_fail_lows": 1615,
+          "lmr_fail_highs": 19,
+          "lmr_cutoffs": 0,
+          "scout_searches": 3815,
+          "scout_fail_highs": 15,
+          "researches": 8,
+          "beta_cutoffs": 3098,
+          "aspiration_iterations": 16,
+          "aspiration_fail_lows": 0,
+          "aspiration_fail_highs": 0,
+          "aspiration_researches": 0,
+          "aspiration_fallbacks": 0
+        },
+        "positions": [
+          {
+            "id": "startpos",
+            "nodes": 8798,
+            "score": 10,
+            "best_move": "g1f3",
+            "pv": "g1f3 g8f6 b1c3 b8c6 h2h4"
+          },
+          {
+            "id": "open_game",
+            "nodes": 27480,
+            "score": 21,
+            "best_move": "c3a4",
+            "pv": "c3a4 c5b4 c2c3 b4a5 c1e3"
+          },
+          {
+            "id": "white_up_rook",
+            "nodes": 7213,
+            "score": 838,
+            "best_move": "e2d4",
+            "pv": "e2d4 e8f8 d4e6 f8g8 e6d4"
+          },
+          {
+            "id": "mate_in_one",
+            "nodes": 8992,
+            "score": 99999,
+            "best_move": "g5g7",
+            "pv": "g5g7"
+          },
+          {
+            "id": "promotion_tactic",
+            "nodes": 1224,
+            "score": 900,
+            "best_move": "a7a8q",
+            "pv": "a7a8q e3f4 a8h8 f4g5 h8g8"
+          },
+          {
+            "id": "stalemate",
+            "nodes": 0,
+            "score": 0,
+            "best_move": "",
+            "pv": ""
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1240 @@
+{
+  "metadata": {
+    "milestone": "v0.21",
+    "experiment": "selective_check_extensions_controlled_benchmark",
+    "git_commit": "f1cded943d7e5f012c9290c564e7cca172e7b481",
+    "timestamp_utc": "2026-10-16T09:18:50.619775+00:00",
+    "python_version": "3.12.8",
+    "python_chess_version": "1.11.2",
+    "schedule_seed": 20261016,
+    "repetitions_per_policy": 5,
+    "positions_count": 6
+  },
+  "depths": {
+    "depth_3": {
+      "schedule": [
+        "single_reply",
+        "bounded_all_checks",
+        "disabled",
+        "disabled",
+        "bounded_all_checks",
+        "single_reply",
+        "single_reply",
+        "disabled",
+        "bounded_all_checks",
+        "bounded_all_checks",
+        "single_reply",
+        "disabled",
+        "disabled",
+        "bounded_all_checks",
+        "single_reply"
+      ],
+      "policies": {
+        "disabled": {
+          "nodes": 13439,
+          "reps": 5,
+          "raw_elapsed_times": [
+            0.660879,
+            0.642494,
+            1.372792,
+            1.080168,
+            1.303666
+          ],
+          "timing": {
+            "min": 0.642494,
+            "max": 1.372792,
+            "mean": 1.012,
+            "median": 1.080168,
+            "iqr": 0.642787,
+            "stdev": 0.309744
+          },
+          "extension_telemetry": {
+            "eligible": 22,
+            "applied": 0,
+            "plies": 0,
+            "suppressed": 0,
+            "multiple_replies": 0,
+            "terminal_mates": 0
+          },
+          "positions": {
+            "startpos": {
+              "nodes": 1144,
+              "score": 12,
+              "best_move": "g1f3",
+              "pv": [
+                "g1f3",
+                "g8f6",
+                "b1c3"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "open_game": {
+              "nodes": 9445,
+              "score": 12,
+              "best_move": "c3a4",
+              "pv": [
+                "c3a4",
+                "c5b4",
+                "c1e3"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 6,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "white_up_rook": {
+              "nodes": 1144,
+              "score": 838,
+              "best_move": "e2f4",
+              "pv": [
+                "e2f4",
+                "e8f8",
+                "f4d5"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 2,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "mate_in_one": {
+              "nodes": 1516,
+              "score": 99999,
+              "best_move": "g5g7",
+              "pv": [
+                "g5g7"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 14,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "promotion_tactic": {
+              "nodes": 190,
+              "score": 900,
+              "best_move": "a7a8q",
+              "pv": [
+                "a7a8q",
+                "e3f4",
+                "a8h8"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "stalemate": {
+              "nodes": 0,
+              "score": 0,
+              "best_move": "",
+              "pv": [],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            }
+          }
+        },
+        "bounded_all_checks": {
+          "nodes": 14791,
+          "reps": 5,
+          "raw_elapsed_times": [
+            0.713292,
+            0.698666,
+            1.353912,
+            1.478087,
+            1.372719
+          ],
+          "timing": {
+            "min": 0.698666,
+            "max": 1.478087,
+            "mean": 1.123335,
+            "median": 1.353912,
+            "iqr": 0.659427,
+            "stdev": 0.34342
+          },
+          "extension_telemetry": {
+            "eligible": 51,
+            "applied": 51,
+            "plies": 51,
+            "suppressed": 0,
+            "multiple_replies": 0,
+            "terminal_mates": 3
+          },
+          "positions": {
+            "startpos": {
+              "nodes": 1144,
+              "score": 12,
+              "best_move": "g1f3",
+              "pv": [
+                "g1f3",
+                "g8f6",
+                "b1c3"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "open_game": {
+              "nodes": 9892,
+              "score": 12,
+              "best_move": "c3a4",
+              "pv": [
+                "c3a4",
+                "c5b4",
+                "c1e3"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 6,
+              "check_extensions_applied": 6,
+              "check_extension_plies": 6,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "white_up_rook": {
+              "nodes": 1261,
+              "score": 838,
+              "best_move": "e2f4",
+              "pv": [
+                "e2f4",
+                "e8f8",
+                "f4d5"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 4,
+              "check_extensions_applied": 4,
+              "check_extension_plies": 4,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "mate_in_one": {
+              "nodes": 2304,
+              "score": 99999,
+              "best_move": "g5g7",
+              "pv": [
+                "g5g7"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 41,
+              "check_extensions_applied": 41,
+              "check_extension_plies": 41,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 3
+            },
+            "promotion_tactic": {
+              "nodes": 190,
+              "score": 900,
+              "best_move": "a7a8q",
+              "pv": [
+                "a7a8q",
+                "e3f4",
+                "a8h8"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "stalemate": {
+              "nodes": 0,
+              "score": 0,
+              "best_move": "",
+              "pv": [],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            }
+          }
+        },
+        "single_reply": {
+          "nodes": 13762,
+          "reps": 5,
+          "raw_elapsed_times": [
+            0.663519,
+            0.781196,
+            1.106763,
+            1.37013,
+            1.400375
+          ],
+          "timing": {
+            "min": 0.663519,
+            "max": 1.400375,
+            "mean": 1.064397,
+            "median": 1.106763,
+            "iqr": 0.588934,
+            "stdev": 0.299685
+          },
+          "extension_telemetry": {
+            "eligible": 42,
+            "applied": 15,
+            "plies": 15,
+            "suppressed": 0,
+            "multiple_replies": 24,
+            "terminal_mates": 0
+          },
+          "positions": {
+            "startpos": {
+              "nodes": 1144,
+              "score": 12,
+              "best_move": "g1f3",
+              "pv": [
+                "g1f3",
+                "g8f6",
+                "b1c3"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "open_game": {
+              "nodes": 9445,
+              "score": 12,
+              "best_move": "c3a4",
+              "pv": [
+                "c3a4",
+                "c5b4",
+                "c1e3"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 6,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 6,
+              "check_extensions_terminal_mates": 0
+            },
+            "white_up_rook": {
+              "nodes": 1144,
+              "score": 838,
+              "best_move": "e2f4",
+              "pv": [
+                "e2f4",
+                "e8f8",
+                "f4d5"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 2,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 2,
+              "check_extensions_terminal_mates": 0
+            },
+            "mate_in_one": {
+              "nodes": 1839,
+              "score": 99999,
+              "best_move": "g5g7",
+              "pv": [
+                "g5g7"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 34,
+              "check_extensions_applied": 15,
+              "check_extension_plies": 15,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 16,
+              "check_extensions_terminal_mates": 0
+            },
+            "promotion_tactic": {
+              "nodes": 190,
+              "score": 900,
+              "best_move": "a7a8q",
+              "pv": [
+                "a7a8q",
+                "e3f4",
+                "a8h8"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "stalemate": {
+              "nodes": 0,
+              "score": 0,
+              "best_move": "",
+              "pv": [],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            }
+          }
+        }
+      }
+    },
+    "depth_4": {
+      "schedule": [
+        "bounded_all_checks",
+        "single_reply",
+        "disabled",
+        "bounded_all_checks",
+        "disabled",
+        "single_reply",
+        "bounded_all_checks",
+        "disabled",
+        "single_reply",
+        "disabled",
+        "bounded_all_checks",
+        "single_reply",
+        "disabled",
+        "single_reply",
+        "bounded_all_checks"
+      ],
+      "policies": {
+        "disabled": {
+          "nodes": 26409,
+          "reps": 5,
+          "raw_elapsed_times": [
+            2.689895,
+            2.825654,
+            2.861307,
+            2.930211,
+            2.447366
+          ],
+          "timing": {
+            "min": 2.447366,
+            "max": 2.930211,
+            "mean": 2.750887,
+            "median": 2.825654,
+            "iqr": 0.171412,
+            "stdev": 0.170754
+          },
+          "extension_telemetry": {
+            "eligible": 207,
+            "applied": 0,
+            "plies": 0,
+            "suppressed": 0,
+            "multiple_replies": 0,
+            "terminal_mates": 0
+          },
+          "positions": {
+            "startpos": {
+              "nodes": 2552,
+              "score": 0,
+              "best_move": "g1f3",
+              "pv": [
+                "g1f3",
+                "g8f6",
+                "b1c3",
+                "b8c6"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "open_game": {
+              "nodes": 18418,
+              "score": 9,
+              "best_move": "c3a4",
+              "pv": [
+                "c3a4",
+                "c5b4",
+                "c2c3",
+                "b4a5"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 15,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "white_up_rook": {
+              "nodes": 2291,
+              "score": 838,
+              "best_move": "e2f4",
+              "pv": [
+                "e2f4",
+                "e8f8",
+                "f4d5",
+                "f8g8"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 44,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "mate_in_one": {
+              "nodes": 2712,
+              "score": 99999,
+              "best_move": "g5g7",
+              "pv": [
+                "g5g7"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 140,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "promotion_tactic": {
+              "nodes": 436,
+              "score": 900,
+              "best_move": "a7a8q",
+              "pv": [
+                "a7a8q",
+                "e3f4",
+                "a8h8",
+                "f4g5"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 8,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "stalemate": {
+              "nodes": 0,
+              "score": 0,
+              "best_move": "",
+              "pv": [],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            }
+          }
+        },
+        "bounded_all_checks": {
+          "nodes": 32867,
+          "reps": 5,
+          "raw_elapsed_times": [
+            1.675016,
+            3.091667,
+            3.160236,
+            3.245033,
+            2.825999
+          ],
+          "timing": {
+            "min": 1.675016,
+            "max": 3.245033,
+            "mean": 2.79959,
+            "median": 3.091667,
+            "iqr": 0.334237,
+            "stdev": 0.57951
+          },
+          "extension_telemetry": {
+            "eligible": 295,
+            "applied": 236,
+            "plies": 236,
+            "suppressed": 59,
+            "multiple_replies": 0,
+            "terminal_mates": 14
+          },
+          "positions": {
+            "startpos": {
+              "nodes": 2552,
+              "score": 0,
+              "best_move": "g1f3",
+              "pv": [
+                "g1f3",
+                "g8f6",
+                "b1c3",
+                "b8c6"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "open_game": {
+              "nodes": 19420,
+              "score": 9,
+              "best_move": "c3a4",
+              "pv": [
+                "c3a4",
+                "c5b4",
+                "c2c3",
+                "b4a5"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 15,
+              "check_extensions_applied": 15,
+              "check_extension_plies": 15,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "white_up_rook": {
+              "nodes": 3931,
+              "score": 838,
+              "best_move": "e2f4",
+              "pv": [
+                "e2f4",
+                "e8f8",
+                "f4d5",
+                "f8g8"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 48,
+              "check_extensions_applied": 46,
+              "check_extension_plies": 46,
+              "check_extensions_suppressed": 2,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "mate_in_one": {
+              "nodes": 6259,
+              "score": 99999,
+              "best_move": "g5g7",
+              "pv": [
+                "g5g7"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 224,
+              "check_extensions_applied": 167,
+              "check_extension_plies": 167,
+              "check_extensions_suppressed": 57,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 14
+            },
+            "promotion_tactic": {
+              "nodes": 705,
+              "score": 900,
+              "best_move": "a7a8q",
+              "pv": [
+                "a7a8q",
+                "e3f4",
+                "a8h8",
+                "f4g5"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 8,
+              "check_extensions_applied": 8,
+              "check_extension_plies": 8,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "stalemate": {
+              "nodes": 0,
+              "score": 0,
+              "best_move": "",
+              "pv": [],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            }
+          }
+        },
+        "single_reply": {
+          "nodes": 28142,
+          "reps": 5,
+          "raw_elapsed_times": [
+            1.691815,
+            2.802096,
+            2.755944,
+            2.437279,
+            2.573954
+          ],
+          "timing": {
+            "min": 1.691815,
+            "max": 2.802096,
+            "mean": 2.452218,
+            "median": 2.573954,
+            "iqr": 0.318665,
+            "stdev": 0.401975
+          },
+          "extension_telemetry": {
+            "eligible": 247,
+            "applied": 90,
+            "plies": 90,
+            "suppressed": 9,
+            "multiple_replies": 132,
+            "terminal_mates": 0
+          },
+          "positions": {
+            "startpos": {
+              "nodes": 2552,
+              "score": 0,
+              "best_move": "g1f3",
+              "pv": [
+                "g1f3",
+                "g8f6",
+                "b1c3",
+                "b8c6"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "open_game": {
+              "nodes": 18418,
+              "score": 9,
+              "best_move": "c3a4",
+              "pv": [
+                "c3a4",
+                "c5b4",
+                "c2c3",
+                "b4a5"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 15,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 15,
+              "check_extensions_terminal_mates": 0
+            },
+            "white_up_rook": {
+              "nodes": 2291,
+              "score": 838,
+              "best_move": "e2f4",
+              "pv": [
+                "e2f4",
+                "e8f8",
+                "f4d5",
+                "f8g8"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 44,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 44,
+              "check_extensions_terminal_mates": 0
+            },
+            "mate_in_one": {
+              "nodes": 4445,
+              "score": 99999,
+              "best_move": "g5g7",
+              "pv": [
+                "g5g7"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 180,
+              "check_extensions_applied": 90,
+              "check_extension_plies": 90,
+              "check_extensions_suppressed": 9,
+              "check_extensions_multiple_replies": 65,
+              "check_extensions_terminal_mates": 0
+            },
+            "promotion_tactic": {
+              "nodes": 436,
+              "score": 900,
+              "best_move": "a7a8q",
+              "pv": [
+                "a7a8q",
+                "e3f4",
+                "a8h8",
+                "f4g5"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 8,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 8,
+              "check_extensions_terminal_mates": 0
+            },
+            "stalemate": {
+              "nodes": 0,
+              "score": 0,
+              "best_move": "",
+              "pv": [],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            }
+          }
+        }
+      }
+    },
+    "depth_5": {
+      "schedule": [
+        "disabled",
+        "bounded_all_checks",
+        "single_reply",
+        "disabled",
+        "bounded_all_checks",
+        "single_reply",
+        "single_reply",
+        "disabled",
+        "bounded_all_checks",
+        "disabled",
+        "single_reply",
+        "bounded_all_checks",
+        "single_reply",
+        "disabled",
+        "bounded_all_checks"
+      ],
+      "policies": {
+        "disabled": {
+          "nodes": 53707,
+          "reps": 5,
+          "raw_elapsed_times": [
+            4.44446,
+            4.426544,
+            4.395193,
+            4.324784,
+            5.278011
+          ],
+          "timing": {
+            "min": 4.324784,
+            "max": 5.278011,
+            "mean": 4.573798,
+            "median": 4.426544,
+            "iqr": 0.049267,
+            "stdev": 0.354467
+          },
+          "extension_telemetry": {
+            "eligible": 407,
+            "applied": 0,
+            "plies": 0,
+            "suppressed": 0,
+            "multiple_replies": 0,
+            "terminal_mates": 0
+          },
+          "positions": {
+            "startpos": {
+              "nodes": 8798,
+              "score": 10,
+              "best_move": "g1f3",
+              "pv": [
+                "g1f3",
+                "g8f6",
+                "b1c3",
+                "b8c6",
+                "h2h4"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "open_game": {
+              "nodes": 27480,
+              "score": 21,
+              "best_move": "c3a4",
+              "pv": [
+                "c3a4",
+                "c5b4",
+                "c2c3",
+                "b4a5",
+                "c1e3"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 23,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "white_up_rook": {
+              "nodes": 7213,
+              "score": 838,
+              "best_move": "e2d4",
+              "pv": [
+                "e2d4",
+                "e8f8",
+                "d4e6",
+                "f8g8",
+                "e6d4"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 103,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "mate_in_one": {
+              "nodes": 8992,
+              "score": 99999,
+              "best_move": "g5g7",
+              "pv": [
+                "g5g7"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 266,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "promotion_tactic": {
+              "nodes": 1224,
+              "score": 900,
+              "best_move": "a7a8q",
+              "pv": [
+                "a7a8q",
+                "e3f4",
+                "a8h8",
+                "f4g5",
+                "h8g8"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 15,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "stalemate": {
+              "nodes": 0,
+              "score": 0,
+              "best_move": "",
+              "pv": [],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            }
+          }
+        },
+        "bounded_all_checks": {
+          "nodes": 73553,
+          "reps": 5,
+          "raw_elapsed_times": [
+            5.508869,
+            6.015563,
+            5.869831,
+            6.544062,
+            6.857537
+          ],
+          "timing": {
+            "min": 5.508869,
+            "max": 6.857537,
+            "mean": 6.159172,
+            "median": 6.015563,
+            "iqr": 0.674231,
+            "stdev": 0.482305
+          },
+          "extension_telemetry": {
+            "eligible": 909,
+            "applied": 791,
+            "plies": 791,
+            "suppressed": 118,
+            "multiple_replies": 0,
+            "terminal_mates": 38
+          },
+          "positions": {
+            "startpos": {
+              "nodes": 8798,
+              "score": 10,
+              "best_move": "g1f3",
+              "pv": [
+                "g1f3",
+                "g8f6",
+                "b1c3",
+                "b8c6",
+                "h2h4"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "open_game": {
+              "nodes": 30785,
+              "score": 21,
+              "best_move": "c3a4",
+              "pv": [
+                "c3a4",
+                "c5b4",
+                "c2c3",
+                "b4a5",
+                "c1e3"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 24,
+              "check_extensions_applied": 24,
+              "check_extension_plies": 24,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "white_up_rook": {
+              "nodes": 10883,
+              "score": 838,
+              "best_move": "e2d4",
+              "pv": [
+                "e2d4",
+                "e8d8",
+                "d4e6",
+                "d8c8",
+                "e6d4",
+                "c8d8"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 170,
+              "check_extensions_applied": 166,
+              "check_extension_plies": 166,
+              "check_extensions_suppressed": 4,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "mate_in_one": {
+              "nodes": 20921,
+              "score": 99999,
+              "best_move": "g5g7",
+              "pv": [
+                "g5g7"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 676,
+              "check_extensions_applied": 562,
+              "check_extension_plies": 562,
+              "check_extensions_suppressed": 114,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 38
+            },
+            "promotion_tactic": {
+              "nodes": 2166,
+              "score": 900,
+              "best_move": "a7a8q",
+              "pv": [
+                "a7a8q",
+                "e3f4",
+                "a8h8",
+                "f4g5",
+                "h8g8"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 39,
+              "check_extensions_applied": 39,
+              "check_extension_plies": 39,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "stalemate": {
+              "nodes": 0,
+              "score": 0,
+              "best_move": "",
+              "pv": [],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            }
+          }
+        },
+        "single_reply": {
+          "nodes": 57905,
+          "reps": 5,
+          "raw_elapsed_times": [
+            5.100601,
+            5.034397,
+            4.620946,
+            5.476932,
+            5.589938
+          ],
+          "timing": {
+            "min": 4.620946,
+            "max": 5.589938,
+            "mean": 5.164563,
+            "median": 5.100601,
+            "iqr": 0.442535,
+            "stdev": 0.344985
+          },
+          "extension_telemetry": {
+            "eligible": 622,
+            "applied": 207,
+            "plies": 207,
+            "suppressed": 18,
+            "multiple_replies": 353,
+            "terminal_mates": 0
+          },
+          "positions": {
+            "startpos": {
+              "nodes": 8798,
+              "score": 10,
+              "best_move": "g1f3",
+              "pv": [
+                "g1f3",
+                "g8f6",
+                "b1c3",
+                "b8c6",
+                "h2h4"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            },
+            "open_game": {
+              "nodes": 27480,
+              "score": 21,
+              "best_move": "c3a4",
+              "pv": [
+                "c3a4",
+                "c5b4",
+                "c2c3",
+                "b4a5",
+                "c1e3"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 23,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 23,
+              "check_extensions_terminal_mates": 0
+            },
+            "white_up_rook": {
+              "nodes": 7213,
+              "score": 838,
+              "best_move": "e2d4",
+              "pv": [
+                "e2d4",
+                "e8f8",
+                "d4e6",
+                "f8g8",
+                "e6d4"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 103,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 103,
+              "check_extensions_terminal_mates": 0
+            },
+            "mate_in_one": {
+              "nodes": 13190,
+              "score": 99999,
+              "best_move": "g5g7",
+              "pv": [
+                "g5g7"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 481,
+              "check_extensions_applied": 207,
+              "check_extension_plies": 207,
+              "check_extensions_suppressed": 18,
+              "check_extensions_multiple_replies": 212,
+              "check_extensions_terminal_mates": 0
+            },
+            "promotion_tactic": {
+              "nodes": 1224,
+              "score": 900,
+              "best_move": "a7a8q",
+              "pv": [
+                "a7a8q",
+                "e3f4",
+                "a8h8",
+                "f4g5",
+                "h8g8"
+              ],
+              "pv_legal": true,
+              "check_extensions_eligible": 15,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 15,
+              "check_extensions_terminal_mates": 0
+            },
+            "stalemate": {
+              "nodes": 0,
+              "score": 0,
+              "best_move": "",
+              "pv": [],
+              "pv_legal": true,
+              "check_extensions_eligible": 0,
+              "check_extensions_applied": 0,
+              "check_extension_plies": 0,
+              "check_extensions_suppressed": 0,
+              "check_extensions_multiple_replies": 0,
+              "check_extensions_terminal_mates": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

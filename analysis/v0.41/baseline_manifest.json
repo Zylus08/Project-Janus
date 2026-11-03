@@ -1,0 +1,63 @@
+{
+  "timestamp_utc": "2026-11-01T03:55:00Z",
+  "milestone": "v0.41",
+  "repository": "E:\\ChessXML\\project-janus",
+  "branch": "v0.3-benchmark-harness",
+  "starting_head_commit": "8424f1da8ed639064639c0f1b36ca1bb38d56ab5",
+  "starting_head_short": "8424f1d",
+  "working_tree_clean": true,
+  "runtime_environment": {
+    "python_version": "3.13.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_chess_version": "1.11.2"
+  },
+  "stockfish_benchmark": {
+    "path": "E:\\ChessXML\\tools\\stockfish\\stockfish.exe",
+    "version": "Stockfish 19",
+    "sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+    "calibrated_options": {
+      "Threads": 1,
+      "Hash": 64,
+      "UCI_LimitStrength": true,
+      "UCI_Elo": 1320
+    }
+  },
+  "baseline_engine_configuration": {
+    "evaluation": {
+      "pawn_structure": true,
+      "rook_files": true,
+      "king_safety": true,
+      "uncastled_king_safety": true,
+      "tapered_eval": true
+    },
+    "search": {
+      "quiescence_mode": "Q0 (fast capture-only, irreversible)",
+      "time_policy": "arm_c (adaptive Fischer time management)",
+      "tt_policy": "always_replace",
+      "tt_max_entries": 200000,
+      "qsearch_max_ply": 12,
+      "enable_history": true,
+      "enable_killers": true,
+      "enable_countermoves": false,
+      "enable_history_malus": false,
+      "enable_rfp": false,
+      "rfp_max_depth": 2,
+      "rfp_margin_per_depth": 120,
+      "enable_pvs": true,
+      "enable_aspiration": true,
+      "enable_lmr": true,
+      "enable_nmp": true,
+      "enable_see_ordering": false,
+      "enable_see_pruning": false
+    }
+  },
+  "prior_milestone_reconciliation": {
+    "v040_report_path": "docs/v0.40_report.md",
+    "v040_audit_path": "analysis/v0.40/independent_audit.json",
+    "v040_test_count": 437,
+    "v040_test_status": "ALL_PASSED",
+    "v040_rfp_gap_noted": "RFP Gates A-C passed; Gate D strength match was deferred in v0.40 and remains to be executed in v0.41",
+    "v040_repetition_gap_noted": "3-fold repetition draw claim was omitted from _negamax and _quiescence, creating potential draw claim skipping when entering quiescence"
+  }
+}
+

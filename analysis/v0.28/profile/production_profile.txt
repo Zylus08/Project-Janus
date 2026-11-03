@@ -1,0 +1,108 @@
+================================================================================
+PROJECT JANUS v0.28 — PRODUCTION CONFIGURATION SEARCH PROFILE
+Total Wall Time: 11.330s
+================================================================================
+
+TOP 40 FUNCTIONS BY EXCLUSIVE TIME (tottime):
+--------------------------------------------------------------------------------
+         14151538 function calls (14092931 primitive calls) in 11.197 seconds
+
+   Ordered by: internal time
+   List reduced from 139 to 40 due to restriction <40>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    44761    1.054    0.000    2.226    0.000 E:\ChessXML\project-janus\src\janus\evaluation.py:43(evaluate_white)
+   323389    0.833    0.000    1.676    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:1819(generate_pseudo_legal_moves)
+    89047    0.725    0.000    1.609    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:2310(push)
+  1612798    0.556    0.000    0.712    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:405(scan_forward)
+   325421    0.503    0.000    3.431    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3702(generate_legal_moves)
+  1565132    0.493    0.000    0.629    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:414(scan_reversed)
+   256557    0.487    0.000    0.487    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:905(attackers_mask)
+ 30822/45    0.444    0.000   11.323    0.252 E:\ChessXML\project-janus\src\janus\search.py:652(_negamax)
+49294/21464    0.349    0.000    6.327    0.000 E:\ChessXML\project-janus\src\janus\search.py:582(_quiescence)
+  2162891    0.338    0.000    0.338    0.000 {method 'bit_length' of 'int' objects}
+   164342    0.290    0.000    0.723    0.000 E:\ChessXML\project-janus\src\janus\search.py:491(_move_order_score)
+   178042    0.243    0.000    0.323    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:1014(_remove_piece_at)
+   628706    0.223    0.000    0.223    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:799(pieces_mask)
+   522040    0.219    0.000    0.219    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:835(piece_type_at)
+    94713    0.217    0.000    0.305    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3645(_slider_blockers)
+   244638    0.214    0.000    0.635    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3664(_is_safe)
+   229460    0.204    0.000    0.204    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:875(attacks_mask)
+     9048    0.183    0.000    0.376    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\polyglot.py:225(hash_board)
+   193649    0.167    0.000    0.202    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3311(is_capture)
+    80116    0.154    0.000    0.343    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:2110(is_insufficient_material)
+   107618    0.141    0.000    0.158    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3421(has_kingside_castling_rights)
+    72823    0.136    0.000    0.176    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3341(is_castling)
+    89004    0.118    0.000    0.230    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:1052(_set_piece_at)
+    89047    0.114    0.000    0.235    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:2431(pop)
+   257384    0.104    0.000    0.104    0.000 <string>:2(__eq__)
+    94992    0.100    0.000    0.154    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:825(piece_at)
+    79683    0.099    0.000    0.099    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:2258(is_repetition)
+    88703    0.097    0.000    0.419    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:1906(checkers_mask)
+    89206    0.095    0.000    0.130    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3768(_from_chess960)
+   233126    0.095    0.000    0.141    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:411(msb)
+   160665    0.089    0.000    0.141    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:2115(<genexpr>)
+   362816    0.084    0.000    0.084    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3304(is_en_passant)
+   107618    0.083    0.000    0.097    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3442(has_queenside_castling_rights)
+    10079    0.081    0.000    1.820    0.000 E:\ChessXML\project-janus\src\janus\search.py:565(_ordered_moves)
+    89047    0.079    0.000    0.079    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:1567(restore)
+    88707    0.077    0.000    0.137    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:864(king)
+    88794    0.077    0.000    0.077    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3316(is_zeroing)
+    24654    0.075    0.000    0.102    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3738(generate_castling_moves)
+    89047    0.073    0.000    0.073    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:1547(__init__)
+    28234    0.072    0.000    0.884    0.000 {method 'sort' of 'list' objects}
+
+
+
+
+================================================================================
+TOP 40 FUNCTIONS BY CUMULATIVE TIME (cumtime):
+--------------------------------------------------------------------------------
+         14151538 function calls (14092931 primitive calls) in 11.197 seconds
+
+   Ordered by: cumulative time
+   List reduced from 139 to 40 due to restriction <40>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       12    0.001    0.000   11.326    0.944 E:\ChessXML\project-janus\src\janus\search.py:925(search)
+ 30822/45    0.444    0.000   11.323    0.252 E:\ChessXML\project-janus\src\janus\search.py:652(_negamax)
+49294/21464    0.349    0.000    6.327    0.000 E:\ChessXML\project-janus\src\janus\search.py:582(_quiescence)
+   325421    0.503    0.000    3.431    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3702(generate_legal_moves)
+    44761    0.033    0.000    2.259    0.000 E:\ChessXML\project-janus\src\janus\evaluation.py:81(evaluate_side_to_move)
+    44761    1.054    0.000    2.226    0.000 E:\ChessXML\project-janus\src\janus\evaluation.py:43(evaluate_white)
+    10079    0.081    0.000    1.820    0.000 E:\ChessXML\project-janus\src\janus\search.py:565(_ordered_moves)
+   323389    0.833    0.000    1.676    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:1819(generate_pseudo_legal_moves)
+    89047    0.725    0.000    1.609    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:2310(push)
+    65972    0.064    0.000    1.326    0.000 {built-in method builtins.any}
+    18948    0.064    0.000    1.004    0.000 E:\ChessXML\project-janus\src\janus\search.py:549(_quiescence_moves)
+    30482    0.049    0.000    0.921    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:1922(gives_check)
+    28234    0.072    0.000    0.884    0.000 {method 'sort' of 'list' objects}
+   164342    0.290    0.000    0.723    0.000 E:\ChessXML\project-janus\src\janus\search.py:491(_move_order_score)
+  1612798    0.556    0.000    0.712    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:405(scan_forward)
+   244638    0.214    0.000    0.635    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3664(_is_safe)
+  1565132    0.493    0.000    0.629    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:414(scan_reversed)
+   128168    0.065    0.000    0.576    0.000 E:\ChessXML\project-janus\src\janus\search.py:577(<lambda>)
+     9048    0.008    0.000    0.525    0.000 E:\ChessXML\project-janus\src\janus\search.py:409(_key)
+     9048    0.009    0.000    0.517    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\polyglot.py:274(zobrist_hash)
+     9048    0.024    0.000    0.507    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\polyglot.py:269(__call__)
+   256557    0.487    0.000    0.487    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:905(attackers_mask)
+    88703    0.059    0.000    0.478    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:1918(is_check)
+    88703    0.097    0.000    0.419    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:1906(checkers_mask)
+     9048    0.183    0.000    0.376    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\polyglot.py:225(hash_board)
+    80116    0.154    0.000    0.343    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:2110(is_insufficient_material)
+  2162891    0.338    0.000    0.338    0.000 {method 'bit_length' of 'int' objects}
+   178042    0.243    0.000    0.323    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:1014(_remove_piece_at)
+    94713    0.217    0.000    0.305    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3645(_slider_blockers)
+    36174    0.023    0.000    0.236    0.000 E:\ChessXML\project-janus\src\janus\search.py:610(<lambda>)
+    89047    0.114    0.000    0.235    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:2431(pop)
+    89004    0.118    0.000    0.230    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:1052(_set_piece_at)
+   628706    0.223    0.000    0.223    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:799(pieces_mask)
+   522040    0.219    0.000    0.219    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:835(piece_type_at)
+    72664    0.056    0.000    0.205    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:925(is_attacked_by)
+   229460    0.204    0.000    0.204    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:875(attacks_mask)
+   193649    0.167    0.000    0.202    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3311(is_capture)
+    24361    0.055    0.000    0.184    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3677(_generate_evasions)
+    72823    0.136    0.000    0.176    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3341(is_castling)
+   107618    0.141    0.000    0.158    0.000 E:\ChessXML\project-janus\.venv\Lib\site-packages\chess\__init__.py:3421(has_kingside_castling_rights)
+
+

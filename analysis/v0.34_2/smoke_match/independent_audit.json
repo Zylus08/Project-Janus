@@ -1,0 +1,92 @@
+{
+  "audit_timestamp_utc": "2026-10-25T13:15:46.052256+00:00",
+  "audit_passed": true,
+  "errors": [],
+  "findings": [
+    "Found 4 valid games in JSON, 4 in CSV, 4 attempts in attempts.json.",
+    "All moves across all valid games verified strictly legal from their starting positions.",
+    "Consolidated PGN matches valid games count (4).",
+    "Per-game PGN directory contains exactly 4 individual PGN files.",
+    "Total attempts: 4 (Valid: 4, Infrastructure Failures: 0)."
+  ],
+  "counts": {
+    "expected_games": 4,
+    "expected_pairs": 2,
+    "valid_completed_games": 4,
+    "total_attempts": 4,
+    "infrastructure_failures": 0,
+    "complete_valid_pairs": 2,
+    "incomplete_pairs": 0
+  },
+  "playing_strength": {
+    "candidate_wins": 4,
+    "candidate_draws": 0,
+    "candidate_losses": 0,
+    "candidate_score": 4.0,
+    "candidate_score_pct": 100.0,
+    "estimated_elo_diff": null,
+    "elo_analytical_95_ci": null,
+    "elo_bootstrap_95_ci": [
+      null,
+      null
+    ],
+    "score_pct_bootstrap_95_ci": [
+      100.0,
+      100.0
+    ],
+    "by_color": {
+      "white": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 0,
+        "score_pts": 2.0,
+        "score_pct": 100.0,
+        "games": 2
+      },
+      "black": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 0,
+        "score_pts": 2.0,
+        "score_pct": 100.0,
+        "games": 2
+      }
+    }
+  },
+  "paired_analysis": {
+    "total_pairs": 2,
+    "pairs_won": 2,
+    "pairs_drawn": 0,
+    "pairs_lost": 0,
+    "decisive_pairs": 2,
+    "paired_sign_test_p": 0.5,
+    "paired_t_stat": null,
+    "paired_t_test_p": null,
+    "pair_results": [
+      {
+        "pair": 1,
+        "score": 2.0,
+        "outcome": "won",
+        "opening_id": "scotch_game"
+      },
+      {
+        "pair": 2,
+        "score": 2.0,
+        "outcome": "won",
+        "opening_id": "italian_two_knights"
+      }
+    ]
+  },
+  "performance_telemetry": {
+    "avg_candidate_depth": 3.47,
+    "avg_reference_depth": 3.95,
+    "avg_candidate_movetime_s": 0.5049,
+    "avg_reference_movetime_s": 0.5025,
+    "avg_candidate_nodes": 7947.0,
+    "avg_reference_nodes": 9352.0
+  },
+  "infrastructure_audit": {
+    "failure_count": 0,
+    "failures": []
+  }
+}

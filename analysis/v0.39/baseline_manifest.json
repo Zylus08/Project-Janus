@@ -1,0 +1,49 @@
+{
+  "milestone": "v0.39",
+  "generated_at_utc": "2026-10-31T17:15:00Z",
+  "baseline_commit": "00595a34bb1c853f6db15b497b77ce21c2105574",
+  "starting_branch": "v0.3-benchmark-harness",
+  "repository": "E:\\ChessXML\\project-janus",
+  "engine_core": {
+    "version": "v0.38-adaptive",
+    "search": "iterative_deepening_pvs_lmr_nmp_see_tt",
+    "evaluation_config": "CONFIG_V034_TAPERED",
+    "time_manager_policy": "arm_c_adaptive",
+    "active_uci_command": ".venv/Scripts/python.exe -m janus.uci --name Janus-v0.38-Adaptive --eval-all --time-policy arm_c"
+  },
+  "opponent_binaries": {
+    "stockfish_path": "E:\\ChessXML\\tools\\stockfish\\stockfish.exe",
+    "stockfish_version": "Stockfish 19 x86-64-modern",
+    "stockfish_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0"
+  },
+  "runtime_environment": {
+    "python_version": "3.13.2",
+    "os": "Windows-11-10.0.26200-SP0",
+    "logical_cores": 16,
+    "dependencies": {
+      "chess": "1.11.2"
+    }
+  },
+  "benchmark_baselines_verified": {
+    "v038_primary_fischer": {
+      "games": 100,
+      "pairs": 50,
+      "janus_score_pct": 0.0,
+      "time_control": "3000ms+100ms"
+    },
+    "v038_historical_depth3": {
+      "games": 50,
+      "pairs": 25,
+      "janus_score_pct": 13.0,
+      "time_control": "fixed_depth_3"
+    },
+    "v038_calibrated_elo1320": {
+      "games": 50,
+      "pairs": 25,
+      "janus_score_pct": 56.0,
+      "time_control": "3000ms+100ms",
+      "anchored_elo": 1361.9
+    }
+  }
+}
+

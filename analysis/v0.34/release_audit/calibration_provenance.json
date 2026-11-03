@@ -1,0 +1,135 @@
+{
+  "dataset_provenance": {
+    "source_pgn": "E:\\ChessXML\\project-janus\\analysis\\v0.33\\match\\v033_match_500ms.pgn",
+    "total_samples": 1100,
+    "unique_positions": 1067,
+    "duplicate_positions_count": 33,
+    "mirrored_duplicates_count": 0,
+    "games_represented": 100,
+    "pairs_represented": 50,
+    "mean_positions_per_game": 11.0,
+    "min_positions_per_game": 1,
+    "max_positions_per_game": 35
+  },
+  "partition_isolation": {
+    "train_samples": 646,
+    "val_samples": 226,
+    "test_samples": 228,
+    "train_pairs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "val_pairs": [
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "test_pairs": [
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "leakage_train_val": [],
+    "leakage_train_test": [],
+    "leakage_val_test": [],
+    "zero_leakage_verified": true
+  },
+  "loss_recomputation": {
+    "recomputed_uncalibrated": {
+      "train": {
+        "mse": 0.10511981935542351,
+        "mae": 0.23263991493688665,
+        "accuracy": 58.04953560371517,
+        "count": 646
+      },
+      "val": {
+        "mse": 0.09383189477543884,
+        "mae": 0.23903016565319715,
+        "accuracy": 36.283185840707965,
+        "count": 226
+      },
+      "test": {
+        "mse": 0.10386980273450727,
+        "mae": 0.2539814092591732,
+        "accuracy": 61.40350877192983,
+        "count": 228
+      }
+    },
+    "recomputed_calibrated": {
+      "train": {
+        "mse": 0.10283160619463728,
+        "mae": 0.23083835721551335,
+        "accuracy": 58.204334365325074,
+        "count": 646
+      },
+      "val": {
+        "mse": 0.09484426506073246,
+        "mae": 0.24156642335997047,
+        "accuracy": 35.39823008849557,
+        "count": 226
+      },
+      "test": {
+        "mse": 0.1082201036598532,
+        "mae": 0.2593058232674025,
+        "accuracy": 58.77192982456141,
+        "count": 228
+      }
+    },
+    "discrepancies_vs_reported": {
+      "uncalib_train_mse": 0.0,
+      "uncalib_val_mse": 0.0,
+      "uncalib_test_mse": 0.0,
+      "calib_train_mse": 0.0,
+      "calib_val_mse": 0.0,
+      "calib_test_mse": 0.0
+    },
+    "recomputation_matches_reported_exactly": true
+  },
+  "methodological_limitations": {
+    "target_label_noise": "Positions were labeled with binary/ternary final game results (1.0, 0.5, 0.0) from shallow games rather than deep engine ground truth (e.g., Stockfish depth 16+ evaluation converted to win probability).",
+    "tuning_context_gap": "Static weight calibration on quiet positions ignores dynamic alpha-beta search interaction, quiescence search effects, and move-ordering heuristics.",
+    "recommendation_future_milestone": "Generate quiet position datasets labeled by deep Stockfish evaluation scores (e.g. depth 16-20 centipawns mapped to sigmoid), or implement SPSA (Simultaneous Perturbation Stochastic Approximation) playing-strength tuning directly within the search harness."
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "q0": {
+    "sum_nodes": 40423,
+    "sum_median_time_ms": 1716.91,
+    "pooled_nps": 23544.0,
+    "mean_of_pos_nps": 28195.1,
+    "positions": [
+      {
+        "id": "startpos",
+        "phase": "opening",
+        "nodes": 2552,
+        "median_time_ms": 104.01,
+        "median_nps": 24536.3,
+        "std_nps": 2595.2,
+        "reps_nps": [
+          24536.3,
+          20861.5,
+          26602.7,
+          24400.0,
+          27619.5
+        ]
+      },
+      {
+        "id": "four_knights",
+        "phase": "opening",
+        "nodes": 8513,
+        "median_time_ms": 379.32,
+        "median_nps": 22442.7,
+        "std_nps": 419.4,
+        "reps_nps": [
+          21854.8,
+          22554.5,
+          22087.4,
+          22442.7,
+          22934.7
+        ]
+      },
+      {
+        "id": "open_game",
+        "phase": "middlegame",
+        "nodes": 13550,
+        "median_time_ms": 574.45,
+        "median_nps": 23587.9,
+        "std_nps": 261.2,
+        "reps_nps": [
+          23701.9,
+          23587.9,
+          23681.6,
+          23111.5,
+          23291.3
+        ]
+      },
+      {
+        "id": "middlegame_tactical",
+        "phase": "middlegame",
+        "nodes": 12787,
+        "median_time_ms": 587.95,
+        "median_nps": 21748.6,
+        "std_nps": 484.4,
+        "reps_nps": [
+          21900.4,
+          22183.4,
+          20941.9,
+          21748.6,
+          21362.1
+        ]
+      },
+      {
+        "id": "rook_endgame",
+        "phase": "endgame",
+        "nodes": 309,
+        "median_time_ms": 9.37,
+        "median_nps": 32977.6,
+        "std_nps": 1322.3,
+        "reps_nps": [
+          32236.2,
+          33557.8,
+          32977.6,
+          35688.3,
+          32921.7
+        ]
+      },
+      {
+        "id": "tactics_mate_in_one",
+        "phase": "tactical",
+        "nodes": 2712,
+        "median_time_ms": 61.81,
+        "median_nps": 43877.4,
+        "std_nps": 1289.3,
+        "reps_nps": [
+          43413.5,
+          43877.4,
+          46164.5,
+          45755.1,
+          43629.1
+        ]
+      }
+    ]
+  },
+  "q1": {
+    "sum_nodes": 45434,
+    "sum_median_time_ms": 2539.66,
+    "pooled_nps": 17889.8,
+    "mean_of_pos_nps": 20187.2,
+    "positions": [
+      {
+        "id": "startpos",
+        "phase": "opening",
+        "nodes": 2556,
+        "median_time_ms": 164.95,
+        "median_nps": 15495.3,
+        "std_nps": 363.6,
+        "reps_nps": [
+          15495.3,
+          15466.1,
+          15898.4,
+          15685.4,
+          14921.3
+        ]
+      },
+      {
+        "id": "four_knights",
+        "phase": "opening",
+        "nodes": 8536,
+        "median_time_ms": 495.02,
+        "median_nps": 17243.8,
+        "std_nps": 130.5,
+        "reps_nps": [
+          17368.5,
+          17116.6,
+          17243.8,
+          17326.1,
+          17066.2
+        ]
+      },
+      {
+        "id": "open_game",
+        "phase": "middlegame",
+        "nodes": 13584,
+        "median_time_ms": 816.86,
+        "median_nps": 16629.5,
+        "std_nps": 386.3,
+        "reps_nps": [
+          16939.0,
+          17176.9,
+          16176.4,
+          16629.5,
+          16515.5
+        ]
+      },
+      {
+        "id": "middlegame_tactical",
+        "phase": "middlegame",
+        "nodes": 14600,
+        "median_time_ms": 841.9,
+        "median_nps": 17341.7,
+        "std_nps": 238.6,
+        "reps_nps": [
+          16956.2,
+          17290.8,
+          17341.7,
+          17611.4,
+          17415.8
+        ]
+      },
+      {
+        "id": "rook_endgame",
+        "phase": "endgame",
+        "nodes": 319,
+        "median_time_ms": 12.06,
+        "median_nps": 26457.9,
+        "std_nps": 804.7,
+        "reps_nps": [
+          25868.9,
+          24695.8,
+          26457.9,
+          26645.1,
+          26501.8
+        ]
+      },
+      {
+        "id": "tactics_mate_in_one",
+        "phase": "tactical",
+        "nodes": 5839,
+        "median_time_ms": 208.87,
+        "median_nps": 27955.0,
+        "std_nps": 1461.0,
+        "reps_nps": [
+          28324.2,
+          27955.0,
+          26443.5,
+          25351.8,
+          28905.3
+        ]
+      }
+    ]
+  }
+}

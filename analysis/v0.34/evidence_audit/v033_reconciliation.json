@@ -1,0 +1,85 @@
+{
+  "metadata_check": {
+    "candidate_name": "Janus-v0.33",
+    "candidate_commit": "def3740+eval",
+    "baseline_name": "Janus-v0.30",
+    "baseline_commit": "05de411",
+    "time_control": "fixed movetime 500ms",
+    "movetime_ms": 500,
+    "seed": 42,
+    "total_games_requested": 100
+  },
+  "num_games_json": 100,
+  "game_ids_contiguous": true,
+  "pairs_count": 50,
+  "pair_integrity_errors": [],
+  "pair_outcomes_calculated": {
+    "won": 17,
+    "drawn": 21,
+    "lost": 12
+  },
+  "tallies_calculated": {
+    "candidate_wins": 33,
+    "draws": 38,
+    "candidate_losses": 29,
+    "candidate_points": 52.0,
+    "candidate_score_pct": 52.0,
+    "by_color": {
+      "white": {
+        "wins": 24,
+        "draws": 16,
+        "losses": 10,
+        "points": 32.0,
+        "games": 50,
+        "score_pct": 64.0
+      },
+      "black": {
+        "wins": 9,
+        "draws": 22,
+        "losses": 19,
+        "points": 20.0,
+        "games": 50,
+        "score_pct": 40.0
+      }
+    },
+    "terminations": {
+      "checkmate": 62,
+      "threefold repetition": 37,
+      "move limit": 1
+    }
+  },
+  "num_games_csv": 100,
+  "csv_mismatches": [],
+  "num_games_pgn": 100,
+  "pgn_mismatches": [],
+  "statistical_recomputation": {
+    "observed_score_pct": 52.0,
+    "game_standard_error_pct": 3.9517,
+    "wald_ci_95": [
+      44.25,
+      59.75
+    ],
+    "delta_elo": 13.9,
+    "elo_standard_error": 27.5,
+    "elo_ci_95": [
+      -40.0,
+      67.8
+    ],
+    "paired_standard_error_pct": 3.56,
+    "paired_t_statistic": 0.5618,
+    "paired_t_test_p_value": 0.5743,
+    "pair_bootstrap_ci_95_seed42_2k": [
+      45.0,
+      59.0
+    ],
+    "pair_bootstrap_ci_95_100k": [
+      45.0,
+      59.0
+    ],
+    "decisive_pairs": 29,
+    "pairs_won": 17,
+    "pairs_lost": 12,
+    "sign_test_two_tailed_p_value": 0.4583
+  },
+  "discrepancies_with_reported_summary": []
+}

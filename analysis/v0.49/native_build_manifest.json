@@ -1,0 +1,27 @@
+{
+  "milestone": "v0.49",
+  "component": "Native Move Picker Kernel (Candidate N1)",
+  "source_file": "analysis/v0.49/native/move_picker.c",
+  "output_binary": "analysis/v0.49/native/move_picker.dll",
+  "abi_version": 4901,
+  "compiler": {
+    "name": "Microsoft (R) C/C++ Optimizing Compiler",
+    "version": "19.43.34809 for x64",
+    "architecture": "x64",
+    "toolset": "MSVC 14.43.34808",
+    "visual_studio": "Visual Studio 2022 BuildTools (v17.13.5)"
+  },
+  "compilation": {
+    "environment_script": "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Auxiliary/Build/vcvars64.bat",
+    "flags": ["/O2", "/LD", "/Fe:analysis/v0.49/native/move_picker.dll"],
+    "dependencies": ["stdlib.h", "string.h"],
+    "external_libraries": []
+  },
+  "runtime_bridge": {
+    "module": "analysis/v0.49/native/native_picker.py",
+    "binding": "ctypes",
+    "fallback": "pure-Python reference implementation",
+    "automatic_detection": true
+  }
+}
+

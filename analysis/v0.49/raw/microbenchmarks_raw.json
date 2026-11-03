@@ -1,0 +1,57 @@
+{
+  "10": {
+    "move_count": 10,
+    "py_eager_median_ns": 1300.0,
+    "py_eager_p95_ns": 1500.0,
+    "py_inc_top1_median_ns": 500.0,
+    "py_inc_top5_median_ns": 3700.0,
+    "c_partial_top1_median_ns": 3400.0,
+    "c_partial_top5_median_ns": 4000.0,
+    "c_full_median_ns": 4600.0,
+    "c_per_move_top1_median_ns": 4300.0
+  },
+  "25": {
+    "move_count": 25,
+    "py_eager_median_ns": 3400.0,
+    "py_eager_p95_ns": 3900.0,
+    "py_inc_top1_median_ns": 1100.0,
+    "py_inc_top5_median_ns": 7000.0,
+    "c_partial_top1_median_ns": 5400.0,
+    "c_partial_top5_median_ns": 6100.0,
+    "c_full_median_ns": 9100.0,
+    "c_per_move_top1_median_ns": 8100.0
+  },
+  "35": {
+    "move_count": 35,
+    "py_eager_median_ns": 5200.0,
+    "py_eager_p95_ns": 7000.0,
+    "py_inc_top1_median_ns": 1400.0,
+    "py_inc_top5_median_ns": 9200.0,
+    "c_partial_top1_median_ns": 7000.0,
+    "c_partial_top5_median_ns": 7600.0,
+    "c_full_median_ns": 16600.0,
+    "c_per_move_top1_median_ns": 10300.0
+  },
+  "50": {
+    "move_count": 50,
+    "py_eager_median_ns": 9500.0,
+    "py_eager_p95_ns": 10900.0,
+    "py_inc_top1_median_ns": 1800.0,
+    "py_inc_top5_median_ns": 13400.0,
+    "c_partial_top1_median_ns": 8600.0,
+    "c_partial_top5_median_ns": 9300.0,
+    "c_full_median_ns": 19300.0,
+    "c_per_move_top1_median_ns": 13800.0
+  },
+  "75": {
+    "move_count": 75,
+    "py_eager_median_ns": 10600.0,
+    "py_eager_p95_ns": 19400.0,
+    "py_inc_top1_median_ns": 2600.0,
+    "py_inc_top5_median_ns": 17800.0,
+    "c_partial_top1_median_ns": 11600.0,
+    "c_partial_top5_median_ns": 12700.0,
+    "c_full_median_ns": 24900.0,
+    "c_per_move_top1_median_ns": 20700.0
+  }
+}

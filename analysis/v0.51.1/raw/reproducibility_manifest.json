@@ -1,0 +1,34 @@
+{
+  "audit_target": "Native N2 Standalone UCI Engine",
+  "source_file": "analysis/v0.51/native/janus_native.cpp",
+  "source_sha256": "8e719e9b8613c71a96eb5cf2eff4643e1070d6fba6c02df3c2ae7ac5681d0d0e",
+  "original_binary": {
+    "path": "analysis/v0.51/native/janus_native_engine.exe",
+    "sha256": "0611bc59e52073d07b0092b183e6a373783a9e4e6a679177b02ceb4a9900fb9b",
+    "bytes": 331264
+  },
+  "rebuilt_binary": {
+    "path": "analysis/v0.51.1/scratch/test_build_engine.exe",
+    "sha256": "6a856be05917c987846594538171e5963c45dc7091c49791cb62f16d6d0b1d01",
+    "bytes": 331264
+  },
+  "compiler_environment": {
+    "compiler": "Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34809 for x64",
+    "developer_command_prompt": "Visual Studio 2022 v17.13.5",
+    "build_command": "cl /O2 /std:c++17 /EHsc /Fe:analysis/v0.51.1/scratch/test_build_engine.exe analysis/v0.51/native/janus_native.cpp",
+    "compilation_status": "SUCCESS (0 warnings, 0 errors)"
+  },
+  "hash_divergence_root_cause": {
+    "cause": "Embedded PE Header TimeDateStamp and Linker Debug Directory timestamps",
+    "byte_identity_pct": 99.305,
+    "differing_bytes": 2302,
+    "differing_regions": 284,
+    "header_timestamp_offset": "0x108 - 0x109"
+  },
+  "behavioral_qualification": {
+    "uci_handshake_identity": true,
+    "depth_4_bestmove_identity": true,
+    "depth_4_bestmove": "b1c3",
+    "functional_equivalence": "CONFIRMED_BIT_EXACT_LOGIC"
+  }
+}

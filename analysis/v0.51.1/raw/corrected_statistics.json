@@ -1,0 +1,76 @@
+{
+  "sample_size": {
+    "total_games": 200,
+    "total_pairs": 100,
+    "degrees_of_freedom": 99
+  },
+  "score_results": {
+    "n2_points": 188.0,
+    "k0_points": 12.0,
+    "n2_win_fraction": 0.94,
+    "n2_score_pct": 94.0,
+    "point_elo_estimate": 477.99064128642203
+  },
+  "paired_statistics": {
+    "mean_paired_delta": 1.76,
+    "sample_stdev": 0.5340903718028676,
+    "standard_error": 0.05340903718028676,
+    "paired_t_statistic": 32.95322463984831,
+    "exact_student_t_p_two_tailed": 3.614147863971923e-55,
+    "exact_student_t_p_one_tailed": 1.8070739319859616e-55,
+    "normal_approx_p_two_tailed_reported_v051": 3.803591702144351e-238,
+    "p_value_ratio": 9.501934347828067e+182
+  },
+  "bootstrap_results_100k": {
+    "resamples": 100000,
+    "random_seed": 42,
+    "delta_ci_95": [
+      1.65,
+      1.86
+    ],
+    "pct_ci_95": [
+      91.25,
+      96.5
+    ],
+    "asymmetric_elo_ci_95": [
+      407.28992804247974,
+      576.1837075974062
+    ]
+  },
+  "linear_delta_method_elo_reported_v051": {
+    "point_elo": 477.99064128642203,
+    "se_elo_linear": 217.79615119552298,
+    "elo_ci_95": [
+      51.110184943197,
+      904.871097629647
+    ]
+  },
+  "sensitivity_analyses": {
+    "S1_exclude_horizon_games": {
+      "clean_pairs_count": 91,
+      "clean_games_count": 182,
+      "n2_points": 175.5,
+      "n2_pct": 96.42857142857143,
+      "point_elo": 572.5455056635952,
+      "mean_delta": 1.8571428571428572,
+      "t_stat": 40.592486989589595,
+      "p_value": 1.192305456542492e-59
+    },
+    "S2_conservative_rescore_4_k0_wins": {
+      "n2_points": 186.0,
+      "n2_pct": 93.0,
+      "point_elo": 449.3539634158715,
+      "mean_delta": 1.72,
+      "t_stat": 27.005311562536015,
+      "p_value": 1.8368736551064182e-47
+    },
+    "S3_adversarial_rescore_all_9_k0_wins": {
+      "n2_points": 183.5,
+      "n2_pct": 91.75,
+      "point_elo": 418.46084974968056,
+      "mean_delta": 1.67,
+      "t_stat": 22.588911373080453,
+      "p_value": 7.532677994464969e-41
+    }
+  }
+}

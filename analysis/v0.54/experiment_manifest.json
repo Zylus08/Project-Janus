@@ -1,0 +1,1550 @@
+{
+  "milestone": "v0.54",
+  "milestone_name": "Native Move Ordering Intelligence, Killer/History Ablation & Playing-Strength Validation",
+  "branch": "v0.3-benchmark-harness",
+  "baseline_commit": "c90b6736e4fe30c2ce8fad38564b7c1484e03dd8",
+  "production_reference": "Janus Native N3 (C++17, UseLMR=true, UsePVS=false, UseKiller=false, UseHistory=false)",
+  "experimental_candidate": "Janus Native N5 (C++17, UseLMR=true, UsePVS=false, UseKiller=true, UseHistory=true)",
+  "system_environment": {
+    "os": "Windows 11 Enterprise AMD64 (16 logical cores)",
+    "python": "3.13.2 64-bit",
+    "compiler": "Microsoft Visual C++ BuildTools 2022 (v19.43.34809 x64)",
+    "stockfish_version": "Stockfish 19 x64 AVX2",
+    "stockfish_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0"
+  },
+  "gates_validated": {
+    "Phase_0_Baseline_Freeze": "PASSED (Clean commit c90b673, verified toolchain & Stockfish 19, confirmed absence of native killer/history)",
+    "Phase_1_Architecture_Audit": "PASSED (Documented 7-tier ordering hierarchy: TT > Promo > MVV-LVA > Killer1 > Killer2 > History > Quiets)",
+    "Phase_2_Killer_Specification": "PASSED (2 slots per ply, quiet cutoffs only, duplicate suppression, slot promotion)",
+    "Phase_3_History_Specification": "PASSED (2x64x64 table, depth^2 bonus, saturation at 70,000, generational decay)",
+    "Phase_4_Configuration_Matrix": "PASSED (C0=Control, C1=Killer, C2=History, C3=Combined)",
+    "Phase_5_Correctness_and_Safety": "PASSED (30/30 unit tests passing, mathematical invariance confirmed)",
+    "Phase_6_Tactical_Safety_Benchmark": "PASSED (48/48 move agreement, 0 dropped tactical solutions, -19.90% node reduction at Depth 5)",
+    "Phase_7_Fixed_Depth_Ablation": "PASSED (-34.73% nodes, 1.92x speedup at Depth 6, first-move cutoffs 83.2%)",
+    "Phase_8_Fixed_Time_Ladder": "PASSED (+0.5 to +1.5 median depth penetration, 91.1% first-move cutoffs at 500ms)",
+    "Phase_9_Preregistered_Match": "PASSED (200 games, Candidate C3 won 108.5/200 (54.25%), +29.60 Elo, t=2.0803, p=0.04008 < 0.05, 95% CI [+1.74, +57.86] Elo)",
+    "Phase_10_Factorial_Interaction_Analysis": "PASSED (Main effects: K=-17.30%, H=-17.43%, sub-additive interaction +14.08%, LMR re-searches -66.36%)",
+    "Phase_11_Final_Release_Decision": "PASSED (Category A: Promoted Native N5 to production default, UseKillerOrdering=true, UseHistoryOrdering=true)",
+    "Phase_12_Milestone_Report": "COMPLETE (docs/v0.54_report.md authored and verified)"
+  },
+  "tactical_safety": {
+    "tactical_regression": {
+      "suite_name": "Tactical Regression Suite (12)",
+      "total_positions": 12,
+      "solved": {
+        "c0": 4,
+        "c1": 4,
+        "c2": 4,
+        "c3": 4
+      },
+      "total_nodes": {
+        "c0": 373611,
+        "c1": 313204,
+        "c2": 303169,
+        "c3": 296560
+      },
+      "node_reduction_c3_vs_c0_pct": 20.62332211846011,
+      "agreement_c3_c0_pct": 100.0,
+      "agreed_count": 12
+    },
+    "validation": {
+      "suite_name": "Validation Suite (16)",
+      "total_positions": 16,
+      "solved": {
+        "c0": 3,
+        "c1": 3,
+        "c2": 3,
+        "c3": 3
+      },
+      "total_nodes": {
+        "c0": 450576,
+        "c1": 345922,
+        "c2": 341483,
+        "c3": 332873
+      },
+      "node_reduction_c3_vs_c0_pct": 26.122785057348818,
+      "agreement_c3_c0_pct": 100.0,
+      "agreed_count": 16
+    },
+    "independent_tactical": {
+      "suite_name": "Independent Tactical Suite (20)",
+      "total_positions": 20,
+      "solved": {
+        "c0": 9,
+        "c1": 9,
+        "c2": 9,
+        "c3": 9
+      },
+      "total_nodes": {
+        "c0": 520021,
+        "c1": 481515,
+        "c2": 444541,
+        "c3": 447324
+      },
+      "node_reduction_c3_vs_c0_pct": 13.979627745802572,
+      "agreement_c3_c0_pct": 100.0,
+      "agreed_count": 20
+    },
+    "combined_summary": {
+      "total_positions": 48,
+      "solved": {
+        "c0": 16,
+        "c1": 16,
+        "c2": 16,
+        "c3": 16
+      },
+      "total_nodes": {
+        "c0": 1344208,
+        "c1": 1140641,
+        "c2": 1089193,
+        "c3": 1076757
+      },
+      "node_reduction_c3_vs_c0_pct": 19.896548748407987,
+      "agreement_c3_c0_pct": 100.0,
+      "total_agreed": 48
+    }
+  },
+  "fixed_depth_ablation": {
+    "3": {
+      "depth": 3,
+      "positions_count": 53,
+      "total_nodes": {
+        "c0": 253863,
+        "c1": 200249,
+        "c2": 203850,
+        "c3": 200022
+      },
+      "total_time_sec": {
+        "c0": 0.2377108000800945,
+        "c1": 0.1727410001331009,
+        "c2": 0.1799786004703492,
+        "c3": 0.1751626000041142
+      },
+      "node_reduction_pct_vs_c0": {
+        "c0": 0.0,
+        "c1": 21.119265115436278,
+        "c2": 19.70078349345907,
+        "c3": 21.208683423736424
+      },
+      "speedup_vs_c0": {
+        "c0": 1.0,
+        "c1": 1.3761110558404366,
+        "c2": 1.3207725777335204,
+        "c3": 1.3570865017675642
+      },
+      "agreement_pct_vs_c0": {
+        "c0": 100.0,
+        "c1": 100.0,
+        "c2": 100.0,
+        "c3": 100.0
+      },
+      "nps": {
+        "c0": 1067948,
+        "c1": 1159244,
+        "c2": 1132634,
+        "c3": 1141921
+      },
+      "ordering_telemetry": {
+        "c0": {
+          "total_cutoffs": 6093,
+          "cutoff_move_1": 4045,
+          "cutoff_move_2": 538,
+          "cutoff_move_3": 344,
+          "cutoff_move_4plus": 1166,
+          "cutoff_tt": 1264,
+          "cutoff_killer1": 0,
+          "cutoff_killer2": 0,
+          "cutoff_history": 0,
+          "cutoff_captures": 3414,
+          "cutoff_quiet": 2679,
+          "sum_cutoff_index": 18609,
+          "first_move_cutoff_rate_pct": 66.38765796816018,
+          "mean_cutoff_index": 3.054160512063023
+        },
+        "c1": {
+          "total_cutoffs": 5317,
+          "cutoff_move_1": 4109,
+          "cutoff_move_2": 560,
+          "cutoff_move_3": 342,
+          "cutoff_move_4plus": 306,
+          "cutoff_tt": 1328,
+          "cutoff_killer1": 1555,
+          "cutoff_killer2": 233,
+          "cutoff_history": 0,
+          "cutoff_captures": 3220,
+          "cutoff_quiet": 2097,
+          "sum_cutoff_index": 9082,
+          "first_move_cutoff_rate_pct": 77.28042129020125,
+          "mean_cutoff_index": 1.7081060748542412
+        },
+        "c2": {
+          "total_cutoffs": 5332,
+          "cutoff_move_1": 3976,
+          "cutoff_move_2": 646,
+          "cutoff_move_3": 385,
+          "cutoff_move_4plus": 325,
+          "cutoff_tt": 1287,
+          "cutoff_killer1": 0,
+          "cutoff_killer2": 0,
+          "cutoff_history": 1832,
+          "cutoff_captures": 3245,
+          "cutoff_quiet": 2087,
+          "sum_cutoff_index": 9328,
+          "first_move_cutoff_rate_pct": 74.56864216054014,
+          "mean_cutoff_index": 1.749437359339835
+        },
+        "c3": {
+          "total_cutoffs": 5310,
+          "cutoff_move_1": 4100,
+          "cutoff_move_2": 559,
+          "cutoff_move_3": 344,
+          "cutoff_move_4plus": 307,
+          "cutoff_tt": 1328,
+          "cutoff_killer1": 1548,
+          "cutoff_killer2": 235,
+          "cutoff_history": 1839,
+          "cutoff_captures": 3219,
+          "cutoff_quiet": 2091,
+          "sum_cutoff_index": 9060,
+          "first_move_cutoff_rate_pct": 77.21280602636534,
+          "mean_cutoff_index": 1.7062146892655368
+        }
+      },
+      "lmr_telemetry": {
+        "c0": {
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        },
+        "c1": {
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        },
+        "c2": {
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        },
+        "c3": {
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      }
+    },
+    "4": {
+      "depth": 4,
+      "positions_count": 53,
+      "total_nodes": {
+        "c0": 818772,
+        "c1": 612454,
+        "c2": 648155,
+        "c3": 600048
+      },
+      "total_time_sec": {
+        "c0": 2.343664300336968,
+        "c1": 1.738748700474389,
+        "c2": 2.004239800036885,
+        "c3": 1.738373999891337
+      },
+      "node_reduction_pct_vs_c0": {
+        "c0": 0.0,
+        "c1": 25.19846794956349,
+        "c2": 20.838157631184263,
+        "c3": 26.7136638771233
+      },
+      "speedup_vs_c0": {
+        "c0": 1.0,
+        "c1": 1.3479028336283088,
+        "c2": 1.1693532382172216,
+        "c3": 1.3481933694840504
+      },
+      "agreement_pct_vs_c0": {
+        "c0": 100.0,
+        "c1": 94.33962264150944,
+        "c2": 92.45283018867924,
+        "c3": 92.45283018867924
+      },
+      "nps": {
+        "c0": 349355,
+        "c1": 352238,
+        "c2": 323391,
+        "c3": 345177
+      },
+      "ordering_telemetry": {
+        "c0": {
+          "total_cutoffs": 50796,
+          "cutoff_move_1": 38773,
+          "cutoff_move_2": 4193,
+          "cutoff_move_3": 2950,
+          "cutoff_move_4plus": 4880,
+          "cutoff_tt": 2955,
+          "cutoff_killer1": 0,
+          "cutoff_killer2": 0,
+          "cutoff_history": 0,
+          "cutoff_captures": 35272,
+          "cutoff_quiet": 15524,
+          "sum_cutoff_index": 97195,
+          "first_move_cutoff_rate_pct": 76.33081344987794,
+          "mean_cutoff_index": 1.9134380659894479
+        },
+        "c1": {
+          "total_cutoffs": 48195,
+          "cutoff_move_1": 39016,
+          "cutoff_move_2": 4376,
+          "cutoff_move_3": 2728,
+          "cutoff_move_4plus": 2075,
+          "cutoff_tt": 2952,
+          "cutoff_killer1": 11158,
+          "cutoff_killer2": 1835,
+          "cutoff_history": 0,
+          "cutoff_captures": 34207,
+          "cutoff_quiet": 13988,
+          "sum_cutoff_index": 69786,
+          "first_move_cutoff_rate_pct": 80.95445585641664,
+          "mean_cutoff_index": 1.4479925303454715
+        },
+        "c2": {
+          "total_cutoffs": 48531,
+          "cutoff_move_1": 38723,
+          "cutoff_move_2": 4407,
+          "cutoff_move_3": 3200,
+          "cutoff_move_4plus": 2201,
+          "cutoff_tt": 2993,
+          "cutoff_killer1": 0,
+          "cutoff_killer2": 0,
+          "cutoff_history": 13843,
+          "cutoff_captures": 34227,
+          "cutoff_quiet": 14304,
+          "sum_cutoff_index": 69934,
+          "first_move_cutoff_rate_pct": 79.79023716799571,
+          "mean_cutoff_index": 1.4410170818651995
+        },
+        "c3": {
+          "total_cutoffs": 48143,
+          "cutoff_move_1": 39055,
+          "cutoff_move_2": 4331,
+          "cutoff_move_3": 2839,
+          "cutoff_move_4plus": 1918,
+          "cutoff_tt": 2949,
+          "cutoff_killer1": 10645,
+          "cutoff_killer2": 2410,
+          "cutoff_history": 13457,
+          "cutoff_captures": 34223,
+          "cutoff_quiet": 13920,
+          "sum_cutoff_index": 67709,
+          "first_move_cutoff_rate_pct": 81.12290467980807,
+          "mean_cutoff_index": 1.4064142242901356
+        }
+      },
+      "lmr_telemetry": {
+        "c0": {
+          "reduced_moves": 2003,
+          "researches": 60,
+          "cutoffs": 29
+        },
+        "c1": {
+          "reduced_moves": 1759,
+          "researches": 22,
+          "cutoffs": 13
+        },
+        "c2": {
+          "reduced_moves": 1761,
+          "researches": 26,
+          "cutoffs": 15
+        },
+        "c3": {
+          "reduced_moves": 1759,
+          "researches": 22,
+          "cutoffs": 13
+        }
+      }
+    },
+    "5": {
+      "depth": 5,
+      "positions_count": 53,
+      "total_nodes": {
+        "c0": 2055146,
+        "c1": 1419665,
+        "c2": 1477862,
+        "c3": 1382847
+      },
+      "total_time_sec": {
+        "c0": 8.608422799909022,
+        "c1": 5.359751799958758,
+        "c2": 5.90174740011571,
+        "c3": 4.8569824998266995
+      },
+      "node_reduction_pct_vs_c0": {
+        "c0": 0.0,
+        "c1": 30.921452782430052,
+        "c2": 28.08968316606217,
+        "c3": 32.71295567322225
+      },
+      "speedup_vs_c0": {
+        "c0": 1.0,
+        "c1": 1.6061234029484839,
+        "c2": 1.458622712273359,
+        "c3": 1.772380855853645
+      },
+      "agreement_pct_vs_c0": {
+        "c0": 100.0,
+        "c1": 98.11320754716981,
+        "c2": 98.11320754716981,
+        "c3": 96.22641509433963
+      },
+      "nps": {
+        "c0": 238736,
+        "c1": 264875,
+        "c2": 250410,
+        "c3": 284713
+      },
+      "ordering_telemetry": {
+        "c0": {
+          "total_cutoffs": 100603,
+          "cutoff_move_1": 73901,
+          "cutoff_move_2": 8686,
+          "cutoff_move_3": 5303,
+          "cutoff_move_4plus": 12713,
+          "cutoff_tt": 16965,
+          "cutoff_killer1": 0,
+          "cutoff_killer2": 0,
+          "cutoff_history": 0,
+          "cutoff_captures": 63678,
+          "cutoff_quiet": 36925,
+          "sum_cutoff_index": 227716,
+          "first_move_cutoff_rate_pct": 73.45804797073646,
+          "mean_cutoff_index": 2.263511028498156
+        },
+        "c1": {
+          "total_cutoffs": 81134,
+          "cutoff_move_1": 66609,
+          "cutoff_move_2": 7168,
+          "cutoff_move_3": 4044,
+          "cutoff_move_4plus": 3313,
+          "cutoff_tt": 16547,
+          "cutoff_killer1": 18254,
+          "cutoff_killer2": 3872,
+          "cutoff_history": 0,
+          "cutoff_captures": 56671,
+          "cutoff_quiet": 24463,
+          "sum_cutoff_index": 117244,
+          "first_move_cutoff_rate_pct": 82.09751768678976,
+          "mean_cutoff_index": 1.4450661868020804
+        },
+        "c2": {
+          "total_cutoffs": 82834,
+          "cutoff_move_1": 66838,
+          "cutoff_move_2": 7607,
+          "cutoff_move_3": 4890,
+          "cutoff_move_4plus": 3499,
+          "cutoff_tt": 16589,
+          "cutoff_killer1": 0,
+          "cutoff_killer2": 0,
+          "cutoff_history": 25058,
+          "cutoff_captures": 57009,
+          "cutoff_quiet": 25825,
+          "sum_cutoff_index": 117991,
+          "first_move_cutoff_rate_pct": 80.68908902141632,
+          "mean_cutoff_index": 1.4244271675881883
+        },
+        "c3": {
+          "total_cutoffs": 80432,
+          "cutoff_move_1": 66028,
+          "cutoff_move_2": 7103,
+          "cutoff_move_3": 4312,
+          "cutoff_move_4plus": 2989,
+          "cutoff_tt": 16601,
+          "cutoff_killer1": 17682,
+          "cutoff_killer2": 4742,
+          "cutoff_history": 23646,
+          "cutoff_captures": 56015,
+          "cutoff_quiet": 24417,
+          "sum_cutoff_index": 112034,
+          "first_move_cutoff_rate_pct": 82.09170479411179,
+          "mean_cutoff_index": 1.3929033220608713
+        }
+      },
+      "lmr_telemetry": {
+        "c0": {
+          "reduced_moves": 48270,
+          "researches": 425,
+          "cutoffs": 114
+        },
+        "c1": {
+          "reduced_moves": 46156,
+          "researches": 146,
+          "cutoffs": 34
+        },
+        "c2": {
+          "reduced_moves": 47061,
+          "researches": 158,
+          "cutoffs": 36
+        },
+        "c3": {
+          "reduced_moves": 46176,
+          "researches": 150,
+          "cutoffs": 34
+        }
+      }
+    },
+    "6": {
+      "depth": 6,
+      "positions_count": 53,
+      "total_nodes": {
+        "c0": 8539679,
+        "c1": 5859903,
+        "c2": 5848451,
+        "c3": 5573753
+      },
+      "total_time_sec": {
+        "c0": 34.07177020004019,
+        "c1": 20.769470400176942,
+        "c2": 19.248983899888117,
+        "c3": 17.741872000216972
+      },
+      "node_reduction_pct_vs_c0": {
+        "c0": 0.0,
+        "c1": 31.380289586997357,
+        "c2": 31.514392988307875,
+        "c3": 34.73111811345602
+      },
+      "speedup_vs_c0": {
+        "c0": 1.0,
+        "c1": 1.640473711826081,
+        "c2": 1.7700555196702217,
+        "c3": 1.9204157373936366
+      },
+      "agreement_pct_vs_c0": {
+        "c0": 100.0,
+        "c1": 96.22641509433963,
+        "c2": 100.0,
+        "c3": 98.11320754716981
+      },
+      "nps": {
+        "c0": 250637,
+        "c1": 282140,
+        "c2": 303831,
+        "c3": 314158
+      },
+      "ordering_telemetry": {
+        "c0": {
+          "total_cutoffs": 421844,
+          "cutoff_move_1": 314216,
+          "cutoff_move_2": 36744,
+          "cutoff_move_3": 21079,
+          "cutoff_move_4plus": 49805,
+          "cutoff_tt": 61496,
+          "cutoff_killer1": 0,
+          "cutoff_killer2": 0,
+          "cutoff_history": 0,
+          "cutoff_captures": 276521,
+          "cutoff_quiet": 145323,
+          "sum_cutoff_index": 934935,
+          "first_move_cutoff_rate_pct": 74.48630299352367,
+          "mean_cutoff_index": 2.2163050796028863
+        },
+        "c1": {
+          "total_cutoffs": 338698,
+          "cutoff_move_1": 279892,
+          "cutoff_move_2": 30456,
+          "cutoff_move_3": 16203,
+          "cutoff_move_4plus": 12147,
+          "cutoff_tt": 60524,
+          "cutoff_killer1": 73534,
+          "cutoff_killer2": 17617,
+          "cutoff_history": 0,
+          "cutoff_captures": 240386,
+          "cutoff_quiet": 98312,
+          "sum_cutoff_index": 473149,
+          "first_move_cutoff_rate_pct": 82.63762998305275,
+          "mean_cutoff_index": 1.3969642572439165
+        },
+        "c2": {
+          "total_cutoffs": 339481,
+          "cutoff_move_1": 280286,
+          "cutoff_move_2": 30087,
+          "cutoff_move_3": 16584,
+          "cutoff_move_4plus": 12524,
+          "cutoff_tt": 61394,
+          "cutoff_killer1": 0,
+          "cutoff_killer2": 0,
+          "cutoff_history": 95071,
+          "cutoff_captures": 243044,
+          "cutoff_quiet": 96437,
+          "sum_cutoff_index": 460308,
+          "first_move_cutoff_rate_pct": 82.56308895048619,
+          "mean_cutoff_index": 1.3559168259784788
+        },
+        "c3": {
+          "total_cutoffs": 331784,
+          "cutoff_move_1": 276158,
+          "cutoff_move_2": 29622,
+          "cutoff_move_3": 15856,
+          "cutoff_move_4plus": 10148,
+          "cutoff_tt": 61056,
+          "cutoff_killer1": 67461,
+          "cutoff_killer2": 19726,
+          "cutoff_history": 91643,
+          "cutoff_captures": 238779,
+          "cutoff_quiet": 93005,
+          "sum_cutoff_index": 440902,
+          "first_move_cutoff_rate_pct": 83.23427290044125,
+          "mean_cutoff_index": 1.3288826465411232
+        }
+      },
+      "lmr_telemetry": {
+        "c0": {
+          "reduced_moves": 109011,
+          "researches": 1510,
+          "cutoffs": 358
+        },
+        "c1": {
+          "reduced_moves": 99483,
+          "researches": 549,
+          "cutoffs": 115
+        },
+        "c2": {
+          "reduced_moves": 100972,
+          "researches": 575,
+          "cutoffs": 122
+        },
+        "c3": {
+          "reduced_moves": 99353,
+          "researches": 508,
+          "cutoffs": 100
+        }
+      }
+    }
+  },
+  "fixed_time_ladder": {
+    "50": {
+      "tier_allocated_sec": 0.05,
+      "tier_allocated_ms": 50,
+      "positions_count": 16,
+      "configs": {
+        "c0": {
+          "mean_depth": 12.5,
+          "median_depth": 5.0,
+          "middlegame_mean_depth": 12.5,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 299798,
+          "mean_overshoot_ms": 4.336200000398091,
+          "max_overshoot_ms": 28.938900027424094,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 100.0,
+          "first_move_cutoff_rate_pct": 75.28692923788292,
+          "mean_cutoff_index": 2.1765337296672445,
+          "lmr_reduced_moves": 8616,
+          "lmr_researches": 310,
+          "lmr_research_rate_pct": 3.5979572887650884,
+          "ordering_telemetry": {
+            "total_cutoffs": 24222,
+            "cutoff_move_1": 18236,
+            "cutoff_move_2": 1714,
+            "cutoff_move_3": 1196,
+            "cutoff_move_4plus": 3076,
+            "cutoff_tt": 6397,
+            "cutoff_killer1": 0,
+            "cutoff_killer2": 0,
+            "cutoff_history": 0,
+            "cutoff_captures": 5176,
+            "cutoff_quiet": 19046,
+            "sum_cutoff_index": 52720
+          }
+        },
+        "c1": {
+          "mean_depth": 12.625,
+          "median_depth": 5.5,
+          "middlegame_mean_depth": 12.625,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 287716,
+          "mean_overshoot_ms": 4.853593742882365,
+          "max_overshoot_ms": 24.49019997147843,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 93.75,
+          "first_move_cutoff_rate_pct": 87.06164152850032,
+          "mean_cutoff_index": 1.4102698454283469,
+          "lmr_reduced_moves": 9849,
+          "lmr_researches": 237,
+          "lmr_research_rate_pct": 2.4063356685957964,
+          "ordering_telemetry": {
+            "total_cutoffs": 26719,
+            "cutoff_move_1": 23262,
+            "cutoff_move_2": 1624,
+            "cutoff_move_3": 687,
+            "cutoff_move_4plus": 1146,
+            "cutoff_tt": 7602,
+            "cutoff_killer1": 12806,
+            "cutoff_killer2": 3653,
+            "cutoff_history": 0,
+            "cutoff_captures": 5815,
+            "cutoff_quiet": 20904,
+            "sum_cutoff_index": 37681
+          }
+        },
+        "c2": {
+          "mean_depth": 12.6875,
+          "median_depth": 5.5,
+          "middlegame_mean_depth": 12.6875,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 288561,
+          "mean_overshoot_ms": 4.077337497437836,
+          "max_overshoot_ms": 17.596599983517077,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 100.0,
+          "first_move_cutoff_rate_pct": 86.59481804089467,
+          "mean_cutoff_index": 1.299069904775965,
+          "lmr_reduced_moves": 10938,
+          "lmr_researches": 195,
+          "lmr_research_rate_pct": 1.7827756445419638,
+          "ordering_telemetry": {
+            "total_cutoffs": 27094,
+            "cutoff_move_1": 23462,
+            "cutoff_move_2": 1952,
+            "cutoff_move_3": 859,
+            "cutoff_move_4plus": 821,
+            "cutoff_tt": 7726,
+            "cutoff_killer1": 0,
+            "cutoff_killer2": 0,
+            "cutoff_history": 20242,
+            "cutoff_captures": 6229,
+            "cutoff_quiet": 20865,
+            "sum_cutoff_index": 35197
+          }
+        },
+        "c3": {
+          "mean_depth": 12.6875,
+          "median_depth": 5.5,
+          "middlegame_mean_depth": 12.6875,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 310596,
+          "mean_overshoot_ms": 5.533618744084376,
+          "max_overshoot_ms": 29.017499985639002,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 100.0,
+          "first_move_cutoff_rate_pct": 88.32293266246283,
+          "mean_cutoff_index": 1.2615088051752867,
+          "lmr_reduced_moves": 12625,
+          "lmr_researches": 238,
+          "lmr_research_rate_pct": 1.885148514851485,
+          "ordering_telemetry": {
+            "total_cutoffs": 30607,
+            "cutoff_move_1": 27033,
+            "cutoff_move_2": 1877,
+            "cutoff_move_3": 911,
+            "cutoff_move_4plus": 786,
+            "cutoff_tt": 9234,
+            "cutoff_killer1": 15123,
+            "cutoff_killer2": 4668,
+            "cutoff_history": 23626,
+            "cutoff_captures": 6282,
+            "cutoff_quiet": 24325,
+            "sum_cutoff_index": 38611
+          }
+        }
+      }
+    },
+    "100": {
+      "tier_allocated_sec": 0.1,
+      "tier_allocated_ms": 100,
+      "positions_count": 16,
+      "configs": {
+        "c0": {
+          "mean_depth": 13.125,
+          "median_depth": 5.0,
+          "middlegame_mean_depth": 13.125,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 658756,
+          "mean_overshoot_ms": 4.308993747690688,
+          "max_overshoot_ms": 13.54799999389797,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 100.0,
+          "first_move_cutoff_rate_pct": 75.65755635563912,
+          "mean_cutoff_index": 2.150559565826579,
+          "lmr_reduced_moves": 23752,
+          "lmr_researches": 825,
+          "lmr_research_rate_pct": 3.473391714381947,
+          "ordering_telemetry": {
+            "total_cutoffs": 56383,
+            "cutoff_move_1": 42658,
+            "cutoff_move_2": 4156,
+            "cutoff_move_3": 2685,
+            "cutoff_move_4plus": 6884,
+            "cutoff_tt": 17428,
+            "cutoff_killer1": 0,
+            "cutoff_killer2": 0,
+            "cutoff_history": 0,
+            "cutoff_captures": 12974,
+            "cutoff_quiet": 43409,
+            "sum_cutoff_index": 121255
+          }
+        },
+        "c1": {
+          "mean_depth": 13.375,
+          "median_depth": 6.5,
+          "middlegame_mean_depth": 13.375,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 641869,
+          "mean_overshoot_ms": 3.9440375163394443,
+          "max_overshoot_ms": 10.192199994344259,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 93.75,
+          "first_move_cutoff_rate_pct": 88.2991767384831,
+          "mean_cutoff_index": 1.328508415739104,
+          "lmr_reduced_moves": 28558,
+          "lmr_researches": 608,
+          "lmr_research_rate_pct": 2.129000630296239,
+          "ordering_telemetry": {
+            "total_cutoffs": 62799,
+            "cutoff_move_1": 55451,
+            "cutoff_move_2": 3490,
+            "cutoff_move_3": 1583,
+            "cutoff_move_4plus": 2275,
+            "cutoff_tt": 23175,
+            "cutoff_killer1": 27577,
+            "cutoff_killer2": 8307,
+            "cutoff_history": 0,
+            "cutoff_captures": 16051,
+            "cutoff_quiet": 46748,
+            "sum_cutoff_index": 83429
+          }
+        },
+        "c2": {
+          "mean_depth": 13.4375,
+          "median_depth": 6.0,
+          "middlegame_mean_depth": 13.4375,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 619001,
+          "mean_overshoot_ms": 3.134906249761111,
+          "max_overshoot_ms": 12.918399972841138,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 93.75,
+          "first_move_cutoff_rate_pct": 88.11393478017496,
+          "mean_cutoff_index": 1.2504358117293328,
+          "lmr_reduced_moves": 31852,
+          "lmr_researches": 468,
+          "lmr_research_rate_pct": 1.469295491648876,
+          "ordering_telemetry": {
+            "total_cutoffs": 62527,
+            "cutoff_move_1": 55095,
+            "cutoff_move_2": 3911,
+            "cutoff_move_3": 1919,
+            "cutoff_move_4plus": 1602,
+            "cutoff_tt": 24169,
+            "cutoff_killer1": 0,
+            "cutoff_killer2": 0,
+            "cutoff_history": 47182,
+            "cutoff_captures": 14357,
+            "cutoff_quiet": 48170,
+            "sum_cutoff_index": 78186
+          }
+        },
+        "c3": {
+          "mean_depth": 13.4375,
+          "median_depth": 6.0,
+          "middlegame_mean_depth": 13.4375,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 634180,
+          "mean_overshoot_ms": 5.09336875766166,
+          "max_overshoot_ms": 14.517100038938219,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 100.0,
+          "first_move_cutoff_rate_pct": 88.9671028802696,
+          "mean_cutoff_index": 1.2361852569250877,
+          "lmr_reduced_moves": 33030,
+          "lmr_researches": 597,
+          "lmr_research_rate_pct": 1.807447774750227,
+          "ordering_telemetry": {
+            "total_cutoffs": 63501,
+            "cutoff_move_1": 56495,
+            "cutoff_move_2": 3620,
+            "cutoff_move_3": 1898,
+            "cutoff_move_4plus": 1488,
+            "cutoff_tt": 24252,
+            "cutoff_killer1": 27763,
+            "cutoff_killer2": 9561,
+            "cutoff_history": 47248,
+            "cutoff_captures": 15239,
+            "cutoff_quiet": 48262,
+            "sum_cutoff_index": 78499
+          }
+        }
+      }
+    },
+    "250": {
+      "tier_allocated_sec": 0.25,
+      "tier_allocated_ms": 250,
+      "positions_count": 16,
+      "configs": {
+        "c0": {
+          "mean_depth": 14,
+          "median_depth": 6.5,
+          "middlegame_mean_depth": 14,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 1420612,
+          "mean_overshoot_ms": 4.369768743345048,
+          "max_overshoot_ms": 18.620099988766015,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 100.0,
+          "first_move_cutoff_rate_pct": 76.63452712636769,
+          "mean_cutoff_index": 2.0898797001031606,
+          "lmr_reduced_moves": 63261,
+          "lmr_researches": 1886,
+          "lmr_research_rate_pct": 2.981299694914718,
+          "ordering_telemetry": {
+            "total_cutoffs": 123109,
+            "cutoff_move_1": 94344,
+            "cutoff_move_2": 8506,
+            "cutoff_move_3": 5815,
+            "cutoff_move_4plus": 14444,
+            "cutoff_tt": 49546,
+            "cutoff_killer1": 0,
+            "cutoff_killer2": 0,
+            "cutoff_history": 0,
+            "cutoff_captures": 26441,
+            "cutoff_quiet": 96668,
+            "sum_cutoff_index": 257283
+          }
+        },
+        "c1": {
+          "mean_depth": 14.0625,
+          "median_depth": 7.0,
+          "middlegame_mean_depth": 14.0625,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 1387844,
+          "mean_overshoot_ms": 6.570287499926053,
+          "max_overshoot_ms": 43.156900035683066,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 87.5,
+          "first_move_cutoff_rate_pct": 87.25756485736518,
+          "mean_cutoff_index": 1.349774632585045,
+          "lmr_reduced_moves": 72110,
+          "lmr_researches": 1543,
+          "lmr_research_rate_pct": 2.139786437387325,
+          "ordering_telemetry": {
+            "total_cutoffs": 136222,
+            "cutoff_move_1": 118864,
+            "cutoff_move_2": 8933,
+            "cutoff_move_3": 3356,
+            "cutoff_move_4plus": 5069,
+            "cutoff_tt": 59607,
+            "cutoff_killer1": 56236,
+            "cutoff_killer2": 18544,
+            "cutoff_history": 0,
+            "cutoff_captures": 34752,
+            "cutoff_quiet": 101470,
+            "sum_cutoff_index": 183869
+          }
+        },
+        "c2": {
+          "mean_depth": 14.5,
+          "median_depth": 7.0,
+          "middlegame_mean_depth": 14.5,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 1424708,
+          "mean_overshoot_ms": 3.2352249982068315,
+          "max_overshoot_ms": 14.279399998486042,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 93.75,
+          "first_move_cutoff_rate_pct": 88.72154812309965,
+          "mean_cutoff_index": 1.2313304538092127,
+          "lmr_reduced_moves": 84298,
+          "lmr_researches": 1003,
+          "lmr_research_rate_pct": 1.1898265676528508,
+          "ordering_telemetry": {
+            "total_cutoffs": 140764,
+            "cutoff_move_1": 124888,
+            "cutoff_move_2": 8440,
+            "cutoff_move_3": 3992,
+            "cutoff_move_4plus": 3444,
+            "cutoff_tt": 65186,
+            "cutoff_killer1": 0,
+            "cutoff_killer2": 0,
+            "cutoff_history": 107515,
+            "cutoff_captures": 31871,
+            "cutoff_quiet": 108893,
+            "sum_cutoff_index": 173327
+          }
+        },
+        "c3": {
+          "mean_depth": 14.375,
+          "median_depth": 6.5,
+          "middlegame_mean_depth": 14.375,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 1465668,
+          "mean_overshoot_ms": 3.438787505729124,
+          "max_overshoot_ms": 14.217799995094538,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 87.5,
+          "first_move_cutoff_rate_pct": 90.29405962914953,
+          "mean_cutoff_index": 1.194773995378459,
+          "lmr_reduced_moves": 87459,
+          "lmr_researches": 1002,
+          "lmr_research_rate_pct": 1.1456796899118444,
+          "ordering_telemetry": {
+            "total_cutoffs": 141944,
+            "cutoff_move_1": 128167,
+            "cutoff_move_2": 7815,
+            "cutoff_move_3": 3175,
+            "cutoff_move_4plus": 2787,
+            "cutoff_tt": 64297,
+            "cutoff_killer1": 62224,
+            "cutoff_killer2": 22516,
+            "cutoff_history": 106163,
+            "cutoff_captures": 34472,
+            "cutoff_quiet": 107472,
+            "sum_cutoff_index": 169591
+          }
+        }
+      }
+    },
+    "500": {
+      "tier_allocated_sec": 0.5,
+      "tier_allocated_ms": 500,
+      "positions_count": 16,
+      "configs": {
+        "c0": {
+          "mean_depth": 14.625,
+          "median_depth": 6.5,
+          "middlegame_mean_depth": 14.625,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 2948420,
+          "mean_overshoot_ms": 4.075606255355524,
+          "max_overshoot_ms": 12.44989997940138,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 100.0,
+          "first_move_cutoff_rate_pct": 82.7364598136744,
+          "mean_cutoff_index": 1.7987012474340756,
+          "lmr_reduced_moves": 135445,
+          "lmr_researches": 3889,
+          "lmr_research_rate_pct": 2.8712761637565065,
+          "ordering_telemetry": {
+            "total_cutoffs": 253320,
+            "cutoff_move_1": 209588,
+            "cutoff_move_2": 14015,
+            "cutoff_move_3": 8804,
+            "cutoff_move_4plus": 20913,
+            "cutoff_tt": 122450,
+            "cutoff_killer1": 0,
+            "cutoff_killer2": 0,
+            "cutoff_history": 0,
+            "cutoff_captures": 59523,
+            "cutoff_quiet": 193797,
+            "sum_cutoff_index": 455647
+          }
+        },
+        "c1": {
+          "mean_depth": 14.9375,
+          "median_depth": 7.5,
+          "middlegame_mean_depth": 14.9375,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 3339588,
+          "mean_overshoot_ms": 3.009112500876654,
+          "max_overshoot_ms": 7.414499996230006,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 93.75,
+          "first_move_cutoff_rate_pct": 88.0893562143995,
+          "mean_cutoff_index": 1.3297855147415325,
+          "lmr_reduced_moves": 172853,
+          "lmr_researches": 2596,
+          "lmr_research_rate_pct": 1.50185417667035,
+          "ordering_telemetry": {
+            "total_cutoffs": 303191,
+            "cutoff_move_1": 267079,
+            "cutoff_move_2": 18344,
+            "cutoff_move_3": 7490,
+            "cutoff_move_4plus": 10278,
+            "cutoff_tt": 141688,
+            "cutoff_killer1": 120640,
+            "cutoff_killer2": 43235,
+            "cutoff_history": 0,
+            "cutoff_captures": 78404,
+            "cutoff_quiet": 224787,
+            "sum_cutoff_index": 403179
+          }
+        },
+        "c2": {
+          "mean_depth": 15.25,
+          "median_depth": 7.0,
+          "middlegame_mean_depth": 15.25,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 3212612,
+          "mean_overshoot_ms": 4.574993756250478,
+          "max_overshoot_ms": 18.8522000098601,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 100.0,
+          "first_move_cutoff_rate_pct": 89.58067775789077,
+          "mean_cutoff_index": 1.2076731545264214,
+          "lmr_reduced_moves": 189900,
+          "lmr_researches": 1945,
+          "lmr_research_rate_pct": 1.0242232754081095,
+          "ordering_telemetry": {
+            "total_cutoffs": 302822,
+            "cutoff_move_1": 271270,
+            "cutoff_move_2": 16744,
+            "cutoff_move_3": 8072,
+            "cutoff_move_4plus": 6736,
+            "cutoff_tt": 156469,
+            "cutoff_killer1": 0,
+            "cutoff_killer2": 0,
+            "cutoff_history": 232429,
+            "cutoff_captures": 68584,
+            "cutoff_quiet": 234238,
+            "sum_cutoff_index": 365710
+          }
+        },
+        "c3": {
+          "mean_depth": 15.25,
+          "median_depth": 8.0,
+          "middlegame_mean_depth": 15.25,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 3116356,
+          "mean_overshoot_ms": 5.046612503065262,
+          "max_overshoot_ms": 32.3979000095278,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 100.0,
+          "first_move_cutoff_rate_pct": 91.12703600880732,
+          "mean_cutoff_index": 1.1765805992806444,
+          "lmr_reduced_moves": 190394,
+          "lmr_researches": 1724,
+          "lmr_research_rate_pct": 0.9054907192453544,
+          "ordering_telemetry": {
+            "total_cutoffs": 292484,
+            "cutoff_move_1": 266532,
+            "cutoff_move_2": 14577,
+            "cutoff_move_3": 6052,
+            "cutoff_move_4plus": 5323,
+            "cutoff_tt": 141149,
+            "cutoff_killer1": 117979,
+            "cutoff_killer2": 47892,
+            "cutoff_history": 212469,
+            "cutoff_captures": 78208,
+            "cutoff_quiet": 214276,
+            "sum_cutoff_index": 344131
+          }
+        }
+      }
+    },
+    "1000": {
+      "tier_allocated_sec": 1.0,
+      "tier_allocated_ms": 1000,
+      "positions_count": 16,
+      "configs": {
+        "c0": {
+          "mean_depth": 15.0625,
+          "median_depth": 7.5,
+          "middlegame_mean_depth": 15.0625,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 5711172,
+          "mean_overshoot_ms": 5.3820374960196204,
+          "max_overshoot_ms": 33.80930004641414,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 100.0,
+          "first_move_cutoff_rate_pct": 82.16463621934659,
+          "mean_cutoff_index": 1.8270431882070222,
+          "lmr_reduced_moves": 287098,
+          "lmr_researches": 9102,
+          "lmr_research_rate_pct": 3.1703460142529725,
+          "ordering_telemetry": {
+            "total_cutoffs": 514747,
+            "cutoff_move_1": 422940,
+            "cutoff_move_2": 29148,
+            "cutoff_move_3": 18062,
+            "cutoff_move_4plus": 44597,
+            "cutoff_tt": 270644,
+            "cutoff_killer1": 0,
+            "cutoff_killer2": 0,
+            "cutoff_history": 0,
+            "cutoff_captures": 95574,
+            "cutoff_quiet": 419173,
+            "sum_cutoff_index": 940465
+          }
+        },
+        "c1": {
+          "mean_depth": 15.375,
+          "median_depth": 7.5,
+          "middlegame_mean_depth": 15.375,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 5524804,
+          "mean_overshoot_ms": 7.286493750143563,
+          "max_overshoot_ms": 31.451000017113984,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 87.5,
+          "first_move_cutoff_rate_pct": 88.55713205286331,
+          "mean_cutoff_index": 1.3049939810388855,
+          "lmr_reduced_moves": 294473,
+          "lmr_researches": 4989,
+          "lmr_research_rate_pct": 1.6942130517908265,
+          "ordering_telemetry": {
+            "total_cutoffs": 540791,
+            "cutoff_move_1": 478909,
+            "cutoff_move_2": 33505,
+            "cutoff_move_3": 11396,
+            "cutoff_move_4plus": 16981,
+            "cutoff_tt": 268837,
+            "cutoff_killer1": 214022,
+            "cutoff_killer2": 81172,
+            "cutoff_history": 0,
+            "cutoff_captures": 136096,
+            "cutoff_quiet": 404695,
+            "sum_cutoff_index": 705729
+          }
+        },
+        "c2": {
+          "mean_depth": 15.625,
+          "median_depth": 7.0,
+          "middlegame_mean_depth": 15.625,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 5158212,
+          "mean_overshoot_ms": 6.078643749788171,
+          "max_overshoot_ms": 29.28080002311617,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 87.5,
+          "first_move_cutoff_rate_pct": 90.0407263779221,
+          "mean_cutoff_index": 1.1946008347739414,
+          "lmr_reduced_moves": 332425,
+          "lmr_researches": 3108,
+          "lmr_research_rate_pct": 0.9349477325712566,
+          "ordering_telemetry": {
+            "total_cutoffs": 513672,
+            "cutoff_move_1": 462514,
+            "cutoff_move_2": 27987,
+            "cutoff_move_3": 12240,
+            "cutoff_move_4plus": 10931,
+            "cutoff_tt": 273235,
+            "cutoff_killer1": 0,
+            "cutoff_killer2": 0,
+            "cutoff_history": 398333,
+            "cutoff_captures": 113150,
+            "cutoff_quiet": 400522,
+            "sum_cutoff_index": 613633
+          }
+        },
+        "c3": {
+          "mean_depth": 15.5,
+          "median_depth": 7.5,
+          "middlegame_mean_depth": 15.5,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 4887876,
+          "mean_overshoot_ms": 5.343862489098683,
+          "max_overshoot_ms": 41.870799963362515,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 93.75,
+          "first_move_cutoff_rate_pct": 90.20225167711267,
+          "mean_cutoff_index": 1.177590946710863,
+          "lmr_reduced_moves": 306334,
+          "lmr_researches": 2842,
+          "lmr_research_rate_pct": 0.9277455326539006,
+          "ordering_telemetry": {
+            "total_cutoffs": 480886,
+            "cutoff_move_1": 433770,
+            "cutoff_move_2": 28491,
+            "cutoff_move_3": 10707,
+            "cutoff_move_4plus": 7918,
+            "cutoff_tt": 251319,
+            "cutoff_killer1": 195643,
+            "cutoff_killer2": 85461,
+            "cutoff_history": 361168,
+            "cutoff_captures": 117608,
+            "cutoff_quiet": 363278,
+            "sum_cutoff_index": 566287
+          }
+        }
+      }
+    },
+    "2000": {
+      "tier_allocated_sec": 2.0,
+      "tier_allocated_ms": 2000,
+      "positions_count": 16,
+      "configs": {
+        "c0": {
+          "mean_depth": 16.125,
+          "median_depth": 8.5,
+          "middlegame_mean_depth": 16.125,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 13747524,
+          "mean_overshoot_ms": 3.149012500216486,
+          "max_overshoot_ms": 18.557999981567264,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 100.0,
+          "first_move_cutoff_rate_pct": 82.20869269767464,
+          "mean_cutoff_index": 1.8286699206737462,
+          "lmr_reduced_moves": 680492,
+          "lmr_researches": 18916,
+          "lmr_research_rate_pct": 2.779753472487553,
+          "ordering_telemetry": {
+            "total_cutoffs": 1271458,
+            "cutoff_move_1": 1045249,
+            "cutoff_move_2": 72268,
+            "cutoff_move_3": 46119,
+            "cutoff_move_4plus": 107822,
+            "cutoff_tt": 631016,
+            "cutoff_killer1": 0,
+            "cutoff_killer2": 0,
+            "cutoff_history": 0,
+            "cutoff_captures": 327516,
+            "cutoff_quiet": 943942,
+            "sum_cutoff_index": 2325077
+          }
+        },
+        "c1": {
+          "mean_depth": 16.4375,
+          "median_depth": 9.5,
+          "middlegame_mean_depth": 16.4375,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 14599492,
+          "mean_overshoot_ms": 2.7423812462075148,
+          "max_overshoot_ms": 7.762399967759848,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 93.75,
+          "first_move_cutoff_rate_pct": 88.06355758283951,
+          "mean_cutoff_index": 1.3114720398949085,
+          "lmr_reduced_moves": 828792,
+          "lmr_researches": 13183,
+          "lmr_research_rate_pct": 1.590628287917837,
+          "ordering_telemetry": {
+            "total_cutoffs": 1464247,
+            "cutoff_move_1": 1289468,
+            "cutoff_move_2": 94300,
+            "cutoff_move_3": 34653,
+            "cutoff_move_4plus": 45826,
+            "cutoff_tt": 689583,
+            "cutoff_killer1": 533469,
+            "cutoff_killer2": 208212,
+            "cutoff_history": 0,
+            "cutoff_captures": 430128,
+            "cutoff_quiet": 1034119,
+            "sum_cutoff_index": 1920319
+          }
+        },
+        "c2": {
+          "mean_depth": 17.0625,
+          "median_depth": 9.5,
+          "middlegame_mean_depth": 17.0625,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 14935364,
+          "mean_overshoot_ms": 3.5364500035939272,
+          "max_overshoot_ms": 11.579399986658245,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 93.75,
+          "first_move_cutoff_rate_pct": 90.51489138692418,
+          "mean_cutoff_index": 1.188413657310545,
+          "lmr_reduced_moves": 1129147,
+          "lmr_researches": 8190,
+          "lmr_research_rate_pct": 0.7253262861257215,
+          "ordering_telemetry": {
+            "total_cutoffs": 1476894,
+            "cutoff_move_1": 1336809,
+            "cutoff_move_2": 71886,
+            "cutoff_move_3": 37285,
+            "cutoff_move_4plus": 30914,
+            "cutoff_tt": 765441,
+            "cutoff_killer1": 0,
+            "cutoff_killer2": 0,
+            "cutoff_history": 1057771,
+            "cutoff_captures": 415580,
+            "cutoff_quiet": 1061314,
+            "sum_cutoff_index": 1755161
+          }
+        },
+        "c3": {
+          "mean_depth": 16.625,
+          "median_depth": 9.5,
+          "middlegame_mean_depth": 16.625,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 14533956,
+          "mean_overshoot_ms": 2.229293753771344,
+          "max_overshoot_ms": 5.5754000204615295,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 93.75,
+          "first_move_cutoff_rate_pct": 91.09132560983102,
+          "mean_cutoff_index": 1.1611342056988456,
+          "lmr_reduced_moves": 890202,
+          "lmr_researches": 6747,
+          "lmr_research_rate_pct": 0.7579178658326986,
+          "ordering_telemetry": {
+            "total_cutoffs": 1481107,
+            "cutoff_move_1": 1349160,
+            "cutoff_move_2": 78421,
+            "cutoff_move_3": 32178,
+            "cutoff_move_4plus": 21348,
+            "cutoff_tt": 753338,
+            "cutoff_killer1": 570669,
+            "cutoff_killer2": 235471,
+            "cutoff_history": 1039119,
+            "cutoff_captures": 438493,
+            "cutoff_quiet": 1042614,
+            "sum_cutoff_index": 1719764
+          }
+        }
+      }
+    },
+    "3000": {
+      "tier_allocated_sec": 3.0,
+      "tier_allocated_ms": 3000,
+      "positions_count": 16,
+      "configs": {
+        "c0": {
+          "mean_depth": 16.5625,
+          "median_depth": 9.5,
+          "middlegame_mean_depth": 16.5625,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 20471108,
+          "mean_overshoot_ms": 2.5625124872021843,
+          "max_overshoot_ms": 8.006000018212944,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 100.0,
+          "first_move_cutoff_rate_pct": 82.36705774177088,
+          "mean_cutoff_index": 1.7980268903306866,
+          "lmr_reduced_moves": 1082585,
+          "lmr_researches": 26481,
+          "lmr_research_rate_pct": 2.446089683489056,
+          "ordering_telemetry": {
+            "total_cutoffs": 1840141,
+            "cutoff_move_1": 1515670,
+            "cutoff_move_2": 100877,
+            "cutoff_move_3": 72036,
+            "cutoff_move_4plus": 151558,
+            "cutoff_tt": 910287,
+            "cutoff_killer1": 0,
+            "cutoff_killer2": 0,
+            "cutoff_history": 0,
+            "cutoff_captures": 509143,
+            "cutoff_quiet": 1330998,
+            "sum_cutoff_index": 3308623
+          }
+        },
+        "c1": {
+          "mean_depth": 16.8125,
+          "median_depth": 9.5,
+          "middlegame_mean_depth": 16.8125,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 21376324,
+          "mean_overshoot_ms": 3.8821187445137184,
+          "max_overshoot_ms": 11.592799972277135,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 87.5,
+          "first_move_cutoff_rate_pct": 88.2505925666405,
+          "mean_cutoff_index": 1.3008736321056618,
+          "lmr_reduced_moves": 1374141,
+          "lmr_researches": 18763,
+          "lmr_research_rate_pct": 1.365434842567102,
+          "ordering_telemetry": {
+            "total_cutoffs": 2043652,
+            "cutoff_move_1": 1803535,
+            "cutoff_move_2": 132008,
+            "cutoff_move_3": 48175,
+            "cutoff_move_4plus": 59934,
+            "cutoff_tt": 989944,
+            "cutoff_killer1": 746559,
+            "cutoff_killer2": 293926,
+            "cutoff_history": 0,
+            "cutoff_captures": 600170,
+            "cutoff_quiet": 1443482,
+            "sum_cutoff_index": 2658533
+          }
+        },
+        "c2": {
+          "mean_depth": 17.5,
+          "median_depth": 10.0,
+          "middlegame_mean_depth": 17.5,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 21235012,
+          "mean_overshoot_ms": 3.043962497031316,
+          "max_overshoot_ms": 8.230699982959777,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 87.5,
+          "first_move_cutoff_rate_pct": 90.47119547527038,
+          "mean_cutoff_index": 1.1895775564795803,
+          "lmr_reduced_moves": 1721528,
+          "lmr_researches": 13263,
+          "lmr_research_rate_pct": 0.7704202313293771,
+          "ordering_telemetry": {
+            "total_cutoffs": 2042995,
+            "cutoff_move_1": 1848322,
+            "cutoff_move_2": 99831,
+            "cutoff_move_3": 51906,
+            "cutoff_move_4plus": 42936,
+            "cutoff_tt": 1102824,
+            "cutoff_killer1": 0,
+            "cutoff_killer2": 0,
+            "cutoff_history": 1458875,
+            "cutoff_captures": 580129,
+            "cutoff_quiet": 1462866,
+            "sum_cutoff_index": 2430301
+          }
+        },
+        "c3": {
+          "mean_depth": 16.9375,
+          "median_depth": 9.5,
+          "middlegame_mean_depth": 16.9375,
+          "endgame_mean_depth": 0.0,
+          "total_nodes": 20800836,
+          "mean_overshoot_ms": 2.238831260910956,
+          "max_overshoot_ms": 5.4287000093609095,
+          "stockfish_agreement_pct": 18.75,
+          "agreement_vs_c0_pct": 93.75,
+          "first_move_cutoff_rate_pct": 91.58349562700128,
+          "mean_cutoff_index": 1.1527713281027858,
+          "lmr_reduced_moves": 1356360,
+          "lmr_researches": 10181,
+          "lmr_research_rate_pct": 0.7506119319354744,
+          "ordering_telemetry": {
+            "total_cutoffs": 2099589,
+            "cutoff_move_1": 1922877,
+            "cutoff_move_2": 105141,
+            "cutoff_move_3": 42640,
+            "cutoff_move_4plus": 28931,
+            "cutoff_tt": 1133988,
+            "cutoff_killer1": 814411,
+            "cutoff_killer2": 330548,
+            "cutoff_history": 1481122,
+            "cutoff_captures": 614375,
+            "cutoff_quiet": 1485214,
+            "sum_cutoff_index": 2420346
+          }
+        }
+      }
+    }
+  },
+  "match_summary": {
+    "match_id": "c3_vs_c0_primary",
+    "candidate": "Janus 0.54 N5 C3 (Killer+History)",
+    "control": "Janus 0.54 N3 C0 (Control)",
+    "total_pairs": 100,
+    "total_games": 200,
+    "time_control": "3.0s + 100ms",
+    "total_duration_sec": 382.130371599982,
+    "cand_wins": 45,
+    "cand_draws": 127,
+    "cand_losses": 28,
+    "cand_points": 108.5,
+    "cand_score_pct": 54.25,
+    "cand_white_score": 54.5,
+    "cand_black_score": 54.0,
+    "paired_diff_mean": 0.085,
+    "paired_diff_std": 0.4085883557377088,
+    "paired_diff_se": 0.04085883557377088,
+    "t_statistic": 2.0803333919424105,
+    "degrees_of_freedom": 99,
+    "two_sided_p_value": 0.04007753417338088,
+    "bootstrap_ci_95_diff": [
+      0.005,
+      0.165
+    ],
+    "elo_difference": 29.60345764724001,
+    "bootstrap_ci_95_elo": [
+      1.7371924043128417,
+      57.85577995137427
+    ],
+    "average_game_plies": 97.445,
+    "terminations": {
+      "draw_threefold_repetition": 126,
+      "checkmate_black": 36,
+      "checkmate_white": 37,
+      "draw_insufficient_material": 1
+    }
+  }
+}

@@ -1,0 +1,115 @@
+[
+  {
+    "id": "val_01_tactical_fork",
+    "theme": "Tactical combinations",
+    "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+    "expected_move": "d1d5",
+    "description": "Double attack on e4 knight and f7 pawn winning material."
+  },
+  {
+    "id": "val_02_quiet_positional",
+    "theme": "Quiet positional decisions",
+    "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+    "expected_move": "e1g1",
+    "description": "Sound positional development and king safety via kingside castling."
+  },
+  {
+    "id": "val_03_king_safety",
+    "theme": "King safety",
+    "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+    "expected_move": "e1g1",
+    "description": "Securing king before expanding in the center."
+  },
+  {
+    "id": "val_04_pawn_endgame",
+    "theme": "Pawn endgames",
+    "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+    "expected_move": "e3f4",
+    "description": "Opposition and king triangulation in pure pawn ending."
+  },
+  {
+    "id": "val_05_rook_endgame",
+    "theme": "Rook endgames",
+    "fen": "8/8/4k3/R7/8/8/2K4r/8 w - - 1 1",
+    "expected_move": "c2d3",
+    "description": "Lucena/Philidor style active king evasion in rook ending."
+  },
+  {
+    "id": "val_06_minor_piece_endgame",
+    "theme": "Minor-piece endgames",
+    "fen": "8/8/4k3/3b4/8/4B3/4K3/8 w - - 0 1",
+    "expected_move": "e2d3",
+    "description": "Opposite-colored bishop technical draw positioning."
+  },
+  {
+    "id": "val_07_pawn_promotion",
+    "theme": "Promotions",
+    "fen": "8/4P3/8/8/8/6k1/8/6K1 w - - 0 1",
+    "expected_move": "e7e8q",
+    "description": "Direct passed pawn promotion to queen."
+  },
+  {
+    "id": "val_08_kingside_castling",
+    "theme": "Castling",
+    "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+    "expected_move": "e1g1",
+    "description": "Standard Italian Game kingside castling."
+  },
+  {
+    "id": "val_09_en_passant_execution",
+    "theme": "En passant",
+    "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+    "expected_move": "d5e6",
+    "description": "En passant pawn capture preventing black pawn breakthrough."
+  },
+  {
+    "id": "val_10_stalemate_avoidance",
+    "theme": "Stalemate avoidance",
+    "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+    "expected_move": "b6a6",
+    "description": "Critical king move avoiding immediate stalemate draw."
+  },
+  {
+    "id": "val_11_check_evasion",
+    "theme": "Check evasions",
+    "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 1 6",
+    "expected_move": "e8g8",
+    "description": "Resolving king vulnerability along the e-file."
+  },
+  {
+    "id": "val_12_repetition_sensitive",
+    "theme": "Repetition-sensitive positions",
+    "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+    "expected_move": "d7d5",
+    "description": "Healthy opening development avoiding early repeating cycles."
+  },
+  {
+    "id": "val_13_fifty_move_draw_sensitive",
+    "theme": "Draw-sensitive positions",
+    "fen": "8/8/4k3/8/8/4K3/8/8 w - - 99 50",
+    "expected_move": "e3e4",
+    "description": "Fifty-move claim threshold boundary position."
+  },
+  {
+    "id": "val_14_tactical_pin",
+    "theme": "Tactical combinations",
+    "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+    "expected_move": "d3h7",
+    "description": "Exploiting kingside pin along the h-file."
+  },
+  {
+    "id": "val_15_queen_endgame",
+    "theme": "Pawn endgames",
+    "fen": "8/8/4k3/3q4/8/4Q3/4K3/8 b - - 0 1",
+    "expected_move": "e6d6",
+    "description": "Queen ending king centralisation and check evasion."
+  },
+  {
+    "id": "val_16_discovered_attack",
+    "theme": "Tactical combinations",
+    "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+    "expected_move": "d4c5",
+    "description": "Liquidation in the center activating light-squared bishop."
+  }
+]
+

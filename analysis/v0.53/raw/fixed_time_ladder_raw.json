@@ -1,0 +1,3502 @@
+{
+  "50": {
+    "summary": {
+      "tier_allocated_sec": 0.05,
+      "tier_allocated_ms": 50,
+      "positions_count": 16,
+      "mean_depth_n3": 12.3125,
+      "mean_depth_n4": 12.25,
+      "median_depth_n3": 4.5,
+      "median_depth_n4": 4.5,
+      "middlegame_mean_depth_n3": 12.3125,
+      "middlegame_mean_depth_n4": 12.25,
+      "endgame_mean_depth_n3": 0.0,
+      "endgame_mean_depth_n4": 0.0,
+      "depth_gain_mean": -0.0625,
+      "depth_gain_middlegame": -0.0625,
+      "total_nodes_n3": 248661,
+      "total_nodes_n4": 236625,
+      "node_delta_pct": -4.840324779519104,
+      "mean_overshoot_n3_ms": 9.04367500770604,
+      "mean_overshoot_n4_ms": 3.798700011247999,
+      "max_overshoot_n3_ms": 68.82360000163317,
+      "max_overshoot_n4_ms": 12.808600021526214,
+      "stockfish_agreement_n3_pct": 18.75,
+      "stockfish_agreement_n4_pct": 18.75,
+      "head_to_head_agreement_pct": 100.0,
+      "pvs_full_window_searches": 25288,
+      "pvs_null_window_searches": 90662,
+      "pvs_researches": 275,
+      "pvs_research_rate_pct": 0.3033244358165494,
+      "lmr_reduced_moves": 5599,
+      "lmr_researches": 204,
+      "lmr_research_rate_pct": 3.6435077692445077
+    },
+    "positions": [
+      {
+        "id": "val_01_tactical_fork",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "d1d5",
+        "n3_depth": 3,
+        "n3_nodes": 16384,
+        "n3_time_sec": 0.05789080000249669,
+        "n3_overshoot_ms": 7.890800002496687,
+        "n4_move": "d1d5",
+        "n4_depth": 3,
+        "n4_nodes": 16384,
+        "n4_time_sec": 0.05025450000539422,
+        "n4_overshoot_ms": 0.2545000053942176,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 1409,
+          "null_window_searches": 4425,
+          "researches": 31,
+          "cutoffs": 1274
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 33,
+          "reduced_moves": 33,
+          "researches": 15,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_02_quiet_positional",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "f3e5",
+        "n3_depth": 3,
+        "n3_nodes": 12288,
+        "n3_time_sec": 0.05179270001826808,
+        "n3_overshoot_ms": 1.792700018268076,
+        "n4_move": "f3e5",
+        "n4_depth": 3,
+        "n4_nodes": 12288,
+        "n4_time_sec": 0.05225220002466813,
+        "n4_overshoot_ms": 2.2522000246681246,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 408,
+          "null_window_searches": 2485,
+          "researches": 12,
+          "cutoffs": 334
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 29,
+          "reduced_moves": 29,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_03_king_safety",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "e4c3",
+        "n3_depth": 3,
+        "n3_nodes": 6144,
+        "n3_time_sec": 0.11882360000163317,
+        "n3_overshoot_ms": 68.82360000163317,
+        "n4_move": "e4c3",
+        "n4_depth": 3,
+        "n4_nodes": 4819,
+        "n4_time_sec": 0.055230300000403076,
+        "n4_overshoot_ms": 5.230300000403074,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 245,
+          "null_window_searches": 1815,
+          "researches": 12,
+          "cutoffs": 187
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_04_pawn_endgame",
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e3d2",
+        "n3_move": "e3f2",
+        "n3_depth": 9,
+        "n3_nodes": 14336,
+        "n3_time_sec": 0.05536170001141727,
+        "n3_overshoot_ms": 5.361700011417267,
+        "n4_move": "e3f2",
+        "n4_depth": 9,
+        "n4_nodes": 11320,
+        "n4_time_sec": 0.05333330004941672,
+        "n4_overshoot_ms": 3.333300049416718,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 2494,
+          "null_window_searches": 5129,
+          "researches": 23,
+          "cutoffs": 1737
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 715,
+          "reduced_moves": 715,
+          "researches": 66,
+          "cutoffs": 25
+        }
+      },
+      {
+        "id": "val_05_rook_endgame",
+        "fen": "8/8/4k3/R7/8/8/2K4r/8 w - - 1 1",
+        "category": "middlegame",
+        "stockfish_move": "c2b1",
+        "n3_move": "c2b1",
+        "n3_depth": 5,
+        "n3_nodes": 10240,
+        "n3_time_sec": 0.06087629997637123,
+        "n3_overshoot_ms": 10.876299976371225,
+        "n4_move": "c2b1",
+        "n4_depth": 5,
+        "n4_nodes": 12288,
+        "n4_time_sec": 0.06280860002152622,
+        "n4_overshoot_ms": 12.808600021526214,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 1390,
+          "null_window_searches": 5363,
+          "researches": 14,
+          "cutoffs": 1191
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 211,
+          "reduced_moves": 211,
+          "researches": 6,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "val_06_minor_piece_endgame",
+        "fen": "8/8/4k3/3b4/8/4B3/4K3/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e3c1",
+        "n3_move": "e2f1",
+        "n3_depth": 4,
+        "n3_nodes": 14336,
+        "n3_time_sec": 0.06061250000493601,
+        "n3_overshoot_ms": 10.612500004936006,
+        "n4_move": "e2f1",
+        "n4_depth": 4,
+        "n4_nodes": 12288,
+        "n4_time_sec": 0.0534588000155054,
+        "n4_overshoot_ms": 3.4588000155054006,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 1286,
+          "null_window_searches": 5593,
+          "researches": 24,
+          "cutoffs": 1112
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 111,
+          "reduced_moves": 111,
+          "researches": 12,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "val_07_pawn_promotion",
+        "fen": "8/4P3/8/8/8/6k1/8/6K1 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e7e8q",
+        "n3_move": "e7e8q",
+        "n3_depth": 7,
+        "n3_nodes": 24576,
+        "n3_time_sec": 0.056338599999435246,
+        "n3_overshoot_ms": 6.338599999435243,
+        "n4_move": "e7e8q",
+        "n4_depth": 7,
+        "n4_nodes": 14336,
+        "n4_time_sec": 0.06190099997911602,
+        "n4_overshoot_ms": 11.900999979116019,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 1968,
+          "null_window_searches": 6700,
+          "researches": 27,
+          "cutoffs": 1579
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 398,
+          "reduced_moves": 398,
+          "researches": 6,
+          "cutoffs": 3
+        }
+      },
+      {
+        "id": "val_08_kingside_castling",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "d2d3",
+        "n3_depth": 3,
+        "n3_nodes": 12288,
+        "n3_time_sec": 0.05843879998428747,
+        "n3_overshoot_ms": 8.438799984287467,
+        "n4_move": "d2d3",
+        "n4_depth": 3,
+        "n4_nodes": 14336,
+        "n4_time_sec": 0.05146550002973527,
+        "n4_overshoot_ms": 1.4655000297352645,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 762,
+          "null_window_searches": 2994,
+          "researches": 18,
+          "cutoffs": 678
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 33,
+          "reduced_moves": 33,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_09_en_passant_execution",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "category": "middlegame",
+        "stockfish_move": "d5d6",
+        "n3_move": "d5e6",
+        "n3_depth": 11,
+        "n3_nodes": 49152,
+        "n3_time_sec": 0.05093790002865717,
+        "n3_overshoot_ms": 0.9379000286571654,
+        "n4_move": "d5e6",
+        "n4_depth": 11,
+        "n4_nodes": 53248,
+        "n4_time_sec": 0.05194620002293959,
+        "n4_overshoot_ms": 1.94620002293959,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 7907,
+          "null_window_searches": 25845,
+          "researches": 25,
+          "cutoffs": 5759
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 2909,
+          "reduced_moves": 2909,
+          "researches": 87,
+          "cutoffs": 49
+        }
+      },
+      {
+        "id": "val_10_stalemate_avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "b6a5",
+        "n3_move": "b6a6",
+        "n3_depth": 64,
+        "n3_nodes": 772,
+        "n3_time_sec": 0.0007476000464521348,
+        "n3_overshoot_ms": 0.0,
+        "n4_move": "b6a6",
+        "n4_depth": 64,
+        "n4_nodes": 774,
+        "n4_time_sec": 0.0006273000035434961,
+        "n4_overshoot_ms": 0.0,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 380,
+          "null_window_searches": 320,
+          "researches": 1,
+          "cutoffs": 315
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_11_check_evasion",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 1 6",
+        "category": "middlegame",
+        "stockfish_move": "d4d3",
+        "n3_move": "d7d5",
+        "n3_depth": 4,
+        "n3_nodes": 11793,
+        "n3_time_sec": 0.05239660001825541,
+        "n3_overshoot_ms": 2.39660001825541,
+        "n4_move": "d7d5",
+        "n4_depth": 3,
+        "n4_nodes": 8192,
+        "n4_time_sec": 0.05217139999149367,
+        "n4_overshoot_ms": 2.1713999914936695,
+        "depth_gain": -1,
+        "pvs_telemetry": {
+          "full_window_searches": 737,
+          "null_window_searches": 2066,
+          "researches": 3,
+          "cutoffs": 665
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 34,
+          "reduced_moves": 34,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_12_repetition_sensitive",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+        "category": "middlegame",
+        "stockfish_move": "a7a6",
+        "n3_move": "b8c6",
+        "n3_depth": 5,
+        "n3_nodes": 24576,
+        "n3_time_sec": 0.05491430003894493,
+        "n3_overshoot_ms": 4.914300038944927,
+        "n4_move": "b8c6",
+        "n4_depth": 5,
+        "n4_nodes": 22528,
+        "n4_time_sec": 0.052535299968440086,
+        "n4_overshoot_ms": 2.535299968440083,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 1969,
+          "null_window_searches": 9562,
+          "researches": 43,
+          "cutoffs": 1696
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 632,
+          "reduced_moves": 632,
+          "researches": 10,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "val_13_fifty_move_draw_sensitive",
+        "fen": "8/8/4k3/8/8/4K3/8/8 w - - 99 50",
+        "category": "middlegame",
+        "stockfish_move": "e3d2",
+        "n3_move": "e3d2",
+        "n3_depth": 64,
+        "n3_nodes": 576,
+        "n3_time_sec": 0.00047289999201893806,
+        "n3_overshoot_ms": 0.0,
+        "n4_move": "e3d2",
+        "n4_depth": 64,
+        "n4_nodes": 576,
+        "n4_time_sec": 0.0005652999971061945,
+        "n4_overshoot_ms": 0.0,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 64,
+          "null_window_searches": 448,
+          "researches": 0,
+          "cutoffs": 0
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_14_tactical_pin",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "h1h7",
+        "n3_depth": 3,
+        "n3_nodes": 14336,
+        "n3_time_sec": 0.05667910003103316,
+        "n3_overshoot_ms": 6.679100031033156,
+        "n4_move": "h1h7",
+        "n4_depth": 3,
+        "n4_nodes": 14336,
+        "n4_time_sec": 0.05764950002776459,
+        "n4_overshoot_ms": 7.649500027764586,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 614,
+          "null_window_searches": 3524,
+          "researches": 12,
+          "cutoffs": 524
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 81,
+          "reduced_moves": 81,
+          "researches": 1,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "val_15_queen_endgame",
+        "fen": "8/8/4k3/3q4/8/4Q3/4K3/8 b - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "d5e4",
+        "n3_move": "e6f7",
+        "n3_depth": 6,
+        "n3_nodes": 22528,
+        "n3_time_sec": 0.0516965999850072,
+        "n3_overshoot_ms": 1.696599985007194,
+        "n4_move": "e6f7",
+        "n4_depth": 6,
+        "n4_nodes": 26624,
+        "n4_time_sec": 0.05236630002036691,
+        "n4_overshoot_ms": 2.3663000203669045,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 3147,
+          "null_window_searches": 11620,
+          "researches": 17,
+          "cutoffs": 2601
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 384,
+          "reduced_moves": 384,
+          "researches": 1,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "val_16_discovered_attack",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "f3e5",
+        "n3_depth": 3,
+        "n3_nodes": 14336,
+        "n3_time_sec": 0.05793930002255365,
+        "n3_overshoot_ms": 7.93930002255365,
+        "n4_move": "f3e5",
+        "n4_depth": 3,
+        "n4_nodes": 12288,
+        "n4_time_sec": 0.05340630002319813,
+        "n4_overshoot_ms": 3.406300023198125,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 508,
+          "null_window_searches": 2773,
+          "researches": 13,
+          "cutoffs": 428
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 29,
+          "reduced_moves": 29,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      }
+    ]
+  },
+  "100": {
+    "summary": {
+      "tier_allocated_sec": 0.1,
+      "tier_allocated_ms": 100,
+      "positions_count": 16,
+      "mean_depth_n3": 13.0625,
+      "mean_depth_n4": 13.3125,
+      "median_depth_n3": 5.0,
+      "median_depth_n4": 5.5,
+      "middlegame_mean_depth_n3": 13.0625,
+      "middlegame_mean_depth_n4": 13.3125,
+      "endgame_mean_depth_n3": 0.0,
+      "endgame_mean_depth_n4": 0.0,
+      "depth_gain_mean": 0.25,
+      "depth_gain_middlegame": 0.25,
+      "total_nodes_n3": 609240,
+      "total_nodes_n4": 683097,
+      "node_delta_pct": 12.12280874532204,
+      "mean_overshoot_n3_ms": 3.741406247718255,
+      "mean_overshoot_n4_ms": 5.807675000687591,
+      "max_overshoot_n3_ms": 11.960399954114104,
+      "max_overshoot_n4_ms": 47.37859996967017,
+      "stockfish_agreement_n3_pct": 18.75,
+      "stockfish_agreement_n4_pct": 18.75,
+      "head_to_head_agreement_pct": 100.0,
+      "pvs_full_window_searches": 88122,
+      "pvs_null_window_searches": 288216,
+      "pvs_researches": 363,
+      "pvs_research_rate_pct": 0.1259472062619702,
+      "lmr_reduced_moves": 31115,
+      "lmr_researches": 853,
+      "lmr_research_rate_pct": 2.7414430339064757
+    },
+    "positions": [
+      {
+        "id": "val_01_tactical_fork",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "d1d5",
+        "n3_depth": 3,
+        "n3_nodes": 26624,
+        "n3_time_sec": 0.11196039995411411,
+        "n3_overshoot_ms": 11.960399954114104,
+        "n4_move": "d1d5",
+        "n4_depth": 3,
+        "n4_nodes": 24576,
+        "n4_time_sec": 0.10165690002031624,
+        "n4_overshoot_ms": 1.6569000203162376,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 2100,
+          "null_window_searches": 5920,
+          "researches": 31,
+          "cutoffs": 1941
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 40,
+          "reduced_moves": 40,
+          "researches": 17,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "val_02_quiet_positional",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "f3e5",
+        "n3_depth": 3,
+        "n3_nodes": 20480,
+        "n3_time_sec": 0.10648429999127984,
+        "n3_overshoot_ms": 6.484299991279835,
+        "n4_move": "f3e5",
+        "n4_depth": 3,
+        "n4_nodes": 20480,
+        "n4_time_sec": 0.10622120002517477,
+        "n4_overshoot_ms": 6.2212000251747614,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 1579,
+          "null_window_searches": 3886,
+          "researches": 12,
+          "cutoffs": 1473
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 29,
+          "reduced_moves": 29,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_03_king_safety",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "e4c3",
+        "n3_depth": 4,
+        "n3_nodes": 20116,
+        "n3_time_sec": 0.10230690002208576,
+        "n3_overshoot_ms": 2.3069000220857507,
+        "n4_move": "e4c3",
+        "n4_depth": 4,
+        "n4_nodes": 24576,
+        "n4_time_sec": 0.10614360001636669,
+        "n4_overshoot_ms": 6.143600016366685,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 1908,
+          "null_window_searches": 6703,
+          "researches": 19,
+          "cutoffs": 1763
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 95,
+          "reduced_moves": 95,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_04_pawn_endgame",
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e3d2",
+        "n3_move": "e3f2",
+        "n3_depth": 15,
+        "n3_nodes": 96256,
+        "n3_time_sec": 0.10041859996272251,
+        "n3_overshoot_ms": 0.41859996272250455,
+        "n4_move": "e3f2",
+        "n4_depth": 16,
+        "n4_nodes": 98132,
+        "n4_time_sec": 0.10243279999122024,
+        "n4_overshoot_ms": 2.4327999912202305,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 25521,
+          "null_window_searches": 46265,
+          "researches": 57,
+          "cutoffs": 17095
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 11589,
+          "reduced_moves": 11589,
+          "researches": 541,
+          "cutoffs": 314
+        }
+      },
+      {
+        "id": "val_05_rook_endgame",
+        "fen": "8/8/4k3/R7/8/8/2K4r/8 w - - 1 1",
+        "category": "middlegame",
+        "stockfish_move": "c2b1",
+        "n3_move": "c2b1",
+        "n3_depth": 7,
+        "n3_nodes": 69632,
+        "n3_time_sec": 0.10179990000324324,
+        "n3_overshoot_ms": 1.7999000032432322,
+        "n4_move": "c2b1",
+        "n4_depth": 7,
+        "n4_nodes": 69632,
+        "n4_time_sec": 0.10314399999333546,
+        "n4_overshoot_ms": 3.1439999933354503,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 8832,
+          "null_window_searches": 30606,
+          "researches": 19,
+          "cutoffs": 7254
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 2088,
+          "reduced_moves": 2088,
+          "researches": 34,
+          "cutoffs": 21
+        }
+      },
+      {
+        "id": "val_06_minor_piece_endgame",
+        "fen": "8/8/4k3/3b4/8/4B3/4K3/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e3c1",
+        "n3_move": "e2f1",
+        "n3_depth": 5,
+        "n3_nodes": 81920,
+        "n3_time_sec": 0.10079419997055084,
+        "n3_overshoot_ms": 0.7941999705508296,
+        "n4_move": "e2f1",
+        "n4_depth": 6,
+        "n4_nodes": 71680,
+        "n4_time_sec": 0.10172050003893673,
+        "n4_overshoot_ms": 1.7205000389367286,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 8401,
+          "null_window_searches": 33239,
+          "researches": 30,
+          "cutoffs": 7446
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1807,
+          "reduced_moves": 1807,
+          "researches": 78,
+          "cutoffs": 52
+        }
+      },
+      {
+        "id": "val_07_pawn_promotion",
+        "fen": "8/4P3/8/8/8/6k1/8/6K1 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e7e8q",
+        "n3_move": "e7e8q",
+        "n3_depth": 8,
+        "n3_nodes": 61440,
+        "n3_time_sec": 0.10546450002584606,
+        "n3_overshoot_ms": 5.464500025846059,
+        "n4_move": "e7e8q",
+        "n4_depth": 9,
+        "n4_nodes": 102400,
+        "n4_time_sec": 0.10254539997549728,
+        "n4_overshoot_ms": 2.5453999754972703,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 10993,
+          "null_window_searches": 54394,
+          "researches": 38,
+          "cutoffs": 8637
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 6327,
+          "reduced_moves": 6327,
+          "researches": 31,
+          "cutoffs": 20
+        }
+      },
+      {
+        "id": "val_08_kingside_castling",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "d2d3",
+        "n3_depth": 3,
+        "n3_nodes": 14336,
+        "n3_time_sec": 0.11135329998796806,
+        "n3_overshoot_ms": 11.353299987968052,
+        "n4_move": "d2d3",
+        "n4_depth": 3,
+        "n4_nodes": 12288,
+        "n4_time_sec": 0.14737859996967018,
+        "n4_overshoot_ms": 47.37859996967017,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 549,
+          "null_window_searches": 2674,
+          "researches": 18,
+          "cutoffs": 471
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 33,
+          "reduced_moves": 33,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_09_en_passant_execution",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "category": "middlegame",
+        "stockfish_move": "d5d6",
+        "n3_move": "d5e6",
+        "n3_depth": 10,
+        "n3_nodes": 40960,
+        "n3_time_sec": 0.10086059995228425,
+        "n3_overshoot_ms": 0.8605999522842411,
+        "n4_move": "d5e6",
+        "n4_depth": 11,
+        "n4_nodes": 94208,
+        "n4_time_sec": 0.10106879996601492,
+        "n4_overshoot_ms": 1.0687999660149161,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 12434,
+          "null_window_searches": 46955,
+          "researches": 30,
+          "cutoffs": 9126
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 5938,
+          "reduced_moves": 5938,
+          "researches": 124,
+          "cutoffs": 68
+        }
+      },
+      {
+        "id": "val_10_stalemate_avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "b6a5",
+        "n3_move": "b6a6",
+        "n3_depth": 64,
+        "n3_nodes": 772,
+        "n3_time_sec": 0.0006041000015102327,
+        "n3_overshoot_ms": 0.0,
+        "n4_move": "b6a6",
+        "n4_depth": 64,
+        "n4_nodes": 774,
+        "n4_time_sec": 0.0007945999968796968,
+        "n4_overshoot_ms": 0.0,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 380,
+          "null_window_searches": 320,
+          "researches": 1,
+          "cutoffs": 315
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_11_check_evasion",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 1 6",
+        "category": "middlegame",
+        "stockfish_move": "d4d3",
+        "n3_move": "d7d5",
+        "n3_depth": 4,
+        "n3_nodes": 28672,
+        "n3_time_sec": 0.10088550002546981,
+        "n3_overshoot_ms": 0.8855000254698042,
+        "n4_move": "d7d5",
+        "n4_depth": 4,
+        "n4_nodes": 24576,
+        "n4_time_sec": 0.10375910002039745,
+        "n4_overshoot_ms": 3.759100020397449,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 1712,
+          "null_window_searches": 7936,
+          "researches": 10,
+          "cutoffs": 1451
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 751,
+          "reduced_moves": 751,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_12_repetition_sensitive",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+        "category": "middlegame",
+        "stockfish_move": "a7a6",
+        "n3_move": "b8c6",
+        "n3_depth": 5,
+        "n3_nodes": 47104,
+        "n3_time_sec": 0.10184030001983047,
+        "n3_overshoot_ms": 1.8403000198304598,
+        "n4_move": "b8c6",
+        "n4_depth": 5,
+        "n4_nodes": 43008,
+        "n4_time_sec": 0.10137390001909807,
+        "n4_overshoot_ms": 1.3739000190980677,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 4080,
+          "null_window_searches": 17551,
+          "researches": 56,
+          "cutoffs": 3588
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 941,
+          "reduced_moves": 941,
+          "researches": 17,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "val_13_fifty_move_draw_sensitive",
+        "fen": "8/8/4k3/8/8/4K3/8/8 w - - 99 50",
+        "category": "middlegame",
+        "stockfish_move": "e3d2",
+        "n3_move": "e3d2",
+        "n3_depth": 64,
+        "n3_nodes": 576,
+        "n3_time_sec": 0.0003208999987691641,
+        "n3_overshoot_ms": 0.0,
+        "n4_move": "e3d2",
+        "n4_depth": 64,
+        "n4_nodes": 576,
+        "n4_time_sec": 0.00047279999125748873,
+        "n4_overshoot_ms": 0.0,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 64,
+          "null_window_searches": 448,
+          "researches": 0,
+          "cutoffs": 0
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_14_tactical_pin",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "h1h7",
+        "n3_depth": 3,
+        "n3_nodes": 22528,
+        "n3_time_sec": 0.10589920001802966,
+        "n3_overshoot_ms": 5.899200018029655,
+        "n4_move": "h1h7",
+        "n4_depth": 3,
+        "n4_nodes": 20480,
+        "n4_time_sec": 0.10042410000460222,
+        "n4_overshoot_ms": 0.4241000046022181,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 781,
+          "null_window_searches": 4503,
+          "researches": 12,
+          "cutoffs": 674
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 87,
+          "reduced_moves": 87,
+          "researches": 7,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "val_15_queen_endgame",
+        "fen": "8/8/4k3/3q4/8/4Q3/4K3/8 b - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "d5e4",
+        "n3_move": "e6f7",
+        "n3_depth": 7,
+        "n3_nodes": 51200,
+        "n3_time_sec": 0.10501090000616387,
+        "n3_overshoot_ms": 5.01090000616386,
+        "n4_move": "e6f7",
+        "n4_depth": 7,
+        "n4_nodes": 51200,
+        "n4_time_sec": 0.10516460001235828,
+        "n4_overshoot_ms": 5.164600012358273,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 6758,
+          "null_window_searches": 22268,
+          "researches": 17,
+          "cutoffs": 5531
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1361,
+          "reduced_moves": 1361,
+          "researches": 4,
+          "cutoffs": 3
+        }
+      },
+      {
+        "id": "val_16_discovered_attack",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "f3e5",
+        "n3_depth": 4,
+        "n3_nodes": 26624,
+        "n3_time_sec": 0.1047839000239037,
+        "n3_overshoot_ms": 4.783900023903692,
+        "n4_move": "f3e5",
+        "n4_depth": 4,
+        "n4_nodes": 24511,
+        "n4_time_sec": 0.109889299958013,
+        "n4_overshoot_ms": 9.889299958012993,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 2030,
+          "null_window_searches": 4548,
+          "researches": 13,
+          "cutoffs": 1910
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 29,
+          "reduced_moves": 29,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      }
+    ]
+  },
+  "250": {
+    "summary": {
+      "tier_allocated_sec": 0.25,
+      "tier_allocated_ms": 250,
+      "positions_count": 16,
+      "mean_depth_n3": 14.1875,
+      "mean_depth_n4": 14.25,
+      "median_depth_n3": 6.5,
+      "median_depth_n4": 6.5,
+      "middlegame_mean_depth_n3": 14.1875,
+      "middlegame_mean_depth_n4": 14.25,
+      "endgame_mean_depth_n3": 0.0,
+      "endgame_mean_depth_n4": 0.0,
+      "depth_gain_mean": 0.0625,
+      "depth_gain_middlegame": 0.0625,
+      "total_nodes_n3": 1715524,
+      "total_nodes_n4": 1695046,
+      "node_delta_pct": -1.193687759541691,
+      "mean_overshoot_n3_ms": 4.20845625558286,
+      "mean_overshoot_n4_ms": 4.125931245653192,
+      "max_overshoot_n3_ms": 11.27509999787435,
+      "max_overshoot_n4_ms": 18.267099978402257,
+      "stockfish_agreement_n3_pct": 18.75,
+      "stockfish_agreement_n4_pct": 18.75,
+      "head_to_head_agreement_pct": 100.0,
+      "pvs_full_window_searches": 200464,
+      "pvs_null_window_searches": 719316,
+      "pvs_researches": 649,
+      "pvs_research_rate_pct": 0.09022460226103687,
+      "lmr_reduced_moves": 83576,
+      "lmr_researches": 1826,
+      "lmr_research_rate_pct": 2.1848377524648224
+    },
+    "positions": [
+      {
+        "id": "val_01_tactical_fork",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "c4f7",
+        "n3_depth": 5,
+        "n3_nodes": 79872,
+        "n3_time_sec": 0.26127509999787435,
+        "n3_overshoot_ms": 11.27509999787435,
+        "n4_move": "c4f7",
+        "n4_depth": 5,
+        "n4_nodes": 96256,
+        "n4_time_sec": 0.2548935000086203,
+        "n4_overshoot_ms": 4.893500008620322,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 6567,
+          "null_window_searches": 33086,
+          "researches": 33,
+          "cutoffs": 5661
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 2563,
+          "reduced_moves": 2563,
+          "researches": 32,
+          "cutoffs": 16
+        }
+      },
+      {
+        "id": "val_02_quiet_positional",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "f3e5",
+        "n3_depth": 4,
+        "n3_nodes": 57344,
+        "n3_time_sec": 0.25026190001517534,
+        "n3_overshoot_ms": 0.26190001517534256,
+        "n4_move": "f3e5",
+        "n4_depth": 4,
+        "n4_nodes": 61440,
+        "n4_time_sec": 0.2523976999800652,
+        "n4_overshoot_ms": 2.3976999800652266,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 3873,
+          "null_window_searches": 15865,
+          "researches": 20,
+          "cutoffs": 3451
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1390,
+          "reduced_moves": 1390,
+          "researches": 4,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "val_03_king_safety",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "e4c3",
+        "n3_depth": 5,
+        "n3_nodes": 65536,
+        "n3_time_sec": 0.2601697000209242,
+        "n3_overshoot_ms": 10.16970002092421,
+        "n4_move": "e4c3",
+        "n4_depth": 5,
+        "n4_nodes": 73728,
+        "n4_time_sec": 0.25271560001419857,
+        "n4_overshoot_ms": 2.7156000141985714,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 4862,
+          "null_window_searches": 23347,
+          "researches": 27,
+          "cutoffs": 4270
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1693,
+          "reduced_moves": 1693,
+          "researches": 2,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_04_pawn_endgame",
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e3d2",
+        "n3_move": "e3f2",
+        "n3_depth": 17,
+        "n3_nodes": 247808,
+        "n3_time_sec": 0.25250159995630383,
+        "n3_overshoot_ms": 2.501599956303835,
+        "n4_move": "e3f2",
+        "n4_depth": 17,
+        "n4_nodes": 204800,
+        "n4_time_sec": 0.250559100008104,
+        "n4_overshoot_ms": 0.5591000081039965,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 53423,
+          "null_window_searches": 94986,
+          "researches": 159,
+          "cutoffs": 36183
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 23115,
+          "reduced_moves": 23115,
+          "researches": 1149,
+          "cutoffs": 799
+        }
+      },
+      {
+        "id": "val_05_rook_endgame",
+        "fen": "8/8/4k3/R7/8/8/2K4r/8 w - - 1 1",
+        "category": "middlegame",
+        "stockfish_move": "c2b1",
+        "n3_move": "c2b1",
+        "n3_depth": 8,
+        "n3_nodes": 145408,
+        "n3_time_sec": 0.2572449999861419,
+        "n3_overshoot_ms": 7.24499998614192,
+        "n4_move": "c2b1",
+        "n4_depth": 8,
+        "n4_nodes": 114688,
+        "n4_time_sec": 0.250684899976477,
+        "n4_overshoot_ms": 0.6848999764770269,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 15553,
+          "null_window_searches": 50702,
+          "researches": 22,
+          "cutoffs": 12849
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 4053,
+          "reduced_moves": 4053,
+          "researches": 65,
+          "cutoffs": 46
+        }
+      },
+      {
+        "id": "val_06_minor_piece_endgame",
+        "fen": "8/8/4k3/3b4/8/4B3/4K3/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e3c1",
+        "n3_move": "e2f1",
+        "n3_depth": 7,
+        "n3_nodes": 186368,
+        "n3_time_sec": 0.2503491999814287,
+        "n3_overshoot_ms": 0.3491999814286828,
+        "n4_move": "e2f1",
+        "n4_depth": 8,
+        "n4_nodes": 184320,
+        "n4_time_sec": 0.252117800002452,
+        "n4_overshoot_ms": 2.117800002451986,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 22280,
+          "null_window_searches": 87764,
+          "researches": 35,
+          "cutoffs": 19079
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 6996,
+          "reduced_moves": 6996,
+          "researches": 155,
+          "cutoffs": 95
+        }
+      },
+      {
+        "id": "val_07_pawn_promotion",
+        "fen": "8/4P3/8/8/8/6k1/8/6K1 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e7e8q",
+        "n3_move": "e7e8q",
+        "n3_depth": 10,
+        "n3_nodes": 245760,
+        "n3_time_sec": 0.25057610002113506,
+        "n3_overshoot_ms": 0.576100021135062,
+        "n4_move": "e7e8q",
+        "n4_depth": 10,
+        "n4_nodes": 286720,
+        "n4_time_sec": 0.2512871000217274,
+        "n4_overshoot_ms": 1.2871000217273831,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 29755,
+          "null_window_searches": 156612,
+          "researches": 129,
+          "cutoffs": 23165
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 20695,
+          "reduced_moves": 20695,
+          "researches": 125,
+          "cutoffs": 88
+        }
+      },
+      {
+        "id": "val_08_kingside_castling",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "d2d3",
+        "n3_depth": 5,
+        "n3_nodes": 63488,
+        "n3_time_sec": 0.25843420001911,
+        "n3_overshoot_ms": 8.434200019109994,
+        "n4_move": "d2d3",
+        "n4_depth": 5,
+        "n4_nodes": 61440,
+        "n4_time_sec": 0.2571860000025481,
+        "n4_overshoot_ms": 7.186000002548099,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 2829,
+          "null_window_searches": 14642,
+          "researches": 32,
+          "cutoffs": 2454
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1339,
+          "reduced_moves": 1339,
+          "researches": 5,
+          "cutoffs": 3
+        }
+      },
+      {
+        "id": "val_09_en_passant_execution",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "category": "middlegame",
+        "stockfish_move": "d5d6",
+        "n3_move": "d5e6",
+        "n3_depth": 12,
+        "n3_nodes": 208896,
+        "n3_time_sec": 0.2511734000290744,
+        "n3_overshoot_ms": 1.1734000290744007,
+        "n4_move": "d5e6",
+        "n4_depth": 12,
+        "n4_nodes": 206848,
+        "n4_time_sec": 0.2561874000239186,
+        "n4_overshoot_ms": 6.187400023918599,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 26367,
+          "null_window_searches": 105320,
+          "researches": 40,
+          "cutoffs": 19873
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 13724,
+          "reduced_moves": 13724,
+          "researches": 188,
+          "cutoffs": 120
+        }
+      },
+      {
+        "id": "val_10_stalemate_avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "b6a5",
+        "n3_move": "b6a6",
+        "n3_depth": 64,
+        "n3_nodes": 772,
+        "n3_time_sec": 0.0005995999672450125,
+        "n3_overshoot_ms": 0.0,
+        "n4_move": "b6a6",
+        "n4_depth": 64,
+        "n4_nodes": 774,
+        "n4_time_sec": 0.0013398000155575573,
+        "n4_overshoot_ms": 0.0,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 380,
+          "null_window_searches": 320,
+          "researches": 1,
+          "cutoffs": 315
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_11_check_evasion",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 1 6",
+        "category": "middlegame",
+        "stockfish_move": "d4d3",
+        "n3_move": "d8f6",
+        "n3_depth": 5,
+        "n3_nodes": 61440,
+        "n3_time_sec": 0.2538798999739811,
+        "n3_overshoot_ms": 3.8798999739810824,
+        "n4_move": "d8f6",
+        "n4_depth": 5,
+        "n4_nodes": 55296,
+        "n4_time_sec": 0.26826709997840226,
+        "n4_overshoot_ms": 18.267099978402257,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 3470,
+          "null_window_searches": 15168,
+          "researches": 16,
+          "cutoffs": 3021
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1211,
+          "reduced_moves": 1211,
+          "researches": 2,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "val_12_repetition_sensitive",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+        "category": "middlegame",
+        "stockfish_move": "a7a6",
+        "n3_move": "b8c6",
+        "n3_depth": 6,
+        "n3_nodes": 112640,
+        "n3_time_sec": 0.2544616000377573,
+        "n3_overshoot_ms": 4.461600037757307,
+        "n4_move": "b8c6",
+        "n4_depth": 6,
+        "n4_nodes": 110592,
+        "n4_time_sec": 0.25308890000451356,
+        "n4_overshoot_ms": 3.0889000045135617,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 10223,
+          "null_window_searches": 42559,
+          "researches": 74,
+          "cutoffs": 9163
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1888,
+          "reduced_moves": 1888,
+          "researches": 50,
+          "cutoffs": 6
+        }
+      },
+      {
+        "id": "val_13_fifty_move_draw_sensitive",
+        "fen": "8/8/4k3/8/8/4K3/8/8 w - - 99 50",
+        "category": "middlegame",
+        "stockfish_move": "e3d2",
+        "n3_move": "e3d2",
+        "n3_depth": 64,
+        "n3_nodes": 576,
+        "n3_time_sec": 0.00028039998142048717,
+        "n3_overshoot_ms": 0.0,
+        "n4_move": "e3d2",
+        "n4_depth": 64,
+        "n4_nodes": 576,
+        "n4_time_sec": 0.0002796000335365534,
+        "n4_overshoot_ms": 0.0,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 64,
+          "null_window_searches": 448,
+          "researches": 0,
+          "cutoffs": 0
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_14_tactical_pin",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "h1h7",
+        "n3_depth": 3,
+        "n3_nodes": 49152,
+        "n3_time_sec": 0.26004120003199205,
+        "n3_overshoot_ms": 10.041200031992048,
+        "n4_move": "h1h7",
+        "n4_depth": 3,
+        "n4_nodes": 55296,
+        "n4_time_sec": 0.2603384999674745,
+        "n4_overshoot_ms": 10.33849996747449,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 2536,
+          "null_window_searches": 9618,
+          "researches": 17,
+          "cutoffs": 2345
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 200,
+          "reduced_moves": 200,
+          "researches": 17,
+          "cutoffs": 10
+        }
+      },
+      {
+        "id": "val_15_queen_endgame",
+        "fen": "8/8/4k3/3q4/8/4Q3/4K3/8 b - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "d5e4",
+        "n3_move": "e6f7",
+        "n3_depth": 7,
+        "n3_nodes": 118784,
+        "n3_time_sec": 0.25359939999179915,
+        "n3_overshoot_ms": 3.599399991799146,
+        "n4_move": "e6f7",
+        "n4_depth": 7,
+        "n4_nodes": 100352,
+        "n4_time_sec": 0.2505842999671586,
+        "n4_overshoot_ms": 0.5842999671585858,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 12484,
+          "null_window_searches": 44241,
+          "researches": 17,
+          "cutoffs": 10402
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 2504,
+          "reduced_moves": 2504,
+          "researches": 26,
+          "cutoffs": 15
+        }
+      },
+      {
+        "id": "val_16_discovered_attack",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "f3e5",
+        "n3_depth": 5,
+        "n3_nodes": 71680,
+        "n3_time_sec": 0.2533670000266284,
+        "n3_overshoot_ms": 3.367000026628375,
+        "n4_move": "f3e5",
+        "n4_depth": 5,
+        "n4_nodes": 81920,
+        "n4_time_sec": 0.25570699997479096,
+        "n4_overshoot_ms": 5.7069999747909606,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 5798,
+          "null_window_searches": 24638,
+          "researches": 27,
+          "cutoffs": 5073
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 2205,
+          "reduced_moves": 2205,
+          "researches": 6,
+          "cutoffs": 2
+        }
+      }
+    ]
+  },
+  "500": {
+    "summary": {
+      "tier_allocated_sec": 0.5,
+      "tier_allocated_ms": 500,
+      "positions_count": 16,
+      "mean_depth_n3": 14.6875,
+      "mean_depth_n4": 15.125,
+      "median_depth_n3": 7.5,
+      "median_depth_n4": 8.0,
+      "middlegame_mean_depth_n3": 14.6875,
+      "middlegame_mean_depth_n4": 15.125,
+      "endgame_mean_depth_n3": 0.0,
+      "endgame_mean_depth_n4": 0.0,
+      "depth_gain_mean": 0.4375,
+      "depth_gain_middlegame": 0.4375,
+      "total_nodes_n3": 3169604,
+      "total_nodes_n4": 3362118,
+      "node_delta_pct": 6.073755585871295,
+      "mean_overshoot_n3_ms": 3.703656231664354,
+      "mean_overshoot_n4_ms": 2.242731257865671,
+      "max_overshoot_n3_ms": 11.17130002239719,
+      "max_overshoot_n4_ms": 8.012100006453693,
+      "stockfish_agreement_n3_pct": 18.75,
+      "stockfish_agreement_n4_pct": 18.75,
+      "head_to_head_agreement_pct": 100.0,
+      "pvs_full_window_searches": 402628,
+      "pvs_null_window_searches": 1429007,
+      "pvs_researches": 755,
+      "pvs_research_rate_pct": 0.05283389094665037,
+      "lmr_reduced_moves": 162454,
+      "lmr_researches": 3961,
+      "lmr_research_rate_pct": 2.4382286678075022
+    },
+    "positions": [
+      {
+        "id": "val_01_tactical_fork",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "c4f7",
+        "n3_depth": 5,
+        "n3_nodes": 149504,
+        "n3_time_sec": 0.5040265999850817,
+        "n3_overshoot_ms": 4.0265999850817025,
+        "n4_move": "c4f7",
+        "n4_depth": 5,
+        "n4_nodes": 176128,
+        "n4_time_sec": 0.503048500046134,
+        "n4_overshoot_ms": 3.048500046133995,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 11847,
+          "null_window_searches": 62447,
+          "researches": 33,
+          "cutoffs": 10122
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 3881,
+          "reduced_moves": 3881,
+          "researches": 47,
+          "cutoffs": 30
+        }
+      },
+      {
+        "id": "val_02_quiet_positional",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "d1c2",
+        "n3_depth": 5,
+        "n3_nodes": 108544,
+        "n3_time_sec": 0.5077951999846846,
+        "n3_overshoot_ms": 7.7951999846845865,
+        "n4_move": "d1c2",
+        "n4_depth": 5,
+        "n4_nodes": 159744,
+        "n4_time_sec": 0.5026468000141904,
+        "n4_overshoot_ms": 2.646800014190376,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 9186,
+          "null_window_searches": 45678,
+          "researches": 22,
+          "cutoffs": 7950
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 2392,
+          "reduced_moves": 2392,
+          "researches": 7,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "val_03_king_safety",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "e4c3",
+        "n3_depth": 5,
+        "n3_nodes": 163840,
+        "n3_time_sec": 0.5073440999840386,
+        "n3_overshoot_ms": 7.344099984038621,
+        "n4_move": "e4c3",
+        "n4_depth": 6,
+        "n4_nodes": 163840,
+        "n4_time_sec": 0.5068511000135913,
+        "n4_overshoot_ms": 6.851100013591349,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 11116,
+          "null_window_searches": 58761,
+          "researches": 34,
+          "cutoffs": 9388
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 2923,
+          "reduced_moves": 2923,
+          "researches": 4,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_04_pawn_endgame",
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e3d2",
+        "n3_move": "e3f2",
+        "n3_depth": 17,
+        "n3_nodes": 395264,
+        "n3_time_sec": 0.5021964999614283,
+        "n3_overshoot_ms": 2.1964999614283442,
+        "n4_move": "e3f2",
+        "n4_depth": 20,
+        "n4_nodes": 460800,
+        "n4_time_sec": 0.5005280000041239,
+        "n4_overshoot_ms": 0.5280000041238964,
+        "depth_gain": 3,
+        "pvs_telemetry": {
+          "full_window_searches": 121215,
+          "null_window_searches": 206356,
+          "researches": 183,
+          "cutoffs": 83895
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 49351,
+          "reduced_moves": 49351,
+          "researches": 2650,
+          "cutoffs": 1966
+        }
+      },
+      {
+        "id": "val_05_rook_endgame",
+        "fen": "8/8/4k3/R7/8/8/2K4r/8 w - - 1 1",
+        "category": "middlegame",
+        "stockfish_move": "c2b1",
+        "n3_move": "c2b1",
+        "n3_depth": 9,
+        "n3_nodes": 305152,
+        "n3_time_sec": 0.5010521999793127,
+        "n3_overshoot_ms": 1.052199979312718,
+        "n4_move": "c2b1",
+        "n4_depth": 9,
+        "n4_nodes": 278528,
+        "n4_time_sec": 0.5015675000031479,
+        "n4_overshoot_ms": 1.5675000031478703,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 36865,
+          "null_window_searches": 125662,
+          "researches": 39,
+          "cutoffs": 29880
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 12348,
+          "reduced_moves": 12348,
+          "researches": 155,
+          "cutoffs": 107
+        }
+      },
+      {
+        "id": "val_06_minor_piece_endgame",
+        "fen": "8/8/4k3/3b4/8/4B3/4K3/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e3c1",
+        "n3_move": "e2f1",
+        "n3_depth": 8,
+        "n3_nodes": 256000,
+        "n3_time_sec": 0.5005747999530286,
+        "n3_overshoot_ms": 0.5747999530285597,
+        "n4_move": "e2f1",
+        "n4_depth": 9,
+        "n4_nodes": 372736,
+        "n4_time_sec": 0.5023977000382729,
+        "n4_overshoot_ms": 2.3977000382728875,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 45101,
+          "null_window_searches": 179916,
+          "researches": 38,
+          "cutoffs": 38575
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 14785,
+          "reduced_moves": 14785,
+          "researches": 521,
+          "cutoffs": 298
+        }
+      },
+      {
+        "id": "val_07_pawn_promotion",
+        "fen": "8/4P3/8/8/8/6k1/8/6K1 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e7e8q",
+        "n3_move": "e7e8q",
+        "n3_depth": 10,
+        "n3_nodes": 436224,
+        "n3_time_sec": 0.500906599976588,
+        "n3_overshoot_ms": 0.9065999765880406,
+        "n4_move": "e7e8q",
+        "n4_depth": 10,
+        "n4_nodes": 468992,
+        "n4_time_sec": 0.5009177000029013,
+        "n4_overshoot_ms": 0.9177000029012561,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 48502,
+          "null_window_searches": 253488,
+          "researches": 131,
+          "cutoffs": 38193
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 31451,
+          "reduced_moves": 31451,
+          "researches": 203,
+          "cutoffs": 155
+        }
+      },
+      {
+        "id": "val_08_kingside_castling",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "d2d3",
+        "n3_depth": 5,
+        "n3_nodes": 116736,
+        "n3_time_sec": 0.5111713000223972,
+        "n3_overshoot_ms": 11.17130002239719,
+        "n4_move": "d2d3",
+        "n4_depth": 5,
+        "n4_nodes": 137216,
+        "n4_time_sec": 0.501331300009042,
+        "n4_overshoot_ms": 1.3313000090420246,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 6738,
+          "null_window_searches": 34639,
+          "researches": 40,
+          "cutoffs": 5832
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1920,
+          "reduced_moves": 1920,
+          "researches": 8,
+          "cutoffs": 3
+        }
+      },
+      {
+        "id": "val_09_en_passant_execution",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "category": "middlegame",
+        "stockfish_move": "d5d6",
+        "n3_move": "d5e6",
+        "n3_depth": 13,
+        "n3_nodes": 460800,
+        "n3_time_sec": 0.5018924999749288,
+        "n3_overshoot_ms": 1.8924999749287963,
+        "n4_move": "d5e6",
+        "n4_depth": 13,
+        "n4_nodes": 309248,
+        "n4_time_sec": 0.5005978000117466,
+        "n4_overshoot_ms": 0.5978000117465854,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 36930,
+          "null_window_searches": 161916,
+          "researches": 42,
+          "cutoffs": 27586
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 23973,
+          "reduced_moves": 23973,
+          "researches": 226,
+          "cutoffs": 150
+        }
+      },
+      {
+        "id": "val_10_stalemate_avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "b6a5",
+        "n3_move": "b6a6",
+        "n3_depth": 64,
+        "n3_nodes": 772,
+        "n3_time_sec": 0.0006535999709740281,
+        "n3_overshoot_ms": 0.0,
+        "n4_move": "b6a6",
+        "n4_depth": 64,
+        "n4_nodes": 774,
+        "n4_time_sec": 0.0006232000305317342,
+        "n4_overshoot_ms": 0.0,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 380,
+          "null_window_searches": 320,
+          "researches": 1,
+          "cutoffs": 315
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_11_check_evasion",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 1 6",
+        "category": "middlegame",
+        "stockfish_move": "d4d3",
+        "n3_move": "d8f6",
+        "n3_depth": 5,
+        "n3_nodes": 61440,
+        "n3_time_sec": 0.5071049999678507,
+        "n3_overshoot_ms": 7.104999967850745,
+        "n4_move": "d8f6",
+        "n4_depth": 6,
+        "n4_nodes": 153600,
+        "n4_time_sec": 0.5012181000201963,
+        "n4_overshoot_ms": 1.2181000201962888,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 11098,
+          "null_window_searches": 47662,
+          "researches": 18,
+          "cutoffs": 9592
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 3413,
+          "reduced_moves": 3413,
+          "researches": 5,
+          "cutoffs": 5
+        }
+      },
+      {
+        "id": "val_12_repetition_sensitive",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+        "category": "middlegame",
+        "stockfish_move": "a7a6",
+        "n3_move": "b8c6",
+        "n3_depth": 7,
+        "n3_nodes": 182272,
+        "n3_time_sec": 0.5098661999800242,
+        "n3_overshoot_ms": 9.866199980024248,
+        "n4_move": "b8c6",
+        "n4_depth": 7,
+        "n4_nodes": 172032,
+        "n4_time_sec": 0.5080121000064537,
+        "n4_overshoot_ms": 8.012100006453693,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 17783,
+          "null_window_searches": 63109,
+          "researches": 82,
+          "cutoffs": 16116
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 3703,
+          "reduced_moves": 3703,
+          "researches": 56,
+          "cutoffs": 9
+        }
+      },
+      {
+        "id": "val_13_fifty_move_draw_sensitive",
+        "fen": "8/8/4k3/8/8/4K3/8/8 w - - 99 50",
+        "category": "middlegame",
+        "stockfish_move": "e3d2",
+        "n3_move": "e3d2",
+        "n3_depth": 64,
+        "n3_nodes": 576,
+        "n3_time_sec": 0.00029719999292865396,
+        "n3_overshoot_ms": 0.0,
+        "n4_move": "e3d2",
+        "n4_depth": 64,
+        "n4_nodes": 576,
+        "n4_time_sec": 0.00027299998328089714,
+        "n4_overshoot_ms": 0.0,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 64,
+          "null_window_searches": 448,
+          "researches": 0,
+          "cutoffs": 0
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_14_tactical_pin",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "h1h5",
+        "n3_depth": 5,
+        "n3_nodes": 129024,
+        "n3_time_sec": 0.503637499990873,
+        "n3_overshoot_ms": 3.6374999908730388,
+        "n4_move": "h1h5",
+        "n4_depth": 5,
+        "n4_nodes": 133120,
+        "n4_time_sec": 0.5007318999851122,
+        "n4_overshoot_ms": 0.7318999851122499,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 5973,
+          "null_window_searches": 35712,
+          "researches": 48,
+          "cutoffs": 5189
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 2594,
+          "reduced_moves": 2594,
+          "researches": 22,
+          "cutoffs": 11
+        }
+      },
+      {
+        "id": "val_15_queen_endgame",
+        "fen": "8/8/4k3/3q4/8/4Q3/4K3/8 b - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "d5e4",
+        "n3_move": "e6f7",
+        "n3_depth": 8,
+        "n3_nodes": 256000,
+        "n3_time_sec": 0.5009746999712661,
+        "n3_overshoot_ms": 0.9746999712660909,
+        "n4_move": "e6f7",
+        "n4_depth": 9,
+        "n4_nodes": 256000,
+        "n4_time_sec": 0.5020088999881409,
+        "n4_overshoot_ms": 2.008899988140911,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 32042,
+          "null_window_searches": 115135,
+          "researches": 17,
+          "cutoffs": 26129
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 7120,
+          "reduced_moves": 7120,
+          "researches": 51,
+          "cutoffs": 28
+        }
+      },
+      {
+        "id": "val_16_discovered_attack",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "f3e5",
+        "n3_depth": 5,
+        "n3_nodes": 147456,
+        "n3_time_sec": 0.500715299975127,
+        "n3_overshoot_ms": 0.7152999751269817,
+        "n4_move": "f3e5",
+        "n4_depth": 5,
+        "n4_nodes": 118784,
+        "n4_time_sec": 0.5040262999827974,
+        "n4_overshoot_ms": 4.0262999827973545,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 7788,
+          "null_window_searches": 37758,
+          "researches": 27,
+          "cutoffs": 6727
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 2600,
+          "reduced_moves": 2600,
+          "researches": 6,
+          "cutoffs": 2
+        }
+      }
+    ]
+  },
+  "1000": {
+    "summary": {
+      "tier_allocated_sec": 1.0,
+      "tier_allocated_ms": 1000,
+      "positions_count": 16,
+      "mean_depth_n3": 15.3125,
+      "mean_depth_n4": 15.75,
+      "median_depth_n3": 8.0,
+      "median_depth_n4": 8.5,
+      "middlegame_mean_depth_n3": 15.3125,
+      "middlegame_mean_depth_n4": 15.75,
+      "endgame_mean_depth_n3": 0.0,
+      "endgame_mean_depth_n4": 0.0,
+      "depth_gain_mean": 0.4375,
+      "depth_gain_middlegame": 0.4375,
+      "total_nodes_n3": 6856004,
+      "total_nodes_n4": 6939974,
+      "node_delta_pct": 1.2247659132054183,
+      "mean_overshoot_n3_ms": 2.9988187488925178,
+      "mean_overshoot_n4_ms": 2.6954749955621082,
+      "max_overshoot_n3_ms": 20.861500001046807,
+      "max_overshoot_n4_ms": 10.823699994944036,
+      "stockfish_agreement_n3_pct": 18.75,
+      "stockfish_agreement_n4_pct": 18.75,
+      "head_to_head_agreement_pct": 100.0,
+      "pvs_full_window_searches": 821592,
+      "pvs_null_window_searches": 2950048,
+      "pvs_researches": 1285,
+      "pvs_research_rate_pct": 0.04355861328358047,
+      "lmr_reduced_moves": 327818,
+      "lmr_researches": 7818,
+      "lmr_research_rate_pct": 2.384859891769213
+    },
+    "positions": [
+      {
+        "id": "val_01_tactical_fork",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "c4f7",
+        "n3_depth": 5,
+        "n3_nodes": 339968,
+        "n3_time_sec": 1.0004621999687515,
+        "n3_overshoot_ms": 0.4621999687515199,
+        "n4_move": "c4f7",
+        "n4_depth": 6,
+        "n4_nodes": 309248,
+        "n4_time_sec": 1.0042697999742813,
+        "n4_overshoot_ms": 4.269799974281341,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 24349,
+          "null_window_searches": 105189,
+          "researches": 39,
+          "cutoffs": 21453
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 6601,
+          "reduced_moves": 6601,
+          "researches": 82,
+          "cutoffs": 59
+        }
+      },
+      {
+        "id": "val_02_quiet_positional",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "d1c2",
+        "n3_depth": 5,
+        "n3_nodes": 210944,
+        "n3_time_sec": 1.0208615000010468,
+        "n3_overshoot_ms": 20.861500001046807,
+        "n4_move": "d1c2",
+        "n4_depth": 6,
+        "n4_nodes": 268288,
+        "n4_time_sec": 1.0056239999830723,
+        "n4_overshoot_ms": 5.623999983072281,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 14498,
+          "null_window_searches": 74471,
+          "researches": 25,
+          "cutoffs": 12559
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 3430,
+          "reduced_moves": 3430,
+          "researches": 15,
+          "cutoffs": 7
+        }
+      },
+      {
+        "id": "val_03_king_safety",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "e4c3",
+        "n3_depth": 6,
+        "n3_nodes": 294912,
+        "n3_time_sec": 1.0024006000021473,
+        "n3_overshoot_ms": 2.4006000021472573,
+        "n4_move": "e4c3",
+        "n4_depth": 6,
+        "n4_nodes": 274432,
+        "n4_time_sec": 1.010823699994944,
+        "n4_overshoot_ms": 10.823699994944036,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 21006,
+          "null_window_searches": 89102,
+          "researches": 47,
+          "cutoffs": 18495
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 5527,
+          "reduced_moves": 5527,
+          "researches": 17,
+          "cutoffs": 3
+        }
+      },
+      {
+        "id": "val_04_pawn_endgame",
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e3d2",
+        "n3_move": "e3f2",
+        "n3_depth": 19,
+        "n3_nodes": 927744,
+        "n3_time_sec": 1.0008640000014566,
+        "n3_overshoot_ms": 0.8640000014565885,
+        "n4_move": "e3f2",
+        "n4_depth": 20,
+        "n4_nodes": 823296,
+        "n4_time_sec": 1.0007194000063464,
+        "n4_overshoot_ms": 0.7194000063464046,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 201888,
+          "null_window_searches": 349441,
+          "researches": 274,
+          "cutoffs": 140118
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 71440,
+          "reduced_moves": 71440,
+          "researches": 4414,
+          "cutoffs": 2582
+        }
+      },
+      {
+        "id": "val_05_rook_endgame",
+        "fen": "8/8/4k3/R7/8/8/2K4r/8 w - - 1 1",
+        "category": "middlegame",
+        "stockfish_move": "c2b1",
+        "n3_move": "c2b1",
+        "n3_depth": 10,
+        "n3_nodes": 669696,
+        "n3_time_sec": 1.0012667999835685,
+        "n3_overshoot_ms": 1.2667999835684896,
+        "n4_move": "c2b1",
+        "n4_depth": 10,
+        "n4_nodes": 593920,
+        "n4_time_sec": 1.0018291999585927,
+        "n4_overshoot_ms": 1.8291999585926533,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 75732,
+          "null_window_searches": 269549,
+          "researches": 39,
+          "cutoffs": 62926
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 23938,
+          "reduced_moves": 23938,
+          "researches": 545,
+          "cutoffs": 420
+        }
+      },
+      {
+        "id": "val_06_minor_piece_endgame",
+        "fen": "8/8/4k3/3b4/8/4B3/4K3/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e3c1",
+        "n3_move": "e2f1",
+        "n3_depth": 9,
+        "n3_nodes": 638976,
+        "n3_time_sec": 1.0008749999688007,
+        "n3_overshoot_ms": 0.8749999688006938,
+        "n4_move": "e2f1",
+        "n4_depth": 10,
+        "n4_nodes": 710656,
+        "n4_time_sec": 1.001300200005062,
+        "n4_overshoot_ms": 1.3002000050619245,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 89712,
+          "null_window_searches": 351751,
+          "researches": 38,
+          "cutoffs": 75336
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 37081,
+          "reduced_moves": 37081,
+          "researches": 1090,
+          "cutoffs": 614
+        }
+      },
+      {
+        "id": "val_07_pawn_promotion",
+        "fen": "8/4P3/8/8/8/6k1/8/6K1 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e7e8q",
+        "n3_move": "e7e8q",
+        "n3_depth": 11,
+        "n3_nodes": 985088,
+        "n3_time_sec": 1.0007226000307128,
+        "n3_overshoot_ms": 0.7226000307127833,
+        "n4_move": "e7e8q",
+        "n4_depth": 11,
+        "n4_nodes": 890880,
+        "n4_time_sec": 1.0005993999657221,
+        "n4_overshoot_ms": 0.5993999657221138,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 95722,
+          "null_window_searches": 466792,
+          "researches": 264,
+          "cutoffs": 76932
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 51805,
+          "reduced_moves": 51805,
+          "researches": 540,
+          "cutoffs": 396
+        }
+      },
+      {
+        "id": "val_08_kingside_castling",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "d2d3",
+        "n3_depth": 5,
+        "n3_nodes": 118784,
+        "n3_time_sec": 1.0038111999747343,
+        "n3_overshoot_ms": 3.811199974734336,
+        "n4_move": "d2d3",
+        "n4_depth": 6,
+        "n4_nodes": 251904,
+        "n4_time_sec": 1.0015362999984063,
+        "n4_overshoot_ms": 1.5362999984063208,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 12730,
+          "null_window_searches": 65635,
+          "researches": 41,
+          "cutoffs": 11001
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 2951,
+          "reduced_moves": 2951,
+          "researches": 11,
+          "cutoffs": 6
+        }
+      },
+      {
+        "id": "val_09_en_passant_execution",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "category": "middlegame",
+        "stockfish_move": "d5d6",
+        "n3_move": "d5e6",
+        "n3_depth": 14,
+        "n3_nodes": 944128,
+        "n3_time_sec": 1.0037485000211746,
+        "n3_overshoot_ms": 3.74850002117455,
+        "n4_move": "d5e6",
+        "n4_depth": 15,
+        "n4_nodes": 919552,
+        "n4_time_sec": 1.0004029999836348,
+        "n4_overshoot_ms": 0.4029999836347997,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 112677,
+          "null_window_searches": 497944,
+          "researches": 272,
+          "cutoffs": 86133
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 81880,
+          "reduced_moves": 81880,
+          "researches": 761,
+          "cutoffs": 587
+        }
+      },
+      {
+        "id": "val_10_stalemate_avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "b6a5",
+        "n3_move": "b6a6",
+        "n3_depth": 64,
+        "n3_nodes": 772,
+        "n3_time_sec": 0.0005717999883927405,
+        "n3_overshoot_ms": 0.0,
+        "n4_move": "b6a6",
+        "n4_depth": 64,
+        "n4_nodes": 774,
+        "n4_time_sec": 0.0007115000043995678,
+        "n4_overshoot_ms": 0.0,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 380,
+          "null_window_searches": 320,
+          "researches": 1,
+          "cutoffs": 315
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_11_check_evasion",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 1 6",
+        "category": "middlegame",
+        "stockfish_move": "d4d3",
+        "n3_move": "d8f6",
+        "n3_depth": 6,
+        "n3_nodes": 284672,
+        "n3_time_sec": 1.0001850000116974,
+        "n3_overshoot_ms": 0.18500001169741154,
+        "n4_move": "d8f6",
+        "n4_depth": 6,
+        "n4_nodes": 313344,
+        "n4_time_sec": 1.0020243000471964,
+        "n4_overshoot_ms": 2.024300047196448,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 29813,
+          "null_window_searches": 96720,
+          "researches": 24,
+          "cutoffs": 26657
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 8326,
+          "reduced_moves": 8326,
+          "researches": 21,
+          "cutoffs": 18
+        }
+      },
+      {
+        "id": "val_12_repetition_sensitive",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+        "category": "middlegame",
+        "stockfish_move": "a7a6",
+        "n3_move": "b8c6",
+        "n3_depth": 7,
+        "n3_nodes": 397312,
+        "n3_time_sec": 1.0039127999916673,
+        "n3_overshoot_ms": 3.9127999916672707,
+        "n4_move": "b8c6",
+        "n4_depth": 7,
+        "n4_nodes": 342016,
+        "n4_time_sec": 1.0056881000055,
+        "n4_overshoot_ms": 5.688100005500019,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 32574,
+          "null_window_searches": 119762,
+          "researches": 115,
+          "cutoffs": 29447
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 7364,
+          "reduced_moves": 7364,
+          "researches": 157,
+          "cutoffs": 36
+        }
+      },
+      {
+        "id": "val_13_fifty_move_draw_sensitive",
+        "fen": "8/8/4k3/8/8/4K3/8/8 w - - 99 50",
+        "category": "middlegame",
+        "stockfish_move": "e3d2",
+        "n3_move": "e3d2",
+        "n3_depth": 64,
+        "n3_nodes": 576,
+        "n3_time_sec": 0.0004764999612234533,
+        "n3_overshoot_ms": 0.0,
+        "n4_move": "e3d2",
+        "n4_depth": 64,
+        "n4_nodes": 576,
+        "n4_time_sec": 0.00034089997643604875,
+        "n4_overshoot_ms": 0.0,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 64,
+          "null_window_searches": 448,
+          "researches": 0,
+          "cutoffs": 0
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_14_tactical_pin",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "h1h5",
+        "n3_depth": 5,
+        "n3_nodes": 219136,
+        "n3_time_sec": 1.0007735000108369,
+        "n3_overshoot_ms": 0.7735000108368695,
+        "n4_move": "h1h5",
+        "n4_depth": 5,
+        "n4_nodes": 329728,
+        "n4_time_sec": 1.0039733999874443,
+        "n4_overshoot_ms": 3.9733999874442816,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 16152,
+          "null_window_searches": 96526,
+          "researches": 52,
+          "cutoffs": 13886
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 4268,
+          "reduced_moves": 4268,
+          "researches": 37,
+          "cutoffs": 19
+        }
+      },
+      {
+        "id": "val_15_queen_endgame",
+        "fen": "8/8/4k3/3q4/8/4Q3/4K3/8 b - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "d5e4",
+        "n3_move": "e6f7",
+        "n3_depth": 9,
+        "n3_nodes": 505856,
+        "n3_time_sec": 1.002312799973879,
+        "n3_overshoot_ms": 2.3127999738790095,
+        "n4_move": "e6f7",
+        "n4_depth": 10,
+        "n4_nodes": 542720,
+        "n4_time_sec": 1.0013334000250325,
+        "n4_overshoot_ms": 1.3334000250324607,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 65087,
+          "null_window_searches": 248056,
+          "researches": 17,
+          "cutoffs": 53198
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 16075,
+          "reduced_moves": 16075,
+          "researches": 119,
+          "cutoffs": 60
+        }
+      },
+      {
+        "id": "val_16_discovered_attack",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "c3c4",
+        "n3_depth": 6,
+        "n3_nodes": 317440,
+        "n3_time_sec": 1.0057846000418067,
+        "n3_overshoot_ms": 5.784600041806698,
+        "n4_move": "c3c4",
+        "n4_depth": 6,
+        "n4_nodes": 368640,
+        "n4_time_sec": 1.0030033999937586,
+        "n4_overshoot_ms": 3.0033999937586486,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 29208,
+          "null_window_searches": 118342,
+          "researches": 37,
+          "cutoffs": 25954
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 7132,
+          "reduced_moves": 7132,
+          "researches": 9,
+          "cutoffs": 2
+        }
+      }
+    ]
+  },
+  "2000": {
+    "summary": {
+      "tier_allocated_sec": 2.0,
+      "tier_allocated_ms": 2000,
+      "positions_count": 16,
+      "mean_depth_n3": 16.0625,
+      "mean_depth_n4": 16.25,
+      "median_depth_n3": 8.5,
+      "median_depth_n4": 8.5,
+      "middlegame_mean_depth_n3": 16.0625,
+      "middlegame_mean_depth_n4": 16.25,
+      "endgame_mean_depth_n3": 0.0,
+      "endgame_mean_depth_n4": 0.0,
+      "depth_gain_mean": 0.1875,
+      "depth_gain_middlegame": 0.1875,
+      "total_nodes_n3": 13651268,
+      "total_nodes_n4": 12303686,
+      "node_delta_pct": -9.8714786055039,
+      "mean_overshoot_n3_ms": 3.6709437481476925,
+      "mean_overshoot_n4_ms": 3.1095687409106176,
+      "max_overshoot_n3_ms": 11.901399993803352,
+      "max_overshoot_n4_ms": 9.814999997615814,
+      "stockfish_agreement_n3_pct": 18.75,
+      "stockfish_agreement_n4_pct": 18.75,
+      "head_to_head_agreement_pct": 100.0,
+      "pvs_full_window_searches": 1523648,
+      "pvs_null_window_searches": 5155195,
+      "pvs_researches": 1807,
+      "pvs_research_rate_pct": 0.03505202034064667,
+      "lmr_reduced_moves": 649119,
+      "lmr_researches": 12792,
+      "lmr_research_rate_pct": 1.9706710171786685
+    },
+    "positions": [
+      {
+        "id": "val_01_tactical_fork",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "c4f7",
+        "n3_depth": 6,
+        "n3_nodes": 606208,
+        "n3_time_sec": 2.0036359000368975,
+        "n3_overshoot_ms": 3.6359000368975103,
+        "n4_move": "c4f7",
+        "n4_depth": 6,
+        "n4_nodes": 616448,
+        "n4_time_sec": 2.008294500003103,
+        "n4_overshoot_ms": 8.294500003103167,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 53665,
+          "null_window_searches": 180641,
+          "researches": 39,
+          "cutoffs": 48878
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 10895,
+          "reduced_moves": 10895,
+          "researches": 177,
+          "cutoffs": 96
+        }
+      },
+      {
+        "id": "val_02_quiet_positional",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "d1c2",
+        "n3_depth": 6,
+        "n3_nodes": 526336,
+        "n3_time_sec": 2.003954600018915,
+        "n3_overshoot_ms": 3.954600018914789,
+        "n4_move": "d1c2",
+        "n4_depth": 6,
+        "n4_nodes": 401408,
+        "n4_time_sec": 2.009814999997616,
+        "n4_overshoot_ms": 9.814999997615814,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 24912,
+          "null_window_searches": 99556,
+          "researches": 25,
+          "cutoffs": 22359
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 5604,
+          "reduced_moves": 5604,
+          "researches": 24,
+          "cutoffs": 13
+        }
+      },
+      {
+        "id": "val_03_king_safety",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "e4c3",
+        "n3_depth": 6,
+        "n3_nodes": 552960,
+        "n3_time_sec": 2.0036747999838553,
+        "n3_overshoot_ms": 3.674799983855337,
+        "n4_move": "e4c3",
+        "n4_depth": 7,
+        "n4_nodes": 526336,
+        "n4_time_sec": 2.001539699966088,
+        "n4_overshoot_ms": 1.5396999660879374,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 46321,
+          "null_window_searches": 159190,
+          "researches": 52,
+          "cutoffs": 42128
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 10252,
+          "reduced_moves": 10252,
+          "researches": 39,
+          "cutoffs": 23
+        }
+      },
+      {
+        "id": "val_04_pawn_endgame",
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e3d2",
+        "n3_move": "e3f2",
+        "n3_depth": 20,
+        "n3_nodes": 1746944,
+        "n3_time_sec": 2.000843499961775,
+        "n3_overshoot_ms": 0.8434999617747962,
+        "n4_move": "e3f2",
+        "n4_depth": 22,
+        "n4_nodes": 1570816,
+        "n4_time_sec": 2.0015903000021353,
+        "n4_overshoot_ms": 1.5903000021353364,
+        "depth_gain": 2,
+        "pvs_telemetry": {
+          "full_window_searches": 399133,
+          "null_window_searches": 638336,
+          "researches": 438,
+          "cutoffs": 280889
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 122471,
+          "reduced_moves": 122471,
+          "researches": 6327,
+          "cutoffs": 3715
+        }
+      },
+      {
+        "id": "val_05_rook_endgame",
+        "fen": "8/8/4k3/R7/8/8/2K4r/8 w - - 1 1",
+        "category": "middlegame",
+        "stockfish_move": "c2b1",
+        "n3_move": "c2b1",
+        "n3_depth": 11,
+        "n3_nodes": 1339392,
+        "n3_time_sec": 2.0026709000230767,
+        "n3_overshoot_ms": 2.6709000230766833,
+        "n4_move": "c2b1",
+        "n4_depth": 11,
+        "n4_nodes": 1327104,
+        "n4_time_sec": 2.0025100000202656,
+        "n4_overshoot_ms": 2.5100000202655792,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 169400,
+          "null_window_searches": 628156,
+          "researches": 147,
+          "cutoffs": 139070
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 69516,
+          "reduced_moves": 69516,
+          "researches": 1277,
+          "cutoffs": 939
+        }
+      },
+      {
+        "id": "val_06_minor_piece_endgame",
+        "fen": "8/8/4k3/3b4/8/4B3/4K3/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e3c1",
+        "n3_move": "e2f1",
+        "n3_depth": 10,
+        "n3_nodes": 1296384,
+        "n3_time_sec": 2.002257699961774,
+        "n3_overshoot_ms": 2.257699961774051,
+        "n4_move": "e2f1",
+        "n4_depth": 10,
+        "n4_nodes": 794624,
+        "n4_time_sec": 2.0035383999929763,
+        "n4_overshoot_ms": 3.5383999929763377,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 100578,
+          "null_window_searches": 393109,
+          "researches": 38,
+          "cutoffs": 84591
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 41609,
+          "reduced_moves": 41609,
+          "researches": 1291,
+          "cutoffs": 738
+        }
+      },
+      {
+        "id": "val_07_pawn_promotion",
+        "fen": "8/4P3/8/8/8/6k1/8/6K1 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e7e8q",
+        "n3_move": "e7e8q",
+        "n3_depth": 12,
+        "n3_nodes": 1079296,
+        "n3_time_sec": 2.0119013999938034,
+        "n3_overshoot_ms": 11.901399993803352,
+        "n4_move": "e7e8q",
+        "n4_depth": 10,
+        "n4_nodes": 641024,
+        "n4_time_sec": 2.0056539999786764,
+        "n4_overshoot_ms": 5.653999978676438,
+        "depth_gain": -2,
+        "pvs_telemetry": {
+          "full_window_searches": 67421,
+          "null_window_searches": 339158,
+          "researches": 244,
+          "cutoffs": 53739
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 38855,
+          "reduced_moves": 38855,
+          "researches": 357,
+          "cutoffs": 274
+        }
+      },
+      {
+        "id": "val_08_kingside_castling",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "d2d3",
+        "n3_depth": 5,
+        "n3_nodes": 212992,
+        "n3_time_sec": 2.0058033000095747,
+        "n3_overshoot_ms": 5.803300009574741,
+        "n4_move": "d2d3",
+        "n4_depth": 6,
+        "n4_nodes": 296960,
+        "n4_time_sec": 2.0038667999906465,
+        "n4_overshoot_ms": 3.866799990646541,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 16214,
+          "null_window_searches": 76459,
+          "researches": 41,
+          "cutoffs": 14176
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 4355,
+          "reduced_moves": 4355,
+          "researches": 11,
+          "cutoffs": 6
+        }
+      },
+      {
+        "id": "val_09_en_passant_execution",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "category": "middlegame",
+        "stockfish_move": "d5d6",
+        "n3_move": "d5e6",
+        "n3_depth": 15,
+        "n3_nodes": 2260992,
+        "n3_time_sec": 2.000485899974592,
+        "n3_overshoot_ms": 0.48589997459203005,
+        "n4_move": "d5e6",
+        "n4_depth": 16,
+        "n4_nodes": 2181120,
+        "n4_time_sec": 2.0010877999593504,
+        "n4_overshoot_ms": 1.0877999593503773,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 263950,
+          "null_window_searches": 1230776,
+          "researches": 411,
+          "cutoffs": 197170
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 246735,
+          "reduced_moves": 246735,
+          "researches": 2456,
+          "cutoffs": 2075
+        }
+      },
+      {
+        "id": "val_10_stalemate_avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "b6a5",
+        "n3_move": "b6a6",
+        "n3_depth": 64,
+        "n3_nodes": 772,
+        "n3_time_sec": 0.0012469000066630542,
+        "n3_overshoot_ms": 0.0,
+        "n4_move": "b6a6",
+        "n4_depth": 64,
+        "n4_nodes": 774,
+        "n4_time_sec": 0.0010231999913230538,
+        "n4_overshoot_ms": 0.0,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 380,
+          "null_window_searches": 320,
+          "researches": 1,
+          "cutoffs": 315
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_11_check_evasion",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 1 6",
+        "category": "middlegame",
+        "stockfish_move": "d4d3",
+        "n3_move": "d8f6",
+        "n3_depth": 7,
+        "n3_nodes": 636928,
+        "n3_time_sec": 2.0048295999877155,
+        "n3_overshoot_ms": 4.829599987715483,
+        "n4_move": "d8f6",
+        "n4_depth": 7,
+        "n4_nodes": 696320,
+        "n4_time_sec": 2.0005120999994688,
+        "n4_overshoot_ms": 0.5120999994687736,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 62656,
+          "null_window_searches": 218999,
+          "researches": 32,
+          "cutoffs": 55617
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 18537,
+          "reduced_moves": 18537,
+          "researches": 61,
+          "cutoffs": 46
+        }
+      },
+      {
+        "id": "val_12_repetition_sensitive",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+        "category": "middlegame",
+        "stockfish_move": "a7a6",
+        "n3_move": "b8c6",
+        "n3_depth": 7,
+        "n3_nodes": 870400,
+        "n3_time_sec": 2.002717799972743,
+        "n3_overshoot_ms": 2.717799972742796,
+        "n4_move": "b8c6",
+        "n4_depth": 7,
+        "n4_nodes": 749568,
+        "n4_time_sec": 2.0021762999822386,
+        "n4_overshoot_ms": 2.176299982238561,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 67544,
+          "null_window_searches": 264914,
+          "researches": 214,
+          "cutoffs": 61044
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 15557,
+          "reduced_moves": 15557,
+          "researches": 372,
+          "cutoffs": 136
+        }
+      },
+      {
+        "id": "val_13_fifty_move_draw_sensitive",
+        "fen": "8/8/4k3/8/8/4K3/8/8 w - - 99 50",
+        "category": "middlegame",
+        "stockfish_move": "e3d2",
+        "n3_move": "e3d2",
+        "n3_depth": 64,
+        "n3_nodes": 576,
+        "n3_time_sec": 0.0004286999464966357,
+        "n3_overshoot_ms": 0.0,
+        "n4_move": "e3d2",
+        "n4_depth": 64,
+        "n4_nodes": 576,
+        "n4_time_sec": 0.0002728000399656594,
+        "n4_overshoot_ms": 0.0,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 64,
+          "null_window_searches": 448,
+          "researches": 0,
+          "cutoffs": 0
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_14_tactical_pin",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "d3h7",
+        "n3_depth": 6,
+        "n3_nodes": 608256,
+        "n3_time_sec": 2.007069999992382,
+        "n3_overshoot_ms": 7.069999992381781,
+        "n4_move": "d3h7",
+        "n4_depth": 6,
+        "n4_nodes": 618496,
+        "n4_time_sec": 2.007418100023642,
+        "n4_overshoot_ms": 7.418100023642182,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 41917,
+          "null_window_searches": 166423,
+          "researches": 62,
+          "cutoffs": 37993
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 8759,
+          "reduced_moves": 8759,
+          "researches": 61,
+          "cutoffs": 26
+        }
+      },
+      {
+        "id": "val_15_queen_endgame",
+        "fen": "8/8/4k3/3q4/8/4Q3/4K3/8 b - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "d5e4",
+        "n3_move": "e6f7",
+        "n3_depth": 11,
+        "n3_nodes": 1251328,
+        "n3_time_sec": 2.002901700034272,
+        "n3_overshoot_ms": 2.9017000342719257,
+        "n4_move": "e6f7",
+        "n4_depth": 11,
+        "n4_nodes": 1189888,
+        "n4_time_sec": 2.0002166999620385,
+        "n4_overshoot_ms": 0.2166999620385468,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 143402,
+          "null_window_searches": 552063,
+          "researches": 17,
+          "cutoffs": 116823
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 39646,
+          "reduced_moves": 39646,
+          "researches": 318,
+          "cutoffs": 192
+        }
+      },
+      {
+        "id": "val_16_discovered_attack",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "e3e4",
+        "n3_depth": 7,
+        "n3_nodes": 661504,
+        "n3_time_sec": 2.005988000018988,
+        "n3_overshoot_ms": 5.988000018987805,
+        "n4_move": "e3e4",
+        "n4_depth": 7,
+        "n4_nodes": 692224,
+        "n4_time_sec": 2.0015333999763243,
+        "n4_overshoot_ms": 1.53339997632429,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 66091,
+          "null_window_searches": 206647,
+          "researches": 46,
+          "cutoffs": 60287
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 16328,
+          "reduced_moves": 16328,
+          "researches": 21,
+          "cutoffs": 10
+        }
+      }
+    ]
+  },
+  "3000": {
+    "summary": {
+      "tier_allocated_sec": 3.0,
+      "tier_allocated_ms": 3000,
+      "positions_count": 16,
+      "mean_depth_n3": 16.625,
+      "mean_depth_n4": 17,
+      "median_depth_n3": 9.5,
+      "median_depth_n4": 9.0,
+      "middlegame_mean_depth_n3": 16.625,
+      "middlegame_mean_depth_n4": 17,
+      "endgame_mean_depth_n3": 0.0,
+      "endgame_mean_depth_n4": 0.0,
+      "depth_gain_mean": 0.375,
+      "depth_gain_middlegame": 0.375,
+      "total_nodes_n3": 23117124,
+      "total_nodes_n4": 23643462,
+      "node_delta_pct": 2.276831668160797,
+      "mean_overshoot_n3_ms": 2.8870687456219457,
+      "mean_overshoot_n4_ms": 3.05358749392326,
+      "max_overshoot_n3_ms": 9.691599989309907,
+      "max_overshoot_n4_ms": 8.784800011198968,
+      "stockfish_agreement_n3_pct": 18.75,
+      "stockfish_agreement_n4_pct": 18.75,
+      "head_to_head_agreement_pct": 100.0,
+      "pvs_full_window_searches": 2848987,
+      "pvs_null_window_searches": 10653068,
+      "pvs_researches": 2234,
+      "pvs_research_rate_pct": 0.020970484746741503,
+      "lmr_reduced_moves": 1790510,
+      "lmr_researches": 23282,
+      "lmr_research_rate_pct": 1.3002999145494858
+    },
+    "positions": [
+      {
+        "id": "val_01_tactical_fork",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "c4f7",
+        "n3_depth": 6,
+        "n3_nodes": 944128,
+        "n3_time_sec": 3.0049780999543145,
+        "n3_overshoot_ms": 4.97809995431453,
+        "n4_move": "c4f7",
+        "n4_depth": 6,
+        "n4_nodes": 940032,
+        "n4_time_sec": 3.001332299958449,
+        "n4_overshoot_ms": 1.332299958448857,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 81702,
+          "null_window_searches": 262944,
+          "researches": 42,
+          "cutoffs": 74697
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 17162,
+          "reduced_moves": 17162,
+          "researches": 246,
+          "cutoffs": 142
+        }
+      },
+      {
+        "id": "val_02_quiet_positional",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "d1c2",
+        "n3_depth": 7,
+        "n3_nodes": 860160,
+        "n3_time_sec": 3.0038274999824353,
+        "n3_overshoot_ms": 3.8274999824352562,
+        "n4_move": "d1c2",
+        "n4_depth": 7,
+        "n4_nodes": 878592,
+        "n4_time_sec": 3.008784800011199,
+        "n4_overshoot_ms": 8.784800011198968,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 66376,
+          "null_window_searches": 204320,
+          "researches": 86,
+          "cutoffs": 61077
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 13799,
+          "reduced_moves": 13799,
+          "researches": 92,
+          "cutoffs": 50
+        }
+      },
+      {
+        "id": "val_03_king_safety",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "e4c3",
+        "n3_depth": 7,
+        "n3_nodes": 921600,
+        "n3_time_sec": 3.005839899997227,
+        "n3_overshoot_ms": 5.839899997226894,
+        "n4_move": "e4c3",
+        "n4_depth": 7,
+        "n4_nodes": 1034240,
+        "n4_time_sec": 3.0040392000228167,
+        "n4_overshoot_ms": 4.039200022816658,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 84464,
+          "null_window_searches": 329078,
+          "researches": 52,
+          "cutoffs": 74704
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 29589,
+          "reduced_moves": 29589,
+          "researches": 100,
+          "cutoffs": 71
+        }
+      },
+      {
+        "id": "val_04_pawn_endgame",
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e3d2",
+        "n3_move": "e3f2",
+        "n3_depth": 21,
+        "n3_nodes": 2918400,
+        "n3_time_sec": 3.0022207999718376,
+        "n3_overshoot_ms": 2.2207999718375504,
+        "n4_move": "e3f2",
+        "n4_depth": 22,
+        "n4_nodes": 2471936,
+        "n4_time_sec": 3.003271900000982,
+        "n4_overshoot_ms": 3.2719000009819865,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 642456,
+          "null_window_searches": 989967,
+          "researches": 649,
+          "cutoffs": 452504
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 179406,
+          "reduced_moves": 179406,
+          "researches": 9612,
+          "cutoffs": 6074
+        }
+      },
+      {
+        "id": "val_05_rook_endgame",
+        "fen": "8/8/4k3/R7/8/8/2K4r/8 w - - 1 1",
+        "category": "middlegame",
+        "stockfish_move": "c2b1",
+        "n3_move": "c2b1",
+        "n3_depth": 11,
+        "n3_nodes": 2060288,
+        "n3_time_sec": 3.0007321999873966,
+        "n3_overshoot_ms": 0.7321999873965979,
+        "n4_move": "c2b1",
+        "n4_depth": 12,
+        "n4_nodes": 2154496,
+        "n4_time_sec": 3.0005730999982916,
+        "n4_overshoot_ms": 0.5730999982915819,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 274406,
+          "null_window_searches": 1040257,
+          "researches": 155,
+          "cutoffs": 223188
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 131813,
+          "reduced_moves": 131813,
+          "researches": 2065,
+          "cutoffs": 1458
+        }
+      },
+      {
+        "id": "val_06_minor_piece_endgame",
+        "fen": "8/8/4k3/3b4/8/4B3/4K3/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e3c1",
+        "n3_move": "e2f1",
+        "n3_depth": 11,
+        "n3_nodes": 2246656,
+        "n3_time_sec": 3.0032446999684907,
+        "n3_overshoot_ms": 3.2446999684907496,
+        "n4_move": "e2f1",
+        "n4_depth": 12,
+        "n4_nodes": 2469888,
+        "n4_time_sec": 3.0014954999787733,
+        "n4_overshoot_ms": 1.4954999787732959,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 328508,
+          "null_window_searches": 1277172,
+          "researches": 38,
+          "cutoffs": 271241
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 192311,
+          "reduced_moves": 192311,
+          "researches": 5882,
+          "cutoffs": 3896
+        }
+      },
+      {
+        "id": "val_07_pawn_promotion",
+        "fen": "8/4P3/8/8/8/6k1/8/6K1 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "e7e8q",
+        "n3_move": "e7e8q",
+        "n3_depth": 14,
+        "n3_nodes": 3217408,
+        "n3_time_sec": 3.001105400035158,
+        "n3_overshoot_ms": 1.1054000351577997,
+        "n4_move": "e7e8q",
+        "n4_depth": 16,
+        "n4_nodes": 3739648,
+        "n4_time_sec": 3.000820700020995,
+        "n4_overshoot_ms": 0.8207000209949911,
+        "depth_gain": 2,
+        "pvs_telemetry": {
+          "full_window_searches": 377160,
+          "null_window_searches": 2355442,
+          "researches": 288,
+          "cutoffs": 281173
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 642852,
+          "reduced_moves": 642852,
+          "researches": 1197,
+          "cutoffs": 1004
+        }
+      },
+      {
+        "id": "val_08_kingside_castling",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "d2d3",
+        "n3_depth": 6,
+        "n3_nodes": 745472,
+        "n3_time_sec": 3.00969159998931,
+        "n3_overshoot_ms": 9.691599989309907,
+        "n4_move": "d2d3",
+        "n4_depth": 7,
+        "n4_nodes": 870400,
+        "n4_time_sec": 3.0069669999647886,
+        "n4_overshoot_ms": 6.966999964788556,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 55708,
+          "null_window_searches": 199154,
+          "researches": 50,
+          "cutoffs": 50475
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 11629,
+          "reduced_moves": 11629,
+          "researches": 48,
+          "cutoffs": 37
+        }
+      },
+      {
+        "id": "val_09_en_passant_execution",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "category": "middlegame",
+        "stockfish_move": "d5d6",
+        "n3_move": "d5e6",
+        "n3_depth": 16,
+        "n3_nodes": 3442688,
+        "n3_time_sec": 3.001308400009293,
+        "n3_overshoot_ms": 1.3084000092931092,
+        "n4_move": "d5e6",
+        "n4_depth": 17,
+        "n4_nodes": 3266560,
+        "n4_time_sec": 3.0003935999702662,
+        "n4_overshoot_ms": 0.39359997026622295,
+        "depth_gain": 1,
+        "pvs_telemetry": {
+          "full_window_searches": 385522,
+          "null_window_searches": 1872478,
+          "researches": 469,
+          "cutoffs": 285882
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 394216,
+          "reduced_moves": 394216,
+          "researches": 2798,
+          "cutoffs": 2385
+        }
+      },
+      {
+        "id": "val_10_stalemate_avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "b6a5",
+        "n3_move": "b6a6",
+        "n3_depth": 64,
+        "n3_nodes": 772,
+        "n3_time_sec": 0.000659800018183887,
+        "n3_overshoot_ms": 0.0,
+        "n4_move": "b6a6",
+        "n4_depth": 64,
+        "n4_nodes": 774,
+        "n4_time_sec": 0.000547099974937737,
+        "n4_overshoot_ms": 0.0,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 380,
+          "null_window_searches": 320,
+          "researches": 1,
+          "cutoffs": 315
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_11_check_evasion",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 1 6",
+        "category": "middlegame",
+        "stockfish_move": "d4d3",
+        "n3_move": "d8f6",
+        "n3_depth": 7,
+        "n3_nodes": 1011712,
+        "n3_time_sec": 3.003767400048673,
+        "n3_overshoot_ms": 3.767400048673153,
+        "n4_move": "d8f6",
+        "n4_depth": 7,
+        "n4_nodes": 1105920,
+        "n4_time_sec": 3.00546769995708,
+        "n4_overshoot_ms": 5.467699957080185,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 97951,
+          "null_window_searches": 349688,
+          "researches": 32,
+          "cutoffs": 86638
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 34504,
+          "reduced_moves": 34504,
+          "researches": 112,
+          "cutoffs": 81
+        }
+      },
+      {
+        "id": "val_12_repetition_sensitive",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+        "category": "middlegame",
+        "stockfish_move": "a7a6",
+        "n3_move": "b8c6",
+        "n3_depth": 8,
+        "n3_nodes": 946176,
+        "n3_time_sec": 3.003605699981563,
+        "n3_overshoot_ms": 3.6056999815627933,
+        "n4_move": "b8c6",
+        "n4_depth": 7,
+        "n4_nodes": 958464,
+        "n4_time_sec": 3.0027743999962695,
+        "n4_overshoot_ms": 2.7743999962694943,
+        "depth_gain": -1,
+        "pvs_telemetry": {
+          "full_window_searches": 85197,
+          "null_window_searches": 337154,
+          "researches": 247,
+          "cutoffs": 77160
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 19883,
+          "reduced_moves": 19883,
+          "researches": 494,
+          "cutoffs": 190
+        }
+      },
+      {
+        "id": "val_13_fifty_move_draw_sensitive",
+        "fen": "8/8/4k3/8/8/4K3/8/8 w - - 99 50",
+        "category": "middlegame",
+        "stockfish_move": "e3d2",
+        "n3_move": "e3d2",
+        "n3_depth": 64,
+        "n3_nodes": 576,
+        "n3_time_sec": 0.0002953999792225659,
+        "n3_overshoot_ms": 0.0,
+        "n4_move": "e3d2",
+        "n4_depth": 64,
+        "n4_nodes": 576,
+        "n4_time_sec": 0.0006435000104829669,
+        "n4_overshoot_ms": 0.0,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 64,
+          "null_window_searches": 448,
+          "researches": 0,
+          "cutoffs": 0
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_14_tactical_pin",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "d3h7",
+        "n3_depth": 6,
+        "n3_nodes": 790528,
+        "n3_time_sec": 3.001483300002292,
+        "n3_overshoot_ms": 1.4833000022917986,
+        "n4_move": "d3h7",
+        "n4_depth": 6,
+        "n4_nodes": 882688,
+        "n4_time_sec": 3.00648410001304,
+        "n4_overshoot_ms": 6.484100013040006,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 69160,
+          "null_window_searches": 223637,
+          "researches": 62,
+          "cutoffs": 64068
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 12328,
+          "reduced_moves": 12328,
+          "researches": 83,
+          "cutoffs": 43
+        }
+      },
+      {
+        "id": "val_15_queen_endgame",
+        "fen": "8/8/4k3/3q4/8/4Q3/4K3/8 b - - 0 1",
+        "category": "middlegame",
+        "stockfish_move": "d5e4",
+        "n3_move": "e6f7",
+        "n3_depth": 11,
+        "n3_nodes": 1810432,
+        "n3_time_sec": 3.00077699997928,
+        "n3_overshoot_ms": 0.7769999792799354,
+        "n4_move": "e6f7",
+        "n4_depth": 11,
+        "n4_nodes": 1646592,
+        "n4_time_sec": 3.0024517999845557,
+        "n4_overshoot_ms": 2.4517999845556915,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 201672,
+          "null_window_searches": 771507,
+          "researches": 17,
+          "cutoffs": 164228
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 60614,
+          "reduced_moves": 60614,
+          "researches": 521,
+          "cutoffs": 338
+        }
+      },
+      {
+        "id": "val_16_discovered_attack",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "category": "middlegame",
+        "stockfish_move": "a2a3",
+        "n3_move": "e3e4",
+        "n3_depth": 7,
+        "n3_nodes": 1200128,
+        "n3_time_sec": 3.003611100022681,
+        "n3_overshoot_ms": 3.6111000226810575,
+        "n4_move": "e3e4",
+        "n4_depth": 7,
+        "n4_nodes": 1222656,
+        "n4_time_sec": 3.0040013000252657,
+        "n4_overshoot_ms": 4.001300025265664,
+        "depth_gain": 0,
+        "pvs_telemetry": {
+          "full_window_searches": 98261,
+          "null_window_searches": 439502,
+          "researches": 46,
+          "cutoffs": 85045
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 50404,
+          "reduced_moves": 50404,
+          "researches": 32,
+          "cutoffs": 18
+        }
+      }
+    ]
+  }
+}

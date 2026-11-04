@@ -1,0 +1,1535 @@
+{
+  "tactical_regression_corpus": {
+    "summary": {
+      "name": "Tactical Regression Suite (12)",
+      "total": 12,
+      "n3_solved": 4,
+      "n4_solved": 4,
+      "agreed": 12,
+      "agreement_pct": 100.0,
+      "total_nodes_n3": 373611,
+      "total_nodes_n4": 330023,
+      "node_reduction_pct": 11.666680049570274
+    },
+    "positions": [
+      {
+        "id": "tac_01_mate_in_2",
+        "theme": "Forced mate",
+        "fen": "r2qkb1r/pp2nppp/3p4/2pNN1B1/2BnP3/3P4/PPP2PPP/R2bK2R w KQkq - 1 9",
+        "expected": "d5f6",
+        "stockfish_move": "a2a3",
+        "n3_move": "d5f6",
+        "n3_score": 28997,
+        "n3_nodes": 44765,
+        "n3_time": 0.03280280000763014,
+        "n3_solved": true,
+        "n4_move": "d5f6",
+        "n4_score": 28997,
+        "n4_nodes": 40635,
+        "n4_time": 0.024601700017228723,
+        "n4_solved": true,
+        "agreed": true,
+        "node_reduction_pct": 9.225957779515246,
+        "pvs_telemetry": {
+          "full_window_searches": 2343,
+          "null_window_searches": 14403,
+          "researches": 8,
+          "cutoffs": 1899
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1417,
+          "reduced_moves": 1417,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "tac_02_hanging_piece",
+        "theme": "Hanging piece",
+        "fen": "r1bqk2r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "expected": "d1d5",
+        "stockfish_move": "a2a3",
+        "n3_move": "c4f7",
+        "n3_score": 30,
+        "n3_nodes": 43727,
+        "n3_time": 0.03425900003639981,
+        "n3_solved": false,
+        "n4_move": "c4f7",
+        "n4_score": 30,
+        "n4_nodes": 36776,
+        "n4_time": 0.024762399960309267,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 15.896356941935188,
+        "pvs_telemetry": {
+          "full_window_searches": 2609,
+          "null_window_searches": 12476,
+          "researches": 32,
+          "cutoffs": 2262
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1476,
+          "reduced_moves": 1476,
+          "researches": 17,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "tac_03_pin_tactic",
+        "theme": "Pin exploitation",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "expected": "d3h7",
+        "stockfish_move": "a2a3",
+        "n3_move": "h1h5",
+        "n3_score": 405,
+        "n3_nodes": 91979,
+        "n3_time": 0.08721979998517781,
+        "n3_solved": false,
+        "n4_move": "h1h5",
+        "n4_score": 405,
+        "n4_nodes": 79022,
+        "n4_time": 0.06773149996297434,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 14.086911142760847,
+        "pvs_telemetry": {
+          "full_window_searches": 3253,
+          "null_window_searches": 19884,
+          "researches": 21,
+          "cutoffs": 2814
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 2070,
+          "reduced_moves": 2070,
+          "researches": 17,
+          "cutoffs": 10
+        }
+      },
+      {
+        "id": "tac_04_knight_fork",
+        "theme": "Knight fork",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "expected": "e4d6",
+        "stockfish_move": "a2a3",
+        "n3_move": "e4c3",
+        "n3_score": 350,
+        "n3_nodes": 40389,
+        "n3_time": 0.02691640000557527,
+        "n3_solved": false,
+        "n4_move": "e4c3",
+        "n4_score": 350,
+        "n4_nodes": 37129,
+        "n4_time": 0.03143390000332147,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 8.0715046175939,
+        "pvs_telemetry": {
+          "full_window_searches": 2380,
+          "null_window_searches": 13088,
+          "researches": 19,
+          "cutoffs": 2048
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1360,
+          "reduced_moves": 1360,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "tac_05_skewer",
+        "theme": "Skewer",
+        "fen": "8/8/4k3/8/8/1R6/2K4r/8 w - - 1 1",
+        "expected": "c2c3",
+        "stockfish_move": "c2b1",
+        "n3_move": "c2b1",
+        "n3_score": 15,
+        "n3_nodes": 7183,
+        "n3_time": 0.002898200007621199,
+        "n3_solved": false,
+        "n4_move": "c2b1",
+        "n4_score": 15,
+        "n4_nodes": 6653,
+        "n4_time": 0.002228699973784387,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 7.378532646526521,
+        "pvs_telemetry": {
+          "full_window_searches": 719,
+          "null_window_searches": 2898,
+          "researches": 17,
+          "cutoffs": 581
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 147,
+          "reduced_moves": 147,
+          "researches": 6,
+          "cutoffs": 3
+        }
+      },
+      {
+        "id": "tac_06_discovered_attack",
+        "theme": "Discovered attack",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "expected": "d4c5",
+        "stockfish_move": "a2a3",
+        "n3_move": "f3e5",
+        "n3_score": 5,
+        "n3_nodes": 48489,
+        "n3_time": 0.06417109997710213,
+        "n3_solved": false,
+        "n4_move": "f3e5",
+        "n4_score": 5,
+        "n4_nodes": 47368,
+        "n4_time": 0.06785849999869242,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 2.3118645465981977,
+        "pvs_telemetry": {
+          "full_window_searches": 2988,
+          "null_window_searches": 13603,
+          "researches": 13,
+          "cutoffs": 2615
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1701,
+          "reduced_moves": 1701,
+          "researches": 3,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "tac_07_defensive_resource",
+        "theme": "Defensive move",
+        "fen": "r1b1k2r/pppp1ppp/8/4q3/1bP5/4P3/PP1N1PPP/R2QKB1R w KQkq - 0 9",
+        "expected": "a1b1",
+        "stockfish_move": "a2a3",
+        "n3_move": "a2a3",
+        "n3_score": -20,
+        "n3_nodes": 42737,
+        "n3_time": 0.07353719999082386,
+        "n3_solved": false,
+        "n4_move": "a2a3",
+        "n4_score": -20,
+        "n4_nodes": 30430,
+        "n4_time": 0.04660729999886826,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 28.797061094601865,
+        "pvs_telemetry": {
+          "full_window_searches": 2528,
+          "null_window_searches": 9069,
+          "researches": 30,
+          "cutoffs": 2214
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 579,
+          "reduced_moves": 579,
+          "researches": 7,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "tac_08_promotion_tactic",
+        "theme": "Promotion tactic",
+        "fen": "8/5P2/8/8/8/6k1/8/6K1 w - - 0 1",
+        "expected": "f7f8q",
+        "stockfish_move": "f7f8q",
+        "n3_move": "f7f8q",
+        "n3_score": 965,
+        "n3_nodes": 1355,
+        "n3_time": 0.0017580999992787838,
+        "n3_solved": true,
+        "n4_move": "f7f8q",
+        "n4_score": 965,
+        "n4_nodes": 1331,
+        "n4_time": 0.0006231999723240733,
+        "n4_solved": true,
+        "agreed": true,
+        "node_reduction_pct": 1.7712177121771218,
+        "pvs_telemetry": {
+          "full_window_searches": 198,
+          "null_window_searches": 578,
+          "researches": 10,
+          "cutoffs": 139
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 34,
+          "reduced_moves": 34,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "tac_09_en_passant_tactic",
+        "theme": "En passant tactic",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "expected": "d5e6",
+        "stockfish_move": "d5d6",
+        "n3_move": "d5e6",
+        "n3_score": 925,
+        "n3_nodes": 569,
+        "n3_time": 0.0002933000214397907,
+        "n3_solved": true,
+        "n4_move": "d5e6",
+        "n4_score": 925,
+        "n4_nodes": 577,
+        "n4_time": 0.0002022999688051641,
+        "n4_solved": true,
+        "agreed": true,
+        "node_reduction_pct": -1.4059753954305798,
+        "pvs_telemetry": {
+          "full_window_searches": 123,
+          "null_window_searches": 233,
+          "researches": 2,
+          "cutoffs": 71
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 22,
+          "reduced_moves": 22,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "tac_10_check_evasion",
+        "theme": "Check evasion",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4P3/2B1n3/8/PPP2PPP/RNBQK1NR w KQkq - 1 5",
+        "expected": "d1d5",
+        "stockfish_move": "a2a3",
+        "n3_move": "c4f7",
+        "n3_score": 105,
+        "n3_nodes": 39550,
+        "n3_time": 0.06226899998728186,
+        "n3_solved": false,
+        "n4_move": "c4f7",
+        "n4_score": 105,
+        "n4_nodes": 38057,
+        "n4_time": 0.14169519999995828,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 3.774968394437421,
+        "pvs_telemetry": {
+          "full_window_searches": 2706,
+          "null_window_searches": 12919,
+          "researches": 34,
+          "cutoffs": 2338
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1738,
+          "reduced_moves": 1738,
+          "researches": 4,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "tac_11_stalemate_avoidance",
+        "theme": "Stalemate avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "expected": "b6a6",
+        "stockfish_move": "b6a5",
+        "n3_move": "b6a6",
+        "n3_score": 0,
+        "n3_nodes": 64,
+        "n3_time": 0.00014600000577047467,
+        "n3_solved": true,
+        "n4_move": "b6a6",
+        "n4_score": 0,
+        "n4_nodes": 66,
+        "n4_time": 9.34000127017498e-05,
+        "n4_solved": true,
+        "agreed": true,
+        "node_reduction_pct": -3.125,
+        "pvs_telemetry": {
+          "full_window_searches": 26,
+          "null_window_searches": 25,
+          "researches": 1,
+          "cutoffs": 20
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "tac_12_hanging_rook",
+        "theme": "Hanging piece capture",
+        "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+        "expected": "a1a7",
+        "stockfish_move": "f2f3",
+        "n3_move": "a1d1",
+        "n3_score": 0,
+        "n3_nodes": 12804,
+        "n3_time": 0.009877400007098913,
+        "n3_solved": false,
+        "n4_move": "a1d1",
+        "n4_score": 0,
+        "n4_nodes": 11979,
+        "n4_time": 0.014771100017242134,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 6.443298969072164,
+        "pvs_telemetry": {
+          "full_window_searches": 1466,
+          "null_window_searches": 5070,
+          "researches": 37,
+          "cutoffs": 1249
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 343,
+          "reduced_moves": 343,
+          "researches": 4,
+          "cutoffs": 2
+        }
+      }
+    ]
+  },
+  "validation_corpus": {
+    "summary": {
+      "name": "Validation Suite (16)",
+      "total": 16,
+      "n3_solved": 3,
+      "n4_solved": 3,
+      "agreed": 16,
+      "agreement_pct": 100.0,
+      "total_nodes_n3": 450576,
+      "total_nodes_n4": 403828,
+      "node_reduction_pct": 10.375164234224638
+    },
+    "positions": [
+      {
+        "id": "val_01_tactical_fork",
+        "theme": "Tactical combinations",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "expected": "d1d5",
+        "stockfish_move": "a2a3",
+        "n3_move": "c4f7",
+        "n3_score": -280,
+        "n3_nodes": 46078,
+        "n3_time": 0.07014849997358397,
+        "n3_solved": false,
+        "n4_move": "c4f7",
+        "n4_score": -280,
+        "n4_nodes": 37256,
+        "n4_time": 0.07467479998013005,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 19.145796258518164,
+        "pvs_telemetry": {
+          "full_window_searches": 2588,
+          "null_window_searches": 12363,
+          "researches": 31,
+          "cutoffs": 2246
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1479,
+          "reduced_moves": 1479,
+          "researches": 17,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "val_02_quiet_positional",
+        "theme": "Quiet positional decisions",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "expected": "e1g1",
+        "stockfish_move": "a2a3",
+        "n3_move": "d1c2",
+        "n3_score": -5,
+        "n3_nodes": 62678,
+        "n3_time": 0.11779340001521632,
+        "n3_solved": false,
+        "n4_move": "d1c2",
+        "n4_score": -5,
+        "n4_nodes": 63561,
+        "n4_time": 0.10936790000414476,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": -1.408787772424136,
+        "pvs_telemetry": {
+          "full_window_searches": 3929,
+          "null_window_searches": 16706,
+          "researches": 20,
+          "cutoffs": 3492
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1535,
+          "reduced_moves": 1535,
+          "researches": 4,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "val_03_king_safety",
+        "theme": "King safety",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "expected": "e1g1",
+        "stockfish_move": "a2a3",
+        "n3_move": "e4c3",
+        "n3_score": 350,
+        "n3_nodes": 40389,
+        "n3_time": 0.05016739998245612,
+        "n3_solved": false,
+        "n4_move": "e4c3",
+        "n4_score": 350,
+        "n4_nodes": 37129,
+        "n4_time": 0.04784090002067387,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 8.0715046175939,
+        "pvs_telemetry": {
+          "full_window_searches": 2380,
+          "null_window_searches": 13088,
+          "researches": 19,
+          "cutoffs": 2048
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1360,
+          "reduced_moves": 1360,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_04_pawn_endgame",
+        "theme": "Pawn endgames",
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "expected": "e3f4",
+        "stockfish_move": "e3d2",
+        "n3_move": "e3f2",
+        "n3_score": 0,
+        "n3_nodes": 2785,
+        "n3_time": 0.0011699000024236739,
+        "n3_solved": false,
+        "n4_move": "e3f2",
+        "n4_score": 0,
+        "n4_nodes": 2607,
+        "n4_time": 0.0012261999654583633,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 6.391382405745063,
+        "pvs_telemetry": {
+          "full_window_searches": 511,
+          "null_window_searches": 1109,
+          "researches": 17,
+          "cutoffs": 362
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 71,
+          "reduced_moves": 71,
+          "researches": 20,
+          "cutoffs": 8
+        }
+      },
+      {
+        "id": "val_05_rook_endgame",
+        "theme": "Rook endgames",
+        "fen": "8/8/4k3/R7/8/8/2K4r/8 w - - 1 1",
+        "expected": "c2d3",
+        "stockfish_move": "c2b1",
+        "n3_move": "c2b1",
+        "n3_score": 15,
+        "n3_nodes": 8725,
+        "n3_time": 0.0073417999665252864,
+        "n3_solved": false,
+        "n4_move": "c2b1",
+        "n4_score": 15,
+        "n4_nodes": 8481,
+        "n4_time": 0.004754699999466538,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 2.796561604584527,
+        "pvs_telemetry": {
+          "full_window_searches": 802,
+          "null_window_searches": 3777,
+          "researches": 11,
+          "cutoffs": 670
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 142,
+          "reduced_moves": 142,
+          "researches": 6,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "val_06_minor_piece_endgame",
+        "theme": "Minor-piece endgames",
+        "fen": "8/8/4k3/3b4/8/4B3/4K3/8 w - - 0 1",
+        "expected": "e2d3",
+        "stockfish_move": "e3c1",
+        "n3_move": "e2f1",
+        "n3_score": 0,
+        "n3_nodes": 32041,
+        "n3_time": 0.018495899974368513,
+        "n3_solved": false,
+        "n4_move": "e2f1",
+        "n4_score": 0,
+        "n4_nodes": 21854,
+        "n4_time": 0.011877599987201393,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 31.793639399519364,
+        "pvs_telemetry": {
+          "full_window_searches": 2350,
+          "null_window_searches": 10048,
+          "researches": 24,
+          "cutoffs": 2076
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 361,
+          "reduced_moves": 361,
+          "researches": 21,
+          "cutoffs": 10
+        }
+      },
+      {
+        "id": "val_07_pawn_promotion",
+        "theme": "Promotions",
+        "fen": "8/4P3/8/8/8/6k1/8/6K1 w - - 0 1",
+        "expected": "e7e8q",
+        "stockfish_move": "e7e8q",
+        "n3_move": "e7e8q",
+        "n3_score": 965,
+        "n3_nodes": 1630,
+        "n3_time": 0.0008098999969661236,
+        "n3_solved": true,
+        "n4_move": "e7e8q",
+        "n4_score": 965,
+        "n4_nodes": 1743,
+        "n4_time": 0.0008981999708339572,
+        "n4_solved": true,
+        "agreed": true,
+        "node_reduction_pct": -6.932515337423313,
+        "pvs_telemetry": {
+          "full_window_searches": 274,
+          "null_window_searches": 747,
+          "researches": 14,
+          "cutoffs": 202
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 38,
+          "reduced_moves": 38,
+          "researches": 1,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_08_kingside_castling",
+        "theme": "Castling",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "expected": "e1g1",
+        "stockfish_move": "a2a3",
+        "n3_move": "d2d3",
+        "n3_score": 10,
+        "n3_nodes": 59058,
+        "n3_time": 0.1210525999777019,
+        "n3_solved": false,
+        "n4_move": "d2d3",
+        "n4_score": 10,
+        "n4_nodes": 46352,
+        "n4_time": 0.07292810000944883,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 21.514443428494022,
+        "pvs_telemetry": {
+          "full_window_searches": 2256,
+          "null_window_searches": 11896,
+          "researches": 19,
+          "cutoffs": 1942
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1223,
+          "reduced_moves": 1223,
+          "researches": 4,
+          "cutoffs": 3
+        }
+      },
+      {
+        "id": "val_09_en_passant_execution",
+        "theme": "En passant",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "expected": "d5e6",
+        "stockfish_move": "d5d6",
+        "n3_move": "d5e6",
+        "n3_score": 925,
+        "n3_nodes": 569,
+        "n3_time": 0.0002872000331990421,
+        "n3_solved": true,
+        "n4_move": "d5e6",
+        "n4_score": 925,
+        "n4_nodes": 577,
+        "n4_time": 0.0005531000206246972,
+        "n4_solved": true,
+        "agreed": true,
+        "node_reduction_pct": -1.4059753954305798,
+        "pvs_telemetry": {
+          "full_window_searches": 123,
+          "null_window_searches": 233,
+          "researches": 2,
+          "cutoffs": 71
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 22,
+          "reduced_moves": 22,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_10_stalemate_avoidance",
+        "theme": "Stalemate avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "expected": "b6a6",
+        "stockfish_move": "b6a5",
+        "n3_move": "b6a6",
+        "n3_score": 0,
+        "n3_nodes": 64,
+        "n3_time": 7.720000576227903e-05,
+        "n3_solved": true,
+        "n4_move": "b6a6",
+        "n4_score": 0,
+        "n4_nodes": 66,
+        "n4_time": 5.390000296756625e-05,
+        "n4_solved": true,
+        "agreed": true,
+        "node_reduction_pct": -3.125,
+        "pvs_telemetry": {
+          "full_window_searches": 26,
+          "null_window_searches": 25,
+          "researches": 1,
+          "cutoffs": 20
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_11_check_evasion",
+        "theme": "Check evasions",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 1 6",
+        "expected": "e8g8",
+        "stockfish_move": "d4d3",
+        "n3_move": "d8f6",
+        "n3_score": -170,
+        "n3_nodes": 31399,
+        "n3_time": 0.04221800004597753,
+        "n3_solved": false,
+        "n4_move": "d8f6",
+        "n4_score": -170,
+        "n4_nodes": 32337,
+        "n4_time": 0.04736819997197017,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": -2.9873562852320137,
+        "pvs_telemetry": {
+          "full_window_searches": 2039,
+          "null_window_searches": 11045,
+          "researches": 14,
+          "cutoffs": 1686
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1040,
+          "reduced_moves": 1040,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_12_repetition_sensitive",
+        "theme": "Repetition-sensitive positions",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+        "expected": "d7d5",
+        "stockfish_move": "a7a6",
+        "n3_move": "b8c6",
+        "n3_score": 0,
+        "n3_nodes": 15321,
+        "n3_time": 0.016437900019809604,
+        "n3_solved": false,
+        "n4_move": "b8c6",
+        "n4_score": -20,
+        "n4_nodes": 16275,
+        "n4_time": 0.0137700000195764,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": -6.226747601331506,
+        "pvs_telemetry": {
+          "full_window_searches": 1403,
+          "null_window_searches": 7131,
+          "researches": 26,
+          "cutoffs": 1202
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 480,
+          "reduced_moves": 480,
+          "researches": 5,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "val_13_fifty_move_draw_sensitive",
+        "theme": "Draw-sensitive positions",
+        "fen": "8/8/4k3/8/8/4K3/8/8 w - - 99 50",
+        "expected": "e3e4",
+        "stockfish_move": "e3d2",
+        "n3_move": "e3d2",
+        "n3_score": 0,
+        "n3_nodes": 45,
+        "n3_time": 8.399999933317304e-05,
+        "n3_solved": false,
+        "n4_move": "e3d2",
+        "n4_score": 0,
+        "n4_nodes": 45,
+        "n4_time": 5.9699988923966885e-05,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 0.0,
+        "pvs_telemetry": {
+          "full_window_searches": 5,
+          "null_window_searches": 35,
+          "researches": 0,
+          "cutoffs": 0
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_14_tactical_pin",
+        "theme": "Tactical combinations",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "expected": "d3h7",
+        "stockfish_move": "a2a3",
+        "n3_move": "h1h5",
+        "n3_score": 405,
+        "n3_nodes": 91979,
+        "n3_time": 0.18361929996171966,
+        "n3_solved": false,
+        "n4_move": "h1h5",
+        "n4_score": 405,
+        "n4_nodes": 79022,
+        "n4_time": 0.13816579995909706,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 14.086911142760847,
+        "pvs_telemetry": {
+          "full_window_searches": 3253,
+          "null_window_searches": 19884,
+          "researches": 21,
+          "cutoffs": 2814
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 2070,
+          "reduced_moves": 2070,
+          "researches": 17,
+          "cutoffs": 10
+        }
+      },
+      {
+        "id": "val_15_queen_endgame",
+        "theme": "Pawn endgames",
+        "fen": "8/8/4k3/3q4/8/4Q3/4K3/8 b - - 0 1",
+        "expected": "e6d6",
+        "stockfish_move": "d5e4",
+        "n3_move": "e6f7",
+        "n3_score": 0,
+        "n3_nodes": 9326,
+        "n3_time": 0.00813249999191612,
+        "n3_solved": false,
+        "n4_move": "e6f7",
+        "n4_score": 0,
+        "n4_nodes": 9155,
+        "n4_time": 0.008056599996052682,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 1.833583529916363,
+        "pvs_telemetry": {
+          "full_window_searches": 925,
+          "null_window_searches": 4031,
+          "researches": 17,
+          "cutoffs": 746
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 110,
+          "reduced_moves": 110,
+          "researches": 1,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "val_16_discovered_attack",
+        "theme": "Tactical combinations",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "expected": "d4c5",
+        "stockfish_move": "a2a3",
+        "n3_move": "f3e5",
+        "n3_score": 5,
+        "n3_nodes": 48489,
+        "n3_time": 0.11125620000530034,
+        "n3_solved": false,
+        "n4_move": "f3e5",
+        "n4_score": 5,
+        "n4_nodes": 47368,
+        "n4_time": 0.08793340000556782,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 2.3118645465981977,
+        "pvs_telemetry": {
+          "full_window_searches": 2988,
+          "null_window_searches": 13603,
+          "researches": 13,
+          "cutoffs": 2615
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1701,
+          "reduced_moves": 1701,
+          "researches": 3,
+          "cutoffs": 1
+        }
+      }
+    ]
+  },
+  "independent_tactical_v053": {
+    "summary": {
+      "name": "Independent Tactical Suite v0.53 (20)",
+      "total": 20,
+      "n3_solved": 9,
+      "n4_solved": 9,
+      "agreed": 20,
+      "agreement_pct": 100.0,
+      "total_nodes_n3": 520021,
+      "total_nodes_n4": 500102,
+      "node_reduction_pct": 3.830422232948285
+    },
+    "positions": [
+      {
+        "id": "ind_01_mate_in_1",
+        "theme": "Direct Mate",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/5Q2/PPPP1PPP/RNB1K1NR w KQkq - 0 5",
+        "expected": "f3f7",
+        "stockfish_move": "a2a3",
+        "n3_move": "f3f7",
+        "n3_score": 28999,
+        "n3_nodes": 24499,
+        "n3_time": 0.013769100012723356,
+        "n3_solved": true,
+        "n4_move": "f3f7",
+        "n4_score": 28999,
+        "n4_nodes": 24517,
+        "n4_time": 0.011551100003998727,
+        "n4_solved": true,
+        "agreed": true,
+        "node_reduction_pct": -0.07347238662802563,
+        "pvs_telemetry": {
+          "full_window_searches": 2101,
+          "null_window_searches": 12041,
+          "researches": 2,
+          "cutoffs": 1779
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1450,
+          "reduced_moves": 1450,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "ind_02_back_rank_mate",
+        "theme": "Back Rank Mate",
+        "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+        "expected": "d1d8",
+        "stockfish_move": "f2f3",
+        "n3_move": "d1d8",
+        "n3_score": 28999,
+        "n3_nodes": 2021,
+        "n3_time": 0.0009837999823503196,
+        "n3_solved": true,
+        "n4_move": "d1d8",
+        "n4_score": 28999,
+        "n4_nodes": 2021,
+        "n4_time": 0.0012537000002339482,
+        "n4_solved": true,
+        "agreed": true,
+        "node_reduction_pct": 0.0,
+        "pvs_telemetry": {
+          "full_window_searches": 345,
+          "null_window_searches": 899,
+          "researches": 0,
+          "cutoffs": 245
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 106,
+          "reduced_moves": 106,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "ind_03_queen_sac_mate",
+        "theme": "Smothered Mate Sequence",
+        "fen": "6k1/5ppp/8/8/8/8/1q4PP/4Q1K1 w - - 0 1",
+        "expected": "e1e8",
+        "stockfish_move": "g2g3",
+        "n3_move": "e1e8",
+        "n3_score": 28999,
+        "n3_nodes": 3914,
+        "n3_time": 0.002584100002422929,
+        "n3_solved": true,
+        "n4_move": "e1e8",
+        "n4_score": 28999,
+        "n4_nodes": 3904,
+        "n4_time": 0.002778699970804155,
+        "n4_solved": true,
+        "agreed": true,
+        "node_reduction_pct": 0.25549310168625444,
+        "pvs_telemetry": {
+          "full_window_searches": 608,
+          "null_window_searches": 1781,
+          "researches": 9,
+          "cutoffs": 456
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 268,
+          "reduced_moves": 268,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "ind_04_defensive_perpetual",
+        "theme": "Perpetual Check Evasion",
+        "fen": "8/6k1/8/8/8/8/1q4PK/7Q w - - 0 1",
+        "expected": "h1e1",
+        "stockfish_move": "h2h3",
+        "n3_move": "h1e1",
+        "n3_score": 110,
+        "n3_nodes": 8040,
+        "n3_time": 0.010187299980316311,
+        "n3_solved": true,
+        "n4_move": "h1e1",
+        "n4_score": 110,
+        "n4_nodes": 8347,
+        "n4_time": 0.008999700017739087,
+        "n4_solved": true,
+        "agreed": true,
+        "node_reduction_pct": -3.8184079601990053,
+        "pvs_telemetry": {
+          "full_window_searches": 890,
+          "null_window_searches": 3517,
+          "researches": 29,
+          "cutoffs": 711
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 128,
+          "reduced_moves": 128,
+          "researches": 5,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "ind_05_queen_attack",
+        "theme": "Double Attack",
+        "fen": "rn2kb1r/pp3ppp/4p3/1qp1N3/3P4/8/PPP2PPP/R1BQK2R w KQkq - 0 11",
+        "expected": "d1h5",
+        "stockfish_move": "a2a3",
+        "n3_move": "d1f3",
+        "n3_score": 100,
+        "n3_nodes": 35802,
+        "n3_time": 0.05346319999080151,
+        "n3_solved": false,
+        "n4_move": "d1f3",
+        "n4_score": 100,
+        "n4_nodes": 33048,
+        "n4_time": 0.04581169999437407,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 7.6923076923076925,
+        "pvs_telemetry": {
+          "full_window_searches": 2320,
+          "null_window_searches": 10710,
+          "researches": 27,
+          "cutoffs": 1976
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1163,
+          "reduced_moves": 1163,
+          "researches": 3,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "ind_06_knight_fork_defense",
+        "theme": "Defensive Resource",
+        "fen": "r1b1k2r/pppp1ppp/8/4N3/1b1qn3/8/PPP2PPP/RNBQKB1R w KQkq - 0 8",
+        "expected": "c2c3",
+        "stockfish_move": "c2c3",
+        "n3_move": "e1e2",
+        "n3_score": -385,
+        "n3_nodes": 16920,
+        "n3_time": 0.030263599997851998,
+        "n3_solved": false,
+        "n4_move": "e1e2",
+        "n4_score": -385,
+        "n4_nodes": 14800,
+        "n4_time": 0.021383300016168505,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 12.529550827423167,
+        "pvs_telemetry": {
+          "full_window_searches": 1400,
+          "null_window_searches": 4469,
+          "researches": 27,
+          "cutoffs": 1245
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 134,
+          "reduced_moves": 134,
+          "researches": 11,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "ind_07_skewer_evasion",
+        "theme": "Skewer Evasion",
+        "fen": "4k3/8/8/8/8/8/1R6/1K4q1 w - - 0 1",
+        "expected": "b1a2",
+        "stockfish_move": "b1c2",
+        "n3_move": "b1a2",
+        "n3_score": -385,
+        "n3_nodes": 4929,
+        "n3_time": 0.0031432000105269253,
+        "n3_solved": true,
+        "n4_move": "b1a2",
+        "n4_score": -385,
+        "n4_nodes": 4943,
+        "n4_time": 0.002737400005571544,
+        "n4_solved": true,
+        "agreed": true,
+        "node_reduction_pct": -0.2840332724690607,
+        "pvs_telemetry": {
+          "full_window_searches": 479,
+          "null_window_searches": 2148,
+          "researches": 13,
+          "cutoffs": 385
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 77,
+          "reduced_moves": 77,
+          "researches": 3,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "ind_08_pawn_breakthrough",
+        "theme": "Pawn Advance",
+        "fen": "8/8/4k3/8/4P3/8/4K3/8 w - - 0 1",
+        "expected": "e4e5",
+        "stockfish_move": "e4e5",
+        "n3_move": "e2f2",
+        "n3_score": 125,
+        "n3_nodes": 2193,
+        "n3_time": 0.0011501000262796879,
+        "n3_solved": false,
+        "n4_move": "e2f2",
+        "n4_score": 125,
+        "n4_nodes": 2216,
+        "n4_time": 0.0023802000214345753,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": -1.0487916096671226,
+        "pvs_telemetry": {
+          "full_window_searches": 408,
+          "null_window_searches": 918,
+          "researches": 21,
+          "cutoffs": 290
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 76,
+          "reduced_moves": 76,
+          "researches": 13,
+          "cutoffs": 6
+        }
+      },
+      {
+        "id": "ind_09_direct_promotion",
+        "theme": "Pawn Promotion",
+        "fen": "8/4P1k1/8/8/8/8/8/6K1 w - - 0 1",
+        "expected": "e7e8q",
+        "stockfish_move": "e7e8q",
+        "n3_move": "e7e8q",
+        "n3_score": 955,
+        "n3_nodes": 1653,
+        "n3_time": 0.0014507999876514077,
+        "n3_solved": true,
+        "n4_move": "e7e8q",
+        "n4_score": 955,
+        "n4_nodes": 1626,
+        "n4_time": 0.0012641999637708068,
+        "n4_solved": true,
+        "agreed": true,
+        "node_reduction_pct": 1.6333938294010888,
+        "pvs_telemetry": {
+          "full_window_searches": 205,
+          "null_window_searches": 739,
+          "researches": 10,
+          "cutoffs": 139
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 58,
+          "reduced_moves": 58,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "ind_10_stalemate_trap",
+        "theme": "Stalemate Avoidance",
+        "fen": "8/8/8/8/8/5k2/7p/7K w - - 0 1",
+        "expected": "h1h2",
+        "stockfish_move": "h1h2",
+        "n3_move": "h1h2",
+        "n3_score": 0,
+        "n3_nodes": 10,
+        "n3_time": 4.6200002543628216e-05,
+        "n3_solved": true,
+        "n4_move": "h1h2",
+        "n4_score": 0,
+        "n4_nodes": 10,
+        "n4_time": 3.1800009310245514e-05,
+        "n4_solved": true,
+        "agreed": true,
+        "node_reduction_pct": 0.0,
+        "pvs_telemetry": {
+          "full_window_searches": 5,
+          "null_window_searches": 0,
+          "researches": 0,
+          "cutoffs": 0
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "ind_11_opposition_endgame",
+        "theme": "Endgame Opposition",
+        "fen": "8/8/8/4k3/4p3/4K3/8/8 b - - 0 1",
+        "expected": "e5d5",
+        "stockfish_move": "e5f6",
+        "n3_move": "e5f5",
+        "n3_score": 95,
+        "n3_nodes": 538,
+        "n3_time": 0.0014435999910347164,
+        "n3_solved": false,
+        "n4_move": "e5f5",
+        "n4_score": 95,
+        "n4_nodes": 537,
+        "n4_time": 0.00040259998058900237,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 0.18587360594795538,
+        "pvs_telemetry": {
+          "full_window_searches": 111,
+          "null_window_searches": 221,
+          "researches": 6,
+          "cutoffs": 75
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 12,
+          "reduced_moves": 12,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "ind_12_kingside_castling",
+        "theme": "King Safety",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "expected": "e1g1",
+        "stockfish_move": "a2a3",
+        "n3_move": "d1c2",
+        "n3_score": -5,
+        "n3_nodes": 62678,
+        "n3_time": 0.09953399997903034,
+        "n3_solved": false,
+        "n4_move": "d1c2",
+        "n4_score": -5,
+        "n4_nodes": 63561,
+        "n4_time": 0.09922829997958615,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": -1.408787772424136,
+        "pvs_telemetry": {
+          "full_window_searches": 3929,
+          "null_window_searches": 16706,
+          "researches": 20,
+          "cutoffs": 3492
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1535,
+          "reduced_moves": 1535,
+          "researches": 4,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "ind_13_discovered_check_defense",
+        "theme": "Check Evasion",
+        "fen": "r1b1k2r/pppp1ppp/8/4N3/1b2n3/8/PPP1BPPP/RNBQK2R w KQkq - 0 8",
+        "expected": "c1d2",
+        "stockfish_move": "c2c3",
+        "n3_move": "b1d2",
+        "n3_score": 1125,
+        "n3_nodes": 15173,
+        "n3_time": 0.030650599976070225,
+        "n3_solved": false,
+        "n4_move": "b1d2",
+        "n4_score": 1125,
+        "n4_nodes": 13263,
+        "n4_time": 0.023072499956469983,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 12.588150003295326,
+        "pvs_telemetry": {
+          "full_window_searches": 639,
+          "null_window_searches": 3343,
+          "researches": 18,
+          "cutoffs": 525
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 251,
+          "reduced_moves": 251,
+          "researches": 1,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "ind_14_tactical_knight_retreat",
+        "theme": "Tactical Retreat",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "expected": "e4c3",
+        "stockfish_move": "a2a3",
+        "n3_move": "e4c3",
+        "n3_score": 350,
+        "n3_nodes": 40389,
+        "n3_time": 0.0492149000056088,
+        "n3_solved": true,
+        "n4_move": "e4c3",
+        "n4_score": 350,
+        "n4_nodes": 37129,
+        "n4_time": 0.048617899999953806,
+        "n4_solved": true,
+        "agreed": true,
+        "node_reduction_pct": 8.0715046175939,
+        "pvs_telemetry": {
+          "full_window_searches": 2380,
+          "null_window_searches": 13088,
+          "researches": 19,
+          "cutoffs": 2048
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1360,
+          "reduced_moves": 1360,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "ind_15_tactical_liquidation",
+        "theme": "Tactical Sacrifice",
+        "fen": "r1bq1rk1/ppp2ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQ1RK1 w - - 0 9",
+        "expected": "c4f7",
+        "stockfish_move": "a2a3",
+        "n3_move": "c4d5",
+        "n3_score": 90,
+        "n3_nodes": 29211,
+        "n3_time": 0.0333346999832429,
+        "n3_solved": false,
+        "n4_move": "c4d5",
+        "n4_score": 90,
+        "n4_nodes": 27786,
+        "n4_time": 0.03212079999502748,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 4.878299270822635,
+        "pvs_telemetry": {
+          "full_window_searches": 1910,
+          "null_window_searches": 9131,
+          "researches": 15,
+          "cutoffs": 1597
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1191,
+          "reduced_moves": 1191,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "ind_16_center_strike",
+        "theme": "Central Expansion",
+        "fen": "r1bqk2r/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+        "expected": "d2d4",
+        "stockfish_move": "a2a3",
+        "n3_move": "b1c3",
+        "n3_score": 680,
+        "n3_nodes": 30391,
+        "n3_time": 0.0417174999602139,
+        "n3_solved": false,
+        "n4_move": "b1c3",
+        "n4_score": 680,
+        "n4_nodes": 29808,
+        "n4_time": 0.046460899990051985,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 1.9183310848606496,
+        "pvs_telemetry": {
+          "full_window_searches": 1988,
+          "null_window_searches": 9121,
+          "researches": 45,
+          "cutoffs": 1671
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1137,
+          "reduced_moves": 1137,
+          "researches": 3,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "ind_17_positional_castling",
+        "theme": "Castling",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "expected": "e1g1",
+        "stockfish_move": "a2a3",
+        "n3_move": "f3e5",
+        "n3_score": 5,
+        "n3_nodes": 48489,
+        "n3_time": 0.06625569995958358,
+        "n3_solved": false,
+        "n4_move": "f3e5",
+        "n4_score": 5,
+        "n4_nodes": 47368,
+        "n4_time": 0.06380949995946139,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 2.3118645465981977,
+        "pvs_telemetry": {
+          "full_window_searches": 2988,
+          "null_window_searches": 13603,
+          "researches": 13,
+          "cutoffs": 2615
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1701,
+          "reduced_moves": 1701,
+          "researches": 3,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "ind_18_legalls_trap",
+        "theme": "Forced Mate Net",
+        "fen": "r2qkb1r/pp2nppp/3p4/2pNN1B1/2BnP3/3P4/PPP2PPP/R2bK2R w KQkq - 1 9",
+        "expected": "d5f6",
+        "stockfish_move": "a2a3",
+        "n3_move": "d5f6",
+        "n3_score": 28997,
+        "n3_nodes": 44765,
+        "n3_time": 0.10032349999528378,
+        "n3_solved": true,
+        "n4_move": "d5f6",
+        "n4_score": 28997,
+        "n4_nodes": 40635,
+        "n4_time": 0.043774599966127425,
+        "n4_solved": true,
+        "agreed": true,
+        "node_reduction_pct": 9.225957779515246,
+        "pvs_telemetry": {
+          "full_window_searches": 2343,
+          "null_window_searches": 14403,
+          "researches": 8,
+          "cutoffs": 1899
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1417,
+          "reduced_moves": 1417,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "ind_19_quiet_kingside_castling",
+        "theme": "Defensive Development",
+        "fen": "r1bqk2r/pp2bppp/2n5/2p5/3pN3/1B1P1N2/PPP2PPP/R2Q1RK1 b kq - 1 10",
+        "expected": "e8g8",
+        "stockfish_move": "c5c4",
+        "n3_move": "c8e6",
+        "n3_score": 10,
+        "n3_nodes": 112606,
+        "n3_time": 0.18888820003485307,
+        "n3_solved": false,
+        "n4_move": "c8e6",
+        "n4_score": 10,
+        "n4_nodes": 106849,
+        "n4_time": 0.3437709999852814,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": 5.112516206951672,
+        "pvs_telemetry": {
+          "full_window_searches": 5828,
+          "null_window_searches": 27244,
+          "researches": 67,
+          "cutoffs": 5184
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1643,
+          "reduced_moves": 1643,
+          "researches": 27,
+          "cutoffs": 8
+        }
+      },
+      {
+        "id": "ind_20_bishop_kick",
+        "theme": "Pawn Kick",
+        "fen": "r1b1k1nr/pppp1ppp/8/4p3/1b2P3/2N5/PPPP1PPP/R1BQKBNR w KQkq - 0 5",
+        "expected": "a2a3",
+        "stockfish_move": "a2a3",
+        "n3_move": "c3b5",
+        "n3_score": 1275,
+        "n3_nodes": 35800,
+        "n3_time": 0.04890470003010705,
+        "n3_solved": false,
+        "n4_move": "c3b5",
+        "n4_score": 1275,
+        "n4_nodes": 37734,
+        "n4_time": 0.0878806000109762,
+        "n4_solved": false,
+        "agreed": true,
+        "node_reduction_pct": -5.402234636871508,
+        "pvs_telemetry": {
+          "full_window_searches": 2732,
+          "null_window_searches": 12883,
+          "researches": 73,
+          "cutoffs": 2267
+        },
+        "lmr_telemetry": {
+          "eligible_moves": 1095,
+          "reduced_moves": 1095,
+          "researches": 21,
+          "cutoffs": 1
+        }
+      }
+    ]
+  }
+}

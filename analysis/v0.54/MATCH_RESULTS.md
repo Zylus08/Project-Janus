@@ -131,3 +131,4 @@ The primary 200-game match delivers clear empirical proof:
 1. **Playing Strength Advantage:** Candidate C3 achieved **+29.60 Elo** over Baseline C0.
 2. **Statistical Significance:** With $p = 0.04008 < 0.05$ and a 95% bootstrap CI of $[+1.74, +57.86]$ Elo strictly excluding zero, the result meets the preregistered acceptance criterion for **Category A promotion**.
 3. **Flawless Tournament Integrity:** Zero crashes, zero forfeits, 100% verified legal FIDE adjudications, and zero safety-horizon terminations.
+

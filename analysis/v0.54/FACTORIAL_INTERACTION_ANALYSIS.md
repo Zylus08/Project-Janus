@@ -135,3 +135,4 @@ A decisive finding of milestone v0.54 is the powerful positive interaction betwe
    When Killer 1 or 2 cuts off the tree, History sorting overhead is completely avoided. When Killers do not cut off, History steps in to ensure the best remaining candidate is searched next.
 3. **Empirical Validation:**
    This dual synergy generated **+29.60 Elo** in head-to-head match play, confirming that $C_3$ (Native N5) represents a superior search engine architecture.
+

@@ -1,0 +1,4122 @@
+{
+  "3": {
+    "summary": {
+      "depth": 3,
+      "positions_count": 53,
+      "total_nodes_n2": 253863,
+      "total_nodes_n3": 253863,
+      "node_reduction_pct": 0.0,
+      "total_time_n2_sec": 0.24318709992803633,
+      "total_time_n3_sec": 0.24234699993394315,
+      "speedup_factor": 1.0034665169955566,
+      "nps_n2": 1043899,
+      "nps_n3": 1047518,
+      "move_agreement_pct": 100.0,
+      "agreed_count": 53,
+      "total_reduced": 0,
+      "total_researches": 0,
+      "research_rate_pct": 0.0,
+      "total_cutoffs": 0,
+      "cutoff_rate_pct": 0.0
+    },
+    "positions": [
+      {
+        "id": "divergence_p1_white_ply3",
+        "fen": "rnbqkbnr/ppp2ppp/3p4/4p3/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+        "n2_move": "b1c3",
+        "n2_score": 70,
+        "n2_nodes": 5316,
+        "n2_time": 0.0034235999919474125,
+        "n3_move": "b1c3",
+        "n3_score": 70,
+        "n3_nodes": 5316,
+        "n3_time": 0.003966799995396286,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p2_white_ply9",
+        "fen": "r1bqkb1r/pp3ppp/2nppn2/2p5/2B1P2P/2N2N2/PPPP1PP1/R1BQK2R w KQkq - 1 6",
+        "n2_move": "d2d4",
+        "n2_score": 25,
+        "n2_nodes": 5960,
+        "n2_time": 0.00546570000005886,
+        "n3_move": "d2d4",
+        "n3_score": 25,
+        "n3_nodes": 5960,
+        "n3_time": 0.00545970001257956,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p3_white_ply3",
+        "fen": "rnbqkb1r/pppp1ppp/4pn2/8/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+        "n2_move": "e4e5",
+        "n2_score": 65,
+        "n2_nodes": 3162,
+        "n2_time": 0.005124299961607903,
+        "n3_move": "e4e5",
+        "n3_score": 65,
+        "n3_nodes": 3162,
+        "n3_time": 0.00166969996644184,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p3_black_ply6",
+        "fen": "rnbqkb1r/pppp2pp/4pn2/5pB1/3PP3/2N5/PPP2PPP/R2QKBNR b KQkq - 3 4",
+        "n2_move": "f5e4",
+        "n2_score": -60,
+        "n2_nodes": 5492,
+        "n2_time": 0.006421900005079806,
+        "n3_move": "f5e4",
+        "n3_score": -60,
+        "n3_nodes": 5492,
+        "n3_time": 0.006456299975980073,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p4_white_ply3",
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+        "n2_move": "b1c3",
+        "n2_score": 90,
+        "n2_nodes": 2669,
+        "n2_time": 0.0014282999909482896,
+        "n3_move": "b1c3",
+        "n3_score": 90,
+        "n3_nodes": 2669,
+        "n3_time": 0.0016206000000238419,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p6_black_ply4",
+        "fen": "rnbqkbnr/ppp1pppp/8/8/4P3/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+        "n2_move": "d8d1",
+        "n2_score": 40,
+        "n2_nodes": 931,
+        "n2_time": 0.0007905000238679349,
+        "n3_move": "d8d1",
+        "n3_score": 40,
+        "n3_nodes": 931,
+        "n3_time": 0.0006998999742791057,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p10_white_ply3",
+        "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 3",
+        "n2_move": "b1c3",
+        "n2_score": 20,
+        "n2_nodes": 8985,
+        "n2_time": 0.004397699958644807,
+        "n3_move": "b1c3",
+        "n3_score": 20,
+        "n3_nodes": 8985,
+        "n3_time": 0.004655400000046939,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p11_black_ply4",
+        "fen": "rnbqkb1r/ppppp1pp/5n2/5p2/3P4/4P2N/PPP2PPP/RNBQKB1R b KQkq - 2 3",
+        "n2_move": "b8c6",
+        "n2_score": 10,
+        "n2_nodes": 3592,
+        "n2_time": 0.002702699974179268,
+        "n3_move": "b8c6",
+        "n3_score": 10,
+        "n3_nodes": 3592,
+        "n3_time": 0.002525300020352006,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p13_black_ply2",
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR b KQkq - 1 2",
+        "n2_move": "b8c6",
+        "n2_score": 50,
+        "n2_nodes": 2683,
+        "n2_time": 0.0011659000301733613,
+        "n3_move": "b8c6",
+        "n3_score": 50,
+        "n3_nodes": 2683,
+        "n3_time": 0.0010106999543495476,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p20_white_ply5",
+        "fen": "r1bqk1nr/pppp1ppp/2n5/4p3/1b1P4/1P3N2/P1P1PPPP/RNBQKB1R w KQkq - 1 4",
+        "n2_move": "c2c3",
+        "n2_score": -10,
+        "n2_nodes": 1576,
+        "n2_time": 0.002067800029180944,
+        "n3_move": "c2c3",
+        "n3_score": -10,
+        "n3_nodes": 1576,
+        "n3_time": 0.001902499992866069,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p24_black_ply8",
+        "fen": "r1bq1b1r/ppp2kpp/2n5/3np3/2B5/P7/1PPP1PPP/RNBQK2R b KQ - 0 7",
+        "n2_move": "f7g8",
+        "n2_score": 260,
+        "n2_nodes": 7030,
+        "n2_time": 0.007338800001889467,
+        "n3_move": "f7g8",
+        "n3_score": 260,
+        "n3_nodes": 7030,
+        "n3_time": 0.006837699969764799,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p25_black_ply4",
+        "fen": "r1bqk2r/pppp1ppp/2nb1n2/4p3/B3P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 7 5",
+        "n2_move": "c6d4",
+        "n2_score": 10,
+        "n2_nodes": 3108,
+        "n2_time": 0.0018430000054650009,
+        "n3_move": "c6d4",
+        "n3_score": 10,
+        "n3_nodes": 3108,
+        "n3_time": 0.0017725999932736158,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p32_black_ply6",
+        "fen": "r1bqkb1r/pp1n1ppp/3p1n2/1B2p3/4P1P1/2N5/PPP1NP1P/R1BQK2R b KQkq - 1 8",
+        "n2_move": "f6g4",
+        "n2_score": 80,
+        "n2_nodes": 3905,
+        "n2_time": 0.006092099996749312,
+        "n3_move": "f6g4",
+        "n3_score": 80,
+        "n3_nodes": 3905,
+        "n3_time": 0.006644700013566762,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p36_black_ply2",
+        "fen": "rnbqk1nr/ppp2ppp/4p3/3pP3/1b1P4/2N5/PPP2PPP/R1BQKBNR b KQkq - 0 4",
+        "n2_move": "b4c3",
+        "n2_score": 5,
+        "n2_nodes": 3144,
+        "n2_time": 0.001845099963247776,
+        "n3_move": "b4c3",
+        "n3_score": 5,
+        "n3_nodes": 3144,
+        "n3_time": 0.0015530000091530383,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p37_black_ply4",
+        "fen": "rnbqkbnr/pp2pppp/2p5/8/3PB3/8/PPP2PPP/RNBQK1NR b KQkq - 0 4",
+        "n2_move": "g8f6",
+        "n2_score": -35,
+        "n2_nodes": 6161,
+        "n2_time": 0.0056446000235155225,
+        "n3_move": "g8f6",
+        "n3_score": -35,
+        "n3_nodes": 6161,
+        "n3_time": 0.005110899975989014,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p39_white_ply5",
+        "fen": "rnbqkb1r/1pp2ppp/p3p3/2Pp4/3P2n1/2N1B3/PP2PPPP/R2QKBNR w KQkq - 2 6",
+        "n2_move": "g1f3",
+        "n2_score": 5,
+        "n2_nodes": 5692,
+        "n2_time": 0.00535749999107793,
+        "n3_move": "g1f3",
+        "n3_score": 5,
+        "n3_nodes": 5692,
+        "n3_time": 0.005969999998342246,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p45_white_ply3",
+        "fen": "rnbqk2r/pppp1ppp/4pn2/b7/2PP4/P1N5/1P2PPPP/R1BQKBNR w KQkq - 1 5",
+        "n2_move": "b2b4",
+        "n2_score": 30,
+        "n2_nodes": 1524,
+        "n2_time": 0.0015042999875731766,
+        "n3_move": "b2b4",
+        "n3_score": 30,
+        "n3_nodes": 1524,
+        "n3_time": 0.0014436999917961657,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p45_black_ply2",
+        "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N1P3/PP3PPP/R1BQKBNR b KQkq - 0 4",
+        "n2_move": "b4c3",
+        "n2_score": 50,
+        "n2_nodes": 2988,
+        "n2_time": 0.0016710999771021307,
+        "n3_move": "b4c3",
+        "n3_score": 50,
+        "n3_nodes": 2988,
+        "n3_time": 0.0016385000199079514,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p54_white_ply6",
+        "fen": "r1bqk2r/ppppbppp/7n/nP2N3/2B1P3/8/P1PP1PPP/RNBQK2R w KQkq - 1 7",
+        "n2_move": "d2d4",
+        "n2_score": 150,
+        "n2_nodes": 8107,
+        "n2_time": 0.008347800001502037,
+        "n3_move": "d2d4",
+        "n3_score": 150,
+        "n3_nodes": 8107,
+        "n3_time": 0.009457400010433048,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p54_black_ply3",
+        "fen": "r1bqk1nr/pppp1ppp/2n5/4p3/1bB1P3/5N2/PBPP1PPP/RN1QK2R b KQkq - 1 5",
+        "n2_move": "d7d6",
+        "n2_score": 110,
+        "n2_nodes": 5199,
+        "n2_time": 0.004415599978528917,
+        "n3_move": "d7d6",
+        "n3_score": 110,
+        "n3_nodes": 5199,
+        "n3_time": 0.0045914999791421,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p61_black_ply10",
+        "fen": "r1bqk2r/1p1p1p2/2n2np1/p1b1p1Bp/P1B1P3/2N2N2/1PP2PPP/R2Q1RK1 b kq - 1 10",
+        "n2_move": "c5e7",
+        "n2_score": -65,
+        "n2_nodes": 33428,
+        "n2_time": 0.04560780001338571,
+        "n3_move": "c5e7",
+        "n3_score": -65,
+        "n3_nodes": 33428,
+        "n3_time": 0.04796809999970719,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p67_black_ply11",
+        "fen": "r2qkb1r/1p1nppp1/4bn2/p1Pp3p/Q2P1B2/2NB4/PP3PPP/R3K1NR b KQkq - 1 9",
+        "n2_move": "e6g4",
+        "n2_score": -55,
+        "n2_nodes": 9750,
+        "n2_time": 0.015222200017888099,
+        "n3_move": "e6g4",
+        "n3_score": -55,
+        "n3_nodes": 9750,
+        "n3_time": 0.015105200000107288,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p73_black_ply4",
+        "fen": "rn1qk2r/ppp1ppbp/3pbnp1/5P2/3PP3/2NB4/PPP3PP/R1BQK1NR b KQkq - 0 6",
+        "n2_move": "g6f5",
+        "n2_score": -35,
+        "n2_nodes": 2837,
+        "n2_time": 0.0015391999622806907,
+        "n3_move": "g6f5",
+        "n3_score": -35,
+        "n3_nodes": 2837,
+        "n3_time": 0.0011011000024154782,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p76_white_ply9",
+        "fen": "r1bqkb1r/pp3ppp/2n5/2Pp4/6n1/2N1BN2/PP2PPPP/R2QKB1R w KQkq - 5 8",
+        "n2_move": "e3d4",
+        "n2_score": 95,
+        "n2_nodes": 7259,
+        "n2_time": 0.007530000002589077,
+        "n3_move": "e3d4",
+        "n3_score": 95,
+        "n3_nodes": 7259,
+        "n3_time": 0.007660600007511675,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p76_black_ply2",
+        "fen": "rnbqkbnr/pp3ppp/4p3/2Pp4/2P5/2N5/PP2PPPP/R1BQKBNR b KQkq - 0 4",
+        "n2_move": "d5c4",
+        "n2_score": -60,
+        "n2_nodes": 3173,
+        "n2_time": 0.0016396999708376825,
+        "n3_move": "d5c4",
+        "n3_score": -60,
+        "n3_nodes": 3173,
+        "n3_time": 0.0016006000223569572,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p78_white_ply5",
+        "fen": "r1bq1rk1/p1pnbpp1/1p2pn1p/8/P1pP3B/2NBPN2/1P3PPP/R2QK2R w KQ - 0 10",
+        "n2_move": "d3c4",
+        "n2_score": 40,
+        "n2_nodes": 6141,
+        "n2_time": 0.0037455999990925193,
+        "n3_move": "d3c4",
+        "n3_score": 40,
+        "n3_nodes": 6141,
+        "n3_time": 0.004314800025895238,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p98_black_ply8",
+        "fen": "r2qkb1r/pppnpp1p/5np1/3p1bN1/5P2/2NPP3/PPP1B1PP/R1BQK2R b KQkq - 0 7",
+        "n2_move": "e7e5",
+        "n2_score": 5,
+        "n2_nodes": 10991,
+        "n2_time": 0.011538400023709983,
+        "n3_move": "e7e5",
+        "n3_score": 5,
+        "n3_nodes": 10991,
+        "n3_time": 0.011891200032550842,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p99_white_ply5",
+        "fen": "r1bqkb1r/pp3ppp/2n1pn2/2ppB3/8/1P2PN2/P1PP1PPP/RN1QKB1R w KQkq - 2 6",
+        "n2_move": "b1c3",
+        "n2_score": -30,
+        "n2_nodes": 4521,
+        "n2_time": 0.006439199962187558,
+        "n3_move": "b1c3",
+        "n3_score": -30,
+        "n3_nodes": 4521,
+        "n3_time": 0.003919400041922927,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p99_black_ply2",
+        "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/8/1P2PN2/PBPP1PPP/RN1QKB1R b KQkq - 1 4",
+        "n2_move": "b8c6",
+        "n2_score": 60,
+        "n2_nodes": 5964,
+        "n2_time": 0.004891499993391335,
+        "n3_move": "b8c6",
+        "n3_score": 60,
+        "n3_nodes": 5964,
+        "n3_time": 0.004238300025463104,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p100_white_ply3",
+        "fen": "rnbqk2r/ppp1bppp/4pn2/3P4/4P3/2N5/PP1P1PPP/R1BQKBNR w KQkq - 1 5",
+        "n2_move": "d5e6",
+        "n2_score": 110,
+        "n2_nodes": 5631,
+        "n2_time": 0.005150500044692308,
+        "n3_move": "d5e6",
+        "n3_score": 110,
+        "n3_nodes": 5631,
+        "n3_time": 0.006426699983421713,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p100_black_ply4",
+        "fen": "rnbqkb1r/ppp2ppp/5n2/3p4/Q3P3/2N5/PP1P1PPP/R1B1KBNR b KQkq - 1 5",
+        "n2_move": "b8c6",
+        "n2_score": 45,
+        "n2_nodes": 2367,
+        "n2_time": 0.0031452999683097005,
+        "n3_move": "b8c6",
+        "n3_score": 45,
+        "n3_nodes": 2367,
+        "n3_time": 0.0031532999710179865,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "control_p7_white_ply3",
+        "fen": "rnbqkbnr/pppppppp/8/4P3/8/8/PPPP1PPP/RNBQKBNR w KQkq - 1 3",
+        "n2_move": "b1c3",
+        "n2_score": 95,
+        "n2_nodes": 2752,
+        "n2_time": 0.00119270000141114,
+        "n3_move": "b1c3",
+        "n3_score": 95,
+        "n3_nodes": 2752,
+        "n3_time": 0.0010488000116311014,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "control_p7_black_ply4",
+        "fen": "rnbqkb1r/pppppppp/8/3nP3/8/5N2/PPPP1PPP/RNBQKB1R b KQkq - 2 3",
+        "n2_move": "b8c6",
+        "n2_score": -15,
+        "n2_nodes": 4786,
+        "n2_time": 0.0020654999534599483,
+        "n3_move": "b8c6",
+        "n3_score": -15,
+        "n3_nodes": 4786,
+        "n3_time": 0.002120400022249669,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "control_p8_white_ply3",
+        "fen": "rnbqkbnr/ppp1pp1p/3p2p1/8/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+        "n2_move": "b1c3",
+        "n2_score": 125,
+        "n2_nodes": 2973,
+        "n2_time": 0.0012712000170722604,
+        "n3_move": "b1c3",
+        "n3_score": 125,
+        "n3_nodes": 2973,
+        "n3_time": 0.001372199971228838,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "control_p14_white_ply3",
+        "fen": "rnbqkbnr/pp1p1ppp/4p3/2p5/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 0 3",
+        "n2_move": "g1f3",
+        "n2_score": 70,
+        "n2_nodes": 2238,
+        "n2_time": 0.0010575999622233212,
+        "n3_move": "g1f3",
+        "n3_score": 70,
+        "n3_nodes": 2238,
+        "n3_time": 0.0009307999862357974,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "control_p31_white_ply7",
+        "fen": "r1bqkb1r/p3pp1p/2pp1np1/8/4P3/2NB4/PPP2PPP/R1BQK2R w KQkq - 0 8",
+        "n2_move": "c1e3",
+        "n2_score": 95,
+        "n2_nodes": 5598,
+        "n2_time": 0.0034241999965161085,
+        "n3_move": "c1e3",
+        "n3_score": 95,
+        "n3_nodes": 5598,
+        "n3_time": 0.0033966999617405236,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "control_p40_black_ply4",
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/4P3/PPQ2PPP/RNB1KBNR b KQkq - 2 4",
+        "n2_move": "b8d7",
+        "n2_score": 25,
+        "n2_nodes": 7216,
+        "n2_time": 0.008435500029008836,
+        "n3_move": "b8d7",
+        "n3_score": 25,
+        "n3_nodes": 7216,
+        "n3_time": 0.00838880002265796,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_01_tactical_fork",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "n2_move": "d1d5",
+        "n2_score": -305,
+        "n2_nodes": 5331,
+        "n2_time": 0.0034457999863661826,
+        "n3_move": "d1d5",
+        "n3_score": -305,
+        "n3_nodes": 5331,
+        "n3_time": 0.003429100033827126,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_02_quiet_positional",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "n2_move": "f3e5",
+        "n2_score": 0,
+        "n2_nodes": 9016,
+        "n2_time": 0.010082499997224659,
+        "n3_move": "f3e5",
+        "n3_score": 0,
+        "n3_nodes": 9016,
+        "n3_time": 0.009820000035688281,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_03_king_safety",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "n2_move": "e4c3",
+        "n2_score": 360,
+        "n2_nodes": 4580,
+        "n2_time": 0.002753599954303354,
+        "n3_move": "e4c3",
+        "n3_score": 360,
+        "n3_nodes": 4580,
+        "n3_time": 0.002773800049908459,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_04_pawn_endgame",
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "n2_move": "e3f2",
+        "n2_score": 30,
+        "n2_nodes": 226,
+        "n2_time": 8.349999552592635e-05,
+        "n3_move": "e3f2",
+        "n3_score": 30,
+        "n3_nodes": 226,
+        "n3_time": 6.589997792616487e-05,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_05_rook_endgame",
+        "fen": "8/8/4k3/R7/8/8/2K4r/8 w - - 1 1",
+        "n2_move": "c2b1",
+        "n2_score": 30,
+        "n2_nodes": 715,
+        "n2_time": 0.00027350004529580474,
+        "n3_move": "c2b1",
+        "n3_score": 30,
+        "n3_nodes": 715,
+        "n3_time": 0.00023800000781193376,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_06_minor_piece_endgame",
+        "fen": "8/8/4k3/3b4/8/4B3/4K3/8 w - - 0 1",
+        "n2_move": "e2f1",
+        "n2_score": 30,
+        "n2_nodes": 1109,
+        "n2_time": 0.0003725999849848449,
+        "n3_move": "e2f1",
+        "n3_score": 30,
+        "n3_nodes": 1109,
+        "n3_time": 0.0003436999977566302,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_07_pawn_promotion",
+        "fen": "8/4P3/8/8/8/6k1/8/6K1 w - - 0 1",
+        "n2_move": "e7e8q",
+        "n2_score": 965,
+        "n2_nodes": 173,
+        "n2_time": 5.9699988923966885e-05,
+        "n3_move": "e7e8q",
+        "n3_score": 965,
+        "n3_nodes": 173,
+        "n3_time": 5.370000144466758e-05,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_08_kingside_castling",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "n2_move": "d2d3",
+        "n2_score": 15,
+        "n2_nodes": 6091,
+        "n2_time": 0.005521900020539761,
+        "n3_move": "d2d3",
+        "n3_score": 15,
+        "n3_nodes": 6091,
+        "n3_time": 0.005880100012291223,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_09_en_passant_execution",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "n2_move": "d5e6",
+        "n2_score": 180,
+        "n2_nodes": 148,
+        "n2_time": 5.219999002292752e-05,
+        "n3_move": "d5e6",
+        "n3_score": 180,
+        "n3_nodes": 148,
+        "n3_time": 3.619998460635543e-05,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_10_stalemate_avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "n2_move": "b6a6",
+        "n2_score": 0,
+        "n2_nodes": 40,
+        "n2_time": 2.4200009647756815e-05,
+        "n3_move": "b6a6",
+        "n3_score": 0,
+        "n3_nodes": 40,
+        "n3_time": 4.429998807609081e-05,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_11_check_evasion",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 1 6",
+        "n2_move": "d7d5",
+        "n2_score": -180,
+        "n2_nodes": 5102,
+        "n2_time": 0.005387800047174096,
+        "n3_move": "d7d5",
+        "n3_score": -180,
+        "n3_nodes": 5102,
+        "n3_time": 0.005088999983854592,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_12_repetition_sensitive",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+        "n2_move": "b8c6",
+        "n2_score": 0,
+        "n2_nodes": 1288,
+        "n2_time": 0.00037560000782832503,
+        "n3_move": "b8c6",
+        "n3_score": 0,
+        "n3_nodes": 1288,
+        "n3_time": 0.00034959998447448015,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_13_fifty_move_draw_sensitive",
+        "fen": "8/8/4k3/8/8/4K3/8/8 w - - 99 50",
+        "n2_move": "e3d2",
+        "n2_score": 0,
+        "n2_nodes": 27,
+        "n2_time": 2.110004425048828e-05,
+        "n3_move": "e3d2",
+        "n3_score": 0,
+        "n3_nodes": 27,
+        "n3_time": 2.5100016500800848e-05,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_14_tactical_pin",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "n2_move": "h1h7",
+        "n2_score": 405,
+        "n2_nodes": 5901,
+        "n2_time": 0.002977200027089566,
+        "n3_move": "h1h7",
+        "n3_score": 405,
+        "n3_nodes": 5901,
+        "n3_time": 0.004711299960035831,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_15_queen_endgame",
+        "fen": "8/8/4k3/3q4/8/4Q3/4K3/8 b - - 0 1",
+        "n2_move": "e6f7",
+        "n2_score": 5,
+        "n2_nodes": 1156,
+        "n2_time": 0.000666600011754781,
+        "n3_move": "e6f7",
+        "n3_score": 5,
+        "n3_nodes": 1156,
+        "n3_time": 0.0011142999865114689,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_16_discovered_attack",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "n2_move": "f3e5",
+        "n2_score": 5,
+        "n2_nodes": 8111,
+        "n2_time": 0.010144900006707758,
+        "n3_move": "f3e5",
+        "n3_score": 5,
+        "n3_nodes": 8111,
+        "n3_time": 0.008748999971430749,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      }
+    ]
+  },
+  "4": {
+    "summary": {
+      "depth": 4,
+      "positions_count": 53,
+      "total_nodes_n2": 1041535,
+      "total_nodes_n3": 818772,
+      "node_reduction_pct": 21.387951437061645,
+      "total_time_n2_sec": 1.3006334999226965,
+      "total_time_n3_sec": 1.3262781001394615,
+      "speedup_factor": 0.9806642360949274,
+      "nps_n2": 800790,
+      "nps_n3": 617345,
+      "move_agreement_pct": 86.79245283018868,
+      "agreed_count": 46,
+      "total_reduced": 2003,
+      "total_researches": 60,
+      "research_rate_pct": 2.9955067398901645,
+      "total_cutoffs": 29,
+      "cutoff_rate_pct": 1.4478282576135795
+    },
+    "positions": [
+      {
+        "id": "divergence_p1_white_ply3",
+        "fen": "rnbqkbnr/ppp2ppp/3p4/4p3/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+        "n2_move": "d4e5",
+        "n2_score": 30,
+        "n2_nodes": 26779,
+        "n2_time": 0.030197499960195273,
+        "n3_move": "b1c3",
+        "n3_score": 30,
+        "n3_nodes": 21228,
+        "n3_time": 0.03352100000483915,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 30,
+          "reduced_moves": 30,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p2_white_ply9",
+        "fen": "r1bqkb1r/pp3ppp/2nppn2/2p5/2B1P2P/2N2N2/PPPP1PP1/R1BQK2R w KQkq - 1 6",
+        "n2_move": "d2d4",
+        "n2_score": 25,
+        "n2_nodes": 52238,
+        "n2_time": 0.07305730000371113,
+        "n3_move": "d2d4",
+        "n3_score": 25,
+        "n3_nodes": 41460,
+        "n3_time": 0.057233600004110485,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 102,
+          "reduced_moves": 102,
+          "researches": 8,
+          "cutoffs": 8
+        }
+      },
+      {
+        "id": "divergence_p3_white_ply3",
+        "fen": "rnbqkb1r/pppp1ppp/4pn2/8/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+        "n2_move": "b1c3",
+        "n2_score": 20,
+        "n2_nodes": 19762,
+        "n2_time": 0.01907999999821186,
+        "n3_move": "e4e5",
+        "n3_score": 30,
+        "n3_nodes": 13994,
+        "n3_time": 0.01888440002221614,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 24,
+          "reduced_moves": 24,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p3_black_ply6",
+        "fen": "rnbqkb1r/pppp2pp/4pn2/5pB1/3PP3/2N5/PPP2PPP/R2QKBNR b KQkq - 3 4",
+        "n2_move": "f5e4",
+        "n2_score": -60,
+        "n2_nodes": 15006,
+        "n2_time": 0.01840719999745488,
+        "n3_move": "f5e4",
+        "n3_score": -60,
+        "n3_nodes": 11717,
+        "n3_time": 0.015875799988862127,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 40,
+          "reduced_moves": 40,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p4_white_ply3",
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+        "n2_move": "b1c3",
+        "n2_score": 70,
+        "n2_nodes": 11343,
+        "n2_time": 0.010884699993766844,
+        "n3_move": "b1c3",
+        "n3_score": 70,
+        "n3_nodes": 8947,
+        "n3_time": 0.011191099998541176,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 27,
+          "reduced_moves": 27,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p6_black_ply4",
+        "fen": "rnbqkbnr/ppp1pppp/8/8/4P3/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+        "n2_move": "d8d1",
+        "n2_score": -10,
+        "n2_nodes": 3641,
+        "n2_time": 0.004315299971494824,
+        "n3_move": "d8d1",
+        "n3_score": -10,
+        "n3_nodes": 3641,
+        "n3_time": 0.005565400002524257,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p10_white_ply3",
+        "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 3",
+        "n2_move": "b1c3",
+        "n2_score": 0,
+        "n2_nodes": 19128,
+        "n2_time": 0.01621169998543337,
+        "n3_move": "b1c3",
+        "n3_score": 0,
+        "n3_nodes": 16299,
+        "n3_time": 0.013473099970724434,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 26,
+          "reduced_moves": 26,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p11_black_ply4",
+        "fen": "rnbqkb1r/ppppp1pp/5n2/5p2/3P4/4P2N/PPP2PPP/RNBQKB1R b KQkq - 2 3",
+        "n2_move": "b8c6",
+        "n2_score": -25,
+        "n2_nodes": 13372,
+        "n2_time": 0.011481900000944734,
+        "n3_move": "b8c6",
+        "n3_score": -25,
+        "n3_nodes": 9858,
+        "n3_time": 0.009580600017216057,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 29,
+          "reduced_moves": 29,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p13_black_ply2",
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR b KQkq - 1 2",
+        "n2_move": "b8c6",
+        "n2_score": 10,
+        "n2_nodes": 12105,
+        "n2_time": 0.011031600006390363,
+        "n3_move": "b8c6",
+        "n3_score": 10,
+        "n3_nodes": 10079,
+        "n3_time": 0.010552200023084879,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 23,
+          "reduced_moves": 23,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p20_white_ply5",
+        "fen": "r1bqk1nr/pppp1ppp/2n5/4p3/1b1P4/1P3N2/P1P1PPPP/RNBQKB1R w KQkq - 1 4",
+        "n2_move": "c1d2",
+        "n2_score": -25,
+        "n2_nodes": 8156,
+        "n2_time": 0.00579739996464923,
+        "n3_move": "c1d2",
+        "n3_score": -25,
+        "n3_nodes": 4207,
+        "n3_time": 0.004856999963521957,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 63,
+          "reduced_moves": 63,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p24_black_ply8",
+        "fen": "r1bq1b1r/ppp2kpp/2n5/3np3/2B5/P7/1PPP1PPP/RNBQK2R b KQ - 0 7",
+        "n2_move": "f7g8",
+        "n2_score": 250,
+        "n2_nodes": 16542,
+        "n2_time": 0.019983300007879734,
+        "n3_move": "f7g8",
+        "n3_score": 250,
+        "n3_nodes": 13721,
+        "n3_time": 0.016317900037392974,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 28,
+          "reduced_moves": 28,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p25_black_ply4",
+        "fen": "r1bqk2r/pppp1ppp/2nb1n2/4p3/B3P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 7 5",
+        "n2_move": "d6b4",
+        "n2_score": 0,
+        "n2_nodes": 16295,
+        "n2_time": 0.01860290003241971,
+        "n3_move": "d6b4",
+        "n3_score": 5,
+        "n3_nodes": 15236,
+        "n3_time": 0.017889199953060597,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 47,
+          "reduced_moves": 47,
+          "researches": 1,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p32_black_ply6",
+        "fen": "r1bqkb1r/pp1n1ppp/3p1n2/1B2p3/4P1P1/2N5/PPP1NP1P/R1BQK2R b KQkq - 1 8",
+        "n2_move": "f6g4",
+        "n2_score": 70,
+        "n2_nodes": 15084,
+        "n2_time": 0.017831700039096177,
+        "n3_move": "f6g4",
+        "n3_score": 80,
+        "n3_nodes": 8102,
+        "n3_time": 0.011357299983501434,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 34,
+          "reduced_moves": 34,
+          "researches": 1,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p36_black_ply2",
+        "fen": "rnbqk1nr/ppp2ppp/4p3/3pP3/1b1P4/2N5/PPP2PPP/R1BQKBNR b KQkq - 0 4",
+        "n2_move": "b8c6",
+        "n2_score": -30,
+        "n2_nodes": 15041,
+        "n2_time": 0.018496000033337623,
+        "n3_move": "b8c6",
+        "n3_score": -30,
+        "n3_nodes": 14016,
+        "n3_time": 0.018920600006822497,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 28,
+          "reduced_moves": 28,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p37_black_ply4",
+        "fen": "rnbqkbnr/pp2pppp/2p5/8/3PB3/8/PPP2PPP/RNBQK1NR b KQkq - 0 4",
+        "n2_move": "g8f6",
+        "n2_score": -80,
+        "n2_nodes": 53261,
+        "n2_time": 0.059642700012773275,
+        "n3_move": "g8f6",
+        "n3_score": -80,
+        "n3_nodes": 40081,
+        "n3_time": 0.05187880003359169,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 130,
+          "reduced_moves": 130,
+          "researches": 12,
+          "cutoffs": 7
+        }
+      },
+      {
+        "id": "divergence_p39_white_ply5",
+        "fen": "rnbqkb1r/1pp2ppp/p3p3/2Pp4/3P2n1/2N1B3/PP2PPPP/R2QKBNR w KQkq - 2 6",
+        "n2_move": "g1f3",
+        "n2_score": -20,
+        "n2_nodes": 25168,
+        "n2_time": 0.031338300032075495,
+        "n3_move": "e3f4",
+        "n3_score": -5,
+        "n3_nodes": 22358,
+        "n3_time": 0.03247270005522296,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 57,
+          "reduced_moves": 57,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p45_white_ply3",
+        "fen": "rnbqk2r/pppp1ppp/4pn2/b7/2PP4/P1N5/1P2PPPP/R1BQKBNR w KQkq - 1 5",
+        "n2_move": "b2b4",
+        "n2_score": 165,
+        "n2_nodes": 4382,
+        "n2_time": 0.004122599959373474,
+        "n3_move": "b2b4",
+        "n3_score": 165,
+        "n3_nodes": 3152,
+        "n3_time": 0.0033115000114776194,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 24,
+          "reduced_moves": 24,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p45_black_ply2",
+        "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N1P3/PP3PPP/R1BQKBNR b KQkq - 0 4",
+        "n2_move": "d7d5",
+        "n2_score": 15,
+        "n2_nodes": 18617,
+        "n2_time": 0.026494399993680418,
+        "n3_move": "b8c6",
+        "n3_score": 20,
+        "n3_nodes": 14200,
+        "n3_time": 0.018459100043401122,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 53,
+          "reduced_moves": 53,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p54_white_ply6",
+        "fen": "r1bqk2r/ppppbppp/7n/nP2N3/2B1P3/8/P1PP1PPP/RNBQK2R w KQkq - 1 7",
+        "n2_move": "d2d3",
+        "n2_score": 115,
+        "n2_nodes": 18026,
+        "n2_time": 0.017259699990972877,
+        "n3_move": "d2d3",
+        "n3_score": 115,
+        "n3_nodes": 15014,
+        "n3_time": 0.015793200000189245,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 50,
+          "reduced_moves": 50,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p54_black_ply3",
+        "fen": "r1bqk1nr/pppp1ppp/2n5/4p3/1bB1P3/5N2/PBPP1PPP/RN1QK2R b KQkq - 1 5",
+        "n2_move": "d7d6",
+        "n2_score": 65,
+        "n2_nodes": 33055,
+        "n2_time": 0.035612399980891496,
+        "n3_move": "d7d6",
+        "n3_score": 90,
+        "n3_nodes": 16958,
+        "n3_time": 0.021110699977725744,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 31,
+          "reduced_moves": 31,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p61_black_ply10",
+        "fen": "r1bqk2r/1p1p1p2/2n2np1/p1b1p1Bp/P1B1P3/2N2N2/1PP2PPP/R2Q1RK1 b kq - 1 10",
+        "n2_move": "c5e7",
+        "n2_score": -70,
+        "n2_nodes": 47580,
+        "n2_time": 0.0588269000290893,
+        "n3_move": "c5e7",
+        "n3_score": -70,
+        "n3_nodes": 42212,
+        "n3_time": 0.0576784000149928,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 43,
+          "reduced_moves": 43,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p67_black_ply11",
+        "fen": "r2qkb1r/1p1nppp1/4bn2/p1Pp3p/Q2P1B2/2NB4/PP3PPP/R3K1NR b KQkq - 1 9",
+        "n2_move": "e6g4",
+        "n2_score": -70,
+        "n2_nodes": 28291,
+        "n2_time": 0.03869959997246042,
+        "n3_move": "e6g4",
+        "n3_score": -60,
+        "n3_nodes": 21291,
+        "n3_time": 0.03462980000767857,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 49,
+          "reduced_moves": 49,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p73_black_ply4",
+        "fen": "rn1qk2r/ppp1ppbp/3pbnp1/5P2/3PP3/2NB4/PPP3PP/R1BQK1NR b KQkq - 0 6",
+        "n2_move": "g6f5",
+        "n2_score": -85,
+        "n2_nodes": 10748,
+        "n2_time": 0.006867800024338067,
+        "n3_move": "g6f5",
+        "n3_score": -85,
+        "n3_nodes": 8016,
+        "n3_time": 0.006619299994781613,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 35,
+          "reduced_moves": 35,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p76_white_ply9",
+        "fen": "r1bqkb1r/pp3ppp/2n5/2Pp4/6n1/2N1BN2/PP2PPPP/R2QKB1R w KQkq - 5 8",
+        "n2_move": "e3g5",
+        "n2_score": 85,
+        "n2_nodes": 24991,
+        "n2_time": 0.02636199997505173,
+        "n3_move": "e3g5",
+        "n3_score": 90,
+        "n3_nodes": 17295,
+        "n3_time": 0.021888200019020587,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 70,
+          "reduced_moves": 70,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p76_black_ply2",
+        "fen": "rnbqkbnr/pp3ppp/4p3/2Pp4/2P5/2N5/PP2PPPP/R1BQKBNR b KQkq - 0 4",
+        "n2_move": "g8f6",
+        "n2_score": -90,
+        "n2_nodes": 17705,
+        "n2_time": 0.020078999979887158,
+        "n3_move": "g8f6",
+        "n3_score": -90,
+        "n3_nodes": 14103,
+        "n3_time": 0.019638199999462813,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 62,
+          "reduced_moves": 62,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p78_white_ply5",
+        "fen": "r1bq1rk1/p1pnbpp1/1p2pn1p/8/P1pP3B/2NBPN2/1P3PPP/R2QK2R w KQ - 0 10",
+        "n2_move": "d3c4",
+        "n2_score": 30,
+        "n2_nodes": 25246,
+        "n2_time": 0.04093529999954626,
+        "n3_move": "d3c4",
+        "n3_score": 35,
+        "n3_nodes": 17624,
+        "n3_time": 0.01742500002728775,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 26,
+          "reduced_moves": 26,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p98_black_ply8",
+        "fen": "r2qkb1r/pppnpp1p/5np1/3p1bN1/5P2/2NPP3/PPP1B1PP/R1BQK2R b KQkq - 0 7",
+        "n2_move": "e7e5",
+        "n2_score": 5,
+        "n2_nodes": 20654,
+        "n2_time": 0.021737699978984892,
+        "n3_move": "e7e5",
+        "n3_score": 5,
+        "n3_nodes": 18473,
+        "n3_time": 0.02035880001494661,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 30,
+          "reduced_moves": 30,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p99_white_ply5",
+        "fen": "r1bqkb1r/pp3ppp/2n1pn2/2ppB3/8/1P2PN2/P1PP1PPP/RN1QKB1R w KQkq - 2 6",
+        "n2_move": "b1c3",
+        "n2_score": -45,
+        "n2_nodes": 14779,
+        "n2_time": 0.014892700011841953,
+        "n3_move": "b1c3",
+        "n3_score": -45,
+        "n3_nodes": 12530,
+        "n3_time": 0.013691799947991967,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 31,
+          "reduced_moves": 31,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p99_black_ply2",
+        "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/8/1P2PN2/PBPP1PPP/RN1QKB1R b KQkq - 1 4",
+        "n2_move": "b8c6",
+        "n2_score": 20,
+        "n2_nodes": 16887,
+        "n2_time": 0.01661320001585409,
+        "n3_move": "b8c6",
+        "n3_score": 30,
+        "n3_nodes": 13349,
+        "n3_time": 0.014182899962179363,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 31,
+          "reduced_moves": 31,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p100_white_ply3",
+        "fen": "rnbqk2r/ppp1bppp/4pn2/3P4/4P3/2N5/PP1P1PPP/R1BQKBNR w KQkq - 1 5",
+        "n2_move": "d1a4",
+        "n2_score": 90,
+        "n2_nodes": 20096,
+        "n2_time": 0.022865200007800013,
+        "n3_move": "d1a4",
+        "n3_score": 90,
+        "n3_nodes": 19339,
+        "n3_time": 0.022472800046671182,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 33,
+          "reduced_moves": 33,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p100_black_ply4",
+        "fen": "rnbqkb1r/ppp2ppp/5n2/3p4/Q3P3/2N5/PP1P1PPP/R1B1KBNR b KQkq - 1 5",
+        "n2_move": "b8c6",
+        "n2_score": 35,
+        "n2_nodes": 10396,
+        "n2_time": 0.01149430003715679,
+        "n3_move": "b8c6",
+        "n3_score": 35,
+        "n3_nodes": 6833,
+        "n3_time": 0.009733299957588315,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 36,
+          "reduced_moves": 36,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "control_p7_white_ply3",
+        "fen": "rnbqkbnr/pppppppp/8/4P3/8/8/PPPP1PPP/RNBQKBNR w KQkq - 1 3",
+        "n2_move": "b1c3",
+        "n2_score": 55,
+        "n2_nodes": 12021,
+        "n2_time": 0.010389700008090585,
+        "n3_move": "b1c3",
+        "n3_score": 55,
+        "n3_nodes": 10748,
+        "n3_time": 0.010481300007086247,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 16,
+          "reduced_moves": 16,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "control_p7_black_ply4",
+        "fen": "rnbqkb1r/pppppppp/8/3nP3/8/5N2/PPPP1PPP/RNBQKB1R b KQkq - 2 3",
+        "n2_move": "b8c6",
+        "n2_score": -45,
+        "n2_nodes": 10725,
+        "n2_time": 0.006917799997609109,
+        "n3_move": "d7d6",
+        "n3_score": -40,
+        "n3_nodes": 8557,
+        "n3_time": 0.005942600022535771,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 48,
+          "reduced_moves": 48,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "control_p8_white_ply3",
+        "fen": "rnbqkbnr/ppp1pp1p/3p2p1/8/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+        "n2_move": "b1c3",
+        "n2_score": 75,
+        "n2_nodes": 17584,
+        "n2_time": 0.019163699995260686,
+        "n3_move": "d1e2",
+        "n3_score": 90,
+        "n3_nodes": 14266,
+        "n3_time": 0.016575600020587444,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 57,
+          "reduced_moves": 57,
+          "researches": 1,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "control_p14_white_ply3",
+        "fen": "rnbqkbnr/pp1p1ppp/4p3/2p5/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 0 3",
+        "n2_move": "g1f3",
+        "n2_score": 20,
+        "n2_nodes": 10373,
+        "n2_time": 0.00899030000437051,
+        "n3_move": "g1f3",
+        "n3_score": 20,
+        "n3_nodes": 8961,
+        "n3_time": 0.008964699984062463,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 25,
+          "reduced_moves": 25,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "control_p31_white_ply7",
+        "fen": "r1bqkb1r/p3pp1p/2pp1np1/8/4P3/2NB4/PPP2PPP/R1BQK2R w KQkq - 0 8",
+        "n2_move": "c1e3",
+        "n2_score": 75,
+        "n2_nodes": 40309,
+        "n2_time": 0.05426569998962805,
+        "n3_move": "h2h3",
+        "n3_score": 85,
+        "n3_nodes": 26914,
+        "n3_time": 0.040278300002682954,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 84,
+          "reduced_moves": 84,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "control_p40_black_ply4",
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/4P3/PPQ2PPP/RNB1KBNR b KQkq - 2 4",
+        "n2_move": "b8a6",
+        "n2_score": -10,
+        "n2_nodes": 41828,
+        "n2_time": 0.05519899999490008,
+        "n3_move": "b8a6",
+        "n3_score": 5,
+        "n3_nodes": 22517,
+        "n3_time": 0.031055100029334426,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 66,
+          "reduced_moves": 66,
+          "researches": 1,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_01_tactical_fork",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "n2_move": "c4f7",
+        "n2_score": -280,
+        "n2_nodes": 34063,
+        "n2_time": 0.042260399961378425,
+        "n3_move": "c4f7",
+        "n3_score": -280,
+        "n3_nodes": 34425,
+        "n3_time": 0.04535739996936172,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 40,
+          "reduced_moves": 40,
+          "researches": 17,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "val_02_quiet_positional",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "n2_move": "f3e5",
+        "n2_score": -10,
+        "n2_nodes": 27409,
+        "n2_time": 0.03736710001248866,
+        "n3_move": "f3e5",
+        "n3_score": -5,
+        "n3_nodes": 22327,
+        "n3_time": 0.02677569998195395,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 29,
+          "reduced_moves": 29,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_03_king_safety",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "n2_move": "e4c3",
+        "n2_score": 340,
+        "n2_nodes": 24625,
+        "n2_time": 0.026792599994223565,
+        "n3_move": "e4c3",
+        "n3_score": 340,
+        "n3_nodes": 20116,
+        "n3_time": 0.022782000014558434,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 34,
+          "reduced_moves": 34,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_04_pawn_endgame",
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "n2_move": "e3f2",
+        "n2_score": 0,
+        "n2_nodes": 735,
+        "n2_time": 0.0002308000111952424,
+        "n3_move": "e3f2",
+        "n3_score": 20,
+        "n3_nodes": 416,
+        "n3_time": 0.000132500019390136,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 3,
+          "reduced_moves": 3,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_05_rook_endgame",
+        "fen": "8/8/4k3/R7/8/8/2K4r/8 w - - 1 1",
+        "n2_move": "c2b1",
+        "n2_score": 15,
+        "n2_nodes": 2027,
+        "n2_time": 0.0009599999757483602,
+        "n3_move": "c2b1",
+        "n3_score": 15,
+        "n3_nodes": 1359,
+        "n3_time": 0.0008075000368990004,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 15,
+          "reduced_moves": 15,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_06_minor_piece_endgame",
+        "fen": "8/8/4k3/3b4/8/4B3/4K3/8 w - - 0 1",
+        "n2_move": "e2f1",
+        "n2_score": 0,
+        "n2_nodes": 11156,
+        "n2_time": 0.0035414000158198178,
+        "n3_move": "e2f1",
+        "n3_score": 20,
+        "n3_nodes": 2601,
+        "n3_time": 0.0022651999606750906,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 12,
+          "reduced_moves": 12,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_07_pawn_promotion",
+        "fen": "8/4P3/8/8/8/6k1/8/6K1 w - - 0 1",
+        "n2_move": "e7e8q",
+        "n2_score": 965,
+        "n2_nodes": 715,
+        "n2_time": 0.0004659999976865947,
+        "n3_move": "e7e8q",
+        "n3_score": 965,
+        "n3_nodes": 671,
+        "n3_time": 0.00037349999183788896,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2,
+          "reduced_moves": 2,
+          "researches": 1,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_08_kingside_castling",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "n2_move": "d2d3",
+        "n2_score": 5,
+        "n2_nodes": 44753,
+        "n2_time": 0.06814240000676364,
+        "n3_move": "d2d3",
+        "n3_score": 5,
+        "n3_nodes": 38921,
+        "n3_time": 0.053806799987796694,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 46,
+          "reduced_moves": 46,
+          "researches": 2,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "val_09_en_passant_execution",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "n2_move": "d5e6",
+        "n2_score": 925,
+        "n2_nodes": 313,
+        "n2_time": 0.00012769998284056783,
+        "n3_move": "d5e6",
+        "n3_score": 925,
+        "n3_nodes": 313,
+        "n3_time": 9.789998875930905e-05,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_10_stalemate_avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "n2_move": "b6a6",
+        "n2_score": 0,
+        "n2_nodes": 52,
+        "n2_time": 2.6799971237778664e-05,
+        "n3_move": "b6a6",
+        "n3_score": 0,
+        "n3_nodes": 52,
+        "n3_time": 2.050003968179226e-05,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_11_check_evasion",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 1 6",
+        "n2_move": "d7d5",
+        "n2_score": -180,
+        "n2_nodes": 14277,
+        "n2_time": 0.014402300002984703,
+        "n3_move": "d7d5",
+        "n3_score": -180,
+        "n3_nodes": 11793,
+        "n3_time": 0.013702700030989945,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 34,
+          "reduced_moves": 34,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_12_repetition_sensitive",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+        "n2_move": "b8c6",
+        "n2_score": -40,
+        "n2_nodes": 7232,
+        "n2_time": 0.004628200025763363,
+        "n3_move": "b8c6",
+        "n3_score": -40,
+        "n3_nodes": 5225,
+        "n3_time": 0.00379879999672994,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 19,
+          "reduced_moves": 19,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_13_fifty_move_draw_sensitive",
+        "fen": "8/8/4k3/8/8/4K3/8/8 w - - 99 50",
+        "n2_move": "e3d2",
+        "n2_score": 0,
+        "n2_nodes": 36,
+        "n2_time": 2.4200009647756815e-05,
+        "n3_move": "e3d2",
+        "n3_score": 0,
+        "n3_nodes": 36,
+        "n3_time": 1.650000922381878e-05,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_14_tactical_pin",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "n2_move": "h1h5",
+        "n2_score": 405,
+        "n2_nodes": 75271,
+        "n2_time": 0.09798500000033528,
+        "n3_move": "h1h5",
+        "n3_score": 405,
+        "n3_nodes": 67044,
+        "n3_time": 0.2874081999761984,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 136,
+          "reduced_moves": 136,
+          "researches": 16,
+          "cutoffs": 10
+        }
+      },
+      {
+        "id": "val_15_queen_endgame",
+        "fen": "8/8/4k3/3q4/8/4Q3/4K3/8 b - - 0 1",
+        "n2_move": "e6f7",
+        "n2_score": 0,
+        "n2_nodes": 3560,
+        "n2_time": 0.007639599964022636,
+        "n3_move": "e6f7",
+        "n3_score": 0,
+        "n3_nodes": 2217,
+        "n3_time": 0.005198099999688566,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 16,
+          "reduced_moves": 16,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_16_discovered_attack",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "n2_move": "f3e5",
+        "n2_score": 0,
+        "n2_nodes": 28097,
+        "n2_time": 0.11189050000393763,
+        "n3_move": "f3e5",
+        "n3_score": 5,
+        "n3_nodes": 23960,
+        "n3_time": 0.12387349997879937,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 29,
+          "reduced_moves": 29,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      }
+    ]
+  },
+  "5": {
+    "summary": {
+      "depth": 5,
+      "positions_count": 53,
+      "total_nodes_n2": 5799149,
+      "total_nodes_n3": 2055146,
+      "node_reduction_pct": 64.56124855560704,
+      "total_time_n2_sec": 17.745786200044677,
+      "total_time_n3_sec": 8.759420599788427,
+      "speedup_factor": 2.0259086771644808,
+      "nps_n2": 326790,
+      "nps_n3": 234621,
+      "move_agreement_pct": 88.67924528301887,
+      "agreed_count": 47,
+      "total_reduced": 48270,
+      "total_researches": 425,
+      "research_rate_pct": 0.8804640563496996,
+      "total_cutoffs": 114,
+      "cutoff_rate_pct": 0.23617153511497824
+    },
+    "positions": [
+      {
+        "id": "divergence_p1_white_ply3",
+        "fen": "rnbqkbnr/ppp2ppp/3p4/4p3/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+        "n2_move": "d4e5",
+        "n2_score": 80,
+        "n2_nodes": 112163,
+        "n2_time": 0.18860280001536012,
+        "n3_move": "d4e5",
+        "n3_score": 80,
+        "n3_nodes": 44589,
+        "n3_time": 0.1589414999471046,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1379,
+          "reduced_moves": 1379,
+          "researches": 4,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p2_white_ply9",
+        "fen": "r1bqkb1r/pp3ppp/2nppn2/2p5/2B1P2P/2N2N2/PPPP1PP1/R1BQK2R w KQkq - 1 6",
+        "n2_move": "d2d4",
+        "n2_score": 30,
+        "n2_nodes": 143203,
+        "n2_time": 0.39506309997523203,
+        "n3_move": "d2d4",
+        "n3_score": 30,
+        "n3_nodes": 56167,
+        "n3_time": 0.2350276000215672,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1301,
+          "reduced_moves": 1301,
+          "researches": 8,
+          "cutoffs": 8
+        }
+      },
+      {
+        "id": "divergence_p3_white_ply3",
+        "fen": "rnbqkb1r/pppp1ppp/4pn2/8/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+        "n2_move": "e4e5",
+        "n2_score": 60,
+        "n2_nodes": 74061,
+        "n2_time": 0.18420740001602098,
+        "n3_move": "e4e5",
+        "n3_score": 45,
+        "n3_nodes": 27882,
+        "n3_time": 0.08989370003109798,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 862,
+          "reduced_moves": 862,
+          "researches": 3,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "divergence_p3_black_ply6",
+        "fen": "rnbqkb1r/pppp2pp/4pn2/5pB1/3PP3/2N5/PPP2PPP/R2QKBNR b KQkq - 3 4",
+        "n2_move": "f5e4",
+        "n2_score": -45,
+        "n2_nodes": 80610,
+        "n2_time": 0.25493179995100945,
+        "n3_move": "f5e4",
+        "n3_score": -45,
+        "n3_nodes": 26827,
+        "n3_time": 0.08718279999447986,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 841,
+          "reduced_moves": 841,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p4_white_ply3",
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+        "n2_move": "e4e5",
+        "n2_score": 90,
+        "n2_nodes": 80918,
+        "n2_time": 0.134277299977839,
+        "n3_move": "b1c3",
+        "n3_score": 80,
+        "n3_nodes": 20098,
+        "n3_time": 0.0433327000355348,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 870,
+          "reduced_moves": 870,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p6_black_ply4",
+        "fen": "rnbqkbnr/ppp1pppp/8/8/4P3/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+        "n2_move": "d8d1",
+        "n2_score": 40,
+        "n2_nodes": 16183,
+        "n2_time": 0.024612900044303387,
+        "n3_move": "d8d1",
+        "n3_score": 40,
+        "n3_nodes": 7076,
+        "n3_time": 0.02943219995358959,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 207,
+          "reduced_moves": 207,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p10_white_ply3",
+        "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 3",
+        "n2_move": "b1c3",
+        "n2_score": 20,
+        "n2_nodes": 106023,
+        "n2_time": 0.2489371999981813,
+        "n3_move": "b1c3",
+        "n3_score": 20,
+        "n3_nodes": 39228,
+        "n3_time": 0.11983590002637357,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 878,
+          "reduced_moves": 878,
+          "researches": 9,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "divergence_p11_black_ply4",
+        "fen": "rnbqkb1r/ppppp1pp/5n2/5p2/3P4/4P2N/PPP2PPP/RNBQKB1R b KQkq - 2 3",
+        "n2_move": "b8c6",
+        "n2_score": -5,
+        "n2_nodes": 98729,
+        "n2_time": 0.3042342999833636,
+        "n3_move": "b8c6",
+        "n3_score": -20,
+        "n3_nodes": 29977,
+        "n3_time": 0.1060736000072211,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 605,
+          "reduced_moves": 605,
+          "researches": 2,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p13_black_ply2",
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR b KQkq - 1 2",
+        "n2_move": "b8c6",
+        "n2_score": 30,
+        "n2_nodes": 207674,
+        "n2_time": 0.4049659000011161,
+        "n3_move": "b8c6",
+        "n3_score": 30,
+        "n3_nodes": 27079,
+        "n3_time": 0.08003880002070218,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 912,
+          "reduced_moves": 912,
+          "researches": 4,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "divergence_p20_white_ply5",
+        "fen": "r1bqk1nr/pppp1ppp/2n5/4p3/1b1P4/1P3N2/P1P1PPPP/RNBQKB1R w KQkq - 1 4",
+        "n2_move": "c2c3",
+        "n2_score": -5,
+        "n2_nodes": 22085,
+        "n2_time": 0.06939259998034686,
+        "n3_move": "c2c3",
+        "n3_score": -5,
+        "n3_nodes": 13497,
+        "n3_time": 0.04586600000038743,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 171,
+          "reduced_moves": 171,
+          "researches": 3,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p24_black_ply8",
+        "fen": "r1bq1b1r/ppp2kpp/2n5/3np3/2B5/P7/1PPP1PPP/RNBQK2R b KQ - 0 7",
+        "n2_move": "f7g8",
+        "n2_score": 260,
+        "n2_nodes": 106760,
+        "n2_time": 0.25174859998514876,
+        "n3_move": "f7g8",
+        "n3_score": 260,
+        "n3_nodes": 33132,
+        "n3_time": 0.09613249998074025,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1161,
+          "reduced_moves": 1161,
+          "researches": 2,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "divergence_p25_black_ply4",
+        "fen": "r1bqk2r/pppp1ppp/2nb1n2/4p3/B3P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 7 5",
+        "n2_move": "d6b4",
+        "n2_score": 5,
+        "n2_nodes": 73729,
+        "n2_time": 0.145966199983377,
+        "n3_move": "d6b4",
+        "n3_score": 5,
+        "n3_nodes": 27429,
+        "n3_time": 0.08527939999476075,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 841,
+          "reduced_moves": 841,
+          "researches": 2,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p32_black_ply6",
+        "fen": "r1bqkb1r/pp1n1ppp/3p1n2/1B2p3/4P1P1/2N5/PPP1NP1P/R1BQK2R b KQkq - 1 8",
+        "n2_move": "f6g4",
+        "n2_score": 70,
+        "n2_nodes": 49975,
+        "n2_time": 0.2305715000256896,
+        "n3_move": "f6g4",
+        "n3_score": 80,
+        "n3_nodes": 27210,
+        "n3_time": 0.11861170001793653,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 185,
+          "reduced_moves": 185,
+          "researches": 2,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p36_black_ply2",
+        "fen": "rnbqk1nr/ppp2ppp/4p3/3pP3/1b1P4/2N5/PPP2PPP/R1BQKBNR b KQkq - 0 4",
+        "n2_move": "b4c3",
+        "n2_score": 0,
+        "n2_nodes": 93354,
+        "n2_time": 0.14717780001228675,
+        "n3_move": "b4c3",
+        "n3_score": -15,
+        "n3_nodes": 56822,
+        "n3_time": 0.24528519995510578,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1480,
+          "reduced_moves": 1480,
+          "researches": 60,
+          "cutoffs": 10
+        }
+      },
+      {
+        "id": "divergence_p37_black_ply4",
+        "fen": "rnbqkbnr/pp2pppp/2p5/8/3PB3/8/PPP2PPP/RNBQK1NR b KQkq - 0 4",
+        "n2_move": "g8f6",
+        "n2_score": -35,
+        "n2_nodes": 121456,
+        "n2_time": 0.34842430002754554,
+        "n3_move": "g8f6",
+        "n3_score": -35,
+        "n3_nodes": 50862,
+        "n3_time": 0.579669600003399,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 957,
+          "reduced_moves": 957,
+          "researches": 12,
+          "cutoffs": 7
+        }
+      },
+      {
+        "id": "divergence_p39_white_ply5",
+        "fen": "rnbqkb1r/1pp2ppp/p3p3/2Pp4/3P2n1/2N1B3/PP2PPPP/R2QKBNR w KQkq - 2 6",
+        "n2_move": "e3f4",
+        "n2_score": 15,
+        "n2_nodes": 133015,
+        "n2_time": 0.5076392999617383,
+        "n3_move": "g1f3",
+        "n3_score": 0,
+        "n3_nodes": 51904,
+        "n3_time": 0.21925239998381585,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 966,
+          "reduced_moves": 966,
+          "researches": 2,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p45_white_ply3",
+        "fen": "rnbqk2r/pppp1ppp/4pn2/b7/2PP4/P1N5/1P2PPPP/R1BQKBNR w KQkq - 1 5",
+        "n2_move": "b2b4",
+        "n2_score": 170,
+        "n2_nodes": 11582,
+        "n2_time": 0.03273810003884137,
+        "n3_move": "b2b4",
+        "n3_score": 170,
+        "n3_nodes": 8139,
+        "n3_time": 0.025175800023134798,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 162,
+          "reduced_moves": 162,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p45_black_ply2",
+        "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N1P3/PP3PPP/R1BQKBNR b KQkq - 0 4",
+        "n2_move": "b4c3",
+        "n2_score": 40,
+        "n2_nodes": 103552,
+        "n2_time": 0.20895820000441745,
+        "n3_move": "b4c3",
+        "n3_score": 40,
+        "n3_nodes": 53607,
+        "n3_time": 0.7773188999854028,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1275,
+          "reduced_moves": 1275,
+          "researches": 53,
+          "cutoffs": 7
+        }
+      },
+      {
+        "id": "divergence_p54_white_ply6",
+        "fen": "r1bqk2r/ppppbppp/7n/nP2N3/2B1P3/8/P1PP1PPP/RNBQK2R w KQkq - 1 7",
+        "n2_move": "d1h5",
+        "n2_score": 140,
+        "n2_nodes": 203192,
+        "n2_time": 0.6079338000272401,
+        "n3_move": "d1h5",
+        "n3_score": 140,
+        "n3_nodes": 47864,
+        "n3_time": 0.1871771999867633,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1402,
+          "reduced_moves": 1402,
+          "researches": 5,
+          "cutoffs": 3
+        }
+      },
+      {
+        "id": "divergence_p54_black_ply3",
+        "fen": "r1bqk1nr/pppp1ppp/2n5/4p3/1bB1P3/5N2/PBPP1PPP/RN1QK2R b KQkq - 1 5",
+        "n2_move": "d7d6",
+        "n2_score": 95,
+        "n2_nodes": 138554,
+        "n2_time": 0.4337400999502279,
+        "n3_move": "d7d6",
+        "n3_score": 70,
+        "n3_nodes": 74725,
+        "n3_time": 0.37383989995578304,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1321,
+          "reduced_moves": 1321,
+          "researches": 11,
+          "cutoffs": 5
+        }
+      },
+      {
+        "id": "divergence_p61_black_ply10",
+        "fen": "r1bqk2r/1p1p1p2/2n2np1/p1b1p1Bp/P1B1P3/2N2N2/1PP2PPP/R2Q1RK1 b kq - 1 10",
+        "n2_move": "c5e7",
+        "n2_score": -65,
+        "n2_nodes": 275800,
+        "n2_time": 1.9035457000136375,
+        "n3_move": "c5e7",
+        "n3_score": -75,
+        "n3_nodes": 92144,
+        "n3_time": 0.3914381000213325,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1217,
+          "reduced_moves": 1217,
+          "researches": 2,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p67_black_ply11",
+        "fen": "r2qkb1r/1p1nppp1/4bn2/p1Pp3p/Q2P1B2/2NB4/PP3PPP/R3K1NR b KQkq - 1 9",
+        "n2_move": "h5h4",
+        "n2_score": -75,
+        "n2_nodes": 271126,
+        "n2_time": 1.2870553000248037,
+        "n3_move": "e6g4",
+        "n3_score": -65,
+        "n3_nodes": 50861,
+        "n3_time": 0.14937130000907928,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 634,
+          "reduced_moves": 634,
+          "researches": 4,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "divergence_p73_black_ply4",
+        "fen": "rn1qk2r/ppp1ppbp/3pbnp1/5P2/3PP3/2NB4/PPP3PP/R1BQK1NR b KQkq - 0 6",
+        "n2_move": "g6f5",
+        "n2_score": -35,
+        "n2_nodes": 46192,
+        "n2_time": 0.04935480002313852,
+        "n3_move": "g6f5",
+        "n3_score": -35,
+        "n3_nodes": 18545,
+        "n3_time": 0.021624299988616258,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1005,
+          "reduced_moves": 1005,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p76_white_ply9",
+        "fen": "r1bqkb1r/pp3ppp/2n5/2Pp4/6n1/2N1BN2/PP2PPPP/R2QKB1R w KQkq - 5 8",
+        "n2_move": "e3d4",
+        "n2_score": 100,
+        "n2_nodes": 141147,
+        "n2_time": 0.24788430001353845,
+        "n3_move": "e3d4",
+        "n3_score": 100,
+        "n3_nodes": 54832,
+        "n3_time": 0.14046069997129962,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1294,
+          "reduced_moves": 1294,
+          "researches": 3,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p76_black_ply2",
+        "fen": "rnbqkbnr/pp3ppp/4p3/2Pp4/2P5/2N5/PP2PPPP/R1BQKBNR b KQkq - 0 4",
+        "n2_move": "g8f6",
+        "n2_score": -40,
+        "n2_nodes": 75070,
+        "n2_time": 0.08184579998487607,
+        "n3_move": "g8f6",
+        "n3_score": -40,
+        "n3_nodes": 27950,
+        "n3_time": 0.04462000000057742,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1064,
+          "reduced_moves": 1064,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p78_white_ply5",
+        "fen": "r1bq1rk1/p1pnbpp1/1p2pn1p/8/P1pP3B/2NBPN2/1P3PPP/R2QK2R w KQ - 0 10",
+        "n2_move": "d3c4",
+        "n2_score": 30,
+        "n2_nodes": 126356,
+        "n2_time": 0.14328060002299026,
+        "n3_move": "d3c4",
+        "n3_score": 30,
+        "n3_nodes": 56889,
+        "n3_time": 0.11820359999546781,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1734,
+          "reduced_moves": 1734,
+          "researches": 6,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "divergence_p98_black_ply8",
+        "fen": "r2qkb1r/pppnpp1p/5np1/3p1bN1/5P2/2NPP3/PPP1B1PP/R1BQK2R b KQkq - 0 7",
+        "n2_move": "e7e5",
+        "n2_score": -10,
+        "n2_nodes": 132042,
+        "n2_time": 0.21209550002822652,
+        "n3_move": "e7e5",
+        "n3_score": -10,
+        "n3_nodes": 47480,
+        "n3_time": 0.10322900000028312,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 975,
+          "reduced_moves": 975,
+          "researches": 4,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "divergence_p99_white_ply5",
+        "fen": "r1bqkb1r/pp3ppp/2n1pn2/2ppB3/8/1P2PN2/P1PP1PPP/RN1QKB1R w KQkq - 2 6",
+        "n2_move": "f1b5",
+        "n2_score": -30,
+        "n2_nodes": 88665,
+        "n2_time": 0.1490681999712251,
+        "n3_move": "f1b5",
+        "n3_score": -30,
+        "n3_nodes": 55100,
+        "n3_time": 0.2950944000040181,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1177,
+          "reduced_moves": 1177,
+          "researches": 8,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p99_black_ply2",
+        "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/8/1P2PN2/PBPP1PPP/RN1QKB1R b KQkq - 1 4",
+        "n2_move": "f8b4",
+        "n2_score": 40,
+        "n2_nodes": 264817,
+        "n2_time": 0.7537945999647491,
+        "n3_move": "b8c6",
+        "n3_score": 30,
+        "n3_nodes": 67878,
+        "n3_time": 0.26385749998735264,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 1423,
+          "reduced_moves": 1423,
+          "researches": 19,
+          "cutoffs": 10
+        }
+      },
+      {
+        "id": "divergence_p100_white_ply3",
+        "fen": "rnbqk2r/ppp1bppp/4pn2/3P4/4P3/2N5/PP1P1PPP/R1BQKBNR w KQkq - 1 5",
+        "n2_move": "f1c4",
+        "n2_score": 110,
+        "n2_nodes": 122508,
+        "n2_time": 0.4015528000309132,
+        "n3_move": "f1c4",
+        "n3_score": 110,
+        "n3_nodes": 45452,
+        "n3_time": 0.16256430000066757,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1185,
+          "reduced_moves": 1185,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p100_black_ply4",
+        "fen": "rnbqkb1r/ppp2ppp/5n2/3p4/Q3P3/2N5/PP1P1PPP/R1B1KBNR b KQkq - 1 5",
+        "n2_move": "c8d7",
+        "n2_score": 60,
+        "n2_nodes": 54126,
+        "n2_time": 0.21441369998501614,
+        "n3_move": "c8d7",
+        "n3_score": 60,
+        "n3_nodes": 24644,
+        "n3_time": 0.11997770000016317,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 353,
+          "reduced_moves": 353,
+          "researches": 5,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "control_p7_white_ply3",
+        "fen": "rnbqkbnr/pppppppp/8/4P3/8/8/PPPP1PPP/RNBQKBNR w KQkq - 1 3",
+        "n2_move": "b1c3",
+        "n2_score": 90,
+        "n2_nodes": 125964,
+        "n2_time": 0.2043030000058934,
+        "n3_move": "b1c3",
+        "n3_score": 90,
+        "n3_nodes": 24646,
+        "n3_time": 0.19679790001828223,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 874,
+          "reduced_moves": 874,
+          "researches": 4,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "control_p7_black_ply4",
+        "fen": "rnbqkb1r/pppppppp/8/3nP3/8/5N2/PPPP1PPP/RNBQKB1R b KQkq - 2 3",
+        "n2_move": "b8c6",
+        "n2_score": -30,
+        "n2_nodes": 60679,
+        "n2_time": 0.13324399996781722,
+        "n3_move": "b8c6",
+        "n3_score": -30,
+        "n3_nodes": 21193,
+        "n3_time": 0.04542909999145195,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 638,
+          "reduced_moves": 638,
+          "researches": 3,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "control_p8_white_ply3",
+        "fen": "rnbqkbnr/ppp1pp1p/3p2p1/8/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+        "n2_move": "b1c3",
+        "n2_score": 95,
+        "n2_nodes": 203581,
+        "n2_time": 0.4952993000042625,
+        "n3_move": "b1c3",
+        "n3_score": 95,
+        "n3_nodes": 85927,
+        "n3_time": 0.3719737999490462,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1421,
+          "reduced_moves": 1421,
+          "researches": 38,
+          "cutoffs": 10
+        }
+      },
+      {
+        "id": "control_p14_white_ply3",
+        "fen": "rnbqkbnr/pp1p1ppp/4p3/2p5/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 0 3",
+        "n2_move": "g1f3",
+        "n2_score": 50,
+        "n2_nodes": 103577,
+        "n2_time": 0.29193520004628226,
+        "n3_move": "g1f3",
+        "n3_score": 50,
+        "n3_nodes": 28346,
+        "n3_time": 0.09096010000212118,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 708,
+          "reduced_moves": 708,
+          "researches": 7,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "control_p31_white_ply7",
+        "fen": "r1bqkb1r/p3pp1p/2pp1np1/8/4P3/2NB4/PPP2PPP/R1BQK2R w KQkq - 0 8",
+        "n2_move": "c1g5",
+        "n2_score": 80,
+        "n2_nodes": 221745,
+        "n2_time": 0.6826586000388488,
+        "n3_move": "h2h3",
+        "n3_score": 75,
+        "n3_nodes": 84706,
+        "n3_time": 0.39912010001717135,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 1828,
+          "reduced_moves": 1828,
+          "researches": 13,
+          "cutoffs": 5
+        }
+      },
+      {
+        "id": "control_p40_black_ply4",
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/4P3/PPQ2PPP/RNB1KBNR b KQkq - 2 4",
+        "n2_move": "b8a6",
+        "n2_score": 15,
+        "n2_nodes": 168999,
+        "n2_time": 0.7898623000364751,
+        "n3_move": "b8a6",
+        "n3_score": 10,
+        "n3_nodes": 93863,
+        "n3_time": 0.511028399982024,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1185,
+          "reduced_moves": 1185,
+          "researches": 16,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "val_01_tactical_fork",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "n2_move": "c4f7",
+        "n2_score": -280,
+        "n2_nodes": 140317,
+        "n2_time": 0.22783170000184327,
+        "n3_move": "c4f7",
+        "n3_score": -280,
+        "n3_nodes": 46078,
+        "n3_time": 0.17224739998346195,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1479,
+          "reduced_moves": 1479,
+          "researches": 17,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "val_02_quiet_positional",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "n2_move": "d1c2",
+        "n2_score": -5,
+        "n2_nodes": 184934,
+        "n2_time": 0.8826910000061616,
+        "n3_move": "d1c2",
+        "n3_score": -5,
+        "n3_nodes": 62678,
+        "n3_time": 0.2911426000064239,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1606,
+          "reduced_moves": 1606,
+          "researches": 4,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "val_03_king_safety",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "n2_move": "e4c3",
+        "n2_score": 350,
+        "n2_nodes": 121699,
+        "n2_time": 0.32657939998898655,
+        "n3_move": "e4c3",
+        "n3_score": 350,
+        "n3_nodes": 40389,
+        "n3_time": 0.12167820002650842,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1360,
+          "reduced_moves": 1360,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_04_pawn_endgame",
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "n2_move": "e3f2",
+        "n2_score": 0,
+        "n2_nodes": 2670,
+        "n2_time": 0.002957999997306615,
+        "n3_move": "e3f2",
+        "n3_score": 0,
+        "n3_nodes": 2785,
+        "n3_time": 0.002926400047726929,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 94,
+          "reduced_moves": 94,
+          "researches": 21,
+          "cutoffs": 8
+        }
+      },
+      {
+        "id": "val_05_rook_endgame",
+        "fen": "8/8/4k3/R7/8/8/2K4r/8 w - - 1 1",
+        "n2_move": "c2b1",
+        "n2_score": 15,
+        "n2_nodes": 15853,
+        "n2_time": 0.027716200042050332,
+        "n3_move": "c2b1",
+        "n3_score": 15,
+        "n3_nodes": 8725,
+        "n3_time": 0.011237400001846254,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 132,
+          "reduced_moves": 132,
+          "researches": 6,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "val_06_minor_piece_endgame",
+        "fen": "8/8/4k3/3b4/8/4B3/4K3/8 w - - 0 1",
+        "n2_move": "e2f1",
+        "n2_score": 0,
+        "n2_nodes": 101248,
+        "n2_time": 0.14581090002320707,
+        "n3_move": "e2f1",
+        "n3_score": 0,
+        "n3_nodes": 32041,
+        "n3_time": 0.044481299992185086,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 477,
+          "reduced_moves": 477,
+          "researches": 33,
+          "cutoffs": 11
+        }
+      },
+      {
+        "id": "val_07_pawn_promotion",
+        "fen": "8/4P3/8/8/8/6k1/8/6K1 w - - 0 1",
+        "n2_move": "e7e8q",
+        "n2_score": 965,
+        "n2_nodes": 3274,
+        "n2_time": 0.0028332999791018665,
+        "n3_move": "e7e8q",
+        "n3_score": 965,
+        "n3_nodes": 1630,
+        "n3_time": 0.001942100003361702,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 38,
+          "reduced_moves": 38,
+          "researches": 1,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_08_kingside_castling",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "n2_move": "d2d3",
+        "n2_score": 10,
+        "n2_nodes": 177409,
+        "n2_time": 0.6823167999973521,
+        "n3_move": "d2d3",
+        "n3_score": 10,
+        "n3_nodes": 59058,
+        "n3_time": 0.31137030001264066,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1251,
+          "reduced_moves": 1251,
+          "researches": 4,
+          "cutoffs": 3
+        }
+      },
+      {
+        "id": "val_09_en_passant_execution",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "n2_move": "d5e6",
+        "n2_score": 925,
+        "n2_nodes": 707,
+        "n2_time": 0.0007273000082932413,
+        "n3_move": "d5e6",
+        "n3_score": 925,
+        "n3_nodes": 569,
+        "n3_time": 0.0005811000009998679,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 22,
+          "reduced_moves": 22,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_10_stalemate_avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "n2_move": "b6a6",
+        "n2_score": 0,
+        "n2_nodes": 64,
+        "n2_time": 0.00016419996973127127,
+        "n3_move": "b6a6",
+        "n3_score": 0,
+        "n3_nodes": 64,
+        "n3_time": 0.00015330000314861536,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_11_check_evasion",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 1 6",
+        "n2_move": "d7d5",
+        "n2_score": -180,
+        "n2_nodes": 112946,
+        "n2_time": 0.42064229998504743,
+        "n3_move": "d8f6",
+        "n3_score": -170,
+        "n3_nodes": 31399,
+        "n3_time": 0.10781939997104928,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 1006,
+          "reduced_moves": 1006,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_12_repetition_sensitive",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+        "n2_move": "b8c6",
+        "n2_score": 0,
+        "n2_nodes": 37830,
+        "n2_time": 0.05631999997422099,
+        "n3_move": "b8c6",
+        "n3_score": 0,
+        "n3_nodes": 15321,
+        "n3_time": 0.03490829997463152,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 419,
+          "reduced_moves": 419,
+          "researches": 5,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_13_fifty_move_draw_sensitive",
+        "fen": "8/8/4k3/8/8/4K3/8/8 w - - 99 50",
+        "n2_move": "e3d2",
+        "n2_score": 0,
+        "n2_nodes": 45,
+        "n2_time": 0.00012390001211315393,
+        "n3_move": "e3d2",
+        "n3_score": 0,
+        "n3_nodes": 45,
+        "n3_time": 0.00011099997209385037,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_14_tactical_pin",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "n2_move": "h1h5",
+        "n2_score": 405,
+        "n2_nodes": 253044,
+        "n2_time": 1.4929807999869809,
+        "n3_move": "h1h5",
+        "n3_score": 405,
+        "n3_nodes": 91979,
+        "n3_time": 0.33301010000286624,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2006,
+          "reduced_moves": 2006,
+          "researches": 16,
+          "cutoffs": 10
+        }
+      },
+      {
+        "id": "val_15_queen_endgame",
+        "fen": "8/8/4k3/3q4/8/4Q3/4K3/8 b - - 0 1",
+        "n2_move": "e6f7",
+        "n2_score": 0,
+        "n2_nodes": 22631,
+        "n2_time": 0.03235709998989478,
+        "n3_move": "e6f7",
+        "n3_score": 0,
+        "n3_nodes": 9326,
+        "n3_time": 0.015770799946039915,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 120,
+          "reduced_moves": 120,
+          "researches": 1,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "val_16_discovered_attack",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "n2_move": "f3e5",
+        "n2_score": 0,
+        "n2_nodes": 165266,
+        "n2_time": 0.2784163999604061,
+        "n3_move": "f3e5",
+        "n3_score": 5,
+        "n3_nodes": 48489,
+        "n3_time": 0.1809231999795884,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1769,
+          "reduced_moves": 1769,
+          "researches": 3,
+          "cutoffs": 1
+        }
+      }
+    ]
+  },
+  "6": {
+    "summary": {
+      "depth": 6,
+      "positions_count": 53,
+      "total_nodes_n2": 23125545,
+      "total_nodes_n3": 8539679,
+      "node_reduction_pct": 63.07252866905407,
+      "total_time_n2_sec": 94.33363240008475,
+      "total_time_n3_sec": 30.934349100105464,
+      "speedup_factor": 3.0494784970201017,
+      "nps_n2": 245146,
+      "nps_n3": 276058,
+      "move_agreement_pct": 86.79245283018868,
+      "agreed_count": 46,
+      "total_reduced": 109011,
+      "total_researches": 1510,
+      "research_rate_pct": 1.3851813119776903,
+      "total_cutoffs": 358,
+      "cutoff_rate_pct": 0.3284072249589491
+    },
+    "positions": [
+      {
+        "id": "divergence_p1_white_ply3",
+        "fen": "rnbqkbnr/ppp2ppp/3p4/4p3/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+        "n2_move": "g1f3",
+        "n2_score": 35,
+        "n2_nodes": 487780,
+        "n2_time": 1.933391600032337,
+        "n3_move": "g1f3",
+        "n3_score": 35,
+        "n3_nodes": 239210,
+        "n3_time": 0.8554144999943674,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 3193,
+          "reduced_moves": 3193,
+          "researches": 32,
+          "cutoffs": 4
+        }
+      },
+      {
+        "id": "divergence_p2_white_ply9",
+        "fen": "r1bqkb1r/pp3ppp/2nppn2/2p5/2B1P2P/2N2N2/PPPP1PP1/R1BQK2R w KQkq - 1 6",
+        "n2_move": "d2d4",
+        "n2_score": 10,
+        "n2_nodes": 613760,
+        "n2_time": 2.5625879000290297,
+        "n3_move": "c4b5",
+        "n3_score": 25,
+        "n3_nodes": 197813,
+        "n3_time": 0.7623002000036649,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 2704,
+          "reduced_moves": 2704,
+          "researches": 14,
+          "cutoffs": 10
+        }
+      },
+      {
+        "id": "divergence_p3_white_ply3",
+        "fen": "rnbqkb1r/pppp1ppp/4pn2/8/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+        "n2_move": "e4e5",
+        "n2_score": 35,
+        "n2_nodes": 343960,
+        "n2_time": 1.315671199990902,
+        "n3_move": "e4e5",
+        "n3_score": 35,
+        "n3_nodes": 121662,
+        "n3_time": 0.3676810000324622,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1813,
+          "reduced_moves": 1813,
+          "researches": 13,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "divergence_p3_black_ply6",
+        "fen": "rnbqkb1r/pppp2pp/4pn2/5pB1/3PP3/2N5/PPP2PPP/R2QKBNR b KQkq - 3 4",
+        "n2_move": "f5e4",
+        "n2_score": -45,
+        "n2_nodes": 353464,
+        "n2_time": 1.0048381999949925,
+        "n3_move": "f5e4",
+        "n3_score": -45,
+        "n3_nodes": 103799,
+        "n3_time": 0.2815498999552801,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1854,
+          "reduced_moves": 1854,
+          "researches": 2,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "divergence_p4_white_ply3",
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+        "n2_move": "b1c3",
+        "n2_score": 60,
+        "n2_nodes": 368962,
+        "n2_time": 1.052661800000351,
+        "n3_move": "b1c3",
+        "n3_score": 60,
+        "n3_nodes": 153749,
+        "n3_time": 0.5033779999939725,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2255,
+          "reduced_moves": 2255,
+          "researches": 33,
+          "cutoffs": 9
+        }
+      },
+      {
+        "id": "divergence_p6_black_ply4",
+        "fen": "rnbqkbnr/ppp1pppp/8/8/4P3/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+        "n2_move": "d8d1",
+        "n2_score": -10,
+        "n2_nodes": 75004,
+        "n2_time": 0.30782970000291243,
+        "n3_move": "d8d1",
+        "n3_score": -10,
+        "n3_nodes": 58091,
+        "n3_time": 0.20351869997102767,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 452,
+          "reduced_moves": 452,
+          "researches": 17,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "divergence_p10_white_ply3",
+        "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 3",
+        "n2_move": "b1c3",
+        "n2_score": 5,
+        "n2_nodes": 405552,
+        "n2_time": 1.5664332999731414,
+        "n3_move": "b1c3",
+        "n3_score": 10,
+        "n3_nodes": 155472,
+        "n3_time": 0.386024700012058,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1770,
+          "reduced_moves": 1770,
+          "researches": 17,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "divergence_p11_black_ply4",
+        "fen": "rnbqkb1r/ppppp1pp/5n2/5p2/3P4/4P2N/PPP2PPP/RNBQKB1R b KQkq - 2 3",
+        "n2_move": "b8c6",
+        "n2_score": -25,
+        "n2_nodes": 345077,
+        "n2_time": 1.6610300000174902,
+        "n3_move": "b8c6",
+        "n3_score": -20,
+        "n3_nodes": 178786,
+        "n3_time": 0.5825658000539988,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1674,
+          "reduced_moves": 1674,
+          "researches": 31,
+          "cutoffs": 4
+        }
+      },
+      {
+        "id": "divergence_p13_black_ply2",
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR b KQkq - 1 2",
+        "n2_move": "b8c6",
+        "n2_score": 10,
+        "n2_nodes": 445276,
+        "n2_time": 1.1535200999933295,
+        "n3_move": "b8c6",
+        "n3_score": 10,
+        "n3_nodes": 234372,
+        "n3_time": 0.3460237000253983,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2087,
+          "reduced_moves": 2087,
+          "researches": 78,
+          "cutoffs": 4
+        }
+      },
+      {
+        "id": "divergence_p20_white_ply5",
+        "fen": "r1bqk1nr/pppp1ppp/2n5/4p3/1b1P4/1P3N2/P1P1PPPP/RNBQKB1R w KQkq - 1 4",
+        "n2_move": "c2c3",
+        "n2_score": -30,
+        "n2_nodes": 89699,
+        "n2_time": 0.11552719998871908,
+        "n3_move": "c2c3",
+        "n3_score": -30,
+        "n3_nodes": 33443,
+        "n3_time": 0.07028360001277179,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 411,
+          "reduced_moves": 411,
+          "researches": 6,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p24_black_ply8",
+        "fen": "r1bq1b1r/ppp2kpp/2n5/3np3/2B5/P7/1PPP1PPP/RNBQK2R b KQ - 0 7",
+        "n2_move": "f7g8",
+        "n2_score": 255,
+        "n2_nodes": 369597,
+        "n2_time": 0.7827371999737807,
+        "n3_move": "f7g8",
+        "n3_score": 255,
+        "n3_nodes": 132662,
+        "n3_time": 0.38690139999380335,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2362,
+          "reduced_moves": 2362,
+          "researches": 4,
+          "cutoffs": 3
+        }
+      },
+      {
+        "id": "divergence_p25_black_ply4",
+        "fen": "r1bqk2r/pppp1ppp/2nb1n2/4p3/B3P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 7 5",
+        "n2_move": "d6b4",
+        "n2_score": -10,
+        "n2_nodes": 364879,
+        "n2_time": 1.4618829999817535,
+        "n3_move": "d6b4",
+        "n3_score": -10,
+        "n3_nodes": 158143,
+        "n3_time": 0.5387623999849893,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2058,
+          "reduced_moves": 2058,
+          "researches": 13,
+          "cutoffs": 4
+        }
+      },
+      {
+        "id": "divergence_p32_black_ply6",
+        "fen": "r1bqkb1r/pp1n1ppp/3p1n2/1B2p3/4P1P1/2N5/PPP1NP1P/R1BQK2R b KQkq - 1 8",
+        "n2_move": "f6g4",
+        "n2_score": 65,
+        "n2_nodes": 185335,
+        "n2_time": 0.6563314999802969,
+        "n3_move": "f6g4",
+        "n3_score": 75,
+        "n3_nodes": 79888,
+        "n3_time": 0.3867790999938734,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 473,
+          "reduced_moves": 473,
+          "researches": 5,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "divergence_p36_black_ply2",
+        "fen": "rnbqk1nr/ppp2ppp/4p3/3pP3/1b1P4/2N5/PPP2PPP/R1BQKBNR b KQkq - 0 4",
+        "n2_move": "g8e7",
+        "n2_score": -30,
+        "n2_nodes": 485044,
+        "n2_time": 2.4162060000235215,
+        "n3_move": "b4c3",
+        "n3_score": -20,
+        "n3_nodes": 154436,
+        "n3_time": 0.44661460001952946,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 2624,
+          "reduced_moves": 2624,
+          "researches": 68,
+          "cutoffs": 11
+        }
+      },
+      {
+        "id": "divergence_p37_black_ply4",
+        "fen": "rnbqkbnr/pp2pppp/2p5/8/3PB3/8/PPP2PPP/RNBQK1NR b KQkq - 0 4",
+        "n2_move": "g8f6",
+        "n2_score": -70,
+        "n2_nodes": 730712,
+        "n2_time": 3.3631786999758333,
+        "n3_move": "g8f6",
+        "n3_score": -70,
+        "n3_nodes": 263166,
+        "n3_time": 1.0703253999818116,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1956,
+          "reduced_moves": 1956,
+          "researches": 45,
+          "cutoffs": 12
+        }
+      },
+      {
+        "id": "divergence_p39_white_ply5",
+        "fen": "rnbqkb1r/1pp2ppp/p3p3/2Pp4/3P2n1/2N1B3/PP2PPPP/R2QKBNR w KQkq - 2 6",
+        "n2_move": "e3f4",
+        "n2_score": 0,
+        "n2_nodes": 353790,
+        "n2_time": 1.6764495000243187,
+        "n3_move": "e3f4",
+        "n3_score": 0,
+        "n3_nodes": 161717,
+        "n3_time": 0.6872879000147805,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2095,
+          "reduced_moves": 2095,
+          "researches": 7,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "divergence_p45_white_ply3",
+        "fen": "rnbqk2r/pppp1ppp/4pn2/b7/2PP4/P1N5/1P2PPPP/R1BQKBNR w KQkq - 1 5",
+        "n2_move": "b2b4",
+        "n2_score": 175,
+        "n2_nodes": 47576,
+        "n2_time": 0.09872539999196306,
+        "n3_move": "b2b4",
+        "n3_score": 175,
+        "n3_nodes": 21436,
+        "n3_time": 0.07006410002941266,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 367,
+          "reduced_moves": 367,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p45_black_ply2",
+        "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N1P3/PP3PPP/R1BQKBNR b KQkq - 0 4",
+        "n2_move": "b4c3",
+        "n2_score": 20,
+        "n2_nodes": 378835,
+        "n2_time": 1.4309500000090338,
+        "n3_move": "b4c3",
+        "n3_score": 20,
+        "n3_nodes": 165597,
+        "n3_time": 0.5269491000217386,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2469,
+          "reduced_moves": 2469,
+          "researches": 58,
+          "cutoffs": 8
+        }
+      },
+      {
+        "id": "divergence_p54_white_ply6",
+        "fen": "r1bqk2r/ppppbppp/7n/nP2N3/2B1P3/8/P1PP1PPP/RNBQK2R w KQkq - 1 7",
+        "n2_move": "c4e2",
+        "n2_score": 120,
+        "n2_nodes": 535580,
+        "n2_time": 1.596531799994409,
+        "n3_move": "c4e2",
+        "n3_score": 120,
+        "n3_nodes": 200157,
+        "n3_time": 0.6271365000284277,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 3318,
+          "reduced_moves": 3318,
+          "researches": 67,
+          "cutoffs": 35
+        }
+      },
+      {
+        "id": "divergence_p54_black_ply3",
+        "fen": "r1bqk1nr/pppp1ppp/2n5/4p3/1bB1P3/5N2/PBPP1PPP/RN1QK2R b KQkq - 1 5",
+        "n2_move": "d7d6",
+        "n2_score": 80,
+        "n2_nodes": 616745,
+        "n2_time": 1.836875599983614,
+        "n3_move": "d7d6",
+        "n3_score": 80,
+        "n3_nodes": 174342,
+        "n3_time": 0.25133580004330724,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2517,
+          "reduced_moves": 2517,
+          "researches": 17,
+          "cutoffs": 5
+        }
+      },
+      {
+        "id": "divergence_p61_black_ply10",
+        "fen": "r1bqk2r/1p1p1p2/2n2np1/p1b1p1Bp/P1B1P3/2N2N2/1PP2PPP/R2Q1RK1 b kq - 1 10",
+        "n2_move": "c5e7",
+        "n2_score": -70,
+        "n2_nodes": 600328,
+        "n2_time": 0.5893370000412688,
+        "n3_move": "c5e7",
+        "n3_score": -70,
+        "n3_nodes": 308737,
+        "n3_time": 0.22519989998545498,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2586,
+          "reduced_moves": 2586,
+          "researches": 5,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "divergence_p67_black_ply11",
+        "fen": "r2qkb1r/1p1nppp1/4bn2/p1Pp3p/Q2P1B2/2NB4/PP3PPP/R3K1NR b KQkq - 1 9",
+        "n2_move": "h5h4",
+        "n2_score": -80,
+        "n2_nodes": 827900,
+        "n2_time": 0.7043528000358492,
+        "n3_move": "h5h4",
+        "n3_score": -80,
+        "n3_nodes": 338162,
+        "n3_time": 1.6451464000274427,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2850,
+          "reduced_moves": 2850,
+          "researches": 66,
+          "cutoffs": 27
+        }
+      },
+      {
+        "id": "divergence_p73_black_ply4",
+        "fen": "rn1qk2r/ppp1ppbp/3pbnp1/5P2/3PP3/2NB4/PPP3PP/R1BQK1NR b KQkq - 0 6",
+        "n2_move": "g6f5",
+        "n2_score": -65,
+        "n2_nodes": 190205,
+        "n2_time": 0.443198399967514,
+        "n3_move": "g6f5",
+        "n3_score": -65,
+        "n3_nodes": 66934,
+        "n3_time": 0.15562089998275042,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2155,
+          "reduced_moves": 2155,
+          "researches": 2,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p76_white_ply9",
+        "fen": "r1bqkb1r/pp3ppp/2n5/2Pp4/6n1/2N1BN2/PP2PPPP/R2QKB1R w KQkq - 5 8",
+        "n2_move": "d1d5",
+        "n2_score": 175,
+        "n2_nodes": 483053,
+        "n2_time": 1.5877441000193357,
+        "n3_move": "d1d5",
+        "n3_score": 175,
+        "n3_nodes": 188736,
+        "n3_time": 0.6460468000150286,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2766,
+          "reduced_moves": 2766,
+          "researches": 17,
+          "cutoffs": 4
+        }
+      },
+      {
+        "id": "divergence_p76_black_ply2",
+        "fen": "rnbqkbnr/pp3ppp/4p3/2Pp4/2P5/2N5/PP2PPPP/R1BQKBNR b KQkq - 0 4",
+        "n2_move": "d5d4",
+        "n2_score": -45,
+        "n2_nodes": 322914,
+        "n2_time": 0.9701206999598071,
+        "n3_move": "g8f6",
+        "n3_score": -50,
+        "n3_nodes": 107181,
+        "n3_time": 0.5176171999773942,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 2198,
+          "reduced_moves": 2198,
+          "researches": 1,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "divergence_p78_white_ply5",
+        "fen": "r1bq1rk1/p1pnbpp1/1p2pn1p/8/P1pP3B/2NBPN2/1P3PPP/R2QK2R w KQ - 0 10",
+        "n2_move": "d3c4",
+        "n2_score": 30,
+        "n2_nodes": 372804,
+        "n2_time": 1.2968455999507569,
+        "n3_move": "d3c4",
+        "n3_score": 30,
+        "n3_nodes": 173276,
+        "n3_time": 0.47808099997928366,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 3407,
+          "reduced_moves": 3407,
+          "researches": 6,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "divergence_p98_black_ply8",
+        "fen": "r2qkb1r/pppnpp1p/5np1/3p1bN1/5P2/2NPP3/PPP1B1PP/R1BQK2R b KQkq - 0 7",
+        "n2_move": "h7h6",
+        "n2_score": -10,
+        "n2_nodes": 395594,
+        "n2_time": 1.1986937000183389,
+        "n3_move": "h7h6",
+        "n3_score": -10,
+        "n3_nodes": 164145,
+        "n3_time": 0.6055614000069909,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2387,
+          "reduced_moves": 2387,
+          "researches": 22,
+          "cutoffs": 6
+        }
+      },
+      {
+        "id": "divergence_p99_white_ply5",
+        "fen": "r1bqkb1r/pp3ppp/2n1pn2/2ppB3/8/1P2PN2/P1PP1PPP/RN1QKB1R w KQkq - 2 6",
+        "n2_move": "f1b5",
+        "n2_score": -40,
+        "n2_nodes": 224725,
+        "n2_time": 1.2047088000108488,
+        "n3_move": "f1b5",
+        "n3_score": -40,
+        "n3_nodes": 121730,
+        "n3_time": 0.6509530000039376,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2215,
+          "reduced_moves": 2215,
+          "researches": 10,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p99_black_ply2",
+        "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/8/1P2PN2/PBPP1PPP/RN1QKB1R b KQkq - 1 4",
+        "n2_move": "f8b4",
+        "n2_score": 15,
+        "n2_nodes": 813846,
+        "n2_time": 3.9976170999580063,
+        "n3_move": "b8c6",
+        "n3_score": 20,
+        "n3_nodes": 396883,
+        "n3_time": 1.5124540000106208,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 2829,
+          "reduced_moves": 2829,
+          "researches": 127,
+          "cutoffs": 15
+        }
+      },
+      {
+        "id": "divergence_p100_white_ply3",
+        "fen": "rnbqk2r/ppp1bppp/4pn2/3P4/4P3/2N5/PP1P1PPP/R1BQKBNR w KQkq - 1 5",
+        "n2_move": "f1c4",
+        "n2_score": 100,
+        "n2_nodes": 448848,
+        "n2_time": 1.695953999995254,
+        "n3_move": "f1c4",
+        "n3_score": 100,
+        "n3_nodes": 158164,
+        "n3_time": 0.5403134999796748,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2431,
+          "reduced_moves": 2431,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "divergence_p100_black_ply4",
+        "fen": "rnbqkb1r/ppp2ppp/5n2/3p4/Q3P3/2N5/PP1P1PPP/R1B1KBNR b KQkq - 1 5",
+        "n2_move": "c8d7",
+        "n2_score": 40,
+        "n2_nodes": 175735,
+        "n2_time": 0.5574047000263818,
+        "n3_move": "c8d7",
+        "n3_score": 55,
+        "n3_nodes": 50988,
+        "n3_time": 0.2174712999840267,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 756,
+          "reduced_moves": 756,
+          "researches": 6,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "control_p7_white_ply3",
+        "fen": "rnbqkbnr/pppppppp/8/4P3/8/8/PPPP1PPP/RNBQKBNR w KQkq - 1 3",
+        "n2_move": "g1f3",
+        "n2_score": 70,
+        "n2_nodes": 431568,
+        "n2_time": 1.2383227000245824,
+        "n3_move": "g1f3",
+        "n3_score": 90,
+        "n3_nodes": 146243,
+        "n3_time": 0.279096300015226,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1920,
+          "reduced_moves": 1920,
+          "researches": 33,
+          "cutoffs": 7
+        }
+      },
+      {
+        "id": "control_p7_black_ply4",
+        "fen": "rnbqkb1r/pppppppp/8/3nP3/8/5N2/PPPP1PPP/RNBQKB1R b KQkq - 2 3",
+        "n2_move": "b8c6",
+        "n2_score": -35,
+        "n2_nodes": 200931,
+        "n2_time": 0.5614014000166208,
+        "n3_move": "b8c6",
+        "n3_score": -30,
+        "n3_nodes": 74229,
+        "n3_time": 0.19081770000047982,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1341,
+          "reduced_moves": 1341,
+          "researches": 6,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "control_p8_white_ply3",
+        "fen": "rnbqkbnr/ppp1pp1p/3p2p1/8/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+        "n2_move": "b1c3",
+        "n2_score": 80,
+        "n2_nodes": 621372,
+        "n2_time": 1.9854125999845564,
+        "n3_move": "b1c3",
+        "n3_score": 80,
+        "n3_nodes": 307590,
+        "n3_time": 1.0658131999662146,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 3053,
+          "reduced_moves": 3053,
+          "researches": 111,
+          "cutoffs": 17
+        }
+      },
+      {
+        "id": "control_p14_white_ply3",
+        "fen": "rnbqkbnr/pp1p1ppp/4p3/2p5/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 0 3",
+        "n2_move": "g1f3",
+        "n2_score": 20,
+        "n2_nodes": 302612,
+        "n2_time": 1.2965371999889612,
+        "n3_move": "g1f3",
+        "n3_score": 40,
+        "n3_nodes": 144653,
+        "n3_time": 0.5173663999885321,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1647,
+          "reduced_moves": 1647,
+          "researches": 48,
+          "cutoffs": 6
+        }
+      },
+      {
+        "id": "control_p31_white_ply7",
+        "fen": "r1bqkb1r/p3pp1p/2pp1np1/8/4P3/2NB4/PPP2PPP/R1BQK2R w KQkq - 0 8",
+        "n2_move": "c1g5",
+        "n2_score": 60,
+        "n2_nodes": 1571316,
+        "n2_time": 7.915203899960034,
+        "n3_move": "c1e3",
+        "n3_score": 70,
+        "n3_nodes": 437857,
+        "n3_time": 1.9639167999848723,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 4012,
+          "reduced_moves": 4012,
+          "researches": 74,
+          "cutoffs": 28
+        }
+      },
+      {
+        "id": "control_p40_black_ply4",
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/4P3/PPQ2PPP/RNB1KBNR b KQkq - 2 4",
+        "n2_move": "b8a6",
+        "n2_score": -25,
+        "n2_nodes": 720304,
+        "n2_time": 2.96961079997709,
+        "n3_move": "b8a6",
+        "n3_score": 0,
+        "n3_nodes": 287612,
+        "n3_time": 1.2038158000214025,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2307,
+          "reduced_moves": 2307,
+          "researches": 43,
+          "cutoffs": 3
+        }
+      },
+      {
+        "id": "val_01_tactical_fork",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "n2_move": "c4f7",
+        "n2_score": -320,
+        "n2_nodes": 1541350,
+        "n2_time": 11.629985800012946,
+        "n3_move": "c4f7",
+        "n3_score": -320,
+        "n3_nodes": 418268,
+        "n3_time": 3.356868200004101,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 7090,
+          "reduced_moves": 7090,
+          "researches": 153,
+          "cutoffs": 36
+        }
+      },
+      {
+        "id": "val_02_quiet_positional",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "n2_move": "d1c2",
+        "n2_score": -15,
+        "n2_nodes": 664293,
+        "n2_time": 5.496959100011736,
+        "n3_move": "d1c2",
+        "n3_score": -15,
+        "n3_nodes": 250420,
+        "n3_time": 1.1255093999789096,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 3317,
+          "reduced_moves": 3317,
+          "researches": 9,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "val_03_king_safety",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "n2_move": "e4c3",
+        "n2_score": 340,
+        "n2_nodes": 630542,
+        "n2_time": 2.5999733000062406,
+        "n3_move": "e4c3",
+        "n3_score": 345,
+        "n3_nodes": 164175,
+        "n3_time": 0.5756229000398889,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2795,
+          "reduced_moves": 2795,
+          "researches": 1,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_04_pawn_endgame",
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "n2_move": "e3f2",
+        "n2_score": 0,
+        "n2_nodes": 4493,
+        "n2_time": 0.004393099981825799,
+        "n3_move": "e3f2",
+        "n3_score": 10,
+        "n3_nodes": 3573,
+        "n3_time": 0.00713679997716099,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 135,
+          "reduced_moves": 135,
+          "researches": 22,
+          "cutoffs": 9
+        }
+      },
+      {
+        "id": "val_05_rook_endgame",
+        "fen": "8/8/4k3/R7/8/8/2K4r/8 w - - 1 1",
+        "n2_move": "c2b1",
+        "n2_score": 10,
+        "n2_nodes": 34851,
+        "n2_time": 0.06396410003071651,
+        "n3_move": "c2b1",
+        "n3_score": 10,
+        "n3_nodes": 28003,
+        "n3_time": 0.04461839998839423,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 488,
+          "reduced_moves": 488,
+          "researches": 27,
+          "cutoffs": 15
+        }
+      },
+      {
+        "id": "val_06_minor_piece_endgame",
+        "fen": "8/8/4k3/3b4/8/4B3/4K3/8 w - - 0 1",
+        "n2_move": "e2f1",
+        "n2_score": 0,
+        "n2_nodes": 119714,
+        "n2_time": 0.1844985000207089,
+        "n3_move": "e2f1",
+        "n3_score": 0,
+        "n3_nodes": 86048,
+        "n3_time": 0.12175669998396188,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 1412,
+          "reduced_moves": 1412,
+          "researches": 85,
+          "cutoffs": 33
+        }
+      },
+      {
+        "id": "val_07_pawn_promotion",
+        "fen": "8/4P3/8/8/8/6k1/8/6K1 w - - 0 1",
+        "n2_move": "e7e8q",
+        "n2_score": 965,
+        "n2_nodes": 8910,
+        "n2_time": 0.01572879997547716,
+        "n3_move": "e7e8q",
+        "n3_score": 965,
+        "n3_nodes": 4879,
+        "n3_time": 0.006242799980100244,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 74,
+          "reduced_moves": 74,
+          "researches": 1,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_08_kingside_castling",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "n2_move": "d2d3",
+        "n2_score": 5,
+        "n2_nodes": 1051716,
+        "n2_time": 6.05815719999373,
+        "n3_move": "d2d3",
+        "n3_score": 10,
+        "n3_nodes": 257922,
+        "n3_time": 1.0396160999662243,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 2858,
+          "reduced_moves": 2858,
+          "researches": 13,
+          "cutoffs": 6
+        }
+      },
+      {
+        "id": "val_09_en_passant_execution",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "n2_move": "d5e6",
+        "n2_score": 925,
+        "n2_nodes": 1430,
+        "n2_time": 0.0016240000259131193,
+        "n3_move": "d5e6",
+        "n3_score": 925,
+        "n3_nodes": 1256,
+        "n3_time": 0.0014424999826587737,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 50,
+          "reduced_moves": 50,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_10_stalemate_avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "n2_move": "b6a6",
+        "n2_score": 0,
+        "n2_nodes": 76,
+        "n2_time": 0.0003465000190772116,
+        "n3_move": "b6a6",
+        "n3_score": 0,
+        "n3_nodes": 76,
+        "n3_time": 0.00014400004874914885,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_11_check_evasion",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 1 6",
+        "n2_move": "a7a6",
+        "n2_score": -190,
+        "n2_nodes": 430382,
+        "n2_time": 1.2452024000231177,
+        "n3_move": "d8f6",
+        "n3_score": -190,
+        "n3_nodes": 139133,
+        "n3_time": 0.5530725000426173,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 2050,
+          "reduced_moves": 2050,
+          "researches": 3,
+          "cutoffs": 2
+        }
+      },
+      {
+        "id": "val_12_repetition_sensitive",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+        "n2_move": "d7d5",
+        "n2_score": -20,
+        "n2_nodes": 242468,
+        "n2_time": 0.6883164000464603,
+        "n3_move": "b8c6",
+        "n3_score": -20,
+        "n3_nodes": 81418,
+        "n3_time": 0.152687199995853,
+        "agreed": false,
+        "telemetry": {
+          "eligible_moves": 878,
+          "reduced_moves": 878,
+          "researches": 36,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_13_fifty_move_draw_sensitive",
+        "fen": "8/8/4k3/8/8/4K3/8/8 w - - 99 50",
+        "n2_move": "e3d2",
+        "n2_score": 0,
+        "n2_nodes": 54,
+        "n2_time": 0.00010150001617148519,
+        "n3_move": "e3d2",
+        "n3_score": 0,
+        "n3_nodes": 54,
+        "n3_time": 0.00013860000763088465,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 0,
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      },
+      {
+        "id": "val_14_tactical_pin",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "n2_move": "d3h7",
+        "n2_score": 410,
+        "n2_nodes": 1343135,
+        "n2_time": 5.568653499998618,
+        "n3_move": "d3h7",
+        "n3_score": 410,
+        "n3_nodes": 392928,
+        "n3_time": 1.4722698000259697,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 4427,
+          "reduced_moves": 4427,
+          "researches": 48,
+          "cutoffs": 19
+        }
+      },
+      {
+        "id": "val_15_queen_endgame",
+        "fen": "8/8/4k3/3q4/8/4Q3/4K3/8 b - - 0 1",
+        "n2_move": "e6f7",
+        "n2_score": 0,
+        "n2_nodes": 58644,
+        "n2_time": 0.10129640001105145,
+        "n3_move": "e6f7",
+        "n3_score": 0,
+        "n3_nodes": 19922,
+        "n3_time": 0.04552499996498227,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 278,
+          "reduced_moves": 278,
+          "researches": 1,
+          "cutoffs": 1
+        }
+      },
+      {
+        "id": "val_16_discovered_attack",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "n2_move": "c3c4",
+        "n2_score": 0,
+        "n2_nodes": 692805,
+        "n2_time": 2.468606600014027,
+        "n3_move": "c3c4",
+        "n3_score": 0,
+        "n3_nodes": 230543,
+        "n3_time": 0.6655102000222541,
+        "agreed": true,
+        "telemetry": {
+          "eligible_moves": 3847,
+          "reduced_moves": 3847,
+          "researches": 7,
+          "cutoffs": 1
+        }
+      }
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 """Single-threaded alpha-beta search for Project Janus."""
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import threading
 import time
 from typing import Optional
@@ -109,6 +109,10 @@ class SearchResult:
     countermove_cutoffs: int = 0
     rfp_considered: int = 0
     rfp_cutoffs: int = 0
+    rfp_events: list[dict] = field(default_factory=list)
+    iteration_records: list[dict] = field(default_factory=list)
+    ordering_stats: dict = field(default_factory=dict)
+    ordering_events: list[dict] = field(default_factory=list)
 
 
 class SearchTimeout(Exception):
@@ -146,6 +150,10 @@ class JanusSearch:
         enable_rfp: bool = False,
         rfp_max_depth: int = 2,
         rfp_margin_per_depth: int = 120,
+        diagnostic_rfp: bool = False,
+        diagnostic_iterations: bool = False,
+        diagnostic_ordering: bool = False,
+        enable_lazy_move_selection: bool = False,
     ) -> None:
         self.time_manager = time_manager or TimeManager()
         self.eval_config = eval_config
@@ -207,6 +215,26 @@ class JanusSearch:
         self.enable_rfp = enable_rfp
         self.rfp_max_depth = rfp_max_depth
         self.rfp_margin_per_depth = rfp_margin_per_depth
+        self.diagnostic_rfp = diagnostic_rfp
+        self.rfp_events: list[dict] = []
+        self.diagnostic_iterations = diagnostic_iterations
+        self.iteration_records: list[dict] = []
+        self.diagnostic_ordering = diagnostic_ordering
+        self.enable_lazy_move_selection = enable_lazy_move_selection
+        self.lazy_sorts_deferred = 0
+        self.lazy_sorts_executed = 0
+        self.lazy_sorts_saved = 0
+        self.ordering_events: list[dict] = []
+        self.ordering_total_cutoffs = 0
+        self.first_move_cutoffs = 0
+        self.late_move_cutoffs = 0
+        self.tt_cutoffs_count = 0
+        self.killer_cutoffs = 0
+        self.countermove_cutoffs_count = 0
+        self.capture_cutoffs = 0
+        self.quiet_cutoffs = 0
+        self.total_movegen_time = 0.0
+        self.total_ordering_time = 0.0
         self.countermoves: list[list[Optional[chess.Move]]] = [
             [None] * 64 for _ in range(64)
         ]
@@ -260,6 +288,73 @@ class JanusSearch:
         self.tt_clears = 0
         self.deadline: Optional[float] = None
         self.stop_event: Optional[threading.Event] = None
+
+    def flush_ordering_telemetry(self, filepath: str) -> int:
+        """Flush recorded move ordering telemetry records to a JSONL file and clear buffer."""
+        import json
+        from pathlib import Path
+        p = Path(filepath)
+        p.parent.mkdir(parents=True, exist_ok=True)
+        count = len(self.ordering_events)
+        with open(p, "a", encoding="utf-8") as f:
+            for rec in self.ordering_events:
+                f.write(json.dumps(rec) + "\n")
+        self.ordering_events.clear()
+        return count
+
+    def flush_iteration_telemetry(self, filepath: str) -> int:
+        """Flush recorded iteration telemetry records to a JSONL file and clear buffer."""
+        import json
+        from pathlib import Path
+        p = Path(filepath)
+        p.parent.mkdir(parents=True, exist_ok=True)
+        count = len(self.iteration_records)
+        with open(p, "a", encoding="utf-8") as f:
+            for rec in self.iteration_records:
+                f.write(json.dumps(rec) + "\n")
+        self.iteration_records.clear()
+        return count
+
+    def _record_iteration(
+        self, depth: int, start_t: float, end_t: float, nodes_start: int,
+        score: int, pv: list[chess.Move], completed: bool, aborted: bool,
+        abort_reason: Optional[str], published: bool, prev_depth: int, retries: int
+    ) -> None:
+        elapsed = end_t - start_t
+        nodes_consumed = self.nodes - nodes_start
+        nps = int(nodes_consumed / elapsed) if elapsed > 0 else 0
+        self.iteration_records.append({
+            "iteration_depth": depth,
+            "iteration_start_time": start_t,
+            "iteration_end_time": end_t,
+            "iteration_elapsed_s": elapsed,
+            "nodes_consumed": nodes_consumed,
+            "cumulative_nodes": self.nodes,
+            "nps": nps,
+            "best_move": pv[0].uci() if pv else None,
+            "pv": [m.uci() for m in pv],
+            "score": score,
+            "aspiration_retries": retries,
+            "completed": completed,
+            "aborted": aborted,
+            "abort_reason": abort_reason,
+            "published": published,
+            "prev_completed_depth": prev_depth,
+            "rfp_enabled": self.enable_rfp,
+        })
+
+    def flush_rfp_telemetry(self, filepath: str) -> int:
+        """Flush recorded RFP diagnostic events to a JSONL file and clear buffer."""
+        import json
+        from pathlib import Path
+        p = Path(filepath)
+        p.parent.mkdir(parents=True, exist_ok=True)
+        count = len(self.rfp_events)
+        with open(p, "a", encoding="utf-8") as f:
+            for ev in self.rfp_events:
+                f.write(json.dumps(ev) + "\n")
+        self.rfp_events.clear()
+        return count
 
     def _probe_tt(
         self, key: int, effective_depth: int
@@ -613,13 +708,100 @@ class JanusSearch:
             return moves
 
         node_see: Optional[dict[chess.Move, int]] = {} if self.enable_see_ordering else None
-        moves.sort(
-            key=lambda move: self._move_order_score(
-                board, move, tt_move, ply, node_see=node_see, prev_move=prev_move
-            ),
-            reverse=True,
-        )
+        if self.diagnostic_ordering:
+            t0 = time.perf_counter()
+            moves.sort(
+                key=lambda move: self._move_order_score(
+                    board, move, tt_move, ply, node_see=node_see, prev_move=prev_move
+                ),
+                reverse=True,
+            )
+            self.total_ordering_time += (time.perf_counter() - t0)
+        else:
+            moves.sort(
+                key=lambda move: self._move_order_score(
+                    board, move, tt_move, ply, node_see=node_see, prev_move=prev_move
+                ),
+                reverse=True,
+            )
         return moves
+
+    def _select_ordered_moves(
+        self,
+        board: chess.Board,
+        tt_move: Optional[chess.Move] = None,
+        ply: int = 0,
+        prev_move: Optional[chess.Move] = None,
+    ):
+        moves = list(board.legal_moves)
+        total_legal_count = len(moves)
+        if total_legal_count <= 1:
+            return moves, None, total_legal_count
+
+        if not self.enable_lazy_move_selection:
+            node_see: Optional[dict[chess.Move, int]] = {} if self.enable_see_ordering else None
+            if self.diagnostic_ordering:
+                t0 = time.perf_counter()
+                moves.sort(
+                    key=lambda move: self._move_order_score(
+                        board, move, tt_move, ply, node_see=node_see, prev_move=prev_move
+                    ),
+                    reverse=True,
+                )
+                self.total_ordering_time += (time.perf_counter() - t0)
+            else:
+                moves.sort(
+                    key=lambda move: self._move_order_score(
+                        board, move, tt_move, ply, node_see=node_see, prev_move=prev_move
+                    ),
+                    reverse=True,
+                )
+            return moves, None, total_legal_count
+
+        # Lazy Candidate (L1):
+        if tt_move is not None and tt_move in moves:
+            self.lazy_sorts_deferred += 1
+            rem = [m for m in moves if m != tt_move]
+            def rest_provider():
+                self.lazy_sorts_executed += 1
+                node_see: Optional[dict[chess.Move, int]] = {} if self.enable_see_ordering else None
+                if self.diagnostic_ordering:
+                    t0 = time.perf_counter()
+                    rem.sort(
+                        key=lambda move: self._move_order_score(
+                            board, move, None, ply, node_see=node_see, prev_move=prev_move
+                        ),
+                        reverse=True,
+                    )
+                    self.total_ordering_time += (time.perf_counter() - t0)
+                else:
+                    rem.sort(
+                        key=lambda move: self._move_order_score(
+                            board, move, None, ply, node_see=node_see, prev_move=prev_move
+                        ),
+                        reverse=True,
+                    )
+                return rem
+            return [tt_move], rest_provider, total_legal_count
+        else:
+            node_see: Optional[dict[chess.Move, int]] = {} if self.enable_see_ordering else None
+            if self.diagnostic_ordering:
+                t0 = time.perf_counter()
+                moves.sort(
+                    key=lambda move: self._move_order_score(
+                        board, move, None, ply, node_see=node_see, prev_move=prev_move
+                    ),
+                    reverse=True,
+                )
+                self.total_ordering_time += (time.perf_counter() - t0)
+            else:
+                moves.sort(
+                    key=lambda move: self._move_order_score(
+                        board, move, None, ply, node_see=node_see, prev_move=prev_move
+                    ),
+                    reverse=True,
+                )
+            return moves, None, total_legal_count
 
     def _quiescence(
         self,
@@ -811,7 +993,7 @@ class JanusSearch:
 
         # Reverse Futility Pruning (RFP / Static Null Move Pruning)
         if (
-            self.enable_rfp
+            (self.enable_rfp or self.diagnostic_rfp)
             and ply > 0
             and not in_check
             and depth <= self.rfp_max_depth
@@ -819,10 +1001,26 @@ class JanusSearch:
             and abs(alpha) < MATE_THRESHOLD
             and board.halfmove_clock < 140
         ):
-            self.rfp_considered += 1
+            if self.enable_rfp:
+                self.rfp_considered += 1
             static_eval = evaluate_side_to_move(board, config=self.eval_config)
             rfp_margin = self.rfp_margin_per_depth * depth
-            if static_eval - rfp_margin >= beta:
+            cutoff_eligible = (static_eval - rfp_margin >= beta)
+            if self.diagnostic_rfp:
+                self.rfp_events.append({
+                    "fen": board.fen(),
+                    "ply": ply,
+                    "depth": depth,
+                    "static_eval": static_eval,
+                    "beta": beta,
+                    "alpha": alpha,
+                    "margin": rfp_margin,
+                    "cutoff": cutoff_eligible,
+                    "reason": "static_eval_ge_beta_plus_margin" if cutoff_eligible else "below_margin",
+                    "best_move": tt_move.uci() if tt_move else None,
+                    "rfp_enabled": self.enable_rfp,
+                })
+            if self.enable_rfp and cutoff_eligible:
                 self.rfp_cutoffs += 1
                 self._store_tt(key, depth, beta, "lower", tt_move, ply)
                 return beta, []
@@ -877,18 +1075,33 @@ class JanusSearch:
         best_pv: list[chess.Move] = []
 
         prev_move = board.peek() if board.move_stack and board.peek() != chess.Move.null() else None
-        moves = self._ordered_moves(board, tt_move, ply, prev_move=prev_move)
         searched_quiets: list[chess.Move] = []
-        if not moves:
-            if in_check:
-                if extension > 0:
-                    self.check_extensions_terminal_mates += 1
-                return -MATE_SCORE + ply, []
-            return 0, []
+        if not self.enable_lazy_move_selection:
+            candidate_iter = self._ordered_moves(board, tt_move, ply, prev_move=prev_move)
+            total_legal_count = len(candidate_iter)
+            if total_legal_count == 0:
+                if in_check:
+                    if extension > 0:
+                        self.check_extensions_terminal_mates += 1
+                    return -MATE_SCORE + ply, []
+                return 0, []
+        else:
+            phase1_moves, rest_provider, total_legal_count = self._select_ordered_moves(board, tt_move, ply, prev_move=prev_move)
+            if total_legal_count == 0:
+                if in_check:
+                    if extension > 0:
+                        self.check_extensions_terminal_mates += 1
+                    return -MATE_SCORE + ply, []
+                return 0, []
+            def _lazy_iter():
+                yield from phase1_moves
+                if rest_provider is not None:
+                    yield from rest_provider()
+            candidate_iter = _lazy_iter()
 
         moves_searched = 0
 
-        for move in moves:
+        for move in candidate_iter:
             is_capture = board.is_capture(move)
             is_promotion = move.promotion is not None
 
@@ -990,6 +1203,33 @@ class JanusSearch:
             alpha = max(alpha, score)
             if alpha >= beta:
                 self.beta_cutoffs += 1
+                if self.diagnostic_ordering:
+                    self.ordering_total_cutoffs += 1
+                    cutoff_idx = moves_searched - 1
+                    if cutoff_idx == 0:
+                        self.first_move_cutoffs += 1
+                    else:
+                        self.late_move_cutoffs += 1
+                    if tt_move is not None and move == tt_move:
+                        self.tt_cutoffs_count += 1
+                    if is_capture:
+                        self.capture_cutoffs += 1
+                    else:
+                        self.quiet_cutoffs += 1
+                        if ply < len(self.killers) and (move == self.killers[ply][0] or move == self.killers[ply][1]):
+                            self.killer_cutoffs += 1
+                    self.ordering_events.append({
+                        "depth": depth,
+                        "ply": ply,
+                        "legal_moves": total_legal_count,
+                        "searched_moves": moves_searched,
+                        "cutoff_index": cutoff_idx,
+                        "is_first_move": (cutoff_idx == 0),
+                        "move": move.uci(),
+                        "is_capture": is_capture,
+                        "is_tt_move": (tt_move is not None and move == tt_move),
+                    })
+
                 if eligible_for_lmr:
                     self.lmr_cutoffs += 1
                 if not is_capture and not is_promotion:
@@ -1099,6 +1339,22 @@ class JanusSearch:
         self.countermove_cutoffs = 0
         self.rfp_considered = 0
         self.rfp_cutoffs = 0
+        self.rfp_events = []
+        self.iteration_records = []
+        self.ordering_events = []
+        self.ordering_total_cutoffs = 0
+        self.first_move_cutoffs = 0
+        self.late_move_cutoffs = 0
+        self.tt_cutoffs_count = 0
+        self.killer_cutoffs = 0
+        self.countermove_cutoffs_count = 0
+        self.capture_cutoffs = 0
+        self.quiet_cutoffs = 0
+        self.total_movegen_time = 0.0
+        self.total_ordering_time = 0.0
+        self.lazy_sorts_deferred = 0
+        self.lazy_sorts_executed = 0
+        self.lazy_sorts_saved = 0
 
         legal_moves = list(board.legal_moves)
         if not legal_moves:
@@ -1138,9 +1394,27 @@ class JanusSearch:
         completed_depth = 0
 
         for depth in range(1, max_depth + 1):
+            iter_start = time.monotonic()
+            iter_nodes_start = self.nodes
+            retries = 0
+
             if self.stop_event is not None and self.stop_event.is_set():
+                if self.diagnostic_iterations:
+                    self._record_iteration(
+                        depth=depth, start_t=iter_start, end_t=time.monotonic(),
+                        nodes_start=iter_nodes_start, score=best_score, pv=best_pv,
+                        completed=False, aborted=True, abort_reason="stop_event",
+                        published=False, prev_depth=completed_depth, retries=0
+                    )
                 break
             if self.deadline is not None and time.monotonic() >= self.deadline:
+                if self.diagnostic_iterations:
+                    self._record_iteration(
+                        depth=depth, start_t=iter_start, end_t=time.monotonic(),
+                        nodes_start=iter_nodes_start, score=best_score, pv=best_pv,
+                        completed=False, aborted=True, abort_reason="timeout",
+                        published=False, prev_depth=completed_depth, retries=0
+                    )
                 break
             use_aspiration = (
                 self.enable_aspiration
@@ -1152,6 +1426,13 @@ class JanusSearch:
                 try:
                     score, pv = self._negamax(board, depth, -INF, INF, 0)
                 except SearchTimeout:
+                    if self.diagnostic_iterations:
+                        self._record_iteration(
+                            depth=depth, start_t=iter_start, end_t=time.monotonic(),
+                            nodes_start=iter_nodes_start, score=best_score, pv=best_pv,
+                            completed=False, aborted=True, abort_reason="timeout",
+                            published=False, prev_depth=completed_depth, retries=0
+                        )
                     break
             else:
                 self.aspiration_iterations += 1
@@ -1189,14 +1470,31 @@ class JanusSearch:
                         else:
                             break
                 except SearchTimeout:
+                    if self.diagnostic_iterations:
+                        self._record_iteration(
+                            depth=depth, start_t=iter_start, end_t=time.monotonic(),
+                            nodes_start=iter_nodes_start, score=best_score, pv=best_pv,
+                            completed=False, aborted=True, abort_reason="timeout",
+                            published=False, prev_depth=completed_depth, retries=retries
+                        )
                     break
 
             # Only publish results from fully completed iterations.
+            iter_end = time.monotonic()
             if pv:
                 best_pv = pv
                 best_move = pv[0]
             best_score = score
+            prev_comp = completed_depth
             completed_depth = depth
+
+            if self.diagnostic_iterations:
+                self._record_iteration(
+                    depth=depth, start_t=iter_start, end_t=iter_end,
+                    nodes_start=iter_nodes_start, score=best_score, pv=best_pv,
+                    completed=True, aborted=False, abort_reason=None,
+                    published=True, prev_depth=prev_comp, retries=retries
+                )
 
         return SearchResult(
             best_move=best_move,
@@ -1256,4 +1554,23 @@ class JanusSearch:
             countermove_cutoffs=self.countermove_cutoffs,
             rfp_considered=self.rfp_considered,
             rfp_cutoffs=self.rfp_cutoffs,
+            rfp_events=list(self.rfp_events) if self.diagnostic_rfp else [],
+            iteration_records=list(self.iteration_records) if self.diagnostic_iterations else [],
+            ordering_stats={
+                "total_cutoffs": self.ordering_total_cutoffs,
+                "first_move_cutoffs": self.first_move_cutoffs,
+                "late_move_cutoffs": self.late_move_cutoffs,
+                "first_move_cutoff_rate": (self.first_move_cutoffs / self.ordering_total_cutoffs) if self.ordering_total_cutoffs > 0 else 0.0,
+                "tt_cutoffs": self.tt_cutoffs_count,
+                "killer_cutoffs": self.killer_cutoffs,
+                "countermove_cutoffs": self.countermove_cutoffs,
+                "capture_cutoffs": self.capture_cutoffs,
+                "quiet_cutoffs": self.quiet_cutoffs,
+                "total_ordering_time_s": self.total_ordering_time,
+                "lazy_selection_enabled": self.enable_lazy_move_selection,
+                "lazy_sorts_deferred": self.lazy_sorts_deferred,
+                "lazy_sorts_executed": self.lazy_sorts_executed,
+                "lazy_sorts_saved": self.lazy_sorts_deferred - self.lazy_sorts_executed,
+            } if self.diagnostic_ordering else {},
+            ordering_events=list(self.ordering_events) if self.diagnostic_ordering else [],
         )

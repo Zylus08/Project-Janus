@@ -1,0 +1,74 @@
+{
+  "Full_K0": {
+    "config": "Full_K0",
+    "depth": 4,
+    "total_nodes": 405197,
+    "total_time_s": 66.3,
+    "nps": 6111,
+    "total_cutoffs": 26634,
+    "first_move_cutoffs": 21594,
+    "first_move_cutoff_rate": 0.8108,
+    "total_ordering_time_s": 5.547,
+    "ordering_time_pct": 8.37
+  },
+  "Candidate_L1": {
+    "config": "Candidate_L1",
+    "depth": 4,
+    "total_nodes": 407705,
+    "total_time_s": 75.893,
+    "nps": 5372,
+    "total_cutoffs": 26923,
+    "first_move_cutoffs": 21747,
+    "first_move_cutoff_rate": 0.8077,
+    "total_ordering_time_s": 5.614,
+    "ordering_time_pct": 7.4
+  },
+  "No_TT_Ordering": {
+    "config": "No_TT_Ordering",
+    "depth": 4,
+    "total_nodes": 552585,
+    "total_time_s": 100.768,
+    "nps": 5483,
+    "total_cutoffs": 33565,
+    "first_move_cutoffs": 25267,
+    "first_move_cutoff_rate": 0.7528,
+    "total_ordering_time_s": 8.775,
+    "ordering_time_pct": 8.71
+  },
+  "No_Killers": {
+    "config": "No_Killers",
+    "depth": 4,
+    "total_nodes": 413939,
+    "total_time_s": 72.651,
+    "nps": 5697,
+    "total_cutoffs": 26698,
+    "first_move_cutoffs": 21355,
+    "first_move_cutoff_rate": 0.7999,
+    "total_ordering_time_s": 4.687,
+    "ordering_time_pct": 6.45
+  },
+  "No_History": {
+    "config": "No_History",
+    "depth": 4,
+    "total_nodes": 412118,
+    "total_time_s": 19.829,
+    "nps": 20783,
+    "total_cutoffs": 26750,
+    "first_move_cutoffs": 21625,
+    "first_move_cutoff_rate": 0.8084,
+    "total_ordering_time_s": 1.552,
+    "ordering_time_pct": 7.83
+  },
+  "With_Countermoves": {
+    "config": "With_Countermoves",
+    "depth": 4,
+    "total_nodes": 405120,
+    "total_time_s": 19.746,
+    "nps": 20516,
+    "total_cutoffs": 26633,
+    "first_move_cutoffs": 21591,
+    "first_move_cutoff_rate": 0.8107,
+    "total_ordering_time_s": 1.78,
+    "ordering_time_pct": 9.01
+  }
+}

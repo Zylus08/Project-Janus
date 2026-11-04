@@ -1,0 +1,72 @@
+{
+  "milestone": "v0.49",
+  "title": "Compiled Move Picker, History Optimization & Search-Performance Validation",
+  "parent_commit": "6b46eb4",
+  "branch": "v0.3-benchmark-harness",
+  "timestamp": "2026-11-04T03:53:00+05:30",
+  "environment": {
+    "os": "Windows 11 AMD64 (10.0.26200-SP0)",
+    "python": "3.13.2 64-bit",
+    "cpu_logical_cores": 16,
+    "compiler": "Microsoft (R) C/C++ Optimizing Compiler 19.43.34809 for x64",
+    "stockfish": {
+      "path": "E:/ChessXML/tools/stockfish/stockfish.exe",
+      "sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "version": "Stockfish 19"
+    }
+  },
+  "configurations": {
+    "K0": {
+      "description": "Production Baseline (Frozen Reference)",
+      "enable_lazy_move_selection": false,
+      "enable_rfp": false
+    },
+    "L1": {
+      "description": "Lazy Move Selection Reference (TT Immediate Yield)",
+      "enable_lazy_move_selection": true,
+      "enable_rfp": false
+    },
+    "N1": {
+      "description": "Native C DLL Move Picker Kernel via ctypes",
+      "binary": "analysis/v0.49/native/move_picker.dll",
+      "abi_version": 4901
+    },
+    "H1": {
+      "description": "Flat 1D 4096-element History Array"
+    },
+    "H2": {
+      "description": "Stage-Separated Lazy History Scoring"
+    },
+    "K1": {
+      "description": "Multi-Stage Lazy Picker with Killer Priority"
+    }
+  },
+  "regression_tests": {
+    "total_tests": 473,
+    "passed": 473,
+    "failed": 0,
+    "duration_seconds": 74.536
+  },
+  "deliverables": {
+    "BASELINE_FREEZE": "analysis/v0.49/BASELINE_FREEZE.md",
+    "COMPILED_MOVE_PICKER_FEASIBILITY": "analysis/v0.49/COMPILED_MOVE_PICKER_FEASIBILITY.md",
+    "NATIVE_IMPLEMENTATION_AUDIT": "analysis/v0.49/NATIVE_IMPLEMENTATION_AUDIT.md",
+    "NATIVE_CORRECTNESS_QUALIFICATION": "analysis/v0.49/NATIVE_CORRECTNESS_QUALIFICATION.md",
+    "NATIVE_PERFORMANCE": "analysis/v0.49/NATIVE_PERFORMANCE.md",
+    "HISTORY_OPTIMIZATION": "analysis/v0.49/HISTORY_OPTIMIZATION.md",
+    "KILLER_INTEGRATION_ANALYSIS": "analysis/v0.49/KILLER_INTEGRATION_ANALYSIS.md",
+    "FIXED_TIME_VALIDATION": "analysis/v0.49/FIXED_TIME_VALIDATION.md",
+    "MATCH_QUALIFICATION": "analysis/v0.49/MATCH_QUALIFICATION.md",
+    "FINAL_DECISION": "analysis/v0.49/FINAL_DECISION.md",
+    "REPORT": "docs/v0.49_report.md"
+  },
+  "final_disposition": {
+    "outcome_category": "Category B",
+    "description": "Efficiency Improvement Retained, Strength Unconfirmed (K0 default maintained, L1 experimental)",
+    "production_configuration": {
+      "enable_lazy_move_selection": false,
+      "enable_rfp": false
+    }
+  }
+}
+

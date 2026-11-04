@@ -1,0 +1,51 @@
+game,pair,white,black,result,termination_reason,plies,k0_points,l1_points,opening_id,opening_name,duration_seconds,mean_white_depth,mean_black_depth
+1,1,Janus-K0,Janus-L1,0-1,checkmate_black_wins,50,0.0,1.0,e4_e5_open_game,King's Pawn Game,3.93,1.2,1.0
+2,1,Janus-L1,Janus-K0,0-1,checkmate_black_wins,66,1.0,0.0,e4_e5_open_game,King's Pawn Game,4.87,1.12,1.0
+3,2,Janus-K0,Janus-L1,1-0,checkmate_white_wins,71,1.0,0.0,e4_c5_sicilian_defense,Sicilian Defense,4.85,1.5,1.77
+4,2,Janus-L1,Janus-K0,1-0,checkmate_white_wins,47,0.0,1.0,e4_c5_sicilian_defense,Sicilian Defense,3.57,1.46,1.78
+5,3,Janus-K0,Janus-L1,0-1,checkmate_black_wins,54,0.0,1.0,e4_e6_french_defense,French Defense,4.07,1.56,1.63
+6,3,Janus-L1,Janus-K0,0-1,checkmate_black_wins,54,1.0,0.0,e4_e6_french_defense,French Defense,4.03,1.52,1.59
+7,4,Janus-K0,Janus-L1,0-1,checkmate_black_wins,74,0.0,1.0,e4_c6_caro_kann,Caro-Kann Defense,5.43,2.0,1.73
+8,4,Janus-L1,Janus-K0,0-1,checkmate_black_wins,152,1.0,0.0,e4_c6_caro_kann,Caro-Kann Defense,9.61,1.38,1.55
+9,5,Janus-K0,Janus-L1,1-0,checkmate_white_wins,107,1.0,0.0,e4_d6_pirc_defense,Pirc Defense,7.31,1.31,1.79
+10,5,Janus-L1,Janus-K0,1-0,checkmate_white_wins,69,0.0,1.0,e4_d6_pirc_defense,Pirc Defense,5.09,1.31,1.56
+11,6,Janus-K0,Janus-L1,1/2-1/2,draw_fivefold_repetition,148,0.5,0.5,e4_d5_scandinavian,Scandinavian Defense,9.91,1.62,1.26
+12,6,Janus-L1,Janus-K0,1/2-1/2,max_plies_draw,160,0.5,0.5,e4_d5_scandinavian,Scandinavian Defense,10.1,1.31,1.5
+13,7,Janus-K0,Janus-L1,0-1,checkmate_black_wins,94,0.0,1.0,e4_Nf6_alekhine,Alekhine Defense,6.72,1.32,1.3
+14,7,Janus-L1,Janus-K0,0-1,checkmate_black_wins,70,1.0,0.0,e4_Nf6_alekhine,Alekhine Defense,5.25,1.4,1.4
+15,8,Janus-K0,Janus-L1,1-0,checkmate_white_wins,75,1.0,0.0,e4_g6_modern_defense,Modern Defense,5.51,1.37,1.49
+16,8,Janus-L1,Janus-K0,1-0,checkmate_white_wins,65,0.0,1.0,e4_g6_modern_defense,Modern Defense,4.98,1.27,1.56
+17,9,Janus-K0,Janus-L1,0-1,checkmate_black_wins,100,0.0,1.0,d4_d5_closed_game,Queen's Pawn Game,6.93,1.34,1.28
+18,9,Janus-L1,Janus-K0,0-1,checkmate_black_wins,120,1.0,0.0,d4_d5_closed_game,Queen's Pawn Game,7.96,1.65,1.42
+19,10,Janus-K0,Janus-L1,0-1,checkmate_black_wins,114,0.0,1.0,d4_Nf6_indian_defense,Indian Defense,7.66,1.35,1.21
+20,10,Janus-L1,Janus-K0,0-1,checkmate_black_wins,74,1.0,0.0,d4_Nf6_indian_defense,Indian Defense,5.43,1.51,1.41
+21,11,Janus-K0,Janus-L1,1-0,checkmate_white_wins,81,1.0,0.0,d4_f5_dutch_defense,Dutch Defense,5.79,1.46,1.62
+22,11,Janus-L1,Janus-K0,1/2-1/2,max_plies_draw,160,0.5,0.5,d4_f5_dutch_defense,Dutch Defense,10.06,1.64,1.59
+23,12,Janus-K0,Janus-L1,0-1,checkmate_black_wins,126,0.0,1.0,d4_e6_horwitz_defense,Horwitz Defense,8.28,1.63,1.48
+24,12,Janus-L1,Janus-K0,0-1,checkmate_black_wins,66,1.0,0.0,d4_e6_horwitz_defense,Horwitz Defense,4.91,1.48,1.39
+25,13,Janus-K0,Janus-L1,0-1,checkmate_black_wins,48,0.0,1.0,c4_e5_english_reversed_sicilian,English (Reversed Sicilian),3.59,0.96,1.17
+26,13,Janus-L1,Janus-K0,0-1,checkmate_black_wins,76,1.0,0.0,c4_e5_english_reversed_sicilian,English (Reversed Sicilian),5.73,1.29,1.16
+27,14,Janus-K0,Janus-L1,1-0,checkmate_white_wins,39,1.0,0.0,c4_c5_english_symmetrical,English (Symmetrical),2.92,1.6,1.58
+28,14,Janus-L1,Janus-K0,1-0,checkmate_white_wins,93,0.0,1.0,c4_c5_english_symmetrical,English (Symmetrical),6.79,1.49,1.52
+29,15,Janus-K0,Janus-L1,0-1,checkmate_black_wins,110,0.0,1.0,c4_Nf6_english_anglo_indian,English (Anglo-Indian),7.48,1.73,1.49
+30,15,Janus-L1,Janus-K0,0-1,checkmate_black_wins,138,1.0,0.0,c4_Nf6_english_anglo_indian,English (Anglo-Indian),8.92,1.46,1.48
+31,16,Janus-K0,Janus-L1,0-1,checkmate_black_wins,78,0.0,1.0,c4_e6_english_agincourt,English (Agincourt Defense),5.8,1.33,1.46
+32,16,Janus-L1,Janus-K0,1/2-1/2,max_plies_draw,160,0.5,0.5,c4_e6_english_agincourt,English (Agincourt Defense),10.02,1.77,1.6
+33,17,Janus-K0,Janus-L1,1/2-1/2,max_plies_draw,160,0.5,0.5,Nf3_d5_reti_opening,Reti Opening (1.Nf3 d5),10.01,1.65,2.09
+34,17,Janus-L1,Janus-K0,1-0,checkmate_white_wins,143,0.0,1.0,Nf3_d5_reti_opening,Reti Opening (1.Nf3 d5),9.17,1.28,1.34
+35,18,Janus-K0,Janus-L1,0-1,checkmate_black_wins,84,0.0,1.0,Nf3_Nf6_reti_symmetrical,Reti Opening (1.Nf3 Nf6),6.05,1.55,1.45
+36,18,Janus-L1,Janus-K0,0-1,checkmate_black_wins,138,1.0,0.0,Nf3_Nf6_reti_symmetrical,Reti Opening (1.Nf3 Nf6),8.94,1.75,1.75
+37,19,Janus-K0,Janus-L1,1-0,checkmate_white_wins,149,1.0,0.0,Nf3_c5_reti_anglo_slav,Reti Opening (1.Nf3 c5),9.49,1.52,1.55
+38,19,Janus-L1,Janus-K0,0-1,checkmate_black_wins,102,1.0,0.0,Nf3_c5_reti_anglo_slav,Reti Opening (1.Nf3 c5),7.03,1.55,1.55
+39,20,Janus-K0,Janus-L1,0-1,checkmate_black_wins,66,0.0,1.0,b3_e5_nimzo_larsen,Nimzo-Larsen Attack,5.1,1.36,1.27
+40,20,Janus-L1,Janus-K0,0-1,checkmate_black_wins,56,1.0,0.0,b3_e5_nimzo_larsen,Nimzo-Larsen Attack,4.34,1.21,1.25
+41,21,Janus-K0,Janus-L1,0-1,checkmate_black_wins,54,0.0,1.0,ruy_lopez_morphy,Ruy Lopez (Morphy Defense),4.29,1.33,1.19
+42,21,Janus-L1,Janus-K0,0-1,checkmate_black_wins,62,1.0,0.0,ruy_lopez_morphy,Ruy Lopez (Morphy Defense),4.65,1.42,1.29
+43,22,Janus-K0,Janus-L1,1-0,checkmate_white_wins,49,1.0,0.0,ruy_lopez_berlin,Ruy Lopez (Berlin Defense),3.72,1.36,1.5
+44,22,Janus-L1,Janus-K0,1-0,checkmate_white_wins,49,0.0,1.0,ruy_lopez_berlin,Ruy Lopez (Berlin Defense),3.67,1.44,1.54
+45,23,Janus-K0,Janus-L1,0-1,checkmate_black_wins,118,0.0,1.0,italian_giuoco_piano,Giuoco Piano,7.88,1.63,1.47
+46,23,Janus-L1,Janus-K0,0-1,checkmate_black_wins,120,1.0,0.0,italian_giuoco_piano,Giuoco Piano,7.98,1.62,1.32
+47,24,Janus-K0,Janus-L1,1-0,checkmate_white_wins,45,1.0,0.0,italian_two_knights,Two Knights Defense,3.36,1.17,1.27
+48,24,Janus-L1,Janus-K0,1/2-1/2,max_plies_draw,160,0.5,0.5,italian_two_knights,Two Knights Defense,10.05,1.62,1.4
+49,25,Janus-K0,Janus-L1,1-0,checkmate_white_wins,45,1.0,0.0,four_knights_game,Four Knights Game,3.39,1.13,1.27
+50,25,Janus-L1,Janus-K0,0-1,checkmate_black_wins,132,1.0,0.0,four_knights_game,Four Knights Game,8.56,1.08,1.11

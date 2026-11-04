@@ -1,0 +1,111 @@
+{
+  "milestone": "v0.48",
+  "title": "Adaptive Move Ordering, TT Utilization & Search-Quality Validation",
+  "baseline_commit": "0446ae3e414c4da2a033501a654e8cbda2e3dd74",
+  "branch": "v0.3-benchmark-harness",
+  "timestamp": "2026-11-04T02:48:00+05:30",
+  "environment": {
+    "os": "Windows 11 AMD64",
+    "python": "3.13.2 64-bit",
+    "cpu_logical_cores": 16,
+    "stockfish": {
+      "path": "E:/ChessXML/tools/stockfish/stockfish.exe",
+      "sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "version": "Stockfish 19"
+    }
+  },
+  "configurations": {
+    "K0": {
+      "description": "Production Baseline (Frozen Default)",
+      "enable_lazy_move_selection": false,
+      "enable_rfp": false
+    },
+    "L1": {
+      "description": "Lazy Move Selection Candidate (Immediate TT Cutoff)",
+      "enable_lazy_move_selection": true,
+      "enable_rfp": false
+    },
+    "L2": {
+      "description": "Stable Entry-Scored Incremental Selection Candidate (Diagnostic Reference)",
+      "enable_lazy_move_selection": false,
+      "enable_rfp": false,
+      "move_picker": "StableEntryScoredIncremental"
+    }
+  },
+  "regression_tests": {
+    "total_tests": 473,
+    "passed": 473,
+    "failed": 0,
+    "duration_seconds": 106.97
+  },
+  "phases": {
+    "Phase_A": {
+      "name": "Provenance, Baseline Freeze & Reference Verification",
+      "status": "VALIDATED",
+      "artifact": "analysis/v0.48/BASELINE_FREEZE.md"
+    },
+    "Phase_B": {
+      "name": "L1 Performance Decomposition",
+      "status": "VALIDATED",
+      "artifact": "analysis/v0.48/L1_PERFORMANCE_DECOMPOSITION.md",
+      "raw_data": "analysis/v0.48/raw/performance_decomposition_raw.json"
+    },
+    "Phase_C": {
+      "name": "Controlled TT-Path Ablation",
+      "status": "VALIDATED",
+      "artifact": "analysis/v0.48/TT_FIRST_PATH_ABLATION.md",
+      "raw_data": "analysis/v0.48/raw/tt_path_ablation_raw.json"
+    },
+    "Phase_D": {
+      "name": "History Heuristic Computational & Decision Analysis",
+      "status": "VALIDATED",
+      "artifact": "analysis/v0.48/HISTORY_HEURISTIC_ANALYSIS.md",
+      "raw_data": "analysis/v0.48/raw/history_analysis_raw.json"
+    },
+    "Phase_E": {
+      "name": "K0/L1 Search Divergence Forensics",
+      "status": "VALIDATED",
+      "artifact": "analysis/v0.48/SEARCH_DIVERGENCE_FORENSICS.md",
+      "raw_data": "analysis/v0.48/raw/divergence_inventory.json"
+    },
+    "Phase_F": {
+      "name": "Incremental Move Selection Experiments",
+      "status": "VALIDATED",
+      "artifact": "analysis/v0.48/INCREMENTAL_SELECTION_EXPERIMENTS.md",
+      "raw_data": "analysis/v0.48/raw/incremental_selection_raw.json"
+    },
+    "Phase_G": {
+      "name": "Fixed-Time Decision-Quality Validation",
+      "status": "VALIDATED",
+      "artifact": "analysis/v0.48/FIXED_TIME_DECISION_QUALITY.md",
+      "raw_data": "analysis/v0.48/raw/fixed_time_validation_raw.json"
+    },
+    "Phase_H": {
+      "name": "Match Qualification Disposition",
+      "status": "VALIDATED",
+      "artifact": "analysis/v0.48/MATCH_QUALIFICATION.md",
+      "outcome": "NO_NEW_MATCH_QUALIFIED"
+    },
+    "Phase_I": {
+      "name": "Final Optimization Decision",
+      "status": "VALIDATED",
+      "artifact": "analysis/v0.48/FINAL_DECISION.md",
+      "selected_outcome": "CATEGORY_B",
+      "description": "Efficiency Improvement Retained, Strength Unconfirmed (K0 default, L1 experimental)"
+    }
+  },
+  "final_disposition": {
+    "outcome_category": "Category B",
+    "production_default": {
+      "enable_lazy_move_selection": false,
+      "enable_rfp": false
+    },
+    "experimental_options": {
+      "L1": {
+        "enable_lazy_move_selection": true,
+        "default": false
+      }
+    }
+  }
+}
+

@@ -1,0 +1,102 @@
+{
+  "milestone": "v0.51",
+  "milestone_name": "Native Engine Integration, Repetition Semantics, Search Reliability & Controlled Strength Evaluation",
+  "branch": "v0.3-benchmark-harness",
+  "baseline_commit": "238b85b",
+  "selected_outcome": "Category A \u2014 Native N2 Superior",
+  "production_reference": "Python K0 (enable_lazy_move_selection=False, enable_rfp=False)",
+  "promoted_production_engine": "N2 Standalone Native UCI Engine (janus_native_engine.exe)",
+  "system_environment": {
+    "os": "Windows 11 AMD64 (16 logical cores)",
+    "python": "3.13.2 64-bit",
+    "compiler": "Microsoft Visual C++ BuildTools 2022 (v19.44.35222 x64)",
+    "stockfish_version": "Stockfish 19 x64 AVX2",
+    "stockfish_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0"
+  },
+  "gates_validated": {
+    "Gate_A_Provenance_and_Audit": "PASSED (473/473 inherited tests pass, clean tree, audit complete)",
+    "Gate_B_Draw_and_Repetition": "PASSED (12/12 FIDE draw semantics tests pass)",
+    "Gate_C_Memory_Safety": "PASSED (8/8 bounds and stress tests pass, clean exits, bounded TT)",
+    "Gate_D_Search_Semantics": "PASSED (Differential search 21.7x-42.1x speedup, 100% checkmate/stalemate agreement)",
+    "Gate_E_UCI_Protocol": "PASSED (10/10 UCI protocol tests pass, unbuffered pipes, Fischer clocks)",
+    "Gate_F_Performance_and_Quality": "PASSED (Fixed depth warm TT 95-99% faster; fixed time SF match reaches 51.4%)",
+    "Gate_G_Preregistered_Match": "PASSED WITH DISTINCTION (200 games, 94.0% score, +478 Elo, zero illegal moves, zero crashes)"
+  },
+  "match_summary": {
+    "total_pairs": 100,
+    "total_games": 200,
+    "time_control": "3.0s + 100ms increment",
+    "n2_wins": 179,
+    "draws": 18,
+    "n2_losses": 3,
+    "n2_score_points": 188.0,
+    "n2_score_pct": 94.0,
+    "n2_white_score": 96.5,
+    "n2_black_score": 91.5,
+    "mean_paired_delta": 1.76,
+    "std_paired_delta": 0.5341,
+    "paired_t_statistic": 32.9532,
+    "two_tailed_p_value": 3.803591702144351e-238,
+    "bootstrap_95_ci": [
+      1.65,
+      1.86
+    ],
+    "estimated_elo_diff": 478.0,
+    "elo_95_ci": [
+      51.1,
+      904.9
+    ],
+    "elapsed_time_sec": 2082.6
+  },
+  "fixed_time_ladder": {
+    "50": {
+      "budget_ms": 50,
+      "mean_completed_depth": 3.86,
+      "effective_nps": 588847,
+      "sf_match_pct": 29.7,
+      "mean_overshoot_ms": 3.6
+    },
+    "100": {
+      "budget_ms": 100,
+      "mean_completed_depth": 3.86,
+      "effective_nps": 376600,
+      "sf_match_pct": 37.8,
+      "mean_overshoot_ms": 9.6
+    },
+    "180": {
+      "budget_ms": 180,
+      "mean_completed_depth": 4.27,
+      "effective_nps": 376770,
+      "sf_match_pct": 43.2,
+      "mean_overshoot_ms": 6.3
+    },
+    "250": {
+      "budget_ms": 250,
+      "mean_completed_depth": 4.32,
+      "effective_nps": 304918,
+      "sf_match_pct": 37.8,
+      "mean_overshoot_ms": 8.7
+    },
+    "500": {
+      "budget_ms": 500,
+      "mean_completed_depth": 4.89,
+      "effective_nps": 390186,
+      "sf_match_pct": 45.9,
+      "mean_overshoot_ms": 6.7
+    },
+    "1000": {
+      "budget_ms": 1000,
+      "mean_completed_depth": 5.35,
+      "effective_nps": 359452,
+      "sf_match_pct": 45.9,
+      "mean_overshoot_ms": 7.1
+    },
+    "3000": {
+      "budget_ms": 3000,
+      "mean_completed_depth": 6.3,
+      "effective_nps": 372432,
+      "sf_match_pct": 51.4,
+      "mean_overshoot_ms": 4.8
+    }
+  }
+}

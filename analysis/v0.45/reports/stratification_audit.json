@@ -1,0 +1,66 @@
+{
+  "families": {
+    "Open & Gambits (1.e4 e5)": {
+      "pairs": 19,
+      "k0_white": 12.5,
+      "rfp_white": 13.0,
+      "white_delta": 0.5,
+      "k0_black": 11.5,
+      "rfp_black": 10.5,
+      "black_delta": -1.0,
+      "k0_total": 24.0,
+      "rfp_total": 23.5,
+      "total_delta": -0.5
+    },
+    "Semi-Open (Sicilian, French, Caro-Kann, etc.)": {
+      "pairs": 35,
+      "k0_white": 25.5,
+      "rfp_white": 24.5,
+      "white_delta": -1.0,
+      "k0_black": 22.0,
+      "rfp_black": 16.5,
+      "black_delta": -5.5,
+      "k0_total": 47.5,
+      "rfp_total": 41.0,
+      "total_delta": -6.5
+    },
+    "Closed (1.d4 d5, QG, Slav, Tarrasch)": {
+      "pairs": 7,
+      "k0_white": 2.5,
+      "rfp_white": 3.5,
+      "white_delta": 1.0,
+      "k0_black": 1.5,
+      "rfp_black": 3.0,
+      "black_delta": 1.5,
+      "k0_total": 4.0,
+      "rfp_total": 6.5,
+      "total_delta": 2.5
+    },
+    "Flank & Indian (English, Reti, Indian Defenses)": {
+      "pairs": 39,
+      "k0_white": 24.0,
+      "rfp_white": 23.5,
+      "white_delta": -0.5,
+      "k0_black": 23.5,
+      "rfp_black": 25.0,
+      "black_delta": 1.5,
+      "k0_total": 47.5,
+      "rfp_total": 48.5,
+      "total_delta": 1.0
+    }
+  },
+  "non_semi_open_aggregate": {
+    "pairs": 65,
+    "white_delta": 1.0,
+    "black_delta": 2.0,
+    "total_delta": 3.0
+  },
+  "semi_open_aggregate": {
+    "pairs": 35,
+    "white_delta": -1.0,
+    "black_delta": -5.5,
+    "total_delta": -6.5
+  },
+  "reconciled_total_delta": -3.5,
+  "discrepancy_explanation": "In v0.44 narrative reporting, the text highlighted the Semi-Open Black deficit (-5.5 pts) rather than the Semi-Open Total deficit (-6.5 pts). Summing the Non-Semi-Open Total (+3.0 pts) with the Semi-Open Black deficit (-5.5 pts) yields -2.5 pts. When the Semi-Open White deficit (-1.0 pt) is included, (+3.0) + (-6.5) = -3.5 pts, matching the exact observed match delta."
+}

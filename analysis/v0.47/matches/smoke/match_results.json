@@ -1,0 +1,48 @@
+{
+  "summary": {
+    "timestamp_utc": "2026-11-03T20:23:49.785387+00:00",
+    "total_games": 2,
+    "pairs": 1,
+    "k0_points": 1.0,
+    "l1_points": 1.0,
+    "k0_wins": 1,
+    "l1_wins": 1,
+    "draws": 0,
+    "k0_win_rate": 0.5,
+    "l1_win_rate": 0.5
+  },
+  "games": [
+    {
+      "game": 1,
+      "pair": 1,
+      "white": "Janus-K0",
+      "black": "Janus-L1",
+      "result": "0-1",
+      "termination_reason": "checkmate_black_wins",
+      "plies": 64,
+      "k0_points": 0.0,
+      "l1_points": 1.0,
+      "opening_id": "e4_e5_open_game",
+      "opening_name": "King's Pawn Game",
+      "duration_seconds": 4.87,
+      "mean_white_depth": 1.19,
+      "mean_black_depth": 1.38
+    },
+    {
+      "game": 2,
+      "pair": 1,
+      "white": "Janus-L1",
+      "black": "Janus-K0",
+      "result": "0-1",
+      "termination_reason": "checkmate_black_wins",
+      "plies": 122,
+      "k0_points": 1.0,
+      "l1_points": 0.0,
+      "opening_id": "e4_e5_open_game",
+      "opening_name": "King's Pawn Game",
+      "duration_seconds": 8.09,
+      "mean_white_depth": 1.51,
+      "mean_black_depth": 1.43
+    }
+  ]
+}

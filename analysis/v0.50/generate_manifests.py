@@ -1,0 +1,131 @@
+"""Project Janus v0.50 - Manifest Generator.
+
+Generates:
+1. analysis/v0.50/experiment_manifest.json
+2. analysis/v0.50/sha256_manifest.json
+"""
+
+import hashlib
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+V50_DIR = ROOT / "analysis" / "v0.50"
+
+
+def compute_sha256(filepath: Path) -> str:
+    h = hashlib.sha256()
+    with open(filepath, "rb") as f:
+        while chunk := f.read(65536):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def main():
+    print("Generating manifests for v0.50...")
+
+    # 1. Experiment Manifest
+    exp_manifest = {
+        "milestone": "v0.50",
+        "milestone_name": "Native Search-Core Feasibility, Board-State Representation & Differential Validation",
+        "branch": "v0.3-benchmark-harness",
+        "baseline_commit": "d037f77",
+        "selected_outcome": "Category B — Native Core Feasible, Further Work Required Before Transition",
+        "production_reference": "Python K0 (enable_lazy_move_selection=False, enable_rfp=False)",
+        "experimental_reference": "Python L1 (enable_lazy_move_selection=True, enable_rfp=False)",
+        "proposed_native_candidate": "N2 Native Search-Core Prototype (C++17 DLL)",
+        "system_environment": {
+            "os": "Windows 11 AMD64 (16 logical cores)",
+            "python": "3.13.2 64-bit",
+            "compiler": "Microsoft Visual C++ BuildTools 2022 (v19.44.35222 x64)",
+            "stockfish_version": "Stockfish 19 x64 AVX2",
+            "stockfish_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0"
+        },
+        "key_experiments": [
+            {
+                "phase": "Phase E",
+                "name": "Native Legal Move Generation & Perft Qualification",
+                "script": "analysis/v0.50/tests/test_native_qualification.py",
+                "results": {
+                    "fen_roundtrip_match": "37/37 (100.0%)",
+                    "check_detection_match": "37/37 (100.0%)",
+                    "move_generation_match": "37/37 (1,135 moves, 100.0%)",
+                    "randomized_game_moves": "1,475 positions, 42,041 moves (100.0%)",
+                    "standard_perft_suite": "18/18 suites passed with exact node count identity",
+                    "movegen_nps": "15,000,000 to 16,160,000 NPS (~800x faster than python-chess)"
+                }
+            },
+            {
+                "phase": "Phase F",
+                "name": "Make/Unmake, Hash & Draw Semantics",
+                "script": "analysis/v0.50/tests/test_state_and_draw.py",
+                "results": {
+                    "reversible_transitions": "178 moves verified bit-exact state and hash restoration",
+                    "fifty_move_rule": "Verified counter increment, pawn/capture resets, and undo",
+                    "insufficient_material": "Bare kings and king+minor vs king verified"
+                }
+            },
+            {
+                "phase": "Phase H",
+                "name": "Differential Search Qualification (Depths 1–5)",
+                "script": "analysis/v0.50/tests/run_differential_search_benchmark.py",
+                "raw_data": "analysis/v0.50/raw/differential_search_raw.json",
+                "results": {
+                    "depth_1_speedup": "36.7x (N2 648k NPS vs K0 21.5k NPS), move agreement 43.2%",
+                    "depth_2_speedup": "31.1x (N2 642k NPS vs K0 21.7k NPS), move agreement 59.5%",
+                    "depth_3_speedup": "51.3x (N2 264k NPS vs K0 5.8k NPS), move agreement 64.9%",
+                    "depth_4_speedup": "31.2x (N2 203k NPS vs K0 5.1k NPS), move agreement 70.3%",
+                    "depth_5_speedup": "19.4x (N2 353k NPS vs K0 6.4k NPS), move agreement 78.4%"
+                }
+            },
+            {
+                "phase": "Phase H Tactical",
+                "name": "Tactical Regression Qualification",
+                "script": "analysis/v0.50/tests/test_tactical_regression.py",
+                "raw_data": "analysis/v0.50/raw/tactical_regression_raw.json",
+                "results": {
+                    "depth_4_solve_rate": "K0: 50.0% (6/12), N2: 50.0% (6/12), speedup 18.08x",
+                    "depth_5_solve_rate": "K0: 41.7% (5/12), N2: 41.7% (5/12), speedup 35.16x",
+                    "stalemate_avoidance": "N2 correctly avoided stalemate in tac_11 where K0 failed"
+                }
+            },
+            {
+                "phase": "Phase I",
+                "name": "Native Fixed-Time Performance & Decision Quality",
+                "script": "analysis/v0.50/tests/run_native_performance.py",
+                "raw_data": "analysis/v0.50/raw/native_performance_raw.json",
+                "results": {
+                    "50ms": {"n2_depth": 3.78, "k0_depth": 2.00, "n2_nps": 503215, "sf_match_pct": 35.1, "k0_match_pct": 29.7},
+                    "100ms": {"n2_depth": 4.32, "k0_depth": 2.00, "n2_nps": 426469, "sf_match_pct": 37.8, "k0_match_pct": 24.3},
+                    "180ms": {"n2_depth": 4.78, "k0_depth": 2.50, "n2_nps": 417872, "sf_match_pct": 40.5, "k0_match_pct": 27.0},
+                    "250ms": {"n2_depth": 4.92, "k0_depth": 3.00, "n2_nps": 341417, "sf_match_pct": 40.5, "k0_match_pct": 27.0},
+                    "500ms": {"n2_depth": 5.27, "k0_depth": 3.30, "n2_nps": 283531, "sf_match_pct": 40.5, "k0_match_pct": 32.4},
+                    "1000ms": {"n2_depth": 5.57, "k0_depth": 3.80, "n2_nps": 280334, "sf_match_pct": 43.2, "k0_match_pct": 32.4},
+                    "3000ms": {"n2_depth": 6.19, "k0_depth": 4.50, "n2_nps": 310074, "sf_match_pct": 45.9, "k0_match_pct": 43.2}
+                }
+            }
+        ]
+    }
+
+    with open(V50_DIR / "experiment_manifest.json", "w", encoding="utf-8") as f:
+        json.dump(exp_manifest, f, indent=2)
+    print("Written experiment_manifest.json")
+
+    # 2. SHA256 Manifest
+    sha_manifest = {}
+    for item in sorted(V50_DIR.rglob("*")):
+        if item.is_file() and item.name not in ["sha256_manifest.json"]:
+            # Relative path from project-janus root
+            rel_path = item.relative_to(ROOT).as_posix()
+            sha_manifest[rel_path] = {
+                "sha256": compute_sha256(item),
+                "bytes": item.stat().st_size
+            }
+
+    with open(V50_DIR / "sha256_manifest.json", "w", encoding="utf-8") as f:
+        json.dump(sha_manifest, f, indent=2)
+    print(f"Written sha256_manifest.json ({len(sha_manifest)} files hashed)")
+
+
+if __name__ == "__main__":
+    main()

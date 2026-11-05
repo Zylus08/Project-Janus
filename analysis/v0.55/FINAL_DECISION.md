@@ -59,3 +59,4 @@ The fragility concern identified in Phase 0.2 is resolved: Janus N5's playing-st
    ```
 3. **PVS Feature Availability:**
    PVS remains compiled in the engine and fully accessible via UCI `setoption name UsePVS value true` for research and experimental benchmarking, but default execution retains `false`.
+

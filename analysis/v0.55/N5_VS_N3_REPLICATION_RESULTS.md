@@ -112,3 +112,4 @@ Candidate N5 outperformed Baseline N3 substantially from both White ($63.0\%$) a
 ## 5. Synthesis & Milestone Conclusion
 
 Experiment B establishes beyond statistical doubt that **Janus Native N5 is an authentically stronger chess engine than N3**. The $+29.6$ Elo v0.54 result was not fragile; out-of-sample replication demonstrates an even stronger $+77.71$ Elo playing strength advantage ($p < 0.00001$).
+

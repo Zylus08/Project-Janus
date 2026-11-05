@@ -74,3 +74,4 @@ Therefore, PVS's marginal contribution was squeezed down to just $4.25\%$, produ
    PVS provides elegant search-window tightness and modest tree savings without regressions, but under equal Fischer time controls, it does not alter game outcomes.
 3. **Production Recommendation:**
    Retain Janus Native N5 as the frozen production default. Keep PVS integrated and configurable as a UCI option (`UsePVS=false`).
+

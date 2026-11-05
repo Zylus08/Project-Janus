@@ -92,370 +92,344 @@ def student_t_two_sided_p(t_stat: float, df: int) -> float:
     return max(0.0, min(1.0, p))
 
 
-def play_single_game(
-    game_id: int,
-    pair_id: int,
-    cand_is_white: bool,
+def play_single_game_worker(
+    white_proc: NativeUCIEngineProcess,
+    black_proc: NativeUCIEngineProcess,
+    white_name: str,
+    black_name: str,
     opening_fen: str,
-    opening_name: str,
-    cand_opts: dict,
-    base_opts: dict,
-    base_time_sec: float = 3.0,
-    inc_sec: float = 0.1,
-    max_plies: int = 300
+    round_num: int,
 ) -> dict:
-    """Plays a single game between Candidate and Baseline processes with unbuffered I/O."""
-    p_cand = NativeUCIEngineProcess(EXE_PATH, options=cand_opts)
-    p_base = NativeUCIEngineProcess(EXE_PATH, options=base_opts)
-
-    cand_name = "Candidate"
-    base_name = "Baseline"
-
-    white_proc = p_cand if cand_is_white else p_base
-    black_proc = p_base if cand_is_white else p_cand
-
-    white_name = cand_name if cand_is_white else base_name
-    black_name = base_name if cand_is_white else cand_name
+    white_proc.ucinewgame()
+    black_proc.ucinewgame()
 
     board = chess.Board(opening_fen)
+
+    wtime_ms = 3000
+    btime_ms = 3000
+    inc_ms = 100
+
     moves_played = []
-
-    white_clock = base_time_sec
-    black_clock = base_time_sec
-
-    termination = ""
-    result_str = "*"
-    cand_points = 0.5
-
+    ply_count = 0
     t_start = time.perf_counter()
 
-    try:
-        while len(moves_played) < max_plies:
-            active_proc = white_proc if board.turn == chess.WHITE else black_proc
-            active_clock = white_clock if board.turn == chess.WHITE else black_clock
+    while True:
+        is_over, result_str, term_reason = adjudicate_board(board, ply_count, max_plies=300)
+        if is_over:
+            break
 
-            wtime_ms = int(max(0.01, white_clock) * 1000)
-            btime_ms = int(max(0.01, black_clock) * 1000)
-            winc_ms = int(inc_sec * 1000)
-            binc_ms = int(inc_sec * 1000)
+        current_turn = board.turn
+        current_proc = white_proc if current_turn == chess.WHITE else black_proc
 
-            t0 = time.perf_counter()
-            bestmove = active_proc.get_best_move(
-                board.fen(),
-                wtime=wtime_ms,
-                btime=btime_ms,
-                winc=winc_ms,
-                binc=binc_ms,
-                timeout=max(2.0, active_clock + 5.0)
-            )
-            elapsed = time.perf_counter() - t0
+        cur_fen = board.fen()
+        bestmove_uci, elapsed_sec = current_proc.play_move(
+            cur_fen,
+            wtime_ms=wtime_ms,
+            btime_ms=btime_ms,
+            winc_ms=inc_ms,
+            binc_ms=inc_ms
+        )
 
-            if board.turn == chess.WHITE:
-                white_clock = white_clock - elapsed + inc_sec
-                if white_clock <= 0:
-                    termination = "time_forfeit_white"
-                    result_str = "0-1"
-                    cand_points = 0.0 if cand_is_white else 1.0
-                    break
-            else:
-                black_clock = black_clock - elapsed + inc_sec
-                if black_clock <= 0:
-                    termination = "time_forfeit_black"
-                    result_str = "1-0"
-                    cand_points = 1.0 if cand_is_white else 0.0
-                    break
+        elapsed_ms = int(elapsed_sec * 1000)
 
-            if not bestmove:
-                termination = "engine_crash_no_move"
-                if board.turn == chess.WHITE:
-                    result_str = "0-1"
-                    cand_points = 0.0 if cand_is_white else 1.0
-                else:
-                    result_str = "1-0"
-                    cand_points = 1.0 if cand_is_white else 0.0
+        if current_turn == chess.WHITE:
+            wtime_ms = max(10, wtime_ms - elapsed_ms + inc_ms)
+        else:
+            btime_ms = max(10, btime_ms - elapsed_ms + inc_ms)
+
+        if not bestmove_uci:
+            loser = "white" if current_turn == chess.WHITE else "black"
+            winner = "black" if current_turn == chess.WHITE else "white"
+            result_str = "0-1" if winner == "black" else "1-0"
+            term_reason = f"crash_forfeit_{loser}"
+            break
+
+        try:
+            move = chess.Move.from_uci(bestmove_uci)
+            if move not in board.legal_moves:
+                loser = "white" if current_turn == chess.WHITE else "black"
+                winner = "black" if current_turn == chess.WHITE else "white"
+                result_str = "0-1" if winner == "black" else "1-0"
+                term_reason = f"illegal_move_{loser}"
                 break
+        except Exception:
+            loser = "white" if current_turn == chess.WHITE else "black"
+            winner = "black" if current_turn == chess.WHITE else "white"
+            result_str = "0-1" if winner == "black" else "1-0"
+            term_reason = f"illegal_uci_string_{loser}"
+            break
 
-            try:
-                move = chess.Move.from_uci(bestmove)
-                if move not in board.legal_moves:
-                    termination = "illegal_move"
-                    if board.turn == chess.WHITE:
-                        result_str = "0-1"
-                        cand_points = 0.0 if cand_is_white else 1.0
-                    else:
-                        result_str = "1-0"
-                        cand_points = 1.0 if cand_is_white else 0.0
-                    break
-            except Exception:
-                termination = "parse_move_error"
-                break
+        board.push(move)
+        moves_played.append(bestmove_uci)
+        ply_count += 1
 
-            board.push(move)
-            moves_played.append(bestmove)
-
-            # Adjudicate via strict FIDE rules
-            is_term, term_code, term_res = adjudicate_board(board)
-            if is_term:
-                termination = term_code
-                result_str = term_res
-                if result_str == "1-0":
-                    cand_points = 1.0 if cand_is_white else 0.0
-                elif result_str == "0-1":
-                    cand_points = 0.0 if cand_is_white else 1.0
-                else:
-                    cand_points = 0.5
-                break
-
-        if not termination and len(moves_played) >= max_plies:
-            termination = "safety_limit_300_plies"
-            result_str = "1/2-1/2"
-            cand_points = 0.5
-
-    finally:
-        p_cand.close()
-        p_base.close()
-
-    duration = time.perf_counter() - t_start
+    total_game_time = time.perf_counter() - t_start
 
     return {
-        "game_id": game_id,
-        "pair_id": pair_id,
-        "cand_is_white": cand_is_white,
-        "white_name": white_name,
-        "black_name": black_name,
-        "result_str": result_str,
-        "cand_points": cand_points,
-        "termination": termination,
-        "plies": len(moves_played),
-        "duration_sec": duration,
-        "opening_name": opening_name,
+        "round": round_num,
+        "white": white_name,
+        "black": black_name,
+        "result": result_str,
+        "termination": term_reason,
+        "plies": ply_count,
+        "full_moves": len(moves_played) // 2,
+        "duration_sec": total_game_time,
         "opening_fen": opening_fen,
         "moves": moves_played,
     }
 
 
-def run_match(match_id: str):
+def worker_play_pair(pair_args):
+    pair_idx, op_fen, op_name, exe_path_str, cand_opts, ctrl_opts, cand_name, ctrl_name = pair_args
+    pair_num = pair_idx + 1
+    exe_p = Path(exe_path_str)
+
+    cand_proc = NativeUCIEngineProcess(exe_p, options=cand_opts)
+    ctrl_proc = NativeUCIEngineProcess(exe_p, options=ctrl_opts)
+
+    try:
+        # Game A: Candidate (White) vs Control (Black)
+        round_a = pair_num * 2 - 1
+        res_a = play_single_game_worker(
+            white_proc=cand_proc,
+            black_proc=ctrl_proc,
+            white_name=cand_name,
+            black_name=ctrl_name,
+            opening_fen=op_fen,
+            round_num=round_a,
+        )
+
+        # Game B: Control (White) vs Candidate (Black)
+        round_b = pair_num * 2
+        res_b = play_single_game_worker(
+            white_proc=ctrl_proc,
+            black_proc=cand_proc,
+            white_name=ctrl_name,
+            black_name=cand_name,
+            opening_fen=op_fen,
+            round_num=round_b,
+        )
+    finally:
+        cand_proc.close()
+        ctrl_proc.close()
+
+    return pair_idx, res_a, res_b
+
+
+def run_match(match_id: str, cand_name: str, ctrl_name: str, cand_opts: dict, ctrl_opts: dict):
     with open(CORPUS_PATH, "r", encoding="utf-8") as f:
         openings = json.load(f)
 
-    if match_id == "n6_vs_n5":
-        cand_label = "Janus 0.55 N6 (Killer+History+PVS)"
-        base_label = "Janus 0.55 N5 (Killer+History)"
-        cand_opts = {"UseKillerOrdering": "true", "UseHistoryOrdering": "true", "UsePVS": "true", "UseLMR": "true"}
-        base_opts = {"UseKillerOrdering": "true", "UseHistoryOrdering": "true", "UsePVS": "false", "UseLMR": "true"}
-    elif match_id == "n5_vs_n3":
-        cand_label = "Janus 0.55 N5 (Killer+History)"
-        base_label = "Janus 0.55 N3 (Control)"
-        cand_opts = {"UseKillerOrdering": "true", "UseHistoryOrdering": "true", "UsePVS": "false", "UseLMR": "true"}
-        base_opts = {"UseKillerOrdering": "false", "UseHistoryOrdering": "false", "UsePVS": "false", "UseLMR": "true"}
-    else:
-        raise ValueError(f"Unknown match ID: {match_id}")
+    n_pairs = len(openings)
+    pgn_path = PGN_DIR / f"{match_id}.pgn"
+    raw_path = RAW_DIR / f"{match_id}_raw.json"
 
-    print("=================================================================")
-    print(f"Launching Preregistered Tournament: {match_id.upper()}")
-    print(f"Candidate : {cand_label}")
-    print(f"Baseline  : {base_label}")
-    print(f"Corpus    : {len(openings)} Opening Pairs ({len(openings)*2} Games)")
-    print(f"Control   : Fischer 3.0s + 100ms | 8 Parallel Workers")
-    print(f"Binary    : {EXE_PATH}")
-    print("=================================================================")
+    print(f"\n=======================================================")
+    print(f"LAUNCHING MATCH: {match_id}")
+    print(f"Candidate: {cand_name} (Opts: {cand_opts})")
+    print(f"Control:   {ctrl_name} (Opts: {ctrl_opts})")
+    print(f"Openings:  {n_pairs} pairs (200 games)")
+    print(f"=======================================================")
 
-    # Schedule 200 games (100 pairs)
-    tasks = []
-    game_id = 1
-    for pair_idx, op in enumerate(openings):
-        pair_id = pair_idx + 1
-        fen = op["fen"]
-        name = op["name"]
-        # Game 1: Cand is White
-        tasks.append((game_id, pair_id, True, fen, name, cand_opts, base_opts))
-        game_id += 1
-        # Game 2: Cand is Black
-        tasks.append((game_id, pair_id, False, fen, name, cand_opts, base_opts))
-        game_id += 1
+    tasks = [
+        (i, openings[i]["fen"], openings[i].get("name", f"Opening {i+1}"), str(EXE_PATH),
+         cand_opts, ctrl_opts, cand_name, ctrl_name)
+        for i in range(n_pairs)
+    ]
 
-    t_tourn_start = time.perf_counter()
-    completed_games = []
+    pair_results = [None] * n_pairs
+    completed_pairs = 0
+    t_start = time.perf_counter()
 
     with ProcessPoolExecutor(max_workers=8) as executor:
-        futures = {executor.submit(play_single_game, *t): t for t in tasks}
-        count = 0
-        cand_score_acc = 0.0
+        future_map = {executor.submit(worker_play_pair, task): task[0] for task in tasks}
+        for future in as_completed(future_map):
+            pair_idx, res_a, res_b = future.result()
+            pair_results[pair_idx] = (res_a, res_b)
+            completed_pairs += 1
 
-        for fut in as_completed(futures):
-            res = fut.result()
-            completed_games.append(res)
-            count += 1
-            cand_score_acc += res["cand_points"]
-            if count % 20 == 0 or count == len(tasks):
-                pct = (cand_score_acc / count) * 100
-                print(f"  Completed {count}/{len(tasks)} games | Candidate score: {cand_score_acc}/{count} ({pct:.2f}%)")
+            if completed_pairs % 10 == 0 or completed_pairs == n_pairs:
+                elapsed = time.perf_counter() - t_start
+                rate = completed_pairs / elapsed if elapsed > 0 else 0
+                rem_sec = (n_pairs - completed_pairs) / rate if rate > 0 else 0
+                print(f"  [Progress] {completed_pairs}/{n_pairs} pairs ({completed_pairs*2}/200 games) | Elapsed: {elapsed:.1f}s | Rem: {rem_sec:.1f}s")
 
-    tourn_duration = time.perf_counter() - t_tourn_start
-    print(f"\nTournament completed in {tourn_duration:.2f} seconds ({tourn_duration/60:.2f} mins).")
+    t_end = time.perf_counter()
+    total_duration = t_end - t_start
 
-    # Sort completed games by game_id
-    completed_games.sort(key=lambda g: g["game_id"])
+    # Process all games
+    all_games = []
+    pair_differences = []
 
-    # Aggregate by opening pair
-    pairs = {}
-    for g in completed_games:
-        pid = g["pair_id"]
-        if pid not in pairs:
-            pairs[pid] = []
-        pairs[pid].append(g)
-
-    pair_diffs = []
+    cand_wins = 0
+    cand_draws = 0
+    cand_losses = 0
     cand_white_score = 0.0
     cand_black_score = 0.0
-    cand_w, cand_d, cand_l = 0, 0, 0
+
     terminations = {}
 
-    for pid in sorted(pairs.keys()):
-        pgames = pairs[pid]
-        assert len(pgames) == 2, f"Pair {pid} does not have 2 games!"
-        cand_pair_pts = 0.0
-        for g in pgames:
-            pts = g["cand_points"]
-            cand_pair_pts += pts
-            if g["cand_is_white"]:
-                cand_white_score += pts
-            else:
-                cand_black_score += pts
+    for pair_idx in range(n_pairs):
+        res_a, res_b = pair_results[pair_idx]
+        all_games.append(res_a)
+        all_games.append(res_b)
 
-            if pts == 1.0:
-                cand_w += 1
-            elif pts == 0.5:
-                cand_d += 1
-            else:
-                cand_l += 1
+        # Game A: Candidate is White
+        score_cand_a = 1.0 if res_a["result"] == "1-0" else (0.5 if res_a["result"] == "1/2-1/2" else 0.0)
+        cand_white_score += score_cand_a
+        if score_cand_a == 1.0: cand_wins += 1
+        elif score_cand_a == 0.5: cand_draws += 1
+        else: cand_losses += 1
 
-            term = g["termination"]
-            terminations[term] = terminations.get(term, 0) + 1
+        term_a = res_a["termination"]
+        terminations[term_a] = terminations.get(term_a, 0) + 1
 
-        base_pair_pts = 2.0 - cand_pair_pts
-        pair_diff = (cand_pair_pts - base_pair_pts) / 2.0  # Delta score per game
-        pair_diffs.append(pair_diff)
+        # Game B: Candidate is Black
+        score_cand_b = 1.0 if res_b["result"] == "0-1" else (0.5 if res_b["result"] == "1/2-1/2" else 0.0)
+        cand_black_score += score_cand_b
+        if score_cand_b == 1.0: cand_wins += 1
+        elif score_cand_b == 0.5: cand_draws += 1
+        else: cand_losses += 1
 
-    N_pairs = len(pair_diffs)
-    mean_diff = sum(pair_diffs) / N_pairs
-    sq_errs = sum((d - mean_diff) ** 2 for d in pair_diffs)
-    std_diff = math.sqrt(sq_errs / (N_pairs - 1)) if N_pairs > 1 else 0.0
-    se_diff = std_diff / math.sqrt(N_pairs)
-    t_stat = mean_diff / se_diff if se_diff > 0 else 0.0
-    df = N_pairs - 1
-    p_val = student_t_two_sided_p(abs(t_stat), df)
+        term_b = res_b["termination"]
+        terminations[term_b] = terminations.get(term_b, 0) + 1
+
+        # Pair delta (cand_score - ctrl_score) / 2
+        cand_pair_total = score_cand_a + score_cand_b
+        ctrl_pair_total = (1.0 - score_cand_a) + (1.0 - score_cand_b)
+        delta = (cand_pair_total - ctrl_pair_total) / 2.0
+        pair_differences.append(delta)
+
+    cand_total_points = cand_wins * 1.0 + cand_draws * 0.5
+    total_games = n_pairs * 2
+    cand_score_pct = (cand_total_points / total_games) * 100.0
+
+    # Statistics
+    mean_d = sum(pair_differences) / n_pairs
+    sq_err = sum((d - mean_d) ** 2 for d in pair_differences)
+    std_d = math.sqrt(sq_err / (n_pairs - 1)) if n_pairs > 1 else 0.0
+    se_d = std_d / math.sqrt(n_pairs) if n_pairs > 0 else 0.0
+    t_stat = mean_d / se_d if se_d > 0 else 0.0
+    df = n_pairs - 1
+    two_sided_p = student_t_two_sided_p(abs(t_stat), df)
 
     # 10,000 paired bootstrap resamples
     random.seed(42)
-    boot_diffs = []
+    boot_means = []
     for _ in range(10000):
-        sample = [random.choice(pair_diffs) for _ in range(N_pairs)]
-        boot_diffs.append(sum(sample) / N_pairs)
-    boot_diffs.sort()
-    ci_diff_lower = boot_diffs[int(0.025 * 10000)]
-    ci_diff_upper = boot_diffs[int(0.975 * 10000)]
+        sample = [random.choice(pair_differences) for _ in range(n_pairs)]
+        boot_means.append(sum(sample) / n_pairs)
+
+    boot_means.sort()
+    ci_lower_diff = boot_means[int(0.025 * 10000)]
+    ci_upper_diff = boot_means[int(0.975 * 10000)]
 
     def diff_to_elo(d):
-        s = (d + 1.0) / 2.0
-        s = max(0.001, min(0.999, s))
-        return -400.0 * math.log10((1.0 - s) / s)
+        p = (d + 1.0) / 2.0
+        p = max(0.001, min(0.999, p))
+        return -400.0 * math.log10((1.0 - p) / p)
 
-    elo_diff = diff_to_elo(mean_diff)
-    elo_ci_lower = diff_to_elo(ci_diff_lower)
-    elo_ci_upper = diff_to_elo(ci_diff_upper)
+    elo_diff = diff_to_elo(mean_d)
+    elo_ci_lower = diff_to_elo(ci_lower_diff)
+    elo_ci_upper = diff_to_elo(ci_upper_diff)
 
-    cand_pts = cand_w + 0.5 * cand_d
-    cand_pct = (cand_pts / len(completed_games)) * 100
-
-    print("\n=================================================================")
-    print(f"FINAL TOURNAMENT RESULTS: {match_id.upper()}")
-    print("=================================================================")
-    print(f"Candidate : {cand_pts} / {len(completed_games)} ({cand_pct:.2f}%)  [+{cand_w} ={cand_d} -{cand_l}]")
-    print(f"Baseline  : {len(completed_games) - cand_pts} / {len(completed_games)} ({100 - cand_pct:.2f}%)")
-    print(f"Net Score : {cand_pts - (len(completed_games) - cand_pts):+.1f} points")
-    print(f"Estimated Elo Advantage: {elo_diff:+.2f} Elo")
-    print(f"Bootstrap 95% Elo CI   : [{elo_ci_lower:+.2f}, {elo_ci_upper:+.2f}] Elo")
-    print(f"Paired Difference (d)  : {mean_diff:+.4f} +/- {std_diff:.4f} (SE={se_diff:.4f})")
-    print(f"Student's t-statistic  : t = {t_stat:.4f} (df={df})")
-    print(f"Two-Sided p-value      : p = {p_val:.5f}")
-    print(f"White Score: {cand_white_score}/{N_pairs} ({cand_white_score/N_pairs*100:.1f}%) | Black Score: {cand_black_score}/{N_pairs} ({cand_black_score/N_pairs*100:.1f}%)")
-    print(f"Terminations: {terminations}")
-    print("=================================================================")
-
-    # Write PGN file
-    pgn_path = PGN_DIR / f"{match_id}.pgn"
-    with open(pgn_path, "w", encoding="utf-8") as f_pgn:
-        for g in completed_games:
-            pgn_game = chess.pgn.Game()
-            pgn_game.headers["Event"] = f"Project Janus v0.55 Match - {match_id}"
-            pgn_game.headers["Site"] = "Antigravity Research Sandbox"
-            pgn_game.headers["Date"] = datetime.now(timezone.utc).strftime("%Y.%m.%d")
-            pgn_game.headers["Round"] = str(g["game_id"])
-            pgn_game.headers["White"] = g["white_name"]
-            pgn_game.headers["Black"] = g["black_name"]
-            pgn_game.headers["Result"] = g["result_str"]
-            pgn_game.headers["Termination"] = g["termination"]
-            pgn_game.headers["TimeControl"] = "3.0+0.1"
-            pgn_game.headers["FEN"] = g["opening_fen"]
-            pgn_game.headers["Opening"] = g["opening_name"]
-
-            b = chess.Board(g["opening_fen"])
-            node = pgn_game
-            for m_str in g["moves"]:
-                m = chess.Move.from_uci(m_str)
-                node = node.add_variation(m)
-
-            f_pgn.write(str(pgn_game) + "\n\n")
-
-    print(f"Saved complete PGN to {pgn_path}")
-
-    # Write Raw JSON
-    raw_path = RAW_DIR / f"{match_id}_raw.json"
-    summary_data = {
+    summary = {
         "match_id": match_id,
-        "candidate": cand_label,
-        "control": base_label,
-        "total_pairs": N_pairs,
-        "total_games": len(completed_games),
+        "candidate": cand_name,
+        "control": ctrl_name,
+        "total_pairs": n_pairs,
+        "total_games": total_games,
         "time_control": "3.0s + 100ms",
-        "total_duration_sec": tourn_duration,
-        "cand_wins": cand_w,
-        "cand_draws": cand_d,
-        "cand_losses": cand_l,
-        "cand_points": cand_pts,
-        "cand_score_pct": cand_pct,
+        "total_duration_sec": total_duration,
+        "cand_wins": cand_wins,
+        "cand_draws": cand_draws,
+        "cand_losses": cand_losses,
+        "cand_points": cand_total_points,
+        "cand_score_pct": cand_score_pct,
         "cand_white_score": cand_white_score,
         "cand_black_score": cand_black_score,
-        "paired_diff_mean": mean_diff,
-        "paired_diff_std": std_diff,
-        "paired_diff_se": se_diff,
+        "paired_diff_mean": mean_d,
+        "paired_diff_std": std_d,
+        "paired_diff_se": se_d,
         "t_statistic": t_stat,
         "degrees_of_freedom": df,
-        "two_sided_p_value": p_val,
-        "bootstrap_ci_95_diff": [ci_diff_lower, ci_diff_upper],
+        "two_sided_p_value": two_sided_p,
+        "bootstrap_ci_95_diff": [ci_lower_diff, ci_upper_diff],
         "elo_difference": elo_diff,
         "bootstrap_ci_95_elo": [elo_ci_lower, elo_ci_upper],
-        "average_game_plies": sum(g["plies"] for g in completed_games) / len(completed_games),
+        "average_game_plies": sum(g["plies"] for g in all_games) / len(all_games) if all_games else 0,
         "terminations": terminations,
     }
 
-    full_output = {
-        "summary": summary_data,
-        "pair_differences": pair_diffs,
-        "games": completed_games
+    # Save PGN
+    with open(pgn_path, "w", encoding="utf-8") as f_pgn:
+        for g in all_games:
+            game = chess.pgn.Game()
+            game.headers["Event"] = f"Project Janus v0.55 Match ({match_id})"
+            game.headers["Site"] = "Antigravity Research Sandbox"
+            game.headers["Date"] = datetime.now(timezone.utc).strftime("%Y.%m.%d")
+            game.headers["Round"] = str(g["round"])
+            game.headers["White"] = g["white"]
+            game.headers["Black"] = g["black"]
+            game.headers["Result"] = g["result"]
+            game.headers["Termination"] = g["termination"]
+            game.headers["TimeControl"] = "3.0+0.1"
+            game.headers["FEN"] = g["opening_fen"]
+
+            b = chess.Board(g["opening_fen"])
+            curr_node = game
+            for m_uci in g["moves"]:
+                m = chess.Move.from_uci(m_uci)
+                curr_node = curr_node.add_variation(m)
+
+            f_pgn.write(str(game) + "\n\n")
+
+    # Save Raw JSON
+    raw_output = {
+        "summary": summary,
+        "pair_differences": pair_differences,
+        "games": all_games,
     }
+    with open(raw_path, "w", encoding="utf-8") as f_raw:
+        json.dump(raw_output, f_raw, indent=2)
 
-    with open(raw_path, "w", encoding="utf-8") as f_json:
-        json.dump(full_output, f_json, indent=2)
+    print(f"\n=======================================================")
+    print(f"MATCH FINISHED: {match_id}")
+    print(f"Score:       {cand_total_points}/{total_games} ({cand_score_pct:.2f}%)  [+{cand_wins} ={cand_draws} -{cand_losses}]")
+    print(f"Net Margin:  {cand_total_points - (total_games - cand_total_points):+.1f} points")
+    print(f"Elo Diff:    {elo_diff:+.2f} Elo [95% CI: {elo_ci_lower:+.2f}, {elo_ci_upper:+.2f}]")
+    print(f"Student-t:   t = {t_stat:.4f} (df={df}), p = {two_sided_p:.5f}")
+    print(f"Terminations: {terminations}")
+    print(f"Saved PGN to {pgn_path}")
+    print(f"Saved Raw to {raw_path}")
+    print(f"=======================================================")
 
-    print(f"Saved complete raw JSON data to {raw_path}")
-    return summary_data
+    return summary
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Run Janus v0.55 Preregistered Matches")
+    parser.add_argument("--match", choices=["n6_vs_n5", "n5_vs_n3"], required=True,
+                        help="Match to run: 'n6_vs_n5' (Experiment A) or 'n5_vs_n3' (Experiment B)")
+    args = parser.parse_args()
+
+    if args.match == "n6_vs_n5":
+        run_match(
+            match_id="n6_vs_n5",
+            cand_name="Janus 0.55 N6 (Killer+History+PVS)",
+            ctrl_name="Janus 0.55 N5 (Killer+History)",
+            cand_opts={"UseKillerOrdering": "true", "UseHistoryOrdering": "true", "UsePVS": "true", "UseLMR": "true"},
+            ctrl_opts={"UseKillerOrdering": "true", "UseHistoryOrdering": "true", "UsePVS": "false", "UseLMR": "true"},
+        )
+    elif args.match == "n5_vs_n3":
+        run_match(
+            match_id="n5_vs_n3",
+            cand_name="Janus 0.55 N5 (Killer+History)",
+            ctrl_name="Janus 0.55 N3 (Control)",
+            cand_opts={"UseKillerOrdering": "true", "UseHistoryOrdering": "true", "UsePVS": "false", "UseLMR": "true"},
+            ctrl_opts={"UseKillerOrdering": "false", "UseHistoryOrdering": "false", "UsePVS": "false", "UseLMR": "true"},
+        )
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--match", choices=["n6_vs_n5", "n5_vs_n3"], required=True)
-    args = parser.parse_args()
-    run_match(args.match)
-
+    main()

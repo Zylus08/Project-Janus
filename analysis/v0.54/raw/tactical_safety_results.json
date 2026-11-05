@@ -1,0 +1,4697 @@
+{
+  "tactical_regression": {
+    "summary": {
+      "suite_name": "Tactical Regression Suite (12)",
+      "total_positions": 12,
+      "solved": {
+        "c0": 4,
+        "c1": 4,
+        "c2": 4,
+        "c3": 4
+      },
+      "total_nodes": {
+        "c0": 373611,
+        "c1": 313204,
+        "c2": 303169,
+        "c3": 296560
+      },
+      "node_reduction_c3_vs_c0_pct": 20.62332211846011,
+      "agreement_c3_c0_pct": 100.0,
+      "agreed_count": 12
+    },
+    "positions": [
+      {
+        "id": "tac_01_mate_in_2",
+        "fen": "r2qkb1r/pp2nppp/3p4/2pNN1B1/2BnP3/3P4/PPP2PPP/R2bK2R w KQkq - 1 9",
+        "expected": "d5f6",
+        "configs": {
+          "c0": {
+            "move": "d5f6",
+            "score": 28997,
+            "nodes": 44765,
+            "time_sec": 0.035228700027801096,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 1931,
+              "mean_cutoff_index": 1.110305541170378,
+              "cutoff_move_1": 1827,
+              "cutoff_move_2": 29,
+              "cutoff_move_3": 49,
+              "cutoff_move_4plus": 26,
+              "cutoff_tt": 430,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 1850,
+              "cutoff_quiet": 81,
+              "first_move_cutoff_rate": 94.61418953909892
+            }
+          },
+          "c1": {
+            "move": "d5f6",
+            "score": 28997,
+            "nodes": 44670,
+            "time_sec": 0.043083900003694,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 1931,
+              "mean_cutoff_index": 1.1077162092180217,
+              "cutoff_move_1": 1827,
+              "cutoff_move_2": 30,
+              "cutoff_move_3": 49,
+              "cutoff_move_4plus": 25,
+              "cutoff_tt": 430,
+              "cutoff_killer1": 23,
+              "cutoff_killer2": 50,
+              "cutoff_history": 0,
+              "cutoff_captures": 1850,
+              "cutoff_quiet": 81,
+              "first_move_cutoff_rate": 94.61418953909892
+            }
+          },
+          "c2": {
+            "move": "d5f6",
+            "score": 28997,
+            "nodes": 44670,
+            "time_sec": 0.032520300010219216,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 1931,
+              "mean_cutoff_index": 1.1077162092180217,
+              "cutoff_move_1": 1827,
+              "cutoff_move_2": 30,
+              "cutoff_move_3": 49,
+              "cutoff_move_4plus": 25,
+              "cutoff_tt": 430,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 77,
+              "cutoff_captures": 1850,
+              "cutoff_quiet": 81,
+              "first_move_cutoff_rate": 94.61418953909892
+            }
+          },
+          "c3": {
+            "move": "d5f6",
+            "score": 28997,
+            "nodes": 44670,
+            "time_sec": 0.031541100004687905,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 1931,
+              "mean_cutoff_index": 1.1077162092180217,
+              "cutoff_move_1": 1827,
+              "cutoff_move_2": 30,
+              "cutoff_move_3": 49,
+              "cutoff_move_4plus": 25,
+              "cutoff_tt": 430,
+              "cutoff_killer1": 23,
+              "cutoff_killer2": 50,
+              "cutoff_history": 77,
+              "cutoff_captures": 1850,
+              "cutoff_quiet": 81,
+              "first_move_cutoff_rate": 94.61418953909892
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "tac_02_hanging_piece",
+        "fen": "r1bqk2r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "expected": "d1d5",
+        "configs": {
+          "c0": {
+            "move": "c4f7",
+            "score": 30,
+            "nodes": 43727,
+            "time_sec": 0.041467800037935376,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2304,
+              "mean_cutoff_index": 1.7083333333333333,
+              "cutoff_move_1": 1817,
+              "cutoff_move_2": 53,
+              "cutoff_move_3": 204,
+              "cutoff_move_4plus": 230,
+              "cutoff_tt": 278,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 1703,
+              "cutoff_quiet": 601,
+              "first_move_cutoff_rate": 78.86284722222221
+            }
+          },
+          "c1": {
+            "move": "c4f7",
+            "score": 30,
+            "nodes": 38751,
+            "time_sec": 0.039474899997003376,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2527,
+              "mean_cutoff_index": 1.3051048674317371,
+              "cutoff_move_1": 2219,
+              "cutoff_move_2": 51,
+              "cutoff_move_3": 166,
+              "cutoff_move_4plus": 91,
+              "cutoff_tt": 295,
+              "cutoff_killer1": 365,
+              "cutoff_killer2": 50,
+              "cutoff_history": 0,
+              "cutoff_captures": 2075,
+              "cutoff_quiet": 452,
+              "first_move_cutoff_rate": 87.81163434903047
+            }
+          },
+          "c2": {
+            "move": "c4f7",
+            "score": 30,
+            "nodes": 35903,
+            "time_sec": 0.03129610000178218,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2134,
+              "mean_cutoff_index": 1.5042174320524837,
+              "cutoff_move_1": 1706,
+              "cutoff_move_2": 49,
+              "cutoff_move_3": 211,
+              "cutoff_move_4plus": 168,
+              "cutoff_tt": 289,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 538,
+              "cutoff_captures": 1587,
+              "cutoff_quiet": 547,
+              "first_move_cutoff_rate": 79.94376757263355
+            }
+          },
+          "c3": {
+            "move": "c4f7",
+            "score": 30,
+            "nodes": 38677,
+            "time_sec": 0.034026000008452684,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2525,
+              "mean_cutoff_index": 1.287920792079208,
+              "cutoff_move_1": 2229,
+              "cutoff_move_2": 37,
+              "cutoff_move_3": 169,
+              "cutoff_move_4plus": 90,
+              "cutoff_tt": 294,
+              "cutoff_killer1": 376,
+              "cutoff_killer2": 40,
+              "cutoff_history": 442,
+              "cutoff_captures": 2073,
+              "cutoff_quiet": 452,
+              "first_move_cutoff_rate": 88.27722772277228
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "tac_03_pin_tactic",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "expected": "d3h7",
+        "configs": {
+          "c0": {
+            "move": "h1h5",
+            "score": 405,
+            "nodes": 91979,
+            "time_sec": 0.09884649998275563,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2923,
+              "mean_cutoff_index": 2.294218268901813,
+              "cutoff_move_1": 1797,
+              "cutoff_move_2": 132,
+              "cutoff_move_3": 508,
+              "cutoff_move_4plus": 486,
+              "cutoff_tt": 358,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 1718,
+              "cutoff_quiet": 1205,
+              "first_move_cutoff_rate": 61.47793362983236
+            }
+          },
+          "c1": {
+            "move": "h1h5",
+            "score": 405,
+            "nodes": 57001,
+            "time_sec": 0.05188909999560565,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2327,
+              "mean_cutoff_index": 1.7941555651052858,
+              "cutoff_move_1": 1525,
+              "cutoff_move_2": 188,
+              "cutoff_move_3": 450,
+              "cutoff_move_4plus": 164,
+              "cutoff_tt": 315,
+              "cutoff_killer1": 677,
+              "cutoff_killer2": 102,
+              "cutoff_history": 0,
+              "cutoff_captures": 1480,
+              "cutoff_quiet": 847,
+              "first_move_cutoff_rate": 65.53502363558229
+            }
+          },
+          "c2": {
+            "move": "h1h5",
+            "score": 405,
+            "nodes": 71495,
+            "time_sec": 0.06666589999804273,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2795,
+              "mean_cutoff_index": 1.8547406082289803,
+              "cutoff_move_1": 1726,
+              "cutoff_move_2": 159,
+              "cutoff_move_3": 726,
+              "cutoff_move_4plus": 184,
+              "cutoff_tt": 372,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 1129,
+              "cutoff_captures": 1649,
+              "cutoff_quiet": 1146,
+              "first_move_cutoff_rate": 61.753130590339886
+            }
+          },
+          "c3": {
+            "move": "h1h5",
+            "score": 405,
+            "nodes": 57038,
+            "time_sec": 0.0581806999980472,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2295,
+              "mean_cutoff_index": 1.7777777777777777,
+              "cutoff_move_1": 1498,
+              "cutoff_move_2": 164,
+              "cutoff_move_3": 471,
+              "cutoff_move_4plus": 162,
+              "cutoff_tt": 316,
+              "cutoff_killer1": 624,
+              "cutoff_killer2": 159,
+              "cutoff_history": 821,
+              "cutoff_captures": 1456,
+              "cutoff_quiet": 839,
+              "first_move_cutoff_rate": 65.2723311546841
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "tac_04_knight_fork",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "expected": "e4d6",
+        "configs": {
+          "c0": {
+            "move": "e4c3",
+            "score": 350,
+            "nodes": 40389,
+            "time_sec": 0.03303499997127801,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2008,
+              "mean_cutoff_index": 2.3784860557768925,
+              "cutoff_move_1": 1174,
+              "cutoff_move_2": 219,
+              "cutoff_move_3": 113,
+              "cutoff_move_4plus": 502,
+              "cutoff_tt": 275,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 1326,
+              "cutoff_quiet": 682,
+              "first_move_cutoff_rate": 58.46613545816734
+            }
+          },
+          "c1": {
+            "move": "e4c3",
+            "score": 350,
+            "nodes": 36530,
+            "time_sec": 0.02811499999370426,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1858,
+              "mean_cutoff_index": 2.0904198062432724,
+              "cutoff_move_1": 1061,
+              "cutoff_move_2": 264,
+              "cutoff_move_3": 101,
+              "cutoff_move_4plus": 432,
+              "cutoff_tt": 279,
+              "cutoff_killer1": 476,
+              "cutoff_killer2": 123,
+              "cutoff_history": 0,
+              "cutoff_captures": 1208,
+              "cutoff_quiet": 650,
+              "first_move_cutoff_rate": 57.10441334768568
+            }
+          },
+          "c2": {
+            "move": "e4c3",
+            "score": 350,
+            "nodes": 33503,
+            "time_sec": 0.02706870000110939,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1842,
+              "mean_cutoff_index": 2.038545059717698,
+              "cutoff_move_1": 1069,
+              "cutoff_move_2": 228,
+              "cutoff_move_3": 130,
+              "cutoff_move_4plus": 415,
+              "cutoff_tt": 277,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 624,
+              "cutoff_captures": 1201,
+              "cutoff_quiet": 641,
+              "first_move_cutoff_rate": 58.03474484256243
+            }
+          },
+          "c3": {
+            "move": "e4c3",
+            "score": 350,
+            "nodes": 33431,
+            "time_sec": 0.029029900033492595,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1842,
+              "mean_cutoff_index": 2.06243213897937,
+              "cutoff_move_1": 1070,
+              "cutoff_move_2": 222,
+              "cutoff_move_3": 110,
+              "cutoff_move_4plus": 440,
+              "cutoff_tt": 279,
+              "cutoff_killer1": 474,
+              "cutoff_killer2": 116,
+              "cutoff_history": 623,
+              "cutoff_captures": 1202,
+              "cutoff_quiet": 640,
+              "first_move_cutoff_rate": 58.08903365906624
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "tac_05_skewer",
+        "fen": "8/8/4k3/8/8/1R6/2K4r/8 w - - 1 1",
+        "expected": "c2c3",
+        "configs": {
+          "c0": {
+            "move": "c2b1",
+            "score": 15,
+            "nodes": 7183,
+            "time_sec": 0.0028523000073619187,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 606,
+              "mean_cutoff_index": 3.33993399339934,
+              "cutoff_move_1": 397,
+              "cutoff_move_2": 74,
+              "cutoff_move_3": 8,
+              "cutoff_move_4plus": 127,
+              "cutoff_tt": 70,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 109,
+              "cutoff_quiet": 497,
+              "first_move_cutoff_rate": 65.51155115511551
+            }
+          },
+          "c1": {
+            "move": "c2b1",
+            "score": 15,
+            "nodes": 3651,
+            "time_sec": 0.001921999966725707,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 382,
+              "mean_cutoff_index": 1.531413612565445,
+              "cutoff_move_1": 348,
+              "cutoff_move_2": 11,
+              "cutoff_move_3": 2,
+              "cutoff_move_4plus": 21,
+              "cutoff_tt": 85,
+              "cutoff_killer1": 218,
+              "cutoff_killer2": 36,
+              "cutoff_history": 0,
+              "cutoff_captures": 73,
+              "cutoff_quiet": 309,
+              "first_move_cutoff_rate": 91.09947643979058
+            }
+          },
+          "c2": {
+            "move": "c2b1",
+            "score": 15,
+            "nodes": 3602,
+            "time_sec": 0.0023153999936766922,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 360,
+              "mean_cutoff_index": 1.5361111111111112,
+              "cutoff_move_1": 290,
+              "cutoff_move_2": 42,
+              "cutoff_move_3": 12,
+              "cutoff_move_4plus": 16,
+              "cutoff_tt": 80,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 271,
+              "cutoff_captures": 67,
+              "cutoff_quiet": 293,
+              "first_move_cutoff_rate": 80.55555555555556
+            }
+          },
+          "c3": {
+            "move": "c2b1",
+            "score": 15,
+            "nodes": 3514,
+            "time_sec": 0.0016259999829344451,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 360,
+              "mean_cutoff_index": 1.3888888888888888,
+              "cutoff_move_1": 327,
+              "cutoff_move_2": 17,
+              "cutoff_move_3": 3,
+              "cutoff_move_4plus": 13,
+              "cutoff_tt": 84,
+              "cutoff_killer1": 208,
+              "cutoff_killer2": 37,
+              "cutoff_history": 272,
+              "cutoff_captures": 66,
+              "cutoff_quiet": 294,
+              "first_move_cutoff_rate": 90.83333333333333
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "tac_06_discovered_attack",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "expected": "d4c5",
+        "configs": {
+          "c0": {
+            "move": "f3e5",
+            "score": 5,
+            "nodes": 48489,
+            "time_sec": 0.053422999975737184,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2569,
+              "mean_cutoff_index": 1.2689762553522772,
+              "cutoff_move_1": 2351,
+              "cutoff_move_2": 127,
+              "cutoff_move_3": 52,
+              "cutoff_move_4plus": 39,
+              "cutoff_tt": 314,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 2315,
+              "cutoff_quiet": 254,
+              "first_move_cutoff_rate": 91.5142078629817
+            }
+          },
+          "c1": {
+            "move": "f3e5",
+            "score": 5,
+            "nodes": 50925,
+            "time_sec": 0.04784109996398911,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2765,
+              "mean_cutoff_index": 1.2354430379746835,
+              "cutoff_move_1": 2545,
+              "cutoff_move_2": 95,
+              "cutoff_move_3": 64,
+              "cutoff_move_4plus": 61,
+              "cutoff_tt": 301,
+              "cutoff_killer1": 159,
+              "cutoff_killer2": 59,
+              "cutoff_history": 0,
+              "cutoff_captures": 2508,
+              "cutoff_quiet": 257,
+              "first_move_cutoff_rate": 92.04339963833634
+            }
+          },
+          "c2": {
+            "move": "f3e5",
+            "score": 5,
+            "nodes": 45834,
+            "time_sec": 0.04227420000825077,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2557,
+              "mean_cutoff_index": 1.1822448181462653,
+              "cutoff_move_1": 2358,
+              "cutoff_move_2": 123,
+              "cutoff_move_3": 24,
+              "cutoff_move_4plus": 52,
+              "cutoff_tt": 314,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 235,
+              "cutoff_captures": 2313,
+              "cutoff_quiet": 244,
+              "first_move_cutoff_rate": 92.21744231521313
+            }
+          },
+          "c3": {
+            "move": "f3e5",
+            "score": 5,
+            "nodes": 49298,
+            "time_sec": 0.05080620001535863,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2710,
+              "mean_cutoff_index": 1.1900369003690037,
+              "cutoff_move_1": 2517,
+              "cutoff_move_2": 81,
+              "cutoff_move_3": 56,
+              "cutoff_move_4plus": 56,
+              "cutoff_tt": 308,
+              "cutoff_killer1": 134,
+              "cutoff_killer2": 67,
+              "cutoff_history": 224,
+              "cutoff_captures": 2473,
+              "cutoff_quiet": 237,
+              "first_move_cutoff_rate": 92.87822878228782
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "tac_07_defensive_resource",
+        "fen": "r1b1k2r/pppp1ppp/8/4q3/1bP5/4P3/PP1N1PPP/R2QKB1R w KQkq - 0 9",
+        "expected": "a1b1",
+        "configs": {
+          "c0": {
+            "move": "a2a3",
+            "score": -20,
+            "nodes": 42737,
+            "time_sec": 0.047437200031708926,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2588,
+              "mean_cutoff_index": 2.189721792890263,
+              "cutoff_move_1": 1828,
+              "cutoff_move_2": 354,
+              "cutoff_move_3": 71,
+              "cutoff_move_4plus": 335,
+              "cutoff_tt": 490,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 1973,
+              "cutoff_quiet": 615,
+              "first_move_cutoff_rate": 70.63369397217929
+            }
+          },
+          "c1": {
+            "move": "a2a3",
+            "score": -20,
+            "nodes": 36626,
+            "time_sec": 0.037709099997300655,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2518,
+              "mean_cutoff_index": 1.7398729150119143,
+              "cutoff_move_1": 1799,
+              "cutoff_move_2": 422,
+              "cutoff_move_3": 114,
+              "cutoff_move_4plus": 183,
+              "cutoff_tt": 503,
+              "cutoff_killer1": 435,
+              "cutoff_killer2": 113,
+              "cutoff_history": 0,
+              "cutoff_captures": 1906,
+              "cutoff_quiet": 612,
+              "first_move_cutoff_rate": 71.44559173947577
+            }
+          },
+          "c2": {
+            "move": "a2a3",
+            "score": -20,
+            "nodes": 26136,
+            "time_sec": 0.024570500012487173,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1779,
+              "mean_cutoff_index": 1.5430016863406408,
+              "cutoff_move_1": 1320,
+              "cutoff_move_2": 306,
+              "cutoff_move_3": 64,
+              "cutoff_move_4plus": 89,
+              "cutoff_tt": 471,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 319,
+              "cutoff_captures": 1443,
+              "cutoff_quiet": 336,
+              "first_move_cutoff_rate": 74.19898819561551
+            }
+          },
+          "c3": {
+            "move": "a2a3",
+            "score": -20,
+            "nodes": 27224,
+            "time_sec": 0.026219099992886186,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1955,
+              "mean_cutoff_index": 1.5278772378516623,
+              "cutoff_move_1": 1476,
+              "cutoff_move_2": 324,
+              "cutoff_move_3": 58,
+              "cutoff_move_4plus": 97,
+              "cutoff_tt": 469,
+              "cutoff_killer1": 274,
+              "cutoff_killer2": 68,
+              "cutoff_history": 365,
+              "cutoff_captures": 1570,
+              "cutoff_quiet": 385,
+              "first_move_cutoff_rate": 75.49872122762147
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "tac_08_promotion_tactic",
+        "fen": "8/5P2/8/8/8/6k1/8/6K1 w - - 0 1",
+        "expected": "f7f8q",
+        "configs": {
+          "c0": {
+            "move": "f7f8q",
+            "score": 965,
+            "nodes": 1355,
+            "time_sec": 0.000520500005222857,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 113,
+              "mean_cutoff_index": 1.2920353982300885,
+              "cutoff_move_1": 93,
+              "cutoff_move_2": 11,
+              "cutoff_move_3": 6,
+              "cutoff_move_4plus": 3,
+              "cutoff_tt": 25,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 6,
+              "cutoff_quiet": 107,
+              "first_move_cutoff_rate": 82.30088495575221
+            }
+          },
+          "c1": {
+            "move": "f7f8q",
+            "score": 965,
+            "nodes": 1320,
+            "time_sec": 0.000451600004453212,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 108,
+              "mean_cutoff_index": 1.1111111111111112,
+              "cutoff_move_1": 98,
+              "cutoff_move_2": 8,
+              "cutoff_move_3": 2,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 29,
+              "cutoff_killer1": 64,
+              "cutoff_killer2": 15,
+              "cutoff_history": 0,
+              "cutoff_captures": 6,
+              "cutoff_quiet": 102,
+              "first_move_cutoff_rate": 90.74074074074075
+            }
+          },
+          "c2": {
+            "move": "f7f8q",
+            "score": 965,
+            "nodes": 1333,
+            "time_sec": 0.00045629998203366995,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 108,
+              "mean_cutoff_index": 1.1018518518518519,
+              "cutoff_move_1": 99,
+              "cutoff_move_2": 7,
+              "cutoff_move_3": 2,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 29,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 86,
+              "cutoff_captures": 6,
+              "cutoff_quiet": 102,
+              "first_move_cutoff_rate": 91.66666666666666
+            }
+          },
+          "c3": {
+            "move": "f7f8q",
+            "score": 965,
+            "nodes": 1316,
+            "time_sec": 0.0004121999954804778,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 108,
+              "mean_cutoff_index": 1.1296296296296295,
+              "cutoff_move_1": 96,
+              "cutoff_move_2": 10,
+              "cutoff_move_3": 2,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 29,
+              "cutoff_killer1": 58,
+              "cutoff_killer2": 23,
+              "cutoff_history": 86,
+              "cutoff_captures": 6,
+              "cutoff_quiet": 102,
+              "first_move_cutoff_rate": 88.88888888888889
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "tac_09_en_passant_tactic",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "expected": "d5e6",
+        "configs": {
+          "c0": {
+            "move": "d5e6",
+            "score": 925,
+            "nodes": 569,
+            "time_sec": 0.00018929998623207211,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 71,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 71,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 35,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 6,
+              "cutoff_quiet": 65,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c1": {
+            "move": "d5e6",
+            "score": 925,
+            "nodes": 569,
+            "time_sec": 0.0001824999926611781,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 71,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 71,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 35,
+              "cutoff_killer1": 55,
+              "cutoff_killer2": 1,
+              "cutoff_history": 0,
+              "cutoff_captures": 6,
+              "cutoff_quiet": 65,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c2": {
+            "move": "d5e6",
+            "score": 925,
+            "nodes": 569,
+            "time_sec": 0.00018719997024163604,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 71,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 71,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 35,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 59,
+              "cutoff_captures": 6,
+              "cutoff_quiet": 65,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c3": {
+            "move": "d5e6",
+            "score": 925,
+            "nodes": 569,
+            "time_sec": 0.00014259997988119721,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 71,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 71,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 35,
+              "cutoff_killer1": 55,
+              "cutoff_killer2": 1,
+              "cutoff_history": 59,
+              "cutoff_captures": 6,
+              "cutoff_quiet": 65,
+              "first_move_cutoff_rate": 100.0
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "tac_10_check_evasion",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4P3/2B1n3/8/PPP2PPP/RNBQK1NR w KQkq - 1 5",
+        "expected": "d1d5",
+        "configs": {
+          "c0": {
+            "move": "c4f7",
+            "score": 105,
+            "nodes": 39550,
+            "time_sec": 0.046096600010059774,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2349,
+              "mean_cutoff_index": 1.392081736909323,
+              "cutoff_move_1": 2134,
+              "cutoff_move_2": 93,
+              "cutoff_move_3": 41,
+              "cutoff_move_4plus": 81,
+              "cutoff_tt": 284,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 2178,
+              "cutoff_quiet": 171,
+              "first_move_cutoff_rate": 90.84716900808854
+            }
+          },
+          "c1": {
+            "move": "c4f7",
+            "score": 105,
+            "nodes": 35308,
+            "time_sec": 0.03788359998725355,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2252,
+              "mean_cutoff_index": 1.2539964476021315,
+              "cutoff_move_1": 2071,
+              "cutoff_move_2": 86,
+              "cutoff_move_3": 50,
+              "cutoff_move_4plus": 45,
+              "cutoff_tt": 284,
+              "cutoff_killer1": 77,
+              "cutoff_killer2": 26,
+              "cutoff_history": 0,
+              "cutoff_captures": 2103,
+              "cutoff_quiet": 149,
+              "first_move_cutoff_rate": 91.96269982238012
+            }
+          },
+          "c2": {
+            "move": "c4f7",
+            "score": 105,
+            "nodes": 33553,
+            "time_sec": 0.033076099993195385,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2228,
+              "mean_cutoff_index": 1.2051166965888689,
+              "cutoff_move_1": 2057,
+              "cutoff_move_2": 85,
+              "cutoff_move_3": 55,
+              "cutoff_move_4plus": 31,
+              "cutoff_tt": 273,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 134,
+              "cutoff_captures": 2078,
+              "cutoff_quiet": 150,
+              "first_move_cutoff_rate": 92.3249551166966
+            }
+          },
+          "c3": {
+            "move": "c4f7",
+            "score": 105,
+            "nodes": 33699,
+            "time_sec": 0.028710099984891713,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2225,
+              "mean_cutoff_index": 1.209438202247191,
+              "cutoff_move_1": 2056,
+              "cutoff_move_2": 82,
+              "cutoff_move_3": 47,
+              "cutoff_move_4plus": 40,
+              "cutoff_tt": 274,
+              "cutoff_killer1": 81,
+              "cutoff_killer2": 25,
+              "cutoff_history": 134,
+              "cutoff_captures": 2075,
+              "cutoff_quiet": 150,
+              "first_move_cutoff_rate": 92.40449438202248
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "tac_11_stalemate_avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "expected": "b6a6",
+        "configs": {
+          "c0": {
+            "move": "b6a6",
+            "score": 0,
+            "nodes": 64,
+            "time_sec": 4.7900015488266945e-05,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 20,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 20,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 15,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 20,
+              "cutoff_quiet": 0,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c1": {
+            "move": "b6a6",
+            "score": 0,
+            "nodes": 64,
+            "time_sec": 8.760002674534917e-05,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 20,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 20,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 15,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 20,
+              "cutoff_quiet": 0,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c2": {
+            "move": "b6a6",
+            "score": 0,
+            "nodes": 64,
+            "time_sec": 4.47999918833375e-05,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 20,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 20,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 15,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 20,
+              "cutoff_quiet": 0,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c3": {
+            "move": "b6a6",
+            "score": 0,
+            "nodes": 64,
+            "time_sec": 5.2099989261478186e-05,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 20,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 20,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 15,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 20,
+              "cutoff_quiet": 0,
+              "first_move_cutoff_rate": 100.0
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "tac_12_hanging_rook",
+        "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+        "expected": "a1a7",
+        "configs": {
+          "c0": {
+            "move": "a1d1",
+            "score": 0,
+            "nodes": 12804,
+            "time_sec": 0.005965100019238889,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1222,
+              "mean_cutoff_index": 2.4639934533551555,
+              "cutoff_move_1": 743,
+              "cutoff_move_2": 129,
+              "cutoff_move_3": 116,
+              "cutoff_move_4plus": 234,
+              "cutoff_tt": 305,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 210,
+              "cutoff_quiet": 1012,
+              "first_move_cutoff_rate": 60.801963993453356
+            }
+          },
+          "c1": {
+            "move": "a1d1",
+            "score": 0,
+            "nodes": 7789,
+            "time_sec": 0.0033304999815300107,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 657,
+              "mean_cutoff_index": 1.669710806697108,
+              "cutoff_move_1": 470,
+              "cutoff_move_2": 134,
+              "cutoff_move_3": 10,
+              "cutoff_move_4plus": 43,
+              "cutoff_tt": 107,
+              "cutoff_killer1": 362,
+              "cutoff_killer2": 94,
+              "cutoff_history": 0,
+              "cutoff_captures": 113,
+              "cutoff_quiet": 544,
+              "first_move_cutoff_rate": 71.5372907153729
+            }
+          },
+          "c2": {
+            "move": "a1d1",
+            "score": 0,
+            "nodes": 6507,
+            "time_sec": 0.0024101000162772834,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 562,
+              "mean_cutoff_index": 1.405693950177936,
+              "cutoff_move_1": 446,
+              "cutoff_move_2": 87,
+              "cutoff_move_3": 5,
+              "cutoff_move_4plus": 24,
+              "cutoff_tt": 118,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 459,
+              "cutoff_captures": 85,
+              "cutoff_quiet": 477,
+              "first_move_cutoff_rate": 79.35943060498221
+            }
+          },
+          "c3": {
+            "move": "a1d1",
+            "score": 0,
+            "nodes": 7060,
+            "time_sec": 0.0028724000439979136,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 624,
+              "mean_cutoff_index": 1.5480769230769231,
+              "cutoff_move_1": 450,
+              "cutoff_move_2": 132,
+              "cutoff_move_3": 17,
+              "cutoff_move_4plus": 25,
+              "cutoff_tt": 114,
+              "cutoff_killer1": 339,
+              "cutoff_killer2": 102,
+              "cutoff_history": 494,
+              "cutoff_captures": 109,
+              "cutoff_quiet": 515,
+              "first_move_cutoff_rate": 72.11538461538461
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      }
+    ]
+  },
+  "validation": {
+    "summary": {
+      "suite_name": "Validation Suite (16)",
+      "total_positions": 16,
+      "solved": {
+        "c0": 3,
+        "c1": 3,
+        "c2": 3,
+        "c3": 3
+      },
+      "total_nodes": {
+        "c0": 450576,
+        "c1": 345922,
+        "c2": 341483,
+        "c3": 332873
+      },
+      "node_reduction_c3_vs_c0_pct": 26.122785057348818,
+      "agreement_c3_c0_pct": 100.0,
+      "agreed_count": 16
+    },
+    "positions": [
+      {
+        "id": "val_01_tactical_fork",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "expected": "d1d5",
+        "configs": {
+          "c0": {
+            "move": "c4f7",
+            "score": -280,
+            "nodes": 46078,
+            "time_sec": 0.03908170002978295,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2288,
+              "mean_cutoff_index": 1.6927447552447552,
+              "cutoff_move_1": 1809,
+              "cutoff_move_2": 53,
+              "cutoff_move_3": 178,
+              "cutoff_move_4plus": 248,
+              "cutoff_tt": 278,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 1705,
+              "cutoff_quiet": 583,
+              "first_move_cutoff_rate": 79.0646853146853
+            }
+          },
+          "c1": {
+            "move": "c4f7",
+            "score": -280,
+            "nodes": 38860,
+            "time_sec": 0.03262289997655898,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2499,
+              "mean_cutoff_index": 1.2729091636654661,
+              "cutoff_move_1": 2211,
+              "cutoff_move_2": 57,
+              "cutoff_move_3": 146,
+              "cutoff_move_4plus": 85,
+              "cutoff_tt": 295,
+              "cutoff_killer1": 363,
+              "cutoff_killer2": 28,
+              "cutoff_history": 0,
+              "cutoff_captures": 2078,
+              "cutoff_quiet": 421,
+              "first_move_cutoff_rate": 88.47539015606243
+            }
+          },
+          "c2": {
+            "move": "c4f7",
+            "score": -280,
+            "nodes": 35998,
+            "time_sec": 0.029235400026664138,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2071,
+              "mean_cutoff_index": 1.4934814099468856,
+              "cutoff_move_1": 1665,
+              "cutoff_move_2": 48,
+              "cutoff_move_3": 183,
+              "cutoff_move_4plus": 175,
+              "cutoff_tt": 290,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 516,
+              "cutoff_captures": 1547,
+              "cutoff_quiet": 524,
+              "first_move_cutoff_rate": 80.3959439884114
+            }
+          },
+          "c3": {
+            "move": "c4f7",
+            "score": -280,
+            "nodes": 38799,
+            "time_sec": 0.039112000027671456,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2497,
+              "mean_cutoff_index": 1.263516219463356,
+              "cutoff_move_1": 2226,
+              "cutoff_move_2": 36,
+              "cutoff_move_3": 149,
+              "cutoff_move_4plus": 86,
+              "cutoff_tt": 294,
+              "cutoff_killer1": 348,
+              "cutoff_killer2": 39,
+              "cutoff_history": 412,
+              "cutoff_captures": 2076,
+              "cutoff_quiet": 421,
+              "first_move_cutoff_rate": 89.14697637164598
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "val_02_quiet_positional",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "expected": "e1g1",
+        "configs": {
+          "c0": {
+            "move": "d1c2",
+            "score": -5,
+            "nodes": 62678,
+            "time_sec": 0.0726880999864079,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 3287,
+              "mean_cutoff_index": 1.865835108001217,
+              "cutoff_move_1": 2810,
+              "cutoff_move_2": 127,
+              "cutoff_move_3": 133,
+              "cutoff_move_4plus": 217,
+              "cutoff_tt": 924,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 2727,
+              "cutoff_quiet": 560,
+              "first_move_cutoff_rate": 85.48828719196835
+            }
+          },
+          "c1": {
+            "move": "d1c2",
+            "score": -5,
+            "nodes": 55929,
+            "time_sec": 0.05342339997878298,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 3121,
+              "mean_cutoff_index": 1.2986222364626723,
+              "cutoff_move_1": 2759,
+              "cutoff_move_2": 190,
+              "cutoff_move_3": 85,
+              "cutoff_move_4plus": 87,
+              "cutoff_tt": 921,
+              "cutoff_killer1": 317,
+              "cutoff_killer2": 65,
+              "cutoff_history": 0,
+              "cutoff_captures": 2688,
+              "cutoff_quiet": 433,
+              "first_move_cutoff_rate": 88.40115347644985
+            }
+          },
+          "c2": {
+            "move": "d1c2",
+            "score": -5,
+            "nodes": 51382,
+            "time_sec": 0.05372630001511425,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 3041,
+              "mean_cutoff_index": 1.2801709963827688,
+              "cutoff_move_1": 2712,
+              "cutoff_move_2": 145,
+              "cutoff_move_3": 99,
+              "cutoff_move_4plus": 85,
+              "cutoff_tt": 926,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 417,
+              "cutoff_captures": 2605,
+              "cutoff_quiet": 436,
+              "first_move_cutoff_rate": 89.18119039789542
+            }
+          },
+          "c3": {
+            "move": "d1c2",
+            "score": -5,
+            "nodes": 54153,
+            "time_sec": 0.05194059998029843,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 3065,
+              "mean_cutoff_index": 1.261663947797716,
+              "cutoff_move_1": 2734,
+              "cutoff_move_2": 167,
+              "cutoff_move_3": 85,
+              "cutoff_move_4plus": 79,
+              "cutoff_tt": 925,
+              "cutoff_killer1": 291,
+              "cutoff_killer2": 60,
+              "cutoff_history": 382,
+              "cutoff_captures": 2664,
+              "cutoff_quiet": 401,
+              "first_move_cutoff_rate": 89.20065252854812
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "val_03_king_safety",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "expected": "e1g1",
+        "configs": {
+          "c0": {
+            "move": "e4c3",
+            "score": 350,
+            "nodes": 40389,
+            "time_sec": 0.03190459997858852,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2008,
+              "mean_cutoff_index": 2.3784860557768925,
+              "cutoff_move_1": 1174,
+              "cutoff_move_2": 219,
+              "cutoff_move_3": 113,
+              "cutoff_move_4plus": 502,
+              "cutoff_tt": 275,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 1326,
+              "cutoff_quiet": 682,
+              "first_move_cutoff_rate": 58.46613545816734
+            }
+          },
+          "c1": {
+            "move": "e4c3",
+            "score": 350,
+            "nodes": 36530,
+            "time_sec": 0.030378199997358024,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1858,
+              "mean_cutoff_index": 2.0904198062432724,
+              "cutoff_move_1": 1061,
+              "cutoff_move_2": 264,
+              "cutoff_move_3": 101,
+              "cutoff_move_4plus": 432,
+              "cutoff_tt": 279,
+              "cutoff_killer1": 476,
+              "cutoff_killer2": 123,
+              "cutoff_history": 0,
+              "cutoff_captures": 1208,
+              "cutoff_quiet": 650,
+              "first_move_cutoff_rate": 57.10441334768568
+            }
+          },
+          "c2": {
+            "move": "e4c3",
+            "score": 350,
+            "nodes": 33503,
+            "time_sec": 0.02719320001779124,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1842,
+              "mean_cutoff_index": 2.038545059717698,
+              "cutoff_move_1": 1069,
+              "cutoff_move_2": 228,
+              "cutoff_move_3": 130,
+              "cutoff_move_4plus": 415,
+              "cutoff_tt": 277,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 624,
+              "cutoff_captures": 1201,
+              "cutoff_quiet": 641,
+              "first_move_cutoff_rate": 58.03474484256243
+            }
+          },
+          "c3": {
+            "move": "e4c3",
+            "score": 350,
+            "nodes": 33431,
+            "time_sec": 0.027392699965275824,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1842,
+              "mean_cutoff_index": 2.06243213897937,
+              "cutoff_move_1": 1070,
+              "cutoff_move_2": 222,
+              "cutoff_move_3": 110,
+              "cutoff_move_4plus": 440,
+              "cutoff_tt": 279,
+              "cutoff_killer1": 474,
+              "cutoff_killer2": 116,
+              "cutoff_history": 623,
+              "cutoff_captures": 1202,
+              "cutoff_quiet": 640,
+              "first_move_cutoff_rate": 58.08903365906624
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "val_04_pawn_endgame",
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "expected": "e3f4",
+        "configs": {
+          "c0": {
+            "move": "e3f2",
+            "score": 0,
+            "nodes": 2785,
+            "time_sec": 0.0012452999944798648,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 309,
+              "mean_cutoff_index": 2.1423948220064726,
+              "cutoff_move_1": 193,
+              "cutoff_move_2": 30,
+              "cutoff_move_3": 22,
+              "cutoff_move_4plus": 64,
+              "cutoff_tt": 55,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 0,
+              "cutoff_quiet": 309,
+              "first_move_cutoff_rate": 62.45954692556634
+            }
+          },
+          "c1": {
+            "move": "e3f2",
+            "score": 0,
+            "nodes": 1957,
+            "time_sec": 0.0006330999894998968,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 238,
+              "mean_cutoff_index": 1.495798319327731,
+              "cutoff_move_1": 196,
+              "cutoff_move_2": 18,
+              "cutoff_move_3": 6,
+              "cutoff_move_4plus": 18,
+              "cutoff_tt": 51,
+              "cutoff_killer1": 146,
+              "cutoff_killer2": 17,
+              "cutoff_history": 0,
+              "cutoff_captures": 6,
+              "cutoff_quiet": 232,
+              "first_move_cutoff_rate": 82.35294117647058
+            }
+          },
+          "c2": {
+            "move": "e3f2",
+            "score": 0,
+            "nodes": 1939,
+            "time_sec": 0.0005757000180892646,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 227,
+              "mean_cutoff_index": 1.475770925110132,
+              "cutoff_move_1": 176,
+              "cutoff_move_2": 31,
+              "cutoff_move_3": 6,
+              "cutoff_move_4plus": 14,
+              "cutoff_tt": 45,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 187,
+              "cutoff_captures": 6,
+              "cutoff_quiet": 221,
+              "first_move_cutoff_rate": 77.5330396475771
+            }
+          },
+          "c3": {
+            "move": "e3f2",
+            "score": 0,
+            "nodes": 1895,
+            "time_sec": 0.000527900003362447,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 225,
+              "mean_cutoff_index": 1.4088888888888889,
+              "cutoff_move_1": 188,
+              "cutoff_move_2": 19,
+              "cutoff_move_3": 4,
+              "cutoff_move_4plus": 14,
+              "cutoff_tt": 48,
+              "cutoff_killer1": 142,
+              "cutoff_killer2": 17,
+              "cutoff_history": 186,
+              "cutoff_captures": 6,
+              "cutoff_quiet": 219,
+              "first_move_cutoff_rate": 83.55555555555556
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "val_05_rook_endgame",
+        "fen": "8/8/4k3/R7/8/8/2K4r/8 w - - 1 1",
+        "expected": "c2d3",
+        "configs": {
+          "c0": {
+            "move": "c2b1",
+            "score": 15,
+            "nodes": 8725,
+            "time_sec": 0.0032421000069007277,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 642,
+              "mean_cutoff_index": 4.224299065420561,
+              "cutoff_move_1": 412,
+              "cutoff_move_2": 21,
+              "cutoff_move_3": 3,
+              "cutoff_move_4plus": 206,
+              "cutoff_tt": 58,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 160,
+              "cutoff_quiet": 482,
+              "first_move_cutoff_rate": 64.17445482866043
+            }
+          },
+          "c1": {
+            "move": "c2b1",
+            "score": 15,
+            "nodes": 4707,
+            "time_sec": 0.002710399974603206,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 425,
+              "mean_cutoff_index": 1.76,
+              "cutoff_move_1": 363,
+              "cutoff_move_2": 28,
+              "cutoff_move_3": 3,
+              "cutoff_move_4plus": 31,
+              "cutoff_tt": 65,
+              "cutoff_killer1": 226,
+              "cutoff_killer2": 49,
+              "cutoff_history": 0,
+              "cutoff_captures": 74,
+              "cutoff_quiet": 351,
+              "first_move_cutoff_rate": 85.41176470588235
+            }
+          },
+          "c2": {
+            "move": "c2b1",
+            "score": 15,
+            "nodes": 4440,
+            "time_sec": 0.0019745000172406435,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 431,
+              "mean_cutoff_index": 1.6264501160092808,
+              "cutoff_move_1": 340,
+              "cutoff_move_2": 56,
+              "cutoff_move_3": 19,
+              "cutoff_move_4plus": 16,
+              "cutoff_tt": 63,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 331,
+              "cutoff_captures": 74,
+              "cutoff_quiet": 357,
+              "first_move_cutoff_rate": 78.88631090487239
+            }
+          },
+          "c3": {
+            "move": "c2b1",
+            "score": 15,
+            "nodes": 4254,
+            "time_sec": 0.0018364000134170055,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 419,
+              "mean_cutoff_index": 1.4653937947494033,
+              "cutoff_move_1": 385,
+              "cutoff_move_2": 16,
+              "cutoff_move_3": 3,
+              "cutoff_move_4plus": 15,
+              "cutoff_tt": 76,
+              "cutoff_killer1": 213,
+              "cutoff_killer2": 70,
+              "cutoff_history": 320,
+              "cutoff_captures": 73,
+              "cutoff_quiet": 346,
+              "first_move_cutoff_rate": 91.8854415274463
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "val_06_minor_piece_endgame",
+        "fen": "8/8/4k3/3b4/8/4B3/4K3/8 w - - 0 1",
+        "expected": "e2d3",
+        "configs": {
+          "c0": {
+            "move": "e2f1",
+            "score": 0,
+            "nodes": 32041,
+            "time_sec": 0.012241999967955053,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2779,
+              "mean_cutoff_index": 4.1734436847786975,
+              "cutoff_move_1": 1194,
+              "cutoff_move_2": 376,
+              "cutoff_move_3": 355,
+              "cutoff_move_4plus": 854,
+              "cutoff_tt": 205,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 17,
+              "cutoff_quiet": 2762,
+              "first_move_cutoff_rate": 42.96509535804246
+            }
+          },
+          "c1": {
+            "move": "e2f1",
+            "score": 0,
+            "nodes": 7531,
+            "time_sec": 0.0036497999681159854,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 887,
+              "mean_cutoff_index": 1.8015783540022547,
+              "cutoff_move_1": 662,
+              "cutoff_move_2": 148,
+              "cutoff_move_3": 21,
+              "cutoff_move_4plus": 56,
+              "cutoff_tt": 141,
+              "cutoff_killer1": 573,
+              "cutoff_killer2": 191,
+              "cutoff_history": 0,
+              "cutoff_captures": 7,
+              "cutoff_quiet": 880,
+              "first_move_cutoff_rate": 74.63359639233371
+            }
+          },
+          "c2": {
+            "move": "e2f1",
+            "score": 0,
+            "nodes": 6712,
+            "time_sec": 0.002992499968968332,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 739,
+              "mean_cutoff_index": 1.5142083897158323,
+              "cutoff_move_1": 581,
+              "cutoff_move_2": 92,
+              "cutoff_move_3": 44,
+              "cutoff_move_4plus": 22,
+              "cutoff_tt": 205,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 702,
+              "cutoff_captures": 8,
+              "cutoff_quiet": 731,
+              "first_move_cutoff_rate": 78.61975642760487
+            }
+          },
+          "c3": {
+            "move": "e2f1",
+            "score": 0,
+            "nodes": 6609,
+            "time_sec": 0.0029852999723516405,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 734,
+              "mean_cutoff_index": 1.4632152588555858,
+              "cutoff_move_1": 585,
+              "cutoff_move_2": 111,
+              "cutoff_move_3": 17,
+              "cutoff_move_4plus": 21,
+              "cutoff_tt": 178,
+              "cutoff_killer1": 511,
+              "cutoff_killer2": 125,
+              "cutoff_history": 699,
+              "cutoff_captures": 7,
+              "cutoff_quiet": 727,
+              "first_move_cutoff_rate": 79.70027247956402
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "val_07_pawn_promotion",
+        "fen": "8/4P3/8/8/8/6k1/8/6K1 w - - 0 1",
+        "expected": "e7e8q",
+        "configs": {
+          "c0": {
+            "move": "e7e8q",
+            "score": 965,
+            "nodes": 1630,
+            "time_sec": 0.0005785999819636345,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 149,
+              "mean_cutoff_index": 1.4966442953020134,
+              "cutoff_move_1": 110,
+              "cutoff_move_2": 25,
+              "cutoff_move_3": 5,
+              "cutoff_move_4plus": 9,
+              "cutoff_tt": 26,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 11,
+              "cutoff_quiet": 138,
+              "first_move_cutoff_rate": 73.8255033557047
+            }
+          },
+          "c1": {
+            "move": "e7e8q",
+            "score": 965,
+            "nodes": 1557,
+            "time_sec": 0.0005193999968469143,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 143,
+              "mean_cutoff_index": 1.2727272727272727,
+              "cutoff_move_1": 127,
+              "cutoff_move_2": 8,
+              "cutoff_move_3": 4,
+              "cutoff_move_4plus": 4,
+              "cutoff_tt": 28,
+              "cutoff_killer1": 80,
+              "cutoff_killer2": 23,
+              "cutoff_history": 0,
+              "cutoff_captures": 11,
+              "cutoff_quiet": 132,
+              "first_move_cutoff_rate": 88.81118881118881
+            }
+          },
+          "c2": {
+            "move": "e7e8q",
+            "score": 965,
+            "nodes": 1565,
+            "time_sec": 0.0004999000229872763,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 143,
+              "mean_cutoff_index": 1.2517482517482517,
+              "cutoff_move_1": 127,
+              "cutoff_move_2": 8,
+              "cutoff_move_3": 4,
+              "cutoff_move_4plus": 4,
+              "cutoff_tt": 28,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 107,
+              "cutoff_captures": 11,
+              "cutoff_quiet": 132,
+              "first_move_cutoff_rate": 88.81118881118881
+            }
+          },
+          "c3": {
+            "move": "e7e8q",
+            "score": 965,
+            "nodes": 1557,
+            "time_sec": 0.0005035999929532409,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 143,
+              "mean_cutoff_index": 1.2727272727272727,
+              "cutoff_move_1": 127,
+              "cutoff_move_2": 8,
+              "cutoff_move_3": 4,
+              "cutoff_move_4plus": 4,
+              "cutoff_tt": 28,
+              "cutoff_killer1": 80,
+              "cutoff_killer2": 23,
+              "cutoff_history": 107,
+              "cutoff_captures": 11,
+              "cutoff_quiet": 132,
+              "first_move_cutoff_rate": 88.81118881118881
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "val_08_kingside_castling",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "expected": "e1g1",
+        "configs": {
+          "c0": {
+            "move": "d2d3",
+            "score": 10,
+            "nodes": 59058,
+            "time_sec": 0.0668374000233598,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1972,
+              "mean_cutoff_index": 2.213995943204868,
+              "cutoff_move_1": 1318,
+              "cutoff_move_2": 123,
+              "cutoff_move_3": 307,
+              "cutoff_move_4plus": 224,
+              "cutoff_tt": 249,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 1351,
+              "cutoff_quiet": 621,
+              "first_move_cutoff_rate": 66.83569979716025
+            }
+          },
+          "c1": {
+            "move": "d2d3",
+            "score": 10,
+            "nodes": 44872,
+            "time_sec": 0.04893449996598065,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1928,
+              "mean_cutoff_index": 1.795124481327801,
+              "cutoff_move_1": 1350,
+              "cutoff_move_2": 87,
+              "cutoff_move_3": 377,
+              "cutoff_move_4plus": 114,
+              "cutoff_tt": 253,
+              "cutoff_killer1": 428,
+              "cutoff_killer2": 83,
+              "cutoff_history": 0,
+              "cutoff_captures": 1368,
+              "cutoff_quiet": 560,
+              "first_move_cutoff_rate": 70.0207468879668
+            }
+          },
+          "c2": {
+            "move": "d2d3",
+            "score": 10,
+            "nodes": 41897,
+            "time_sec": 0.04510049999225885,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1897,
+              "mean_cutoff_index": 1.7195571955719557,
+              "cutoff_move_1": 1312,
+              "cutoff_move_2": 97,
+              "cutoff_move_3": 361,
+              "cutoff_move_4plus": 127,
+              "cutoff_tt": 246,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 563,
+              "cutoff_captures": 1322,
+              "cutoff_quiet": 575,
+              "first_move_cutoff_rate": 69.16183447548761
+            }
+          },
+          "c3": {
+            "move": "d2d3",
+            "score": 10,
+            "nodes": 41230,
+            "time_sec": 0.04162009997526184,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1924,
+              "mean_cutoff_index": 1.696985446985447,
+              "cutoff_move_1": 1340,
+              "cutoff_move_2": 88,
+              "cutoff_move_3": 396,
+              "cutoff_move_4plus": 100,
+              "cutoff_tt": 253,
+              "cutoff_killer1": 332,
+              "cutoff_killer2": 191,
+              "cutoff_history": 552,
+              "cutoff_captures": 1360,
+              "cutoff_quiet": 564,
+              "first_move_cutoff_rate": 69.64656964656965
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "val_09_en_passant_execution",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "expected": "d5e6",
+        "configs": {
+          "c0": {
+            "move": "d5e6",
+            "score": 925,
+            "nodes": 569,
+            "time_sec": 0.00019300001440569758,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 71,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 71,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 35,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 6,
+              "cutoff_quiet": 65,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c1": {
+            "move": "d5e6",
+            "score": 925,
+            "nodes": 569,
+            "time_sec": 0.00015969999367371202,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 71,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 71,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 35,
+              "cutoff_killer1": 55,
+              "cutoff_killer2": 1,
+              "cutoff_history": 0,
+              "cutoff_captures": 6,
+              "cutoff_quiet": 65,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c2": {
+            "move": "d5e6",
+            "score": 925,
+            "nodes": 569,
+            "time_sec": 0.00015879998682066798,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 71,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 71,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 35,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 59,
+              "cutoff_captures": 6,
+              "cutoff_quiet": 65,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c3": {
+            "move": "d5e6",
+            "score": 925,
+            "nodes": 569,
+            "time_sec": 0.00014839996583759785,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 71,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 71,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 35,
+              "cutoff_killer1": 55,
+              "cutoff_killer2": 1,
+              "cutoff_history": 59,
+              "cutoff_captures": 6,
+              "cutoff_quiet": 65,
+              "first_move_cutoff_rate": 100.0
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "val_10_stalemate_avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "expected": "b6a6",
+        "configs": {
+          "c0": {
+            "move": "b6a6",
+            "score": 0,
+            "nodes": 64,
+            "time_sec": 3.439997090026736e-05,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 20,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 20,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 15,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 20,
+              "cutoff_quiet": 0,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c1": {
+            "move": "b6a6",
+            "score": 0,
+            "nodes": 64,
+            "time_sec": 2.729997504502535e-05,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 20,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 20,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 15,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 20,
+              "cutoff_quiet": 0,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c2": {
+            "move": "b6a6",
+            "score": 0,
+            "nodes": 64,
+            "time_sec": 2.6300025638192892e-05,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 20,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 20,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 15,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 20,
+              "cutoff_quiet": 0,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c3": {
+            "move": "b6a6",
+            "score": 0,
+            "nodes": 64,
+            "time_sec": 2.8099981136620045e-05,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 20,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 20,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 15,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 20,
+              "cutoff_quiet": 0,
+              "first_move_cutoff_rate": 100.0
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "val_11_check_evasion",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 1 6",
+        "expected": "e8g8",
+        "configs": {
+          "c0": {
+            "move": "d8f6",
+            "score": -170,
+            "nodes": 31399,
+            "time_sec": 0.026708499994128942,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1543,
+              "mean_cutoff_index": 1.410239792611795,
+              "cutoff_move_1": 1340,
+              "cutoff_move_2": 120,
+              "cutoff_move_3": 41,
+              "cutoff_move_4plus": 42,
+              "cutoff_tt": 245,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 1350,
+              "cutoff_quiet": 193,
+              "first_move_cutoff_rate": 86.84381075826313
+            }
+          },
+          "c1": {
+            "move": "d8f6",
+            "score": -170,
+            "nodes": 27100,
+            "time_sec": 0.02004620002117008,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1507,
+              "mean_cutoff_index": 1.2481751824817517,
+              "cutoff_move_1": 1311,
+              "cutoff_move_2": 128,
+              "cutoff_move_3": 54,
+              "cutoff_move_4plus": 14,
+              "cutoff_tt": 244,
+              "cutoff_killer1": 166,
+              "cutoff_killer2": 15,
+              "cutoff_history": 0,
+              "cutoff_captures": 1314,
+              "cutoff_quiet": 193,
+              "first_move_cutoff_rate": 86.99402786994028
+            }
+          },
+          "c2": {
+            "move": "d8f6",
+            "score": -170,
+            "nodes": 28584,
+            "time_sec": 0.022393500024918467,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1544,
+              "mean_cutoff_index": 1.3128238341968912,
+              "cutoff_move_1": 1330,
+              "cutoff_move_2": 120,
+              "cutoff_move_3": 56,
+              "cutoff_move_4plus": 38,
+              "cutoff_tt": 242,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 199,
+              "cutoff_captures": 1336,
+              "cutoff_quiet": 208,
+              "first_move_cutoff_rate": 86.13989637305698
+            }
+          },
+          "c3": {
+            "move": "d8f6",
+            "score": -170,
+            "nodes": 27364,
+            "time_sec": 0.022765500005334616,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1534,
+              "mean_cutoff_index": 1.2881355932203389,
+              "cutoff_move_1": 1323,
+              "cutoff_move_2": 128,
+              "cutoff_move_3": 66,
+              "cutoff_move_4plus": 17,
+              "cutoff_tt": 243,
+              "cutoff_killer1": 162,
+              "cutoff_killer2": 33,
+              "cutoff_history": 199,
+              "cutoff_captures": 1326,
+              "cutoff_quiet": 208,
+              "first_move_cutoff_rate": 86.24511082138201
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "val_12_repetition_sensitive",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+        "expected": "d7d5",
+        "configs": {
+          "c0": {
+            "move": "b8c6",
+            "score": 0,
+            "nodes": 15321,
+            "time_sec": 0.007936199952382594,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 968,
+              "mean_cutoff_index": 3.0237603305785123,
+              "cutoff_move_1": 605,
+              "cutoff_move_2": 65,
+              "cutoff_move_3": 31,
+              "cutoff_move_4plus": 267,
+              "cutoff_tt": 111,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 163,
+              "cutoff_quiet": 805,
+              "first_move_cutoff_rate": 62.5
+            }
+          },
+          "c1": {
+            "move": "b8c6",
+            "score": 0,
+            "nodes": 10853,
+            "time_sec": 0.006340099964290857,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 896,
+              "mean_cutoff_index": 1.5066964285714286,
+              "cutoff_move_1": 737,
+              "cutoff_move_2": 81,
+              "cutoff_move_3": 50,
+              "cutoff_move_4plus": 28,
+              "cutoff_tt": 128,
+              "cutoff_killer1": 531,
+              "cutoff_killer2": 154,
+              "cutoff_history": 0,
+              "cutoff_captures": 161,
+              "cutoff_quiet": 735,
+              "first_move_cutoff_rate": 82.25446428571429
+            }
+          },
+          "c2": {
+            "move": "b8c6",
+            "score": 0,
+            "nodes": 10939,
+            "time_sec": 0.005846499989274889,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 854,
+              "mean_cutoff_index": 1.4964871194379392,
+              "cutoff_move_1": 639,
+              "cutoff_move_2": 131,
+              "cutoff_move_3": 52,
+              "cutoff_move_4plus": 32,
+              "cutoff_tt": 124,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 699,
+              "cutoff_captures": 142,
+              "cutoff_quiet": 712,
+              "first_move_cutoff_rate": 74.82435597189696
+            }
+          },
+          "c3": {
+            "move": "b8c6",
+            "score": 0,
+            "nodes": 10017,
+            "time_sec": 0.005764100002124906,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 869,
+              "mean_cutoff_index": 1.3475258918296893,
+              "cutoff_move_1": 730,
+              "cutoff_move_2": 81,
+              "cutoff_move_3": 46,
+              "cutoff_move_4plus": 12,
+              "cutoff_tt": 135,
+              "cutoff_killer1": 542,
+              "cutoff_killer2": 139,
+              "cutoff_history": 701,
+              "cutoff_captures": 158,
+              "cutoff_quiet": 711,
+              "first_move_cutoff_rate": 84.00460299194476
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "val_13_fifty_move_draw_sensitive",
+        "fen": "8/8/4k3/8/8/4K3/8/8 w - - 99 50",
+        "expected": "e3e4",
+        "configs": {
+          "c0": {
+            "move": "e3d2",
+            "score": 0,
+            "nodes": 45,
+            "time_sec": 2.6300025638192892e-05,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 0,
+              "mean_cutoff_index": 0.0,
+              "cutoff_move_1": 0,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 0,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 0,
+              "cutoff_quiet": 0,
+              "first_move_cutoff_rate": 0.0
+            }
+          },
+          "c1": {
+            "move": "e3d2",
+            "score": 0,
+            "nodes": 45,
+            "time_sec": 2.0400038920342922e-05,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 0,
+              "mean_cutoff_index": 0.0,
+              "cutoff_move_1": 0,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 0,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 0,
+              "cutoff_quiet": 0,
+              "first_move_cutoff_rate": 0.0
+            }
+          },
+          "c2": {
+            "move": "e3d2",
+            "score": 0,
+            "nodes": 45,
+            "time_sec": 1.869996776804328e-05,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 0,
+              "mean_cutoff_index": 0.0,
+              "cutoff_move_1": 0,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 0,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 0,
+              "cutoff_quiet": 0,
+              "first_move_cutoff_rate": 0.0
+            }
+          },
+          "c3": {
+            "move": "e3d2",
+            "score": 0,
+            "nodes": 45,
+            "time_sec": 1.9000028260052204e-05,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 0,
+              "mean_cutoff_index": 0.0,
+              "cutoff_move_1": 0,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 0,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 0,
+              "cutoff_quiet": 0,
+              "first_move_cutoff_rate": 0.0
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "val_14_tactical_pin",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "expected": "d3h7",
+        "configs": {
+          "c0": {
+            "move": "h1h5",
+            "score": 405,
+            "nodes": 91979,
+            "time_sec": 0.10742059996118769,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2923,
+              "mean_cutoff_index": 2.294218268901813,
+              "cutoff_move_1": 1797,
+              "cutoff_move_2": 132,
+              "cutoff_move_3": 508,
+              "cutoff_move_4plus": 486,
+              "cutoff_tt": 358,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 1718,
+              "cutoff_quiet": 1205,
+              "first_move_cutoff_rate": 61.47793362983236
+            }
+          },
+          "c1": {
+            "move": "h1h5",
+            "score": 405,
+            "nodes": 57001,
+            "time_sec": 0.05154179997043684,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2327,
+              "mean_cutoff_index": 1.7941555651052858,
+              "cutoff_move_1": 1525,
+              "cutoff_move_2": 188,
+              "cutoff_move_3": 450,
+              "cutoff_move_4plus": 164,
+              "cutoff_tt": 315,
+              "cutoff_killer1": 677,
+              "cutoff_killer2": 102,
+              "cutoff_history": 0,
+              "cutoff_captures": 1480,
+              "cutoff_quiet": 847,
+              "first_move_cutoff_rate": 65.53502363558229
+            }
+          },
+          "c2": {
+            "move": "h1h5",
+            "score": 405,
+            "nodes": 71495,
+            "time_sec": 0.0654221999575384,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2795,
+              "mean_cutoff_index": 1.8547406082289803,
+              "cutoff_move_1": 1726,
+              "cutoff_move_2": 159,
+              "cutoff_move_3": 726,
+              "cutoff_move_4plus": 184,
+              "cutoff_tt": 372,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 1129,
+              "cutoff_captures": 1649,
+              "cutoff_quiet": 1146,
+              "first_move_cutoff_rate": 61.753130590339886
+            }
+          },
+          "c3": {
+            "move": "h1h5",
+            "score": 405,
+            "nodes": 57038,
+            "time_sec": 0.05559679999714717,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2295,
+              "mean_cutoff_index": 1.7777777777777777,
+              "cutoff_move_1": 1498,
+              "cutoff_move_2": 164,
+              "cutoff_move_3": 471,
+              "cutoff_move_4plus": 162,
+              "cutoff_tt": 316,
+              "cutoff_killer1": 624,
+              "cutoff_killer2": 159,
+              "cutoff_history": 821,
+              "cutoff_captures": 1456,
+              "cutoff_quiet": 839,
+              "first_move_cutoff_rate": 65.2723311546841
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "val_15_queen_endgame",
+        "fen": "8/8/4k3/3q4/8/4Q3/4K3/8 b - - 0 1",
+        "expected": "e6d6",
+        "configs": {
+          "c0": {
+            "move": "e6f7",
+            "score": 0,
+            "nodes": 9326,
+            "time_sec": 0.0054923000279814005,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 698,
+              "mean_cutoff_index": 3.19054441260745,
+              "cutoff_move_1": 477,
+              "cutoff_move_2": 63,
+              "cutoff_move_3": 35,
+              "cutoff_move_4plus": 123,
+              "cutoff_tt": 148,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 272,
+              "cutoff_quiet": 426,
+              "first_move_cutoff_rate": 68.33810888252148
+            }
+          },
+          "c1": {
+            "move": "e6f7",
+            "score": 0,
+            "nodes": 7422,
+            "time_sec": 0.0039255000301636755,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 660,
+              "mean_cutoff_index": 1.8151515151515152,
+              "cutoff_move_1": 568,
+              "cutoff_move_2": 31,
+              "cutoff_move_3": 8,
+              "cutoff_move_4plus": 53,
+              "cutoff_tt": 145,
+              "cutoff_killer1": 200,
+              "cutoff_killer2": 63,
+              "cutoff_history": 0,
+              "cutoff_captures": 258,
+              "cutoff_quiet": 402,
+              "first_move_cutoff_rate": 86.06060606060606
+            }
+          },
+          "c2": {
+            "move": "e6f7",
+            "score": 0,
+            "nodes": 6517,
+            "time_sec": 0.0032980000250972807,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 535,
+              "mean_cutoff_index": 1.7345794392523364,
+              "cutoff_move_1": 423,
+              "cutoff_move_2": 58,
+              "cutoff_move_3": 24,
+              "cutoff_move_4plus": 30,
+              "cutoff_tt": 85,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 289,
+              "cutoff_captures": 210,
+              "cutoff_quiet": 325,
+              "first_move_cutoff_rate": 79.06542056074767
+            }
+          },
+          "c3": {
+            "move": "e6f7",
+            "score": 0,
+            "nodes": 6550,
+            "time_sec": 0.0034904000349342823,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 550,
+              "mean_cutoff_index": 1.5345454545454544,
+              "cutoff_move_1": 483,
+              "cutoff_move_2": 27,
+              "cutoff_move_3": 12,
+              "cutoff_move_4plus": 28,
+              "cutoff_tt": 92,
+              "cutoff_killer1": 187,
+              "cutoff_killer2": 43,
+              "cutoff_history": 297,
+              "cutoff_captures": 216,
+              "cutoff_quiet": 334,
+              "first_move_cutoff_rate": 87.81818181818181
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "val_16_discovered_attack",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "expected": "d4c5",
+        "configs": {
+          "c0": {
+            "move": "f3e5",
+            "score": 5,
+            "nodes": 48489,
+            "time_sec": 0.045248899958096445,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2569,
+              "mean_cutoff_index": 1.2689762553522772,
+              "cutoff_move_1": 2351,
+              "cutoff_move_2": 127,
+              "cutoff_move_3": 52,
+              "cutoff_move_4plus": 39,
+              "cutoff_tt": 314,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 2315,
+              "cutoff_quiet": 254,
+              "first_move_cutoff_rate": 91.5142078629817
+            }
+          },
+          "c1": {
+            "move": "f3e5",
+            "score": 5,
+            "nodes": 50925,
+            "time_sec": 0.052373799961060286,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2765,
+              "mean_cutoff_index": 1.2354430379746835,
+              "cutoff_move_1": 2545,
+              "cutoff_move_2": 95,
+              "cutoff_move_3": 64,
+              "cutoff_move_4plus": 61,
+              "cutoff_tt": 301,
+              "cutoff_killer1": 159,
+              "cutoff_killer2": 59,
+              "cutoff_history": 0,
+              "cutoff_captures": 2508,
+              "cutoff_quiet": 257,
+              "first_move_cutoff_rate": 92.04339963833634
+            }
+          },
+          "c2": {
+            "move": "f3e5",
+            "score": 5,
+            "nodes": 45834,
+            "time_sec": 0.04812950000632554,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2557,
+              "mean_cutoff_index": 1.1822448181462653,
+              "cutoff_move_1": 2358,
+              "cutoff_move_2": 123,
+              "cutoff_move_3": 24,
+              "cutoff_move_4plus": 52,
+              "cutoff_tt": 314,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 235,
+              "cutoff_captures": 2313,
+              "cutoff_quiet": 244,
+              "first_move_cutoff_rate": 92.21744231521313
+            }
+          },
+          "c3": {
+            "move": "f3e5",
+            "score": 5,
+            "nodes": 49298,
+            "time_sec": 0.05004549998557195,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2710,
+              "mean_cutoff_index": 1.1900369003690037,
+              "cutoff_move_1": 2517,
+              "cutoff_move_2": 81,
+              "cutoff_move_3": 56,
+              "cutoff_move_4plus": 56,
+              "cutoff_tt": 308,
+              "cutoff_killer1": 134,
+              "cutoff_killer2": 67,
+              "cutoff_history": 224,
+              "cutoff_captures": 2473,
+              "cutoff_quiet": 237,
+              "first_move_cutoff_rate": 92.87822878228782
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      }
+    ]
+  },
+  "independent_tactical": {
+    "summary": {
+      "suite_name": "Independent Tactical Suite (20)",
+      "total_positions": 20,
+      "solved": {
+        "c0": 9,
+        "c1": 9,
+        "c2": 9,
+        "c3": 9
+      },
+      "total_nodes": {
+        "c0": 520021,
+        "c1": 481515,
+        "c2": 444541,
+        "c3": 447324
+      },
+      "node_reduction_c3_vs_c0_pct": 13.979627745802572,
+      "agreement_c3_c0_pct": 100.0,
+      "agreed_count": 20
+    },
+    "positions": [
+      {
+        "id": "ind_01_mate_in_1",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/5Q2/PPPP1PPP/RNB1K1NR w KQkq - 0 5",
+        "expected": "f3f7",
+        "configs": {
+          "c0": {
+            "move": "f3f7",
+            "score": 28999,
+            "nodes": 24499,
+            "time_sec": 0.007305199978873134,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 1779,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 1779,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 316,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 1529,
+              "cutoff_quiet": 250,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c1": {
+            "move": "f3f7",
+            "score": 28999,
+            "nodes": 22400,
+            "time_sec": 0.008319800021126866,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 1744,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 1744,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 291,
+              "cutoff_killer1": 44,
+              "cutoff_killer2": 154,
+              "cutoff_history": 0,
+              "cutoff_captures": 1537,
+              "cutoff_quiet": 207,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c2": {
+            "move": "f3f7",
+            "score": 28999,
+            "nodes": 22402,
+            "time_sec": 0.006912500015459955,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 1744,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 1744,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 291,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 204,
+              "cutoff_captures": 1537,
+              "cutoff_quiet": 207,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c3": {
+            "move": "f3f7",
+            "score": 28999,
+            "nodes": 22402,
+            "time_sec": 0.007755399972666055,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 1744,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 1744,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 291,
+              "cutoff_killer1": 39,
+              "cutoff_killer2": 164,
+              "cutoff_history": 204,
+              "cutoff_captures": 1537,
+              "cutoff_quiet": 207,
+              "first_move_cutoff_rate": 100.0
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_02_back_rank_mate",
+        "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+        "expected": "d1d8",
+        "configs": {
+          "c0": {
+            "move": "d1d8",
+            "score": 28999,
+            "nodes": 2021,
+            "time_sec": 0.0005748000112362206,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 245,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 245,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 98,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 83,
+              "cutoff_quiet": 162,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c1": {
+            "move": "d1d8",
+            "score": 28999,
+            "nodes": 2021,
+            "time_sec": 0.0005407999851740897,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 245,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 245,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 98,
+              "cutoff_killer1": 105,
+              "cutoff_killer2": 54,
+              "cutoff_history": 0,
+              "cutoff_captures": 83,
+              "cutoff_quiet": 162,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c2": {
+            "move": "d1d8",
+            "score": 28999,
+            "nodes": 2021,
+            "time_sec": 0.0005296000163070858,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 245,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 245,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 98,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 160,
+              "cutoff_captures": 83,
+              "cutoff_quiet": 162,
+              "first_move_cutoff_rate": 100.0
+            }
+          },
+          "c3": {
+            "move": "d1d8",
+            "score": 28999,
+            "nodes": 2021,
+            "time_sec": 0.0005362000083550811,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 245,
+              "mean_cutoff_index": 1.0,
+              "cutoff_move_1": 245,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 98,
+              "cutoff_killer1": 105,
+              "cutoff_killer2": 54,
+              "cutoff_history": 160,
+              "cutoff_captures": 83,
+              "cutoff_quiet": 162,
+              "first_move_cutoff_rate": 100.0
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_03_queen_sac_mate",
+        "fen": "6k1/5ppp/8/8/8/8/1q4PP/4Q1K1 w - - 0 1",
+        "expected": "e1e8",
+        "configs": {
+          "c0": {
+            "move": "e1e8",
+            "score": 28999,
+            "nodes": 3914,
+            "time_sec": 0.0016265999875031412,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 456,
+              "mean_cutoff_index": 1.1096491228070176,
+              "cutoff_move_1": 445,
+              "cutoff_move_2": 1,
+              "cutoff_move_3": 1,
+              "cutoff_move_4plus": 9,
+              "cutoff_tt": 142,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 318,
+              "cutoff_quiet": 138,
+              "first_move_cutoff_rate": 97.58771929824562
+            }
+          },
+          "c1": {
+            "move": "e1e8",
+            "score": 28999,
+            "nodes": 3829,
+            "time_sec": 0.001579499978106469,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 449,
+              "mean_cutoff_index": 1.0579064587973275,
+              "cutoff_move_1": 438,
+              "cutoff_move_2": 8,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 3,
+              "cutoff_tt": 141,
+              "cutoff_killer1": 103,
+              "cutoff_killer2": 13,
+              "cutoff_history": 0,
+              "cutoff_captures": 300,
+              "cutoff_quiet": 149,
+              "first_move_cutoff_rate": 97.55011135857461
+            }
+          },
+          "c2": {
+            "move": "e1e8",
+            "score": 28999,
+            "nodes": 3709,
+            "time_sec": 0.0022658000234514475,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 440,
+              "mean_cutoff_index": 1.0636363636363637,
+              "cutoff_move_1": 429,
+              "cutoff_move_2": 7,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 4,
+              "cutoff_tt": 141,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 131,
+              "cutoff_captures": 300,
+              "cutoff_quiet": 140,
+              "first_move_cutoff_rate": 97.5
+            }
+          },
+          "c3": {
+            "move": "e1e8",
+            "score": 28999,
+            "nodes": 3831,
+            "time_sec": 0.0018242999794892967,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 449,
+              "mean_cutoff_index": 1.0579064587973275,
+              "cutoff_move_1": 438,
+              "cutoff_move_2": 8,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 3,
+              "cutoff_tt": 141,
+              "cutoff_killer1": 104,
+              "cutoff_killer2": 15,
+              "cutoff_history": 140,
+              "cutoff_captures": 300,
+              "cutoff_quiet": 149,
+              "first_move_cutoff_rate": 97.55011135857461
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_04_defensive_perpetual",
+        "fen": "8/6k1/8/8/8/8/1q4PK/7Q w - - 0 1",
+        "expected": "h1e1",
+        "configs": {
+          "c0": {
+            "move": "h1e1",
+            "score": 110,
+            "nodes": 8040,
+            "time_sec": 0.005298400006722659,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 599,
+              "mean_cutoff_index": 3.2387312186978297,
+              "cutoff_move_1": 328,
+              "cutoff_move_2": 47,
+              "cutoff_move_3": 77,
+              "cutoff_move_4plus": 147,
+              "cutoff_tt": 86,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 197,
+              "cutoff_quiet": 402,
+              "first_move_cutoff_rate": 54.757929883138566
+            }
+          },
+          "c1": {
+            "move": "h1e1",
+            "score": 110,
+            "nodes": 6466,
+            "time_sec": 0.004005399998277426,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 597,
+              "mean_cutoff_index": 1.8576214405360134,
+              "cutoff_move_1": 450,
+              "cutoff_move_2": 84,
+              "cutoff_move_3": 12,
+              "cutoff_move_4plus": 51,
+              "cutoff_tt": 101,
+              "cutoff_killer1": 280,
+              "cutoff_killer2": 46,
+              "cutoff_history": 0,
+              "cutoff_captures": 187,
+              "cutoff_quiet": 410,
+              "first_move_cutoff_rate": 75.37688442211056
+            }
+          },
+          "c2": {
+            "move": "h1e1",
+            "score": 110,
+            "nodes": 6110,
+            "time_sec": 0.003667700046207756,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 570,
+              "mean_cutoff_index": 1.4719298245614034,
+              "cutoff_move_1": 447,
+              "cutoff_move_2": 78,
+              "cutoff_move_3": 17,
+              "cutoff_move_4plus": 28,
+              "cutoff_tt": 105,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 373,
+              "cutoff_captures": 171,
+              "cutoff_quiet": 399,
+              "first_move_cutoff_rate": 78.42105263157895
+            }
+          },
+          "c3": {
+            "move": "h1e1",
+            "score": 110,
+            "nodes": 6216,
+            "time_sec": 0.00345509999897331,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 591,
+              "mean_cutoff_index": 1.5651438240270727,
+              "cutoff_move_1": 460,
+              "cutoff_move_2": 86,
+              "cutoff_move_3": 17,
+              "cutoff_move_4plus": 28,
+              "cutoff_tt": 105,
+              "cutoff_killer1": 272,
+              "cutoff_killer2": 54,
+              "cutoff_history": 382,
+              "cutoff_captures": 180,
+              "cutoff_quiet": 411,
+              "first_move_cutoff_rate": 77.834179357022
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_05_queen_attack",
+        "fen": "rn2kb1r/pp3ppp/4p3/1qp1N3/3P4/8/PPP2PPP/R1BQK2R w KQkq - 0 11",
+        "expected": "d1h5",
+        "configs": {
+          "c0": {
+            "move": "d1f3",
+            "score": 100,
+            "nodes": 35802,
+            "time_sec": 0.03671529999701306,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1862,
+              "mean_cutoff_index": 1.8265306122448979,
+              "cutoff_move_1": 1442,
+              "cutoff_move_2": 203,
+              "cutoff_move_3": 118,
+              "cutoff_move_4plus": 99,
+              "cutoff_tt": 263,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 1579,
+              "cutoff_quiet": 283,
+              "first_move_cutoff_rate": 77.44360902255639
+            }
+          },
+          "c1": {
+            "move": "d1f3",
+            "score": 100,
+            "nodes": 31093,
+            "time_sec": 0.029263800010085106,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1856,
+              "mean_cutoff_index": 1.4520474137931034,
+              "cutoff_move_1": 1503,
+              "cutoff_move_2": 204,
+              "cutoff_move_3": 83,
+              "cutoff_move_4plus": 66,
+              "cutoff_tt": 273,
+              "cutoff_killer1": 129,
+              "cutoff_killer2": 29,
+              "cutoff_history": 0,
+              "cutoff_captures": 1645,
+              "cutoff_quiet": 211,
+              "first_move_cutoff_rate": 80.98060344827587
+            }
+          },
+          "c2": {
+            "move": "d1f3",
+            "score": 100,
+            "nodes": 30444,
+            "time_sec": 0.02875629998743534,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1767,
+              "mean_cutoff_index": 1.3927560837577815,
+              "cutoff_move_1": 1426,
+              "cutoff_move_2": 200,
+              "cutoff_move_3": 90,
+              "cutoff_move_4plus": 51,
+              "cutoff_tt": 275,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 192,
+              "cutoff_captures": 1560,
+              "cutoff_quiet": 207,
+              "first_move_cutoff_rate": 80.7017543859649
+            }
+          },
+          "c3": {
+            "move": "d1f3",
+            "score": 100,
+            "nodes": 30257,
+            "time_sec": 0.039787899993825704,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1861,
+              "mean_cutoff_index": 1.3659322944653411,
+              "cutoff_move_1": 1510,
+              "cutoff_move_2": 205,
+              "cutoff_move_3": 88,
+              "cutoff_move_4plus": 58,
+              "cutoff_tt": 273,
+              "cutoff_killer1": 145,
+              "cutoff_killer2": 27,
+              "cutoff_history": 197,
+              "cutoff_captures": 1651,
+              "cutoff_quiet": 210,
+              "first_move_cutoff_rate": 81.13917248790973
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_06_knight_fork_defense",
+        "fen": "r1b1k2r/pppp1ppp/8/4N3/1b1qn3/8/PPP2PPP/RNBQKB1R w KQkq - 0 8",
+        "expected": "c2c3",
+        "configs": {
+          "c0": {
+            "move": "e1e2",
+            "score": -385,
+            "nodes": 16920,
+            "time_sec": 0.07127630000468343,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1037,
+              "mean_cutoff_index": 1.5091610414657666,
+              "cutoff_move_1": 884,
+              "cutoff_move_2": 68,
+              "cutoff_move_3": 13,
+              "cutoff_move_4plus": 72,
+              "cutoff_tt": 117,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 873,
+              "cutoff_quiet": 164,
+              "first_move_cutoff_rate": 85.24590163934425
+            }
+          },
+          "c1": {
+            "move": "e1e2",
+            "score": -385,
+            "nodes": 14508,
+            "time_sec": 0.063021200010553,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 961,
+              "mean_cutoff_index": 1.3090530697190426,
+              "cutoff_move_1": 864,
+              "cutoff_move_2": 31,
+              "cutoff_move_3": 31,
+              "cutoff_move_4plus": 35,
+              "cutoff_tt": 119,
+              "cutoff_killer1": 76,
+              "cutoff_killer2": 8,
+              "cutoff_history": 0,
+              "cutoff_captures": 853,
+              "cutoff_quiet": 108,
+              "first_move_cutoff_rate": 89.9063475546306
+            }
+          },
+          "c2": {
+            "move": "e1e2",
+            "score": -385,
+            "nodes": 14682,
+            "time_sec": 0.06305900000734255,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 951,
+              "mean_cutoff_index": 1.3059936908517351,
+              "cutoff_move_1": 859,
+              "cutoff_move_2": 23,
+              "cutoff_move_3": 25,
+              "cutoff_move_4plus": 44,
+              "cutoff_tt": 119,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 84,
+              "cutoff_captures": 853,
+              "cutoff_quiet": 98,
+              "first_move_cutoff_rate": 90.32597266035752
+            }
+          },
+          "c3": {
+            "move": "e1e2",
+            "score": -385,
+            "nodes": 14327,
+            "time_sec": 0.08942600002046674,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 951,
+              "mean_cutoff_index": 1.284963196635121,
+              "cutoff_move_1": 861,
+              "cutoff_move_2": 27,
+              "cutoff_move_3": 28,
+              "cutoff_move_4plus": 35,
+              "cutoff_tt": 119,
+              "cutoff_killer1": 64,
+              "cutoff_killer2": 9,
+              "cutoff_history": 83,
+              "cutoff_captures": 854,
+              "cutoff_quiet": 97,
+              "first_move_cutoff_rate": 90.53627760252367
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_07_skewer_evasion",
+        "fen": "4k3/8/8/8/8/8/1R6/1K4q1 w - - 0 1",
+        "expected": "b1a2",
+        "configs": {
+          "c0": {
+            "move": "b1a2",
+            "score": -385,
+            "nodes": 4929,
+            "time_sec": 0.010423799976706505,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 375,
+              "mean_cutoff_index": 3.546666666666667,
+              "cutoff_move_1": 235,
+              "cutoff_move_2": 20,
+              "cutoff_move_3": 21,
+              "cutoff_move_4plus": 99,
+              "cutoff_tt": 35,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 101,
+              "cutoff_quiet": 274,
+              "first_move_cutoff_rate": 62.66666666666667
+            }
+          },
+          "c1": {
+            "move": "b1a2",
+            "score": -385,
+            "nodes": 3149,
+            "time_sec": 0.006699000019580126,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 309,
+              "mean_cutoff_index": 1.9579288025889967,
+              "cutoff_move_1": 249,
+              "cutoff_move_2": 28,
+              "cutoff_move_3": 6,
+              "cutoff_move_4plus": 26,
+              "cutoff_tt": 36,
+              "cutoff_killer1": 130,
+              "cutoff_killer2": 49,
+              "cutoff_history": 0,
+              "cutoff_captures": 74,
+              "cutoff_quiet": 235,
+              "first_move_cutoff_rate": 80.58252427184466
+            }
+          },
+          "c2": {
+            "move": "b1a2",
+            "score": -385,
+            "nodes": 3222,
+            "time_sec": 0.007334500027354807,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 331,
+              "mean_cutoff_index": 1.7129909365558913,
+              "cutoff_move_1": 269,
+              "cutoff_move_2": 22,
+              "cutoff_move_3": 24,
+              "cutoff_move_4plus": 16,
+              "cutoff_tt": 35,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 225,
+              "cutoff_captures": 80,
+              "cutoff_quiet": 251,
+              "first_move_cutoff_rate": 81.2688821752266
+            }
+          },
+          "c3": {
+            "move": "b1a2",
+            "score": -385,
+            "nodes": 3296,
+            "time_sec": 0.0053254999802447855,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 336,
+              "mean_cutoff_index": 1.7172619047619047,
+              "cutoff_move_1": 279,
+              "cutoff_move_2": 29,
+              "cutoff_move_3": 7,
+              "cutoff_move_4plus": 21,
+              "cutoff_tt": 36,
+              "cutoff_killer1": 123,
+              "cutoff_killer2": 64,
+              "cutoff_history": 216,
+              "cutoff_captures": 87,
+              "cutoff_quiet": 249,
+              "first_move_cutoff_rate": 83.03571428571429
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_08_pawn_breakthrough",
+        "fen": "8/8/4k3/8/4P3/8/4K3/8 w - - 0 1",
+        "expected": "e4e5",
+        "configs": {
+          "c0": {
+            "move": "e2f2",
+            "score": 125,
+            "nodes": 2193,
+            "time_sec": 0.0028079000185243785,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 257,
+              "mean_cutoff_index": 2.0233463035019454,
+              "cutoff_move_1": 143,
+              "cutoff_move_2": 56,
+              "cutoff_move_3": 7,
+              "cutoff_move_4plus": 51,
+              "cutoff_tt": 43,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 36,
+              "cutoff_quiet": 221,
+              "first_move_cutoff_rate": 55.6420233463035
+            }
+          },
+          "c1": {
+            "move": "e2f2",
+            "score": 125,
+            "nodes": 1926,
+            "time_sec": 0.0023207999765872955,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 239,
+              "mean_cutoff_index": 1.6234309623430963,
+              "cutoff_move_1": 174,
+              "cutoff_move_2": 35,
+              "cutoff_move_3": 9,
+              "cutoff_move_4plus": 21,
+              "cutoff_tt": 46,
+              "cutoff_killer1": 119,
+              "cutoff_killer2": 29,
+              "cutoff_history": 0,
+              "cutoff_captures": 33,
+              "cutoff_quiet": 206,
+              "first_move_cutoff_rate": 72.80334728033473
+            }
+          },
+          "c2": {
+            "move": "e2f2",
+            "score": 125,
+            "nodes": 1944,
+            "time_sec": 0.0026585999876260757,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 241,
+              "mean_cutoff_index": 1.5892116182572613,
+              "cutoff_move_1": 173,
+              "cutoff_move_2": 43,
+              "cutoff_move_3": 6,
+              "cutoff_move_4plus": 19,
+              "cutoff_tt": 50,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 170,
+              "cutoff_captures": 33,
+              "cutoff_quiet": 208,
+              "first_move_cutoff_rate": 71.78423236514523
+            }
+          },
+          "c3": {
+            "move": "e2f2",
+            "score": 125,
+            "nodes": 1904,
+            "time_sec": 0.00250400003278628,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 237,
+              "mean_cutoff_index": 1.5696202531645569,
+              "cutoff_move_1": 175,
+              "cutoff_move_2": 36,
+              "cutoff_move_3": 8,
+              "cutoff_move_4plus": 18,
+              "cutoff_tt": 47,
+              "cutoff_killer1": 117,
+              "cutoff_killer2": 33,
+              "cutoff_history": 168,
+              "cutoff_captures": 32,
+              "cutoff_quiet": 205,
+              "first_move_cutoff_rate": 73.83966244725738
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_09_direct_promotion",
+        "fen": "8/4P1k1/8/8/8/8/8/6K1 w - - 0 1",
+        "expected": "e7e8q",
+        "configs": {
+          "c0": {
+            "move": "e7e8q",
+            "score": 955,
+            "nodes": 1653,
+            "time_sec": 0.008737600001040846,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 135,
+              "mean_cutoff_index": 1.5407407407407407,
+              "cutoff_move_1": 107,
+              "cutoff_move_2": 3,
+              "cutoff_move_3": 13,
+              "cutoff_move_4plus": 12,
+              "cutoff_tt": 45,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 40,
+              "cutoff_quiet": 95,
+              "first_move_cutoff_rate": 79.25925925925927
+            }
+          },
+          "c1": {
+            "move": "e7e8q",
+            "score": 955,
+            "nodes": 1291,
+            "time_sec": 0.0016555000329390168,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 124,
+              "mean_cutoff_index": 1.1935483870967742,
+              "cutoff_move_1": 116,
+              "cutoff_move_2": 2,
+              "cutoff_move_3": 1,
+              "cutoff_move_4plus": 5,
+              "cutoff_tt": 44,
+              "cutoff_killer1": 57,
+              "cutoff_killer2": 10,
+              "cutoff_history": 0,
+              "cutoff_captures": 43,
+              "cutoff_quiet": 81,
+              "first_move_cutoff_rate": 93.54838709677419
+            }
+          },
+          "c2": {
+            "move": "e7e8q",
+            "score": 955,
+            "nodes": 1301,
+            "time_sec": 0.003971300029661506,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 124,
+              "mean_cutoff_index": 1.217741935483871,
+              "cutoff_move_1": 114,
+              "cutoff_move_2": 3,
+              "cutoff_move_3": 2,
+              "cutoff_move_4plus": 5,
+              "cutoff_tt": 44,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 69,
+              "cutoff_captures": 43,
+              "cutoff_quiet": 81,
+              "first_move_cutoff_rate": 91.93548387096774
+            }
+          },
+          "c3": {
+            "move": "e7e8q",
+            "score": 955,
+            "nodes": 1291,
+            "time_sec": 0.0014400999643839896,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 124,
+              "mean_cutoff_index": 1.1935483870967742,
+              "cutoff_move_1": 116,
+              "cutoff_move_2": 2,
+              "cutoff_move_3": 1,
+              "cutoff_move_4plus": 5,
+              "cutoff_tt": 44,
+              "cutoff_killer1": 57,
+              "cutoff_killer2": 10,
+              "cutoff_history": 69,
+              "cutoff_captures": 43,
+              "cutoff_quiet": 81,
+              "first_move_cutoff_rate": 93.54838709677419
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_10_stalemate_trap",
+        "fen": "8/8/8/8/8/5k2/7p/7K w - - 0 1",
+        "expected": "h1h2",
+        "configs": {
+          "c0": {
+            "move": "h1h2",
+            "score": 0,
+            "nodes": 10,
+            "time_sec": 8.74000252224505e-05,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 0,
+              "mean_cutoff_index": 0.0,
+              "cutoff_move_1": 0,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 0,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 0,
+              "cutoff_quiet": 0,
+              "first_move_cutoff_rate": 0.0
+            }
+          },
+          "c1": {
+            "move": "h1h2",
+            "score": 0,
+            "nodes": 10,
+            "time_sec": 8.379999781027436e-05,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 0,
+              "mean_cutoff_index": 0.0,
+              "cutoff_move_1": 0,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 0,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 0,
+              "cutoff_quiet": 0,
+              "first_move_cutoff_rate": 0.0
+            }
+          },
+          "c2": {
+            "move": "h1h2",
+            "score": 0,
+            "nodes": 10,
+            "time_sec": 8.540000999346375e-05,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 0,
+              "mean_cutoff_index": 0.0,
+              "cutoff_move_1": 0,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 0,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 0,
+              "cutoff_quiet": 0,
+              "first_move_cutoff_rate": 0.0
+            }
+          },
+          "c3": {
+            "move": "h1h2",
+            "score": 0,
+            "nodes": 10,
+            "time_sec": 0.00010619999375194311,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 0,
+              "mean_cutoff_index": 0.0,
+              "cutoff_move_1": 0,
+              "cutoff_move_2": 0,
+              "cutoff_move_3": 0,
+              "cutoff_move_4plus": 0,
+              "cutoff_tt": 0,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 0,
+              "cutoff_quiet": 0,
+              "first_move_cutoff_rate": 0.0
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_11_opposition_endgame",
+        "fen": "8/8/8/4k3/4p3/4K3/8/8 b - - 0 1",
+        "expected": "e5d5",
+        "configs": {
+          "c0": {
+            "move": "e5f5",
+            "score": 95,
+            "nodes": 538,
+            "time_sec": 0.0007760999724268913,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 70,
+              "mean_cutoff_index": 1.7285714285714286,
+              "cutoff_move_1": 50,
+              "cutoff_move_2": 5,
+              "cutoff_move_3": 8,
+              "cutoff_move_4plus": 7,
+              "cutoff_tt": 21,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 19,
+              "cutoff_quiet": 51,
+              "first_move_cutoff_rate": 71.42857142857143
+            }
+          },
+          "c1": {
+            "move": "e5f5",
+            "score": 95,
+            "nodes": 557,
+            "time_sec": 0.0024541000020690262,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 74,
+              "mean_cutoff_index": 1.6486486486486487,
+              "cutoff_move_1": 56,
+              "cutoff_move_2": 6,
+              "cutoff_move_3": 6,
+              "cutoff_move_4plus": 6,
+              "cutoff_tt": 20,
+              "cutoff_killer1": 28,
+              "cutoff_killer2": 6,
+              "cutoff_history": 0,
+              "cutoff_captures": 19,
+              "cutoff_quiet": 55,
+              "first_move_cutoff_rate": 75.67567567567568
+            }
+          },
+          "c2": {
+            "move": "e5f5",
+            "score": 95,
+            "nodes": 564,
+            "time_sec": 0.000826300005428493,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 74,
+              "mean_cutoff_index": 1.6756756756756757,
+              "cutoff_move_1": 54,
+              "cutoff_move_2": 8,
+              "cutoff_move_3": 6,
+              "cutoff_move_4plus": 6,
+              "cutoff_tt": 20,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 40,
+              "cutoff_captures": 19,
+              "cutoff_quiet": 55,
+              "first_move_cutoff_rate": 72.97297297297297
+            }
+          },
+          "c3": {
+            "move": "e5f5",
+            "score": 95,
+            "nodes": 555,
+            "time_sec": 0.0007035000016912818,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 74,
+              "mean_cutoff_index": 1.635135135135135,
+              "cutoff_move_1": 56,
+              "cutoff_move_2": 7,
+              "cutoff_move_3": 5,
+              "cutoff_move_4plus": 6,
+              "cutoff_tt": 20,
+              "cutoff_killer1": 28,
+              "cutoff_killer2": 6,
+              "cutoff_history": 40,
+              "cutoff_captures": 19,
+              "cutoff_quiet": 55,
+              "first_move_cutoff_rate": 75.67567567567568
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_12_kingside_castling",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "expected": "e1g1",
+        "configs": {
+          "c0": {
+            "move": "d1c2",
+            "score": -5,
+            "nodes": 62678,
+            "time_sec": 0.302703500026837,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 3287,
+              "mean_cutoff_index": 1.865835108001217,
+              "cutoff_move_1": 2810,
+              "cutoff_move_2": 127,
+              "cutoff_move_3": 133,
+              "cutoff_move_4plus": 217,
+              "cutoff_tt": 924,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 2727,
+              "cutoff_quiet": 560,
+              "first_move_cutoff_rate": 85.48828719196835
+            }
+          },
+          "c1": {
+            "move": "d1c2",
+            "score": -5,
+            "nodes": 55929,
+            "time_sec": 0.29243650002172217,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 3121,
+              "mean_cutoff_index": 1.2986222364626723,
+              "cutoff_move_1": 2759,
+              "cutoff_move_2": 190,
+              "cutoff_move_3": 85,
+              "cutoff_move_4plus": 87,
+              "cutoff_tt": 921,
+              "cutoff_killer1": 317,
+              "cutoff_killer2": 65,
+              "cutoff_history": 0,
+              "cutoff_captures": 2688,
+              "cutoff_quiet": 433,
+              "first_move_cutoff_rate": 88.40115347644985
+            }
+          },
+          "c2": {
+            "move": "d1c2",
+            "score": -5,
+            "nodes": 51382,
+            "time_sec": 0.21503700001630932,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 3041,
+              "mean_cutoff_index": 1.2801709963827688,
+              "cutoff_move_1": 2712,
+              "cutoff_move_2": 145,
+              "cutoff_move_3": 99,
+              "cutoff_move_4plus": 85,
+              "cutoff_tt": 926,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 417,
+              "cutoff_captures": 2605,
+              "cutoff_quiet": 436,
+              "first_move_cutoff_rate": 89.18119039789542
+            }
+          },
+          "c3": {
+            "move": "d1c2",
+            "score": -5,
+            "nodes": 54153,
+            "time_sec": 0.1941653999965638,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 3065,
+              "mean_cutoff_index": 1.261663947797716,
+              "cutoff_move_1": 2734,
+              "cutoff_move_2": 167,
+              "cutoff_move_3": 85,
+              "cutoff_move_4plus": 79,
+              "cutoff_tt": 925,
+              "cutoff_killer1": 291,
+              "cutoff_killer2": 60,
+              "cutoff_history": 382,
+              "cutoff_captures": 2664,
+              "cutoff_quiet": 401,
+              "first_move_cutoff_rate": 89.20065252854812
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_13_discovered_check_defense",
+        "fen": "r1b1k2r/pppp1ppp/8/4N3/1b2n3/8/PPP1BPPP/RNBQK2R w KQkq - 0 8",
+        "expected": "c1d2",
+        "configs": {
+          "c0": {
+            "move": "b1d2",
+            "score": 1125,
+            "nodes": 15173,
+            "time_sec": 0.09230799996294081,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 516,
+              "mean_cutoff_index": 2.124031007751938,
+              "cutoff_move_1": 385,
+              "cutoff_move_2": 37,
+              "cutoff_move_3": 47,
+              "cutoff_move_4plus": 47,
+              "cutoff_tt": 102,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 373,
+              "cutoff_quiet": 143,
+              "first_move_cutoff_rate": 74.6124031007752
+            }
+          },
+          "c1": {
+            "move": "b1d2",
+            "score": 1125,
+            "nodes": 13745,
+            "time_sec": 0.06777559994952753,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 499,
+              "mean_cutoff_index": 1.9218436873747495,
+              "cutoff_move_1": 355,
+              "cutoff_move_2": 66,
+              "cutoff_move_3": 44,
+              "cutoff_move_4plus": 34,
+              "cutoff_tt": 100,
+              "cutoff_killer1": 70,
+              "cutoff_killer2": 51,
+              "cutoff_history": 0,
+              "cutoff_captures": 361,
+              "cutoff_quiet": 138,
+              "first_move_cutoff_rate": 71.14228456913828
+            }
+          },
+          "c2": {
+            "move": "b1d2",
+            "score": 1125,
+            "nodes": 13307,
+            "time_sec": 0.05656009999802336,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 501,
+              "mean_cutoff_index": 1.750499001996008,
+              "cutoff_move_1": 379,
+              "cutoff_move_2": 50,
+              "cutoff_move_3": 40,
+              "cutoff_move_4plus": 32,
+              "cutoff_tt": 102,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 130,
+              "cutoff_captures": 361,
+              "cutoff_quiet": 140,
+              "first_move_cutoff_rate": 75.64870259481037
+            }
+          },
+          "c3": {
+            "move": "b1d2",
+            "score": 1125,
+            "nodes": 13168,
+            "time_sec": 0.07023259997367859,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 499,
+              "mean_cutoff_index": 1.7595190380761523,
+              "cutoff_move_1": 377,
+              "cutoff_move_2": 49,
+              "cutoff_move_3": 41,
+              "cutoff_move_4plus": 32,
+              "cutoff_tt": 100,
+              "cutoff_killer1": 73,
+              "cutoff_killer2": 51,
+              "cutoff_history": 128,
+              "cutoff_captures": 361,
+              "cutoff_quiet": 138,
+              "first_move_cutoff_rate": 75.55110220440882
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_14_tactical_knight_retreat",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "expected": "e4c3",
+        "configs": {
+          "c0": {
+            "move": "e4c3",
+            "score": 350,
+            "nodes": 40389,
+            "time_sec": 0.14252009999472648,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 2008,
+              "mean_cutoff_index": 2.3784860557768925,
+              "cutoff_move_1": 1174,
+              "cutoff_move_2": 219,
+              "cutoff_move_3": 113,
+              "cutoff_move_4plus": 502,
+              "cutoff_tt": 275,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 1326,
+              "cutoff_quiet": 682,
+              "first_move_cutoff_rate": 58.46613545816734
+            }
+          },
+          "c1": {
+            "move": "e4c3",
+            "score": 350,
+            "nodes": 36530,
+            "time_sec": 0.1327443000045605,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 1858,
+              "mean_cutoff_index": 2.0904198062432724,
+              "cutoff_move_1": 1061,
+              "cutoff_move_2": 264,
+              "cutoff_move_3": 101,
+              "cutoff_move_4plus": 432,
+              "cutoff_tt": 279,
+              "cutoff_killer1": 476,
+              "cutoff_killer2": 123,
+              "cutoff_history": 0,
+              "cutoff_captures": 1208,
+              "cutoff_quiet": 650,
+              "first_move_cutoff_rate": 57.10441334768568
+            }
+          },
+          "c2": {
+            "move": "e4c3",
+            "score": 350,
+            "nodes": 33503,
+            "time_sec": 0.10810050001600757,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 1842,
+              "mean_cutoff_index": 2.038545059717698,
+              "cutoff_move_1": 1069,
+              "cutoff_move_2": 228,
+              "cutoff_move_3": 130,
+              "cutoff_move_4plus": 415,
+              "cutoff_tt": 277,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 624,
+              "cutoff_captures": 1201,
+              "cutoff_quiet": 641,
+              "first_move_cutoff_rate": 58.03474484256243
+            }
+          },
+          "c3": {
+            "move": "e4c3",
+            "score": 350,
+            "nodes": 33431,
+            "time_sec": 0.11125730001367629,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 1842,
+              "mean_cutoff_index": 2.06243213897937,
+              "cutoff_move_1": 1070,
+              "cutoff_move_2": 222,
+              "cutoff_move_3": 110,
+              "cutoff_move_4plus": 440,
+              "cutoff_tt": 279,
+              "cutoff_killer1": 474,
+              "cutoff_killer2": 116,
+              "cutoff_history": 623,
+              "cutoff_captures": 1202,
+              "cutoff_quiet": 640,
+              "first_move_cutoff_rate": 58.08903365906624
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_15_tactical_liquidation",
+        "fen": "r1bq1rk1/ppp2ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQ1RK1 w - - 0 9",
+        "expected": "c4f7",
+        "configs": {
+          "c0": {
+            "move": "c4d5",
+            "score": 90,
+            "nodes": 29211,
+            "time_sec": 0.10060399997746572,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1597,
+              "mean_cutoff_index": 1.3738259236067627,
+              "cutoff_move_1": 1452,
+              "cutoff_move_2": 44,
+              "cutoff_move_3": 42,
+              "cutoff_move_4plus": 59,
+              "cutoff_tt": 282,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 1455,
+              "cutoff_quiet": 142,
+              "first_move_cutoff_rate": 90.92047589229806
+            }
+          },
+          "c1": {
+            "move": "c4d5",
+            "score": 90,
+            "nodes": 26849,
+            "time_sec": 0.0859364999923855,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1596,
+              "mean_cutoff_index": 1.305764411027569,
+              "cutoff_move_1": 1463,
+              "cutoff_move_2": 43,
+              "cutoff_move_3": 46,
+              "cutoff_move_4plus": 44,
+              "cutoff_tt": 281,
+              "cutoff_killer1": 91,
+              "cutoff_killer2": 11,
+              "cutoff_history": 0,
+              "cutoff_captures": 1450,
+              "cutoff_quiet": 146,
+              "first_move_cutoff_rate": 91.66666666666666
+            }
+          },
+          "c2": {
+            "move": "c4d5",
+            "score": 90,
+            "nodes": 25823,
+            "time_sec": 0.06948810000903904,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1597,
+              "mean_cutoff_index": 1.2385723231058234,
+              "cutoff_move_1": 1468,
+              "cutoff_move_2": 42,
+              "cutoff_move_3": 43,
+              "cutoff_move_4plus": 44,
+              "cutoff_tt": 281,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 115,
+              "cutoff_captures": 1471,
+              "cutoff_quiet": 126,
+              "first_move_cutoff_rate": 91.92235441452723
+            }
+          },
+          "c3": {
+            "move": "c4d5",
+            "score": 90,
+            "nodes": 25850,
+            "time_sec": 0.0905026999535039,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1596,
+              "mean_cutoff_index": 1.237468671679198,
+              "cutoff_move_1": 1462,
+              "cutoff_move_2": 43,
+              "cutoff_move_3": 49,
+              "cutoff_move_4plus": 42,
+              "cutoff_tt": 281,
+              "cutoff_killer1": 90,
+              "cutoff_killer2": 15,
+              "cutoff_history": 134,
+              "cutoff_captures": 1451,
+              "cutoff_quiet": 145,
+              "first_move_cutoff_rate": 91.60401002506265
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_16_center_strike",
+        "fen": "r1bqk2r/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+        "expected": "d2d4",
+        "configs": {
+          "c0": {
+            "move": "b1c3",
+            "score": 680,
+            "nodes": 30391,
+            "time_sec": 0.12746400001924485,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1517,
+              "mean_cutoff_index": 1.6769940672379697,
+              "cutoff_move_1": 1119,
+              "cutoff_move_2": 224,
+              "cutoff_move_3": 57,
+              "cutoff_move_4plus": 117,
+              "cutoff_tt": 209,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 706,
+              "cutoff_quiet": 811,
+              "first_move_cutoff_rate": 73.76400791034938
+            }
+          },
+          "c1": {
+            "move": "b1c3",
+            "score": 680,
+            "nodes": 30488,
+            "time_sec": 0.11067520000506192,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1470,
+              "mean_cutoff_index": 1.7122448979591838,
+              "cutoff_move_1": 829,
+              "cutoff_move_2": 459,
+              "cutoff_move_3": 116,
+              "cutoff_move_4plus": 66,
+              "cutoff_tt": 212,
+              "cutoff_killer1": 589,
+              "cutoff_killer2": 164,
+              "cutoff_history": 0,
+              "cutoff_captures": 685,
+              "cutoff_quiet": 785,
+              "first_move_cutoff_rate": 56.394557823129254
+            }
+          },
+          "c2": {
+            "move": "b1c3",
+            "score": 680,
+            "nodes": 28371,
+            "time_sec": 0.11573320004390553,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1474,
+              "mean_cutoff_index": 1.4531886024423337,
+              "cutoff_move_1": 1127,
+              "cutoff_move_2": 230,
+              "cutoff_move_3": 58,
+              "cutoff_move_4plus": 59,
+              "cutoff_tt": 212,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 765,
+              "cutoff_captures": 694,
+              "cutoff_quiet": 780,
+              "first_move_cutoff_rate": 76.45861601085483
+            }
+          },
+          "c3": {
+            "move": "b1c3",
+            "score": 680,
+            "nodes": 29746,
+            "time_sec": 0.1262773999478668,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1448,
+              "mean_cutoff_index": 1.6864640883977902,
+              "cutoff_move_1": 822,
+              "cutoff_move_2": 458,
+              "cutoff_move_3": 113,
+              "cutoff_move_4plus": 55,
+              "cutoff_tt": 210,
+              "cutoff_killer1": 554,
+              "cutoff_killer2": 183,
+              "cutoff_history": 750,
+              "cutoff_captures": 683,
+              "cutoff_quiet": 765,
+              "first_move_cutoff_rate": 56.767955801104975
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_17_positional_castling",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "expected": "e1g1",
+        "configs": {
+          "c0": {
+            "move": "f3e5",
+            "score": 5,
+            "nodes": 48489,
+            "time_sec": 0.18014239997137338,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2569,
+              "mean_cutoff_index": 1.2689762553522772,
+              "cutoff_move_1": 2351,
+              "cutoff_move_2": 127,
+              "cutoff_move_3": 52,
+              "cutoff_move_4plus": 39,
+              "cutoff_tt": 314,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 2315,
+              "cutoff_quiet": 254,
+              "first_move_cutoff_rate": 91.5142078629817
+            }
+          },
+          "c1": {
+            "move": "f3e5",
+            "score": 5,
+            "nodes": 50925,
+            "time_sec": 0.18549970001913607,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2765,
+              "mean_cutoff_index": 1.2354430379746835,
+              "cutoff_move_1": 2545,
+              "cutoff_move_2": 95,
+              "cutoff_move_3": 64,
+              "cutoff_move_4plus": 61,
+              "cutoff_tt": 301,
+              "cutoff_killer1": 159,
+              "cutoff_killer2": 59,
+              "cutoff_history": 0,
+              "cutoff_captures": 2508,
+              "cutoff_quiet": 257,
+              "first_move_cutoff_rate": 92.04339963833634
+            }
+          },
+          "c2": {
+            "move": "f3e5",
+            "score": 5,
+            "nodes": 45834,
+            "time_sec": 0.17429179995087907,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2557,
+              "mean_cutoff_index": 1.1822448181462653,
+              "cutoff_move_1": 2358,
+              "cutoff_move_2": 123,
+              "cutoff_move_3": 24,
+              "cutoff_move_4plus": 52,
+              "cutoff_tt": 314,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 235,
+              "cutoff_captures": 2313,
+              "cutoff_quiet": 244,
+              "first_move_cutoff_rate": 92.21744231521313
+            }
+          },
+          "c3": {
+            "move": "f3e5",
+            "score": 5,
+            "nodes": 49298,
+            "time_sec": 0.19744540000101551,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 2710,
+              "mean_cutoff_index": 1.1900369003690037,
+              "cutoff_move_1": 2517,
+              "cutoff_move_2": 81,
+              "cutoff_move_3": 56,
+              "cutoff_move_4plus": 56,
+              "cutoff_tt": 308,
+              "cutoff_killer1": 134,
+              "cutoff_killer2": 67,
+              "cutoff_history": 224,
+              "cutoff_captures": 2473,
+              "cutoff_quiet": 237,
+              "first_move_cutoff_rate": 92.87822878228782
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_18_legalls_trap",
+        "fen": "r2qkb1r/pp2nppp/3p4/2pNN1B1/2BnP3/3P4/PPP2PPP/R2bK2R w KQkq - 1 9",
+        "expected": "d5f6",
+        "configs": {
+          "c0": {
+            "move": "d5f6",
+            "score": 28997,
+            "nodes": 44765,
+            "time_sec": 0.12425249995430931,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 1931,
+              "mean_cutoff_index": 1.110305541170378,
+              "cutoff_move_1": 1827,
+              "cutoff_move_2": 29,
+              "cutoff_move_3": 49,
+              "cutoff_move_4plus": 26,
+              "cutoff_tt": 430,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 1850,
+              "cutoff_quiet": 81,
+              "first_move_cutoff_rate": 94.61418953909892
+            }
+          },
+          "c1": {
+            "move": "d5f6",
+            "score": 28997,
+            "nodes": 44670,
+            "time_sec": 0.14660199999343604,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 1931,
+              "mean_cutoff_index": 1.1077162092180217,
+              "cutoff_move_1": 1827,
+              "cutoff_move_2": 30,
+              "cutoff_move_3": 49,
+              "cutoff_move_4plus": 25,
+              "cutoff_tt": 430,
+              "cutoff_killer1": 23,
+              "cutoff_killer2": 50,
+              "cutoff_history": 0,
+              "cutoff_captures": 1850,
+              "cutoff_quiet": 81,
+              "first_move_cutoff_rate": 94.61418953909892
+            }
+          },
+          "c2": {
+            "move": "d5f6",
+            "score": 28997,
+            "nodes": 44670,
+            "time_sec": 0.1312047999817878,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 1931,
+              "mean_cutoff_index": 1.1077162092180217,
+              "cutoff_move_1": 1827,
+              "cutoff_move_2": 30,
+              "cutoff_move_3": 49,
+              "cutoff_move_4plus": 25,
+              "cutoff_tt": 430,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 77,
+              "cutoff_captures": 1850,
+              "cutoff_quiet": 81,
+              "first_move_cutoff_rate": 94.61418953909892
+            }
+          },
+          "c3": {
+            "move": "d5f6",
+            "score": 28997,
+            "nodes": 44670,
+            "time_sec": 0.13983770000049844,
+            "solved": true,
+            "telemetry": {
+              "total_cutoffs": 1931,
+              "mean_cutoff_index": 1.1077162092180217,
+              "cutoff_move_1": 1827,
+              "cutoff_move_2": 30,
+              "cutoff_move_3": 49,
+              "cutoff_move_4plus": 25,
+              "cutoff_tt": 430,
+              "cutoff_killer1": 23,
+              "cutoff_killer2": 50,
+              "cutoff_history": 77,
+              "cutoff_captures": 1850,
+              "cutoff_quiet": 81,
+              "first_move_cutoff_rate": 94.61418953909892
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_19_quiet_kingside_castling",
+        "fen": "r1bqk2r/pp2bppp/2n5/2p5/3pN3/1B1P1N2/PPP2PPP/R2Q1RK1 b kq - 1 10",
+        "expected": "e8g8",
+        "configs": {
+          "c0": {
+            "move": "c8e6",
+            "score": 10,
+            "nodes": 112606,
+            "time_sec": 0.5708400000003166,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 4526,
+              "mean_cutoff_index": 2.865444100751215,
+              "cutoff_move_1": 2881,
+              "cutoff_move_2": 555,
+              "cutoff_move_3": 237,
+              "cutoff_move_4plus": 853,
+              "cutoff_tt": 409,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 2796,
+              "cutoff_quiet": 1730,
+              "first_move_cutoff_rate": 63.654441007512155
+            }
+          },
+          "c1": {
+            "move": "c8e6",
+            "score": 10,
+            "nodes": 112068,
+            "time_sec": 0.5402128999703564,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 5515,
+              "mean_cutoff_index": 2.204170444242974,
+              "cutoff_move_1": 3483,
+              "cutoff_move_2": 709,
+              "cutoff_move_3": 432,
+              "cutoff_move_4plus": 891,
+              "cutoff_tt": 744,
+              "cutoff_killer1": 1438,
+              "cutoff_killer2": 685,
+              "cutoff_history": 0,
+              "cutoff_captures": 3137,
+              "cutoff_quiet": 2378,
+              "first_move_cutoff_rate": 63.155031731640975
+            }
+          },
+          "c2": {
+            "move": "c8e6",
+            "score": 10,
+            "nodes": 94619,
+            "time_sec": 0.5511077999835834,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 4705,
+              "mean_cutoff_index": 1.9625929861849096,
+              "cutoff_move_1": 3005,
+              "cutoff_move_2": 525,
+              "cutoff_move_3": 526,
+              "cutoff_move_4plus": 649,
+              "cutoff_tt": 896,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 1917,
+              "cutoff_captures": 2747,
+              "cutoff_quiet": 1958,
+              "first_move_cutoff_rate": 63.8682252922423
+            }
+          },
+          "c3": {
+            "move": "c8e6",
+            "score": 10,
+            "nodes": 90076,
+            "time_sec": 0.46489300002576783,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 4845,
+              "mean_cutoff_index": 1.9003095975232198,
+              "cutoff_move_1": 3118,
+              "cutoff_move_2": 643,
+              "cutoff_move_3": 419,
+              "cutoff_move_4plus": 665,
+              "cutoff_tt": 932,
+              "cutoff_killer1": 1328,
+              "cutoff_killer2": 474,
+              "cutoff_history": 1957,
+              "cutoff_captures": 2842,
+              "cutoff_quiet": 2003,
+              "first_move_cutoff_rate": 64.35500515995872
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      },
+      {
+        "id": "ind_20_bishop_kick",
+        "fen": "r1b1k1nr/pppp1ppp/8/4p3/1b2P3/2N5/PPPP1PPP/R1BQKBNR w KQkq - 0 5",
+        "expected": "a2a3",
+        "configs": {
+          "c0": {
+            "move": "c3b5",
+            "score": 1275,
+            "nodes": 35800,
+            "time_sec": 0.10943010001210496,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1829,
+              "mean_cutoff_index": 2.551667577911427,
+              "cutoff_move_1": 1318,
+              "cutoff_move_2": 190,
+              "cutoff_move_3": 58,
+              "cutoff_move_4plus": 263,
+              "cutoff_tt": 253,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 0,
+              "cutoff_captures": 1270,
+              "cutoff_quiet": 559,
+              "first_move_cutoff_rate": 72.06123564789503
+            }
+          },
+          "c1": {
+            "move": "c3b5",
+            "score": 1275,
+            "nodes": 23061,
+            "time_sec": 0.07284760003676638,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1512,
+              "mean_cutoff_index": 1.5383597883597884,
+              "cutoff_move_1": 1236,
+              "cutoff_move_2": 166,
+              "cutoff_move_3": 49,
+              "cutoff_move_4plus": 61,
+              "cutoff_tt": 235,
+              "cutoff_killer1": 308,
+              "cutoff_killer2": 67,
+              "cutoff_history": 0,
+              "cutoff_captures": 1084,
+              "cutoff_quiet": 428,
+              "first_move_cutoff_rate": 81.74603174603175
+            }
+          },
+          "c2": {
+            "move": "c3b5",
+            "score": 1275,
+            "nodes": 20623,
+            "time_sec": 0.3568831999436952,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1491,
+              "mean_cutoff_index": 1.4352783366867874,
+              "cutoff_move_1": 1217,
+              "cutoff_move_2": 166,
+              "cutoff_move_3": 49,
+              "cutoff_move_4plus": 59,
+              "cutoff_tt": 219,
+              "cutoff_killer1": 0,
+              "cutoff_killer2": 0,
+              "cutoff_history": 332,
+              "cutoff_captures": 1139,
+              "cutoff_quiet": 352,
+              "first_move_cutoff_rate": 81.62307176391683
+            }
+          },
+          "c3": {
+            "move": "c3b5",
+            "score": 1275,
+            "nodes": 20822,
+            "time_sec": 0.5455456000054255,
+            "solved": false,
+            "telemetry": {
+              "total_cutoffs": 1458,
+              "mean_cutoff_index": 1.3916323731138547,
+              "cutoff_move_1": 1201,
+              "cutoff_move_2": 159,
+              "cutoff_move_3": 50,
+              "cutoff_move_4plus": 48,
+              "cutoff_tt": 215,
+              "cutoff_killer1": 308,
+              "cutoff_killer2": 57,
+              "cutoff_history": 392,
+              "cutoff_captures": 1048,
+              "cutoff_quiet": 410,
+              "first_move_cutoff_rate": 82.37311385459533
+            }
+          }
+        },
+        "agreed_c3_c0": true
+      }
+    ]
+  },
+  "combined_summary": {
+    "total_positions": 48,
+    "solved": {
+      "c0": 16,
+      "c1": 16,
+      "c2": 16,
+      "c3": 16
+    },
+    "total_nodes": {
+      "c0": 1344208,
+      "c1": 1140641,
+      "c2": 1089193,
+      "c3": 1076757
+    },
+    "node_reduction_c3_vs_c0_pct": 19.896548748407987,
+    "agreement_c3_c0_pct": 100.0,
+    "total_agreed": 48
+  }
+}

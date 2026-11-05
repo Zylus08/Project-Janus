@@ -1,0 +1,39 @@
+{
+  "total_games": 200,
+  "total_pairs": 100,
+  "n2_wins": 179,
+  "k0_wins": 3,
+  "draws": 18,
+  "n2_total_pts": 188.0,
+  "k0_total_pts": 12.0,
+  "n2_score_pct": 94.0,
+  "n2_white": {
+    "wins": 93,
+    "draws": 7,
+    "losses": 0,
+    "points": 96.5
+  },
+  "n2_black": {
+    "wins": 86,
+    "draws": 11,
+    "losses": 3,
+    "points": 91.5
+  },
+  "delta_distribution": {
+    "0.0": 5,
+    "1.0": 14,
+    "2.0": 81
+  },
+  "termination_claims": {
+    "checkmate_white": 96,
+    "checkmate_black": 86,
+    "draw_fivefold_repetition": 9,
+    "draw_max_plies_horizon": 9
+  },
+  "reconstructed_terminations": {
+    "checkmate_white": 96,
+    "checkmate_black": 86,
+    "draw_fivefold_repetition": 9,
+    "draw_max_plies_horizon": 9
+  }
+}

@@ -1,0 +1,702 @@
+[
+  {
+    "id": "e4_e5_open_game",
+    "eco": "C20",
+    "name": "King's Pawn Game",
+    "moves": "e4 e5",
+    "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": "e4_c5_sicilian_defense",
+    "eco": "B20",
+    "name": "Sicilian Defense",
+    "moves": "e4 c5",
+    "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": "e4_e6_french_defense",
+    "eco": "C00",
+    "name": "French Defense",
+    "moves": "e4 e6",
+    "fen": "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": "e4_c6_caro_kann",
+    "eco": "B10",
+    "name": "Caro-Kann Defense",
+    "moves": "e4 c6",
+    "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": "e4_d6_pirc_defense",
+    "eco": "B07",
+    "name": "Pirc Defense",
+    "moves": "e4 d6",
+    "fen": "rnbqkbnr/ppp1pppp/3p4/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": "e4_d5_scandinavian",
+    "eco": "B01",
+    "name": "Scandinavian Defense",
+    "moves": "e4 d5",
+    "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": "e4_Nf6_alekhine",
+    "eco": "B02",
+    "name": "Alekhine Defense",
+    "moves": "e4 Nf6",
+    "fen": "rnbqkb1r/pppppppp/5n2/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 1 2"
+  },
+  {
+    "id": "e4_g6_modern_defense",
+    "eco": "B06",
+    "name": "Modern Defense",
+    "moves": "e4 g6",
+    "fen": "rnbqkbnr/pppppp1p/6p1/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": "d4_d5_closed_game",
+    "eco": "D00",
+    "name": "Queen's Pawn Game",
+    "moves": "d4 d5",
+    "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": "d4_Nf6_indian_defense",
+    "eco": "A45",
+    "name": "Indian Defense",
+    "moves": "d4 Nf6",
+    "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"
+  },
+  {
+    "id": "d4_f5_dutch_defense",
+    "eco": "A80",
+    "name": "Dutch Defense",
+    "moves": "d4 f5",
+    "fen": "rnbqkbnr/ppppp1pp/8/5p2/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": "d4_e6_horwitz_defense",
+    "eco": "A40",
+    "name": "Horwitz Defense",
+    "moves": "d4 e6",
+    "fen": "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": "c4_e5_english_reversed_sicilian",
+    "eco": "A20",
+    "name": "English (Reversed Sicilian)",
+    "moves": "c4 e5",
+    "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": "c4_c5_english_symmetrical",
+    "eco": "A30",
+    "name": "English (Symmetrical)",
+    "moves": "c4 c5",
+    "fen": "rnbqkbnr/pp1ppppp/8/2p5/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": "c4_Nf6_english_anglo_indian",
+    "eco": "A15",
+    "name": "English (Anglo-Indian)",
+    "moves": "c4 Nf6",
+    "fen": "rnbqkb1r/pppppppp/5n2/8/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 1 2"
+  },
+  {
+    "id": "c4_e6_english_agincourt",
+    "eco": "A13",
+    "name": "English (Agincourt Defense)",
+    "moves": "c4 e6",
+    "fen": "rnbqkbnr/pppp1ppp/4p3/8/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": "Nf3_d5_reti_opening",
+    "eco": "A06",
+    "name": "Reti Opening (1.Nf3 d5)",
+    "moves": "Nf3 d5",
+    "fen": "rnbqkbnr/ppp1pppp/8/3p4/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2"
+  },
+  {
+    "id": "Nf3_Nf6_reti_symmetrical",
+    "eco": "A04",
+    "name": "Reti Opening (1.Nf3 Nf6)",
+    "moves": "Nf3 Nf6",
+    "fen": "rnbqkb1r/pppppppp/5n2/8/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 2 2"
+  },
+  {
+    "id": "Nf3_c5_reti_anglo_slav",
+    "eco": "A04",
+    "name": "Reti Opening (1.Nf3 c5)",
+    "moves": "Nf3 c5",
+    "fen": "rnbqkbnr/pp1ppppp/8/2p5/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2"
+  },
+  {
+    "id": "b3_e5_nimzo_larsen",
+    "eco": "A01",
+    "name": "Nimzo-Larsen Attack",
+    "moves": "b3 e5",
+    "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/1P6/P1PPPPPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": "ruy_lopez_morphy",
+    "eco": "C78",
+    "name": "Ruy Lopez (Morphy Defense)",
+    "moves": "e4 e5 Nf3 Nc6 Bb5 a6",
+    "fen": "r1bqkbnr/1ppp1ppp/p1n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4"
+  },
+  {
+    "id": "ruy_lopez_berlin",
+    "eco": "C65",
+    "name": "Ruy Lopez (Berlin Defense)",
+    "moves": "e4 e5 Nf3 Nc6 Bb5 Nf6",
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"
+  },
+  {
+    "id": "italian_giuoco_piano",
+    "eco": "C50",
+    "name": "Giuoco Piano",
+    "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5",
+    "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"
+  },
+  {
+    "id": "italian_two_knights",
+    "eco": "C55",
+    "name": "Two Knights Defense",
+    "moves": "e4 e5 Nf3 Nc6 Bc4 Nf6",
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"
+  },
+  {
+    "id": "four_knights_game",
+    "eco": "C48",
+    "name": "Four Knights Game",
+    "moves": "e4 e5 Nf3 Nc6 Nc3 Nf6",
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R w KQkq - 4 4"
+  },
+  {
+    "id": "scotch_game",
+    "eco": "C45",
+    "name": "Scotch Game",
+    "moves": "e4 e5 Nf3 Nc6 d4",
+    "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"
+  },
+  {
+    "id": "petroff_defense",
+    "eco": "C42",
+    "name": "Petroff Defense",
+    "moves": "e4 e5 Nf3 Nf6",
+    "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3"
+  },
+  {
+    "id": "philidor_defense",
+    "eco": "C41",
+    "name": "Philidor Defense",
+    "moves": "e4 e5 Nf3 d6",
+    "fen": "rnbqkbnr/ppp2ppp/3p4/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3"
+  },
+  {
+    "id": "sicilian_najdorf",
+    "eco": "B90",
+    "name": "Sicilian Najdorf",
+    "moves": "e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6",
+    "fen": "rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5"
+  },
+  {
+    "id": "sicilian_dragon",
+    "eco": "B70",
+    "name": "Sicilian Dragon",
+    "moves": "e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 g6",
+    "fen": "rnbqkb1r/pp2pp1p/3p1np1/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6"
+  },
+  {
+    "id": "sicilian_classical",
+    "eco": "B56",
+    "name": "Sicilian Classical",
+    "moves": "e4 c5 Nf3 Nc6 d4 cxd4 Nxd4 Nf6",
+    "fen": "r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5"
+  },
+  {
+    "id": "sicilian_scheveningen",
+    "eco": "B80",
+    "name": "Sicilian Scheveningen",
+    "moves": "e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 e6",
+    "fen": "rnbqkb1r/pp3ppp/3ppn2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6"
+  },
+  {
+    "id": "sicilian_alapin",
+    "eco": "B22",
+    "name": "Sicilian Alapin",
+    "moves": "e4 c5 c3",
+    "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/2P5/PP1P1PPP/RNBQKBNR b KQkq - 0 2"
+  },
+  {
+    "id": "french_advance",
+    "eco": "C02",
+    "name": "French Advance",
+    "moves": "e4 e6 d4 d5 e5",
+    "fen": "rnbqkbnr/ppp2ppp/4p3/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3"
+  },
+  {
+    "id": "french_tarrasch",
+    "eco": "C03",
+    "name": "French Tarrasch",
+    "moves": "e4 e6 d4 d5 Nd2",
+    "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPPN1PPP/R1BQKBNR b KQkq - 1 3"
+  },
+  {
+    "id": "french_winawer",
+    "eco": "C15",
+    "name": "French Winawer",
+    "moves": "e4 e6 d4 d5 Nc3 Bb4",
+    "fen": "rnbqk1nr/ppp2ppp/4p3/3p4/1b1PP3/2N5/PPP2PPP/R1BQKBNR w KQkq - 2 4"
+  },
+  {
+    "id": "caro_kann_classical",
+    "eco": "B12",
+    "name": "Caro-Kann Classical",
+    "moves": "e4 c6 d4 d5",
+    "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3"
+  },
+  {
+    "id": "caro_kann_advance",
+    "eco": "B12",
+    "name": "Caro-Kann Advance",
+    "moves": "e4 c6 d4 d5 e5",
+    "fen": "rnbqkbnr/pp2pppp/2p5/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3"
+  },
+  {
+    "id": "queens_gambit_declined",
+    "eco": "D35",
+    "name": "Queen's Gambit Declined",
+    "moves": "d4 d5 c4 e6 Nc3 Nf6",
+    "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4"
+  },
+  {
+    "id": "slav_defense",
+    "eco": "D10",
+    "name": "Slav Defense",
+    "moves": "d4 d5 c4 c6",
+    "fen": "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3"
+  },
+  {
+    "id": "queens_gambit_accepted",
+    "eco": "D20",
+    "name": "Queen's Gambit Accepted",
+    "moves": "d4 d5 c4 dxc4",
+    "fen": "rnbqkbnr/ppp1pppp/8/8/2pP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3"
+  },
+  {
+    "id": "catalan_opening",
+    "eco": "E01",
+    "name": "Catalan Opening",
+    "moves": "d4 Nf6 c4 e6 g3",
+    "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3"
+  },
+  {
+    "id": "kings_indian_classical",
+    "eco": "E92",
+    "name": "King's Indian Classical",
+    "moves": "d4 Nf6 c4 g6 Nc3 Bg7 e4 d6 Nf3 O-O Be2",
+    "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP2BPPP/R1BQK2R b KQ - 3 6"
+  },
+  {
+    "id": "gruenfeld_defense",
+    "eco": "D80",
+    "name": "Gruenfeld Defense",
+    "moves": "d4 Nf6 c4 g6 Nc3 d5",
+    "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4"
+  },
+  {
+    "id": "nimzo_indian_rubinstein",
+    "eco": "E40",
+    "name": "Nimzo-Indian Rubinstein",
+    "moves": "d4 Nf6 c4 e6 Nc3 Bb4",
+    "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4"
+  },
+  {
+    "id": "queens_indian_defense",
+    "eco": "E12",
+    "name": "Queen's Indian Defense",
+    "moves": "d4 Nf6 c4 e6 Nf3 b6",
+    "fen": "rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 0 4"
+  },
+  {
+    "id": "bogo_indian_defense",
+    "eco": "E11",
+    "name": "Bogo-Indian Defense",
+    "moves": "d4 Nf6 c4 e6 Nf3 Bb4+ Bd2",
+    "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/5N2/PP1BPPPP/RN1QKB1R b KQkq - 3 4"
+  },
+  {
+    "id": "benoni_defense",
+    "eco": "A60",
+    "name": "Modern Benoni",
+    "moves": "d4 Nf6 c4 c5 d5 e6",
+    "fen": "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/8/PP2PPPP/RNBQKBNR w KQkq - 0 4"
+  },
+  {
+    "id": "london_system",
+    "eco": "D00",
+    "name": "London System",
+    "moves": "d4 d5 Bf4 Nf6",
+    "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq - 2 3"
+  },
+  {
+    "id": "english_four_knights",
+    "eco": "A28",
+    "name": "English Four Knights",
+    "moves": "c4 e5 Nc3 Nf6 Nf3 Nc6",
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2P5/2N2N2/PP1PPPPP/R1BQKB1R w KQkq - 4 4"
+  },
+  {
+    "id": "kings_gambit_accepted",
+    "eco": "C34",
+    "name": "King's Gambit Accepted",
+    "moves": "e4 e5 f4 exf4",
+    "fen": "rnbqkbnr/pppp1ppp/8/8/4Pp2/8/PPPP2PP/RNBQKBNR w KQkq - 0 3"
+  },
+  {
+    "id": "kings_gambit_declined",
+    "eco": "C30",
+    "name": "King's Gambit Declined",
+    "moves": "e4 e5 f4 Bc5",
+    "fen": "rnbqk1nr/pppp1ppp/8/2b1p3/4PP2/8/PPPP2PP/RNBQKBNR w KQkq - 1 3"
+  },
+  {
+    "id": "vienna_game_falkbeer",
+    "eco": "C26",
+    "name": "Vienna Game Falkbeer",
+    "moves": "e4 e5 Nc3 Nf6",
+    "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq - 2 3"
+  },
+  {
+    "id": "evans_gambit",
+    "eco": "C51",
+    "name": "Evans Gambit",
+    "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5 b4",
+    "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/1PB1P3/5N2/P1PP1PPP/RNBQK2R b KQkq - 0 4"
+  },
+  {
+    "id": "scotch_gambit",
+    "eco": "C44",
+    "name": "Scotch Gambit",
+    "moves": "e4 e5 Nf3 Nc6 d4 exd4 Bc4",
+    "fen": "r1bqkbnr/pppp1ppp/2n5/8/2BpP3/5N2/PPP2PPP/RNBQK2R b KQkq - 1 4"
+  },
+  {
+    "id": "ruy_lopez_exchange",
+    "eco": "C68",
+    "name": "Ruy Lopez Exchange",
+    "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6",
+    "fen": "r1bqkbnr/1pp2ppp/p1p5/4p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 5"
+  },
+  {
+    "id": "ruy_lopez_open",
+    "eco": "C80",
+    "name": "Ruy Lopez Open",
+    "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4",
+    "fen": "r1bqkb1r/1ppp1ppp/p1n5/4p3/B3n3/5N2/PPPP1PPP/RNBQ1RK1 w kq - 0 6"
+  },
+  {
+    "id": "italian_max_lange",
+    "eco": "C55",
+    "name": "Max Lange Attack",
+    "moves": "e4 e5 Nf3 Nc6 Bc4 Nf6 d4 exd4 O-O Bc5",
+    "fen": "r1bqk2r/pppp1ppp/2n2n2/2b5/2BpP3/5N2/PPP2PPP/RNBQ1RK1 w kq - 2 6"
+  },
+  {
+    "id": "sicilian_kan",
+    "eco": "B42",
+    "name": "Sicilian Kan",
+    "moves": "e4 c5 Nf3 e6 d4 cxd4 Nxd4 a6",
+    "fen": "rnbqkbnr/1p1p1ppp/p3p3/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 0 5"
+  },
+  {
+    "id": "sicilian_taimanov",
+    "eco": "B47",
+    "name": "Sicilian Taimanov",
+    "moves": "e4 c5 Nf3 e6 d4 cxd4 Nxd4 Nc6",
+    "fen": "r1bqkbnr/pp1p1ppp/2n1p3/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5"
+  },
+  {
+    "id": "sicilian_sveshnikov",
+    "eco": "B33",
+    "name": "Sicilian Sveshnikov",
+    "moves": "e4 c5 Nf3 Nc6 d4 cxd4 Nxd4 Nf6 Nc3 e5",
+    "fen": "r1bqkb1r/pp1p1ppp/2n2n2/4p3/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6"
+  },
+  {
+    "id": "sicilian_accelerated_dragon",
+    "eco": "B35",
+    "name": "Sicilian Accelerated Dragon",
+    "moves": "e4 c5 Nf3 Nc6 d4 cxd4 Nxd4 g6",
+    "fen": "r1bqkbnr/pp1ppp1p/2n3p1/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 0 5"
+  },
+  {
+    "id": "sicilian_richter_rauzer",
+    "eco": "B60",
+    "name": "Sicilian Richter-Rauzer",
+    "moves": "e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 Nc6 Bg5",
+    "fen": "r1bqkb1r/pp2pppp/2np1n2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R b KQkq - 4 6"
+  },
+  {
+    "id": "sicilian_closed",
+    "eco": "B23",
+    "name": "Sicilian Closed",
+    "moves": "e4 c5 Nc3 Nc6 g3 g6 Bg2 Bg7",
+    "fen": "r1bqk1nr/pp1pppbp/2n3p1/2p5/4P3/2N3P1/PPPP1PBP/R1BQK1NR w KQkq - 2 5"
+  },
+  {
+    "id": "french_rubinstein",
+    "eco": "C10",
+    "name": "French Rubinstein",
+    "moves": "e4 e6 d4 d5 Nc3 dxe4 Nxe4",
+    "fen": "rnbqkbnr/ppp2ppp/4p3/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4"
+  },
+  {
+    "id": "french_mccutcheon",
+    "eco": "C12",
+    "name": "French McCutcheon",
+    "moves": "e4 e6 d4 d5 Nc3 Nf6 Bg5 Bb4",
+    "fen": "rnbqk2r/ppp2ppp/4pn2/3p2B1/1b1PP3/2N5/PPP2PPP/R2QKBNR w KQkq - 4 5"
+  },
+  {
+    "id": "caro_kann_panov",
+    "eco": "B13",
+    "name": "Caro-Kann Panov Attack",
+    "moves": "e4 c6 d4 d5 exd5 cxd5 c4",
+    "fen": "rnbqkbnr/pp2pppp/8/3p4/2PP4/8/PP3PPP/RNBQKBNR b KQkq - 0 4"
+  },
+  {
+    "id": "caro_kann_korchnoi",
+    "eco": "B16",
+    "name": "Caro-Kann Korchnoi",
+    "moves": "e4 c6 d4 d5 Nc3 dxe4 Nxe4 Nf6 Nxf6+ exf6",
+    "fen": "rnbqkb1r/pp3ppp/2p2p2/8/3P4/8/PPP2PPP/R1BQKBNR w KQkq - 0 6"
+  },
+  {
+    "id": "scandinavian_modern",
+    "eco": "B01",
+    "name": "Scandinavian Modern",
+    "moves": "e4 d5 exd5 Nf6",
+    "fen": "rnbqkb1r/ppp1pppp/5n2/3P4/8/8/PPPP1PPP/RNBQKBNR w KQkq - 1 3"
+  },
+  {
+    "id": "scandinavian_gubinsky",
+    "eco": "B01",
+    "name": "Scandinavian 3...Qd6",
+    "moves": "e4 d5 exd5 Qxd5 Nc3 Qd6",
+    "fen": "rnb1kbnr/ppp1pppp/3q4/8/8/2N5/PPPP1PPP/R1BQKBNR w KQkq - 2 4"
+  },
+  {
+    "id": "alekhine_modern",
+    "eco": "B04",
+    "name": "Alekhine Modern",
+    "moves": "e4 Nf6 e5 Nd5 d4 d6 Nf3",
+    "fen": "rnbqkb1r/ppp1pppp/3p4/3nP3/3P4/5N2/PPP2PPP/RNBQKB1R b KQkq - 1 4"
+  },
+  {
+    "id": "alekhine_four_pawns",
+    "eco": "B03",
+    "name": "Alekhine Four Pawns",
+    "moves": "e4 Nf6 e5 Nd5 d4 d6 c4 Nb6 f4",
+    "fen": "rnbqkb1r/ppp1pppp/1n1p4/4P3/2PP1P2/8/PP4PP/RNBQKBNR b KQkq - 0 5"
+  },
+  {
+    "id": "pirc_austrian",
+    "eco": "B09",
+    "name": "Pirc Austrian Attack",
+    "moves": "e4 d6 d4 Nf6 Nc3 g6 f4 Bg7",
+    "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PPP2/2N5/PPP3PP/R1BQKBNR w KQkq - 1 5"
+  },
+  {
+    "id": "pirc_classical",
+    "eco": "B08",
+    "name": "Pirc Classical",
+    "moves": "e4 d6 d4 Nf6 Nc3 g6 Nf3 Bg7",
+    "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PP3/2N2N2/PPP2PPP/R1BQKB1R w KQkq - 2 5"
+  },
+  {
+    "id": "modern_avrukh",
+    "eco": "B06",
+    "name": "Modern Defense 3.Nc3 c6",
+    "moves": "e4 g6 d4 Bg7 Nc3 c6",
+    "fen": "rnbqk1nr/pp1pppbp/2p3p1/8/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq - 0 4"
+  },
+  {
+    "id": "qgd_tarrasch",
+    "eco": "D32",
+    "name": "Tarrasch Defense",
+    "moves": "d4 d5 c4 e6 Nc3 c5",
+    "fen": "rnbqkbnr/pp3ppp/4p3/2pp4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4"
+  },
+  {
+    "id": "qgd_semi_slav",
+    "eco": "D43",
+    "name": "Semi-Slav Defense",
+    "moves": "d4 d5 c4 c6 Nf3 Nf6 Nc3 e6",
+    "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5"
+  },
+  {
+    "id": "qgd_tartakower",
+    "eco": "D58",
+    "name": "Tartakower Defense",
+    "moves": "d4 d5 c4 e6 Nc3 Nf6 Bg5 Be7 e3 O-O Nf3 h6 Bh4 b6",
+    "fen": "rnbq1rk1/p1p1bpp1/1p2pn1p/3p4/2PP3B/2N1PN2/PP3PPP/R2QKB1R w KQ - 0 8"
+  },
+  {
+    "id": "qgd_cambridge_springs",
+    "eco": "D52",
+    "name": "Cambridge Springs Defense",
+    "moves": "d4 d5 c4 e6 Nc3 Nf6 Bg5 Nbd7 e3 c6 Nf3 Qa5",
+    "fen": "r1b1kb1r/pp1n1ppp/2p1pn2/q2p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQkq - 2 7"
+  },
+  {
+    "id": "qgd_exchange",
+    "eco": "D35",
+    "name": "Queen's Gambit Declined Exchange",
+    "moves": "d4 d5 c4 e6 Nc3 Nf6 cxd5 exd5",
+    "fen": "rnbqkb1r/ppp2ppp/5n2/3p4/3P4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 5"
+  },
+  {
+    "id": "slav_czech",
+    "eco": "D15",
+    "name": "Slav Czech",
+    "moves": "d4 d5 c4 c6 Nf3 Nf6 Nc3 dxc4 a4 Bf5",
+    "fen": "rn1qkb1r/pp2pppp/2p2n2/5b2/P1pP4/2N2N2/1P2PPPP/R1BQKB1R w KQkq - 1 6"
+  },
+  {
+    "id": "slav_exchange",
+    "eco": "D13",
+    "name": "Slav Exchange",
+    "moves": "d4 d5 c4 c6 Nf3 Nf6 cxd5 cxd5",
+    "fen": "rnbqkb1r/pp2pppp/5n2/3p4/3P4/5N2/PP2PPPP/RNBQKB1R w KQkq - 0 5"
+  },
+  {
+    "id": "qga_classical",
+    "eco": "D27",
+    "name": "Queen's Gambit Accepted Classical",
+    "moves": "d4 d5 c4 dxc4 Nf3 Nf6 e3 e6 Bxc4 c5 O-O a6",
+    "fen": "rnbqkb1r/1p3ppp/p3pn2/2p5/2BP4/4PN2/PP3PPP/RNBQ1RK1 w kq - 0 7"
+  },
+  {
+    "id": "catalan_closed",
+    "eco": "E06",
+    "name": "Catalan Closed",
+    "moves": "d4 Nf6 c4 e6 g3 d5 Bg2 Be7 Nf3 O-O",
+    "fen": "rnbq1rk1/ppp1bppp/4pn2/3p4/2PP4/5NP1/PP2PPBP/RNBQK2R w KQ - 4 6"
+  },
+  {
+    "id": "kings_indian_saemisch",
+    "eco": "E80",
+    "name": "King's Indian Saemisch",
+    "moves": "d4 Nf6 c4 g6 Nc3 Bg7 e4 d6 f3",
+    "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N2P2/PP4PP/R1BQKBNR b KQkq - 0 5"
+  },
+  {
+    "id": "kings_indian_fianchetto",
+    "eco": "E62",
+    "name": "King's Indian Fianchetto",
+    "moves": "d4 Nf6 c4 g6 g3 Bg7 Bg2 O-O Nc3 d6 Nf3",
+    "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PP4/2N2NP1/PP2PPBP/R1BQK2R b KQ - 1 6"
+  },
+  {
+    "id": "gruenfeld_exchange_main",
+    "eco": "D85",
+    "name": "Gruenfeld Exchange Main",
+    "moves": "d4 Nf6 c4 g6 Nc3 d5 cxd5 Nxd5 e4 Nxc3 bxc3 Bg7",
+    "fen": "rnbqk2r/ppp1ppbp/6p1/8/3PP3/2P5/P4PPP/R1BQKBNR w KQkq - 1 7"
+  },
+  {
+    "id": "gruenfeld_russian",
+    "eco": "D96",
+    "name": "Gruenfeld Russian System",
+    "moves": "d4 Nf6 c4 g6 Nc3 d5 Nf3 Bg7 Qb3 dxc4 Qxc4 O-O e4",
+    "fen": "rnbq1rk1/ppp1ppbp/5np1/8/2QPP3/2N2N2/PP3PPP/R1B1KB1R b KQ - 0 7"
+  },
+  {
+    "id": "nimzo_indian_classical",
+    "eco": "E32",
+    "name": "Nimzo-Indian Classical 4.Qc2",
+    "moves": "d4 Nf6 c4 e6 Nc3 Bb4 Qc2",
+    "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PPQ1PPPP/R1B1KBNR b KQkq - 3 4"
+  },
+  {
+    "id": "nimzo_indian_saemisch",
+    "eco": "E24",
+    "name": "Nimzo-Indian Saemisch",
+    "moves": "d4 Nf6 c4 e6 Nc3 Bb4 a3 Bxc3+ bxc3",
+    "fen": "rnbqk2r/pppp1ppp/4pn2/8/2PP4/P1P5/4PPPP/R1BQKBNR b KQkq - 0 5"
+  },
+  {
+    "id": "queens_indian_fianchetto",
+    "eco": "E15",
+    "name": "Queen's Indian Fianchetto",
+    "moves": "d4 Nf6 c4 e6 Nf3 b6 g3 Ba6",
+    "fen": "rn1qkb1r/p1pp1ppp/bp2pn2/8/2PP4/5NP1/PP2PP1P/RNBQKB1R w KQkq - 1 5"
+  },
+  {
+    "id": "benko_gambit",
+    "eco": "A57",
+    "name": "Benko Gambit",
+    "moves": "d4 Nf6 c4 c5 d5 b5",
+    "fen": "rnbqkb1r/p2ppppp/5n2/1ppP4/2P5/8/PP2PPPP/RNBQKBNR w KQkq - 0 4"
+  },
+  {
+    "id": "benoni_czech",
+    "eco": "A56",
+    "name": "Czech Benoni",
+    "moves": "d4 Nf6 c4 c5 d5 e5 Nc3 d6 e4",
+    "fen": "rnbqkb1r/pp3ppp/3p1n2/2pPp3/2P1P3/2N5/PP3PPP/R1BQKBNR b KQkq - 0 5"
+  },
+  {
+    "id": "budapest_gambit",
+    "eco": "A52",
+    "name": "Budapest Gambit",
+    "moves": "d4 Nf6 c4 e5 dxe5 Ng4",
+    "fen": "rnbqkb1r/pppp1ppp/8/4P3/2P3n1/8/PP2PPPP/RNBQKBNR w KQkq - 1 4"
+  },
+  {
+    "id": "trompowsky_attack",
+    "eco": "A45",
+    "name": "Trompowsky Attack",
+    "moves": "d4 Nf6 Bg5",
+    "fen": "rnbqkb1r/pppppppp/5n2/6B1/3P4/8/PPP1PPPP/RN1QKBNR b KQkq - 2 2"
+  },
+  {
+    "id": "torre_attack",
+    "eco": "A46",
+    "name": "Torre Attack",
+    "moves": "d4 Nf6 Nf3 e6 Bg5",
+    "fen": "rnbqkb1r/pppp1ppp/4pn2/6B1/3P4/5N2/PPP1PPPP/RN1QKB1R b KQkq - 1 3"
+  },
+  {
+    "id": "colle_system",
+    "eco": "D05",
+    "name": "Colle System",
+    "moves": "d4 d5 Nf3 Nf6 e3 e6 Bd3 c5 c3",
+    "fen": "rnbqkb1r/pp3ppp/4pn2/2pp4/3P4/2PBPN2/PP3PPP/RNBQK2R b KQkq - 0 5"
+  },
+  {
+    "id": "birds_opening",
+    "eco": "A02",
+    "name": "Bird's Opening",
+    "moves": "f4 d5 Nf3 Nf6 e3 g6",
+    "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/5P2/4PN2/PPPP2PP/RNBQKB1R w KQkq - 0 4"
+  },
+  {
+    "id": "nimzo_larsen_modern",
+    "eco": "A01",
+    "name": "Nimzo-Larsen Modern 1.b3 d5",
+    "moves": "b3 d5 Bb2 Nf6 e3 e6",
+    "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/8/1P2P3/PBPP1PPP/RN1QKBNR w KQkq - 0 4"
+  },
+  {
+    "id": "english_mikenas_flohr",
+    "eco": "A18",
+    "name": "English Mikenas-Flohr",
+    "moves": "c4 Nf6 Nc3 e6 e4 d5",
+    "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2P1P3/2N5/PP1P1PPP/R1BQKBNR w KQkq - 0 4"
+  }
+]

@@ -1,0 +1,544 @@
+{
+  "milestone": "v0.53",
+  "milestone_name": "Principal Variation Search, Window Correctness & Controlled Strength Ablation",
+  "branch": "v0.3-benchmark-harness",
+  "baseline_commit": "127d0c6",
+  "production_reference": "Janus Native N3 (C++17, UseLMR=true, UsePVS=false)",
+  "candidate_engine": "Janus Native N4 (C++17, UseLMR=true, UsePVS=true)",
+  "system_environment": {
+    "os": "Windows 11 Enterprise AMD64 (16 logical cores)",
+    "python": "3.13.2 64-bit",
+    "compiler": "Microsoft Visual C++ BuildTools 2022 (v19.43.34809 x64)",
+    "stockfish_version": "Stockfish 19 x64 AVX2",
+    "stockfish_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0"
+  },
+  "gates_validated": {
+    "Phase_0_Baseline_Freeze": "PASSED (Clean commit 127d0c6, verified toolchain & Stockfish 19, audited v0.52 draw/depth/tactical evidence)",
+    "Phase_1_Search_Architecture_Audit": "PASSED (Audited negamax full-window search, TT probing, 3-tier PVS+LMR hierarchy)",
+    "Phase_2_PVS_Design_Specification": "PASSED (Null-window probe [-(alpha+1), -alpha], full re-search on score in (alpha, beta))",
+    "Phase_3_CPP17_Implementation": "PASSED (Compiled janus_native_engine.exe & janus_native.dll cleanly)",
+    "Phase_4_Search_Correctness_and_Window_Invariants": "PASSED (30/30 unit tests passing, mathematical invariance confirmed)",
+    "Phase_5_Tactical_Safety_Benchmark": "PASSED (48/48 move agreement, 0 tactical regressions, 8.20% node reduction at Depth 5)",
+    "Phase_6_Fixed_Depth_Ablation": "PASSED (100.0% pure PVS agreement across Depths 3-6, 1.21x speedup at Depth 6, 0.076% re-search rate)",
+    "Phase_7_Fixed_Time_Ladder": "COMPLETE",
+    "Phase_8_Preregistered_Match": "COMPLETE"
+  },
+  "tactical_safety": {
+    "tactical_regression_corpus": {
+      "name": "Tactical Regression Suite (12)",
+      "total": 12,
+      "n3_solved": 4,
+      "n4_solved": 4,
+      "agreed": 12,
+      "agreement_pct": 100.0,
+      "total_nodes_n3": 373611,
+      "total_nodes_n4": 330023,
+      "node_reduction_pct": 11.666680049570274
+    },
+    "validation_corpus": {
+      "name": "Validation Suite (16)",
+      "total": 16,
+      "n3_solved": 3,
+      "n4_solved": 3,
+      "agreed": 16,
+      "agreement_pct": 100.0,
+      "total_nodes_n3": 450576,
+      "total_nodes_n4": 403828,
+      "node_reduction_pct": 10.375164234224638
+    },
+    "independent_tactical_v053": {
+      "name": "Independent Tactical Suite v0.53 (20)",
+      "total": 20,
+      "n3_solved": 9,
+      "n4_solved": 9,
+      "agreed": 20,
+      "agreement_pct": 100.0,
+      "total_nodes_n3": 520021,
+      "total_nodes_n4": 500102,
+      "node_reduction_pct": 3.830422232948285
+    }
+  },
+  "fixed_depth_ablation": {
+    "3": {
+      "depth": 3,
+      "positions_count": 53,
+      "total_nodes": {
+        "n2": 253863,
+        "n2_pvs": 247369,
+        "n3": 253863,
+        "n4": 247369
+      },
+      "total_time_sec": {
+        "n2": 0.5029224999598227,
+        "n2_pvs": 0.5060737002058886,
+        "n3": 0.5006049001822248,
+        "n4": 0.5022715999512002
+      },
+      "nps": {
+        "n2": 504775,
+        "n2_pvs": 488800,
+        "n3": 507112,
+        "n4": 492500
+      },
+      "node_reduction_pct_n2pvs_vs_n2": 2.5580726612385423,
+      "node_reduction_pct_n4_vs_n3": 2.5580726612385423,
+      "node_reduction_pct_n4_vs_n2": 2.5580726612385423,
+      "speedup_n4_vs_n3": 0.9966816762700951,
+      "speedup_n4_vs_n2": 1.0012959124280285,
+      "agreement_n4_n3_pct": 100.0,
+      "agreement_n2pvs_n2_pct": 100.0,
+      "pvs_telemetry": {
+        "n2_pvs": {
+          "full_window": 9412,
+          "null_window": 68531,
+          "researches": 464,
+          "cutoffs": 7083
+        },
+        "n4": {
+          "full_window": 9412,
+          "null_window": 68531,
+          "researches": 464,
+          "cutoffs": 7083
+        }
+      },
+      "lmr_telemetry": {
+        "n3": {
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        },
+        "n4": {
+          "reduced_moves": 0,
+          "researches": 0,
+          "cutoffs": 0
+        }
+      }
+    },
+    "4": {
+      "depth": 4,
+      "positions_count": 53,
+      "total_nodes": {
+        "n2": 1041535,
+        "n2_pvs": 929006,
+        "n3": 818772,
+        "n4": 724307
+      },
+      "total_time_sec": {
+        "n2": 4.988023600017186,
+        "n2_pvs": 3.8445256000268273,
+        "n3": 3.7651189999305643,
+        "n4": 3.2540351998177357
+      },
+      "nps": {
+        "n2": 208807,
+        "n2_pvs": 241643,
+        "n3": 217462,
+        "n4": 222587
+      },
+      "node_reduction_pct_n2pvs_vs_n2": 10.804149644515066,
+      "node_reduction_pct_n4_vs_n3": 11.537399911086359,
+      "node_reduction_pct_n4_vs_n2": 30.457737858065258,
+      "speedup_n4_vs_n3": 1.157061546273825,
+      "speedup_n4_vs_n2": 1.5328732769382993,
+      "agreement_n4_n3_pct": 100.0,
+      "agreement_n2pvs_n2_pct": 100.0,
+      "pvs_telemetry": {
+        "n2_pvs": {
+          "full_window": 63007,
+          "null_window": 243406,
+          "researches": 725,
+          "cutoffs": 55991
+        },
+        "n4": {
+          "full_window": 56431,
+          "null_window": 166483,
+          "researches": 731,
+          "cutoffs": 51607
+        }
+      },
+      "lmr_telemetry": {
+        "n3": {
+          "reduced_moves": 2003,
+          "researches": 60,
+          "cutoffs": 29
+        },
+        "n4": {
+          "reduced_moves": 2560,
+          "researches": 58,
+          "cutoffs": 29
+        }
+      }
+    },
+    "5": {
+      "depth": 5,
+      "positions_count": 53,
+      "total_nodes": {
+        "n2": 5799149,
+        "n2_pvs": 5226363,
+        "n3": 2055146,
+        "n4": 1911578
+      },
+      "total_time_sec": {
+        "n2": 19.211673700192478,
+        "n2_pvs": 16.46142540022265,
+        "n3": 9.250167799880728,
+        "n4": 8.49411779968068
+      },
+      "nps": {
+        "n2": 301855,
+        "n2_pvs": 317491,
+        "n3": 222173,
+        "n4": 225047
+      },
+      "node_reduction_pct_n2pvs_vs_n2": 9.877069894220687,
+      "node_reduction_pct_n4_vs_n3": 6.985781058863945,
+      "node_reduction_pct_n4_vs_n2": 67.03692214150732,
+      "speedup_n4_vs_n3": 1.089008654933944,
+      "speedup_n4_vs_n2": 2.2617620985801143,
+      "agreement_n4_n3_pct": 96.22641509433963,
+      "agreement_n2pvs_n2_pct": 100.0,
+      "pvs_telemetry": {
+        "n2_pvs": {
+          "full_window": 273746,
+          "null_window": 1794422,
+          "researches": 1011,
+          "cutoffs": 220739
+        },
+        "n4": {
+          "full_window": 122472,
+          "null_window": 561143,
+          "researches": 1139,
+          "cutoffs": 106463
+        }
+      },
+      "lmr_telemetry": {
+        "n3": {
+          "reduced_moves": 48270,
+          "researches": 425,
+          "cutoffs": 114
+        },
+        "n4": {
+          "reduced_moves": 48077,
+          "researches": 412,
+          "cutoffs": 133
+        }
+      }
+    },
+    "6": {
+      "depth": 6,
+      "positions_count": 53,
+      "total_nodes": {
+        "n2": 23125545,
+        "n2_pvs": 20063622,
+        "n3": 8539679,
+        "n4": 7694680
+      },
+      "total_time_sec": {
+        "n2": 87.78575319988886,
+        "n2_pvs": 79.19159659999423,
+        "n3": 32.820232399972156,
+        "n4": 27.058002799807582
+      },
+      "nps": {
+        "n2": 263431,
+        "n2_pvs": 253355,
+        "n3": 260195,
+        "n4": 284377
+      },
+      "node_reduction_pct_n2pvs_vs_n2": 13.240436063236563,
+      "node_reduction_pct_n4_vs_n3": 9.89497380405048,
+      "node_reduction_pct_n4_vs_n2": 66.72649228374942,
+      "speedup_n4_vs_n3": 1.2129584227925925,
+      "speedup_n4_vs_n2": 3.2443545020445166,
+      "agreement_n4_n3_pct": 92.45283018867924,
+      "agreement_n2pvs_n2_pct": 100.0,
+      "pvs_telemetry": {
+        "n2_pvs": {
+          "full_window": 1589610,
+          "null_window": 6110035,
+          "researches": 1481,
+          "cutoffs": 1414694
+        },
+        "n4": {
+          "full_window": 511392,
+          "null_window": 2360612,
+          "researches": 1803,
+          "cutoffs": 446236
+        }
+      },
+      "lmr_telemetry": {
+        "n3": {
+          "reduced_moves": 109011,
+          "researches": 1510,
+          "cutoffs": 358
+        },
+        "n4": {
+          "reduced_moves": 113946,
+          "researches": 1406,
+          "cutoffs": 552
+        }
+      }
+    }
+  },
+  "fixed_time_ladder": {
+    "50": {
+      "tier_allocated_sec": 0.05,
+      "tier_allocated_ms": 50,
+      "positions_count": 16,
+      "mean_depth_n3": 12.3125,
+      "mean_depth_n4": 12.25,
+      "median_depth_n3": 4.5,
+      "median_depth_n4": 4.5,
+      "middlegame_mean_depth_n3": 12.3125,
+      "middlegame_mean_depth_n4": 12.25,
+      "endgame_mean_depth_n3": 0.0,
+      "endgame_mean_depth_n4": 0.0,
+      "depth_gain_mean": -0.0625,
+      "depth_gain_middlegame": -0.0625,
+      "total_nodes_n3": 248661,
+      "total_nodes_n4": 236625,
+      "node_delta_pct": -4.840324779519104,
+      "mean_overshoot_n3_ms": 9.04367500770604,
+      "mean_overshoot_n4_ms": 3.798700011247999,
+      "max_overshoot_n3_ms": 68.82360000163317,
+      "max_overshoot_n4_ms": 12.808600021526214,
+      "stockfish_agreement_n3_pct": 18.75,
+      "stockfish_agreement_n4_pct": 18.75,
+      "head_to_head_agreement_pct": 100.0,
+      "pvs_full_window_searches": 25288,
+      "pvs_null_window_searches": 90662,
+      "pvs_researches": 275,
+      "pvs_research_rate_pct": 0.3033244358165494,
+      "lmr_reduced_moves": 5599,
+      "lmr_researches": 204,
+      "lmr_research_rate_pct": 3.6435077692445077
+    },
+    "100": {
+      "tier_allocated_sec": 0.1,
+      "tier_allocated_ms": 100,
+      "positions_count": 16,
+      "mean_depth_n3": 13.0625,
+      "mean_depth_n4": 13.3125,
+      "median_depth_n3": 5.0,
+      "median_depth_n4": 5.5,
+      "middlegame_mean_depth_n3": 13.0625,
+      "middlegame_mean_depth_n4": 13.3125,
+      "endgame_mean_depth_n3": 0.0,
+      "endgame_mean_depth_n4": 0.0,
+      "depth_gain_mean": 0.25,
+      "depth_gain_middlegame": 0.25,
+      "total_nodes_n3": 609240,
+      "total_nodes_n4": 683097,
+      "node_delta_pct": 12.12280874532204,
+      "mean_overshoot_n3_ms": 3.741406247718255,
+      "mean_overshoot_n4_ms": 5.807675000687591,
+      "max_overshoot_n3_ms": 11.960399954114104,
+      "max_overshoot_n4_ms": 47.37859996967017,
+      "stockfish_agreement_n3_pct": 18.75,
+      "stockfish_agreement_n4_pct": 18.75,
+      "head_to_head_agreement_pct": 100.0,
+      "pvs_full_window_searches": 88122,
+      "pvs_null_window_searches": 288216,
+      "pvs_researches": 363,
+      "pvs_research_rate_pct": 0.1259472062619702,
+      "lmr_reduced_moves": 31115,
+      "lmr_researches": 853,
+      "lmr_research_rate_pct": 2.7414430339064757
+    },
+    "250": {
+      "tier_allocated_sec": 0.25,
+      "tier_allocated_ms": 250,
+      "positions_count": 16,
+      "mean_depth_n3": 14.1875,
+      "mean_depth_n4": 14.25,
+      "median_depth_n3": 6.5,
+      "median_depth_n4": 6.5,
+      "middlegame_mean_depth_n3": 14.1875,
+      "middlegame_mean_depth_n4": 14.25,
+      "endgame_mean_depth_n3": 0.0,
+      "endgame_mean_depth_n4": 0.0,
+      "depth_gain_mean": 0.0625,
+      "depth_gain_middlegame": 0.0625,
+      "total_nodes_n3": 1715524,
+      "total_nodes_n4": 1695046,
+      "node_delta_pct": -1.193687759541691,
+      "mean_overshoot_n3_ms": 4.20845625558286,
+      "mean_overshoot_n4_ms": 4.125931245653192,
+      "max_overshoot_n3_ms": 11.27509999787435,
+      "max_overshoot_n4_ms": 18.267099978402257,
+      "stockfish_agreement_n3_pct": 18.75,
+      "stockfish_agreement_n4_pct": 18.75,
+      "head_to_head_agreement_pct": 100.0,
+      "pvs_full_window_searches": 200464,
+      "pvs_null_window_searches": 719316,
+      "pvs_researches": 649,
+      "pvs_research_rate_pct": 0.09022460226103687,
+      "lmr_reduced_moves": 83576,
+      "lmr_researches": 1826,
+      "lmr_research_rate_pct": 2.1848377524648224
+    },
+    "500": {
+      "tier_allocated_sec": 0.5,
+      "tier_allocated_ms": 500,
+      "positions_count": 16,
+      "mean_depth_n3": 14.6875,
+      "mean_depth_n4": 15.125,
+      "median_depth_n3": 7.5,
+      "median_depth_n4": 8.0,
+      "middlegame_mean_depth_n3": 14.6875,
+      "middlegame_mean_depth_n4": 15.125,
+      "endgame_mean_depth_n3": 0.0,
+      "endgame_mean_depth_n4": 0.0,
+      "depth_gain_mean": 0.4375,
+      "depth_gain_middlegame": 0.4375,
+      "total_nodes_n3": 3169604,
+      "total_nodes_n4": 3362118,
+      "node_delta_pct": 6.073755585871295,
+      "mean_overshoot_n3_ms": 3.703656231664354,
+      "mean_overshoot_n4_ms": 2.242731257865671,
+      "max_overshoot_n3_ms": 11.17130002239719,
+      "max_overshoot_n4_ms": 8.012100006453693,
+      "stockfish_agreement_n3_pct": 18.75,
+      "stockfish_agreement_n4_pct": 18.75,
+      "head_to_head_agreement_pct": 100.0,
+      "pvs_full_window_searches": 402628,
+      "pvs_null_window_searches": 1429007,
+      "pvs_researches": 755,
+      "pvs_research_rate_pct": 0.05283389094665037,
+      "lmr_reduced_moves": 162454,
+      "lmr_researches": 3961,
+      "lmr_research_rate_pct": 2.4382286678075022
+    },
+    "1000": {
+      "tier_allocated_sec": 1.0,
+      "tier_allocated_ms": 1000,
+      "positions_count": 16,
+      "mean_depth_n3": 15.3125,
+      "mean_depth_n4": 15.75,
+      "median_depth_n3": 8.0,
+      "median_depth_n4": 8.5,
+      "middlegame_mean_depth_n3": 15.3125,
+      "middlegame_mean_depth_n4": 15.75,
+      "endgame_mean_depth_n3": 0.0,
+      "endgame_mean_depth_n4": 0.0,
+      "depth_gain_mean": 0.4375,
+      "depth_gain_middlegame": 0.4375,
+      "total_nodes_n3": 6856004,
+      "total_nodes_n4": 6939974,
+      "node_delta_pct": 1.2247659132054183,
+      "mean_overshoot_n3_ms": 2.9988187488925178,
+      "mean_overshoot_n4_ms": 2.6954749955621082,
+      "max_overshoot_n3_ms": 20.861500001046807,
+      "max_overshoot_n4_ms": 10.823699994944036,
+      "stockfish_agreement_n3_pct": 18.75,
+      "stockfish_agreement_n4_pct": 18.75,
+      "head_to_head_agreement_pct": 100.0,
+      "pvs_full_window_searches": 821592,
+      "pvs_null_window_searches": 2950048,
+      "pvs_researches": 1285,
+      "pvs_research_rate_pct": 0.04355861328358047,
+      "lmr_reduced_moves": 327818,
+      "lmr_researches": 7818,
+      "lmr_research_rate_pct": 2.384859891769213
+    },
+    "2000": {
+      "tier_allocated_sec": 2.0,
+      "tier_allocated_ms": 2000,
+      "positions_count": 16,
+      "mean_depth_n3": 16.0625,
+      "mean_depth_n4": 16.25,
+      "median_depth_n3": 8.5,
+      "median_depth_n4": 8.5,
+      "middlegame_mean_depth_n3": 16.0625,
+      "middlegame_mean_depth_n4": 16.25,
+      "endgame_mean_depth_n3": 0.0,
+      "endgame_mean_depth_n4": 0.0,
+      "depth_gain_mean": 0.1875,
+      "depth_gain_middlegame": 0.1875,
+      "total_nodes_n3": 13651268,
+      "total_nodes_n4": 12303686,
+      "node_delta_pct": -9.8714786055039,
+      "mean_overshoot_n3_ms": 3.6709437481476925,
+      "mean_overshoot_n4_ms": 3.1095687409106176,
+      "max_overshoot_n3_ms": 11.901399993803352,
+      "max_overshoot_n4_ms": 9.814999997615814,
+      "stockfish_agreement_n3_pct": 18.75,
+      "stockfish_agreement_n4_pct": 18.75,
+      "head_to_head_agreement_pct": 100.0,
+      "pvs_full_window_searches": 1523648,
+      "pvs_null_window_searches": 5155195,
+      "pvs_researches": 1807,
+      "pvs_research_rate_pct": 0.03505202034064667,
+      "lmr_reduced_moves": 649119,
+      "lmr_researches": 12792,
+      "lmr_research_rate_pct": 1.9706710171786685
+    },
+    "3000": {
+      "tier_allocated_sec": 3.0,
+      "tier_allocated_ms": 3000,
+      "positions_count": 16,
+      "mean_depth_n3": 16.625,
+      "mean_depth_n4": 17,
+      "median_depth_n3": 9.5,
+      "median_depth_n4": 9.0,
+      "middlegame_mean_depth_n3": 16.625,
+      "middlegame_mean_depth_n4": 17,
+      "endgame_mean_depth_n3": 0.0,
+      "endgame_mean_depth_n4": 0.0,
+      "depth_gain_mean": 0.375,
+      "depth_gain_middlegame": 0.375,
+      "total_nodes_n3": 23117124,
+      "total_nodes_n4": 23643462,
+      "node_delta_pct": 2.276831668160797,
+      "mean_overshoot_n3_ms": 2.8870687456219457,
+      "mean_overshoot_n4_ms": 3.05358749392326,
+      "max_overshoot_n3_ms": 9.691599989309907,
+      "max_overshoot_n4_ms": 8.784800011198968,
+      "stockfish_agreement_n3_pct": 18.75,
+      "stockfish_agreement_n4_pct": 18.75,
+      "head_to_head_agreement_pct": 100.0,
+      "pvs_full_window_searches": 2848987,
+      "pvs_null_window_searches": 10653068,
+      "pvs_researches": 2234,
+      "pvs_research_rate_pct": 0.020970484746741503,
+      "lmr_reduced_moves": 1790510,
+      "lmr_researches": 23282,
+      "lmr_research_rate_pct": 1.3002999145494858
+    }
+  },
+  "match_summary": {
+    "total_pairs": 100,
+    "total_games": 200,
+    "time_control": "3.0s + 100ms",
+    "total_duration_sec": 375.41160599997966,
+    "n4_wins": 36,
+    "n4_draws": 123,
+    "n4_losses": 41,
+    "n4_points": 97.5,
+    "n4_score_pct": 48.75,
+    "n4_white_score": 48.5,
+    "n4_black_score": 49.0,
+    "paired_diff_mean": -0.025,
+    "paired_diff_std": 0.43446821087695964,
+    "paired_diff_se": 0.043446821087695965,
+    "t_statistic": -0.5754160919975786,
+    "degrees_of_freedom": 99,
+    "two_sided_p_value": 0.5663155080996346,
+    "bootstrap_ci_95_diff": [
+      -0.11,
+      0.06
+    ],
+    "elo_difference": -8.687699877294557,
+    "bootstrap_ci_95_elo": [
+      -38.37318885669788,
+      20.87120466602867
+    ],
+    "average_game_plies": 94.975,
+    "terminations": {
+      "checkmate_white": 38,
+      "draw_threefold_repetition": 120,
+      "checkmate_black": 39,
+      "draw_insufficient_material": 3
+    }
+  }
+}

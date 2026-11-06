@@ -1,0 +1,143 @@
+[
+  {
+    "id": "ind_01_mate_in_1",
+    "theme": "Direct Mate",
+    "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/5Q2/PPPP1PPP/RNB1K1NR w KQkq - 0 5",
+    "solution": "f3f7",
+    "description": "Scholar's mate trap forced checkmate Qxf7#."
+  },
+  {
+    "id": "ind_02_back_rank_mate",
+    "theme": "Back Rank Mate",
+    "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+    "solution": "d1d8",
+    "description": "Back-rank rook mate on d8."
+  },
+  {
+    "id": "ind_03_queen_sac_mate",
+    "theme": "Smothered Mate Sequence",
+    "fen": "6k1/5ppp/8/8/8/8/1q4PP/4Q1K1 w - - 0 1",
+    "solution": "e1e8",
+    "description": "Back rank queen mate e1e8#."
+  },
+  {
+    "id": "ind_04_defensive_perpetual",
+    "theme": "Perpetual Check Evasion",
+    "fen": "8/6k1/8/8/8/8/1q4PK/7Q w - - 0 1",
+    "solution": "h1e1",
+    "description": "Queen repositioning to defend and evade checks."
+  },
+  {
+    "id": "ind_05_queen_attack",
+    "theme": "Double Attack",
+    "fen": "rn2kb1r/pp3ppp/4p3/1qp1N3/3P4/8/PPP2PPP/R1BQK2R w KQkq - 0 11",
+    "solution": "d1h5",
+    "description": "Queen penetration on h5 attacking f7 and opening king."
+  },
+  {
+    "id": "ind_06_knight_fork_defense",
+    "theme": "Defensive Resource",
+    "fen": "r1b1k2r/pppp1ppp/8/4N3/1b1qn3/8/PPP2PPP/RNBQKB1R w KQkq - 0 8",
+    "solution": "c2c3",
+    "description": "Blocking check on c3 defending against mate and fork threats."
+  },
+  {
+    "id": "ind_07_skewer_evasion",
+    "theme": "Skewer Evasion",
+    "fen": "4k3/8/8/8/8/8/1R6/1K4q1 w - - 0 1",
+    "solution": "b1a2",
+    "description": "Active king evasion to a2 preserving rook on b2."
+  },
+  {
+    "id": "ind_08_pawn_breakthrough",
+    "theme": "Pawn Advance",
+    "fen": "8/8/4k3/8/4P3/8/4K3/8 w - - 0 1",
+    "solution": "e4e5",
+    "description": "Passed pawn advance in pure king and pawn ending."
+  },
+  {
+    "id": "ind_09_direct_promotion",
+    "theme": "Pawn Promotion",
+    "fen": "8/4P1k1/8/8/8/8/8/6K1 w - - 0 1",
+    "solution": "e7e8q",
+    "description": "Decisive pawn promotion to queen on e8."
+  },
+  {
+    "id": "ind_10_stalemate_trap",
+    "theme": "Stalemate Avoidance",
+    "fen": "8/8/8/8/8/5k2/7p/7K w - - 0 1",
+    "solution": "h1h2",
+    "description": "Capturing h2 pawn to secure technical draw."
+  },
+  {
+    "id": "ind_11_opposition_endgame",
+    "theme": "Endgame Opposition",
+    "fen": "8/8/8/4k3/4p3/4K3/8/8 b - - 0 1",
+    "solution": "e5d5",
+    "description": "King advance to d5 maintaining pawn protection and space."
+  },
+  {
+    "id": "ind_12_kingside_castling",
+    "theme": "King Safety",
+    "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+    "solution": "e1g1",
+    "description": "Sound king safety via kingside castling."
+  },
+  {
+    "id": "ind_13_discovered_check_defense",
+    "theme": "Check Evasion",
+    "fen": "r1b1k2r/pppp1ppp/8/4N3/1b2n3/8/PPP1BPPP/RNBQK2R w KQkq - 0 8",
+    "solution": "c1d2",
+    "description": "Interposing bishop on d2 resolving check safely."
+  },
+  {
+    "id": "ind_14_tactical_knight_retreat",
+    "theme": "Tactical Retreat",
+    "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+    "solution": "e4c3",
+    "description": "Central knight consolidation defending b2 pawn."
+  },
+  {
+    "id": "ind_15_tactical_liquidation",
+    "theme": "Tactical Sacrifice",
+    "fen": "r1bq1rk1/ppp2ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQ1RK1 w - - 0 9",
+    "solution": "c4f7",
+    "description": "Tactical sacrifice clearing f-file and displacing king."
+  },
+  {
+    "id": "ind_16_center_strike",
+    "theme": "Central Expansion",
+    "fen": "r1bqk2r/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+    "solution": "d2d4",
+    "description": "Classic d2d4 center strike opening lines."
+  },
+  {
+    "id": "ind_17_positional_castling",
+    "theme": "Castling",
+    "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+    "solution": "e1g1",
+    "description": "Securing king with e1g1 before center opens."
+  },
+  {
+    "id": "ind_18_legalls_trap",
+    "theme": "Forced Mate Net",
+    "fen": "r2qkb1r/pp2nppp/3p4/2pNN1B1/2BnP3/3P4/PPP2PPP/R2bK2R w KQkq - 1 9",
+    "solution": "d5f6",
+    "description": "Knight sacrifice on f6 forcing checkmate sequence."
+  },
+  {
+    "id": "ind_19_quiet_kingside_castling",
+    "theme": "Defensive Development",
+    "fen": "r1bqk2r/pp2bppp/2n5/2p5/3pN3/1B1P1N2/PPP2PPP/R2Q1RK1 b kq - 1 10",
+    "solution": "e8g8",
+    "description": "Black castling safely e8g8."
+  },
+  {
+    "id": "ind_20_bishop_kick",
+    "theme": "Pawn Kick",
+    "fen": "r1b1k1nr/pppp1ppp/8/4p3/1b2P3/2N5/PPPP1PPP/R1BQKBNR w KQkq - 0 5",
+    "solution": "a2a3",
+    "description": "Pawn move a2a3 asking bishop for decision."
+  }
+]
+

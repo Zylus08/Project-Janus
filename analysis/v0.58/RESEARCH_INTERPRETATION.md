@@ -111,3 +111,4 @@ Because killer moves ($80\text{k}/90\text{k}$) and captures ($100\text{k}+$) rem
 3. **Perspective Canonicalization:** Rotating the board for Black ($sq \oplus 56$) and assigning friendly/enemy planes halves the parameter count and enforces perfect color symmetry.
 4. **4,168-Action Dimensionality:** Differentiating pawn underpromotions from queen promotions via distinct action offsets eliminates action ambiguity and guarantees 100% round-trip lossless encoding.
 5. **Gating is Critical for CPU Engines:** Gating neural evaluation to the Root node preserves nominal alpha-beta depth while injecting learned guidance at the decision boundary.
+

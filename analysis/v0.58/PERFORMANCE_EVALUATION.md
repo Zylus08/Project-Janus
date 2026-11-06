@@ -82,3 +82,4 @@ To evaluate engine search behavior under realistic blitz and rapid time constrai
 1. **Safety Qualification:** N8-A introduces zero tactical regressions.
 2. **Speed & Throughput:** N8-A maintains $\approx 950\ \text{kNPS}$ in C++ native execution on CPU, comfortably exceeding the tournament threshold.
 3. **Readiness for Tournament:** Candidate N8-A is fully qualified to enter the preregistered 200-game match against Baseline C1.
+

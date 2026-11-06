@@ -90,3 +90,4 @@ The White advantage of $+5.5$ points per 100 games aligns with standard chess to
 The preregistered match establishes that **Janus Neural Candidate N8-A achieves robust playing-strength parity (+1.7 Elo, $p = 0.9020$) with Classical Baseline C1**. 
 
 Because learned move-ordering guidance is applied strictly at the root node within the quiet move tier ($[20,000, 70,000]$), it reshapes the early move exploration toward grandmaster lines without reducing nominal search depth or compromising tactical defense. In accordance with the preregistered criteria, this outcome qualifies N8-A as a successful **Category B Research Prototype**.
+

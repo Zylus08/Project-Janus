@@ -53,3 +53,4 @@ To maintain absolute stability and preserve Baseline C1 guarantees by default:
    - UCI command `setoption name UseNeuralPolicyOrdering value true` enables the neural policy prototype with Root-only gating (`MaxPly=0`, `MinDepth=4`).
 3. **Control Baseline Preservation:**
    - Classical Baseline C1 remains bit-exact and unchanged.
+

@@ -75,3 +75,4 @@
   $\Delta\text{Elo} < -15$ with $p < 0.05$ (statistically significant regression due to inference latency or move selection).
 - **Category D (Reject):**
   Catastrophic engine instability, illegal moves, or unrecoverable tactical degradation.
+

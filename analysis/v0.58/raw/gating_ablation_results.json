@@ -1,0 +1,2970 @@
+{
+  "positions_count": 16,
+  "depths": [
+    5,
+    6
+  ],
+  "configs": {
+    "C1": {
+      "id": "C1",
+      "name": "Classical Baseline (Neural OFF)",
+      "use_policy": false,
+      "max_ply": 0,
+      "min_depth": 4
+    },
+    "N8-A": {
+      "id": "N8-A",
+      "name": "Root-Only Policy",
+      "use_policy": true,
+      "max_ply": 0,
+      "min_depth": 4
+    },
+    "N8-B": {
+      "id": "N8-B",
+      "name": "Root + Shallow Internal",
+      "use_policy": true,
+      "max_ply": 2,
+      "min_depth": 4
+    },
+    "N8-C": {
+      "id": "N8-C",
+      "name": "Selective High-Depth",
+      "use_policy": true,
+      "max_ply": 2,
+      "min_depth": 6
+    }
+  },
+  "per_position": [
+    {
+      "id": "val_01_tactical_fork",
+      "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+      "desc": "val_01_tactical_fork",
+      "depth_results": {
+        "5": {
+          "C1": {
+            "best_move": "c4f7",
+            "score": -280,
+            "depth": 5,
+            "nodes": 38799,
+            "wall_ms": 35.96,
+            "nps": 1078939,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7e7",
+              "d5e4"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 89.15,
+            "mean_cutoff_index": 1.264,
+            "total_cutoffs": 2497
+          },
+          "N8-A": {
+            "best_move": "c4f7",
+            "score": -280,
+            "depth": 5,
+            "nodes": 41538,
+            "wall_ms": 41.7,
+            "nps": 996210,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7e7",
+              "d5e4"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 82,
+            "neural_time_us": 481,
+            "first_move_cutoff_rate": 84.64,
+            "mean_cutoff_index": 1.365,
+            "total_cutoffs": 2559
+          },
+          "N8-B": {
+            "best_move": "c4f7",
+            "score": -280,
+            "depth": 5,
+            "nodes": 41538,
+            "wall_ms": 41.49,
+            "nps": 1001045,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7e7",
+              "d5e4"
+            ],
+            "neural_evals": 43,
+            "neural_moves_scored": 1520,
+            "neural_time_us": 3761,
+            "first_move_cutoff_rate": 84.64,
+            "mean_cutoff_index": 1.365,
+            "total_cutoffs": 2559
+          },
+          "N8-C": {
+            "best_move": "c4f7",
+            "score": -280,
+            "depth": 5,
+            "nodes": 38799,
+            "wall_ms": 33.49,
+            "nps": 1158434,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7e7",
+              "d5e4"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 89.15,
+            "mean_cutoff_index": 1.264,
+            "total_cutoffs": 2497
+          }
+        },
+        "6": {
+          "C1": {
+            "best_move": "c4f7",
+            "score": -320,
+            "depth": 6,
+            "nodes": 211961,
+            "wall_ms": 127.03,
+            "nps": 1668555,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7e7",
+              "d5e4",
+              "d7d5"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 91.49,
+            "mean_cutoff_index": 1.216,
+            "total_cutoffs": 11020
+          },
+          "N8-A": {
+            "best_move": "c4f7",
+            "score": -320,
+            "depth": 6,
+            "nodes": 230208,
+            "wall_ms": 134.97,
+            "nps": 1705677,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7e7",
+              "d5e4",
+              "d7d5"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 123,
+            "neural_time_us": 296,
+            "first_move_cutoff_rate": 89.27,
+            "mean_cutoff_index": 1.27,
+            "total_cutoffs": 11645
+          },
+          "N8-B": {
+            "best_move": "c4f7",
+            "score": -320,
+            "depth": 6,
+            "nodes": 237104,
+            "wall_ms": 162.04,
+            "nps": 1463214,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7e7",
+              "d5e4",
+              "d7d5"
+            ],
+            "neural_evals": 155,
+            "neural_moves_scored": 5813,
+            "neural_time_us": 14451,
+            "first_move_cutoff_rate": 88.92,
+            "mean_cutoff_index": 1.283,
+            "total_cutoffs": 11746
+          },
+          "N8-C": {
+            "best_move": "c4f7",
+            "score": -320,
+            "depth": 6,
+            "nodes": 207479,
+            "wall_ms": 118.95,
+            "nps": 1744180,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7e7",
+              "d5e4",
+              "d7d5"
+            ],
+            "neural_evals": 1,
+            "neural_moves_scored": 41,
+            "neural_time_us": 94,
+            "first_move_cutoff_rate": 91.33,
+            "mean_cutoff_index": 1.224,
+            "total_cutoffs": 10758
+          }
+        }
+      }
+    },
+    {
+      "id": "val_02_quiet_positional",
+      "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+      "desc": "val_02_quiet_positional",
+      "depth_results": {
+        "5": {
+          "C1": {
+            "best_move": "d1c2",
+            "score": -5,
+            "depth": 5,
+            "nodes": 54153,
+            "wall_ms": 51.06,
+            "nps": 1060638,
+            "pv": [
+              "d1c2",
+              "c5c4",
+              "d3e2",
+              "c8d7",
+              "e3e4"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 89.2,
+            "mean_cutoff_index": 1.262,
+            "total_cutoffs": 3065
+          },
+          "N8-A": {
+            "best_move": "d1c2",
+            "score": -5,
+            "depth": 5,
+            "nodes": 52988,
+            "wall_ms": 57.12,
+            "nps": 927740,
+            "pv": [
+              "d1c2",
+              "c5c4",
+              "d3e2",
+              "c8d7",
+              "e3e4"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 82,
+            "neural_time_us": 214,
+            "first_move_cutoff_rate": 87.72,
+            "mean_cutoff_index": 1.289,
+            "total_cutoffs": 2613
+          },
+          "N8-B": {
+            "best_move": "d1c2",
+            "score": -5,
+            "depth": 5,
+            "nodes": 53357,
+            "wall_ms": 56.85,
+            "nps": 938480,
+            "pv": [
+              "d1c2",
+              "c5c4",
+              "d3e2",
+              "c8d7",
+              "e3e4"
+            ],
+            "neural_evals": 43,
+            "neural_moves_scored": 1506,
+            "neural_time_us": 3972,
+            "first_move_cutoff_rate": 87.72,
+            "mean_cutoff_index": 1.289,
+            "total_cutoffs": 2614
+          },
+          "N8-C": {
+            "best_move": "d1c2",
+            "score": -5,
+            "depth": 5,
+            "nodes": 54153,
+            "wall_ms": 51.73,
+            "nps": 1046893,
+            "pv": [
+              "d1c2",
+              "c5c4",
+              "d3e2",
+              "c8d7",
+              "e3e4"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 89.2,
+            "mean_cutoff_index": 1.262,
+            "total_cutoffs": 3065
+          }
+        },
+        "6": {
+          "C1": {
+            "best_move": "d1c2",
+            "score": -15,
+            "depth": 6,
+            "nodes": 221766,
+            "wall_ms": 172.1,
+            "nps": 1288617,
+            "pv": [
+              "d1c2",
+              "c5c4",
+              "d3e2",
+              "c8d7",
+              "e3e4",
+              "d8b6"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 84.68,
+            "mean_cutoff_index": 1.309,
+            "total_cutoffs": 10821
+          },
+          "N8-A": {
+            "best_move": "d1c2",
+            "score": -15,
+            "depth": 6,
+            "nodes": 233112,
+            "wall_ms": 188.76,
+            "nps": 1234957,
+            "pv": [
+              "d1c2",
+              "c5c4",
+              "d3e2",
+              "c8d7",
+              "e3e4",
+              "d8b6"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 123,
+            "neural_time_us": 490,
+            "first_move_cutoff_rate": 82.78,
+            "mean_cutoff_index": 1.329,
+            "total_cutoffs": 10673
+          },
+          "N8-B": {
+            "best_move": "d1c2",
+            "score": -15,
+            "depth": 6,
+            "nodes": 230331,
+            "wall_ms": 193.75,
+            "nps": 1188810,
+            "pv": [
+              "d1c2",
+              "c5c4",
+              "d3e2",
+              "c8d7",
+              "e3e4",
+              "d8b6"
+            ],
+            "neural_evals": 131,
+            "neural_moves_scored": 4738,
+            "neural_time_us": 11453,
+            "first_move_cutoff_rate": 82.62,
+            "mean_cutoff_index": 1.33,
+            "total_cutoffs": 10417
+          },
+          "N8-C": {
+            "best_move": "d1c2",
+            "score": -15,
+            "depth": 6,
+            "nodes": 222101,
+            "wall_ms": 170.3,
+            "nps": 1304148,
+            "pv": [
+              "d1c2",
+              "c5c4",
+              "d3e2",
+              "c8d7",
+              "e3e4",
+              "d8b6"
+            ],
+            "neural_evals": 1,
+            "neural_moves_scored": 41,
+            "neural_time_us": 96,
+            "first_move_cutoff_rate": 84.61,
+            "mean_cutoff_index": 1.316,
+            "total_cutoffs": 10820
+          }
+        }
+      }
+    },
+    {
+      "id": "val_03_king_safety",
+      "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+      "desc": "val_03_king_safety",
+      "depth_results": {
+        "5": {
+          "C1": {
+            "best_move": "e4c3",
+            "score": 350,
+            "depth": 5,
+            "nodes": 33431,
+            "wall_ms": 25.45,
+            "nps": 1313548,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "c8f5",
+              "d1f3"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 58.09,
+            "mean_cutoff_index": 2.062,
+            "total_cutoffs": 1842
+          },
+          "N8-A": {
+            "best_move": "e4c3",
+            "score": 350,
+            "depth": 5,
+            "nodes": 33968,
+            "wall_ms": 26.33,
+            "nps": 1290214,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "c8f5",
+              "d1f3"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 78,
+            "neural_time_us": 211,
+            "first_move_cutoff_rate": 58.17,
+            "mean_cutoff_index": 2.068,
+            "total_cutoffs": 1843
+          },
+          "N8-B": {
+            "best_move": "e4c3",
+            "score": 350,
+            "depth": 5,
+            "nodes": 33743,
+            "wall_ms": 29.6,
+            "nps": 1139989,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "c8f5",
+              "d1f3"
+            ],
+            "neural_evals": 41,
+            "neural_moves_scored": 1513,
+            "neural_time_us": 3558,
+            "first_move_cutoff_rate": 58.16,
+            "mean_cutoff_index": 2.064,
+            "total_cutoffs": 1845
+          },
+          "N8-C": {
+            "best_move": "e4c3",
+            "score": 350,
+            "depth": 5,
+            "nodes": 33431,
+            "wall_ms": 25.46,
+            "nps": 1313161,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "c8f5",
+              "d1f3"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 58.09,
+            "mean_cutoff_index": 2.062,
+            "total_cutoffs": 1842
+          }
+        },
+        "6": {
+          "C1": {
+            "best_move": "e4c3",
+            "score": 340,
+            "depth": 6,
+            "nodes": 149939,
+            "wall_ms": 112.95,
+            "nps": 1327534,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "d5e4",
+              "d3e4",
+              "c8e6"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 66.59,
+            "mean_cutoff_index": 1.779,
+            "total_cutoffs": 8346
+          },
+          "N8-A": {
+            "best_move": "e4c3",
+            "score": 340,
+            "depth": 6,
+            "nodes": 151820,
+            "wall_ms": 120.72,
+            "nps": 1257584,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "d5e4",
+              "d3e4",
+              "c8e6"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 117,
+            "neural_time_us": 332,
+            "first_move_cutoff_rate": 67.3,
+            "mean_cutoff_index": 1.754,
+            "total_cutoffs": 8377
+          },
+          "N8-B": {
+            "best_move": "e4c3",
+            "score": 340,
+            "depth": 6,
+            "nodes": 151553,
+            "wall_ms": 124.14,
+            "nps": 1220848,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "d5e4",
+              "d3e4",
+              "c8e6"
+            ],
+            "neural_evals": 123,
+            "neural_moves_scored": 4475,
+            "neural_time_us": 10934,
+            "first_move_cutoff_rate": 67.48,
+            "mean_cutoff_index": 1.753,
+            "total_cutoffs": 8328
+          },
+          "N8-C": {
+            "best_move": "e4c3",
+            "score": 340,
+            "depth": 6,
+            "nodes": 149387,
+            "wall_ms": 110.7,
+            "nps": 1349474,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "d5e4",
+              "d3e4",
+              "c8e6"
+            ],
+            "neural_evals": 1,
+            "neural_moves_scored": 39,
+            "neural_time_us": 93,
+            "first_move_cutoff_rate": 66.51,
+            "mean_cutoff_index": 1.779,
+            "total_cutoffs": 8328
+          }
+        }
+      }
+    },
+    {
+      "id": "val_04_pawn_endgame",
+      "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+      "desc": "val_04_pawn_endgame",
+      "depth_results": {
+        "5": {
+          "C1": {
+            "best_move": "e3f2",
+            "score": 0,
+            "depth": 5,
+            "nodes": 1895,
+            "wall_ms": 0.59,
+            "nps": 3234340,
+            "pv": [
+              "e3f2",
+              "e6f6",
+              "f2g1",
+              "f6g7",
+              "g1h1"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 83.56,
+            "mean_cutoff_index": 1.409,
+            "total_cutoffs": 225
+          },
+          "N8-A": {
+            "best_move": "e3f2",
+            "score": 0,
+            "depth": 5,
+            "nodes": 1767,
+            "wall_ms": 0.67,
+            "nps": 2636919,
+            "pv": [
+              "e3f2",
+              "e6f6",
+              "f2g1",
+              "f6g7",
+              "g1h1"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 12,
+            "neural_time_us": 168,
+            "first_move_cutoff_rate": 81.07,
+            "mean_cutoff_index": 1.432,
+            "total_cutoffs": 206
+          },
+          "N8-B": {
+            "best_move": "e3f2",
+            "score": 0,
+            "depth": 5,
+            "nodes": 1528,
+            "wall_ms": 1.17,
+            "nps": 1308555,
+            "pv": [
+              "e3f2",
+              "e6f7",
+              "f2f1",
+              "f7g8",
+              "f1g1"
+            ],
+            "neural_evals": 8,
+            "neural_moves_scored": 47,
+            "neural_time_us": 689,
+            "first_move_cutoff_rate": 81.38,
+            "mean_cutoff_index": 1.436,
+            "total_cutoffs": 188
+          },
+          "N8-C": {
+            "best_move": "e3f2",
+            "score": 0,
+            "depth": 5,
+            "nodes": 1895,
+            "wall_ms": 0.54,
+            "nps": 3527550,
+            "pv": [
+              "e3f2",
+              "e6f6",
+              "f2g1",
+              "f6g7",
+              "g1h1"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 83.56,
+            "mean_cutoff_index": 1.409,
+            "total_cutoffs": 225
+          }
+        },
+        "6": {
+          "C1": {
+            "best_move": "e3f2",
+            "score": 0,
+            "depth": 6,
+            "nodes": 2632,
+            "wall_ms": 0.7,
+            "nps": 3741825,
+            "pv": [
+              "e3f2",
+              "e6f6",
+              "f2f1",
+              "f6g7",
+              "f1g1",
+              "g7g8"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 84.5,
+            "mean_cutoff_index": 1.359,
+            "total_cutoffs": 329
+          },
+          "N8-A": {
+            "best_move": "e3f2",
+            "score": 0,
+            "depth": 6,
+            "nodes": 2484,
+            "wall_ms": 0.98,
+            "nps": 2535728,
+            "pv": [
+              "e3f2",
+              "e6f6",
+              "f2f1",
+              "f6g7",
+              "f1g1",
+              "g7g8"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 18,
+            "neural_time_us": 266,
+            "first_move_cutoff_rate": 83.01,
+            "mean_cutoff_index": 1.373,
+            "total_cutoffs": 306
+          },
+          "N8-B": {
+            "best_move": "e3f2",
+            "score": 0,
+            "depth": 6,
+            "nodes": 2489,
+            "wall_ms": 2.95,
+            "nps": 842557,
+            "pv": [
+              "e3f2",
+              "e6f7",
+              "f2f1",
+              "f7g7",
+              "f1g1",
+              "g7g8"
+            ],
+            "neural_evals": 23,
+            "neural_moves_scored": 144,
+            "neural_time_us": 2216,
+            "first_move_cutoff_rate": 83.43,
+            "mean_cutoff_index": 1.393,
+            "total_cutoffs": 338
+          },
+          "N8-C": {
+            "best_move": "e3f2",
+            "score": 0,
+            "depth": 6,
+            "nodes": 2630,
+            "wall_ms": 0.8,
+            "nps": 3306096,
+            "pv": [
+              "e3f2",
+              "e6f6",
+              "f2f1",
+              "f6g7",
+              "f1g1",
+              "g7g8"
+            ],
+            "neural_evals": 1,
+            "neural_moves_scored": 6,
+            "neural_time_us": 94,
+            "first_move_cutoff_rate": 84.8,
+            "mean_cutoff_index": 1.356,
+            "total_cutoffs": 329
+          }
+        }
+      }
+    },
+    {
+      "id": "val_05_rook_endgame",
+      "fen": "8/8/4k3/R7/8/8/2K4r/8 w - - 1 1",
+      "desc": "val_05_rook_endgame",
+      "depth_results": {
+        "5": {
+          "C1": {
+            "best_move": "c2b1",
+            "score": 15,
+            "depth": 5,
+            "nodes": 4254,
+            "wall_ms": 2.69,
+            "nps": 1579650,
+            "pv": [
+              "c2b1",
+              "e6f7",
+              "a5g5",
+              "f7f8",
+              "g5g1"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 91.89,
+            "mean_cutoff_index": 1.465,
+            "total_cutoffs": 419
+          },
+          "N8-A": {
+            "best_move": "c2b1",
+            "score": 15,
+            "depth": 5,
+            "nodes": 4243,
+            "wall_ms": 2.02,
+            "nps": 2098106,
+            "pv": [
+              "c2b1",
+              "e6f7",
+              "a5g5",
+              "f7f8",
+              "g5g1"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 12,
+            "neural_time_us": 180,
+            "first_move_cutoff_rate": 91.41,
+            "mean_cutoff_index": 1.465,
+            "total_cutoffs": 419
+          },
+          "N8-B": {
+            "best_move": "c2b1",
+            "score": 15,
+            "depth": 5,
+            "nodes": 3530,
+            "wall_ms": 4.37,
+            "nps": 807466,
+            "pv": [
+              "c2b1",
+              "e6f7",
+              "a5g5",
+              "f7f8",
+              "g5g1"
+            ],
+            "neural_evals": 8,
+            "neural_moves_scored": 126,
+            "neural_time_us": 1268,
+            "first_move_cutoff_rate": 92.76,
+            "mean_cutoff_index": 1.386,
+            "total_cutoffs": 373
+          },
+          "N8-C": {
+            "best_move": "c2b1",
+            "score": 15,
+            "depth": 5,
+            "nodes": 4254,
+            "wall_ms": 1.87,
+            "nps": 2272678,
+            "pv": [
+              "c2b1",
+              "e6f7",
+              "a5g5",
+              "f7f8",
+              "g5g1"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 91.89,
+            "mean_cutoff_index": 1.465,
+            "total_cutoffs": 419
+          }
+        },
+        "6": {
+          "C1": {
+            "best_move": "c2b1",
+            "score": 10,
+            "depth": 6,
+            "nodes": 9536,
+            "wall_ms": 6.78,
+            "nps": 1407527,
+            "pv": [
+              "c2b1",
+              "e6f7",
+              "a5g5",
+              "f7f8",
+              "g5g1",
+              "h2e2"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 93.03,
+            "mean_cutoff_index": 1.25,
+            "total_cutoffs": 1048
+          },
+          "N8-A": {
+            "best_move": "c2b1",
+            "score": 10,
+            "depth": 6,
+            "nodes": 9917,
+            "wall_ms": 6.89,
+            "nps": 1440042,
+            "pv": [
+              "c2b1",
+              "e6f7",
+              "a5g5",
+              "f7f8",
+              "g5g1",
+              "h2e2"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 18,
+            "neural_time_us": 417,
+            "first_move_cutoff_rate": 91.64,
+            "mean_cutoff_index": 1.269,
+            "total_cutoffs": 1077
+          },
+          "N8-B": {
+            "best_move": "c2b1",
+            "score": 10,
+            "depth": 6,
+            "nodes": 9408,
+            "wall_ms": 8.37,
+            "nps": 1124524,
+            "pv": [
+              "c2b1",
+              "e6f7",
+              "a5g5",
+              "f7f8",
+              "g5g1",
+              "h2e2"
+            ],
+            "neural_evals": 24,
+            "neural_moves_scored": 363,
+            "neural_time_us": 2550,
+            "first_move_cutoff_rate": 92.11,
+            "mean_cutoff_index": 1.245,
+            "total_cutoffs": 1052
+          },
+          "N8-C": {
+            "best_move": "c2b1",
+            "score": 10,
+            "depth": 6,
+            "nodes": 9731,
+            "wall_ms": 6.16,
+            "nps": 1578682,
+            "pv": [
+              "c2b1",
+              "e6f7",
+              "a5g5",
+              "f7f8",
+              "g5g1",
+              "h2e2"
+            ],
+            "neural_evals": 1,
+            "neural_moves_scored": 6,
+            "neural_time_us": 87,
+            "first_move_cutoff_rate": 93.16,
+            "mean_cutoff_index": 1.258,
+            "total_cutoffs": 1067
+          }
+        }
+      }
+    },
+    {
+      "id": "val_06_minor_piece_endgame",
+      "fen": "8/8/4k3/3b4/8/4B3/4K3/8 w - - 0 1",
+      "desc": "val_06_minor_piece_endgame",
+      "depth_results": {
+        "5": {
+          "C1": {
+            "best_move": "e2f1",
+            "score": 0,
+            "depth": 5,
+            "nodes": 6609,
+            "wall_ms": 4.1,
+            "nps": 1611047,
+            "pv": [
+              "e2f1",
+              "e6f7",
+              "f1g1",
+              "f7g8",
+              "e3d4"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 79.7,
+            "mean_cutoff_index": 1.463,
+            "total_cutoffs": 734
+          },
+          "N8-A": {
+            "best_move": "e2f1",
+            "score": 0,
+            "depth": 5,
+            "nodes": 8799,
+            "wall_ms": 5.89,
+            "nps": 1493380,
+            "pv": [
+              "e2f1",
+              "e6f7",
+              "f1g1",
+              "f7g8",
+              "e3d4"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 34,
+            "neural_time_us": 273,
+            "first_move_cutoff_rate": 81.49,
+            "mean_cutoff_index": 1.415,
+            "total_cutoffs": 1124
+          },
+          "N8-B": {
+            "best_move": "e2f1",
+            "score": 0,
+            "depth": 5,
+            "nodes": 8279,
+            "wall_ms": 6.29,
+            "nps": 1316299,
+            "pv": [
+              "e2f1",
+              "e6f7",
+              "f1g1",
+              "f7g8",
+              "e3d4"
+            ],
+            "neural_evals": 19,
+            "neural_moves_scored": 315,
+            "neural_time_us": 1752,
+            "first_move_cutoff_rate": 79.5,
+            "mean_cutoff_index": 1.429,
+            "total_cutoffs": 1034
+          },
+          "N8-C": {
+            "best_move": "e2f1",
+            "score": 0,
+            "depth": 5,
+            "nodes": 6609,
+            "wall_ms": 3.67,
+            "nps": 1800768,
+            "pv": [
+              "e2f1",
+              "e6f7",
+              "f1g1",
+              "f7g8",
+              "e3d4"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 79.7,
+            "mean_cutoff_index": 1.463,
+            "total_cutoffs": 734
+          }
+        },
+        "6": {
+          "C1": {
+            "best_move": "e2f1",
+            "score": 0,
+            "depth": 6,
+            "nodes": 16035,
+            "wall_ms": 7.41,
+            "nps": 2163880,
+            "pv": [
+              "e2f1",
+              "e6f7",
+              "f1g1",
+              "f7g8",
+              "e3d4",
+              "d5e4"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 81.37,
+            "mean_cutoff_index": 1.335,
+            "total_cutoffs": 1868
+          },
+          "N8-A": {
+            "best_move": "e2f1",
+            "score": 0,
+            "depth": 6,
+            "nodes": 17003,
+            "wall_ms": 7.69,
+            "nps": 2211024,
+            "pv": [
+              "e2f1",
+              "e6f7",
+              "f1g1",
+              "f7g8",
+              "e3d4",
+              "d5e4"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 51,
+            "neural_time_us": 267,
+            "first_move_cutoff_rate": 84.13,
+            "mean_cutoff_index": 1.321,
+            "total_cutoffs": 1941
+          },
+          "N8-B": {
+            "best_move": "e2f1",
+            "score": 0,
+            "depth": 6,
+            "nodes": 16320,
+            "wall_ms": 12.58,
+            "nps": 1297359,
+            "pv": [
+              "e2f1",
+              "e6f7",
+              "f1g1",
+              "f7g8",
+              "e3d4",
+              "d5e4"
+            ],
+            "neural_evals": 58,
+            "neural_moves_scored": 919,
+            "neural_time_us": 4947,
+            "first_move_cutoff_rate": 81.88,
+            "mean_cutoff_index": 1.334,
+            "total_cutoffs": 1943
+          },
+          "N8-C": {
+            "best_move": "e2f1",
+            "score": 0,
+            "depth": 6,
+            "nodes": 16068,
+            "wall_ms": 7.66,
+            "nps": 2096938,
+            "pv": [
+              "e2f1",
+              "e6f7",
+              "f1g1",
+              "f7g8",
+              "e3d4",
+              "d5e4"
+            ],
+            "neural_evals": 1,
+            "neural_moves_scored": 17,
+            "neural_time_us": 89,
+            "first_move_cutoff_rate": 80.87,
+            "mean_cutoff_index": 1.342,
+            "total_cutoffs": 1913
+          }
+        }
+      }
+    },
+    {
+      "id": "val_07_pawn_promotion",
+      "fen": "8/4P3/8/8/8/6k1/8/6K1 w - - 0 1",
+      "desc": "val_07_pawn_promotion",
+      "depth_results": {
+        "5": {
+          "C1": {
+            "best_move": "e7e8q",
+            "score": 965,
+            "depth": 5,
+            "nodes": 1557,
+            "wall_ms": 0.57,
+            "nps": 2709239,
+            "pv": [
+              "e7e8q",
+              "g3h4",
+              "e8e5",
+              "h4h3",
+              "e5c3"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 88.81,
+            "mean_cutoff_index": 1.273,
+            "total_cutoffs": 143
+          },
+          "N8-A": {
+            "best_move": "e7e8q",
+            "score": 965,
+            "depth": 5,
+            "nodes": 1557,
+            "wall_ms": 0.71,
+            "nps": 2198531,
+            "pv": [
+              "e7e8q",
+              "g3h4",
+              "e8e5",
+              "h4h3",
+              "e5c3"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 12,
+            "neural_time_us": 168,
+            "first_move_cutoff_rate": 88.81,
+            "mean_cutoff_index": 1.273,
+            "total_cutoffs": 143
+          },
+          "N8-B": {
+            "best_move": "e7e8q",
+            "score": 965,
+            "depth": 5,
+            "nodes": 1612,
+            "wall_ms": 1.03,
+            "nps": 1569773,
+            "pv": [
+              "e7e8q",
+              "g3h4",
+              "e8e5",
+              "h4h3",
+              "e5c3"
+            ],
+            "neural_evals": 6,
+            "neural_moves_scored": 34,
+            "neural_time_us": 502,
+            "first_move_cutoff_rate": 88.44,
+            "mean_cutoff_index": 1.218,
+            "total_cutoffs": 147
+          },
+          "N8-C": {
+            "best_move": "e7e8q",
+            "score": 965,
+            "depth": 5,
+            "nodes": 1557,
+            "wall_ms": 0.5,
+            "nps": 3135951,
+            "pv": [
+              "e7e8q",
+              "g3h4",
+              "e8e5",
+              "h4h3",
+              "e5c3"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 88.81,
+            "mean_cutoff_index": 1.273,
+            "total_cutoffs": 143
+          }
+        },
+        "6": {
+          "C1": {
+            "best_move": "e7e8q",
+            "score": 965,
+            "depth": 6,
+            "nodes": 4121,
+            "wall_ms": 1.72,
+            "nps": 2393842,
+            "pv": [
+              "e7e8q",
+              "g3h4",
+              "e8e5",
+              "h4g4",
+              "e5c5",
+              "g4h3"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 92.14,
+            "mean_cutoff_index": 1.174,
+            "total_cutoffs": 547
+          },
+          "N8-A": {
+            "best_move": "e7e8q",
+            "score": 965,
+            "depth": 6,
+            "nodes": 4121,
+            "wall_ms": 2.01,
+            "nps": 2048414,
+            "pv": [
+              "e7e8q",
+              "g3h4",
+              "e8e5",
+              "h4g4",
+              "e5c5",
+              "g4h3"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 18,
+            "neural_time_us": 260,
+            "first_move_cutoff_rate": 92.14,
+            "mean_cutoff_index": 1.174,
+            "total_cutoffs": 547
+          },
+          "N8-B": {
+            "best_move": "e7e8q",
+            "score": 965,
+            "depth": 6,
+            "nodes": 4249,
+            "wall_ms": 3.26,
+            "nps": 1301976,
+            "pv": [
+              "e7e8q",
+              "g3h4",
+              "e8e5",
+              "h4g4",
+              "e5c5",
+              "g4h3"
+            ],
+            "neural_evals": 17,
+            "neural_moves_scored": 167,
+            "neural_time_us": 1425,
+            "first_move_cutoff_rate": 91.22,
+            "mean_cutoff_index": 1.164,
+            "total_cutoffs": 581
+          },
+          "N8-C": {
+            "best_move": "e7e8q",
+            "score": 965,
+            "depth": 6,
+            "nodes": 4121,
+            "wall_ms": 1.84,
+            "nps": 2238457,
+            "pv": [
+              "e7e8q",
+              "g3h4",
+              "e8e5",
+              "h4g4",
+              "e5c5",
+              "g4h3"
+            ],
+            "neural_evals": 1,
+            "neural_moves_scored": 6,
+            "neural_time_us": 98,
+            "first_move_cutoff_rate": 92.14,
+            "mean_cutoff_index": 1.174,
+            "total_cutoffs": 547
+          }
+        }
+      }
+    },
+    {
+      "id": "val_08_kingside_castling",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+      "desc": "val_08_kingside_castling",
+      "depth_results": {
+        "5": {
+          "C1": {
+            "best_move": "d2d3",
+            "score": 10,
+            "depth": 5,
+            "nodes": 41230,
+            "wall_ms": 41.75,
+            "nps": 987495,
+            "pv": [
+              "d2d3",
+              "d7d6",
+              "c1e3",
+              "c8g4",
+              "d1e2"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 69.65,
+            "mean_cutoff_index": 1.697,
+            "total_cutoffs": 1924
+          },
+          "N8-A": {
+            "best_move": "d2d3",
+            "score": 10,
+            "depth": 5,
+            "nodes": 41625,
+            "wall_ms": 43.13,
+            "nps": 965062,
+            "pv": [
+              "d2d3",
+              "d7d6",
+              "c1e3",
+              "c8g4",
+              "d1e2"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 72,
+            "neural_time_us": 199,
+            "first_move_cutoff_rate": 68.39,
+            "mean_cutoff_index": 1.713,
+            "total_cutoffs": 1914
+          },
+          "N8-B": {
+            "best_move": "d2d3",
+            "score": 10,
+            "depth": 5,
+            "nodes": 42090,
+            "wall_ms": 53.19,
+            "nps": 791314,
+            "pv": [
+              "d2d3",
+              "d7d6",
+              "c1e3",
+              "c8g4",
+              "d1e2"
+            ],
+            "neural_evals": 38,
+            "neural_moves_scored": 1328,
+            "neural_time_us": 3627,
+            "first_move_cutoff_rate": 68.3,
+            "mean_cutoff_index": 1.716,
+            "total_cutoffs": 1918
+          },
+          "N8-C": {
+            "best_move": "d2d3",
+            "score": 10,
+            "depth": 5,
+            "nodes": 41230,
+            "wall_ms": 41.74,
+            "nps": 987672,
+            "pv": [
+              "d2d3",
+              "d7d6",
+              "c1e3",
+              "c8g4",
+              "d1e2"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 69.65,
+            "mean_cutoff_index": 1.697,
+            "total_cutoffs": 1924
+          }
+        },
+        "6": {
+          "C1": {
+            "best_move": "d2d3",
+            "score": 10,
+            "depth": 6,
+            "nodes": 166360,
+            "wall_ms": 225.16,
+            "nps": 738848,
+            "pv": [
+              "d2d3",
+              "d7d6",
+              "c1g5",
+              "c8e6",
+              "c3d5",
+              "e6d5"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 82.59,
+            "mean_cutoff_index": 1.38,
+            "total_cutoffs": 8154
+          },
+          "N8-A": {
+            "best_move": "d2d3",
+            "score": 10,
+            "depth": 6,
+            "nodes": 166539,
+            "wall_ms": 675.08,
+            "nps": 246694,
+            "pv": [
+              "d2d3",
+              "d7d6",
+              "c1g5",
+              "c8e6",
+              "c3d5",
+              "e6d5"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 108,
+            "neural_time_us": 1338,
+            "first_move_cutoff_rate": 82.38,
+            "mean_cutoff_index": 1.385,
+            "total_cutoffs": 8104
+          },
+          "N8-B": {
+            "best_move": "d2d3",
+            "score": 10,
+            "depth": 6,
+            "nodes": 168906,
+            "wall_ms": 1182.5,
+            "nps": 142837,
+            "pv": [
+              "d2d3",
+              "d7d6",
+              "c1g5",
+              "c8e6",
+              "c3d5",
+              "e6d5"
+            ],
+            "neural_evals": 115,
+            "neural_moves_scored": 3950,
+            "neural_time_us": 95616,
+            "first_move_cutoff_rate": 79.59,
+            "mean_cutoff_index": 1.44,
+            "total_cutoffs": 7917
+          },
+          "N8-C": {
+            "best_move": "d2d3",
+            "score": 10,
+            "depth": 6,
+            "nodes": 167635,
+            "wall_ms": 624.43,
+            "nps": 268459,
+            "pv": [
+              "d2d3",
+              "d7d6",
+              "c1g5",
+              "c8e6",
+              "c3d5",
+              "e6d5"
+            ],
+            "neural_evals": 1,
+            "neural_moves_scored": 36,
+            "neural_time_us": 328,
+            "first_move_cutoff_rate": 82.52,
+            "mean_cutoff_index": 1.383,
+            "total_cutoffs": 8147
+          }
+        }
+      }
+    },
+    {
+      "id": "val_09_en_passant_execution",
+      "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+      "desc": "val_09_en_passant_execution",
+      "depth_results": {
+        "5": {
+          "C1": {
+            "best_move": "d5e6",
+            "score": 925,
+            "depth": 5,
+            "nodes": 569,
+            "wall_ms": 0.95,
+            "nps": 598506,
+            "pv": [
+              "d5e6",
+              "h1h2",
+              "e6e7",
+              "h2h1",
+              "e7e8q"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 100.0,
+            "mean_cutoff_index": 1.0,
+            "total_cutoffs": 71
+          },
+          "N8-A": {
+            "best_move": "d5e6",
+            "score": 925,
+            "depth": 5,
+            "nodes": 568,
+            "wall_ms": 1.4,
+            "nps": 405193,
+            "pv": [
+              "d5e6",
+              "h1h2",
+              "e6e7",
+              "h2h1",
+              "e7e8q"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 14,
+            "neural_time_us": 692,
+            "first_move_cutoff_rate": 100.0,
+            "mean_cutoff_index": 1.0,
+            "total_cutoffs": 71
+          },
+          "N8-B": {
+            "best_move": "d5e6",
+            "score": 925,
+            "depth": 5,
+            "nodes": 568,
+            "wall_ms": 5.35,
+            "nps": 106082,
+            "pv": [
+              "d5e6",
+              "h1h2",
+              "e6e7",
+              "h2h1",
+              "e7e8q"
+            ],
+            "neural_evals": 9,
+            "neural_moves_scored": 37,
+            "neural_time_us": 4556,
+            "first_move_cutoff_rate": 100.0,
+            "mean_cutoff_index": 1.0,
+            "total_cutoffs": 71
+          },
+          "N8-C": {
+            "best_move": "d5e6",
+            "score": 925,
+            "depth": 5,
+            "nodes": 569,
+            "wall_ms": 0.67,
+            "nps": 849507,
+            "pv": [
+              "d5e6",
+              "h1h2",
+              "e6e7",
+              "h2h1",
+              "e7e8q"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 100.0,
+            "mean_cutoff_index": 1.0,
+            "total_cutoffs": 71
+          }
+        },
+        "6": {
+          "C1": {
+            "best_move": "d5e6",
+            "score": 925,
+            "depth": 6,
+            "nodes": 1209,
+            "wall_ms": 1.69,
+            "nps": 714496,
+            "pv": [
+              "d5e6",
+              "h1g1",
+              "e6e7",
+              "g1g2",
+              "e7e8q",
+              "g2h1"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 98.78,
+            "mean_cutoff_index": 1.024,
+            "total_cutoffs": 164
+          },
+          "N8-A": {
+            "best_move": "d5e6",
+            "score": 925,
+            "depth": 6,
+            "nodes": 1208,
+            "wall_ms": 3.17,
+            "nps": 381373,
+            "pv": [
+              "d5e6",
+              "h1g1",
+              "e6e7",
+              "g1g2",
+              "e7e8q",
+              "g2h1"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 21,
+            "neural_time_us": 1771,
+            "first_move_cutoff_rate": 98.78,
+            "mean_cutoff_index": 1.024,
+            "total_cutoffs": 164
+          },
+          "N8-B": {
+            "best_move": "d5e6",
+            "score": 925,
+            "depth": 6,
+            "nodes": 1140,
+            "wall_ms": 22.28,
+            "nps": 51163,
+            "pv": [
+              "d5e6",
+              "h1g2",
+              "e6e7",
+              "g2g1"
+            ],
+            "neural_evals": 26,
+            "neural_moves_scored": 118,
+            "neural_time_us": 20159,
+            "first_move_cutoff_rate": 98.85,
+            "mean_cutoff_index": 1.017,
+            "total_cutoffs": 174
+          },
+          "N8-C": {
+            "best_move": "d5e6",
+            "score": 925,
+            "depth": 6,
+            "nodes": 1209,
+            "wall_ms": 1.81,
+            "nps": 667513,
+            "pv": [
+              "d5e6",
+              "h1g1",
+              "e6e7",
+              "g1g2",
+              "e7e8q",
+              "g2h1"
+            ],
+            "neural_evals": 1,
+            "neural_moves_scored": 7,
+            "neural_time_us": 334,
+            "first_move_cutoff_rate": 98.78,
+            "mean_cutoff_index": 1.024,
+            "total_cutoffs": 164
+          }
+        }
+      }
+    },
+    {
+      "id": "val_10_stalemate_avoidance",
+      "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+      "desc": "val_10_stalemate_avoidance",
+      "depth_results": {
+        "5": {
+          "C1": {
+            "best_move": "b6a6",
+            "score": 0,
+            "depth": 5,
+            "nodes": 64,
+            "wall_ms": 0.2,
+            "nps": 315893,
+            "pv": [
+              "b6a6"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 100.0,
+            "mean_cutoff_index": 1.0,
+            "total_cutoffs": 20
+          },
+          "N8-A": {
+            "best_move": "b6a6",
+            "score": 0,
+            "depth": 5,
+            "nodes": 64,
+            "wall_ms": 1.43,
+            "nps": 44887,
+            "pv": [
+              "b6a6"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 12,
+            "neural_time_us": 1188,
+            "first_move_cutoff_rate": 100.0,
+            "mean_cutoff_index": 1.0,
+            "total_cutoffs": 20
+          },
+          "N8-B": {
+            "best_move": "b6a6",
+            "score": 0,
+            "depth": 5,
+            "nodes": 64,
+            "wall_ms": 3.74,
+            "nps": 17102,
+            "pv": [
+              "b6a6"
+            ],
+            "neural_evals": 7,
+            "neural_moves_scored": 20,
+            "neural_time_us": 2498,
+            "first_move_cutoff_rate": 100.0,
+            "mean_cutoff_index": 1.0,
+            "total_cutoffs": 20
+          },
+          "N8-C": {
+            "best_move": "b6a6",
+            "score": 0,
+            "depth": 5,
+            "nodes": 64,
+            "wall_ms": 0.15,
+            "nps": 415045,
+            "pv": [
+              "b6a6"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 100.0,
+            "mean_cutoff_index": 1.0,
+            "total_cutoffs": 20
+          }
+        },
+        "6": {
+          "C1": {
+            "best_move": "b6a6",
+            "score": 0,
+            "depth": 6,
+            "nodes": 76,
+            "wall_ms": 0.17,
+            "nps": 446009,
+            "pv": [
+              "b6a6"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 100.0,
+            "mean_cutoff_index": 1.0,
+            "total_cutoffs": 25
+          },
+          "N8-A": {
+            "best_move": "b6a6",
+            "score": 0,
+            "depth": 6,
+            "nodes": 76,
+            "wall_ms": 1.32,
+            "nps": 57536,
+            "pv": [
+              "b6a6"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 18,
+            "neural_time_us": 1058,
+            "first_move_cutoff_rate": 100.0,
+            "mean_cutoff_index": 1.0,
+            "total_cutoffs": 25
+          },
+          "N8-B": {
+            "best_move": "b6a6",
+            "score": 0,
+            "depth": 6,
+            "nodes": 76,
+            "wall_ms": 6.09,
+            "nps": 12471,
+            "pv": [
+              "b6a6"
+            ],
+            "neural_evals": 13,
+            "neural_moves_scored": 34,
+            "neural_time_us": 5813,
+            "first_move_cutoff_rate": 100.0,
+            "mean_cutoff_index": 1.0,
+            "total_cutoffs": 25
+          },
+          "N8-C": {
+            "best_move": "b6a6",
+            "score": 0,
+            "depth": 6,
+            "nodes": 76,
+            "wall_ms": 0.56,
+            "nps": 135111,
+            "pv": [
+              "b6a6"
+            ],
+            "neural_evals": 1,
+            "neural_moves_scored": 6,
+            "neural_time_us": 376,
+            "first_move_cutoff_rate": 100.0,
+            "mean_cutoff_index": 1.0,
+            "total_cutoffs": 25
+          }
+        }
+      }
+    },
+    {
+      "id": "val_11_check_evasion",
+      "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 1 6",
+      "desc": "val_11_check_evasion",
+      "depth_results": {
+        "5": {
+          "C1": {
+            "best_move": "d8f6",
+            "score": -170,
+            "depth": 5,
+            "nodes": 27364,
+            "wall_ms": 90.44,
+            "nps": 302564,
+            "pv": [
+              "d8f6",
+              "b5c6",
+              "d7c6",
+              "d1d4",
+              "c8f5"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 86.25,
+            "mean_cutoff_index": 1.288,
+            "total_cutoffs": 1534
+          },
+          "N8-A": {
+            "best_move": "d8f6",
+            "score": -170,
+            "depth": 5,
+            "nodes": 27137,
+            "wall_ms": 90.61,
+            "nps": 299504,
+            "pv": [
+              "d8f6",
+              "b5c6",
+              "d7c6",
+              "d1d4",
+              "c8f5"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 70,
+            "neural_time_us": 1245,
+            "first_move_cutoff_rate": 85.8,
+            "mean_cutoff_index": 1.293,
+            "total_cutoffs": 1535
+          },
+          "N8-B": {
+            "best_move": "d8f6",
+            "score": -170,
+            "depth": 5,
+            "nodes": 26943,
+            "wall_ms": 109.71,
+            "nps": 245582,
+            "pv": [
+              "d8f6",
+              "b5c6",
+              "d7c6",
+              "d1d4",
+              "c8f5"
+            ],
+            "neural_evals": 37,
+            "neural_moves_scored": 1357,
+            "neural_time_us": 16794,
+            "first_move_cutoff_rate": 85.8,
+            "mean_cutoff_index": 1.293,
+            "total_cutoffs": 1535
+          },
+          "N8-C": {
+            "best_move": "d8f6",
+            "score": -170,
+            "depth": 5,
+            "nodes": 27364,
+            "wall_ms": 99.07,
+            "nps": 276207,
+            "pv": [
+              "d8f6",
+              "b5c6",
+              "d7c6",
+              "d1d4",
+              "c8f5"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 86.25,
+            "mean_cutoff_index": 1.288,
+            "total_cutoffs": 1534
+          }
+        },
+        "6": {
+          "C1": {
+            "best_move": "d8f6",
+            "score": -190,
+            "depth": 6,
+            "nodes": 123262,
+            "wall_ms": 446.5,
+            "nps": 276060,
+            "pv": [
+              "d8f6",
+              "b5c6",
+              "d7c6",
+              "d1d4",
+              "f6d4",
+              "f3d4"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 75.61,
+            "mean_cutoff_index": 1.446,
+            "total_cutoffs": 6769
+          },
+          "N8-A": {
+            "best_move": "d8f6",
+            "score": -190,
+            "depth": 6,
+            "nodes": 125476,
+            "wall_ms": 472.72,
+            "nps": 265433,
+            "pv": [
+              "d8f6",
+              "b5c6",
+              "d7c6",
+              "d1d4",
+              "f6d4",
+              "f3d4"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 105,
+            "neural_time_us": 1077,
+            "first_move_cutoff_rate": 75.22,
+            "mean_cutoff_index": 1.455,
+            "total_cutoffs": 6829
+          },
+          "N8-B": {
+            "best_move": "d8f6",
+            "score": -190,
+            "depth": 6,
+            "nodes": 124878,
+            "wall_ms": 616.36,
+            "nps": 202607,
+            "pv": [
+              "d8f6",
+              "b5c6",
+              "d7c6",
+              "d1d4",
+              "f6d4",
+              "f3d4"
+            ],
+            "neural_evals": 110,
+            "neural_moves_scored": 3781,
+            "neural_time_us": 51331,
+            "first_move_cutoff_rate": 74.81,
+            "mean_cutoff_index": 1.463,
+            "total_cutoffs": 6748
+          },
+          "N8-C": {
+            "best_move": "d8f6",
+            "score": -190,
+            "depth": 6,
+            "nodes": 123640,
+            "wall_ms": 554.51,
+            "nps": 222972,
+            "pv": [
+              "d8f6",
+              "b5c6",
+              "d7c6",
+              "d1d4",
+              "f6d4",
+              "f3d4"
+            ],
+            "neural_evals": 1,
+            "neural_moves_scored": 35,
+            "neural_time_us": 326,
+            "first_move_cutoff_rate": 75.57,
+            "mean_cutoff_index": 1.45,
+            "total_cutoffs": 6765
+          }
+        }
+      }
+    },
+    {
+      "id": "val_12_repetition_sensitive",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+      "desc": "val_12_repetition_sensitive",
+      "depth_results": {
+        "5": {
+          "C1": {
+            "best_move": "b8c6",
+            "score": 0,
+            "depth": 5,
+            "nodes": 10017,
+            "wall_ms": 23.47,
+            "nps": 426747,
+            "pv": [
+              "b8c6",
+              "b1c3",
+              "g8f6",
+              "d2d4",
+              "d7d5"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 84.0,
+            "mean_cutoff_index": 1.348,
+            "total_cutoffs": 869
+          },
+          "N8-A": {
+            "best_move": "b8c6",
+            "score": 0,
+            "depth": 5,
+            "nodes": 9952,
+            "wall_ms": 22.69,
+            "nps": 438636,
+            "pv": [
+              "b8c6",
+              "b1c3",
+              "g8f6",
+              "d2d4",
+              "d7d5"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 40,
+            "neural_time_us": 689,
+            "first_move_cutoff_rate": 84.0,
+            "mean_cutoff_index": 1.349,
+            "total_cutoffs": 869
+          },
+          "N8-B": {
+            "best_move": "b8c6",
+            "score": 0,
+            "depth": 5,
+            "nodes": 9847,
+            "wall_ms": 28.8,
+            "nps": 341926,
+            "pv": [
+              "b8c6",
+              "b1c3",
+              "g8f6",
+              "d2d4",
+              "d7d5"
+            ],
+            "neural_evals": 22,
+            "neural_moves_scored": 480,
+            "neural_time_us": 7814,
+            "first_move_cutoff_rate": 83.77,
+            "mean_cutoff_index": 1.361,
+            "total_cutoffs": 832
+          },
+          "N8-C": {
+            "best_move": "b8c6",
+            "score": 0,
+            "depth": 5,
+            "nodes": 10017,
+            "wall_ms": 21.89,
+            "nps": 457516,
+            "pv": [
+              "b8c6",
+              "b1c3",
+              "g8f6",
+              "d2d4",
+              "d7d5"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 84.0,
+            "mean_cutoff_index": 1.348,
+            "total_cutoffs": 869
+          }
+        },
+        "6": {
+          "C1": {
+            "best_move": "b8c6",
+            "score": -20,
+            "depth": 6,
+            "nodes": 41525,
+            "wall_ms": 105.54,
+            "nps": 393435,
+            "pv": [
+              "b8c6",
+              "b1c3",
+              "g8f6",
+              "d2d4",
+              "d7d5",
+              "e2e3"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 73.46,
+            "mean_cutoff_index": 1.437,
+            "total_cutoffs": 3384
+          },
+          "N8-A": {
+            "best_move": "b8c6",
+            "score": -20,
+            "depth": 6,
+            "nodes": 40997,
+            "wall_ms": 98.67,
+            "nps": 415479,
+            "pv": [
+              "b8c6",
+              "b1c3",
+              "g8f6",
+              "d2d4",
+              "d7d5",
+              "e2e3"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 60,
+            "neural_time_us": 1990,
+            "first_move_cutoff_rate": 73.91,
+            "mean_cutoff_index": 1.452,
+            "total_cutoffs": 3220
+          },
+          "N8-B": {
+            "best_move": "b8c6",
+            "score": -20,
+            "depth": 6,
+            "nodes": 41238,
+            "wall_ms": 128.14,
+            "nps": 321825,
+            "pv": [
+              "b8c6",
+              "b1c3",
+              "g8f6",
+              "d2d4",
+              "d7d5",
+              "e2e3"
+            ],
+            "neural_evals": 65,
+            "neural_moves_scored": 1426,
+            "neural_time_us": 27166,
+            "first_move_cutoff_rate": 74.34,
+            "mean_cutoff_index": 1.442,
+            "total_cutoffs": 3324
+          },
+          "N8-C": {
+            "best_move": "b8c6",
+            "score": -20,
+            "depth": 6,
+            "nodes": 41151,
+            "wall_ms": 98.11,
+            "nps": 419439,
+            "pv": [
+              "b8c6",
+              "b1c3",
+              "g8f6",
+              "d2d4",
+              "d7d5",
+              "e2e3"
+            ],
+            "neural_evals": 1,
+            "neural_moves_scored": 20,
+            "neural_time_us": 345,
+            "first_move_cutoff_rate": 72.79,
+            "mean_cutoff_index": 1.47,
+            "total_cutoffs": 3216
+          }
+        }
+      }
+    },
+    {
+      "id": "val_13_fifty_move_draw_sensitive",
+      "fen": "8/8/4k3/8/8/4K3/8/8 w - - 99 50",
+      "desc": "val_13_fifty_move_draw_sensitive",
+      "depth_results": {
+        "5": {
+          "C1": {
+            "best_move": "e3d2",
+            "score": 0,
+            "depth": 5,
+            "nodes": 45,
+            "wall_ms": 0.13,
+            "nps": 348837,
+            "pv": [
+              "e3d2"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 0.0,
+            "mean_cutoff_index": 0.0,
+            "total_cutoffs": 0
+          },
+          "N8-A": {
+            "best_move": "e3d2",
+            "score": 0,
+            "depth": 5,
+            "nodes": 45,
+            "wall_ms": 0.81,
+            "nps": 55446,
+            "pv": [
+              "e3d2"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 16,
+            "neural_time_us": 625,
+            "first_move_cutoff_rate": 0.0,
+            "mean_cutoff_index": 0.0,
+            "total_cutoffs": 0
+          },
+          "N8-B": {
+            "best_move": "e3d2",
+            "score": 0,
+            "depth": 5,
+            "nodes": 45,
+            "wall_ms": 1.9,
+            "nps": 23691,
+            "pv": [
+              "e3d2"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 16,
+            "neural_time_us": 1710,
+            "first_move_cutoff_rate": 0.0,
+            "mean_cutoff_index": 0.0,
+            "total_cutoffs": 0
+          },
+          "N8-C": {
+            "best_move": "e3d2",
+            "score": 0,
+            "depth": 5,
+            "nodes": 45,
+            "wall_ms": 0.12,
+            "nps": 361155,
+            "pv": [
+              "e3d2"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 0.0,
+            "mean_cutoff_index": 0.0,
+            "total_cutoffs": 0
+          }
+        },
+        "6": {
+          "C1": {
+            "best_move": "e3d2",
+            "score": 0,
+            "depth": 6,
+            "nodes": 54,
+            "wall_ms": 0.13,
+            "nps": 417956,
+            "pv": [
+              "e3d2"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 0.0,
+            "mean_cutoff_index": 0.0,
+            "total_cutoffs": 0
+          },
+          "N8-A": {
+            "best_move": "e3d2",
+            "score": 0,
+            "depth": 6,
+            "nodes": 54,
+            "wall_ms": 1.87,
+            "nps": 28869,
+            "pv": [
+              "e3d2"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 24,
+            "neural_time_us": 1703,
+            "first_move_cutoff_rate": 0.0,
+            "mean_cutoff_index": 0.0,
+            "total_cutoffs": 0
+          },
+          "N8-B": {
+            "best_move": "e3d2",
+            "score": 0,
+            "depth": 6,
+            "nodes": 54,
+            "wall_ms": 1.13,
+            "nps": 47940,
+            "pv": [
+              "e3d2"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 24,
+            "neural_time_us": 966,
+            "first_move_cutoff_rate": 0.0,
+            "mean_cutoff_index": 0.0,
+            "total_cutoffs": 0
+          },
+          "N8-C": {
+            "best_move": "e3d2",
+            "score": 0,
+            "depth": 6,
+            "nodes": 54,
+            "wall_ms": 0.47,
+            "nps": 114285,
+            "pv": [
+              "e3d2"
+            ],
+            "neural_evals": 1,
+            "neural_moves_scored": 8,
+            "neural_time_us": 333,
+            "first_move_cutoff_rate": 0.0,
+            "mean_cutoff_index": 0.0,
+            "total_cutoffs": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "val_14_tactical_pin",
+      "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+      "desc": "val_14_tactical_pin",
+      "depth_results": {
+        "5": {
+          "C1": {
+            "best_move": "h1h5",
+            "score": 405,
+            "depth": 5,
+            "nodes": 57038,
+            "wall_ms": 246.02,
+            "nps": 231841,
+            "pv": [
+              "h1h5",
+              "e6e5",
+              "d4e5",
+              "c7b6",
+              "h5h7"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 65.27,
+            "mean_cutoff_index": 1.778,
+            "total_cutoffs": 2295
+          },
+          "N8-A": {
+            "best_move": "h1h5",
+            "score": 405,
+            "depth": 5,
+            "nodes": 58159,
+            "wall_ms": 253.38,
+            "nps": 229536,
+            "pv": [
+              "h1h5",
+              "e6e5",
+              "d4e5",
+              "c7b6",
+              "h5h7"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 92,
+            "neural_time_us": 813,
+            "first_move_cutoff_rate": 64.49,
+            "mean_cutoff_index": 1.822,
+            "total_cutoffs": 2360
+          },
+          "N8-B": {
+            "best_move": "h1h5",
+            "score": 405,
+            "depth": 5,
+            "nodes": 58159,
+            "wall_ms": 461.51,
+            "nps": 126018,
+            "pv": [
+              "h1h5",
+              "e6e5",
+              "d4e5",
+              "c7b6",
+              "h5h7"
+            ],
+            "neural_evals": 48,
+            "neural_moves_scored": 1745,
+            "neural_time_us": 38740,
+            "first_move_cutoff_rate": 64.49,
+            "mean_cutoff_index": 1.822,
+            "total_cutoffs": 2360
+          },
+          "N8-C": {
+            "best_move": "h1h5",
+            "score": 405,
+            "depth": 5,
+            "nodes": 57038,
+            "wall_ms": 319.81,
+            "nps": 178352,
+            "pv": [
+              "h1h5",
+              "e6e5",
+              "d4e5",
+              "c7b6",
+              "h5h7"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 65.27,
+            "mean_cutoff_index": 1.778,
+            "total_cutoffs": 2295
+          }
+        },
+        "6": {
+          "C1": {
+            "best_move": "d3h7",
+            "score": 410,
+            "depth": 6,
+            "nodes": 280558,
+            "wall_ms": 996.98,
+            "nps": 281406,
+            "pv": [
+              "d3h7",
+              "c7b6",
+              "d2b3",
+              "c8d7",
+              "c3c4",
+              "c6e7"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 80.64,
+            "mean_cutoff_index": 1.425,
+            "total_cutoffs": 12442
+          },
+          "N8-A": {
+            "best_move": "d3h7",
+            "score": 410,
+            "depth": 6,
+            "nodes": 277504,
+            "wall_ms": 1041.21,
+            "nps": 266521,
+            "pv": [
+              "d3h7",
+              "c7b6",
+              "d2b3",
+              "c8d7",
+              "c3c4",
+              "c6e7"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 138,
+            "neural_time_us": 2338,
+            "first_move_cutoff_rate": 80.3,
+            "mean_cutoff_index": 1.445,
+            "total_cutoffs": 12330
+          },
+          "N8-B": {
+            "best_move": "d3h7",
+            "score": 410,
+            "depth": 6,
+            "nodes": 277398,
+            "wall_ms": 1148.63,
+            "nps": 241503,
+            "pv": [
+              "d3h7",
+              "c7b6",
+              "d2b3",
+              "c8d7",
+              "c3c4",
+              "c6e7"
+            ],
+            "neural_evals": 149,
+            "neural_moves_scored": 5805,
+            "neural_time_us": 82724,
+            "first_move_cutoff_rate": 79.4,
+            "mean_cutoff_index": 1.452,
+            "total_cutoffs": 12395
+          },
+          "N8-C": {
+            "best_move": "d3h7",
+            "score": 410,
+            "depth": 6,
+            "nodes": 280912,
+            "wall_ms": 1641.75,
+            "nps": 171105,
+            "pv": [
+              "d3h7",
+              "c7b6",
+              "d2b3",
+              "c8d7",
+              "c3c4",
+              "c6e7"
+            ],
+            "neural_evals": 1,
+            "neural_moves_scored": 46,
+            "neural_time_us": 376,
+            "first_move_cutoff_rate": 80.6,
+            "mean_cutoff_index": 1.428,
+            "total_cutoffs": 12443
+          }
+        }
+      }
+    },
+    {
+      "id": "val_15_queen_endgame",
+      "fen": "8/8/4k3/3q4/8/4Q3/4K3/8 b - - 0 1",
+      "desc": "val_15_queen_endgame",
+      "depth_results": {
+        "5": {
+          "C1": {
+            "best_move": "e6f7",
+            "score": 0,
+            "depth": 5,
+            "nodes": 6550,
+            "wall_ms": 24.17,
+            "nps": 271017,
+            "pv": [
+              "e6f7",
+              "e3f3",
+              "d5f3",
+              "e2f3"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 87.82,
+            "mean_cutoff_index": 1.535,
+            "total_cutoffs": 550
+          },
+          "N8-A": {
+            "best_move": "e6f7",
+            "score": 0,
+            "depth": 5,
+            "nodes": 6528,
+            "wall_ms": 17.22,
+            "nps": 379109,
+            "pv": [
+              "e6f7",
+              "e3f3",
+              "d5f3",
+              "e2f3"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 14,
+            "neural_time_us": 1552,
+            "first_move_cutoff_rate": 87.96,
+            "mean_cutoff_index": 1.536,
+            "total_cutoffs": 548
+          },
+          "N8-B": {
+            "best_move": "e6f7",
+            "score": 0,
+            "depth": 5,
+            "nodes": 6711,
+            "wall_ms": 22.5,
+            "nps": 298222,
+            "pv": [
+              "e6f7",
+              "e2f2",
+              "f7f8",
+              "f2g1",
+              "f8g8"
+            ],
+            "neural_evals": 9,
+            "neural_moves_scored": 159,
+            "neural_time_us": 3267,
+            "first_move_cutoff_rate": 88.49,
+            "mean_cutoff_index": 1.531,
+            "total_cutoffs": 582
+          },
+          "N8-C": {
+            "best_move": "e6f7",
+            "score": 0,
+            "depth": 5,
+            "nodes": 6550,
+            "wall_ms": 16.53,
+            "nps": 396357,
+            "pv": [
+              "e6f7",
+              "e3f3",
+              "d5f3",
+              "e2f3"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 87.82,
+            "mean_cutoff_index": 1.535,
+            "total_cutoffs": 550
+          }
+        },
+        "6": {
+          "C1": {
+            "best_move": "e6f7",
+            "score": 0,
+            "depth": 6,
+            "nodes": 14144,
+            "wall_ms": 46.74,
+            "nps": 302615,
+            "pv": [
+              "e6f7",
+              "e3f3",
+              "d5f3",
+              "e2f3"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 91.45,
+            "mean_cutoff_index": 1.281,
+            "total_cutoffs": 1485
+          },
+          "N8-A": {
+            "best_move": "e6f7",
+            "score": 0,
+            "depth": 6,
+            "nodes": 13995,
+            "wall_ms": 54.56,
+            "nps": 256497,
+            "pv": [
+              "e6f7",
+              "e3f3",
+              "d5f3",
+              "e2f3"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 21,
+            "neural_time_us": 945,
+            "first_move_cutoff_rate": 91.66,
+            "mean_cutoff_index": 1.279,
+            "total_cutoffs": 1475
+          },
+          "N8-B": {
+            "best_move": "e6f7",
+            "score": 0,
+            "depth": 6,
+            "nodes": 16395,
+            "wall_ms": 65.7,
+            "nps": 249559,
+            "pv": [
+              "e6f7",
+              "e2f2",
+              "f7f8",
+              "f2g1",
+              "f8g8",
+              "e3f4"
+            ],
+            "neural_evals": 33,
+            "neural_moves_scored": 553,
+            "neural_time_us": 14562,
+            "first_move_cutoff_rate": 91.55,
+            "mean_cutoff_index": 1.32,
+            "total_cutoffs": 1786
+          },
+          "N8-C": {
+            "best_move": "e6f7",
+            "score": 0,
+            "depth": 6,
+            "nodes": 14122,
+            "wall_ms": 39.01,
+            "nps": 362010,
+            "pv": [
+              "e6f7",
+              "e3f3",
+              "d5f3",
+              "e2f3"
+            ],
+            "neural_evals": 1,
+            "neural_moves_scored": 7,
+            "neural_time_us": 344,
+            "first_move_cutoff_rate": 91.72,
+            "mean_cutoff_index": 1.277,
+            "total_cutoffs": 1485
+          }
+        }
+      }
+    },
+    {
+      "id": "val_16_discovered_attack",
+      "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+      "desc": "val_16_discovered_attack",
+      "depth_results": {
+        "5": {
+          "C1": {
+            "best_move": "f3e5",
+            "score": 5,
+            "depth": 5,
+            "nodes": 49298,
+            "wall_ms": 187.53,
+            "nps": 262885,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "d1b3",
+              "c6e5",
+              "d4e5"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 92.88,
+            "mean_cutoff_index": 1.19,
+            "total_cutoffs": 2710
+          },
+          "N8-A": {
+            "best_move": "f3e5",
+            "score": 5,
+            "depth": 5,
+            "nodes": 48042,
+            "wall_ms": 189.56,
+            "nps": 253442,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "d1b3",
+              "c6e5",
+              "d4e5"
+            ],
+            "neural_evals": 2,
+            "neural_moves_scored": 88,
+            "neural_time_us": 794,
+            "first_move_cutoff_rate": 93.11,
+            "mean_cutoff_index": 1.18,
+            "total_cutoffs": 2671
+          },
+          "N8-B": {
+            "best_move": "f3e5",
+            "score": 5,
+            "depth": 5,
+            "nodes": 48042,
+            "wall_ms": 188.71,
+            "nps": 254585,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "d1b3",
+              "c6e5",
+              "d4e5"
+            ],
+            "neural_evals": 46,
+            "neural_moves_scored": 1615,
+            "neural_time_us": 16058,
+            "first_move_cutoff_rate": 93.11,
+            "mean_cutoff_index": 1.18,
+            "total_cutoffs": 2671
+          },
+          "N8-C": {
+            "best_move": "f3e5",
+            "score": 5,
+            "depth": 5,
+            "nodes": 49298,
+            "wall_ms": 173.87,
+            "nps": 283534,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "d1b3",
+              "c6e5",
+              "d4e5"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 92.88,
+            "mean_cutoff_index": 1.19,
+            "total_cutoffs": 2710
+          }
+        },
+        "6": {
+          "C1": {
+            "best_move": "c3c4",
+            "score": 0,
+            "depth": 6,
+            "nodes": 265506,
+            "wall_ms": 875.68,
+            "nps": 303198,
+            "pv": [
+              "c3c4",
+              "c5d4",
+              "e3d4",
+              "e6e5",
+              "c4d5",
+              "f6d5"
+            ],
+            "neural_evals": 0,
+            "neural_moves_scored": 0,
+            "neural_time_us": 0,
+            "first_move_cutoff_rate": 87.04,
+            "mean_cutoff_index": 1.25,
+            "total_cutoffs": 14139
+          },
+          "N8-A": {
+            "best_move": "c3c4",
+            "score": 0,
+            "depth": 6,
+            "nodes": 273062,
+            "wall_ms": 967.13,
+            "nps": 282341,
+            "pv": [
+              "c3c4",
+              "c5d4",
+              "e3d4",
+              "e6e5",
+              "c4d5",
+              "f6d5"
+            ],
+            "neural_evals": 3,
+            "neural_moves_scored": 132,
+            "neural_time_us": 867,
+            "first_move_cutoff_rate": 86.25,
+            "mean_cutoff_index": 1.265,
+            "total_cutoffs": 14376
+          },
+          "N8-B": {
+            "best_move": "c3c4",
+            "score": 0,
+            "depth": 6,
+            "nodes": 271526,
+            "wall_ms": 1002.23,
+            "nps": 270923,
+            "pv": [
+              "c3c4",
+              "c5d4",
+              "e3d4",
+              "e6e5",
+              "c4d5",
+              "f6d5"
+            ],
+            "neural_evals": 150,
+            "neural_moves_scored": 5661,
+            "neural_time_us": 68118,
+            "first_move_cutoff_rate": 86.12,
+            "mean_cutoff_index": 1.263,
+            "total_cutoffs": 14337
+          },
+          "N8-C": {
+            "best_move": "c3c4",
+            "score": 0,
+            "depth": 6,
+            "nodes": 273030,
+            "wall_ms": 946.83,
+            "nps": 288363,
+            "pv": [
+              "c3c4",
+              "c5d4",
+              "e3d4",
+              "e6e5",
+              "c4d5",
+              "f6d5"
+            ],
+            "neural_evals": 1,
+            "neural_moves_scored": 44,
+            "neural_time_us": 331,
+            "first_move_cutoff_rate": 86.28,
+            "mean_cutoff_index": 1.263,
+            "total_cutoffs": 14385
+          }
+        }
+      }
+    }
+  ],
+  "aggregates": {
+    "5": {
+      "C1": {
+        "total_nodes": 332873,
+        "node_reduction_pct": 0.0,
+        "total_time_ms": 735.1,
+        "time_overhead_pct": 0.0,
+        "total_neural_evals": 0,
+        "total_neural_time_ms": 0.0,
+        "avg_neural_time_per_pos_ms": 0.0,
+        "c1_bm_agreement_pct": 100.0
+      },
+      "N8-A": {
+        "total_nodes": 336980,
+        "node_reduction_pct": -1.23,
+        "total_time_ms": 754.7,
+        "time_overhead_pct": 2.67,
+        "total_neural_evals": 32,
+        "total_neural_time_ms": 9.5,
+        "avg_neural_time_per_pos_ms": 0.59,
+        "c1_bm_agreement_pct": 100.0
+      },
+      "N8-B": {
+        "total_nodes": 336056,
+        "node_reduction_pct": -0.96,
+        "total_time_ms": 1016.2,
+        "time_overhead_pct": 38.24,
+        "total_neural_evals": 386,
+        "total_neural_time_ms": 110.6,
+        "avg_neural_time_per_pos_ms": 6.91,
+        "c1_bm_agreement_pct": 100.0
+      },
+      "N8-C": {
+        "total_nodes": 332873,
+        "node_reduction_pct": 0.0,
+        "total_time_ms": 791.1,
+        "time_overhead_pct": 7.62,
+        "total_neural_evals": 0,
+        "total_neural_time_ms": 0.0,
+        "avg_neural_time_per_pos_ms": 0.0,
+        "c1_bm_agreement_pct": 100.0
+      }
+    },
+    "6": {
+      "C1": {
+        "total_nodes": 1508684,
+        "node_reduction_pct": 0.0,
+        "total_time_ms": 3127.3,
+        "time_overhead_pct": 0.0,
+        "total_neural_evals": 0,
+        "total_neural_time_ms": 0.0,
+        "avg_neural_time_per_pos_ms": 0.0,
+        "c1_bm_agreement_pct": 100.0
+      },
+      "N8-A": {
+        "total_nodes": 1547576,
+        "node_reduction_pct": -2.58,
+        "total_time_ms": 3777.8,
+        "time_overhead_pct": 20.8,
+        "total_neural_evals": 48,
+        "total_neural_time_ms": 15.4,
+        "avg_neural_time_per_pos_ms": 0.96,
+        "c1_bm_agreement_pct": 100.0
+      },
+      "N8-B": {
+        "total_nodes": 1553065,
+        "node_reduction_pct": -2.94,
+        "total_time_ms": 4680.2,
+        "time_overhead_pct": 49.66,
+        "total_neural_evals": 1195,
+        "total_neural_time_ms": 414.4,
+        "avg_neural_time_per_pos_ms": 25.9,
+        "c1_bm_agreement_pct": 100.0
+      },
+      "N8-C": {
+        "total_nodes": 1513346,
+        "node_reduction_pct": -0.31,
+        "total_time_ms": 4323.9,
+        "time_overhead_pct": 38.26,
+        "total_neural_evals": 16,
+        "total_neural_time_ms": 3.7,
+        "avg_neural_time_per_pos_ms": 0.23,
+        "c1_bm_agreement_pct": 100.0
+      }
+    }
+  }
+}

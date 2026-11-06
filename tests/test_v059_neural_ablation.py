@@ -46,15 +46,18 @@ def test_classical_baseline_parity(engines):
     ]
 
     for fen in test_fens:
-        eng_c1.clear_tt()
-        eng_c1.clear_killers()
-        eng_c1.clear_history_heuristic()
+        for eng in [eng_c1, eng_v59]:
+            eng.clear_tt()
+            eng.clear_killers()
+            eng.clear_history_heuristic()
+            eng.set_ordering_options(True, True)
+            eng.set_pvs_options(False)
+            eng.set_lmr_options(True, 3, 4, 1)
+            eng.set_see_options(False, False)
+
         eng_c1.set_fen(fen)
         bm_c1, sc_c1, d_c1, n_c1, _, _ = eng_c1.search(max_depth=4, time_limit=5.0)
 
-        eng_v59.clear_tt()
-        eng_v59.clear_killers()
-        eng_v59.clear_history_heuristic()
         eng_v59.set_causal_policy_mode(0)
         eng_v59.set_fen(fen)
         bm_v59, sc_v59, d_v59, n_v59, _, _ = eng_v59.search(max_depth=4, time_limit=5.0)

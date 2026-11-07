@@ -1,0 +1,163 @@
+{
+  "audit_timestamp": "2026-11-07T12:20:00Z",
+  "git": {
+    "head_commit": "95389dccd5f2d20bb8e7ebf128b7d178db720804",
+    "branch": "v0.3-benchmark-harness",
+    "tree_status": "clean"
+  },
+  "file_hashes": {
+    "c1_source_v56": {
+      "path": "E:\\ChessXML\\project-janus\\analysis\\v0.56\\native\\janus_native.cpp",
+      "sha256": "43ad79ade44cc6d6dd97a4cfeb6e9ba2b32c8d080190808d22cac486616397a4",
+      "exists": true,
+      "bytes": 80677
+    },
+    "c1_dll_v56": {
+      "path": "E:\\ChessXML\\project-janus\\analysis\\v0.56\\native\\janus_native.dll",
+      "sha256": "23f34a44e4bbe9232893a61b3cb60fb50c48cba7d774f6d0b406a5bb545ecce8",
+      "exists": true,
+      "bytes": 259072
+    },
+    "c1_engine_v56": {
+      "path": "E:\\ChessXML\\project-janus\\analysis\\v0.56\\native\\janus_native_engine.exe",
+      "sha256": "a4f9d9d18b549d29b2e6740ac90d90d39167d92d3846b95fc0c4f5b966add83f",
+      "exists": true,
+      "bytes": 341504
+    },
+    "v61_source": {
+      "path": "E:\\ChessXML\\project-janus\\analysis\\v0.61\\native\\janus_native.cpp",
+      "sha256": "b67184fe787c5c0c9a1a0aa35dd3851261f056a7c486547d87b2f30417c037f0",
+      "exists": true,
+      "bytes": 88730
+    },
+    "v61_dll": {
+      "path": "E:\\ChessXML\\project-janus\\analysis\\v0.61\\native\\janus_native.dll",
+      "sha256": "4832866660dbf144eefce7c50dd247775d0cbc4f77f3bd0326f6fc9e40e295ca",
+      "exists": true,
+      "bytes": 321024
+    },
+    "v61_engine": {
+      "path": "E:\\ChessXML\\project-janus\\analysis\\v0.61\\native\\janus_native_engine.exe",
+      "sha256": "fc82936845a758df5b19aeace727c573f03d9c787916c517b4527635a78f9072",
+      "exists": true,
+      "bytes": 381440
+    },
+    "nnue_v2_cpp": {
+      "path": "E:\\ChessXML\\project-janus\\analysis\\v0.61\\native\\nnue_v2.cpp",
+      "sha256": "ff7013a8716ff72ebd14ad168dc3d9d939b28c96419076586cd1d2a0a16053d6",
+      "exists": true,
+      "bytes": 13554
+    },
+    "nnue_v2_h": {
+      "path": "E:\\ChessXML\\project-janus\\analysis\\v0.61\\native\\nnue_v2.h",
+      "sha256": "de97448d325652f4240e759ccb8a6f5edca216fe935abb6fff6cf43d3cda654c",
+      "exists": true,
+      "bytes": 2935
+    },
+    "v2_small_jnnue": {
+      "path": "E:\\ChessXML\\project-janus\\analysis\\v0.61\\models\\janus_nnue_v2_small.jnnue",
+      "sha256": "ff7ac9a0d45d14269bb4a011b5786bd035ba8a36b37b1fb7e1ad7f6d5e15fa12",
+      "exists": true,
+      "bytes": 100628
+    },
+    "v2_compact_jnnue": {
+      "path": "E:\\ChessXML\\project-janus\\analysis\\v0.61\\models\\janus_nnue_v2_compact.jnnue",
+      "sha256": "463d1595085e9e4e3c13d3131c58ef53cedafa00ec8094bfde5c4d5081c2a8eb",
+      "exists": true,
+      "bytes": 205284
+    },
+    "stockfish_exe": {
+      "path": "E:\\ChessXML\\tools\\stockfish\\stockfish.exe",
+      "sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "exists": true,
+      "bytes": 103046300
+    },
+    "openings_v056": {
+      "path": "E:\\ChessXML\\project-janus\\analysis\\v0.56\\corpus\\independent_openings_v056.json",
+      "sha256": "d4db2cf96044421ed5ab195f1af49d1d34df0297fcab196b1b7fc92b58b1784a",
+      "exists": true,
+      "bytes": 63189
+    },
+    "v61_match_raw": {
+      "path": "E:\\ChessXML\\project-janus\\analysis\\v0.61\\raw\\v061_v2_vs_c1_match_raw.json",
+      "sha256": "29e295f8b57dd260c06f3b4bfd684a14b73b6eea750e0fe6d36425e3bf486510",
+      "exists": true,
+      "bytes": 303699
+    },
+    "v61_match_pgn": {
+      "path": "E:\\ChessXML\\project-janus\\analysis\\v0.61\\pgn\\v061_v2_vs_c1_match.pgn",
+      "sha256": "1f3db98de7f2350c10ea355f5c85529d55bf90acbb6f67326201da6610026ec0",
+      "exists": true,
+      "bytes": 207851
+    }
+  },
+  "tournament_reconstruction": {
+    "games_evaluated": 200,
+    "pgn_games_count": 200,
+    "wins": 71,
+    "draws": 86,
+    "losses": 43,
+    "score_points": 114.0,
+    "score_pct": 56.99999999999999,
+    "elo_delta": 49.0,
+    "bootstrap_elo_ci_95": [
+      12.2,
+      85.0
+    ],
+    "paired_difference_mean": 0.28,
+    "paired_difference_ci_95": [
+      0.07,
+      0.48
+    ],
+    "t_statistic": 2.6075,
+    "p_value": 0.0105319,
+    "statistically_significant": true,
+    "terminations": {
+      "draw_threefold_repetition": 84,
+      "checkmate_white": 46,
+      "checkmate_black": 68,
+      "draw_insufficient_material": 1,
+      "draw_fifty_moves": 1
+    },
+    "match_exact_agreement_with_reported": true
+  },
+  "dataset_contamination_audit": {
+    "opening_suite": "E:\\ChessXML\\project-janus\\analysis\\v0.56\\corpus\\independent_openings_v056.json",
+    "total_openings": 100,
+    "unique_opening_fens": 1142,
+    "split_overlap": {
+      "train": {
+        "total_positions": 80000,
+        "overlapping_positions": 285,
+        "overlap_pct": 0.3563,
+        "sample_overlapping": [
+          "r2qkb1r/pppb1ppp/2n5/1B1pP3/3Nn3/8/PPP2PPP/RNBQK2R w KQkq -",
+          "rn1qkb1r/pp2pppp/2p2n2/3p4/2PP2b1/4PN2/PP3PPP/RNBQKB1R w KQkq -",
+          "r3kb1r/pp1qpppp/2np1n2/2p5/4P3/2P2N2/PP1P1PPP/RNBQ1RK1 w kq -"
+        ]
+      },
+      "val": {
+        "total_positions": 10000,
+        "overlapping_positions": 5,
+        "overlap_pct": 0.05,
+        "sample_overlapping": [
+          "r1b1kbnr/ppp2ppp/8/4p3/2Pq4/2N5/PP1P1PPP/R1BQKB1R w KQkq -",
+          "rnbqkb1r/pp1p1ppp/2p2n2/4p3/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq -",
+          "rnbq1rk1/pp2ppbp/2pp1np1/8/3PP3/2N2N2/PPP1BPPP/R1BQ1RK1 w - -"
+        ]
+      },
+      "test": {
+        "total_positions": 10000,
+        "overlapping_positions": 8,
+        "overlap_pct": 0.08,
+        "sample_overlapping": [
+          "rnbqkbnr/pp2pppp/8/2p5/2Pp4/4PN2/PP1P1PPP/RNBQKB1R w KQkq -",
+          "r1bqk2r/pppp1ppp/2n2n2/4p3/1b1PP3/2N2N2/PPP2PPP/R1BQKB1R w KQkq -",
+          "rnbk3r/1p3ppp/p3pn2/2b5/2B5/4PN2/PP3PPP/RNB2RK1 w - -"
+        ]
+      }
+    },
+    "full_game_leakage": 0,
+    "verdict": "BENIGN_OPENING_TRUNK_OVERLAP (Standard opening book positions e4, d4, c4 natural in grandmaster games, zero game leakage)"
+  }
+}

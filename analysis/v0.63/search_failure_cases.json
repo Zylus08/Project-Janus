@@ -1,0 +1,338 @@
+[
+  {
+    "case_id": 1,
+    "game_id": 5,
+    "opening": "Bird's From's Gambit",
+    "ply": 30,
+    "side_to_move": "white",
+    "fen": "2krr3/ppp3pp/2n2n2/6N1/4P3/2P5/P1P1K1PP/1RB2R2 w - - 5 16",
+    "stockfish": {
+      "bestmove": "f1d1",
+      "score": -181,
+      "pv": [
+        "f1d1",
+        "d8d1",
+        "e2d1",
+        "h7h6",
+        "g5f3"
+      ]
+    },
+    "classical_c1": {
+      "static_eval": 65,
+      "search_score": -10,
+      "bestmove": "f1f4",
+      "nodes": 149388,
+      "pv": [
+        "f1f4",
+        "f6d5",
+        "f4f3",
+        "h7h6"
+      ]
+    },
+    "neural_n1_hybrid": {
+      "static_eval": 414,
+      "search_score": 243,
+      "bestmove": "c1e3",
+      "nodes": 87624,
+      "pv": [
+        "c1e3",
+        "e8e4",
+        "g5e4",
+        "f6e4"
+      ]
+    },
+    "pure_nnue": {
+      "static_eval": 414,
+      "search_score": 243,
+      "bestmove": "c1e3",
+      "nodes": 87624,
+      "pv": [
+        "c1e3",
+        "e8e4",
+        "g5e4",
+        "f6e4"
+      ]
+    },
+    "diagnosis": "Search Horizon / Pruning Truncation"
+  },
+  {
+    "case_id": 2,
+    "game_id": 9,
+    "opening": "Reti Opening Advance Gambit",
+    "ply": 40,
+    "side_to_move": "white",
+    "fen": "r1b1k2r/5ppp/1pn1p3/bpP5/3P4/BR1KPNnP/P3B1P1/6R1 w kq - 0 21",
+    "stockfish": {
+      "bestmove": "f3e5",
+      "score": -655,
+      "pv": [
+        "f3e5",
+        "c6e5",
+        "d4e5",
+        "c8a6",
+        "e2f3"
+      ]
+    },
+    "classical_c1": {
+      "static_eval": -330,
+      "search_score": -355,
+      "bestmove": "f3e5",
+      "nodes": 163630,
+      "pv": [
+        "f3e5",
+        "c8b7",
+        "e2f3",
+        "c6e5"
+      ]
+    },
+    "neural_n1_hybrid": {
+      "static_eval": 206,
+      "search_score": -154,
+      "bestmove": "c5b6",
+      "nodes": 106245,
+      "pv": [
+        "c5b6",
+        "b5b4",
+        "a3b2",
+        "c8a6"
+      ]
+    },
+    "pure_nnue": {
+      "static_eval": 206,
+      "search_score": -154,
+      "bestmove": "c5b6",
+      "nodes": 106245,
+      "pv": [
+        "c5b6",
+        "b5b4",
+        "a3b2",
+        "c8a6"
+      ]
+    },
+    "diagnosis": "Neural Evaluation Misdirection (Selected Inferior Move)"
+  },
+  {
+    "case_id": 3,
+    "game_id": 11,
+    "opening": "King's Indian Attack vs French",
+    "ply": 30,
+    "side_to_move": "white",
+    "fen": "r1b2rk1/ppq1bNpp/8/2pnp3/1n6/2PP1QP1/PP3PBP/R1B1R1K1 w - - 0 16",
+    "stockfish": {
+      "bestmove": "c3b4",
+      "score": -428,
+      "pv": [
+        "c3b4",
+        "d5b4",
+        "e1e5",
+        "e7f6",
+        "f7h6"
+      ]
+    },
+    "classical_c1": {
+      "static_eval": -270,
+      "search_score": -235,
+      "bestmove": "c3b4",
+      "nodes": 137063,
+      "pv": [
+        "c3b4",
+        "d5b4",
+        "e1e5",
+        "f8f7"
+      ]
+    },
+    "neural_n1_hybrid": {
+      "static_eval": 215,
+      "search_score": 61,
+      "bestmove": "c3b4",
+      "nodes": 144638,
+      "pv": [
+        "c3b4",
+        "d5b4",
+        "h2h3",
+        "f8f7"
+      ]
+    },
+    "pure_nnue": {
+      "static_eval": 215,
+      "search_score": 61,
+      "bestmove": "c3b4",
+      "nodes": 144638,
+      "pv": [
+        "c3b4",
+        "d5b4",
+        "h2h3",
+        "f8f7"
+      ]
+    },
+    "diagnosis": "Candidate Correct (Loss Occurred Elsewhere)"
+  },
+  {
+    "case_id": 4,
+    "game_id": 18,
+    "opening": "English Opening Reversed Sicilian",
+    "ply": 30,
+    "side_to_move": "white",
+    "fen": "r1b1k2r/ppQ4p/2nb1q2/5pp1/3Pp2N/2P1P1PB/P4P1P/R1B1K2R w KQkq - 1 16",
+    "stockfish": {
+      "bestmove": "c7c8",
+      "score": -642,
+      "pv": [
+        "c7c8",
+        "a8c8",
+        "h4f5",
+        "e8g8",
+        "e1g1"
+      ]
+    },
+    "classical_c1": {
+      "static_eval": 15,
+      "search_score": -400,
+      "bestmove": "c7d6",
+      "nodes": 65317,
+      "pv": [
+        "c7d6",
+        "f6d6",
+        "h4f5",
+        "c8f5"
+      ]
+    },
+    "neural_n1_hybrid": {
+      "static_eval": 150,
+      "search_score": -13,
+      "bestmove": "c7d6",
+      "nodes": 61886,
+      "pv": [
+        "c7d6",
+        "f6d6",
+        "h4f5",
+        "d6g6"
+      ]
+    },
+    "pure_nnue": {
+      "static_eval": 150,
+      "search_score": -13,
+      "bestmove": "c7d6",
+      "nodes": 61886,
+      "pv": [
+        "c7d6",
+        "f6d6",
+        "h4f5",
+        "d6g6"
+      ]
+    },
+    "diagnosis": "Search Horizon / Pruning Truncation"
+  },
+  {
+    "case_id": 5,
+    "game_id": 32,
+    "opening": "English Mikenas-Flohr Attack",
+    "ply": 30,
+    "side_to_move": "white",
+    "fen": "r3k2r/ppp2pp1/3b2q1/2P1n1p1/8/2P2P2/P2QBP1P/3RK2R w Kkq - 0 16",
+    "stockfish": {
+      "bestmove": "c5d6",
+      "score": -213,
+      "pv": [
+        "c5d6",
+        "e8c8",
+        "d2e3",
+        "c7d6",
+        "e3a7"
+      ]
+    },
+    "classical_c1": {
+      "static_eval": -395,
+      "search_score": -60,
+      "bestmove": "c5d6",
+      "nodes": 50915,
+      "pv": [
+        "c5d6",
+        "c7d6",
+        "d2d6",
+        "g6d6"
+      ]
+    },
+    "neural_n1_hybrid": {
+      "static_eval": 82,
+      "search_score": 117,
+      "bestmove": "c5d6",
+      "nodes": 56873,
+      "pv": [
+        "c5d6",
+        "e8c8",
+        "d2e3",
+        "g5g4"
+      ]
+    },
+    "pure_nnue": {
+      "static_eval": 82,
+      "search_score": 117,
+      "bestmove": "c5d6",
+      "nodes": 56873,
+      "pv": [
+        "c5d6",
+        "e8c8",
+        "d2e3",
+        "g5g4"
+      ]
+    },
+    "diagnosis": "Candidate Correct (Loss Occurred Elsewhere)"
+  },
+  {
+    "case_id": 6,
+    "game_id": 36,
+    "opening": "Saragossa Opening",
+    "ply": 30,
+    "side_to_move": "white",
+    "fen": "r3k2r/ppqb1ppp/3b1n2/1B1p4/Q2N4/1N2P3/PP3PPP/R3K2R w KQkq - 3 16",
+    "stockfish": {
+      "bestmove": "a1c1",
+      "score": 140,
+      "pv": [
+        "a1c1",
+        "c7b6",
+        "b5d7",
+        "f6d7",
+        "e1g1"
+      ]
+    },
+    "classical_c1": {
+      "static_eval": -25,
+      "search_score": -20,
+      "bestmove": "b3d2",
+      "nodes": 159531,
+      "pv": [
+        "b3d2",
+        "c7b6",
+        "b5d7",
+        "f6d7"
+      ]
+    },
+    "neural_n1_hybrid": {
+      "static_eval": 54,
+      "search_score": 85,
+      "bestmove": "b5d7",
+      "nodes": 137578,
+      "pv": [
+        "b5d7",
+        "c7d7",
+        "d4b5",
+        "e8g8"
+      ]
+    },
+    "pure_nnue": {
+      "static_eval": 54,
+      "search_score": 85,
+      "bestmove": "b5d7",
+      "nodes": 137578,
+      "pv": [
+        "b5d7",
+        "c7d7",
+        "d4b5",
+        "e8g8"
+      ]
+    },
+    "diagnosis": "Search Horizon / Pruning Truncation"
+  }
+]

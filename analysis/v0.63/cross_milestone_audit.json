@@ -1,0 +1,58 @@
+{
+  "v61": {
+    "n_games": 200,
+    "total_points": 114.0,
+    "score_pct": 0.57,
+    "elo": 48.96256003716192,
+    "elo_ci_95": [
+      12.2,
+      85.0
+    ],
+    "mean_pair_diff": 0.14,
+    "se_pair_diff": 0.0536919759631575,
+    "t_stat": 2.60746596653596,
+    "p_val": 0.00929845787511363
+  },
+  "v62": {
+    "n_games": 200,
+    "total_points": 98.5,
+    "score_pct": 0.4925,
+    "elo": -5.211924700647974,
+    "elo_ci_95": [
+      -36.6,
+      26.1
+    ],
+    "mean_pair_diff": -0.015,
+    "se_pair_diff": 0.04738356276391656,
+    "t_stat": -0.31656547386982836,
+    "p_val": 0.7521800765827504
+  },
+  "heterogeneity": {
+    "effect_diff": 0.15500000000000003,
+    "se_effect_diff": 0.07161026674318637,
+    "elo_diff": 54.1744847378099,
+    "z_stat": 2.1644941018844635,
+    "z_p_val": 0.030426448772175263,
+    "cochrans_q": 4.68503471709263,
+    "q_p_val": 0.030426448772175263,
+    "i_squared": 78.6554409863463
+  },
+  "openings": {
+    "v61_count": 100,
+    "v62_count": 100,
+    "unique_epd_v61": 100,
+    "unique_epd_v62": 100,
+    "exact_epd_overlap_count": 0,
+    "exact_seq_overlap_count": 0,
+    "v61_categories": {
+      "UNKNOWN": 100
+    },
+    "v62_categories": {
+      "ECO_A": 22,
+      "ECO_B": 25,
+      "ECO_C": 25,
+      "ECO_D": 15,
+      "ECO_E": 13
+    }
+  }
+}

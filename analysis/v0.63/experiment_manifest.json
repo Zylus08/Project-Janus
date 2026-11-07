@@ -1,0 +1,84 @@
+{
+  "milestone": "v0.63",
+  "title": "Opening-Regime Generalization, Neural Evaluation Failure Analysis & Research Direction Qualification",
+  "date": "2026-11-07",
+  "parent_commit": "431af17",
+  "branch": "v0.3-benchmark-harness",
+  "auditor": "Principal Chess Engine Research Scientist & Systems Architect",
+  "provenance": {
+    "classical_control_exe": {
+      "path": "analysis/v0.56/native/janus_native_engine.exe",
+      "sha256": "a4f9d9d18b549d29b2e6740ac90d90d39167d92d3846b95fc0c4f5b966add83f",
+      "designation": "Janus Classical Baseline C1 (Native N5)"
+    },
+    "candidate_exe": {
+      "path": "analysis/v0.61/native/janus_native_engine.exe",
+      "sha256": "fc82936845a758df5b19aeace727c573f03d9c787916c517b4527635a78f9072",
+      "designation": "Janus Neural Value V2 (Native Hybrid N1)"
+    },
+    "neural_model": {
+      "path": "analysis/v0.61/models/janus_nnue_v2_small.jnnue",
+      "sha256": "ff7ac9a0d45d14269bb4a011b5786bd035ba8a36b37b1fb7e1ad7f6d5e15fa12",
+      "crc32": "0x81d61206",
+      "architecture": "HalfKP(768->128x2)->L1(32)->Out(1)"
+    },
+    "stockfish_exe": {
+      "path": "tools/stockfish/stockfish.exe",
+      "sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "version": "Stockfish 19 x64 AVX2"
+    }
+  },
+  "reconciliation": {
+    "v061_score": "114.0 / 200 (57.00%, +49.0 Elo, p=0.0093)",
+    "v062_score": "98.5 / 200 (49.25%, -5.2 Elo, p=0.7522)",
+    "heterogeneity": {
+      "cochrans_q": 4.6850,
+      "p_value": 0.03043,
+      "i_squared": 78.7,
+      "z_statistic": 2.1645
+    }
+  },
+  "structural_audit": {
+    "training_data_open_files": 1.124,
+    "v061_opening_open_files": 0.180,
+    "v062_opening_open_files": 0.160,
+    "v061_opening_mean_depth": 16.04,
+    "v062_opening_mean_depth": 13.77,
+    "eco_d_open_files_v061": 0.429,
+    "eco_d_open_files_v062": 0.133,
+    "played_games_central_tension_v061": 0.060,
+    "played_games_central_tension_v062": 0.178
+  },
+  "error_analysis_500_positions": {
+    "overall_mae_c1": 212.8,
+    "overall_mae_n1": 202.5,
+    "overall_mae_pt_hybrid": 198.7,
+    "middlegame_mae_c1": 208.1,
+    "middlegame_mae_n1": 186.7,
+    "middlegame_mae_pt_hybrid": 186.9,
+    "endgame_mae_c1": 228.9,
+    "endgame_mae_n1": 256.8,
+    "endgame_mae_pure_nnue": 322.1,
+    "endgame_mae_pt_hybrid": 239.0,
+    "endgame_spearman_rho_pure_nnue": -0.125,
+    "endgame_spearman_rho_n1": 0.150,
+    "endgame_spearman_rho_c1": 0.382,
+    "endgame_spearman_rho_pt_hybrid": 0.276
+  },
+  "matched_external_calibration": {
+    "opponent": "Stockfish 19 (UCI_Elo=1600)",
+    "corpus": "First 10 pairs of independent_openings_v062.json (20 games)",
+    "classical_c1_score": "12.0 / 20 (60.0%, +70.4 Elo, Implied: ~1670)",
+    "neural_n1_score": "13.5 / 20 (67.5%, +127.0 Elo, Implied: ~1727)",
+    "matched_delta_points": 1.5,
+    "matched_delta_elo": 56.6,
+    "withdrawn_claim": "Historical +234 Elo cross-study claim withdrawn due to non-matched opening suites"
+  },
+  "milestone_verdict": {
+    "classification": "Category A — Specific failure mechanism supported",
+    "primary_failure_cause": "Endgame feature sparsity and negative rank correlation (rho = -0.125)",
+    "secondary_cause": "Tactical king safety optimism and excessive LMR search pruning",
+    "recommended_direction": "Direction R — Robust NNUE-V3",
+    "proposed_next_milestone": "v0.64 (Endgame feature augmentation, phase-balanced data, and native phase-tapered blending)"
+  }
+}

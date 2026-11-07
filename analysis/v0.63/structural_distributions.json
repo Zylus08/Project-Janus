@@ -1,0 +1,506 @@
+{
+  "v61_openings": {
+    "name": "v0.61 Openings",
+    "count": 100,
+    "metrics": {
+      "blocked_pawns": {
+        "mean": 2.81,
+        "std": 1.762,
+        "min": 0,
+        "max": 8
+      },
+      "locked_headon_pairs": {
+        "mean": 0.4,
+        "std": 0.569,
+        "min": 0,
+        "max": 3
+      },
+      "open_files": {
+        "mean": 0.18,
+        "std": 0.411,
+        "min": 0,
+        "max": 2
+      },
+      "semi_open_files": {
+        "mean": 1.5,
+        "std": 1.03,
+        "min": 0,
+        "max": 4
+      },
+      "isolated_pawns": {
+        "mean": 0.25,
+        "std": 0.609,
+        "min": 0,
+        "max": 4
+      },
+      "doubled_pawns": {
+        "mean": 0.29,
+        "std": 0.456,
+        "min": 0,
+        "max": 1
+      },
+      "passed_pawns": {
+        "mean": 0.05,
+        "std": 0.219,
+        "min": 0,
+        "max": 1
+      },
+      "central_tension": {
+        "mean": 0.29,
+        "std": 0.478,
+        "min": 0,
+        "max": 2
+      },
+      "legal_pawn_moves": {
+        "mean": 10.16,
+        "std": 2.009,
+        "min": 5,
+        "max": 15
+      },
+      "pawn_breaks": {
+        "mean": 1.77,
+        "std": 1.043,
+        "min": 0,
+        "max": 4
+      },
+      "legal_mobility": {
+        "mean": 36.09,
+        "std": 6.075,
+        "min": 23,
+        "max": 52
+      },
+      "material_phase": {
+        "mean": 23.28,
+        "std": 1.19,
+        "min": 16,
+        "max": 24
+      },
+      "avg_king_shelter": {
+        "mean": 2.225,
+        "std": 0.664,
+        "min": 1.0,
+        "max": 3.0
+      }
+    }
+  },
+  "v62_openings": {
+    "name": "v0.62 Openings",
+    "count": 100,
+    "metrics": {
+      "blocked_pawns": {
+        "mean": 2.67,
+        "std": 1.67,
+        "min": 0,
+        "max": 7
+      },
+      "locked_headon_pairs": {
+        "mean": 0.42,
+        "std": 0.622,
+        "min": 0,
+        "max": 3
+      },
+      "open_files": {
+        "mean": 0.16,
+        "std": 0.42,
+        "min": 0,
+        "max": 2
+      },
+      "semi_open_files": {
+        "mean": 1.24,
+        "std": 1.138,
+        "min": 0,
+        "max": 4
+      },
+      "isolated_pawns": {
+        "mean": 0.16,
+        "std": 0.42,
+        "min": 0,
+        "max": 2
+      },
+      "doubled_pawns": {
+        "mean": 0.18,
+        "std": 0.386,
+        "min": 0,
+        "max": 1
+      },
+      "passed_pawns": {
+        "mean": 0.01,
+        "std": 0.1,
+        "min": 0,
+        "max": 1
+      },
+      "central_tension": {
+        "mean": 0.22,
+        "std": 0.462,
+        "min": 0,
+        "max": 2
+      },
+      "legal_pawn_moves": {
+        "mean": 10.54,
+        "std": 1.749,
+        "min": 7,
+        "max": 16
+      },
+      "pawn_breaks": {
+        "mean": 1.79,
+        "std": 1.217,
+        "min": 0,
+        "max": 5
+      },
+      "legal_mobility": {
+        "mean": 36.41,
+        "std": 5.988,
+        "min": 22,
+        "max": 52
+      },
+      "material_phase": {
+        "mean": 23.32,
+        "std": 1.53,
+        "min": 14,
+        "max": 24
+      },
+      "avg_king_shelter": {
+        "mean": 2.015,
+        "std": 0.605,
+        "min": 0.5,
+        "max": 3.0
+      }
+    }
+  },
+  "nnue_train": {
+    "name": "NNUE-V2 Train (Sample)",
+    "count": 5000,
+    "metrics": {
+      "blocked_pawns": {
+        "mean": 3.092,
+        "std": 2.059,
+        "min": 0,
+        "max": 12
+      },
+      "locked_headon_pairs": {
+        "mean": 0.725,
+        "std": 0.889,
+        "min": 0,
+        "max": 6
+      },
+      "open_files": {
+        "mean": 1.124,
+        "std": 1.514,
+        "min": 0,
+        "max": 8
+      },
+      "semi_open_files": {
+        "mean": 1.851,
+        "std": 1.376,
+        "min": 0,
+        "max": 7
+      },
+      "isolated_pawns": {
+        "mean": 0.95,
+        "std": 1.329,
+        "min": 0,
+        "max": 8
+      },
+      "doubled_pawns": {
+        "mean": 0.267,
+        "std": 0.506,
+        "min": 0,
+        "max": 3
+      },
+      "passed_pawns": {
+        "mean": 0.418,
+        "std": 0.855,
+        "min": 0,
+        "max": 6
+      },
+      "central_tension": {
+        "mean": 0.161,
+        "std": 0.404,
+        "min": 0,
+        "max": 3
+      },
+      "legal_pawn_moves": {
+        "mean": 6.918,
+        "std": 3.415,
+        "min": 0,
+        "max": 15
+      },
+      "pawn_breaks": {
+        "mean": 1.534,
+        "std": 1.286,
+        "min": 0,
+        "max": 8
+      },
+      "legal_mobility": {
+        "mean": 33.322,
+        "std": 11.313,
+        "min": 1,
+        "max": 64
+      },
+      "material_phase": {
+        "mean": 17.815,
+        "std": 6.923,
+        "min": 0,
+        "max": 24
+      },
+      "avg_king_shelter": {
+        "mean": 1.981,
+        "std": 0.829,
+        "min": 0.0,
+        "max": 3.5
+      }
+    }
+  },
+  "nnue_test": {
+    "name": "NNUE-V2 Test (Sample)",
+    "count": 5000,
+    "metrics": {
+      "blocked_pawns": {
+        "mean": 2.977,
+        "std": 2.011,
+        "min": 0,
+        "max": 12
+      },
+      "locked_headon_pairs": {
+        "mean": 0.679,
+        "std": 0.857,
+        "min": 0,
+        "max": 5
+      },
+      "open_files": {
+        "mean": 1.176,
+        "std": 1.573,
+        "min": 0,
+        "max": 8
+      },
+      "semi_open_files": {
+        "mean": 1.838,
+        "std": 1.338,
+        "min": 0,
+        "max": 7
+      },
+      "isolated_pawns": {
+        "mean": 0.996,
+        "std": 1.3,
+        "min": 0,
+        "max": 7
+      },
+      "doubled_pawns": {
+        "mean": 0.263,
+        "std": 0.494,
+        "min": 0,
+        "max": 3
+      },
+      "passed_pawns": {
+        "mean": 0.419,
+        "std": 0.826,
+        "min": 0,
+        "max": 6
+      },
+      "central_tension": {
+        "mean": 0.167,
+        "std": 0.399,
+        "min": 0,
+        "max": 3
+      },
+      "legal_pawn_moves": {
+        "mean": 6.924,
+        "std": 3.397,
+        "min": 0,
+        "max": 16
+      },
+      "pawn_breaks": {
+        "mean": 1.459,
+        "std": 1.25,
+        "min": 0,
+        "max": 8
+      },
+      "legal_mobility": {
+        "mean": 32.892,
+        "std": 11.666,
+        "min": 1,
+        "max": 61
+      },
+      "material_phase": {
+        "mean": 17.444,
+        "std": 7.182,
+        "min": 0,
+        "max": 24
+      },
+      "avg_king_shelter": {
+        "mean": 1.991,
+        "std": 0.846,
+        "min": 0.0,
+        "max": 3.5
+      }
+    }
+  },
+  "v61_games": {
+    "name": "v0.61 Games (Plies 16, 24, 32)",
+    "count": 600,
+    "metrics": {
+      "blocked_pawns": {
+        "mean": 3.218,
+        "std": 1.26,
+        "min": 0,
+        "max": 7
+      },
+      "locked_headon_pairs": {
+        "mean": 0.568,
+        "std": 0.516,
+        "min": 0,
+        "max": 2
+      },
+      "open_files": {
+        "mean": 0.525,
+        "std": 0.51,
+        "min": 0,
+        "max": 2
+      },
+      "semi_open_files": {
+        "mean": 1.627,
+        "std": 0.965,
+        "min": 0,
+        "max": 5
+      },
+      "isolated_pawns": {
+        "mean": 1.367,
+        "std": 1.135,
+        "min": 0,
+        "max": 5
+      },
+      "doubled_pawns": {
+        "mean": 0.465,
+        "std": 0.591,
+        "min": 0,
+        "max": 3
+      },
+      "passed_pawns": {
+        "mean": 0.102,
+        "std": 0.313,
+        "min": 0,
+        "max": 2
+      },
+      "central_tension": {
+        "mean": 0.06,
+        "std": 0.238,
+        "min": 0,
+        "max": 1
+      },
+      "legal_pawn_moves": {
+        "mean": 7.227,
+        "std": 3.913,
+        "min": 0,
+        "max": 13
+      },
+      "pawn_breaks": {
+        "mean": 0.827,
+        "std": 0.674,
+        "min": 0,
+        "max": 4
+      },
+      "legal_mobility": {
+        "mean": 30.207,
+        "std": 14.22,
+        "min": 1,
+        "max": 48
+      },
+      "material_phase": {
+        "mean": 18.877,
+        "std": 3.704,
+        "min": 10,
+        "max": 24
+      },
+      "avg_king_shelter": {
+        "mean": 1.832,
+        "std": 0.528,
+        "min": 1.0,
+        "max": 3.0
+      }
+    }
+  },
+  "v62_games": {
+    "name": "v0.62 Games (Plies 16, 24, 32)",
+    "count": 600,
+    "metrics": {
+      "blocked_pawns": {
+        "mean": 3.135,
+        "std": 1.938,
+        "min": 0,
+        "max": 9
+      },
+      "locked_headon_pairs": {
+        "mean": 0.565,
+        "std": 0.748,
+        "min": 0,
+        "max": 3
+      },
+      "open_files": {
+        "mean": 0.527,
+        "std": 0.717,
+        "min": 0,
+        "max": 3
+      },
+      "semi_open_files": {
+        "mean": 1.882,
+        "std": 1.318,
+        "min": 0,
+        "max": 6
+      },
+      "isolated_pawns": {
+        "mean": 0.795,
+        "std": 1.191,
+        "min": 0,
+        "max": 6
+      },
+      "doubled_pawns": {
+        "mean": 0.375,
+        "std": 0.573,
+        "min": 0,
+        "max": 2
+      },
+      "passed_pawns": {
+        "mean": 0.172,
+        "std": 0.475,
+        "min": 0,
+        "max": 4
+      },
+      "central_tension": {
+        "mean": 0.178,
+        "std": 0.428,
+        "min": 0,
+        "max": 2
+      },
+      "legal_pawn_moves": {
+        "mean": 8.253,
+        "std": 2.698,
+        "min": 0,
+        "max": 13
+      },
+      "pawn_breaks": {
+        "mean": 1.372,
+        "std": 1.177,
+        "min": 0,
+        "max": 6
+      },
+      "legal_mobility": {
+        "mean": 35.947,
+        "std": 10.109,
+        "min": 1,
+        "max": 58
+      },
+      "material_phase": {
+        "mean": 20.625,
+        "std": 3.601,
+        "min": 8,
+        "max": 24
+      },
+      "avg_king_shelter": {
+        "mean": 1.853,
+        "std": 0.715,
+        "min": 0.0,
+        "max": 3.5
+      }
+    }
+  }
+}

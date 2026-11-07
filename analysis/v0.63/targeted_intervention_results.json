@@ -1,0 +1,30 @@
+{
+  "overall": {
+    "count": 500,
+    "mae_c1": 212.82,
+    "mae_n1": 202.52,
+    "mae_pt": 198.66,
+    "rho_c1": 0.3276,
+    "rho_n1": 0.2751,
+    "rho_pt": 0.3364
+  },
+  "middlegame": {
+    "count": 387,
+    "mae_c1": 208.12,
+    "mae_n1": 186.66,
+    "mae_pt": 186.87,
+    "rho_c1": 0.3009,
+    "rho_n1": 0.3296,
+    "rho_pt": 0.3552
+  },
+  "endgame": {
+    "count": 113,
+    "mae_c1": 228.91,
+    "mae_n1": 256.83,
+    "mae_pt": 239.02,
+    "rho_c1": 0.3817,
+    "rho_n1": 0.1502,
+    "rho_pt": 0.2763
+  },
+  "intervention": "Phase-Tapered Adaptive Blending: w_neural = 0.50 * (phase/24)"
+}

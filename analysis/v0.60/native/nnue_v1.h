@@ -115,3 +115,4 @@ private:
 };
 
 #endif // NNUE_V1_H
+

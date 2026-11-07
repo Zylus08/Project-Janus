@@ -46,3 +46,4 @@
   - **Validation Partition:** 10% of positions (for early stopping and hyperparameter monitoring).
   - **Held-Out Test Partition:** 10% of positions (strictly sequestered; never observed during training or model selection).
 - **Leakage Prevention:** Position core FENs ($[0..3]$ tokens, ignoring clocks) are verified to have zero intersection between Train, Validation, and Test.
+

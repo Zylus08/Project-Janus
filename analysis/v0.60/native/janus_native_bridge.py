@@ -193,3 +193,4 @@ class NativeEngineBridge:
             pv_moves.append(pv_buf.value.decode("utf-8"))
 
         return best_move_str, res.score, res.depth, res.nodes, res.elapsed_seconds, pv_moves
+

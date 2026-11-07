@@ -72,3 +72,4 @@ The quantized model was evaluated against the reference PyTorch FP32 model acros
 - **Weights Payload:** 100,564 bytes
 - **Disk Footprint:** $< 101\ \text{KB}$ (Fits entirely within L2 cache on modern AMD Zen and Intel Core architectures).
 - **Cold Load Time:** $0.42\ \text{ms}$ via single linear `fread()`.
+

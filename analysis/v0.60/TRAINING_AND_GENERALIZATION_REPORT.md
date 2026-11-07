@@ -72,3 +72,4 @@ The models were evaluated on the strictly sequestered 1,250 held-out test positi
    - However, V1-Small successfully learns coherent piece-square correlations directly from raw game positions, achieving 62.1% sign agreement and positive rank correlation without any hardcoded chess heuristics.
 3. **Selection Decision:**
    - **NNUE V1-Small** is selected as the production architecture for native deployment in Project Janus v0.60.
+

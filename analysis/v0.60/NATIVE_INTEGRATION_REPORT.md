@@ -167,3 +167,4 @@ When `UseNeuralValue` is set to `true` via `setoption name UseNeuralValue value 
 1. **Stack Protection:** The accumulator stack index is strictly clamped to `MAX_SEARCH_PLY + 63`. Deep search trees cannot trigger buffer overflows.
 2. **Zero Allocation:** All memory is statically pre-allocated in the `.bss` segment. Search execution is 100% allocation-free, eliminating heap fragmentation and GC pauses.
 3. **Control Parity:** When `UseNeuralValue=false`, every branch testing neural flags resolves immediately to false, ensuring zero runtime overhead and bit-exact reproducibility for Classical Baseline C1.
+

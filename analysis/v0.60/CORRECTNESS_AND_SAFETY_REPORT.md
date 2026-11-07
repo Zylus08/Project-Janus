@@ -118,3 +118,4 @@ The engine's runtime safety mechanisms were verified by `test_v060_neural_value.
 To guarantee that v0.60 does not perturb the established Classical Baseline C1, `tests/test_v060_neural_value.py::test_v060_disabled_baseline_parity` verified that:
 - When `UseNeuralValue=false`, search node counts, best moves, and search evaluations match Classical Baseline C1 bit-for-bit across multiple tactical test positions.
 - In addition, an intermittent test ordering issue from v0.59 (where earlier SEE tests left search options enabled in the shared native DLL) was resolved by enforcing explicit configuration reset fixtures, ensuring 100% reproducible test execution regardless of run order.
+

@@ -176,3 +176,4 @@ struct NNUEHeader {
    - **E1:** V1-Small ($M=64$, $768$ inputs, $51\text{K}$ params).
    - **E2:** V1-Compact ($M=128$, $3,072$ inputs, $401\text{K}$ params).
 3. The model delivering the optimal Pareto trade-off between held-out teacher MAE and CPU leaf latency will be quantized and natively integrated into the engine.
+

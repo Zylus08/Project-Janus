@@ -210,3 +210,4 @@ def run_benchmarks() -> Dict[str, Any]:
 
 if __name__ == "__main__":
     run_benchmarks()
+

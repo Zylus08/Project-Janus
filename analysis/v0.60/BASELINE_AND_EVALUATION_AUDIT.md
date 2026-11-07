@@ -171,3 +171,4 @@ struct NativeBoard {
 The evaluation call sites, score conventions (centipawns, side-to-move perspective, mate score separation), board state mutations, and test suite baseline have been thoroughly verified and documented.
 
 **Gate 0 Status:** **PASSED**. Proceeding immediately to Phase 1 (NNUE Architecture Design).
+

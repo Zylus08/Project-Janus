@@ -102,3 +102,4 @@ The preliminary search results reveal a clear roadmap for neural search qualific
    Blending classical evaluation at 50% immediately recovers 1.0 ply of search depth and raises tactical move agreement to 50%, confirming that hybrid evaluation is the most robust transitional architecture.
 3. **No Premature Promotion:**
    Given the 1.6-ply depth deficit under fixed time, pure NNUE cannot be promoted to default without further pruning tuning or AVX2 SIMD acceleration.
+

@@ -126,3 +126,4 @@ To advance from Category B to Category A in milestone v0.61:
 2. **Search Pruning Recalibration:** Recalibrate RFP margins and quiescence stand-pat thresholds specifically for neural value distributions to eliminate the +54% node expansion overhead.
 3. **AVX2 SIMD Optimization:** Implement vectorized accumulator updates and clipped dot-products using `_mm256_maddubs_epi16`, targeting $\le 75$ ns leaf latency and $>1.65$ Million NPS.
 4. **Controlled Tournament Qualification:** Execute a controlled Fischer 10s+0.1s match (C1 vs V1-Hybrid and C1 vs V1-Pure) to measure empirical Elo delta before production promotion.
+

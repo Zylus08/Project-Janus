@@ -110,3 +110,4 @@ The v0.60 reference implementation utilizes portable C++17 loops with MSVC auto-
 - Memory footprint is ultra-compact (100 KB), fitting 100% inside L2 cache.
 - Incremental update latency is 88.5 ns, validating the half-KP accumulator design.
 - Search NPS exceeds 1.18 Million NPS, maintaining robust real-time performance on standard x86-64 consumer CPUs without requiring GPUs or external acceleration libraries.
+

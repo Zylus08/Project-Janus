@@ -1,0 +1,200 @@
+{
+  "timestamp": 1794077995.2158735,
+  "models": {
+    "M0_Frozen_NNUE_V2": {
+      "model_name": "M0_Frozen_NNUE_V2",
+      "overall": {
+        "count": 15000,
+        "mae": 166.78,
+        "rmse": 268.6,
+        "spearman_rho": 0.5415
+      },
+      "pure_endgames": {
+        "count": 2500,
+        "mae": 220.31,
+        "spearman_rho": 0.6267
+      },
+      "subtypes": {
+        "locked_pawn_structure": {
+          "count": 1250,
+          "mae": 65.09,
+          "rmse": 139.8,
+          "spearman_rho": 0.5253,
+          "sign_agreement": 0.6992
+        },
+        "minor_piece_endgame": {
+          "count": 750,
+          "mae": 237.85,
+          "rmse": 314.06,
+          "spearman_rho": 0.6066,
+          "sign_agreement": 0.6827
+        },
+        "opposite_bishops": {
+          "count": 250,
+          "mae": 198.24,
+          "rmse": 244.39,
+          "spearman_rho": 0.5393,
+          "sign_agreement": 0.684
+        },
+        "pawn_endgame": {
+          "count": 500,
+          "mae": 269.6,
+          "rmse": 348.28,
+          "spearman_rho": 0.6273,
+          "sign_agreement": 0.712
+        },
+        "queenless_middlegame": {
+          "count": 1250,
+          "mae": 198.37,
+          "rmse": 277.34,
+          "spearman_rho": 0.5812,
+          "sign_agreement": 0.6952
+        },
+        "rook_endgame": {
+          "count": 1000,
+          "mae": 188.02,
+          "rmse": 247.21,
+          "spearman_rho": 0.6696,
+          "sign_agreement": 0.71
+        },
+        "unknown": {
+          "count": 10000,
+          "mae": 162.15,
+          "rmse": 274.04,
+          "spearman_rho": 0.5222,
+          "sign_agreement": 0.7213
+        }
+      }
+    },
+    "M1_V2_Retrained": {
+      "model_name": "M1_V2_Retrained",
+      "overall": {
+        "count": 15000,
+        "mae": 156.99,
+        "rmse": 260.07,
+        "spearman_rho": 0.601
+      },
+      "pure_endgames": {
+        "count": 2500,
+        "mae": 193.2,
+        "spearman_rho": 0.7075
+      },
+      "subtypes": {
+        "locked_pawn_structure": {
+          "count": 1250,
+          "mae": 61.99,
+          "rmse": 138.39,
+          "spearman_rho": 0.5905,
+          "sign_agreement": 0.7352
+        },
+        "minor_piece_endgame": {
+          "count": 750,
+          "mae": 190.1,
+          "rmse": 264.1,
+          "spearman_rho": 0.7415,
+          "sign_agreement": 0.7293
+        },
+        "opposite_bishops": {
+          "count": 250,
+          "mae": 162.64,
+          "rmse": 207.03,
+          "spearman_rho": 0.6146,
+          "sign_agreement": 0.644
+        },
+        "pawn_endgame": {
+          "count": 500,
+          "mae": 253.87,
+          "rmse": 328.19,
+          "spearman_rho": 0.6716,
+          "sign_agreement": 0.732
+        },
+        "queenless_middlegame": {
+          "count": 1250,
+          "mae": 183.06,
+          "rmse": 261.51,
+          "spearman_rho": 0.6337,
+          "sign_agreement": 0.7128
+        },
+        "rook_endgame": {
+          "count": 1000,
+          "mae": 172.84,
+          "rmse": 242.04,
+          "spearman_rho": 0.7261,
+          "sign_agreement": 0.727
+        },
+        "unknown": {
+          "count": 10000,
+          "mae": 156.55,
+          "rmse": 270.13,
+          "spearman_rho": 0.5726,
+          "sign_agreement": 0.7373
+        }
+      }
+    },
+    "M2_V3_SEF": {
+      "model_name": "M2_V3_SEF",
+      "overall": {
+        "count": 15000,
+        "mae": 153.08,
+        "rmse": 253.51,
+        "spearman_rho": 0.6178
+      },
+      "pure_endgames": {
+        "count": 2500,
+        "mae": 193.79,
+        "spearman_rho": 0.7108
+      },
+      "subtypes": {
+        "locked_pawn_structure": {
+          "count": 1250,
+          "mae": 62.45,
+          "rmse": 144.84,
+          "spearman_rho": 0.5639,
+          "sign_agreement": 0.7544
+        },
+        "minor_piece_endgame": {
+          "count": 750,
+          "mae": 196.13,
+          "rmse": 269.91,
+          "spearman_rho": 0.7195,
+          "sign_agreement": 0.7213
+        },
+        "opposite_bishops": {
+          "count": 250,
+          "mae": 166.14,
+          "rmse": 209.47,
+          "spearman_rho": 0.6252,
+          "sign_agreement": 0.676
+        },
+        "pawn_endgame": {
+          "count": 500,
+          "mae": 254.47,
+          "rmse": 331.37,
+          "spearman_rho": 0.6761,
+          "sign_agreement": 0.748
+        },
+        "queenless_middlegame": {
+          "count": 1250,
+          "mae": 175.51,
+          "rmse": 255.56,
+          "spearman_rho": 0.6533,
+          "sign_agreement": 0.7288
+        },
+        "rook_endgame": {
+          "count": 1000,
+          "mae": 168.61,
+          "rmse": 227.04,
+          "spearman_rho": 0.7439,
+          "sign_agreement": 0.735
+        },
+        "unknown": {
+          "count": 10000,
+          "mae": 151.43,
+          "rmse": 261.56,
+          "spearman_rho": 0.5968,
+          "sign_agreement": 0.7419
+        }
+      }
+    }
+  }
+}

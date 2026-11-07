@@ -1,0 +1,769 @@
+{
+  "summary": {
+    "B0_Classical_C1": {
+      "total_nodes": 1749347,
+      "avg_nodes": 87467.35,
+      "elapsed_s": 1.125,
+      "positions": [
+        {
+          "pos_name": "Tactical_1",
+          "type": "tactical",
+          "nodes": 108850,
+          "score_cp": -65,
+          "bestmove": "c4d5"
+        },
+        {
+          "pos_name": "Tactical_2",
+          "type": "tactical",
+          "nodes": 215219,
+          "score_cp": -950,
+          "bestmove": "f8e8"
+        },
+        {
+          "pos_name": "Tactical_3",
+          "type": "tactical",
+          "nodes": 145675,
+          "score_cp": 30,
+          "bestmove": "d3b5"
+        },
+        {
+          "pos_name": "Tactical_4",
+          "type": "tactical",
+          "nodes": 222506,
+          "score_cp": -15,
+          "bestmove": "d1c2"
+        },
+        {
+          "pos_name": "Tactical_5",
+          "type": "tactical",
+          "nodes": 197359,
+          "score_cp": 10,
+          "bestmove": "d1d2"
+        },
+        {
+          "pos_name": "Queenless_1",
+          "type": "queenless",
+          "nodes": 137422,
+          "score_cp": -875,
+          "bestmove": "f3e5"
+        },
+        {
+          "pos_name": "Queenless_2",
+          "type": "queenless",
+          "nodes": 157983,
+          "score_cp": 35,
+          "bestmove": "f3e5"
+        },
+        {
+          "pos_name": "Queenless_3",
+          "type": "queenless",
+          "nodes": 135973,
+          "score_cp": 15,
+          "bestmove": "a2a3"
+        },
+        {
+          "pos_name": "Queenless_4",
+          "type": "queenless",
+          "nodes": 210930,
+          "score_cp": 355,
+          "bestmove": "f1d1"
+        },
+        {
+          "pos_name": "Queenless_5",
+          "type": "queenless",
+          "nodes": 136353,
+          "score_cp": 690,
+          "bestmove": "f3e5"
+        },
+        {
+          "pos_name": "RookEnd_1",
+          "type": "rook_endgame",
+          "nodes": 20028,
+          "score_cp": -125,
+          "bestmove": "g3h2"
+        },
+        {
+          "pos_name": "RookEnd_2",
+          "type": "rook_endgame",
+          "nodes": 8857,
+          "score_cp": 120,
+          "bestmove": "e5f5"
+        },
+        {
+          "pos_name": "RookEnd_3",
+          "type": "rook_endgame",
+          "nodes": 10707,
+          "score_cp": -100,
+          "bestmove": "g3h2"
+        },
+        {
+          "pos_name": "RookEnd_4",
+          "type": "rook_endgame",
+          "nodes": 22095,
+          "score_cp": 135,
+          "bestmove": "c7c4"
+        },
+        {
+          "pos_name": "RookEnd_5",
+          "type": "rook_endgame",
+          "nodes": 12659,
+          "score_cp": -105,
+          "bestmove": "g3h2"
+        },
+        {
+          "pos_name": "PawnEnd_1",
+          "type": "pawn_endgame",
+          "nodes": 1360,
+          "score_cp": 0,
+          "bestmove": "f3g2"
+        },
+        {
+          "pos_name": "PawnEnd_2",
+          "type": "pawn_endgame",
+          "nodes": 1434,
+          "score_cp": -110,
+          "bestmove": "f3g2"
+        },
+        {
+          "pos_name": "PawnEnd_3",
+          "type": "pawn_endgame",
+          "nodes": 918,
+          "score_cp": -110,
+          "bestmove": "e3f3"
+        },
+        {
+          "pos_name": "PawnEnd_4",
+          "type": "pawn_endgame",
+          "nodes": 1423,
+          "score_cp": -70,
+          "bestmove": "c3b2"
+        },
+        {
+          "pos_name": "PawnEnd_5",
+          "type": "pawn_endgame",
+          "nodes": 1596,
+          "score_cp": -15,
+          "bestmove": "e3d3"
+        }
+      ]
+    },
+    "B1_Neural_N1": {
+      "total_nodes": 2177603,
+      "avg_nodes": 108880.15,
+      "elapsed_s": 1.618,
+      "positions": [
+        {
+          "pos_name": "Tactical_1",
+          "type": "tactical",
+          "nodes": 107274,
+          "score_cp": -49,
+          "bestmove": "b1c3"
+        },
+        {
+          "pos_name": "Tactical_2",
+          "type": "tactical",
+          "nodes": 110890,
+          "score_cp": -550,
+          "bestmove": "c6a5"
+        },
+        {
+          "pos_name": "Tactical_3",
+          "type": "tactical",
+          "nodes": 211000,
+          "score_cp": 15,
+          "bestmove": "c1e3"
+        },
+        {
+          "pos_name": "Tactical_4",
+          "type": "tactical",
+          "nodes": 293044,
+          "score_cp": -5,
+          "bestmove": "d3c2"
+        },
+        {
+          "pos_name": "Tactical_5",
+          "type": "tactical",
+          "nodes": 305708,
+          "score_cp": 35,
+          "bestmove": "g2g4"
+        },
+        {
+          "pos_name": "Queenless_1",
+          "type": "queenless",
+          "nodes": 269045,
+          "score_cp": -486,
+          "bestmove": "e2d3"
+        },
+        {
+          "pos_name": "Queenless_2",
+          "type": "queenless",
+          "nodes": 226676,
+          "score_cp": 29,
+          "bestmove": "e1c1"
+        },
+        {
+          "pos_name": "Queenless_3",
+          "type": "queenless",
+          "nodes": 107813,
+          "score_cp": 7,
+          "bestmove": "a2a3"
+        },
+        {
+          "pos_name": "Queenless_4",
+          "type": "queenless",
+          "nodes": 239206,
+          "score_cp": 197,
+          "bestmove": "f1d1"
+        },
+        {
+          "pos_name": "Queenless_5",
+          "type": "queenless",
+          "nodes": 167483,
+          "score_cp": 386,
+          "bestmove": "f3e5"
+        },
+        {
+          "pos_name": "RookEnd_1",
+          "type": "rook_endgame",
+          "nodes": 34312,
+          "score_cp": -153,
+          "bestmove": "b5b3"
+        },
+        {
+          "pos_name": "RookEnd_2",
+          "type": "rook_endgame",
+          "nodes": 18526,
+          "score_cp": 101,
+          "bestmove": "e5c5"
+        },
+        {
+          "pos_name": "RookEnd_3",
+          "type": "rook_endgame",
+          "nodes": 15493,
+          "score_cp": -144,
+          "bestmove": "e4d4"
+        },
+        {
+          "pos_name": "RookEnd_4",
+          "type": "rook_endgame",
+          "nodes": 32334,
+          "score_cp": 174,
+          "bestmove": "c7c2"
+        },
+        {
+          "pos_name": "RookEnd_5",
+          "type": "rook_endgame",
+          "nodes": 31390,
+          "score_cp": -161,
+          "bestmove": "e4e5"
+        },
+        {
+          "pos_name": "PawnEnd_1",
+          "type": "pawn_endgame",
+          "nodes": 1885,
+          "score_cp": -2,
+          "bestmove": "f3f2"
+        },
+        {
+          "pos_name": "PawnEnd_2",
+          "type": "pawn_endgame",
+          "nodes": 1564,
+          "score_cp": -241,
+          "bestmove": "f3e2"
+        },
+        {
+          "pos_name": "PawnEnd_3",
+          "type": "pawn_endgame",
+          "nodes": 1038,
+          "score_cp": -241,
+          "bestmove": "e3f3"
+        },
+        {
+          "pos_name": "PawnEnd_4",
+          "type": "pawn_endgame",
+          "nodes": 1476,
+          "score_cp": -201,
+          "bestmove": "c3c2"
+        },
+        {
+          "pos_name": "PawnEnd_5",
+          "type": "pawn_endgame",
+          "nodes": 1446,
+          "score_cp": -60,
+          "bestmove": "e3d3"
+        }
+      ]
+    },
+    "B2_V2_Tapered": {
+      "total_nodes": 1988691,
+      "avg_nodes": 99434.55,
+      "elapsed_s": 1.984,
+      "positions": [
+        {
+          "pos_name": "Tactical_1",
+          "type": "tactical",
+          "nodes": 107862,
+          "score_cp": -37,
+          "bestmove": "c4d5"
+        },
+        {
+          "pos_name": "Tactical_2",
+          "type": "tactical",
+          "nodes": 210906,
+          "score_cp": -610,
+          "bestmove": "a7a6"
+        },
+        {
+          "pos_name": "Tactical_3",
+          "type": "tactical",
+          "nodes": 159587,
+          "score_cp": 16,
+          "bestmove": "d3b5"
+        },
+        {
+          "pos_name": "Tactical_4",
+          "type": "tactical",
+          "nodes": 282728,
+          "score_cp": -7,
+          "bestmove": "d1c2"
+        },
+        {
+          "pos_name": "Tactical_5",
+          "type": "tactical",
+          "nodes": 278023,
+          "score_cp": 5,
+          "bestmove": "f1e1"
+        },
+        {
+          "pos_name": "Queenless_1",
+          "type": "queenless",
+          "nodes": 189519,
+          "score_cp": -551,
+          "bestmove": "f3e5"
+        },
+        {
+          "pos_name": "Queenless_2",
+          "type": "queenless",
+          "nodes": 181750,
+          "score_cp": 25,
+          "bestmove": "f3e5"
+        },
+        {
+          "pos_name": "Queenless_3",
+          "type": "queenless",
+          "nodes": 163205,
+          "score_cp": 12,
+          "bestmove": "e1c1"
+        },
+        {
+          "pos_name": "Queenless_4",
+          "type": "queenless",
+          "nodes": 198979,
+          "score_cp": 263,
+          "bestmove": "f3e5"
+        },
+        {
+          "pos_name": "Queenless_5",
+          "type": "queenless",
+          "nodes": 133841,
+          "score_cp": 508,
+          "bestmove": "f3e5"
+        },
+        {
+          "pos_name": "RookEnd_1",
+          "type": "rook_endgame",
+          "nodes": 20954,
+          "score_cp": -115,
+          "bestmove": "g3h2"
+        },
+        {
+          "pos_name": "RookEnd_2",
+          "type": "rook_endgame",
+          "nodes": 7617,
+          "score_cp": 111,
+          "bestmove": "e5f5"
+        },
+        {
+          "pos_name": "RookEnd_3",
+          "type": "rook_endgame",
+          "nodes": 12250,
+          "score_cp": -97,
+          "bestmove": "g3h2"
+        },
+        {
+          "pos_name": "RookEnd_4",
+          "type": "rook_endgame",
+          "nodes": 22053,
+          "score_cp": 124,
+          "bestmove": "c7c4"
+        },
+        {
+          "pos_name": "RookEnd_5",
+          "type": "rook_endgame",
+          "nodes": 12657,
+          "score_cp": -97,
+          "bestmove": "g3h2"
+        },
+        {
+          "pos_name": "PawnEnd_1",
+          "type": "pawn_endgame",
+          "nodes": 1430,
+          "score_cp": 0,
+          "bestmove": "f3g2"
+        },
+        {
+          "pos_name": "PawnEnd_2",
+          "type": "pawn_endgame",
+          "nodes": 1403,
+          "score_cp": -110,
+          "bestmove": "f3g2"
+        },
+        {
+          "pos_name": "PawnEnd_3",
+          "type": "pawn_endgame",
+          "nodes": 908,
+          "score_cp": -110,
+          "bestmove": "e3f3"
+        },
+        {
+          "pos_name": "PawnEnd_4",
+          "type": "pawn_endgame",
+          "nodes": 1423,
+          "score_cp": -70,
+          "bestmove": "c3b2"
+        },
+        {
+          "pos_name": "PawnEnd_5",
+          "type": "pawn_endgame",
+          "nodes": 1596,
+          "score_cp": -15,
+          "bestmove": "e3d3"
+        }
+      ]
+    },
+    "B3_V3_Fixed": {
+      "total_nodes": 2359797,
+      "avg_nodes": 117989.85,
+      "elapsed_s": 2.479,
+      "positions": [
+        {
+          "pos_name": "Tactical_1",
+          "type": "tactical",
+          "nodes": 111485,
+          "score_cp": -48,
+          "bestmove": "c4d5"
+        },
+        {
+          "pos_name": "Tactical_2",
+          "type": "tactical",
+          "nodes": 239907,
+          "score_cp": -528,
+          "bestmove": "h7h6"
+        },
+        {
+          "pos_name": "Tactical_3",
+          "type": "tactical",
+          "nodes": 179668,
+          "score_cp": 10,
+          "bestmove": "d3b5"
+        },
+        {
+          "pos_name": "Tactical_4",
+          "type": "tactical",
+          "nodes": 305385,
+          "score_cp": -3,
+          "bestmove": "d3c2"
+        },
+        {
+          "pos_name": "Tactical_5",
+          "type": "tactical",
+          "nodes": 526595,
+          "score_cp": 23,
+          "bestmove": "h2h3"
+        },
+        {
+          "pos_name": "Queenless_1",
+          "type": "queenless",
+          "nodes": 165495,
+          "score_cp": -474,
+          "bestmove": "f3e5"
+        },
+        {
+          "pos_name": "Queenless_2",
+          "type": "queenless",
+          "nodes": 203774,
+          "score_cp": 13,
+          "bestmove": "e1g1"
+        },
+        {
+          "pos_name": "Queenless_3",
+          "type": "queenless",
+          "nodes": 144014,
+          "score_cp": 7,
+          "bestmove": "e1c1"
+        },
+        {
+          "pos_name": "Queenless_4",
+          "type": "queenless",
+          "nodes": 183594,
+          "score_cp": 203,
+          "bestmove": "f3e5"
+        },
+        {
+          "pos_name": "Queenless_5",
+          "type": "queenless",
+          "nodes": 138965,
+          "score_cp": 385,
+          "bestmove": "f3e5"
+        },
+        {
+          "pos_name": "RookEnd_1",
+          "type": "rook_endgame",
+          "nodes": 30596,
+          "score_cp": -111,
+          "bestmove": "b5c5"
+        },
+        {
+          "pos_name": "RookEnd_2",
+          "type": "rook_endgame",
+          "nodes": 37859,
+          "score_cp": 94,
+          "bestmove": "e5e8"
+        },
+        {
+          "pos_name": "RookEnd_3",
+          "type": "rook_endgame",
+          "nodes": 21182,
+          "score_cp": -109,
+          "bestmove": "e4c4"
+        },
+        {
+          "pos_name": "RookEnd_4",
+          "type": "rook_endgame",
+          "nodes": 34920,
+          "score_cp": 124,
+          "bestmove": "c7c1"
+        },
+        {
+          "pos_name": "RookEnd_5",
+          "type": "rook_endgame",
+          "nodes": 29134,
+          "score_cp": -109,
+          "bestmove": "e4c4"
+        },
+        {
+          "pos_name": "PawnEnd_1",
+          "type": "pawn_endgame",
+          "nodes": 2008,
+          "score_cp": -1,
+          "bestmove": "f3f2"
+        },
+        {
+          "pos_name": "PawnEnd_2",
+          "type": "pawn_endgame",
+          "nodes": 1264,
+          "score_cp": -154,
+          "bestmove": "f3f2"
+        },
+        {
+          "pos_name": "PawnEnd_3",
+          "type": "pawn_endgame",
+          "nodes": 913,
+          "score_cp": -154,
+          "bestmove": "e3f3"
+        },
+        {
+          "pos_name": "PawnEnd_4",
+          "type": "pawn_endgame",
+          "nodes": 1698,
+          "score_cp": -117,
+          "bestmove": "c3c2"
+        },
+        {
+          "pos_name": "PawnEnd_5",
+          "type": "pawn_endgame",
+          "nodes": 1341,
+          "score_cp": -77,
+          "bestmove": "e3d3"
+        }
+      ]
+    },
+    "B4_V3_Adaptive": {
+      "total_nodes": 2332214,
+      "avg_nodes": 116610.7,
+      "elapsed_s": 2.509,
+      "positions": [
+        {
+          "pos_name": "Tactical_1",
+          "type": "tactical",
+          "nodes": 125785,
+          "score_cp": -56,
+          "bestmove": "c4d5"
+        },
+        {
+          "pos_name": "Tactical_2",
+          "type": "tactical",
+          "nodes": 202882,
+          "score_cp": -639,
+          "bestmove": "a7a6"
+        },
+        {
+          "pos_name": "Tactical_3",
+          "type": "tactical",
+          "nodes": 189926,
+          "score_cp": 5,
+          "bestmove": "d3b5"
+        },
+        {
+          "pos_name": "Tactical_4",
+          "type": "tactical",
+          "nodes": 285045,
+          "score_cp": -3,
+          "bestmove": "d3c2"
+        },
+        {
+          "pos_name": "Tactical_5",
+          "type": "tactical",
+          "nodes": 508824,
+          "score_cp": 23,
+          "bestmove": "d1c2"
+        },
+        {
+          "pos_name": "Queenless_1",
+          "type": "queenless",
+          "nodes": 220989,
+          "score_cp": -576,
+          "bestmove": "f3e5"
+        },
+        {
+          "pos_name": "Queenless_2",
+          "type": "queenless",
+          "nodes": 230851,
+          "score_cp": 21,
+          "bestmove": "a2a3"
+        },
+        {
+          "pos_name": "Queenless_3",
+          "type": "queenless",
+          "nodes": 101137,
+          "score_cp": 9,
+          "bestmove": "a2a3"
+        },
+        {
+          "pos_name": "Queenless_4",
+          "type": "queenless",
+          "nodes": 188373,
+          "score_cp": 274,
+          "bestmove": "f3e5"
+        },
+        {
+          "pos_name": "Queenless_5",
+          "type": "queenless",
+          "nodes": 190790,
+          "score_cp": 533,
+          "bestmove": "f3e5"
+        },
+        {
+          "pos_name": "RookEnd_1",
+          "type": "rook_endgame",
+          "nodes": 24057,
+          "score_cp": -120,
+          "bestmove": "g3h2"
+        },
+        {
+          "pos_name": "RookEnd_2",
+          "type": "rook_endgame",
+          "nodes": 7618,
+          "score_cp": 122,
+          "bestmove": "e5f5"
+        },
+        {
+          "pos_name": "RookEnd_3",
+          "type": "rook_endgame",
+          "nodes": 12620,
+          "score_cp": -103,
+          "bestmove": "g3h2"
+        },
+        {
+          "pos_name": "RookEnd_4",
+          "type": "rook_endgame",
+          "nodes": 22646,
+          "score_cp": 127,
+          "bestmove": "c7c4"
+        },
+        {
+          "pos_name": "RookEnd_5",
+          "type": "rook_endgame",
+          "nodes": 13971,
+          "score_cp": -111,
+          "bestmove": "g3h2"
+        },
+        {
+          "pos_name": "PawnEnd_1",
+          "type": "pawn_endgame",
+          "nodes": 1369,
+          "score_cp": 0,
+          "bestmove": "f3g2"
+        },
+        {
+          "pos_name": "PawnEnd_2",
+          "type": "pawn_endgame",
+          "nodes": 1401,
+          "score_cp": -110,
+          "bestmove": "f3g2"
+        },
+        {
+          "pos_name": "PawnEnd_3",
+          "type": "pawn_endgame",
+          "nodes": 908,
+          "score_cp": -110,
+          "bestmove": "e3f3"
+        },
+        {
+          "pos_name": "PawnEnd_4",
+          "type": "pawn_endgame",
+          "nodes": 1423,
+          "score_cp": -70,
+          "bestmove": "c3b2"
+        },
+        {
+          "pos_name": "PawnEnd_5",
+          "type": "pawn_endgame",
+          "nodes": 1599,
+          "score_cp": -15,
+          "bestmove": "e3d3"
+        }
+      ]
+    }
+  },
+  "categories": {
+    "tactical": {
+      "B0_Classical_C1": 889609,
+      "B1_Neural_N1": 1027916,
+      "B2_V2_Tapered": 1039106,
+      "B3_V3_Fixed": 1363040,
+      "B4_V3_Adaptive": 1312462
+    },
+    "queenless": {
+      "B0_Classical_C1": 778661,
+      "B1_Neural_N1": 1010223,
+      "B2_V2_Tapered": 867294,
+      "B3_V3_Fixed": 835842,
+      "B4_V3_Adaptive": 932140
+    },
+    "rook_endgame": {
+      "B0_Classical_C1": 74346,
+      "B1_Neural_N1": 132055,
+      "B2_V2_Tapered": 75531,
+      "B3_V3_Fixed": 153691,
+      "B4_V3_Adaptive": 80912
+    },
+    "pawn_endgame": {
+      "B0_Classical_C1": 6731,
+      "B1_Neural_N1": 7409,
+      "B2_V2_Tapered": 6760,
+      "B3_V3_Fixed": 7224,
+      "B4_V3_Adaptive": 6700
+    }
+  }
+}

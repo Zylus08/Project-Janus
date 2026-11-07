@@ -1,0 +1,47 @@
+{
+  "system": {
+    "cpu": "Intel/AMD x86_64 with AVX2/FMA/BMI2",
+    "compiler": "MSVC 19.43.34808.0",
+    "flags": "/O2 /W4 /std:c++17 /EHsc /arch:AVX2",
+    "iterations_per_test": 1000000
+  },
+  "models": {
+    "v2_small": {
+      "model_path": "analysis/v0.61/models/janus_nnue_v2_small.jnnue",
+      "arch_id": 1,
+      "accum_dim": 64,
+      "l1_dim": 16,
+      "startpos_eval_scalar_cp": 16,
+      "startpos_eval_avx2_cp": 16,
+      "parity_full_refresh": "Bit-Exact",
+      "parity_eval": "Bit-Exact",
+      "parity_incremental": "Bit-Exact",
+      "benchmarks": {
+        "full_refresh_ns": { "scalar": 5140.80, "avx2": 304.91, "speedup": 16.86 },
+        "incremental_update_ns": { "scalar": 134.19, "avx2": 15.00, "speedup": 8.95 },
+        "feedforward_inference_ns": { "scalar": 490.62, "avx2": 113.36, "speedup": 4.33 },
+        "end_to_end_leaf_latency_ns": { "scalar": 624.81, "avx2": 128.36, "speedup": 4.87 },
+        "isolated_throughput_evals_per_sec": { "scalar": 1600490, "avx2": 7790690, "speedup": 4.87 }
+      }
+    },
+    "v2_compact": {
+      "model_path": "analysis/v0.61/models/janus_nnue_v2_compact.jnnue",
+      "arch_id": 2,
+      "accum_dim": 128,
+      "l1_dim": 32,
+      "startpos_eval_scalar_cp": 19,
+      "startpos_eval_avx2_cp": 19,
+      "parity_full_refresh": "Bit-Exact",
+      "parity_eval": "Bit-Exact",
+      "parity_incremental": "Bit-Exact",
+      "benchmarks": {
+        "full_refresh_ns": { "scalar": 6113.37, "avx2": 416.34, "speedup": 14.68 },
+        "incremental_update_ns": { "scalar": 220.50, "avx2": 23.20, "speedup": 9.50 },
+        "feedforward_inference_ns": { "scalar": 1293.09, "avx2": 272.34, "speedup": 4.75 },
+        "end_to_end_leaf_latency_ns": { "scalar": 1513.59, "avx2": 295.54, "speedup": 5.12 },
+        "isolated_throughput_evals_per_sec": { "scalar": 660683, "avx2": 3383650, "speedup": 5.12 }
+      }
+    }
+  }
+}
+

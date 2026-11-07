@@ -1,0 +1,51 @@
+{
+  "dataset_name": "janus_nnue_v2_dataset",
+  "milestone": "v0.61",
+  "total_positions": 100000,
+  "splits": {
+    "train": {
+      "count": 80000,
+      "file": "value_v2_train.json",
+      "sha256": "36ebb3f3ffa3571d9124705ceb928b0018e0593cda150d6dd2ae7e7e21902018",
+      "phases": {
+        "opening": 13636,
+        "middlegame": 44616,
+        "endgame": 21748
+      },
+      "mean_abs_sf_score": 209.0331625
+    },
+    "val": {
+      "count": 10000,
+      "file": "value_v2_val.json",
+      "sha256": "4d62a0d93fe75eb35301283fbd19fb8f442cdc69afe6e2e1e69fb872fac43f66",
+      "phases": {
+        "opening": 1610,
+        "middlegame": 5687,
+        "endgame": 2703
+      },
+      "mean_abs_sf_score": 201.2956
+    },
+    "test": {
+      "count": 10000,
+      "file": "value_v2_test.json",
+      "sha256": "9357dcba887057a53da3a777efa964e52f02efc96880879d6022faa48dc99b8c",
+      "phases": {
+        "opening": 1529,
+        "middlegame": 5777,
+        "endgame": 2694
+      },
+      "mean_abs_sf_score": 203.8949
+    }
+  },
+  "teacher": {
+    "engine": "Stockfish 19",
+    "sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+    "nodes_per_position": 10000,
+    "uci_options": {
+      "Threads": 1,
+      "Hash": 16
+    }
+  },
+  "disjointness_verified": true,
+  "leakage_count": 0
+}

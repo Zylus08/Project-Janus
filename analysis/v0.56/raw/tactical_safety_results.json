@@ -1,0 +1,4066 @@
+{
+  "tactical_regression": {
+    "suite_name": "tactical_regression",
+    "positions_count": 12,
+    "s3_vs_s0_agreement_count": 12,
+    "s3_vs_s0_agreement_pct": 100.0,
+    "totals": {
+      "s0": {
+        "nodes": 296560,
+        "solved": 4
+      },
+      "s1": {
+        "nodes": 268789,
+        "solved": 4
+      },
+      "s2": {
+        "nodes": 288219,
+        "solved": 4
+      },
+      "s3": {
+        "nodes": 268789,
+        "solved": 4
+      }
+    },
+    "positions": [
+      {
+        "id": "tac_01_mate_in_2",
+        "fen": "r2qkb1r/pp2nppp/3p4/2pNN1B1/2BnP3/3P4/PPP2PPP/R2bK2R w KQkq - 1 9",
+        "expected_move": "d5f6",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "d5f6",
+            "score_cp": 28997,
+            "nodes": 44670,
+            "elapsed_ms": 63.22399998316541,
+            "pv": [
+              "d5f6",
+              "g7f6",
+              "c4f7"
+            ],
+            "solved": true
+          },
+          "s1": {
+            "best_move": "d5f6",
+            "score_cp": 28997,
+            "nodes": 33820,
+            "elapsed_ms": 37.28420002153143,
+            "pv": [
+              "d5f6",
+              "g7f6",
+              "c4f7"
+            ],
+            "solved": true
+          },
+          "s2": {
+            "best_move": "d5f6",
+            "score_cp": 28997,
+            "nodes": 42844,
+            "elapsed_ms": 60.35159999737516,
+            "pv": [
+              "d5f6",
+              "g7f6",
+              "c4f7"
+            ],
+            "solved": true
+          },
+          "s3": {
+            "best_move": "d5f6",
+            "score_cp": 28997,
+            "nodes": 33820,
+            "elapsed_ms": 36.698499985504895,
+            "pv": [
+              "d5f6",
+              "g7f6",
+              "c4f7"
+            ],
+            "solved": true
+          }
+        }
+      },
+      {
+        "id": "tac_02_hanging_piece",
+        "fen": "r1bqk2r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "expected_move": "d1d5",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "c4f7",
+            "score_cp": 30,
+            "nodes": 38677,
+            "elapsed_ms": 63.51289997110143,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7f8",
+              "d5e4"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "c4f7",
+            "score_cp": 30,
+            "nodes": 33542,
+            "elapsed_ms": 61.41120003303513,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7f8",
+              "d5e4"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "c4f7",
+            "score_cp": 30,
+            "nodes": 38341,
+            "elapsed_ms": 72.45129998773336,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7f8",
+              "d5e4"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "c4f7",
+            "score_cp": 30,
+            "nodes": 33542,
+            "elapsed_ms": 58.79859998822212,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7f8",
+              "d5e4"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "tac_03_pin_tactic",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "expected_move": "d3h7",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "h1h5",
+            "score_cp": 405,
+            "nodes": 57038,
+            "elapsed_ms": 100.73849995387718,
+            "pv": [
+              "h1h5",
+              "e6e5",
+              "d4e5",
+              "c7b6",
+              "h5h7"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "h1h5",
+            "score_cp": 405,
+            "nodes": 53639,
+            "elapsed_ms": 93.4144000057131,
+            "pv": [
+              "h1h5",
+              "e6e5",
+              "d4e5",
+              "c7b6",
+              "h5h7"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "h1h5",
+            "score_cp": 405,
+            "nodes": 55655,
+            "elapsed_ms": 111.83280003024265,
+            "pv": [
+              "h1h5",
+              "e6e5",
+              "d4e5",
+              "c7b6",
+              "h5h7"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "h1h5",
+            "score_cp": 405,
+            "nodes": 53639,
+            "elapsed_ms": 94.50589999323711,
+            "pv": [
+              "h1h5",
+              "e6e5",
+              "d4e5",
+              "c7b6",
+              "h5h7"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "tac_04_knight_fork",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "expected_move": "e4d6",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "e4c3",
+            "score_cp": 350,
+            "nodes": 33431,
+            "elapsed_ms": 49.50229998212308,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "c8f5",
+              "d1f3"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "e4c3",
+            "score_cp": 350,
+            "nodes": 27423,
+            "elapsed_ms": 41.05229995911941,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "c8f5",
+              "d1f3"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "e4c3",
+            "score_cp": 350,
+            "nodes": 32892,
+            "elapsed_ms": 54.39529998693615,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "c8f5",
+              "d1f3"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "e4c3",
+            "score_cp": 350,
+            "nodes": 27423,
+            "elapsed_ms": 41.04290000395849,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "c8f5",
+              "d1f3"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "tac_05_skewer",
+        "fen": "8/8/4k3/8/8/1R6/2K4r/8 w - - 1 1",
+        "expected_move": "c2c3",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "c2b1",
+            "score_cp": 15,
+            "nodes": 3514,
+            "elapsed_ms": 3.6521999863907695,
+            "pv": [
+              "c2b1",
+              "e6f7",
+              "b3g3",
+              "f7f8",
+              "g3g1"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "c2b1",
+            "score_cp": 15,
+            "nodes": 3514,
+            "elapsed_ms": 3.5700000007636845,
+            "pv": [
+              "c2b1",
+              "e6f7",
+              "b3g3",
+              "f7f8",
+              "g3g1"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "c2b1",
+            "score_cp": 15,
+            "nodes": 3514,
+            "elapsed_ms": 3.4394999966025352,
+            "pv": [
+              "c2b1",
+              "e6f7",
+              "b3g3",
+              "f7f8",
+              "g3g1"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "c2b1",
+            "score_cp": 15,
+            "nodes": 3514,
+            "elapsed_ms": 3.437899984419346,
+            "pv": [
+              "c2b1",
+              "e6f7",
+              "b3g3",
+              "f7f8",
+              "g3g1"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "tac_06_discovered_attack",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "expected_move": "d4c5",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "f3e5",
+            "score_cp": 5,
+            "nodes": 49298,
+            "elapsed_ms": 84.31250002468005,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "d1b3",
+              "c6e5",
+              "d4e5"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "f3e5",
+            "score_cp": 5,
+            "nodes": 46104,
+            "elapsed_ms": 86.28019999014214,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "d1b3",
+              "c6e5",
+              "d4e5"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "f3e5",
+            "score_cp": 5,
+            "nodes": 46373,
+            "elapsed_ms": 82.7350999461487,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "d1b3",
+              "c6e5",
+              "d4e5"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "f3e5",
+            "score_cp": 5,
+            "nodes": 46104,
+            "elapsed_ms": 85.4090999928303,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "d1b3",
+              "c6e5",
+              "d4e5"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "tac_07_defensive_resource",
+        "fen": "r1b1k2r/pppp1ppp/8/4q3/1bP5/4P3/PP1N1PPP/R2QKB1R w KQkq - 0 9",
+        "expected_move": "a1b1",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "a2a3",
+            "score_cp": -20,
+            "nodes": 27224,
+            "elapsed_ms": 51.72279995167628,
+            "pv": [
+              "a2a3",
+              "b4c5",
+              "d2b3",
+              "d7d6",
+              "b3c5"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "a2a3",
+            "score_cp": -20,
+            "nodes": 27842,
+            "elapsed_ms": 62.324400001671165,
+            "pv": [
+              "a2a3",
+              "b4e7",
+              "d1c2",
+              "e7f6",
+              "a1b1"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "a2a3",
+            "score_cp": -20,
+            "nodes": 26596,
+            "elapsed_ms": 54.396299994550645,
+            "pv": [
+              "a2a3",
+              "b4c5",
+              "d2b3",
+              "d7d6",
+              "b3c5"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "a2a3",
+            "score_cp": -20,
+            "nodes": 27842,
+            "elapsed_ms": 59.162700024899095,
+            "pv": [
+              "a2a3",
+              "b4e7",
+              "d1c2",
+              "e7f6",
+              "a1b1"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "tac_08_promotion_tactic",
+        "fen": "8/5P2/8/8/8/6k1/8/6K1 w - - 0 1",
+        "expected_move": "f7f8q",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "f7f8q",
+            "score_cp": 965,
+            "nodes": 1316,
+            "elapsed_ms": 1.1295999865978956,
+            "pv": [
+              "f7f8q",
+              "g3g4",
+              "f8c5",
+              "g4h3",
+              "c5e3"
+            ],
+            "solved": true
+          },
+          "s1": {
+            "best_move": "f7f8q",
+            "score_cp": 965,
+            "nodes": 1316,
+            "elapsed_ms": 0.8187000057660043,
+            "pv": [
+              "f7f8q",
+              "g3g4",
+              "f8c5",
+              "g4h3",
+              "c5e3"
+            ],
+            "solved": true
+          },
+          "s2": {
+            "best_move": "f7f8q",
+            "score_cp": 965,
+            "nodes": 1316,
+            "elapsed_ms": 0.7317000417970121,
+            "pv": [
+              "f7f8q",
+              "g3g4",
+              "f8c5",
+              "g4h3",
+              "c5e3"
+            ],
+            "solved": true
+          },
+          "s3": {
+            "best_move": "f7f8q",
+            "score_cp": 965,
+            "nodes": 1316,
+            "elapsed_ms": 0.7113999454304576,
+            "pv": [
+              "f7f8q",
+              "g3g4",
+              "f8c5",
+              "g4h3",
+              "c5e3"
+            ],
+            "solved": true
+          }
+        }
+      },
+      {
+        "id": "tac_09_en_passant_tactic",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "expected_move": "d5e6",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "d5e6",
+            "score_cp": 925,
+            "nodes": 569,
+            "elapsed_ms": 0.3521000035107136,
+            "pv": [
+              "d5e6",
+              "h1h2",
+              "e6e7",
+              "h2h1",
+              "e7e8q"
+            ],
+            "solved": true
+          },
+          "s1": {
+            "best_move": "d5e6",
+            "score_cp": 925,
+            "nodes": 569,
+            "elapsed_ms": 0.341000035405159,
+            "pv": [
+              "d5e6",
+              "h1h2",
+              "e6e7",
+              "h2h1",
+              "e7e8q"
+            ],
+            "solved": true
+          },
+          "s2": {
+            "best_move": "d5e6",
+            "score_cp": 925,
+            "nodes": 569,
+            "elapsed_ms": 0.27760001830756664,
+            "pv": [
+              "d5e6",
+              "h1h2",
+              "e6e7",
+              "h2h1",
+              "e7e8q"
+            ],
+            "solved": true
+          },
+          "s3": {
+            "best_move": "d5e6",
+            "score_cp": 925,
+            "nodes": 569,
+            "elapsed_ms": 0.25949999690055847,
+            "pv": [
+              "d5e6",
+              "h1h2",
+              "e6e7",
+              "h2h1",
+              "e7e8q"
+            ],
+            "solved": true
+          }
+        }
+      },
+      {
+        "id": "tac_10_check_evasion",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4P3/2B1n3/8/PPP2PPP/RNBQK1NR w KQkq - 1 5",
+        "expected_move": "d1d5",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "c4f7",
+            "score_cp": 105,
+            "nodes": 33699,
+            "elapsed_ms": 53.87830000836402,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7e7",
+              "d5e4"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "c4f7",
+            "score_cp": 105,
+            "nodes": 34104,
+            "elapsed_ms": 57.76480003260076,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7e7",
+              "d5e4"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "c4f7",
+            "score_cp": 105,
+            "nodes": 32995,
+            "elapsed_ms": 57.220399961806834,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7e7",
+              "d5e4"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "c4f7",
+            "score_cp": 105,
+            "nodes": 34104,
+            "elapsed_ms": 56.749099981971085,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7e7",
+              "d5e4"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "tac_11_stalemate_avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "expected_move": "b6a6",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "b6a6",
+            "score_cp": 0,
+            "nodes": 64,
+            "elapsed_ms": 0.08699996396899223,
+            "pv": [
+              "b6a6"
+            ],
+            "solved": true
+          },
+          "s1": {
+            "best_move": "b6a6",
+            "score_cp": 0,
+            "nodes": 64,
+            "elapsed_ms": 0.08330005221068859,
+            "pv": [
+              "b6a6"
+            ],
+            "solved": true
+          },
+          "s2": {
+            "best_move": "b6a6",
+            "score_cp": 0,
+            "nodes": 64,
+            "elapsed_ms": 0.05139998393133283,
+            "pv": [
+              "b6a6"
+            ],
+            "solved": true
+          },
+          "s3": {
+            "best_move": "b6a6",
+            "score_cp": 0,
+            "nodes": 64,
+            "elapsed_ms": 0.052900053560733795,
+            "pv": [
+              "b6a6"
+            ],
+            "solved": true
+          }
+        }
+      },
+      {
+        "id": "tac_12_hanging_rook",
+        "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+        "expected_move": "a1a7",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "a1d1",
+            "score_cp": 0,
+            "nodes": 7060,
+            "elapsed_ms": 5.604400008451194,
+            "pv": [
+              "a1d1",
+              "h7h6",
+              "h2h3",
+              "e8e2",
+              "d1d7"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "a1d1",
+            "score_cp": 0,
+            "nodes": 6852,
+            "elapsed_ms": 5.791699979454279,
+            "pv": [
+              "a1d1",
+              "h7h6",
+              "h2h3",
+              "e8e2",
+              "d1d7"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "a1d1",
+            "score_cp": 0,
+            "nodes": 7060,
+            "elapsed_ms": 5.839700053911656,
+            "pv": [
+              "a1d1",
+              "h7h6",
+              "h2h3",
+              "e8e2",
+              "d1d7"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "a1d1",
+            "score_cp": 0,
+            "nodes": 6852,
+            "elapsed_ms": 5.619400006253272,
+            "pv": [
+              "a1d1",
+              "h7h6",
+              "h2h3",
+              "e8e2",
+              "d1d7"
+            ],
+            "solved": false
+          }
+        }
+      }
+    ]
+  },
+  "validation": {
+    "suite_name": "validation",
+    "positions_count": 16,
+    "s3_vs_s0_agreement_count": 16,
+    "s3_vs_s0_agreement_pct": 100.0,
+    "totals": {
+      "s0": {
+        "nodes": 332873,
+        "solved": 3
+      },
+      "s1": {
+        "nodes": 301012,
+        "solved": 3
+      },
+      "s2": {
+        "nodes": 323424,
+        "solved": 3
+      },
+      "s3": {
+        "nodes": 301012,
+        "solved": 3
+      }
+    },
+    "positions": [
+      {
+        "id": "val_01_tactical_fork",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "expected_move": "d1d5",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "c4f7",
+            "score_cp": -280,
+            "nodes": 38799,
+            "elapsed_ms": 64.42579999566078,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7e7",
+              "d5e4"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "c4f7",
+            "score_cp": -280,
+            "nodes": 31219,
+            "elapsed_ms": 57.3185000102967,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7e7",
+              "d5e4"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "c4f7",
+            "score_cp": -280,
+            "nodes": 38464,
+            "elapsed_ms": 69.07379999756813,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7e7",
+              "d5e4"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "c4f7",
+            "score_cp": -280,
+            "nodes": 31219,
+            "elapsed_ms": 55.93679996673018,
+            "pv": [
+              "c4f7",
+              "e8f7",
+              "d1d5",
+              "f7e7",
+              "d5e4"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "val_02_quiet_positional",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "expected_move": "e1g1",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "d1c2",
+            "score_cp": -5,
+            "nodes": 54153,
+            "elapsed_ms": 98.87919999891892,
+            "pv": [
+              "d1c2",
+              "c5c4",
+              "d3e2",
+              "c8d7",
+              "e3e4"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "d1c2",
+            "score_cp": -5,
+            "nodes": 51062,
+            "elapsed_ms": 99.84270000131801,
+            "pv": [
+              "d1c2",
+              "c5c4",
+              "d3e2",
+              "c8d7",
+              "e3e4"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "d1c2",
+            "score_cp": -5,
+            "nodes": 50959,
+            "elapsed_ms": 95.96700000111014,
+            "pv": [
+              "d1c2",
+              "c5c4",
+              "d3e2",
+              "c8d7",
+              "e3e4"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "d1c2",
+            "score_cp": -5,
+            "nodes": 51062,
+            "elapsed_ms": 99.43270002258942,
+            "pv": [
+              "d1c2",
+              "c5c4",
+              "d3e2",
+              "c8d7",
+              "e3e4"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "val_03_king_safety",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "expected_move": "e1g1",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "e4c3",
+            "score_cp": 350,
+            "nodes": 33431,
+            "elapsed_ms": 49.037199991289526,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "c8f5",
+              "d1f3"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "e4c3",
+            "score_cp": 350,
+            "nodes": 27423,
+            "elapsed_ms": 40.44960002647713,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "c8f5",
+              "d1f3"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "e4c3",
+            "score_cp": 350,
+            "nodes": 32892,
+            "elapsed_ms": 75.785499997437,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "c8f5",
+              "d1f3"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "e4c3",
+            "score_cp": 350,
+            "nodes": 27423,
+            "elapsed_ms": 62.06549995113164,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "c8f5",
+              "d1f3"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "val_04_pawn_endgame",
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "expected_move": "e3f4",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "e3f2",
+            "score_cp": 0,
+            "nodes": 1895,
+            "elapsed_ms": 1.4651999808847904,
+            "pv": [
+              "e3f2",
+              "e6f6",
+              "f2g1",
+              "f6g7",
+              "g1h1"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "e3f2",
+            "score_cp": 0,
+            "nodes": 1895,
+            "elapsed_ms": 1.6847000224515796,
+            "pv": [
+              "e3f2",
+              "e6f6",
+              "f2g1",
+              "f6g7",
+              "g1h1"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "e3f2",
+            "score_cp": 0,
+            "nodes": 1895,
+            "elapsed_ms": 1.714699959848076,
+            "pv": [
+              "e3f2",
+              "e6f6",
+              "f2g1",
+              "f6g7",
+              "g1h1"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "e3f2",
+            "score_cp": 0,
+            "nodes": 1895,
+            "elapsed_ms": 0.9948999504558742,
+            "pv": [
+              "e3f2",
+              "e6f6",
+              "f2g1",
+              "f6g7",
+              "g1h1"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "val_05_rook_endgame",
+        "fen": "8/8/4k3/R7/8/8/2K4r/8 w - - 1 1",
+        "expected_move": "c2d3",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "c2b1",
+            "score_cp": 15,
+            "nodes": 4254,
+            "elapsed_ms": 3.5658000269904733,
+            "pv": [
+              "c2b1",
+              "e6f7",
+              "a5g5",
+              "f7f8",
+              "g5g1"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "c2b1",
+            "score_cp": 15,
+            "nodes": 4254,
+            "elapsed_ms": 4.709900007583201,
+            "pv": [
+              "c2b1",
+              "e6f7",
+              "a5g5",
+              "f7f8",
+              "g5g1"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "c2b1",
+            "score_cp": 15,
+            "nodes": 4254,
+            "elapsed_ms": 6.142900034319609,
+            "pv": [
+              "c2b1",
+              "e6f7",
+              "a5g5",
+              "f7f8",
+              "g5g1"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "c2b1",
+            "score_cp": 15,
+            "nodes": 4254,
+            "elapsed_ms": 5.950199963990599,
+            "pv": [
+              "c2b1",
+              "e6f7",
+              "a5g5",
+              "f7f8",
+              "g5g1"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "val_06_minor_piece_endgame",
+        "fen": "8/8/4k3/3b4/8/4B3/4K3/8 w - - 0 1",
+        "expected_move": "e2d3",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "e2f1",
+            "score_cp": 0,
+            "nodes": 6609,
+            "elapsed_ms": 6.648299982771277,
+            "pv": [
+              "e2f1",
+              "e6f7",
+              "f1g1",
+              "f7g8",
+              "e3d4"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "e2f1",
+            "score_cp": 0,
+            "nodes": 6609,
+            "elapsed_ms": 7.463800022378564,
+            "pv": [
+              "e2f1",
+              "e6f7",
+              "f1g1",
+              "f7g8",
+              "e3d4"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "e2f1",
+            "score_cp": 0,
+            "nodes": 6609,
+            "elapsed_ms": 7.672399980947375,
+            "pv": [
+              "e2f1",
+              "e6f7",
+              "f1g1",
+              "f7g8",
+              "e3d4"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "e2f1",
+            "score_cp": 0,
+            "nodes": 6609,
+            "elapsed_ms": 6.818099995143712,
+            "pv": [
+              "e2f1",
+              "e6f7",
+              "f1g1",
+              "f7g8",
+              "e3d4"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "val_07_pawn_promotion",
+        "fen": "8/4P3/8/8/8/6k1/8/6K1 w - - 0 1",
+        "expected_move": "e7e8q",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "e7e8q",
+            "score_cp": 965,
+            "nodes": 1557,
+            "elapsed_ms": 1.4356999890878797,
+            "pv": [
+              "e7e8q",
+              "g3h4",
+              "e8e5",
+              "h4h3",
+              "e5c3"
+            ],
+            "solved": true
+          },
+          "s1": {
+            "best_move": "e7e8q",
+            "score_cp": 965,
+            "nodes": 1557,
+            "elapsed_ms": 1.260699995327741,
+            "pv": [
+              "e7e8q",
+              "g3h4",
+              "e8e5",
+              "h4h3",
+              "e5c3"
+            ],
+            "solved": true
+          },
+          "s2": {
+            "best_move": "e7e8q",
+            "score_cp": 965,
+            "nodes": 1557,
+            "elapsed_ms": 0.9598999749869108,
+            "pv": [
+              "e7e8q",
+              "g3h4",
+              "e8e5",
+              "h4h3",
+              "e5c3"
+            ],
+            "solved": true
+          },
+          "s3": {
+            "best_move": "e7e8q",
+            "score_cp": 965,
+            "nodes": 1557,
+            "elapsed_ms": 0.9453000384382904,
+            "pv": [
+              "e7e8q",
+              "g3h4",
+              "e8e5",
+              "h4h3",
+              "e5c3"
+            ],
+            "solved": true
+          }
+        }
+      },
+      {
+        "id": "val_08_kingside_castling",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "expected_move": "e1g1",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "d2d3",
+            "score_cp": 10,
+            "nodes": 41230,
+            "elapsed_ms": 88.31790002295747,
+            "pv": [
+              "d2d3",
+              "d7d6",
+              "c1e3",
+              "c8g4",
+              "d1e2"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "d2d3",
+            "score_cp": 10,
+            "nodes": 34087,
+            "elapsed_ms": 67.50250002369285,
+            "pv": [
+              "d2d3",
+              "d7d6",
+              "c1e3",
+              "c8g4",
+              "d1e2"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "d2d3",
+            "score_cp": 10,
+            "nodes": 41006,
+            "elapsed_ms": 90.79569997265935,
+            "pv": [
+              "d2d3",
+              "d7d6",
+              "c1e3",
+              "c8g4",
+              "d1e2"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "d2d3",
+            "score_cp": 10,
+            "nodes": 34087,
+            "elapsed_ms": 67.68400000873953,
+            "pv": [
+              "d2d3",
+              "d7d6",
+              "c1e3",
+              "c8g4",
+              "d1e2"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "val_09_en_passant_execution",
+        "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+        "expected_move": "d5e6",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "d5e6",
+            "score_cp": 925,
+            "nodes": 569,
+            "elapsed_ms": 0.505999953020364,
+            "pv": [
+              "d5e6",
+              "h1h2",
+              "e6e7",
+              "h2h1",
+              "e7e8q"
+            ],
+            "solved": true
+          },
+          "s1": {
+            "best_move": "d5e6",
+            "score_cp": 925,
+            "nodes": 569,
+            "elapsed_ms": 0.32699998700991273,
+            "pv": [
+              "d5e6",
+              "h1h2",
+              "e6e7",
+              "h2h1",
+              "e7e8q"
+            ],
+            "solved": true
+          },
+          "s2": {
+            "best_move": "d5e6",
+            "score_cp": 925,
+            "nodes": 569,
+            "elapsed_ms": 0.2911000046879053,
+            "pv": [
+              "d5e6",
+              "h1h2",
+              "e6e7",
+              "h2h1",
+              "e7e8q"
+            ],
+            "solved": true
+          },
+          "s3": {
+            "best_move": "d5e6",
+            "score_cp": 925,
+            "nodes": 569,
+            "elapsed_ms": 0.2859999658539891,
+            "pv": [
+              "d5e6",
+              "h1h2",
+              "e6e7",
+              "h2h1",
+              "e7e8q"
+            ],
+            "solved": true
+          }
+        }
+      },
+      {
+        "id": "val_10_stalemate_avoidance",
+        "fen": "k7/P7/1K6/8/8/8/8/8 w - - 0 1",
+        "expected_move": "b6a6",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "b6a6",
+            "score_cp": 0,
+            "nodes": 64,
+            "elapsed_ms": 0.05470000905916095,
+            "pv": [
+              "b6a6"
+            ],
+            "solved": true
+          },
+          "s1": {
+            "best_move": "b6a6",
+            "score_cp": 0,
+            "nodes": 64,
+            "elapsed_ms": 0.05069997860118747,
+            "pv": [
+              "b6a6"
+            ],
+            "solved": true
+          },
+          "s2": {
+            "best_move": "b6a6",
+            "score_cp": 0,
+            "nodes": 64,
+            "elapsed_ms": 0.0467000063508749,
+            "pv": [
+              "b6a6"
+            ],
+            "solved": true
+          },
+          "s3": {
+            "best_move": "b6a6",
+            "score_cp": 0,
+            "nodes": 64,
+            "elapsed_ms": 0.08149998029693961,
+            "pv": [
+              "b6a6"
+            ],
+            "solved": true
+          }
+        }
+      },
+      {
+        "id": "val_11_check_evasion",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 1 6",
+        "expected_move": "e8g8",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "d8f6",
+            "score_cp": -170,
+            "nodes": 27364,
+            "elapsed_ms": 39.629300008527935,
+            "pv": [
+              "d8f6",
+              "b5c6",
+              "d7c6",
+              "d1d4",
+              "c8f5"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "d8f6",
+            "score_cp": -170,
+            "nodes": 26607,
+            "elapsed_ms": 42.92460001306608,
+            "pv": [
+              "d8f6",
+              "b5c6",
+              "d7c6",
+              "d1d4",
+              "c8f5"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "d8f6",
+            "score_cp": -170,
+            "nodes": 26543,
+            "elapsed_ms": 41.46870004478842,
+            "pv": [
+              "d8f6",
+              "b5c6",
+              "d7c6",
+              "d1d4",
+              "c8f5"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "d8f6",
+            "score_cp": -170,
+            "nodes": 26607,
+            "elapsed_ms": 42.20510000595823,
+            "pv": [
+              "d8f6",
+              "b5c6",
+              "d7c6",
+              "d1d4",
+              "c8f5"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "val_12_repetition_sensitive",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+        "expected_move": "d7d5",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "b8c6",
+            "score_cp": 0,
+            "nodes": 10017,
+            "elapsed_ms": 10.795300011523068,
+            "pv": [
+              "b8c6",
+              "b1c3",
+              "g8f6",
+              "d2d4",
+              "d7d5"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "b8c6",
+            "score_cp": 0,
+            "nodes": 9328,
+            "elapsed_ms": 10.053700010757893,
+            "pv": [
+              "b8c6",
+              "b1c3",
+              "g8f6",
+              "d2d4",
+              "d7d5"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "b8c6",
+            "score_cp": 0,
+            "nodes": 9989,
+            "elapsed_ms": 12.094599951524287,
+            "pv": [
+              "b8c6",
+              "b1c3",
+              "g8f6",
+              "d2d4",
+              "d7d5"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "b8c6",
+            "score_cp": 0,
+            "nodes": 9328,
+            "elapsed_ms": 10.236000001896173,
+            "pv": [
+              "b8c6",
+              "b1c3",
+              "g8f6",
+              "d2d4",
+              "d7d5"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "val_13_fifty_move_draw_sensitive",
+        "fen": "8/8/4k3/8/8/4K3/8/8 w - - 99 50",
+        "expected_move": "e3e4",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "e3d2",
+            "score_cp": 0,
+            "nodes": 45,
+            "elapsed_ms": 0.05770003190264106,
+            "pv": [
+              "e3d2"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "e3d2",
+            "score_cp": 0,
+            "nodes": 45,
+            "elapsed_ms": 0.037999998312443495,
+            "pv": [
+              "e3d2"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "e3d2",
+            "score_cp": 0,
+            "nodes": 45,
+            "elapsed_ms": 0.031200004741549492,
+            "pv": [
+              "e3d2"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "e3d2",
+            "score_cp": 0,
+            "nodes": 45,
+            "elapsed_ms": 0.027200032491236925,
+            "pv": [
+              "e3d2"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "val_14_tactical_pin",
+        "fen": "r1b1k2r/ppq2ppp/2n1p3/3p4/3P4/2PB1NP1/PP1NQPP1/R3K2R w KQkq - 0 12",
+        "expected_move": "d3h7",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "h1h5",
+            "score_cp": 405,
+            "nodes": 57038,
+            "elapsed_ms": 101.85579996323213,
+            "pv": [
+              "h1h5",
+              "e6e5",
+              "d4e5",
+              "c7b6",
+              "h5h7"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "h1h5",
+            "score_cp": 405,
+            "nodes": 53639,
+            "elapsed_ms": 94.1533999866806,
+            "pv": [
+              "h1h5",
+              "e6e5",
+              "d4e5",
+              "c7b6",
+              "h5h7"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "h1h5",
+            "score_cp": 405,
+            "nodes": 55655,
+            "elapsed_ms": 111.08239996246994,
+            "pv": [
+              "h1h5",
+              "e6e5",
+              "d4e5",
+              "c7b6",
+              "h5h7"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "h1h5",
+            "score_cp": 405,
+            "nodes": 53639,
+            "elapsed_ms": 90.69510002154857,
+            "pv": [
+              "h1h5",
+              "e6e5",
+              "d4e5",
+              "c7b6",
+              "h5h7"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "val_15_queen_endgame",
+        "fen": "8/8/4k3/3q4/8/4Q3/4K3/8 b - - 0 1",
+        "expected_move": "e6d6",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "e6f7",
+            "score_cp": 0,
+            "nodes": 6550,
+            "elapsed_ms": 6.282599992118776,
+            "pv": [
+              "e6f7",
+              "e3f3",
+              "d5f3",
+              "e2f3"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "e6f7",
+            "score_cp": 0,
+            "nodes": 6550,
+            "elapsed_ms": 6.331400014460087,
+            "pv": [
+              "e6f7",
+              "e3f3",
+              "d5f3",
+              "e2f3"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "e6f7",
+            "score_cp": 0,
+            "nodes": 6550,
+            "elapsed_ms": 6.3643999747000635,
+            "pv": [
+              "e6f7",
+              "e3f3",
+              "d5f3",
+              "e2f3"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "e6f7",
+            "score_cp": 0,
+            "nodes": 6550,
+            "elapsed_ms": 6.761099968571216,
+            "pv": [
+              "e6f7",
+              "e3f3",
+              "d5f3",
+              "e2f3"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "val_16_discovered_attack",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "expected_move": "d4c5",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "f3e5",
+            "score_cp": 5,
+            "nodes": 49298,
+            "elapsed_ms": 81.91780000925064,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "d1b3",
+              "c6e5",
+              "d4e5"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "f3e5",
+            "score_cp": 5,
+            "nodes": 46104,
+            "elapsed_ms": 85.15250001801178,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "d1b3",
+              "c6e5",
+              "d4e5"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "f3e5",
+            "score_cp": 5,
+            "nodes": 46373,
+            "elapsed_ms": 81.73730003181845,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "d1b3",
+              "c6e5",
+              "d4e5"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "f3e5",
+            "score_cp": 5,
+            "nodes": 46104,
+            "elapsed_ms": 84.66819999739528,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "d1b3",
+              "c6e5",
+              "d4e5"
+            ],
+            "solved": false
+          }
+        }
+      }
+    ]
+  },
+  "independent_tactical": {
+    "suite_name": "independent_tactical",
+    "positions_count": 20,
+    "s3_vs_s0_agreement_count": 20,
+    "s3_vs_s0_agreement_pct": 100.0,
+    "totals": {
+      "s0": {
+        "nodes": 447324,
+        "solved": 9
+      },
+      "s1": {
+        "nodes": 392067,
+        "solved": 9
+      },
+      "s2": {
+        "nodes": 428287,
+        "solved": 9
+      },
+      "s3": {
+        "nodes": 392067,
+        "solved": 9
+      }
+    },
+    "positions": [
+      {
+        "id": "ind_01_mate_in_1",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/5Q2/PPPP1PPP/RNB1K1NR w KQkq - 0 5",
+        "expected_move": "f3f7",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "f3f7",
+            "score_cp": 28999,
+            "nodes": 22402,
+            "elapsed_ms": 13.594299962278455,
+            "pv": [
+              "f3f7"
+            ],
+            "solved": true
+          },
+          "s1": {
+            "best_move": "f3f7",
+            "score_cp": 28999,
+            "nodes": 22237,
+            "elapsed_ms": 13.834599987603724,
+            "pv": [
+              "f3f7"
+            ],
+            "solved": true
+          },
+          "s2": {
+            "best_move": "f3f7",
+            "score_cp": 28999,
+            "nodes": 22402,
+            "elapsed_ms": 13.21000000461936,
+            "pv": [
+              "f3f7"
+            ],
+            "solved": true
+          },
+          "s3": {
+            "best_move": "f3f7",
+            "score_cp": 28999,
+            "nodes": 22237,
+            "elapsed_ms": 14.359799970407039,
+            "pv": [
+              "f3f7"
+            ],
+            "solved": true
+          }
+        }
+      },
+      {
+        "id": "ind_02_back_rank_mate",
+        "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+        "expected_move": "d1d8",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "d1d8",
+            "score_cp": 28999,
+            "nodes": 2021,
+            "elapsed_ms": 1.112900034058839,
+            "pv": [
+              "d1d8"
+            ],
+            "solved": true
+          },
+          "s1": {
+            "best_move": "d1d8",
+            "score_cp": 28999,
+            "nodes": 2055,
+            "elapsed_ms": 1.0448999819345772,
+            "pv": [
+              "d1d8"
+            ],
+            "solved": true
+          },
+          "s2": {
+            "best_move": "d1d8",
+            "score_cp": 28999,
+            "nodes": 2021,
+            "elapsed_ms": 1.166699978057295,
+            "pv": [
+              "d1d8"
+            ],
+            "solved": true
+          },
+          "s3": {
+            "best_move": "d1d8",
+            "score_cp": 28999,
+            "nodes": 2055,
+            "elapsed_ms": 1.0523000382818282,
+            "pv": [
+              "d1d8"
+            ],
+            "solved": true
+          }
+        }
+      },
+      {
+        "id": "ind_03_queen_sac_mate",
+        "fen": "6k1/5ppp/8/8/8/8/1q4PP/4Q1K1 w - - 0 1",
+        "expected_move": "e1e8",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "e1e8",
+            "score_cp": 28999,
+            "nodes": 3831,
+            "elapsed_ms": 3.117599990218878,
+            "pv": [
+              "e1e8"
+            ],
+            "solved": true
+          },
+          "s1": {
+            "best_move": "e1e8",
+            "score_cp": 28999,
+            "nodes": 5010,
+            "elapsed_ms": 3.4482000046409667,
+            "pv": [
+              "e1e8"
+            ],
+            "solved": true
+          },
+          "s2": {
+            "best_move": "e1e8",
+            "score_cp": 28999,
+            "nodes": 3831,
+            "elapsed_ms": 3.0539000290445983,
+            "pv": [
+              "e1e8"
+            ],
+            "solved": true
+          },
+          "s3": {
+            "best_move": "e1e8",
+            "score_cp": 28999,
+            "nodes": 5010,
+            "elapsed_ms": 3.820599988102913,
+            "pv": [
+              "e1e8"
+            ],
+            "solved": true
+          }
+        }
+      },
+      {
+        "id": "ind_04_defensive_perpetual",
+        "fen": "8/6k1/8/8/8/8/1q4PK/7Q w - - 0 1",
+        "expected_move": "h1e1",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "h1e1",
+            "score_cp": 110,
+            "nodes": 6216,
+            "elapsed_ms": 7.236899982672185,
+            "pv": [
+              "h1e1",
+              "b2d4",
+              "e1e6",
+              "g7h7",
+              "e6b3"
+            ],
+            "solved": true
+          },
+          "s1": {
+            "best_move": "h1e1",
+            "score_cp": 110,
+            "nodes": 5979,
+            "elapsed_ms": 6.816100038122386,
+            "pv": [
+              "h1e1",
+              "b2d4",
+              "e1e6",
+              "g7h7",
+              "e6b3"
+            ],
+            "solved": true
+          },
+          "s2": {
+            "best_move": "h1e1",
+            "score_cp": 110,
+            "nodes": 6216,
+            "elapsed_ms": 6.737399962730706,
+            "pv": [
+              "h1e1",
+              "b2d4",
+              "e1e6",
+              "g7h7",
+              "e6b3"
+            ],
+            "solved": true
+          },
+          "s3": {
+            "best_move": "h1e1",
+            "score_cp": 110,
+            "nodes": 5979,
+            "elapsed_ms": 6.954499986022711,
+            "pv": [
+              "h1e1",
+              "b2d4",
+              "e1e6",
+              "g7h7",
+              "e6b3"
+            ],
+            "solved": true
+          }
+        }
+      },
+      {
+        "id": "ind_05_queen_attack",
+        "fen": "rn2kb1r/pp3ppp/4p3/1qp1N3/3P4/8/PPP2PPP/R1BQK2R w KQkq - 0 11",
+        "expected_move": "d1h5",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "d1f3",
+            "score_cp": 100,
+            "nodes": 30257,
+            "elapsed_ms": 51.97349999798462,
+            "pv": [
+              "d1f3",
+              "b5a5",
+              "c1d2",
+              "a5c7",
+              "f3c3"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "d1f3",
+            "score_cp": 100,
+            "nodes": 27708,
+            "elapsed_ms": 50.347300013527274,
+            "pv": [
+              "d1f3",
+              "b5a5",
+              "c1d2",
+              "a5c7",
+              "f3c3"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "d1f3",
+            "score_cp": 100,
+            "nodes": 29284,
+            "elapsed_ms": 55.73480000020936,
+            "pv": [
+              "d1f3",
+              "b5a5",
+              "c1d2",
+              "a5c7",
+              "f3c3"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "d1f3",
+            "score_cp": 100,
+            "nodes": 27708,
+            "elapsed_ms": 53.5527000320144,
+            "pv": [
+              "d1f3",
+              "b5a5",
+              "c1d2",
+              "a5c7",
+              "f3c3"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "ind_06_knight_fork_defense",
+        "fen": "r1b1k2r/pppp1ppp/8/4N3/1b1qn3/8/PPP2PPP/RNBQKB1R w KQkq - 0 8",
+        "expected_move": "c2c3",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "e1e2",
+            "score_cp": -385,
+            "nodes": 14327,
+            "elapsed_ms": 27.754100039601326,
+            "pv": [
+              "e1e2",
+              "d4d1",
+              "e2d1",
+              "e4f2",
+              "d1e2"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "e1e2",
+            "score_cp": -385,
+            "nodes": 15439,
+            "elapsed_ms": 35.965199989732355,
+            "pv": [
+              "e1e2",
+              "d4d1",
+              "e2d1",
+              "e4f2",
+              "d1e2"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "e1e2",
+            "score_cp": -385,
+            "nodes": 13986,
+            "elapsed_ms": 28.831500036176294,
+            "pv": [
+              "e1e2",
+              "d4d1",
+              "e2d1",
+              "e4f2",
+              "d1e2"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "e1e2",
+            "score_cp": -385,
+            "nodes": 15439,
+            "elapsed_ms": 34.99989997362718,
+            "pv": [
+              "e1e2",
+              "d4d1",
+              "e2d1",
+              "e4f2",
+              "d1e2"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "ind_07_skewer_evasion",
+        "fen": "4k3/8/8/8/8/8/1R6/1K4q1 w - - 0 1",
+        "expected_move": "b1a2",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "b1a2",
+            "score_cp": -385,
+            "nodes": 3296,
+            "elapsed_ms": 3.046699974220246,
+            "pv": [
+              "b1a2",
+              "g1a7",
+              "a2b1",
+              "a7g1"
+            ],
+            "solved": true
+          },
+          "s1": {
+            "best_move": "b1a2",
+            "score_cp": -385,
+            "nodes": 3282,
+            "elapsed_ms": 3.2221999717876315,
+            "pv": [
+              "b1a2",
+              "g1a7",
+              "a2b1",
+              "a7g1"
+            ],
+            "solved": true
+          },
+          "s2": {
+            "best_move": "b1a2",
+            "score_cp": -385,
+            "nodes": 3296,
+            "elapsed_ms": 3.214099968317896,
+            "pv": [
+              "b1a2",
+              "g1a7",
+              "a2b1",
+              "a7g1"
+            ],
+            "solved": true
+          },
+          "s3": {
+            "best_move": "b1a2",
+            "score_cp": -385,
+            "nodes": 3282,
+            "elapsed_ms": 3.391799982637167,
+            "pv": [
+              "b1a2",
+              "g1a7",
+              "a2b1",
+              "a7g1"
+            ],
+            "solved": true
+          }
+        }
+      },
+      {
+        "id": "ind_08_pawn_breakthrough",
+        "fen": "8/8/4k3/8/4P3/8/4K3/8 w - - 0 1",
+        "expected_move": "e4e5",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "e2f2",
+            "score_cp": 125,
+            "nodes": 1904,
+            "elapsed_ms": 1.1884000268764794,
+            "pv": [
+              "e2f2",
+              "e6f7",
+              "f2g1",
+              "f7g8",
+              "e4e5"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "e2f2",
+            "score_cp": 125,
+            "nodes": 1904,
+            "elapsed_ms": 1.1229999945499003,
+            "pv": [
+              "e2f2",
+              "e6f7",
+              "f2g1",
+              "f7g8",
+              "e4e5"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "e2f2",
+            "score_cp": 125,
+            "nodes": 1904,
+            "elapsed_ms": 1.136199978645891,
+            "pv": [
+              "e2f2",
+              "e6f7",
+              "f2g1",
+              "f7g8",
+              "e4e5"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "e2f2",
+            "score_cp": 125,
+            "nodes": 1904,
+            "elapsed_ms": 1.1190999648533762,
+            "pv": [
+              "e2f2",
+              "e6f7",
+              "f2g1",
+              "f7g8",
+              "e4e5"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "ind_09_direct_promotion",
+        "fen": "8/4P1k1/8/8/8/8/8/6K1 w - - 0 1",
+        "expected_move": "e7e8q",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "e7e8q",
+            "score_cp": 955,
+            "nodes": 1291,
+            "elapsed_ms": 0.7551999879069626,
+            "pv": [
+              "e7e8q",
+              "g7h7",
+              "e8f8",
+              "h7g6",
+              "f8c5"
+            ],
+            "solved": true
+          },
+          "s1": {
+            "best_move": "e7e8q",
+            "score_cp": 955,
+            "nodes": 1291,
+            "elapsed_ms": 0.7149999728426337,
+            "pv": [
+              "e7e8q",
+              "g7h7",
+              "e8f8",
+              "h7g6",
+              "f8c5"
+            ],
+            "solved": true
+          },
+          "s2": {
+            "best_move": "e7e8q",
+            "score_cp": 955,
+            "nodes": 1291,
+            "elapsed_ms": 0.6733000045642257,
+            "pv": [
+              "e7e8q",
+              "g7h7",
+              "e8f8",
+              "h7g6",
+              "f8c5"
+            ],
+            "solved": true
+          },
+          "s3": {
+            "best_move": "e7e8q",
+            "score_cp": 955,
+            "nodes": 1291,
+            "elapsed_ms": 0.660100020468235,
+            "pv": [
+              "e7e8q",
+              "g7h7",
+              "e8f8",
+              "h7g6",
+              "f8c5"
+            ],
+            "solved": true
+          }
+        }
+      },
+      {
+        "id": "ind_10_stalemate_trap",
+        "fen": "8/8/8/8/8/5k2/7p/7K w - - 0 1",
+        "expected_move": "h1h2",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "h1h2",
+            "score_cp": 0,
+            "nodes": 10,
+            "elapsed_ms": 0.025499961338937283,
+            "pv": [
+              "h1h2"
+            ],
+            "solved": true
+          },
+          "s1": {
+            "best_move": "h1h2",
+            "score_cp": 0,
+            "nodes": 10,
+            "elapsed_ms": 0.021799991372972727,
+            "pv": [
+              "h1h2"
+            ],
+            "solved": true
+          },
+          "s2": {
+            "best_move": "h1h2",
+            "score_cp": 0,
+            "nodes": 10,
+            "elapsed_ms": 0.022199994418770075,
+            "pv": [
+              "h1h2"
+            ],
+            "solved": true
+          },
+          "s3": {
+            "best_move": "h1h2",
+            "score_cp": 0,
+            "nodes": 10,
+            "elapsed_ms": 0.022899999748915434,
+            "pv": [
+              "h1h2"
+            ],
+            "solved": true
+          }
+        }
+      },
+      {
+        "id": "ind_11_opposition_endgame",
+        "fen": "8/8/8/4k3/4p3/4K3/8/8 b - - 0 1",
+        "expected_move": "e5d5",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "e5f5",
+            "score_cp": 95,
+            "nodes": 555,
+            "elapsed_ms": 0.6297999643720686,
+            "pv": [
+              "e5f5",
+              "e3f2",
+              "f5e6",
+              "f2g1",
+              "e6d7"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "e5f5",
+            "score_cp": 95,
+            "nodes": 555,
+            "elapsed_ms": 0.4369000089354813,
+            "pv": [
+              "e5f5",
+              "e3f2",
+              "f5e6",
+              "f2g1",
+              "e6d7"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "e5f5",
+            "score_cp": 95,
+            "nodes": 555,
+            "elapsed_ms": 0.4292000085115433,
+            "pv": [
+              "e5f5",
+              "e3f2",
+              "f5e6",
+              "f2g1",
+              "e6d7"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "e5f5",
+            "score_cp": 95,
+            "nodes": 555,
+            "elapsed_ms": 0.367900007404387,
+            "pv": [
+              "e5f5",
+              "e3f2",
+              "f5e6",
+              "f2g1",
+              "e6d7"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "ind_12_kingside_castling",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+        "expected_move": "e1g1",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "d1c2",
+            "score_cp": -5,
+            "nodes": 54153,
+            "elapsed_ms": 97.68910001730546,
+            "pv": [
+              "d1c2",
+              "c5c4",
+              "d3e2",
+              "c8d7",
+              "e3e4"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "d1c2",
+            "score_cp": -5,
+            "nodes": 51062,
+            "elapsed_ms": 101.88949998700991,
+            "pv": [
+              "d1c2",
+              "c5c4",
+              "d3e2",
+              "c8d7",
+              "e3e4"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "d1c2",
+            "score_cp": -5,
+            "nodes": 50959,
+            "elapsed_ms": 111.21170001570135,
+            "pv": [
+              "d1c2",
+              "c5c4",
+              "d3e2",
+              "c8d7",
+              "e3e4"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "d1c2",
+            "score_cp": -5,
+            "nodes": 51062,
+            "elapsed_ms": 99.66999996686354,
+            "pv": [
+              "d1c2",
+              "c5c4",
+              "d3e2",
+              "c8d7",
+              "e3e4"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "ind_13_discovered_check_defense",
+        "fen": "r1b1k2r/pppp1ppp/8/4N3/1b2n3/8/PPP1BPPP/RNBQK2R w KQkq - 0 8",
+        "expected_move": "c1d2",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "b1d2",
+            "score_cp": 1125,
+            "nodes": 13168,
+            "elapsed_ms": 29.153899988159537,
+            "pv": [
+              "b1d2",
+              "b4d2",
+              "c1d2",
+              "d7d5",
+              "d2e3"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "b1d2",
+            "score_cp": 1125,
+            "nodes": 10543,
+            "elapsed_ms": 24.22859997022897,
+            "pv": [
+              "b1d2",
+              "b4d2",
+              "c1d2",
+              "d7d5",
+              "d2e3"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "b1d2",
+            "score_cp": 1125,
+            "nodes": 11619,
+            "elapsed_ms": 27.2485000314191,
+            "pv": [
+              "b1d2",
+              "b4d2",
+              "c1d2",
+              "d7d5",
+              "d2e3"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "b1d2",
+            "score_cp": 1125,
+            "nodes": 10543,
+            "elapsed_ms": 23.18709995597601,
+            "pv": [
+              "b1d2",
+              "b4d2",
+              "c1d2",
+              "d7d5",
+              "d2e3"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "ind_14_tactical_knight_retreat",
+        "fen": "r1b2rk1/pp1p1ppp/2p5/4q3/4N3/3BP3/PPP2PPP/R2QK2R w KQ - 0 11",
+        "expected_move": "e4c3",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "e4c3",
+            "score_cp": 350,
+            "nodes": 33431,
+            "elapsed_ms": 48.84519998449832,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "c8f5",
+              "d1f3"
+            ],
+            "solved": true
+          },
+          "s1": {
+            "best_move": "e4c3",
+            "score_cp": 350,
+            "nodes": 27423,
+            "elapsed_ms": 39.41159998066723,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "c8f5",
+              "d1f3"
+            ],
+            "solved": true
+          },
+          "s2": {
+            "best_move": "e4c3",
+            "score_cp": 350,
+            "nodes": 32892,
+            "elapsed_ms": 50.89270003372803,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "c8f5",
+              "d1f3"
+            ],
+            "solved": true
+          },
+          "s3": {
+            "best_move": "e4c3",
+            "score_cp": 350,
+            "nodes": 27423,
+            "elapsed_ms": 38.64799998700619,
+            "pv": [
+              "e4c3",
+              "d7d5",
+              "e3e4",
+              "c8f5",
+              "d1f3"
+            ],
+            "solved": true
+          }
+        }
+      },
+      {
+        "id": "ind_15_tactical_liquidation",
+        "fen": "r1bq1rk1/ppp2ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQ1RK1 w - - 0 9",
+        "expected_move": "c4f7",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "c4d5",
+            "score_cp": 90,
+            "nodes": 25850,
+            "elapsed_ms": 32.57129999110475,
+            "pv": [
+              "c4d5",
+              "c8f5",
+              "d5c6",
+              "b7c6",
+              "f3e5"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "c4d5",
+            "score_cp": 90,
+            "nodes": 26378,
+            "elapsed_ms": 41.63459996925667,
+            "pv": [
+              "c4d5",
+              "c8f5",
+              "d5c6",
+              "b7c6",
+              "f3e5"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "c4d5",
+            "score_cp": 90,
+            "nodes": 25330,
+            "elapsed_ms": 36.717799957841635,
+            "pv": [
+              "c4d5",
+              "c8f5",
+              "d5c6",
+              "b7c6",
+              "f3e5"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "c4d5",
+            "score_cp": 90,
+            "nodes": 26378,
+            "elapsed_ms": 39.01949996361509,
+            "pv": [
+              "c4d5",
+              "c8f5",
+              "d5c6",
+              "b7c6",
+              "f3e5"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "ind_16_center_strike",
+        "fen": "r1bqk2r/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+        "expected_move": "d2d4",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "b1c3",
+            "score_cp": 680,
+            "nodes": 29746,
+            "elapsed_ms": 51.441899966448545,
+            "pv": [
+              "b1c3",
+              "d7d6",
+              "d2d4",
+              "c8g4",
+              "d4d5"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "b1c3",
+            "score_cp": 680,
+            "nodes": 26915,
+            "elapsed_ms": 47.139700036495924,
+            "pv": [
+              "b1c3",
+              "d7d6",
+              "d2d4",
+              "c8g4",
+              "d4d5"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "b1c3",
+            "score_cp": 680,
+            "nodes": 29321,
+            "elapsed_ms": 54.38849999336526,
+            "pv": [
+              "b1c3",
+              "d7d6",
+              "d2d4",
+              "c8g4",
+              "d4d5"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "b1c3",
+            "score_cp": 680,
+            "nodes": 26915,
+            "elapsed_ms": 46.041399997193366,
+            "pv": [
+              "b1c3",
+              "d7d6",
+              "d2d4",
+              "c8g4",
+              "d4d5"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "ind_17_positional_castling",
+        "fen": "r1b1k2r/pp2qppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R2QK2R w KQkq - 0 9",
+        "expected_move": "e1g1",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "f3e5",
+            "score_cp": 5,
+            "nodes": 49298,
+            "elapsed_ms": 81.68960001785308,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "d1b3",
+              "c6e5",
+              "d4e5"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "f3e5",
+            "score_cp": 5,
+            "nodes": 46104,
+            "elapsed_ms": 83.23930000187829,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "d1b3",
+              "c6e5",
+              "d4e5"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "f3e5",
+            "score_cp": 5,
+            "nodes": 46373,
+            "elapsed_ms": 80.07440000073984,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "d1b3",
+              "c6e5",
+              "d4e5"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "f3e5",
+            "score_cp": 5,
+            "nodes": 46104,
+            "elapsed_ms": 84.59000004222617,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "d1b3",
+              "c6e5",
+              "d4e5"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "ind_18_legalls_trap",
+        "fen": "r2qkb1r/pp2nppp/3p4/2pNN1B1/2BnP3/3P4/PPP2PPP/R2bK2R w KQkq - 1 9",
+        "expected_move": "d5f6",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "d5f6",
+            "score_cp": 28997,
+            "nodes": 44670,
+            "elapsed_ms": 59.33870002627373,
+            "pv": [
+              "d5f6",
+              "g7f6",
+              "c4f7"
+            ],
+            "solved": true
+          },
+          "s1": {
+            "best_move": "d5f6",
+            "score_cp": 28997,
+            "nodes": 33820,
+            "elapsed_ms": 36.1094000400044,
+            "pv": [
+              "d5f6",
+              "g7f6",
+              "c4f7"
+            ],
+            "solved": true
+          },
+          "s2": {
+            "best_move": "d5f6",
+            "score_cp": 28997,
+            "nodes": 42844,
+            "elapsed_ms": 62.68540001474321,
+            "pv": [
+              "d5f6",
+              "g7f6",
+              "c4f7"
+            ],
+            "solved": true
+          },
+          "s3": {
+            "best_move": "d5f6",
+            "score_cp": 28997,
+            "nodes": 33820,
+            "elapsed_ms": 36.02220001630485,
+            "pv": [
+              "d5f6",
+              "g7f6",
+              "c4f7"
+            ],
+            "solved": true
+          }
+        }
+      },
+      {
+        "id": "ind_19_quiet_kingside_castling",
+        "fen": "r1bqk2r/pp2bppp/2n5/2p5/3pN3/1B1P1N2/PPP2PPP/R2Q1RK1 b kq - 1 10",
+        "expected_move": "e8g8",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "c8e6",
+            "score_cp": 10,
+            "nodes": 90076,
+            "elapsed_ms": 197.22690002527088,
+            "pv": [
+              "c8e6",
+              "b3e6",
+              "f7e6",
+              "d1e2",
+              "e6e5"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "c8e6",
+            "score_cp": 10,
+            "nodes": 63859,
+            "elapsed_ms": 145.60619997791946,
+            "pv": [
+              "c8e6",
+              "b3e6",
+              "f7e6",
+              "d1e2",
+              "e6e5"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "c8e6",
+            "score_cp": 10,
+            "nodes": 84136,
+            "elapsed_ms": 201.04559999890625,
+            "pv": [
+              "c8e6",
+              "b3e6",
+              "f7e6",
+              "d1e2",
+              "e6e5"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "c8e6",
+            "score_cp": 10,
+            "nodes": 63859,
+            "elapsed_ms": 145.57419996708632,
+            "pv": [
+              "c8e6",
+              "b3e6",
+              "f7e6",
+              "d1e2",
+              "e6e5"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "ind_20_bishop_kick",
+        "fen": "r1b1k1nr/pppp1ppp/8/4p3/1b2P3/2N5/PPPP1PPP/R1BQKBNR w KQkq - 0 5",
+        "expected_move": "a2a3",
+        "category": "tactical",
+        "configs": {
+          "s0": {
+            "best_move": "c3b5",
+            "score_cp": 1275,
+            "nodes": 20822,
+            "elapsed_ms": 29.004700016230345,
+            "pv": [
+              "c3b5",
+              "b4d6",
+              "b5d6",
+              "c7d6",
+              "g1f3"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "c3b5",
+            "score_cp": 1275,
+            "nodes": 20493,
+            "elapsed_ms": 31.59359999699518,
+            "pv": [
+              "c3b5",
+              "b4d6",
+              "b5d6",
+              "c7d6",
+              "g1f3"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "c3b5",
+            "score_cp": 1275,
+            "nodes": 20017,
+            "elapsed_ms": 29.664100031368434,
+            "pv": [
+              "c3b5",
+              "b4d6",
+              "b5d6",
+              "c7d6",
+              "g1f3"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "c3b5",
+            "score_cp": 1275,
+            "nodes": 20493,
+            "elapsed_ms": 32.41510002408177,
+            "pv": [
+              "c3b5",
+              "b4d6",
+              "b5d6",
+              "c7d6",
+              "g1f3"
+            ],
+            "solved": false
+          }
+        }
+      }
+    ]
+  },
+  "capture_evaluation": {
+    "suite_name": "capture_evaluation",
+    "positions_count": 16,
+    "s3_vs_s0_agreement_count": 16,
+    "s3_vs_s0_agreement_pct": 100.0,
+    "totals": {
+      "s0": {
+        "nodes": 391208,
+        "solved": 0
+      },
+      "s1": {
+        "nodes": 373232,
+        "solved": 0
+      },
+      "s2": {
+        "nodes": 376934,
+        "solved": 0
+      },
+      "s3": {
+        "nodes": 373232,
+        "solved": 0
+      }
+    },
+    "positions": [
+      {
+        "id": "cap_01_poisoned_b2_queen",
+        "fen": "r1b1k2r/1pp2ppp/p1np4/4p3/2B1P1nq/2NP1N2/PPP2PPP/R2Q1RK1 w kq - 0 9",
+        "expected_move": "",
+        "category": "tactical_middlegame",
+        "configs": {
+          "s0": {
+            "best_move": "f3h4",
+            "score_cp": 905,
+            "nodes": 28161,
+            "elapsed_ms": 41.96820000652224,
+            "pv": [
+              "f3h4",
+              "g4f6",
+              "h4f3",
+              "c8g4",
+              "c3d5"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "f3h4",
+            "score_cp": 905,
+            "nodes": 27612,
+            "elapsed_ms": 42.79009997844696,
+            "pv": [
+              "f3h4",
+              "g4f6",
+              "h4f3",
+              "c8g4",
+              "c3d5"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "f3h4",
+            "score_cp": 905,
+            "nodes": 26421,
+            "elapsed_ms": 42.883000045549124,
+            "pv": [
+              "f3h4",
+              "g4f6",
+              "h4f3",
+              "c8g4",
+              "c3d5"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "f3h4",
+            "score_cp": 905,
+            "nodes": 27612,
+            "elapsed_ms": 40.134400012902915,
+            "pv": [
+              "f3h4",
+              "g4f6",
+              "h4f3",
+              "c8g4",
+              "c3d5"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "cap_02_poisoned_pawn_b2",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2N1PN2/PPP1BPPP/R1BQK2R w KQkq - 0 6",
+        "expected_move": "",
+        "category": "poisoned_pawn",
+        "configs": {
+          "s0": {
+            "best_move": "f3e5",
+            "score_cp": 5,
+            "nodes": 47262,
+            "elapsed_ms": 83.08130002114922,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "e5d7",
+              "d8d7",
+              "d1d3"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "f3e5",
+            "score_cp": 5,
+            "nodes": 49716,
+            "elapsed_ms": 104.57689996110275,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "e5d7",
+              "d8d7",
+              "e2f3"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "f3e5",
+            "score_cp": 5,
+            "nodes": 45888,
+            "elapsed_ms": 90.59009997872636,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "e5d7",
+              "d8d7",
+              "d1d3"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "f3e5",
+            "score_cp": 5,
+            "nodes": 49716,
+            "elapsed_ms": 101.82049998547882,
+            "pv": [
+              "f3e5",
+              "c8d7",
+              "e5d7",
+              "d8d7",
+              "e2f3"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "cap_03_deep_d5_exchange",
+        "fen": "3r2k1/ppp2ppp/8/3n4/8/8/PPPR4/3R2K1 w - - 0 1",
+        "expected_move": "",
+        "category": "exchange_sequence",
+        "configs": {
+          "s0": {
+            "best_move": "d2d5",
+            "score_cp": 185,
+            "nodes": 8640,
+            "elapsed_ms": 8.274499967228621,
+            "pv": [
+              "d2d5",
+              "d8d5",
+              "d1d5",
+              "a7a6",
+              "d5d7"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "d2d5",
+            "score_cp": 185,
+            "nodes": 8447,
+            "elapsed_ms": 8.142500009853393,
+            "pv": [
+              "d2d5",
+              "d8d5",
+              "d1d5",
+              "a7a6",
+              "d5d7"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "d2d5",
+            "score_cp": 185,
+            "nodes": 8640,
+            "elapsed_ms": 8.142000006046146,
+            "pv": [
+              "d2d5",
+              "d8d5",
+              "d1d5",
+              "a7a6",
+              "d5d7"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "d2d5",
+            "score_cp": 185,
+            "nodes": 8447,
+            "elapsed_ms": 7.926299993414432,
+            "pv": [
+              "d2d5",
+              "d8d5",
+              "d1d5",
+              "a7a6",
+              "d5d7"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "cap_04_promotion_race_sharp",
+        "fen": "1rr4k/P7/8/8/8/8/8/R6K w - - 0 1",
+        "expected_move": "",
+        "category": "promotion_race",
+        "configs": {
+          "s0": {
+            "best_move": "a7b8q",
+            "score_cp": 0,
+            "nodes": 2680,
+            "elapsed_ms": 2.7268000412732363,
+            "pv": [
+              "a7b8q",
+              "c8b8",
+              "h1g1",
+              "b8g8",
+              "g1h1"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "a7b8q",
+            "score_cp": 0,
+            "nodes": 2748,
+            "elapsed_ms": 2.8898000018671155,
+            "pv": [
+              "a7b8q",
+              "c8b8",
+              "h1g1",
+              "b8g8",
+              "g1h1"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "a7b8q",
+            "score_cp": 0,
+            "nodes": 2680,
+            "elapsed_ms": 2.846999967005104,
+            "pv": [
+              "a7b8q",
+              "c8b8",
+              "h1g1",
+              "b8g8",
+              "g1h1"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "a7b8q",
+            "score_cp": 0,
+            "nodes": 2748,
+            "elapsed_ms": 2.7854000218212605,
+            "pv": [
+              "a7b8q",
+              "c8b8",
+              "h1g1",
+              "b8g8",
+              "g1h1"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "cap_05_pinned_knight_d4",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 1",
+        "expected_move": "",
+        "category": "pinned_defender",
+        "configs": {
+          "s0": {
+            "best_move": "f3d4",
+            "score_cp": 190,
+            "nodes": 66503,
+            "elapsed_ms": 140.01690002623945,
+            "pv": [
+              "f3d4",
+              "d8e7",
+              "e1g1",
+              "e7b4",
+              "c2c4"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "f3d4",
+            "score_cp": 190,
+            "nodes": 59131,
+            "elapsed_ms": 125.21580001339316,
+            "pv": [
+              "f3d4",
+              "d8e7",
+              "e1g1",
+              "e7b4",
+              "c2c4"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "f3d4",
+            "score_cp": 190,
+            "nodes": 63027,
+            "elapsed_ms": 142.0819999766536,
+            "pv": [
+              "f3d4",
+              "d8e7",
+              "e1g1",
+              "e7b4",
+              "c2c4"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "f3d4",
+            "score_cp": 190,
+            "nodes": 59131,
+            "elapsed_ms": 128.03759996313602,
+            "pv": [
+              "f3d4",
+              "d8e7",
+              "e1g1",
+              "e7b4",
+              "c2c4"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "cap_06_hanging_minor_axb4",
+        "fen": "rnbqk1nr/pppp1ppp/8/8/1b6/P7/1PPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "expected_move": "",
+        "category": "hanging_piece",
+        "configs": {
+          "s0": {
+            "best_move": "a3b4",
+            "score_cp": 350,
+            "nodes": 12422,
+            "elapsed_ms": 14.577699999790639,
+            "pv": [
+              "a3b4",
+              "g8f6",
+              "b1c3",
+              "b8c6",
+              "b4b5"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "a3b4",
+            "score_cp": 350,
+            "nodes": 12008,
+            "elapsed_ms": 16.878900001756847,
+            "pv": [
+              "a3b4",
+              "g8f6",
+              "b1c3",
+              "b8c6",
+              "b4b5"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "a3b4",
+            "score_cp": 350,
+            "nodes": 12409,
+            "elapsed_ms": 15.234199992846698,
+            "pv": [
+              "a3b4",
+              "g8f6",
+              "b1c3",
+              "b8c6",
+              "b4b5"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "a3b4",
+            "score_cp": 350,
+            "nodes": 12008,
+            "elapsed_ms": 16.00699999835342,
+            "pv": [
+              "a3b4",
+              "g8f6",
+              "b1c3",
+              "b8c6",
+              "b4b5"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "cap_07_queen_sacrifice_refuted",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/4P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+        "expected_move": "",
+        "category": "sacrificial_position",
+        "configs": {
+          "s0": {
+            "best_move": "g1f3",
+            "score_cp": -35,
+            "nodes": 26499,
+            "elapsed_ms": 41.503500018734485,
+            "pv": [
+              "g1f3",
+              "d7d6",
+              "b1c3",
+              "c6b4",
+              "e1d1"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "g1f3",
+            "score_cp": -35,
+            "nodes": 33262,
+            "elapsed_ms": 55.01169996568933,
+            "pv": [
+              "g1f3",
+              "d7d6",
+              "b1c3",
+              "c6b4",
+              "e1d1"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "g1f3",
+            "score_cp": -35,
+            "nodes": 26169,
+            "elapsed_ms": 44.076899997889996,
+            "pv": [
+              "g1f3",
+              "d7d6",
+              "b1c3",
+              "c6b4",
+              "e1d1"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "g1f3",
+            "score_cp": -35,
+            "nodes": 33262,
+            "elapsed_ms": 52.633300016168505,
+            "pv": [
+              "g1f3",
+              "d7d6",
+              "b1c3",
+              "c6b4",
+              "e1d1"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "cap_08_scholars_mate_defended",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+        "expected_move": "",
+        "category": "tactical_middlegame",
+        "configs": {
+          "s0": {
+            "best_move": "h5f7",
+            "score_cp": 28999,
+            "nodes": 24080,
+            "elapsed_ms": 10.825499950442463,
+            "pv": [
+              "h5f7"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "h5f7",
+            "score_cp": 28999,
+            "nodes": 24087,
+            "elapsed_ms": 11.614000017289072,
+            "pv": [
+              "h5f7"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "h5f7",
+            "score_cp": 28999,
+            "nodes": 24080,
+            "elapsed_ms": 11.245099944062531,
+            "pv": [
+              "h5f7"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "h5f7",
+            "score_cp": 28999,
+            "nodes": 24087,
+            "elapsed_ms": 12.447799963410944,
+            "pv": [
+              "h5f7"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "cap_09_en_passant_defended",
+        "fen": "rnbqkbnr/pp1ppppp/8/2pP4/8/8/PPP1PPPP/RNBQKBNR w KQkq c6 0 2",
+        "expected_move": "",
+        "category": "en_passant",
+        "configs": {
+          "s0": {
+            "best_move": "b1c3",
+            "score_cp": 105,
+            "nodes": 18369,
+            "elapsed_ms": 22.61689997976646,
+            "pv": [
+              "b1c3",
+              "g8f6",
+              "g1f3",
+              "e7e6",
+              "e2e4"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "b1c3",
+            "score_cp": 105,
+            "nodes": 16978,
+            "elapsed_ms": 20.29790001688525,
+            "pv": [
+              "b1c3",
+              "g8f6",
+              "g1f3",
+              "e7e6",
+              "e2e4"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "b1c3",
+            "score_cp": 105,
+            "nodes": 18207,
+            "elapsed_ms": 22.49240002129227,
+            "pv": [
+              "b1c3",
+              "g8f6",
+              "g1f3",
+              "e7e6",
+              "e2e4"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "b1c3",
+            "score_cp": 105,
+            "nodes": 16978,
+            "elapsed_ms": 20.807199995033443,
+            "pv": [
+              "b1c3",
+              "g8f6",
+              "g1f3",
+              "e7e6",
+              "e2e4"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "cap_10_en_passant_undefended",
+        "fen": "7k/8/8/3Pp3/8/8/8/K7 w - e6 0 1",
+        "expected_move": "",
+        "category": "en_passant",
+        "configs": {
+          "s0": {
+            "best_move": "d5d6",
+            "score_cp": 760,
+            "nodes": 545,
+            "elapsed_ms": 0.39249996189028025,
+            "pv": [
+              "d5d6",
+              "e5e4",
+              "d6d7",
+              "h8g8",
+              "d7d8q"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "d5d6",
+            "score_cp": 760,
+            "nodes": 545,
+            "elapsed_ms": 0.32649998320266604,
+            "pv": [
+              "d5d6",
+              "e5e4",
+              "d6d7",
+              "h8g8",
+              "d7d8q"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "d5d6",
+            "score_cp": 760,
+            "nodes": 545,
+            "elapsed_ms": 0.30150002567097545,
+            "pv": [
+              "d5d6",
+              "e5e4",
+              "d6d7",
+              "h8g8",
+              "d7d8q"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "d5d6",
+            "score_cp": 760,
+            "nodes": 545,
+            "elapsed_ms": 0.27409999165683985,
+            "pv": [
+              "d5d6",
+              "e5e4",
+              "d6d7",
+              "h8g8",
+              "d7d8q"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "cap_11_multiple_exchanges_c4",
+        "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/2PNP3/2N1B3/PP2BPPP/R2Q1RK1 b - - 4 9",
+        "expected_move": "",
+        "category": "capture_heavy",
+        "configs": {
+          "s0": {
+            "best_move": "c6d4",
+            "score_cp": -20,
+            "nodes": 23677,
+            "elapsed_ms": 33.756299992091954,
+            "pv": [
+              "c6d4",
+              "d1d4",
+              "e7e5",
+              "d4d3",
+              "c8e6"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "c6d4",
+            "score_cp": -20,
+            "nodes": 24009,
+            "elapsed_ms": 36.82659997139126,
+            "pv": [
+              "c6d4",
+              "d1d4",
+              "e7e5",
+              "d4d3",
+              "c8e6"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "c6d4",
+            "score_cp": -20,
+            "nodes": 23287,
+            "elapsed_ms": 35.649600031320006,
+            "pv": [
+              "c6d4",
+              "d1d4",
+              "e7e5",
+              "d4d3",
+              "c8e6"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "c6d4",
+            "score_cp": -20,
+            "nodes": 24009,
+            "elapsed_ms": 37.317999987863004,
+            "pv": [
+              "c6d4",
+              "d1d4",
+              "e7e5",
+              "d4d3",
+              "c8e6"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "cap_12_battery_unmask_f7",
+        "fen": "r2qkb1r/pp2nppp/3p4/2pNN1B1/2BnP3/3P4/PPP2PPP/R2bK2R w KQkq - 1 9",
+        "expected_move": "",
+        "category": "sacrificial_position",
+        "configs": {
+          "s0": {
+            "best_move": "d5f6",
+            "score_cp": 28997,
+            "nodes": 44670,
+            "elapsed_ms": 60.793699987698346,
+            "pv": [
+              "d5f6",
+              "g7f6",
+              "c4f7"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "d5f6",
+            "score_cp": 28997,
+            "nodes": 33820,
+            "elapsed_ms": 36.484000040218234,
+            "pv": [
+              "d5f6",
+              "g7f6",
+              "c4f7"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "d5f6",
+            "score_cp": 28997,
+            "nodes": 42844,
+            "elapsed_ms": 59.68639999628067,
+            "pv": [
+              "d5f6",
+              "g7f6",
+              "c4f7"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "d5f6",
+            "score_cp": 28997,
+            "nodes": 33820,
+            "elapsed_ms": 38.125500024762005,
+            "pv": [
+              "d5f6",
+              "g7f6",
+              "c4f7"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "cap_13_endgame_rook_pawn",
+        "fen": "8/5pk1/4p1p1/7p/7P/4r1P1/5PK1/8 w - - 0 45",
+        "expected_move": "",
+        "category": "endgame",
+        "configs": {
+          "s0": {
+            "best_move": "f2e3",
+            "score_cp": -125,
+            "nodes": 1159,
+            "elapsed_ms": 0.934199953917414,
+            "pv": [
+              "f2e3",
+              "e6e5",
+              "e3e4",
+              "f7f5",
+              "e4f5"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "f2e3",
+            "score_cp": -125,
+            "nodes": 1155,
+            "elapsed_ms": 0.8699999889358878,
+            "pv": [
+              "f2e3",
+              "e6e5",
+              "e3e4",
+              "f7f5",
+              "e4f5"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "f2e3",
+            "score_cp": -125,
+            "nodes": 1159,
+            "elapsed_ms": 0.8553999941796064,
+            "pv": [
+              "f2e3",
+              "e6e5",
+              "e3e4",
+              "f7f5",
+              "e4f5"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "f2e3",
+            "score_cp": -125,
+            "nodes": 1155,
+            "elapsed_ms": 0.819200009573251,
+            "pv": [
+              "f2e3",
+              "e6e5",
+              "e3e4",
+              "f7f5",
+              "e4f5"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "cap_14_queen_vs_two_rooks",
+        "fen": "2r3k1/1p3ppp/pq2p3/3p4/8/1P1Q4/P4PPP/2R3K1 b - - 0 1",
+        "expected_move": "",
+        "category": "exchange_sequence",
+        "configs": {
+          "s0": {
+            "best_move": "c8c1",
+            "score_cp": 1180,
+            "nodes": 4817,
+            "elapsed_ms": 4.798300040420145,
+            "pv": [
+              "c8c1",
+              "d3f1",
+              "c1f1",
+              "g1f1",
+              "e6e5"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "c8c1",
+            "score_cp": 1180,
+            "nodes": 4856,
+            "elapsed_ms": 5.391900020185858,
+            "pv": [
+              "c8c1",
+              "d3f1",
+              "c1f1",
+              "g1f1",
+              "e6e5"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "c8c1",
+            "score_cp": 1180,
+            "nodes": 4817,
+            "elapsed_ms": 4.589500022120774,
+            "pv": [
+              "c8c1",
+              "d3f1",
+              "c1f1",
+              "g1f1",
+              "e6e5"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "c8c1",
+            "score_cp": 1180,
+            "nodes": 4856,
+            "elapsed_ms": 5.24469994707033,
+            "pv": [
+              "c8c1",
+              "d3f1",
+              "c1f1",
+              "g1f1",
+              "e6e5"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "cap_15_central_fork_d5",
+        "fen": "r1b1k2r/ppp2ppp/2n5/3pp3/8/2B2N2/PPPP1PPP/R2QKB1R w KQkq - 0 1",
+        "expected_move": "",
+        "category": "capture_heavy",
+        "configs": {
+          "s0": {
+            "best_move": "c3e5",
+            "score_cp": 1210,
+            "nodes": 21336,
+            "elapsed_ms": 23.32909998949617,
+            "pv": [
+              "c3e5",
+              "c6e5",
+              "f3e5",
+              "d5d4",
+              "d2d3"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "c3e5",
+            "score_cp": 1210,
+            "nodes": 21660,
+            "elapsed_ms": 26.666199963074178,
+            "pv": [
+              "c3e5",
+              "c6e5",
+              "f3e5",
+              "d5d4",
+              "d2d3"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "c3e5",
+            "score_cp": 1210,
+            "nodes": 21318,
+            "elapsed_ms": 25.813100044615567,
+            "pv": [
+              "c3e5",
+              "c6e5",
+              "f3e5",
+              "d5d4",
+              "d2d3"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "c3e5",
+            "score_cp": 1210,
+            "nodes": 21660,
+            "elapsed_ms": 26.01259999210015,
+            "pv": [
+              "c3e5",
+              "c6e5",
+              "f3e5",
+              "d5d4",
+              "d2d3"
+            ],
+            "solved": false
+          }
+        }
+      },
+      {
+        "id": "cap_16_quiet_manoeuvring_middlegame",
+        "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+        "expected_move": "",
+        "category": "quiet_middlegame",
+        "configs": {
+          "s0": {
+            "best_move": "c1g5",
+            "score_cp": 10,
+            "nodes": 60388,
+            "elapsed_ms": 109.67900004470721,
+            "pv": [
+              "c1g5",
+              "c8g4",
+              "c3d5",
+              "c6d4",
+              "d5f6"
+            ],
+            "solved": false
+          },
+          "s1": {
+            "best_move": "c1g5",
+            "score_cp": 10,
+            "nodes": 53198,
+            "elapsed_ms": 108.5558999911882,
+            "pv": [
+              "c1g5",
+              "c8g4",
+              "c3d5",
+              "c6d4",
+              "d5f6"
+            ],
+            "solved": false
+          },
+          "s2": {
+            "best_move": "c1g5",
+            "score_cp": 10,
+            "nodes": 55443,
+            "elapsed_ms": 113.64940000930801,
+            "pv": [
+              "c1g5",
+              "c8g4",
+              "c3d5",
+              "c6d4",
+              "d5f6"
+            ],
+            "solved": false
+          },
+          "s3": {
+            "best_move": "c1g5",
+            "score_cp": 10,
+            "nodes": 53198,
+            "elapsed_ms": 106.85330000706017,
+            "pv": [
+              "c1g5",
+              "c8g4",
+              "c3d5",
+              "c6d4",
+              "d5f6"
+            ],
+            "solved": false
+          }
+        }
+      }
+    ]
+  },
+  "combined_summary": {
+    "total_positions": 64,
+    "s3_vs_s0_agreement_count": 64,
+    "s3_vs_s0_agreement_pct": 100.0,
+    "combined_totals": {
+      "s0": {
+        "nodes": 1467965,
+        "solved": 16
+      },
+      "s1": {
+        "nodes": 1335100,
+        "solved": 16
+      },
+      "s2": {
+        "nodes": 1416864,
+        "solved": 16
+      },
+      "s3": {
+        "nodes": 1335100,
+        "solved": 16
+      }
+    },
+    "s3_node_reduction_pct_vs_s0": 9.050965111566011
+  }
+}

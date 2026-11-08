@@ -1,0 +1,166 @@
+{
+  "milestone": "v0.61",
+  "milestone_name": "Neural Value Scaling, Native Optimization & Conditional Strength Qualification",
+  "branch": "v0.3-benchmark-harness",
+  "parent_commit": "08db0c0",
+  "frozen_baseline_control": "Janus Classical Baseline C1 (Native N5: UseKiller=true, UseHistory=true, UsePVS=false, UseLMR=true, UseSEEOrdering=false, UseSEEInQuiescence=false)",
+  "qualified_candidate_engine": "Janus Neural Value V2 (Hybrid 50/50, NNUE-V2-Small 51K params, Native AVX2, UseNeuralValue=true, NeuralValueBlend=50, NeuralValueUseAVX2=true)",
+  "reference_teacher": "Stockfish 19 (SHA-256: 45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0)",
+  "teacher_reliability_study": {
+    "sample_size": 500,
+    "spearman_rho": 0.977,
+    "pearson_r": 0.9763,
+    "sign_agreement_pct": 97.76,
+    "mae_cp": 28.08,
+    "balanced_mae_cp": 19.21
+  },
+  "dataset_scaling": {
+    "source": "Lichess Elite 2020-06 (Games 0..6,468)",
+    "train_positions": 80000,
+    "val_positions": 10000,
+    "test_positions": 10000,
+    "cross_split_leakage": 0,
+    "teacher_label_budget": "nodes=10000"
+  },
+  "model_architecture": {
+    "architecture_name": "JanusNNUE-V2-Small",
+    "parameters": 51281,
+    "feature_dim": 768,
+    "accum_dim": 64,
+    "l1_dim": 16,
+    "weights_binary": "analysis/v0.61/models/janus_nnue_v2_small.jnnue",
+    "binary_crc32": "0x81d61206",
+    "weights_sha256": "ff7ac9a0d45d14269bb4a011b5786bd035ba8a36b37b1fb7e1ad7f6d5e15fa12"
+  },
+  "quantization_parity": {
+    "pearson_r": 0.998887,
+    "sign_agreement_pct": 98.5,
+    "quantization_mae_cp": 10.01,
+    "saturation_status": "Mathematically impossible (-32512 to +32258 within INT16 range)"
+  },
+  "native_avx2_benchmarks": {
+    "full_refresh_ns": {
+      "scalar": 5140.8,
+      "avx2": 304.91,
+      "speedup": 16.86
+    },
+    "incremental_update_ns": {
+      "scalar": 134.19,
+      "avx2": 15.0,
+      "speedup": 8.95
+    },
+    "feedforward_inference_ns": {
+      "scalar": 490.62,
+      "avx2": 113.36,
+      "speedup": 4.33
+    },
+    "end_to_end_leaf_latency_ns": {
+      "scalar": 624.81,
+      "avx2": 128.36,
+      "speedup": 4.87
+    },
+    "isolated_throughput_evals_per_sec": {
+      "scalar": 1600490,
+      "avx2": 7790690,
+      "speedup": 4.87
+    }
+  },
+  "search_calibration": {
+    "depth_4": {
+      "S1_Pure_NNUE_V2_AVX2": {
+        "node_delta_pct": -55.89,
+        "nps_retention_pct": 143.68,
+        "agreement_with_c1_pct": 10.0,
+        "agreement_with_sf_pct": 20.0,
+        "c1_agreement_with_sf_pct": 20.0
+      },
+      "S2_Hybrid_50_AVX2": {
+        "node_delta_pct": -27.01,
+        "nps_retention_pct": 100.21,
+        "agreement_with_c1_pct": 50.0,
+        "agreement_with_sf_pct": 20.0,
+        "c1_agreement_with_sf_pct": 20.0
+      },
+      "S3_Pure_NNUE_V2_Scalar": {
+        "node_delta_pct": -55.89,
+        "nps_retention_pct": 100.13,
+        "agreement_with_c1_pct": 10.0,
+        "agreement_with_sf_pct": 20.0,
+        "c1_agreement_with_sf_pct": 20.0
+      }
+    },
+    "depth_5": {
+      "S1_Pure_NNUE_V2_AVX2": {
+        "node_delta_pct": -32.65,
+        "nps_retention_pct": 151.7,
+        "agreement_with_c1_pct": 10.0,
+        "agreement_with_sf_pct": 10.0,
+        "c1_agreement_with_sf_pct": 50.0
+      },
+      "S2_Hybrid_50_AVX2": {
+        "node_delta_pct": -18.39,
+        "nps_retention_pct": 96.79,
+        "agreement_with_c1_pct": 40.0,
+        "agreement_with_sf_pct": 40.0,
+        "c1_agreement_with_sf_pct": 50.0
+      },
+      "S3_Pure_NNUE_V2_Scalar": {
+        "node_delta_pct": -32.65,
+        "nps_retention_pct": 81.91,
+        "agreement_with_c1_pct": 10.0,
+        "agreement_with_sf_pct": 10.0,
+        "c1_agreement_with_sf_pct": 50.0
+      }
+    }
+  },
+  "qualification_gate": {
+    "status": "PASSED (6 of 6 Gates)",
+    "candidate_qualified": "Janus Neural Value V2 (Hybrid 50/50)"
+  },
+  "preregistered_match_results": {
+    "match_id": "v061_v2_hybrid_vs_c1",
+    "opponent": "Janus Classical Baseline C1",
+    "time_control": "Fischer 3.0s + 100ms",
+    "openings_suite": "analysis/v0.56/corpus/independent_openings_v056.json (100 pairs)",
+    "total_games": 200,
+    "score": {
+      "wins": 71,
+      "draws": 86,
+      "losses": 43,
+      "points": 114.0,
+      "percentage": 57.0
+    },
+    "paired_statistics": {
+      "mean_pair_difference": 0.28,
+      "std_err": 0.1074,
+      "t_statistic": 2.6075,
+      "degrees_of_freedom": 99,
+      "p_value": 0.010532,
+      "statistically_significant": true,
+      "bootstrap_mean_ci_95": [
+        0.07,
+        0.48
+      ]
+    },
+    "elo": {
+      "delta_elo": 49.0,
+      "bootstrap_elo_ci_95": [
+        12.2,
+        85.0
+      ]
+    },
+    "terminations": {
+      "draw_threefold_repetition": 84,
+      "checkmate_white": 46,
+      "checkmate_black": 68,
+      "draw_insufficient_material": 1,
+      "draw_fifty_moves": 1
+    }
+  },
+  "release_decision": {
+    "category": "Category A (Demonstrated Strength Improvement & Production Promotion)",
+    "status": "QUALIFIED_STRENGTH_IMPROVEMENT",
+    "delta_elo": "+49.0 Elo (p = 0.0105)",
+    "default_configuration": "UseNeuralValue=false (Baseline C1 bit-exact parity preserved by default)"
+  }
+}

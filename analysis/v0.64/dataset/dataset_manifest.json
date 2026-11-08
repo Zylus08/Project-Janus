@@ -1,0 +1,36 @@
+{
+  "dataset_version": "v3_phase_balanced",
+  "total_positions": 150000,
+  "partitions": {
+    "train": 120000,
+    "val": 15000,
+    "test": 15000
+  },
+  "endgame_composition": {
+    "total_new_endgame_positions": 50000,
+    "pawn_endgames": 5000,
+    "rook_endgames": 10000,
+    "minor_piece_endgames": 7500,
+    "opposite_bishops": 2500,
+    "queenless_middlegames": 12500,
+    "locked_pawn_structures": 12500
+  },
+  "teacher": {
+    "engine": "Stockfish 19 x64 AVX2",
+    "sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+    "depth": 10,
+    "workers": 10
+  },
+  "provenance": {
+    "historical_v2_positions": 100000,
+    "v3_augmented_positions": 50000,
+    "source_archive": "lichess_elite_2020-06.zip",
+    "game_ranges": {
+      "train": "15,000 .. 37,000",
+      "val": "38,000 .. 44,000",
+      "test": "45,000 .. 51,000"
+    },
+    "source_games_partitioned": true,
+    "zero_leakage_verified": true
+  }
+}

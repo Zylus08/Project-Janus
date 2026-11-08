@@ -1,0 +1,172 @@
+[
+  {
+    "path": "analysis/v0.59/analyze_phase1.py",
+    "bytes": 7397,
+    "sha256": "744cd32d5a05da8f77eb9770abed37f0f9541d6a06e18755674027c6a2ac8795"
+  },
+  {
+    "path": "analysis/v0.59/analyze_phase2.py",
+    "bytes": 3434,
+    "sha256": "f668a8a2636a933c71961849e57b88e4dcc99d136f04a49d05f89d4f946ba0f9"
+  },
+  {
+    "path": "analysis/v0.59/analyze_phase3.py",
+    "bytes": 3749,
+    "sha256": "cd03d240857aee9c080a7b67397ab7103ca10377a89671e329a11b31735596d9"
+  },
+  {
+    "path": "analysis/v0.59/analyze_phase4.py",
+    "bytes": 4290,
+    "sha256": "bd1696202ea7df59dd409080136e110d41fe673b45339d496fb391ad3f01a4d6"
+  },
+  {
+    "path": "analysis/v0.59/audit_v058_evidence.py",
+    "bytes": 10376,
+    "sha256": "36f49041bdc5709f1b5efc336083991cb9531d5584bf9cf59e398d27c72ce2ee"
+  },
+  {
+    "path": "analysis/v0.59/CANDIDATE_SELECTION.md",
+    "bytes": 5398,
+    "sha256": "35f445689c84dca2987f3151dcbdb9c4fd7182e4c3ce3c2450aea97e7c8f569e"
+  },
+  {
+    "path": "analysis/v0.59/CAUSAL_POLICY_ABLATION.md",
+    "bytes": 7464,
+    "sha256": "ce3eff29d59411058a9e1f4b965676d7a495b48cf7d958666dadf4ded971052b"
+  },
+  {
+    "path": "analysis/v0.59/corpus/evaluation_corpus_50.json",
+    "bytes": 10949,
+    "sha256": "57d2b33d3787b4f226e38345c67a8fee4d776526c3fa392e23e690805b15557f"
+  },
+  {
+    "path": "analysis/v0.59/corpus/validation_corpus_50.json",
+    "bytes": 12167,
+    "sha256": "09a4508e2f085dd42eeb2a718b8cc8f43fb06bd6bf6f43c5c0f6911a4937bfd8"
+  },
+  {
+    "path": "analysis/v0.59/experiment_manifest.json",
+    "bytes": 3402,
+    "sha256": "bae6e60d68b0742bd898547bf664f888139a6cf00a3d3701351500db079f98d2"
+  },
+  {
+    "path": "analysis/v0.59/generate_manifests.py",
+    "bytes": 6559,
+    "sha256": "5ad0d8d6a1bb86020ff9404a6a600f9c16af2e2062ba03fc0e38f436c4238f94"
+  },
+  {
+    "path": "analysis/v0.59/native/__pycache__/janus_native_bridge.cpython-313.pyc",
+    "bytes": 38214,
+    "sha256": "cc378166eac6b1abcf23be6abdf1ef3c89639e29a1e22068fc758f5d518cdb8a"
+  },
+  {
+    "path": "analysis/v0.59/native/janus_native.cpp",
+    "bytes": 109346,
+    "sha256": "3edc4b3df64666f2267f1b7734b3942f0371d4d1706b3e8176e71b2ee8ede7df"
+  },
+  {
+    "path": "analysis/v0.59/native/janus_native.dll",
+    "bytes": 325120,
+    "sha256": "fe94a95f78ad38778893ea6a1cd637d710cda6b61625ff570ea46eb511b2f5c2"
+  },
+  {
+    "path": "analysis/v0.59/native/janus_native_bridge.py",
+    "bytes": 20126,
+    "sha256": "154bc0c793af4fb093280f0dfafb44fb7bd576508827a3b0e3ca32d3dbd46528"
+  },
+  {
+    "path": "analysis/v0.59/native/janus_native_engine.exe",
+    "bytes": 380416,
+    "sha256": "26ef02d5e0db5bb359e9dbf36040c3da44c6de4a6f4fdf481299982ac4426b36"
+  },
+  {
+    "path": "analysis/v0.59/NEURAL_ORDERING_INFLUENCE.md",
+    "bytes": 8775,
+    "sha256": "aa1cb5885036ce4da2008d1b1024f7a008aa730dddec2fcbd59e0b21722d225e"
+  },
+  {
+    "path": "analysis/v0.59/NEURAL_STRENGTH_VALIDATION.md",
+    "bytes": 3104,
+    "sha256": "1a527a21cf20d41fabe59cd30f431338ea23b0cf14e39efe4e906a4ed084e203"
+  },
+  {
+    "path": "analysis/v0.59/prepare_corpora.py",
+    "bytes": 5287,
+    "sha256": "bba8360d9244dac9a5bca779cd6c21fc567f4eefe2de6965ab4449b3984ebd38"
+  },
+  {
+    "path": "analysis/v0.59/raw/phase1_influence_raw.json",
+    "bytes": 4528150,
+    "sha256": "4a96e1929d7efe230b43dce14f968c2a170198a9d03d01519c2cd91e40795f2e"
+  },
+  {
+    "path": "analysis/v0.59/raw/phase2_causal_ablation_raw.json",
+    "bytes": 297978,
+    "sha256": "dbc0cee2e04a726e8fce3cf681639a60623e62eff90debf4d2c2ef15a0e1f1c9"
+  },
+  {
+    "path": "analysis/v0.59/raw/phase3_gating_ablation_raw.json",
+    "bytes": 508707,
+    "sha256": "4c4702e6069e9bdc9f5e4515e52107691a87a9966ccbaa9e88fe60f567e959c8"
+  },
+  {
+    "path": "analysis/v0.59/raw/phase4_evaluation_raw.json",
+    "bytes": 270023,
+    "sha256": "4045d93363d1c1a0cb951a61de254026daa846157c44385d5ecdfffd42d34fd0"
+  },
+  {
+    "path": "analysis/v0.59/RESEARCH_DECISION.md",
+    "bytes": 7063,
+    "sha256": "a5dcaf15765823eb9f286f6fb826ac20d68a345567aff919e02266710e909bfc"
+  },
+  {
+    "path": "analysis/v0.59/SEARCH_GATING_ABLATION.md",
+    "bytes": 7438,
+    "sha256": "77e016b29b7440fb65a23a0502523ae2c82d1d04128e9a2a0fd9433aec5ccd30"
+  },
+  {
+    "path": "analysis/v0.59/SEARCH_PERFORMANCE_REPORT.md",
+    "bytes": 6729,
+    "sha256": "28e444e6e18e9c7e4dabeef7a4254d3266ae1a03e3a9e2d3fb46bf1e50b59b79"
+  },
+  {
+    "path": "analysis/v0.59/sha256_manifest.json",
+    "bytes": 5874,
+    "sha256": "d4e17cfcf3f12565e0c9f9fbed229ff5ef39ccc3d22993c479c8603d8a36c1a5"
+  },
+  {
+    "path": "analysis/v0.59/tests/run_phase1_influence.py",
+    "bytes": 4695,
+    "sha256": "3d7ac6e2ef987477e1916a655d31bd49d8fcf6683115482e4fa1d122db6f713b"
+  },
+  {
+    "path": "analysis/v0.59/tests/run_phase2_causal_ablation.py",
+    "bytes": 4455,
+    "sha256": "1c9359cedc8d133b75cffe5a2c4799acb338ae2a9a45b9443bf7a1da53c6c5b5"
+  },
+  {
+    "path": "analysis/v0.59/tests/run_phase3_gating_ablation.py",
+    "bytes": 7759,
+    "sha256": "8275b502d92f014e78b01b6d081ad66739f053ee8e9e6ac8b6d8594a1ee8cb1a"
+  },
+  {
+    "path": "analysis/v0.59/tests/run_phase4_evaluation.py",
+    "bytes": 6575,
+    "sha256": "23e913c282dcd95f1c5032de2f43b28893c60be88e48954707575132ff629578"
+  },
+  {
+    "path": "analysis/v0.59/V058_EVIDENCE_RECONCILIATION.md",
+    "bytes": 6184,
+    "sha256": "ecafdd10e82a1a372ed2065abfbfa37dd2321cf82bce44480c16a64c2870440f"
+  },
+  {
+    "path": "analysis/v0.58/models/janus_policy_v1.bin",
+    "bytes": 2609972,
+    "sha256": "4aff322f57f047e56c998fec8f15165c7ddc14c573a6d66b1b4f03f91ac690b0"
+  },
+  {
+    "path": "analysis/v0.58/models/best_policy_model.pt",
+    "bytes": 2612545,
+    "sha256": "84d132feb595c84b021ffc19b754605ceb2afa249e11ae6874dcbe8845825938"
+  }
+]

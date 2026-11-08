@@ -1,0 +1,44 @@
+{
+  "dataset_name": "Project Janus v0.60 Teacher-Labeled Value Corpus",
+  "teacher": {
+    "name": "Stockfish 19",
+    "path": "E:\\ChessXML\\tools\\stockfish\\stockfish.exe",
+    "sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+    "search_limit": "nodes 5000",
+    "threads": 1,
+    "hash_mb": 16
+  },
+  "source_data": {
+    "name": "Lichess Elite Database 2020-06",
+    "license": "CC0 / Open Data",
+    "source_archive": "E:\\ChessXML\\project-janus\\analysis\\v0.58\\data\\lichess_elite_2020-06.zip"
+  },
+  "counts": {
+    "train": 10000,
+    "val": 1250,
+    "test": 1250,
+    "total": 12500
+  },
+  "phase_breakdown": {
+    "train": {
+      "opening": 979,
+      "middlegame": 5952,
+      "endgame": 3069
+    },
+    "val": {
+      "opening": 125,
+      "middlegame": 757,
+      "endgame": 368
+    },
+    "test": {
+      "opening": 117,
+      "middlegame": 711,
+      "endgame": 422
+    }
+  },
+  "files": {
+    "train": "value_train.json",
+    "val": "value_val.json",
+    "test": "value_test.json"
+  }
+}

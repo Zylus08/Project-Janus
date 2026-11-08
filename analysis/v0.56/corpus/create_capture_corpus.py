@@ -1,0 +1,110 @@
+import json
+import chess
+
+positions = [
+    {
+        "id": "cap_01_poisoned_b2_queen",
+        "fen": "r1b1k2r/1pp2ppp/p1np4/4p3/2B1P1nq/2NP1N2/PPP2PPP/R2Q1RK1 w kq - 0 9",
+        "desc": "Tactical middlegame with multiple hanging minor pieces and queen attacks",
+        "category": "tactical_middlegame"
+    },
+    {
+        "id": "cap_02_poisoned_pawn_b2",
+        "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2N1PN2/PPP1BPPP/R1BQK2R w KQkq - 0 6",
+        "desc": "Classical French/Sicilian structure with potential b2 capture pressure",
+        "category": "poisoned_pawn"
+    },
+    {
+        "id": "cap_03_deep_d5_exchange",
+        "fen": "3r2k1/ppp2ppp/8/3n4/8/8/PPPR4/3R2K1 w - - 0 1",
+        "desc": "Heavy piece exchange battery on d5 file",
+        "category": "exchange_sequence"
+    },
+    {
+        "id": "cap_04_promotion_race_sharp",
+        "fen": "1rr4k/P7/8/8/8/8/8/R6K w - - 0 1",
+        "desc": "Promotion capture with rook trades",
+        "category": "promotion_race"
+    },
+    {
+        "id": "cap_05_pinned_knight_d4",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 1",
+        "desc": "Pinned knight on c6 unable to recapture off ray",
+        "category": "pinned_defender"
+    },
+    {
+        "id": "cap_06_hanging_minor_axb4",
+        "fen": "rnbqk1nr/pppp1ppp/8/8/1b6/P7/1PPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "desc": "Free hanging bishop capture",
+        "category": "hanging_piece"
+    },
+    {
+        "id": "cap_07_queen_sacrifice_refuted",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/4P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+        "desc": "Losing queen capture on f7 without bishop support",
+        "category": "sacrificial_position"
+    },
+    {
+        "id": "cap_08_scholars_mate_defended",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+        "desc": "Winning queen capture on f7 with bishop support",
+        "category": "tactical_middlegame"
+    },
+    {
+        "id": "cap_09_en_passant_defended",
+        "fen": "rnbqkbnr/pp1ppppp/8/2pP4/8/8/PPP1PPPP/RNBQKBNR w KQkq c6 0 2",
+        "desc": "Defended en passant capture pawn trade",
+        "category": "en_passant"
+    },
+    {
+        "id": "cap_10_en_passant_undefended",
+        "fen": "7k/8/8/3Pp3/8/8/8/K7 w - e6 0 1",
+        "desc": "Undefended en passant pawn capture",
+        "category": "en_passant"
+    },
+    {
+        "id": "cap_11_multiple_exchanges_c4",
+        "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/2PNP3/2N1B3/PP2BPPP/R2Q1RK1 b - - 4 9",
+        "desc": "Dragon Sicilian central tension with multiple capture paths",
+        "category": "capture_heavy"
+    },
+    {
+        "id": "cap_12_battery_unmask_f7",
+        "fen": "r2qkb1r/pp2nppp/3p4/2pNN1B1/2BnP3/3P4/PPP2PPP/R2bK2R w KQkq - 1 9",
+        "desc": "Smothered mate combination with knight sacrifice",
+        "category": "sacrificial_position"
+    },
+    {
+        "id": "cap_13_endgame_rook_pawn",
+        "fen": "8/5pk1/4p1p1/7p/7P/4r1P1/5PK1/8 w - - 0 45",
+        "desc": "Pawn endgame transition with rook capture",
+        "category": "endgame"
+    },
+    {
+        "id": "cap_14_queen_vs_two_rooks",
+        "fen": "2r3k1/1p3ppp/pq2p3/3p4/8/1P1Q4/P4PPP/2R3K1 b - - 0 1",
+        "desc": "Back-rank capture tactics with rook exchange",
+        "category": "exchange_sequence"
+    },
+    {
+        "id": "cap_15_central_fork_d5",
+        "fen": "r1b1k2r/ppp2ppp/2n5/3pp3/8/2B2N2/PPPP1PPP/R2QKB1R w KQkq - 0 1",
+        "desc": "Central capture with multiple attackers on e5/d5",
+        "category": "capture_heavy"
+    },
+    {
+        "id": "cap_16_quiet_manoeuvring_middlegame",
+        "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+        "desc": "Quiet Italian game with low immediate capture pressure",
+        "category": "quiet_middlegame"
+    }
+]
+
+for p in positions:
+    b = chess.Board(p["fen"])
+    assert b.is_valid(), f"Invalid FEN: {p['fen']}"
+
+with open("analysis/v0.56/corpus/capture_evaluation_corpus.json", "w", encoding="utf-8") as f:
+    json.dump(positions, f, indent=2)
+
+print(f"Saved {len(positions)} verified capture evaluation positions.")

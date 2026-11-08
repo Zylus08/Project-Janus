@@ -1,0 +1,1186 @@
+{
+  "fixed_depth_5": {
+    "A0_Classical_C1": {
+      "total_nodes": 486798,
+      "total_time_s": 0.4328,
+      "aggregate_nps": 1124845,
+      "positions": [
+        {
+          "id": "DEV_01_STARTPOS",
+          "best_move": "b1c3",
+          "score_cp": 40,
+          "nodes": 10761,
+          "elapsed_s": 0.0058,
+          "nps": 1855121,
+          "sf_move": "e2e4"
+        },
+        {
+          "id": "DEV_02_ITALIAN",
+          "best_move": "b1c3",
+          "score_cp": 10,
+          "nodes": 42934,
+          "elapsed_s": 0.0506,
+          "nps": 848488,
+          "sf_move": "e1g1"
+        },
+        {
+          "id": "DEV_03_SICILIAN",
+          "best_move": "c1g5",
+          "score_cp": 80,
+          "nodes": 38192,
+          "elapsed_s": 0.0257,
+          "nps": 1485995,
+          "sf_move": "f1e2"
+        },
+        {
+          "id": "DEV_04_FRENCH",
+          "best_move": "b2b4",
+          "score_cp": 90,
+          "nodes": 27190,
+          "elapsed_s": 0.0241,
+          "nps": 1129791,
+          "sf_move": "b2b4"
+        },
+        {
+          "id": "DEV_05_QGD",
+          "best_move": "c6c5",
+          "score_cp": -15,
+          "nodes": 51603,
+          "elapsed_s": 0.0491,
+          "nps": 1050321,
+          "sf_move": "b7b6"
+        },
+        {
+          "id": "DEV_06_TACTICAL_PIN",
+          "best_move": "c3d5",
+          "score_cp": 370,
+          "nodes": 60940,
+          "elapsed_s": 0.0475,
+          "nps": 1281984,
+          "sf_move": "c3d5"
+        },
+        {
+          "id": "DEV_07_ROOK_ENDGAME",
+          "best_move": "e2f2",
+          "score_cp": -400,
+          "nodes": 3999,
+          "elapsed_s": 0.002,
+          "nps": 1968109,
+          "sf_move": "e2e3"
+        },
+        {
+          "id": "DEV_08_OPP_BISHOPS",
+          "best_move": "e2f1",
+          "score_cp": 20,
+          "nodes": 6461,
+          "elapsed_s": 0.0029,
+          "nps": 2265904,
+          "sf_move": "f3d5"
+        },
+        {
+          "id": "DEV_09_CLOSED_MANOEUVRE",
+          "best_move": "d6d5",
+          "score_cp": 15,
+          "nodes": 142094,
+          "elapsed_s": 0.1593,
+          "nps": 891786,
+          "sf_move": "e5d4"
+        },
+        {
+          "id": "DEV_10_ASYMMETRIC",
+          "best_move": "e4f3",
+          "score_cp": 105,
+          "nodes": 32198,
+          "elapsed_s": 0.0258,
+          "nps": 1246945,
+          "sf_move": "e4g2"
+        },
+        {
+          "id": "DEV_11_TACTIC_DEFLECTION",
+          "best_move": "d4c5",
+          "score_cp": 420,
+          "nodes": 42899,
+          "elapsed_s": 0.0212,
+          "nps": 2019404,
+          "sf_move": "d4c5"
+        },
+        {
+          "id": "DEV_12_QUEENLESS_MIDGAME",
+          "best_move": "a1d1",
+          "score_cp": 5,
+          "nodes": 27527,
+          "elapsed_s": 0.0186,
+          "nps": 1476066,
+          "sf_move": "c3a4"
+        }
+      ]
+    },
+    "A1_Pure_NNUE_AVX2": {
+      "total_nodes": 343683,
+      "total_time_s": 0.1947,
+      "aggregate_nps": 1764975,
+      "positions": [
+        {
+          "id": "DEV_01_STARTPOS",
+          "best_move": "d2d4",
+          "score_cp": 2,
+          "nodes": 13406,
+          "elapsed_s": 0.0054,
+          "nps": 2488260,
+          "sf_move": "e2e4"
+        },
+        {
+          "id": "DEV_02_ITALIAN",
+          "best_move": "c4f7",
+          "score_cp": 24,
+          "nodes": 25329,
+          "elapsed_s": 0.0157,
+          "nps": 1610829,
+          "sf_move": "b1c3"
+        },
+        {
+          "id": "DEV_03_SICILIAN",
+          "best_move": "f1c4",
+          "score_cp": 72,
+          "nodes": 38042,
+          "elapsed_s": 0.0267,
+          "nps": 1426846,
+          "sf_move": "g2g3"
+        },
+        {
+          "id": "DEV_04_FRENCH",
+          "best_move": "d3c2",
+          "score_cp": 20,
+          "nodes": 27250,
+          "elapsed_s": 0.0139,
+          "nps": 1957010,
+          "sf_move": "b2b4"
+        },
+        {
+          "id": "DEV_05_QGD",
+          "best_move": "d5c4",
+          "score_cp": -16,
+          "nodes": 40235,
+          "elapsed_s": 0.0182,
+          "nps": 2210617,
+          "sf_move": "b7b6"
+        },
+        {
+          "id": "DEV_06_TACTICAL_PIN",
+          "best_move": "c3d5",
+          "score_cp": 106,
+          "nodes": 44728,
+          "elapsed_s": 0.0275,
+          "nps": 1628806,
+          "sf_move": "c3d5"
+        },
+        {
+          "id": "DEV_07_ROOK_ENDGAME",
+          "best_move": "e2e3",
+          "score_cp": -741,
+          "nodes": 3975,
+          "elapsed_s": 0.0016,
+          "nps": 2518533,
+          "sf_move": "e2f3"
+        },
+        {
+          "id": "DEV_08_OPP_BISHOPS",
+          "best_move": "e2e3",
+          "score_cp": 62,
+          "nodes": 5758,
+          "elapsed_s": 0.0023,
+          "nps": 2499349,
+          "sf_move": "f3d5"
+        },
+        {
+          "id": "DEV_09_CLOSED_MANOEUVRE",
+          "best_move": "c6d4",
+          "score_cp": 0,
+          "nodes": 40843,
+          "elapsed_s": 0.0193,
+          "nps": 2117644,
+          "sf_move": "e5d4"
+        },
+        {
+          "id": "DEV_10_ASYMMETRIC",
+          "best_move": "d1c2",
+          "score_cp": -29,
+          "nodes": 40872,
+          "elapsed_s": 0.0309,
+          "nps": 1322261,
+          "sf_move": "e4f3"
+        },
+        {
+          "id": "DEV_11_TACTIC_DEFLECTION",
+          "best_move": "f3g5",
+          "score_cp": 60,
+          "nodes": 41555,
+          "elapsed_s": 0.0187,
+          "nps": 2222870,
+          "sf_move": "d4c5"
+        },
+        {
+          "id": "DEV_12_QUEENLESS_MIDGAME",
+          "best_move": "c3d5",
+          "score_cp": 8,
+          "nodes": 21690,
+          "elapsed_s": 0.0146,
+          "nps": 1486563,
+          "sf_move": "c3a4"
+        }
+      ]
+    },
+    "A2_Hybrid_AVX2": {
+      "total_nodes": 410276,
+      "total_time_s": 0.3179,
+      "aggregate_nps": 1290460,
+      "positions": [
+        {
+          "id": "DEV_01_STARTPOS",
+          "best_move": "d2d4",
+          "score_cp": 20,
+          "nodes": 13211,
+          "elapsed_s": 0.0072,
+          "nps": 1844906,
+          "sf_move": "e2e4"
+        },
+        {
+          "id": "DEV_02_ITALIAN",
+          "best_move": "b1c3",
+          "score_cp": 4,
+          "nodes": 37321,
+          "elapsed_s": 0.0354,
+          "nps": 1054385,
+          "sf_move": "b1c3"
+        },
+        {
+          "id": "DEV_03_SICILIAN",
+          "best_move": "c1g5",
+          "score_cp": 37,
+          "nodes": 41070,
+          "elapsed_s": 0.0295,
+          "nps": 1390210,
+          "sf_move": "c1g5"
+        },
+        {
+          "id": "DEV_04_FRENCH",
+          "best_move": "d3c2",
+          "score_cp": 65,
+          "nodes": 38804,
+          "elapsed_s": 0.0329,
+          "nps": 1177702,
+          "sf_move": "b2b4"
+        },
+        {
+          "id": "DEV_05_QGD",
+          "best_move": "d8c7",
+          "score_cp": -17,
+          "nodes": 48556,
+          "elapsed_s": 0.0379,
+          "nps": 1280620,
+          "sf_move": "b7b6"
+        },
+        {
+          "id": "DEV_06_TACTICAL_PIN",
+          "best_move": "c3d5",
+          "score_cp": 226,
+          "nodes": 50234,
+          "elapsed_s": 0.0369,
+          "nps": 1362566,
+          "sf_move": "c3d5"
+        },
+        {
+          "id": "DEV_07_ROOK_ENDGAME",
+          "best_move": "e2f3",
+          "score_cp": -565,
+          "nodes": 2904,
+          "elapsed_s": 0.0012,
+          "nps": 2373131,
+          "sf_move": "e2d3"
+        },
+        {
+          "id": "DEV_08_OPP_BISHOPS",
+          "best_move": "e2e3",
+          "score_cp": 36,
+          "nodes": 7395,
+          "elapsed_s": 0.0031,
+          "nps": 2382410,
+          "sf_move": "f3b7"
+        },
+        {
+          "id": "DEV_09_CLOSED_MANOEUVRE",
+          "best_move": "d6d5",
+          "score_cp": 3,
+          "nodes": 57605,
+          "elapsed_s": 0.0563,
+          "nps": 1022841,
+          "sf_move": "e5d4"
+        },
+        {
+          "id": "DEV_10_ASYMMETRIC",
+          "best_move": "e4g2",
+          "score_cp": 25,
+          "nodes": 42689,
+          "elapsed_s": 0.035,
+          "nps": 1218867,
+          "sf_move": "e4f3"
+        },
+        {
+          "id": "DEV_11_TACTIC_DEFLECTION",
+          "best_move": "d4c5",
+          "score_cp": 230,
+          "nodes": 43363,
+          "elapsed_s": 0.0225,
+          "nps": 1929611,
+          "sf_move": "d4c5"
+        },
+        {
+          "id": "DEV_12_QUEENLESS_MIDGAME",
+          "best_move": "c3a4",
+          "score_cp": 21,
+          "nodes": 27124,
+          "elapsed_s": 0.02,
+          "nps": 1359143,
+          "sf_move": "c3a4"
+        }
+      ]
+    },
+    "A3_Hybrid_Scalar": {
+      "total_nodes": 410276,
+      "total_time_s": 0.4888,
+      "aggregate_nps": 839342,
+      "positions": [
+        {
+          "id": "DEV_01_STARTPOS",
+          "best_move": "d2d4",
+          "score_cp": 20,
+          "nodes": 13211,
+          "elapsed_s": 0.0102,
+          "nps": 1297588,
+          "sf_move": "e2e4"
+        },
+        {
+          "id": "DEV_02_ITALIAN",
+          "best_move": "b1c3",
+          "score_cp": 4,
+          "nodes": 37321,
+          "elapsed_s": 0.0519,
+          "nps": 719209,
+          "sf_move": "e1g1"
+        },
+        {
+          "id": "DEV_03_SICILIAN",
+          "best_move": "c1g5",
+          "score_cp": 37,
+          "nodes": 41070,
+          "elapsed_s": 0.0452,
+          "nps": 908506,
+          "sf_move": "f2f4"
+        },
+        {
+          "id": "DEV_04_FRENCH",
+          "best_move": "d3c2",
+          "score_cp": 65,
+          "nodes": 38804,
+          "elapsed_s": 0.0501,
+          "nps": 775209,
+          "sf_move": "b2b4"
+        },
+        {
+          "id": "DEV_05_QGD",
+          "best_move": "d8c7",
+          "score_cp": -17,
+          "nodes": 48556,
+          "elapsed_s": 0.0572,
+          "nps": 848470,
+          "sf_move": "b7b6"
+        },
+        {
+          "id": "DEV_06_TACTICAL_PIN",
+          "best_move": "c3d5",
+          "score_cp": 226,
+          "nodes": 50234,
+          "elapsed_s": 0.0565,
+          "nps": 888553,
+          "sf_move": "c3d5"
+        },
+        {
+          "id": "DEV_07_ROOK_ENDGAME",
+          "best_move": "e2f3",
+          "score_cp": -565,
+          "nodes": 2904,
+          "elapsed_s": 0.0021,
+          "nps": 1368391,
+          "sf_move": "e2e3"
+        },
+        {
+          "id": "DEV_08_OPP_BISHOPS",
+          "best_move": "e2e3",
+          "score_cp": 36,
+          "nodes": 7395,
+          "elapsed_s": 0.0055,
+          "nps": 1335271,
+          "sf_move": "f3d5"
+        },
+        {
+          "id": "DEV_09_CLOSED_MANOEUVRE",
+          "best_move": "d6d5",
+          "score_cp": 3,
+          "nodes": 57605,
+          "elapsed_s": 0.0831,
+          "nps": 693495,
+          "sf_move": "e5d4"
+        },
+        {
+          "id": "DEV_10_ASYMMETRIC",
+          "best_move": "e4g2",
+          "score_cp": 25,
+          "nodes": 42689,
+          "elapsed_s": 0.0565,
+          "nps": 755508,
+          "sf_move": "e4f3"
+        },
+        {
+          "id": "DEV_11_TACTIC_DEFLECTION",
+          "best_move": "d4c5",
+          "score_cp": 230,
+          "nodes": 43363,
+          "elapsed_s": 0.0387,
+          "nps": 1119678,
+          "sf_move": "d4c5"
+        },
+        {
+          "id": "DEV_12_QUEENLESS_MIDGAME",
+          "best_move": "c3a4",
+          "score_cp": 21,
+          "nodes": 27124,
+          "elapsed_s": 0.0318,
+          "nps": 854245,
+          "sf_move": "c3a4"
+        }
+      ]
+    },
+    "A4_Pure_NNUE_Scalar": {
+      "total_nodes": 343683,
+      "total_time_s": 0.3151,
+      "aggregate_nps": 1090818,
+      "positions": [
+        {
+          "id": "DEV_01_STARTPOS",
+          "best_move": "d2d4",
+          "score_cp": 2,
+          "nodes": 13406,
+          "elapsed_s": 0.009,
+          "nps": 1494654,
+          "sf_move": "e2e4"
+        },
+        {
+          "id": "DEV_02_ITALIAN",
+          "best_move": "c4f7",
+          "score_cp": 24,
+          "nodes": 25329,
+          "elapsed_s": 0.0248,
+          "nps": 1022906,
+          "sf_move": "b1c3"
+        },
+        {
+          "id": "DEV_03_SICILIAN",
+          "best_move": "f1c4",
+          "score_cp": 72,
+          "nodes": 38042,
+          "elapsed_s": 0.0379,
+          "nps": 1004743,
+          "sf_move": "c1g5"
+        },
+        {
+          "id": "DEV_04_FRENCH",
+          "best_move": "d3c2",
+          "score_cp": 20,
+          "nodes": 27250,
+          "elapsed_s": 0.0233,
+          "nps": 1167909,
+          "sf_move": "b2b4"
+        },
+        {
+          "id": "DEV_05_QGD",
+          "best_move": "d5c4",
+          "score_cp": -16,
+          "nodes": 40235,
+          "elapsed_s": 0.0279,
+          "nps": 1443465,
+          "sf_move": "b7b6"
+        },
+        {
+          "id": "DEV_06_TACTICAL_PIN",
+          "best_move": "c3d5",
+          "score_cp": 106,
+          "nodes": 44728,
+          "elapsed_s": 0.0446,
+          "nps": 1002167,
+          "sf_move": "c3d5"
+        },
+        {
+          "id": "DEV_07_ROOK_ENDGAME",
+          "best_move": "e2e3",
+          "score_cp": -741,
+          "nodes": 3975,
+          "elapsed_s": 0.0028,
+          "nps": 1442988,
+          "sf_move": "e2f3"
+        },
+        {
+          "id": "DEV_08_OPP_BISHOPS",
+          "best_move": "e2e3",
+          "score_cp": 62,
+          "nodes": 5758,
+          "elapsed_s": 0.0044,
+          "nps": 1302096,
+          "sf_move": "e2d3"
+        },
+        {
+          "id": "DEV_09_CLOSED_MANOEUVRE",
+          "best_move": "c6d4",
+          "score_cp": 0,
+          "nodes": 40843,
+          "elapsed_s": 0.0349,
+          "nps": 1171132,
+          "sf_move": "e5d4"
+        },
+        {
+          "id": "DEV_10_ASYMMETRIC",
+          "best_move": "d1c2",
+          "score_cp": -29,
+          "nodes": 40872,
+          "elapsed_s": 0.0528,
+          "nps": 774167,
+          "sf_move": "e4g2"
+        },
+        {
+          "id": "DEV_11_TACTIC_DEFLECTION",
+          "best_move": "f3g5",
+          "score_cp": 60,
+          "nodes": 41555,
+          "elapsed_s": 0.034,
+          "nps": 1220906,
+          "sf_move": "c4d5"
+        },
+        {
+          "id": "DEV_12_QUEENLESS_MIDGAME",
+          "best_move": "c3d5",
+          "score_cp": 8,
+          "nodes": 21690,
+          "elapsed_s": 0.0188,
+          "nps": 1156461,
+          "sf_move": "f1c1"
+        }
+      ]
+    }
+  },
+  "fixed_time_500ms": {
+    "A0_Classical_C1": {
+      "total_nodes": 10479616,
+      "avg_depth_reached": 7.83,
+      "aggregate_nps": 1746603,
+      "positions": [
+        {
+          "id": "DEV_01_STARTPOS",
+          "best_move": "b1c3",
+          "score_cp": 20,
+          "depth_reached": 8,
+          "nodes": 825344,
+          "elapsed_s": 0.5015,
+          "nps": 1645913
+        },
+        {
+          "id": "DEV_02_ITALIAN",
+          "best_move": "b1c3",
+          "score_cp": 10,
+          "depth_reached": 6,
+          "nodes": 520192,
+          "elapsed_s": 0.5004,
+          "nps": 1039455
+        },
+        {
+          "id": "DEV_03_SICILIAN",
+          "best_move": "d4f3",
+          "score_cp": 50,
+          "depth_reached": 6,
+          "nodes": 649216,
+          "elapsed_s": 0.5019,
+          "nps": 1293408
+        },
+        {
+          "id": "DEV_04_FRENCH",
+          "best_move": "d3b5",
+          "score_cp": 110,
+          "depth_reached": 7,
+          "nodes": 636928,
+          "elapsed_s": 0.5006,
+          "nps": 1272406
+        },
+        {
+          "id": "DEV_05_QGD",
+          "best_move": "c6c5",
+          "score_cp": -15,
+          "depth_reached": 7,
+          "nodes": 804864,
+          "elapsed_s": 0.5009,
+          "nps": 1606915
+        },
+        {
+          "id": "DEV_06_TACTICAL_PIN",
+          "best_move": "c3d5",
+          "score_cp": 365,
+          "depth_reached": 6,
+          "nodes": 731136,
+          "elapsed_s": 0.5023,
+          "nps": 1455532
+        },
+        {
+          "id": "DEV_07_ROOK_ENDGAME",
+          "best_move": "e2f3",
+          "score_cp": -445,
+          "depth_reached": 13,
+          "nodes": 1689600,
+          "elapsed_s": 0.5002,
+          "nps": 3377814
+        },
+        {
+          "id": "DEV_08_OPP_BISHOPS",
+          "best_move": "e2d1",
+          "score_cp": 0,
+          "depth_reached": 13,
+          "nodes": 1286144,
+          "elapsed_s": 0.5006,
+          "nps": 2569298
+        },
+        {
+          "id": "DEV_09_CLOSED_MANOEUVRE",
+          "best_move": "d6d5",
+          "score_cp": 10,
+          "depth_reached": 6,
+          "nodes": 479232,
+          "elapsed_s": 0.5003,
+          "nps": 957956
+        },
+        {
+          "id": "DEV_10_ASYMMETRIC",
+          "best_move": "e4f3",
+          "score_cp": 110,
+          "depth_reached": 8,
+          "nodes": 872448,
+          "elapsed_s": 0.501,
+          "nps": 1741431
+        },
+        {
+          "id": "DEV_11_TACTIC_DEFLECTION",
+          "best_move": "d4c5",
+          "score_cp": 375,
+          "depth_reached": 7,
+          "nodes": 1134592,
+          "elapsed_s": 0.5003,
+          "nps": 2267936
+        },
+        {
+          "id": "DEV_12_QUEENLESS_MIDGAME",
+          "best_move": "c3e2",
+          "score_cp": 5,
+          "depth_reached": 7,
+          "nodes": 849920,
+          "elapsed_s": 0.501,
+          "nps": 1696287
+        }
+      ]
+    },
+    "A1_Pure_NNUE_AVX2": {
+      "total_nodes": 11470848,
+      "avg_depth_reached": 7.83,
+      "aggregate_nps": 1911808,
+      "positions": [
+        {
+          "id": "DEV_01_STARTPOS",
+          "best_move": "e2e3",
+          "score_cp": 8,
+          "depth_reached": 8,
+          "nodes": 1116160,
+          "elapsed_s": 0.5003,
+          "nps": 2231167
+        },
+        {
+          "id": "DEV_02_ITALIAN",
+          "best_move": "b1c3",
+          "score_cp": 7,
+          "depth_reached": 7,
+          "nodes": 872448,
+          "elapsed_s": 0.5009,
+          "nps": 1741625
+        },
+        {
+          "id": "DEV_03_SICILIAN",
+          "best_move": "f1c4",
+          "score_cp": 67,
+          "depth_reached": 7,
+          "nodes": 759808,
+          "elapsed_s": 0.5019,
+          "nps": 1513909
+        },
+        {
+          "id": "DEV_04_FRENCH",
+          "best_move": "d3c2",
+          "score_cp": 24,
+          "depth_reached": 7,
+          "nodes": 897024,
+          "elapsed_s": 0.5006,
+          "nps": 1791855
+        },
+        {
+          "id": "DEV_05_QGD",
+          "best_move": "d7c5",
+          "score_cp": -12,
+          "depth_reached": 7,
+          "nodes": 1118208,
+          "elapsed_s": 0.5005,
+          "nps": 2234175
+        },
+        {
+          "id": "DEV_06_TACTICAL_PIN",
+          "best_move": "c3d5",
+          "score_cp": 109,
+          "depth_reached": 6,
+          "nodes": 702464,
+          "elapsed_s": 0.5011,
+          "nps": 1401941
+        },
+        {
+          "id": "DEV_07_ROOK_ENDGAME",
+          "best_move": "e2f3",
+          "score_cp": -789,
+          "depth_reached": 11,
+          "nodes": 1267712,
+          "elapsed_s": 0.5002,
+          "nps": 2534383
+        },
+        {
+          "id": "DEV_08_OPP_BISHOPS",
+          "best_move": "e2d3",
+          "score_cp": 23,
+          "depth_reached": 12,
+          "nodes": 1116160,
+          "elapsed_s": 0.5008,
+          "nps": 2228741
+        },
+        {
+          "id": "DEV_09_CLOSED_MANOEUVRE",
+          "best_move": "e5d4",
+          "score_cp": 10,
+          "depth_reached": 7,
+          "nodes": 948224,
+          "elapsed_s": 0.5015,
+          "nps": 1890670
+        },
+        {
+          "id": "DEV_10_ASYMMETRIC",
+          "best_move": "d1c2",
+          "score_cp": -8,
+          "depth_reached": 7,
+          "nodes": 751616,
+          "elapsed_s": 0.5007,
+          "nps": 1501011
+        },
+        {
+          "id": "DEV_11_TACTIC_DEFLECTION",
+          "best_move": "d4c5",
+          "score_cp": 76,
+          "depth_reached": 7,
+          "nodes": 950272,
+          "elapsed_s": 0.5002,
+          "nps": 1899649
+        },
+        {
+          "id": "DEV_12_QUEENLESS_MIDGAME",
+          "best_move": "c3a4",
+          "score_cp": 30,
+          "depth_reached": 8,
+          "nodes": 970752,
+          "elapsed_s": 0.5004,
+          "nps": 1939857
+        }
+      ]
+    },
+    "A2_Hybrid_AVX2": {
+      "total_nodes": 9009152,
+      "avg_depth_reached": 7.75,
+      "aggregate_nps": 1501525,
+      "positions": [
+        {
+          "id": "DEV_01_STARTPOS",
+          "best_move": "e2e4",
+          "score_cp": 18,
+          "depth_reached": 8,
+          "nodes": 796672,
+          "elapsed_s": 0.5017,
+          "nps": 1588059
+        },
+        {
+          "id": "DEV_02_ITALIAN",
+          "best_move": "b1c3",
+          "score_cp": 3,
+          "depth_reached": 6,
+          "nodes": 485376,
+          "elapsed_s": 0.5008,
+          "nps": 969116
+        },
+        {
+          "id": "DEV_03_SICILIAN",
+          "best_move": "c1g5",
+          "score_cp": 32,
+          "depth_reached": 7,
+          "nodes": 608256,
+          "elapsed_s": 0.5,
+          "nps": 1216468
+        },
+        {
+          "id": "DEV_04_FRENCH",
+          "best_move": "d3b5",
+          "score_cp": 79,
+          "depth_reached": 7,
+          "nodes": 565248,
+          "elapsed_s": 0.5004,
+          "nps": 1129639
+        },
+        {
+          "id": "DEV_05_QGD",
+          "best_move": "c6c5",
+          "score_cp": -19,
+          "depth_reached": 7,
+          "nodes": 643072,
+          "elapsed_s": 0.5004,
+          "nps": 1285172
+        },
+        {
+          "id": "DEV_06_TACTICAL_PIN",
+          "best_move": "c3d5",
+          "score_cp": 234,
+          "depth_reached": 6,
+          "nodes": 606208,
+          "elapsed_s": 0.5005,
+          "nps": 1211206
+        },
+        {
+          "id": "DEV_07_ROOK_ENDGAME",
+          "best_move": "e2e3",
+          "score_cp": -592,
+          "depth_reached": 12,
+          "nodes": 1220608,
+          "elapsed_s": 0.5009,
+          "nps": 2436882
+        },
+        {
+          "id": "DEV_08_OPP_BISHOPS",
+          "best_move": "e2d3",
+          "score_cp": 9,
+          "depth_reached": 12,
+          "nodes": 1048576,
+          "elapsed_s": 0.501,
+          "nps": 2093139
+        },
+        {
+          "id": "DEV_09_CLOSED_MANOEUVRE",
+          "best_move": "f6e4",
+          "score_cp": 17,
+          "depth_reached": 7,
+          "nodes": 614400,
+          "elapsed_s": 0.5,
+          "nps": 1228715
+        },
+        {
+          "id": "DEV_10_ASYMMETRIC",
+          "best_move": "e4g2",
+          "score_cp": 34,
+          "depth_reached": 7,
+          "nodes": 710656,
+          "elapsed_s": 0.5022,
+          "nps": 1415097
+        },
+        {
+          "id": "DEV_11_TACTIC_DEFLECTION",
+          "best_move": "d4c5",
+          "score_cp": 214,
+          "depth_reached": 7,
+          "nodes": 954368,
+          "elapsed_s": 0.5022,
+          "nps": 1900515
+        },
+        {
+          "id": "DEV_12_QUEENLESS_MIDGAME",
+          "best_move": "c3a4",
+          "score_cp": 8,
+          "depth_reached": 7,
+          "nodes": 755712,
+          "elapsed_s": 0.5005,
+          "nps": 1509949
+        }
+      ]
+    },
+    "A3_Hybrid_Scalar": {
+      "total_nodes": 5859328,
+      "avg_depth_reached": 7.33,
+      "aggregate_nps": 976555,
+      "positions": [
+        {
+          "id": "DEV_01_STARTPOS",
+          "best_move": "e2e4",
+          "score_cp": 18,
+          "depth_reached": 8,
+          "nodes": 563200,
+          "elapsed_s": 0.5012,
+          "nps": 1123725
+        },
+        {
+          "id": "DEV_02_ITALIAN",
+          "best_move": "b1c3",
+          "score_cp": 3,
+          "depth_reached": 6,
+          "nodes": 376832,
+          "elapsed_s": 0.5037,
+          "nps": 748151
+        },
+        {
+          "id": "DEV_03_SICILIAN",
+          "best_move": "c1g5",
+          "score_cp": 50,
+          "depth_reached": 6,
+          "nodes": 419840,
+          "elapsed_s": 0.5007,
+          "nps": 838489
+        },
+        {
+          "id": "DEV_04_FRENCH",
+          "best_move": "d3b5",
+          "score_cp": 79,
+          "depth_reached": 7,
+          "nodes": 378880,
+          "elapsed_s": 0.5002,
+          "nps": 757426
+        },
+        {
+          "id": "DEV_05_QGD",
+          "best_move": "d8c7",
+          "score_cp": -17,
+          "depth_reached": 6,
+          "nodes": 446464,
+          "elapsed_s": 0.5004,
+          "nps": 892300
+        },
+        {
+          "id": "DEV_06_TACTICAL_PIN",
+          "best_move": "c3d5",
+          "score_cp": 234,
+          "depth_reached": 6,
+          "nodes": 454656,
+          "elapsed_s": 0.5007,
+          "nps": 908002
+        },
+        {
+          "id": "DEV_07_ROOK_ENDGAME",
+          "best_move": "e2e3",
+          "score_cp": -598,
+          "depth_reached": 11,
+          "nodes": 778240,
+          "elapsed_s": 0.5004,
+          "nps": 1555249
+        },
+        {
+          "id": "DEV_08_OPP_BISHOPS",
+          "best_move": "e2d3",
+          "score_cp": 9,
+          "depth_reached": 12,
+          "nodes": 720896,
+          "elapsed_s": 0.5013,
+          "nps": 1437965
+        },
+        {
+          "id": "DEV_09_CLOSED_MANOEUVRE",
+          "best_move": "d6d5",
+          "score_cp": 8,
+          "depth_reached": 6,
+          "nodes": 405504,
+          "elapsed_s": 0.5044,
+          "nps": 803894
+        },
+        {
+          "id": "DEV_10_ASYMMETRIC",
+          "best_move": "e4g2",
+          "score_cp": 34,
+          "depth_reached": 7,
+          "nodes": 387072,
+          "elapsed_s": 0.5001,
+          "nps": 774002
+        },
+        {
+          "id": "DEV_11_TACTIC_DEFLECTION",
+          "best_move": "d4c5",
+          "score_cp": 214,
+          "depth_reached": 7,
+          "nodes": 505856,
+          "elapsed_s": 0.5013,
+          "nps": 1009126
+        },
+        {
+          "id": "DEV_12_QUEENLESS_MIDGAME",
+          "best_move": "c3a4",
+          "score_cp": 22,
+          "depth_reached": 6,
+          "nodes": 421888,
+          "elapsed_s": 0.5017,
+          "nps": 840951
+        }
+      ]
+    },
+    "A4_Pure_NNUE_Scalar": {
+      "total_nodes": 6846464,
+      "avg_depth_reached": 7.5,
+      "aggregate_nps": 1141077,
+      "positions": [
+        {
+          "id": "DEV_01_STARTPOS",
+          "best_move": "b1c3",
+          "score_cp": 6,
+          "depth_reached": 7,
+          "nodes": 722944,
+          "elapsed_s": 0.5005,
+          "nps": 1444482
+        },
+        {
+          "id": "DEV_02_ITALIAN",
+          "best_move": "b1c3",
+          "score_cp": 7,
+          "depth_reached": 7,
+          "nodes": 462848,
+          "elapsed_s": 0.5003,
+          "nps": 925060
+        },
+        {
+          "id": "DEV_03_SICILIAN",
+          "best_move": "f1c4",
+          "score_cp": 69,
+          "depth_reached": 6,
+          "nodes": 452608,
+          "elapsed_s": 0.5008,
+          "nps": 903701
+        },
+        {
+          "id": "DEV_04_FRENCH",
+          "best_move": "d3c2",
+          "score_cp": 24,
+          "depth_reached": 7,
+          "nodes": 512000,
+          "elapsed_s": 0.5008,
+          "nps": 1022389
+        },
+        {
+          "id": "DEV_05_QGD",
+          "best_move": "d7c5",
+          "score_cp": -12,
+          "depth_reached": 7,
+          "nodes": 634880,
+          "elapsed_s": 0.5006,
+          "nps": 1268308
+        },
+        {
+          "id": "DEV_06_TACTICAL_PIN",
+          "best_move": "c3d5",
+          "score_cp": 109,
+          "depth_reached": 6,
+          "nodes": 485376,
+          "elapsed_s": 0.5013,
+          "nps": 968215
+        },
+        {
+          "id": "DEV_07_ROOK_ENDGAME",
+          "best_move": "e2e3",
+          "score_cp": -785,
+          "depth_reached": 10,
+          "nodes": 782336,
+          "elapsed_s": 0.5011,
+          "nps": 1561349
+        },
+        {
+          "id": "DEV_08_OPP_BISHOPS",
+          "best_move": "e2d3",
+          "score_cp": 0,
+          "depth_reached": 11,
+          "nodes": 724992,
+          "elapsed_s": 0.5002,
+          "nps": 1449537
+        },
+        {
+          "id": "DEV_09_CLOSED_MANOEUVRE",
+          "best_move": "e5d4",
+          "score_cp": 10,
+          "depth_reached": 7,
+          "nodes": 530432,
+          "elapsed_s": 0.502,
+          "nps": 1056587
+        },
+        {
+          "id": "DEV_10_ASYMMETRIC",
+          "best_move": "d1c2",
+          "score_cp": -8,
+          "depth_reached": 7,
+          "nodes": 403456,
+          "elapsed_s": 0.5026,
+          "nps": 802674
+        },
+        {
+          "id": "DEV_11_TACTIC_DEFLECTION",
+          "best_move": "d4c5",
+          "score_cp": 76,
+          "depth_reached": 7,
+          "nodes": 534528,
+          "elapsed_s": 0.502,
+          "nps": 1064826
+        },
+        {
+          "id": "DEV_12_QUEENLESS_MIDGAME",
+          "best_move": "c3a4",
+          "score_cp": 30,
+          "depth_reached": 8,
+          "nodes": 600064,
+          "elapsed_s": 0.5011,
+          "nps": 1197503
+        }
+      ]
+    }
+  },
+  "causal_decomposition": {
+    "A1_Pure_NNUE_AVX2": {
+      "node_delta_depth5_pct": -29.4,
+      "nps_retention_depth5_pct": 156.91,
+      "depth_delta_500ms": 0.0,
+      "sf19_move_agreement_pct": 8.3,
+      "c1_move_agreement_pct": 8.3
+    },
+    "A2_Hybrid_AVX2": {
+      "node_delta_depth5_pct": -15.72,
+      "nps_retention_depth5_pct": 114.72,
+      "depth_delta_500ms": -0.08,
+      "sf19_move_agreement_pct": 41.7,
+      "c1_move_agreement_pct": 41.7
+    },
+    "A3_Hybrid_Scalar": {
+      "node_delta_depth5_pct": -15.72,
+      "nps_retention_depth5_pct": 74.62,
+      "depth_delta_500ms": -0.5,
+      "sf19_move_agreement_pct": 25.0,
+      "c1_move_agreement_pct": 41.7
+    },
+    "A4_Pure_NNUE_Scalar": {
+      "node_delta_depth5_pct": -29.4,
+      "nps_retention_depth5_pct": 96.97,
+      "depth_delta_500ms": -0.33,
+      "sf19_move_agreement_pct": 8.3,
+      "c1_move_agreement_pct": 8.3
+    }
+  }
+}

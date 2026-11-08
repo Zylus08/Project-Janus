@@ -1,0 +1,90 @@
+{
+  "c1_parity_verified": true,
+  "search_bench": {
+    "C1_Classical": {
+      "nodes": 111683,
+      "depth": 7,
+      "score_cp": 20,
+      "bestmove": "b1c3",
+      "elapsed_ms": 91.0,
+      "nps": 1227308
+    },
+    "N1_NNUE_V2": {
+      "nodes": 113712,
+      "depth": 7,
+      "score_cp": 13,
+      "bestmove": "e2e4",
+      "elapsed_ms": 122.83,
+      "nps": 925757
+    },
+    "N2_Fixed_50": {
+      "nodes": 154688,
+      "depth": 7,
+      "score_cp": 14,
+      "bestmove": "b1c3",
+      "elapsed_ms": 238.84,
+      "nps": 647662
+    },
+    "N2_Adaptive": {
+      "nodes": 154068,
+      "depth": 7,
+      "score_cp": 14,
+      "bestmove": "b1c3",
+      "elapsed_ms": 226.33,
+      "nps": 680732
+    }
+  },
+  "micro_bench": {
+    "N1_test_output": [
+      "============================================================",
+      "PROJECT JANUS v0.61 \u2014 NNUE-V2 AVX2 & SCALAR BENCHMARK HARNESS",
+      "============================================================",
+      "Model Loaded Successfully:",
+      "  Arch ID:     1",
+      "  Feature Dim: 768",
+      "  Accum Dim:   64",
+      "  L1 Dim:      16",
+      "  CPU AVX2:    SUPPORTED",
+      "[PASS] Full Refresh Parity: Scalar == AVX2 (Bit-Exact)",
+      "Starting Position Eval: Scalar = 16 cp | AVX2 = 16 cp",
+      "[PASS] Evaluation Parity: Scalar == AVX2 (Diff <= 1 cp)",
+      "[PASS] Incremental Quiet Move Parity: Scalar == AVX2 (Bit-Exact)",
+      "",
+      "Running Benchmark Suites (1000000 iterations per test)...",
+      "",
+      "============================================================",
+      "BENCHMARK RESULTS SUMMARY:",
+      "============================================================",
+      "Component                     | Scalar C++17 | AVX2 SIMD   | Speedup",
+      "------------------------------+--------------+-------------+--------",
+      "Full Refresh Latency:         | 4368.98 ns    | 359.778 ns   | 12.1436x",
+      "Incremental Quiet Update:     | 146.413 ns     | 17.9163 ns    | 8.17204x",
+      "Feedforward Inference (L1+L2):| 474.207 ns    | 124.169 ns    | 3.81905x",
+      "End-to-End Leaf Latency:      | 620.62 ns    | 142.085 ns    | 4.36794x",
+      "Isolated Leaf Throughput:     | 1.61129M/s   | 7.03803M/s  | 4.36794x",
+      "============================================================"
+    ],
+    "N2_test_output": [
+      "============================================================",
+      "PROJECT JANUS v0.64 \u2014 NNUE-V3 AVX2 & SCALAR BENCHMARK HARNESS",
+      "============================================================",
+      "Model Loaded Successfully:",
+      "  Version:     3",
+      "  Feature Dim: 768",
+      "  Accum Dim:   128",
+      "  SEF Dim:     32",
+      "  L1 Dim:      32",
+      "  CPU AVX2:    SUPPORTED",
+      "[PASS] Full Refresh Parity: Scalar == AVX2 (Bit-Exact)",
+      "Starting Position Eval: Scalar = 3 cp | AVX2 = 3 cp",
+      "[PASS] Evaluation Parity: Scalar == AVX2 (Diff <= 1 cp)",
+      "",
+      "Running Benchmark Suites (1000000 iterations per test)...",
+      "  AVX2 Full Leaf Evaluation (inc. SEF): 0.492541 s (492.541 ns/eval, 2.03029 M evals/s)",
+      "  Scalar Full Leaf Evaluation (inc. SEF): 1.53449 s (1534.49 ns/eval, 0.651682 M evals/s)",
+      "  AVX2 Speedup over Scalar: 3.11545x",
+      "",
+      "All native NNUE-V3 checks PASSED."
+    ]
+  }
+}

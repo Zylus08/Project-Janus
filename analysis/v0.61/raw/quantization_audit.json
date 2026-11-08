@@ -1,0 +1,40 @@
+{
+  "v2_small": {
+    "metadata": {
+      "output_path": "E:\\ChessXML\\project-janus\\analysis\\v0.61\\models\\janus_nnue_v2_small.jnnue",
+      "file_size_bytes": 100628,
+      "crc32": "0x81d61206",
+      "arch_id": 1,
+      "feature_dim": 768,
+      "accum_dim": 64,
+      "l1_dim": 16,
+      "total_weights_bytes": 100564
+    },
+    "parity": {
+      "mae_cp": 10.009320202827453,
+      "p95_cp": 30.67238311767578,
+      "max_error_cp": 54.40374755859375,
+      "pearson_r": 0.9988873730619492,
+      "sign_agreement_pct": 98.5
+    }
+  },
+  "v2_compact": {
+    "metadata": {
+      "output_path": "E:\\ChessXML\\project-janus\\analysis\\v0.61\\models\\janus_nnue_v2_compact.jnnue",
+      "file_size_bytes": 205284,
+      "crc32": "0xe0ddb558",
+      "arch_id": 2,
+      "feature_dim": 768,
+      "accum_dim": 128,
+      "l1_dim": 32,
+      "total_weights_bytes": 205220
+    },
+    "parity": {
+      "mae_cp": 9.313939810454846,
+      "p95_cp": 25.261082458496084,
+      "max_error_cp": 48.154701709747314,
+      "pearson_r": 0.999256915252972,
+      "sign_agreement_pct": 97.6
+    }
+  }
+}

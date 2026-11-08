@@ -1,0 +1,63 @@
+{
+  "milestone": "v0.59",
+  "milestone_name": "Neural Policy Effectiveness, Search Interaction & Causal Ablation",
+  "branch": "v0.3-benchmark-harness",
+  "parent_commit": "b84c003 / 8e50cd8",
+  "frozen_baseline_control": "Janus Classical Baseline C1 (Native N5: UseKiller=true, UseHistory=true, UsePVS=false, UseLMR=true, UseSEEOrdering=false, UseSEEInQuiescence=false)",
+  "evaluated_neural_candidates": [
+    "Janus Neural N8-A (Root-Only Gating: UseNeuralPolicyOrdering=true, MaxPly=0, MinDepth=4, ScoreWeight=50000)",
+    "Janus Neural N8-B (Root+Internal Gating: UseNeuralPolicyOrdering=true, MaxPly=2, MinDepth=4, ScoreWeight=50000, Budget=1.0%)",
+    "Janus Neural N8-C (PV-Selective Gating: UseNeuralPolicyOrdering=true, is_pv=true, MinDepth=4, ScoreWeight=50000, Budget=1.0%)"
+  ],
+  "causal_control_conditions": [
+    "C0: Classical C1 Ordering (Frozen Control)",
+    "C1: Trained MicroPolicyNet (Learned Chess Knowledge)",
+    "C2: Random Policy Ordering (Deterministic PRNG splitmix64, seed=42)",
+    "C3: Shuffled Neural Logits (Permutes probabilities across legal moves, seed=42)"
+  ],
+  "key_findings": {
+    "evidence_reconciliation": {
+      "parameter_count_verified": 652488,
+      "parameter_typo_in_v058_text": 643200,
+      "tournament_scoreboard_verified": "36-129-35 (100.5/200, 50.25%, +1.7 Elo, t=+0.1198, p=0.9020)",
+      "repetition_draws": 126,
+      "insufficient_material_draws": 3,
+      "total_draws": 129,
+      "dataset_split_overlap": 0
+    },
+    "phase1_influence": {
+      "mean_spearman_rank_correlation": 0.3659,
+      "root_moves_reordered": "85.3% to 86.7%",
+      "neural_top_overridden_rate": "80.0% (D4) to 86.0% (D5/D6)",
+      "overriding_heuristic": "100.0% Transposition Table Move (score 10,000,000)",
+      "disagreement_eventual_pv_win_rate": "Classical 74.4% vs Neural 4.7% (16:1 ratio)"
+    },
+    "phase2_causal_invariance": {
+      "trained_vs_random_delta_nodes": "0.0 nodes (t = 0.000, p = 1.0000)",
+      "trained_vs_shuffled_delta_nodes": "0.0 nodes (t = 0.000, p = 1.0000)",
+      "scientific_conclusion": "Learned policy provides zero search efficiency benefit over random numbers or shuffled logits at the root node."
+    },
+    "phase3_gating": {
+      "internal_gating_d6_nodes": "5,496,457 (+1.20% vs C1)",
+      "pv_selective_d6_nodes": "5,496,457 (+1.20% vs C1)",
+      "budget_compliance": "Enforced strictly <= 1.8% of available search time"
+    },
+    "phase4_held_out": {
+      "held_out_positions": 50,
+      "leakage_vs_dev_set": 0,
+      "d6_nodes_delta": "+0.35% (3,992,183 vs 3,978,134)",
+      "100ms_mean_depth": "C1 6.34 vs N8-A 6.32, N8-B 6.34, N8-C 6.38",
+      "move_agreement_with_c1": "90.0% to 94.0% overall (100.0% in middlegame/endgame)"
+    },
+    "candidate_selection_gate": {
+      "criteria_evaluated": 6,
+      "criteria_passed": 4,
+      "criteria_failed": 2,
+      "gate_status": "DISQUALIFIED / DO NOT ADVANCE"
+    },
+    "phase6_tournament": "NOT RUN (Halting enforced by candidate selection gate)"
+  },
+  "final_classification": "Category C \u2014 Neural policy ineffective",
+  "mandatory_next_direction": "Direction V \u2014 Investigate learned value evaluation or hybrid evaluation (NNUE)",
+  "proposed_v060_objective": "PROJECT JANUS v0.60: Quantized NNUE Value Evaluation Architecture, Dataset Synthesis & SIMD Native Inference Core"
+}

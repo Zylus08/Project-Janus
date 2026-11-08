@@ -1,0 +1,1087 @@
+{
+  "C1": {
+    "config": {
+      "id": "C1",
+      "name": "C1_Classical_Control",
+      "use_nnue": false,
+      "blend": 0
+    },
+    "depth5_summary": {
+      "mean_nodes": 30768.7,
+      "mean_time_sec": 0.025381520001246827,
+      "mean_nps": 1363970.222661478
+    },
+    "fixed_time_summary": {
+      "mean_depth": 9.3,
+      "mean_nodes": 904192.0,
+      "mean_nps": 1805485.2803287737
+    },
+    "fixed_depth_positions": [
+      {
+        "position": "Starting Position",
+        "category": "opening",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "best_move": "b1c3",
+        "score_cp": 40,
+        "depth": 5,
+        "nodes": 10761,
+        "elapsed_sec": 0.00514340000518132,
+        "nps": 2092195.8216665366,
+        "pv": [
+          "b1c3",
+          "b8c6",
+          "g1f3",
+          "g8f6"
+        ]
+      },
+      {
+        "position": "Italian Game Open",
+        "category": "opening",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 1 5",
+        "best_move": "b1c3",
+        "score_cp": 10,
+        "depth": 5,
+        "nodes": 42934,
+        "elapsed_sec": 0.03760150000016438,
+        "nps": 1141816.1509464332,
+        "pv": [
+          "b1c3",
+          "d7d6",
+          "c1e3",
+          "c8g4"
+        ]
+      },
+      {
+        "position": "Sicilian Defense Classical",
+        "category": "opening",
+        "fen": "r1bqkbnr/pp1ppppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 2 4",
+        "best_move": "g8f6",
+        "score_cp": -50,
+        "depth": 5,
+        "nodes": 15455,
+        "elapsed_sec": 0.010728800007200334,
+        "nps": 1440515.247709698,
+        "pv": [
+          "g8f6",
+          "b1c3",
+          "d7d5",
+          "d4c6"
+        ]
+      },
+      {
+        "position": "Middlegame Complex Center",
+        "category": "middlegame",
+        "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/2PNP3/2N1BP2/PP4PP/R2QKB1R b KQ - 2 9",
+        "best_move": "c6d4",
+        "score_cp": 10,
+        "depth": 5,
+        "nodes": 33022,
+        "elapsed_sec": 0.023994800001673866,
+        "nps": 1376214.8464540818,
+        "pv": [
+          "c6d4",
+          "d1d4",
+          "e7e5",
+          "d4d3"
+        ]
+      },
+      {
+        "position": "French Defense Closed",
+        "category": "middlegame",
+        "fen": "r1b1k2r/ppqn1ppp/2p1p3/3pP3/3P4/2N2N2/PPP2PPP/R1BQKB1R w KQkq - 1 8",
+        "best_move": "c1e3",
+        "score_cp": 700,
+        "depth": 5,
+        "nodes": 50779,
+        "elapsed_sec": 0.04359629999817116,
+        "nps": 1164754.8072228641,
+        "pv": [
+          "c1e3",
+          "c7b6",
+          "d1b1",
+          "c6c5"
+        ]
+      },
+      {
+        "position": "Tactical Pin and Skewer",
+        "category": "middlegame",
+        "fen": "2r1r1k1/p4p1p/1p4p1/2n5/5N1Q/P3PRP1/3q1PKP/8 b - - 0 27",
+        "best_move": "c5e4",
+        "score_cp": 560,
+        "depth": 5,
+        "nodes": 115377,
+        "elapsed_sec": 0.0992028999971808,
+        "nps": 1163040.5966285144,
+        "pv": [
+          "c5e4",
+          "f4h3",
+          "d2c1",
+          "h4f4"
+        ]
+      },
+      {
+        "position": "Heavy Piece Infiltration",
+        "category": "middlegame",
+        "fen": "4r1k1/1p3pp1/p1q4p/8/6Q1/P7/1P4PP/K2R4 w - - 4 35",
+        "best_move": "a1b1",
+        "score_cp": -115,
+        "depth": 5,
+        "nodes": 26687,
+        "elapsed_sec": 0.023058300001139287,
+        "nps": 1157370.6647359703,
+        "pv": [
+          "a1b1",
+          "h6h5",
+          "g4d7",
+          "c6e4"
+        ]
+      },
+      {
+        "position": "Rook & Pawn Endgame",
+        "category": "endgame",
+        "fen": "8/5pk1/1p1R4/p3r3/P1P5/1P6/5KP1/8 b - - 2 39",
+        "best_move": "e5e6",
+        "score_cp": -100,
+        "depth": 5,
+        "nodes": 5774,
+        "elapsed_sec": 0.006223399999726098,
+        "nps": 927788.668614282,
+        "pv": [
+          "e5e6",
+          "d6e6",
+          "f7e6",
+          "f2g1"
+        ]
+      },
+      {
+        "position": "Knight vs Bishop Endgame",
+        "category": "endgame",
+        "fen": "8/7p/1pp1kp2/p2p2p1/P2Pn1P1/2P1K2P/1P6/4N3 b - - 1 36",
+        "best_move": "e6f7",
+        "score_cp": 120,
+        "depth": 5,
+        "nodes": 5439,
+        "elapsed_sec": 0.003315699999802746,
+        "nps": 1640377.5975883135,
+        "pv": [
+          "e6f7",
+          "e1d3",
+          "c6c5",
+          "e3e2"
+        ]
+      },
+      {
+        "position": "Pawn Race Endgame",
+        "category": "endgame",
+        "fen": "8/8/4k3/1p1p4/pP1P1K2/P7/8/8 w - - 0 45",
+        "best_move": "f4f3",
+        "score_cp": 0,
+        "depth": 5,
+        "nodes": 1459,
+        "elapsed_sec": 0.0009501000022282824,
+        "nps": 1535627.8250480872,
+        "pv": [
+          "f4f3",
+          "e6f7",
+          "f3g2",
+          "f7g8"
+        ]
+      }
+    ],
+    "fixed_time_positions": [
+      {
+        "position": "Starting Position",
+        "category": "opening",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "best_move": "b1c3",
+        "score_cp": 20,
+        "completed_depth": 8,
+        "nodes": 747520,
+        "elapsed_sec": 0.5027360000021872,
+        "nps": 1486903.6631487457,
+        "pv": [
+          "b1c3",
+          "d7d5",
+          "d2d4",
+          "g8f6"
+        ]
+      },
+      {
+        "position": "Italian Game Open",
+        "category": "opening",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 1 5",
+        "best_move": "b1c3",
+        "score_cp": 10,
+        "completed_depth": 6,
+        "nodes": 507904,
+        "elapsed_sec": 0.5013345000043046,
+        "nps": 1013104.0253476253,
+        "pv": [
+          "b1c3",
+          "d7d6",
+          "c1g5",
+          "c8e6"
+        ]
+      },
+      {
+        "position": "Sicilian Defense Classical",
+        "category": "opening",
+        "fen": "r1bqkbnr/pp1ppppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 2 4",
+        "best_move": "g8f6",
+        "score_cp": -55,
+        "completed_depth": 8,
+        "nodes": 753664,
+        "elapsed_sec": 0.5009582999991835,
+        "nps": 1504444.5815175204,
+        "pv": [
+          "g8f6",
+          "b1c3",
+          "d8b6",
+          "d4b3"
+        ]
+      },
+      {
+        "position": "Middlegame Complex Center",
+        "category": "middlegame",
+        "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/2PNP3/2N1BP2/PP4PP/R2QKB1R b KQ - 2 9",
+        "best_move": "d8b6",
+        "score_cp": 0,
+        "completed_depth": 7,
+        "nodes": 645120,
+        "elapsed_sec": 0.5004001000052085,
+        "nps": 1289208.3754445396,
+        "pv": [
+          "d8b6",
+          "d1b3",
+          "b6b3",
+          "d4b3"
+        ]
+      },
+      {
+        "position": "French Defense Closed",
+        "category": "middlegame",
+        "fen": "r1b1k2r/ppqn1ppp/2p1p3/3pP3/3P4/2N2N2/PPP2PPP/R1BQKB1R w KQkq - 1 8",
+        "best_move": "c1e3",
+        "score_cp": 700,
+        "completed_depth": 7,
+        "nodes": 585728,
+        "elapsed_sec": 0.5007553999967058,
+        "nps": 1169688.8341171222,
+        "pv": [
+          "c1e3",
+          "c7b6",
+          "d1b1",
+          "c6c5"
+        ]
+      },
+      {
+        "position": "Tactical Pin and Skewer",
+        "category": "middlegame",
+        "fen": "2r1r1k1/p4p1p/1p4p1/2n5/5N1Q/P3PRP1/3q1PKP/8 b - - 0 27",
+        "best_move": "c5e4",
+        "score_cp": 565,
+        "completed_depth": 6,
+        "nodes": 634880,
+        "elapsed_sec": 0.5007881999990786,
+        "nps": 1267761.5007725183,
+        "pv": [
+          "c5e4",
+          "f4h3",
+          "d2a5",
+          "f3f4"
+        ]
+      },
+      {
+        "position": "Heavy Piece Infiltration",
+        "category": "middlegame",
+        "fen": "4r1k1/1p3pp1/p1q4p/8/6Q1/P7/1P4PP/K2R4 w - - 4 35",
+        "best_move": "d1d7",
+        "score_cp": -115,
+        "completed_depth": 7,
+        "nodes": 821248,
+        "elapsed_sec": 0.500462800002424,
+        "nps": 1640977.111577568,
+        "pv": [
+          "d1d7",
+          "e8e1",
+          "a1a2",
+          "c6b5"
+        ]
+      },
+      {
+        "position": "Rook & Pawn Endgame",
+        "category": "endgame",
+        "fen": "8/5pk1/1p1R4/p3r3/P1P5/1P6/5KP1/8 b - - 2 39",
+        "best_move": "e5e6",
+        "score_cp": -100,
+        "completed_depth": 11,
+        "nodes": 1128448,
+        "elapsed_sec": 0.5009349000029033,
+        "nps": 2252683.9315716666,
+        "pv": [
+          "e5e6",
+          "d6d7",
+          "e6e8",
+          "d7b7"
+        ]
+      },
+      {
+        "position": "Knight vs Bishop Endgame",
+        "category": "endgame",
+        "fen": "8/7p/1pp1kp2/p2p2p1/P2Pn1P1/2P1K2P/1P6/4N3 b - - 1 36",
+        "best_move": "e6f7",
+        "score_cp": 105,
+        "completed_depth": 10,
+        "nodes": 1140736,
+        "elapsed_sec": 0.5007893000001786,
+        "nps": 2277876.144717136,
+        "pv": [
+          "e6f7",
+          "e1c2",
+          "f7g8",
+          "e3e2"
+        ]
+      },
+      {
+        "position": "Pawn Race Endgame",
+        "category": "endgame",
+        "fen": "8/8/4k3/1p1p4/pP1P1K2/P7/8/8 w - - 0 45",
+        "best_move": "f4g5",
+        "score_cp": 255,
+        "completed_depth": 23,
+        "nodes": 2076672,
+        "elapsed_sec": 0.5001371999969706,
+        "nps": 4152204.6350732935,
+        "pv": [
+          "f4g5",
+          "e6e7",
+          "g5f5",
+          "e7d6"
+        ]
+      }
+    ]
+  },
+  "V1-A": {
+    "config": {
+      "id": "V1-A",
+      "name": "V1-A_Pure_Neural",
+      "use_nnue": true,
+      "blend": 100
+    },
+    "depth5_summary": {
+      "mean_nodes": 47476.0,
+      "mean_time_sec": 0.04162770000184537,
+      "mean_nps": 1306807.3392150342
+    },
+    "fixed_time_summary": {
+      "mean_depth": 7.7,
+      "mean_nodes": 595558.4,
+      "mean_nps": 1188842.9533746229
+    },
+    "fixed_depth_positions": [
+      {
+        "position": "Starting Position",
+        "category": "opening",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "best_move": "b2b3",
+        "score_cp": 4,
+        "depth": 5,
+        "nodes": 23654,
+        "elapsed_sec": 0.024313800000527408,
+        "nps": 972863.1476563476,
+        "pv": [
+          "b2b3",
+          "b7b6",
+          "c1b2",
+          "c8a6"
+        ]
+      },
+      {
+        "position": "Italian Game Open",
+        "category": "opening",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 1 5",
+        "best_move": "f3e5",
+        "score_cp": 2,
+        "depth": 5,
+        "nodes": 58385,
+        "elapsed_sec": 0.0688743999999133,
+        "nps": 847702.4845236184,
+        "pv": [
+          "f3e5",
+          "c6e5",
+          "c4f7",
+          "e5f7"
+        ]
+      },
+      {
+        "position": "Sicilian Defense Classical",
+        "category": "opening",
+        "fen": "r1bqkbnr/pp1ppppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 2 4",
+        "best_move": "d8b6",
+        "score_cp": 1,
+        "depth": 5,
+        "nodes": 37601,
+        "elapsed_sec": 0.03735610000148881,
+        "nps": 1006555.8235067747,
+        "pv": [
+          "d8b6",
+          "d4b3",
+          "b6b4",
+          "b1c3"
+        ]
+      },
+      {
+        "position": "Middlegame Complex Center",
+        "category": "middlegame",
+        "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/2PNP3/2N1BP2/PP4PP/R2QKB1R b KQ - 2 9",
+        "best_move": "c6d4",
+        "score_cp": 17,
+        "depth": 5,
+        "nodes": 34360,
+        "elapsed_sec": 0.02644930000678869,
+        "nps": 1299089.200514981,
+        "pv": [
+          "c6d4",
+          "e3d4",
+          "f6e4",
+          "d4g7"
+        ]
+      },
+      {
+        "position": "French Defense Closed",
+        "category": "middlegame",
+        "fen": "r1b1k2r/ppqn1ppp/2p1p3/3pP3/3P4/2N2N2/PPP2PPP/R1BQKB1R w KQkq - 1 8",
+        "best_move": "b2b4",
+        "score_cp": 17,
+        "depth": 5,
+        "nodes": 29702,
+        "elapsed_sec": 0.02191780000430299,
+        "nps": 1355154.2579167977,
+        "pv": [
+          "b2b4",
+          "d7e5",
+          "d4e5",
+          "c7e5"
+        ]
+      },
+      {
+        "position": "Tactical Pin and Skewer",
+        "category": "middlegame",
+        "fen": "2r1r1k1/p4p1p/1p4p1/2n5/5N1Q/P3PRP1/3q1PKP/8 b - - 0 27",
+        "best_move": "e8e3",
+        "score_cp": 11,
+        "depth": 5,
+        "nodes": 79963,
+        "elapsed_sec": 0.07313609999982873,
+        "nps": 1093345.1469272666,
+        "pv": [
+          "e8e3",
+          "f3e3",
+          "b6b5",
+          "h4h7"
+        ]
+      },
+      {
+        "position": "Heavy Piece Infiltration",
+        "category": "middlegame",
+        "fen": "4r1k1/1p3pp1/p1q4p/8/6Q1/P7/1P4PP/K2R4 w - - 4 35",
+        "best_move": "g4g7",
+        "score_cp": -33,
+        "depth": 5,
+        "nodes": 191609,
+        "elapsed_sec": 0.15103710000403225,
+        "nps": 1268622.0802364757,
+        "pv": [
+          "g4g7",
+          "g8g7",
+          "g2g3",
+          "c6g2"
+        ]
+      },
+      {
+        "position": "Rook & Pawn Endgame",
+        "category": "endgame",
+        "fen": "8/5pk1/1p1R4/p3r3/P1P5/1P6/5KP1/8 b - - 2 39",
+        "best_move": "b6b5",
+        "score_cp": 17,
+        "depth": 5,
+        "nodes": 9909,
+        "elapsed_sec": 0.007138700006180443,
+        "nps": 1388067.8542901545,
+        "pv": [
+          "b6b5",
+          "a4b5",
+          "a5a4",
+          "b3a4"
+        ]
+      },
+      {
+        "position": "Knight vs Bishop Endgame",
+        "category": "endgame",
+        "fen": "8/7p/1pp1kp2/p2p2p1/P2Pn1P1/2P1K2P/1P6/4N3 b - - 1 36",
+        "best_move": "b6b5",
+        "score_cp": 17,
+        "depth": 5,
+        "nodes": 8934,
+        "elapsed_sec": 0.005772799995611422,
+        "nps": 1547602.5510656484,
+        "pv": [
+          "b6b5",
+          "a4b5",
+          "c6b5",
+          "b2b3"
+        ]
+      },
+      {
+        "position": "Pawn Race Endgame",
+        "category": "endgame",
+        "fen": "8/8/4k3/1p1p4/pP1P1K2/P7/8/8 w - - 0 45",
+        "best_move": "f4e3",
+        "score_cp": 17,
+        "depth": 5,
+        "nodes": 643,
+        "elapsed_sec": 0.0002808999997796491,
+        "nps": 2289070.845512278,
+        "pv": [
+          "f4e3",
+          "e6f5",
+          "e3d2",
+          "f5e4"
+        ]
+      }
+    ],
+    "fixed_time_positions": [
+      {
+        "position": "Starting Position",
+        "category": "opening",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "best_move": "b2b3",
+        "score_cp": 4,
+        "completed_depth": 7,
+        "nodes": 598016,
+        "elapsed_sec": 0.5003664000032586,
+        "nps": 1195156.1895365187,
+        "pv": [
+          "b2b3",
+          "b7b6",
+          "c1b2",
+          "c8a6"
+        ]
+      },
+      {
+        "position": "Italian Game Open",
+        "category": "opening",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 1 5",
+        "best_move": "f3e5",
+        "score_cp": 2,
+        "completed_depth": 5,
+        "nodes": 425984,
+        "elapsed_sec": 0.5010206000006292,
+        "nps": 850232.5054088895,
+        "pv": [
+          "f3e5",
+          "c6e5",
+          "c4f7",
+          "e5f7"
+        ]
+      },
+      {
+        "position": "Sicilian Defense Classical",
+        "category": "opening",
+        "fen": "r1bqkbnr/pp1ppppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 2 4",
+        "best_move": "d8b6",
+        "score_cp": -17,
+        "completed_depth": 6,
+        "nodes": 446464,
+        "elapsed_sec": 0.5028118000045652,
+        "nps": 887934.6109139571,
+        "pv": [
+          "d8b6",
+          "d4b3",
+          "b6b4",
+          "b1c3"
+        ]
+      },
+      {
+        "position": "Middlegame Complex Center",
+        "category": "middlegame",
+        "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/2PNP3/2N1BP2/PP4PP/R2QKB1R b KQ - 2 9",
+        "best_move": "c6d4",
+        "score_cp": -12,
+        "completed_depth": 6,
+        "nodes": 497664,
+        "elapsed_sec": 0.5016936000029091,
+        "nps": 991968.0059644259,
+        "pv": [
+          "c6d4",
+          "e3d4",
+          "f6e4",
+          "d4g7"
+        ]
+      },
+      {
+        "position": "French Defense Closed",
+        "category": "middlegame",
+        "fen": "r1b1k2r/ppqn1ppp/2p1p3/3pP3/3P4/2N2N2/PPP2PPP/R1BQKB1R w KQkq - 1 8",
+        "best_move": "b2b4",
+        "score_cp": 4,
+        "completed_depth": 6,
+        "nodes": 444416,
+        "elapsed_sec": 0.5002613000033307,
+        "nps": 888367.7390136737,
+        "pv": [
+          "b2b4",
+          "d7e5",
+          "d4e5",
+          "c7e5"
+        ]
+      },
+      {
+        "position": "Tactical Pin and Skewer",
+        "category": "middlegame",
+        "fen": "2r1r1k1/p4p1p/1p4p1/2n5/5N1Q/P3PRP1/3q1PKP/8 b - - 0 27",
+        "best_move": "e8e3",
+        "score_cp": 11,
+        "completed_depth": 5,
+        "nodes": 448512,
+        "elapsed_sec": 0.501390999997966,
+        "nps": 894535.4025138455,
+        "pv": [
+          "e8e3",
+          "f3e3",
+          "b6b5",
+          "h4h7"
+        ]
+      },
+      {
+        "position": "Heavy Piece Infiltration",
+        "category": "middlegame",
+        "fen": "4r1k1/1p3pp1/p1q4p/8/6Q1/P7/1P4PP/K2R4 w - - 4 35",
+        "best_move": "g4g7",
+        "score_cp": -17,
+        "completed_depth": 6,
+        "nodes": 616448,
+        "elapsed_sec": 0.5009433000013814,
+        "nps": 1230574.398336698,
+        "pv": [
+          "g4g7",
+          "g8g7",
+          "g2g3",
+          "c6g2"
+        ]
+      },
+      {
+        "position": "Rook & Pawn Endgame",
+        "category": "endgame",
+        "fen": "8/5pk1/1p1R4/p3r3/P1P5/1P6/5KP1/8 b - - 2 39",
+        "best_move": "b6b5",
+        "score_cp": 17,
+        "completed_depth": 7,
+        "nodes": 704512,
+        "elapsed_sec": 0.5003123999995296,
+        "nps": 1408144.1915104692,
+        "pv": [
+          "b6b5",
+          "a4b5",
+          "a5a4",
+          "b3a4"
+        ]
+      },
+      {
+        "position": "Knight vs Bishop Endgame",
+        "category": "endgame",
+        "fen": "8/7p/1pp1kp2/p2p2p1/P2Pn1P1/2P1K2P/1P6/4N3 b - - 1 36",
+        "best_move": "b6b5",
+        "score_cp": 79,
+        "completed_depth": 8,
+        "nodes": 651264,
+        "elapsed_sec": 0.5013140999944881,
+        "nps": 1299113.669468225,
+        "pv": [
+          "b6b5",
+          "a4b5",
+          "c6b5",
+          "b2b3"
+        ]
+      },
+      {
+        "position": "Pawn Race Endgame",
+        "category": "endgame",
+        "fen": "8/8/4k3/1p1p4/pP1P1K2/P7/8/8 w - - 0 45",
+        "best_move": "f4g5",
+        "score_cp": 17,
+        "completed_depth": 21,
+        "nodes": 1122304,
+        "elapsed_sec": 0.5004916999969282,
+        "nps": 2242402.8210795266,
+        "pv": [
+          "f4g5",
+          "e6e7",
+          "g5f5",
+          "e7f7"
+        ]
+      }
+    ]
+  },
+  "V1-B": {
+    "config": {
+      "id": "V1-B",
+      "name": "V1-B_Hybrid_Blend50",
+      "use_nnue": true,
+      "blend": 50
+    },
+    "depth5_summary": {
+      "mean_nodes": 43763.1,
+      "mean_time_sec": 0.05338496999902418,
+      "mean_nps": 1226993.5965570821
+    },
+    "fixed_time_summary": {
+      "mean_depth": 8.7,
+      "mean_nodes": 616038.4,
+      "mean_nps": 1229276.6693738562
+    },
+    "fixed_depth_positions": [
+      {
+        "position": "Starting Position",
+        "category": "opening",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "best_move": "b1c3",
+        "score_cp": 28,
+        "depth": 5,
+        "nodes": 13403,
+        "elapsed_sec": 0.00978489999397425,
+        "nps": 1369763.616210064,
+        "pv": [
+          "b1c3",
+          "b8c6",
+          "g1f3",
+          "g8f6"
+        ]
+      },
+      {
+        "position": "Italian Game Open",
+        "category": "opening",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 1 5",
+        "best_move": "c1g5",
+        "score_cp": 8,
+        "depth": 5,
+        "nodes": 61375,
+        "elapsed_sec": 0.0911504000032437,
+        "nps": 673337.6924052543,
+        "pv": [
+          "c1g5",
+          "d7d6",
+          "g5f6",
+          "d8f6"
+        ]
+      },
+      {
+        "position": "Sicilian Defense Classical",
+        "category": "opening",
+        "fen": "r1bqkbnr/pp1ppppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 2 4",
+        "best_move": "e7e5",
+        "score_cp": -16,
+        "depth": 5,
+        "nodes": 18360,
+        "elapsed_sec": 0.018745499997748993,
+        "nps": 979435.0645330728,
+        "pv": [
+          "e7e5",
+          "d4c6",
+          "d7c6",
+          "d1d8"
+        ]
+      },
+      {
+        "position": "Middlegame Complex Center",
+        "category": "middlegame",
+        "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/2PNP3/2N1BP2/PP4PP/R2QKB1R b KQ - 2 9",
+        "best_move": "c6d4",
+        "score_cp": 13,
+        "depth": 5,
+        "nodes": 37480,
+        "elapsed_sec": 0.033031600003596395,
+        "nps": 1134671.0421511303,
+        "pv": [
+          "c6d4",
+          "d1d4",
+          "e7e5",
+          "d4d3"
+        ]
+      },
+      {
+        "position": "French Defense Closed",
+        "category": "middlegame",
+        "fen": "r1b1k2r/ppqn1ppp/2p1p3/3pP3/3P4/2N2N2/PPP2PPP/R1BQKB1R w KQkq - 1 8",
+        "best_move": "c1e3",
+        "score_cp": 361,
+        "depth": 5,
+        "nodes": 95107,
+        "elapsed_sec": 0.12868380000145407,
+        "nps": 739075.1594134253,
+        "pv": [
+          "c1e3",
+          "c7d8",
+          "a2a3",
+          "d8b6"
+        ]
+      },
+      {
+        "position": "Tactical Pin and Skewer",
+        "category": "middlegame",
+        "fen": "2r1r1k1/p4p1p/1p4p1/2n5/5N1Q/P3PRP1/3q1PKP/8 b - - 0 27",
+        "best_move": "c5e4",
+        "score_cp": 288,
+        "depth": 5,
+        "nodes": 134614,
+        "elapsed_sec": 0.16748159999406198,
+        "nps": 803753.9646431173,
+        "pv": [
+          "c5e4",
+          "f4h3",
+          "d2c1",
+          "h4f4"
+        ]
+      },
+      {
+        "position": "Heavy Piece Infiltration",
+        "category": "middlegame",
+        "fen": "4r1k1/1p3pp1/p1q4p/8/6Q1/P7/1P4PP/K2R4 w - - 4 35",
+        "best_move": "g4d7",
+        "score_cp": -59,
+        "depth": 5,
+        "nodes": 63890,
+        "elapsed_sec": 0.07689899999968475,
+        "nps": 830830.0498089952,
+        "pv": [
+          "g4d7",
+          "c6e4",
+          "g2g3"
+        ]
+      },
+      {
+        "position": "Rook & Pawn Endgame",
+        "category": "endgame",
+        "fen": "8/5pk1/1p1R4/p3r3/P1P5/1P6/5KP1/8 b - - 2 39",
+        "best_move": "e5e6",
+        "score_cp": -46,
+        "depth": 5,
+        "nodes": 6150,
+        "elapsed_sec": 0.00380619999486953,
+        "nps": 1615784.7743917122,
+        "pv": [
+          "e5e6",
+          "d6d8",
+          "f7f5",
+          "f2g1"
+        ]
+      },
+      {
+        "position": "Knight vs Bishop Endgame",
+        "category": "endgame",
+        "fen": "8/7p/1pp1kp2/p2p2p1/P2Pn1P1/2P1K2P/1P6/4N3 b - - 1 36",
+        "best_move": "c6c5",
+        "score_cp": 76,
+        "depth": 5,
+        "nodes": 5861,
+        "elapsed_sec": 0.0037207999994279817,
+        "nps": 1575198.8822030323,
+        "pv": [
+          "c6c5",
+          "e1d3",
+          "e6d7",
+          "d4c5"
+        ]
+      },
+      {
+        "position": "Pawn Race Endgame",
+        "category": "endgame",
+        "fen": "8/8/4k3/1p1p4/pP1P1K2/P7/8/8 w - - 0 45",
+        "best_move": "f4e3",
+        "score_cp": 8,
+        "depth": 5,
+        "nodes": 1391,
+        "elapsed_sec": 0.000545900002180133,
+        "nps": 2548085.719811017,
+        "pv": [
+          "f4e3",
+          "e6f7",
+          "e3f2",
+          "f7g8"
+        ]
+      }
+    ],
+    "fixed_time_positions": [
+      {
+        "position": "Starting Position",
+        "category": "opening",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "best_move": "d2d4",
+        "score_cp": 9,
+        "completed_depth": 8,
+        "nodes": 505856,
+        "elapsed_sec": 0.5020403999951668,
+        "nps": 1007600.1851740815,
+        "pv": [
+          "d2d4",
+          "g8f6",
+          "b1c3",
+          "d7d5"
+        ]
+      },
+      {
+        "position": "Italian Game Open",
+        "category": "opening",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 1 5",
+        "best_move": "c1g5",
+        "score_cp": -1,
+        "completed_depth": 6,
+        "nodes": 454656,
+        "elapsed_sec": 0.5028012999973726,
+        "nps": 904245.8720818261,
+        "pv": [
+          "c1g5",
+          "d7d6",
+          "b1c3",
+          "c8g4"
+        ]
+      },
+      {
+        "position": "Sicilian Defense Classical",
+        "category": "opening",
+        "fen": "r1bqkbnr/pp1ppppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 2 4",
+        "best_move": "e7e5",
+        "score_cp": -21,
+        "completed_depth": 7,
+        "nodes": 487424,
+        "elapsed_sec": 0.5004492000007303,
+        "nps": 973972.9826709457,
+        "pv": [
+          "e7e5",
+          "d4c6",
+          "d7c6",
+          "d1d8"
+        ]
+      },
+      {
+        "position": "Middlegame Complex Center",
+        "category": "middlegame",
+        "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/2PNP3/2N1BP2/PP4PP/R2QKB1R b KQ - 2 9",
+        "best_move": "c6d4",
+        "score_cp": 8,
+        "completed_depth": 7,
+        "nodes": 479232,
+        "elapsed_sec": 0.500449999999546,
+        "nps": 957602.1580586168,
+        "pv": [
+          "c6d4",
+          "d1d4",
+          "f6g4",
+          "d4d2"
+        ]
+      },
+      {
+        "position": "French Defense Closed",
+        "category": "middlegame",
+        "fen": "r1b1k2r/ppqn1ppp/2p1p3/3pP3/3P4/2N2N2/PPP2PPP/R1BQKB1R w KQkq - 1 8",
+        "best_move": "f1d3",
+        "score_cp": 364,
+        "completed_depth": 6,
+        "nodes": 430080,
+        "elapsed_sec": 0.5013619000019389,
+        "nps": 857823.460455086,
+        "pv": [
+          "f1d3",
+          "a7a6",
+          "c1f4",
+          "f7f6"
+        ]
+      },
+      {
+        "position": "Tactical Pin and Skewer",
+        "category": "middlegame",
+        "fen": "2r1r1k1/p4p1p/1p4p1/2n5/5N1Q/P3PRP1/3q1PKP/8 b - - 0 27",
+        "best_move": "c5e4",
+        "score_cp": 280,
+        "completed_depth": 6,
+        "nodes": 518144,
+        "elapsed_sec": 0.5024521999948774,
+        "nps": 1031230.4334726419,
+        "pv": [
+          "c5e4",
+          "f4h3",
+          "d2a2",
+          "f3f4"
+        ]
+      },
+      {
+        "position": "Heavy Piece Infiltration",
+        "category": "middlegame",
+        "fen": "4r1k1/1p3pp1/p1q4p/8/6Q1/P7/1P4PP/K2R4 w - - 4 35",
+        "best_move": "a1b1",
+        "score_cp": -61,
+        "completed_depth": 6,
+        "nodes": 489472,
+        "elapsed_sec": 0.5006601999994018,
+        "nps": 977653.1068388995,
+        "pv": [
+          "a1b1",
+          "a6a5",
+          "d1g1",
+          "c6e4"
+        ]
+      },
+      {
+        "position": "Rook & Pawn Endgame",
+        "category": "endgame",
+        "fen": "8/5pk1/1p1R4/p3r3/P1P5/1P6/5KP1/8 b - - 2 39",
+        "best_move": "e5e6",
+        "score_cp": -53,
+        "completed_depth": 10,
+        "nodes": 692224,
+        "elapsed_sec": 0.5007581999961985,
+        "nps": 1382351.801738354,
+        "pv": [
+          "e5e6",
+          "d6d5",
+          "g7f8",
+          "d5g5"
+        ]
+      },
+      {
+        "position": "Knight vs Bishop Endgame",
+        "category": "endgame",
+        "fen": "8/7p/1pp1kp2/p2p2p1/P2Pn1P1/2P1K2P/1P6/4N3 b - - 1 36",
+        "best_move": "e6f7",
+        "score_cp": 79,
+        "completed_depth": 10,
+        "nodes": 743424,
+        "elapsed_sec": 0.5018739000006462,
+        "nps": 1481296.3973600594,
+        "pv": [
+          "e6f7",
+          "e1d3",
+          "c6c5",
+          "c3c4"
+        ]
+      },
+      {
+        "position": "Pawn Race Endgame",
+        "category": "endgame",
+        "fen": "8/8/4k3/1p1p4/pP1P1K2/P7/8/8 w - - 0 45",
+        "best_move": "f4g5",
+        "score_cp": 121,
+        "completed_depth": 21,
+        "nodes": 1359872,
+        "elapsed_sec": 0.5001386000003549,
+        "nps": 2718990.2958880495,
+        "pv": [
+          "f4g5",
+          "e6d7",
+          "g5f5",
+          "d7d6"
+        ]
+      }
+    ]
+  }
+}

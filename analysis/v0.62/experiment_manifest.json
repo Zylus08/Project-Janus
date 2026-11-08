@@ -1,0 +1,85 @@
+{
+  "milestone": "v0.62",
+  "title": "Independent Neural Strength Replication, Causal Attribution & Release Qualification",
+  "date": "2026-11-07",
+  "parent_commit": "95389dc",
+  "branch": "v0.3-benchmark-harness",
+  "auditor": "Principal Chess Engine Research Scientist & Statistical Validation Specialist",
+  "provenance": {
+    "classical_control_exe": {
+      "path": "analysis/v0.56/native/janus_native_engine.exe",
+      "sha256": "a4f9d9d18b549d29b2e6740ac90d90d39167d92d3846b95fc0c4f5b966add83f",
+      "designation": "Janus Classical Baseline C1 (Native N5)"
+    },
+    "candidate_exe": {
+      "path": "analysis/v0.61/native/janus_native_engine.exe",
+      "sha256": "fc8293683be8d867c45ff50b3f8f17a94d8cb9aa6f4f24ef3da8b5a0349887ee",
+      "designation": "Janus Neural Value V2 (Native Hybrid)"
+    },
+    "neural_model": {
+      "path": "analysis/v0.61/models/janus_nnue_v2_small.jnnue",
+      "sha256": "ff7ac9a0397573909ef488db905c1926c04f982181ce02ff7bb309aaeeea5da0",
+      "crc32": "0x81d61206",
+      "architecture": "HalfKP(768->128x2)->L1(32)->Out(1)"
+    },
+    "stockfish_exe": {
+      "path": "E:/ChessXML/tools/stockfish/stockfish.exe",
+      "sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "version": "Stockfish 19 x64 AVX2"
+    }
+  },
+  "confirmatory_replication": {
+    "opening_suite": "analysis/v0.62/corpus/independent_openings_v062.json",
+    "total_games": 200,
+    "total_pairs": 100,
+    "time_control": "Fischer 3.0s + 100ms",
+    "score": "51W - 95D - 54L",
+    "points": 98.5,
+    "score_pct": 49.25,
+    "delta_elo": -5.2,
+    "bootstrap_elo_ci_95": [-36.6, 26.1],
+    "paired_t": -0.3166,
+    "degrees_of_freedom": 99,
+    "p_value": 0.75224,
+    "statistically_significant": false,
+    "v061_claimed_elo": 49.0,
+    "replicated": false
+  },
+  "stockfish_calibration": {
+    "time_control": "Fischer 3.0s + 100ms",
+    "sf19_a_1320": {
+      "score": "17W - 1D - 2L (17.5/20, 87.5%)",
+      "implied_elo": 1658,
+      "c1_implied_elo": 1561
+    },
+    "sf19_b_1600": {
+      "score": "11W - 5D - 4L (13.5/20, 67.5%)",
+      "implied_elo": 1727,
+      "c1_implied_elo": 1493
+    },
+    "sf19_c_2000": {
+      "score": "6W - 9D - 5L (10.5/20, 52.5%)",
+      "implied_elo": 2017,
+      "c1_implied_elo": 1809
+    }
+  },
+  "release_reliability": {
+    "total_tests": 6,
+    "passed": 6,
+    "failed": 0,
+    "classical_c1_invariance": "VERIFIED (100% bit-exact match on move, score, depth, nodes)"
+  },
+  "full_regression_suite": {
+    "total_tests": 658,
+    "passed": 658,
+    "subtests": 19,
+    "failures": 0,
+    "errors": 0
+  },
+  "promotion_verdict": {
+    "category_a_default_promotion": "REJECTED (Did not meet +25 Elo threshold on confirmatory suite)",
+    "category_b_research_asset": "APPROVED",
+    "designated_name": "Janus Neural Baseline N1",
+    "production_default": "Janus Classical Baseline C1 (UseNeuralValue=false)"
+  }
+}

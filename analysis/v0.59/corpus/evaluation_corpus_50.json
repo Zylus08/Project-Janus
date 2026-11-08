@@ -1,0 +1,302 @@
+[
+  {
+    "id": "eval_tac_01_ind_01_mate_in_1",
+    "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/5Q2/PPPP1PPP/RNB1K1NR w KQkq - 0 5",
+    "phase": "tactical",
+    "description": "Scholar's mate trap forced checkmate Qxf7#."
+  },
+  {
+    "id": "eval_tac_02_ind_02_back_rank_mate",
+    "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+    "phase": "tactical",
+    "description": "Back-rank rook mate on d8."
+  },
+  {
+    "id": "eval_tac_03_ind_03_queen_sac_mate",
+    "fen": "6k1/5ppp/8/8/8/8/1q4PP/4Q1K1 w - - 0 1",
+    "phase": "tactical",
+    "description": "Back rank queen mate e1e8#."
+  },
+  {
+    "id": "eval_tac_04_ind_04_defensive_perpetual",
+    "fen": "8/6k1/8/8/8/8/1q4PK/7Q w - - 0 1",
+    "phase": "tactical",
+    "description": "Queen repositioning to defend and evade checks."
+  },
+  {
+    "id": "eval_tac_05_ind_05_queen_attack",
+    "fen": "rn2kb1r/pp3ppp/4p3/1qp1N3/3P4/8/PPP2PPP/R1BQK2R w KQkq - 0 11",
+    "phase": "tactical",
+    "description": "Queen penetration on h5 attacking f7 and opening king."
+  },
+  {
+    "id": "eval_tac_06_ind_06_knight_fork_defense",
+    "fen": "r1b1k2r/pppp1ppp/8/4N3/1b1qn3/8/PPP2PPP/RNBQKB1R w KQkq - 0 8",
+    "phase": "tactical",
+    "description": "Blocking check on c3 defending against mate and fork threats."
+  },
+  {
+    "id": "eval_tac_07_ind_07_skewer_evasion",
+    "fen": "4k3/8/8/8/8/8/1R6/1K4q1 w - - 0 1",
+    "phase": "tactical",
+    "description": "Active king evasion to a2 preserving rook on b2."
+  },
+  {
+    "id": "eval_tac_08_ind_08_pawn_breakthrough",
+    "fen": "8/8/4k3/8/4P3/8/4K3/8 w - - 0 1",
+    "phase": "tactical",
+    "description": "Passed pawn advance in pure king and pawn ending."
+  },
+  {
+    "id": "eval_tac_09_ind_09_direct_promotion",
+    "fen": "8/4P1k1/8/8/8/8/8/6K1 w - - 0 1",
+    "phase": "tactical",
+    "description": "Decisive pawn promotion to queen on e8."
+  },
+  {
+    "id": "eval_tac_10_ind_10_stalemate_trap",
+    "fen": "8/8/8/8/8/5k2/7p/7K w - - 0 1",
+    "phase": "tactical",
+    "description": "Capturing h2 pawn to secure technical draw."
+  },
+  {
+    "id": "eval_tac_11_ind_11_opposition_endgame",
+    "fen": "8/8/8/4k3/4p3/4K3/8/8 b - - 0 1",
+    "phase": "tactical",
+    "description": "King advance to d5 maintaining pawn protection and space."
+  },
+  {
+    "id": "eval_tac_12_ind_12_kingside_castling",
+    "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 3 7",
+    "phase": "tactical",
+    "description": "Sound king safety via kingside castling."
+  },
+  {
+    "id": "eval_tac_13_ind_13_discovered_check_defense",
+    "fen": "r1b1k2r/pppp1ppp/8/4N3/1b2n3/8/PPP1BPPP/RNBQK2R w KQkq - 0 8",
+    "phase": "tactical",
+    "description": "Interposing bishop on d2 resolving check safely."
+  },
+  {
+    "id": "eval_tac_14_ind_15_tactical_liquidation",
+    "fen": "r1bq1rk1/ppp2ppp/2n5/4p3/2B1n3/2P2N2/PPP2PPP/R1BQ1RK1 w - - 0 9",
+    "phase": "tactical",
+    "description": "Tactical sacrifice clearing f-file and displacing king."
+  },
+  {
+    "id": "eval_tac_15_ind_16_center_strike",
+    "fen": "r1bqk2r/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+    "phase": "tactical",
+    "description": "Classic d2d4 center strike opening lines."
+  },
+  {
+    "id": "eval_tac_16_ind_19_quiet_kingside_castling",
+    "fen": "r1bqk2r/pp2bppp/2n5/2p5/3pN3/1B1P1N2/PPP2PPP/R2Q1RK1 b kq - 1 10",
+    "phase": "tactical",
+    "description": "Black castling safely e8g8."
+  },
+  {
+    "id": "eval_tac_17_ind_20_bishop_kick",
+    "fen": "r1b1k1nr/pppp1ppp/8/4p3/1b2P3/2N5/PPPP1PPP/R1BQKBNR w KQkq - 0 5",
+    "phase": "tactical",
+    "description": "Pawn move a2a3 asking bishop for decision."
+  },
+  {
+    "id": "eval_cap_18_cap_01_poisoned_b2_queen",
+    "fen": "r1b1k2r/1pp2ppp/p1np4/4p3/2B1P1nq/2NP1N2/PPP2PPP/R2Q1RK1 w kq - 0 9",
+    "phase": "middlegame",
+    "description": "Capture evaluation position"
+  },
+  {
+    "id": "eval_cap_19_cap_02_poisoned_pawn_b2",
+    "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2N1PN2/PPP1BPPP/R1BQK2R w KQkq - 0 6",
+    "phase": "middlegame",
+    "description": "Capture evaluation position"
+  },
+  {
+    "id": "eval_cap_20_cap_03_deep_d5_exchange",
+    "fen": "3r2k1/ppp2ppp/8/3n4/8/8/PPPR4/3R2K1 w - - 0 1",
+    "phase": "middlegame",
+    "description": "Capture evaluation position"
+  },
+  {
+    "id": "eval_cap_21_cap_04_promotion_race_sharp",
+    "fen": "1rr4k/P7/8/8/8/8/8/R6K w - - 0 1",
+    "phase": "middlegame",
+    "description": "Capture evaluation position"
+  },
+  {
+    "id": "eval_cap_22_cap_05_pinned_knight_d4",
+    "fen": "r1bqk2r/pppp1ppp/2n5/1B6/3pn3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 1",
+    "phase": "middlegame",
+    "description": "Capture evaluation position"
+  },
+  {
+    "id": "eval_cap_23_cap_06_hanging_minor_axb4",
+    "fen": "rnbqk1nr/pppp1ppp/8/8/1b6/P7/1PPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "phase": "middlegame",
+    "description": "Capture evaluation position"
+  },
+  {
+    "id": "eval_cap_24_cap_07_queen_sacrifice_refuted",
+    "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/4P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+    "phase": "middlegame",
+    "description": "Capture evaluation position"
+  },
+  {
+    "id": "eval_cap_25_cap_08_scholars_mate_defended",
+    "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+    "phase": "middlegame",
+    "description": "Capture evaluation position"
+  },
+  {
+    "id": "eval_cap_26_cap_09_en_passant_defended",
+    "fen": "rnbqkbnr/pp1ppppp/8/2pP4/8/8/PPP1PPPP/RNBQKBNR w KQkq c6 0 2",
+    "phase": "middlegame",
+    "description": "Capture evaluation position"
+  },
+  {
+    "id": "eval_cap_27_cap_10_en_passant_undefended",
+    "fen": "7k/8/8/3Pp3/8/8/8/K7 w - e6 0 1",
+    "phase": "middlegame",
+    "description": "Capture evaluation position"
+  },
+  {
+    "id": "eval_cap_28_cap_11_multiple_exchanges_c4",
+    "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/2PNP3/2N1B3/PP2BPPP/R2Q1RK1 b - - 4 9",
+    "phase": "middlegame",
+    "description": "Capture evaluation position"
+  },
+  {
+    "id": "eval_cap_29_cap_13_endgame_rook_pawn",
+    "fen": "8/5pk1/4p1p1/7p/7P/4r1P1/5PK1/8 w - - 0 45",
+    "phase": "endgame",
+    "description": "Capture evaluation position"
+  },
+  {
+    "id": "eval_cap_30_cap_14_queen_vs_two_rooks",
+    "fen": "2r3k1/1p3ppp/pq2p3/3p4/8/1P1Q4/P4PPP/2R3K1 b - - 0 1",
+    "phase": "middlegame",
+    "description": "Capture evaluation position"
+  },
+  {
+    "id": "eval_cap_31_cap_15_central_fork_d5",
+    "fen": "r1b1k2r/ppp2ppp/2n5/3pp3/8/2B2N2/PPPP1PPP/R2QKB1R w KQkq - 0 1",
+    "phase": "middlegame",
+    "description": "Capture evaluation position"
+  },
+  {
+    "id": "eval_cap_32_cap_16_quiet_manoeuvring_middlegame",
+    "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+    "phase": "middlegame",
+    "description": "Capture evaluation position"
+  },
+  {
+    "id": "eval_open_33_e4_e5_open_game",
+    "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+    "phase": "opening",
+    "description": "Independent opening: King's Pawn Game"
+  },
+  {
+    "id": "eval_open_34_e4_c5_sicilian_defense",
+    "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+    "phase": "opening",
+    "description": "Independent opening: Sicilian Defense"
+  },
+  {
+    "id": "eval_open_35_e4_e6_french_defense",
+    "fen": "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+    "phase": "opening",
+    "description": "Independent opening: French Defense"
+  },
+  {
+    "id": "eval_open_36_e4_c6_caro_kann",
+    "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+    "phase": "opening",
+    "description": "Independent opening: Caro-Kann Defense"
+  },
+  {
+    "id": "eval_open_37_e4_d6_pirc_defense",
+    "fen": "rnbqkbnr/ppp1pppp/3p4/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+    "phase": "opening",
+    "description": "Independent opening: Pirc Defense"
+  },
+  {
+    "id": "eval_open_38_e4_d5_scandinavian",
+    "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+    "phase": "opening",
+    "description": "Independent opening: Scandinavian Defense"
+  },
+  {
+    "id": "eval_open_39_e4_Nf6_alekhine",
+    "fen": "rnbqkb1r/pppppppp/5n2/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 1 2",
+    "phase": "opening",
+    "description": "Independent opening: Alekhine Defense"
+  },
+  {
+    "id": "eval_open_40_e4_g6_modern_defense",
+    "fen": "rnbqkbnr/pppppp1p/6p1/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+    "phase": "opening",
+    "description": "Independent opening: Modern Defense"
+  },
+  {
+    "id": "eval_open_41_d4_d5_closed_game",
+    "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+    "phase": "opening",
+    "description": "Independent opening: Queen's Pawn Game"
+  },
+  {
+    "id": "eval_open_42_d4_Nf6_indian_defense",
+    "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
+    "phase": "opening",
+    "description": "Independent opening: Indian Defense"
+  },
+  {
+    "id": "eval_open_43_d4_f5_dutch_defense",
+    "fen": "rnbqkbnr/ppppp1pp/8/5p2/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+    "phase": "opening",
+    "description": "Independent opening: Dutch Defense"
+  },
+  {
+    "id": "eval_open_44_d4_e6_horwitz_defense",
+    "fen": "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+    "phase": "opening",
+    "description": "Independent opening: Horwitz Defense"
+  },
+  {
+    "id": "eval_open_45_c4_e5_english_reversed_sicilian",
+    "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+    "phase": "opening",
+    "description": "Independent opening: English (Reversed Sicilian)"
+  },
+  {
+    "id": "eval_open_46_c4_c5_english_symmetrical",
+    "fen": "rnbqkbnr/pp1ppppp/8/2p5/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+    "phase": "opening",
+    "description": "Independent opening: English (Symmetrical)"
+  },
+  {
+    "id": "eval_open_47_c4_Nf6_english_anglo_indian",
+    "fen": "rnbqkb1r/pppppppp/5n2/8/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 1 2",
+    "phase": "opening",
+    "description": "Independent opening: English (Anglo-Indian)"
+  },
+  {
+    "id": "eval_open_48_c4_e6_english_agincourt",
+    "fen": "rnbqkbnr/pppp1ppp/4p3/8/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+    "phase": "opening",
+    "description": "Independent opening: English (Agincourt Defense)"
+  },
+  {
+    "id": "eval_open_49_Nf3_d5_reti_opening",
+    "fen": "rnbqkbnr/ppp1pppp/8/3p4/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2",
+    "phase": "opening",
+    "description": "Independent opening: Reti Opening (1.Nf3 d5)"
+  },
+  {
+    "id": "eval_open_50_Nf3_Nf6_reti_symmetrical",
+    "fen": "rnbqkb1r/pppppppp/5n2/8/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 2 2",
+    "phase": "opening",
+    "description": "Independent opening: Reti Opening (1.Nf3 Nf6)"
+  }
+]

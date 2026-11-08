@@ -1,0 +1,642 @@
+[
+  {
+    "id": "PE_01",
+    "cat": "pawn_endgame",
+    "fen": "8/8/5k2/4p1p1/4P1P1/5K2/8/8 w - - 0 50",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "f3e3"
+  },
+  {
+    "id": "PE_02",
+    "cat": "pawn_endgame",
+    "fen": "8/8/8/4k1p1/5pP1/5K2/8/8 w - - 0 52",
+    "tb_result": "loss",
+    "sf_eval": -600,
+    "sf_best": "f3f2"
+  },
+  {
+    "id": "PE_03",
+    "cat": "pawn_endgame",
+    "fen": "8/8/4k3/8/4P3/8/4K3/8 w - - 0 1",
+    "tb_result": "win",
+    "sf_eval": 350,
+    "sf_best": "e2e3"
+  },
+  {
+    "id": "PE_04",
+    "cat": "pawn_endgame",
+    "fen": "8/8/8/1k4p1/2p3P1/2K5/8/8 w - - 0 53",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "c3c2"
+  },
+  {
+    "id": "PE_05",
+    "cat": "pawn_endgame",
+    "fen": "8/8/8/4k1p1/1p4P1/1P2K3/8/8 w - - 0 54",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e3d3"
+  },
+  {
+    "id": "PE_06",
+    "cat": "pawn_endgame",
+    "fen": "8/8/8/8/2k5/8/1P4K1/8 w - - 0 60",
+    "tb_result": "win",
+    "sf_eval": 450,
+    "sf_best": "g2f3"
+  },
+  {
+    "id": "PE_07",
+    "cat": "pawn_endgame",
+    "fen": "8/5k2/8/8/8/8/4P3/4K3 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e1d2"
+  },
+  {
+    "id": "PE_08",
+    "cat": "pawn_endgame",
+    "fen": "8/8/2k5/p7/P7/2K5/8/8 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "c3c4"
+  },
+  {
+    "id": "PE_09",
+    "cat": "pawn_endgame",
+    "fen": "8/8/8/8/p1k5/P7/1K6/8 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "b2a2"
+  },
+  {
+    "id": "PE_10",
+    "cat": "pawn_endgame",
+    "fen": "8/8/8/3k4/3P4/3K4/8/8 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "d3c3"
+  },
+  {
+    "id": "RE_01",
+    "cat": "rook_endgame",
+    "fen": "8/5pk1/4p1p1/1R5p/7P/5PK1/6P1/r7 w - - 0 35",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "b5b4"
+  },
+  {
+    "id": "RE_02",
+    "cat": "rook_endgame",
+    "fen": "8/8/1r3k2/4R1p1/6P1/5PK1/8/8 w - - 1 42",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e5f5"
+  },
+  {
+    "id": "RE_03",
+    "cat": "rook_endgame",
+    "fen": "5r2/5pk1/4p1p1/7p/4R2P/5PK1/6P1/8 w - - 0 38",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e4a4"
+  },
+  {
+    "id": "RE_04",
+    "cat": "rook_endgame",
+    "fen": "8/2r2pk1/4p1p1/1R5p/7P/5PK1/6P1/8 b - - 0 36",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "g7f6"
+  },
+  {
+    "id": "RE_05",
+    "cat": "rook_endgame",
+    "fen": "8/5pk1/1r2p1p1/7p/4R2P/5PK1/6P1/8 w - - 0 37",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e4a4"
+  },
+  {
+    "id": "RE_06",
+    "cat": "rook_endgame",
+    "fen": "8/8/4k1p1/R4p1p/7P/4PKP1/1r6/8 w - - 4 45",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "a5a6"
+  },
+  {
+    "id": "RE_07",
+    "cat": "rook_endgame",
+    "fen": "1K1k4/1P6/8/8/8/8/7r/2R5 w - - 0 1",
+    "tb_result": "win",
+    "sf_eval": 600,
+    "sf_best": "c1d1"
+  },
+  {
+    "id": "RE_08",
+    "cat": "rook_endgame",
+    "fen": "8/8/4k3/4r3/8/5K2/4R3/8 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e2e5"
+  },
+  {
+    "id": "RE_09",
+    "cat": "rook_endgame",
+    "fen": "8/8/8/5k2/R7/4K3/8/1r6 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "a4a5"
+  },
+  {
+    "id": "RE_10",
+    "cat": "rook_endgame",
+    "fen": "8/R7/8/4k3/8/8/5K2/1r6 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "f2e3"
+  },
+  {
+    "id": "ME_01",
+    "cat": "minor_piece",
+    "fen": "8/8/4k3/8/2B5/8/4K3/3n4 b - - 0 1",
+    "tb_result": "loss",
+    "sf_eval": -500,
+    "sf_best": "e6e5"
+  },
+  {
+    "id": "ME_02",
+    "cat": "minor_piece",
+    "fen": "8/8/4k3/8/2N5/8/4K3/3b4 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e2d1"
+  },
+  {
+    "id": "ME_03",
+    "cat": "minor_piece",
+    "fen": "8/4k3/8/2b5/8/8/4K3/2B5 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "c1e3"
+  },
+  {
+    "id": "ME_04",
+    "cat": "minor_piece",
+    "fen": "8/4k3/8/2n5/8/8/4K3/2N5 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "c1d3"
+  },
+  {
+    "id": "ME_05",
+    "cat": "minor_piece",
+    "fen": "8/4k3/6p1/4P3/5K2/8/5B2/8 w - - 0 1",
+    "tb_result": "win",
+    "sf_eval": 450,
+    "sf_best": "f4g5"
+  },
+  {
+    "id": "ME_06",
+    "cat": "minor_piece",
+    "fen": "8/4k3/6p1/4P3/5K2/8/5N2/8 w - - 0 1",
+    "tb_result": "win",
+    "sf_eval": 420,
+    "sf_best": "f4g5"
+  },
+  {
+    "id": "ME_07",
+    "cat": "minor_piece",
+    "fen": "8/8/8/2b1k3/4p3/4B3/4K3/8 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e3c5"
+  },
+  {
+    "id": "ME_08",
+    "cat": "minor_piece",
+    "fen": "8/8/8/4k3/2p5/2B5/4K3/8 b - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e5e4"
+  },
+  {
+    "id": "ME_09",
+    "cat": "minor_piece",
+    "fen": "8/8/8/4k3/2p5/2N5/4K3/8 b - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e5d4"
+  },
+  {
+    "id": "ME_10",
+    "cat": "minor_piece",
+    "fen": "8/5b2/8/4k3/8/8/4K3/5B2 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e2e3"
+  },
+  {
+    "id": "OB_01",
+    "cat": "opposite_bishops",
+    "fen": "8/8/4k3/3b4/8/8/4K3/5B2 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e2e3"
+  },
+  {
+    "id": "OB_02",
+    "cat": "opposite_bishops",
+    "fen": "8/8/4k3/3b1p2/8/8/4K1P1/5B2 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e2e3"
+  },
+  {
+    "id": "OB_03",
+    "cat": "opposite_bishops",
+    "fen": "8/8/4k3/3b4/4P3/8/4K3/5B2 b - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "d5e4"
+  },
+  {
+    "id": "OB_04",
+    "cat": "opposite_bishops",
+    "fen": "8/4b3/8/2k5/8/4P3/2K5/5B2 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "f1d3"
+  },
+  {
+    "id": "OB_05",
+    "cat": "opposite_bishops",
+    "fen": "8/8/8/1k6/2p5/8/2K5/5B1b w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "f1e2"
+  },
+  {
+    "id": "OB_06",
+    "cat": "opposite_bishops",
+    "fen": "8/8/8/2b5/1k6/8/1pK5/5B2 b - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "b4a3"
+  },
+  {
+    "id": "OB_07",
+    "cat": "opposite_bishops",
+    "fen": "8/5k2/8/8/3B4/8/4K3/2b5 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e2d3"
+  },
+  {
+    "id": "OB_08",
+    "cat": "opposite_bishops",
+    "fen": "8/5k2/6p1/8/3B4/8/4K1P1/2b5 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e2d3"
+  },
+  {
+    "id": "OB_09",
+    "cat": "opposite_bishops",
+    "fen": "8/8/8/4k3/1pB5/1P6/4K3/6b1 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e2d3"
+  },
+  {
+    "id": "OB_10",
+    "cat": "opposite_bishops",
+    "fen": "8/8/8/4k3/1pB5/1P6/8/4K1b1 b - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e5d4"
+  },
+  {
+    "id": "PR_01",
+    "cat": "pawn_race",
+    "fen": "8/8/8/1P5k/8/8/7p/7K w - - 0 1",
+    "tb_result": "win",
+    "sf_eval": 700,
+    "sf_best": "b5b6"
+  },
+  {
+    "id": "PR_02",
+    "cat": "pawn_race",
+    "fen": "8/8/8/k6P/8/8/1p5K/8 w - - 0 1",
+    "tb_result": "win",
+    "sf_eval": 700,
+    "sf_best": "h5h6"
+  },
+  {
+    "id": "PR_03",
+    "cat": "pawn_race",
+    "fen": "8/8/8/4k1p1/5pP1/5K2/8/8 w - - 0 52",
+    "tb_result": "loss",
+    "sf_eval": -600,
+    "sf_best": "f3f2"
+  },
+  {
+    "id": "PR_04",
+    "cat": "pawn_race",
+    "fen": "8/8/8/1k4p1/2p3P1/2K5/8/8 w - - 0 53",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "c3c2"
+  },
+  {
+    "id": "PR_05",
+    "cat": "pawn_race",
+    "fen": "8/8/8/1p2k1p1/6P1/1P2K3/8/8 b - - 0 54",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e5d5"
+  },
+  {
+    "id": "PR_06",
+    "cat": "pawn_race",
+    "fen": "8/p7/8/1k6/8/8/P7/K7 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "a1b2"
+  },
+  {
+    "id": "PR_07",
+    "cat": "pawn_race",
+    "fen": "8/8/8/8/p1k5/P7/1K6/8 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "b2a2"
+  },
+  {
+    "id": "PR_08",
+    "cat": "pawn_race",
+    "fen": "8/8/8/3k4/3P4/3K4/8/8 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "d3c3"
+  },
+  {
+    "id": "PR_09",
+    "cat": "pawn_race",
+    "fen": "8/8/4k3/8/4P3/8/4K3/8 w - - 0 1",
+    "tb_result": "win",
+    "sf_eval": 350,
+    "sf_best": "e2e3"
+  },
+  {
+    "id": "PR_10",
+    "cat": "pawn_race",
+    "fen": "8/8/8/8/2k5/8/1P4K1/8 w - - 0 60",
+    "tb_result": "win",
+    "sf_eval": 450,
+    "sf_best": "g2f3"
+  },
+  {
+    "id": "KO_01",
+    "cat": "opposition",
+    "fen": "8/8/8/8/4k3/8/4K3/8 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e2d2"
+  },
+  {
+    "id": "KO_02",
+    "cat": "opposition",
+    "fen": "8/8/8/8/4k3/8/4K3/8 b - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e4d4"
+  },
+  {
+    "id": "KO_03",
+    "cat": "opposition",
+    "fen": "8/8/4k3/8/8/8/4K3/8 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e2e3"
+  },
+  {
+    "id": "KO_04",
+    "cat": "opposition",
+    "fen": "8/8/5k2/4p1p1/4P1P1/5K2/8/8 w - - 0 50",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "f3e3"
+  },
+  {
+    "id": "KO_05",
+    "cat": "opposition",
+    "fen": "8/8/8/3k4/3P4/3K4/8/8 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "d3c3"
+  },
+  {
+    "id": "KO_06",
+    "cat": "opposition",
+    "fen": "8/8/3k4/8/3P4/3K4/8/8 w - - 0 1",
+    "tb_result": "win",
+    "sf_eval": 300,
+    "sf_best": "d3e4"
+  },
+  {
+    "id": "KO_07",
+    "cat": "opposition",
+    "fen": "8/8/8/8/k1K5/8/8/8 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "c4c5"
+  },
+  {
+    "id": "KO_08",
+    "cat": "opposition",
+    "fen": "8/8/8/8/k1K5/8/8/8 b - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "a4a3"
+  },
+  {
+    "id": "KO_09",
+    "cat": "opposition",
+    "fen": "8/8/2k5/8/2K5/8/8/8 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "c4d4"
+  },
+  {
+    "id": "KO_10",
+    "cat": "opposition",
+    "fen": "8/8/2k5/8/2K5/8/8/8 b - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "c6d6"
+  },
+  {
+    "id": "ZZ_01",
+    "cat": "zugzwang",
+    "fen": "8/8/p1k5/Pp6/1P1K4/8/8/8 w - - 0 1",
+    "tb_result": "win",
+    "sf_eval": 500,
+    "sf_best": "d4e5"
+  },
+  {
+    "id": "ZZ_02",
+    "cat": "zugzwang",
+    "fen": "8/8/1p6/1P1k4/8/3K4/8/8 w - - 0 1",
+    "tb_result": "win",
+    "sf_eval": 400,
+    "sf_best": "d3c3"
+  },
+  {
+    "id": "ZZ_03",
+    "cat": "zugzwang",
+    "fen": "8/8/1p6/1P1k4/8/3K4/8/8 b - - 0 1",
+    "tb_result": "loss",
+    "sf_eval": -400,
+    "sf_best": "d5c5"
+  },
+  {
+    "id": "ZZ_04",
+    "cat": "zugzwang",
+    "fen": "8/8/8/8/p1k5/P7/1K6/8 w - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "b2a2"
+  },
+  {
+    "id": "ZZ_05",
+    "cat": "zugzwang",
+    "fen": "8/8/8/8/p1k5/P7/1K6/8 b - - 0 1",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "c4d3"
+  },
+  {
+    "id": "ZZ_06",
+    "cat": "zugzwang",
+    "fen": "8/8/5k2/4p1p1/4P1P1/5K2/8/8 w - - 0 50",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "f3e3"
+  },
+  {
+    "id": "ZZ_07",
+    "cat": "zugzwang",
+    "fen": "8/8/8/4k1p1/5pP1/5K2/8/8 w - - 0 52",
+    "tb_result": "loss",
+    "sf_eval": -600,
+    "sf_best": "f3f2"
+  },
+  {
+    "id": "ZZ_08",
+    "cat": "zugzwang",
+    "fen": "8/8/8/1k4p1/2p3P1/2K5/8/8 w - - 0 53",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "c3c2"
+  },
+  {
+    "id": "ZZ_09",
+    "cat": "zugzwang",
+    "fen": "8/8/8/4k1p1/1p4P1/1P2K3/8/8 w - - 0 54",
+    "tb_result": "draw",
+    "sf_eval": 0,
+    "sf_best": "e3d3"
+  },
+  {
+    "id": "ZZ_10",
+    "cat": "zugzwang",
+    "fen": "8/8/8/8/2k5/8/1P4K1/8 w - - 0 60",
+    "tb_result": "win",
+    "sf_eval": 450,
+    "sf_best": "g2f3"
+  },
+  {
+    "id": "QM_01",
+    "cat": "queenless_control",
+    "fen": "r3kb1r/pppq1ppp/2n1bn2/3p4/3P4/2N1BN2/PPP1BPPP/R3K2R w KQkq - 4 8",
+    "tb_result": "unsupported",
+    "sf_eval": 45,
+    "sf_best": "e1g1"
+  },
+  {
+    "id": "QM_02",
+    "cat": "queenless_control",
+    "fen": "r1b1k2r/1p2bppp/p1n1pn2/8/3P4/2N1BN2/PP2BPPP/R3K2R w KQkq - 0 11",
+    "tb_result": "unsupported",
+    "sf_eval": 40,
+    "sf_best": "e1g1"
+  },
+  {
+    "id": "QM_03",
+    "cat": "queenless_control",
+    "fen": "2r1kb1r/pp1n1ppp/4pn2/3p4/3P4/2N1BN2/PPP2PPP/R3K2R w KQk - 0 10",
+    "tb_result": "unsupported",
+    "sf_eval": 35,
+    "sf_best": "e1g1"
+  },
+  {
+    "id": "QM_04",
+    "cat": "queenless_control",
+    "fen": "r4rk1/pp1b1ppp/2n1pn2/3p4/3P4/2N1BN2/PPP1BPPP/R4RK1 w - - 0 11",
+    "tb_result": "unsupported",
+    "sf_eval": 30,
+    "sf_best": "f3e5"
+  },
+  {
+    "id": "QM_05",
+    "cat": "queenless_control",
+    "fen": "r1r3k1/pp1b1ppp/4pn2/3p4/3P4/P1N1BN2/1PP1BPPP/R4RK1 w - - 0 12",
+    "tb_result": "unsupported",
+    "sf_eval": 25,
+    "sf_best": "f3e5"
+  },
+  {
+    "id": "QM_06",
+    "cat": "queenless_control",
+    "fen": "2r2rk1/pp1bppbp/2n3p1/3p4/N2P4/4PN2/PP2BPPP/2R2RK1 w - - 4 15",
+    "tb_result": "unsupported",
+    "sf_eval": 20,
+    "sf_best": "a4c5"
+  },
+  {
+    "id": "QM_07",
+    "cat": "queenless_control",
+    "fen": "r1b2rk1/pp2bppp/2n1pn2/8/2BP4/2N1BN2/PP3PPP/R4RK1 w - - 4 11",
+    "tb_result": "unsupported",
+    "sf_eval": 30,
+    "sf_best": "f1d1"
+  },
+  {
+    "id": "QM_08",
+    "cat": "queenless_control",
+    "fen": "2r2rk1/1p1bppbp/p1np1np1/8/3NP3/1PN1BP2/P1P1B1PP/3R1RK1 w - - 1 13",
+    "tb_result": "unsupported",
+    "sf_eval": 25,
+    "sf_best": "d4c6"
+  },
+  {
+    "id": "QM_09",
+    "cat": "queenless_control",
+    "fen": "r2r2k1/pp2bppp/2n1pn2/8/3P4/2N1BN2/PP3PPP/2RR2K1 w - - 6 14",
+    "tb_result": "unsupported",
+    "sf_eval": 20,
+    "sf_best": "h2h3"
+  },
+  {
+    "id": "QM_10",
+    "cat": "queenless_control",
+    "fen": "2rr2k1/pp2bppp/4pn2/3p4/3P4/2N1PN2/PP3PPP/2R2RK1 w - - 2 14",
+    "tb_result": "unsupported",
+    "sf_eval": 15,
+    "sf_best": "c3e2"
+  }
+]

@@ -1,0 +1,339 @@
+{
+  "audit_version": "v0.65",
+  "artifacts": {
+    "c1_engine_exe": {
+      "path": "analysis/v0.56/native/janus_native_engine.exe",
+      "exists": true,
+      "size_bytes": 341504,
+      "sha256": "a4f9d9d18b549d29b2e6740ac90d90d39167d92d3846b95fc0c4f5b966add83f"
+    },
+    "c1_source_cpp": {
+      "path": "analysis/v0.56/native/janus_native.cpp",
+      "exists": true,
+      "size_bytes": 80677,
+      "sha256": "43ad79ade44cc6d6dd97a4cfeb6e9ba2b32c8d080190808d22cac486616397a4"
+    },
+    "n8_policy_pt": {
+      "path": "analysis/v0.58/models/best_policy_model.pt",
+      "exists": true,
+      "size_bytes": 2612545,
+      "sha256": "84d132feb595c84b021ffc19b754605ceb2afa249e11ae6874dcbe8845825938"
+    },
+    "n8_policy_bin": {
+      "path": "analysis/v0.58/models/janus_policy_v1.bin",
+      "exists": true,
+      "size_bytes": 2609972,
+      "sha256": "4aff322f57f047e56c998fec8f15165c7ddc14c573a6d66b1b4f03f91ac690b0"
+    },
+    "n8_policy_manifest": {
+      "path": "analysis/v0.58/experiment_manifest.json",
+      "exists": true,
+      "size_bytes": 3079,
+      "sha256": "63b605cc8b19144e5762d7844fedd7c0df30d6b0353406d98fd7f1c6b1b5f628"
+    },
+    "v059_ablation_manifest": {
+      "path": "analysis/v0.59/experiment_manifest.json",
+      "exists": true,
+      "size_bytes": 3402,
+      "sha256": "bae6e60d68b0742bd898547bf664f888139a6cf00a3d3701351500db079f98d2"
+    },
+    "v1_model_jnnue": {
+      "path": "analysis/v0.60/models/janus_nnue_v1_small.jnnue",
+      "exists": true,
+      "size_bytes": 100628,
+      "sha256": "bae378a70a5b4629695d0d18883d0d95704b5f61540d3d3cc400230605251e1d"
+    },
+    "v1_manifest": {
+      "path": "analysis/v0.60/experiment_manifest.json",
+      "exists": true,
+      "size_bytes": 2736,
+      "sha256": "7b946218d65bf2fac2849fb222c189dd6210bbd68ad81ccfc6429bd7a7022a59"
+    },
+    "n1_engine_exe": {
+      "path": "analysis/v0.61/native/janus_native_engine.exe",
+      "exists": true,
+      "size_bytes": 381440,
+      "sha256": "fc82936845a758df5b19aeace727c573f03d9c787916c517b4527635a78f9072"
+    },
+    "n1_model_jnnue": {
+      "path": "analysis/v0.61/models/janus_nnue_v2_small.jnnue",
+      "exists": true,
+      "size_bytes": 100628,
+      "sha256": "ff7ac9a0d45d14269bb4a011b5786bd035ba8a36b37b1fb7e1ad7f6d5e15fa12"
+    },
+    "v061_manifest": {
+      "path": "analysis/v0.61/experiment_manifest.json",
+      "exists": true,
+      "size_bytes": 5343,
+      "sha256": "d263badf2c9829c95533c661ce4bba5802d510c563099f2b2f22f9b6df0bbdf6"
+    },
+    "v062_manifest": {
+      "path": "analysis/v0.62/experiment_manifest.json",
+      "exists": true,
+      "size_bytes": 3001,
+      "sha256": "a02727f3f637cc2301a1fd42a8ed08d910bc7099f66ad63b2da2460e24325f9e"
+    },
+    "v062_match_raw": {
+      "path": "analysis/v0.62/raw/v062_confirmatory_match_raw.json",
+      "exists": true,
+      "size_bytes": 315990,
+      "sha256": "4025285f749293cd18e79ae89c661cbf51c6ff5a8604679fa8dece341898c8f3"
+    },
+    "v063_manifest": {
+      "path": "analysis/v0.63/experiment_manifest.json",
+      "exists": true,
+      "size_bytes": 3552,
+      "sha256": "fe07be0cbae6ba8df1be41af5d396a78da4290eafb887c06314548959c4dfc2a"
+    },
+    "v063_cross_milestone_audit": {
+      "path": "analysis/v0.63/cross_milestone_audit.json",
+      "exists": true,
+      "size_bytes": 1348,
+      "sha256": "8af8e11979fad00ae26b38992ec86ebf008aca1eaf303f9f695a9cfe07f0b905"
+    },
+    "n2_engine_exe": {
+      "path": "analysis/v0.64/native/janus_native_engine.exe",
+      "exists": true,
+      "size_bytes": 391680,
+      "sha256": "b93993d60c1b16fea1db35e34d55307df990254087811b94260273549c8074cc"
+    },
+    "n2_model_jnnue": {
+      "path": "analysis/v0.64/models/janus_nnue_v3.jnnue",
+      "exists": true,
+      "size_bytes": 206308,
+      "sha256": "e7054fb8ef964888293c16cef18a108f81627185ae789a51405f4a157e2522f0"
+    },
+    "n2_sef_header": {
+      "path": "analysis/v0.64/native/sef_features.h",
+      "exists": true,
+      "size_bytes": 9599,
+      "sha256": "fe5e85ee5b3979bbb8f990d484d9c0c1d39ae4eaded8470c279fd485f6d3b59c"
+    },
+    "v064_manifest": {
+      "path": "analysis/v0.64/experiment_manifest.json",
+      "exists": true,
+      "size_bytes": 1305,
+      "sha256": "45301e413b2f0d6775bc0997773fbf1a44ca12eb174e4451efc0d986dc46c41e"
+    },
+    "v064_primary_raw": {
+      "path": "analysis/v0.64/raw/v064_confirmatory_match_raw.json",
+      "exists": true,
+      "size_bytes": 326563,
+      "sha256": "689e29021bed48ed748c3f21612b4aa83064fda77b852071f00d2f5cf2e74245"
+    },
+    "v064_secondary_raw": {
+      "path": "analysis/v0.64/raw/v064_secondary_v3_vs_n1_raw.json",
+      "exists": true,
+      "size_bytes": 164472,
+      "sha256": "173281f07ae0e0c6f2b26c6fabf2caa27f70068aca017f75755cddfae74c6b7c"
+    }
+  },
+  "matches": {
+    "v0.61_v2_vs_c1": {
+      "games": 200,
+      "score": {
+        "wins": 71,
+        "draws": 86,
+        "losses": 43,
+        "points": 114.0,
+        "percentage": 57.0
+      },
+      "elo": {
+        "delta_elo": 49.0,
+        "bootstrap_elo_ci_95": [
+          12.2,
+          85.0
+        ]
+      },
+      "paired": {
+        "mean_pair_difference": 0.28,
+        "std_err": 0.1074,
+        "t_statistic": 2.6075,
+        "degrees_of_freedom": 99,
+        "p_value": 0.010532,
+        "statistically_significant": true,
+        "bootstrap_mean_ci_95": [
+          0.07,
+          0.48
+        ]
+      }
+    },
+    "v0.62_confirmatory_v2_vs_c1": {
+      "games": 200,
+      "score": {
+        "wins": 51,
+        "draws": 95,
+        "losses": 54,
+        "points": 98.5,
+        "percentage": 49.25
+      },
+      "elo": {
+        "delta_elo": -5.2,
+        "bootstrap_elo_ci_95": [
+          -36.6,
+          26.1
+        ]
+      },
+      "paired": {
+        "mean_pair_difference": -0.03,
+        "std_err": 0.0948,
+        "t_statistic": -0.3166,
+        "degrees_of_freedom": 99,
+        "p_value": 0.75224,
+        "statistically_significant": false,
+        "bootstrap_mean_ci_95": [
+          -0.21,
+          0.15
+        ]
+      }
+    },
+    "v0.64_primary_v3_vs_c1": {
+      "games": 200,
+      "score": {
+        "wins": 52,
+        "draws": 106,
+        "losses": 42,
+        "points": 105.0,
+        "percentage": 52.5
+      },
+      "elo": {
+        "delta_elo": 17.4,
+        "bootstrap_elo_ci_95": [
+          -17.4,
+          50.7
+        ]
+      },
+      "paired": {
+        "mean_pair_difference": 0.1,
+        "std_err": 0.1,
+        "t_statistic": 1.0,
+        "degrees_of_freedom": 99,
+        "p_value": 0.31975,
+        "statistically_significant": false,
+        "bootstrap_mean_ci_95": [
+          -0.1,
+          0.29
+        ]
+      },
+      "endgame_le_16": {
+        "games_with_phase_le_16": 178,
+        "points": 92.5,
+        "wins": 47,
+        "draws": 91,
+        "losses": 40,
+        "percentage": 51.97
+      },
+      "volume_perf": {
+        "B": {
+          "games": 40,
+          "points": 21.0,
+          "wins": 10,
+          "draws": 22,
+          "losses": 8
+        },
+        "E": {
+          "games": 40,
+          "points": 19.0,
+          "wins": 8,
+          "draws": 22,
+          "losses": 10
+        },
+        "A": {
+          "games": 40,
+          "points": 25.5,
+          "wins": 13,
+          "draws": 25,
+          "losses": 2
+        },
+        "C": {
+          "games": 40,
+          "points": 17.0,
+          "wins": 6,
+          "draws": 22,
+          "losses": 12
+        },
+        "D": {
+          "games": 40,
+          "points": 22.5,
+          "wins": 15,
+          "draws": 15,
+          "losses": 10
+        }
+      }
+    },
+    "v0.64_secondary_v3_vs_n1": {
+      "games": 100,
+      "score": {
+        "wins": 35,
+        "draws": 43,
+        "losses": 22,
+        "points": 56.5,
+        "percentage": 56.5
+      },
+      "elo": {
+        "delta_elo": 45.4,
+        "bootstrap_elo_ci_95": [
+          -3.5,
+          96.2
+        ]
+      },
+      "paired": {
+        "mean_pair_difference": 0.26,
+        "std_err": 0.1423,
+        "t_statistic": 1.827,
+        "degrees_of_freedom": 49,
+        "p_value": 0.073801,
+        "statistically_significant": false,
+        "bootstrap_mean_ci_95": [
+          -0.02,
+          0.54
+        ]
+      },
+      "endgame_le_16": {
+        "games_with_phase_le_16": 93,
+        "points": 52.5,
+        "wins": 33,
+        "draws": 39,
+        "losses": 21,
+        "percentage": 56.45
+      },
+      "volume_perf": {
+        "B": {
+          "games": 40,
+          "points": 25.0,
+          "wins": 19,
+          "draws": 12,
+          "losses": 9
+        },
+        "E": {
+          "games": 12,
+          "points": 6.5,
+          "wins": 3,
+          "draws": 7,
+          "losses": 2
+        },
+        "A": {
+          "games": 16,
+          "points": 10.0,
+          "wins": 6,
+          "draws": 8,
+          "losses": 2
+        },
+        "C": {
+          "games": 6,
+          "points": 4.0,
+          "wins": 3,
+          "draws": 2,
+          "losses": 1
+        },
+        "D": {
+          "games": 26,
+          "points": 11.0,
+          "wins": 4,
+          "draws": 14,
+          "losses": 8
+        }
+      }
+    }
+  }
+}

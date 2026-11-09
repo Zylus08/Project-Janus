@@ -140,3 +140,4 @@ The Search Efficiency Gap is mathematically quantified:
 - Node inflation factor: **20.87x**.
 - Move agreement rate: **26.0%**.
 - Algorithmic requirement: P1.1 must introduce modern forward pruning (NMP, RFP, Aspiration Windows) to collapse the search tree before any evaluation refinements can yield competitive Elo improvements.
+

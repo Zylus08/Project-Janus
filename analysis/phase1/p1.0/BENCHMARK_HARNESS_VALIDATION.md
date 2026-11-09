@@ -146,3 +146,4 @@ With a combined score of 0.0 / 28 (0 wins, 0 draws, 28 losses across historical 
 | **PGN / Telemetry Output** | Compliant PGN with eval/clock annotations | Verified on all datasets | **PASS** |
 
 **Phase 4 Benchmark Harness Gate: QUALIFIED (PASS)**
+

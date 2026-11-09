@@ -115,3 +115,4 @@ Adding these terms will increase static evaluation time from $\sim 104\text{ ns}
 > - Reinforcement learning or self-play policy networks.
 > 
 > Instead, Project Janus will engineer an advanced **Handcrafted Classical Evaluation (HCE)** engine. Parameters will be tuned using the classical **Texel's Tuning Method** (logistic regression over millions of quiet positions from historical grandmaster play and classical engine games), preserving full transparency, determinism, and pure algorithmic supremacy.
+

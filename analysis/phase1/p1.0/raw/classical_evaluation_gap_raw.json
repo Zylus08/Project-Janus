@@ -1,0 +1,2451 @@
+{
+  "summary": {
+    "total_positions": 50,
+    "average_eval_error_vs_sf19_cp": 132.48,
+    "average_static_to_search_shift_cp": 597.88,
+    "category_eval_errors_cp": {
+      "Tactics": 95.4,
+      "Quiet": 17.2,
+      "Closed": 184.0,
+      "Open": 35.8,
+      "KingAttack": 288.0,
+      "Endgame": 169.2,
+      "Defensive": 233.6,
+      "Candidates": 37.0
+    },
+    "category_static_to_search_shift_cp": {
+      "Tactics": 28.0,
+      "Quiet": 6.0,
+      "Closed": 7.0,
+      "Open": 20.0,
+      "KingAttack": 94.0,
+      "Endgame": 17.0,
+      "Defensive": 5738.8,
+      "Candidates": 23.0
+    }
+  },
+  "positions": [
+    {
+      "id": "TAC_01",
+      "category": "Tactics",
+      "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 5",
+      "description": "Fork trick in Italian/Four Knights",
+      "c1_static_eval_cp": -160,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 378007,
+        "nps": 1144973,
+        "score_cp": -75,
+        "bestmove": "c4d5",
+        "pv": [
+          "c4d5",
+          "e4c5",
+          "d5c6",
+          "d7c6",
+          "f3e5",
+          "d8g5",
+          "d1e2"
+        ],
+        "elapsed_sec": 0.3304
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 15,
+        "nodes": 13187,
+        "nps": 694052,
+        "score_cp": -109,
+        "bestmove": "c4d5",
+        "pv": [
+          "c4d5",
+          "e4f6",
+          "d5c6",
+          "d7c6",
+          "f3e5",
+          "f8c5",
+          "e5f3",
+          "e8g8",
+          "e1g1",
+          "c8g4",
+          "d2d3",
+          "f8e8"
+        ],
+        "elapsed_sec": 0.0189
+      },
+      "move_agreement": true,
+      "eval_error_vs_sf_cp": 34,
+      "static_to_search_shift_cp": 85
+    },
+    {
+      "id": "TAC_02",
+      "category": "Tactics",
+      "fen": "r1b2rk1/pp1nbppp/2p1pn2/q5B1/2BP4/2N1PN2/PP3PPP/R2Q1RK1 w - - 3 10",
+      "description": "Pin and Greek gift threat",
+      "c1_static_eval_cp": 55,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 1661458,
+        "nps": 993580,
+        "score_cp": 55,
+        "bestmove": "e3e4",
+        "pv": [
+          "e3e4",
+          "e6e5",
+          "d1d3",
+          "e5d4",
+          "d3d4",
+          "c6c5",
+          "d4e3"
+        ],
+        "elapsed_sec": 1.6724
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 17,
+        "nodes": 21108,
+        "nps": 639636,
+        "score_cp": 86,
+        "bestmove": "a2a3",
+        "pv": [
+          "a2a3",
+          "h7h6",
+          "g5h4",
+          "c6c5",
+          "c4a2",
+          "a7a6",
+          "f1e1",
+          "a5d8",
+          "d1c2",
+          "b7b5",
+          "d4d5",
+          "e6d5",
+          "c3d5",
+          "f6d5",
+          "a2d5"
+        ],
+        "elapsed_sec": 0.0332
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 31,
+      "static_to_search_shift_cp": 0
+    },
+    {
+      "id": "TAC_03",
+      "category": "Tactics",
+      "fen": "r2q1rk1/1pp1bppp/p1np1nb1/4p3/B3P1P1/2PP1N1P/PP3P2/RNBQR1K1 w - - 1 11",
+      "description": "Lopez tactical knight sacrifice setup",
+      "c1_static_eval_cp": -105,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 827298,
+        "nps": 861529,
+        "score_cp": -10,
+        "bestmove": "b1d2",
+        "pv": [
+          "b1d2",
+          "b7b5",
+          "a4b3",
+          "f8e8",
+          "d3d4",
+          "d8d7",
+          "d1c2"
+        ],
+        "elapsed_sec": 0.9606
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 15,
+        "nodes": 22755,
+        "nps": 334632,
+        "score_cp": 46,
+        "bestmove": "b1d2",
+        "pv": [
+          "b1d2",
+          "h7h6",
+          "d2f1",
+          "f6h7",
+          "f1g3",
+          "h7g5",
+          "c1g5",
+          "e7g5",
+          "g3f5",
+          "g5f4",
+          "d3d4",
+          "b7b5"
+        ],
+        "elapsed_sec": 0.0687
+      },
+      "move_agreement": true,
+      "eval_error_vs_sf_cp": 56,
+      "static_to_search_shift_cp": 95
+    },
+    {
+      "id": "TAC_04",
+      "category": "Tactics",
+      "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/3NP3/2N1BP2/PPPQ2PP/R3KB1R w KQ - 1 9",
+      "description": "Yugoslav Attack pawn storm / Bh6",
+      "c1_static_eval_cp": 65,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 511744,
+        "nps": 617139,
+        "score_cp": 60,
+        "bestmove": "d4c6",
+        "pv": [
+          "d4c6",
+          "b7c6",
+          "f1c4",
+          "c8b7",
+          "d2f2",
+          "d6d5",
+          "c4b3"
+        ],
+        "elapsed_sec": 0.8296
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 20,
+        "nodes": 31367,
+        "nps": 323371,
+        "score_cp": 117,
+        "bestmove": "e1c1",
+        "pv": [
+          "e1c1",
+          "c8e6",
+          "d4e6",
+          "f7e6",
+          "h2h4",
+          "a8c8"
+        ],
+        "elapsed_sec": 0.0965
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 57,
+      "static_to_search_shift_cp": 5
+    },
+    {
+      "id": "TAC_05",
+      "category": "Tactics",
+      "fen": "r3k2r/pb1n1ppp/1p1bp3/3p4/2PP4/1P1B1N2/PB1N1PPP/R4RK1 w kq - 1 13",
+      "description": "Hanging pawns tactical break",
+      "c1_static_eval_cp": 330,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 366796,
+        "nps": 772143,
+        "score_cp": 355,
+        "bestmove": "c4d5",
+        "pv": [
+          "c4d5",
+          "e6d5",
+          "a1e1",
+          "e8f8",
+          "f3e5",
+          "d7e5",
+          "d4e5"
+        ],
+        "elapsed_sec": 0.4755
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 18,
+        "nodes": 7677,
+        "nps": 307080,
+        "score_cp": 705,
+        "bestmove": "c4d5",
+        "pv": [
+          "c4d5",
+          "b7d5",
+          "f1e1",
+          "d5f3",
+          "d2f3",
+          "e8e7",
+          "g2g3",
+          "h7h6"
+        ],
+        "elapsed_sec": 0.0251
+      },
+      "move_agreement": true,
+      "eval_error_vs_sf_cp": 350,
+      "static_to_search_shift_cp": 25
+    },
+    {
+      "id": "TAC_06",
+      "category": "Tactics",
+      "fen": "2r2rk1/1bqnbppp/p2ppn2/1p6/3NPPP1/P1N1B3/1PPQB2P/2KR3R w - - 1 14",
+      "description": "Sicilian Scheveningen g4-g5 breakthrough",
+      "c1_static_eval_cp": 20,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 580213,
+        "nps": 738397,
+        "score_cp": -5,
+        "bestmove": "e2f3",
+        "pv": [
+          "e2f3",
+          "d7c5",
+          "d2g2",
+          "e6e5",
+          "f4e5",
+          "d6e5",
+          "d4f5"
+        ],
+        "elapsed_sec": 0.7862
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 27,
+        "nodes": 28761,
+        "nps": 309258,
+        "score_cp": -110,
+        "bestmove": "e2f3",
+        "pv": [
+          "e2f3",
+          "d7b6",
+          "g4g5",
+          "f6d7",
+          "d2e1",
+          "b6c4",
+          "f4f5",
+          "d7e5",
+          "f5f6",
+          "e7d8",
+          "h1g1",
+          "f8e8",
+          "c1b1"
+        ],
+        "elapsed_sec": 0.0934
+      },
+      "move_agreement": true,
+      "eval_error_vs_sf_cp": 105,
+      "static_to_search_shift_cp": 25
+    },
+    {
+      "id": "TAC_07",
+      "category": "Tactics",
+      "fen": "r2qk2r/pb1nbppp/1pn1p3/2ppP3/3P4/2PB1NN1/PP3PPP/R1BQK2R w KQkq - 1 10",
+      "description": "French Defense h4-h5 attack vector",
+      "c1_static_eval_cp": 25,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 811357,
+        "nps": 645409,
+        "score_cp": 20,
+        "bestmove": "d3b5",
+        "pv": [
+          "d3b5",
+          "c5c4",
+          "b5c6",
+          "b7c6",
+          "c1f4",
+          "d8c7",
+          "d1c2"
+        ],
+        "elapsed_sec": 1.2574
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 21,
+        "nodes": 75535,
+        "nps": 270734,
+        "score_cp": 91,
+        "bestmove": "c1e3",
+        "pv": [
+          "c1e3",
+          "d8c8",
+          "h2h4",
+          "b7a6",
+          "g3h5",
+          "a6d3",
+          "d1d3",
+          "g7g6",
+          "h5g3",
+          "h7h6",
+          "e1g1"
+        ],
+        "elapsed_sec": 0.2792
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 71,
+      "static_to_search_shift_cp": 5
+    },
+    {
+      "id": "TAC_08",
+      "category": "Tactics",
+      "fen": "r1b1k2r/ppppqppp/2n5/b3P3/2B5/1Q3N2/PB3PPP/R4RK1 w kq - 3 12",
+      "description": "Evans Gambit open lines vs uncastled king",
+      "c1_static_eval_cp": -135,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 1372255,
+        "nps": 517627,
+        "score_cp": -145,
+        "bestmove": "a1d1",
+        "pv": [
+          "a1d1",
+          "e8g8",
+          "b2a3",
+          "a5b4",
+          "a3b4",
+          "e7b4",
+          "b3b4"
+        ],
+        "elapsed_sec": 2.6513
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 19,
+        "nodes": 22977,
+        "nps": 264103,
+        "score_cp": 67,
+        "bestmove": "a1d1",
+        "pv": [
+          "a1d1",
+          "a5b4",
+          "f3d4",
+          "c6a5",
+          "b3c2",
+          "a5c4",
+          "d4f5",
+          "e7g5"
+        ],
+        "elapsed_sec": 0.0873
+      },
+      "move_agreement": true,
+      "eval_error_vs_sf_cp": 212,
+      "static_to_search_shift_cp": 10
+    },
+    {
+      "id": "TAC_09",
+      "category": "Tactics",
+      "fen": "r2q1rk1/pp1b1ppp/2n1p3/2b5/8/2NB1N2/PPP2PPP/R2Q1RK1 w - - 0 12",
+      "description": "Bxh7+ sacrifice motive (Greek Gift)",
+      "c1_static_eval_cp": 10,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 740341,
+        "nps": 385719,
+        "score_cp": 10,
+        "bestmove": "d1e2",
+        "pv": [
+          "d1e2",
+          "c6d4",
+          "f3d4",
+          "c5d4",
+          "e2e4",
+          "d4c3",
+          "b2c3"
+        ],
+        "elapsed_sec": 1.9197
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 17,
+        "nodes": 39993,
+        "nps": 238053,
+        "score_cp": -23,
+        "bestmove": "d1e2",
+        "pv": [
+          "d1e2",
+          "d8e7",
+          "a1d1",
+          "f8d8",
+          "c3e4",
+          "c6d4",
+          "f3d4",
+          "c5d4",
+          "c2c3",
+          "d4b6",
+          "d3b5",
+          "d7b5",
+          "e2b5",
+          "h7h6"
+        ],
+        "elapsed_sec": 0.1683
+      },
+      "move_agreement": true,
+      "eval_error_vs_sf_cp": 33,
+      "static_to_search_shift_cp": 0
+    },
+    {
+      "id": "TAC_10",
+      "category": "Tactics",
+      "fen": "r1b1k2r/ppqn1ppp/2pbpn2/3p4/2PP4/2N1PN2/PPQ2PPP/R1B1KB1R w KQkq - 3 8",
+      "description": "c4-c5 pawn push trapping or dislodging bishop",
+      "c1_static_eval_cp": -5,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 974089,
+        "nps": 390200,
+        "score_cp": 25,
+        "bestmove": "c2b3",
+        "pv": [
+          "c2b3",
+          "a7a6",
+          "f1d3",
+          "c7b6",
+          "e3e4",
+          "b6b3",
+          "a2b3"
+        ],
+        "elapsed_sec": 2.4967
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 17,
+        "nodes": 26130,
+        "nps": 157409,
+        "score_cp": 20,
+        "bestmove": "c1d2",
+        "pv": [
+          "c1d2",
+          "e8g8",
+          "a1c1",
+          "c7b8",
+          "h2h3",
+          "h7h6",
+          "c4c5"
+        ],
+        "elapsed_sec": 0.1661
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 5,
+      "static_to_search_shift_cp": 30
+    },
+    {
+      "id": "QPOS_01",
+      "category": "Quiet",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 7",
+      "description": "Quiet Italian Giuoco Pianissimo",
+      "c1_static_eval_cp": 0,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 610393,
+        "nps": 460155,
+        "score_cp": 10,
+        "bestmove": "c1g5",
+        "pv": [
+          "c1g5",
+          "c8g4",
+          "g5f6",
+          "d8f6",
+          "c3d5",
+          "f6d8",
+          "d1e2"
+        ],
+        "elapsed_sec": 1.3267
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 17,
+        "nodes": 22062,
+        "nps": 116115,
+        "score_cp": 14,
+        "bestmove": "c3a4",
+        "pv": [
+          "c3a4",
+          "c5b6",
+          "a4b6",
+          "a7b6",
+          "a2a4",
+          "h7h6",
+          "h2h3",
+          "c6e7",
+          "f1e1",
+          "e7g6"
+        ],
+        "elapsed_sec": 0.1897
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 4,
+      "static_to_search_shift_cp": 10
+    },
+    {
+      "id": "QPOS_02",
+      "category": "Quiet",
+      "fen": "r2q1rk1/1pp1bppp/p1np1n2/4p3/2B1P1b1/2NP1N2/PPP2PPP/R1BQR1K1 w - - 1 9",
+      "description": "Ruy Lopez closed maneuvering",
+      "c1_static_eval_cp": 0,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 330653,
+        "nps": 507382,
+        "score_cp": 10,
+        "bestmove": "c1e3",
+        "pv": [
+          "c1e3",
+          "c6d4",
+          "e3d4",
+          "e5d4",
+          "c3d5",
+          "f6d5",
+          "e4d5"
+        ],
+        "elapsed_sec": 0.6523
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 23,
+        "nodes": 16880,
+        "nps": 196279,
+        "score_cp": -9,
+        "bestmove": "h2h3",
+        "pv": [
+          "h2h3",
+          "g4f3",
+          "d1f3",
+          "b7b5",
+          "c4b3",
+          "c6d4",
+          "f3d1",
+          "a6a5",
+          "a2a3",
+          "d4b3",
+          "c2b3",
+          "c7c6",
+          "d3d4",
+          "f8e8"
+        ],
+        "elapsed_sec": 0.0863
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 19,
+      "static_to_search_shift_cp": 10
+    },
+    {
+      "id": "QPOS_03",
+      "category": "Quiet",
+      "fen": "r1bq1rk1/pp1nbppp/4pn2/2pp4/2PP4/2NBPN2/PP3PPP/R1BQ1RK1 w - - 0 8",
+      "description": "Queen's Gambit Declined positional balance",
+      "c1_static_eval_cp": 15,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 660556,
+        "nps": 559453,
+        "score_cp": 20,
+        "bestmove": "c4d5",
+        "pv": [
+          "c4d5",
+          "e6d5",
+          "e3e4",
+          "c5d4",
+          "f3d4",
+          "d8b6",
+          "d1a4"
+        ],
+        "elapsed_sec": 1.1811
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 19,
+        "nodes": 25314,
+        "nps": 224017,
+        "score_cp": 32,
+        "bestmove": "c4d5",
+        "pv": [
+          "c4d5",
+          "e6d5",
+          "b2b3",
+          "b7b6",
+          "c1b2",
+          "c8b7",
+          "f3e5",
+          "c5d4",
+          "e3d4",
+          "f6e4",
+          "d1e2",
+          "d7f6",
+          "a1c1",
+          "a8c8"
+        ],
+        "elapsed_sec": 0.113
+      },
+      "move_agreement": true,
+      "eval_error_vs_sf_cp": 12,
+      "static_to_search_shift_cp": 5
+    },
+    {
+      "id": "QPOS_04",
+      "category": "Quiet",
+      "fen": "r1bq1rk1/pp2bppp/2n1pn2/2pp4/2PP4/1PN1PN2/P3BPPP/R1BQ1RK1 b - - 0 8",
+      "description": "Nimzo-Indian quiet central tension",
+      "c1_static_eval_cp": 15,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 508515,
+        "nps": 664331,
+        "score_cp": 15,
+        "bestmove": "d8b6",
+        "pv": [
+          "d8b6",
+          "c1b2",
+          "f8d8",
+          "c3a4",
+          "b6c7",
+          "a4c5",
+          "e7c5"
+        ],
+        "elapsed_sec": 0.766
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 18,
+        "nodes": 18034,
+        "nps": 310931,
+        "score_cp": 0,
+        "bestmove": "c5d4",
+        "pv": [
+          "c5d4",
+          "f3d4",
+          "e6e5",
+          "d4f3",
+          "d5c4",
+          "b3c4",
+          "c8f5",
+          "c3d5"
+        ],
+        "elapsed_sec": 0.0588
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 15,
+      "static_to_search_shift_cp": 0
+    },
+    {
+      "id": "QPOS_05",
+      "category": "Quiet",
+      "fen": "r1bq1rk1/pp1n1pbp/2p1pnp1/3p4/2PP4/1P3NP1/PB1NPPBP/R2Q1RK1 b - - 2 9",
+      "description": "King's Indian / Reti positional fianchetto",
+      "c1_static_eval_cp": 10,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 278697,
+        "nps": 557156,
+        "score_cp": 5,
+        "bestmove": "c6c5",
+        "pv": [
+          "c6c5",
+          "e2e3",
+          "d8c7",
+          "d1c2",
+          "c5d4",
+          "e3d4",
+          "f8e8"
+        ],
+        "elapsed_sec": 0.5015
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 18,
+        "nodes": 18772,
+        "nps": 307737,
+        "score_cp": -31,
+        "bestmove": "b7b6",
+        "pv": [
+          "b7b6",
+          "d1c2",
+          "c8b7",
+          "f1d1",
+          "c6c5",
+          "a1c1",
+          "d8e7",
+          "d4c5",
+          "b6c5",
+          "e2e3",
+          "f8d8",
+          "f3e1",
+          "a8c8"
+        ],
+        "elapsed_sec": 0.0616
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 36,
+      "static_to_search_shift_cp": 5
+    },
+    {
+      "id": "CLSD_01",
+      "category": "Closed",
+      "fen": "rnbq1rk1/ppp1bppp/4pn2/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R w KQ - 0 6",
+      "description": "Colle System locked central triangle",
+      "c1_static_eval_cp": 30,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 443007,
+        "nps": 367504,
+        "score_cp": 20,
+        "bestmove": "f1d3",
+        "pv": [
+          "f1d3",
+          "b8c6",
+          "c4c5",
+          "c8d7",
+          "e3e4",
+          "d5e4",
+          "c3e4"
+        ],
+        "elapsed_sec": 1.2057
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 14,
+        "nodes": 16501,
+        "nps": 226041,
+        "score_cp": 8,
+        "bestmove": "f1e2",
+        "pv": [
+          "f1e2",
+          "b7b6",
+          "b2b3",
+          "c8b7",
+          "c1b2",
+          "b8d7",
+          "e1g1",
+          "c7c5",
+          "c4d5",
+          "f6d5",
+          "c3d5",
+          "b7d5"
+        ],
+        "elapsed_sec": 0.0725
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 12,
+      "static_to_search_shift_cp": 10
+    },
+    {
+      "id": "CLSD_02",
+      "category": "Closed",
+      "fen": "r1bq1rk1/pp1n1pbp/2pp1np1/4p3/2PPP3/2N1BP2/PP2N1PP/R2QKB1R w KQ - 0 9",
+      "description": "King's Indian Classical closed center",
+      "c1_static_eval_cp": 30,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 679767,
+        "nps": 490739,
+        "score_cp": 25,
+        "bestmove": "f3f4",
+        "pv": [
+          "f3f4",
+          "f6g4",
+          "d1d2",
+          "d8h4",
+          "g2g3",
+          "h4f6",
+          "f4e5"
+        ],
+        "elapsed_sec": 1.3857
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 16,
+        "nodes": 18565,
+        "nps": 314661,
+        "score_cp": 25,
+        "bestmove": "d4d5",
+        "pv": [
+          "d4d5",
+          "c6d5",
+          "c4d5",
+          "f6e8",
+          "d1d2",
+          "f7f5",
+          "e1c1",
+          "d7b6",
+          "b2b3",
+          "c8d7"
+        ],
+        "elapsed_sec": 0.0592
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 0,
+      "static_to_search_shift_cp": 5
+    },
+    {
+      "id": "CLSD_03",
+      "category": "Closed",
+      "fen": "r2q1rk1/1p1nbppp/p1p1pn2/3p4/2PP4/1PN1PN2/PB2BPPP/R2Q1RK1 b - - 2 10",
+      "description": "Slav / Stonewall locked pawn wedges",
+      "c1_static_eval_cp": -335,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 732580,
+        "nps": 435813,
+        "score_cp": -335,
+        "bestmove": "c6c5",
+        "pv": [
+          "c6c5",
+          "d1d3",
+          "c5d4",
+          "e3d4",
+          "d8b6",
+          "c4c5",
+          "b6c7"
+        ],
+        "elapsed_sec": 1.6813
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 12,
+        "nodes": 14230,
+        "nps": 192297,
+        "score_cp": -803,
+        "bestmove": "e7d6",
+        "pv": [
+          "e7d6",
+          "g2g3",
+          "d6c7",
+          "b3b4",
+          "f6e4",
+          "c3a4",
+          "f7f5"
+        ],
+        "elapsed_sec": 0.0746
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 468,
+      "static_to_search_shift_cp": 0
+    },
+    {
+      "id": "CLSD_04",
+      "category": "Closed",
+      "fen": "r1bq1rk1/pp1n1ppp/2p1pn2/3p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQ - 1 8",
+      "description": "Closed Catalan structures",
+      "c1_static_eval_cp": 350,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 1022179,
+        "nps": 471382,
+        "score_cp": 370,
+        "bestmove": "d1c2",
+        "pv": [
+          "d1c2",
+          "d8a5",
+          "c4d5",
+          "c6d5",
+          "f1d3",
+          "f8e8",
+          "e3e4"
+        ],
+        "elapsed_sec": 2.1691
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 14,
+        "nodes": 7303,
+        "nps": 270481,
+        "score_cp": 802,
+        "bestmove": "c4d5",
+        "pv": [
+          "c4d5",
+          "e6d5",
+          "d1c2",
+          "f6e4"
+        ],
+        "elapsed_sec": 0.0274
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 432,
+      "static_to_search_shift_cp": 20
+    },
+    {
+      "id": "CLSD_05",
+      "category": "Closed",
+      "fen": "rnbqk2r/pp1p1ppp/2p1pn2/8/1bPP4/2N1P3/PP3PPP/R1BQKBNR w KQkq - 0 5",
+      "description": "Nimzo doubled pawn blockade on c3/c4",
+      "c1_static_eval_cp": 35,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 113548,
+        "nps": 725357,
+        "score_cp": 35,
+        "bestmove": "g1e2",
+        "pv": [
+          "g1e2",
+          "d7d5",
+          "c4d5",
+          "c6d5",
+          "a2a3",
+          "b4d6",
+          "c1d2"
+        ],
+        "elapsed_sec": 0.1571
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 15,
+        "nodes": 31234,
+        "nps": 231362,
+        "score_cp": 43,
+        "bestmove": "f1d3",
+        "pv": [
+          "f1d3",
+          "d7d5",
+          "g1f3",
+          "e8g8",
+          "e1g1",
+          "b8d7",
+          "d1c2",
+          "b7b6",
+          "c4d5",
+          "e6d5",
+          "a2a3",
+          "b4d6"
+        ],
+        "elapsed_sec": 0.136
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 8,
+      "static_to_search_shift_cp": 0
+    },
+    {
+      "id": "OPEN_01",
+      "category": "Open",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/3PP3/2N2N2/PPP2PPP/R1BQKB1R b KQkq d3 0 4",
+      "description": "Scotch Game open center liquidations",
+      "c1_static_eval_cp": -40,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 222361,
+        "nps": 667188,
+        "score_cp": -30,
+        "bestmove": "e5d4",
+        "pv": [
+          "e5d4",
+          "f3d4",
+          "f8b4",
+          "d4c6",
+          "b4c3",
+          "b2c3",
+          "b7c6"
+        ],
+        "elapsed_sec": 0.3337
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 21,
+        "nodes": 19807,
+        "nps": 300106,
+        "score_cp": -13,
+        "bestmove": "e5d4",
+        "pv": [
+          "e5d4",
+          "f3d4",
+          "f8b4",
+          "d4c6",
+          "b7c6",
+          "f1d3",
+          "e8g8",
+          "e1g1",
+          "f8e8",
+          "f1e1"
+        ],
+        "elapsed_sec": 0.0661
+      },
+      "move_agreement": true,
+      "eval_error_vs_sf_cp": 17,
+      "static_to_search_shift_cp": 10
+    },
+    {
+      "id": "OPEN_02",
+      "category": "Open",
+      "fen": "r1b1k2r/pp1p1ppp/1qn1pn2/2b5/4P3/2NB1N2/PPP2PPP/R1BQ1RK1 w kq - 4 8",
+      "description": "Open Sicilian complex open c-file",
+      "c1_static_eval_cp": 40,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 694142,
+        "nps": 479005,
+        "score_cp": 75,
+        "bestmove": "c3a4",
+        "pv": [
+          "c3a4",
+          "b6a5",
+          "a4c5",
+          "a5c5",
+          "c1e3",
+          "c5d6",
+          "d1e2"
+        ],
+        "elapsed_sec": 1.4494
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 22,
+        "nodes": 18456,
+        "nps": 227851,
+        "score_cp": 207,
+        "bestmove": "e4e5",
+        "pv": [
+          "e4e5",
+          "f6g4",
+          "d1e2",
+          "f7f6",
+          "e5f6",
+          "g4f6",
+          "c3a4",
+          "b6a5",
+          "a4c5",
+          "a5c5",
+          "f1e1",
+          "e8g8",
+          "a2a3",
+          "c5h5",
+          "c1f4",
+          "d7d5"
+        ],
+        "elapsed_sec": 0.0812
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 132,
+      "static_to_search_shift_cp": 35
+    },
+    {
+      "id": "OPEN_03",
+      "category": "Open",
+      "fen": "r1bq1rk1/ppp2ppp/2n5/3np3/8/2PP1N2/P1P1BPPP/R1BQ1RK1 w - - 0 9",
+      "description": "Liquidated e-file and d-file open board",
+      "c1_static_eval_cp": -50,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 236675,
+        "nps": 636088,
+        "score_cp": -20,
+        "bestmove": "c3c4",
+        "pv": [
+          "c3c4",
+          "d5c3",
+          "d1e1",
+          "c3e2",
+          "e1e2",
+          "c8g4",
+          "c1e3"
+        ],
+        "elapsed_sec": 0.3724
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 18,
+        "nodes": 14181,
+        "nps": 301723,
+        "score_cp": -7,
+        "bestmove": "c1d2",
+        "pv": [
+          "c1d2",
+          "d8f6",
+          "h2h3",
+          "h7h6",
+          "f1e1",
+          "c8f5",
+          "c3c4",
+          "d5f4",
+          "d2f4",
+          "e5f4",
+          "d3d4",
+          "a8d8"
+        ],
+        "elapsed_sec": 0.0474
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 13,
+      "static_to_search_shift_cp": 30
+    },
+    {
+      "id": "OPEN_04",
+      "category": "Open",
+      "fen": "r1b2rk1/pp3ppp/2n1pn2/q1b5/8/2NBPN2/PP3PPP/R1BQ1RK1 w - - 4 10",
+      "description": "Isolated Queen Pawn (IQP) dynamic open lines",
+      "c1_static_eval_cp": -5,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 1084255,
+        "nps": 490071,
+        "score_cp": 15,
+        "bestmove": "e3e4",
+        "pv": [
+          "e3e4",
+          "e6e5",
+          "c1g5",
+          "c8e6",
+          "g5f6",
+          "g7f6",
+          "d1c2"
+        ],
+        "elapsed_sec": 2.2127
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 19,
+        "nodes": 48267,
+        "nps": 268150,
+        "score_cp": 27,
+        "bestmove": "d1e2",
+        "pv": [
+          "d1e2",
+          "c5e7",
+          "h2h3",
+          "c8d7",
+          "e3e4",
+          "c6e5",
+          "f3e5",
+          "a5e5",
+          "f2f4",
+          "e5h5"
+        ],
+        "elapsed_sec": 0.1802
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 12,
+      "static_to_search_shift_cp": 20
+    },
+    {
+      "id": "OPEN_05",
+      "category": "Open",
+      "fen": "r4rk1/pp1q1ppp/2np1n2/2p1p3/2P1P3/2NP1N2/PP3PPP/R2Q1RK1 b - - 1 10",
+      "description": "Symmetrical English open files",
+      "c1_static_eval_cp": 5,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 278095,
+        "nps": 696891,
+        "score_cp": 0,
+        "bestmove": "c6d4",
+        "pv": [
+          "c6d4",
+          "c3d5",
+          "d7d8",
+          "f1e1",
+          "f8e8",
+          "a2a3",
+          "a7a6"
+        ],
+        "elapsed_sec": 0.3993
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 14,
+        "nodes": 38637,
+        "nps": 202287,
+        "score_cp": 5,
+        "bestmove": "f6h5",
+        "pv": [
+          "f6h5",
+          "c3d5",
+          "g7g6",
+          "a2a3",
+          "c6e7",
+          "d5e7",
+          "d7e7",
+          "g2g3",
+          "h5g7",
+          "b2b4",
+          "g7e6",
+          "a1b1"
+        ],
+        "elapsed_sec": 0.1912
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 5,
+      "static_to_search_shift_cp": 5
+    },
+    {
+      "id": "KATK_01",
+      "category": "KingAttack",
+      "fen": "r1b2rk1/ppqn1ppp/2p1p3/8/2PP2n1/2NB1N2/PP3PPP/R2QR1K1 w - - 2 13",
+      "description": "Threat of Bxh7+ king hunt",
+      "c1_static_eval_cp": 55,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 791243,
+        "nps": 675333,
+        "score_cp": 130,
+        "bestmove": "d3h7",
+        "pv": [
+          "d3h7",
+          "g8h7",
+          "f3g5",
+          "h7g8",
+          "d1g4",
+          "e6e5",
+          "g5f3"
+        ],
+        "elapsed_sec": 1.1719
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 41,
+        "nodes": 91775,
+        "nps": 251438,
+        "score_cp": 455,
+        "bestmove": "d3h7",
+        "pv": [
+          "d3h7",
+          "g8h7",
+          "f3g5",
+          "h7g8",
+          "d1g4",
+          "f8d8",
+          "c3e4",
+          "d7f8",
+          "e4f6",
+          "g7f6",
+          "g5e6",
+          "f8g6",
+          "g4g6",
+          "f7g6",
+          "e6c7",
+          "a8b8",
+          "e1e8",
+          "d8e8",
+          "c7e8",
+          "g8f7",
+          "e8d6",
+          "f7e6",
+          "d6c8",
+          "b8c8",
+          "b2b3",
+          "c8d8",
+          "a1d1",
+          "b7b5",
+          "d1e1",
+          "e6d6"
+        ],
+        "elapsed_sec": 0.3654
+      },
+      "move_agreement": true,
+      "eval_error_vs_sf_cp": 325,
+      "static_to_search_shift_cp": 75
+    },
+    {
+      "id": "KATK_02",
+      "category": "KingAttack",
+      "fen": "r4rk1/pp1q1ppp/2n1p3/3p2B1/3P4/2N2B2/PPP2PPP/R2QR1K1 w - - 0 13",
+      "description": "Major piece battery aimed at kingside",
+      "c1_static_eval_cp": 685,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 745002,
+        "nps": 586335,
+        "score_cp": 695,
+        "bestmove": "g5f4",
+        "pv": [
+          "g5f4",
+          "a8d8",
+          "d1d3",
+          "f8e8",
+          "a1d1",
+          "a7a6",
+          "h2h3"
+        ],
+        "elapsed_sec": 1.2734
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 16,
+        "nodes": 4681,
+        "nps": 275352,
+        "score_cp": 1102,
+        "bestmove": "g5c1",
+        "pv": [
+          "g5c1",
+          "h7h6",
+          "e1e3",
+          "g7g6",
+          "f3g4"
+        ],
+        "elapsed_sec": 0.0171
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 407,
+      "static_to_search_shift_cp": 10
+    },
+    {
+      "id": "KATK_03",
+      "category": "KingAttack",
+      "fen": "r2q1rk1/1bp2ppp/p1np4/1p2p3/4P1n1/P1NP1N2/BPP2PPP/R2Q1RK1 w - - 0 12",
+      "description": "Pawn shelter erosion on g2/h2",
+      "c1_static_eval_cp": 0,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 660554,
+        "nps": 584498,
+        "score_cp": 35,
+        "bestmove": "a2b3",
+        "pv": [
+          "a2b3",
+          "b5b4",
+          "a3b4",
+          "c6b4",
+          "d3d4",
+          "d8f6",
+          "d4d5"
+        ],
+        "elapsed_sec": 1.1306
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 16,
+        "nodes": 30971,
+        "nps": 292179,
+        "score_cp": 21,
+        "bestmove": "d1d2",
+        "pv": [
+          "d1d2",
+          "g4f6",
+          "h2h3",
+          "b7c8",
+          "c3e2",
+          "c8e6",
+          "a2e6",
+          "f7e6",
+          "b2b4",
+          "f6h5"
+        ],
+        "elapsed_sec": 0.106
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 14,
+      "static_to_search_shift_cp": 35
+    },
+    {
+      "id": "KATK_04",
+      "category": "KingAttack",
+      "fen": "r1b1k2r/pp3ppp/2n1p3/3p4/2PP4/2N2N2/PP3PPP/R3KB1R b KQkq - 0 10",
+      "description": "King stuck in center under open e-file attack",
+      "c1_static_eval_cp": -330,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 203114,
+        "nps": 707703,
+        "score_cp": -340,
+        "bestmove": "c8d7",
+        "pv": [
+          "c8d7",
+          "a2a3",
+          "c6e7",
+          "c4c5",
+          "d7c6",
+          "f1b5",
+          "c6b5"
+        ],
+        "elapsed_sec": 0.2873
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 13,
+        "nodes": 2470,
+        "nps": 308750,
+        "score_cp": -653,
+        "bestmove": "d5c4",
+        "pv": [
+          "d5c4",
+          "h2h3",
+          "c6b4",
+          "e1d2",
+          "e8e7",
+          "f1c4",
+          "e7f6",
+          "c3e4",
+          "f6e7",
+          "e4g3"
+        ],
+        "elapsed_sec": 0.0079
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 313,
+      "static_to_search_shift_cp": 10
+    },
+    {
+      "id": "KATK_05",
+      "category": "KingAttack",
+      "fen": "r4rk1/pp1b1ppp/1qn1pn2/2bp4/8/2NBPN2/PPPB1PPP/R2Q1RK1 w - - 6 10",
+      "description": "Long castling pawn storm race",
+      "c1_static_eval_cp": -20,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 338919,
+        "nps": 892668,
+        "score_cp": 320,
+        "bestmove": "c3a4",
+        "pv": [
+          "c3a4",
+          "b6c7",
+          "a4c5",
+          "e6e5",
+          "e3e4",
+          "d5e4",
+          "c5e4"
+        ],
+        "elapsed_sec": 0.3803
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 14,
+        "nodes": 8244,
+        "nps": 358434,
+        "score_cp": 701,
+        "bestmove": "c3a4",
+        "pv": [
+          "c3a4",
+          "b6c7",
+          "a4c5",
+          "f6g4",
+          "h2h3",
+          "e6e5",
+          "h3g4"
+        ],
+        "elapsed_sec": 0.0236
+      },
+      "move_agreement": true,
+      "eval_error_vs_sf_cp": 381,
+      "static_to_search_shift_cp": 340
+    },
+    {
+      "id": "ENDG_01",
+      "category": "Endgame",
+      "fen": "8/5pk1/4p1p1/7p/7P/4r1P1/R4PK1/8 b - - 1 42",
+      "description": "Classic 4v3 single rook endgame",
+      "c1_static_eval_cp": 105,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 31052,
+        "nps": 1052003,
+        "score_cp": 115,
+        "bestmove": "e3e1",
+        "pv": [
+          "e3e1",
+          "f2f4",
+          "e6e5",
+          "f4e5",
+          "e1e5",
+          "a2a7",
+          "g7g8"
+        ],
+        "elapsed_sec": 0.03
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 14,
+        "nodes": 22810,
+        "nps": 438653,
+        "score_cp": 6,
+        "bestmove": "e3e5",
+        "pv": [
+          "e3e5",
+          "a2b2",
+          "e5c5",
+          "b2b8",
+          "c5f5"
+        ],
+        "elapsed_sec": 0.0529
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 109,
+      "static_to_search_shift_cp": 10
+    },
+    {
+      "id": "ENDG_02",
+      "category": "Endgame",
+      "fen": "8/8/4k3/3p4/3K4/5B2/8/8 w - - 0 1",
+      "description": "Bishop vs Pawn endgame",
+      "c1_static_eval_cp": 200,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 38805,
+        "nps": 1358537,
+        "score_cp": 215,
+        "bestmove": "d4c3",
+        "pv": [
+          "d4c3",
+          "e6f6",
+          "c3c2",
+          "f6g7",
+          "c2b1",
+          "g7g8",
+          "f3g2"
+        ],
+        "elapsed_sec": 0.0296
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 14,
+        "nodes": 41080,
+        "nps": 838367,
+        "score_cp": 0,
+        "bestmove": "f3g4",
+        "pv": [
+          "f3g4",
+          "e6f6",
+          "g4h5",
+          "f6g5",
+          "h5f7",
+          "g5f5"
+        ],
+        "elapsed_sec": 0.0501
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 215,
+      "static_to_search_shift_cp": 15
+    },
+    {
+      "id": "ENDG_03",
+      "category": "Endgame",
+      "fen": "8/pk6/8/8/8/8/6KP/8 w - - 0 1",
+      "description": "Pure passed pawn race",
+      "c1_static_eval_cp": 0,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 6867,
+        "nps": 2136124,
+        "score_cp": 35,
+        "bestmove": "h2h4",
+        "pv": [
+          "h2h4",
+          "b7b8",
+          "h4h5",
+          "a7a5",
+          "h5h6",
+          "a5a4",
+          "h6h7"
+        ],
+        "elapsed_sec": 0.0036
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 16,
+        "nodes": 14041,
+        "nps": 1080076,
+        "score_cp": 396,
+        "bestmove": "h2h4",
+        "pv": [
+          "h2h4",
+          "a7a5",
+          "h4h5",
+          "a5a4",
+          "h5h6",
+          "a4a3",
+          "h6h7",
+          "b7a6",
+          "g2h2",
+          "a6a5",
+          "h2g3",
+          "a5a4",
+          "h7h8q",
+          "a4b3"
+        ],
+        "elapsed_sec": 0.0133
+      },
+      "move_agreement": true,
+      "eval_error_vs_sf_cp": 361,
+      "static_to_search_shift_cp": 35
+    },
+    {
+      "id": "ENDG_04",
+      "category": "Endgame",
+      "fen": "8/8/4k3/8/4K3/8/8/8 w - - 0 1",
+      "description": "King opposition key squares",
+      "c1_static_eval_cp": -20,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 42,
+        "nps": 3230769,
+        "score_cp": 0,
+        "bestmove": "e4d3",
+        "pv": [
+          "e4d3"
+        ],
+        "elapsed_sec": 0.0002
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 14,
+        "nodes": 6198,
+        "nps": 1239600,
+        "score_cp": -2,
+        "bestmove": "e4d4",
+        "pv": [
+          "e4d4",
+          "e6f5",
+          "d4d5",
+          "f5f4",
+          "d5d6",
+          "f4e3",
+          "d6d5",
+          "e3d3",
+          "d5e6"
+        ],
+        "elapsed_sec": 0.0057
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 2,
+      "static_to_search_shift_cp": 20
+    },
+    {
+      "id": "ENDG_05",
+      "category": "Endgame",
+      "fen": "8/8/5k2/3p4/3P1K2/8/8/8 w - - 0 1",
+      "description": "Mutual zugzwang trebuchet position",
+      "c1_static_eval_cp": -10,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 3211,
+        "nps": 2321596,
+        "score_cp": 0,
+        "bestmove": "f4f3",
+        "pv": [
+          "f4f3",
+          "f6g7",
+          "f3g2",
+          "g7h7",
+          "g2f1",
+          "h7g8",
+          "f1g1"
+        ],
+        "elapsed_sec": 0.0016
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 14,
+        "nodes": 3974,
+        "nps": 662333,
+        "score_cp": 1,
+        "bestmove": "f4g4",
+        "pv": [
+          "f4g4",
+          "f6g6",
+          "g4g3",
+          "g6f5",
+          "g3f3",
+          "f5g6"
+        ],
+        "elapsed_sec": 0.0071
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 1,
+      "static_to_search_shift_cp": 10
+    },
+    {
+      "id": "ENDG_06",
+      "category": "Endgame",
+      "fen": "8/1b3k2/8/4B3/8/5K2/8/8 w - - 0 1",
+      "description": "Opposite coloured bishops theoretical draw",
+      "c1_static_eval_cp": -15,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 12138,
+        "nps": 1878423,
+        "score_cp": 0,
+        "bestmove": "f3f2",
+        "pv": [
+          "f3f2",
+          "f7g8",
+          "f2g1",
+          "b7e4",
+          "e5c3",
+          "e4d3",
+          "c3d4"
+        ],
+        "elapsed_sec": 0.007
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 13,
+        "nodes": 16469,
+        "nps": 499060,
+        "score_cp": 0,
+        "bestmove": "f3e3",
+        "pv": [
+          "f3e3",
+          "f7e6",
+          "e3d4",
+          "e6f5",
+          "e5h2",
+          "b7h1"
+        ],
+        "elapsed_sec": 0.0327
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 0,
+      "static_to_search_shift_cp": 15
+    },
+    {
+      "id": "ENDG_07",
+      "category": "Endgame",
+      "fen": "8/8/2k5/8/8/1K6/1R6/r7 w - - 0 1",
+      "description": "Lucena / Philidor rook endgame defense",
+      "c1_static_eval_cp": 0,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 23666,
+        "nps": 1186128,
+        "score_cp": 10,
+        "bestmove": "b3c2",
+        "pv": [
+          "b3c2",
+          "c6c7",
+          "b2b3",
+          "c7c8",
+          "c2b2",
+          "a1e1",
+          "b2a2"
+        ],
+        "elapsed_sec": 0.0224
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 14,
+        "nodes": 30688,
+        "nps": 568296,
+        "score_cp": 0,
+        "bestmove": "b2g2",
+        "pv": [
+          "b2g2",
+          "a1a8",
+          "g2g6",
+          "c6c5",
+          "g6g5",
+          "c5d6",
+          "b3c2",
+          "a8b8",
+          "c2d1"
+        ],
+        "elapsed_sec": 0.0542
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 10,
+      "static_to_search_shift_cp": 10
+    },
+    {
+      "id": "ENDG_08",
+      "category": "Endgame",
+      "fen": "8/8/3k4/p1pP4/P1P5/3K4/8/8 w - - 0 1",
+      "description": "Locked pawn endgame breakthrough",
+      "c1_static_eval_cp": 125,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 3046,
+        "nps": 2602973,
+        "score_cp": 135,
+        "bestmove": "d3c2",
+        "pv": [
+          "d3c2",
+          "d6c7",
+          "c2b1",
+          "c7b7",
+          "b1c1",
+          "b7a7",
+          "c1b1"
+        ],
+        "elapsed_sec": 0.0015
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 22,
+        "nodes": 3338,
+        "nps": 667600,
+        "score_cp": 528,
+        "bestmove": "d3e4",
+        "pv": [
+          "d3e4",
+          "d6c7",
+          "e4e5",
+          "c7d7",
+          "d5d6",
+          "d7d8",
+          "e5e6",
+          "d8e8",
+          "e6d5",
+          "e8d7",
+          "d5c5",
+          "d7d8"
+        ],
+        "elapsed_sec": 0.005
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 393,
+      "static_to_search_shift_cp": 10
+    },
+    {
+      "id": "ENDG_09",
+      "category": "Endgame",
+      "fen": "8/8/4k3/8/8/4K3/4P3/8 w - - 0 1",
+      "description": "K+P vs K fundamental endgame",
+      "c1_static_eval_cp": 80,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 6353,
+        "nps": 2165524,
+        "score_cp": 125,
+        "bestmove": "e3f2",
+        "pv": [
+          "e3f2",
+          "e6f7",
+          "f2g1",
+          "f7g7",
+          "e2e4",
+          "g7g8",
+          "e4e5"
+        ],
+        "elapsed_sec": 0.0052
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 13,
+        "nodes": 2338,
+        "nps": 467600,
+        "score_cp": 434,
+        "bestmove": "e3e4",
+        "pv": [
+          "e3e4",
+          "e6d6",
+          "e4f5",
+          "d6d7",
+          "f5e5",
+          "d7e7"
+        ],
+        "elapsed_sec": 0.0055
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 309,
+      "static_to_search_shift_cp": 45
+    },
+    {
+      "id": "ENDG_10",
+      "category": "Endgame",
+      "fen": "r4rk1/pp3ppp/2n1p3/3p4/3P4/2N2B2/PPP2PPP/R4RK1 w - - 0 14",
+      "description": "Queenless middlegame control",
+      "c1_static_eval_cp": 350,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 127725,
+        "nps": 914786,
+        "score_cp": 350,
+        "bestmove": "a1d1",
+        "pv": [
+          "a1d1",
+          "a8d8",
+          "f1e1",
+          "f8e8",
+          "a2a3",
+          "a7a6",
+          "h2h3"
+        ],
+        "elapsed_sec": 0.1398
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 17,
+        "nodes": 5169,
+        "nps": 304058,
+        "score_cp": 642,
+        "bestmove": "f1d1",
+        "pv": [
+          "f1d1",
+          "f8d8",
+          "c3b1",
+          "c6b4",
+          "d1d2",
+          "b4c2",
+          "d2c2",
+          "a8c8"
+        ],
+        "elapsed_sec": 0.0169
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 292,
+      "static_to_search_shift_cp": 0
+    },
+    {
+      "id": "MATE_01",
+      "category": "Defensive",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1",
+      "description": "Back rank mate in 1 (Re8#)",
+      "c1_static_eval_cp": 505,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 31548,
+        "nps": 2724893,
+        "score_cp": 28999,
+        "bestmove": "e1e8",
+        "pv": [
+          "e1e8"
+        ],
+        "elapsed_sec": 0.0118
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 2,
+        "nodes": 240,
+        "nps": 240000,
+        "score_cp": 29900,
+        "bestmove": "e1e8",
+        "pv": [
+          "e1e8"
+        ],
+        "elapsed_sec": 0.0007
+      },
+      "move_agreement": true,
+      "eval_error_vs_sf_cp": 901,
+      "static_to_search_shift_cp": 28494
+    },
+    {
+      "id": "MATE_02",
+      "category": "Defensive",
+      "fen": "r1b2rk1/pp3ppp/8/2p1N3/2B1n3/4P3/PP3PPP/R4RK1 w - - 0 14",
+      "description": "Defending against f7 mate pressure",
+      "c1_static_eval_cp": 20,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 323340,
+        "nps": 767709,
+        "score_cp": 90,
+        "bestmove": "f1c1",
+        "pv": [
+          "f1c1",
+          "c8e6",
+          "c4d3",
+          "f7f6",
+          "d3e4",
+          "f6e5",
+          "e4b7"
+        ],
+        "elapsed_sec": 0.4216
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 19,
+        "nodes": 15033,
+        "nps": 334066,
+        "score_cp": 162,
+        "bestmove": "f1d1",
+        "pv": [
+          "f1d1",
+          "c8e6",
+          "c4e6",
+          "f7e6",
+          "f2f3",
+          "e4f6",
+          "a1c1",
+          "a8c8",
+          "e3e4",
+          "c8c7",
+          "h2h4"
+        ],
+        "elapsed_sec": 0.046
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 72,
+      "static_to_search_shift_cp": 70
+    },
+    {
+      "id": "MATE_03",
+      "category": "Defensive",
+      "fen": "5rk1/5ppp/8/8/8/8/4qPPP/5RK1 b - - 0 1",
+      "description": "Back rank perpetual check threat",
+      "c1_static_eval_cp": 900,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 160004,
+        "nps": 804194,
+        "score_cp": 935,
+        "bestmove": "f8d8",
+        "pv": [
+          "f8d8",
+          "h2h3",
+          "d8d2",
+          "h3h4",
+          "h7h6",
+          "g2g3",
+          "e2d3"
+        ],
+        "elapsed_sec": 0.1996
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 13,
+        "nodes": 4427,
+        "nps": 295133,
+        "score_cp": 987,
+        "bestmove": "f8c8",
+        "pv": [
+          "f8c8",
+          "h2h4",
+          "f7f6",
+          "g2g3",
+          "c8c2",
+          "g1g2",
+          "c2d2"
+        ],
+        "elapsed_sec": 0.0161
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 52,
+      "static_to_search_shift_cp": 35
+    },
+    {
+      "id": "MATE_04",
+      "category": "Defensive",
+      "fen": "r2q1rk1/pp1b1ppp/2n1pn2/3p4/2PP4/1PNBPN2/P4PPP/R2Q1RK1 b - - 0 10",
+      "description": "Preventing kingside Greek gift (h6/g6)",
+      "c1_static_eval_cp": -95,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 444400,
+        "nps": 700807,
+        "score_cp": -100,
+        "bestmove": "d8b6",
+        "pv": [
+          "d8b6",
+          "e3e4",
+          "d5e4",
+          "d3e4",
+          "f6e4",
+          "c3e4",
+          "a8d8"
+        ],
+        "elapsed_sec": 0.6346
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 18,
+        "nodes": 7201,
+        "nps": 211794,
+        "score_cp": -243,
+        "bestmove": "d8e7",
+        "pv": [
+          "d8e7",
+          "d1d2",
+          "a8c8",
+          "f1d1",
+          "f8d8",
+          "d2b2",
+          "d5c4",
+          "b3c4",
+          "b7b6",
+          "h2h3"
+        ],
+        "elapsed_sec": 0.0341
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 143,
+      "static_to_search_shift_cp": 5
+    },
+    {
+      "id": "MATE_05",
+      "category": "Defensive",
+      "fen": "8/8/8/8/8/1k6/p7/K7 w - - 0 1",
+      "description": "Corner stalemate defensive escape",
+      "c1_static_eval_cp": -90,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 7,
+        "nps": 1944444,
+        "score_cp": 0,
+        "bestmove": "0000",
+        "pv": [],
+        "elapsed_sec": 0.0002
+      },
+      "sf19_search": {
+        "depth": 0,
+        "seldepth": 0,
+        "nodes": 0,
+        "nps": 0,
+        "score_cp": 0,
+        "bestmove": "(none)",
+        "pv": [],
+        "elapsed_sec": 0.0004
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 0,
+      "static_to_search_shift_cp": 90
+    },
+    {
+      "id": "CAND_01",
+      "category": "Candidates",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R b KQkq - 0 4",
+      "description": "Italian d6 vs O-O choice",
+      "c1_static_eval_cp": 30,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 468208,
+        "nps": 556226,
+        "score_cp": 40,
+        "bestmove": "d7d5",
+        "pv": [
+          "d7d5",
+          "e4d5",
+          "f6d5",
+          "c4d5",
+          "d8d5",
+          "b1c3",
+          "d5e6"
+        ],
+        "elapsed_sec": 0.8411
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 16,
+        "nodes": 41045,
+        "nps": 281130,
+        "score_cp": -1,
+        "bestmove": "d7d6",
+        "pv": [
+          "d7d6",
+          "e1g1",
+          "a7a6",
+          "a2a4",
+          "e8g8",
+          "c1e3",
+          "c5e3",
+          "f2e3",
+          "c8e6"
+        ],
+        "elapsed_sec": 0.1468
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 41,
+      "static_to_search_shift_cp": 10
+    },
+    {
+      "id": "CAND_02",
+      "category": "Candidates",
+      "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/3NP3/2N1BP2/PPPQ2PP/2KR1B1R b - - 0 9",
+      "description": "Dragon d5 break vs Bd7 vs Be6",
+      "c1_static_eval_cp": -50,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 349398,
+        "nps": 700102,
+        "score_cp": -30,
+        "bestmove": "c6d4",
+        "pv": [
+          "c6d4",
+          "e3d4",
+          "d8a5",
+          "d4e3",
+          "c8e6",
+          "c1b1",
+          "f8d8"
+        ],
+        "elapsed_sec": 0.4993
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 17,
+        "nodes": 25131,
+        "nps": 314137,
+        "score_cp": -62,
+        "bestmove": "d6d5",
+        "pv": [
+          "d6d5",
+          "d4c6",
+          "b7c6",
+          "e4d5",
+          "f6d5",
+          "c3d5",
+          "c6d5",
+          "d2d5",
+          "d8c7",
+          "d5c5",
+          "c7b7",
+          "e3d4"
+        ],
+        "elapsed_sec": 0.0803
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 32,
+      "static_to_search_shift_cp": 20
+    },
+    {
+      "id": "CAND_03",
+      "category": "Candidates",
+      "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/2PP4/2N1PN2/PP2BPPP/R1BQK2R w KQkq - 4 7",
+      "description": "QGD cxd5 vs O-O vs b3",
+      "c1_static_eval_cp": 0,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 721302,
+        "nps": 639759,
+        "score_cp": 0,
+        "bestmove": "c4d5",
+        "pv": [
+          "c4d5",
+          "e6d5",
+          "f3e5",
+          "d8d6",
+          "e5c6",
+          "d6c6",
+          "c1d2"
+        ],
+        "elapsed_sec": 1.128
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 13,
+        "nodes": 5970,
+        "nps": 314210,
+        "score_cp": 24,
+        "bestmove": "d4c5",
+        "pv": [
+          "d4c5",
+          "e7c5",
+          "a2a3",
+          "c5e7",
+          "c4d5",
+          "f6d5",
+          "c3d5",
+          "d8d5",
+          "d1c2",
+          "e8g8"
+        ],
+        "elapsed_sec": 0.0188
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 24,
+      "static_to_search_shift_cp": 0
+    },
+    {
+      "id": "CAND_04",
+      "category": "Candidates",
+      "fen": "r2q1rk1/1pp1bppp/p1np1nb1/4p3/B3P1P1/2PP1N1P/PP3P2/RNBQR1K1 b - - 0 11",
+      "description": "Lopez h5 vs Nd7 vs b5",
+      "c1_static_eval_cp": 105,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 278754,
+        "nps": 790867,
+        "score_cp": 35,
+        "bestmove": "b7b5",
+        "pv": [
+          "b7b5",
+          "a4b3",
+          "a6a5",
+          "b1d2",
+          "a5a4",
+          "g4g5",
+          "a4b3"
+        ],
+        "elapsed_sec": 0.3527
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 18,
+        "nodes": 55845,
+        "nps": 298636,
+        "score_cp": -19,
+        "bestmove": "b7b5",
+        "pv": [
+          "b7b5",
+          "a4b3",
+          "c6a5",
+          "b3c2",
+          "c7c5",
+          "f3h4",
+          "d6d5",
+          "g4g5"
+        ],
+        "elapsed_sec": 0.1871
+      },
+      "move_agreement": true,
+      "eval_error_vs_sf_cp": 54,
+      "static_to_search_shift_cp": 70
+    },
+    {
+      "id": "CAND_05",
+      "category": "Candidates",
+      "fen": "r4rk1/pp1b1ppp/2n1pn2/2qp4/8/2PBPN2/PP1N1PPP/R2Q1RK1 w - - 0 11",
+      "description": "Catalan e4 vs c4 vs Nb3",
+      "c1_static_eval_cp": -35,
+      "c1_search": {
+        "depth": 7,
+        "seldepth": 0,
+        "nodes": 769955,
+        "nps": 603174,
+        "score_cp": -20,
+        "bestmove": "d1b3",
+        "pv": [
+          "d1b3",
+          "e6e5",
+          "e3e4",
+          "d5e4",
+          "d2e4",
+          "f6e4",
+          "d3e4"
+        ],
+        "elapsed_sec": 1.277
+      },
+      "sf19_search": {
+        "depth": 12,
+        "seldepth": 20,
+        "nodes": 28743,
+        "nps": 305776,
+        "score_cp": 14,
+        "bestmove": "e3e4",
+        "pv": [
+          "e3e4",
+          "d5e4",
+          "d2e4",
+          "f6e4",
+          "d3e4",
+          "f8d8",
+          "d1c2",
+          "h7h6",
+          "b2b4",
+          "c5b6",
+          "a2a4",
+          "c6e7"
+        ],
+        "elapsed_sec": 0.0941
+      },
+      "move_agreement": false,
+      "eval_error_vs_sf_cp": 34,
+      "static_to_search_shift_cp": 15
+    }
+  ]
+}

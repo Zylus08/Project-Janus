@@ -1,0 +1,321 @@
+{
+  "metadata": {
+    "milestone": "P1.0",
+    "date": "2026-11-09",
+    "engine": "Janus Classical Baseline C1 (Native N5 Frozen)",
+    "overall_qualification_passed": true
+  },
+  "perft_suite": [
+    {
+      "id": "PERFT_01_STARTPOS",
+      "name": "Standard Initial Position",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "depths": [
+        {
+          "depth": 1,
+          "expected_nodes": 20,
+          "actual_nodes": 20,
+          "match": true,
+          "elapsed_sec": 0.0,
+          "nps": 200000
+        },
+        {
+          "depth": 2,
+          "expected_nodes": 400,
+          "actual_nodes": 400,
+          "match": true,
+          "elapsed_sec": 0.0,
+          "nps": 4000000
+        },
+        {
+          "depth": 3,
+          "expected_nodes": 8902,
+          "actual_nodes": 8902,
+          "match": true,
+          "elapsed_sec": 0.0005,
+          "nps": 18518826
+        },
+        {
+          "depth": 4,
+          "expected_nodes": 197281,
+          "actual_nodes": 197281,
+          "match": true,
+          "elapsed_sec": 0.0105,
+          "nps": 18751164
+        },
+        {
+          "depth": 5,
+          "expected_nodes": 4865609,
+          "actual_nodes": 4865609,
+          "match": true,
+          "elapsed_sec": 0.2608,
+          "nps": 18658901
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "PERFT_02_KIWIPETE",
+      "name": "Kiwipete (Complex Tactically & Castling/EP)",
+      "fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "depths": [
+        {
+          "depth": 1,
+          "expected_nodes": 48,
+          "actual_nodes": 48,
+          "match": true,
+          "elapsed_sec": 0.0,
+          "nps": 480000
+        },
+        {
+          "depth": 2,
+          "expected_nodes": 2039,
+          "actual_nodes": 2039,
+          "match": true,
+          "elapsed_sec": 0.0001,
+          "nps": 16496763
+        },
+        {
+          "depth": 3,
+          "expected_nodes": 97862,
+          "actual_nodes": 97862,
+          "match": true,
+          "elapsed_sec": 0.0058,
+          "nps": 16815354
+        },
+        {
+          "depth": 4,
+          "expected_nodes": 4085603,
+          "actual_nodes": 4085603,
+          "match": true,
+          "elapsed_sec": 0.2384,
+          "nps": 17140882
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "PERFT_03_SILVER_SUITE",
+      "name": "Silver Suite (Endgame & King Walks)",
+      "fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "depths": [
+        {
+          "depth": 1,
+          "expected_nodes": 14,
+          "actual_nodes": 14,
+          "match": true,
+          "elapsed_sec": 0.0,
+          "nps": 140000
+        },
+        {
+          "depth": 2,
+          "expected_nodes": 191,
+          "actual_nodes": 191,
+          "match": true,
+          "elapsed_sec": 0.0,
+          "nps": 1910000
+        },
+        {
+          "depth": 3,
+          "expected_nodes": 2812,
+          "actual_nodes": 2812,
+          "match": true,
+          "elapsed_sec": 0.0002,
+          "nps": 11910207
+        },
+        {
+          "depth": 4,
+          "expected_nodes": 43238,
+          "actual_nodes": 43238,
+          "match": true,
+          "elapsed_sec": 0.0037,
+          "nps": 11537517
+        },
+        {
+          "depth": 5,
+          "expected_nodes": 674624,
+          "actual_nodes": 674624,
+          "match": true,
+          "elapsed_sec": 0.0539,
+          "nps": 12517306
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "PERFT_04_POSITION_4",
+      "name": "Position 4 (Promotions & Pinned Pawns)",
+      "fen": "r3k2r/Pppp1ppp/1b3nbN/nP6/BBP1P3/q4N2/Pp1P2PP/R2Q1RK1 w kq - 0 1",
+      "depths": [
+        {
+          "depth": 1,
+          "expected_nodes": 6,
+          "actual_nodes": 6,
+          "match": true,
+          "elapsed_sec": 0.0,
+          "nps": 60000
+        },
+        {
+          "depth": 2,
+          "expected_nodes": 264,
+          "actual_nodes": 264,
+          "match": true,
+          "elapsed_sec": 0.0,
+          "nps": 2640000
+        },
+        {
+          "depth": 3,
+          "expected_nodes": 9467,
+          "actual_nodes": 9467,
+          "match": true,
+          "elapsed_sec": 0.0006,
+          "nps": 16005071
+        },
+        {
+          "depth": 4,
+          "expected_nodes": 422333,
+          "actual_nodes": 422333,
+          "match": true,
+          "elapsed_sec": 0.026,
+          "nps": 16273432
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "PERFT_05_POSITION_5",
+      "name": "Position 5 (Tactical King & Checking)",
+      "fen": "rnbq1k1r/pp1Pbppp/2p5/8/2B5/8/PPP1NnPP/RNBQK2R w KQ - 1 8",
+      "depths": [
+        {
+          "depth": 1,
+          "expected_nodes": 44,
+          "actual_nodes": 44,
+          "match": true,
+          "elapsed_sec": 0.0,
+          "nps": 440000
+        },
+        {
+          "depth": 2,
+          "expected_nodes": 1486,
+          "actual_nodes": 1486,
+          "match": true,
+          "elapsed_sec": 0.0001,
+          "nps": 14860000
+        },
+        {
+          "depth": 3,
+          "expected_nodes": 62379,
+          "actual_nodes": 62379,
+          "match": true,
+          "elapsed_sec": 0.004,
+          "nps": 15523342
+        },
+        {
+          "depth": 4,
+          "expected_nodes": 2103487,
+          "actual_nodes": 2103487,
+          "match": true,
+          "elapsed_sec": 0.1244,
+          "nps": 16908651
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "PERFT_06_POSITION_6",
+      "name": "Position 6 (Discovered Checks & Pin Arrays)",
+      "fen": "r4rk1/1pp1qppp/p1np1n2/2b1p1B1/2B1P1b1/P1NP1N2/1PP1QPPP/R4RK1 w - - 0 10",
+      "depths": [
+        {
+          "depth": 1,
+          "expected_nodes": 46,
+          "actual_nodes": 46,
+          "match": true,
+          "elapsed_sec": 0.0,
+          "nps": 460000
+        },
+        {
+          "depth": 2,
+          "expected_nodes": 2079,
+          "actual_nodes": 2079,
+          "match": true,
+          "elapsed_sec": 0.0001,
+          "nps": 18746618
+        },
+        {
+          "depth": 3,
+          "expected_nodes": 89890,
+          "actual_nodes": 89890,
+          "match": true,
+          "elapsed_sec": 0.0045,
+          "nps": 20139806
+        },
+        {
+          "depth": 4,
+          "expected_nodes": 3894594,
+          "actual_nodes": 3894594,
+          "match": true,
+          "elapsed_sec": 0.1993,
+          "nps": 19545071
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "edge_cases": [
+    {
+      "test": "Stalemate",
+      "pass": true,
+      "details": "moves=0, in_check=False"
+    },
+    {
+      "test": "Checkmate",
+      "pass": true,
+      "details": "moves=0, in_check=True"
+    },
+    {
+      "test": "Pinned En Passant",
+      "pass": true,
+      "details": "'e5d6' in moves: False"
+    },
+    {
+      "test": "Castling In Check",
+      "pass": true,
+      "details": "castling generated: False"
+    },
+    {
+      "test": "Queenside Castling Blocked",
+      "pass": true,
+      "details": "O-O-O: False, O-O: True"
+    },
+    {
+      "test": "Kingside Castling Blocked",
+      "pass": true,
+      "details": "O-O: False, O-O-O: True"
+    },
+    {
+      "test": "Fifty-Move Rule",
+      "pass": true,
+      "details": "can_claim_fifty_moves=True"
+    },
+    {
+      "test": "Insufficient Material",
+      "pass": true,
+      "details": "is_insufficient_material=True"
+    },
+    {
+      "test": "Threefold Repetition",
+      "pass": true,
+      "details": "is_repetition(3)=True"
+    }
+  ],
+  "stress_test": {
+    "num_games": 100,
+    "total_positions_exercised": 6000,
+    "board_state_mismatches": 0,
+    "zobrist_hash_mismatches": 0,
+    "elapsed_sec": 1.037,
+    "passed": true
+  }
+}

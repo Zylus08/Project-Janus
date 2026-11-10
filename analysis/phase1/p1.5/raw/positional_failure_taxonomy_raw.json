@@ -1,0 +1,937 @@
+{
+  "corpus_size": 28,
+  "classification_counts": {
+    "A": 7,
+    "B": 12,
+    "C": 0,
+    "D": 0,
+    "E": 7,
+    "F": 2
+  },
+  "results": [
+    {
+      "id": "POS_01_OPEN_TAC_DEV",
+      "category": "OPEN_TAC",
+      "split": "dev",
+      "fen": "r1bqk2r/pppp1ppp/2n5/1B2p3/3Pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 0 6",
+      "provenance": "Ruy Lopez Open Berlin Defense, move 6",
+      "key_theme": "Center tension, piece activity, tactical pins",
+      "x7_static_eval": -227,
+      "x7_trace": {
+        "material": -229,
+        "pst": 3,
+        "pawn": 0,
+        "mobility": -18,
+        "king_safety": -14,
+        "endgame": 1
+      },
+      "x7_search": {
+        "bestmove": "e5d4",
+        "score": -277,
+        "depth": 10,
+        "nodes": 749568
+      },
+      "sf19_search": {
+        "bestmove": "e5d4",
+        "score": -688,
+        "depth": 17,
+        "nodes": 270636
+      },
+      "eval_gap": 411,
+      "moves_match": true,
+      "classification": "A",
+      "rationale": "Incorrect positional evaluation: X7 evaluates -277 cp vs SF reference -688 cp (gap = 411 cp)"
+    },
+    {
+      "id": "POS_02_OPEN_TAC_HELD",
+      "category": "OPEN_TAC",
+      "split": "heldout",
+      "fen": "r1b2rk1/pp1p1ppp/2n1pn2/q5B1/1bPP4/2N2N2/PP2BPPP/R2QK2R w KQ - 3 9",
+      "provenance": "Nimzo-Indian Rubinstein, tactical pressure on c3",
+      "key_theme": "Tactical pins, counter-attack on queen",
+      "x7_static_eval": 37,
+      "x7_trace": {
+        "material": 0,
+        "pst": 15,
+        "pawn": 0,
+        "mobility": 22,
+        "king_safety": -30,
+        "endgame": 0
+      },
+      "x7_search": {
+        "bestmove": "g5d2",
+        "score": 11,
+        "depth": 11,
+        "nodes": 657408
+      },
+      "sf19_search": {
+        "bestmove": "d4d5",
+        "score": 22,
+        "depth": 17,
+        "nodes": 308070
+      },
+      "eval_gap": 11,
+      "moves_match": false,
+      "classification": "B",
+      "rationale": "Evaluation acceptable but search missed SF move: X7=g5d2 (d=11) vs SF=d4d5 (d=17)"
+    },
+    {
+      "id": "POS_03_CLOSED_POS_DEV",
+      "category": "CLOSED_POS",
+      "split": "dev",
+      "fen": "r1b1qrk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2N1BP2/PP2N1PP/R2Q1RK1 b - - 0 11",
+      "provenance": "King's Indian Classical closed pawn center (d5/e4 vs d6/e5)",
+      "key_theme": "Pawn-locked center, flank maneuvering",
+      "x7_static_eval": -30,
+      "x7_trace": {
+        "material": 11,
+        "pst": -31,
+        "pawn": 0,
+        "mobility": -10,
+        "king_safety": 0,
+        "endgame": 0
+      },
+      "x7_search": {
+        "bestmove": "e8e7",
+        "score": -31,
+        "depth": 10,
+        "nodes": 716800
+      },
+      "sf19_search": {
+        "bestmove": "a7a6",
+        "score": -47,
+        "depth": 18,
+        "nodes": 277940
+      },
+      "eval_gap": 16,
+      "moves_match": false,
+      "classification": "B",
+      "rationale": "Evaluation acceptable but search missed SF move: X7=e8e7 (d=10) vs SF=a7a6 (d=18)"
+    },
+    {
+      "id": "POS_04_CLOSED_POS_HELD",
+      "category": "CLOSED_POS",
+      "split": "heldout",
+      "fen": "r2q1rk1/1pp1bppp/p1n1pn2/3p4/2PP4/2N1PN2/PPQ2PPP/R1B2RK1 w - - 4 10",
+      "provenance": "Queen's Gambit Declined, closed central pawn structure",
+      "key_theme": "Middlegame space control, minority attack preparation",
+      "x7_static_eval": -16,
+      "x7_trace": {
+        "material": 0,
+        "pst": -10,
+        "pawn": 0,
+        "mobility": -6,
+        "king_safety": 0,
+        "endgame": 0
+      },
+      "x7_search": {
+        "bestmove": "c4c5",
+        "score": 14,
+        "depth": 11,
+        "nodes": 704512
+      },
+      "sf19_search": {
+        "bestmove": "b2b3",
+        "score": 21,
+        "depth": 18,
+        "nodes": 300472
+      },
+      "eval_gap": 7,
+      "moves_match": false,
+      "classification": "B",
+      "rationale": "Evaluation acceptable but search missed SF move: X7=c4c5 (d=11) vs SF=b2b3 (d=18)"
+    },
+    {
+      "id": "POS_05_IQP_DEV",
+      "category": "IQP",
+      "split": "dev",
+      "fen": "r1bq1rk1/pp1n1ppp/4pn2/2pp4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 0 9",
+      "provenance": "Classical IQP position (Tarrasch Defense)",
+      "key_theme": "Dynamic piece activity vs long-term structural weakness",
+      "x7_static_eval": 385,
+      "x7_trace": {
+        "material": 330,
+        "pst": 25,
+        "pawn": 0,
+        "mobility": 30,
+        "king_safety": 0,
+        "endgame": 0
+      },
+      "x7_search": {
+        "bestmove": "b2b3",
+        "score": 355,
+        "depth": 10,
+        "nodes": 698368
+      },
+      "sf19_search": {
+        "bestmove": "c1d2",
+        "score": 788,
+        "depth": 17,
+        "nodes": 273171
+      },
+      "eval_gap": 433,
+      "moves_match": false,
+      "classification": "A",
+      "rationale": "Incorrect positional evaluation: X7 evaluates 355 cp vs SF reference 788 cp (gap = 433 cp)"
+    },
+    {
+      "id": "POS_06_IQP_HELD",
+      "category": "IQP",
+      "split": "heldout",
+      "fen": "r1bq1rk1/pp2bppp/2n1pn2/3p4/3P1B2/P1NBPN2/1P3PPP/R2Q1RK1 b - - 1 10",
+      "provenance": "Queen's Gambit Isolated d4 pawn middlegame",
+      "key_theme": "Blockade of d5 square, piece centralization",
+      "x7_static_eval": -82,
+      "x7_trace": {
+        "material": 0,
+        "pst": -30,
+        "pawn": 0,
+        "mobility": -52,
+        "king_safety": 0,
+        "endgame": 0
+      },
+      "x7_search": {
+        "bestmove": "e7d6",
+        "score": -52,
+        "depth": 8,
+        "nodes": 563200
+      },
+      "sf19_search": {
+        "bestmove": "f6h5",
+        "score": -26,
+        "depth": 19,
+        "nodes": 300050
+      },
+      "eval_gap": 26,
+      "moves_match": false,
+      "classification": "B",
+      "rationale": "Evaluation acceptable but search missed SF move: X7=e7d6 (d=8) vs SF=f6h5 (d=19)"
+    },
+    {
+      "id": "POS_07_PAWN_MAJ_DEV",
+      "category": "PAWN_MAJ",
+      "split": "dev",
+      "fen": "2r2rk1/1p1q1ppp/p3pn2/3p4/3P4/bP1BP3/P2B1PPP/R2Q1RK1 w - - 0 15",
+      "provenance": "Queen's Gambit Accepted 3-vs-2 Queenside Majority",
+      "key_theme": "Creating an outside passed pawn on queenside",
+      "x7_static_eval": -15,
+      "x7_trace": {
+        "material": 11,
+        "pst": -11,
+        "pawn": 0,
+        "mobility": -15,
+        "king_safety": 0,
+        "endgame": 0
+      },
+      "x7_search": {
+        "bestmove": "a1b1",
+        "score": -31,
+        "depth": 10,
+        "nodes": 749568
+      },
+      "sf19_search": {
+        "bestmove": "b3b4",
+        "score": 6,
+        "depth": 19,
+        "nodes": 309916
+      },
+      "eval_gap": 37,
+      "moves_match": false,
+      "classification": "B",
+      "rationale": "Evaluation acceptable but search missed SF move: X7=a1b1 (d=10) vs SF=b3b4 (d=19)"
+    },
+    {
+      "id": "POS_08_PAWN_MAJ_HELD",
+      "category": "PAWN_MAJ",
+      "split": "heldout",
+      "fen": "r4rk1/pp1n1ppp/2p1pn2/8/2PP4/P1N1BB2/1P3PPP/R4RK1 b - - 0 14",
+      "provenance": "Slav Defense central pawn majority (White e4/d4)",
+      "key_theme": "Central pawn roller vs flank majority",
+      "x7_static_eval": -422,
+      "x7_trace": {
+        "material": -344,
+        "pst": -41,
+        "pawn": 0,
+        "mobility": -37,
+        "king_safety": 0,
+        "endgame": 0
+      },
+      "x7_search": {
+        "bestmove": "d7b6",
+        "score": -390,
+        "depth": 12,
+        "nodes": 815104
+      },
+      "sf19_search": {
+        "bestmove": "e6e5",
+        "score": -706,
+        "depth": 19,
+        "nodes": 291739
+      },
+      "eval_gap": 316,
+      "moves_match": false,
+      "classification": "A",
+      "rationale": "Incorrect positional evaluation: X7 evaluates -390 cp vs SF reference -706 cp (gap = 316 cp)"
+    },
+    {
+      "id": "POS_09_OPP_CAST_DEV",
+      "category": "OPP_CAST",
+      "split": "dev",
+      "fen": "r1b2rk1/pp2ppbp/2np1np1/q7/3NP3/1BN1BP2/PPP3PP/R2QK2R w KQ - 1 10",
+      "provenance": "Sicilian Dragon Yugoslav Attack, White 0-0-0 vs Black 0-0",
+      "key_theme": "Opposite-side king attack race",
+      "x7_static_eval": 71,
+      "x7_trace": {
+        "material": 0,
+        "pst": 45,
+        "pawn": 0,
+        "mobility": 26,
+        "king_safety": -30,
+        "endgame": 0
+      },
+      "x7_search": {
+        "bestmove": "d4c6",
+        "score": 80,
+        "depth": 9,
+        "nodes": 567296
+      },
+      "sf19_search": {
+        "bestmove": "d1d2",
+        "score": 37,
+        "depth": 18,
+        "nodes": 314926
+      },
+      "eval_gap": 43,
+      "moves_match": false,
+      "classification": "B",
+      "rationale": "Evaluation acceptable but search missed SF move: X7=d4c6 (d=9) vs SF=d1d2 (d=18)"
+    },
+    {
+      "id": "POS_10_OPP_CAST_HELD",
+      "category": "OPP_CAST",
+      "split": "heldout",
+      "fen": "r1bq1rk1/1p2bppp/p1np1n2/4p3/4P3/1NN1BP2/PPPQ2PP/2KR1B1R b - - 0 10",
+      "provenance": "Sicilian Najdorf English Attack, sharp kingside storm",
+      "key_theme": "Pawn storm vs queen-flank counterplay",
+      "x7_static_eval": 6,
+      "x7_trace": {
+        "material": 0,
+        "pst": 15,
+        "pawn": 0,
+        "mobility": -24,
+        "king_safety": 15,
+        "endgame": 0
+      },
+      "x7_search": {
+        "bestmove": "a6a5",
+        "score": -27,
+        "depth": 10,
+        "nodes": 700416
+      },
+      "sf19_search": {
+        "bestmove": "b7b5",
+        "score": -110,
+        "depth": 19,
+        "nodes": 298271
+      },
+      "eval_gap": 83,
+      "moves_match": false,
+      "classification": "B",
+      "rationale": "Evaluation acceptable but search missed SF move: X7=a6a5 (d=10) vs SF=b7b5 (d=19)"
+    },
+    {
+      "id": "POS_11_WEAK_KING_DEV",
+      "category": "WEAK_KING",
+      "split": "dev",
+      "fen": "r1b2rk1/ppp2ppp/2n5/3pP3/3P1qn1/2PB1N2/P1P3PP/R2Q1RK1 w - - 0 12",
+      "provenance": "French Defense broken king shield, heavy piece attack",
+      "key_theme": "Shattered kingside pawn shield, dark square weakness",
+      "x7_static_eval": -431,
+      "x7_trace": {
+        "material": -319,
+        "pst": -2,
+        "pawn": -29,
+        "mobility": 17,
+        "king_safety": -98,
+        "endgame": 0
+      },
+      "x7_search": {
+        "bestmove": "d1d2",
+        "score": -317,
+        "depth": 12,
+        "nodes": 628736
+      },
+      "sf19_search": {
+        "bestmove": "f1e1",
+        "score": -549,
+        "depth": 17,
+        "nodes": 234134
+      },
+      "eval_gap": 232,
+      "moves_match": false,
+      "classification": "A",
+      "rationale": "Incorrect positional evaluation: X7 evaluates -317 cp vs SF reference -549 cp (gap = 232 cp)"
+    },
+    {
+      "id": "POS_12_WEAK_KING_HELD",
+      "category": "WEAK_KING",
+      "split": "heldout",
+      "fen": "r4rk1/1b1n1ppp/pq1bpn2/1p1p4/3P4/PPNBPN2/5PPP/R1BQR1K1 w - - 1 13",
+      "provenance": "Queen's Indian Defense, kingside pressure against h7/g7",
+      "key_theme": "Complex king-zone defenses and escape routes",
+      "x7_static_eval": -22,
+      "x7_trace": {
+        "material": 0,
+        "pst": -20,
+        "pawn": 0,
+        "mobility": -2,
+        "king_safety": 0,
+        "endgame": 0
+      },
+      "x7_search": {
+        "bestmove": "c1b2",
+        "score": -23,
+        "depth": 9,
+        "nodes": 522240
+      },
+      "sf19_search": {
+        "bestmove": "c1b2",
+        "score": 0,
+        "depth": 19,
+        "nodes": 271645
+      },
+      "eval_gap": 23,
+      "moves_match": true,
+      "classification": "F",
+      "rationale": "Sufficient alignment: both select c1b2; eval gap = 23 cp"
+    },
+    {
+      "id": "POS_13_PASSED_RACE_DEV",
+      "category": "PASSED_RACE",
+      "split": "dev",
+      "fen": "8/5p2/1p2k1p1/p1p1P2p/P1P1KP1P/1P6/8/8 w - - 0 35",
+      "provenance": "Classic Pawn Endgame, key square breakthrough",
+      "key_theme": "Pawn breakthrough timing and outside passers",
+      "x7_static_eval": -16,
+      "x7_trace": {
+        "material": 0,
+        "pst": 0,
+        "pawn": -20,
+        "mobility": 0,
+        "king_safety": 0,
+        "endgame": 4
+      },
+      "x7_search": {
+        "bestmove": "e4e3",
+        "score": -35,
+        "depth": 20,
+        "nodes": 1081344
+      },
+      "sf19_search": {
+        "bestmove": "e4e3",
+        "score": 0,
+        "depth": 58,
+        "nodes": 777854
+      },
+      "eval_gap": 35,
+      "moves_match": true,
+      "classification": "F",
+      "rationale": "Endgame agreement: X7=-35 cp, SF=0 cp"
+    },
+    {
+      "id": "POS_14_PASSED_RACE_HELD",
+      "category": "PASSED_RACE",
+      "split": "heldout",
+      "fen": "8/4k3/1p2P3/p1p2P2/P1P5/1P2K3/8/8 b - - 0 45",
+      "provenance": "Mutual advancing passed pawns in king-and-pawn endgame",
+      "key_theme": "Promotion tempo calculation",
+      "x7_static_eval": -442,
+      "x7_trace": {
+        "material": -240,
+        "pst": 20,
+        "pawn": -230,
+        "mobility": 0,
+        "king_safety": 0,
+        "endgame": 8
+      },
+      "x7_search": {
+        "bestmove": "e7f6",
+        "score": -1148,
+        "depth": 19,
+        "nodes": 1300480
+      },
+      "sf19_search": {
+        "bestmove": "e7d6",
+        "score": -1300,
+        "depth": 24,
+        "nodes": 559343
+      },
+      "eval_gap": 152,
+      "moves_match": false,
+      "classification": "E",
+      "rationale": "Endgame outcome misjudged: X7=-1148 cp vs SF=-1300 cp; moves: X7=e7f6, SF=e7d6"
+    },
+    {
+      "id": "POS_15_BLOCKADE_DEV",
+      "category": "BLOCKADE",
+      "split": "dev",
+      "fen": "r2q1rk1/pp1b1ppp/2n1pn2/3p4/2PP4/1PN1PN2/P4PPP/R2QKB1R w KQ - 0 9",
+      "provenance": "Blockaded d5 square with knight coordination",
+      "key_theme": "Paralyzing an enemy isolated or backward pawn",
+      "x7_static_eval": 65,
+      "x7_trace": {
+        "material": 101,
+        "pst": -56,
+        "pawn": 0,
+        "mobility": 4,
+        "king_safety": -14,
+        "endgame": 0
+      },
+      "x7_search": {
+        "bestmove": "f1d3",
+        "score": 100,
+        "depth": 10,
+        "nodes": 686080
+      },
+      "sf19_search": {
+        "bestmove": "f1e2",
+        "score": 190,
+        "depth": 18,
+        "nodes": 291263
+      },
+      "eval_gap": 90,
+      "moves_match": false,
+      "classification": "B",
+      "rationale": "Evaluation acceptable but search missed SF move: X7=f1d3 (d=10) vs SF=f1e2 (d=18)"
+    },
+    {
+      "id": "POS_16_BLOCKADE_HELD",
+      "category": "BLOCKADE",
+      "split": "heldout",
+      "fen": "r1b2rk1/pp1n1ppp/4pn2/q1pp4/2PP4/P1N1PN2/1P1Q1PPP/R3KB1R w KQ - 2 10",
+      "provenance": "Nimzo-Indian blockaded c4/c5 pawn pair",
+      "key_theme": "Exploiting pawn chain paralysis",
+      "x7_static_eval": 20,
+      "x7_trace": {
+        "material": 0,
+        "pst": -26,
+        "pawn": 0,
+        "mobility": 28,
+        "king_safety": -13,
+        "endgame": 1
+      },
+      "x7_search": {
+        "bestmove": "f1d3",
+        "score": 27,
+        "depth": 10,
+        "nodes": 686080
+      },
+      "sf19_search": {
+        "bestmove": "c4d5",
+        "score": 39,
+        "depth": 21,
+        "nodes": 331881
+      },
+      "eval_gap": 12,
+      "moves_match": false,
+      "classification": "B",
+      "rationale": "Evaluation acceptable but search missed SF move: X7=f1d3 (d=10) vs SF=c4d5 (d=21)"
+    },
+    {
+      "id": "POS_17_KNIGHT_OUT_DEV",
+      "category": "KNIGHT_OUT",
+      "split": "dev",
+      "fen": "r1bq1rk1/pp2bppp/2n1pn2/3p4/2PN4/1PN1P3/PB2BPPP/R2Q1RK1 b - - 0 10",
+      "provenance": "Boleslavsky hole on d5 square for Knight",
+      "key_theme": "Permanent hole exploitation vs temporary outpost",
+      "x7_static_eval": 1,
+      "x7_trace": {
+        "material": 0,
+        "pst": 10,
+        "pawn": 0,
+        "mobility": -9,
+        "king_safety": 0,
+        "endgame": 0
+      },
+      "x7_search": {
+        "bestmove": "e6e5",
+        "score": 13,
+        "depth": 9,
+        "nodes": 604160
+      },
+      "sf19_search": {
+        "bestmove": "c6d4",
+        "score": -7,
+        "depth": 19,
+        "nodes": 308106
+      },
+      "eval_gap": 20,
+      "moves_match": false,
+      "classification": "B",
+      "rationale": "Evaluation acceptable but search missed SF move: X7=e6e5 (d=9) vs SF=c6d4 (d=19)"
+    },
+    {
+      "id": "POS_18_KNIGHT_OUT_HELD",
+      "category": "KNIGHT_OUT",
+      "split": "heldout",
+      "fen": "r1b1qrk1/pp1n1ppp/2p1pn2/3p4/2PP4/1PN1PN2/P2B1PPP/R2QKB1R w KQ - 3 9",
+      "provenance": "Queen's Gambit outposts on e5 vs d4",
+      "key_theme": "Defended outpost square immune to enemy pawn kicks",
+      "x7_static_eval": 342,
+      "x7_trace": {
+        "material": 330,
+        "pst": -29,
+        "pawn": 0,
+        "mobility": 26,
+        "king_safety": -15,
+        "endgame": 0
+      },
+      "x7_search": {
+        "bestmove": "d2c1",
+        "score": 351,
+        "depth": 9,
+        "nodes": 647168
+      },
+      "sf19_search": {
+        "bestmove": "f1e2",
+        "score": 791,
+        "depth": 15,
+        "nodes": 264372
+      },
+      "eval_gap": 440,
+      "moves_match": false,
+      "classification": "A",
+      "rationale": "Incorrect positional evaluation: X7 evaluates 351 cp vs SF reference 791 cp (gap = 440 cp)"
+    },
+    {
+      "id": "POS_19_COL_COMPLEX_DEV",
+      "category": "COL_COMPLEX",
+      "split": "dev",
+      "fen": "r1b2rk1/pp1p1ppp/2n1pn2/8/2P1P3/2N1BN2/PP3PPP/R3KB1R b KQ - 0 9",
+      "provenance": "Light square complex weakness after exchange of light bishops",
+      "key_theme": "Infiltration along weak color diagonals",
+      "x7_static_eval": -411,
+      "x7_trace": {
+        "material": -330,
+        "pst": -20,
+        "pawn": 0,
+        "mobility": -47,
+        "king_safety": 19,
+        "endgame": -3
+      },
+      "x7_search": {
+        "bestmove": "d7d6",
+        "score": -395,
+        "depth": 11,
+        "nodes": 847872
+      },
+      "sf19_search": {
+        "bestmove": "d7d5",
+        "score": -666,
+        "depth": 19,
+        "nodes": 271649
+      },
+      "eval_gap": 271,
+      "moves_match": false,
+      "classification": "A",
+      "rationale": "Incorrect positional evaluation: X7 evaluates -395 cp vs SF reference -666 cp (gap = 271 cp)"
+    },
+    {
+      "id": "POS_20_COL_COMPLEX_HELD",
+      "category": "COL_COMPLEX",
+      "split": "heldout",
+      "fen": "r1bqr1k1/pp1n1pbp/2p1p1p1/3p4/2PP4/1PN1PN2/PB1Q1PPP/R3KB1R w KQ - 2 11",
+      "provenance": "King's Indian dark square complex with Fianchetto",
+      "key_theme": "Dark square blockade and piece coordination",
+      "x7_static_eval": 332,
+      "x7_trace": {
+        "material": 319,
+        "pst": -4,
+        "pawn": 0,
+        "mobility": 2,
+        "king_safety": -15,
+        "endgame": 0
+      },
+      "x7_search": {
+        "bestmove": "b2a3",
+        "score": 350,
+        "depth": 9,
+        "nodes": 573440
+      },
+      "sf19_search": {
+        "bestmove": "a1d1",
+        "score": 734,
+        "depth": 18,
+        "nodes": 238847
+      },
+      "eval_gap": 384,
+      "moves_match": false,
+      "classification": "A",
+      "rationale": "Incorrect positional evaluation: X7 evaluates 350 cp vs SF reference 734 cp (gap = 384 cp)"
+    },
+    {
+      "id": "POS_21_ROOK_EG_DEV",
+      "category": "ROOK_EG",
+      "split": "dev",
+      "fen": "8/8/5k2/R7/4r3/8/5K2/8 w - - 0 60",
+      "provenance": "Basic Rook Endgame cut-off drawing technique",
+      "key_theme": "Rook activity, checking distance, passive vs active defense",
+      "x7_static_eval": 11,
+      "x7_trace": {
+        "material": 0,
+        "pst": 15,
+        "pawn": 0,
+        "mobility": 0,
+        "king_safety": 0,
+        "endgame": -4
+      },
+      "x7_search": {
+        "bestmove": "a5d5",
+        "score": 0,
+        "depth": 19,
+        "nodes": 1241088
+      },
+      "sf19_search": {
+        "bestmove": "a5a6",
+        "score": 0,
+        "depth": 22,
+        "nodes": 626775
+      },
+      "eval_gap": 0,
+      "moves_match": false,
+      "classification": "E",
+      "rationale": "Endgame outcome misjudged: X7=0 cp vs SF=0 cp; moves: X7=a5d5, SF=a5a6"
+    },
+    {
+      "id": "POS_22_ROOK_EG_HELD",
+      "category": "ROOK_EG",
+      "split": "heldout",
+      "fen": "2r5/8/8/3k4/1R6/8/4K3/8 b - - 0 65",
+      "provenance": "Philidor defense configuration",
+      "key_theme": "Cutting off the king on rank or file",
+      "x7_static_eval": -33,
+      "x7_trace": {
+        "material": 0,
+        "pst": -40,
+        "pawn": 0,
+        "mobility": 0,
+        "king_safety": 0,
+        "endgame": 7
+      },
+      "x7_search": {
+        "bestmove": "d5d6",
+        "score": 0,
+        "depth": 15,
+        "nodes": 1306624
+      },
+      "sf19_search": {
+        "bestmove": "c8e8",
+        "score": 0,
+        "depth": 23,
+        "nodes": 663514
+      },
+      "eval_gap": 0,
+      "moves_match": false,
+      "classification": "E",
+      "rationale": "Endgame outcome misjudged: X7=0 cp vs SF=0 cp; moves: X7=d5d6, SF=c8e8"
+    },
+    {
+      "id": "POS_23_BISHOP_EG_DEV",
+      "category": "BISHOP_EG",
+      "split": "dev",
+      "fen": "8/8/4k3/1b6/4K3/5B2/8/8 w - - 0 50",
+      "provenance": "Opposite-colored bishop fortress",
+      "key_theme": "Unbreakable color barrier draw",
+      "x7_static_eval": -18,
+      "x7_trace": {
+        "material": 0,
+        "pst": -10,
+        "pawn": 0,
+        "mobility": -12,
+        "king_safety": 0,
+        "endgame": 4
+      },
+      "x7_search": {
+        "bestmove": "f3d1",
+        "score": 0,
+        "depth": 64,
+        "nodes": 640
+      },
+      "sf19_search": {
+        "bestmove": "f3g4",
+        "score": 0,
+        "depth": 27,
+        "nodes": 666195
+      },
+      "eval_gap": 0,
+      "moves_match": false,
+      "classification": "E",
+      "rationale": "Endgame outcome misjudged: X7=0 cp vs SF=0 cp; moves: X7=f3d1, SF=f3g4"
+    },
+    {
+      "id": "POS_24_BISHOP_EG_HELD",
+      "category": "BISHOP_EG",
+      "split": "heldout",
+      "fen": "8/8/3k4/p1b5/P7/2B2K2/8/8 w - - 0 55",
+      "provenance": "Same-colored bishop outside passed pawn",
+      "key_theme": "Creating an unstoppable outside passer",
+      "x7_static_eval": 4,
+      "x7_trace": {
+        "material": 0,
+        "pst": -1,
+        "pawn": 0,
+        "mobility": 8,
+        "king_safety": 0,
+        "endgame": -3
+      },
+      "x7_search": {
+        "bestmove": "c3a5",
+        "score": 121,
+        "depth": 19,
+        "nodes": 1241088
+      },
+      "sf19_search": {
+        "bestmove": "f3e4",
+        "score": 3,
+        "depth": 24,
+        "nodes": 649431
+      },
+      "eval_gap": 118,
+      "moves_match": false,
+      "classification": "E",
+      "rationale": "Endgame outcome misjudged: X7=121 cp vs SF=3 cp; moves: X7=c3a5, SF=f3e4"
+    },
+    {
+      "id": "POS_25_ZUGZWANG_DEV",
+      "category": "ZUGZWANG",
+      "split": "dev",
+      "fen": "8/8/p1k5/Pp6/1P1K4/8/8/8 w - - 0 60",
+      "provenance": "Trebuchet / mutual zugzwang king-and-pawn endgame",
+      "key_theme": "Triangulation, key squares, opposition",
+      "x7_static_eval": -12,
+      "x7_trace": {
+        "material": 0,
+        "pst": -20,
+        "pawn": 0,
+        "mobility": 0,
+        "king_safety": 0,
+        "endgame": 8
+      },
+      "x7_search": {
+        "bestmove": "d4c3",
+        "score": 0,
+        "depth": 34,
+        "nodes": 1751040
+      },
+      "sf19_search": {
+        "bestmove": "d4e4",
+        "score": 0,
+        "depth": 97,
+        "nodes": 1009487
+      },
+      "eval_gap": 0,
+      "moves_match": false,
+      "classification": "E",
+      "rationale": "Endgame outcome misjudged: X7=0 cp vs SF=0 cp; moves: X7=d4c3, SF=d4e4"
+    },
+    {
+      "id": "POS_26_ZUGZWANG_HELD",
+      "category": "ZUGZWANG",
+      "split": "heldout",
+      "fen": "8/5p2/4k1p1/7p/4KP1P/6P1/8/8 w - - 0 50",
+      "provenance": "Symmetrical king and pawn opposition",
+      "key_theme": "Losing the move, square reservation",
+      "x7_static_eval": -26,
+      "x7_trace": {
+        "material": 0,
+        "pst": -30,
+        "pawn": 0,
+        "mobility": 0,
+        "king_safety": 0,
+        "endgame": 4
+      },
+      "x7_search": {
+        "bestmove": "e4d4",
+        "score": 0,
+        "depth": 19,
+        "nodes": 1247232
+      },
+      "sf19_search": {
+        "bestmove": "e4e3",
+        "score": 0,
+        "depth": 56,
+        "nodes": 925324
+      },
+      "eval_gap": 0,
+      "moves_match": false,
+      "classification": "E",
+      "rationale": "Endgame outcome misjudged: X7=0 cp vs SF=0 cp; moves: X7=e4d4, SF=e4e3"
+    },
+    {
+      "id": "POS_27_QUEENLESS_DEV",
+      "category": "QUEENLESS",
+      "split": "dev",
+      "fen": "r1b1kb1r/ppp2ppp/2p5/4Pn2/8/5N2/PPP2PPP/RNB2RK1 w kq - 0 9",
+      "provenance": "Berlin Defense Queenless Middlegame (Berlin Wall)",
+      "key_theme": "Minor piece activity, king safety irrelevance without queens",
+      "x7_static_eval": 9,
+      "x7_trace": {
+        "material": -15,
+        "pst": 37,
+        "pawn": 19,
+        "mobility": -15,
+        "king_safety": 17,
+        "endgame": -4
+      },
+      "x7_search": {
+        "bestmove": "f1d1",
+        "score": 61,
+        "depth": 11,
+        "nodes": 856064
+      },
+      "sf19_search": {
+        "bestmove": "b1c3",
+        "score": -31,
+        "depth": 19,
+        "nodes": 292579
+      },
+      "eval_gap": 92,
+      "moves_match": false,
+      "classification": "B",
+      "rationale": "Evaluation acceptable but search missed SF move: X7=f1d1 (d=11) vs SF=b1c3 (d=19)"
+    },
+    {
+      "id": "POS_28_QUEENLESS_HELD",
+      "category": "QUEENLESS",
+      "split": "heldout",
+      "fen": "r1b1k2r/pp3ppp/2n1pn2/3p4/3P4/2N1PN2/PP3PPP/R3KB1R b KQkq - 0 10",
+      "provenance": "Exchange French Queenless Middlegame",
+      "key_theme": "Open file rook control, piece coordination",
+      "x7_static_eval": -10,
+      "x7_trace": {
+        "material": 0,
+        "pst": 0,
+        "pawn": 0,
+        "mobility": -10,
+        "king_safety": 0,
+        "endgame": 0
+      },
+      "x7_search": {
+        "bestmove": "c8d7",
+        "score": -18,
+        "depth": 11,
+        "nodes": 796672
+      },
+      "sf19_search": {
+        "bestmove": "e8e7",
+        "score": -2,
+        "depth": 19,
+        "nodes": 321672
+      },
+      "eval_gap": 16,
+      "moves_match": false,
+      "classification": "B",
+      "rationale": "Evaluation acceptable but search missed SF move: X7=c8d7 (d=11) vs SF=e8e7 (d=19)"
+    }
+  ]
+}

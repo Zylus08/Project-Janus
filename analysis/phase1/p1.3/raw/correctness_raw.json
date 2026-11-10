@@ -1,0 +1,172 @@
+{
+  "status": "QUALIFIED",
+  "elapsed_sec": 1.238,
+  "perft_tests": {
+    "passed": true,
+    "details": [
+      {
+        "suite": "Startpos",
+        "depth": 1,
+        "actual": 20,
+        "expected": 20,
+        "pass": true
+      },
+      {
+        "suite": "Startpos",
+        "depth": 2,
+        "actual": 400,
+        "expected": 400,
+        "pass": true
+      },
+      {
+        "suite": "Startpos",
+        "depth": 3,
+        "actual": 8902,
+        "expected": 8902,
+        "pass": true
+      },
+      {
+        "suite": "Startpos",
+        "depth": 4,
+        "actual": 197281,
+        "expected": 197281,
+        "pass": true
+      },
+      {
+        "suite": "KiwiPete",
+        "depth": 1,
+        "actual": 48,
+        "expected": 48,
+        "pass": true
+      },
+      {
+        "suite": "KiwiPete",
+        "depth": 2,
+        "actual": 2039,
+        "expected": 2039,
+        "pass": true
+      },
+      {
+        "suite": "KiwiPete",
+        "depth": 3,
+        "actual": 97862,
+        "expected": 97862,
+        "pass": true
+      },
+      {
+        "suite": "KiwiPete",
+        "depth": 4,
+        "actual": 4085603,
+        "expected": 4085603,
+        "pass": true
+      },
+      {
+        "suite": "Pos 3",
+        "depth": 1,
+        "actual": 14,
+        "expected": 14,
+        "pass": true
+      },
+      {
+        "suite": "Pos 3",
+        "depth": 2,
+        "actual": 191,
+        "expected": 191,
+        "pass": true
+      },
+      {
+        "suite": "Pos 3",
+        "depth": 3,
+        "actual": 2812,
+        "expected": 2812,
+        "pass": true
+      },
+      {
+        "suite": "Pos 3",
+        "depth": 4,
+        "actual": 43238,
+        "expected": 43238,
+        "pass": true
+      }
+    ]
+  },
+  "bit_exact_x7_tests": {
+    "passed": true,
+    "details": [
+      {
+        "name": "Startpos",
+        "depth": 6,
+        "match": true,
+        "nodes": "32663",
+        "score": "0",
+        "bestmove": "b1c3"
+      },
+      {
+        "name": "KiwiPete",
+        "depth": 5,
+        "match": true,
+        "nodes": "49254",
+        "score": "42",
+        "bestmove": "d5e6"
+      },
+      {
+        "name": "Middlegame Pos 3",
+        "depth": 7,
+        "match": true,
+        "nodes": "18778",
+        "score": "23",
+        "bestmove": "b4f4"
+      },
+      {
+        "name": "Tactical Pos 4",
+        "depth": 6,
+        "match": true,
+        "nodes": "24815",
+        "score": "-71",
+        "bestmove": "b1c3"
+      },
+      {
+        "name": "Endgame Pos 5",
+        "depth": 8,
+        "match": true,
+        "nodes": "11135",
+        "score": "141",
+        "bestmove": "e3f3"
+      }
+    ]
+  },
+  "mate_and_draw_tests": {
+    "passed": true,
+    "details": [
+      {
+        "name": "Scholar's Mate in 1",
+        "depth": 3,
+        "bestmove": "h5f7",
+        "expected": "h5f7",
+        "score": "cp 28999",
+        "pass": true
+      },
+      {
+        "name": "Back Rank Mate in 1",
+        "depth": 3,
+        "bestmove": "e2e8",
+        "expected": "e2e8",
+        "score": "cp 28999",
+        "pass": true
+      },
+      {
+        "name": "L\u00e9gal's Mate in 2",
+        "depth": 4,
+        "bestmove": "d5f6",
+        "expected": "d5f6",
+        "score": "cp 28997",
+        "pass": true
+      },
+      {
+        "name": "Threefold Repetition",
+        "score": "0",
+        "pass": true
+      }
+    ]
+  }
+}

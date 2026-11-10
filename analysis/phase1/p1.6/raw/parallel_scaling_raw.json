@@ -1,0 +1,222 @@
+{
+  "Janus Classical X7 (Control)": {
+    "engine": "Janus Classical X7 (Control)",
+    "threads": 1,
+    "positions_count": 50,
+    "total_nodes": 35379200,
+    "total_elapsed_sec": 21.714,
+    "avg_completed_depth": 10.16,
+    "aggregate_nps": 1629317,
+    "per_position_sample": [
+      {
+        "pos_index": 1,
+        "depth": 12,
+        "nodes": 784384,
+        "elapsed_sec": 0.4277
+      },
+      {
+        "pos_index": 2,
+        "depth": 10,
+        "nodes": 716800,
+        "elapsed_sec": 0.428
+      },
+      {
+        "pos_index": 3,
+        "depth": 10,
+        "nodes": 749568,
+        "elapsed_sec": 0.4259
+      },
+      {
+        "pos_index": 4,
+        "depth": 11,
+        "nodes": 716800,
+        "elapsed_sec": 0.4263
+      },
+      {
+        "pos_index": 5,
+        "depth": 10,
+        "nodes": 653312,
+        "elapsed_sec": 0.4277
+      }
+    ],
+    "speedup_vs_x11_1t": 1.184,
+    "efficiency_pct": 118.4,
+    "depth_advantage_vs_x11_1t": 0.06
+  },
+  "Janus Classical X10 (Reference)": {
+    "engine": "Janus Classical X10 (Reference)",
+    "threads": 1,
+    "positions_count": 50,
+    "total_nodes": 35375104,
+    "total_elapsed_sec": 21.546,
+    "avg_completed_depth": 10.16,
+    "aggregate_nps": 1641869,
+    "per_position_sample": [
+      {
+        "pos_index": 1,
+        "depth": 12,
+        "nodes": 782336,
+        "elapsed_sec": 0.4366
+      },
+      {
+        "pos_index": 2,
+        "depth": 10,
+        "nodes": 727040,
+        "elapsed_sec": 0.4325
+      },
+      {
+        "pos_index": 3,
+        "depth": 10,
+        "nodes": 761856,
+        "elapsed_sec": 0.4327
+      },
+      {
+        "pos_index": 4,
+        "depth": 11,
+        "nodes": 718848,
+        "elapsed_sec": 0.4307
+      },
+      {
+        "pos_index": 5,
+        "depth": 10,
+        "nodes": 661504,
+        "elapsed_sec": 0.4318
+      }
+    ],
+    "speedup_vs_x11_1t": 1.193,
+    "efficiency_pct": 119.3,
+    "depth_advantage_vs_x11_1t": 0.06
+  },
+  "Janus Classical X11 (1T)": {
+    "engine": "Janus Classical X11 (1T)",
+    "threads": 1,
+    "positions_count": 50,
+    "total_nodes": 30564352,
+    "total_elapsed_sec": 22.217,
+    "avg_completed_depth": 10.1,
+    "aggregate_nps": 1375725,
+    "per_position_sample": [
+      {
+        "pos_index": 1,
+        "depth": 12,
+        "nodes": 636928,
+        "elapsed_sec": 0.5363
+      },
+      {
+        "pos_index": 2,
+        "depth": 10,
+        "nodes": 598016,
+        "elapsed_sec": 0.4412
+      },
+      {
+        "pos_index": 3,
+        "depth": 11,
+        "nodes": 661504,
+        "elapsed_sec": 0.4396
+      },
+      {
+        "pos_index": 4,
+        "depth": 11,
+        "nodes": 581632,
+        "elapsed_sec": 0.4505
+      },
+      {
+        "pos_index": 5,
+        "depth": 10,
+        "nodes": 581632,
+        "elapsed_sec": 0.4393
+      }
+    ],
+    "speedup_vs_x11_1t": 1.0,
+    "efficiency_pct": 100.0,
+    "depth_advantage_vs_x11_1t": 0.0
+  },
+  "Janus Classical X11 (2T)": {
+    "engine": "Janus Classical X11 (2T)",
+    "threads": 2,
+    "positions_count": 50,
+    "total_nodes": 59486077,
+    "total_elapsed_sec": 22.115,
+    "avg_completed_depth": 10.68,
+    "aggregate_nps": 2689855,
+    "per_position_sample": [
+      {
+        "pos_index": 1,
+        "depth": 13,
+        "nodes": 1269760,
+        "elapsed_sec": 0.4443
+      },
+      {
+        "pos_index": 2,
+        "depth": 11,
+        "nodes": 1159168,
+        "elapsed_sec": 0.4444
+      },
+      {
+        "pos_index": 3,
+        "depth": 11,
+        "nodes": 1306624,
+        "elapsed_sec": 0.4472
+      },
+      {
+        "pos_index": 4,
+        "depth": 12,
+        "nodes": 1130496,
+        "elapsed_sec": 0.4479
+      },
+      {
+        "pos_index": 5,
+        "depth": 10,
+        "nodes": 1099776,
+        "elapsed_sec": 0.4453
+      }
+    ],
+    "speedup_vs_x11_1t": 1.955,
+    "efficiency_pct": 97.8,
+    "depth_advantage_vs_x11_1t": 0.58
+  },
+  "Janus Classical X11 (4T)": {
+    "engine": "Janus Classical X11 (4T)",
+    "threads": 4,
+    "positions_count": 50,
+    "total_nodes": 100450304,
+    "total_elapsed_sec": 22.396,
+    "avg_completed_depth": 11.04,
+    "aggregate_nps": 4485095,
+    "per_position_sample": [
+      {
+        "pos_index": 1,
+        "depth": 13,
+        "nodes": 2347008,
+        "elapsed_sec": 0.4428
+      },
+      {
+        "pos_index": 2,
+        "depth": 11,
+        "nodes": 2310144,
+        "elapsed_sec": 0.4426
+      },
+      {
+        "pos_index": 3,
+        "depth": 12,
+        "nodes": 2490368,
+        "elapsed_sec": 0.4407
+      },
+      {
+        "pos_index": 4,
+        "depth": 12,
+        "nodes": 2174976,
+        "elapsed_sec": 0.4417
+      },
+      {
+        "pos_index": 5,
+        "depth": 11,
+        "nodes": 2211840,
+        "elapsed_sec": 0.4397
+      }
+    ],
+    "speedup_vs_x11_1t": 3.26,
+    "efficiency_pct": 81.5,
+    "depth_advantage_vs_x11_1t": 0.94
+  }
+}

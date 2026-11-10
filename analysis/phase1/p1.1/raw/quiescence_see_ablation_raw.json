@@ -1,0 +1,987 @@
+{
+  "comparison": {
+    "Q0_Baseline": {
+      "nodes": 16342285,
+      "time_sec": 14.07,
+      "node_reduction_pct": 0.0,
+      "speedup": 1.0
+    },
+    "Q1_Ordering_Only": {
+      "nodes": 15424448,
+      "time_sec": 14.92,
+      "node_reduction_pct": 5.62,
+      "speedup": 0.94
+    },
+    "Q2_Conservative_Filter": {
+      "nodes": 10739035,
+      "time_sec": 9.67,
+      "node_reduction_pct": 34.29,
+      "speedup": 1.46,
+      "moves_pruned": 2806776
+    },
+    "Q3_Bounded_Filter": {
+      "nodes": 10739035,
+      "time_sec": 9.46,
+      "node_reduction_pct": 34.29,
+      "speedup": 1.49,
+      "moves_pruned": 2806776
+    }
+  },
+  "tactical_fidelity_pct": 100.0,
+  "q0": {
+    "summary": {
+      "mode": 0,
+      "mode_name": "Q0_Baseline_NoSEE",
+      "total_positions": 25,
+      "total_nodes": 16342285,
+      "mean_nodes_per_pos": 653691,
+      "total_time_sec": 14.07,
+      "total_qmoves_pruned": 0,
+      "avg_nps": 1161620
+    },
+    "positions": [
+      {
+        "id": "TAC_01",
+        "category": "Tactics",
+        "bestmove": "c4d5",
+        "score_cp": -75,
+        "nodes": 378007,
+        "elapsed_sec": 0.3224,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_02",
+        "category": "Tactics",
+        "bestmove": "e3e4",
+        "score_cp": 55,
+        "nodes": 1661458,
+        "elapsed_sec": 1.5878,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_03",
+        "category": "Tactics",
+        "bestmove": "b1d2",
+        "score_cp": -10,
+        "nodes": 827298,
+        "elapsed_sec": 0.7033,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_04",
+        "category": "Tactics",
+        "bestmove": "d4c6",
+        "score_cp": 60,
+        "nodes": 511744,
+        "elapsed_sec": 0.4569,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_05",
+        "category": "Tactics",
+        "bestmove": "c4d5",
+        "score_cp": 355,
+        "nodes": 366796,
+        "elapsed_sec": 0.2763,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_06",
+        "category": "Tactics",
+        "bestmove": "e2f3",
+        "score_cp": -5,
+        "nodes": 580213,
+        "elapsed_sec": 0.4395,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_07",
+        "category": "Tactics",
+        "bestmove": "d3b5",
+        "score_cp": 20,
+        "nodes": 811357,
+        "elapsed_sec": 0.6928,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_08",
+        "category": "Tactics",
+        "bestmove": "a1d1",
+        "score_cp": -145,
+        "nodes": 1372255,
+        "elapsed_sec": 1.2653,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_09",
+        "category": "Tactics",
+        "bestmove": "d1e2",
+        "score_cp": 10,
+        "nodes": 740341,
+        "elapsed_sec": 0.701,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_10",
+        "category": "Tactics",
+        "bestmove": "c2b3",
+        "score_cp": 25,
+        "nodes": 974089,
+        "elapsed_sec": 0.9021,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "QPOS_01",
+        "category": "Quiet",
+        "bestmove": "c1g5",
+        "score_cp": 10,
+        "nodes": 610393,
+        "elapsed_sec": 0.5234,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "QPOS_02",
+        "category": "Quiet",
+        "bestmove": "c1e3",
+        "score_cp": 10,
+        "nodes": 330653,
+        "elapsed_sec": 0.2404,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "QPOS_03",
+        "category": "Quiet",
+        "bestmove": "c4d5",
+        "score_cp": 20,
+        "nodes": 660556,
+        "elapsed_sec": 0.4347,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "QPOS_04",
+        "category": "Quiet",
+        "bestmove": "d8b6",
+        "score_cp": 15,
+        "nodes": 508515,
+        "elapsed_sec": 0.3993,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "QPOS_05",
+        "category": "Quiet",
+        "bestmove": "c6c5",
+        "score_cp": 5,
+        "nodes": 278697,
+        "elapsed_sec": 0.2045,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "CLSD_01",
+        "category": "Closed",
+        "bestmove": "f1d3",
+        "score_cp": 20,
+        "nodes": 443007,
+        "elapsed_sec": 0.4609,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "CLSD_02",
+        "category": "Closed",
+        "bestmove": "f3f4",
+        "score_cp": 25,
+        "nodes": 679767,
+        "elapsed_sec": 0.6047,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "CLSD_03",
+        "category": "Closed",
+        "bestmove": "c6c5",
+        "score_cp": -335,
+        "nodes": 732580,
+        "elapsed_sec": 0.6189,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "CLSD_04",
+        "category": "Closed",
+        "bestmove": "d1c2",
+        "score_cp": 370,
+        "nodes": 1022179,
+        "elapsed_sec": 1.0193,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "CLSD_05",
+        "category": "Closed",
+        "bestmove": "g1e2",
+        "score_cp": 35,
+        "nodes": 113548,
+        "elapsed_sec": 0.0918,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "KATK_01",
+        "category": "KingAttack",
+        "bestmove": "d3h7",
+        "score_cp": 130,
+        "nodes": 791243,
+        "elapsed_sec": 0.5873,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "KATK_02",
+        "category": "KingAttack",
+        "bestmove": "g5f4",
+        "score_cp": 695,
+        "nodes": 745002,
+        "elapsed_sec": 0.6156,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "KATK_03",
+        "category": "KingAttack",
+        "bestmove": "a2b3",
+        "score_cp": 35,
+        "nodes": 660554,
+        "elapsed_sec": 0.5384,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "KATK_04",
+        "category": "KingAttack",
+        "bestmove": "c8d7",
+        "score_cp": -340,
+        "nodes": 203114,
+        "elapsed_sec": 0.1638,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "KATK_05",
+        "category": "KingAttack",
+        "bestmove": "c3a4",
+        "score_cp": 320,
+        "nodes": 338919,
+        "elapsed_sec": 0.218,
+        "qmoves_pruned": 0
+      }
+    ]
+  },
+  "q1": {
+    "summary": {
+      "mode": 1,
+      "mode_name": "Q1_SEE_Ordering_Only",
+      "total_positions": 25,
+      "total_nodes": 15424448,
+      "mean_nodes_per_pos": 616977,
+      "total_time_sec": 14.92,
+      "total_qmoves_pruned": 0,
+      "avg_nps": 1033598
+    },
+    "positions": [
+      {
+        "id": "TAC_01",
+        "category": "Tactics",
+        "bestmove": "c4d5",
+        "score_cp": -75,
+        "nodes": 375682,
+        "elapsed_sec": 0.3594,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_02",
+        "category": "Tactics",
+        "bestmove": "e3e4",
+        "score_cp": 55,
+        "nodes": 1395622,
+        "elapsed_sec": 1.5572,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_03",
+        "category": "Tactics",
+        "bestmove": "b1d2",
+        "score_cp": -10,
+        "nodes": 765652,
+        "elapsed_sec": 0.77,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_04",
+        "category": "Tactics",
+        "bestmove": "d4c6",
+        "score_cp": 60,
+        "nodes": 500186,
+        "elapsed_sec": 0.5009,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_05",
+        "category": "Tactics",
+        "bestmove": "c4d5",
+        "score_cp": 355,
+        "nodes": 363738,
+        "elapsed_sec": 0.2959,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_06",
+        "category": "Tactics",
+        "bestmove": "e2f3",
+        "score_cp": -5,
+        "nodes": 560327,
+        "elapsed_sec": 0.4867,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_07",
+        "category": "Tactics",
+        "bestmove": "d3b5",
+        "score_cp": 20,
+        "nodes": 797927,
+        "elapsed_sec": 0.7597,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_08",
+        "category": "Tactics",
+        "bestmove": "a1d1",
+        "score_cp": -145,
+        "nodes": 1320816,
+        "elapsed_sec": 1.4328,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_09",
+        "category": "Tactics",
+        "bestmove": "d1e2",
+        "score_cp": 10,
+        "nodes": 705358,
+        "elapsed_sec": 0.7564,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "TAC_10",
+        "category": "Tactics",
+        "bestmove": "c2b3",
+        "score_cp": 25,
+        "nodes": 910000,
+        "elapsed_sec": 0.963,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "QPOS_01",
+        "category": "Quiet",
+        "bestmove": "c1g5",
+        "score_cp": 10,
+        "nodes": 578719,
+        "elapsed_sec": 0.6356,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "QPOS_02",
+        "category": "Quiet",
+        "bestmove": "c1e3",
+        "score_cp": 10,
+        "nodes": 323756,
+        "elapsed_sec": 0.2459,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "QPOS_03",
+        "category": "Quiet",
+        "bestmove": "c4d5",
+        "score_cp": 20,
+        "nodes": 625151,
+        "elapsed_sec": 0.4939,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "QPOS_04",
+        "category": "Quiet",
+        "bestmove": "d8b6",
+        "score_cp": 15,
+        "nodes": 473747,
+        "elapsed_sec": 0.3969,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "QPOS_05",
+        "category": "Quiet",
+        "bestmove": "c6c5",
+        "score_cp": 5,
+        "nodes": 261006,
+        "elapsed_sec": 0.1998,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "CLSD_01",
+        "category": "Closed",
+        "bestmove": "f1d3",
+        "score_cp": 20,
+        "nodes": 432944,
+        "elapsed_sec": 0.4412,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "CLSD_02",
+        "category": "Closed",
+        "bestmove": "f3f4",
+        "score_cp": 25,
+        "nodes": 638438,
+        "elapsed_sec": 0.5843,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "CLSD_03",
+        "category": "Closed",
+        "bestmove": "c6c5",
+        "score_cp": -335,
+        "nodes": 695702,
+        "elapsed_sec": 0.6594,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "CLSD_04",
+        "category": "Closed",
+        "bestmove": "d1c2",
+        "score_cp": 370,
+        "nodes": 906410,
+        "elapsed_sec": 1.0071,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "CLSD_05",
+        "category": "Closed",
+        "bestmove": "g1e2",
+        "score_cp": 35,
+        "nodes": 111131,
+        "elapsed_sec": 0.095,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "KATK_01",
+        "category": "KingAttack",
+        "bestmove": "d3h7",
+        "score_cp": 130,
+        "nodes": 783741,
+        "elapsed_sec": 0.6046,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "KATK_02",
+        "category": "KingAttack",
+        "bestmove": "g5f4",
+        "score_cp": 695,
+        "nodes": 738389,
+        "elapsed_sec": 0.6931,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "KATK_03",
+        "category": "KingAttack",
+        "bestmove": "a2b3",
+        "score_cp": 35,
+        "nodes": 619984,
+        "elapsed_sec": 0.5733,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "KATK_04",
+        "category": "KingAttack",
+        "bestmove": "c8d7",
+        "score_cp": -340,
+        "nodes": 202569,
+        "elapsed_sec": 0.178,
+        "qmoves_pruned": 0
+      },
+      {
+        "id": "KATK_05",
+        "category": "KingAttack",
+        "bestmove": "c3a4",
+        "score_cp": 320,
+        "nodes": 337453,
+        "elapsed_sec": 0.233,
+        "qmoves_pruned": 0
+      }
+    ]
+  },
+  "q2": {
+    "summary": {
+      "mode": 2,
+      "mode_name": "Q2_Conservative_SEE_Filter",
+      "total_positions": 25,
+      "total_nodes": 10739035,
+      "mean_nodes_per_pos": 429561,
+      "total_time_sec": 9.67,
+      "total_qmoves_pruned": 2806776,
+      "avg_nps": 1110055
+    },
+    "positions": [
+      {
+        "id": "TAC_01",
+        "category": "Tactics",
+        "bestmove": "c4d5",
+        "score_cp": -75,
+        "nodes": 336423,
+        "elapsed_sec": 0.2988,
+        "qmoves_pruned": 51298
+      },
+      {
+        "id": "TAC_02",
+        "category": "Tactics",
+        "bestmove": "e3e4",
+        "score_cp": 55,
+        "nodes": 869321,
+        "elapsed_sec": 0.9219,
+        "qmoves_pruned": 412808
+      },
+      {
+        "id": "TAC_03",
+        "category": "Tactics",
+        "bestmove": "b1d2",
+        "score_cp": -15,
+        "nodes": 385952,
+        "elapsed_sec": 0.3092,
+        "qmoves_pruned": 106971
+      },
+      {
+        "id": "TAC_04",
+        "category": "Tactics",
+        "bestmove": "d4c6",
+        "score_cp": 60,
+        "nodes": 394166,
+        "elapsed_sec": 0.3499,
+        "qmoves_pruned": 78990
+      },
+      {
+        "id": "TAC_05",
+        "category": "Tactics",
+        "bestmove": "c4d5",
+        "score_cp": 355,
+        "nodes": 304459,
+        "elapsed_sec": 0.2323,
+        "qmoves_pruned": 30150
+      },
+      {
+        "id": "TAC_06",
+        "category": "Tactics",
+        "bestmove": "e2f3",
+        "score_cp": -5,
+        "nodes": 353967,
+        "elapsed_sec": 0.2852,
+        "qmoves_pruned": 96968
+      },
+      {
+        "id": "TAC_07",
+        "category": "Tactics",
+        "bestmove": "d3b5",
+        "score_cp": 20,
+        "nodes": 607726,
+        "elapsed_sec": 0.5412,
+        "qmoves_pruned": 126143
+      },
+      {
+        "id": "TAC_08",
+        "category": "Tactics",
+        "bestmove": "a1d1",
+        "score_cp": -145,
+        "nodes": 758553,
+        "elapsed_sec": 0.7415,
+        "qmoves_pruned": 289574
+      },
+      {
+        "id": "TAC_09",
+        "category": "Tactics",
+        "bestmove": "d1e2",
+        "score_cp": 20,
+        "nodes": 413697,
+        "elapsed_sec": 0.3807,
+        "qmoves_pruned": 103577
+      },
+      {
+        "id": "TAC_10",
+        "category": "Tactics",
+        "bestmove": "c2b3",
+        "score_cp": 15,
+        "nodes": 690713,
+        "elapsed_sec": 0.6777,
+        "qmoves_pruned": 181691
+      },
+      {
+        "id": "QPOS_01",
+        "category": "Quiet",
+        "bestmove": "c1g5",
+        "score_cp": 10,
+        "nodes": 392035,
+        "elapsed_sec": 0.3338,
+        "qmoves_pruned": 98932
+      },
+      {
+        "id": "QPOS_02",
+        "category": "Quiet",
+        "bestmove": "c1e3",
+        "score_cp": 10,
+        "nodes": 255113,
+        "elapsed_sec": 0.1571,
+        "qmoves_pruned": 32687
+      },
+      {
+        "id": "QPOS_03",
+        "category": "Quiet",
+        "bestmove": "d1b3",
+        "score_cp": 20,
+        "nodes": 441777,
+        "elapsed_sec": 0.3454,
+        "qmoves_pruned": 85004
+      },
+      {
+        "id": "QPOS_04",
+        "category": "Quiet",
+        "bestmove": "d8b6",
+        "score_cp": 20,
+        "nodes": 405232,
+        "elapsed_sec": 0.3646,
+        "qmoves_pruned": 95606
+      },
+      {
+        "id": "QPOS_05",
+        "category": "Quiet",
+        "bestmove": "c6c5",
+        "score_cp": 5,
+        "nodes": 201767,
+        "elapsed_sec": 0.1744,
+        "qmoves_pruned": 36562
+      },
+      {
+        "id": "CLSD_01",
+        "category": "Closed",
+        "bestmove": "f1d3",
+        "score_cp": 20,
+        "nodes": 300894,
+        "elapsed_sec": 0.302,
+        "qmoves_pruned": 69927
+      },
+      {
+        "id": "CLSD_02",
+        "category": "Closed",
+        "bestmove": "f3f4",
+        "score_cp": 25,
+        "nodes": 462323,
+        "elapsed_sec": 0.4022,
+        "qmoves_pruned": 85774
+      },
+      {
+        "id": "CLSD_03",
+        "category": "Closed",
+        "bestmove": "c6c5",
+        "score_cp": -335,
+        "nodes": 450167,
+        "elapsed_sec": 0.4016,
+        "qmoves_pruned": 145123
+      },
+      {
+        "id": "CLSD_04",
+        "category": "Closed",
+        "bestmove": "d1c2",
+        "score_cp": 365,
+        "nodes": 601994,
+        "elapsed_sec": 0.612,
+        "qmoves_pruned": 162607
+      },
+      {
+        "id": "CLSD_05",
+        "category": "Closed",
+        "bestmove": "g1e2",
+        "score_cp": 35,
+        "nodes": 103145,
+        "elapsed_sec": 0.1231,
+        "qmoves_pruned": 9163
+      },
+      {
+        "id": "KATK_01",
+        "category": "KingAttack",
+        "bestmove": "d3h7",
+        "score_cp": 135,
+        "nodes": 637329,
+        "elapsed_sec": 0.5059,
+        "qmoves_pruned": 110530
+      },
+      {
+        "id": "KATK_02",
+        "category": "KingAttack",
+        "bestmove": "g5f4",
+        "score_cp": 695,
+        "nodes": 460383,
+        "elapsed_sec": 0.4281,
+        "qmoves_pruned": 166338
+      },
+      {
+        "id": "KATK_03",
+        "category": "KingAttack",
+        "bestmove": "a2d5",
+        "score_cp": 30,
+        "nodes": 430840,
+        "elapsed_sec": 0.4034,
+        "qmoves_pruned": 179615
+      },
+      {
+        "id": "KATK_04",
+        "category": "KingAttack",
+        "bestmove": "c8d7",
+        "score_cp": -340,
+        "nodes": 186792,
+        "elapsed_sec": 0.1597,
+        "qmoves_pruned": 13456
+      },
+      {
+        "id": "KATK_05",
+        "category": "KingAttack",
+        "bestmove": "c3a4",
+        "score_cp": 320,
+        "nodes": 294267,
+        "elapsed_sec": 0.2225,
+        "qmoves_pruned": 37282
+      }
+    ]
+  },
+  "q3": {
+    "summary": {
+      "mode": 3,
+      "mode_name": "Q3_Bounded_SEE_Filter",
+      "total_positions": 25,
+      "total_nodes": 10739035,
+      "mean_nodes_per_pos": 429561,
+      "total_time_sec": 9.46,
+      "total_qmoves_pruned": 2806776,
+      "avg_nps": 1135804
+    },
+    "positions": [
+      {
+        "id": "TAC_01",
+        "category": "Tactics",
+        "bestmove": "c4d5",
+        "score_cp": -75,
+        "nodes": 336423,
+        "elapsed_sec": 0.3165,
+        "qmoves_pruned": 51298
+      },
+      {
+        "id": "TAC_02",
+        "category": "Tactics",
+        "bestmove": "e3e4",
+        "score_cp": 55,
+        "nodes": 869321,
+        "elapsed_sec": 0.9068,
+        "qmoves_pruned": 412808
+      },
+      {
+        "id": "TAC_03",
+        "category": "Tactics",
+        "bestmove": "b1d2",
+        "score_cp": -15,
+        "nodes": 385952,
+        "elapsed_sec": 0.3184,
+        "qmoves_pruned": 106971
+      },
+      {
+        "id": "TAC_04",
+        "category": "Tactics",
+        "bestmove": "d4c6",
+        "score_cp": 60,
+        "nodes": 394166,
+        "elapsed_sec": 0.3719,
+        "qmoves_pruned": 78990
+      },
+      {
+        "id": "TAC_05",
+        "category": "Tactics",
+        "bestmove": "c4d5",
+        "score_cp": 355,
+        "nodes": 304459,
+        "elapsed_sec": 0.2444,
+        "qmoves_pruned": 30150
+      },
+      {
+        "id": "TAC_06",
+        "category": "Tactics",
+        "bestmove": "e2f3",
+        "score_cp": -5,
+        "nodes": 353967,
+        "elapsed_sec": 0.2877,
+        "qmoves_pruned": 96968
+      },
+      {
+        "id": "TAC_07",
+        "category": "Tactics",
+        "bestmove": "d3b5",
+        "score_cp": 20,
+        "nodes": 607726,
+        "elapsed_sec": 0.5744,
+        "qmoves_pruned": 126143
+      },
+      {
+        "id": "TAC_08",
+        "category": "Tactics",
+        "bestmove": "a1d1",
+        "score_cp": -145,
+        "nodes": 758553,
+        "elapsed_sec": 0.7645,
+        "qmoves_pruned": 289574
+      },
+      {
+        "id": "TAC_09",
+        "category": "Tactics",
+        "bestmove": "d1e2",
+        "score_cp": 20,
+        "nodes": 413697,
+        "elapsed_sec": 0.4045,
+        "qmoves_pruned": 103577
+      },
+      {
+        "id": "TAC_10",
+        "category": "Tactics",
+        "bestmove": "c2b3",
+        "score_cp": 15,
+        "nodes": 690713,
+        "elapsed_sec": 0.6626,
+        "qmoves_pruned": 181691
+      },
+      {
+        "id": "QPOS_01",
+        "category": "Quiet",
+        "bestmove": "c1g5",
+        "score_cp": 10,
+        "nodes": 392035,
+        "elapsed_sec": 0.333,
+        "qmoves_pruned": 98932
+      },
+      {
+        "id": "QPOS_02",
+        "category": "Quiet",
+        "bestmove": "c1e3",
+        "score_cp": 10,
+        "nodes": 255113,
+        "elapsed_sec": 0.1603,
+        "qmoves_pruned": 32687
+      },
+      {
+        "id": "QPOS_03",
+        "category": "Quiet",
+        "bestmove": "d1b3",
+        "score_cp": 20,
+        "nodes": 441777,
+        "elapsed_sec": 0.3131,
+        "qmoves_pruned": 85004
+      },
+      {
+        "id": "QPOS_04",
+        "category": "Quiet",
+        "bestmove": "d8b6",
+        "score_cp": 20,
+        "nodes": 405232,
+        "elapsed_sec": 0.3255,
+        "qmoves_pruned": 95606
+      },
+      {
+        "id": "QPOS_05",
+        "category": "Quiet",
+        "bestmove": "c6c5",
+        "score_cp": 5,
+        "nodes": 201767,
+        "elapsed_sec": 0.1453,
+        "qmoves_pruned": 36562
+      },
+      {
+        "id": "CLSD_01",
+        "category": "Closed",
+        "bestmove": "f1d3",
+        "score_cp": 20,
+        "nodes": 300894,
+        "elapsed_sec": 0.2834,
+        "qmoves_pruned": 69927
+      },
+      {
+        "id": "CLSD_02",
+        "category": "Closed",
+        "bestmove": "f3f4",
+        "score_cp": 25,
+        "nodes": 462323,
+        "elapsed_sec": 0.4159,
+        "qmoves_pruned": 85774
+      },
+      {
+        "id": "CLSD_03",
+        "category": "Closed",
+        "bestmove": "c6c5",
+        "score_cp": -335,
+        "nodes": 450167,
+        "elapsed_sec": 0.379,
+        "qmoves_pruned": 145123
+      },
+      {
+        "id": "CLSD_04",
+        "category": "Closed",
+        "bestmove": "d1c2",
+        "score_cp": 365,
+        "nodes": 601994,
+        "elapsed_sec": 0.5337,
+        "qmoves_pruned": 162607
+      },
+      {
+        "id": "CLSD_05",
+        "category": "Closed",
+        "bestmove": "g1e2",
+        "score_cp": 35,
+        "nodes": 103145,
+        "elapsed_sec": 0.0745,
+        "qmoves_pruned": 9163
+      },
+      {
+        "id": "KATK_01",
+        "category": "KingAttack",
+        "bestmove": "d3h7",
+        "score_cp": 135,
+        "nodes": 637329,
+        "elapsed_sec": 0.4742,
+        "qmoves_pruned": 110530
+      },
+      {
+        "id": "KATK_02",
+        "category": "KingAttack",
+        "bestmove": "g5f4",
+        "score_cp": 695,
+        "nodes": 460383,
+        "elapsed_sec": 0.4169,
+        "qmoves_pruned": 166338
+      },
+      {
+        "id": "KATK_03",
+        "category": "KingAttack",
+        "bestmove": "a2d5",
+        "score_cp": 30,
+        "nodes": 430840,
+        "elapsed_sec": 0.3776,
+        "qmoves_pruned": 179615
+      },
+      {
+        "id": "KATK_04",
+        "category": "KingAttack",
+        "bestmove": "c8d7",
+        "score_cp": -340,
+        "nodes": 186792,
+        "elapsed_sec": 0.147,
+        "qmoves_pruned": 13456
+      },
+      {
+        "id": "KATK_05",
+        "category": "KingAttack",
+        "bestmove": "c3a4",
+        "score_cp": 320,
+        "nodes": 294267,
+        "elapsed_sec": 0.2241,
+        "qmoves_pruned": 37282
+      }
+    ]
+  }
+}

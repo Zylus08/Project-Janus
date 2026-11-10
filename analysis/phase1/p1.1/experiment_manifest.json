@@ -1,0 +1,120 @@
+{
+  "milestone": "Phase 1, Milestone P1.1",
+  "program": "Classical Engine Supremacy Program",
+  "worktree": "E:\\ChessXML\\project-janus-phase1",
+  "branch": "phase1/classical-janus",
+  "parent_commit": "bbadf8f / 7b526a0",
+  "timestamp_iso": "2026-11-10T09:05:00Z",
+  "system_environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "machine": "AMD64",
+    "python_version": "3.13.2",
+    "msvc_version": "MSVC 2022 v19.44 / BuildTools (x64)",
+    "compiler_flags": "/O2 /Ot /Oi /std:c++17 /EHsc",
+    "cpu_target": "x86-64-avx2"
+  },
+  "engine_lineages": {
+    "frozen_production_baseline_c1": {
+      "source": "analysis/v0.56/native/janus_native.cpp",
+      "sha256": "2321f470d7b1eeb10209205f6ba81b8bf2c76ab657d4c0b8e4a2e20b956d9a82",
+      "binary": "analysis/v0.56/native/janus_native_engine.exe",
+      "binary_sha256": "a4f9d9d18b549d29b2e6740ac90d90d39167d92d3846b95fc0c4f5b966add83f"
+    },
+    "janus_classical_x_lineage_p1_1": {
+      "source": "engine/classical_x/janus_classical_x.cpp",
+      "sha256": "98490bfedf4b6c5885da943aca81b809359e2728bc9724d8b2f01df056f7b89e",
+      "binary": "engine/classical_x/janus_classical_x.exe",
+      "binary_sha256": "138b43bc3188696769f755f40898b69842e9e6c529e38a119d9734bad92a741c",
+      "dll": "engine/classical_x/janus_classical_x.dll",
+      "dll_sha256": "8a3bff309b6af0ed1192e174d48a8044f2b3bba02e44ff8a8ea0518ebdaef902"
+    },
+    "stockfish_reference": {
+      "binary": "E:/ChessXML/tools/stockfish/stockfish.exe",
+      "sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "version": "Stockfish 19 (g++ 15.2.0, x86-64-avxvnni, NNUE nn-1a298aa575a0.nnue)"
+    }
+  },
+  "search_modernization_summary": {
+    "variant_matrix": {
+      "X0": {
+        "desc": "C1 Baseline Equivalent",
+        "nodes_d7": 16342285,
+        "speedup": 1.0,
+        "ebf": 6.773,
+        "avg_depth_250ms": 6.08
+      },
+      "X1": {
+        "desc": "Staged Move Generation",
+        "nodes_d7": 16343497,
+        "speedup": 3.18,
+        "ebf": 6.773,
+        "avg_depth_250ms": 7.16
+      },
+      "X2": {
+        "desc": "Quiescence SEE Filtering",
+        "nodes_d7": 10739035,
+        "speedup": 1.49,
+        "ebf": 6.378,
+        "avg_depth_250ms": 6.24
+      },
+      "X3": {
+        "desc": "Null-Move Pruning (R=3)",
+        "nodes_d7": 6279449,
+        "speedup": 2.71,
+        "ebf": 5.908,
+        "avg_depth_250ms": 7.04
+      },
+      "X4": {
+        "desc": "Reverse Futility Pruning",
+        "nodes_d7": 9993931,
+        "speedup": 1.62,
+        "ebf": 6.313,
+        "avg_depth_250ms": 6.68
+      },
+      "X5": {
+        "desc": "Aspiration Windows (delta=25cp)",
+        "nodes_d7": 14169939,
+        "speedup": 1.13,
+        "ebf": 6.636,
+        "avg_depth_250ms": 6.16
+      },
+      "X6": {
+        "desc": "Full Integrated Candidate",
+        "nodes_d7": 2555062,
+        "speedup": 10.52,
+        "ebf": 5.196,
+        "avg_depth_250ms": 9.44
+      }
+    },
+    "net_node_reduction_pct": 84.36,
+    "net_search_speedup": 10.52,
+    "depth_expansion_plies": 3.36
+  },
+  "strength_validation_summary": {
+    "janus_x_vs_c1_tournament": {
+      "total_games": 100,
+      "score": "87.0 / 100 (87.0%)",
+      "wdl": "77W - 20D - 3L",
+      "elo_diff": "+330.2 Elo",
+      "elo_95ci": [
+        "+230.4",
+        "+430.1"
+      ],
+      "qualification_status": "QUALIFIED (Target >= +250 Elo Met)"
+    },
+    "janus_x_vs_sf19_diagnostic": {
+      "total_games": 20,
+      "score": "1.5 / 20.0 (7.5%)",
+      "wdl": "0W - 3D - 17L",
+      "historical_baseline_c1": "0.0% (0W - 0D - 20L)",
+      "survival_plies_avg": 64.8,
+      "historical_c1_survival_plies": 51.2
+    }
+  },
+  "perft_qualification": {
+    "suite_positions": 6,
+    "status": "QUALIFIED (100% Bit-Exact Match across 6 Depths)",
+    "peak_nps": 23432457
+  }
+}

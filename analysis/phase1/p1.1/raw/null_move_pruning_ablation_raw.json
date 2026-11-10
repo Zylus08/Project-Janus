@@ -1,0 +1,338 @@
+{
+  "n0_total_nodes": 16342285,
+  "n1_total_nodes": 6279449,
+  "node_reduction_pct": 61.58,
+  "speedup": 2.72,
+  "total_nmp_cutoffs": 15268,
+  "total_nmp_probes": 22791,
+  "move_agreement_pct": 84.0,
+  "n0_positions": [
+    {
+      "id": "TAC_01",
+      "nodes": 378007,
+      "elapsed_sec": 0.3449777999994694,
+      "bestmove": "c4d5"
+    },
+    {
+      "id": "TAC_02",
+      "nodes": 1661458,
+      "elapsed_sec": 1.6219446000031894,
+      "bestmove": "e3e4"
+    },
+    {
+      "id": "TAC_03",
+      "nodes": 827298,
+      "elapsed_sec": 0.7177578999981051,
+      "bestmove": "b1d2"
+    },
+    {
+      "id": "TAC_04",
+      "nodes": 511744,
+      "elapsed_sec": 0.4590844999984256,
+      "bestmove": "d4c6"
+    },
+    {
+      "id": "TAC_05",
+      "nodes": 366796,
+      "elapsed_sec": 0.27669779999996535,
+      "bestmove": "c4d5"
+    },
+    {
+      "id": "TAC_06",
+      "nodes": 580213,
+      "elapsed_sec": 0.43761020000238204,
+      "bestmove": "e2f3"
+    },
+    {
+      "id": "TAC_07",
+      "nodes": 811357,
+      "elapsed_sec": 0.7401933000001009,
+      "bestmove": "d3b5"
+    },
+    {
+      "id": "TAC_08",
+      "nodes": 1372255,
+      "elapsed_sec": 1.2687299000026542,
+      "bestmove": "a1d1"
+    },
+    {
+      "id": "TAC_09",
+      "nodes": 740341,
+      "elapsed_sec": 0.6843373000010615,
+      "bestmove": "d1e2"
+    },
+    {
+      "id": "TAC_10",
+      "nodes": 974089,
+      "elapsed_sec": 0.9284818000014639,
+      "bestmove": "c2b3"
+    },
+    {
+      "id": "QPOS_01",
+      "nodes": 610393,
+      "elapsed_sec": 0.5383718000011868,
+      "bestmove": "c1g5"
+    },
+    {
+      "id": "QPOS_02",
+      "nodes": 330653,
+      "elapsed_sec": 0.2263807999988785,
+      "bestmove": "c1e3"
+    },
+    {
+      "id": "QPOS_03",
+      "nodes": 660556,
+      "elapsed_sec": 0.4585794000013266,
+      "bestmove": "c4d5"
+    },
+    {
+      "id": "QPOS_04",
+      "nodes": 508515,
+      "elapsed_sec": 0.39537600000039674,
+      "bestmove": "d8b6"
+    },
+    {
+      "id": "QPOS_05",
+      "nodes": 278697,
+      "elapsed_sec": 0.21957490000204416,
+      "bestmove": "c6c5"
+    },
+    {
+      "id": "CLSD_01",
+      "nodes": 443007,
+      "elapsed_sec": 0.4213376000043354,
+      "bestmove": "f1d3"
+    },
+    {
+      "id": "CLSD_02",
+      "nodes": 679767,
+      "elapsed_sec": 0.5869470000034198,
+      "bestmove": "f3f4"
+    },
+    {
+      "id": "CLSD_03",
+      "nodes": 732580,
+      "elapsed_sec": 0.6264916000000085,
+      "bestmove": "c6c5"
+    },
+    {
+      "id": "CLSD_04",
+      "nodes": 1022179,
+      "elapsed_sec": 0.9946378999957233,
+      "bestmove": "d1c2"
+    },
+    {
+      "id": "CLSD_05",
+      "nodes": 113548,
+      "elapsed_sec": 0.09146229999896605,
+      "bestmove": "g1e2"
+    },
+    {
+      "id": "KATK_01",
+      "nodes": 791243,
+      "elapsed_sec": 0.5733508999983314,
+      "bestmove": "d3h7"
+    },
+    {
+      "id": "KATK_02",
+      "nodes": 745002,
+      "elapsed_sec": 0.598545799999556,
+      "bestmove": "g5f4"
+    },
+    {
+      "id": "KATK_03",
+      "nodes": 660554,
+      "elapsed_sec": 0.5184370999995735,
+      "bestmove": "a2b3"
+    },
+    {
+      "id": "KATK_04",
+      "nodes": 203114,
+      "elapsed_sec": 0.16435600000113482,
+      "bestmove": "c8d7"
+    },
+    {
+      "id": "KATK_05",
+      "nodes": 338919,
+      "elapsed_sec": 0.22577959999762243,
+      "bestmove": "c3a4"
+    }
+  ],
+  "n1_positions": [
+    {
+      "id": "TAC_01",
+      "nodes": 209189,
+      "elapsed_sec": 0.20152010000310838,
+      "bestmove": "c4d5",
+      "nmp_cutoffs": 714
+    },
+    {
+      "id": "TAC_02",
+      "nodes": 530672,
+      "elapsed_sec": 0.43600709999736864,
+      "bestmove": "e3e4",
+      "nmp_cutoffs": 668
+    },
+    {
+      "id": "TAC_03",
+      "nodes": 156095,
+      "elapsed_sec": 0.14605270000174642,
+      "bestmove": "b1d2",
+      "nmp_cutoffs": 382
+    },
+    {
+      "id": "TAC_04",
+      "nodes": 145554,
+      "elapsed_sec": 0.12651390000246465,
+      "bestmove": "d4c6",
+      "nmp_cutoffs": 845
+    },
+    {
+      "id": "TAC_05",
+      "nodes": 60935,
+      "elapsed_sec": 0.06279359999462031,
+      "bestmove": "c4d5",
+      "nmp_cutoffs": 321
+    },
+    {
+      "id": "TAC_06",
+      "nodes": 325170,
+      "elapsed_sec": 0.25618240000039805,
+      "bestmove": "e2f3",
+      "nmp_cutoffs": 720
+    },
+    {
+      "id": "TAC_07",
+      "nodes": 495638,
+      "elapsed_sec": 0.37639969999872847,
+      "bestmove": "c1f4",
+      "nmp_cutoffs": 1231
+    },
+    {
+      "id": "TAC_08",
+      "nodes": 371417,
+      "elapsed_sec": 0.25024439999833703,
+      "bestmove": "a1d1",
+      "nmp_cutoffs": 915
+    },
+    {
+      "id": "TAC_09",
+      "nodes": 381778,
+      "elapsed_sec": 0.33011110000370536,
+      "bestmove": "d1e2",
+      "nmp_cutoffs": 748
+    },
+    {
+      "id": "TAC_10",
+      "nodes": 388992,
+      "elapsed_sec": 0.4465300000010757,
+      "bestmove": "c2b3",
+      "nmp_cutoffs": 778
+    },
+    {
+      "id": "QPOS_01",
+      "nodes": 158662,
+      "elapsed_sec": 0.11606500000198139,
+      "bestmove": "c1g5",
+      "nmp_cutoffs": 436
+    },
+    {
+      "id": "QPOS_02",
+      "nodes": 134107,
+      "elapsed_sec": 0.08989510000537848,
+      "bestmove": "c1e3",
+      "nmp_cutoffs": 541
+    },
+    {
+      "id": "QPOS_03",
+      "nodes": 472211,
+      "elapsed_sec": 0.3798707000023569,
+      "bestmove": "c4d5",
+      "nmp_cutoffs": 846
+    },
+    {
+      "id": "QPOS_04",
+      "nodes": 219898,
+      "elapsed_sec": 0.17732899999828078,
+      "bestmove": "d8b6",
+      "nmp_cutoffs": 496
+    },
+    {
+      "id": "QPOS_05",
+      "nodes": 144709,
+      "elapsed_sec": 0.11725379999552388,
+      "bestmove": "c6c5",
+      "nmp_cutoffs": 330
+    },
+    {
+      "id": "CLSD_01",
+      "nodes": 212952,
+      "elapsed_sec": 0.16127320000668988,
+      "bestmove": "f1d3",
+      "nmp_cutoffs": 865
+    },
+    {
+      "id": "CLSD_02",
+      "nodes": 288182,
+      "elapsed_sec": 0.23014710000279592,
+      "bestmove": "f3f4",
+      "nmp_cutoffs": 663
+    },
+    {
+      "id": "CLSD_03",
+      "nodes": 346503,
+      "elapsed_sec": 0.2750592999946093,
+      "bestmove": "c6c5",
+      "nmp_cutoffs": 554
+    },
+    {
+      "id": "CLSD_04",
+      "nodes": 333351,
+      "elapsed_sec": 0.31683699999848614,
+      "bestmove": "d1c2",
+      "nmp_cutoffs": 452
+    },
+    {
+      "id": "CLSD_05",
+      "nodes": 67353,
+      "elapsed_sec": 0.07052929999917978,
+      "bestmove": "g1e2",
+      "nmp_cutoffs": 314
+    },
+    {
+      "id": "KATK_01",
+      "nodes": 134918,
+      "elapsed_sec": 0.09681249999994179,
+      "bestmove": "d3h7",
+      "nmp_cutoffs": 658
+    },
+    {
+      "id": "KATK_02",
+      "nodes": 170264,
+      "elapsed_sec": 0.11582430000271415,
+      "bestmove": "d1d3",
+      "nmp_cutoffs": 478
+    },
+    {
+      "id": "KATK_03",
+      "nodes": 288357,
+      "elapsed_sec": 0.23448199999984354,
+      "bestmove": "a2d5",
+      "nmp_cutoffs": 453
+    },
+    {
+      "id": "KATK_04",
+      "nodes": 165745,
+      "elapsed_sec": 0.13379880000138655,
+      "bestmove": "a7a6",
+      "nmp_cutoffs": 421
+    },
+    {
+      "id": "KATK_05",
+      "nodes": 76797,
+      "elapsed_sec": 0.050808499996492174,
+      "bestmove": "c3a4",
+      "nmp_cutoffs": 439
+    }
+  ]
+}

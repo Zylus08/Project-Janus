@@ -1,0 +1,206 @@
+{
+  "B0": {
+    "name": "B0: Baseline X7 (1T Control)",
+    "threads": 1,
+    "variant_opt": null,
+    "lmp_opt": null,
+    "positions_count": 20,
+    "total_nodes": 14209024,
+    "total_elapsed_sec": 8.634,
+    "avg_completed_depth": 10.5,
+    "aggregate_nps": 1645763,
+    "sample_positions": [
+      {
+        "pos": 1,
+        "depth": 12,
+        "nodes": 745472,
+        "elapsed_sec": 0.428
+      },
+      {
+        "pos": 2,
+        "depth": 10,
+        "nodes": 696320,
+        "elapsed_sec": 0.4328
+      },
+      {
+        "pos": 3,
+        "depth": 10,
+        "nodes": 724992,
+        "elapsed_sec": 0.4336
+      }
+    ],
+    "node_ratio_vs_b0": 1.0,
+    "depth_delta_vs_b0": 0.0,
+    "speedup_vs_b0": 1.0
+  },
+  "B1": {
+    "name": "B1: X7 + Safe LMP L1 (1T)",
+    "threads": 1,
+    "variant_opt": "X7",
+    "lmp_opt": "L1",
+    "positions_count": 20,
+    "total_nodes": 12525568,
+    "total_elapsed_sec": 9.069,
+    "avg_completed_depth": 10.5,
+    "aggregate_nps": 1381134,
+    "sample_positions": [
+      {
+        "pos": 1,
+        "depth": 12,
+        "nodes": 655360,
+        "elapsed_sec": 0.4464
+      },
+      {
+        "pos": 2,
+        "depth": 10,
+        "nodes": 671744,
+        "elapsed_sec": 0.4509
+      },
+      {
+        "pos": 3,
+        "depth": 11,
+        "nodes": 710656,
+        "elapsed_sec": 0.4522
+      }
+    ],
+    "node_ratio_vs_b0": 0.882,
+    "depth_delta_vs_b0": 0.0,
+    "speedup_vs_b0": 0.839
+  },
+  "B2": {
+    "name": "B2: X7 + Lazy SMP Harness (1T, LMP L0)",
+    "threads": 1,
+    "variant_opt": "X7",
+    "lmp_opt": "L0",
+    "positions_count": 20,
+    "total_nodes": 14325760,
+    "total_elapsed_sec": 8.915,
+    "avg_completed_depth": 10.5,
+    "aggregate_nps": 1606942,
+    "sample_positions": [
+      {
+        "pos": 1,
+        "depth": 12,
+        "nodes": 768000,
+        "elapsed_sec": 0.4514
+      },
+      {
+        "pos": 2,
+        "depth": 10,
+        "nodes": 704512,
+        "elapsed_sec": 0.4511
+      },
+      {
+        "pos": 3,
+        "depth": 10,
+        "nodes": 735232,
+        "elapsed_sec": 0.4505
+      }
+    ],
+    "node_ratio_vs_b0": 1.008,
+    "depth_delta_vs_b0": 0.0,
+    "speedup_vs_b0": 0.976
+  },
+  "B3": {
+    "name": "B3: X7 + Lazy SMP Parallel (4T, LMP L0)",
+    "threads": 4,
+    "variant_opt": "X7",
+    "lmp_opt": "L0",
+    "positions_count": 20,
+    "total_nodes": 51134464,
+    "total_elapsed_sec": 8.907,
+    "avg_completed_depth": 11.5,
+    "aggregate_nps": 5740864,
+    "sample_positions": [
+      {
+        "pos": 1,
+        "depth": 13,
+        "nodes": 2695168,
+        "elapsed_sec": 0.4445
+      },
+      {
+        "pos": 2,
+        "depth": 11,
+        "nodes": 2578432,
+        "elapsed_sec": 0.4445
+      },
+      {
+        "pos": 3,
+        "depth": 12,
+        "nodes": 2832384,
+        "elapsed_sec": 0.4438
+      }
+    ],
+    "node_ratio_vs_b0": 3.599,
+    "depth_delta_vs_b0": 1.0,
+    "speedup_vs_b0": 3.488
+  },
+  "B4": {
+    "name": "B4: Full Candidate X11 (4T, LMP L1, Advanced Eval)",
+    "threads": 4,
+    "variant_opt": "X11",
+    "lmp_opt": "L1",
+    "positions_count": 20,
+    "total_nodes": 35588096,
+    "total_elapsed_sec": 9.038,
+    "avg_completed_depth": 11.05,
+    "aggregate_nps": 3937550,
+    "sample_positions": [
+      {
+        "pos": 1,
+        "depth": 13,
+        "nodes": 2205696,
+        "elapsed_sec": 0.4452
+      },
+      {
+        "pos": 2,
+        "depth": 12,
+        "nodes": 2062336,
+        "elapsed_sec": 0.4454
+      },
+      {
+        "pos": 3,
+        "depth": 11,
+        "nodes": 1798144,
+        "elapsed_sec": 0.4492
+      }
+    ],
+    "node_ratio_vs_b0": 2.505,
+    "depth_delta_vs_b0": 0.55,
+    "speedup_vs_b0": 2.393
+  },
+  "B5": {
+    "name": "B5: Reference X10 (1T Reference)",
+    "threads": 1,
+    "variant_opt": null,
+    "lmp_opt": null,
+    "positions_count": 20,
+    "total_nodes": 14360576,
+    "total_elapsed_sec": 8.643,
+    "avg_completed_depth": 10.5,
+    "aggregate_nps": 1661608,
+    "sample_positions": [
+      {
+        "pos": 1,
+        "depth": 12,
+        "nodes": 714752,
+        "elapsed_sec": 0.4369
+      },
+      {
+        "pos": 2,
+        "depth": 10,
+        "nodes": 704512,
+        "elapsed_sec": 0.4311
+      },
+      {
+        "pos": 3,
+        "depth": 10,
+        "nodes": 747520,
+        "elapsed_sec": 0.4315
+      }
+    ],
+    "node_ratio_vs_b0": 1.011,
+    "depth_delta_vs_b0": 0.0,
+    "speedup_vs_b0": 1.01
+  }
+}

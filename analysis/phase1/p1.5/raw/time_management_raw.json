@@ -1,0 +1,21 @@
+{
+  "low_clock_safety": {
+    "wtime_ms": 500,
+    "winc_ms": 50,
+    "elapsed_sec": 0.08825135231018066,
+    "bestmove": "d2d4",
+    "depth": 7,
+    "no_forfeit": true,
+    "valid_move": true
+  },
+  "movestogo_adaptation": {
+    "movestogo_5_duration_sec": 0.37852931022644043,
+    "movestogo_40_duration_sec": 0.3829379081726074,
+    "allocates_more_on_imminent_tc": false
+  },
+  "movetime_hard_cap": {
+    "requested_ms": 200,
+    "actual_elapsed_sec": 0.22647476196289062,
+    "cap_adherence": true
+  }
+}

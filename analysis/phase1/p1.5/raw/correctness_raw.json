@@ -1,0 +1,152 @@
+{
+  "perft_results": {
+    "startpos": {
+      "depth_1": {
+        "expected": 20,
+        "status": "PASSED"
+      },
+      "depth_2": {
+        "expected": 400,
+        "status": "PASSED"
+      },
+      "depth_3": {
+        "expected": 8902,
+        "status": "PASSED"
+      },
+      "depth_4": {
+        "expected": 197281,
+        "status": "PASSED"
+      }
+    },
+    "kiwipete": {
+      "depth_1": {
+        "expected": 48,
+        "status": "PASSED"
+      },
+      "depth_2": {
+        "expected": 2039,
+        "status": "PASSED"
+      },
+      "depth_3": {
+        "expected": 97862,
+        "status": "PASSED"
+      },
+      "depth_4": {
+        "expected": 4085603,
+        "status": "PASSED"
+      }
+    },
+    "pos3": {
+      "depth_1": {
+        "expected": 14,
+        "status": "PASSED"
+      },
+      "depth_2": {
+        "expected": 191,
+        "status": "PASSED"
+      },
+      "depth_3": {
+        "expected": 2812,
+        "status": "PASSED"
+      },
+      "depth_4": {
+        "expected": 43238,
+        "status": "PASSED"
+      }
+    }
+  },
+  "fallback_parity": {
+    "pos_1": {
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "x7_signature": [
+        "0",
+        "32663",
+        "pv b1c3 b8c6 g1f3 g8f6 e2e4 d7d5"
+      ],
+      "cand_signature": [
+        "0",
+        "32663",
+        "pv b1c3 b8c6 g1f3 g8f6 e2e4 d7d5"
+      ],
+      "bit_exact_match": true
+    },
+    "pos_2": {
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+      "x7_signature": [
+        "26",
+        "29676",
+        "pv d2d3 e8g8 c1g5 h7h6 g5e3 c5e3"
+      ],
+      "cand_signature": [
+        "26",
+        "29676",
+        "pv d2d3 e8g8 c1g5 h7h6 g5e3 c5e3"
+      ],
+      "bit_exact_match": true
+    },
+    "pos_3": {
+      "fen": "r1b1k2r/pppp1ppp/8/4n3/1b1NP2q/2N5/PPP2PPP/R1BQKB1R w KQkq - 1 8",
+      "x7_signature": [
+        "314",
+        "14047",
+        "pv d1e2 b4c3 b2c3 d7d6 e2b5 e8f8"
+      ],
+      "cand_signature": [
+        "314",
+        "14047",
+        "pv d1e2 b4c3 b2c3 d7d6 e2b5 e8f8"
+      ],
+      "bit_exact_match": true
+    },
+    "pos_4": {
+      "fen": "r1b2rk1/pp1p1ppp/2n1pn2/q5B1/1bPP4/2N2N2/PP2BPPP/R2QK2R w KQ - 3 9",
+      "x7_signature": [
+        "31",
+        "17867",
+        "pv d1d3 b4c3 b2c3 d7d6 g5f6 g7f6"
+      ],
+      "cand_signature": [
+        "31",
+        "17867",
+        "pv d1d3 b4c3 b2c3 d7d6 g5f6 g7f6"
+      ],
+      "bit_exact_match": true
+    },
+    "pos_5": {
+      "fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "x7_signature": [
+        "70",
+        "3447",
+        "pv b4f4 h4g3 f4f7 h5c5 e2e4 g3g2"
+      ],
+      "cand_signature": [
+        "70",
+        "3447",
+        "pv b4f4 h4g3 f4f7 h5c5 e2e4 g3g2"
+      ],
+      "bit_exact_match": true
+    }
+  },
+  "mate_tests": {
+    "Scholars_Mate_in_1": {
+      "expected_move": "h5f7",
+      "engine_move": "h5f7",
+      "passed": true
+    },
+    "Back_Rank_Mate_in_1": {
+      "expected_move": "e2e8",
+      "engine_move": "e2e8",
+      "passed": true
+    },
+    "Legals_Mate_in_2": {
+      "expected_move": "d5f6",
+      "engine_move": "d5f6",
+      "passed": true
+    }
+  },
+  "repetition_test": {
+    "score_cp": 0,
+    "is_zero_draw": true
+  },
+  "all_passed": true
+}

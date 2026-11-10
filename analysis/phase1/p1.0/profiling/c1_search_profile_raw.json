@@ -1,0 +1,533 @@
+{
+  "metadata": {
+    "milestone": "P1.0",
+    "date": "2026-11-09",
+    "c1_baseline_exe": "E:\\ChessXML\\project-janus-phase1\\analysis\\v0.56\\native\\janus_native_engine.exe",
+    "profile_exe": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.0\\profiling\\janus_profile_engine.exe",
+    "search_depth": 7,
+    "num_positions": 10
+  },
+  "positions": [
+    {
+      "id": "POS_01_STARTPOS",
+      "category": "Opening",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "c1_baseline": {
+        "bestmove": "b1c3",
+        "completed_depth": 7,
+        "nodes": 111683,
+        "nps": 1250044,
+        "score": 20,
+        "elapsed_wall_sec": 0.1214,
+        "telemetry": {}
+      },
+      "profiler": {
+        "bestmove": "b1c3",
+        "completed_depth": 7,
+        "nodes": 111683,
+        "nps": 1195531,
+        "score": 20,
+        "elapsed_wall_sec": 0.1365,
+        "telemetry": {
+          "total_nodes": 0,
+          "qnodes": 55058,
+          "tt_probes": 19085,
+          "tt_hits": 7099,
+          "tt_cutoffs": 4799,
+          "total_cutoffs": 12685,
+          "cutoff_move_1": 9817,
+          "cutoff_move_2": 2206,
+          "cutoff_move_3": 508,
+          "cutoff_move_4plus": 154,
+          "cutoff_tt": 1554,
+          "cutoff_killer1": 6118,
+          "cutoff_killer2": 1881,
+          "cutoff_history": 8215,
+          "cutoff_captures": 4436,
+          "cutoff_quiet": 8249,
+          "eval_calls": 55058,
+          "max_seldepth": 18,
+          "movegen_time_ms": 67.4979,
+          "eval_time_ms": 6.0346
+        }
+      },
+      "metrics": {
+        "tt_hit_rate_pct": 37.2,
+        "first_move_cutoff_rate_pct": 77.39,
+        "overhead_pct": 12.44
+      }
+    },
+    {
+      "id": "POS_02_ITALIAN",
+      "category": "Opening",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+      "c1_baseline": {
+        "bestmove": "d2d3",
+        "completed_depth": 7,
+        "nodes": 550845,
+        "nps": 837324,
+        "score": 10,
+        "elapsed_wall_sec": 0.692,
+        "telemetry": {}
+      },
+      "profiler": {
+        "bestmove": "d2d3",
+        "completed_depth": 7,
+        "nodes": 550845,
+        "nps": 825498,
+        "score": 10,
+        "elapsed_wall_sec": 0.6943,
+        "telemetry": {
+          "total_nodes": 0,
+          "qnodes": 387235,
+          "tt_probes": 54070,
+          "tt_hits": 17766,
+          "tt_cutoffs": 12893,
+          "total_cutoffs": 37673,
+          "cutoff_move_1": 30957,
+          "cutoff_move_2": 2213,
+          "cutoff_move_3": 3302,
+          "cutoff_move_4plus": 1201,
+          "cutoff_tt": 3383,
+          "cutoff_killer1": 4300,
+          "cutoff_killer2": 1276,
+          "cutoff_history": 5847,
+          "cutoff_captures": 31778,
+          "cutoff_quiet": 5895,
+          "eval_calls": 387235,
+          "max_seldepth": 23,
+          "movegen_time_ms": 511.8,
+          "eval_time_ms": 41.816
+        }
+      },
+      "metrics": {
+        "tt_hit_rate_pct": 32.86,
+        "first_move_cutoff_rate_pct": 82.17,
+        "overhead_pct": 0.33
+      }
+    },
+    {
+      "id": "POS_03_SICILIAN_NAJDORF",
+      "category": "Opening",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+      "c1_baseline": {
+        "bestmove": "d4f3",
+        "completed_depth": 7,
+        "nodes": 614973,
+        "nps": 1040213,
+        "score": 50,
+        "elapsed_wall_sec": 0.6235,
+        "telemetry": {}
+      },
+      "profiler": {
+        "bestmove": "d4f3",
+        "completed_depth": 7,
+        "nodes": 614973,
+        "nps": 931096,
+        "score": 50,
+        "elapsed_wall_sec": 0.6874,
+        "telemetry": {
+          "total_nodes": 0,
+          "qnodes": 374038,
+          "tt_probes": 82235,
+          "tt_hits": 27733,
+          "tt_cutoffs": 21444,
+          "total_cutoffs": 56199,
+          "cutoff_move_1": 47890,
+          "cutoff_move_2": 5642,
+          "cutoff_move_3": 1723,
+          "cutoff_move_4plus": 944,
+          "cutoff_tt": 4201,
+          "cutoff_killer1": 8328,
+          "cutoff_killer2": 2350,
+          "cutoff_history": 11119,
+          "cutoff_captures": 45023,
+          "cutoff_quiet": 11176,
+          "eval_calls": 374038,
+          "max_seldepth": 19,
+          "movegen_time_ms": 483.261,
+          "eval_time_ms": 42.0131
+        }
+      },
+      "metrics": {
+        "tt_hit_rate_pct": 33.72,
+        "first_move_cutoff_rate_pct": 85.22,
+        "overhead_pct": 10.25
+      }
+    },
+    {
+      "id": "POS_04_TACTICAL_MIDDLEGAME",
+      "category": "Middlegame",
+      "fen": "r1b2rk1/pp1nbppp/2p1pn2/q5B1/2BP4/2N1PN2/PP3PPP/R2Q1RK1 w - - 3 10",
+      "c1_baseline": {
+        "bestmove": "e3e4",
+        "completed_depth": 7,
+        "nodes": 1661458,
+        "nps": 852229,
+        "score": 55,
+        "elapsed_wall_sec": 1.9812,
+        "telemetry": {}
+      },
+      "profiler": {
+        "bestmove": "e3e4",
+        "completed_depth": 7,
+        "nodes": 1661458,
+        "nps": 776732,
+        "score": 55,
+        "elapsed_wall_sec": 2.165,
+        "telemetry": {
+          "total_nodes": 0,
+          "qnodes": 1370310,
+          "tt_probes": 89951,
+          "tt_hits": 26727,
+          "tt_cutoffs": 19902,
+          "total_cutoffs": 65220,
+          "cutoff_move_1": 43315,
+          "cutoff_move_2": 12959,
+          "cutoff_move_3": 4821,
+          "cutoff_move_4plus": 4125,
+          "cutoff_tt": 4634,
+          "cutoff_killer1": 6972,
+          "cutoff_killer2": 2151,
+          "cutoff_history": 9548,
+          "cutoff_captures": 55616,
+          "cutoff_quiet": 9604,
+          "eval_calls": 1370310,
+          "max_seldepth": 26,
+          "movegen_time_ms": 1633.92,
+          "eval_time_ms": 142.94
+        }
+      },
+      "metrics": {
+        "tt_hit_rate_pct": 29.71,
+        "first_move_cutoff_rate_pct": 66.41,
+        "overhead_pct": 9.28
+      }
+    },
+    {
+      "id": "POS_05_COMPLEX_TACTIC",
+      "category": "Middlegame",
+      "fen": "r2q1rk1/1pp1bppp/p1np1nb1/4p3/B3P1P1/2PP1N1P/PP3P2/RNBQR1K1 w - - 1 11",
+      "c1_baseline": {
+        "bestmove": "b1d2",
+        "completed_depth": 7,
+        "nodes": 827298,
+        "nps": 933406,
+        "score": -10,
+        "elapsed_wall_sec": 0.9224,
+        "telemetry": {}
+      },
+      "profiler": {
+        "bestmove": "b1d2",
+        "completed_depth": 7,
+        "nodes": 827298,
+        "nps": 904424,
+        "score": -10,
+        "elapsed_wall_sec": 0.9422,
+        "telemetry": {
+          "total_nodes": 0,
+          "qnodes": 635096,
+          "tt_probes": 61787,
+          "tt_hits": 23960,
+          "tt_cutoffs": 17354,
+          "total_cutoffs": 40289,
+          "cutoff_move_1": 33023,
+          "cutoff_move_2": 2501,
+          "cutoff_move_3": 916,
+          "cutoff_move_4plus": 3849,
+          "cutoff_tt": 4825,
+          "cutoff_killer1": 5608,
+          "cutoff_killer2": 1141,
+          "cutoff_history": 7252,
+          "cutoff_captures": 32985,
+          "cutoff_quiet": 7304,
+          "eval_calls": 635096,
+          "max_seldepth": 26,
+          "movegen_time_ms": 686.883,
+          "eval_time_ms": 67.0813
+        }
+      },
+      "metrics": {
+        "tt_hit_rate_pct": 38.78,
+        "first_move_cutoff_rate_pct": 81.97,
+        "overhead_pct": 2.15
+      }
+    },
+    {
+      "id": "POS_06_CLOSED_KING_SAFETY",
+      "category": "Middlegame",
+      "fen": "r1bq1rk1/pp2bppp/2n1pn2/3p4/2PP4/2N1BN2/PP2BPPP/R2Q1RK1 w - - 0 10",
+      "c1_baseline": {
+        "bestmove": "e2d3",
+        "completed_depth": 7,
+        "nodes": 1243142,
+        "nps": 842137,
+        "score": 30,
+        "elapsed_wall_sec": 1.5064,
+        "telemetry": {}
+      },
+      "profiler": {
+        "bestmove": "e2d3",
+        "completed_depth": 7,
+        "nodes": 1243142,
+        "nps": 814030,
+        "score": 30,
+        "elapsed_wall_sec": 1.5542,
+        "telemetry": {
+          "total_nodes": 0,
+          "qnodes": 971880,
+          "tt_probes": 83076,
+          "tt_hits": 25579,
+          "tt_cutoffs": 17927,
+          "total_cutoffs": 60485,
+          "cutoff_move_1": 47396,
+          "cutoff_move_2": 3426,
+          "cutoff_move_3": 3871,
+          "cutoff_move_4plus": 5792,
+          "cutoff_tt": 5634,
+          "cutoff_killer1": 8276,
+          "cutoff_killer2": 1994,
+          "cutoff_history": 11496,
+          "cutoff_captures": 48912,
+          "cutoff_quiet": 11573,
+          "eval_calls": 971880,
+          "max_seldepth": 26,
+          "movegen_time_ms": 1160.81,
+          "eval_time_ms": 98.6544
+        }
+      },
+      "metrics": {
+        "tt_hit_rate_pct": 30.79,
+        "first_move_cutoff_rate_pct": 78.36,
+        "overhead_pct": 3.17
+      }
+    },
+    {
+      "id": "POS_07_ROOK_ENDGAME",
+      "category": "Endgame",
+      "fen": "8/5pk1/4p1p1/7p/7P/4r1P1/R4PK1/8 b - - 1 42",
+      "c1_baseline": {
+        "bestmove": "e3e1",
+        "completed_depth": 7,
+        "nodes": 31052,
+        "nps": 1725504,
+        "score": 115,
+        "elapsed_wall_sec": 0.0507,
+        "telemetry": {}
+      },
+      "profiler": {
+        "bestmove": "e3e1",
+        "completed_depth": 7,
+        "nodes": 31052,
+        "nps": 1555532,
+        "score": 115,
+        "elapsed_wall_sec": 0.0471,
+        "telemetry": {
+          "total_nodes": 0,
+          "qnodes": 14146,
+          "tt_probes": 6315,
+          "tt_hits": 3187,
+          "tt_cutoffs": 1809,
+          "total_cutoffs": 3537,
+          "cutoff_move_1": 2693,
+          "cutoff_move_2": 570,
+          "cutoff_move_3": 170,
+          "cutoff_move_4plus": 104,
+          "cutoff_tt": 894,
+          "cutoff_killer1": 1266,
+          "cutoff_killer2": 442,
+          "cutoff_history": 1942,
+          "cutoff_captures": 1534,
+          "cutoff_quiet": 2003,
+          "eval_calls": 14146,
+          "max_seldepth": 11,
+          "movegen_time_ms": 14.0263,
+          "eval_time_ms": 0.8809
+        }
+      },
+      "metrics": {
+        "tt_hit_rate_pct": 50.47,
+        "first_move_cutoff_rate_pct": 76.14,
+        "overhead_pct": -7.1
+      }
+    },
+    {
+      "id": "POS_08_QUEENLESS_MIDDLEGAME",
+      "category": "Endgame",
+      "fen": "r4rk1/pp3ppp/2n1p3/3p4/3P4/2N2B2/PPP2PPP/R4RK1 w - - 0 14",
+      "c1_baseline": {
+        "bestmove": "a1d1",
+        "completed_depth": 7,
+        "nodes": 127725,
+        "nps": 1468007,
+        "score": 350,
+        "elapsed_wall_sec": 0.122,
+        "telemetry": {}
+      },
+      "profiler": {
+        "bestmove": "a1d1",
+        "completed_depth": 7,
+        "nodes": 127725,
+        "nps": 1394848,
+        "score": 350,
+        "elapsed_wall_sec": 0.1188,
+        "telemetry": {
+          "total_nodes": 0,
+          "qnodes": 71042,
+          "tt_probes": 20372,
+          "tt_hits": 9203,
+          "tt_cutoffs": 5821,
+          "total_cutoffs": 12454,
+          "cutoff_move_1": 10098,
+          "cutoff_move_2": 1483,
+          "cutoff_move_3": 552,
+          "cutoff_move_4plus": 321,
+          "cutoff_tt": 2393,
+          "cutoff_killer1": 2393,
+          "cutoff_killer2": 634,
+          "cutoff_history": 3173,
+          "cutoff_captures": 9250,
+          "cutoff_quiet": 3204,
+          "eval_calls": 71042,
+          "max_seldepth": 19,
+          "movegen_time_ms": 64.5863,
+          "eval_time_ms": 5.8735
+        }
+      },
+      "metrics": {
+        "tt_hit_rate_pct": 45.17,
+        "first_move_cutoff_rate_pct": 81.08,
+        "overhead_pct": -2.62
+      }
+    },
+    {
+      "id": "POS_09_MINOR_PIECE_ENDGAME",
+      "category": "Endgame",
+      "fen": "8/8/4k3/3p4/3K4/5B2/8/8 w - - 0 1",
+      "c1_baseline": {
+        "bestmove": "d4c3",
+        "completed_depth": 7,
+        "nodes": 38805,
+        "nps": 2358178,
+        "score": 215,
+        "elapsed_wall_sec": 0.0482,
+        "telemetry": {}
+      },
+      "profiler": {
+        "bestmove": "d4c3",
+        "completed_depth": 7,
+        "nodes": 38805,
+        "nps": 2100178,
+        "score": 215,
+        "elapsed_wall_sec": 0.0447,
+        "telemetry": {
+          "total_nodes": 0,
+          "qnodes": 17676,
+          "tt_probes": 6252,
+          "tt_hits": 3417,
+          "tt_cutoffs": 1412,
+          "total_cutoffs": 3374,
+          "cutoff_move_1": 2516,
+          "cutoff_move_2": 493,
+          "cutoff_move_3": 180,
+          "cutoff_move_4plus": 185,
+          "cutoff_tt": 1082,
+          "cutoff_killer1": 1823,
+          "cutoff_killer2": 438,
+          "cutoff_history": 3025,
+          "cutoff_captures": 233,
+          "cutoff_quiet": 3141,
+          "eval_calls": 17676,
+          "max_seldepth": 9,
+          "movegen_time_ms": 12.8649,
+          "eval_time_ms": 0.8325
+        }
+      },
+      "metrics": {
+        "tt_hit_rate_pct": 54.65,
+        "first_move_cutoff_rate_pct": 74.57,
+        "overhead_pct": -7.26
+      }
+    },
+    {
+      "id": "POS_10_PURE_PAWN_RACE",
+      "category": "Endgame",
+      "fen": "8/pk6/8/8/8/8/6KP/8 w - - 0 1",
+      "c1_baseline": {
+        "bestmove": "h2h4",
+        "completed_depth": 7,
+        "nodes": 6867,
+        "nps": 2945187,
+        "score": 35,
+        "elapsed_wall_sec": 0.0343,
+        "telemetry": {}
+      },
+      "profiler": {
+        "bestmove": "h2h4",
+        "completed_depth": 7,
+        "nodes": 6867,
+        "nps": 2648590,
+        "score": 35,
+        "elapsed_wall_sec": 0.0284,
+        "telemetry": {
+          "total_nodes": 0,
+          "qnodes": 2234,
+          "tt_probes": 2397,
+          "tt_hits": 1496,
+          "tt_cutoffs": 847,
+          "total_cutoffs": 1103,
+          "cutoff_move_1": 1030,
+          "cutoff_move_2": 52,
+          "cutoff_move_3": 10,
+          "cutoff_move_4plus": 11,
+          "cutoff_tt": 375,
+          "cutoff_killer1": 711,
+          "cutoff_killer2": 304,
+          "cutoff_history": 1073,
+          "cutoff_captures": 0,
+          "cutoff_quiet": 1103,
+          "eval_calls": 2234,
+          "max_seldepth": 7,
+          "movegen_time_ms": 1.5918,
+          "eval_time_ms": 0.1076
+        }
+      },
+      "metrics": {
+        "tt_hit_rate_pct": 62.41,
+        "first_move_cutoff_rate_pct": 93.38,
+        "overhead_pct": -17.2
+      }
+    }
+  ],
+  "summary": {
+    "aggregate": {
+      "total_c1_nodes": 5213848,
+      "total_c1_time_sec": 6.1021,
+      "c1_avg_nps": 854435,
+      "total_prof_nodes": 5213848,
+      "total_prof_time_sec": 6.4186,
+      "prof_avg_nps": 812302,
+      "instrumentation_overhead_pct": 5.19,
+      "effective_branching_factor_ebf": 6.557,
+      "tt_probes": 425540,
+      "tt_hits": 146167,
+      "tt_hit_rate_pct": 34.35,
+      "tt_cutoffs": 104208,
+      "tt_cutoff_rate_pct": 24.49,
+      "total_beta_cutoffs": 293019,
+      "first_move_cutoffs": 228735,
+      "first_move_cutoff_rate_pct": 78.06,
+      "cutoff_by_tt_move": 28975,
+      "cutoff_by_killer1": 45795,
+      "cutoff_by_killer2": 12611,
+      "cutoff_by_history": 62690,
+      "cutoff_by_captures": 229767,
+      "cutoff_by_quiet": 63252,
+      "total_qnodes": 3898715,
+      "qnode_ratio_pct": 74.78,
+      "total_eval_calls": 3898715,
+      "movegen_total_time_ms": 4637.24,
+      "eval_total_time_ms": 406.23
+    }
+  }
+}

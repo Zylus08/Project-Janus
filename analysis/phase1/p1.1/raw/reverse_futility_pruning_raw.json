@@ -1,0 +1,338 @@
+{
+  "r0_total_nodes": 16342285,
+  "r1_total_nodes": 9993931,
+  "node_reduction_pct": 38.85,
+  "speedup": 1.65,
+  "total_rfp_cutoffs": 814833,
+  "total_rfp_probes": 1127406,
+  "move_agreement_pct": 96.0,
+  "r0_positions": [
+    {
+      "id": "TAC_01",
+      "nodes": 378007,
+      "elapsed_sec": 0.3328953999953228,
+      "bestmove": "c4d5"
+    },
+    {
+      "id": "TAC_02",
+      "nodes": 1661458,
+      "elapsed_sec": 1.5802094000027864,
+      "bestmove": "e3e4"
+    },
+    {
+      "id": "TAC_03",
+      "nodes": 827298,
+      "elapsed_sec": 0.6965713000026881,
+      "bestmove": "b1d2"
+    },
+    {
+      "id": "TAC_04",
+      "nodes": 511744,
+      "elapsed_sec": 0.46309820000169566,
+      "bestmove": "d4c6"
+    },
+    {
+      "id": "TAC_05",
+      "nodes": 366796,
+      "elapsed_sec": 0.2800626000025659,
+      "bestmove": "c4d5"
+    },
+    {
+      "id": "TAC_06",
+      "nodes": 580213,
+      "elapsed_sec": 0.43901259999984177,
+      "bestmove": "e2f3"
+    },
+    {
+      "id": "TAC_07",
+      "nodes": 811357,
+      "elapsed_sec": 0.6953314999991562,
+      "bestmove": "d3b5"
+    },
+    {
+      "id": "TAC_08",
+      "nodes": 1372255,
+      "elapsed_sec": 1.2687645999976667,
+      "bestmove": "a1d1"
+    },
+    {
+      "id": "TAC_09",
+      "nodes": 740341,
+      "elapsed_sec": 0.6579486999980872,
+      "bestmove": "d1e2"
+    },
+    {
+      "id": "TAC_10",
+      "nodes": 974089,
+      "elapsed_sec": 0.8847427000000607,
+      "bestmove": "c2b3"
+    },
+    {
+      "id": "QPOS_01",
+      "nodes": 610393,
+      "elapsed_sec": 0.4980700000014622,
+      "bestmove": "c1g5"
+    },
+    {
+      "id": "QPOS_02",
+      "nodes": 330653,
+      "elapsed_sec": 0.21128280000266386,
+      "bestmove": "c1e3"
+    },
+    {
+      "id": "QPOS_03",
+      "nodes": 660556,
+      "elapsed_sec": 0.4290691999995033,
+      "bestmove": "c4d5"
+    },
+    {
+      "id": "QPOS_04",
+      "nodes": 508515,
+      "elapsed_sec": 0.3711946000039461,
+      "bestmove": "d8b6"
+    },
+    {
+      "id": "QPOS_05",
+      "nodes": 278697,
+      "elapsed_sec": 0.19290750000072876,
+      "bestmove": "c6c5"
+    },
+    {
+      "id": "CLSD_01",
+      "nodes": 443007,
+      "elapsed_sec": 0.39746809999633115,
+      "bestmove": "f1d3"
+    },
+    {
+      "id": "CLSD_02",
+      "nodes": 679767,
+      "elapsed_sec": 0.5677885999975842,
+      "bestmove": "f3f4"
+    },
+    {
+      "id": "CLSD_03",
+      "nodes": 732580,
+      "elapsed_sec": 0.5946917999972356,
+      "bestmove": "c6c5"
+    },
+    {
+      "id": "CLSD_04",
+      "nodes": 1022179,
+      "elapsed_sec": 0.9874778000012157,
+      "bestmove": "d1c2"
+    },
+    {
+      "id": "CLSD_05",
+      "nodes": 113548,
+      "elapsed_sec": 0.0935198999941349,
+      "bestmove": "g1e2"
+    },
+    {
+      "id": "KATK_01",
+      "nodes": 791243,
+      "elapsed_sec": 0.5815760999976192,
+      "bestmove": "d3h7"
+    },
+    {
+      "id": "KATK_02",
+      "nodes": 745002,
+      "elapsed_sec": 0.609118699998362,
+      "bestmove": "g5f4"
+    },
+    {
+      "id": "KATK_03",
+      "nodes": 660554,
+      "elapsed_sec": 0.5384518000064418,
+      "bestmove": "a2b3"
+    },
+    {
+      "id": "KATK_04",
+      "nodes": 203114,
+      "elapsed_sec": 0.16270049999729963,
+      "bestmove": "c8d7"
+    },
+    {
+      "id": "KATK_05",
+      "nodes": 338919,
+      "elapsed_sec": 0.21550589999969816,
+      "bestmove": "c3a4"
+    }
+  ],
+  "r1_positions": [
+    {
+      "id": "TAC_01",
+      "nodes": 197958,
+      "elapsed_sec": 0.11104599999816855,
+      "bestmove": "c4d5",
+      "rfp_cutoffs": 34855
+    },
+    {
+      "id": "TAC_02",
+      "nodes": 1145160,
+      "elapsed_sec": 1.124176900004386,
+      "bestmove": "e3e4",
+      "rfp_cutoffs": 41989
+    },
+    {
+      "id": "TAC_03",
+      "nodes": 451797,
+      "elapsed_sec": 0.36569369999779155,
+      "bestmove": "b1d2",
+      "rfp_cutoffs": 34624
+    },
+    {
+      "id": "TAC_04",
+      "nodes": 271403,
+      "elapsed_sec": 0.27689249999821186,
+      "bestmove": "d4c6",
+      "rfp_cutoffs": 17534
+    },
+    {
+      "id": "TAC_05",
+      "nodes": 214067,
+      "elapsed_sec": 0.15041370000108145,
+      "bestmove": "c4d5",
+      "rfp_cutoffs": 23189
+    },
+    {
+      "id": "TAC_06",
+      "nodes": 288275,
+      "elapsed_sec": 0.2194002000032924,
+      "bestmove": "e2f3",
+      "rfp_cutoffs": 41811
+    },
+    {
+      "id": "TAC_07",
+      "nodes": 252937,
+      "elapsed_sec": 0.17936550000013085,
+      "bestmove": "d1c2",
+      "rfp_cutoffs": 56039
+    },
+    {
+      "id": "TAC_08",
+      "nodes": 1019023,
+      "elapsed_sec": 0.9994747999953688,
+      "bestmove": "a1d1",
+      "rfp_cutoffs": 44251
+    },
+    {
+      "id": "TAC_09",
+      "nodes": 571104,
+      "elapsed_sec": 0.4866824999990058,
+      "bestmove": "d1e2",
+      "rfp_cutoffs": 27621
+    },
+    {
+      "id": "TAC_10",
+      "nodes": 636547,
+      "elapsed_sec": 0.5861519999962184,
+      "bestmove": "c2b3",
+      "rfp_cutoffs": 55099
+    },
+    {
+      "id": "QPOS_01",
+      "nodes": 334688,
+      "elapsed_sec": 0.2517851999946288,
+      "bestmove": "c1g5",
+      "rfp_cutoffs": 32285
+    },
+    {
+      "id": "QPOS_02",
+      "nodes": 132177,
+      "elapsed_sec": 0.10705769999913173,
+      "bestmove": "c1e3",
+      "rfp_cutoffs": 14233
+    },
+    {
+      "id": "QPOS_03",
+      "nodes": 368151,
+      "elapsed_sec": 0.22922980000294046,
+      "bestmove": "c4d5",
+      "rfp_cutoffs": 51132
+    },
+    {
+      "id": "QPOS_04",
+      "nodes": 344319,
+      "elapsed_sec": 0.2719403000010061,
+      "bestmove": "d8b6",
+      "rfp_cutoffs": 34035
+    },
+    {
+      "id": "QPOS_05",
+      "nodes": 188006,
+      "elapsed_sec": 0.14102309999725549,
+      "bestmove": "c6c5",
+      "rfp_cutoffs": 18496
+    },
+    {
+      "id": "CLSD_01",
+      "nodes": 291714,
+      "elapsed_sec": 0.23364440000295872,
+      "bestmove": "f1d3",
+      "rfp_cutoffs": 25430
+    },
+    {
+      "id": "CLSD_02",
+      "nodes": 462701,
+      "elapsed_sec": 0.3934083000058308,
+      "bestmove": "f3f4",
+      "rfp_cutoffs": 42565
+    },
+    {
+      "id": "CLSD_03",
+      "nodes": 529332,
+      "elapsed_sec": 0.43745469999703346,
+      "bestmove": "c6c5",
+      "rfp_cutoffs": 29928
+    },
+    {
+      "id": "CLSD_04",
+      "nodes": 665540,
+      "elapsed_sec": 0.6258965999950306,
+      "bestmove": "d1c2",
+      "rfp_cutoffs": 40384
+    },
+    {
+      "id": "CLSD_05",
+      "nodes": 77809,
+      "elapsed_sec": 0.07373979999829317,
+      "bestmove": "g1e2",
+      "rfp_cutoffs": 4850
+    },
+    {
+      "id": "KATK_01",
+      "nodes": 389050,
+      "elapsed_sec": 0.16151189999800408,
+      "bestmove": "d3h7",
+      "rfp_cutoffs": 58263
+    },
+    {
+      "id": "KATK_02",
+      "nodes": 495472,
+      "elapsed_sec": 0.4109985000031884,
+      "bestmove": "g5f4",
+      "rfp_cutoffs": 30606
+    },
+    {
+      "id": "KATK_03",
+      "nodes": 467710,
+      "elapsed_sec": 0.3771391999980551,
+      "bestmove": "a2b3",
+      "rfp_cutoffs": 23605
+    },
+    {
+      "id": "KATK_04",
+      "nodes": 139484,
+      "elapsed_sec": 0.09858639999583829,
+      "bestmove": "c8d7",
+      "rfp_cutoffs": 17033
+    },
+    {
+      "id": "KATK_05",
+      "nodes": 59507,
+      "elapsed_sec": 0.04052709999814397,
+      "bestmove": "c3a4",
+      "rfp_cutoffs": 14976
+    }
+  ]
+}

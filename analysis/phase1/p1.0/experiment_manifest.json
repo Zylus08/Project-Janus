@@ -1,0 +1,187 @@
+{
+  "milestone": "Phase 1, Milestone P1.0",
+  "program": "Classical Engine Supremacy Program",
+  "worktree": "E:\\ChessXML\\project-janus-phase1",
+  "branch": "phase1/classical-janus",
+  "parent_commit": "2b24d13 (Milestone v0.57 Classical Baseline Freeze)",
+  "timestamp_iso": "2026-11-09T08:20:00Z",
+  "system_environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "machine": "AMD64",
+    "python_version": "3.13.2",
+    "msvc_version": "MSVC 2022 v19.44 / BuildTools (x64)",
+    "compiler_flags": "/O2 /Ot /Oi /std:c++17 /EHsc",
+    "cpu_target": "x86-64-avx2"
+  },
+  "engine_lineages": {
+    "frozen_production_baseline_c1": {
+      "source": "analysis/v0.56/native/janus_native.cpp",
+      "sha256": "2321f470d7b1eeb10209205f6ba81b8bf2c76ab657d4c0b8e4a2e20b956d9a82",
+      "binary": "analysis/v0.56/native/janus_native_engine.exe",
+      "binary_sha256": "a4f9d9d18b549d29b2e6740ac90d90d39167d92d3846b95fc0c4f5b966add83f"
+    },
+    "janus_classical_x_lineage": {
+      "source": "engine/classical_x/janus_classical_x.cpp",
+      "sha256": "6d1898c10588823ec6002631584233bfe5eb7426881abd88c39f79a6aee6ecde",
+      "binary": "engine/classical_x/janus_classical_x.exe",
+      "binary_sha256": "eaa67dc83bac66277d919d9b702cb09b81d5915d440b959bbee937425b843000",
+      "dll": "engine/classical_x/janus_classical_x.dll",
+      "dll_sha256": "1204b2dce31cb67a8c79f119aa57b96a88e8d305bf602ef58cc5f41905630af5"
+    },
+    "stockfish_reference": {
+      "binary": "E:/ChessXML/tools/stockfish/stockfish.exe",
+      "sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "version": "Stockfish 19 (g++ 15.2.0, x86-64-avxvnni, NNUE nn-1a298aa575a0.nnue)"
+    }
+  },
+  "search_profiling_results": {
+    "aggregate": {
+      "total_c1_nodes": 5213848,
+      "total_c1_time_sec": 6.1021,
+      "c1_avg_nps": 854435,
+      "total_prof_nodes": 5213848,
+      "total_prof_time_sec": 6.4186,
+      "prof_avg_nps": 812302,
+      "instrumentation_overhead_pct": 5.19,
+      "effective_branching_factor_ebf": 6.557,
+      "tt_probes": 425540,
+      "tt_hits": 146167,
+      "tt_hit_rate_pct": 34.35,
+      "tt_cutoffs": 104208,
+      "tt_cutoff_rate_pct": 24.49,
+      "total_beta_cutoffs": 293019,
+      "first_move_cutoffs": 228735,
+      "first_move_cutoff_rate_pct": 78.06,
+      "cutoff_by_tt_move": 28975,
+      "cutoff_by_killer1": 45795,
+      "cutoff_by_killer2": 12611,
+      "cutoff_by_history": 62690,
+      "cutoff_by_captures": 229767,
+      "cutoff_by_quiet": 63252,
+      "total_qnodes": 3898715,
+      "qnode_ratio_pct": 74.78,
+      "total_eval_calls": 3898715,
+      "movegen_total_time_ms": 4637.24,
+      "eval_total_time_ms": 406.23
+    }
+  },
+  "perft_qualification_results": {
+    "suite_positions": 6,
+    "status": "QUALIFIED (100% Bit-Exact Match across 24 Depths)",
+    "total_nodes_validated": 16564718
+  },
+  "benchmark_reproduction_results": {
+    "v0.57_historical_reproduced": {
+      "games": 20,
+      "score_c1": "0.0 / 20.0 (0.0%)",
+      "wdl": "0W - 0D - 20L",
+      "status": "100% REPRODUCED"
+    },
+    "live_unrestricted_blitz": {
+      "games": 6,
+      "time_control": "3.0s + 0.1s",
+      "score_c1": "0.0 / 6.0 (0.0%)",
+      "wdl": "0W - 0D - 6L",
+      "status": "VERIFIED (0 Forfeits, 0 Illegal Moves)"
+    },
+    "live_slower_diagnostic": {
+      "games": 2,
+      "time_control": "10.0s + 0.1s",
+      "score_c1": "0.0 / 2.0 (0.0%)",
+      "wdl": "0W - 0D - 2L",
+      "status": "VERIFIED (0 Forfeits, 0 Illegal Moves)"
+    }
+  },
+  "search_efficiency_gap_results": {
+    "total_positions": 50,
+    "total_agreed_moves": 13,
+    "move_agreement_rate_pct": 26.0,
+    "c1_average_depth": 7.0,
+    "sf_average_depth": 11.76,
+    "sf_average_seldepth": 16.66,
+    "c1_total_nodes": 22657634,
+    "sf_total_nodes": 1085614,
+    "c1_avg_nodes_per_position": 453152,
+    "sf_avg_nodes_per_position": 21712,
+    "node_volume_ratio_c1_vs_sf": 20.87,
+    "c1_total_time_sec": 39.02,
+    "sf_total_time_sec": 3.87,
+    "c1_avg_nps": 580606,
+    "sf_avg_nps": 280542,
+    "category_breakdown": {
+      "Tactics": {
+        "agreed": 6,
+        "total": 10,
+        "rate_pct": 60.0
+      },
+      "Quiet": {
+        "agreed": 1,
+        "total": 5,
+        "rate_pct": 20.0
+      },
+      "Closed": {
+        "agreed": 0,
+        "total": 5,
+        "rate_pct": 0.0
+      },
+      "Open": {
+        "agreed": 1,
+        "total": 5,
+        "rate_pct": 20.0
+      },
+      "KingAttack": {
+        "agreed": 2,
+        "total": 5,
+        "rate_pct": 40.0
+      },
+      "Endgame": {
+        "agreed": 1,
+        "total": 10,
+        "rate_pct": 10.0
+      },
+      "Defensive": {
+        "agreed": 1,
+        "total": 5,
+        "rate_pct": 20.0
+      },
+      "Candidates": {
+        "agreed": 1,
+        "total": 5,
+        "rate_pct": 20.0
+      }
+    }
+  },
+  "classical_evaluation_gap_results": {
+    "total_positions": 50,
+    "average_eval_error_vs_sf19_cp": 132.48,
+    "average_static_to_search_shift_cp": 597.88,
+    "category_eval_errors_cp": {
+      "Tactics": 95.4,
+      "Quiet": 17.2,
+      "Closed": 184.0,
+      "Open": 35.8,
+      "KingAttack": 288.0,
+      "Endgame": 169.2,
+      "Defensive": 233.6,
+      "Candidates": 37.0
+    },
+    "category_static_to_search_shift_cp": {
+      "Tactics": 28.0,
+      "Quiet": 6.0,
+      "Closed": 7.0,
+      "Open": 20.0,
+      "KingAttack": 94.0,
+      "Endgame": 17.0,
+      "Defensive": 5738.8,
+      "Candidates": 23.0
+    }
+  },
+  "governing_rules_certification": {
+    "rule_1_strictly_non_ml": "CERTIFIED (Zero neural networks, NNUE, RL, or learned weights in Janus Classical X)",
+    "rule_2_preserve_research": "CERTIFIED (Clean branch base 2b24d13 in isolated worktree; research HEAD 6500b3f untouched)",
+    "rule_3_stockfish_reference": "CERTIFIED (Pinned Stockfish 19 sha256 45bc8e49..., GPLv3 boundaries respected)",
+    "rule_4_scientific_rigor": "CERTIFIED (Unrestricted opponent testing, exact Clopper-Pearson CIs, 0 handwaving)",
+    "rule_5_git_safety": "CERTIFIED (Zero git push executions, local worktree commits only)"
+  }
+}

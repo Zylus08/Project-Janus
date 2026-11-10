@@ -1,0 +1,36 @@
+{
+  "pawn_hash_correctness": {
+    "regular_nodes": 95521,
+    "regular_score": -170,
+    "ep_nodes": 14251,
+    "pawn_hash_stable": true
+  },
+  "benchmarks": {
+    "X7": {
+      "variant": "X7",
+      "positions": 5,
+      "total_nodes": 7743488,
+      "elapsed_sec": 5.15351414680481,
+      "avg_depth": 13.0,
+      "effective_nps": 1502564
+    },
+    "X9": {
+      "variant": "X9",
+      "positions": 5,
+      "total_nodes": 7460864,
+      "elapsed_sec": 5.296158075332642,
+      "avg_depth": 12.8,
+      "effective_nps": 1408731
+    },
+    "X10": {
+      "variant": "X10",
+      "positions": 5,
+      "total_nodes": 7606272,
+      "elapsed_sec": 5.1971235275268555,
+      "avg_depth": 12.8,
+      "effective_nps": 1463554
+    }
+  },
+  "depth_delta_x10_vs_x7": -0.1999999999999993,
+  "nps_ratio_x10_vs_x7": 0.9740377115384103
+}

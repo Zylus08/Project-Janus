@@ -1,0 +1,843 @@
+{
+  "fixed_depth": {
+    "B0": {
+      "name": "Frozen X7 Baseline",
+      "total_nodes": 674879,
+      "elapsed_sec": 0.717,
+      "nps": 941554,
+      "se_probes": 0,
+      "se_extended": 0,
+      "multicut_cutoffs": 0,
+      "probcut_probes": 0,
+      "probcut_cutoffs": 0,
+      "capthist_cutoffs": 0,
+      "countermove_cutoffs": 0,
+      "positions": [
+        {
+          "pos": "Tactical_OperaMate",
+          "nodes": 13234,
+          "score": 618,
+          "bestmove": "b5d7",
+          "solved": true
+        },
+        {
+          "pos": "Tactical_GreekGift",
+          "nodes": 52109,
+          "score": 43,
+          "bestmove": "d3h7",
+          "solved": true
+        },
+        {
+          "pos": "Tactical_PawnBreak",
+          "nodes": 146927,
+          "score": 359,
+          "bestmove": "e1g1",
+          "solved": false
+        },
+        {
+          "pos": "Tactical_Pinning",
+          "nodes": 95633,
+          "score": 56,
+          "bestmove": "d1c2",
+          "solved": false
+        },
+        {
+          "pos": "Strategic_Startpos",
+          "nodes": 52122,
+          "score": 34,
+          "bestmove": "d2d4",
+          "solved": false
+        },
+        {
+          "pos": "Strategic_KiwiPete",
+          "nodes": 247595,
+          "score": 14,
+          "bestmove": "e2a6",
+          "solved": false
+        },
+        {
+          "pos": "Closed_French",
+          "nodes": 40853,
+          "score": -28,
+          "bestmove": "e4d5",
+          "solved": true
+        },
+        {
+          "pos": "Endgame_KPK",
+          "nodes": 6365,
+          "score": 149,
+          "bestmove": "e3d4",
+          "solved": false
+        },
+        {
+          "pos": "Endgame_Rook",
+          "nodes": 18778,
+          "score": 23,
+          "bestmove": "b4f4",
+          "solved": true
+        },
+        {
+          "pos": "Zugzwang_Fine70",
+          "nodes": 1263,
+          "score": 124,
+          "bestmove": "a1a2",
+          "solved": false
+        }
+      ]
+    },
+    "B2": {
+      "name": "X7 + Countermoves",
+      "total_nodes": 681150,
+      "elapsed_sec": 0.716,
+      "nps": 951299,
+      "se_probes": 0,
+      "se_extended": 0,
+      "multicut_cutoffs": 0,
+      "probcut_probes": 0,
+      "probcut_cutoffs": 0,
+      "capthist_cutoffs": 0,
+      "countermove_cutoffs": 11175,
+      "positions": [
+        {
+          "pos": "Tactical_OperaMate",
+          "nodes": 13234,
+          "score": 618,
+          "bestmove": "b5d7",
+          "solved": true
+        },
+        {
+          "pos": "Tactical_GreekGift",
+          "nodes": 52094,
+          "score": 43,
+          "bestmove": "d3h7",
+          "solved": true
+        },
+        {
+          "pos": "Tactical_PawnBreak",
+          "nodes": 148401,
+          "score": 359,
+          "bestmove": "e1g1",
+          "solved": false
+        },
+        {
+          "pos": "Tactical_Pinning",
+          "nodes": 99439,
+          "score": 66,
+          "bestmove": "e2d3",
+          "solved": false
+        },
+        {
+          "pos": "Strategic_Startpos",
+          "nodes": 53379,
+          "score": 34,
+          "bestmove": "d2d4",
+          "solved": false
+        },
+        {
+          "pos": "Strategic_KiwiPete",
+          "nodes": 247595,
+          "score": 14,
+          "bestmove": "e2a6",
+          "solved": false
+        },
+        {
+          "pos": "Closed_French",
+          "nodes": 40385,
+          "score": -28,
+          "bestmove": "e4d5",
+          "solved": true
+        },
+        {
+          "pos": "Endgame_KPK",
+          "nodes": 6369,
+          "score": 149,
+          "bestmove": "e3d4",
+          "solved": false
+        },
+        {
+          "pos": "Endgame_Rook",
+          "nodes": 18991,
+          "score": 23,
+          "bestmove": "b4f4",
+          "solved": true
+        },
+        {
+          "pos": "Zugzwang_Fine70",
+          "nodes": 1263,
+          "score": 124,
+          "bestmove": "a1a2",
+          "solved": false
+        }
+      ]
+    },
+    "B3": {
+      "name": "X7 + CapHist & Countermoves",
+      "total_nodes": 848446,
+      "elapsed_sec": 0.964,
+      "nps": 879976,
+      "se_probes": 0,
+      "se_extended": 0,
+      "multicut_cutoffs": 0,
+      "probcut_probes": 0,
+      "probcut_cutoffs": 0,
+      "capthist_cutoffs": 21442,
+      "countermove_cutoffs": 11307,
+      "positions": [
+        {
+          "pos": "Tactical_OperaMate",
+          "nodes": 13171,
+          "score": 618,
+          "bestmove": "b5d7",
+          "solved": true
+        },
+        {
+          "pos": "Tactical_GreekGift",
+          "nodes": 49691,
+          "score": 43,
+          "bestmove": "d3h7",
+          "solved": true
+        },
+        {
+          "pos": "Tactical_PawnBreak",
+          "nodes": 176477,
+          "score": 359,
+          "bestmove": "c4d5",
+          "solved": true
+        },
+        {
+          "pos": "Tactical_Pinning",
+          "nodes": 101379,
+          "score": 66,
+          "bestmove": "e2d3",
+          "solved": false
+        },
+        {
+          "pos": "Strategic_Startpos",
+          "nodes": 53410,
+          "score": 34,
+          "bestmove": "d2d4",
+          "solved": false
+        },
+        {
+          "pos": "Strategic_KiwiPete",
+          "nodes": 389593,
+          "score": 14,
+          "bestmove": "e2a6",
+          "solved": false
+        },
+        {
+          "pos": "Closed_French",
+          "nodes": 37475,
+          "score": -28,
+          "bestmove": "e4d5",
+          "solved": true
+        },
+        {
+          "pos": "Endgame_KPK",
+          "nodes": 6369,
+          "score": 149,
+          "bestmove": "e3d4",
+          "solved": false
+        },
+        {
+          "pos": "Endgame_Rook",
+          "nodes": 19618,
+          "score": 23,
+          "bestmove": "b4f4",
+          "solved": true
+        },
+        {
+          "pos": "Zugzwang_Fine70",
+          "nodes": 1263,
+          "score": 124,
+          "bestmove": "a1a2",
+          "solved": false
+        }
+      ]
+    },
+    "B4": {
+      "name": "X7 + Singular Extensions",
+      "total_nodes": 738971,
+      "elapsed_sec": 0.813,
+      "nps": 909457,
+      "se_probes": 267,
+      "se_extended": 33,
+      "multicut_cutoffs": 0,
+      "probcut_probes": 0,
+      "probcut_cutoffs": 0,
+      "capthist_cutoffs": 0,
+      "countermove_cutoffs": 0,
+      "positions": [
+        {
+          "pos": "Tactical_OperaMate",
+          "nodes": 13485,
+          "score": 618,
+          "bestmove": "b5d7",
+          "solved": true
+        },
+        {
+          "pos": "Tactical_GreekGift",
+          "nodes": 57806,
+          "score": 44,
+          "bestmove": "d3h7",
+          "solved": true
+        },
+        {
+          "pos": "Tactical_PawnBreak",
+          "nodes": 158201,
+          "score": 359,
+          "bestmove": "e1g1",
+          "solved": false
+        },
+        {
+          "pos": "Tactical_Pinning",
+          "nodes": 107888,
+          "score": 56,
+          "bestmove": "d1c2",
+          "solved": false
+        },
+        {
+          "pos": "Strategic_Startpos",
+          "nodes": 71760,
+          "score": 13,
+          "bestmove": "g1f3",
+          "solved": false
+        },
+        {
+          "pos": "Strategic_KiwiPete",
+          "nodes": 251919,
+          "score": 7,
+          "bestmove": "d5e6",
+          "solved": true
+        },
+        {
+          "pos": "Closed_French",
+          "nodes": 44600,
+          "score": -28,
+          "bestmove": "e4d5",
+          "solved": true
+        },
+        {
+          "pos": "Endgame_KPK",
+          "nodes": 6475,
+          "score": 149,
+          "bestmove": "e3d4",
+          "solved": false
+        },
+        {
+          "pos": "Endgame_Rook",
+          "nodes": 25529,
+          "score": 19,
+          "bestmove": "b4f4",
+          "solved": true
+        },
+        {
+          "pos": "Zugzwang_Fine70",
+          "nodes": 1308,
+          "score": 124,
+          "bestmove": "a1a2",
+          "solved": false
+        }
+      ]
+    },
+    "B5": {
+      "name": "X7 + Singular Extensions + Multi-Cut",
+      "total_nodes": 712311,
+      "elapsed_sec": 0.74,
+      "nps": 962977,
+      "se_probes": 267,
+      "se_extended": 33,
+      "multicut_cutoffs": 68,
+      "probcut_probes": 0,
+      "probcut_cutoffs": 0,
+      "capthist_cutoffs": 0,
+      "countermove_cutoffs": 0,
+      "positions": [
+        {
+          "pos": "Tactical_OperaMate",
+          "nodes": 12929,
+          "score": 618,
+          "bestmove": "b5d7",
+          "solved": true
+        },
+        {
+          "pos": "Tactical_GreekGift",
+          "nodes": 47565,
+          "score": 44,
+          "bestmove": "d3h7",
+          "solved": true
+        },
+        {
+          "pos": "Tactical_PawnBreak",
+          "nodes": 158201,
+          "score": 359,
+          "bestmove": "e1g1",
+          "solved": false
+        },
+        {
+          "pos": "Tactical_Pinning",
+          "nodes": 98961,
+          "score": 56,
+          "bestmove": "d1c2",
+          "solved": false
+        },
+        {
+          "pos": "Strategic_Startpos",
+          "nodes": 69737,
+          "score": 13,
+          "bestmove": "g1f3",
+          "solved": false
+        },
+        {
+          "pos": "Strategic_KiwiPete",
+          "nodes": 249966,
+          "score": 7,
+          "bestmove": "d5e6",
+          "solved": true
+        },
+        {
+          "pos": "Closed_French",
+          "nodes": 42635,
+          "score": -28,
+          "bestmove": "e4d5",
+          "solved": true
+        },
+        {
+          "pos": "Endgame_KPK",
+          "nodes": 5938,
+          "score": 149,
+          "bestmove": "e3d4",
+          "solved": false
+        },
+        {
+          "pos": "Endgame_Rook",
+          "nodes": 25071,
+          "score": 19,
+          "bestmove": "b4f4",
+          "solved": true
+        },
+        {
+          "pos": "Zugzwang_Fine70",
+          "nodes": 1308,
+          "score": 124,
+          "bestmove": "a1a2",
+          "solved": false
+        }
+      ]
+    },
+    "B6": {
+      "name": "X7 + Conservative ProbCut",
+      "total_nodes": 647046,
+      "elapsed_sec": 0.76,
+      "nps": 850933,
+      "se_probes": 0,
+      "se_extended": 0,
+      "multicut_cutoffs": 0,
+      "probcut_probes": 700,
+      "probcut_cutoffs": 187,
+      "capthist_cutoffs": 0,
+      "countermove_cutoffs": 0,
+      "positions": [
+        {
+          "pos": "Tactical_OperaMate",
+          "nodes": 12437,
+          "score": 618,
+          "bestmove": "b5d7",
+          "solved": true
+        },
+        {
+          "pos": "Tactical_GreekGift",
+          "nodes": 47239,
+          "score": 43,
+          "bestmove": "d3h7",
+          "solved": true
+        },
+        {
+          "pos": "Tactical_PawnBreak",
+          "nodes": 152225,
+          "score": 359,
+          "bestmove": "e1g1",
+          "solved": false
+        },
+        {
+          "pos": "Tactical_Pinning",
+          "nodes": 96424,
+          "score": 56,
+          "bestmove": "d1c2",
+          "solved": false
+        },
+        {
+          "pos": "Strategic_Startpos",
+          "nodes": 52122,
+          "score": 34,
+          "bestmove": "d2d4",
+          "solved": false
+        },
+        {
+          "pos": "Strategic_KiwiPete",
+          "nodes": 216508,
+          "score": 14,
+          "bestmove": "e2a6",
+          "solved": false
+        },
+        {
+          "pos": "Closed_French",
+          "nodes": 42517,
+          "score": -28,
+          "bestmove": "e4d5",
+          "solved": true
+        },
+        {
+          "pos": "Endgame_KPK",
+          "nodes": 6365,
+          "score": 149,
+          "bestmove": "e3d4",
+          "solved": false
+        },
+        {
+          "pos": "Endgame_Rook",
+          "nodes": 19946,
+          "score": 23,
+          "bestmove": "b4f4",
+          "solved": true
+        },
+        {
+          "pos": "Zugzwang_Fine70",
+          "nodes": 1263,
+          "score": 124,
+          "bestmove": "a1a2",
+          "solved": false
+        }
+      ]
+    },
+    "B7": {
+      "name": "Full Frozen X8",
+      "total_nodes": 813523,
+      "elapsed_sec": 0.898,
+      "nps": 906385,
+      "se_probes": 264,
+      "se_extended": 33,
+      "multicut_cutoffs": 59,
+      "probcut_probes": 745,
+      "probcut_cutoffs": 196,
+      "capthist_cutoffs": 23627,
+      "countermove_cutoffs": 12848,
+      "positions": [
+        {
+          "pos": "Tactical_OperaMate",
+          "nodes": 12011,
+          "score": 618,
+          "bestmove": "b5d7",
+          "solved": true
+        },
+        {
+          "pos": "Tactical_GreekGift",
+          "nodes": 45589,
+          "score": 44,
+          "bestmove": "d3h7",
+          "solved": true
+        },
+        {
+          "pos": "Tactical_PawnBreak",
+          "nodes": 216151,
+          "score": 355,
+          "bestmove": "e1g1",
+          "solved": false
+        },
+        {
+          "pos": "Tactical_Pinning",
+          "nodes": 115386,
+          "score": 48,
+          "bestmove": "d1c2",
+          "solved": false
+        },
+        {
+          "pos": "Strategic_Startpos",
+          "nodes": 70928,
+          "score": 13,
+          "bestmove": "g1f3",
+          "solved": false
+        },
+        {
+          "pos": "Strategic_KiwiPete",
+          "nodes": 280729,
+          "score": 7,
+          "bestmove": "d5e6",
+          "solved": true
+        },
+        {
+          "pos": "Closed_French",
+          "nodes": 40867,
+          "score": -28,
+          "bestmove": "e4d5",
+          "solved": true
+        },
+        {
+          "pos": "Endgame_KPK",
+          "nodes": 5942,
+          "score": 149,
+          "bestmove": "e3d4",
+          "solved": false
+        },
+        {
+          "pos": "Endgame_Rook",
+          "nodes": 24612,
+          "score": 19,
+          "bestmove": "b4f4",
+          "solved": true
+        },
+        {
+          "pos": "Zugzwang_Fine70",
+          "nodes": 1308,
+          "score": 124,
+          "bestmove": "a1a2",
+          "solved": false
+        }
+      ]
+    }
+  },
+  "fixed_time": {
+    "time_500ms": {
+      "B0": {
+        "name": "Frozen X7 Baseline",
+        "avg_completed_depth": 13.5,
+        "total_nodes_searched": 9904128,
+        "depths": [
+          13,
+          10,
+          9,
+          9,
+          11,
+          8,
+          12,
+          22,
+          15,
+          26
+        ]
+      },
+      "B2": {
+        "name": "X7 + Countermoves",
+        "avg_completed_depth": 13.7,
+        "total_nodes_searched": 9299968,
+        "depths": [
+          13,
+          10,
+          9,
+          9,
+          11,
+          8,
+          12,
+          22,
+          15,
+          28
+        ]
+      },
+      "B3": {
+        "name": "X7 + CapHist & Countermoves",
+        "avg_completed_depth": 13.5,
+        "total_nodes_searched": 9324544,
+        "depths": [
+          13,
+          10,
+          8,
+          9,
+          11,
+          7,
+          12,
+          22,
+          15,
+          28
+        ]
+      },
+      "B4": {
+        "name": "X7 + Singular Extensions",
+        "avg_completed_depth": 12.8,
+        "total_nodes_searched": 9713664,
+        "depths": [
+          12,
+          9,
+          9,
+          9,
+          11,
+          8,
+          11,
+          20,
+          14,
+          25
+        ]
+      },
+      "B5": {
+        "name": "X7 + Singular Extensions + Multi-Cut",
+        "avg_completed_depth": 12.9,
+        "total_nodes_searched": 9476096,
+        "depths": [
+          12,
+          9,
+          9,
+          10,
+          11,
+          7,
+          11,
+          21,
+          13,
+          26
+        ]
+      },
+      "B6": {
+        "name": "X7 + Conservative ProbCut",
+        "avg_completed_depth": 13.4,
+        "total_nodes_searched": 9633792,
+        "depths": [
+          13,
+          10,
+          9,
+          9,
+          11,
+          8,
+          11,
+          22,
+          15,
+          26
+        ]
+      },
+      "B7": {
+        "name": "Full Frozen X8",
+        "avg_completed_depth": 12.5,
+        "total_nodes_searched": 8984576,
+        "depths": [
+          13,
+          9,
+          8,
+          8,
+          10,
+          7,
+          11,
+          20,
+          13,
+          26
+        ]
+      }
+    },
+    "time_1000ms": {
+      "B0": {
+        "name": "Frozen X7 Baseline",
+        "avg_completed_depth": 14.5,
+        "total_nodes_searched": 19181568,
+        "depths": [
+          14,
+          10,
+          11,
+          9,
+          12,
+          9,
+          13,
+          24,
+          17,
+          26
+        ]
+      },
+      "B2": {
+        "name": "X7 + Countermoves",
+        "avg_completed_depth": 14.8,
+        "total_nodes_searched": 19263488,
+        "depths": [
+          14,
+          10,
+          10,
+          9,
+          12,
+          9,
+          13,
+          26,
+          17,
+          28
+        ]
+      },
+      "B3": {
+        "name": "X7 + CapHist & Countermoves",
+        "avg_completed_depth": 13.8,
+        "total_nodes_searched": 11993088,
+        "depths": [
+          14,
+          10,
+          9,
+          9,
+          11,
+          7,
+          12,
+          23,
+          15,
+          28
+        ]
+      },
+      "B4": {
+        "name": "X7 + Singular Extensions",
+        "avg_completed_depth": 12.9,
+        "total_nodes_searched": 10862592,
+        "depths": [
+          12,
+          9,
+          9,
+          9,
+          11,
+          8,
+          11,
+          20,
+          14,
+          26
+        ]
+      },
+      "B5": {
+        "name": "X7 + Singular Extensions + Multi-Cut",
+        "avg_completed_depth": 13.1,
+        "total_nodes_searched": 10760192,
+        "depths": [
+          13,
+          9,
+          9,
+          10,
+          11,
+          8,
+          11,
+          21,
+          13,
+          26
+        ]
+      },
+      "B6": {
+        "name": "X7 + Conservative ProbCut",
+        "avg_completed_depth": 13.5,
+        "total_nodes_searched": 10541056,
+        "depths": [
+          14,
+          10,
+          9,
+          9,
+          11,
+          8,
+          11,
+          22,
+          15,
+          26
+        ]
+      },
+      "B7": {
+        "name": "Full Frozen X8",
+        "avg_completed_depth": 12.6,
+        "total_nodes_searched": 9934848,
+        "depths": [
+          14,
+          9,
+          8,
+          8,
+          10,
+          7,
+          11,
+          20,
+          13,
+          26
+        ]
+      }
+    }
+  }
+}

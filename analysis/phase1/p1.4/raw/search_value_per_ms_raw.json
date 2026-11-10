@@ -1,0 +1,3410 @@
+{
+  "tc_100ms": {
+    "B0": {
+      "name": "Frozen X7 Baseline",
+      "avg_depth": 8.9,
+      "total_nodes": 2111488,
+      "effective_nps": 1055744,
+      "tactical_accuracy_pct": 50.0,
+      "correct_solutions": "9/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 9,
+          "nodes": 98304,
+          "score": 618,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 7,
+          "nodes": 83968,
+          "score": 43,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 6,
+          "nodes": 83968,
+          "score": 358,
+          "bestmove": "e1g1",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 8,
+          "nodes": 245760,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 7,
+          "nodes": 100352,
+          "score": 34,
+          "bestmove": "d2d4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 5,
+          "nodes": 67584,
+          "score": 42,
+          "bestmove": "d5e6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 7,
+          "nodes": 77824,
+          "score": 70,
+          "bestmove": "f1b5",
+          "correct": false
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 7,
+          "nodes": 83968,
+          "score": -22,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 8,
+          "nodes": 86016,
+          "score": -39,
+          "bestmove": "e4d5",
+          "correct": true
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 6,
+          "nodes": 73728,
+          "score": 76,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 6,
+          "nodes": 63488,
+          "score": 68,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 6,
+          "nodes": 77824,
+          "score": 70,
+          "bestmove": "e1g1",
+          "correct": true
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 7,
+          "nodes": 83968,
+          "score": 81,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 6,
+          "nodes": 69632,
+          "score": 40,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 7,
+          "nodes": 88064,
+          "score": -22,
+          "bestmove": "c4d5",
+          "correct": false
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 10,
+          "nodes": 94208,
+          "score": 974,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 14,
+          "nodes": 137216,
+          "score": 532,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 11,
+          "nodes": 131072,
+          "score": 10,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 16,
+          "nodes": 180224,
+          "score": 228,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 25,
+          "nodes": 184320,
+          "score": 120,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    },
+    "B2": {
+      "name": "X7 + Countermoves",
+      "avg_depth": 8.8,
+      "total_nodes": 2061327,
+      "effective_nps": 1030663,
+      "tactical_accuracy_pct": 44.4,
+      "correct_solutions": "8/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 9,
+          "nodes": 94208,
+          "score": 618,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 7,
+          "nodes": 81920,
+          "score": 43,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 6,
+          "nodes": 81920,
+          "score": 358,
+          "bestmove": "e1g1",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 8,
+          "nodes": 245760,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 7,
+          "nodes": 100352,
+          "score": 34,
+          "bestmove": "d2d4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 5,
+          "nodes": 69632,
+          "score": 42,
+          "bestmove": "d5e6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 7,
+          "nodes": 77824,
+          "score": 70,
+          "bestmove": "f1b5",
+          "correct": false
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 7,
+          "nodes": 81920,
+          "score": -22,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 8,
+          "nodes": 88064,
+          "score": -39,
+          "bestmove": "e4d5",
+          "correct": true
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 6,
+          "nodes": 67584,
+          "score": 76,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 6,
+          "nodes": 53248,
+          "score": 68,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 5,
+          "nodes": 55296,
+          "score": 78,
+          "bestmove": "e1g1",
+          "correct": true
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 7,
+          "nodes": 83968,
+          "score": 70,
+          "bestmove": "b8c6",
+          "correct": false
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 6,
+          "nodes": 69632,
+          "score": 40,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 7,
+          "nodes": 88064,
+          "score": -22,
+          "bestmove": "c4d5",
+          "correct": false
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 9,
+          "nodes": 88064,
+          "score": 956,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 13,
+          "nodes": 131072,
+          "score": 528,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 10,
+          "nodes": 131072,
+          "score": 19,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 16,
+          "nodes": 184320,
+          "score": 228,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 27,
+          "nodes": 187407,
+          "score": 120,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    },
+    "B3": {
+      "name": "X7 + CapHist & Countermoves",
+      "avg_depth": 8.6,
+      "total_nodes": 1851392,
+      "effective_nps": 925696,
+      "tactical_accuracy_pct": 44.4,
+      "correct_solutions": "8/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 9,
+          "nodes": 100352,
+          "score": 618,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 7,
+          "nodes": 81920,
+          "score": 43,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 6,
+          "nodes": 79872,
+          "score": 358,
+          "bestmove": "e1g1",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 8,
+          "nodes": 235520,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 7,
+          "nodes": 96256,
+          "score": 34,
+          "bestmove": "d2d4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 5,
+          "nodes": 67584,
+          "score": 42,
+          "bestmove": "d5e6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 7,
+          "nodes": 73728,
+          "score": 70,
+          "bestmove": "f1b5",
+          "correct": false
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 7,
+          "nodes": 90112,
+          "score": -22,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 7,
+          "nodes": 61440,
+          "score": -28,
+          "bestmove": "e4d5",
+          "correct": true
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 6,
+          "nodes": 47104,
+          "score": 76,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 6,
+          "nodes": 51200,
+          "score": 68,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 6,
+          "nodes": 65536,
+          "score": 70,
+          "bestmove": "e1g1",
+          "correct": true
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 6,
+          "nodes": 61440,
+          "score": 58,
+          "bestmove": "b8c6",
+          "correct": false
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 5,
+          "nodes": 53248,
+          "score": 64,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 7,
+          "nodes": 81920,
+          "score": -22,
+          "bestmove": "c4d5",
+          "correct": false
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 9,
+          "nodes": 73728,
+          "score": 956,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 13,
+          "nodes": 122880,
+          "score": 532,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 10,
+          "nodes": 81920,
+          "score": 19,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 15,
+          "nodes": 139264,
+          "score": 234,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 26,
+          "nodes": 186368,
+          "score": 120,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    },
+    "B6": {
+      "name": "X7 + Conservative ProbCut",
+      "avg_depth": 8.45,
+      "total_nodes": 1837056,
+      "effective_nps": 918528,
+      "tactical_accuracy_pct": 50.0,
+      "correct_solutions": "9/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 9,
+          "nodes": 102400,
+          "score": 618,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 7,
+          "nodes": 73728,
+          "score": 43,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 6,
+          "nodes": 75776,
+          "score": 358,
+          "bestmove": "e1g1",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 8,
+          "nodes": 237568,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 7,
+          "nodes": 86016,
+          "score": 34,
+          "bestmove": "d2d4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 4,
+          "nodes": 47104,
+          "score": 74,
+          "bestmove": "d5e6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 7,
+          "nodes": 61440,
+          "score": 70,
+          "bestmove": "f1b5",
+          "correct": false
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 7,
+          "nodes": 71680,
+          "score": -22,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 7,
+          "nodes": 65536,
+          "score": -28,
+          "bestmove": "e4d5",
+          "correct": true
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 6,
+          "nodes": 51200,
+          "score": 76,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 6,
+          "nodes": 53248,
+          "score": 68,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 6,
+          "nodes": 59392,
+          "score": 70,
+          "bestmove": "e1g1",
+          "correct": true
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 6,
+          "nodes": 65536,
+          "score": 72,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 5,
+          "nodes": 57344,
+          "score": 64,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 7,
+          "nodes": 65536,
+          "score": -22,
+          "bestmove": "c4d5",
+          "correct": false
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 9,
+          "nodes": 71680,
+          "score": 956,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 13,
+          "nodes": 129024,
+          "score": 532,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 11,
+          "nodes": 126976,
+          "score": 10,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 15,
+          "nodes": 161792,
+          "score": 234,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 23,
+          "nodes": 174080,
+          "score": 120,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    },
+    "B7": {
+      "name": "Full Frozen X8",
+      "avg_depth": 8.5,
+      "total_nodes": 2058240,
+      "effective_nps": 1029120,
+      "tactical_accuracy_pct": 50.0,
+      "correct_solutions": "9/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 9,
+          "nodes": 98304,
+          "score": 932,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 7,
+          "nodes": 79872,
+          "score": 44,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 6,
+          "nodes": 79872,
+          "score": 358,
+          "bestmove": "e1g1",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 8,
+          "nodes": 239616,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 7,
+          "nodes": 92160,
+          "score": 13,
+          "bestmove": "g1f3",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 5,
+          "nodes": 67584,
+          "score": 42,
+          "bestmove": "d5e6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 6,
+          "nodes": 71680,
+          "score": 63,
+          "bestmove": "d4c6",
+          "correct": true
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 7,
+          "nodes": 88064,
+          "score": -29,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 7,
+          "nodes": 77824,
+          "score": -28,
+          "bestmove": "e4d5",
+          "correct": true
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 6,
+          "nodes": 71680,
+          "score": 76,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 6,
+          "nodes": 63488,
+          "score": 68,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 6,
+          "nodes": 75776,
+          "score": 70,
+          "bestmove": "e1g1",
+          "correct": true
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 6,
+          "nodes": 79872,
+          "score": 58,
+          "bestmove": "b8c6",
+          "correct": false
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 6,
+          "nodes": 67584,
+          "score": 40,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 6,
+          "nodes": 77824,
+          "score": -71,
+          "bestmove": "b1c3",
+          "correct": true
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 10,
+          "nodes": 92160,
+          "score": 970,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 12,
+          "nodes": 143360,
+          "score": 527,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 10,
+          "nodes": 129024,
+          "score": 14,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 17,
+          "nodes": 186368,
+          "score": 202,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 23,
+          "nodes": 176128,
+          "score": 120,
+          "bestmove": "a1b2",
+          "correct": false
+        }
+      ]
+    }
+  },
+  "tc_250ms": {
+    "B0": {
+      "name": "Frozen X7 Baseline",
+      "avg_depth": 10.3,
+      "total_nodes": 5261274,
+      "effective_nps": 1052254,
+      "tactical_accuracy_pct": 50.0,
+      "correct_solutions": "9/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 11,
+          "nodes": 245760,
+          "score": 932,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 7,
+          "nodes": 198656,
+          "score": 43,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 7,
+          "nodes": 186368,
+          "score": 359,
+          "bestmove": "e1g1",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 10,
+          "nodes": 573440,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 9,
+          "nodes": 245760,
+          "score": 32,
+          "bestmove": "e2e4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 6,
+          "nodes": 165888,
+          "score": 42,
+          "bestmove": "d5e6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 8,
+          "nodes": 198656,
+          "score": 60,
+          "bestmove": "f1b5",
+          "correct": false
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 9,
+          "nodes": 210944,
+          "score": -44,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 9,
+          "nodes": 208896,
+          "score": -27,
+          "bestmove": "e4d5",
+          "correct": true
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 7,
+          "nodes": 178176,
+          "score": 92,
+          "bestmove": "d1b3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 7,
+          "nodes": 169984,
+          "score": 53,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 7,
+          "nodes": 202752,
+          "score": 72,
+          "bestmove": "e1g1",
+          "correct": true
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 8,
+          "nodes": 215002,
+          "score": 54,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 7,
+          "nodes": 176128,
+          "score": 56,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 9,
+          "nodes": 202752,
+          "score": -12,
+          "bestmove": "c4d5",
+          "correct": false
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 12,
+          "nodes": 249856,
+          "score": 1256,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 16,
+          "nodes": 337920,
+          "score": 527,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 12,
+          "nodes": 323584,
+          "score": 14,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 19,
+          "nodes": 481280,
+          "score": 244,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 26,
+          "nodes": 489472,
+          "score": 120,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    },
+    "B2": {
+      "name": "X7 + Countermoves",
+      "avg_depth": 10.45,
+      "total_nodes": 5257216,
+      "effective_nps": 1051443,
+      "tactical_accuracy_pct": 44.4,
+      "correct_solutions": "8/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 11,
+          "nodes": 243712,
+          "score": 932,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 7,
+          "nodes": 194560,
+          "score": 43,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 7,
+          "nodes": 184320,
+          "score": 359,
+          "bestmove": "e1g1",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 10,
+          "nodes": 571392,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 9,
+          "nodes": 245760,
+          "score": 32,
+          "bestmove": "e2e4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 6,
+          "nodes": 165888,
+          "score": 42,
+          "bestmove": "d5e6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 8,
+          "nodes": 202752,
+          "score": 60,
+          "bestmove": "f1b5",
+          "correct": false
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 9,
+          "nodes": 210944,
+          "score": -44,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 9,
+          "nodes": 210944,
+          "score": -25,
+          "bestmove": "e4e5",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 7,
+          "nodes": 180224,
+          "score": 92,
+          "bestmove": "d1b3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 7,
+          "nodes": 161792,
+          "score": 53,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 7,
+          "nodes": 198656,
+          "score": 72,
+          "bestmove": "e1g1",
+          "correct": true
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 8,
+          "nodes": 217088,
+          "score": 54,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 7,
+          "nodes": 182272,
+          "score": 66,
+          "bestmove": "e2d3",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 9,
+          "nodes": 206848,
+          "score": -12,
+          "bestmove": "c4d5",
+          "correct": false
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 12,
+          "nodes": 249856,
+          "score": 1256,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 17,
+          "nodes": 350208,
+          "score": 534,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 12,
+          "nodes": 327680,
+          "score": 2,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 19,
+          "nodes": 471040,
+          "score": 246,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 28,
+          "nodes": 481280,
+          "score": 120,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    },
+    "B3": {
+      "name": "X7 + CapHist & Countermoves",
+      "avg_depth": 10.35,
+      "total_nodes": 5212160,
+      "effective_nps": 1042432,
+      "tactical_accuracy_pct": 55.6,
+      "correct_solutions": "10/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 11,
+          "nodes": 245760,
+          "score": 932,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 7,
+          "nodes": 194560,
+          "score": 43,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 7,
+          "nodes": 182272,
+          "score": 359,
+          "bestmove": "c4d5",
+          "correct": true
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 10,
+          "nodes": 589824,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 9,
+          "nodes": 247808,
+          "score": 32,
+          "bestmove": "e2e4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 6,
+          "nodes": 147456,
+          "score": 42,
+          "bestmove": "d5e6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 8,
+          "nodes": 184320,
+          "score": 60,
+          "bestmove": "f1b5",
+          "correct": false
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 9,
+          "nodes": 229376,
+          "score": -44,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 9,
+          "nodes": 208896,
+          "score": -25,
+          "bestmove": "e4e5",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 7,
+          "nodes": 167936,
+          "score": 81,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 7,
+          "nodes": 159744,
+          "score": 53,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 7,
+          "nodes": 196608,
+          "score": 72,
+          "bestmove": "e1g1",
+          "correct": true
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 8,
+          "nodes": 210944,
+          "score": 59,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 7,
+          "nodes": 180224,
+          "score": 66,
+          "bestmove": "e2d3",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 8,
+          "nodes": 194560,
+          "score": -47,
+          "bestmove": "b1c3",
+          "correct": true
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 12,
+          "nodes": 245760,
+          "score": 1256,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 16,
+          "nodes": 352256,
+          "score": 539,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 12,
+          "nodes": 319488,
+          "score": 14,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 19,
+          "nodes": 473088,
+          "score": 246,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 28,
+          "nodes": 481280,
+          "score": 120,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    },
+    "B6": {
+      "name": "X7 + Conservative ProbCut",
+      "avg_depth": 10.3,
+      "total_nodes": 5216256,
+      "effective_nps": 1043251,
+      "tactical_accuracy_pct": 44.4,
+      "correct_solutions": "8/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 11,
+          "nodes": 239616,
+          "score": 932,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 8,
+          "nodes": 198656,
+          "score": -3,
+          "bestmove": "g5f3",
+          "correct": false
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 7,
+          "nodes": 190464,
+          "score": 359,
+          "bestmove": "e1g1",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 10,
+          "nodes": 591872,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 9,
+          "nodes": 251904,
+          "score": 32,
+          "bestmove": "e2e4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 6,
+          "nodes": 137216,
+          "score": 42,
+          "bestmove": "d5e6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 8,
+          "nodes": 204800,
+          "score": 60,
+          "bestmove": "f1b5",
+          "correct": false
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 9,
+          "nodes": 208896,
+          "score": -44,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 9,
+          "nodes": 204800,
+          "score": -19,
+          "bestmove": "e4d5",
+          "correct": true
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 7,
+          "nodes": 176128,
+          "score": 92,
+          "bestmove": "d1b3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 7,
+          "nodes": 172032,
+          "score": 53,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 7,
+          "nodes": 208896,
+          "score": 72,
+          "bestmove": "e1g1",
+          "correct": true
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 8,
+          "nodes": 219136,
+          "score": 54,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 7,
+          "nodes": 182272,
+          "score": 56,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 9,
+          "nodes": 206848,
+          "score": -12,
+          "bestmove": "c4d5",
+          "correct": false
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 11,
+          "nodes": 229376,
+          "score": 968,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 16,
+          "nodes": 331776,
+          "score": 539,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 12,
+          "nodes": 323584,
+          "score": 14,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 19,
+          "nodes": 473088,
+          "score": 230,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 26,
+          "nodes": 464896,
+          "score": 120,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    },
+    "B7": {
+      "name": "Full Frozen X8",
+      "avg_depth": 9.65,
+      "total_nodes": 5040128,
+      "effective_nps": 1008025,
+      "tactical_accuracy_pct": 55.6,
+      "correct_solutions": "10/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 10,
+          "nodes": 243712,
+          "score": 932,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 7,
+          "nodes": 192512,
+          "score": 44,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 6,
+          "nodes": 182272,
+          "score": 358,
+          "bestmove": "e1g1",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 10,
+          "nodes": 589824,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 9,
+          "nodes": 231424,
+          "score": 21,
+          "bestmove": "e2e4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 6,
+          "nodes": 137216,
+          "score": 42,
+          "bestmove": "d5e6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 7,
+          "nodes": 178176,
+          "score": 58,
+          "bestmove": "d4c6",
+          "correct": true
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 7,
+          "nodes": 202752,
+          "score": -29,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 9,
+          "nodes": 200704,
+          "score": -28,
+          "bestmove": "e4d5",
+          "correct": true
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 7,
+          "nodes": 161792,
+          "score": 76,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 7,
+          "nodes": 151552,
+          "score": 53,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 7,
+          "nodes": 184320,
+          "score": 72,
+          "bestmove": "e1g1",
+          "correct": true
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 7,
+          "nodes": 208896,
+          "score": 54,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 7,
+          "nodes": 178176,
+          "score": 48,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 9,
+          "nodes": 184320,
+          "score": -30,
+          "bestmove": "b1c3",
+          "correct": true
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 11,
+          "nodes": 225280,
+          "score": 1070,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 15,
+          "nodes": 352256,
+          "score": 549,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 11,
+          "nodes": 315392,
+          "score": 6,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 18,
+          "nodes": 473088,
+          "score": 218,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 23,
+          "nodes": 446464,
+          "score": 120,
+          "bestmove": "a1b2",
+          "correct": false
+        }
+      ]
+    }
+  },
+  "tc_1000ms": {
+    "B0": {
+      "name": "Frozen X7 Baseline",
+      "avg_depth": 12.8,
+      "total_nodes": 21178368,
+      "effective_nps": 1058918,
+      "tactical_accuracy_pct": 44.4,
+      "correct_solutions": "8/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 13,
+          "nodes": 993280,
+          "score": 940,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 10,
+          "nodes": 792576,
+          "score": 43,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 9,
+          "nodes": 753664,
+          "score": 358,
+          "bestmove": "d4c5",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 12,
+          "nodes": 2215936,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 11,
+          "nodes": 929792,
+          "score": 32,
+          "bestmove": "e2e4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 8,
+          "nodes": 622592,
+          "score": 9,
+          "bestmove": "e2a6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 11,
+          "nodes": 837632,
+          "score": 66,
+          "bestmove": "f1b5",
+          "correct": false
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 12,
+          "nodes": 847872,
+          "score": -30,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 12,
+          "nodes": 821248,
+          "score": -8,
+          "bestmove": "e4e5",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 11,
+          "nodes": 743424,
+          "score": 95,
+          "bestmove": "d1b3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 9,
+          "nodes": 675840,
+          "score": 51,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 8,
+          "nodes": 755712,
+          "score": 70,
+          "bestmove": "e1g1",
+          "correct": true
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 10,
+          "nodes": 862208,
+          "score": 68,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 9,
+          "nodes": 706560,
+          "score": 61,
+          "bestmove": "e2d3",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 11,
+          "nodes": 817152,
+          "score": -12,
+          "bestmove": "c4d5",
+          "correct": false
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 16,
+          "nodes": 1044480,
+          "score": 1414,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 20,
+          "nodes": 1388544,
+          "score": 553,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 16,
+          "nodes": 1316864,
+          "score": 56,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 22,
+          "nodes": 1912832,
+          "score": 831,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 26,
+          "nodes": 2140160,
+          "score": 120,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    },
+    "B2": {
+      "name": "X7 + Countermoves",
+      "avg_depth": 12.95,
+      "total_nodes": 21159936,
+      "effective_nps": 1057996,
+      "tactical_accuracy_pct": 55.6,
+      "correct_solutions": "10/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 13,
+          "nodes": 964608,
+          "score": 971,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 10,
+          "nodes": 794624,
+          "score": 43,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 9,
+          "nodes": 739328,
+          "score": 358,
+          "bestmove": "c4d5",
+          "correct": true
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 12,
+          "nodes": 2129920,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 11,
+          "nodes": 948224,
+          "score": 32,
+          "bestmove": "e2e4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 8,
+          "nodes": 620544,
+          "score": 9,
+          "bestmove": "e2a6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 11,
+          "nodes": 813056,
+          "score": 70,
+          "bestmove": "d4c6",
+          "correct": true
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 12,
+          "nodes": 866304,
+          "score": -30,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 12,
+          "nodes": 815104,
+          "score": -8,
+          "bestmove": "e4e5",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 11,
+          "nodes": 761856,
+          "score": 94,
+          "bestmove": "d1b3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 9,
+          "nodes": 690176,
+          "score": 51,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 8,
+          "nodes": 755712,
+          "score": 70,
+          "bestmove": "e1g1",
+          "correct": true
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 10,
+          "nodes": 884736,
+          "score": 61,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 9,
+          "nodes": 737280,
+          "score": 52,
+          "bestmove": "e2d3",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 11,
+          "nodes": 825344,
+          "score": -12,
+          "bestmove": "c4d5",
+          "correct": false
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 16,
+          "nodes": 1077248,
+          "score": 1422,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 20,
+          "nodes": 1419264,
+          "score": 553,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 16,
+          "nodes": 1304576,
+          "score": 70,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 23,
+          "nodes": 1957888,
+          "score": 842,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 28,
+          "nodes": 2054144,
+          "score": 120,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    },
+    "B3": {
+      "name": "X7 + CapHist & Countermoves",
+      "avg_depth": 12.8,
+      "total_nodes": 20594688,
+      "effective_nps": 1029734,
+      "tactical_accuracy_pct": 38.9,
+      "correct_solutions": "7/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 13,
+          "nodes": 952320,
+          "score": 971,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 10,
+          "nodes": 776192,
+          "score": 43,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 9,
+          "nodes": 712704,
+          "score": 358,
+          "bestmove": "d4c5",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 12,
+          "nodes": 2181120,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 11,
+          "nodes": 901120,
+          "score": 32,
+          "bestmove": "e2e4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 7,
+          "nodes": 534528,
+          "score": 14,
+          "bestmove": "e2a6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 11,
+          "nodes": 798720,
+          "score": 64,
+          "bestmove": "f1b5",
+          "correct": false
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 12,
+          "nodes": 835584,
+          "score": -30,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 12,
+          "nodes": 776192,
+          "score": -8,
+          "bestmove": "e4e5",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 10,
+          "nodes": 679936,
+          "score": 90,
+          "bestmove": "h2h3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 8,
+          "nodes": 620544,
+          "score": 44,
+          "bestmove": "e2d3",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 9,
+          "nodes": 747520,
+          "score": 74,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 10,
+          "nodes": 851968,
+          "score": 52,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 9,
+          "nodes": 712704,
+          "score": 52,
+          "bestmove": "e2d3",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 11,
+          "nodes": 788480,
+          "score": -19,
+          "bestmove": "c4d5",
+          "correct": false
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 16,
+          "nodes": 1034240,
+          "score": 1422,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 20,
+          "nodes": 1419264,
+          "score": 553,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 15,
+          "nodes": 1325056,
+          "score": 59,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 23,
+          "nodes": 1832960,
+          "score": 842,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 28,
+          "nodes": 2113536,
+          "score": 120,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    },
+    "B6": {
+      "name": "X7 + Conservative ProbCut",
+      "avg_depth": 12.65,
+      "total_nodes": 20580352,
+      "effective_nps": 1029017,
+      "tactical_accuracy_pct": 50.0,
+      "correct_solutions": "9/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 13,
+          "nodes": 839680,
+          "score": 940,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 10,
+          "nodes": 786432,
+          "score": 43,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 9,
+          "nodes": 743424,
+          "score": 372,
+          "bestmove": "e1g1",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 12,
+          "nodes": 2125824,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 11,
+          "nodes": 946176,
+          "score": 32,
+          "bestmove": "e2e4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 8,
+          "nodes": 503808,
+          "score": 9,
+          "bestmove": "e2a6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 11,
+          "nodes": 804864,
+          "score": 66,
+          "bestmove": "f1b5",
+          "correct": false
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 12,
+          "nodes": 854016,
+          "score": -30,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 11,
+          "nodes": 802816,
+          "score": -23,
+          "bestmove": "e4d5",
+          "correct": true
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 10,
+          "nodes": 743424,
+          "score": 95,
+          "bestmove": "d1b3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 9,
+          "nodes": 686080,
+          "score": 52,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 8,
+          "nodes": 745472,
+          "score": 70,
+          "bestmove": "e1g1",
+          "correct": true
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 10,
+          "nodes": 880640,
+          "score": 68,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 9,
+          "nodes": 722944,
+          "score": 52,
+          "bestmove": "e2d3",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 11,
+          "nodes": 815104,
+          "score": -23,
+          "bestmove": "c4d5",
+          "correct": false
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 16,
+          "nodes": 1021952,
+          "score": 1397,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 20,
+          "nodes": 1404928,
+          "score": 554,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 15,
+          "nodes": 1288192,
+          "score": 59,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 22,
+          "nodes": 1835008,
+          "score": 831,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 26,
+          "nodes": 2029568,
+          "score": 120,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    },
+    "B7": {
+      "name": "Full Frozen X8",
+      "avg_depth": 11.95,
+      "total_nodes": 19867648,
+      "effective_nps": 993382,
+      "tactical_accuracy_pct": 50.0,
+      "correct_solutions": "9/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 14,
+          "nodes": 985088,
+          "score": 1073,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 9,
+          "nodes": 763904,
+          "score": 34,
+          "bestmove": "b1b3",
+          "correct": false
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 8,
+          "nodes": 696320,
+          "score": 392,
+          "bestmove": "c4d5",
+          "correct": true
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 12,
+          "nodes": 2185216,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 11,
+          "nodes": 886784,
+          "score": 27,
+          "bestmove": "e2e4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 7,
+          "nodes": 471040,
+          "score": 7,
+          "bestmove": "d5e6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 10,
+          "nodes": 745472,
+          "score": 59,
+          "bestmove": "d4c6",
+          "correct": true
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 10,
+          "nodes": 802816,
+          "score": -29,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 11,
+          "nodes": 770048,
+          "score": -10,
+          "bestmove": "e4e5",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 10,
+          "nodes": 673792,
+          "score": 95,
+          "bestmove": "d1b3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 9,
+          "nodes": 649216,
+          "score": 47,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 9,
+          "nodes": 737280,
+          "score": 67,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 10,
+          "nodes": 858112,
+          "score": 57,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 8,
+          "nodes": 686080,
+          "score": 48,
+          "bestmove": "d4c6",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 11,
+          "nodes": 747520,
+          "score": -25,
+          "bestmove": "b1c3",
+          "correct": true
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 13,
+          "nodes": 878592,
+          "score": 1106,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 18,
+          "nodes": 1417216,
+          "score": 554,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 13,
+          "nodes": 1306624,
+          "score": 7,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 20,
+          "nodes": 1843200,
+          "score": 865,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 26,
+          "nodes": 1763328,
+          "score": 276,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    }
+  },
+  "tc_3000ms": {
+    "B0": {
+      "name": "Frozen X7 Baseline",
+      "avg_depth": 14.75,
+      "total_nodes": 63569920,
+      "effective_nps": 1059498,
+      "tactical_accuracy_pct": 55.6,
+      "correct_solutions": "10/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 15,
+          "nodes": 2965504,
+          "score": 1009,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 11,
+          "nodes": 2406400,
+          "score": -1,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 11,
+          "nodes": 2383872,
+          "score": 359,
+          "bestmove": "e1g1",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 13,
+          "nodes": 6270976,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 13,
+          "nodes": 2686976,
+          "score": 30,
+          "bestmove": "e2e4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 10,
+          "nodes": 1835008,
+          "score": -33,
+          "bestmove": "e2a6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 13,
+          "nodes": 2433024,
+          "score": 70,
+          "bestmove": "d4c6",
+          "correct": true
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 15,
+          "nodes": 2543616,
+          "score": -26,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 14,
+          "nodes": 2510848,
+          "score": -13,
+          "bestmove": "e4e5",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 12,
+          "nodes": 2283520,
+          "score": 90,
+          "bestmove": "d1b3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 11,
+          "nodes": 2105344,
+          "score": 46,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 12,
+          "nodes": 2336768,
+          "score": 64,
+          "bestmove": "e1g1",
+          "correct": true
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 12,
+          "nodes": 2582528,
+          "score": 48,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 10,
+          "nodes": 2140160,
+          "score": 39,
+          "bestmove": "e2d3",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 12,
+          "nodes": 2340864,
+          "score": -44,
+          "bestmove": "b1c3",
+          "correct": true
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 18,
+          "nodes": 3229696,
+          "score": 1420,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 22,
+          "nodes": 4120576,
+          "score": 554,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 19,
+          "nodes": 3917824,
+          "score": 94,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 26,
+          "nodes": 6000640,
+          "score": 856,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 26,
+          "nodes": 6475776,
+          "score": 120,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    },
+    "B2": {
+      "name": "X7 + Countermoves",
+      "avg_depth": 14.9,
+      "total_nodes": 64524288,
+      "effective_nps": 1075404,
+      "tactical_accuracy_pct": 55.6,
+      "correct_solutions": "10/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 15,
+          "nodes": 2990080,
+          "score": 1009,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 11,
+          "nodes": 2416640,
+          "score": -4,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 11,
+          "nodes": 2320384,
+          "score": 371,
+          "bestmove": "d4c5",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 13,
+          "nodes": 6479872,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 13,
+          "nodes": 2770944,
+          "score": 36,
+          "bestmove": "e2e4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 10,
+          "nodes": 1886208,
+          "score": -33,
+          "bestmove": "e2a6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 12,
+          "nodes": 2412544,
+          "score": 62,
+          "bestmove": "d4c6",
+          "correct": true
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 15,
+          "nodes": 2596864,
+          "score": -26,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 14,
+          "nodes": 2426880,
+          "score": -11,
+          "bestmove": "e4e5",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 12,
+          "nodes": 2232320,
+          "score": 92,
+          "bestmove": "d1b3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 11,
+          "nodes": 2144256,
+          "score": 73,
+          "bestmove": "e3e4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 11,
+          "nodes": 2334720,
+          "score": 66,
+          "bestmove": "e1g1",
+          "correct": true
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 12,
+          "nodes": 2545664,
+          "score": 48,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 11,
+          "nodes": 2148352,
+          "score": 59,
+          "bestmove": "e2d3",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 13,
+          "nodes": 2426880,
+          "score": -18,
+          "bestmove": "c4d5",
+          "correct": false
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 18,
+          "nodes": 3244032,
+          "score": 1419,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 22,
+          "nodes": 4567040,
+          "score": 559,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 19,
+          "nodes": 3897344,
+          "score": 92,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 26,
+          "nodes": 6307840,
+          "score": 859,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 29,
+          "nodes": 6375424,
+          "score": 120,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    },
+    "B3": {
+      "name": "X7 + CapHist & Countermoves",
+      "avg_depth": 14.6,
+      "total_nodes": 62423040,
+      "effective_nps": 1040384,
+      "tactical_accuracy_pct": 38.9,
+      "correct_solutions": "7/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 15,
+          "nodes": 2877440,
+          "score": 1009,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 11,
+          "nodes": 2293760,
+          "score": 3,
+          "bestmove": "b1b3",
+          "correct": false
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 11,
+          "nodes": 2179072,
+          "score": 358,
+          "bestmove": "e1g1",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 13,
+          "nodes": 6397952,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 13,
+          "nodes": 2641920,
+          "score": 29,
+          "bestmove": "e2e4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 8,
+          "nodes": 1593344,
+          "score": 9,
+          "bestmove": "e2a6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 13,
+          "nodes": 2279424,
+          "score": 70,
+          "bestmove": "d4c6",
+          "correct": true
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 14,
+          "nodes": 2557952,
+          "score": -29,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 14,
+          "nodes": 2410496,
+          "score": -5,
+          "bestmove": "e4e5",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 12,
+          "nodes": 2060288,
+          "score": 90,
+          "bestmove": "d1b3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 11,
+          "nodes": 2043904,
+          "score": 55,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 10,
+          "nodes": 2086912,
+          "score": 72,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 11,
+          "nodes": 2525184,
+          "score": 83,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 11,
+          "nodes": 2158592,
+          "score": 57,
+          "bestmove": "e2d3",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 12,
+          "nodes": 2269184,
+          "score": -27,
+          "bestmove": "c4d5",
+          "correct": false
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 18,
+          "nodes": 3219456,
+          "score": 1551,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 23,
+          "nodes": 4247552,
+          "score": 568,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 17,
+          "nodes": 3966976,
+          "score": 74,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 26,
+          "nodes": 6264832,
+          "score": 859,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 29,
+          "nodes": 6348800,
+          "score": 120,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    },
+    "B6": {
+      "name": "X7 + Conservative ProbCut",
+      "avg_depth": 14.75,
+      "total_nodes": 62996480,
+      "effective_nps": 1049941,
+      "tactical_accuracy_pct": 50.0,
+      "correct_solutions": "9/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 16,
+          "nodes": 2899968,
+          "score": 1050,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 12,
+          "nodes": 2404352,
+          "score": -3,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 11,
+          "nodes": 2334720,
+          "score": 374,
+          "bestmove": "d4c5",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 13,
+          "nodes": 6326272,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 13,
+          "nodes": 2736128,
+          "score": 32,
+          "bestmove": "e2e4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 11,
+          "nodes": 1617920,
+          "score": -36,
+          "bestmove": "e2a6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 13,
+          "nodes": 2392064,
+          "score": 72,
+          "bestmove": "d4c6",
+          "correct": true
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 15,
+          "nodes": 2549760,
+          "score": -26,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 13,
+          "nodes": 2433024,
+          "score": -2,
+          "bestmove": "e4e5",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 11,
+          "nodes": 2189312,
+          "score": 90,
+          "bestmove": "d1b3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 11,
+          "nodes": 2058240,
+          "score": 49,
+          "bestmove": "c1d2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 11,
+          "nodes": 2306048,
+          "score": 66,
+          "bestmove": "e1g1",
+          "correct": true
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 12,
+          "nodes": 2594816,
+          "score": 48,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 11,
+          "nodes": 2191360,
+          "score": 57,
+          "bestmove": "e2d3",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 13,
+          "nodes": 2433024,
+          "score": -23,
+          "bestmove": "c4d5",
+          "correct": false
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 18,
+          "nodes": 3180544,
+          "score": 1477,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 22,
+          "nodes": 4087808,
+          "score": 576,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 18,
+          "nodes": 3987456,
+          "score": 104,
+          "bestmove": "b4f4",
+          "correct": true
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 25,
+          "nodes": 5980160,
+          "score": 852,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 26,
+          "nodes": 6293504,
+          "score": 120,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    },
+    "B7": {
+      "name": "Full Frozen X8",
+      "avg_depth": 13.75,
+      "total_nodes": 59217920,
+      "effective_nps": 986965,
+      "tactical_accuracy_pct": 50.0,
+      "correct_solutions": "9/18",
+      "positions": [
+        {
+          "id": "TAC_DEFLECT",
+          "depth": 16,
+          "nodes": 3000320,
+          "score": 1073,
+          "bestmove": "b5d7",
+          "correct": true
+        },
+        {
+          "id": "TAC_GREEK_GIFT",
+          "depth": 11,
+          "nodes": 2236416,
+          "score": -23,
+          "bestmove": "d3h7",
+          "correct": true
+        },
+        {
+          "id": "TAC_PAWN_BREAK",
+          "depth": 10,
+          "nodes": 2191360,
+          "score": 362,
+          "bestmove": "e1g1",
+          "correct": false
+        },
+        {
+          "id": "TAC_SMOTHER",
+          "depth": 13,
+          "nodes": 6445056,
+          "score": 28999,
+          "bestmove": "e2e8",
+          "correct": true
+        },
+        {
+          "id": "STRAT_STARTPOS",
+          "depth": 12,
+          "nodes": 2549760,
+          "score": 22,
+          "bestmove": "e2e4",
+          "correct": null
+        },
+        {
+          "id": "STRAT_KIWIPETE",
+          "depth": 9,
+          "nodes": 1470464,
+          "score": -27,
+          "bestmove": "e2a6",
+          "correct": null
+        },
+        {
+          "id": "STRAT_BISHOP_PAIR",
+          "depth": 11,
+          "nodes": 2099200,
+          "score": 71,
+          "bestmove": "d4c6",
+          "correct": true
+        },
+        {
+          "id": "STRAT_OUTPOST",
+          "depth": 14,
+          "nodes": 2404352,
+          "score": -26,
+          "bestmove": "e2e3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_FRENCH",
+          "depth": 12,
+          "nodes": 2156544,
+          "score": 7,
+          "bestmove": "e4e5",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_KID",
+          "depth": 11,
+          "nodes": 1951744,
+          "score": 90,
+          "bestmove": "d1b3",
+          "correct": false
+        },
+        {
+          "id": "CLOSED_BENONI",
+          "depth": 11,
+          "nodes": 2127872,
+          "score": 54,
+          "bestmove": "e3e4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_SICILIAN",
+          "depth": 10,
+          "nodes": 2150400,
+          "score": 54,
+          "bestmove": "d1c2",
+          "correct": false
+        },
+        {
+          "id": "OPEN_GAMBIT",
+          "depth": 11,
+          "nodes": 2476032,
+          "score": 57,
+          "bestmove": "e5f4",
+          "correct": true
+        },
+        {
+          "id": "OPEN_INITIATIVE",
+          "depth": 10,
+          "nodes": 2066432,
+          "score": 37,
+          "bestmove": "e2d3",
+          "correct": false
+        },
+        {
+          "id": "DEF_COUNTER",
+          "depth": 11,
+          "nodes": 2203648,
+          "score": -25,
+          "bestmove": "b1c3",
+          "correct": true
+        },
+        {
+          "id": "DEF_FORTRESS",
+          "depth": 15,
+          "nodes": 2676736,
+          "score": 1120,
+          "bestmove": "c1c8",
+          "correct": true
+        },
+        {
+          "id": "END_LUCENA",
+          "depth": 21,
+          "nodes": 4323328,
+          "score": 571,
+          "bestmove": "h1a1",
+          "correct": false
+        },
+        {
+          "id": "END_PHILIDOR",
+          "depth": 16,
+          "nodes": 3866624,
+          "score": 20,
+          "bestmove": "b4c4",
+          "correct": false
+        },
+        {
+          "id": "END_PAWN_OPP",
+          "depth": 23,
+          "nodes": 5439488,
+          "score": 886,
+          "bestmove": "e3e4",
+          "correct": false
+        },
+        {
+          "id": "ZUGZWANG_FINE",
+          "depth": 28,
+          "nodes": 5382144,
+          "score": 298,
+          "bestmove": "a1b1",
+          "correct": true
+        }
+      ]
+    }
+  }
+}

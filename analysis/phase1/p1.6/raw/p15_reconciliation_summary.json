@@ -1,0 +1,311 @@
+{
+  "binaries": {
+    "C1": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\v0.56\\native\\janus_native_engine.exe",
+      "sha256": "a4f9d9d18b549d29b2e6740ac90d90d39167d92d3846b95fc0c4f5b966add83f",
+      "size": 341504
+    },
+    "X6": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.2\\control\\janus_classical_x6.exe",
+      "sha256": "138b43bc3188696769f755f40898b69842e9e6c529e38a119d9734bad92a741c",
+      "size": 354816
+    },
+    "X7": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.5\\control\\janus_classical_x7.exe",
+      "sha256": "86392a2f4bd4182a4d7dc21e32940bd7939f6816794d5e1ab02f4082431ca28b",
+      "size": 370176
+    },
+    "X8": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.5\\control\\janus_classical_x8.exe",
+      "sha256": "05cd4dc8c38581fd5ee775dc1cea89011c83e6969828caae17ca6e8136fa9429",
+      "size": 374784
+    },
+    "X9": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.5\\control\\janus_classical_x9.exe",
+      "sha256": "f61376a20acc04e612589ba98e386cc2780974f9ceb0abf5bee075e78355887d",
+      "size": 375296
+    },
+    "X10": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.5\\control\\janus_classical_x10.exe",
+      "sha256": "1ef060f89cb156b798cd2fbe67539d088c6c0fb3842006b734f07a03808b0f20",
+      "size": 382464
+    },
+    "SF19": {
+      "path": "E:\\ChessXML\\tools\\stockfish\\stockfish.exe",
+      "sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "size": 103046300
+    }
+  },
+  "matches": {
+    "x10_vs_x7_primary": {
+      "engine_a": "Janus Classical X10",
+      "engine_b": "Janus Classical X7",
+      "games_count": 200,
+      "pgn_games_count": 200,
+      "wins": 75,
+      "draws": 65,
+      "losses": 60,
+      "score_pct": 53.75,
+      "elo": 26.10669260503662,
+      "elo_95_ci": [
+        -50.113942518687516,
+        104.96570750262147
+      ],
+      "t_stat": 1.3470946333202292,
+      "p_val": 0.17794975636000743,
+      "illegal_or_forfeit_count": 0,
+      "audit_pass": true
+    },
+    "x10_vs_x7_slow": {
+      "engine_a": "Janus Classical X10",
+      "engine_b": "Janus Classical X7",
+      "games_count": 40,
+      "pgn_games_count": 40,
+      "wins": 14,
+      "draws": 17,
+      "losses": 9,
+      "score_pct": 56.25,
+      "elo": 43.65778777002724,
+      "elo_95_ci": [
+        -132.94357043391963,
+        249.08471886344836
+      ],
+      "t_stat": 1.0,
+      "p_val": 0.31731050786291437,
+      "illegal_or_forfeit_count": 0,
+      "audit_pass": true
+    },
+    "x7_vs_sf19": {
+      "engine_a": "Janus Classical X7",
+      "engine_b": "Stockfish 19",
+      "games_count": 40,
+      "pgn_games_count": 40,
+      "wins": 0,
+      "draws": 2,
+      "losses": 38,
+      "score_pct": 2.5,
+      "elo": -636.4258428105996,
+      "elo_95_ci": [
+        -800.0,
+        -396.78913177848096
+      ],
+      "t_stat": -27.6063599757576,
+      "p_val": 0.0,
+      "illegal_or_forfeit_count": 0,
+      "audit_pass": true
+    },
+    "x10_vs_sf19": {
+      "engine_a": "Janus Classical X10",
+      "engine_b": "Stockfish 19",
+      "games_count": 40,
+      "pgn_games_count": 40,
+      "wins": 0,
+      "draws": 5,
+      "losses": 35,
+      "score_pct": 6.25,
+      "elo": -470.43650362227254,
+      "elo_95_ci": [
+        -800.0,
+        -259.8499799386276
+      ],
+      "t_stat": -14.226429782198556,
+      "p_val": 0.0,
+      "illegal_or_forfeit_count": 0,
+      "audit_pass": true
+    }
+  },
+  "c1_audit": {
+    "historical_reproduced_games": 20,
+    "unrestricted_blitz_games": 6,
+    "exists_40_game_dataset": false,
+    "note": "C1 was tested in a 20-game reproduced match in P1.0. 40-game matches standardized starting with X7."
+  },
+  "efficiency": {
+    "pawn_hash_correctness": {
+      "regular_nodes": 95521,
+      "regular_score": -170,
+      "ep_nodes": 14251,
+      "pawn_hash_stable": true
+    },
+    "benchmarks": {
+      "X7": {
+        "variant": "X7",
+        "positions": 5,
+        "total_nodes": 7743488,
+        "elapsed_sec": 5.15351414680481,
+        "avg_depth": 13.0,
+        "effective_nps": 1502564
+      },
+      "X9": {
+        "variant": "X9",
+        "positions": 5,
+        "total_nodes": 7460864,
+        "elapsed_sec": 5.296158075332642,
+        "avg_depth": 12.8,
+        "effective_nps": 1408731
+      },
+      "X10": {
+        "variant": "X10",
+        "positions": 5,
+        "total_nodes": 7606272,
+        "elapsed_sec": 5.1971235275268555,
+        "avg_depth": 12.8,
+        "effective_nps": 1463554
+      }
+    },
+    "depth_delta_x10_vs_x7": -0.1999999999999993,
+    "nps_ratio_x10_vs_x7": 0.9740377115384103
+  },
+  "correctness": {
+    "perft_results": {
+      "startpos": {
+        "depth_1": {
+          "expected": 20,
+          "status": "PASSED"
+        },
+        "depth_2": {
+          "expected": 400,
+          "status": "PASSED"
+        },
+        "depth_3": {
+          "expected": 8902,
+          "status": "PASSED"
+        },
+        "depth_4": {
+          "expected": 197281,
+          "status": "PASSED"
+        }
+      },
+      "kiwipete": {
+        "depth_1": {
+          "expected": 48,
+          "status": "PASSED"
+        },
+        "depth_2": {
+          "expected": 2039,
+          "status": "PASSED"
+        },
+        "depth_3": {
+          "expected": 97862,
+          "status": "PASSED"
+        },
+        "depth_4": {
+          "expected": 4085603,
+          "status": "PASSED"
+        }
+      },
+      "pos3": {
+        "depth_1": {
+          "expected": 14,
+          "status": "PASSED"
+        },
+        "depth_2": {
+          "expected": 191,
+          "status": "PASSED"
+        },
+        "depth_3": {
+          "expected": 2812,
+          "status": "PASSED"
+        },
+        "depth_4": {
+          "expected": 43238,
+          "status": "PASSED"
+        }
+      }
+    },
+    "fallback_parity": {
+      "pos_1": {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "x7_signature": [
+          "0",
+          "32663",
+          "pv b1c3 b8c6 g1f3 g8f6 e2e4 d7d5"
+        ],
+        "cand_signature": [
+          "0",
+          "32663",
+          "pv b1c3 b8c6 g1f3 g8f6 e2e4 d7d5"
+        ],
+        "bit_exact_match": true
+      },
+      "pos_2": {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "x7_signature": [
+          "26",
+          "29676",
+          "pv d2d3 e8g8 c1g5 h7h6 g5e3 c5e3"
+        ],
+        "cand_signature": [
+          "26",
+          "29676",
+          "pv d2d3 e8g8 c1g5 h7h6 g5e3 c5e3"
+        ],
+        "bit_exact_match": true
+      },
+      "pos_3": {
+        "fen": "r1b1k2r/pppp1ppp/8/4n3/1b1NP2q/2N5/PPP2PPP/R1BQKB1R w KQkq - 1 8",
+        "x7_signature": [
+          "314",
+          "14047",
+          "pv d1e2 b4c3 b2c3 d7d6 e2b5 e8f8"
+        ],
+        "cand_signature": [
+          "314",
+          "14047",
+          "pv d1e2 b4c3 b2c3 d7d6 e2b5 e8f8"
+        ],
+        "bit_exact_match": true
+      },
+      "pos_4": {
+        "fen": "r1b2rk1/pp1p1ppp/2n1pn2/q5B1/1bPP4/2N2N2/PP2BPPP/R2QK2R w KQ - 3 9",
+        "x7_signature": [
+          "31",
+          "17867",
+          "pv d1d3 b4c3 b2c3 d7d6 g5f6 g7f6"
+        ],
+        "cand_signature": [
+          "31",
+          "17867",
+          "pv d1d3 b4c3 b2c3 d7d6 g5f6 g7f6"
+        ],
+        "bit_exact_match": true
+      },
+      "pos_5": {
+        "fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+        "x7_signature": [
+          "70",
+          "3447",
+          "pv b4f4 h4g3 f4f7 h5c5 e2e4 g3g2"
+        ],
+        "cand_signature": [
+          "70",
+          "3447",
+          "pv b4f4 h4g3 f4f7 h5c5 e2e4 g3g2"
+        ],
+        "bit_exact_match": true
+      }
+    },
+    "mate_tests": {
+      "Scholars_Mate_in_1": {
+        "expected_move": "h5f7",
+        "engine_move": "h5f7",
+        "passed": true
+      },
+      "Back_Rank_Mate_in_1": {
+        "expected_move": "e2e8",
+        "engine_move": "e2e8",
+        "passed": true
+      },
+      "Legals_Mate_in_2": {
+        "expected_move": "d5f6",
+        "engine_move": "d5f6",
+        "passed": true
+      }
+    },
+    "repetition_test": {
+      "score_cp": 0,
+      "is_zero_draw": true
+    },
+    "all_passed": true
+  }
+}

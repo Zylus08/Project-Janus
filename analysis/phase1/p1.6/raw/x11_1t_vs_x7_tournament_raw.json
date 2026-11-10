@@ -1,0 +1,723 @@
+{
+  "engine_a": "Janus Classical X11 (1T)",
+  "engine_b": "Janus Classical X7 (1T)",
+  "games": 200,
+  "pairs": 100,
+  "time_control": "1.0s+0.05s",
+  "duration_sec": 398.0,
+  "a_wins": 69,
+  "b_wins": 70,
+  "draws": 61,
+  "a_points": 99.5,
+  "score_pct": 49.75,
+  "elo_diff": -1.7,
+  "ci_95": [
+    -87.1,
+    83.4
+  ],
+  "t_stat": -0.0815,
+  "p_val": 0.935,
+  "significant": false,
+  "pair_results": [
+    {
+      "pair_idx": 1,
+      "opening": "English Anglo-Scandinavian",
+      "g1_result": "0-1",
+      "g2_result": "0-1",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 2,
+      "opening": "English Bellon Gambit",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 3,
+      "opening": "English Bremen Smyslov System",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 4,
+      "opening": "English Keres Defense",
+      "g1_result": "0-1",
+      "g2_result": "1/2-1/2",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 5,
+      "opening": "English Symmetrical 3.Nf3",
+      "g1_result": "1-0",
+      "g2_result": "1-0",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 6,
+      "opening": "English Symmetrical Rubinstein",
+      "g1_result": "0-1",
+      "g2_result": "1-0",
+      "a_score": 0.0
+    },
+    {
+      "pair_idx": 7,
+      "opening": "English Symmetrical Anti-Benoni",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1-0",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 8,
+      "opening": "Reti Reversed Blumenfeld",
+      "g1_result": "0-1",
+      "g2_result": "0-1",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 9,
+      "opening": "Reti Advance 3...f6",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1-0",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 10,
+      "opening": "Reti vs Old Indian",
+      "g1_result": "1-0",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.5
+    },
+    {
+      "pair_idx": 11,
+      "opening": "Dutch Defense Fianchetto 2...Nf6",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1-0",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 12,
+      "opening": "Dutch Defense 2.Nc3",
+      "g1_result": "0-1",
+      "g2_result": "0-1",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 13,
+      "opening": "Dutch Defense Krejcik Gambit",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 14,
+      "opening": "Dutch Hort-Antoshin System",
+      "g1_result": "0-1",
+      "g2_result": "1-0",
+      "a_score": 0.0
+    },
+    {
+      "pair_idx": 15,
+      "opening": "Modern Benoni Snake Variation",
+      "g1_result": "1-0",
+      "g2_result": "1-0",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 16,
+      "opening": "Old Indian Defense 3.Nc3",
+      "g1_result": "1/2-1/2",
+      "g2_result": "0-1",
+      "a_score": 1.5
+    },
+    {
+      "pair_idx": 17,
+      "opening": "Bird's Opening Hobbs Gambit",
+      "g1_result": "1-0",
+      "g2_result": "0-1",
+      "a_score": 2.0
+    },
+    {
+      "pair_idx": 18,
+      "opening": "Larsen Spassky Variation",
+      "g1_result": "1/2-1/2",
+      "g2_result": "0-1",
+      "a_score": 1.5
+    },
+    {
+      "pair_idx": 19,
+      "opening": "Polish Opening Outflank",
+      "g1_result": "0-1",
+      "g2_result": "1-0",
+      "a_score": 0.0
+    },
+    {
+      "pair_idx": 20,
+      "opening": "Hungarian Opening Reversed Pirc",
+      "g1_result": "1-0",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.5
+    },
+    {
+      "pair_idx": 21,
+      "opening": "Scandinavian Modern 3...Nf6 4.Nf3",
+      "g1_result": "0-1",
+      "g2_result": "1-0",
+      "a_score": 0.0
+    },
+    {
+      "pair_idx": 22,
+      "opening": "Scandinavian Gubinsky-Melts",
+      "g1_result": "1-0",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.5
+    },
+    {
+      "pair_idx": 23,
+      "opening": "Scandinavian 3...Qa5 4.d4 Nf6",
+      "g1_result": "0-1",
+      "g2_result": "1-0",
+      "a_score": 0.0
+    },
+    {
+      "pair_idx": 24,
+      "opening": "Alekhine Four Pawns Attack",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 25,
+      "opening": "Alekhine Modern Albay Line",
+      "g1_result": "0-1",
+      "g2_result": "1-0",
+      "a_score": 0.0
+    },
+    {
+      "pair_idx": 26,
+      "opening": "Pirc Defense Classical 4...Bg7 5.Be2",
+      "g1_result": "1-0",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.5
+    },
+    {
+      "pair_idx": 27,
+      "opening": "Pirc Austrian Attack 5...c5",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 28,
+      "opening": "Modern Defense Averbakh",
+      "g1_result": "1-0",
+      "g2_result": "0-1",
+      "a_score": 2.0
+    },
+    {
+      "pair_idx": 29,
+      "opening": "Caro-Kann Korchnoi Line",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1-0",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 30,
+      "opening": "Caro-Kann Advance 4.Nc3",
+      "g1_result": "1/2-1/2",
+      "g2_result": "0-1",
+      "a_score": 1.5
+    },
+    {
+      "pair_idx": 31,
+      "opening": "Caro-Kann Panov 5...Nc6",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1-0",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 32,
+      "opening": "Caro-Kann Classical 6.h4 h6 7.Nf3",
+      "g1_result": "0-1",
+      "g2_result": "0-1",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 33,
+      "opening": "Sicilian Morphy Gambit",
+      "g1_result": "1-0",
+      "g2_result": "0-1",
+      "a_score": 2.0
+    },
+    {
+      "pair_idx": 34,
+      "opening": "Sicilian Closed 3.g3",
+      "g1_result": "1-0",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.5
+    },
+    {
+      "pair_idx": 35,
+      "opening": "Sicilian Alapin 2...e6",
+      "g1_result": "1-0",
+      "g2_result": "0-1",
+      "a_score": 2.0
+    },
+    {
+      "pair_idx": 36,
+      "opening": "Sicilian Kan 5.Bd3",
+      "g1_result": "1-0",
+      "g2_result": "0-1",
+      "a_score": 2.0
+    },
+    {
+      "pair_idx": 37,
+      "opening": "Sicilian Taimanov 5.Nc3 a6",
+      "g1_result": "1-0",
+      "g2_result": "0-1",
+      "a_score": 2.0
+    },
+    {
+      "pair_idx": 38,
+      "opening": "Sicilian Four Knights 6.Ndb5",
+      "g1_result": "1-0",
+      "g2_result": "1-0",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 39,
+      "opening": "Sicilian Richter-Rauzer 6.Bg5",
+      "g1_result": "1-0",
+      "g2_result": "0-1",
+      "a_score": 2.0
+    },
+    {
+      "pair_idx": 40,
+      "opening": "Sicilian Dragon Classical 6.Be2",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 41,
+      "opening": "Sicilian Najdorf Adams Attack",
+      "g1_result": "0-1",
+      "g2_result": "0-1",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 42,
+      "opening": "Sicilian Najdorf 6.f4",
+      "g1_result": "1/2-1/2",
+      "g2_result": "0-1",
+      "a_score": 1.5
+    },
+    {
+      "pair_idx": 43,
+      "opening": "Sicilian Najdorf 6.Be2",
+      "g1_result": "1-0",
+      "g2_result": "0-1",
+      "a_score": 2.0
+    },
+    {
+      "pair_idx": 44,
+      "opening": "Sicilian Scheveningen Classical 6.Be2",
+      "g1_result": "0-1",
+      "g2_result": "1/2-1/2",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 45,
+      "opening": "Sicilian Rossolimo 3...g6",
+      "g1_result": "0-1",
+      "g2_result": "1-0",
+      "a_score": 0.0
+    },
+    {
+      "pair_idx": 46,
+      "opening": "Vienna Game Paulsen System",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1-0",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 47,
+      "opening": "Vienna Game Max Lange",
+      "g1_result": "1/2-1/2",
+      "g2_result": "0-1",
+      "a_score": 1.5
+    },
+    {
+      "pair_idx": 48,
+      "opening": "Bishop's Opening Del Rio",
+      "g1_result": "1-0",
+      "g2_result": "0-1",
+      "a_score": 2.0
+    },
+    {
+      "pair_idx": 49,
+      "opening": "King's Gambit Fischer Defense",
+      "g1_result": "0-1",
+      "g2_result": "0-1",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 50,
+      "opening": "King's Gambit Modern 3...d5",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 51,
+      "opening": "Petroff Three Knights",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1-0",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 52,
+      "opening": "Petroff Kaufmann Attack",
+      "g1_result": "1-0",
+      "g2_result": "0-1",
+      "a_score": 2.0
+    },
+    {
+      "pair_idx": 53,
+      "opening": "Scotch Gambit Dubois Variation",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1-0",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 54,
+      "opening": "Scotch Game Potter 5...Nf6",
+      "g1_result": "0-1",
+      "g2_result": "1-0",
+      "a_score": 0.0
+    },
+    {
+      "pair_idx": 55,
+      "opening": "Four Knights Nimzowitsch Variation",
+      "g1_result": "1-0",
+      "g2_result": "0-1",
+      "a_score": 2.0
+    },
+    {
+      "pair_idx": 56,
+      "opening": "Italian Evans Countergambit",
+      "g1_result": "0-1",
+      "g2_result": "0-1",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 57,
+      "opening": "Italian Classical 4.c3 Nf6",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 58,
+      "opening": "Two Knights Fritz Variation",
+      "g1_result": "1-0",
+      "g2_result": "0-1",
+      "a_score": 2.0
+    },
+    {
+      "pair_idx": 59,
+      "opening": "Two Knights Peretz Line",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1-0",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 60,
+      "opening": "Ruy Lopez Open Dilworth",
+      "g1_result": "0-1",
+      "g2_result": "1/2-1/2",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 61,
+      "opening": "Ruy Lopez Open Riga Variation",
+      "g1_result": "0-1",
+      "g2_result": "0-1",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 62,
+      "opening": "Ruy Lopez Zaitsev System",
+      "g1_result": "0-1",
+      "g2_result": "1/2-1/2",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 63,
+      "opening": "Ruy Lopez Smyslov System",
+      "g1_result": "1/2-1/2",
+      "g2_result": "0-1",
+      "a_score": 1.5
+    },
+    {
+      "pair_idx": 64,
+      "opening": "Ruy Lopez Kholmov Variation",
+      "g1_result": "1/2-1/2",
+      "g2_result": "0-1",
+      "a_score": 1.5
+    },
+    {
+      "pair_idx": 65,
+      "opening": "Ruy Lopez Anti-Marshall 8.a4",
+      "g1_result": "1-0",
+      "g2_result": "1-0",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 66,
+      "opening": "Ruy Lopez Anti-Marshall 8.h3",
+      "g1_result": "1-0",
+      "g2_result": "1-0",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 67,
+      "opening": "Ruy Lopez Old Steinitz",
+      "g1_result": "0-1",
+      "g2_result": "1-0",
+      "a_score": 0.0
+    },
+    {
+      "pair_idx": 68,
+      "opening": "Ruy Lopez Bird's Defense",
+      "g1_result": "1/2-1/2",
+      "g2_result": "0-1",
+      "a_score": 1.5
+    },
+    {
+      "pair_idx": 69,
+      "opening": "Ruy Lopez Cozio Defense",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1-0",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 70,
+      "opening": "French Tarrasch Guimard Line",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 71,
+      "opening": "QGD Exchange Reshevsky System",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 72,
+      "opening": "QGD Harrwitz Attack 5.Bf4",
+      "g1_result": "1-0",
+      "g2_result": "1-0",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 73,
+      "opening": "QGD Tarrasch Rubinstein System",
+      "g1_result": "1-0",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.5
+    },
+    {
+      "pair_idx": 74,
+      "opening": "QGD Tartakower (Makogonov-Bondarevsky)",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 75,
+      "opening": "QGA Classical 7...a6",
+      "g1_result": "0-1",
+      "g2_result": "0-1",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 76,
+      "opening": "Slav Defense 3.Nf3",
+      "g1_result": "1-0",
+      "g2_result": "1-0",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 77,
+      "opening": "Slav Exchange Symmetry",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 78,
+      "opening": "Slav Krause 5...Na6",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1-0",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 79,
+      "opening": "Semi-Slav Botvinnik System",
+      "g1_result": "0-1",
+      "g2_result": "1/2-1/2",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 80,
+      "opening": "Semi-Slav Accelerated Meran",
+      "g1_result": "0-1",
+      "g2_result": "1/2-1/2",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 81,
+      "opening": "Catalan Open 6.Ne5",
+      "g1_result": "0-1",
+      "g2_result": "1-0",
+      "a_score": 0.0
+    },
+    {
+      "pair_idx": 82,
+      "opening": "Gruenfeld Exchange 7.Bc4",
+      "g1_result": "0-1",
+      "g2_result": "1/2-1/2",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 83,
+      "opening": "Gruenfeld Russian System 7...a6",
+      "g1_result": "0-1",
+      "g2_result": "0-1",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 84,
+      "opening": "Chigorin Defense Costigan",
+      "g1_result": "1/2-1/2",
+      "g2_result": "0-1",
+      "a_score": 1.5
+    },
+    {
+      "pair_idx": 85,
+      "opening": "Albin Countergambit Balogh",
+      "g1_result": "1/2-1/2",
+      "g2_result": "1-0",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 86,
+      "opening": "Nimzo-Indian Samisch 8...cxd4",
+      "g1_result": "1-0",
+      "g2_result": "1/2-1/2",
+      "a_score": 1.5
+    },
+    {
+      "pair_idx": 87,
+      "opening": "Nimzo-Indian Classical 4...c5",
+      "g1_result": "1-0",
+      "g2_result": "0-1",
+      "a_score": 2.0
+    },
+    {
+      "pair_idx": 88,
+      "opening": "Nimzo-Indian Fischer 4...b6",
+      "g1_result": "0-1",
+      "g2_result": "1/2-1/2",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 89,
+      "opening": "Bogo-Indian 4.Nbd2 c5",
+      "g1_result": "0-1",
+      "g2_result": "0-1",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 90,
+      "opening": "Queen's Indian Classical 5...Be7",
+      "g1_result": "1-0",
+      "g2_result": "0-1",
+      "a_score": 2.0
+    },
+    {
+      "pair_idx": 91,
+      "opening": "Queen's Indian Nimzowitsch Attack",
+      "g1_result": "1-0",
+      "g2_result": "1-0",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 92,
+      "opening": "King's Indian Samisch Panno",
+      "g1_result": "0-1",
+      "g2_result": "1/2-1/2",
+      "a_score": 0.5
+    },
+    {
+      "pair_idx": 93,
+      "opening": "King's Indian Classical Orthodox",
+      "g1_result": "0-1",
+      "g2_result": "1-0",
+      "a_score": 0.0
+    },
+    {
+      "pair_idx": 94,
+      "opening": "King's Indian Classical Gallagher",
+      "g1_result": "0-1",
+      "g2_result": "0-1",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 95,
+      "opening": "King's Indian Fianchetto 7...c6",
+      "g1_result": "0-1",
+      "g2_result": "1-0",
+      "a_score": 0.0
+    },
+    {
+      "pair_idx": 96,
+      "opening": "Catalan Open Classical 6...dxc4",
+      "g1_result": "1-0",
+      "g2_result": "0-1",
+      "a_score": 2.0
+    },
+    {
+      "pair_idx": 97,
+      "opening": "Catalan Closed 7.Qc2",
+      "g1_result": "0-1",
+      "g2_result": "1-0",
+      "a_score": 0.0
+    },
+    {
+      "pair_idx": 98,
+      "opening": "Modern Benoni Fianchetto",
+      "g1_result": "1-0",
+      "g2_result": "1-0",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 99,
+      "opening": "Blumenfeld Countergambit",
+      "g1_result": "1-0",
+      "g2_result": "1-0",
+      "a_score": 1.0
+    },
+    {
+      "pair_idx": 100,
+      "opening": "Budapest Gambit Adler Variation",
+      "g1_result": "0-1",
+      "g2_result": "0-1",
+      "a_score": 1.0
+    }
+  ]
+}

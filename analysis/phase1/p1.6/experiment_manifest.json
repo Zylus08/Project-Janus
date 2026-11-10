@@ -1,0 +1,125 @@
+{
+  "milestone": "P1.6",
+  "program": "Classical Engine Supremacy Program",
+  "title": "Lazy SMP Multithreading, Safe Late Move Pruning & Competitive Scaling Qualification",
+  "qualified_baseline": "Janus Classical X7 (commit b34e342)",
+  "experimental_candidate": "Janus Classical X11",
+  "frozen_historical_controls": [
+    "Janus Classical X10 (1ef060f8...)",
+    "Janus Classical X9 (bca971c)",
+    "Janus Classical X8 (501efbc)",
+    "Janus Classical X7 (b34e342)",
+    "Janus Classical X6 (bbadf8f)",
+    "Classical C1 (e543dab)"
+  ],
+  "reference_engine": "Stockfish 19 official release (sf_19, edb0d9d, unrestricted, default NNUE)",
+  "branch": "phase1/classical-janus",
+  "rule1_compliance": "STRICTLY NON-ML (0 neural networks, 0 NNUE, 0 weights, 0 offline fitted models)",
+  "formal_classification": "CATEGORY B \u2014 Experimental Parallel Platform Qualified; Baseline X7 Retained as Production Control",
+  "gates": {
+    "gate_a_single_thread": {
+      "description": "Candidate X11 (1T) vs Baseline X7 (1T) across 200 games at 1.0s+50ms",
+      "score": "99.5 / 200 (49.75%)",
+      "wdl": "69W - 61D - 70L",
+      "elo_diff": -1.7,
+      "ci_95": [
+        -87.1,
+        83.4
+      ],
+      "t_stat": -0.0815,
+      "p_value": 0.935,
+      "determination": "REJECT PROMOTION (Statistical Tie, p = 0.9350 >= 0.05; Baseline X7 Retained)"
+    },
+    "gate_b_multithreaded_platform": {
+      "description": "Multithreaded Lazy SMP safety, scalability, and stability qualification",
+      "speedup_2t": 1.955,
+      "efficiency_2t": "97.8%",
+      "speedup_4t": 3.26,
+      "efficiency_4t": "81.5%",
+      "depth_gain_4t": "+0.94 ply",
+      "tt_throughput": "32.89 million ops/sec across 4 threads with 0 torn reads and 0 races",
+      "match2_blitz_scaling": "14.0 / 40 (35.0%, -107.5 Elo)",
+      "determination": "QUALIFIED AS ADVANCED EXPERIMENTAL PLATFORM (Category B)"
+    },
+    "gate_c_stockfish19_benchmark": {
+      "description": "Quantitative tracking of classical-to-neural gap vs unrestricted Stockfish 19 NNUE at 2.0s+50ms",
+      "match3_1t_vs_sf19_1t": {
+        "score": "2.0 / 40 (5.0%)",
+        "wdl": "0W - 4D - 36L",
+        "elo_diff": -511.5,
+        "draws_held": 4
+      },
+      "match4_4t_vs_sf19_4t": {
+        "score": "0.5 / 40 (1.25%)",
+        "wdl": "0W - 1D - 39L",
+        "elo_diff": -759.1,
+        "draws_held": 1
+      },
+      "longitudinal_trajectory": "C1 (0%, -800) -> X7 (2.5%, -636) -> X10 (6.25%, -470) -> X11 (5.0%, -511.5, 4 draws)"
+    }
+  },
+  "phases": {
+    "phase0_reconciliation": {
+      "status": "COMPLETED",
+      "deliverable": "analysis/phase1/p1.6/P15_EVIDENCE_RECONCILIATION.md",
+      "raw_data": "analysis/phase1/p1.6/raw/p15_reconciliation_summary.json"
+    },
+    "phase1_architecture": {
+      "status": "COMPLETED",
+      "deliverable": "analysis/phase1/p1.6/LAZY_SMP_ARCHITECTURE.md"
+    },
+    "phase2_parallel_tt": {
+      "status": "COMPLETED",
+      "deliverable": "analysis/phase1/p1.6/PARALLEL_TT_CORRECTNESS.md",
+      "stress_test": "analysis/phase1/p1.6/tests/test_parallel_tt_stress.cpp"
+    },
+    "phase3_lazy_smp": {
+      "status": "COMPLETED",
+      "deliverable": "analysis/phase1/p1.6/LAZY_SMP_IMPLEMENTATION.md"
+    },
+    "phase4_parallel_scaling": {
+      "status": "COMPLETED",
+      "deliverable": "analysis/phase1/p1.6/PARALLEL_SCALING_REPORT.md",
+      "raw_data": "analysis/phase1/p1.6/raw/parallel_scaling_raw.json"
+    },
+    "phase5_late_move_pruning": {
+      "status": "COMPLETED",
+      "deliverable": "analysis/phase1/p1.6/LATE_MOVE_PRUNING_REPORT.md"
+    },
+    "phase6_time_management": {
+      "status": "COMPLETED",
+      "deliverable": "analysis/phase1/p1.6/PARALLEL_TIME_MANAGEMENT.md"
+    },
+    "phase7_factorial_ablation": {
+      "status": "COMPLETED",
+      "deliverable": "analysis/phase1/p1.6/P16_FACTORIAL_ABLATION.md",
+      "raw_data": "analysis/phase1/p1.6/raw/factorial_ablation_raw.json"
+    },
+    "phase8_correctness_audit": {
+      "status": "COMPLETED",
+      "deliverable": "analysis/phase1/p1.6/P16_CORRECTNESS_AND_RACE_AUDIT.md",
+      "raw_data": "analysis/phase1/p1.6/raw/correctness_raw.json"
+    },
+    "phase9_single_thread_strength": {
+      "status": "COMPLETED",
+      "deliverable": "analysis/phase1/p1.6/X11_SINGLE_THREAD_STRENGTH.md",
+      "raw_data": "analysis/phase1/p1.6/raw/x11_1t_vs_x7_tournament_raw.json",
+      "pgn": "analysis/phase1/p1.6/pgn/x11_1t_vs_x7.pgn"
+    },
+    "phase10_multithreaded_strength": {
+      "status": "COMPLETED",
+      "deliverable": "analysis/phase1/p1.6/X11_MULTITHREADED_STRENGTH.md",
+      "pgn_match2": "analysis/phase1/p1.6/pgn/x11_4t_vs_x7_1t.pgn",
+      "pgn_match3": "analysis/phase1/p1.6/pgn/x11_1t_vs_sf19.pgn",
+      "pgn_match4": "analysis/phase1/p1.6/pgn/x11_4t_vs_sf19_4t.pgn"
+    },
+    "phase11_research_decision": {
+      "status": "COMPLETED",
+      "deliverable": "analysis/phase1/p1.6/FINAL_RESEARCH_DECISION.md"
+    },
+    "phase12_next_priority": {
+      "status": "COMPLETED",
+      "deliverable": "analysis/phase1/p1.6/NEXT_CLASSICAL_PRIORITY.md"
+    }
+  }
+}

@@ -95,3 +95,4 @@ Milestone P1.4 demonstrated that search heuristics cannot overcome the physical 
 
 **Sign-off:**  
 Principal Computer Chess Engineer & Independent Experimental Auditor.
+

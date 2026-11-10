@@ -69,3 +69,4 @@ Across the 80 games played against unrestricted Stockfish 19, the classical engi
 **Artifacts:**
 - Complete PGN: `analysis/phase1/p1.4/pgn/matched_stockfish19_progress.pgn`
 - Raw Telemetry: `analysis/phase1/p1.4/raw/matched_stockfish19_progress_raw.json`
+

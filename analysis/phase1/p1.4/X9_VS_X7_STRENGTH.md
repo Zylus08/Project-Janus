@@ -78,3 +78,4 @@ The milestone guidelines preregister the following promotion requirement:
 Candidate X9 successfully recovered $+42.1$ Elo over X8 and achieved statistical parity with X7 ($p = 0.5755$), but did not demonstrate statistically significant superiority over Baseline X7.
 
 **Official Verdict:** **CATEGORY B / C: PROMOTION REJECTED. JANUS CLASSICAL X7 IS FORMALLY RETAINED AS THE QUALIFIED BASELINE.**
+

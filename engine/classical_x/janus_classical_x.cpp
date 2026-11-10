@@ -355,6 +355,20 @@ EXPORT void native_apply_search_variant(const char* var_str) {
         g_singular_extension_mode = 1; // S1 Conservative SE
         g_multicut_mode = 1; // C1 Multi-Cut
         g_probcut_mode = 1; // P1 Conservative ProbCut
+    } else if (var == "X9") { // P1.4 Qualified Candidate (Countermove Modernization & Depth Maximization)
+        g_use_staged_movegen = true;
+        g_quiescence_see_mode = 2;
+        g_use_see_in_quiescence = true;
+        g_use_null_move_pruning = true;
+        g_use_reverse_futility = true;
+        g_use_aspiration_window = true;
+        g_conthist_mode = 3; // H3
+        g_dynamic_lmr_mode = 3; // L3 Calibrated
+        g_eval_mode = 5; // E5
+        g_tactical_ordering_mode = 2; // M2: Countermove Heuristic Only (Depth Dividend +0.3 plies)
+        g_singular_extension_mode = 0; // S0: Off (Eliminates verification search depth tax)
+        g_multicut_mode = 0; // C0: Off
+        g_probcut_mode = 0; // P0: Off
     }
 }
 
@@ -1929,8 +1943,14 @@ static int score_move_for_ordering(const NativeBoard* b, uint16_t m, uint16_t tt
         int mvv_lva = (victim * 10) - attacker;
 
         int cap_hist_bonus = 0;
-        if ((g_tactical_ordering_mode == 1 || g_tactical_ordering_mode == 3) && attacker < 6 && victim < 6) {
-            cap_hist_bonus = g_capture_history[attacker][to][victim];
+        if ((g_tactical_ordering_mode == 1 || g_tactical_ordering_mode == 3 || g_tactical_ordering_mode == 4) && attacker < 6 && victim < 6) {
+            int raw_bonus = g_capture_history[attacker][to][victim];
+            if (g_tactical_ordering_mode == 4) {
+                // M4: Bounded and dampened capture history [-2500, +2500] to protect winning capture precedence
+                cap_hist_bonus = std::max(-2500, std::min(2500, raw_bonus / 2));
+            } else {
+                cap_hist_bonus = raw_bonus;
+            }
             g_telemetry_capthist_probes++;
         }
 
@@ -1960,7 +1980,7 @@ static int score_move_for_ordering(const NativeBoard* b, uint16_t m, uint16_t tt
     }
 
     // Countermove Heuristic (Quiet moves only)
-    if ((g_tactical_ordering_mode == 2 || g_tactical_ordering_mode == 3) && ply >= 1 && g_ss[ply - 1].current_move != 0) {
+    if ((g_tactical_ordering_mode == 2 || g_tactical_ordering_mode == 3 || g_tactical_ordering_mode == 4) && ply >= 1 && g_ss[ply - 1].current_move != 0) {
         int prev_from = move_from(g_ss[ply - 1].current_move);
         int prev_to = move_to(g_ss[ply - 1].current_move);
         if (m == g_countermove_table[prev_from][prev_to]) {
@@ -2718,8 +2738,9 @@ static int negamax(
 
     int extension = 0;
     // Singular Extension & Multi-Cut Verification (Phases 3 & 4)
+    int min_se_depth = (g_singular_extension_mode == 3) ? 8 : 6;
     if (g_singular_extension_mode > 0 &&
-        depth >= 6 &&
+        depth >= min_se_depth &&
         ply > 0 &&
         excluded_move == 0 &&
         tt_move != 0 &&
@@ -2729,7 +2750,7 @@ static int negamax(
         std::abs(entry.score) < MATE_THRESHOLD) {
 
         g_telemetry_se_probes++;
-        int se_margin = (g_singular_extension_mode == 1) ? (2 * depth) : (depth + 15);
+        int se_margin = (g_singular_extension_mode == 1 || g_singular_extension_mode == 3) ? (2 * depth) : (depth + 15);
         int se_beta = entry.score - se_margin;
         int se_depth = (depth - 1) / 2;
 
@@ -2797,14 +2818,15 @@ static int negamax(
     }
 
     // ProbCut Pruning (Phase 5)
+    int min_pc_depth = (g_probcut_mode == 3) ? 6 : 5;
     if (g_probcut_mode > 0 &&
-        depth >= 5 &&
+        depth >= min_pc_depth &&
         ply > 0 &&
         excluded_move == 0 &&
         !in_check &&
         std::abs(beta) < MATE_THRESHOLD) {
 
-        int pc_margin = (g_probcut_mode == 1) ? 200 : 150;
+        int pc_margin = (g_probcut_mode == 2) ? 150 : 200;
         int pc_beta = beta + pc_margin;
 
         if (pc_beta < MATE_THRESHOLD) {
@@ -2952,8 +2974,8 @@ static int negamax(
                     }
                 }
                 int tot_h = h + ch1 + ch2;
-                int h_thresh = (g_search_variant == "X8") ? std::max(1000, 250 * depth) : 10000;
-                int h_neg_thresh = (g_search_variant == "X8") ? (-h_thresh / 2) : -5000;
+                int h_thresh = (g_search_variant == "X8" || g_search_variant == "X9") ? std::max(1000, 250 * depth) : 10000;
+                int h_neg_thresh = (g_search_variant == "X8" || g_search_variant == "X9") ? (-h_thresh / 2) : -5000;
                 if (tot_h > h_thresh) dynamic_reduction -= 1;
                 else if (tot_h < h_neg_thresh) dynamic_reduction += 1;
                 if (dynamic_reduction < 1) dynamic_reduction = 1;
@@ -3084,7 +3106,7 @@ static int negamax(
                         g_history_table[side][from][to] = cur_h + bonus - (cur_h * std::abs(bonus)) / 16384;
 
                         // Countermove heuristic update (Phase 2)
-                        if ((g_tactical_ordering_mode == 2 || g_tactical_ordering_mode == 3) && ply >= 1 && g_ss[ply - 1].current_move != 0) {
+                        if ((g_tactical_ordering_mode == 2 || g_tactical_ordering_mode == 3 || g_tactical_ordering_mode == 4) && ply >= 1 && g_ss[ply - 1].current_move != 0) {
                             int prev_from = move_from(g_ss[ply - 1].current_move);
                             int prev_to = move_to(g_ss[ply - 1].current_move);
                             g_countermove_table[prev_from][prev_to] = m;
@@ -3116,7 +3138,7 @@ static int negamax(
             } else {
                 g_ordering_cutoff_captures++;
                 // Capture History update (Phase 2)
-                if ((g_tactical_ordering_mode == 1 || g_tactical_ordering_mode == 3) && undo.captured_piece < 6) {
+                if ((g_tactical_ordering_mode == 1 || g_tactical_ordering_mode == 3 || g_tactical_ordering_mode == 4) && undo.captured_piece < 6) {
                     int from_sq = move_from(m);
                     int to_sq = move_to(m);
                     int attacker = moved_piece;
@@ -3575,7 +3597,7 @@ static void uci_loop() {
         iss >> cmd;
 
         if (cmd == "uci") {
-            std::cout << "id name Janus Classical X (P1.3 Candidate X8)" << std::endl;
+            std::cout << "id name Janus Classical X (P1.4 Candidate X9)" << std::endl;
             std::cout << "id author Project Janus Team" << std::endl;
             std::cout << "option name UseKillerOrdering type check default true" << std::endl;
             std::cout << "option name UseHistoryOrdering type check default true" << std::endl;
@@ -3586,14 +3608,14 @@ static void uci_loop() {
             std::cout << "option name LMRBaseReduction type spin default 1 min 1 max 3" << std::endl;
             std::cout << "option name UseSEEOrdering type check default false" << std::endl;
             std::cout << "option name UseSEEInQuiescence type check default false" << std::endl;
-            std::cout << "option name UCI_Variant type combo default X8 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8" << std::endl;
+            std::cout << "option name UCI_Variant type combo default X9 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9" << std::endl;
             std::cout << "option name UCI_ContinuationHistory type combo default H3 var H0 var H1 var H2 var H3" << std::endl;
             std::cout << "option name UCI_DynamicLMR type combo default L3 var L0 var L1 var L2 var L3" << std::endl;
             std::cout << "option name UCI_ClassicalEval type combo default E5 var E0 var E1 var E2 var E3 var E4 var E5" << std::endl;
-            std::cout << "option name UCI_TacticalOrdering type combo default M3 var M0 var M1 var M2 var M3" << std::endl;
-            std::cout << "option name UCI_SingularExtensions type combo default S1 var S0 var S1 var S2" << std::endl;
+            std::cout << "option name UCI_TacticalOrdering type combo default M4 var M0 var M1 var M2 var M3 var M4" << std::endl;
+            std::cout << "option name UCI_SingularExtensions type combo default S3 var S0 var S1 var S2 var S3" << std::endl;
             std::cout << "option name UCI_MultiCut type combo default C1 var C0 var C1" << std::endl;
-            std::cout << "option name UCI_ProbCut type combo default P1 var P0 var P1 var P2" << std::endl;
+            std::cout << "option name UCI_ProbCut type combo default P3 var P0 var P1 var P2 var P3" << std::endl;
             std::cout << "option name UCI_StagedMovegen type check default true" << std::endl;
             std::cout << "option name UCI_QuiescenceSEE type spin default 2 min 0 max 3" << std::endl;
             std::cout << "option name UCI_NullMovePruning type check default true" << std::endl;
@@ -3691,10 +3713,12 @@ static void uci_loop() {
                     else if (opt_val == "M1") g_tactical_ordering_mode = 1;
                     else if (opt_val == "M2") g_tactical_ordering_mode = 2;
                     else if (opt_val == "M3") g_tactical_ordering_mode = 3;
+                    else if (opt_val == "M4") g_tactical_ordering_mode = 4;
                 } else if (opt_name == "UCI_SingularExtensions" && !opt_val.empty()) {
                     if (opt_val == "S0") g_singular_extension_mode = 0;
                     else if (opt_val == "S1") g_singular_extension_mode = 1;
                     else if (opt_val == "S2") g_singular_extension_mode = 2;
+                    else if (opt_val == "S3") g_singular_extension_mode = 3;
                 } else if (opt_name == "UCI_MultiCut" && !opt_val.empty()) {
                     if (opt_val == "C0") g_multicut_mode = 0;
                     else if (opt_val == "C1") g_multicut_mode = 1;
@@ -3702,6 +3726,7 @@ static void uci_loop() {
                     if (opt_val == "P0") g_probcut_mode = 0;
                     else if (opt_val == "P1") g_probcut_mode = 1;
                     else if (opt_val == "P2") g_probcut_mode = 2;
+                    else if (opt_val == "P3") g_probcut_mode = 3;
                 }
             }
                 } else if (cmd == "telemetry_report") {

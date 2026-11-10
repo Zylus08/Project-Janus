@@ -1,0 +1,82 @@
+{
+  "B0": {
+    "name": "Frozen X7 Baseline",
+    "suite_50": {
+      "nodes": 1536046,
+      "time_sec": 3.73,
+      "nps": 412060
+    },
+    "tactical_atlas_d7": {
+      "solved": 4,
+      "total": 16,
+      "pct": 25.0,
+      "nodes": 1171790
+    },
+    "fixed_time_1000ms": {
+      "avg_depth": 13.6,
+      "total_nodes": 10866688,
+      "accuracy_pct": 50.0,
+      "solved": "4/8"
+    }
+  },
+  "B2": {
+    "name": "X7 + Countermoves",
+    "suite_50": {
+      "nodes": 1494790,
+      "time_sec": 3.63,
+      "nps": 411700
+    },
+    "tactical_atlas_d7": {
+      "solved": 4,
+      "total": 16,
+      "pct": 25.0,
+      "nodes": 1208080
+    },
+    "fixed_time_1000ms": {
+      "avg_depth": 13.9,
+      "total_nodes": 11069440,
+      "accuracy_pct": 62.5,
+      "solved": "5/8"
+    }
+  },
+  "X9_Cand": {
+    "name": "Candidate X9 (Surgically Optimized)",
+    "suite_50": {
+      "nodes": 1576756,
+      "time_sec": 3.83,
+      "nps": 411957
+    },
+    "tactical_atlas_d7": {
+      "solved": 5,
+      "total": 16,
+      "pct": 31.2,
+      "nodes": 1293127
+    },
+    "fixed_time_1000ms": {
+      "avg_depth": 13.3,
+      "total_nodes": 10633216,
+      "accuracy_pct": 37.5,
+      "solved": "3/8"
+    }
+  },
+  "B7": {
+    "name": "Full Frozen X8",
+    "suite_50": {
+      "nodes": 1594040,
+      "time_sec": 3.9,
+      "nps": 408768
+    },
+    "tactical_atlas_d7": {
+      "solved": 5,
+      "total": 16,
+      "pct": 31.2,
+      "nodes": 1559994
+    },
+    "fixed_time_1000ms": {
+      "avg_depth": 12.7,
+      "total_nodes": 10283008,
+      "accuracy_pct": 50.0,
+      "solved": "4/8"
+    }
+  }
+}

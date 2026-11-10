@@ -1,0 +1,224 @@
+import os
+import json
+import hashlib
+
+def sha256_file(filepath):
+    h = hashlib.sha256()
+    with open(filepath, 'rb') as f:
+        while chunk := f.read(65536):
+            h.update(chunk)
+    return h.hexdigest(), os.path.getsize(filepath)
+
+def main():
+    root = "E:/ChessXML/project-janus-phase1"
+    os.chdir(root)
+
+    # 1. Generate Experiment Manifest
+    experiment_manifest = {
+        "milestone": "P1.4",
+        "program": "Classical Engine Supremacy Program",
+        "title": "Selective Search Economics, Feature-Level Recovery & Classical Strength Requalification",
+        "retained_qualified_baseline": "Janus Classical X7 (b34e342)",
+        "experimental_candidate": "Janus Classical X9 (f61376a2...)",
+        "frozen_defective_candidate": "Janus Classical X8 (501efbc)",
+        "frozen_historical_controls": [
+            "Janus Classical X6 (bbadf8f)",
+            "Classical C1 (e543dab)"
+        ],
+        "reference_engine": "Stockfish 19 official release (sf_19, unrestricted, default NNUE)",
+        "branch": "phase1/classical-janus",
+        "rule1_compliance": "STRICTLY NON-ML (0 neural networks, 0 NNUE, 0 weights, 0 offline fitted models)",
+        "preregistered_promotion_gate": "Candidate promoted iff statistically significant superiority over Baseline X7 (p < 0.05, positive Elo) in 200-game match",
+        "gate_outcome": "RETAIN JANUS CLASSICAL X7 (X9: 97.0/200, 48.50%, p=0.5755)",
+        "phases": {
+            "phase0_promotion_correction": {
+                "status": "COMPLETED",
+                "deliverable": "analysis/phase1/p1.4/P13_PROMOTION_CORRECTION.md",
+                "raw_data": "analysis/phase1/p1.4/raw/p13_tournament_audit_raw.json",
+                "x8_vs_x7_recomputed": "25 W, 35 D, 40 L (42.50%), delta Elo: -52.5 [-106.4, -1.0], paired t=-2.0494, p=0.0404",
+                "determination": "X8 promotion in P1.3 formally revoked; X7 reaffirmed as Qualified Classical Baseline"
+            },
+            "phase1_feature_isolation": {
+                "status": "COMPLETED",
+                "deliverable": "analysis/phase1/p1.4/P13_FEATURE_ISOLATION.md",
+                "raw_data": "analysis/phase1/p1.4/raw/feature_isolation_raw.json",
+                "configurations_tested": 8,
+                "key_findings": {
+                    "B0_X7": "1,536,046 suite nodes, 4/16 solved",
+                    "B2_Countermoves": "1,494,790 suite nodes (-2.69% reduction), 4/16 solved",
+                    "B4_SingularExtensions": "1,430,201 tactical nodes (+22.05% node explosion), 4/16 solved",
+                    "B7_X8": "1,594,040 suite nodes, 1,559,994 tactical nodes, 5/16 solved"
+                }
+            },
+            "phase2_cost_attribution": {
+                "status": "COMPLETED",
+                "deliverable": "analysis/phase1/p1.4/SELECTIVITY_COST_ATTRIBUTION.md",
+                "raw_data": "analysis/phase1/p1.4/raw/selectivity_cost_attribution_raw.json",
+                "mechanism": "Fixed-time nominal depth profiling at 500ms and 1000ms",
+                "nominal_depth_1000ms": {
+                    "B0_X7": 14.50,
+                    "B2_Countermoves": 14.80,
+                    "B4_SingularExtensions": 12.90,
+                    "B7_X8": 12.60
+                },
+                "attribution": "Singular Extension verification searches at (d-1)/2 consume 22-42% of search time, starving nominal depth by 1.6 to 1.9 plies"
+            },
+            "phase3_search_value_per_ms": {
+                "status": "COMPLETED",
+                "deliverable": "analysis/phase1/p1.4/SEARCH_VALUE_PER_MILLISECOND.md",
+                "raw_data": "analysis/phase1/p1.4/raw/search_value_per_ms_raw.json",
+                "corpus_size": 20,
+                "time_controls_ms": [100, 250, 1000, 3000],
+                "finding_1000ms": "B2 achieved 12.95 plies and 55.6% accuracy (10/18) vs B0 12.80 plies and 44.4% (8/18)",
+                "compounding_depth_deficit_B7": "-0.40 plies at 100ms -> -0.65 at 250ms -> -0.85 at 1000ms -> -1.00 at 3000ms"
+            },
+            "phase4_selectivity_optimization": {
+                "status": "COMPLETED",
+                "deliverable": "analysis/phase1/p1.4/SELECTIVITY_OPTIMIZATION_REPORT.md",
+                "raw_data": "analysis/phase1/p1.4/raw/selectivity_optimization_raw.json",
+                "candidates_tested": ["X9_gated", "B2_Countermoves", "X8"],
+                "determination": "Pure Countermove Heuristic (B2) selected as X9 candidate architecture; SE, MultiCut, and ProbCut removed"
+            },
+            "phase5_tactical_generalization": {
+                "status": "COMPLETED",
+                "deliverable": "analysis/phase1/p1.4/TACTICAL_GENERALIZATION_REPORT.md",
+                "raw_data": "analysis/phase1/p1.4/raw/tactical_generalization_raw.json",
+                "tactical_corpus_size": 31,
+                "tactical_categories": 10,
+                "results": {
+                    "B0_X7": "12 / 31 (38.71%), 1,813,142 nodes in 3.02s",
+                    "X9_Candidate": "12 / 31 (38.71%), 1,848,895 nodes in 3.12s",
+                    "B7_X8": "14 / 31 (45.16%), 2,272,003 nodes in 3.93s (+25.31% node budget)"
+                }
+            },
+            "phase6_candidate_selection_freeze": {
+                "status": "COMPLETED",
+                "deliverable": "analysis/phase1/p1.4/X9_CANDIDATE_SELECTION.md",
+                "candidate_name": "Janus Classical X9",
+                "binary": "analysis/phase1/p1.4/control/janus_classical_x9.exe",
+                "sha256": "f61376a20acc04e612589ba98e386cc2780974f9ceb0abf5bee075e78355887d"
+            },
+            "phase7_correctness": {
+                "status": "COMPLETED",
+                "deliverable": "analysis/phase1/p1.4/P14_CORRECTNESS_REPORT.md",
+                "raw_data": "analysis/phase1/p1.4/raw/correctness_raw.json",
+                "perft_status": "12/12 PASSED bit-exact",
+                "fallback_parity_status": "5/5 PASSED bit-exact vs frozen X7",
+                "mate_and_repetition_invariants": "4/4 PASSED"
+            },
+            "phase8_strength_qualification": {
+                "status": "COMPLETED",
+                "deliverable": "analysis/phase1/p1.4/X9_VS_X7_STRENGTH.md",
+                "raw_data": "analysis/phase1/p1.4/raw/x9_vs_x7_tournament_raw.json",
+                "pgn": "analysis/phase1/p1.4/pgn/x9_vs_x7.pgn",
+                "games": 200,
+                "opening_pairs": 100,
+                "time_control": "1.0s + 50ms",
+                "score": "+67 =60 -73 = 97.0 / 200 (48.50%)",
+                "delta_elo": "-10.4 Elo (95% CI: [-47.6, +26.6])",
+                "hypothesis_test": "t = -0.5600, p = 0.5755 (statistically indistinguishable)",
+                "recovery_vs_x8": "+42.1 Elo recovered over X8's -52.5 deficit",
+                "promotion_gate_result": "FAILED PROMOTION (p >= 0.05). Baseline X7 retained."
+            },
+            "phase9_matched_stockfish19": {
+                "status": "COMPLETED",
+                "deliverable": "analysis/phase1/p1.4/MATCHED_STOCKFISH19_PROGRESS.md",
+                "raw_data": "analysis/phase1/p1.4/raw/matched_stockfish19_progress_raw.json",
+                "pgn": "analysis/phase1/p1.4/pgn/matched_stockfish19_progress.pgn",
+                "time_control": "2.0s + 50ms",
+                "pairs": 20,
+                "x7_score_vs_sf19": "1.0 / 40 (2.50%) (2 draws)",
+                "x9_score_vs_sf19": "0.5 / 40 (1.25%) (1 draw)"
+            },
+            "phase10_final_decision": {
+                "status": "COMPLETED",
+                "deliverable": "analysis/phase1/p1.4/FINAL_RESEARCH_DECISION.md",
+                "decision": "CATEGORY C: RETAIN JANUS CLASSICAL X7 AS QUALIFIED BASELINE"
+            },
+            "phase11_next_priority": {
+                "status": "COMPLETED",
+                "deliverable": "analysis/phase1/p1.4/NEXT_CLASSICAL_PRIORITY.md",
+                "priority": "HANDCRAFTED EVALUATION EXPRESSIVENESS (E6) & DYNAMIC TIME MANAGEMENT (TM1)"
+            }
+        }
+    }
+
+    with open("analysis/phase1/p1.4/experiment_manifest.json", "w", encoding="utf-8") as f:
+        json.dump(experiment_manifest, f, indent=2)
+    print("Generated analysis/phase1/p1.4/experiment_manifest.json")
+
+    # 2. Generate SHA-256 Manifest
+    files_to_hash = [
+        # Engine sources and binaries
+        "engine/classical_x/janus_classical_x.cpp",
+        "engine/classical_x/janus_classical_x.exe",
+        "engine/classical_x/janus_classical_x.dll",
+        "analysis/phase1/p1.4/control/janus_classical_x9.cpp",
+        "analysis/phase1/p1.4/control/janus_classical_x9.exe",
+        "analysis/phase1/p1.4/control/janus_classical_x9.dll",
+        "analysis/phase1/p1.4/control/janus_classical_x8.cpp",
+        "analysis/phase1/p1.4/control/janus_classical_x8.exe",
+        "analysis/phase1/p1.4/control/janus_classical_x8.dll",
+        "analysis/phase1/p1.3/control/janus_classical_x7.cpp",
+        "analysis/phase1/p1.3/control/janus_classical_x7.exe",
+        "analysis/phase1/p1.3/control/janus_classical_x7.dll",
+        "analysis/phase1/p1.2/control/janus_classical_x6.exe",
+        "analysis/v0.56/native/janus_native_engine.exe",
+        # P1.4 Deliverables
+        "analysis/phase1/p1.4/P13_PROMOTION_CORRECTION.md",
+        "analysis/phase1/p1.4/P13_FEATURE_ISOLATION.md",
+        "analysis/phase1/p1.4/SELECTIVITY_COST_ATTRIBUTION.md",
+        "analysis/phase1/p1.4/SEARCH_VALUE_PER_MILLISECOND.md",
+        "analysis/phase1/p1.4/SELECTIVITY_OPTIMIZATION_REPORT.md",
+        "analysis/phase1/p1.4/TACTICAL_GENERALIZATION_REPORT.md",
+        "analysis/phase1/p1.4/X9_CANDIDATE_SELECTION.md",
+        "analysis/phase1/p1.4/P14_CORRECTNESS_REPORT.md",
+        "analysis/phase1/p1.4/X9_VS_X7_STRENGTH.md",
+        "analysis/phase1/p1.4/MATCHED_STOCKFISH19_PROGRESS.md",
+        "analysis/phase1/p1.4/FINAL_RESEARCH_DECISION.md",
+        "analysis/phase1/p1.4/NEXT_CLASSICAL_PRIORITY.md",
+        "docs/phase1/p1.4_report.md",
+        # PGNs
+        "analysis/phase1/p1.4/pgn/x9_vs_x7.pgn",
+        "analysis/phase1/p1.4/pgn/matched_stockfish19_progress.pgn",
+        "analysis/phase1/p1.4/pgn/matched_x7_vs_sf19.pgn",
+        "analysis/phase1/p1.4/pgn/matched_x9_vs_sf19.pgn",
+        # Raw Data
+        "analysis/phase1/p1.4/raw/p13_tournament_audit_raw.json",
+        "analysis/phase1/p1.4/raw/feature_isolation_raw.json",
+        "analysis/phase1/p1.4/raw/selectivity_cost_attribution_raw.json",
+        "analysis/phase1/p1.4/raw/search_value_per_ms_raw.json",
+        "analysis/phase1/p1.4/raw/selectivity_optimization_raw.json",
+        "analysis/phase1/p1.4/raw/tactical_generalization_raw.json",
+        "analysis/phase1/p1.4/raw/correctness_raw.json",
+        "analysis/phase1/p1.4/raw/x9_vs_x7_tournament_raw.json",
+        "analysis/phase1/p1.4/raw/matched_stockfish19_progress_raw.json",
+        # Test scripts
+        "analysis/phase1/p1.4/tests/audit_p13_tournament.py",
+        "analysis/phase1/p1.4/tests/test_phase1_isolation.py",
+        "analysis/phase1/p1.4/tests/test_phase2_cost_attribution.py",
+        "analysis/phase1/p1.4/tests/test_phase3_value_per_ms.py",
+        "analysis/phase1/p1.4/tests/test_phase4_optimization.py",
+        "analysis/phase1/p1.4/tests/test_phase5_tactical_generalization.py",
+        "analysis/phase1/p1.4/tests/test_phase7_correctness.py",
+        "analysis/phase1/p1.4/tests/run_p14_tournaments.py"
+    ]
+
+    sha256_manifest = {}
+    for rel_path in files_to_hash:
+        full_path = os.path.join(root, rel_path)
+        if os.path.exists(full_path):
+            sha, size = sha256_file(full_path)
+            sha256_manifest[rel_path] = {
+                "sha256": sha,
+                "size_bytes": size
+            }
+        else:
+            print(f"WARNING: File not found: {rel_path}")
+
+    with open("analysis/phase1/p1.4/sha256_manifest.json", "w", encoding="utf-8") as f:
+        json.dump(sha256_manifest, f, indent=2)
+    print("Generated analysis/phase1/p1.4/sha256_manifest.json with", len(sha256_manifest), "entries")
+
+if __name__ == "__main__":
+    main()

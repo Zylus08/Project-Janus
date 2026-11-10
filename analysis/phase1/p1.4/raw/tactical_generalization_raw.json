@@ -1,0 +1,686 @@
+{
+  "B0": {
+    "name": "Frozen X7 Baseline",
+    "solved": 12,
+    "total": 31,
+    "accuracy_pct": 38.71,
+    "total_nodes": 1813142,
+    "elapsed_sec": 3.02,
+    "nps": 599613,
+    "positions": [
+      {
+        "id": "MATE_01_OPERA",
+        "category": "Forced Mate",
+        "bestmove": "b5d7",
+        "solved": true,
+        "nodes": 13234
+      },
+      {
+        "id": "MATE_02_BACK_RANK",
+        "category": "Forced Mate",
+        "bestmove": "e2e8",
+        "solved": true,
+        "nodes": 52911
+      },
+      {
+        "id": "MATE_03_LEGAL",
+        "category": "Forced Mate",
+        "bestmove": "d5f6",
+        "solved": true,
+        "nodes": 112806
+      },
+      {
+        "id": "MATE_04_SCHOLAR",
+        "category": "Forced Mate",
+        "bestmove": "h5f7",
+        "solved": true,
+        "nodes": 161079
+      },
+      {
+        "id": "SAC_01_GREEK_GIFT",
+        "category": "Sacrificial Attack",
+        "bestmove": "d3h7",
+        "solved": true,
+        "nodes": 52109
+      },
+      {
+        "id": "SAC_02_BISHOP_F7",
+        "category": "Sacrificial Attack",
+        "bestmove": "c1b1",
+        "solved": false,
+        "nodes": 252049
+      },
+      {
+        "id": "SAC_03_EXCHANGE_SAC",
+        "category": "Sacrificial Attack",
+        "bestmove": "e1g1",
+        "solved": false,
+        "nodes": 41526
+      },
+      {
+        "id": "PROMO_01_SAAVEDRA",
+        "category": "Underpromotion",
+        "bestmove": "c1d1",
+        "solved": false,
+        "nodes": 4156
+      },
+      {
+        "id": "PROMO_02_ROOK_PROMO",
+        "category": "Underpromotion",
+        "bestmove": "f7f8q",
+        "solved": true,
+        "nodes": 9196
+      },
+      {
+        "id": "ZUG_01_FINE70",
+        "category": "Zugzwang / NMP Hazard",
+        "bestmove": "a1a2",
+        "solved": false,
+        "nodes": 1263
+      },
+      {
+        "id": "ZUG_02_OPPOSITION",
+        "category": "Pawn Opposition",
+        "bestmove": "e3d4",
+        "solved": false,
+        "nodes": 6365
+      },
+      {
+        "id": "ZUG_03_DISTANT",
+        "category": "Distant Opposition",
+        "bestmove": "e1d1",
+        "solved": false,
+        "nodes": 42
+      },
+      {
+        "id": "BREAK_01_CARO_C4D5",
+        "category": "Tactical Pawn Break",
+        "bestmove": "e1g1",
+        "solved": false,
+        "nodes": 146927
+      },
+      {
+        "id": "BREAK_02_FRENCH_E4E5",
+        "category": "Tactical Pawn Break",
+        "bestmove": "e4d5",
+        "solved": true,
+        "nodes": 40853
+      },
+      {
+        "id": "BREAK_03_BENONI_E4",
+        "category": "Tactical Pawn Break",
+        "bestmove": "c1d2",
+        "solved": false,
+        "nodes": 92958
+      },
+      {
+        "id": "PIN_01_ROOK_PIN",
+        "category": "Pinning & Deflection",
+        "bestmove": "d1c2",
+        "solved": false,
+        "nodes": 95633
+      },
+      {
+        "id": "PIN_02_EXCHANGE_QUEEN",
+        "category": "Pinning & Deflection",
+        "bestmove": "c1c8",
+        "solved": true,
+        "nodes": 10662
+      },
+      {
+        "id": "PIN_03_KNIGHT_FORK",
+        "category": "Knight Fork Deflection",
+        "bestmove": "e2e3",
+        "solved": false,
+        "nodes": 43787
+      },
+      {
+        "id": "QUIET_01_BISHOP_WAIT",
+        "category": "Quiet Tactical Move",
+        "bestmove": "e1g1",
+        "solved": true,
+        "nodes": 116843
+      },
+      {
+        "id": "QUIET_02_KNIGHT_DEVELOP",
+        "category": "Quiet Tactical Move",
+        "bestmove": "d3b5",
+        "solved": false,
+        "nodes": 57721
+      },
+      {
+        "id": "QUIET_03_CASTLE",
+        "category": "Quiet Tactical Move",
+        "bestmove": "d4c5",
+        "solved": false,
+        "nodes": 112160
+      },
+      {
+        "id": "QUIET_04_BISHOP_RETREAT",
+        "category": "Quiet Tactical Move",
+        "bestmove": "d1d2",
+        "solved": false,
+        "nodes": 100549
+      },
+      {
+        "id": "QUIET_05_BISHOP_BLOCK",
+        "category": "Quiet Tactical Move",
+        "bestmove": "d1b3",
+        "solved": false,
+        "nodes": 30213
+      },
+      {
+        "id": "EVASION_01_DEFEND_CHECK",
+        "category": "Check Evasion",
+        "bestmove": "c1d2",
+        "solved": true,
+        "nodes": 23273
+      },
+      {
+        "id": "EVASION_02_BLOCK_QUEEN",
+        "category": "Check Evasion",
+        "bestmove": "d8h4",
+        "solved": true,
+        "nodes": 84682
+      },
+      {
+        "id": "SEE_01_WINNING_CAPTURE",
+        "category": "SEE Trap",
+        "bestmove": "f1b5",
+        "solved": false,
+        "nodes": 48719
+      },
+      {
+        "id": "SEE_02_ROOK_INVASION",
+        "category": "SEE Trap",
+        "bestmove": "b4f4",
+        "solved": true,
+        "nodes": 18778
+      },
+      {
+        "id": "SEE_03_DEFEND_MINOR",
+        "category": "SEE Trap",
+        "bestmove": "c4d5",
+        "solved": false,
+        "nodes": 52650
+      },
+      {
+        "id": "END_01_ROOK_BRIDGE",
+        "category": "Endgame Tactic",
+        "bestmove": "h1a1",
+        "solved": false,
+        "nodes": 11373
+      },
+      {
+        "id": "END_02_KING_CUT",
+        "category": "Endgame Tactic",
+        "bestmove": "c2c7",
+        "solved": false,
+        "nodes": 16241
+      },
+      {
+        "id": "END_03_PAWN_BREAKTHROUGH",
+        "category": "Endgame Tactic",
+        "bestmove": "e1f1",
+        "solved": false,
+        "nodes": 2384
+      }
+    ]
+  },
+  "X9_Cand": {
+    "name": "Candidate X9 (Countermoves Modernization)",
+    "solved": 12,
+    "total": 31,
+    "accuracy_pct": 38.71,
+    "total_nodes": 1848895,
+    "elapsed_sec": 3.12,
+    "nps": 591744,
+    "positions": [
+      {
+        "id": "MATE_01_OPERA",
+        "category": "Forced Mate",
+        "bestmove": "b5d7",
+        "solved": true,
+        "nodes": 13234
+      },
+      {
+        "id": "MATE_02_BACK_RANK",
+        "category": "Forced Mate",
+        "bestmove": "e2e8",
+        "solved": true,
+        "nodes": 52793
+      },
+      {
+        "id": "MATE_03_LEGAL",
+        "category": "Forced Mate",
+        "bestmove": "d5f6",
+        "solved": true,
+        "nodes": 112875
+      },
+      {
+        "id": "MATE_04_SCHOLAR",
+        "category": "Forced Mate",
+        "bestmove": "h5f7",
+        "solved": true,
+        "nodes": 160752
+      },
+      {
+        "id": "SAC_01_GREEK_GIFT",
+        "category": "Sacrificial Attack",
+        "bestmove": "d3h7",
+        "solved": true,
+        "nodes": 52094
+      },
+      {
+        "id": "SAC_02_BISHOP_F7",
+        "category": "Sacrificial Attack",
+        "bestmove": "a2a3",
+        "solved": false,
+        "nodes": 219828
+      },
+      {
+        "id": "SAC_03_EXCHANGE_SAC",
+        "category": "Sacrificial Attack",
+        "bestmove": "e1g1",
+        "solved": false,
+        "nodes": 41608
+      },
+      {
+        "id": "PROMO_01_SAAVEDRA",
+        "category": "Underpromotion",
+        "bestmove": "c1d1",
+        "solved": false,
+        "nodes": 4156
+      },
+      {
+        "id": "PROMO_02_ROOK_PROMO",
+        "category": "Underpromotion",
+        "bestmove": "f7f8q",
+        "solved": true,
+        "nodes": 9196
+      },
+      {
+        "id": "ZUG_01_FINE70",
+        "category": "Zugzwang / NMP Hazard",
+        "bestmove": "a1a2",
+        "solved": false,
+        "nodes": 1263
+      },
+      {
+        "id": "ZUG_02_OPPOSITION",
+        "category": "Pawn Opposition",
+        "bestmove": "e3d4",
+        "solved": false,
+        "nodes": 6369
+      },
+      {
+        "id": "ZUG_03_DISTANT",
+        "category": "Distant Opposition",
+        "bestmove": "e1d1",
+        "solved": false,
+        "nodes": 42
+      },
+      {
+        "id": "BREAK_01_CARO_C4D5",
+        "category": "Tactical Pawn Break",
+        "bestmove": "e1g1",
+        "solved": false,
+        "nodes": 148401
+      },
+      {
+        "id": "BREAK_02_FRENCH_E4E5",
+        "category": "Tactical Pawn Break",
+        "bestmove": "e4d5",
+        "solved": true,
+        "nodes": 40385
+      },
+      {
+        "id": "BREAK_03_BENONI_E4",
+        "category": "Tactical Pawn Break",
+        "bestmove": "c1d2",
+        "solved": false,
+        "nodes": 93176
+      },
+      {
+        "id": "PIN_01_ROOK_PIN",
+        "category": "Pinning & Deflection",
+        "bestmove": "e2d3",
+        "solved": false,
+        "nodes": 99439
+      },
+      {
+        "id": "PIN_02_EXCHANGE_QUEEN",
+        "category": "Pinning & Deflection",
+        "bestmove": "c1c8",
+        "solved": true,
+        "nodes": 10768
+      },
+      {
+        "id": "PIN_03_KNIGHT_FORK",
+        "category": "Knight Fork Deflection",
+        "bestmove": "e2e3",
+        "solved": false,
+        "nodes": 44026
+      },
+      {
+        "id": "QUIET_01_BISHOP_WAIT",
+        "category": "Quiet Tactical Move",
+        "bestmove": "e1g1",
+        "solved": true,
+        "nodes": 116708
+      },
+      {
+        "id": "QUIET_02_KNIGHT_DEVELOP",
+        "category": "Quiet Tactical Move",
+        "bestmove": "d3b5",
+        "solved": false,
+        "nodes": 57504
+      },
+      {
+        "id": "QUIET_03_CASTLE",
+        "category": "Quiet Tactical Move",
+        "bestmove": "f3e5",
+        "solved": false,
+        "nodes": 169676
+      },
+      {
+        "id": "QUIET_04_BISHOP_RETREAT",
+        "category": "Quiet Tactical Move",
+        "bestmove": "d1d2",
+        "solved": false,
+        "nodes": 105905
+      },
+      {
+        "id": "QUIET_05_BISHOP_BLOCK",
+        "category": "Quiet Tactical Move",
+        "bestmove": "d1b3",
+        "solved": false,
+        "nodes": 30294
+      },
+      {
+        "id": "EVASION_01_DEFEND_CHECK",
+        "category": "Check Evasion",
+        "bestmove": "c1d2",
+        "solved": true,
+        "nodes": 23977
+      },
+      {
+        "id": "EVASION_02_BLOCK_QUEEN",
+        "category": "Check Evasion",
+        "bestmove": "d8h4",
+        "solved": true,
+        "nodes": 84202
+      },
+      {
+        "id": "SEE_01_WINNING_CAPTURE",
+        "category": "SEE Trap",
+        "bestmove": "f1b5",
+        "solved": false,
+        "nodes": 48629
+      },
+      {
+        "id": "SEE_02_ROOK_INVASION",
+        "category": "SEE Trap",
+        "bestmove": "b4f4",
+        "solved": true,
+        "nodes": 18991
+      },
+      {
+        "id": "SEE_03_DEFEND_MINOR",
+        "category": "SEE Trap",
+        "bestmove": "c4d5",
+        "solved": false,
+        "nodes": 52718
+      },
+      {
+        "id": "END_01_ROOK_BRIDGE",
+        "category": "Endgame Tactic",
+        "bestmove": "h1a1",
+        "solved": false,
+        "nodes": 11337
+      },
+      {
+        "id": "END_02_KING_CUT",
+        "category": "Endgame Tactic",
+        "bestmove": "c2c7",
+        "solved": false,
+        "nodes": 16165
+      },
+      {
+        "id": "END_03_PAWN_BREAKTHROUGH",
+        "category": "Endgame Tactic",
+        "bestmove": "e1f1",
+        "solved": false,
+        "nodes": 2384
+      }
+    ]
+  },
+  "B7": {
+    "name": "Frozen X8 Experimental",
+    "solved": 14,
+    "total": 31,
+    "accuracy_pct": 45.16,
+    "total_nodes": 2272003,
+    "elapsed_sec": 3.93,
+    "nps": 578434,
+    "positions": [
+      {
+        "id": "MATE_01_OPERA",
+        "category": "Forced Mate",
+        "bestmove": "b5d7",
+        "solved": true,
+        "nodes": 12011
+      },
+      {
+        "id": "MATE_02_BACK_RANK",
+        "category": "Forced Mate",
+        "bestmove": "e2e8",
+        "solved": true,
+        "nodes": 52793
+      },
+      {
+        "id": "MATE_03_LEGAL",
+        "category": "Forced Mate",
+        "bestmove": "d5f6",
+        "solved": true,
+        "nodes": 99106
+      },
+      {
+        "id": "MATE_04_SCHOLAR",
+        "category": "Forced Mate",
+        "bestmove": "h5f7",
+        "solved": true,
+        "nodes": 159818
+      },
+      {
+        "id": "SAC_01_GREEK_GIFT",
+        "category": "Sacrificial Attack",
+        "bestmove": "d3h7",
+        "solved": true,
+        "nodes": 45589
+      },
+      {
+        "id": "SAC_02_BISHOP_F7",
+        "category": "Sacrificial Attack",
+        "bestmove": "a2a3",
+        "solved": false,
+        "nodes": 325867
+      },
+      {
+        "id": "SAC_03_EXCHANGE_SAC",
+        "category": "Sacrificial Attack",
+        "bestmove": "e1g1",
+        "solved": false,
+        "nodes": 40159
+      },
+      {
+        "id": "PROMO_01_SAAVEDRA",
+        "category": "Underpromotion",
+        "bestmove": "b6b7",
+        "solved": true,
+        "nodes": 5638
+      },
+      {
+        "id": "PROMO_02_ROOK_PROMO",
+        "category": "Underpromotion",
+        "bestmove": "f7f8q",
+        "solved": true,
+        "nodes": 7311
+      },
+      {
+        "id": "ZUG_01_FINE70",
+        "category": "Zugzwang / NMP Hazard",
+        "bestmove": "a1a2",
+        "solved": false,
+        "nodes": 1308
+      },
+      {
+        "id": "ZUG_02_OPPOSITION",
+        "category": "Pawn Opposition",
+        "bestmove": "e3d4",
+        "solved": false,
+        "nodes": 5942
+      },
+      {
+        "id": "ZUG_03_DISTANT",
+        "category": "Distant Opposition",
+        "bestmove": "e1d1",
+        "solved": false,
+        "nodes": 42
+      },
+      {
+        "id": "BREAK_01_CARO_C4D5",
+        "category": "Tactical Pawn Break",
+        "bestmove": "e1g1",
+        "solved": false,
+        "nodes": 216151
+      },
+      {
+        "id": "BREAK_02_FRENCH_E4E5",
+        "category": "Tactical Pawn Break",
+        "bestmove": "e4d5",
+        "solved": true,
+        "nodes": 40867
+      },
+      {
+        "id": "BREAK_03_BENONI_E4",
+        "category": "Tactical Pawn Break",
+        "bestmove": "c1d2",
+        "solved": false,
+        "nodes": 101157
+      },
+      {
+        "id": "PIN_01_ROOK_PIN",
+        "category": "Pinning & Deflection",
+        "bestmove": "d1c2",
+        "solved": false,
+        "nodes": 115386
+      },
+      {
+        "id": "PIN_02_EXCHANGE_QUEEN",
+        "category": "Pinning & Deflection",
+        "bestmove": "c1c8",
+        "solved": true,
+        "nodes": 14576
+      },
+      {
+        "id": "PIN_03_KNIGHT_FORK",
+        "category": "Knight Fork Deflection",
+        "bestmove": "e2e3",
+        "solved": false,
+        "nodes": 86321
+      },
+      {
+        "id": "QUIET_01_BISHOP_WAIT",
+        "category": "Quiet Tactical Move",
+        "bestmove": "e1g1",
+        "solved": true,
+        "nodes": 128817
+      },
+      {
+        "id": "QUIET_02_KNIGHT_DEVELOP",
+        "category": "Quiet Tactical Move",
+        "bestmove": "d3b5",
+        "solved": false,
+        "nodes": 70144
+      },
+      {
+        "id": "QUIET_03_CASTLE",
+        "category": "Quiet Tactical Move",
+        "bestmove": "b2b3",
+        "solved": false,
+        "nodes": 211753
+      },
+      {
+        "id": "QUIET_04_BISHOP_RETREAT",
+        "category": "Quiet Tactical Move",
+        "bestmove": "d1f3",
+        "solved": false,
+        "nodes": 149415
+      },
+      {
+        "id": "QUIET_05_BISHOP_BLOCK",
+        "category": "Quiet Tactical Move",
+        "bestmove": "d1b3",
+        "solved": false,
+        "nodes": 35702
+      },
+      {
+        "id": "EVASION_01_DEFEND_CHECK",
+        "category": "Check Evasion",
+        "bestmove": "c1d2",
+        "solved": true,
+        "nodes": 35066
+      },
+      {
+        "id": "EVASION_02_BLOCK_QUEEN",
+        "category": "Check Evasion",
+        "bestmove": "d8h4",
+        "solved": true,
+        "nodes": 84990
+      },
+      {
+        "id": "SEE_01_WINNING_CAPTURE",
+        "category": "SEE Trap",
+        "bestmove": "d4c6",
+        "solved": true,
+        "nodes": 87294
+      },
+      {
+        "id": "SEE_02_ROOK_INVASION",
+        "category": "SEE Trap",
+        "bestmove": "b4f4",
+        "solved": true,
+        "nodes": 24612
+      },
+      {
+        "id": "SEE_03_DEFEND_MINOR",
+        "category": "SEE Trap",
+        "bestmove": "c4d5",
+        "solved": false,
+        "nodes": 85087
+      },
+      {
+        "id": "END_01_ROOK_BRIDGE",
+        "category": "Endgame Tactic",
+        "bestmove": "h1a1",
+        "solved": false,
+        "nodes": 12592
+      },
+      {
+        "id": "END_02_KING_CUT",
+        "category": "Endgame Tactic",
+        "bestmove": "c2c7",
+        "solved": false,
+        "nodes": 13069
+      },
+      {
+        "id": "END_03_PAWN_BREAKTHROUGH",
+        "category": "Endgame Tactic",
+        "bestmove": "e1f1",
+        "solved": false,
+        "nodes": 3420
+      }
+    ]
+  }
+}

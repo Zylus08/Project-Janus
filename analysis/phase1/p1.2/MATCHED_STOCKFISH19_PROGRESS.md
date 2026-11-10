@@ -77,3 +77,4 @@ To continue closing the gap with unrestricted Stockfish 19 without using machine
 
 - **PGN Record:** `analysis/phase1/p1.2/pgn/matched_sf19_progress.pgn`
 - **Raw Match Telemetry:** `analysis/phase1/p1.2/raw/matched_sf19_progress_raw.json`
+

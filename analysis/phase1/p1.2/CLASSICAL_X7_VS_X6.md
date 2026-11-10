@@ -82,3 +82,4 @@ p-value vs Null (H0: score=50%):  p = 0.00021 (Statistically Significant)
 **Janus Classical X7** establishes a statistically verified playing-strength advantage of **+127.0 Elo (95% CI: [+60.5, +203.9] Elo, $p < 0.001$)** over Classical X6.
 
 The performance gate is passed with substantial margin. Janus Classical X7 is promoted as the new baseline engine for Project Janus Phase 1.
+

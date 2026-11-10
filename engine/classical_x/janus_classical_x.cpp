@@ -204,7 +204,14 @@ static std::string g_search_variant = "X7";    // Active variant identifier (Def
 // ============================================================================
 static int g_conthist_mode = 3;       // 0=H0 (Off), 1=H1 (1-ply), 2=H2 (2-ply), 3=H3 (1-ply+2-ply)
 static int g_dynamic_lmr_mode = 3;     // 0=L0 (Static base), 1=L1 (Log table), 2=L2 (Hist mod), 3=L3 (Conthist mod)
-static int g_eval_mode = 5;            // 0=E0 (Base), 1=E1 (Pawn), 2=E2 (Mobility), 3=E3 (King), 4=E4 (Endgame), 5=E5 (Combined)
+static int g_eval_mode = 5;            // 0=E0..5=E5 (X7), 6=E6..10=E10 (X10)
+static bool g_use_pawn_hash = false;   // P1.5: 64K entry Pawn Hash Table
+static bool g_dynamic_time_mgmt = false; // P1.5: Dynamic Time Management with stability & hard limits
+static bool g_stop_search = false;
+static std::chrono::steady_clock::time_point g_hard_deadline;
+static uint64_t g_telemetry_pawn_probes = 0;
+static uint64_t g_telemetry_pawn_hits = 0;
+            // 0=E0 (Base), 1=E1 (Pawn), 2=E2 (Mobility), 3=E3 (King), 4=E4 (Endgame), 5=E5 (Combined)
 
 // Search stack for continuation history tracking
 struct SearchStackEntry {
@@ -369,6 +376,24 @@ EXPORT void native_apply_search_variant(const char* var_str) {
         g_singular_extension_mode = 0; // S0: Off (Eliminates verification search depth tax)
         g_multicut_mode = 0; // C0: Off
         g_probcut_mode = 0; // P0: Off
+        g_use_pawn_hash = false;
+        g_dynamic_time_mgmt = false;
+    } else if (var == "X10") { // P1.5 Candidate: Evaluation Expressiveness, Pawn Hash & Dynamic Time Management
+        g_use_staged_movegen = true;
+        g_quiescence_see_mode = 2;
+        g_use_see_in_quiescence = true;
+        g_use_null_move_pruning = true;
+        g_use_reverse_futility = true;
+        g_use_aspiration_window = true;
+        g_conthist_mode = 3; // H3
+        g_dynamic_lmr_mode = 3; // L3 Calibrated
+        g_eval_mode = 10; // E10 Enhanced Classical Evaluation
+        g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
+        g_singular_extension_mode = 0; // S0 Off
+        g_multicut_mode = 0; // C0 Off
+        g_probcut_mode = 0; // P0 Off
+        g_use_pawn_hash = true; // 64K entry Pawn Hash Table
+        g_dynamic_time_mgmt = true; // Dynamic Time Management
     }
 }
 
@@ -1390,6 +1415,40 @@ constexpr uint64_t FILE_MASKS[8] = {
 };
 
 constexpr uint64_t RANK_1_MASK = 0x00000000000000FFULL;
+
+// ============================================================================
+// Phase 4: Pawn Hash Table Architecture (P1.5)
+// ============================================================================
+struct PawnHashEntry {
+    uint64_t key;
+    int16_t mg[2];
+    int16_t eg[2];
+    uint64_t passed_pawns[2];
+};
+constexpr size_t PAWN_HASH_SIZE = 65536; // 64K entries * 32 bytes = 2.0 MB (L3 resident)
+static PawnHashEntry g_pawn_table[PAWN_HASH_SIZE];
+
+static void clear_pawn_table() {
+    std::memset(g_pawn_table, 0, sizeof(g_pawn_table));
+}
+
+static inline uint64_t compute_pawn_zobrist(const NativeBoard* b) {
+    uint64_t key = 0;
+    uint64_t wp = b->pieces[WHITE][PAWN];
+    while (wp) {
+        int sq = bitscan_forward(wp);
+        wp &= wp - 1;
+        key ^= zobrist_pieces[WHITE][PAWN][sq];
+    }
+    uint64_t bp = b->pieces[BLACK][PAWN];
+    while (bp) {
+        int sq = bitscan_forward(bp);
+        bp &= bp - 1;
+        key ^= zobrist_pieces[BLACK][PAWN][sq];
+    }
+    return key;
+}
+
 constexpr uint64_t RANK_MASKS[8] = {
     RANK_1_MASK, RANK_1_MASK << 8, RANK_1_MASK << 16, RANK_1_MASK << 24,
     RANK_1_MASK << 32, RANK_1_MASK << 40, RANK_1_MASK << 48, RANK_1_MASK << 56
@@ -1644,6 +1703,396 @@ static void eval_endgame_positional(const NativeBoard* b, int mg[2], int eg[2]) 
     }
 }
 
+
+// ============================================================================
+// Phase 3: Enhanced Classical Evaluation Modules (Milestone P1.5 - E1'..E5')
+// Strictly Non-ML Handcrafted Terms
+// ============================================================================
+
+static void eval_pawn_structure_v2(const NativeBoard* b, int mg[2], int eg[2], uint64_t passed_bb[2]) {
+    passed_bb[WHITE] = 0;
+    passed_bb[BLACK] = 0;
+
+    for (int c = 0; c < 2; c++) {
+        uint64_t my_pawns = b->pieces[c][PAWN];
+        uint64_t enemy_pawns = b->pieces[1 - c][PAWN];
+
+        // 1. Passed Pawns & Candidate Passers
+        uint64_t p = my_pawns;
+        while (p) {
+            int sq = bitscan_forward(p);
+            p &= p - 1;
+            int f = sq % 8;
+            int r = (c == WHITE) ? (sq / 8) : (7 - (sq / 8));
+            bool is_passed = (c == WHITE) ? ((enemy_pawns & white_passed_pawn_mask[sq]) == 0)
+                                          : ((enemy_pawns & black_passed_pawn_mask[sq]) == 0);
+            if (is_passed) {
+                passed_bb[c] |= (1ULL << sq);
+                mg[c] += PASSED_PAWN_BONUS_MG[r];
+                eg[c] += PASSED_PAWN_BONUS_EG[r];
+
+                // Connected passer bonus
+                uint64_t adj = my_pawns & adjacent_files_mask(f);
+                int act_r = sq / 8;
+                uint64_t near_ranks = RANK_MASKS[act_r] | (act_r > 0 ? RANK_MASKS[act_r - 1] : 0) | (act_r < 7 ? RANK_MASKS[act_r + 1] : 0);
+                if (adj & near_ranks) {
+                    mg[c] += 15; eg[c] += 25;
+                }
+
+                // Supported passer bonus (defended by friendly pawn)
+                uint64_t defenders = (c == WHITE) ? pawn_attacks[BLACK][sq] : pawn_attacks[WHITE][sq];
+                if (defenders & my_pawns) {
+                    mg[c] += 15; eg[c] += 25;
+                }
+            } else {
+                // Candidate passed pawn: no enemy pawn directly ahead, and friendly support >= enemy opposition
+                uint64_t front_span = (c == WHITE) ? (FILE_MASKS[f] & ~((1ULL << (sq + 1)) - 1))
+                                                    : (FILE_MASKS[f] & ((1ULL << sq) - 1));
+                if ((enemy_pawns & front_span) == 0 && r >= 3) {
+                    uint64_t adj_my = my_pawns & adjacent_files_mask(f);
+                    uint64_t adj_en = enemy_pawns & adjacent_files_mask(f);
+                    if (popcount64(adj_my) >= popcount64(adj_en)) {
+                        mg[c] += PASSED_PAWN_BONUS_MG[r] / 2;
+                        eg[c] += PASSED_PAWN_BONUS_EG[r] / 2;
+                    }
+                }
+            }
+        }
+
+        // 2. Isolated, Doubled, and Backward Pawns
+        int occupied_files = 0;
+        for (int f = 0; f < 8; f++) {
+            uint64_t f_pawns = my_pawns & FILE_MASKS[f];
+            if (f_pawns) {
+                occupied_files |= (1 << f);
+
+                // Isolated pawn
+                if ((my_pawns & adjacent_files_mask(f)) == 0) {
+                    mg[c] -= 12; eg[c] -= 20;
+                }
+                // Doubled pawn
+                int cnt = popcount64(f_pawns);
+                if (cnt > 1) {
+                    mg[c] -= 15 * (cnt - 1);
+                    eg[c] -= 25 * (cnt - 1);
+                }
+
+                // Backward pawn
+                int base_sq = (c == WHITE) ? bitscan_forward(f_pawns) : bitscan_reverse(f_pawns);
+                int base_r = base_sq / 8;
+                int stop_sq = (c == WHITE) ? (base_sq + 8) : (base_sq - 8);
+                if (stop_sq >= 0 && stop_sq < 64) {
+                    uint64_t stop_attackers = (c == WHITE) ? pawn_attacks[WHITE][stop_sq] : pawn_attacks[BLACK][stop_sq];
+                    if (stop_attackers & enemy_pawns) {
+                        uint64_t friendly_adj = my_pawns & adjacent_files_mask(f);
+                        bool has_supporter_behind = false;
+                        while (friendly_adj) {
+                            int asq = bitscan_forward(friendly_adj);
+                            friendly_adj &= friendly_adj - 1;
+                            int ar = asq / 8;
+                            if ((c == WHITE && ar <= base_r) || (c == BLACK && ar >= base_r)) {
+                                has_supporter_behind = true;
+                                break;
+                            }
+                        }
+                        if (!has_supporter_behind) {
+                            mg[c] -= 10; eg[c] -= 15;
+                        }
+                    }
+                }
+            }
+        }
+
+        // 3. Pawn Islands
+        int islands = 0;
+        bool in_island = false;
+        for (int f = 0; f < 8; f++) {
+            if (occupied_files & (1 << f)) {
+                if (!in_island) { islands++; in_island = true; }
+            } else {
+                in_island = false;
+            }
+        }
+        if (islands > 1) {
+            mg[c] -= (islands - 1) * 8;
+            eg[c] -= (islands - 1) * 12;
+        }
+    }
+}
+
+static void eval_king_safety_v2(const NativeBoard* b, int mg[2], int eg[2]) {
+    for (int c = 0; c < 2; c++) {
+        uint64_t kbb = b->pieces[c][KING];
+        if (!kbb) continue;
+        int ksq = bitscan_forward(kbb);
+        int kf = ksq % 8;
+        int kr = ksq / 8;
+        int them = 1 - c;
+
+        int enemy_queens = popcount64(b->pieces[them][QUEEN]);
+
+        // Pawn shield
+        int shield_missing = 0;
+        for (int f = std::max(0, kf - 1); f <= std::min(7, kf + 1); f++) {
+            uint64_t f_pawns = b->pieces[c][PAWN] & FILE_MASKS[f];
+            if (!f_pawns) {
+                shield_missing++;
+            } else {
+                if (c == WHITE) {
+                    int psq = bitscan_forward(f_pawns);
+                    if (psq / 8 > kr + 2) shield_missing++;
+                } else {
+                    int psq = bitscan_reverse(f_pawns);
+                    if (psq / 8 < kr - 2) shield_missing++;
+                }
+            }
+        }
+        // Scale shield penalty by enemy queen presence
+        int shield_penalty = (enemy_queens > 0) ? (shield_missing * 15) : (shield_missing * 5);
+        mg[c] -= shield_penalty;
+
+        // King ring enemy attackers (Only if enemy has queen or multiple heavy pieces)
+        if (enemy_queens > 0) {
+            uint64_t king_ring = king_attacks[ksq];
+            int attack_units = 0;
+            int attackers = 0;
+
+            uint64_t att_kn = b->pieces[them][KNIGHT];
+            while (att_kn) {
+                int sq = bitscan_forward(att_kn);
+                att_kn &= att_kn - 1;
+                if (knight_attacks[sq] & king_ring) { attack_units += 2; attackers++; }
+            }
+            uint64_t att_bi = b->pieces[them][BISHOP];
+            while (att_bi) {
+                int sq = bitscan_forward(att_bi);
+                att_bi &= att_bi - 1;
+                if (bishop_attacks_bb(sq, b->occupancy[2]) & king_ring) { attack_units += 2; attackers++; }
+            }
+            uint64_t att_ro = b->pieces[them][ROOK];
+            while (att_ro) {
+                int sq = bitscan_forward(att_ro);
+                att_ro &= att_ro - 1;
+                if (rook_attacks_bb(sq, b->occupancy[2]) & king_ring) { attack_units += 3; attackers++; }
+            }
+            uint64_t att_qu = b->pieces[them][QUEEN];
+            while (att_qu) {
+                int sq = bitscan_forward(att_qu);
+                att_qu &= att_qu - 1;
+                if (queen_attacks_bb(sq, b->occupancy[2]) & king_ring) { attack_units += 5; attackers++; }
+            }
+            if (attackers >= 2) {
+                int danger = attack_units * attack_units;
+                mg[c] -= std::min(200, danger * 2);
+            }
+        }
+
+        // Enemy Pawn Storms
+        if (kf <= 2 || kf >= 5) {
+            uint64_t storm_pawns = b->pieces[them][PAWN];
+            for (int f = std::max(0, kf - 1); f <= std::min(7, kf + 1); f++) {
+                uint64_t f_storm = storm_pawns & FILE_MASKS[f];
+                while (f_storm) {
+                    int psq = bitscan_forward(f_storm);
+                    f_storm &= f_storm - 1;
+                    int pr = (them == WHITE) ? (psq / 8) : (7 - (psq / 8));
+                    if (pr >= 3) {
+                        mg[c] -= (pr - 2) * 8; // Storm penalty
+                    }
+                }
+            }
+        }
+    }
+}
+
+static void eval_mobility_and_coordination_v2(const NativeBoard* b, int mg[2], int eg[2], const uint64_t passed_bb[2]) {
+    constexpr uint64_t LIGHT_SQ_MASK = 0x55AA55AA55AA55AAULL;
+    constexpr uint64_t DARK_SQ_MASK  = 0xAA55AA55AA55AA55ULL;
+
+    for (int c = 0; c < 2; c++) {
+        uint64_t bishops = b->pieces[c][BISHOP];
+        // Color-separated bishop pair
+        if ((bishops & LIGHT_SQ_MASK) && (bishops & DARK_SQ_MASK)) {
+            mg[c] += 35; eg[c] += 55;
+        }
+
+        // Rooks: open/semi-open files, 7th rank, connected rooks, Tarrasch rule
+        uint64_t rooks = b->pieces[c][ROOK];
+        int seventh = (c == WHITE) ? 6 : 1;
+        int rook_files[2] = { -1, -1 };
+        int r_idx = 0;
+
+        while (rooks) {
+            int sq = bitscan_forward(rooks);
+            rooks &= rooks - 1;
+            int f = sq % 8;
+            int r = sq / 8;
+            if (r_idx < 2) rook_files[r_idx++] = f;
+
+            bool my_p = (b->pieces[c][PAWN] & FILE_MASKS[f]) != 0;
+            bool en_p = (b->pieces[1 - c][PAWN] & FILE_MASKS[f]) != 0;
+            if (!my_p && !en_p) {
+                mg[c] += 20; eg[c] += 25;
+            } else if (!my_p && en_p) {
+                mg[c] += 10; eg[c] += 15;
+            }
+            if (r == seventh) {
+                mg[c] += 20; eg[c] += 35;
+            }
+
+            // Tarrasch rule: rook behind passed pawn
+            uint64_t file_passers = passed_bb[c] & FILE_MASKS[f];
+            if (file_passers) {
+                int psq = bitscan_forward(file_passers);
+                if ((c == WHITE && r < psq / 8) || (c == BLACK && r > psq / 8)) {
+                    mg[c] += 20; eg[c] += 30; // Behind friendly passer
+                }
+            }
+            uint64_t en_file_passers = passed_bb[1 - c] & FILE_MASKS[f];
+            if (en_file_passers) {
+                int psq = bitscan_forward(en_file_passers);
+                if ((c == WHITE && r < psq / 8) || (c == BLACK && r > psq / 8)) {
+                    mg[c] += 15; eg[c] += 25; // Behind enemy passer (blockade)
+                }
+            }
+        }
+
+        // Connected rooks
+        if (r_idx == 2 && rook_files[0] == rook_files[1]) {
+            mg[c] += 15; eg[c] += 15;
+        }
+
+        // True Knight Outposts (immune to enemy pawn kick)
+        uint64_t knights = b->pieces[c][KNIGHT];
+        while (knights) {
+            int sq = bitscan_forward(knights);
+            knights &= knights - 1;
+            int r = (c == WHITE) ? (sq / 8) : (7 - (sq / 8));
+            int f = sq % 8;
+            if (r >= 3 && r <= 5) {
+                uint64_t def = (c == WHITE) ? pawn_attacks[BLACK][sq] : pawn_attacks[WHITE][sq];
+                if (def & b->pieces[c][PAWN]) {
+                    // Check if kickable by enemy pawn
+                    bool kickable = false;
+                    for (int af : { f - 1, f + 1 }) {
+                        if (af >= 0 && af <= 7) {
+                            uint64_t en_pawns = b->pieces[1 - c][PAWN] & FILE_MASKS[af];
+                            while (en_pawns) {
+                                int esq = bitscan_forward(en_pawns);
+                                en_pawns &= en_pawns - 1;
+                                int er = (c == WHITE) ? (esq / 8) : (7 - (esq / 8));
+                                if (er >= r) { kickable = true; break; }
+                            }
+                        }
+                    }
+                    if (!kickable) {
+                        mg[c] += 25; eg[c] += 15; // True immune outpost
+                    } else {
+                        mg[c] += 10; eg[c] += 5;  // Temporary outpost
+                    }
+                }
+            }
+        }
+
+        // Safe Mobility for Knights, Bishops, Rooks, and Queens
+        uint64_t enemy_pawn_attacks_bb = 0;
+        uint64_t ep = b->pieces[1 - c][PAWN];
+        while (ep) {
+            int sq = bitscan_forward(ep);
+            ep &= ep - 1;
+            enemy_pawn_attacks_bb |= pawn_attacks[1 - c][sq];
+        }
+        uint64_t safe_mask = ~(b->occupancy[c] | enemy_pawn_attacks_bb);
+
+        uint64_t kn = b->pieces[c][KNIGHT];
+        while (kn) {
+            int sq = bitscan_forward(kn);
+            kn &= kn - 1;
+            int mob = popcount64(knight_attacks[sq] & safe_mask);
+            mg[c] += (mob - 4) * 4; eg[c] += (mob - 4) * 4;
+        }
+        uint64_t bi = b->pieces[c][BISHOP];
+        while (bi) {
+            int sq = bitscan_forward(bi);
+            bi &= bi - 1;
+            int mob = popcount64(bishop_attacks_bb(sq, b->occupancy[2]) & safe_mask);
+            mg[c] += (mob - 7) * 4; eg[c] += (mob - 7) * 4;
+        }
+        uint64_t ro = b->pieces[c][ROOK];
+        while (ro) {
+            int sq = bitscan_forward(ro);
+            ro &= ro - 1;
+            int mob = popcount64(rook_attacks_bb(sq, b->occupancy[2]) & safe_mask);
+            mg[c] += (mob - 7) * 2; eg[c] += (mob - 7) * 2;
+        }
+        uint64_t qu = b->pieces[c][QUEEN];
+        while (qu) {
+            int sq = bitscan_forward(qu);
+            qu &= qu - 1;
+            int mob = popcount64(queen_attacks_bb(sq, b->occupancy[2]) & safe_mask);
+            mg[c] += (mob - 14) * 2; eg[c] += (mob - 14) * 2;
+        }
+    }
+}
+
+static void eval_endgame_positional_v2(const NativeBoard* b, int mg[2], int eg[2], const uint64_t passed_bb[2]) {
+    uint64_t kw = b->pieces[WHITE][KING];
+    uint64_t kb = b->pieces[BLACK][KING];
+    if (!kw || !kb) return;
+    int w_ksq = bitscan_forward(kw);
+    int b_ksq = bitscan_forward(kb);
+
+    for (int c = 0; c < 2; c++) {
+        int my_ksq = (c == WHITE) ? w_ksq : b_ksq;
+        int en_ksq = (c == WHITE) ? b_ksq : w_ksq;
+        int kr = my_ksq / 8;
+        int kf = my_ksq % 8;
+        int en_kr = en_ksq / 8;
+        int en_kf = en_ksq % 8;
+
+        // King centralization
+        int center_dist = std::abs(2 * kr - 7) + std::abs(2 * kf - 7);
+        eg[c] += (14 - center_dist) * 2;
+
+        // Passed pawn escort
+        uint64_t passers = passed_bb[c];
+        while (passers) {
+            int psq = bitscan_forward(passers);
+            passers &= passers - 1;
+            int pr = psq / 8;
+            int pf = psq % 8;
+            int my_dist = std::max(std::abs(kr - pr), std::abs(kf - pf));
+            int en_dist = std::max(std::abs(en_kr - pr), std::abs(en_kf - pf));
+            eg[c] += (en_dist - my_dist) * 6;
+        }
+    }
+
+    // Rule of the Square in pure King + Pawn endgames
+    int total_pieces = popcount64(b->occupancy[2] & ~(b->pieces[0][PAWN] | b->pieces[1][PAWN] | b->pieces[0][KING] | b->pieces[1][KING]));
+    if (total_pieces == 0) {
+        for (int c = 0; c < 2; c++) {
+            uint64_t passers = passed_bb[c];
+            int en_ksq = (c == WHITE) ? b_ksq : w_ksq;
+            int en_kr = en_ksq / 8;
+            int en_kf = en_ksq % 8;
+
+            while (passers) {
+                int psq = bitscan_forward(passers);
+                passers &= passers - 1;
+                int pr = (c == WHITE) ? (psq / 8) : (7 - (psq / 8));
+                int pf = psq % 8;
+                int dist_to_promo = 7 - pr;
+                if (c == b->side_to_move) dist_to_promo--; // Side to move advantage
+
+                int en_king_dist = std::max(std::abs(en_kr - (c == WHITE ? 7 : 0)), std::abs(en_kf - pf));
+                if (dist_to_promo < en_king_dist) {
+                    eg[c] += 500; // Guaranteed unescorted promotion
+                }
+            }
+        }
+    }
+}
+
 EXPORT int native_evaluate_internal(const NativeBoard* b, int emode) {
     g_telemetry_eval_calls++;
     int mg_score[2] = { 0, 0 };
@@ -1716,19 +2165,64 @@ EXPORT int native_evaluate_internal(const NativeBoard* b, int emode) {
     }
 
     // Positional evaluation terms based on active eval mode
-    if (emode == 1) { // E1: Pawn Structure only
+    uint64_t passed_bb[2] = { 0, 0 };
+    if (emode == 1) { // E1: Pawn Structure only (X7)
         eval_pawn_structure(b, mg_score, eg_score);
-    } else if (emode == 2) { // E2: Mobility only
+    } else if (emode == 2) { // E2: Mobility only (X7)
         eval_mobility_and_coordination(b, mg_score, eg_score);
-    } else if (emode == 3) { // E3: King Safety only
+    } else if (emode == 3) { // E3: King Safety only (X7)
         eval_king_safety(b, mg_score, eg_score);
-    } else if (emode == 4) { // E4: Endgame only
+    } else if (emode == 4) { // E4: Endgame only (X7)
         eval_endgame_positional(b, mg_score, eg_score);
-    } else if (emode == 5) { // E5: Full combined positional evaluation
+    } else if (emode == 5) { // E5: Full combined positional evaluation (X7 Baseline)
         eval_pawn_structure(b, mg_score, eg_score);
         eval_mobility_and_coordination(b, mg_score, eg_score);
         eval_king_safety(b, mg_score, eg_score);
         eval_endgame_positional(b, mg_score, eg_score);
+    } else if (emode == 6) { // E6: Enhanced Pawn Structure only
+        eval_pawn_structure_v2(b, mg_score, eg_score, passed_bb);
+    } else if (emode == 7) { // E7: Enhanced King Safety only
+        eval_king_safety_v2(b, mg_score, eg_score);
+    } else if (emode == 8) { // E8: Enhanced Piece Activity & Coordination only
+        eval_mobility_and_coordination_v2(b, mg_score, eg_score, passed_bb);
+    } else if (emode == 9) { // E9: Enhanced Endgame only
+        eval_pawn_structure_v2(b, mg_score, eg_score, passed_bb);
+        eval_endgame_positional_v2(b, mg_score, eg_score, passed_bb);
+    } else if (emode == 10) { // E10: Full Enhanced Classical Evaluation (Candidate X10)
+        if (g_use_pawn_hash) {
+            g_telemetry_pawn_probes++;
+            uint64_t p_key = compute_pawn_zobrist(b);
+            size_t p_idx = p_key & (PAWN_HASH_SIZE - 1);
+            if (g_pawn_table[p_idx].key == p_key) {
+                g_telemetry_pawn_hits++;
+                mg_score[WHITE] += g_pawn_table[p_idx].mg[WHITE];
+                mg_score[BLACK] += g_pawn_table[p_idx].mg[BLACK];
+                eg_score[WHITE] += g_pawn_table[p_idx].eg[WHITE];
+                eg_score[BLACK] += g_pawn_table[p_idx].eg[BLACK];
+                passed_bb[WHITE] = g_pawn_table[p_idx].passed_pawns[WHITE];
+                passed_bb[BLACK] = g_pawn_table[p_idx].passed_pawns[BLACK];
+            } else {
+                int p_mg[2] = { 0, 0 };
+                int p_eg[2] = { 0, 0 };
+                eval_pawn_structure_v2(b, p_mg, p_eg, passed_bb);
+                g_pawn_table[p_idx].key = p_key;
+                g_pawn_table[p_idx].mg[WHITE] = (int16_t)p_mg[WHITE];
+                g_pawn_table[p_idx].mg[BLACK] = (int16_t)p_mg[BLACK];
+                g_pawn_table[p_idx].eg[WHITE] = (int16_t)p_eg[WHITE];
+                g_pawn_table[p_idx].eg[BLACK] = (int16_t)p_eg[BLACK];
+                g_pawn_table[p_idx].passed_pawns[WHITE] = passed_bb[WHITE];
+                g_pawn_table[p_idx].passed_pawns[BLACK] = passed_bb[BLACK];
+                mg_score[WHITE] += p_mg[WHITE];
+                mg_score[BLACK] += p_mg[BLACK];
+                eg_score[WHITE] += p_eg[WHITE];
+                eg_score[BLACK] += p_eg[BLACK];
+            }
+        } else {
+            eval_pawn_structure_v2(b, mg_score, eg_score, passed_bb);
+        }
+        eval_mobility_and_coordination_v2(b, mg_score, eg_score, passed_bb);
+        eval_king_safety_v2(b, mg_score, eg_score);
+        eval_endgame_positional_v2(b, mg_score, eg_score, passed_bb);
     }
 
     if (game_phase > 24) game_phase = 24;
@@ -3229,9 +3723,17 @@ EXPORT int native_search(
     }
 
     auto start_time = std::chrono::steady_clock::now();
-    auto deadline = start_time + std::chrono::milliseconds(static_cast<int64_t>(time_limit_sec * 1000.0));
+    double current_time_limit_sec = time_limit_sec;
+    auto soft_deadline = start_time + std::chrono::milliseconds(static_cast<int64_t>(current_time_limit_sec * 1000.0));
+    auto deadline = soft_deadline;
+    g_hard_deadline = start_time + std::chrono::milliseconds(static_cast<int64_t>(current_time_limit_sec * 2200.0));
+    g_stop_search = false;
 
     uint64_t total_nodes = 0;
+    uint16_t prev_root_move = 0;
+    uint16_t prev_prev_root_move = 0;
+    int stable_move_count = 0;
+    int prev_iteration_score = 0;
     out_res->depth = 0;
     out_res->nodes = 0;
     out_res->score = 0;
@@ -3597,7 +4099,7 @@ static void uci_loop() {
         iss >> cmd;
 
         if (cmd == "uci") {
-            std::cout << "id name Janus Classical X (P1.4 Candidate X9)" << std::endl;
+            std::cout << "id name Janus Classical X (P1.5 Candidate X10)" << std::endl;
             std::cout << "id author Project Janus Team" << std::endl;
             std::cout << "option name UseKillerOrdering type check default true" << std::endl;
             std::cout << "option name UseHistoryOrdering type check default true" << std::endl;
@@ -3608,10 +4110,10 @@ static void uci_loop() {
             std::cout << "option name LMRBaseReduction type spin default 1 min 1 max 3" << std::endl;
             std::cout << "option name UseSEEOrdering type check default false" << std::endl;
             std::cout << "option name UseSEEInQuiescence type check default false" << std::endl;
-            std::cout << "option name UCI_Variant type combo default X9 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9" << std::endl;
+            std::cout << "option name UCI_Variant type combo default X10 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10" << std::endl;
             std::cout << "option name UCI_ContinuationHistory type combo default H3 var H0 var H1 var H2 var H3" << std::endl;
             std::cout << "option name UCI_DynamicLMR type combo default L3 var L0 var L1 var L2 var L3" << std::endl;
-            std::cout << "option name UCI_ClassicalEval type combo default E5 var E0 var E1 var E2 var E3 var E4 var E5" << std::endl;
+            std::cout << "option name UCI_ClassicalEval type combo default E10 var E0 var E1 var E2 var E3 var E4 var E5 var E6 var E7 var E8 var E9 var E10" << std::endl;
             std::cout << "option name UCI_TacticalOrdering type combo default M4 var M0 var M1 var M2 var M3 var M4" << std::endl;
             std::cout << "option name UCI_SingularExtensions type combo default S3 var S0 var S1 var S2 var S3" << std::endl;
             std::cout << "option name UCI_MultiCut type combo default C1 var C0 var C1" << std::endl;
@@ -3621,6 +4123,8 @@ static void uci_loop() {
             std::cout << "option name UCI_NullMovePruning type check default true" << std::endl;
             std::cout << "option name UCI_RFP type check default true" << std::endl;
             std::cout << "option name UCI_AspirationWindow type check default true" << std::endl;
+            std::cout << "option name UCI_DynamicTime type check default true" << std::endl;
+            std::cout << "option name UCI_PawnHash type check default true" << std::endl;
             std::cout << "uciok" << std::endl;
         } else if (cmd == "isready") {
             std::cout << "readyok" << std::endl;
@@ -3708,6 +4212,15 @@ static void uci_loop() {
                     else if (opt_val == "E3") g_eval_mode = 3;
                     else if (opt_val == "E4") g_eval_mode = 4;
                     else if (opt_val == "E5") g_eval_mode = 5;
+                    else if (opt_val == "E6") g_eval_mode = 6;
+                    else if (opt_val == "E7") g_eval_mode = 7;
+                    else if (opt_val == "E8") g_eval_mode = 8;
+                    else if (opt_val == "E9") g_eval_mode = 9;
+                    else if (opt_val == "E10") g_eval_mode = 10;
+                } else if (opt_name == "UCI_DynamicTime" && !opt_val.empty()) {
+                    g_dynamic_time_mgmt = (opt_val == "true" || opt_val == "1");
+                } else if (opt_name == "UCI_PawnHash" && !opt_val.empty()) {
+                    g_use_pawn_hash = (opt_val == "true" || opt_val == "1");
                 } else if (opt_name == "UCI_TacticalOrdering" && !opt_val.empty()) {
                     if (opt_val == "M0") g_tactical_ordering_mode = 0;
                     else if (opt_val == "M1") g_tactical_ordering_mode = 1;
@@ -3829,6 +4342,7 @@ static void uci_loop() {
             double time_limit = 1000.0;
             int wtime = -1, btime = -1, winc = 0, binc = 0, movetime = -1;
 
+            int movestogo = -1;
             while (iss >> subcmd) {
                 if (subcmd == "depth") iss >> max_depth;
                 else if (subcmd == "movetime") { iss >> movetime; time_limit = movetime / 1000.0; }
@@ -3836,6 +4350,7 @@ static void uci_loop() {
                 else if (subcmd == "btime") iss >> btime;
                 else if (subcmd == "winc") iss >> winc;
                 else if (subcmd == "binc") iss >> binc;
+                else if (subcmd == "movestogo") iss >> movestogo;
             }
 
             // Time Management Policy
@@ -3844,9 +4359,14 @@ static void uci_loop() {
                 int my_inc = (board.side_to_move == WHITE) ? winc : binc;
 
                 if (my_time > 0) {
-                    // Fischer time allocation: (time + 40*inc) / 40, safety margin 50ms
-                    double alloc_ms = (my_time + 40.0 * my_inc) / 40.0;
-                    if (alloc_ms > my_time - 50.0) alloc_ms = std::max(10.0, my_time - 50.0);
+                    double alloc_ms;
+                    if (g_dynamic_time_mgmt) {
+                        int moves_left = (movestogo > 0) ? std::min(movestogo, 40) : 30;
+                        alloc_ms = (double)my_time / moves_left + 0.8 * my_inc;
+                    } else {
+                        alloc_ms = (my_time + 40.0 * my_inc) / 40.0;
+                    }
+                    if (alloc_ms > my_time - 40.0) alloc_ms = std::max(10.0, my_time - 40.0);
                     time_limit = alloc_ms / 1000.0;
                 }
             }

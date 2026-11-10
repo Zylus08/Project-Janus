@@ -1,0 +1,54 @@
+{
+  "x8_vs_x7": {
+    "total_games": 100,
+    "pairs": 50,
+    "record": "25W - 35D - 40L",
+    "score": 42.5,
+    "percentage": 0.425,
+    "elo_delta": -52.51156585572756,
+    "elo_ci_95": [
+      -162.74268547732225,
+      47.86963699695776
+    ],
+    "paired_t": -2.04939015319192,
+    "paired_p": 0.04042397933690878,
+    "statistically_significant_regression": true
+  },
+  "x9_vs_x7": {
+    "total_games": 200,
+    "pairs": 100,
+    "record": "67W - 60D - 73L",
+    "score": 97.0,
+    "percentage": 0.485,
+    "elo_delta": -10.426196175570942,
+    "elo_ci_95": [
+      -85.04052607468063,
+      63.22462149655789
+    ],
+    "paired_t": -0.5600196104576596,
+    "paired_p": 0.5754660616435061,
+    "statistically_distinguishable": false
+  },
+  "x7_vs_stockfish19": {
+    "total_games": 40,
+    "record": "0W - 2D - 38L",
+    "score": 1.0,
+    "percentage": 0.025,
+    "elo_delta": -636.4258428105996,
+    "elo_ci_95": [
+      -800.0,
+      -480.66664925910345
+    ]
+  },
+  "x9_vs_stockfish19": {
+    "total_games": 40,
+    "record": "0W - 1D - 39L",
+    "score": 0.5,
+    "percentage": 0.0125,
+    "elo_delta": -759.0508365161766,
+    "elo_ci_95": [
+      -800.0,
+      -564.7128560025916
+    ]
+  }
+}

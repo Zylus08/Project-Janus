@@ -1,0 +1,309 @@
+{
+  "perft": {
+    "passed": true,
+    "tests": [
+      {
+        "id": "PERFT_01_STARTPOS",
+        "name": "Standard Initial Position",
+        "depth": 5,
+        "result": 4865609,
+        "expected": 4865609,
+        "passed": true,
+        "elapsed_sec": 0.2127,
+        "nps": 22870131
+      },
+      {
+        "id": "PERFT_02_KIWIPETE",
+        "name": "Kiwipete (Complex Tactically & Castling/EP)",
+        "depth": 4,
+        "result": 4085603,
+        "expected": 4085603,
+        "passed": true,
+        "elapsed_sec": 0.1914,
+        "nps": 21346535
+      },
+      {
+        "id": "PERFT_03_POSITION3",
+        "name": "Position 3 (Pawn Endgame & Pins)",
+        "depth": 5,
+        "result": 674624,
+        "expected": 674624,
+        "passed": true,
+        "elapsed_sec": 0.0494,
+        "nps": 13663741
+      },
+      {
+        "id": "PERFT_04_POSITION4",
+        "name": "Position 4 (Promotions & Discovered Checks)",
+        "depth": 4,
+        "result": 422333,
+        "expected": 422333,
+        "passed": true,
+        "elapsed_sec": 0.0213,
+        "nps": 19787892
+      },
+      {
+        "id": "PERFT_05_POSITION5",
+        "name": "Position 5 (Tactical King Hunting)",
+        "depth": 4,
+        "result": 2103487,
+        "expected": 2103487,
+        "passed": true,
+        "elapsed_sec": 0.1016,
+        "nps": 20701574
+      },
+      {
+        "id": "PERFT_06_POSITION6",
+        "name": "Position 6 (Symmetric Middlegame)",
+        "depth": 4,
+        "result": 3894594,
+        "expected": 3894594,
+        "passed": true,
+        "elapsed_sec": 0.1662,
+        "nps": 23432457
+      }
+    ]
+  },
+  "c1_parity": {
+    "exact_matches": 15,
+    "total": 15,
+    "records": [
+      {
+        "id": "TAC_01",
+        "c1": {
+          "bestmove": "c4d5",
+          "score": -45,
+          "nodes": 24771
+        },
+        "x0": {
+          "bestmove": "c4d5",
+          "score": -45,
+          "nodes": 24771
+        },
+        "matched": true
+      },
+      {
+        "id": "TAC_02",
+        "c1": {
+          "bestmove": "e3e4",
+          "score": 60,
+          "nodes": 109509
+        },
+        "x0": {
+          "bestmove": "e3e4",
+          "score": 60,
+          "nodes": 109509
+        },
+        "matched": true
+      },
+      {
+        "id": "TAC_03",
+        "c1": {
+          "bestmove": "b1d2",
+          "score": -20,
+          "nodes": 79632
+        },
+        "x0": {
+          "bestmove": "b1d2",
+          "score": -20,
+          "nodes": 79632
+        },
+        "matched": true
+      },
+      {
+        "id": "TAC_04",
+        "c1": {
+          "bestmove": "d2f2",
+          "score": 70,
+          "nodes": 47377
+        },
+        "x0": {
+          "bestmove": "d2f2",
+          "score": 70,
+          "nodes": 47377
+        },
+        "matched": true
+      },
+      {
+        "id": "TAC_05",
+        "c1": {
+          "bestmove": "c4d5",
+          "score": 350,
+          "nodes": 31477
+        },
+        "x0": {
+          "bestmove": "c4d5",
+          "score": 350,
+          "nodes": 31477
+        },
+        "matched": true
+      },
+      {
+        "id": "TAC_06",
+        "c1": {
+          "bestmove": "e2f3",
+          "score": 0,
+          "nodes": 74336
+        },
+        "x0": {
+          "bestmove": "e2f3",
+          "score": 0,
+          "nodes": 74336
+        },
+        "matched": true
+      },
+      {
+        "id": "TAC_07",
+        "c1": {
+          "bestmove": "d1c2",
+          "score": 35,
+          "nodes": 62977
+        },
+        "x0": {
+          "bestmove": "d1c2",
+          "score": 35,
+          "nodes": 62977
+        },
+        "matched": true
+      },
+      {
+        "id": "TAC_08",
+        "c1": {
+          "bestmove": "a1d1",
+          "score": -145,
+          "nodes": 87934
+        },
+        "x0": {
+          "bestmove": "a1d1",
+          "score": -145,
+          "nodes": 87934
+        },
+        "matched": true
+      },
+      {
+        "id": "TAC_09",
+        "c1": {
+          "bestmove": "c3e4",
+          "score": 20,
+          "nodes": 49210
+        },
+        "x0": {
+          "bestmove": "c3e4",
+          "score": 20,
+          "nodes": 49210
+        },
+        "matched": true
+      },
+      {
+        "id": "TAC_10",
+        "c1": {
+          "bestmove": "c4c5",
+          "score": 25,
+          "nodes": 62921
+        },
+        "x0": {
+          "bestmove": "c4c5",
+          "score": 25,
+          "nodes": 62921
+        },
+        "matched": true
+      },
+      {
+        "id": "QPOS_01",
+        "c1": {
+          "bestmove": "c1g5",
+          "score": 10,
+          "nodes": 60388
+        },
+        "x0": {
+          "bestmove": "c1g5",
+          "score": 10,
+          "nodes": 60388
+        },
+        "matched": true
+      },
+      {
+        "id": "QPOS_02",
+        "c1": {
+          "bestmove": "c1e3",
+          "score": 10,
+          "nodes": 46504
+        },
+        "x0": {
+          "bestmove": "c1e3",
+          "score": 10,
+          "nodes": 46504
+        },
+        "matched": true
+      },
+      {
+        "id": "QPOS_03",
+        "c1": {
+          "bestmove": "c1d2",
+          "score": 25,
+          "nodes": 49715
+        },
+        "x0": {
+          "bestmove": "c1d2",
+          "score": 25,
+          "nodes": 49715
+        },
+        "matched": true
+      },
+      {
+        "id": "QPOS_04",
+        "c1": {
+          "bestmove": "d8b6",
+          "score": 20,
+          "nodes": 46688
+        },
+        "x0": {
+          "bestmove": "d8b6",
+          "score": 20,
+          "nodes": 46688
+        },
+        "matched": true
+      },
+      {
+        "id": "QPOS_05",
+        "c1": {
+          "bestmove": "c6c5",
+          "score": 10,
+          "nodes": 25605
+        },
+        "x0": {
+          "bestmove": "c6c5",
+          "score": 10,
+          "nodes": 25605
+        },
+        "matched": true
+      }
+    ]
+  },
+  "mate_and_legality": {
+    "passed": true,
+    "tests": [
+      {
+        "name": "Mate in 1 (Corner King Rook Mate)",
+        "bestmove": "h1h8",
+        "expected_move": "h1h8",
+        "score": 28999,
+        "passed": true
+      },
+      {
+        "name": "Mate in 1 (Back Rank)",
+        "bestmove": "d1d8",
+        "expected_move": "d1d8",
+        "score": 28999,
+        "passed": true
+      },
+      {
+        "name": "Mate in 2 (Legal's Mate Trap)",
+        "bestmove": "d5f6",
+        "expected_move": "d5f6",
+        "score": 28997,
+        "passed": true
+      }
+    ]
+  }
+}

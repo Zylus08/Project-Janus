@@ -21,11 +21,14 @@ TARGET_DLL = TARGET_DIR / "janus_classical_x.dll"
 VCVARS = r"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
 
 def setup_source():
-    print(f"Setting up Janus Classical X developmental source in {TARGET_DIR}...")
+    # Only setup source from C1 baseline if developmental source does not already exist
+    if TARGET_CPP.exists():
+        print(f"Preserving existing developmental source: {TARGET_CPP} ({TARGET_CPP.stat().st_size:,} bytes).")
+        return
+    print(f"Initializing Janus Classical X developmental source in {TARGET_DIR}...")
     with open(C1_SRC, "r", encoding="utf-8") as f:
         code = f.read()
     
-    # Update engine identity to Janus Classical X while preserving exact algorithms and options
     code = code.replace(
         'std::cout << "id name Janus 0.56 Native (N7 Candidate)" << std::endl;',
         'std::cout << "id name Janus Classical X (P1.0 Development)" << std::endl;'

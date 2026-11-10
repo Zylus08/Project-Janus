@@ -1,0 +1,3186 @@
+{
+  "summary": [
+    {
+      "variant": "X0",
+      "description": "C1 Baseline Equivalent (All flags OFF)",
+      "depth_7_nodes": 16342285,
+      "depth_7_time_sec": 14.23,
+      "node_reduction_pct": 0.0,
+      "speedup": 1.0,
+      "ebf": 6.773,
+      "fixed_time_avg_depth": 6.08
+    },
+    {
+      "variant": "X1",
+      "description": "Staged Move Generation Only",
+      "depth_7_nodes": 16343497,
+      "depth_7_time_sec": 4.47,
+      "node_reduction_pct": -0.0,
+      "speedup": 3.18,
+      "ebf": 6.773,
+      "fixed_time_avg_depth": 7.16
+    },
+    {
+      "variant": "X2",
+      "description": "Quiescence SEE Filtering Only (Mode 2)",
+      "depth_7_nodes": 10739035,
+      "depth_7_time_sec": 9.56,
+      "node_reduction_pct": 34.3,
+      "speedup": 1.49,
+      "ebf": 6.378,
+      "fixed_time_avg_depth": 6.24
+    },
+    {
+      "variant": "X3",
+      "description": "Null-Move Pruning Only (R=3)",
+      "depth_7_nodes": 6279449,
+      "depth_7_time_sec": 5.25,
+      "node_reduction_pct": 61.6,
+      "speedup": 2.71,
+      "ebf": 5.908,
+      "fixed_time_avg_depth": 7.04
+    },
+    {
+      "variant": "X4",
+      "description": "Reverse Futility Pruning Only (80*d)",
+      "depth_7_nodes": 9993931,
+      "depth_7_time_sec": 8.76,
+      "node_reduction_pct": 38.8,
+      "speedup": 1.62,
+      "ebf": 6.313,
+      "fixed_time_avg_depth": 6.68
+    },
+    {
+      "variant": "X5",
+      "description": "Aspiration Windows Only (delta=25cp)",
+      "depth_7_nodes": 14169939,
+      "depth_7_time_sec": 12.6,
+      "node_reduction_pct": 13.3,
+      "speedup": 1.13,
+      "ebf": 6.636,
+      "fixed_time_avg_depth": 6.16
+    },
+    {
+      "variant": "X6",
+      "description": "Full Integrated Modernized Candidate (All Active)",
+      "depth_7_nodes": 2555062,
+      "depth_7_time_sec": 1.35,
+      "node_reduction_pct": 84.4,
+      "speedup": 10.52,
+      "ebf": 5.196,
+      "fixed_time_avg_depth": 9.44
+    }
+  ],
+  "fixed_depth_results": {
+    "X0": {
+      "variant": "X0",
+      "total_nodes": 16342285,
+      "elapsed_sec": 14.230842099990696,
+      "nps": 1148370,
+      "ebf": 6.773,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "nodes": 378007,
+          "elapsed_sec": 0.32119000000238884,
+          "nps": 1247481,
+          "score_cp": -75,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "nodes": 1661458,
+          "elapsed_sec": 1.6333487000010791,
+          "nps": 1026227,
+          "score_cp": 55,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "nodes": 827298,
+          "elapsed_sec": 0.7277219999959925,
+          "nps": 1162756,
+          "score_cp": -10,
+          "bestmove": "b1d2"
+        },
+        {
+          "id": "TAC_04",
+          "nodes": 511744,
+          "elapsed_sec": 0.4711249999963911,
+          "nps": 1121675,
+          "score_cp": 60,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "nodes": 366796,
+          "elapsed_sec": 0.27417859999695793,
+          "nps": 1411545,
+          "score_cp": 355,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "nodes": 580213,
+          "elapsed_sec": 0.4507004000042798,
+          "nps": 1349802,
+          "score_cp": -5,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "nodes": 811357,
+          "elapsed_sec": 0.7226085000002058,
+          "nps": 1159734,
+          "score_cp": 20,
+          "bestmove": "d3b5"
+        },
+        {
+          "id": "TAC_08",
+          "nodes": 1372255,
+          "elapsed_sec": 1.3022213999938685,
+          "nps": 1064672,
+          "score_cp": -145,
+          "bestmove": "a1d1"
+        },
+        {
+          "id": "TAC_09",
+          "nodes": 740341,
+          "elapsed_sec": 0.6771250999954646,
+          "nps": 1116716,
+          "score_cp": 10,
+          "bestmove": "d1e2"
+        },
+        {
+          "id": "TAC_10",
+          "nodes": 974089,
+          "elapsed_sec": 0.9527127999972436,
+          "nps": 1039730,
+          "score_cp": 25,
+          "bestmove": "c2b3"
+        },
+        {
+          "id": "QPOS_01",
+          "nodes": 610393,
+          "elapsed_sec": 0.5623515999977826,
+          "nps": 1172819,
+          "score_cp": 10,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "QPOS_02",
+          "nodes": 330653,
+          "elapsed_sec": 0.2204120000023977,
+          "nps": 1611480,
+          "score_cp": 10,
+          "bestmove": "c1e3"
+        },
+        {
+          "id": "QPOS_03",
+          "nodes": 660556,
+          "elapsed_sec": 0.44385830000101123,
+          "nps": 1555989,
+          "score_cp": 20,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "QPOS_04",
+          "nodes": 508515,
+          "elapsed_sec": 0.39352830000279937,
+          "nps": 1339185,
+          "score_cp": 15,
+          "bestmove": "d8b6"
+        },
+        {
+          "id": "QPOS_05",
+          "nodes": 278697,
+          "elapsed_sec": 0.20086319999973057,
+          "nps": 1490902,
+          "score_cp": 5,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "nodes": 443007,
+          "elapsed_sec": 0.4096047000057297,
+          "nps": 1125385,
+          "score_cp": 20,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "nodes": 679767,
+          "elapsed_sec": 0.6036335999961011,
+          "nps": 1162283,
+          "score_cp": 25,
+          "bestmove": "f3f4"
+        },
+        {
+          "id": "CLSD_03",
+          "nodes": 732580,
+          "elapsed_sec": 0.6277780000018538,
+          "nps": 1193637,
+          "score_cp": -335,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_04",
+          "nodes": 1022179,
+          "elapsed_sec": 1.0007046999962768,
+          "nps": 1038293,
+          "score_cp": 370,
+          "bestmove": "d1c2"
+        },
+        {
+          "id": "CLSD_05",
+          "nodes": 113548,
+          "elapsed_sec": 0.09256119999918155,
+          "nps": 1453258,
+          "score_cp": 35,
+          "bestmove": "g1e2"
+        },
+        {
+          "id": "KATK_01",
+          "nodes": 791243,
+          "elapsed_sec": 0.5958542000007583,
+          "nps": 1375861,
+          "score_cp": 130,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "nodes": 745002,
+          "elapsed_sec": 0.6248329000009107,
+          "nps": 1228537,
+          "score_cp": 695,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "KATK_03",
+          "nodes": 660554,
+          "elapsed_sec": 0.5366597000029287,
+          "nps": 1270503,
+          "score_cp": 35,
+          "bestmove": "a2b3"
+        },
+        {
+          "id": "KATK_04",
+          "nodes": 203114,
+          "elapsed_sec": 0.16859269999986282,
+          "nps": 1386949,
+          "score_cp": -340,
+          "bestmove": "c8d7"
+        },
+        {
+          "id": "KATK_05",
+          "nodes": 338919,
+          "elapsed_sec": 0.21667449999949895,
+          "nps": 1678123,
+          "score_cp": 320,
+          "bestmove": "c3a4"
+        }
+      ]
+    },
+    "X1": {
+      "variant": "X1",
+      "total_nodes": 16343497,
+      "elapsed_sec": 4.472178799987887,
+      "nps": 3654482,
+      "ebf": 6.773,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "nodes": 418633,
+          "elapsed_sec": 0.11465540000062902,
+          "nps": 4384151,
+          "score_cp": -75,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "nodes": 1336409,
+          "elapsed_sec": 0.355100400003721,
+          "nps": 3917163,
+          "score_cp": 55,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "nodes": 848951,
+          "elapsed_sec": 0.24622339999768883,
+          "nps": 3669367,
+          "score_cp": -10,
+          "bestmove": "b1d2"
+        },
+        {
+          "id": "TAC_04",
+          "nodes": 498828,
+          "elapsed_sec": 0.13032659999589669,
+          "nps": 4378707,
+          "score_cp": 60,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "nodes": 386439,
+          "elapsed_sec": 0.09369280000100844,
+          "nps": 4956532,
+          "score_cp": 355,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "nodes": 597582,
+          "elapsed_sec": 0.1577711999998428,
+          "nps": 4264781,
+          "score_cp": -5,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "nodes": 789795,
+          "elapsed_sec": 0.1973033000031137,
+          "nps": 4358160,
+          "score_cp": 20,
+          "bestmove": "d3b5"
+        },
+        {
+          "id": "TAC_08",
+          "nodes": 1464449,
+          "elapsed_sec": 0.37993989999813493,
+          "nps": 4022814,
+          "score_cp": -145,
+          "bestmove": "a1d1"
+        },
+        {
+          "id": "TAC_09",
+          "nodes": 745427,
+          "elapsed_sec": 0.19664999999804422,
+          "nps": 4111409,
+          "score_cp": 10,
+          "bestmove": "d1e2"
+        },
+        {
+          "id": "TAC_10",
+          "nodes": 966936,
+          "elapsed_sec": 0.25525990000460297,
+          "nps": 4021650,
+          "score_cp": 25,
+          "bestmove": "c2b3"
+        },
+        {
+          "id": "QPOS_01",
+          "nodes": 592344,
+          "elapsed_sec": 0.16272449999814853,
+          "nps": 4018062,
+          "score_cp": 10,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "QPOS_02",
+          "nodes": 373659,
+          "elapsed_sec": 0.11579989999881946,
+          "nps": 4320291,
+          "score_cp": 10,
+          "bestmove": "c1e3"
+        },
+        {
+          "id": "QPOS_03",
+          "nodes": 667091,
+          "elapsed_sec": 0.18443459999980405,
+          "nps": 4319891,
+          "score_cp": 20,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "QPOS_04",
+          "nodes": 504719,
+          "elapsed_sec": 0.15544059999956517,
+          "nps": 4081423,
+          "score_cp": 15,
+          "bestmove": "d8b6"
+        },
+        {
+          "id": "QPOS_05",
+          "nodes": 284717,
+          "elapsed_sec": 0.09305740000127116,
+          "nps": 3915056,
+          "score_cp": 5,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "nodes": 443586,
+          "elapsed_sec": 0.13150589999713702,
+          "nps": 3855402,
+          "score_cp": 20,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "nodes": 668546,
+          "elapsed_sec": 0.16828589999931864,
+          "nps": 4327808,
+          "score_cp": 25,
+          "bestmove": "f3f4"
+        },
+        {
+          "id": "CLSD_03",
+          "nodes": 709559,
+          "elapsed_sec": 0.19314969999686582,
+          "nps": 4021435,
+          "score_cp": -335,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_04",
+          "nodes": 1093561,
+          "elapsed_sec": 0.32664540000405395,
+          "nps": 3587680,
+          "score_cp": 365,
+          "bestmove": "d1c2"
+        },
+        {
+          "id": "CLSD_05",
+          "nodes": 115120,
+          "elapsed_sec": 0.051277699996717274,
+          "nps": 4074539,
+          "score_cp": 35,
+          "bestmove": "g1e2"
+        },
+        {
+          "id": "KATK_01",
+          "nodes": 802626,
+          "elapsed_sec": 0.19427670000004582,
+          "nps": 4501962,
+          "score_cp": 130,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "nodes": 780275,
+          "elapsed_sec": 0.19537609999679262,
+          "nps": 4369136,
+          "score_cp": 695,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "KATK_03",
+          "nodes": 720205,
+          "elapsed_sec": 0.2035491999995429,
+          "nps": 3907408,
+          "score_cp": 35,
+          "bestmove": "a2b3"
+        },
+        {
+          "id": "KATK_04",
+          "nodes": 203921,
+          "elapsed_sec": 0.07914590000291355,
+          "nps": 4040784,
+          "score_cp": -340,
+          "bestmove": "c8d7"
+        },
+        {
+          "id": "KATK_05",
+          "nodes": 330119,
+          "elapsed_sec": 0.09058639999420848,
+          "nps": 4724881,
+          "score_cp": 320,
+          "bestmove": "c3a4"
+        }
+      ]
+    },
+    "X2": {
+      "variant": "X2",
+      "total_nodes": 10739035,
+      "elapsed_sec": 9.558676900014689,
+      "nps": 1123485,
+      "ebf": 6.378,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "nodes": 336423,
+          "elapsed_sec": 0.2944664000024204,
+          "nps": 1219895,
+          "score_cp": -75,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "nodes": 869321,
+          "elapsed_sec": 0.9047081000026083,
+          "nps": 980154,
+          "score_cp": 55,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "nodes": 385952,
+          "elapsed_sec": 0.31166189999930793,
+          "nps": 1300829,
+          "score_cp": -15,
+          "bestmove": "b1d2"
+        },
+        {
+          "id": "TAC_04",
+          "nodes": 394166,
+          "elapsed_sec": 0.36176980000163894,
+          "nps": 1141940,
+          "score_cp": 60,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "nodes": 304459,
+          "elapsed_sec": 0.22827719999622786,
+          "nps": 1430232,
+          "score_cp": 355,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "nodes": 353967,
+          "elapsed_sec": 0.2839467000012519,
+          "nps": 1315224,
+          "score_cp": -5,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "nodes": 607726,
+          "elapsed_sec": 0.5632680999988224,
+          "nps": 1125762,
+          "score_cp": 20,
+          "bestmove": "d3b5"
+        },
+        {
+          "id": "TAC_08",
+          "nodes": 758553,
+          "elapsed_sec": 0.8012828000064474,
+          "nps": 966291,
+          "score_cp": -145,
+          "bestmove": "a1d1"
+        },
+        {
+          "id": "TAC_09",
+          "nodes": 413697,
+          "elapsed_sec": 0.41227319999597967,
+          "nps": 1077090,
+          "score_cp": 20,
+          "bestmove": "d1e2"
+        },
+        {
+          "id": "TAC_10",
+          "nodes": 690713,
+          "elapsed_sec": 0.678324699998484,
+          "nps": 1041968,
+          "score_cp": 15,
+          "bestmove": "c2b3"
+        },
+        {
+          "id": "QPOS_01",
+          "nodes": 392035,
+          "elapsed_sec": 0.336025000004156,
+          "nps": 1244585,
+          "score_cp": 10,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "QPOS_02",
+          "nodes": 255113,
+          "elapsed_sec": 0.1863073999993503,
+          "nps": 1742083,
+          "score_cp": 10,
+          "bestmove": "c1e3"
+        },
+        {
+          "id": "QPOS_03",
+          "nodes": 441777,
+          "elapsed_sec": 0.3067977000027895,
+          "nps": 1505037,
+          "score_cp": 20,
+          "bestmove": "d1b3"
+        },
+        {
+          "id": "QPOS_04",
+          "nodes": 405232,
+          "elapsed_sec": 0.34014429999660933,
+          "nps": 1278705,
+          "score_cp": 20,
+          "bestmove": "d8b6"
+        },
+        {
+          "id": "QPOS_05",
+          "nodes": 201767,
+          "elapsed_sec": 0.16022220000013476,
+          "nps": 1471948,
+          "score_cp": 5,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "nodes": 300894,
+          "elapsed_sec": 0.27695089999906486,
+          "nps": 1145027,
+          "score_cp": 20,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "nodes": 462323,
+          "elapsed_sec": 0.3776039000003948,
+          "nps": 1286106,
+          "score_cp": 25,
+          "bestmove": "f3f4"
+        },
+        {
+          "id": "CLSD_03",
+          "nodes": 450167,
+          "elapsed_sec": 0.3892483000017819,
+          "nps": 1208401,
+          "score_cp": -335,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_04",
+          "nodes": 601994,
+          "elapsed_sec": 0.5538532999999006,
+          "nps": 1116230,
+          "score_cp": 365,
+          "bestmove": "d1c2"
+        },
+        {
+          "id": "CLSD_05",
+          "nodes": 103145,
+          "elapsed_sec": 0.07497169999987818,
+          "nps": 1681520,
+          "score_cp": 35,
+          "bestmove": "g1e2"
+        },
+        {
+          "id": "KATK_01",
+          "nodes": 637329,
+          "elapsed_sec": 0.4941456000015023,
+          "nps": 1329062,
+          "score_cp": 135,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "nodes": 460383,
+          "elapsed_sec": 0.4479652000009082,
+          "nps": 1074783,
+          "score_cp": 695,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "KATK_03",
+          "nodes": 430840,
+          "elapsed_sec": 0.381703800005198,
+          "nps": 1172351,
+          "score_cp": 30,
+          "bestmove": "a2d5"
+        },
+        {
+          "id": "KATK_04",
+          "nodes": 186792,
+          "elapsed_sec": 0.17388650000066264,
+          "nps": 1170162,
+          "score_cp": -340,
+          "bestmove": "c8d7"
+        },
+        {
+          "id": "KATK_05",
+          "nodes": 294267,
+          "elapsed_sec": 0.21887219999916852,
+          "nps": 1499127,
+          "score_cp": 320,
+          "bestmove": "c3a4"
+        }
+      ]
+    },
+    "X3": {
+      "variant": "X3",
+      "total_nodes": 6279449,
+      "elapsed_sec": 5.254214000007778,
+      "nps": 1195126,
+      "ebf": 5.908,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "nodes": 209189,
+          "elapsed_sec": 0.19924940000055358,
+          "nps": 1274914,
+          "score_cp": -75,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "nodes": 530672,
+          "elapsed_sec": 0.47651730000507087,
+          "nps": 1153859,
+          "score_cp": 55,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "nodes": 156095,
+          "elapsed_sec": 0.1322710999957053,
+          "nps": 1318435,
+          "score_cp": -15,
+          "bestmove": "b1d2"
+        },
+        {
+          "id": "TAC_04",
+          "nodes": 145554,
+          "elapsed_sec": 0.12548460000107298,
+          "nps": 1305264,
+          "score_cp": 70,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "nodes": 60935,
+          "elapsed_sec": 0.04928300000028685,
+          "nps": 1737906,
+          "score_cp": 355,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "nodes": 325170,
+          "elapsed_sec": 0.22456270000111545,
+          "nps": 1541042,
+          "score_cp": -5,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "nodes": 495638,
+          "elapsed_sec": 0.3759395000015502,
+          "nps": 1370285,
+          "score_cp": 20,
+          "bestmove": "c1f4"
+        },
+        {
+          "id": "TAC_08",
+          "nodes": 371417,
+          "elapsed_sec": 0.24288739999610698,
+          "nps": 1620819,
+          "score_cp": -145,
+          "bestmove": "a1d1"
+        },
+        {
+          "id": "TAC_09",
+          "nodes": 381778,
+          "elapsed_sec": 0.3421331999998074,
+          "nps": 1175907,
+          "score_cp": 10,
+          "bestmove": "d1e2"
+        },
+        {
+          "id": "TAC_10",
+          "nodes": 388992,
+          "elapsed_sec": 0.4198958000051789,
+          "nps": 963025,
+          "score_cp": 15,
+          "bestmove": "c2b3"
+        },
+        {
+          "id": "QPOS_01",
+          "nodes": 158662,
+          "elapsed_sec": 0.12982999999803724,
+          "nps": 1492137,
+          "score_cp": 10,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "QPOS_02",
+          "nodes": 134107,
+          "elapsed_sec": 0.10723159999906784,
+          "nps": 1586941,
+          "score_cp": 10,
+          "bestmove": "c1e3"
+        },
+        {
+          "id": "QPOS_03",
+          "nodes": 472211,
+          "elapsed_sec": 0.40070900000137044,
+          "nps": 1236860,
+          "score_cp": 20,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "QPOS_04",
+          "nodes": 219898,
+          "elapsed_sec": 0.19218019999971148,
+          "nps": 1295827,
+          "score_cp": 15,
+          "bestmove": "d8b6"
+        },
+        {
+          "id": "QPOS_05",
+          "nodes": 144709,
+          "elapsed_sec": 0.11798799999814946,
+          "nps": 1473630,
+          "score_cp": 5,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "nodes": 212952,
+          "elapsed_sec": 0.15896100000099977,
+          "nps": 1477792,
+          "score_cp": 15,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "nodes": 288182,
+          "elapsed_sec": 0.22784419999516103,
+          "nps": 1364551,
+          "score_cp": 25,
+          "bestmove": "f3f4"
+        },
+        {
+          "id": "CLSD_03",
+          "nodes": 346503,
+          "elapsed_sec": 0.2949099000034039,
+          "nps": 1277241,
+          "score_cp": -335,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_04",
+          "nodes": 333351,
+          "elapsed_sec": 0.3143326999997953,
+          "nps": 1108058,
+          "score_cp": 370,
+          "bestmove": "d1c2"
+        },
+        {
+          "id": "CLSD_05",
+          "nodes": 67353,
+          "elapsed_sec": 0.06844460000138497,
+          "nps": 1356132,
+          "score_cp": 35,
+          "bestmove": "g1e2"
+        },
+        {
+          "id": "KATK_01",
+          "nodes": 134918,
+          "elapsed_sec": 0.09005400000023656,
+          "nps": 1837676,
+          "score_cp": 130,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "nodes": 170264,
+          "elapsed_sec": 0.11724089999916032,
+          "nps": 1707081,
+          "score_cp": 690,
+          "bestmove": "d1d3"
+        },
+        {
+          "id": "KATK_03",
+          "nodes": 288357,
+          "elapsed_sec": 0.2501711000004434,
+          "nps": 1233830,
+          "score_cp": 30,
+          "bestmove": "a2d5"
+        },
+        {
+          "id": "KATK_04",
+          "nodes": 165745,
+          "elapsed_sec": 0.141351800004486,
+          "nps": 1314982,
+          "score_cp": -345,
+          "bestmove": "a7a6"
+        },
+        {
+          "id": "KATK_05",
+          "nodes": 76797,
+          "elapsed_sec": 0.05474099999992177,
+          "nps": 1952666,
+          "score_cp": 320,
+          "bestmove": "c3a4"
+        }
+      ]
+    },
+    "X4": {
+      "variant": "X4",
+      "total_nodes": 9993931,
+      "elapsed_sec": 8.757524700005888,
+      "nps": 1141182,
+      "ebf": 6.313,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "nodes": 197958,
+          "elapsed_sec": 0.11126510000030976,
+          "nps": 2061431,
+          "score_cp": -75,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "nodes": 1145160,
+          "elapsed_sec": 1.165200100003858,
+          "nps": 1009751,
+          "score_cp": 55,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "nodes": 451797,
+          "elapsed_sec": 0.3741412999952445,
+          "nps": 1283488,
+          "score_cp": -15,
+          "bestmove": "b1d2"
+        },
+        {
+          "id": "TAC_04",
+          "nodes": 271403,
+          "elapsed_sec": 0.28456650000589434,
+          "nps": 1003066,
+          "score_cp": 60,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "nodes": 214067,
+          "elapsed_sec": 0.14421410000068136,
+          "nps": 1661622,
+          "score_cp": 355,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "nodes": 288275,
+          "elapsed_sec": 0.25984299999981886,
+          "nps": 1393886,
+          "score_cp": -5,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "nodes": 252937,
+          "elapsed_sec": 0.19763390000298386,
+          "nps": 1429031,
+          "score_cp": 35,
+          "bestmove": "d1c2"
+        },
+        {
+          "id": "TAC_08",
+          "nodes": 1019023,
+          "elapsed_sec": 1.0194971000018995,
+          "nps": 1018889,
+          "score_cp": -145,
+          "bestmove": "a1d1"
+        },
+        {
+          "id": "TAC_09",
+          "nodes": 571104,
+          "elapsed_sec": 0.4997550999978557,
+          "nps": 1179740,
+          "score_cp": 10,
+          "bestmove": "d1e2"
+        },
+        {
+          "id": "TAC_10",
+          "nodes": 636547,
+          "elapsed_sec": 0.6169118000034359,
+          "nps": 1102006,
+          "score_cp": 15,
+          "bestmove": "c2b3"
+        },
+        {
+          "id": "QPOS_01",
+          "nodes": 334688,
+          "elapsed_sec": 0.2715475999939372,
+          "nps": 1342282,
+          "score_cp": 10,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "QPOS_02",
+          "nodes": 132177,
+          "elapsed_sec": 0.13114759999734815,
+          "nps": 1172018,
+          "score_cp": 10,
+          "bestmove": "c1e3"
+        },
+        {
+          "id": "QPOS_03",
+          "nodes": 368151,
+          "elapsed_sec": 0.22521170000254642,
+          "nps": 1744930,
+          "score_cp": 20,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "QPOS_04",
+          "nodes": 344319,
+          "elapsed_sec": 0.27006339999934426,
+          "nps": 1345039,
+          "score_cp": 15,
+          "bestmove": "d8b6"
+        },
+        {
+          "id": "QPOS_05",
+          "nodes": 188006,
+          "elapsed_sec": 0.1368514999994659,
+          "nps": 1530890,
+          "score_cp": 5,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "nodes": 291714,
+          "elapsed_sec": 0.22968709999986459,
+          "nps": 1353407,
+          "score_cp": 20,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "nodes": 462701,
+          "elapsed_sec": 0.40467899999930523,
+          "nps": 1195832,
+          "score_cp": 25,
+          "bestmove": "f3f4"
+        },
+        {
+          "id": "CLSD_03",
+          "nodes": 529332,
+          "elapsed_sec": 0.49429009999585105,
+          "nps": 1109773,
+          "score_cp": -335,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_04",
+          "nodes": 665540,
+          "elapsed_sec": 0.6618925000002491,
+          "nps": 1033644,
+          "score_cp": 365,
+          "bestmove": "d1c2"
+        },
+        {
+          "id": "CLSD_05",
+          "nodes": 77809,
+          "elapsed_sec": 0.0829751999990549,
+          "nps": 1162185,
+          "score_cp": 35,
+          "bestmove": "g1e2"
+        },
+        {
+          "id": "KATK_01",
+          "nodes": 389050,
+          "elapsed_sec": 0.18568539999978384,
+          "nps": 2330697,
+          "score_cp": 130,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "nodes": 495472,
+          "elapsed_sec": 0.4258546000055503,
+          "nps": 1217270,
+          "score_cp": 695,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "KATK_03",
+          "nodes": 467710,
+          "elapsed_sec": 0.4174120000025141,
+          "nps": 1181679,
+          "score_cp": 35,
+          "bestmove": "a2b3"
+        },
+        {
+          "id": "KATK_04",
+          "nodes": 139484,
+          "elapsed_sec": 0.10864469999796711,
+          "nps": 1617899,
+          "score_cp": -340,
+          "bestmove": "c8d7"
+        },
+        {
+          "id": "KATK_05",
+          "nodes": 59507,
+          "elapsed_sec": 0.03855430000112392,
+          "nps": 2559572,
+          "score_cp": 320,
+          "bestmove": "c3a4"
+        }
+      ]
+    },
+    "X5": {
+      "variant": "X5",
+      "total_nodes": 14169939,
+      "elapsed_sec": 12.600287099987327,
+      "nps": 1124572,
+      "ebf": 6.636,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "nodes": 347514,
+          "elapsed_sec": 0.34525589999975637,
+          "nps": 1083022,
+          "score_cp": -75,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "nodes": 1060280,
+          "elapsed_sec": 1.0750031999996281,
+          "nps": 1002720,
+          "score_cp": 55,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "nodes": 645655,
+          "elapsed_sec": 0.5727670999986003,
+          "nps": 1157068,
+          "score_cp": -15,
+          "bestmove": "b1d2"
+        },
+        {
+          "id": "TAC_04",
+          "nodes": 507941,
+          "elapsed_sec": 0.5034019000013359,
+          "nps": 1044310,
+          "score_cp": 60,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "nodes": 358141,
+          "elapsed_sec": 0.32647989999532,
+          "nps": 1174489,
+          "score_cp": 355,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "nodes": 481615,
+          "elapsed_sec": 0.42601859999558656,
+          "nps": 1174110,
+          "score_cp": -5,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "nodes": 750147,
+          "elapsed_sec": 0.6369469999990542,
+          "nps": 1214464,
+          "score_cp": 20,
+          "bestmove": "d3b5"
+        },
+        {
+          "id": "TAC_08",
+          "nodes": 1090566,
+          "elapsed_sec": 1.0271101999969687,
+          "nps": 1081012,
+          "score_cp": -145,
+          "bestmove": "a1d1"
+        },
+        {
+          "id": "TAC_09",
+          "nodes": 679442,
+          "elapsed_sec": 0.6321678000022075,
+          "nps": 1107666,
+          "score_cp": 10,
+          "bestmove": "d1e2"
+        },
+        {
+          "id": "TAC_10",
+          "nodes": 914663,
+          "elapsed_sec": 0.8841211999970255,
+          "nps": 1058688,
+          "score_cp": 25,
+          "bestmove": "c2b3"
+        },
+        {
+          "id": "QPOS_01",
+          "nodes": 460862,
+          "elapsed_sec": 0.3837245999966399,
+          "nps": 1286998,
+          "score_cp": 10,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "QPOS_02",
+          "nodes": 297203,
+          "elapsed_sec": 0.217962599999737,
+          "nps": 1548158,
+          "score_cp": 10,
+          "bestmove": "c1e3"
+        },
+        {
+          "id": "QPOS_03",
+          "nodes": 623149,
+          "elapsed_sec": 0.4343693999981042,
+          "nps": 1520643,
+          "score_cp": 20,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "QPOS_04",
+          "nodes": 483808,
+          "elapsed_sec": 0.376420100001269,
+          "nps": 1346551,
+          "score_cp": 15,
+          "bestmove": "d8b6"
+        },
+        {
+          "id": "QPOS_05",
+          "nodes": 268268,
+          "elapsed_sec": 0.21441500000219094,
+          "nps": 1378560,
+          "score_cp": 5,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "nodes": 404552,
+          "elapsed_sec": 0.41715169999952195,
+          "nps": 1006123,
+          "score_cp": 20,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "nodes": 625113,
+          "elapsed_sec": 0.5292356999998447,
+          "nps": 1231139,
+          "score_cp": 25,
+          "bestmove": "f3f4"
+        },
+        {
+          "id": "CLSD_03",
+          "nodes": 672886,
+          "elapsed_sec": 0.5817188000000897,
+          "nps": 1192530,
+          "score_cp": -335,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_04",
+          "nodes": 897801,
+          "elapsed_sec": 0.9135390000010375,
+          "nps": 1000488,
+          "score_cp": 370,
+          "bestmove": "d1c2"
+        },
+        {
+          "id": "CLSD_05",
+          "nodes": 112312,
+          "elapsed_sec": 0.1164578000025358,
+          "nps": 1133191,
+          "score_cp": 35,
+          "bestmove": "g1e2"
+        },
+        {
+          "id": "KATK_01",
+          "nodes": 653780,
+          "elapsed_sec": 0.5019879000028595,
+          "nps": 1355182,
+          "score_cp": 130,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "nodes": 656583,
+          "elapsed_sec": 0.557722500001546,
+          "nps": 1230186,
+          "score_cp": 695,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "KATK_03",
+          "nodes": 584433,
+          "elapsed_sec": 0.48821070000121836,
+          "nps": 1240722,
+          "score_cp": 35,
+          "bestmove": "a2b3"
+        },
+        {
+          "id": "KATK_04",
+          "nodes": 264037,
+          "elapsed_sec": 0.2151252999974531,
+          "nps": 1346700,
+          "score_cp": -340,
+          "bestmove": "c8d7"
+        },
+        {
+          "id": "KATK_05",
+          "nodes": 329188,
+          "elapsed_sec": 0.22297319999779575,
+          "nps": 1598759,
+          "score_cp": 320,
+          "bestmove": "c3a4"
+        }
+      ]
+    },
+    "X6": {
+      "variant": "X6",
+      "total_nodes": 2555062,
+      "elapsed_sec": 1.3525570000056177,
+      "nps": 1889060,
+      "ebf": 5.196,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "nodes": 44589,
+          "elapsed_sec": 0.03763319999416126,
+          "nps": 3366960,
+          "score_cp": -75,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "nodes": 245842,
+          "elapsed_sec": 0.12646090000635013,
+          "nps": 2547524,
+          "score_cp": 55,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "nodes": 28827,
+          "elapsed_sec": 0.027784999998402782,
+          "nps": 2789502,
+          "score_cp": -25,
+          "bestmove": "a4c6"
+        },
+        {
+          "id": "TAC_04",
+          "nodes": 61426,
+          "elapsed_sec": 0.04418699999951059,
+          "nps": 2693579,
+          "score_cp": 70,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "nodes": 37482,
+          "elapsed_sec": 0.03491619999840623,
+          "nps": 3057608,
+          "score_cp": 355,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "nodes": 107173,
+          "elapsed_sec": 0.0739160000011907,
+          "nps": 2360446,
+          "score_cp": -5,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "nodes": 87253,
+          "elapsed_sec": 0.060253600000578444,
+          "nps": 2205107,
+          "score_cp": 35,
+          "bestmove": "d1c2"
+        },
+        {
+          "id": "TAC_08",
+          "nodes": 144324,
+          "elapsed_sec": 0.056106899995938875,
+          "nps": 3578621,
+          "score_cp": -140,
+          "bestmove": "a1d1"
+        },
+        {
+          "id": "TAC_09",
+          "nodes": 147614,
+          "elapsed_sec": 0.051713000000745524,
+          "nps": 4080158,
+          "score_cp": 20,
+          "bestmove": "d1e2"
+        },
+        {
+          "id": "TAC_10",
+          "nodes": 158316,
+          "elapsed_sec": 0.07993510000233073,
+          "nps": 2845127,
+          "score_cp": 15,
+          "bestmove": "c2b3"
+        },
+        {
+          "id": "QPOS_01",
+          "nodes": 91713,
+          "elapsed_sec": 0.043432700003904756,
+          "nps": 3791375,
+          "score_cp": 10,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "QPOS_02",
+          "nodes": 42260,
+          "elapsed_sec": 0.02765429999999469,
+          "nps": 3393014,
+          "score_cp": 10,
+          "bestmove": "c1e3"
+        },
+        {
+          "id": "QPOS_03",
+          "nodes": 192603,
+          "elapsed_sec": 0.08922020000318298,
+          "nps": 2654550,
+          "score_cp": 20,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "QPOS_04",
+          "nodes": 116637,
+          "elapsed_sec": 0.07108699999662349,
+          "nps": 2661183,
+          "score_cp": 20,
+          "bestmove": "d8b6"
+        },
+        {
+          "id": "QPOS_05",
+          "nodes": 78421,
+          "elapsed_sec": 0.040759800001978874,
+          "nps": 4067711,
+          "score_cp": 5,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "nodes": 144066,
+          "elapsed_sec": 0.06090519999997923,
+          "nps": 3690120,
+          "score_cp": 10,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "nodes": 148081,
+          "elapsed_sec": 0.05811629999516299,
+          "nps": 3537318,
+          "score_cp": 25,
+          "bestmove": "f3f4"
+        },
+        {
+          "id": "CLSD_03",
+          "nodes": 140396,
+          "elapsed_sec": 0.06398949999856995,
+          "nps": 2895228,
+          "score_cp": -335,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_04",
+          "nodes": 148532,
+          "elapsed_sec": 0.07358150000072783,
+          "nps": 3008986,
+          "score_cp": 365,
+          "bestmove": "d1c2"
+        },
+        {
+          "id": "CLSD_05",
+          "nodes": 45925,
+          "elapsed_sec": 0.034159300004830584,
+          "nps": 3337136,
+          "score_cp": 35,
+          "bestmove": "g1e2"
+        },
+        {
+          "id": "KATK_01",
+          "nodes": 55459,
+          "elapsed_sec": 0.02875560000393307,
+          "nps": 4342811,
+          "score_cp": 135,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "nodes": 96679,
+          "elapsed_sec": 0.04625040000246372,
+          "nps": 3178912,
+          "score_cp": 695,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "KATK_03",
+          "nodes": 78791,
+          "elapsed_sec": 0.04716299999563489,
+          "nps": 2974850,
+          "score_cp": 25,
+          "bestmove": "a2b3"
+        },
+        {
+          "id": "KATK_04",
+          "nodes": 92290,
+          "elapsed_sec": 0.051257799997983966,
+          "nps": 3498404,
+          "score_cp": -335,
+          "bestmove": "c8d7"
+        },
+        {
+          "id": "KATK_05",
+          "nodes": 20363,
+          "elapsed_sec": 0.023317500003031455,
+          "nps": 4034754,
+          "score_cp": 320,
+          "bestmove": "c3a4"
+        }
+      ]
+    }
+  },
+  "fixed_time_results": {
+    "X0": {
+      "variant": "X0",
+      "movetime_ms": 250,
+      "avg_depth": 6.08,
+      "total_nodes": 8615936,
+      "elapsed_sec": 6.706829000002472,
+      "nps": 1284651,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "depth": 6,
+          "nodes": 305152,
+          "elapsed_sec": 0.28035979999549454,
+          "nps": 1214825,
+          "score_cp": -65,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "depth": 5,
+          "nodes": 325632,
+          "elapsed_sec": 0.266131199998199,
+          "nps": 1296019,
+          "score_cp": 60,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "depth": 6,
+          "nodes": 323584,
+          "elapsed_sec": 0.2651691999999457,
+          "nps": 1289343,
+          "score_cp": -20,
+          "bestmove": "b1d2"
+        },
+        {
+          "id": "TAC_04",
+          "depth": 6,
+          "nodes": 294912,
+          "elapsed_sec": 0.27302330000384245,
+          "nps": 1149829,
+          "score_cp": 80,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "depth": 6,
+          "nodes": 348160,
+          "elapsed_sec": 0.26491209999949206,
+          "nps": 1392391,
+          "score_cp": 355,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "depth": 6,
+          "nodes": 337920,
+          "elapsed_sec": 0.2656652000005124,
+          "nps": 1349252,
+          "score_cp": 0,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "depth": 5,
+          "nodes": 315392,
+          "elapsed_sec": 0.264659100001154,
+          "nps": 1260532,
+          "score_cp": 35,
+          "bestmove": "d1c2"
+        },
+        {
+          "id": "TAC_08",
+          "depth": 6,
+          "nodes": 362496,
+          "elapsed_sec": 0.2693827000039164,
+          "nps": 1447228,
+          "score_cp": -145,
+          "bestmove": "a1d1"
+        },
+        {
+          "id": "TAC_09",
+          "depth": 6,
+          "nodes": 327680,
+          "elapsed_sec": 0.2674830000032671,
+          "nps": 1305174,
+          "score_cp": 15,
+          "bestmove": "d1e2"
+        },
+        {
+          "id": "TAC_10",
+          "depth": 6,
+          "nodes": 321536,
+          "elapsed_sec": 0.26817039999878034,
+          "nps": 1273426,
+          "score_cp": 20,
+          "bestmove": "c4c5"
+        },
+        {
+          "id": "QPOS_01",
+          "depth": 6,
+          "nodes": 342016,
+          "elapsed_sec": 0.264334699997562,
+          "nps": 1364864,
+          "score_cp": 10,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "QPOS_02",
+          "depth": 7,
+          "nodes": 380928,
+          "elapsed_sec": 0.2663036000012653,
+          "nps": 1517781,
+          "score_cp": 10,
+          "bestmove": "c1e3"
+        },
+        {
+          "id": "QPOS_03",
+          "depth": 6,
+          "nodes": 395264,
+          "elapsed_sec": 0.2654831000036211,
+          "nps": 1575578,
+          "score_cp": 20,
+          "bestmove": "f1e1"
+        },
+        {
+          "id": "QPOS_04",
+          "depth": 6,
+          "nodes": 337920,
+          "elapsed_sec": 0.26663379999808967,
+          "nps": 1346882,
+          "score_cp": 10,
+          "bestmove": "d8b6"
+        },
+        {
+          "id": "QPOS_05",
+          "depth": 7,
+          "nodes": 358400,
+          "elapsed_sec": 0.2662737999999081,
+          "nps": 1424598,
+          "score_cp": 5,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "depth": 6,
+          "nodes": 296960,
+          "elapsed_sec": 0.26693069999600993,
+          "nps": 1179123,
+          "score_cp": 15,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "depth": 6,
+          "nodes": 319488,
+          "elapsed_sec": 0.2679558000018005,
+          "nps": 1269561,
+          "score_cp": 30,
+          "bestmove": "f3f4"
+        },
+        {
+          "id": "CLSD_03",
+          "depth": 6,
+          "nodes": 339968,
+          "elapsed_sec": 0.2665957999997772,
+          "nps": 1350106,
+          "score_cp": -330,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_04",
+          "depth": 5,
+          "nodes": 280576,
+          "elapsed_sec": 0.26753399999870453,
+          "nps": 1117445,
+          "score_cp": 365,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_05",
+          "depth": 7,
+          "nodes": 358400,
+          "elapsed_sec": 0.2656983999986551,
+          "nps": 1432557,
+          "score_cp": 35,
+          "bestmove": "g1e2"
+        },
+        {
+          "id": "KATK_01",
+          "depth": 6,
+          "nodes": 428032,
+          "elapsed_sec": 0.2769594999990659,
+          "nps": 1709982,
+          "score_cp": 125,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "depth": 6,
+          "nodes": 362496,
+          "elapsed_sec": 0.2812558000005083,
+          "nps": 1448969,
+          "score_cp": 695,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "KATK_03",
+          "depth": 6,
+          "nodes": 335872,
+          "elapsed_sec": 0.2661999000047217,
+          "nps": 1335046,
+          "score_cp": 35,
+          "bestmove": "a2b3"
+        },
+        {
+          "id": "KATK_04",
+          "depth": 7,
+          "nodes": 354304,
+          "elapsed_sec": 0.267142500000773,
+          "nps": 1411598,
+          "score_cp": -340,
+          "bestmove": "c8d7"
+        },
+        {
+          "id": "KATK_05",
+          "depth": 7,
+          "nodes": 462848,
+          "elapsed_sec": 0.26657159999740543,
+          "nps": 1847500,
+          "score_cp": 320,
+          "bestmove": "c3a4"
+        }
+      ]
+    },
+    "X1": {
+      "variant": "X1",
+      "movetime_ms": 250,
+      "avg_depth": 7.16,
+      "total_nodes": 28676096,
+      "elapsed_sec": 6.718743299978087,
+      "nps": 4268074,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "depth": 8,
+          "nodes": 1189888,
+          "elapsed_sec": 0.26538829999481095,
+          "nps": 4753175,
+          "score_cp": -75,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "depth": 6,
+          "nodes": 980992,
+          "elapsed_sec": 0.2656612999999197,
+          "nps": 3920016,
+          "score_cp": 55,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "depth": 7,
+          "nodes": 952320,
+          "elapsed_sec": 0.26676979999319883,
+          "nps": 3807642,
+          "score_cp": -10,
+          "bestmove": "b1d2"
+        },
+        {
+          "id": "TAC_04",
+          "depth": 7,
+          "nodes": 1245184,
+          "elapsed_sec": 0.26755899999989197,
+          "nps": 4980656,
+          "score_cp": 60,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "depth": 7,
+          "nodes": 1269760,
+          "elapsed_sec": 0.26955289999750676,
+          "nps": 5072143,
+          "score_cp": 355,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "depth": 7,
+          "nodes": 1122304,
+          "elapsed_sec": 0.26517629999580095,
+          "nps": 4483985,
+          "score_cp": -5,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "depth": 7,
+          "nodes": 1118208,
+          "elapsed_sec": 0.26495539999450557,
+          "nps": 4466801,
+          "score_cp": 20,
+          "bestmove": "d3b5"
+        },
+        {
+          "id": "TAC_08",
+          "depth": 6,
+          "nodes": 1036288,
+          "elapsed_sec": 0.2695843000037712,
+          "nps": 4144362,
+          "score_cp": -145,
+          "bestmove": "a1d1"
+        },
+        {
+          "id": "TAC_09",
+          "depth": 7,
+          "nodes": 1044480,
+          "elapsed_sec": 0.2761132000014186,
+          "nps": 4177166,
+          "score_cp": 10,
+          "bestmove": "d1e2"
+        },
+        {
+          "id": "TAC_10",
+          "depth": 7,
+          "nodes": 999424,
+          "elapsed_sec": 0.2775937000042177,
+          "nps": 3991963,
+          "score_cp": 25,
+          "bestmove": "c2b3"
+        },
+        {
+          "id": "QPOS_01",
+          "depth": 7,
+          "nodes": 1142784,
+          "elapsed_sec": 0.27083480000146665,
+          "nps": 4570611,
+          "score_cp": 10,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "QPOS_02",
+          "depth": 8,
+          "nodes": 1226752,
+          "elapsed_sec": 0.2652749999979278,
+          "nps": 4906741,
+          "score_cp": 5,
+          "bestmove": "c1e3"
+        },
+        {
+          "id": "QPOS_03",
+          "depth": 7,
+          "nodes": 1216512,
+          "elapsed_sec": 0.26598809999995865,
+          "nps": 4864503,
+          "score_cp": 20,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "QPOS_04",
+          "depth": 7,
+          "nodes": 1099776,
+          "elapsed_sec": 0.283738700003596,
+          "nps": 4396408,
+          "score_cp": 15,
+          "bestmove": "d8b6"
+        },
+        {
+          "id": "QPOS_05",
+          "depth": 8,
+          "nodes": 1214464,
+          "elapsed_sec": 0.26558140000270214,
+          "nps": 4857210,
+          "score_cp": 0,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "depth": 8,
+          "nodes": 1206272,
+          "elapsed_sec": 0.26978219999728026,
+          "nps": 4822809,
+          "score_cp": 20,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "depth": 7,
+          "nodes": 1069056,
+          "elapsed_sec": 0.267626000000746,
+          "nps": 4274397,
+          "score_cp": 25,
+          "bestmove": "f3f4"
+        },
+        {
+          "id": "CLSD_03",
+          "depth": 7,
+          "nodes": 1120256,
+          "elapsed_sec": 0.2656191999994917,
+          "nps": 4477408,
+          "score_cp": -335,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_04",
+          "depth": 6,
+          "nodes": 962560,
+          "elapsed_sec": 0.2680237999957171,
+          "nps": 3839714,
+          "score_cp": 365,
+          "bestmove": "d1c2"
+        },
+        {
+          "id": "CLSD_05",
+          "depth": 8,
+          "nodes": 1144832,
+          "elapsed_sec": 0.2642186999946716,
+          "nps": 4575131,
+          "score_cp": 30,
+          "bestmove": "c1d2"
+        },
+        {
+          "id": "KATK_01",
+          "depth": 7,
+          "nodes": 1253376,
+          "elapsed_sec": 0.27229769999394193,
+          "nps": 5009340,
+          "score_cp": 130,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "depth": 7,
+          "nodes": 1224704,
+          "elapsed_sec": 0.274107000004733,
+          "nps": 4890834,
+          "score_cp": 695,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "KATK_03",
+          "depth": 7,
+          "nodes": 1064960,
+          "elapsed_sec": 0.26540489999752026,
+          "nps": 4258162,
+          "score_cp": 35,
+          "bestmove": "a2b3"
+        },
+        {
+          "id": "KATK_04",
+          "depth": 8,
+          "nodes": 1316864,
+          "elapsed_sec": 0.26647590000357013,
+          "nps": 5259860,
+          "score_cp": -340,
+          "bestmove": "e8g8"
+        },
+        {
+          "id": "KATK_05",
+          "depth": 8,
+          "nodes": 1454080,
+          "elapsed_sec": 0.26541569999972126,
+          "nps": 5810490,
+          "score_cp": 320,
+          "bestmove": "c3a4"
+        }
+      ]
+    },
+    "X2": {
+      "variant": "X2",
+      "movetime_ms": 250,
+      "avg_depth": 6.24,
+      "total_nodes": 8454144,
+      "elapsed_sec": 6.7746630999972695,
+      "nps": 1247906,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "depth": 6,
+          "nodes": 296960,
+          "elapsed_sec": 0.2752720999997109,
+          "nps": 1182393,
+          "score_cp": -65,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "depth": 6,
+          "nodes": 331776,
+          "elapsed_sec": 0.2653797000020859,
+          "nps": 1318037,
+          "score_cp": 50,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "depth": 6,
+          "nodes": 323584,
+          "elapsed_sec": 0.26632360000076005,
+          "nps": 1291344,
+          "score_cp": -20,
+          "bestmove": "b1d2"
+        },
+        {
+          "id": "TAC_04",
+          "depth": 6,
+          "nodes": 294912,
+          "elapsed_sec": 0.27004869999655057,
+          "nps": 1177213,
+          "score_cp": 80,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "depth": 7,
+          "nodes": 342016,
+          "elapsed_sec": 0.2664316999944276,
+          "nps": 1363193,
+          "score_cp": 355,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "depth": 6,
+          "nodes": 317440,
+          "elapsed_sec": 0.26957409999886295,
+          "nps": 1268918,
+          "score_cp": 0,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "depth": 6,
+          "nodes": 331776,
+          "elapsed_sec": 0.27494730000034906,
+          "nps": 1317168,
+          "score_cp": 25,
+          "bestmove": "d3b5"
+        },
+        {
+          "id": "TAC_08",
+          "depth": 6,
+          "nodes": 352256,
+          "elapsed_sec": 0.2703920999992988,
+          "nps": 1398676,
+          "score_cp": -145,
+          "bestmove": "a1d1"
+        },
+        {
+          "id": "TAC_09",
+          "depth": 6,
+          "nodes": 305152,
+          "elapsed_sec": 0.2701560000059544,
+          "nps": 1208109,
+          "score_cp": 15,
+          "bestmove": "d1e2"
+        },
+        {
+          "id": "TAC_10",
+          "depth": 6,
+          "nodes": 317440,
+          "elapsed_sec": 0.2833444999996573,
+          "nps": 1263867,
+          "score_cp": 20,
+          "bestmove": "c4c5"
+        },
+        {
+          "id": "QPOS_01",
+          "depth": 6,
+          "nodes": 319488,
+          "elapsed_sec": 0.27175829999760026,
+          "nps": 1273041,
+          "score_cp": 5,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "QPOS_02",
+          "depth": 7,
+          "nodes": 350208,
+          "elapsed_sec": 0.26759840000158874,
+          "nps": 1387532,
+          "score_cp": 10,
+          "bestmove": "c1e3"
+        },
+        {
+          "id": "QPOS_03",
+          "depth": 6,
+          "nodes": 376832,
+          "elapsed_sec": 0.2675489000030211,
+          "nps": 1503796,
+          "score_cp": 15,
+          "bestmove": "d1b3"
+        },
+        {
+          "id": "QPOS_04",
+          "depth": 6,
+          "nodes": 333824,
+          "elapsed_sec": 0.28338159999839263,
+          "nps": 1333533,
+          "score_cp": 15,
+          "bestmove": "d8c7"
+        },
+        {
+          "id": "QPOS_05",
+          "depth": 7,
+          "nodes": 380928,
+          "elapsed_sec": 0.27095639999606647,
+          "nps": 1522168,
+          "score_cp": 5,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "depth": 6,
+          "nodes": 292864,
+          "elapsed_sec": 0.2699293999976362,
+          "nps": 1171356,
+          "score_cp": 15,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "depth": 6,
+          "nodes": 323584,
+          "elapsed_sec": 0.26756359999853885,
+          "nps": 1289464,
+          "score_cp": 30,
+          "bestmove": "f3f4"
+        },
+        {
+          "id": "CLSD_03",
+          "depth": 6,
+          "nodes": 309248,
+          "elapsed_sec": 0.26599390000046697,
+          "nps": 1231999,
+          "score_cp": -330,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_04",
+          "depth": 6,
+          "nodes": 329728,
+          "elapsed_sec": 0.2652678000013111,
+          "nps": 1315511,
+          "score_cp": 365,
+          "bestmove": "d1c2"
+        },
+        {
+          "id": "CLSD_05",
+          "depth": 7,
+          "nodes": 415744,
+          "elapsed_sec": 0.2671918999985792,
+          "nps": 1662689,
+          "score_cp": 35,
+          "bestmove": "g1e2"
+        },
+        {
+          "id": "KATK_01",
+          "depth": 6,
+          "nodes": 395264,
+          "elapsed_sec": 0.26760880000074394,
+          "nps": 1566067,
+          "score_cp": 125,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "depth": 6,
+          "nodes": 311296,
+          "elapsed_sec": 0.2811753999994835,
+          "nps": 1237880,
+          "score_cp": 695,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "KATK_03",
+          "depth": 6,
+          "nodes": 303104,
+          "elapsed_sec": 0.2844346000056248,
+          "nps": 1208971,
+          "score_cp": 30,
+          "bestmove": "a2b3"
+        },
+        {
+          "id": "KATK_04",
+          "depth": 7,
+          "nodes": 342016,
+          "elapsed_sec": 0.26739459999953397,
+          "nps": 1354350,
+          "score_cp": -340,
+          "bestmove": "c8d7"
+        },
+        {
+          "id": "KATK_05",
+          "depth": 7,
+          "nodes": 456704,
+          "elapsed_sec": 0.2649897000010242,
+          "nps": 1824748,
+          "score_cp": 320,
+          "bestmove": "c3a4"
+        }
+      ]
+    },
+    "X3": {
+      "variant": "X3",
+      "movetime_ms": 250,
+      "avg_depth": 7.04,
+      "total_nodes": 9455616,
+      "elapsed_sec": 6.7361044000062975,
+      "nps": 1403721,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "depth": 7,
+          "nodes": 368640,
+          "elapsed_sec": 0.26434080000035465,
+          "nps": 1474308,
+          "score_cp": -75,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "depth": 6,
+          "nodes": 360448,
+          "elapsed_sec": 0.2654631000041263,
+          "nps": 1437817,
+          "score_cp": 55,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "depth": 7,
+          "nodes": 387072,
+          "elapsed_sec": 0.28242170000157785,
+          "nps": 1544690,
+          "score_cp": -15,
+          "bestmove": "b1d2"
+        },
+        {
+          "id": "TAC_04",
+          "depth": 8,
+          "nodes": 380928,
+          "elapsed_sec": 0.273088199995982,
+          "nps": 1510962,
+          "score_cp": 75,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "depth": 9,
+          "nodes": 501760,
+          "elapsed_sec": 0.26450589999876684,
+          "nps": 2002470,
+          "score_cp": 355,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "depth": 7,
+          "nodes": 360448,
+          "elapsed_sec": 0.26591539999935776,
+          "nps": 1434199,
+          "score_cp": -5,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "depth": 6,
+          "nodes": 352256,
+          "elapsed_sec": 0.26870010000129696,
+          "nps": 1400138,
+          "score_cp": 25,
+          "bestmove": "d1c2"
+        },
+        {
+          "id": "TAC_08",
+          "depth": 7,
+          "nodes": 378880,
+          "elapsed_sec": 0.279403699998511,
+          "nps": 1514441,
+          "score_cp": -145,
+          "bestmove": "a1d1"
+        },
+        {
+          "id": "TAC_09",
+          "depth": 6,
+          "nodes": 303104,
+          "elapsed_sec": 0.2694114999976591,
+          "nps": 1202804,
+          "score_cp": 15,
+          "bestmove": "d1e2"
+        },
+        {
+          "id": "TAC_10",
+          "depth": 6,
+          "nodes": 253952,
+          "elapsed_sec": 0.26961630000005243,
+          "nps": 1004695,
+          "score_cp": 20,
+          "bestmove": "c4c5"
+        },
+        {
+          "id": "QPOS_01",
+          "depth": 7,
+          "nodes": 401408,
+          "elapsed_sec": 0.2704105000011623,
+          "nps": 1603767,
+          "score_cp": 10,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "QPOS_02",
+          "depth": 8,
+          "nodes": 430080,
+          "elapsed_sec": 0.26571350000449456,
+          "nps": 1717080,
+          "score_cp": 5,
+          "bestmove": "c1e3"
+        },
+        {
+          "id": "QPOS_03",
+          "depth": 6,
+          "nodes": 348160,
+          "elapsed_sec": 0.26629989999491954,
+          "nps": 1387033,
+          "score_cp": 20,
+          "bestmove": "f1e1"
+        },
+        {
+          "id": "QPOS_04",
+          "depth": 7,
+          "nodes": 360448,
+          "elapsed_sec": 0.2670270000016899,
+          "nps": 1438996,
+          "score_cp": 15,
+          "bestmove": "d8b6"
+        },
+        {
+          "id": "QPOS_05",
+          "depth": 7,
+          "nodes": 348160,
+          "elapsed_sec": 0.2679476999983308,
+          "nps": 1387018,
+          "score_cp": 5,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "depth": 7,
+          "nodes": 409600,
+          "elapsed_sec": 0.2697159000017564,
+          "nps": 1630707,
+          "score_cp": 15,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "depth": 7,
+          "nodes": 331776,
+          "elapsed_sec": 0.2645750000010594,
+          "nps": 1324674,
+          "score_cp": 25,
+          "bestmove": "f3f4"
+        },
+        {
+          "id": "CLSD_03",
+          "depth": 6,
+          "nodes": 319488,
+          "elapsed_sec": 0.26883359999919776,
+          "nps": 1272213,
+          "score_cp": -330,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_04",
+          "depth": 5,
+          "nodes": 239616,
+          "elapsed_sec": 0.26588649999757763,
+          "nps": 955440,
+          "score_cp": 365,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_05",
+          "depth": 8,
+          "nodes": 323584,
+          "elapsed_sec": 0.272033500004909,
+          "nps": 1294066,
+          "score_cp": 25,
+          "bestmove": "g1e2"
+        },
+        {
+          "id": "KATK_01",
+          "depth": 8,
+          "nodes": 481280,
+          "elapsed_sec": 0.2762767000021995,
+          "nps": 1917497,
+          "score_cp": 125,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "depth": 7,
+          "nodes": 460800,
+          "elapsed_sec": 0.26935689999663737,
+          "nps": 1841904,
+          "score_cp": 690,
+          "bestmove": "d1d3"
+        },
+        {
+          "id": "KATK_03",
+          "depth": 7,
+          "nodes": 305152,
+          "elapsed_sec": 0.27115529999719,
+          "nps": 1216547,
+          "score_cp": 30,
+          "bestmove": "a2d5"
+        },
+        {
+          "id": "KATK_04",
+          "depth": 8,
+          "nodes": 391168,
+          "elapsed_sec": 0.2730795000024955,
+          "nps": 1559452,
+          "score_cp": -345,
+          "bestmove": "c8d7"
+        },
+        {
+          "id": "KATK_05",
+          "depth": 9,
+          "nodes": 657408,
+          "elapsed_sec": 0.264926200004993,
+          "nps": 2618874,
+          "score_cp": 320,
+          "bestmove": "c3a4"
+        }
+      ]
+    },
+    "X4": {
+      "variant": "X4",
+      "movetime_ms": 250,
+      "avg_depth": 6.68,
+      "total_nodes": 9533440,
+      "elapsed_sec": 6.703979800011439,
+      "nps": 1422056,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "depth": 8,
+          "nodes": 552960,
+          "elapsed_sec": 0.2654108999995515,
+          "nps": 2202297,
+          "score_cp": -65,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "depth": 6,
+          "nodes": 319488,
+          "elapsed_sec": 0.26685640000505373,
+          "nps": 1276206,
+          "score_cp": 55,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "depth": 6,
+          "nodes": 333824,
+          "elapsed_sec": 0.26892980000411626,
+          "nps": 1334472,
+          "score_cp": -20,
+          "bestmove": "b1d2"
+        },
+        {
+          "id": "TAC_04",
+          "depth": 6,
+          "nodes": 253952,
+          "elapsed_sec": 0.2695014999990235,
+          "nps": 1009327,
+          "score_cp": 80,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "depth": 7,
+          "nodes": 423936,
+          "elapsed_sec": 0.2761270999981207,
+          "nps": 1689788,
+          "score_cp": 355,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "depth": 7,
+          "nodes": 342016,
+          "elapsed_sec": 0.27060720000008587,
+          "nps": 1361107,
+          "score_cp": -5,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "depth": 7,
+          "nodes": 360448,
+          "elapsed_sec": 0.2694502999947872,
+          "nps": 1441674,
+          "score_cp": 35,
+          "bestmove": "d1c2"
+        },
+        {
+          "id": "TAC_08",
+          "depth": 6,
+          "nodes": 337920,
+          "elapsed_sec": 0.27319429999624845,
+          "nps": 1350805,
+          "score_cp": -145,
+          "bestmove": "a1d1"
+        },
+        {
+          "id": "TAC_09",
+          "depth": 6,
+          "nodes": 307200,
+          "elapsed_sec": 0.2699902000022121,
+          "nps": 1226444,
+          "score_cp": 15,
+          "bestmove": "d1e2"
+        },
+        {
+          "id": "TAC_10",
+          "depth": 6,
+          "nodes": 290816,
+          "elapsed_sec": 0.2721951000057743,
+          "nps": 1153058,
+          "score_cp": 20,
+          "bestmove": "c4c5"
+        },
+        {
+          "id": "QPOS_01",
+          "depth": 7,
+          "nodes": 348160,
+          "elapsed_sec": 0.2654873999999836,
+          "nps": 1389211,
+          "score_cp": 10,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "QPOS_02",
+          "depth": 8,
+          "nodes": 468992,
+          "elapsed_sec": 0.26745369999844115,
+          "nps": 1871035,
+          "score_cp": 5,
+          "bestmove": "c1e3"
+        },
+        {
+          "id": "QPOS_03",
+          "depth": 7,
+          "nodes": 444416,
+          "elapsed_sec": 0.26476389999879757,
+          "nps": 1776400,
+          "score_cp": 20,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "QPOS_04",
+          "depth": 7,
+          "nodes": 346112,
+          "elapsed_sec": 0.2654212999987067,
+          "nps": 1383403,
+          "score_cp": 15,
+          "bestmove": "d8b6"
+        },
+        {
+          "id": "QPOS_05",
+          "depth": 7,
+          "nodes": 368640,
+          "elapsed_sec": 0.2662376000007498,
+          "nps": 1472710,
+          "score_cp": 5,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "depth": 7,
+          "nodes": 333824,
+          "elapsed_sec": 0.2662094999977853,
+          "nps": 1327786,
+          "score_cp": 20,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "depth": 6,
+          "nodes": 309248,
+          "elapsed_sec": 0.2688921000008122,
+          "nps": 1232113,
+          "score_cp": 30,
+          "bestmove": "f3f4"
+        },
+        {
+          "id": "CLSD_03",
+          "depth": 6,
+          "nodes": 321536,
+          "elapsed_sec": 0.27427739999984624,
+          "nps": 1282947,
+          "score_cp": -330,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_04",
+          "depth": 5,
+          "nodes": 290816,
+          "elapsed_sec": 0.2663253999999142,
+          "nps": 1158760,
+          "score_cp": 365,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_05",
+          "depth": 8,
+          "nodes": 387072,
+          "elapsed_sec": 0.26593720000528265,
+          "nps": 1541300,
+          "score_cp": 25,
+          "bestmove": "g1e2"
+        },
+        {
+          "id": "KATK_01",
+          "depth": 7,
+          "nodes": 686080,
+          "elapsed_sec": 0.2648527000055765,
+          "nps": 2726035,
+          "score_cp": 130,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "depth": 6,
+          "nodes": 352256,
+          "elapsed_sec": 0.2658556999958819,
+          "nps": 1396403,
+          "score_cp": 695,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "KATK_03",
+          "depth": 6,
+          "nodes": 346112,
+          "elapsed_sec": 0.26516260000062175,
+          "nps": 1378459,
+          "score_cp": 35,
+          "bestmove": "a2b3"
+        },
+        {
+          "id": "KATK_04",
+          "depth": 7,
+          "nodes": 425984,
+          "elapsed_sec": 0.268836300005205,
+          "nps": 1699353,
+          "score_cp": -340,
+          "bestmove": "c8d7"
+        },
+        {
+          "id": "KATK_05",
+          "depth": 8,
+          "nodes": 581632,
+          "elapsed_sec": 0.2660041999988607,
+          "nps": 2322269,
+          "score_cp": 320,
+          "bestmove": "c3a4"
+        }
+      ]
+    },
+    "X5": {
+      "variant": "X5",
+      "movetime_ms": 250,
+      "avg_depth": 6.16,
+      "total_nodes": 8929280,
+      "elapsed_sec": 6.691892900009407,
+      "nps": 1334342,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "depth": 6,
+          "nodes": 313344,
+          "elapsed_sec": 0.26488940000126604,
+          "nps": 1253147,
+          "score_cp": -65,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "depth": 6,
+          "nodes": 360448,
+          "elapsed_sec": 0.26463849999709055,
+          "nps": 1437895,
+          "score_cp": 55,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "depth": 6,
+          "nodes": 337920,
+          "elapsed_sec": 0.26968979999946896,
+          "nps": 1346074,
+          "score_cp": -20,
+          "bestmove": "b1d2"
+        },
+        {
+          "id": "TAC_04",
+          "depth": 6,
+          "nodes": 321536,
+          "elapsed_sec": 0.26587730000028387,
+          "nps": 1278303,
+          "score_cp": 80,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "depth": 6,
+          "nodes": 348160,
+          "elapsed_sec": 0.26676210000005085,
+          "nps": 1388268,
+          "score_cp": 355,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "depth": 6,
+          "nodes": 362496,
+          "elapsed_sec": 0.26493769999797223,
+          "nps": 1449080,
+          "score_cp": 0,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "depth": 6,
+          "nodes": 342016,
+          "elapsed_sec": 0.2692966000031447,
+          "nps": 1366964,
+          "score_cp": 25,
+          "bestmove": "d3b5"
+        },
+        {
+          "id": "TAC_08",
+          "depth": 6,
+          "nodes": 380928,
+          "elapsed_sec": 0.2699854000020423,
+          "nps": 1515559,
+          "score_cp": -145,
+          "bestmove": "a1d1"
+        },
+        {
+          "id": "TAC_09",
+          "depth": 6,
+          "nodes": 344064,
+          "elapsed_sec": 0.26530990000173915,
+          "nps": 1373610,
+          "score_cp": 15,
+          "bestmove": "d1e2"
+        },
+        {
+          "id": "TAC_10",
+          "depth": 6,
+          "nodes": 323584,
+          "elapsed_sec": 0.27870969999639783,
+          "nps": 1294024,
+          "score_cp": 20,
+          "bestmove": "c4c5"
+        },
+        {
+          "id": "QPOS_01",
+          "depth": 6,
+          "nodes": 337920,
+          "elapsed_sec": 0.28034170000319136,
+          "nps": 1347191,
+          "score_cp": 10,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "QPOS_02",
+          "depth": 7,
+          "nodes": 434176,
+          "elapsed_sec": 0.2690699999948265,
+          "nps": 1732691,
+          "score_cp": 10,
+          "bestmove": "c1e3"
+        },
+        {
+          "id": "QPOS_03",
+          "depth": 6,
+          "nodes": 380928,
+          "elapsed_sec": 0.26820540000335313,
+          "nps": 1519681,
+          "score_cp": 20,
+          "bestmove": "f1e1"
+        },
+        {
+          "id": "QPOS_04",
+          "depth": 6,
+          "nodes": 354304,
+          "elapsed_sec": 0.2638767000025837,
+          "nps": 1415948,
+          "score_cp": 10,
+          "bestmove": "d8b6"
+        },
+        {
+          "id": "QPOS_05",
+          "depth": 7,
+          "nodes": 362496,
+          "elapsed_sec": 0.2635080999971251,
+          "nps": 1449524,
+          "score_cp": 5,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "depth": 6,
+          "nodes": 299008,
+          "elapsed_sec": 0.2641208999993978,
+          "nps": 1194404,
+          "score_cp": 15,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "depth": 6,
+          "nodes": 335872,
+          "elapsed_sec": 0.2677380000022822,
+          "nps": 1342668,
+          "score_cp": 30,
+          "bestmove": "f3f4"
+        },
+        {
+          "id": "CLSD_03",
+          "depth": 6,
+          "nodes": 342016,
+          "elapsed_sec": 0.2764035000000149,
+          "nps": 1362962,
+          "score_cp": -330,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_04",
+          "depth": 5,
+          "nodes": 315392,
+          "elapsed_sec": 0.26388410000072327,
+          "nps": 1259440,
+          "score_cp": 365,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_05",
+          "depth": 7,
+          "nodes": 354304,
+          "elapsed_sec": 0.2658939000029932,
+          "nps": 1408884,
+          "score_cp": 35,
+          "bestmove": "g1e2"
+        },
+        {
+          "id": "KATK_01",
+          "depth": 6,
+          "nodes": 438272,
+          "elapsed_sec": 0.26555050000024494,
+          "nps": 1739974,
+          "score_cp": 125,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "depth": 6,
+          "nodes": 358400,
+          "elapsed_sec": 0.26571120000153314,
+          "nps": 1422693,
+          "score_cp": 695,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "KATK_03",
+          "depth": 6,
+          "nodes": 337920,
+          "elapsed_sec": 0.2644706999999471,
+          "nps": 1347675,
+          "score_cp": 35,
+          "bestmove": "a2b3"
+        },
+        {
+          "id": "KATK_04",
+          "depth": 7,
+          "nodes": 354304,
+          "elapsed_sec": 0.26392840000335127,
+          "nps": 1413523,
+          "score_cp": -340,
+          "bestmove": "c8d7"
+        },
+        {
+          "id": "KATK_05",
+          "depth": 7,
+          "nodes": 489472,
+          "elapsed_sec": 0.26909339999838267,
+          "nps": 1956968,
+          "score_cp": 320,
+          "bestmove": "c3a4"
+        }
+      ]
+    },
+    "X6": {
+      "variant": "X6",
+      "movetime_ms": 250,
+      "avg_depth": 9.44,
+      "total_nodes": 22939648,
+      "elapsed_sec": 6.696041399991373,
+      "nps": 3425852,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "depth": 10,
+          "nodes": 974848,
+          "elapsed_sec": 0.26558379999914905,
+          "nps": 3896165,
+          "score_cp": -80,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "depth": 8,
+          "nodes": 946176,
+          "elapsed_sec": 0.26482450000185054,
+          "nps": 3781696,
+          "score_cp": 60,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "depth": 10,
+          "nodes": 835584,
+          "elapsed_sec": 0.2646041999978479,
+          "nps": 3334923,
+          "score_cp": -5,
+          "bestmove": "b1d2"
+        },
+        {
+          "id": "TAC_04",
+          "depth": 9,
+          "nodes": 894976,
+          "elapsed_sec": 0.2647133999998914,
+          "nps": 3576079,
+          "score_cp": 70,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "depth": 10,
+          "nodes": 1099776,
+          "elapsed_sec": 0.26491340000211494,
+          "nps": 4395738,
+          "score_cp": 345,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "depth": 9,
+          "nodes": 749568,
+          "elapsed_sec": 0.2766884000011487,
+          "nps": 2997338,
+          "score_cp": 10,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "depth": 8,
+          "nodes": 839680,
+          "elapsed_sec": 0.2787787999986904,
+          "nps": 3353384,
+          "score_cp": 30,
+          "bestmove": "d3b5"
+        },
+        {
+          "id": "TAC_08",
+          "depth": 10,
+          "nodes": 917504,
+          "elapsed_sec": 0.2671494999958668,
+          "nps": 3669025,
+          "score_cp": -70,
+          "bestmove": "b2a3"
+        },
+        {
+          "id": "TAC_09",
+          "depth": 9,
+          "nodes": 1009664,
+          "elapsed_sec": 0.2656187999964459,
+          "nps": 4035963,
+          "score_cp": 15,
+          "bestmove": "d1e2"
+        },
+        {
+          "id": "TAC_10",
+          "depth": 9,
+          "nodes": 854016,
+          "elapsed_sec": 0.26922539999941364,
+          "nps": 3415122,
+          "score_cp": 25,
+          "bestmove": "c2b3"
+        },
+        {
+          "id": "QPOS_01",
+          "depth": 10,
+          "nodes": 835584,
+          "elapsed_sec": 0.2655936000010115,
+          "nps": 3335399,
+          "score_cp": 5,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "QPOS_02",
+          "depth": 11,
+          "nodes": 970752,
+          "elapsed_sec": 0.2635885999989114,
+          "nps": 3880398,
+          "score_cp": 10,
+          "bestmove": "c1e3"
+        },
+        {
+          "id": "QPOS_03",
+          "depth": 9,
+          "nodes": 858112,
+          "elapsed_sec": 0.2635955000005197,
+          "nps": 3428923,
+          "score_cp": 20,
+          "bestmove": "c1d2"
+        },
+        {
+          "id": "QPOS_04",
+          "depth": 8,
+          "nodes": 839680,
+          "elapsed_sec": 0.2644030000010389,
+          "nps": 3348041,
+          "score_cp": 15,
+          "bestmove": "e7d6"
+        },
+        {
+          "id": "QPOS_05",
+          "depth": 10,
+          "nodes": 976896,
+          "elapsed_sec": 0.2659726999991108,
+          "nps": 3899121,
+          "score_cp": 0,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "depth": 10,
+          "nodes": 903168,
+          "elapsed_sec": 0.26501270000153454,
+          "nps": 3612196,
+          "score_cp": 20,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "depth": 8,
+          "nodes": 878592,
+          "elapsed_sec": 0.2872276999987662,
+          "nps": 3505832,
+          "score_cp": 20,
+          "bestmove": "d4d5"
+        },
+        {
+          "id": "CLSD_03",
+          "depth": 8,
+          "nodes": 813056,
+          "elapsed_sec": 0.26616569999896456,
+          "nps": 3246934,
+          "score_cp": -330,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_04",
+          "depth": 9,
+          "nodes": 894976,
+          "elapsed_sec": 0.2783611999984714,
+          "nps": 3575137,
+          "score_cp": 370,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_05",
+          "depth": 10,
+          "nodes": 925696,
+          "elapsed_sec": 0.26626519999990705,
+          "nps": 3701250,
+          "score_cp": 30,
+          "bestmove": "g1e2"
+        },
+        {
+          "id": "KATK_01",
+          "depth": 10,
+          "nodes": 1009664,
+          "elapsed_sec": 0.2647930000021006,
+          "nps": 4037607,
+          "score_cp": 125,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "depth": 10,
+          "nodes": 919552,
+          "elapsed_sec": 0.26687220000167144,
+          "nps": 3677971,
+          "score_cp": 690,
+          "bestmove": "d1d3"
+        },
+        {
+          "id": "KATK_03",
+          "depth": 10,
+          "nodes": 798720,
+          "elapsed_sec": 0.26677919999929145,
+          "nps": 3193860,
+          "score_cp": 25,
+          "bestmove": "a2b3"
+        },
+        {
+          "id": "KATK_04",
+          "depth": 10,
+          "nodes": 1128448,
+          "elapsed_sec": 0.2651645000005374,
+          "nps": 4505215,
+          "score_cp": -350,
+          "bestmove": "c8d7"
+        },
+        {
+          "id": "KATK_05",
+          "depth": 11,
+          "nodes": 1064960,
+          "elapsed_sec": 0.26414639999711653,
+          "nps": 4251797,
+          "score_cp": 315,
+          "bestmove": "c3a4"
+        }
+      ]
+    }
+  }
+}

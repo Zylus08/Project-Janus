@@ -1,0 +1,1310 @@
+{
+  "P0": {
+    "description": "ProbCut Disabled (X7 Baseline)",
+    "mode": 0,
+    "suite_50": {
+      "total_nodes": 1536046,
+      "elapsed_sec": 1.9396424999868032,
+      "nps": 791922,
+      "probcut_probes": 0,
+      "probcut_cutoffs": 0,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "nodes": 19696,
+          "score": -91,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "nodes": 73559,
+          "score": 75,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "nodes": 13550,
+          "score": -29,
+          "bestmove": "a4c6"
+        },
+        {
+          "id": "TAC_04",
+          "nodes": 23469,
+          "score": 93,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "nodes": 15408,
+          "score": 378,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "nodes": 46339,
+          "score": -18,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "nodes": 41105,
+          "score": 31,
+          "bestmove": "g3h5"
+        },
+        {
+          "id": "TAC_08",
+          "nodes": 111375,
+          "score": -85,
+          "bestmove": "b3d3"
+        },
+        {
+          "id": "TAC_09",
+          "nodes": 45762,
+          "score": -9,
+          "bestmove": "c3e4"
+        },
+        {
+          "id": "TAC_10",
+          "nodes": 15284,
+          "score": 50,
+          "bestmove": "c4c5"
+        },
+        {
+          "id": "QPOS_01",
+          "nodes": 39351,
+          "score": 15,
+          "bestmove": "c3a4"
+        },
+        {
+          "id": "QPOS_02",
+          "nodes": 24608,
+          "score": 23,
+          "bestmove": "h2h3"
+        },
+        {
+          "id": "QPOS_03",
+          "nodes": 60898,
+          "score": 46,
+          "bestmove": "d1b3"
+        },
+        {
+          "id": "QPOS_04",
+          "nodes": 54216,
+          "score": 19,
+          "bestmove": "e7d6"
+        },
+        {
+          "id": "QPOS_05",
+          "nodes": 51818,
+          "score": -18,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "nodes": 48268,
+          "score": 17,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "nodes": 64506,
+          "score": 19,
+          "bestmove": "g2g4"
+        },
+        {
+          "id": "CLSD_03",
+          "nodes": 49155,
+          "score": -342,
+          "bestmove": "d8c7"
+        },
+        {
+          "id": "CLSD_04",
+          "nodes": 45665,
+          "score": 393,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "CLSD_05",
+          "nodes": 25959,
+          "score": 32,
+          "bestmove": "g1e2"
+        },
+        {
+          "id": "OPEN_01",
+          "nodes": 22709,
+          "score": -49,
+          "bestmove": "f8b4"
+        },
+        {
+          "id": "OPEN_02",
+          "nodes": 14930,
+          "score": 109,
+          "bestmove": "c3a4"
+        },
+        {
+          "id": "OPEN_03",
+          "nodes": 35429,
+          "score": -53,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "OPEN_04",
+          "nodes": 94390,
+          "score": -10,
+          "bestmove": "c1d2"
+        },
+        {
+          "id": "OPEN_05",
+          "nodes": 29968,
+          "score": 15,
+          "bestmove": "c6d4"
+        },
+        {
+          "id": "KATK_01",
+          "nodes": 18323,
+          "score": 188,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "nodes": 34561,
+          "score": 723,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "KATK_03",
+          "nodes": 44048,
+          "score": 27,
+          "bestmove": "h2h3"
+        },
+        {
+          "id": "KATK_04",
+          "nodes": 35553,
+          "score": -358,
+          "bestmove": "d5c4"
+        },
+        {
+          "id": "KATK_05",
+          "nodes": 9862,
+          "score": 321,
+          "bestmove": "c3a4"
+        },
+        {
+          "id": "ENDG_01",
+          "nodes": 8410,
+          "score": 115,
+          "bestmove": "e3b3"
+        },
+        {
+          "id": "ENDG_02",
+          "nodes": 12342,
+          "score": 303,
+          "bestmove": "f3d1"
+        },
+        {
+          "id": "ENDG_03",
+          "nodes": 3275,
+          "score": 0,
+          "bestmove": "h2h4"
+        },
+        {
+          "id": "ENDG_04",
+          "nodes": 36,
+          "score": 0,
+          "bestmove": "e4d3"
+        },
+        {
+          "id": "ENDG_05",
+          "nodes": 1248,
+          "score": 0,
+          "bestmove": "f4f3"
+        },
+        {
+          "id": "ENDG_06",
+          "nodes": 4025,
+          "score": 0,
+          "bestmove": "f3e2"
+        },
+        {
+          "id": "ENDG_07",
+          "nodes": 14237,
+          "score": 20,
+          "bestmove": "b2f2"
+        },
+        {
+          "id": "ENDG_08",
+          "nodes": 1853,
+          "score": 244,
+          "bestmove": "d3c2"
+        },
+        {
+          "id": "ENDG_09",
+          "nodes": 3549,
+          "score": 141,
+          "bestmove": "e3f3"
+        },
+        {
+          "id": "ENDG_10",
+          "nodes": 12576,
+          "score": 335,
+          "bestmove": "a1d1"
+        },
+        {
+          "id": "MATE_01",
+          "nodes": 10196,
+          "score": 28999,
+          "bestmove": "e1e8"
+        },
+        {
+          "id": "MATE_02",
+          "nodes": 33775,
+          "score": 89,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "MATE_03",
+          "nodes": 15329,
+          "score": 1035,
+          "bestmove": "f8d8"
+        },
+        {
+          "id": "MATE_04",
+          "nodes": 39702,
+          "score": -108,
+          "bestmove": "d8b6"
+        },
+        {
+          "id": "MATE_05",
+          "nodes": 6,
+          "score": 0,
+          "bestmove": "0000"
+        },
+        {
+          "id": "CAND_01",
+          "nodes": 38240,
+          "score": 57,
+          "bestmove": "d7d5"
+        },
+        {
+          "id": "CAND_02",
+          "nodes": 17942,
+          "score": -51,
+          "bestmove": "c6d4"
+        },
+        {
+          "id": "CAND_03",
+          "nodes": 54774,
+          "score": 6,
+          "bestmove": "d1b3"
+        },
+        {
+          "id": "CAND_04",
+          "nodes": 24936,
+          "score": 53,
+          "bestmove": "b7b5"
+        },
+        {
+          "id": "CAND_05",
+          "nodes": 29831,
+          "score": -19,
+          "bestmove": "d1b3"
+        }
+      ]
+    },
+    "tactical_atlas": {
+      "solved": 4,
+      "total": 16,
+      "accuracy_pct": 25.0,
+      "total_nodes": 1171790,
+      "probcut_probes": 0,
+      "probcut_cutoffs": 0,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "expected": "b5d7",
+          "bestmove": "b5d7",
+          "solved": true,
+          "nodes": 13234
+        },
+        {
+          "id": "TAC_02",
+          "expected": "d3h7",
+          "bestmove": "d3h7",
+          "solved": true,
+          "nodes": 52109
+        },
+        {
+          "id": "TAC_03",
+          "expected": "b6b7",
+          "bestmove": "c1d1",
+          "solved": false,
+          "nodes": 4156
+        },
+        {
+          "id": "TAC_04",
+          "expected": "a1b1",
+          "bestmove": "a1a2",
+          "solved": false,
+          "nodes": 1263
+        },
+        {
+          "id": "TAC_05",
+          "expected": "d3h7",
+          "bestmove": "e1g1",
+          "solved": false,
+          "nodes": 41526
+        },
+        {
+          "id": "TAC_06",
+          "expected": "f1e1",
+          "bestmove": "d1c2",
+          "solved": false,
+          "nodes": 95633
+        },
+        {
+          "id": "TAC_07",
+          "expected": "c1c8",
+          "bestmove": "c1c8",
+          "solved": true,
+          "nodes": 10662
+        },
+        {
+          "id": "TAC_08",
+          "expected": "c4f7",
+          "bestmove": "c1b1",
+          "solved": false,
+          "nodes": 252049
+        },
+        {
+          "id": "TAC_09",
+          "expected": "c3d5",
+          "bestmove": "e2e3",
+          "solved": false,
+          "nodes": 43787
+        },
+        {
+          "id": "TAC_10",
+          "expected": "e1g1",
+          "bestmove": "e1g1",
+          "solved": true,
+          "nodes": 116843
+        },
+        {
+          "id": "TAC_11",
+          "expected": "c1e3",
+          "bestmove": "d3b5",
+          "solved": false,
+          "nodes": 57721
+        },
+        {
+          "id": "TAC_12",
+          "expected": "e1g1",
+          "bestmove": "d4c5",
+          "solved": false,
+          "nodes": 112160
+        },
+        {
+          "id": "TAC_13",
+          "expected": "e3e4",
+          "bestmove": "c1d2",
+          "solved": false,
+          "nodes": 92958
+        },
+        {
+          "id": "TAC_14",
+          "expected": "d4e2",
+          "bestmove": "d1d2",
+          "solved": false,
+          "nodes": 100549
+        },
+        {
+          "id": "TAC_15",
+          "expected": "c4d5",
+          "bestmove": "e1g1",
+          "solved": false,
+          "nodes": 146927
+        },
+        {
+          "id": "TAC_16",
+          "expected": "c1d2",
+          "bestmove": "d1b3",
+          "solved": false,
+          "nodes": 30213
+        }
+      ]
+    },
+    "total_benchmark_time_sec": 3.49
+  },
+  "P1": {
+    "description": "Conservative ProbCut (Margin = 200 cp)",
+    "mode": 1,
+    "suite_50": {
+      "total_nodes": 1539558,
+      "elapsed_sec": 2.0803882999607595,
+      "nps": 740033,
+      "probcut_probes": 1032,
+      "probcut_cutoffs": 179,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "nodes": 19704,
+          "score": -91,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "nodes": 73633,
+          "score": 75,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "nodes": 13568,
+          "score": -29,
+          "bestmove": "a4c6"
+        },
+        {
+          "id": "TAC_04",
+          "nodes": 23587,
+          "score": 93,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "nodes": 15342,
+          "score": 378,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "nodes": 44617,
+          "score": -18,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "nodes": 42534,
+          "score": 31,
+          "bestmove": "g3h5"
+        },
+        {
+          "id": "TAC_08",
+          "nodes": 111275,
+          "score": -85,
+          "bestmove": "b3d3"
+        },
+        {
+          "id": "TAC_09",
+          "nodes": 48354,
+          "score": -9,
+          "bestmove": "c3e4"
+        },
+        {
+          "id": "TAC_10",
+          "nodes": 15204,
+          "score": 50,
+          "bestmove": "c4c5"
+        },
+        {
+          "id": "QPOS_01",
+          "nodes": 39447,
+          "score": 15,
+          "bestmove": "c3a4"
+        },
+        {
+          "id": "QPOS_02",
+          "nodes": 24659,
+          "score": 23,
+          "bestmove": "h2h3"
+        },
+        {
+          "id": "QPOS_03",
+          "nodes": 61006,
+          "score": 46,
+          "bestmove": "d1b3"
+        },
+        {
+          "id": "QPOS_04",
+          "nodes": 54383,
+          "score": 19,
+          "bestmove": "e7d6"
+        },
+        {
+          "id": "QPOS_05",
+          "nodes": 51814,
+          "score": -18,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "nodes": 48423,
+          "score": 17,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "nodes": 64607,
+          "score": 19,
+          "bestmove": "g2g4"
+        },
+        {
+          "id": "CLSD_03",
+          "nodes": 49189,
+          "score": -342,
+          "bestmove": "d8c7"
+        },
+        {
+          "id": "CLSD_04",
+          "nodes": 45684,
+          "score": 393,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "CLSD_05",
+          "nodes": 25989,
+          "score": 32,
+          "bestmove": "g1e2"
+        },
+        {
+          "id": "OPEN_01",
+          "nodes": 22817,
+          "score": -49,
+          "bestmove": "f8b4"
+        },
+        {
+          "id": "OPEN_02",
+          "nodes": 14105,
+          "score": 109,
+          "bestmove": "c3a4"
+        },
+        {
+          "id": "OPEN_03",
+          "nodes": 35492,
+          "score": -53,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "OPEN_04",
+          "nodes": 95380,
+          "score": -10,
+          "bestmove": "c1d2"
+        },
+        {
+          "id": "OPEN_05",
+          "nodes": 29890,
+          "score": 15,
+          "bestmove": "c6d4"
+        },
+        {
+          "id": "KATK_01",
+          "nodes": 18392,
+          "score": 188,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "nodes": 34573,
+          "score": 723,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "KATK_03",
+          "nodes": 44011,
+          "score": 27,
+          "bestmove": "h2h3"
+        },
+        {
+          "id": "KATK_04",
+          "nodes": 35575,
+          "score": -358,
+          "bestmove": "d5c4"
+        },
+        {
+          "id": "KATK_05",
+          "nodes": 9867,
+          "score": 321,
+          "bestmove": "c3a4"
+        },
+        {
+          "id": "ENDG_01",
+          "nodes": 8400,
+          "score": 115,
+          "bestmove": "e3b3"
+        },
+        {
+          "id": "ENDG_02",
+          "nodes": 12337,
+          "score": 303,
+          "bestmove": "f3d1"
+        },
+        {
+          "id": "ENDG_03",
+          "nodes": 3275,
+          "score": 0,
+          "bestmove": "h2h4"
+        },
+        {
+          "id": "ENDG_04",
+          "nodes": 36,
+          "score": 0,
+          "bestmove": "e4d3"
+        },
+        {
+          "id": "ENDG_05",
+          "nodes": 1248,
+          "score": 0,
+          "bestmove": "f4f3"
+        },
+        {
+          "id": "ENDG_06",
+          "nodes": 4025,
+          "score": 0,
+          "bestmove": "f3e2"
+        },
+        {
+          "id": "ENDG_07",
+          "nodes": 14233,
+          "score": 20,
+          "bestmove": "b2f2"
+        },
+        {
+          "id": "ENDG_08",
+          "nodes": 1853,
+          "score": 244,
+          "bestmove": "d3c2"
+        },
+        {
+          "id": "ENDG_09",
+          "nodes": 3549,
+          "score": 141,
+          "bestmove": "e3f3"
+        },
+        {
+          "id": "ENDG_10",
+          "nodes": 12711,
+          "score": 335,
+          "bestmove": "a1d1"
+        },
+        {
+          "id": "MATE_01",
+          "nodes": 10196,
+          "score": 28999,
+          "bestmove": "e1e8"
+        },
+        {
+          "id": "MATE_02",
+          "nodes": 33787,
+          "score": 89,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "MATE_03",
+          "nodes": 15329,
+          "score": 1035,
+          "bestmove": "f8d8"
+        },
+        {
+          "id": "MATE_04",
+          "nodes": 39803,
+          "score": -108,
+          "bestmove": "d8b6"
+        },
+        {
+          "id": "MATE_05",
+          "nodes": 6,
+          "score": 0,
+          "bestmove": "0000"
+        },
+        {
+          "id": "CAND_01",
+          "nodes": 38192,
+          "score": 57,
+          "bestmove": "d7d5"
+        },
+        {
+          "id": "CAND_02",
+          "nodes": 17929,
+          "score": -51,
+          "bestmove": "c6d4"
+        },
+        {
+          "id": "CAND_03",
+          "nodes": 54861,
+          "score": 6,
+          "bestmove": "d1b3"
+        },
+        {
+          "id": "CAND_04",
+          "nodes": 25079,
+          "score": 53,
+          "bestmove": "b7b5"
+        },
+        {
+          "id": "CAND_05",
+          "nodes": 29588,
+          "score": -19,
+          "bestmove": "d1b3"
+        }
+      ]
+    },
+    "tactical_atlas": {
+      "solved": 4,
+      "total": 16,
+      "accuracy_pct": 25.0,
+      "total_nodes": 1167731,
+      "probcut_probes": 1143,
+      "probcut_cutoffs": 223,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "expected": "b5d7",
+          "bestmove": "b5d7",
+          "solved": true,
+          "nodes": 12437
+        },
+        {
+          "id": "TAC_02",
+          "expected": "d3h7",
+          "bestmove": "d3h7",
+          "solved": true,
+          "nodes": 47239
+        },
+        {
+          "id": "TAC_03",
+          "expected": "b6b7",
+          "bestmove": "c1d1",
+          "solved": false,
+          "nodes": 4180
+        },
+        {
+          "id": "TAC_04",
+          "expected": "a1b1",
+          "bestmove": "a1a2",
+          "solved": false,
+          "nodes": 1263
+        },
+        {
+          "id": "TAC_05",
+          "expected": "d3h7",
+          "bestmove": "e1g1",
+          "solved": false,
+          "nodes": 41546
+        },
+        {
+          "id": "TAC_06",
+          "expected": "f1e1",
+          "bestmove": "d1c2",
+          "solved": false,
+          "nodes": 96424
+        },
+        {
+          "id": "TAC_07",
+          "expected": "c1c8",
+          "bestmove": "c1c8",
+          "solved": true,
+          "nodes": 10389
+        },
+        {
+          "id": "TAC_08",
+          "expected": "c4f7",
+          "bestmove": "c1b1",
+          "solved": false,
+          "nodes": 243680
+        },
+        {
+          "id": "TAC_09",
+          "expected": "c3d5",
+          "bestmove": "e2e3",
+          "solved": false,
+          "nodes": 44328
+        },
+        {
+          "id": "TAC_10",
+          "expected": "e1g1",
+          "bestmove": "e1g1",
+          "solved": true,
+          "nodes": 117603
+        },
+        {
+          "id": "TAC_11",
+          "expected": "c1e3",
+          "bestmove": "d3b5",
+          "solved": false,
+          "nodes": 58027
+        },
+        {
+          "id": "TAC_12",
+          "expected": "e1g1",
+          "bestmove": "d4c5",
+          "solved": false,
+          "nodes": 114876
+        },
+        {
+          "id": "TAC_13",
+          "expected": "e3e4",
+          "bestmove": "c1d2",
+          "solved": false,
+          "nodes": 93318
+        },
+        {
+          "id": "TAC_14",
+          "expected": "d4e2",
+          "bestmove": "d1d2",
+          "solved": false,
+          "nodes": 99104
+        },
+        {
+          "id": "TAC_15",
+          "expected": "c4d5",
+          "bestmove": "e1g1",
+          "solved": false,
+          "nodes": 152225
+        },
+        {
+          "id": "TAC_16",
+          "expected": "c1d2",
+          "bestmove": "d1b3",
+          "solved": false,
+          "nodes": 31092
+        }
+      ]
+    },
+    "total_benchmark_time_sec": 3.88
+  },
+  "P2": {
+    "description": "Aggressive ProbCut (Margin = 150 cp)",
+    "mode": 2,
+    "suite_50": {
+      "total_nodes": 1538632,
+      "elapsed_sec": 2.111773900061962,
+      "nps": 728596,
+      "probcut_probes": 1033,
+      "probcut_cutoffs": 225,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "nodes": 19699,
+          "score": -91,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_02",
+          "nodes": 72880,
+          "score": 75,
+          "bestmove": "e3e4"
+        },
+        {
+          "id": "TAC_03",
+          "nodes": 13568,
+          "score": -29,
+          "bestmove": "a4c6"
+        },
+        {
+          "id": "TAC_04",
+          "nodes": 23605,
+          "score": 93,
+          "bestmove": "d4c6"
+        },
+        {
+          "id": "TAC_05",
+          "nodes": 15349,
+          "score": 378,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "TAC_06",
+          "nodes": 41244,
+          "score": -18,
+          "bestmove": "e2f3"
+        },
+        {
+          "id": "TAC_07",
+          "nodes": 41910,
+          "score": 31,
+          "bestmove": "g3h5"
+        },
+        {
+          "id": "TAC_08",
+          "nodes": 111263,
+          "score": -85,
+          "bestmove": "b3d3"
+        },
+        {
+          "id": "TAC_09",
+          "nodes": 48009,
+          "score": -9,
+          "bestmove": "c3e4"
+        },
+        {
+          "id": "TAC_10",
+          "nodes": 15130,
+          "score": 50,
+          "bestmove": "c4c5"
+        },
+        {
+          "id": "QPOS_01",
+          "nodes": 39539,
+          "score": 15,
+          "bestmove": "c3a4"
+        },
+        {
+          "id": "QPOS_02",
+          "nodes": 24744,
+          "score": 23,
+          "bestmove": "h2h3"
+        },
+        {
+          "id": "QPOS_03",
+          "nodes": 61128,
+          "score": 46,
+          "bestmove": "d1b3"
+        },
+        {
+          "id": "QPOS_04",
+          "nodes": 54366,
+          "score": 19,
+          "bestmove": "e7d6"
+        },
+        {
+          "id": "QPOS_05",
+          "nodes": 51882,
+          "score": -18,
+          "bestmove": "c6c5"
+        },
+        {
+          "id": "CLSD_01",
+          "nodes": 48462,
+          "score": 17,
+          "bestmove": "f1d3"
+        },
+        {
+          "id": "CLSD_02",
+          "nodes": 64413,
+          "score": 19,
+          "bestmove": "g2g4"
+        },
+        {
+          "id": "CLSD_03",
+          "nodes": 49237,
+          "score": -342,
+          "bestmove": "d8c7"
+        },
+        {
+          "id": "CLSD_04",
+          "nodes": 45700,
+          "score": 393,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "CLSD_05",
+          "nodes": 26003,
+          "score": 32,
+          "bestmove": "g1e2"
+        },
+        {
+          "id": "OPEN_01",
+          "nodes": 23593,
+          "score": -49,
+          "bestmove": "f8b4"
+        },
+        {
+          "id": "OPEN_02",
+          "nodes": 14136,
+          "score": 109,
+          "bestmove": "c3a4"
+        },
+        {
+          "id": "OPEN_03",
+          "nodes": 36587,
+          "score": -53,
+          "bestmove": "c1g5"
+        },
+        {
+          "id": "OPEN_04",
+          "nodes": 98081,
+          "score": -10,
+          "bestmove": "c1d2"
+        },
+        {
+          "id": "OPEN_05",
+          "nodes": 29804,
+          "score": 15,
+          "bestmove": "c6d4"
+        },
+        {
+          "id": "KATK_01",
+          "nodes": 18101,
+          "score": 188,
+          "bestmove": "d3h7"
+        },
+        {
+          "id": "KATK_02",
+          "nodes": 34601,
+          "score": 723,
+          "bestmove": "g5f4"
+        },
+        {
+          "id": "KATK_03",
+          "nodes": 43915,
+          "score": 27,
+          "bestmove": "h2h3"
+        },
+        {
+          "id": "KATK_04",
+          "nodes": 35562,
+          "score": -358,
+          "bestmove": "d5c4"
+        },
+        {
+          "id": "KATK_05",
+          "nodes": 9867,
+          "score": 321,
+          "bestmove": "c3a4"
+        },
+        {
+          "id": "ENDG_01",
+          "nodes": 8400,
+          "score": 115,
+          "bestmove": "e3b3"
+        },
+        {
+          "id": "ENDG_02",
+          "nodes": 12337,
+          "score": 303,
+          "bestmove": "f3d1"
+        },
+        {
+          "id": "ENDG_03",
+          "nodes": 3275,
+          "score": 0,
+          "bestmove": "h2h4"
+        },
+        {
+          "id": "ENDG_04",
+          "nodes": 36,
+          "score": 0,
+          "bestmove": "e4d3"
+        },
+        {
+          "id": "ENDG_05",
+          "nodes": 1248,
+          "score": 0,
+          "bestmove": "f4f3"
+        },
+        {
+          "id": "ENDG_06",
+          "nodes": 4025,
+          "score": 0,
+          "bestmove": "f3e2"
+        },
+        {
+          "id": "ENDG_07",
+          "nodes": 14233,
+          "score": 20,
+          "bestmove": "b2f2"
+        },
+        {
+          "id": "ENDG_08",
+          "nodes": 1853,
+          "score": 244,
+          "bestmove": "d3c2"
+        },
+        {
+          "id": "ENDG_09",
+          "nodes": 3549,
+          "score": 141,
+          "bestmove": "e3f3"
+        },
+        {
+          "id": "ENDG_10",
+          "nodes": 12858,
+          "score": 335,
+          "bestmove": "a1d1"
+        },
+        {
+          "id": "MATE_01",
+          "nodes": 10196,
+          "score": 28999,
+          "bestmove": "e1e8"
+        },
+        {
+          "id": "MATE_02",
+          "nodes": 33786,
+          "score": 89,
+          "bestmove": "c4d5"
+        },
+        {
+          "id": "MATE_03",
+          "nodes": 15329,
+          "score": 1035,
+          "bestmove": "f8d8"
+        },
+        {
+          "id": "MATE_04",
+          "nodes": 39733,
+          "score": -108,
+          "bestmove": "d8b6"
+        },
+        {
+          "id": "MATE_05",
+          "nodes": 6,
+          "score": 0,
+          "bestmove": "0000"
+        },
+        {
+          "id": "CAND_01",
+          "nodes": 38190,
+          "score": 57,
+          "bestmove": "d7d5"
+        },
+        {
+          "id": "CAND_02",
+          "nodes": 17884,
+          "score": -51,
+          "bestmove": "c6d4"
+        },
+        {
+          "id": "CAND_03",
+          "nodes": 54741,
+          "score": 6,
+          "bestmove": "d1b3"
+        },
+        {
+          "id": "CAND_04",
+          "nodes": 24987,
+          "score": 53,
+          "bestmove": "b7b5"
+        },
+        {
+          "id": "CAND_05",
+          "nodes": 29588,
+          "score": -19,
+          "bestmove": "d1b3"
+        }
+      ]
+    },
+    "tactical_atlas": {
+      "solved": 4,
+      "total": 16,
+      "accuracy_pct": 25.0,
+      "total_nodes": 1166950,
+      "probcut_probes": 1135,
+      "probcut_cutoffs": 256,
+      "positions": [
+        {
+          "id": "TAC_01",
+          "expected": "b5d7",
+          "bestmove": "b5d7",
+          "solved": true,
+          "nodes": 12439
+        },
+        {
+          "id": "TAC_02",
+          "expected": "d3h7",
+          "bestmove": "d3h7",
+          "solved": true,
+          "nodes": 47176
+        },
+        {
+          "id": "TAC_03",
+          "expected": "b6b7",
+          "bestmove": "c1d1",
+          "solved": false,
+          "nodes": 4180
+        },
+        {
+          "id": "TAC_04",
+          "expected": "a1b1",
+          "bestmove": "a1a2",
+          "solved": false,
+          "nodes": 1263
+        },
+        {
+          "id": "TAC_05",
+          "expected": "d3h7",
+          "bestmove": "e1g1",
+          "solved": false,
+          "nodes": 41483
+        },
+        {
+          "id": "TAC_06",
+          "expected": "f1e1",
+          "bestmove": "d1c2",
+          "solved": false,
+          "nodes": 96254
+        },
+        {
+          "id": "TAC_07",
+          "expected": "c1c8",
+          "bestmove": "c1c8",
+          "solved": true,
+          "nodes": 10389
+        },
+        {
+          "id": "TAC_08",
+          "expected": "c4f7",
+          "bestmove": "c1b1",
+          "solved": false,
+          "nodes": 249349
+        },
+        {
+          "id": "TAC_09",
+          "expected": "c3d5",
+          "bestmove": "e2e3",
+          "solved": false,
+          "nodes": 43673
+        },
+        {
+          "id": "TAC_10",
+          "expected": "e1g1",
+          "bestmove": "e1g1",
+          "solved": true,
+          "nodes": 115747
+        },
+        {
+          "id": "TAC_11",
+          "expected": "c1e3",
+          "bestmove": "d3b5",
+          "solved": false,
+          "nodes": 57636
+        },
+        {
+          "id": "TAC_12",
+          "expected": "e1g1",
+          "bestmove": "d4c5",
+          "solved": false,
+          "nodes": 115785
+        },
+        {
+          "id": "TAC_13",
+          "expected": "e3e4",
+          "bestmove": "c1d2",
+          "solved": false,
+          "nodes": 91565
+        },
+        {
+          "id": "TAC_14",
+          "expected": "d4e2",
+          "bestmove": "d1d2",
+          "solved": false,
+          "nodes": 99355
+        },
+        {
+          "id": "TAC_15",
+          "expected": "c4d5",
+          "bestmove": "e1g1",
+          "solved": false,
+          "nodes": 149266
+        },
+        {
+          "id": "TAC_16",
+          "expected": "c1d2",
+          "bestmove": "d1b3",
+          "solved": false,
+          "nodes": 31390
+        }
+      ]
+    },
+    "total_benchmark_time_sec": 4.0
+  }
+}

@@ -231,6 +231,31 @@ static uint64_t g_telemetry_dynamic_lmr_reduced = 0;
 static uint64_t g_telemetry_dynamic_lmr_researches = 0;
 static uint64_t g_telemetry_eval_calls = 0;
 
+// ============================================================================
+// Milestone P1.3 Search Selectivity Options & Tables
+// ============================================================================
+static int g_tactical_ordering_mode = 0;   // 0=M0 (Off), 1=M1 (CapHist), 2=M2 (Countermove), 3=M3 (Combined)
+static int g_singular_extension_mode = 0; // 0=S0 (Off), 1=S1 (Conservative SE), 2=S2 (Aggressive SE)
+static int g_multicut_mode = 0;           // 0=C0 (Off), 1=C1 (Multi-Cut On)
+static int g_probcut_mode = 0;            // 0=P0 (Off), 1=P1 (Conservative 200cp), 2=P2 (150cp)
+
+// Capture History: [attacker 0..5][to_sq 0..63][victim 0..5]
+static int16_t g_capture_history[6][64][6];
+
+// Countermove Table: [prev_from 0..63][prev_to 0..63]
+static uint16_t g_countermove_table[64][64];
+
+// P1.3 Telemetry Counters
+static uint64_t g_telemetry_capthist_probes = 0;
+static uint64_t g_telemetry_capthist_cutoffs = 0;
+static uint64_t g_telemetry_countermove_probes = 0;
+static uint64_t g_telemetry_countermove_cutoffs = 0;
+static uint64_t g_telemetry_se_probes = 0;
+static uint64_t g_telemetry_se_extended = 0;
+static uint64_t g_telemetry_multicut_cutoffs = 0;
+static uint64_t g_telemetry_probcut_probes = 0;
+static uint64_t g_telemetry_probcut_cutoffs = 0;
+
 // P1.1 Telemetry Counters
 static uint64_t g_telemetry_movegen_calls = 0;
 static uint64_t g_telemetry_captures_gen = 0;
@@ -302,7 +327,7 @@ EXPORT void native_apply_search_variant(const char* var_str) {
         g_conthist_mode = 0; // H0 Off
         g_dynamic_lmr_mode = 0; // L0 Static Base
         g_eval_mode = 0; // E0 Base Classical Eval
-    } else if (var == "X7") { // P1.2 Integrated Candidate
+    } else if (var == "X7") { // P1.2 Frozen Baseline (Strict Bit-Exact Invariant)
         g_use_staged_movegen = true;
         g_quiescence_see_mode = 2;
         g_use_see_in_quiescence = true;
@@ -312,6 +337,24 @@ EXPORT void native_apply_search_variant(const char* var_str) {
         g_conthist_mode = 3; // H3 1-ply + 2-ply
         g_dynamic_lmr_mode = 3; // L3 Dynamic Log + Conthist
         g_eval_mode = 5; // E5 Combined Positional Eval
+        g_tactical_ordering_mode = 0; // M0 Off
+        g_singular_extension_mode = 0; // S0 Off
+        g_multicut_mode = 0; // C0 Off
+        g_probcut_mode = 0; // P0 Off
+    } else if (var == "X8") { // P1.3 Integrated Candidate (Tactical Search Selectivity)
+        g_use_staged_movegen = true;
+        g_quiescence_see_mode = 2;
+        g_use_see_in_quiescence = true;
+        g_use_null_move_pruning = true;
+        g_use_reverse_futility = true;
+        g_use_aspiration_window = true;
+        g_conthist_mode = 3; // H3
+        g_dynamic_lmr_mode = 3; // L3 Calibrated
+        g_eval_mode = 5; // E5
+        g_tactical_ordering_mode = 3; // M3 Capture History + Countermove
+        g_singular_extension_mode = 1; // S1 Conservative SE
+        g_multicut_mode = 1; // C1 Multi-Cut
+        g_probcut_mode = 1; // P1 Conservative ProbCut
     }
 }
 
@@ -1885,29 +1928,45 @@ static int score_move_for_ordering(const NativeBoard* b, uint16_t m, uint16_t tt
         }
         int mvv_lva = (victim * 10) - attacker;
 
+        int cap_hist_bonus = 0;
+        if ((g_tactical_ordering_mode == 1 || g_tactical_ordering_mode == 3) && attacker < 6 && victim < 6) {
+            cap_hist_bonus = g_capture_history[attacker][to][victim];
+            g_telemetry_capthist_probes++;
+        }
+
         if (g_use_see_ordering) {
             int see_val = janus_see(b, m);
             g_see_total_evaluations++;
             if (see_val > 0) {
                 g_see_positive_captures++;
-                return 100000 + mvv_lva;
+                return 100000 + mvv_lva + cap_hist_bonus;
             } else if (see_val == 0) {
                 g_see_neutral_captures++;
-                return 95000 + mvv_lva;
+                return 95000 + mvv_lva + cap_hist_bonus;
             } else {
                 g_see_negative_captures++;
                 g_see_ordering_inversions++;
-                return 20000 + std::max(-10000, see_val) + mvv_lva;
+                return 20000 + std::max(-10000, see_val) + mvv_lva + cap_hist_bonus;
             }
         }
 
-        return 100000 + mvv_lva;
+        return 100000 + mvv_lva + cap_hist_bonus;
     }
 
     // Killer Moves (Quiet moves only)
     if (g_use_killer_ordering && ply >= 0 && ply < MAX_PLY) {
         if (m == g_killer_moves[ply][0]) return 90000;
         if (m == g_killer_moves[ply][1]) return 80000;
+    }
+
+    // Countermove Heuristic (Quiet moves only)
+    if ((g_tactical_ordering_mode == 2 || g_tactical_ordering_mode == 3) && ply >= 1 && g_ss[ply - 1].current_move != 0) {
+        int prev_from = move_from(g_ss[ply - 1].current_move);
+        int prev_to = move_to(g_ss[ply - 1].current_move);
+        if (m == g_countermove_table[prev_from][prev_to]) {
+            g_telemetry_countermove_probes++;
+            return 75000; // Ordered immediately after Killer 2 (80,000)
+        }
     }
 
     // History & Continuation History Heuristic (Quiet moves only)
@@ -2610,7 +2669,8 @@ static int negamax(
     uint64_t& nodes,
     std::chrono::steady_clock::time_point deadline,
     bool& aborted,
-    uint16_t* out_best_move
+    uint16_t* out_best_move,
+    uint16_t excluded_move = 0
 ) {
     nodes++;
 
@@ -2648,11 +2708,43 @@ static int negamax(
 
     if (entry.key == key) {
         tt_move = entry.best_move;
-        if (entry.depth >= depth && ply > 0) {
+        if (entry.depth >= depth && ply > 0 && excluded_move == 0) {
             int tt_score = score_from_tt(entry.score, ply);
             if (entry.flag == TT_EXACT) return tt_score;
             if (entry.flag == TT_LOWER && tt_score >= beta) return tt_score;
             if (entry.flag == TT_UPPER && tt_score <= alpha) return tt_score;
+        }
+    }
+
+    int extension = 0;
+    // Singular Extension & Multi-Cut Verification (Phases 3 & 4)
+    if (g_singular_extension_mode > 0 &&
+        depth >= 6 &&
+        ply > 0 &&
+        excluded_move == 0 &&
+        tt_move != 0 &&
+        entry.key == key &&
+        entry.depth >= depth - 3 &&
+        entry.flag != TT_UPPER &&
+        std::abs(entry.score) < MATE_THRESHOLD) {
+
+        g_telemetry_se_probes++;
+        int se_margin = (g_singular_extension_mode == 1) ? (2 * depth) : (depth + 15);
+        int se_beta = entry.score - se_margin;
+        int se_depth = (depth - 1) / 2;
+
+        int se_score = negamax(b, se_depth, se_beta - 1, se_beta, ply, nodes, deadline, aborted, nullptr, tt_move);
+
+        if (aborted) return 0;
+
+        if (se_score < se_beta) {
+            // Move is singular! All alternatives failed low
+            extension = 1;
+            g_telemetry_se_extended++;
+        } else if (g_multicut_mode > 0 && se_score >= beta) {
+            // Multi-Cut: an alternative move beat beta
+            g_telemetry_multicut_cutoffs++;
+            return se_score;
         }
     }
 
@@ -2704,6 +2796,43 @@ static int negamax(
         }
     }
 
+    // ProbCut Pruning (Phase 5)
+    if (g_probcut_mode > 0 &&
+        depth >= 5 &&
+        ply > 0 &&
+        excluded_move == 0 &&
+        !in_check &&
+        std::abs(beta) < MATE_THRESHOLD) {
+
+        int pc_margin = (g_probcut_mode == 1) ? 200 : 150;
+        int pc_beta = beta + pc_margin;
+
+        if (pc_beta < MATE_THRESHOLD) {
+            g_telemetry_probcut_probes++;
+            uint16_t pc_caps[MAX_MOVES];
+            int pc_count = native_generate_captures(b, pc_caps);
+
+            for (int pci = 0; pci < pc_count; pci++) {
+                uint16_t pcm = pc_caps[pci];
+                if (janus_see(b, pcm) < 0) continue;
+
+                UndoInfo pc_undo;
+                if (!native_make_move(b, pcm, &pc_undo)) continue;
+
+                int pc_score = -negamax(b, depth - 4, -pc_beta, -pc_beta + 1, ply + 1, nodes, deadline, aborted, nullptr);
+
+                native_unmake_move(b, pcm, &pc_undo);
+
+                if (aborted) return 0;
+
+                if (pc_score >= pc_beta) {
+                    g_telemetry_probcut_cutoffs++;
+                    return beta;
+                }
+            }
+        }
+    }
+
     int orig_alpha = alpha;
     uint16_t best_move = 0;
     int best_score = -INF;
@@ -2747,6 +2876,8 @@ static int negamax(
             if (legacy_idx >= legacy_n) break;
             m = legacy_scored[legacy_idx++].m;
         }
+        if (m == excluded_move) continue;
+
         legal_moves_count++;
         if (best_move == 0) best_move = m;
 
@@ -2771,7 +2902,7 @@ static int negamax(
         // Push to game history stack for tree repetition detection
         native_push_history(b->zobrist_key);
 
-        int child_depth = depth - 1;
+        int child_depth = depth - 1 + (m == tt_move ? extension : 0);
         int score = 0;
         uint16_t child_best = 0;
 
@@ -2821,8 +2952,10 @@ static int negamax(
                     }
                 }
                 int tot_h = h + ch1 + ch2;
-                if (tot_h > 10000) dynamic_reduction -= 1;
-                else if (tot_h < -5000) dynamic_reduction += 1;
+                int h_thresh = (g_search_variant == "X8") ? std::max(1000, 250 * depth) : 10000;
+                int h_neg_thresh = (g_search_variant == "X8") ? (-h_thresh / 2) : -5000;
+                if (tot_h > h_thresh) dynamic_reduction -= 1;
+                else if (tot_h < h_neg_thresh) dynamic_reduction += 1;
                 if (dynamic_reduction < 1) dynamic_reduction = 1;
             }
             if (child_depth - dynamic_reduction < 1) dynamic_reduction = child_depth - 1;
@@ -2950,6 +3083,14 @@ static int negamax(
                         int cur_h = g_history_table[side][from][to];
                         g_history_table[side][from][to] = cur_h + bonus - (cur_h * std::abs(bonus)) / 16384;
 
+                        // Countermove heuristic update (Phase 2)
+                        if ((g_tactical_ordering_mode == 2 || g_tactical_ordering_mode == 3) && ply >= 1 && g_ss[ply - 1].current_move != 0) {
+                            int prev_from = move_from(g_ss[ply - 1].current_move);
+                            int prev_to = move_to(g_ss[ply - 1].current_move);
+                            g_countermove_table[prev_from][prev_to] = m;
+                            g_telemetry_countermove_cutoffs++;
+                        }
+
                         // Continuation history updates
                         int p_cur = moved_piece;
                         if (p_cur >= 0 && p_cur < 6) {
@@ -2974,6 +3115,19 @@ static int negamax(
                 }
             } else {
                 g_ordering_cutoff_captures++;
+                // Capture History update (Phase 2)
+                if ((g_tactical_ordering_mode == 1 || g_tactical_ordering_mode == 3) && undo.captured_piece < 6) {
+                    int from_sq = move_from(m);
+                    int to_sq = move_to(m);
+                    int attacker = moved_piece;
+                    int victim = undo.captured_piece;
+                    if (attacker < 6 && victim < 6) {
+                        int bonus = std::min(300, depth * depth);
+                        int cur_c = g_capture_history[attacker][to_sq][victim];
+                        g_capture_history[attacker][to_sq][victim] = (int16_t)(cur_c + bonus - (cur_c * std::abs(bonus)) / 16384);
+                        g_telemetry_capthist_cutoffs++;
+                    }
+                }
             }
 
             if (is_lmr_eligible) {
@@ -2994,8 +3148,8 @@ static int negamax(
 
     if (out_best_move) *out_best_move = best_move;
 
-    // Store TT entry with normalized mate scores and depth-preferred replacement
-    if (!aborted) {
+    // Store TT entry with normalized mate scores and depth-preferred replacement (Never store during excluded searches)
+    if (!aborted && excluded_move == 0) {
         uint8_t flag = TT_EXACT;
         if (best_score <= orig_alpha) flag = TT_UPPER;
         else if (best_score >= beta) flag = TT_LOWER;
@@ -3027,6 +3181,9 @@ EXPORT int native_search(
     init_attacks();
     std::memset(g_killer_moves, 0, sizeof(g_killer_moves));
     std::memset(g_ss, 0, sizeof(g_ss));
+    if (g_tactical_ordering_mode > 0) {
+        std::memset(g_countermove_table, 0, sizeof(g_countermove_table));
+    }
     if (g_use_history_ordering) {
         for (int s = 0; s < SIDES; s++) {
             for (int f = 0; f < SQUARES; f++) {
@@ -3301,6 +3458,46 @@ EXPORT void native_get_p12_telemetry(uint64_t* out_arr) {
 }
 
 // ============================================================================
+// Milestone P1.3 Control & Telemetry Exports
+// ============================================================================
+EXPORT void native_set_tactical_ordering_mode(int mode) { g_tactical_ordering_mode = mode; }
+EXPORT void native_set_singular_extension_mode(int mode) { g_singular_extension_mode = mode; }
+EXPORT void native_set_multicut_mode(int mode) { g_multicut_mode = mode; }
+EXPORT void native_set_probcut_mode(int mode) { g_probcut_mode = mode; }
+
+EXPORT void native_clear_tactical_tables() {
+    std::memset(g_capture_history, 0, sizeof(g_capture_history));
+    std::memset(g_countermove_table, 0, sizeof(g_countermove_table));
+}
+
+EXPORT void native_reset_p13_telemetry() {
+    native_reset_p12_telemetry();
+    g_telemetry_capthist_probes = 0;
+    g_telemetry_capthist_cutoffs = 0;
+    g_telemetry_countermove_probes = 0;
+    g_telemetry_countermove_cutoffs = 0;
+    g_telemetry_se_probes = 0;
+    g_telemetry_se_extended = 0;
+    g_telemetry_multicut_cutoffs = 0;
+    g_telemetry_probcut_probes = 0;
+    g_telemetry_probcut_cutoffs = 0;
+}
+
+EXPORT void native_get_p13_telemetry(uint64_t* out_arr) {
+    if (out_arr) {
+        out_arr[0] = g_telemetry_capthist_probes;
+        out_arr[1] = g_telemetry_capthist_cutoffs;
+        out_arr[2] = g_telemetry_countermove_probes;
+        out_arr[3] = g_telemetry_countermove_cutoffs;
+        out_arr[4] = g_telemetry_se_probes;
+        out_arr[5] = g_telemetry_se_extended;
+        out_arr[6] = g_telemetry_multicut_cutoffs;
+        out_arr[7] = g_telemetry_probcut_probes;
+        out_arr[8] = g_telemetry_probcut_cutoffs;
+    }
+}
+
+// ============================================================================
 // Formatting & UCI Helpers
 // ============================================================================
 
@@ -3378,7 +3575,7 @@ static void uci_loop() {
         iss >> cmd;
 
         if (cmd == "uci") {
-            std::cout << "id name Janus Classical X (P1.2 Candidate X7)" << std::endl;
+            std::cout << "id name Janus Classical X (P1.3 Candidate X8)" << std::endl;
             std::cout << "id author Project Janus Team" << std::endl;
             std::cout << "option name UseKillerOrdering type check default true" << std::endl;
             std::cout << "option name UseHistoryOrdering type check default true" << std::endl;
@@ -3389,10 +3586,14 @@ static void uci_loop() {
             std::cout << "option name LMRBaseReduction type spin default 1 min 1 max 3" << std::endl;
             std::cout << "option name UseSEEOrdering type check default false" << std::endl;
             std::cout << "option name UseSEEInQuiescence type check default false" << std::endl;
-            std::cout << "option name UCI_Variant type combo default X7 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7" << std::endl;
+            std::cout << "option name UCI_Variant type combo default X8 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8" << std::endl;
             std::cout << "option name UCI_ContinuationHistory type combo default H3 var H0 var H1 var H2 var H3" << std::endl;
             std::cout << "option name UCI_DynamicLMR type combo default L3 var L0 var L1 var L2 var L3" << std::endl;
             std::cout << "option name UCI_ClassicalEval type combo default E5 var E0 var E1 var E2 var E3 var E4 var E5" << std::endl;
+            std::cout << "option name UCI_TacticalOrdering type combo default M3 var M0 var M1 var M2 var M3" << std::endl;
+            std::cout << "option name UCI_SingularExtensions type combo default S1 var S0 var S1 var S2" << std::endl;
+            std::cout << "option name UCI_MultiCut type combo default C1 var C0 var C1" << std::endl;
+            std::cout << "option name UCI_ProbCut type combo default P1 var P0 var P1 var P2" << std::endl;
             std::cout << "option name UCI_StagedMovegen type check default true" << std::endl;
             std::cout << "option name UCI_QuiescenceSEE type spin default 2 min 0 max 3" << std::endl;
             std::cout << "option name UCI_NullMovePruning type check default true" << std::endl;
@@ -3485,6 +3686,22 @@ static void uci_loop() {
                     else if (opt_val == "E3") g_eval_mode = 3;
                     else if (opt_val == "E4") g_eval_mode = 4;
                     else if (opt_val == "E5") g_eval_mode = 5;
+                } else if (opt_name == "UCI_TacticalOrdering" && !opt_val.empty()) {
+                    if (opt_val == "M0") g_tactical_ordering_mode = 0;
+                    else if (opt_val == "M1") g_tactical_ordering_mode = 1;
+                    else if (opt_val == "M2") g_tactical_ordering_mode = 2;
+                    else if (opt_val == "M3") g_tactical_ordering_mode = 3;
+                } else if (opt_name == "UCI_SingularExtensions" && !opt_val.empty()) {
+                    if (opt_val == "S0") g_singular_extension_mode = 0;
+                    else if (opt_val == "S1") g_singular_extension_mode = 1;
+                    else if (opt_val == "S2") g_singular_extension_mode = 2;
+                } else if (opt_name == "UCI_MultiCut" && !opt_val.empty()) {
+                    if (opt_val == "C0") g_multicut_mode = 0;
+                    else if (opt_val == "C1") g_multicut_mode = 1;
+                } else if (opt_name == "UCI_ProbCut" && !opt_val.empty()) {
+                    if (opt_val == "P0") g_probcut_mode = 0;
+                    else if (opt_val == "P1") g_probcut_mode = 1;
+                    else if (opt_val == "P2") g_probcut_mode = 2;
                 }
             }
                 } else if (cmd == "telemetry_report") {
@@ -3510,6 +3727,19 @@ static void uci_loop() {
             std::cout << "conthist_cutoffs " << g_telemetry_conthist_cutoffs << std::endl;
             std::cout << "dynamic_lmr_reduced " << g_telemetry_dynamic_lmr_reduced << std::endl;
             std::cout << "eval_calls " << g_telemetry_eval_calls << std::endl;
+            std::cout << "tactical_ordering_mode " << g_tactical_ordering_mode << std::endl;
+            std::cout << "singular_extension_mode " << g_singular_extension_mode << std::endl;
+            std::cout << "multicut_mode " << g_multicut_mode << std::endl;
+            std::cout << "probcut_mode " << g_probcut_mode << std::endl;
+            std::cout << "capthist_probes " << g_telemetry_capthist_probes << std::endl;
+            std::cout << "capthist_cutoffs " << g_telemetry_capthist_cutoffs << std::endl;
+            std::cout << "countermove_probes " << g_telemetry_countermove_probes << std::endl;
+            std::cout << "countermove_cutoffs " << g_telemetry_countermove_cutoffs << std::endl;
+            std::cout << "se_probes " << g_telemetry_se_probes << std::endl;
+            std::cout << "se_extended " << g_telemetry_se_extended << std::endl;
+            std::cout << "multicut_cutoffs " << g_telemetry_multicut_cutoffs << std::endl;
+            std::cout << "probcut_probes " << g_telemetry_probcut_probes << std::endl;
+            std::cout << "probcut_cutoffs " << g_telemetry_probcut_cutoffs << std::endl;
             std::cout << "TELEMETRY_END" << std::endl;
         } else if (cmd == "telemetry_reset") {
             native_reset_p11_telemetry();
@@ -3517,6 +3747,7 @@ static void uci_loop() {
         } else if (cmd == "ucinewgame") {
             native_reset_history();
             native_clear_conthist();
+            native_clear_tactical_tables();
             native_clear_killers();
             native_clear_history_heuristic();
             native_reset_ordering_telemetry();

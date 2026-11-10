@@ -1,0 +1,786 @@
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X6"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Anglo-Scandinavian"]
+[Termination "checkmate"]
+
+1. c4 d5 2. cxd5 Nf6 3. e4 Nxe4 4. Qa4+ c6 5. Qxe4 cxd5 { eval=-4.92 d=16 n=174811 } 6. Qe2 { eval=+1.85 d=8 n=452608 } 6... Nc6 { eval=-2.07 d=15 n=35365 } 7. Nf3 { eval=+1.70 d=9 n=419840 } 7... e5 { eval=-1.90 d=13 n=38928 } 8. Nxe5 { eval=+2.50 d=9 n=348160 } 8... Nd4 { eval=-0.99 d=12 n=35247 } 9. Qd3 { eval=+2.10 d=9 n=303104 } 9... Bc5 { eval=-1.38 d=14 n=104966 } 10. Kd1 { eval=+1.80 d=8 n=280576 } 10... Bf5 { eval=+2.22 d=14 n=95770 } 11. Qg3 { eval=+2.25 d=9 n=335872 } 11... Bc2+ { eval=+2.93 d=14 n=47709 } 12. Ke1 { eval=+2.20 d=10 n=331776 } 12... O-O { eval=+2.85 d=15 n=35863 } 13. Nc3 { eval=+2.30 d=8 n=329728 } 13... f6 { eval=+3.17 d=15 n=112479 } 14. Nd3 { eval=+2.45 d=8 n=313344 } 14... Re8+ { eval=+4.04 d=15 n=18930 } 15. Be2 { eval=+1.60 d=9 n=317440 } 15... Bd6 { eval=+4.34 d=14 n=30542 } 16. f4 { eval=+0.70 d=8 n=342016 } 16... Qb6 { eval=+5.51 d=13 n=42117 } 17. h4 { eval=+2.00 d=7 n=262144 } 17... Rxe2+ { eval=+6.96 d=18 n=57794 } 18. Nxe2 { eval=-0.10 d=10 n=327680 } 18... Re8 { eval=+7.19 d=15 n=80343 } 19. Ne5 { eval=-0.40 d=9 n=100352 } 19... fxe5 { eval=+7.19 d=15 n=103392 } 20. Qe3 { eval=-0.40 d=9 n=129868 } 20... Bg6 { eval=+7.67 d=13 n=12552 } 21. Kf1 { eval=-0.50 d=8 n=110592 } 21... Qa6 { eval=+8.27 d=13 n=9900 } 22. fxe5 { eval=-1.00 d=8 n=131072 } 22... Rxe5 { eval=+9.35 d=14 n=25436 } 23. Qxd4 { eval=-4.30 d=8 n=188416 } 23... Qxe2+ { eval=+16.16 d=41 n=14365 } 24. Kg1 { eval=-289.94 d=8 n=266240 } 24... Qe1+ { eval=+9.79 d=70 n=42328 } 25. Kh2 { eval=-289.96 d=8 n=247808 } 25... Re4+ 26. g3 { eval=-289.98 d=8 n=223232 } 26... Qxg3# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X6"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Anglo-Scandinavian"]
+[Termination "checkmate"]
+
+1. c4 d5 2. cxd5 Nf6 3. e4 Nxe4 4. Qa4+ c6 5. Qxe4 cxd5 { eval=-1.80 d=8 n=215040 } 6. Bb5+ { eval=+4.24 d=15 n=55696 } 6... Nc6 { eval=-2.00 d=10 n=155648 } 7. Qa4 { eval=+4.67 d=14 n=37933 } 7... Bd7 { eval=-1.60 d=9 n=176128 } 8. d4 { eval=+4.70 d=12 n=7131 } 8... e5 { eval=-1.65 d=8 n=174080 } 9. dxe5 { eval=+5.34 d=15 n=78396 } 9... Nxe5 { eval=-1.55 d=7 n=165888 } 10. Nf3 { eval=+5.82 d=15 n=29494 } 10... Nd3+ { eval=-1.50 d=8 n=124928 } 11. Ke2 { eval=+6.51 d=14 n=6387 } 11... Nxc1+ { eval=-1.90 d=9 n=161792 } 12. Rxc1 { eval=+6.82 d=14 n=10661 } 12... Bxb5+ { eval=-2.45 d=9 n=135168 } 13. Qxb5+ { eval=+7.03 d=14 n=9720 } 13... Qd7 { eval=-2.55 d=10 n=153600 } 14. Qxd7+ { eval=+6.92 d=15 n=23870 } 14... Kxd7 { eval=-3.00 d=10 n=206848 } 15. Nc3 { eval=+6.87 d=13 n=25490 } 15... Ke6 { eval=-3.05 d=8 n=178176 } 16. Kf1 { eval=+6.59 d=15 n=94885 } 16... Bd6 { eval=-3.50 d=8 n=202752 } 17. Re1+ { eval=+6.77 d=16 n=61289 } 17... Kd7 { eval=-3.45 d=9 n=198656 } 18. Nxd5 { eval=+6.61 d=15 n=48402 } 18... Kc8 { eval=-3.50 d=8 n=139264 } 19. Ng5 { eval=+7.53 d=15 n=48166 } 19... Bxh2 { eval=-3.50 d=9 n=174080 } 20. Nxf7 { eval=+7.97 d=14 n=12843 } 20... Rf8 { eval=-3.65 d=10 n=149504 } 21. Re7 { eval=+8.10 d=12 n=2991 } 21... Kb8 { eval=-3.40 d=7 n=174080 } 22. Rae1 { eval=+7.95 d=15 n=50297 } 22... Rc8 { eval=-4.30 d=8 n=159744 } 23. g3 { eval=+10.08 d=15 n=17936 } 23... Bxg3 { eval=-6.20 d=9 n=206848 } 24. fxg3 { eval=+11.96 d=14 n=12432 } 24... a5 { eval=-7.50 d=9 n=169984 } 25. Nd6 { eval=+16.70 d=15 n=4060 } 25... Ra6 { eval=-9.40 d=8 n=145408 } 26. Rxb7+ { eval=+9.60 d=18 n=5070 } 26... Ka8 { eval=-289.94 d=8 n=212992 } 27. Nc7+ { eval=+7.82 d=42 n=10750 } 27... Rxc7 { eval=-289.96 d=9 n=217088 } 28. Re8+ Rc8 { eval=-289.98 d=9 n=174080 } 29. Rxc8# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X6"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Bellon Gambit"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. Nf3 e4 4. Ng5 b5 5. cxb5 { eval=+0.45 d=7 n=163840 } 5... d5 { eval=+0.00 d=11 n=28962 } 6. d3 { eval=+0.50 d=8 n=190464 } 6... h6 { eval=+0.02 d=12 n=14109 } 7. Nh3 { eval=+0.50 d=8 n=180224 } 7... exd3 { eval=+0.23 d=14 n=53427 } 8. exd3 { eval=+0.85 d=7 n=159744 } 8... d4 { eval=+0.15 d=11 n=27501 } 9. Qe2+ { eval=+0.80 d=7 n=143360 } 9... Be7 { eval=+1.05 d=11 n=24606 } 10. Ne4 { eval=+0.70 d=8 n=145408 } 10... O-O { eval=+0.92 d=16 n=89421 } 11. Nxf6+ { eval=+1.70 d=7 n=143360 } 11... Bxf6 { eval=+1.16 d=14 n=11232 } 12. Qf3 { eval=+0.75 d=8 n=124928 } 12... Re8+ { eval=+1.25 d=15 n=40507 } 13. Be2 { eval=+1.35 d=8 n=122880 } 13... Bxh3 { eval=+1.27 d=14 n=90734 } 14. Qxa8 { eval=+1.65 d=8 n=106496 } 14... Bg4 { eval=+3.06 d=13 n=22440 } 15. f3 { eval=+1.60 d=8 n=133120 } 15... Bf5 { eval=+2.75 d=15 n=29041 } 16. Kd1 { eval=+1.85 d=8 n=110592 } 16... Qe7 { eval=+3.71 d=12 n=8921 } 17. Bf1 { eval=+1.80 d=8 n=96256 } 17... Qe1+ { eval=+5.67 d=15 n=16917 } 18. Kc2 { eval=+1.95 d=8 n=133120 } 18... Na6 { eval=+5.76 d=15 n=16505 } 19. Qxa7 { eval=+1.60 d=8 n=112640 } 19... Nb4+ { eval=+15.29 d=15 n=5450 } 20. Kb3 { eval=-3.35 d=9 n=116736 } 20... Be6+ { eval=+15.29 d=19 n=8628 } 21. Ka4 { eval=-5.80 d=10 n=174080 } 21... Nc2 { eval=+14.34 d=20 n=10441 } 22. Bd2 { eval=-5.95 d=9 n=108544 } 22... Qxd2 { eval=+12.13 d=28 n=12563 } 23. a3 { eval=-6.05 d=8 n=122880 } 23... Nxa1 { eval=+12.06 d=29 n=9994 } 24. b4 { eval=-11.65 d=10 n=139264 } 24... Qb2 { eval=+14.28 d=63 n=36509 } 25. Qxd4 { eval=-289.96 d=8 n=276480 } 25... Bb3+ 26. Ka5 { eval=-289.98 d=8 n=206848 } 26... Qxa3# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X6"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Bellon Gambit"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. Nf3 e4 4. Ng5 b5 5. d3 { eval=+0.56 d=15 n=73960 } 5... bxc4 { eval=-0.20 d=7 n=139264 } 6. Ngxe4 { eval=+0.75 d=12 n=20235 } 6... Nxe4 { eval=-0.45 d=8 n=124928 } 7. dxe4 { eval=+0.84 d=12 n=15652 } 7... Nc6 { eval=-0.50 d=8 n=231424 } 8. e3 { eval=+1.08 d=12 n=10679 } 8... Bb4 { eval=-1.15 d=7 n=174080 } 9. Bxc4 { eval=+1.07 d=13 n=28254 } 9... Bxc3+ { eval=-1.10 d=8 n=196608 } 10. bxc3 { eval=+1.31 d=14 n=14093 } 10... Qf6 { eval=-1.10 d=7 n=114688 } 11. Qc2 { eval=+1.24 d=14 n=85028 } 11... d6 { eval=-1.15 d=7 n=206848 } 12. Bd5 { eval=+1.94 d=13 n=36443 } 12... Bd7 { eval=-1.25 d=8 n=182272 } 13. Ba3 { eval=+1.89 d=11 n=20485 } 13... Rd8 { eval=-1.15 d=7 n=204800 } 14. O-O { eval=+2.01 d=11 n=11542 } 14... O-O { eval=-1.20 d=8 n=204800 } 15. Rad1 { eval=+2.14 d=14 n=62821 } 15... Ne5 { eval=-1.05 d=6 n=77824 } 16. f4 { eval=+2.71 d=11 n=4814 } 16... Ng4 { eval=-1.05 d=7 n=94208 } 17. Rf3 { eval=+2.36 d=13 n=19758 } 17... Qh4 { eval=-1.10 d=6 n=137216 } 18. Rh3 { eval=+2.62 d=12 n=13443 } 18... Qe7 { eval=-1.10 d=7 n=120832 } 19. e5 { eval=+3.25 d=12 n=8652 } 19... h6 { eval=-1.20 d=7 n=124928 } 20. Rf3 { eval=+3.99 d=11 n=11281 } 20... Qe8 { eval=-1.10 d=7 n=149504 } 21. h3 { eval=+5.22 d=14 n=9643 } 21... Ba4 { eval=-1.90 d=7 n=172032 } 22. Bb3 { eval=+5.62 d=14 n=8984 } 22... Bxb3 { eval=-2.00 d=8 n=135168 } 23. axb3 { eval=+6.37 d=16 n=52630 } 23... Nxe5 { eval=-1.95 d=9 n=116736 } 24. fxe5 { eval=+6.76 d=13 n=5255 } 24... Qxe5 { eval=-2.05 d=9 n=108544 } 25. c4 { eval=+6.39 d=15 n=84317 } 25... Rfe8 { eval=-2.15 d=7 n=120832 } 26. Qc1 { eval=+6.56 d=14 n=16545 } 26... Qe4 { eval=-2.05 d=6 n=108544 } 27. Bb2 { eval=+6.42 d=14 n=21291 } 27... Re6 { eval=-2.10 d=7 n=129024 } 28. Rd4 { eval=+6.61 d=15 n=5180 } 28... Qc6 { eval=-2.10 d=7 n=112640 } 29. Rg4 { eval=+6.95 d=15 n=40726 } 29... g5 { eval=-2.25 d=7 n=114688 } 30. Qc3 { eval=+7.54 d=14 n=27134 } 30... Re5 { eval=-3.10 d=8 n=149504 } 31. Qd2 { eval=+7.37 d=12 n=9761 } 31... Re4 { eval=-2.30 d=7 n=98304 } 32. Qc3 { eval=+7.65 d=14 n=27404 } 32... Re5 { eval=+0.00 d=12 n=153600 } 33. h4 { eval=+7.72 d=12 n=1756 } 33... Qd7 { eval=-2.15 d=7 n=106496 } 34. Rgg3 { eval=+7.35 d=15 n=29966 } 34... Qe7 { eval=-2.25 d=6 n=100352 } 35. hxg5 { eval=+7.65 d=13 n=14566 } 35... hxg5 { eval=-2.35 d=8 n=91853 } 36. Qd3 { eval=+7.06 d=13 n=19517 } 36... Re6 { eval=-3.45 d=8 n=108544 } 37. Rh3 { eval=+8.99 d=13 n=11991 } 37... f6 { eval=-4.45 d=8 n=83968 } 38. Rh6 { eval=+9.27 d=12 n=5026 } 38... Rf8 { eval=-4.45 d=8 n=102400 } 39. Rfh3 { eval=+9.51 d=12 n=2902 } 39... Qg7 { eval=-7.25 d=9 n=88064 } 40. Qd5 { eval=+10.21 d=14 n=18452 } 40... Kf7 { eval=-8.40 d=9 n=96256 } 41. Rh7 { eval=+10.13 d=13 n=19164 } 41... Qxh7 { eval=-8.80 d=11 n=176128 } 42. Rxh7+ { eval=+10.70 d=13 n=2582 } 42... Kg6 { eval=-8.85 d=10 n=159744 } 43. Qxe6 { eval=+10.16 d=14 n=10946 } 43... Kxh7 { eval=-8.75 d=9 n=157696 } 44. Bxf6 { eval=+10.17 d=13 n=27536 } 44... Rxf6 { eval=-12.00 d=11 n=122880 } 45. Qxf6 { eval=+9.91 d=11 n=3274 } 45... g4 { eval=-12.05 d=10 n=129024 } 46. Qe7+ { eval=+9.79 d=14 n=20529 } 46... Kh8 { eval=-12.30 d=10 n=137216 } 47. Qd8+ { eval=+10.02 d=12 n=4750 } 47... Kg7 { eval=-12.40 d=11 n=167936 } 48. Qxc7+ { eval=+10.11 d=14 n=23660 } 48... Kg6 { eval=-12.85 d=10 n=196608 } 49. Qxd6+ { eval=+10.33 d=12 n=9577 } 49... Kh7 { eval=-12.50 d=8 n=194560 } 50. Kf1 { eval=+10.77 d=14 n=25490 } 50... a6 { eval=-13.20 d=9 n=180224 } 51. b4 { eval=+10.61 d=14 n=46083 } 51... Kh8 { eval=-13.25 d=9 n=133120 } 52. c5 { eval=+11.37 d=14 n=25794 } 52... g3 { eval=-19.15 d=9 n=114688 } 53. Qd7 { eval=+11.81 d=19 n=6216 } 53... a5 { eval=-289.94 d=9 n=143360 } 54. c6 { eval=+12.38 d=37 n=4605 } 54... axb4 { eval=-289.96 d=9 n=155648 } 55. c7 { eval=+9.72 d=2 n=83 } 55... Kg8 { eval=-289.98 d=9 n=184320 } 56. c8=Q# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X6"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Bremen Smyslov System"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. g3 Bb4 4. Bg2 O-O 5. e4 Bxc3 6. bxc3 Re8 { eval=-0.27 d=14 n=48901 } 7. Qc2 { eval=-0.25 d=7 n=174080 } 7... c6 { eval=+0.25 d=12 n=7069 } 8. Ne2 { eval=+0.10 d=7 n=129024 } 8... d5 { eval=+0.48 d=12 n=10221 } 9. d3 { eval=-0.10 d=8 n=206848 } 9... dxe4 { eval=+1.35 d=12 n=15027 } 10. Bxe4 { eval=-0.30 d=8 n=157696 } 10... Nxe4 { eval=+2.69 d=13 n=25363 } 11. dxe4 { eval=-0.50 d=9 n=208896 } 11... Be6 { eval=+2.92 d=15 n=96563 } 12. Rb1 { eval=-0.60 d=8 n=155648 } 12... b6 { eval=+3.58 d=15 n=68946 } 13. Be3 { eval=-0.95 d=7 n=139264 } 13... Qf6 { eval=+3.84 d=14 n=33584 } 14. c5 { eval=-0.30 d=7 n=157696 } 14... Nd7 { eval=+4.32 d=12 n=12066 } 15. cxb6 { eval=-0.25 d=8 n=176128 } 15... axb6 { eval=+5.41 d=13 n=7479 } 16. c4 { eval=-0.30 d=7 n=122880 } 16... Qf3 { eval=+4.97 d=15 n=77238 } 17. Rg1 { eval=-0.80 d=7 n=100352 } 17... Nf6 { eval=+4.22 d=14 n=47041 } 18. Nc3 { eval=-0.40 d=6 n=108544 } 18... Bxc4 { eval=+4.88 d=12 n=7291 } 19. Rxb6 { eval=-0.85 d=7 n=124928 } 19... Ng4 { eval=+6.10 d=13 n=9612 } 20. Qd1 { eval=-1.00 d=6 n=110592 } 20... Nxh2 { eval=+6.33 d=13 n=3587 } 21. Rxc6 { eval=-1.25 d=7 n=114688 } 21... Red8 { eval=+7.35 d=14 n=10460 } 22. Qxd8+ { eval=-1.15 d=8 n=118784 } 22... Rxd8 { eval=+6.89 d=14 n=9559 } 23. Rxc4 { eval=-1.25 d=8 n=116736 } 23... Qh5 { eval=+6.87 d=17 n=8142 } 24. Bb6 { eval=-1.85 d=8 n=122880 } 24... Nf3+ { eval=+7.10 d=15 n=22626 } 25. Kf1 { eval=-4.10 d=10 n=143360 } 25... Qh3+ { eval=+7.80 d=14 n=26826 } 26. Ke2 { eval=-6.20 d=10 n=124928 } 26... Nxg1+ { eval=+8.55 d=13 n=3717 } 27. Ke1 { eval=-6.40 d=11 n=149504 } 27... Nf3+ { eval=+8.86 d=15 n=67422 } 28. Ke2 { eval=-6.45 d=11 n=139264 } 28... Ng1+ { eval=+8.41 d=13 n=11699 } 29. Ke1 { eval=+0.00 d=21 n=145408 } 29... Ra8 { eval=+8.64 d=14 n=17294 } 30. Be3 { eval=-6.00 d=9 n=143360 } 30... Nf3+ { eval=+9.07 d=14 n=13163 } 31. Ke2 { eval=-6.10 d=9 n=120832 } 31... Qh5 { eval=+9.06 d=17 n=27148 } 32. Kd1 { eval=-6.10 d=8 n=167936 } 32... Nd4+ { eval=+8.93 d=14 n=21520 } 33. Kc1 { eval=-6.05 d=8 n=135168 } 33... Qh1+ { eval=+9.21 d=16 n=18953 } 34. Kd2 { eval=-6.40 d=9 n=118784 } 34... Qf1 { eval=+9.26 d=13 n=7749 } 35. Rc5 { eval=-6.15 d=8 n=118784 } 35... Rb8 { eval=+10.32 d=13 n=18794 } 36. Bg5 { eval=-9.85 d=7 n=88064 } 36... Qxf2+ { eval=+11.84 d=14 n=3300 } 37. Kd3 { eval=-11.50 d=9 n=124928 } 37... Qf1+ { eval=+11.83 d=15 n=3023 } 38. Ke3 { eval=-11.65 d=10 n=133120 } 38... Qf3+ { eval=+11.87 d=17 n=4749 } 39. Kd2 { eval=-15.40 d=10 n=137216 } 39... Rb2+ { eval=+11.97 d=19 n=6494 } 40. Kc1 { eval=-289.92 d=8 n=145408 } 40... Rc2+ { eval=+9.55 d=22 n=4923 } 41. Kb1 { eval=-289.94 d=8 n=165888 } 41... Qf1+ 42. Nd1 { eval=-289.96 d=8 n=169984 } 42... Qxd1+ 43. Bc1 { eval=-289.98 d=8 n=172032 } 43... Qxc1# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X6"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Bremen Smyslov System"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. g3 Bb4 4. Bg2 O-O 5. e4 Bxc3 6. bxc3 Qe7 { eval=+0.35 d=7 n=190464 } 7. d3 { eval=+0.58 d=15 n=59367 } 7... Nc6 { eval=+0.35 d=8 n=276480 } 8. Ne2 { eval=+0.85 d=13 n=30524 } 8... d6 { eval=+0.40 d=8 n=192512 } 9. O-O { eval=+0.90 d=11 n=9772 } 9... Be6 { eval=+0.45 d=7 n=194560 } 10. f4 { eval=+1.26 d=16 n=48965 } 10... Bg4 { eval=+0.50 d=7 n=194560 } 11. Rb1 { eval=+1.23 d=15 n=21150 } 11... Rab8 { eval=+0.40 d=6 n=159744 } 12. f5 { eval=+1.22 d=13 n=19181 } 12... Nd7 { eval=+0.40 d=7 n=145408 } 13. h3 { eval=+1.23 d=15 n=12704 } 13... Bxe2 { eval=+0.30 d=9 n=243712 } 14. Qxe2 { eval=+1.31 d=13 n=12758 } 14... Nc5 { eval=+0.30 d=8 n=202752 } 15. f6 { eval=+3.45 d=14 n=12214 } 15... gxf6 { eval=+1.20 d=7 n=155648 } 16. Bh6 { eval=+4.24 d=14 n=12622 } 16... Qe6 { eval=-0.50 d=8 n=139264 } 17. Bxf8 { eval=+4.75 d=14 n=31043 } 17... Rxf8 { eval=-0.55 d=8 n=155648 } 18. Kh2 { eval=+5.00 d=14 n=38834 } 18... Rb8 { eval=-0.40 d=7 n=137216 } 19. Rf2 { eval=+5.37 d=14 n=28997 } 19... Rd8 { eval=-0.40 d=6 n=122880 } 20. Rbf1 { eval=+5.94 d=15 n=94346 } 20... Nd7 { eval=-0.50 d=8 n=157696 } 21. h4 { eval=+6.13 d=15 n=20187 } 21... Qe7 { eval=-0.80 d=8 n=194560 } 22. Bh3 { eval=+5.22 d=17 n=103457 } 22... Ncb8 { eval=-1.05 d=8 n=141312 } 23. Bf5 { eval=+4.85 d=15 n=63226 } 23... Qf8 { eval=-0.85 d=7 n=120832 } 24. Qe3 { eval=+5.18 d=12 n=13039 } 24... a6 { eval=-0.90 d=7 n=135168 } 25. g4 { eval=+6.07 d=12 n=3348 } 25... Qg7 { eval=-0.75 d=7 n=112640 } 26. g5 { eval=+6.14 d=14 n=16455 } 26... fxg5 { eval=-1.60 d=7 n=126976 } 27. Bxh7+ { eval=+6.98 d=14 n=3374 } 27... Kf8 { eval=-2.85 d=11 n=135168 } 28. Qxg5 { eval=+8.25 d=13 n=3637 } 28... Qxg5 { eval=-2.85 d=11 n=141312 } 29. Rxf7+ { eval=+9.28 d=15 n=34683 } 29... Ke8 { eval=-4.55 d=10 n=133120 } 30. hxg5 { eval=+9.10 d=14 n=47352 } 30... Nf6 { eval=-6.35 d=9 n=120832 } 31. R1xf6 { eval=+10.06 d=11 n=2297 } 31... Nd7 { eval=-6.35 d=9 n=122880 } 32. Rf3 { eval=+10.61 d=13 n=24230 } 32... Rb8 { eval=-6.35 d=7 n=116736 } 33. g6 { eval=+11.62 d=11 n=2027 } 33... Kd8 { eval=-18.30 d=11 n=124928 } 34. g7 { eval=+11.94 d=13 n=2751 } 34... c5 { eval=-19.35 d=12 n=141312 } 35. g8=Q+ { eval=+19.05 d=13 n=3103 } 35... Kc7 { eval=-25.85 d=10 n=174080 } 36. Rxd7+ { eval=+19.28 d=15 n=4275 } 36... Kxd7 { eval=-289.92 d=9 n=147456 } 37. Qxb8 { eval=+16.98 d=21 n=3984 } 37... d5 { eval=-289.94 d=8 n=137216 } 38. Qxb7+ { eval=+21.84 d=34 n=5910 } 38... Ke8 { eval=-289.96 d=8 n=196608 } 39. Bg6+ { eval=+21.74 d=2 n=146 } 39... Kd8 { eval=-289.98 d=8 n=204800 } 40. Rf8# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X6"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Keres Defense"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. g3 c6 4. Nf3 e4 5. Nd4 d5 6. cxd5 Qb6 7. Qa4 { eval=+0.25 d=8 n=118784 } 7... Bc5 { eval=+0.48 d=13 n=27088 } 8. e3 { eval=+0.60 d=8 n=137216 } 8... O-O { eval=+0.44 d=10 n=14753 } 9. dxc6 { eval=+0.80 d=7 n=114688 } 9... Bxd4 { eval=+1.36 d=14 n=12249 } 10. cxb7 { eval=+1.35 d=8 n=159744 } 10... Qxb7 { eval=+0.20 d=16 n=107245 } 11. exd4 { eval=+1.40 d=8 n=157696 } 11... e3 { eval=+0.18 d=10 n=9735 } 12. Rg1 { eval=+1.40 d=9 n=151552 } 12... exf2+ { eval=+4.00 d=12 n=19590 } 13. Kxf2 { eval=+1.10 d=9 n=139264 } 13... Ng4+ { eval=+3.74 d=14 n=30570 } 14. Ke1 { eval=+1.10 d=8 n=145408 } 14... Qf3 { eval=+3.82 d=14 n=21319 } 15. Rg2 { eval=+1.50 d=7 n=102400 } 15... Bd7 { eval=+3.82 d=16 n=7907 } 16. Qc4 { eval=+1.30 d=8 n=106496 } 16... Re8+ { eval=+6.03 d=13 n=8957 } 17. Ne2 { eval=+1.15 d=8 n=120832 } 17... Nc6 { eval=+6.88 d=14 n=20183 } 18. Qc3 { eval=+1.20 d=8 n=112640 } 18... Qf6 { eval=+6.87 d=14 n=8406 } 19. h3 { eval=+1.60 d=8 n=112640 } 19... Nxd4 { eval=+8.67 d=14 n=37931 } 20. hxg4 { eval=+2.10 d=8 n=100352 } 20... Rac8 { eval=+8.96 d=14 n=23373 } 21. g5 { eval=-0.55 d=8 n=139264 } 21... Qb6 { eval=+8.70 d=15 n=37799 } 22. Kd1 { eval=-0.75 d=8 n=151552 } 22... Rxc3 { eval=+8.72 d=14 n=8324 } 23. dxc3 { eval=-2.10 d=8 n=104448 } 23... Nf3 { eval=+8.71 d=14 n=21531 } 24. Nd4 { eval=-3.80 d=8 n=112640 } 24... Re1+ { eval=+10.98 d=15 n=91776 } 25. Kc2 { eval=-4.65 d=9 n=124928 } 25... Nxd4+ { eval=+11.70 d=14 n=45145 } 26. cxd4 { eval=-4.70 d=8 n=116736 } 26... Qc6+ { eval=+11.64 d=12 n=8819 } 27. Kd2 { eval=-4.90 d=9 n=135168 } 27... Rxf1 { eval=+11.95 d=13 n=15293 } 28. Re2 { eval=-9.60 d=8 n=108544 } 28... Bf5 { eval=+13.25 d=14 n=18510 } 29. Re8+ { eval=-12.80 d=10 n=110592 } 29... Qxe8 { eval=+14.85 d=14 n=12645 } 30. Kc3 { eval=-13.25 d=10 n=120832 } 30... Qc6+ { eval=+17.15 d=14 n=13066 } 31. Kb3 { eval=-13.75 d=9 n=120832 } 31... Qb6+ { eval=+12.84 d=14 n=5466 } 32. Kc3 { eval=-13.80 d=9 n=120832 } 32... Rf3+ { eval=+14.19 d=14 n=6687 } 33. Kc4 { eval=-10.90 d=8 n=126976 } 33... Bd7 { eval=+13.11 d=23 n=14563 } 34. Be3 { eval=-289.94 d=7 n=139264 } 34... Rxe3 { eval=+13.72 d=40 n=13151 } 35. d5 { eval=-289.96 d=7 n=176128 } 35... Bb5+ { eval=+15.07 d=3 n=493 } 36. Kb4 { eval=-289.98 d=7 n=188416 } 36... a5# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X6"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Keres Defense"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. g3 c6 4. Nf3 e4 5. Nd4 d5 6. cxd5 Qb6 7. Nb3 { eval=+0.34 d=15 n=72060 } 7... cxd5 { eval=+0.65 d=8 n=153600 } 8. Bg2 { eval=+0.41 d=15 n=22184 } 8... Nc6 { eval=+0.80 d=7 n=161792 } 9. d3 { eval=+0.44 d=13 n=40333 } 9... Bb4 { eval=+0.90 d=7 n=163840 } 10. O-O { eval=+0.70 d=10 n=13003 } 10... Bxc3 { eval=+0.80 d=7 n=169984 } 11. bxc3 { eval=+0.77 d=13 n=14094 } 11... Bf5 { eval=+0.80 d=7 n=161792 } 12. Ba3 { eval=+1.95 d=13 n=21080 } 12... Ne5 { eval=+0.95 d=6 n=149504 } 13. Rb1 { eval=+2.97 d=13 n=28761 } 13... exd3 { eval=+2.15 d=7 n=135168 } 14. Nd4 { eval=+4.51 d=14 n=19219 } 14... dxe2 { eval=+1.80 d=8 n=122880 } 15. Qxe2 { eval=+7.69 d=13 n=9823 } 15... Bxb1 { eval=+1.40 d=8 n=137216 } 16. Qxe5+ { eval=+9.68 d=15 n=22107 } 16... Kd8 { eval=-2.30 d=10 n=147456 } 17. Qe7+ { eval=+10.43 d=19 n=12653 } 17... Kc8 { eval=-2.35 d=11 n=151552 } 18. Bh3+ { eval=+11.66 d=15 n=48706 } 18... Ng4 { eval=-2.45 d=10 n=145408 } 19. Bxg4+ { eval=+14.98 d=15 n=120452 } 19... f5 { eval=-3.35 d=10 n=133120 } 20. Nxf5 { eval=+12.90 d=15 n=27848 } 20... h5 { eval=-3.35 d=9 n=137216 } 21. Bh3 { eval=+13.31 d=15 n=8931 } 21... g6 { eval=-4.10 d=7 n=106496 } 22. Nd4+ { eval=+21.32 d=15 n=81303 } 22... Bf5 { eval=-7.55 d=10 n=176128 } 23. Nxf5 { eval=+17.19 d=19 n=15484 } 23... Rd8 { eval=-8.20 d=8 n=208896 } 24. Nd4+ { eval=+12.71 d=25 n=11452 } 24... Qe6 { eval=-289.94 d=8 n=276480 } 25. Bxe6+ { eval=+22.81 d=59 n=22304 } 25... Rd7 { eval=-289.96 d=8 n=321536 } 26. Bd6 { eval=+22.18 d=2 n=173 } 26... g5 { eval=-289.98 d=8 n=299008 } 27. Qxd7# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X6"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical 3.Nf3"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nc3 Nf6 3. Nf3 d5 4. cxd5 Nxd5 5. e3 e6 6. d4 Nc6 { eval=-0.20 d=14 n=75486 } 7. Bb5 { eval=+0.20 d=7 n=133120 } 7... cxd4 { eval=-0.16 d=11 n=15449 } 8. Bxc6+ { eval=+0.25 d=9 n=198656 } 8... bxc6 { eval=+0.59 d=13 n=9702 } 9. exd4 { eval=+0.20 d=8 n=169984 } 9... Ba6 { eval=+1.45 d=10 n=10938 } 10. Qb3 { eval=+0.40 d=7 n=126976 } 10... Rb8 { eval=+3.25 d=14 n=23051 } 11. Qa4 { eval=+0.40 d=8 n=147456 } 11... Nb4 { eval=+3.46 d=13 n=12483 } 12. Kd1 { eval=+0.25 d=7 n=116736 } 12... Rb6 { eval=+3.38 d=14 n=40188 } 13. Bg5 { eval=+0.30 d=6 n=124928 } 13... Qb8 { eval=+3.48 d=12 n=15309 } 14. Rb1 { eval=+0.25 d=5 n=114688 } 14... Bd6 { eval=+4.59 d=13 n=16567 } 15. Ne4 { eval=+0.30 d=6 n=120832 } 15... O-O { eval=+5.05 d=15 n=63559 } 16. Rc1 { eval=+0.20 d=5 n=155648 } 16... Nd3 { eval=+5.28 d=14 n=16540 } 17. Rc2 { eval=-0.20 d=7 n=124928 } 17... Rxb2 { eval=+6.33 d=15 n=28833 } 18. Qxc6 { eval=-0.40 d=7 n=92160 } 18... Rb6 { eval=+8.19 d=15 n=42354 } 19. Qc3 { eval=-1.25 d=8 n=163840 } 19... Rb1+ { eval=+7.99 d=15 n=92191 } 20. Bc1 { eval=-1.90 d=8 n=106496 } 20... Bb4 { eval=+8.78 d=13 n=6209 } 21. Qc6 { eval=-3.45 d=8 n=139264 } 21... Bb5 { eval=+8.86 d=13 n=54927 } 22. Qc7 { eval=-4.00 d=8 n=155648 } 22... Nb2+ { eval=+9.16 d=12 n=4169 } 23. Rxb2 { eval=-4.85 d=10 n=124928 } 23... Qxc7 { eval=+9.28 d=14 n=17100 } 24. Rxb1 { eval=-3.90 d=8 n=186368 } 24... Qc4 { eval=+9.11 d=13 n=6110 } 25. Ned2 { eval=-3.55 d=9 n=147456 } 25... Qe2+ { eval=+8.91 d=14 n=4614 } 26. Kc2 { eval=-5.45 d=10 n=167936 } 26... Qd3+ { eval=+8.81 d=14 n=14853 } 27. Kd1 { eval=-3.65 d=8 n=163840 } 27... Rc8 { eval=+10.12 d=35 n=8619 } 28. Ng1 { eval=-289.96 d=8 n=198656 } 28... Rxc1+ 29. Kxc1 { eval=-289.98 d=8 n=219136 } 29... Qxd2# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X6"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical 3.Nf3"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nc3 Nf6 3. Nf3 d5 4. cxd5 Nxd5 5. e3 e6 6. d4 cxd4 { eval=-0.05 d=7 n=151552 } 7. exd4 { eval=+0.33 d=14 n=79545 } 7... Nxc3 { eval=-0.10 d=7 n=157696 } 8. bxc3 { eval=+0.20 d=12 n=23707 } 8... Bd6 { eval=-0.15 d=7 n=139264 } 9. Bd3 { eval=+0.59 d=12 n=12468 } 9... Nc6 { eval=-0.20 d=7 n=143360 } 10. O-O { eval=+1.18 d=13 n=13920 } 10... Qc7 { eval=-0.10 d=7 n=190464 } 11. Re1 { eval=+1.05 d=14 n=56743 } 11... Bd7 { eval=-0.15 d=7 n=163840 } 12. Rb1 { eval=+1.84 d=14 n=58873 } 12... Ne7 { eval=-0.05 d=6 n=157696 } 13. c4 { eval=+2.33 d=14 n=17948 } 13... Bc6 { eval=-0.20 d=7 n=178176 } 14. g3 { eval=+2.38 d=13 n=9377 } 14... Qa5 { eval=+0.05 d=6 n=143360 } 15. Ng5 { eval=+3.04 d=12 n=21161 } 15... Qxa2 { eval=+0.30 d=6 n=165888 } 16. Bd2 { eval=+4.07 d=15 n=77130 } 16... h6 { eval=+0.85 d=6 n=159744 } 17. Ne4 { eval=+4.16 d=13 n=6060 } 17... Bxe4 { eval=+0.85 d=6 n=126976 } 18. Rxe4 { eval=+4.65 d=14 n=41827 } 18... b6 { eval=+0.70 d=6 n=131072 } 19. Bc3 { eval=+6.08 d=14 n=10115 } 19... Qa3 { eval=+0.50 d=6 n=157696 } 20. Qc2 { eval=+6.53 d=13 n=6553 } 20... Bc7 { eval=+0.40 d=7 n=182272 } 21. Bb4 { eval=+6.86 d=15 n=62504 } 21... Qa6 { eval=+0.30 d=8 n=116736 } 22. d5 { eval=+6.89 d=13 n=6589 } 22... Qc8 { eval=-0.20 d=6 n=126976 } 23. dxe6 { eval=+7.11 d=14 n=14245 } 23... fxe6 { eval=-0.20 d=7 n=106496 } 24. Re3 { eval=+7.53 d=16 n=42296 } 24... e5 { eval=+0.15 d=7 n=133120 } 25. Bg6+ { eval=+11.42 d=14 n=9539 } 25... Kd7 { eval=-2.75 d=10 n=169984 } 26. Qd1+ { eval=+11.86 d=13 n=5019 } 26... Ke6 { eval=-11.70 d=10 n=141312 } 27. Qg4+ { eval=+15.21 d=14 n=3906 } 27... Kf6 { eval=-11.70 d=8 n=139264 } 28. Rf3+ { eval=+15.19 d=21 n=6331 } 28... Qf5 { eval=-289.94 d=8 n=202752 } 29. Rxf5+ { eval=+15.28 d=41 n=7708 } 29... Ke6 { eval=-289.96 d=8 n=161792 } 30. Rf8+ Nf5 { eval=-289.98 d=8 n=165888 } 31. Qxf5# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X6"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical Rubinstein"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. Nf3 e6 6. O-O Nge7 7. e4 { eval=-0.10 d=7 n=155648 } 7... O-O { eval=+0.24 d=16 n=82586 } 8. d3 { eval=+0.10 d=7 n=172032 } 8... d6 { eval=+0.18 d=13 n=12012 } 9. Bg5 { eval=+0.15 d=7 n=165888 } 9... h6 { eval=+0.25 d=10 n=13802 } 10. Be3 { eval=+0.15 d=8 n=151552 } 10... b6 { eval=+0.30 d=12 n=12546 } 11. Qd2 { eval=+0.55 d=6 n=133120 } 11... Kh7 { eval=+0.22 d=14 n=33401 } 12. g4 { eval=+0.60 d=7 n=178176 } 12... Nd4 { eval=+0.47 d=15 n=67097 } 13. g5 { eval=+0.55 d=7 n=118784 } 13... Nxf3+ { eval=+0.55 d=12 n=6285 } 14. Bxf3 { eval=+0.55 d=10 n=137216 } 14... hxg5 { eval=+0.52 d=14 n=8277 } 15. Bxg5 { eval=+0.55 d=8 n=210944 } 15... Bb7 { eval=+0.52 d=12 n=18487 } 16. Rad1 { eval=+0.60 d=6 n=159744 } 16... Rh8 { eval=+0.60 d=11 n=11271 } 17. Rfe1 { eval=+0.65 d=6 n=124928 } 17... Qd7 { eval=+1.20 d=10 n=11220 } 18. Be3 { eval=+0.60 d=6 n=131072 } 18... Nf5 { eval=+1.76 d=10 n=10008 } 19. Bg4 { eval=+0.45 d=7 n=108544 } 19... Nd4 { eval=+2.68 d=13 n=28627 } 20. Ne2 { eval=+0.40 d=6 n=118784 } 20... f5 { eval=+2.79 d=14 n=22548 } 21. Bxd4 { eval=+0.20 d=8 n=116736 } 21... cxd4 { eval=+2.55 d=14 n=44412 } 22. Bf3 { eval=+0.15 d=8 n=110592 } 22... Bh6 { eval=+3.46 d=13 n=11980 } 23. Qb4 { eval=+0.20 d=8 n=118784 } 23... e5 { eval=+3.40 d=13 n=9415 } 24. a3 { eval=+0.15 d=7 n=114688 } 24... Raf8 { eval=+4.42 d=15 n=48977 } 25. Bg2 { eval=+0.20 d=7 n=108544 } 25... Rf6 { eval=+4.49 d=14 n=16888 } 26. Qb3 { eval=+0.15 d=6 n=104448 } 26... fxe4 { eval=+5.35 d=15 n=20102 } 27. Bxe4 { eval=+0.05 d=7 n=118784 } 27... Bxe4 { eval=+6.22 d=14 n=10629 } 28. dxe4 { eval=-0.75 d=8 n=129024 } 28... Rhf8 { eval=+6.01 d=14 n=8455 } 29. Rf1 { eval=-0.80 d=7 n=100352 } 29... Rf3 { eval=+6.15 d=13 n=7116 } 30. Qc2 { eval=+0.05 d=8 n=100352 } 30... Qh3 { eval=+7.44 d=13 n=7741 } 31. Qa4 { eval=+0.20 d=7 n=88064 } 31... Be3 { eval=+9.74 d=13 n=11223 } 32. Qxa7+ { eval=-0.60 d=7 n=92160 } 32... Kh6 { eval=+9.31 d=14 n=9020 } 33. Qxb6 { eval=-0.30 d=6 n=77824 } 33... Rxf2 { eval=+9.80 d=50 n=18189 } 34. Rxf2 { eval=-289.96 d=8 n=147456 } 34... Rxf2 { eval=+9.29 d=2 n=184 } 35. Ng3 { eval=-289.98 d=8 n=129024 } 35... Rxh2# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X6"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical Rubinstein"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. Nf3 e6 6. O-O Nge7 7. e3 { eval=+0.04 d=12 n=30276 } 7... d5 { eval=+0.15 d=7 n=190464 } 8. cxd5 { eval=+0.11 d=11 n=8576 } 8... exd5 { eval=+0.15 d=8 n=110592 } 9. d4 { eval=+0.14 d=11 n=14579 } 9... Qa5 { eval=+0.15 d=6 n=92160 } 10. Bd2 { eval=+0.80 d=12 n=8236 } 10... cxd4 { eval=+1.10 d=5 n=159744 } 11. Nxd4 { eval=+0.72 d=13 n=17622 } 11... Qc5 { eval=+0.10 d=7 n=137216 } 12. Rc1 { eval=+1.89 d=12 n=37738 } 12... Qb6 { eval=+0.00 d=7 n=135168 } 13. Na4 { eval=+1.69 d=15 n=79547 } 13... Qc7 { eval=+0.00 d=7 n=122880 } 14. Bc3 { eval=+1.67 d=14 n=19226 } 14... Bxd4 { eval=+0.00 d=7 n=122880 } 15. Bxd4 { eval=+3.84 d=14 n=20080 } 15... O-O { eval=-0.05 d=7 n=98304 } 16. b4 { eval=+3.58 d=13 n=12248 } 16... Qd8 { eval=+0.40 d=5 n=104448 } 17. Ba1 { eval=+3.75 d=14 n=20886 } 17... Nxb4 { eval=+1.30 d=5 n=112640 } 18. Qd4 { eval=+7.15 d=14 n=14999 } 18... f6 { eval=-2.35 d=8 n=104448 } 19. Qxb4 { eval=+7.33 d=13 n=22081 } 19... f5 { eval=-2.30 d=7 n=112640 } 20. Qd4 { eval=+8.30 d=14 n=63296 } 20... Kf7 { eval=-3.35 d=8 n=94208 } 21. Nc3 { eval=+8.72 d=14 n=27876 } 21... Be6 { eval=-3.25 d=7 n=122880 } 22. Nb5 { eval=+9.11 d=14 n=9100 } 22... Ke8 { eval=-4.40 d=8 n=100352 } 23. Nc7+ { eval=+9.74 d=13 n=12598 } 23... Kd7 { eval=-5.40 d=9 n=131072 } 24. Nxa8 { eval=+9.90 d=14 n=32351 } 24... Qxa8 { eval=-4.45 d=7 n=92160 } 25. Qa4+ { eval=+9.62 d=15 n=100274 } 25... Kd8 { eval=-4.40 d=7 n=129024 } 26. Rfd1 { eval=+9.64 d=14 n=49316 } 26... g5 { eval=-4.95 d=6 n=104448 } 27. Qb5 { eval=+9.99 d=13 n=24281 } 27... f4 { eval=-4.45 d=6 n=126976 } 28. Bxd5 { eval=+14.99 d=11 n=3832 } 28... Nxd5 { eval=-4.65 d=8 n=94208 } 29. Rxd5+ { eval=+14.99 d=13 n=2423 } 29... Bxd5 { eval=-5.70 d=8 n=114688 } 30. Qxd5+ { eval=+15.94 d=13 n=2974 } 30... Ke8 { eval=-289.94 d=7 n=153600 } 31. Qe6+ { eval=+12.62 d=17 n=4522 } 31... Kd8 { eval=-289.96 d=7 n=141312 } 32. Rd1+ { eval=+12.49 d=3 n=407 } 32... Kc7 { eval=-289.98 d=7 n=135168 } 33. Be5# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X6"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical Anti-Benoni"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nf3 Nf6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d5 6. cxd5 Bc5 7. d6 { eval=+0.90 d=7 n=131072 } 7... O-O { eval=+0.79 d=13 n=32311 } 8. Nc7 { eval=+1.20 d=8 n=161792 } 8... Ne4 { eval=+0.95 d=14 n=39311 } 9. e3 { eval=+1.45 d=8 n=139264 } 9... Bb4+ { eval=+1.16 d=15 n=33614 } 10. Nd2 { eval=+1.40 d=8 n=141312 } 10... Qxd6 { eval=+2.79 d=12 n=14406 } 11. Nxa8 { eval=+1.05 d=9 n=143360 } 11... Rd8 { eval=+2.54 d=13 n=18033 } 12. a3 { eval=+1.25 d=8 n=102400 } 12... Nxd2 { eval=+4.34 d=11 n=8810 } 13. axb4 { eval=+3.30 d=9 n=153600 } 13... Nf3+ { eval=+5.93 d=15 n=69268 } 14. Qxf3 { eval=+0.00 d=12 n=176128 } 14... Qxb4+ { eval=+5.73 d=15 n=14953 } 15. Ke2 { eval=+0.00 d=12 n=159744 } 15... Bg4 { eval=+5.86 d=15 n=71461 } 16. h3 { eval=+0.00 d=8 n=141312 } 16... Qc4+ { eval=+6.93 d=13 n=51027 } 17. Ke1 { eval=-1.95 d=11 n=141312 } 17... Qb4+ { eval=+8.88 d=16 n=6352 } 18. Ke2 { eval=+0.00 d=21 n=217088 } 18... Qd6 { eval=+6.41 d=31 n=10889 } 19. e4 { eval=-289.94 d=7 n=159744 } 19... Qd3+ { eval=+9.11 d=50 n=18793 } 20. Ke1 { eval=-289.96 d=8 n=204800 } 20... Qd1+ 21. Qxd1 { eval=-289.98 d=10 n=190464 } 21... Rxd1# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X6"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical Anti-Benoni"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nf3 Nf6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d5 6. cxd5 Bc5 7. N5c3 { eval=+0.27 d=15 n=45003 } 7... Bf5 { eval=-0.55 d=5 n=149504 } 8. e4 { eval=+1.35 d=13 n=13417 } 8... Bg6 { eval=-1.05 d=7 n=153600 } 9. Bd3 { eval=+1.23 d=16 n=56287 } 9... Nbd7 { eval=-1.05 d=5 n=139264 } 10. O-O { eval=+1.36 d=12 n=10840 } 10... Bd4 { eval=-0.90 d=6 n=137216 } 11. Kh1 { eval=+1.59 d=15 n=33496 } 11... Qb6 { eval=-0.50 d=6 n=118784 } 12. f3 { eval=+2.61 d=13 n=23504 } 12... Nc5 { eval=-0.35 d=7 n=151552 } 13. Na4 { eval=+3.52 d=12 n=13127 } 13... Nxa4 { eval=-0.75 d=8 n=149504 } 14. Qxa4+ { eval=+3.64 d=13 n=10371 } 14... Nd7 { eval=-0.85 d=8 n=155648 } 15. Nd2 { eval=+4.45 d=14 n=21827 } 15... Bc5 { eval=-1.00 d=6 n=126976 } 16. Bb5 { eval=+5.22 d=15 n=46701 } 16... O-O-O { eval=-1.10 d=7 n=108544 } 17. Nc4 { eval=+6.65 d=15 n=14430 } 17... Qf6 { eval=-1.30 d=8 n=135168 } 18. Be3 { eval=+7.33 d=13 n=4968 } 18... Bxe3 { eval=-1.15 d=7 n=129024 } 19. Nxe3 { eval=+7.70 d=13 n=10044 } 19... Qb6 { eval=-2.20 d=7 n=131072 } 20. Nc4 { eval=+8.06 d=14 n=7804 } 20... Qd4 { eval=-2.40 d=8 n=112640 } 21. Rad1 { eval=+8.94 d=15 n=104194 } 21... Qc5 { eval=-2.70 d=8 n=159744 } 22. b4 { eval=+9.17 d=14 n=10265 } 22... Qe7 { eval=-2.35 d=8 n=155648 } 23. d6 { eval=+13.61 d=15 n=27520 } 23... Qe6 { eval=-2.70 d=6 n=102400 } 24. Qxa7 { eval=+12.85 d=17 n=4876 } 24... Rdf8 { eval=-14.35 d=7 n=141312 } 25. Qa8+ { eval=+11.98 d=29 n=11751 } 25... Nb8 { eval=-289.94 d=8 n=186368 } 26. Nb6+ Kd8 { eval=-289.96 d=8 n=208896 } 27. Qxb8+ Qc8 { eval=-289.98 d=9 n=192512 } 28. Qxc8# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X6"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti Reversed Blumenfeld"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. c4 d4 3. e3 c5 4. b4 dxe3 5. fxe3 cxb4 6. d4 Nf6 { eval=+0.00 d=12 n=38776 } 7. Qa4+ { eval=-0.60 d=8 n=198656 } 7... Nc6 { eval=+0.46 d=11 n=28768 } 8. d5 { eval=-0.65 d=8 n=131072 } 8... Qa5 { eval=+0.42 d=9 n=9970 } 9. Qxa5 { eval=-0.55 d=8 n=137216 } 9... Nxa5 { eval=+1.26 d=11 n=7202 } 10. Nbd2 { eval=-0.45 d=8 n=174080 } 10... e6 { eval=+1.05 d=13 n=21092 } 11. Bb2 { eval=-0.35 d=9 n=190464 } 11... Bc5 { eval=+1.35 d=13 n=27799 } 12. e4 { eval=-0.30 d=8 n=133120 } 12... b6 { eval=+1.15 d=16 n=98400 } 13. Bd3 { eval=-0.15 d=8 n=133120 } 13... Ba6 { eval=+1.56 d=13 n=27109 } 14. dxe6 { eval=-0.20 d=8 n=153600 } 14... fxe6 { eval=+2.23 d=13 n=35423 } 15. Ng5 { eval=-0.35 d=7 n=110306 } 15... Rd8 { eval=+3.22 d=14 n=46316 } 16. Bxf6 { eval=+0.35 d=8 n=141312 } 16... gxf6 { eval=+4.79 d=14 n=15707 } 17. Nxe6 { eval=+0.20 d=10 n=180224 } 17... Rxd3 { eval=+4.92 d=15 n=22903 } 18. Nc7+ { eval=-0.15 d=10 n=163840 } 18... Ke7 { eval=+5.18 d=14 n=9181 } 19. Nxa6 { eval=-0.50 d=9 n=159744 } 19... Rhd8 { eval=+5.34 d=13 n=7979 } 20. Nxc5 { eval=-0.50 d=10 n=151552 } 20... Rxd2 { eval=+5.46 d=15 n=47001 } 21. Na6 { eval=-0.60 d=9 n=178176 } 21... Rb2 { eval=+5.36 d=14 n=21410 } 22. Nc7 { eval=-0.30 d=9 n=157696 } 22... Rdd2 { eval=+6.07 d=14 n=9752 } 23. Nd5+ { eval=-0.60 d=8 n=106496 } 23... Kd7 { eval=+6.11 d=15 n=32501 } 24. Nxf6+ { eval=+0.10 d=8 n=122880 } 24... Kc6 { eval=+6.59 d=14 n=41522 } 25. Nxh7 { eval=-0.20 d=8 n=129024 } 25... Nxc4 { eval=+10.37 d=14 n=32589 } 26. Rc1 { eval=-0.60 d=8 n=151552 } 26... Re2+ { eval=+10.39 d=14 n=7553 } 27. Kf1 { eval=-1.00 d=10 n=120832 } 27... Kb5 { eval=+14.08 d=15 n=62402 } 28. Rxc4 { eval=-2.25 d=9 n=157696 } 28... Kxc4 { eval=+15.64 d=15 n=38382 } 29. h3 { eval=-2.85 d=9 n=147456 } 29... Rec2 { eval=+9.54 d=31 n=8392 } 30. Kg1 { eval=-5.20 d=10 n=172032 } 30... Rxg2+ { eval=+10.68 d=53 n=9621 } 31. Kf1 { eval=-289.96 d=9 n=190464 } 31... Rgc2 { eval=+9.08 d=2 n=109 } 32. Nf6 { eval=-289.98 d=10 n=196608 } 32... Rc1# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X6"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti Reversed Blumenfeld"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. c4 d4 3. e3 c5 4. b4 dxe3 5. fxe3 cxb4 6. d4 Nf6 { eval=+0.80 d=7 n=192512 } 7. a3 { eval=+0.00 d=14 n=66250 } 7... e6 { eval=+1.05 d=7 n=204800 } 8. c5 { eval=+0.02 d=14 n=19090 } 8... Nc6 { eval=+0.95 d=7 n=153600 } 9. axb4 { eval=+0.16 d=13 n=28483 } 9... Nxb4 { eval=+0.85 d=8 n=174080 } 10. Ne5 { eval=+0.07 d=11 n=16505 } 10... Nd7 { eval=+1.25 d=7 n=116736 } 11. Bb5 { eval=+1.32 d=9 n=22986 } 11... Qh4+ { eval=+0.85 d=6 n=88064 } 12. g3 { eval=+4.02 d=12 n=18007 } 12... Qe4 { eval=+0.45 d=7 n=118784 } 13. O-O { eval=+4.66 d=14 n=9553 } 13... f6 { eval=+0.50 d=7 n=100352 } 14. Nc3 { eval=+4.88 d=15 n=91023 } 14... Qc2 { eval=+0.50 d=8 n=159744 } 15. Qh5+ { eval=+5.79 d=13 n=18534 } 15... g6 { eval=+1.15 d=9 n=167936 } 16. Qh3 { eval=+5.92 d=14 n=10149 } 16... fxe5 { eval=+1.70 d=8 n=126976 } 17. Qxe6+ { eval=+7.00 d=14 n=36724 } 17... Kd8 { eval=+0.40 d=8 n=184320 } 18. Bxd7 { eval=+5.60 d=14 n=96463 } 18... Qxc3 { eval=+1.55 d=6 n=135168 } 19. Rxa7 { eval=+9.24 d=14 n=33449 } 19... Rb8 { eval=-2.70 d=7 n=131072 } 20. Bxc8 { eval=+10.65 d=13 n=4557 } 20... Rxc8 { eval=-3.90 d=7 n=112640 } 21. Rxb7 { eval=+7.67 d=21 n=6427 } 21... Qxe3+ { eval=-289.94 d=7 n=106496 } 22. Bxe3 Rc7 { eval=-289.96 d=7 n=169984 } 23. Rb8+ Rc8 { eval=-289.98 d=8 n=215040 } 24. Rxc8# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X6"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti Advance 3...f6"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. c4 d4 3. e3 Nc6 4. exd4 Nxd4 5. Nxd4 Qxd4 6. Nc3 e5 7. Nb5 { eval=+0.10 d=8 n=149504 } 7... Qd8 { eval=+0.42 d=17 n=70043 } 8. Qe2 { eval=-0.20 d=6 n=141312 } 8... f6 { eval=+0.38 d=12 n=14585 } 9. Qh5+ { eval=+0.30 d=6 n=139264 } 9... g6 { eval=+0.94 d=11 n=9047 } 10. Qf3 { eval=+0.15 d=8 n=153600 } 10... c6 { eval=+1.55 d=10 n=18178 } 11. Nc3 { eval=+0.25 d=8 n=163840 } 11... Nh6 { eval=+1.56 d=13 n=12109 } 12. d3 { eval=+0.25 d=7 n=126976 } 12... Nf5 { eval=+1.54 d=14 n=30675 } 13. Be3 { eval=+0.10 d=7 n=200704 } 13... Nd4 { eval=+1.41 d=16 n=93374 } 14. Bxd4 { eval=+0.15 d=8 n=192512 } 14... exd4 { eval=+1.73 d=13 n=7248 } 15. Qe2+ { eval=+0.05 d=8 n=104448 } 15... Kf7 { eval=+3.27 d=12 n=18783 } 16. Ne4 { eval=-0.10 d=9 n=167936 } 16... Bb4+ { eval=+2.04 d=15 n=45516 } 17. Kd1 { eval=-0.10 d=9 n=141312 } 17... f5 { eval=+2.09 d=15 n=12791 } 18. a3 { eval=-0.10 d=9 n=157696 } 18... Ba5 { eval=+2.21 d=13 n=17059 } 19. b4 { eval=-0.20 d=8 n=153600 } 19... Bc7 { eval=+2.29 d=14 n=20690 } 20. Nc5 { eval=-0.20 d=7 n=126976 } 20... Re8 { eval=+2.60 d=14 n=34766 } 21. Qf3 { eval=-0.20 d=7 n=106496 } 21... a5 { eval=+4.06 d=11 n=7386 } 22. Rc1 { eval=-0.20 d=7 n=110592 } 22... axb4 { eval=+6.80 d=14 n=7296 } 23. axb4 { eval=-0.35 d=8 n=108544 } 23... Ra2 { eval=+8.66 d=15 n=71980 } 24. Rc2 { eval=-0.15 d=8 n=126976 } 24... Ra1+ { eval=+9.06 d=13 n=43655 } 25. Rc1 { eval=-0.25 d=9 n=104448 } 25... Re1+ { eval=+8.80 d=15 n=7197 } 26. Kxe1 { eval=-2.30 d=9 n=94208 } 26... Rxc1+ { eval=+8.99 d=15 n=7150 } 27. Ke2 { eval=-3.30 d=11 n=145408 } 27... Qe7+ { eval=+8.94 d=15 n=64981 } 28. Ne4 { eval=-3.20 d=9 n=106496 } 28... Qxb4 { eval=+11.26 d=13 n=9912 } 29. Ng5+ { eval=-5.30 d=9 n=106496 } 29... Ke8 { eval=+11.26 d=14 n=28553 } 30. Qh3 { eval=-5.10 d=9 n=122880 } 30... Qe1+ { eval=+8.56 d=15 n=3053 } 31. Kf3 { eval=-5.10 d=8 n=116736 } 31... Rc2 { eval=+5.81 d=27 n=3756 } 32. Ne4 { eval=-289.96 d=8 n=159744 } 32... fxe4+ 33. dxe4 { eval=-289.98 d=8 n=147456 } 33... Qxf2# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X6"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti Advance 3...f6"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. c4 d4 3. e3 Nc6 4. exd4 Nxd4 5. Nxd4 Qxd4 6. Nc3 e5 7. d3 { eval=+0.02 d=14 n=82608 } 7... Nf6 { eval=+0.05 d=7 n=186368 } 8. Be3 { eval=+0.21 d=11 n=7322 } 8... Qd7 { eval=+0.00 d=8 n=141312 } 9. Be2 { eval=+0.18 d=10 n=10321 } 9... Bb4 { eval=+0.10 d=8 n=157696 } 10. Qb3 { eval=+0.27 d=12 n=40921 } 10... Qd6 { eval=+0.10 d=7 n=145408 } 11. a3 { eval=+0.43 d=11 n=28652 } 11... Bxc3+ { eval=+0.10 d=8 n=172032 } 12. Qxc3 { eval=+0.45 d=11 n=5348 } 12... Bg4 { eval=+0.20 d=8 n=139264 } 13. f3 { eval=+0.64 d=10 n=11576 } 13... Bf5 { eval=+0.20 d=8 n=147456 } 14. Qb4 { eval=+0.58 d=13 n=75195 } 14... Qxb4+ { eval=+0.25 d=8 n=200704 } 15. axb4 { eval=+1.62 d=11 n=12562 } 15... a6 { eval=+0.25 d=8 n=206848 } 16. b5 { eval=+2.01 d=11 n=14226 } 16... O-O { eval=+0.30 d=8 n=178176 } 17. bxa6 { eval=+2.32 d=13 n=23382 } 17... Rxa6 { eval=+0.30 d=8 n=188416 } 18. Rxa6 { eval=+2.78 d=14 n=12606 } 18... bxa6 { eval=+0.25 d=10 n=206848 } 19. Kd2 { eval=+2.81 d=14 n=25069 } 19... Rd8 { eval=+0.45 d=8 n=219136 } 20. Ra1 { eval=+3.59 d=14 n=26094 } 20... Ra8 { eval=+0.45 d=8 n=223232 } 21. Ra5 { eval=+5.24 d=14 n=30270 } 21... Nd7 { eval=+0.30 d=8 n=139264 } 22. b4 { eval=+5.36 d=15 n=40040 } 22... Rb8 { eval=-0.15 d=8 n=159744 } 23. Kc3 { eval=+5.41 d=13 n=7439 } 23... Rc8 { eval=-0.25 d=7 n=145408 } 24. Rxa6 { eval=+5.71 d=14 n=22208 } 24... c5 { eval=-0.45 d=7 n=182272 } 25. b5 { eval=+5.90 d=13 n=4673 } 25... Nf8 { eval=-0.60 d=7 n=137216 } 26. b6 { eval=+6.37 d=15 n=47732 } 26... h6 { eval=-0.95 d=6 n=110592 } 27. b7 { eval=+6.70 d=13 n=11103 } 27... Rb8 { eval=-2.55 d=9 n=126976 } 28. Bxc5 { eval=+6.72 d=15 n=64552 } 28... Nd7 { eval=-3.30 d=8 n=145408 } 29. Ra8 { eval=+7.24 d=13 n=3065 } 29... Kh7 { eval=-4.40 d=10 n=141312 } 30. Rxb8 { eval=+7.18 d=13 n=7442 } 30... Nxb8 { eval=-4.80 d=11 n=147456 } 31. Bd6 { eval=+6.87 d=12 n=5953 } 31... Nc6 { eval=-5.00 d=11 n=145408 } 32. f4 { eval=+7.17 d=13 n=35377 } 32... e4 { eval=-3.60 d=9 n=131072 } 33. d4 { eval=+7.34 d=11 n=2899 } 33... h5 { eval=-6.55 d=8 n=143360 } 34. d5 { eval=+8.37 d=13 n=21416 } 34... Nb8 { eval=-9.65 d=9 n=124928 } 35. Bxb8 { eval=+8.79 d=11 n=2584 } 35... h4 { eval=-13.15 d=10 n=194560 } 36. Ba7 { eval=+10.53 d=14 n=39488 } 36... h3 { eval=-13.20 d=10 n=126976 } 37. gxh3 { eval=+10.30 d=12 n=7332 } 37... Bxh3 { eval=-13.45 d=11 n=141312 } 38. b8=Q { eval=+12.48 d=14 n=37792 } 38... Bg2 { eval=-14.15 d=10 n=143360 } 39. c5 { eval=+13.62 d=12 n=5802 } 39... Bh1 { eval=-13.45 d=8 n=149504 } 40. c6 { eval=+13.80 d=14 n=4491 } 40... Bg2 { eval=-16.25 d=11 n=143360 } 41. d6 { eval=+15.58 d=13 n=9537 } 41... Bf3 { eval=-19.95 d=8 n=124928 } 42. Bxf3 { eval=+15.65 d=12 n=4344 } 42... exf3 { eval=-22.35 d=9 n=141312 } 43. c7 { eval=+16.34 d=12 n=7340 } 43... f2 { eval=-24.25 d=8 n=143360 } 44. Bxf2 { eval=+20.19 d=14 n=11594 } 44... g5 { eval=-29.65 d=8 n=137216 } 45. d7 { eval=+21.45 d=14 n=7524 } 45... gxf4 { eval=-29.75 d=8 n=161792 } 46. c8=Q { eval=+21.68 d=16 n=6682 } 46... Kh6 { eval=-289.94 d=7 n=174080 } 47. d8=Q { eval=+21.02 d=36 n=10067 } 47... f3 { eval=-289.96 d=7 n=184320 } 48. Qh8+ { eval=+27.50 d=2 n=209 } 48... Kg6 { eval=-289.98 d=7 n=188416 } 49. Qg4# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X6"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti vs Old Indian"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. g3 Nf6 3. Bg2 Nbd7 4. O-O e5 5. d3 Bd6 6. c4 c6 7. Nc3 { eval=-0.55 d=7 n=178176 } 7... d4 { eval=+0.34 d=13 n=30033 } 8. Ne4 { eval=-0.55 d=9 n=196608 } 8... Nxe4 { eval=+0.53 d=13 n=10051 } 9. dxe4 { eval=-0.50 d=9 n=198656 } 9... O-O { eval=+0.48 d=13 n=13603 } 10. e3 { eval=-0.35 d=8 n=215040 } 10... c5 { eval=+0.45 d=13 n=13251 } 11. b4 { eval=-0.30 d=8 n=159744 } 11... b6 { eval=+0.89 d=12 n=14448 } 12. Bb2 { eval=-0.30 d=7 n=137216 } 12... Bb7 { eval=+1.24 d=14 n=60086 } 13. Re1 { eval=-0.35 d=7 n=110592 } 13... Re8 { eval=+1.30 d=11 n=11037 } 14. Qd3 { eval=-0.30 d=7 n=124928 } 14... Nf6 { eval=+1.95 d=13 n=47497 } 15. exd4 { eval=-0.35 d=7 n=104448 } 15... cxd4 { eval=+2.42 d=12 n=7046 } 16. b5 { eval=-0.35 d=7 n=110592 } 16... Nd7 { eval=+2.82 d=13 n=20676 } 17. Qc2 { eval=-0.40 d=6 n=133120 } 17... Rc8 { eval=+2.66 d=15 n=105052 } 18. Bh3 { eval=-0.35 d=6 n=124928 } 18... Rc7 { eval=+3.15 d=14 n=48466 } 19. Bf5 { eval=-0.35 d=6 n=116736 } 19... a6 { eval=+3.79 d=13 n=15090 } 20. bxa6 { eval=-0.30 d=6 n=147456 } 20... Bxa6 { eval=+4.40 d=10 n=5786 } 21. Bxd7 { eval=-0.50 d=6 n=129024 } 21... Qxd7 { eval=+5.54 d=14 n=12109 } 22. Nd2 { eval=-1.25 d=7 n=155648 } 22... Bb4 { eval=+5.30 d=16 n=74569 } 23. Red1 { eval=-1.15 d=7 n=129024 } 23... Bxd2 { eval=+5.31 d=12 n=3788 } 24. Qxd2 { eval=-1.15 d=8 n=149504 } 24... h6 { eval=+5.10 d=16 n=62863 } 25. f4 { eval=-0.95 d=7 n=143360 } 25... f6 { eval=+5.71 d=11 n=3160 } 26. Qb4 { eval=-0.30 d=5 n=120832 } 26... Bxc4 { eval=+5.40 d=14 n=17140 } 27. Qxb6 { eval=-0.40 d=6 n=86016 } 27... Rb7 { eval=+5.88 d=12 n=2454 } 28. Qc5 { eval=-1.10 d=8 n=131072 } 28... Rc8 { eval=+5.61 d=16 n=23445 } 29. Qa3 { eval=-1.15 d=8 n=135168 } 29... Rb5 { eval=+5.41 d=14 n=31616 } 30. fxe5 { eval=-0.40 d=6 n=114688 } 30... fxe5 { eval=+5.41 d=10 n=2828 } 31. Bc1 { eval=-0.65 d=7 n=110592 } 31... Be2 { eval=+6.06 d=13 n=8314 } 32. Rd2 { eval=-0.50 d=7 n=96256 } 32... d3 { eval=+6.55 d=13 n=3928 } 33. Qa4 { eval=-0.65 d=8 n=124928 } 33... Qb7 { eval=+7.46 d=12 n=2792 } 34. Ba3 { eval=-1.05 d=8 n=151552 } 34... Rb1+ { eval=+8.08 d=13 n=4000 } 35. Kg2 { eval=-5.65 d=8 n=135168 } 35... Rxa1 { eval=+9.42 d=14 n=9799 } 36. Bb2 { eval=-6.55 d=8 n=157696 } 36... Bf1+ { eval=+13.46 d=15 n=8655 } 37. Kg1 { eval=-5.60 d=8 n=167936 } 37... Qb6+ { eval=+22.99 d=15 n=5492 } 38. Bd4 { eval=-9.55 d=9 n=92160 } 38... Bh3+ { eval=+15.74 d=13 n=3992 } 39. Kf2 { eval=-13.30 d=10 n=104448 } 39... Qf6+ { eval=+13.22 d=17 n=7226 } 40. Ke3 { eval=-15.65 d=8 n=165888 } 40... Re1+ { eval=+15.51 d=27 n=11823 } 41. Re2 { eval=-289.94 d=8 n=149504 } 41... Rxe2+ { eval=+15.90 d=51 n=15347 } 42. Kxd3 { eval=-289.96 d=7 n=133120 } 42... Qf3+ 43. Be3 { eval=-289.98 d=7 n=143360 } 43... Qxe3# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X6"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti vs Old Indian"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. g3 Nf6 3. Bg2 Nbd7 4. O-O e5 5. d3 Bd6 6. c4 c6 7. cxd5 { eval=+0.16 d=13 n=31814 } 7... cxd5 { eval=+0.55 d=8 n=165888 } 8. e4 { eval=+0.21 d=14 n=39868 } 8... dxe4 { eval=+0.90 d=7 n=165888 } 9. dxe4 { eval=+0.45 d=11 n=11230 } 9... Nxe4 { eval=+0.60 d=7 n=172032 } 10. Nh4 { eval=+4.68 d=15 n=16876 } 10... g5 { eval=+0.35 d=7 n=190464 } 11. Bxe4 { eval=+5.04 d=13 n=25428 } 11... Nc5 { eval=-1.35 d=8 n=147456 } 12. Ng2 { eval=+5.44 d=16 n=78968 } 12... Nxe4 { eval=-1.10 d=8 n=188416 } 13. Qa4+ { eval=+5.11 d=15 n=19563 } 13... Bd7 { eval=-1.35 d=9 n=221184 } 14. Qxe4 { eval=+5.13 d=15 n=58062 } 14... Bb5 { eval=-1.35 d=7 n=165888 } 15. Rd1 { eval=+6.01 d=14 n=36644 } 15... Bc6 { eval=-1.70 d=7 n=137216 } 16. Qf5 { eval=+6.19 d=14 n=18252 } 16... h6 { eval=-2.00 d=8 n=172032 } 17. Nc3 { eval=+6.26 d=15 n=76739 } 17... Qe7 { eval=-2.00 d=7 n=176128 } 18. Ne3 { eval=+6.28 d=14 n=55534 } 18... Bd7 { eval=-2.10 d=7 n=106496 } 19. Qd3 { eval=+7.32 d=13 n=2974 } 19... Bb8 { eval=-2.60 d=8 n=151552 } 20. Ned5 { eval=+8.56 d=14 n=49739 } 20... Qe6 { eval=-5.55 d=8 n=126976 } 21. Nf6+ { eval=+9.06 d=13 n=2664 } 21... Ke7 { eval=-5.75 d=8 n=102400 } 22. Nxd7 { eval=+8.98 d=14 n=19981 } 22... Bd6 { eval=-5.85 d=7 n=92160 } 23. Nf6 { eval=+8.93 d=15 n=21842 } 23... Kxf6 { eval=-5.50 d=7 n=120832 } 24. Qxd6 { eval=+8.69 d=14 n=9157 } 24... Qxd6 { eval=-5.80 d=9 n=137216 } 25. Rxd6+ { eval=+8.55 d=13 n=3630 } 25... Kg7 { eval=-5.95 d=10 n=137216 } 26. Rd2 { eval=+8.23 d=13 n=38759 } 26... Rhd8 { eval=-5.55 d=8 n=180224 } 27. Rxd8 { eval=+8.27 d=12 n=7969 } 27... Rxd8 { eval=-5.65 d=10 n=163840 } 28. g4 { eval=+7.71 d=13 n=30701 } 28... Rd4 { eval=-5.60 d=9 n=180224 } 29. h3 { eval=+7.73 d=12 n=18697 } 29... Kg8 { eval=-5.60 d=9 n=157696 } 30. Kg2 { eval=+7.57 d=13 n=20458 } 30... Rc4 { eval=-5.50 d=9 n=163840 } 31. Ne2 { eval=+7.56 d=13 n=9876 } 31... Rc6 { eval=-5.25 d=8 n=184320 } 32. a3 { eval=+7.84 d=12 n=14554 } 32... Rb6 { eval=-5.30 d=9 n=198656 } 33. b4 { eval=+7.80 d=10 n=1984 } 33... a6 { eval=-5.45 d=10 n=188416 } 34. Be3 { eval=+7.67 d=14 n=25522 } 34... Re6 { eval=-5.45 d=10 n=172032 } 35. Ng3 { eval=+7.86 d=13 n=18446 } 35... Re8 { eval=-5.50 d=9 n=196608 } 36. Nf5 { eval=+8.27 d=11 n=3249 } 36... Re6 { eval=-6.05 d=10 n=157696 } 37. h4 { eval=+8.23 d=13 n=16312 } 37... gxh4 { eval=-6.25 d=10 n=174080 } 38. Nxh6+ { eval=+8.19 d=12 n=3163 } 38... Kf8 { eval=-6.40 d=11 n=210944 } 39. Rh1 { eval=+8.19 d=15 n=12629 } 39... h3+ { eval=-6.40 d=10 n=139264 } 40. Kxh3 { eval=+8.27 d=13 n=20709 } 40... Kg7 { eval=-6.40 d=9 n=157696 } 41. Nf5+ { eval=+8.32 d=14 n=6593 } 41... Kg8 { eval=-6.50 d=10 n=169984 } 42. Nh6+ { eval=+8.42 d=13 n=18771 } 42... Kg7 { eval=+0.00 d=23 n=172032 } 43. Kg3 { eval=+8.52 d=14 n=9371 } 43... e4 { eval=-6.50 d=9 n=147456 } 44. Nf5+ { eval=+9.09 d=13 n=7024 } 44... Kg8 { eval=-7.40 d=11 n=145408 } 45. a4 { eval=+8.95 d=14 n=47929 } 45... f6 { eval=-6.75 d=10 n=161792 } 46. Rc1 { eval=+8.76 d=15 n=26991 } 46... b5 { eval=-6.80 d=8 n=124928 } 47. axb5 { eval=+9.27 d=15 n=14525 } 47... axb5 { eval=-7.65 d=11 n=151552 } 48. Kf4 { eval=+9.44 d=17 n=20406 } 48... Ra6 { eval=-7.65 d=10 n=178176 } 49. Bd4 { eval=+9.45 d=13 n=22112 } 49... Ra4 { eval=-7.60 d=9 n=165888 } 50. Rc8+ { eval=+9.35 d=12 n=7439 } 50... Kh7 { eval=-7.80 d=10 n=147456 } 51. Rc7+ { eval=+11.01 d=14 n=11860 } 51... Kg8 { eval=-8.45 d=11 n=114688 } 52. Bxf6 { eval=+10.72 d=12 n=3244 } 52... Kf8 { eval=-8.55 d=10 n=92160 } 53. Nd6 { eval=+14.55 d=14 n=7071 } 53... Kg8 { eval=-8.85 d=10 n=139264 } 54. Kf5 { eval=+15.60 d=13 n=3302 } 54... Ra8 { eval=-9.20 d=10 n=163840 } 55. Rg7+ { eval=+12.95 d=29 n=7268 } 55... Kf8 { eval=-289.96 d=9 n=145408 } 56. Rh7 { eval=+12.33 d=2 n=129 } 56... Kg8 { eval=-289.98 d=9 n=172032 } 57. Rh8# 1-0
+
+
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X7"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Anglo-Scandinavian"]
+[Termination "checkmate"]
+
+1. c4 d5 2. cxd5 Nf6 3. e4 Nxe4 4. Qa4+ c6 5. Qxe4 cxd5 { eval=-4.92 d=16 n=174811 } 6. Qf4 { eval=+1.40 d=8 n=200704 } 6... f6 { eval=-3.80 d=16 n=127869 } 7. d4 { eval=+1.64 d=8 n=210944 } 7... Nc6 { eval=-3.48 d=14 n=35219 } 8. Bb5 { eval=+1.60 d=8 n=178176 } 8... e5 { eval=-4.37 d=16 n=144247 } 9. dxe5 { eval=+2.41 d=9 n=174080 } 9... Bc5 { eval=-4.21 d=14 n=36204 } 10. Nf3 { eval=+2.41 d=7 n=165888 } 10... O-O { eval=-4.16 d=15 n=33776 } 11. Bxc6 { eval=+2.01 d=8 n=180224 } 11... bxc6 { eval=-4.37 d=19 n=278914 } 12. Be3 { eval=+1.93 d=8 n=153600 } 12... fxe5 { eval=-0.16 d=13 n=21532 } 13. Qxe5 { eval=+2.08 d=9 n=184320 } 13... Re8 { eval=+0.26 d=16 n=34562 } 14. Qc3 { eval=+1.13 d=10 n=182272 } 14... Qb6 { eval=+0.00 d=15 n=88053 } 15. Kd1 { eval=+0.56 d=9 n=161792 } 15... d4 { eval=+0.00 d=17 n=38017 } 16. Bxd4 { eval=+0.85 d=8 n=163840 } 16... Rd8 { eval=+0.00 d=18 n=29027 } 17. Nbd2 { eval=+0.72 d=9 n=176128 } 17... Bxd4 { eval=+0.13 d=15 n=79661 } 18. Nxd4 { eval=+0.44 d=8 n=77824 } 18... Rxd4 { eval=+0.11 d=12 n=53383 } 19. Rc1 { eval=+0.60 d=7 n=71680 } 19... Bf5 { eval=+4.33 d=14 n=14267 } 20. Re1 { eval=+0.15 d=7 n=65536 } 20... Rxd2+ { eval=+6.41 d=15 n=30651 } 21. Qxd2 { eval=-1.34 d=11 n=81920 } 21... Rd8 { eval=+6.62 d=15 n=50382 } 22. Re2 { eval=-1.58 d=10 n=65536 } 22... Rxd2+ { eval=+6.63 d=15 n=17605 } 23. Rxd2 { eval=-1.48 d=11 n=106496 } 23... Qb5 { eval=+6.40 d=14 n=20530 } 24. Ke1 { eval=-0.84 d=7 n=110592 } 24... Qe5+ { eval=+6.43 d=15 n=67252 } 25. Kf1 { eval=-1.90 d=11 n=122880 } 25... Qxh2 { eval=+7.11 d=14 n=22762 } 26. Rd8+ { eval=-2.58 d=11 n=114688 } 26... Kf7 { eval=+7.20 d=15 n=67922 } 27. Rxc6 { eval=-2.86 d=10 n=112640 } 27... Qh1+ { eval=+9.46 d=15 n=73754 } 28. Ke2 { eval=-3.70 d=11 n=61440 } 28... Bg4+ { eval=+9.36 d=15 n=37420 } 29. f3 { eval=-4.14 d=12 n=81920 } 29... Qxg2+ { eval=+9.56 d=15 n=10356 } 30. Ke1 { eval=-5.45 d=11 n=77824 } 30... Qg3+ { eval=+9.70 d=15 n=63215 } 31. Kd2 { eval=-5.47 d=11 n=67584 } 31... Qf4+ { eval=+9.76 d=14 n=8865 } 32. Kc2 { eval=-9.06 d=11 n=98304 } 32... Bf5+ { eval=+10.05 d=14 n=31540 } 33. Kb3 { eval=-9.18 d=12 n=73728 } 33... Qxf3+ { eval=+10.16 d=13 n=5978 } 34. Rc3 { eval=-9.39 d=12 n=73728 } 34... Qb7+ { eval=+10.22 d=14 n=38629 } 35. Ka4 { eval=-9.28 d=11 n=83968 } 35... Qa6+ { eval=+10.58 d=12 n=9590 } 36. Kb4 { eval=-9.43 d=11 n=81920 } 36... Qb6+ { eval=+10.32 d=14 n=14850 } 37. Ka3 { eval=-9.59 d=9 n=94208 } 37... Qa5+ { eval=+10.47 d=13 n=5123 } 38. Kb3 { eval=-9.79 d=10 n=79872 } 38... Qxd8 { eval=+10.48 d=14 n=20778 } 39. a4 { eval=-9.90 d=9 n=77824 } 39... Qd5+ { eval=+10.68 d=13 n=34168 } 40. Ka3 { eval=-10.09 d=9 n=77824 } 40... Be6 { eval=+10.99 d=14 n=21134 } 41. b3 { eval=-9.91 d=11 n=98304 } 41... a5 { eval=+10.85 d=14 n=28115 } 42. Rc7+ { eval=-10.09 d=8 n=40960 } 42... Kf6 { eval=+11.03 d=12 n=2285 } 43. Rc3 { eval=-12.30 d=11 n=116736 } 43... Qd6+ { eval=+12.31 d=13 n=4174 } 44. Kb2 { eval=-15.68 d=12 n=79872 } 44... Qe5 { eval=+15.42 d=13 n=45839 } 45. Kc2 { eval=-15.68 d=10 n=75776 } 45... Bf5+ { eval=+15.62 d=10 n=1479 } 46. Kb2 { eval=-16.01 d=11 n=71680 } 46... Qd4 { eval=+13.72 d=11 n=3265 } 47. Ka3 { eval=-17.06 d=8 n=96256 } 47... Qxc3 { eval=+11.37 d=18 n=3731 } 48. Ka2 { eval=-289.96 d=9 n=131072 } 48... Qc1 { eval=+13.00 d=2 n=108 } 49. b4 { eval=-289.98 d=9 n=124928 } 49... Be6# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X7"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Anglo-Scandinavian"]
+[Termination "checkmate"]
+
+1. c4 d5 2. cxd5 Nf6 3. e4 Nxe4 4. Qa4+ c6 5. Qxe4 cxd5 { eval=-1.52 d=8 n=86016 } 6. Bb5+ { eval=+4.24 d=15 n=55696 } 6... Nc6 { eval=-1.51 d=11 n=88064 } 7. Qa4 { eval=+4.67 d=14 n=37933 } 7... Bd7 { eval=-1.18 d=7 n=65536 } 8. d4 { eval=+4.69 d=14 n=10354 } 8... a6 { eval=-0.99 d=7 n=75776 } 9. Bxc6 { eval=+5.27 d=14 n=6162 } 9... Bxc6 { eval=-1.48 d=9 n=90112 } 10. Qb3 { eval=+5.22 d=15 n=102848 } 10... h6 { eval=-1.58 d=7 n=112640 } 11. Nf3 { eval=+5.79 d=14 n=24331 } 11... e6 { eval=-1.60 d=7 n=108544 } 12. O-O { eval=+5.69 d=15 n=56887 } 12... Bd6 { eval=-1.76 d=7 n=90112 } 13. Re1 { eval=+5.51 d=15 n=55230 } 13... O-O { eval=-1.78 d=7 n=92160 } 14. Bd2 { eval=+5.51 d=14 n=62481 } 14... a5 { eval=-1.90 d=6 n=92160 } 15. a4 { eval=+6.04 d=13 n=9738 } 15... Qf6 { eval=-2.10 d=6 n=73728 } 16. Nc3 { eval=+5.98 d=15 n=65866 } 16... Rfd8 { eval=-2.21 d=6 n=75776 } 17. Nb5 { eval=+6.15 d=15 n=57368 } 17... Bf4 { eval=-2.51 d=6 n=57344 } 18. Bxf4 { eval=+6.23 d=14 n=12264 } 18... Qxf4 { eval=-2.63 d=8 n=71680 } 19. g3 { eval=+5.93 d=16 n=58819 } 19... Qf6 { eval=-2.56 d=8 n=61440 } 20. Ra3 { eval=+5.76 d=16 n=30889 } 20... Qe7 { eval=-2.23 d=8 n=106496 } 21. Rb1 { eval=+5.45 d=14 n=42963 } 21... Qb4 { eval=-1.87 d=7 n=94208 } 22. Qd3 { eval=+5.49 d=13 n=19534 } 22... Rdc8 { eval=-1.91 d=7 n=53248 } 23. Nc3 { eval=+5.65 d=11 n=1777 } 23... Qb6 { eval=-2.06 d=6 n=63488 } 24. Nd2 { eval=+5.29 d=14 n=27175 } 24... Rc7 { eval=-1.79 d=5 n=67584 } 25. Rb3 { eval=+5.50 d=12 n=4854 } 25... Qa6 { eval=-2.22 d=8 n=40960 } 26. Qxa6 { eval=+5.46 d=11 n=2079 } 26... Rxa6 { eval=-2.32 d=10 n=81920 } 27. Rf1 { eval=+5.22 d=15 n=35860 } 27... Bd7 { eval=-2.24 d=8 n=102181 } 28. f4 { eval=+5.20 d=14 n=28567 } 28... Kh7 { eval=-2.03 d=7 n=94208 } 29. Kf2 { eval=+5.37 d=16 n=18935 } 29... Ra8 { eval=-1.83 d=8 n=98304 } 30. g4 { eval=+5.27 d=14 n=20461 } 30... Rac8 { eval=-1.83 d=6 n=98304 } 31. Kg3 { eval=+5.34 d=11 n=1915 } 31... g6 { eval=-1.73 d=7 n=96256 } 32. Rb1 { eval=+5.34 d=14 n=23036 } 32... f5 { eval=-1.64 d=8 n=94208 } 33. gxf5 { eval=+5.84 d=11 n=1914 } 33... gxf5 { eval=-1.80 d=9 n=90112 } 34. Kf2 { eval=+5.30 d=14 n=15048 } 34... Rg8 { eval=-1.60 d=9 n=96256 } 35. Rb6 { eval=+5.17 d=14 n=33322 } 35... Rg4 { eval=-1.46 d=8 n=88064 } 36. Ne2 { eval=+5.34 d=12 n=8510 } 36... Kg8 { eval=-1.37 d=9 n=90112 } 37. h3 { eval=+5.67 d=13 n=16294 } 37... Rg7 { eval=-1.71 d=9 n=83968 } 38. Nf3 { eval=+5.70 d=13 n=23156 } 38... Bc6 { eval=-1.62 d=8 n=98304 } 39. Ra1 { eval=+6.00 d=11 n=2332 } 39... Kf7 { eval=-2.12 d=8 n=94208 } 40. Rc1 { eval=+5.41 d=15 n=36694 } 40... Kg8 { eval=-2.30 d=9 n=88064 } 41. Rc5 { eval=+6.05 d=11 n=2998 } 41... Bxa4 { eval=-2.42 d=9 n=88064 } 42. Rxe6 { eval=+6.14 d=12 n=2937 } 42... Rxc5 { eval=-2.52 d=8 n=90112 } 43. dxc5 { eval=+6.85 d=12 n=2712 } 43... Bd1 { eval=-2.94 d=8 n=65536 } 44. Ned4 { eval=+6.49 d=14 n=16969 } 44... Bxf3 { eval=-3.35 d=9 n=65536 } 45. Kxf3 { eval=+6.32 d=13 n=11215 } 45... Rc7 { eval=-3.37 d=10 n=69632 } 46. Nxf5 { eval=+6.74 d=12 n=7441 } 46... Rxc5 { eval=-3.38 d=9 n=69632 } 47. Nxh6+ { eval=+6.70 d=15 n=54695 } 47... Kf8 { eval=-3.58 d=10 n=96256 } 48. Rf6+ { eval=+6.26 d=14 n=37621 } 48... Kg7 { eval=-3.06 d=10 n=108544 } 49. Rb6 { eval=+6.40 d=12 n=2666 } 49... d4 { eval=-3.87 d=9 n=108544 } 50. Ng4 { eval=+6.81 d=11 n=3608 } 50... Rc7 { eval=-4.24 d=10 n=106496 } 51. Ke4 { eval=+6.67 d=14 n=32786 } 51... a4 { eval=-4.29 d=9 n=57344 } 52. Kxd4 { eval=+6.94 d=13 n=9273 } 52... Kg8 { eval=-4.40 d=8 n=61440 } 53. Rb5 { eval=+6.82 d=14 n=25245 } 53... Kh8 { eval=-4.41 d=8 n=59392 } 54. Ke5 { eval=+6.83 d=13 n=17496 } 54... Re7+ { eval=-4.30 d=9 n=69632 } 55. Kf6 { eval=+7.34 d=13 n=6501 } 55... Rh7 { eval=-4.44 d=9 n=75776 } 56. Rd5 { eval=+7.31 d=15 n=27967 } 56... Rxh3 { eval=-4.05 d=9 n=73728 } 57. Kg6 { eval=+9.45 d=15 n=1829 } 57... Rd3 { eval=-289.96 d=10 n=94208 } 58. Rxd3 { eval=+8.22 d=2 n=79 } 58... Kg8 { eval=-289.98 d=10 n=102400 } 59. Rd8# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X7"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Bellon Gambit"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. Nf3 e4 4. Ng5 b5 5. e3 { eval=+0.85 d=6 n=73728 } 5... bxc4 { eval=-0.29 d=14 n=53623 } 6. Qa4 { eval=+0.51 d=7 n=71680 } 6... Be7 { eval=+0.13 d=12 n=22100 } 7. Bxc4 { eval=+1.63 d=7 n=69632 } 7... O-O { eval=-0.03 d=13 n=12969 } 8. Qb3 { eval=+2.02 d=7 n=63488 } 8... Ba6 { eval=-0.46 d=13 n=30939 } 9. Bxf7+ { eval=+2.41 d=7 n=55296 } 9... Kh8 { eval=+0.51 d=11 n=12058 } 10. Bd5 { eval=+2.24 d=7 n=59392 } 10... Nxd5 { eval=+1.84 d=10 n=7382 } 11. Nf7+ { eval=+0.77 d=8 n=61440 } 11... Rxf7 { eval=+6.15 d=13 n=8781 } 12. Qxd5 { eval=+0.15 d=9 n=63488 } 12... Qf8 { eval=+6.84 d=14 n=7674 } 13. Qxa8 { eval=+0.26 d=9 n=57344 } 13... Rxf2 { eval=+6.97 d=14 n=12107 } 14. Kd1 { eval=-0.37 d=8 n=53248 } 14... Bd3 { eval=+8.34 d=14 n=8974 } 15. Re1 { eval=-3.34 d=9 n=57344 } 15... Rf1 { eval=+8.75 d=15 n=56583 } 16. Ne2 { eval=-5.10 d=10 n=63488 } 16... Bh4 { eval=+8.71 d=22 n=14713 } 17. g3 { eval=-6.86 d=10 n=71680 } 17... Bxe2+ { eval=+11.72 d=24 n=10648 } 18. Kc2 { eval=-289.92 d=9 n=79872 } 18... Qc5+ { eval=+12.18 d=33 n=18268 } 19. Kb3 { eval=-289.94 d=9 n=92160 } 19... Qb5+ { eval=+8.78 d=79 n=35669 } 20. Ka3 { eval=-289.96 d=9 n=112640 } 20... Be7+ 21. b4 { eval=-289.98 d=9 n=100352 } 21... Qxb4# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X7"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Bellon Gambit"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. Nf3 e4 4. Ng5 b5 5. d3 { eval=+0.54 d=15 n=67363 } 5... bxc4 { eval=-0.91 d=6 n=53248 } 6. Ngxe4 { eval=+0.79 d=11 n=7746 } 6... Nxe4 { eval=-0.51 d=8 n=88064 } 7. dxe4 { eval=+0.80 d=10 n=15484 } 7... Nc6 { eval=-0.70 d=8 n=118784 } 8. e3 { eval=+1.07 d=12 n=17562 } 8... Ba6 { eval=-0.70 d=8 n=63488 } 9. Qa4 { eval=+2.27 d=13 n=11335 } 9... Qc8 { eval=-1.17 d=7 n=65536 } 10. Bxc4 { eval=+2.52 d=15 n=29226 } 10... Bxc4 { eval=-1.07 d=9 n=65536 } 11. Qxc4 { eval=+2.89 d=13 n=15213 } 11... Bd6 { eval=-1.21 d=8 n=102400 } 12. b3 { eval=+2.40 d=15 n=82745 } 12... Qd8 { eval=-1.02 d=6 n=55296 } 13. O-O { eval=+2.93 d=11 n=11370 } 13... Qg5 { eval=-0.85 d=5 n=55296 } 14. f4 { eval=+3.45 d=11 n=5625 } 14... Qa5 { eval=-1.33 d=6 n=73728 } 15. e5 { eval=+4.38 d=14 n=34187 } 15... Bb4 { eval=-1.25 d=7 n=51200 } 16. Nd5 { eval=+4.73 d=14 n=25307 } 16... O-O { eval=-1.21 d=7 n=55296 } 17. a3 { eval=+5.20 d=14 n=15841 } 17... Rab8 { eval=-1.40 d=6 n=51200 } 18. Bb2 { eval=+5.51 d=15 n=32586 } 18... Bc5 { eval=-1.40 d=7 n=63488 } 19. b4 { eval=+5.15 d=16 n=78787 } 19... Qb5 { eval=-1.58 d=7 n=49152 } 20. Rac1 { eval=+5.26 d=15 n=28417 } 20... Qxc4 { eval=-1.80 d=8 n=71680 } 21. Rxc4 { eval=+5.33 d=15 n=31135 } 21... Bb6 { eval=-1.85 d=8 n=63488 } 22. Rd1 { eval=+5.60 d=12 n=8378 } 22... Rfd8 { eval=-1.84 d=8 n=55296 } 23. a4 { eval=+5.45 d=14 n=18763 } 23... a6 { eval=-1.74 d=6 n=49152 } 24. Kf2 { eval=+5.56 d=14 n=29513 } 24... h6 { eval=-1.58 d=6 n=59392 } 25. g4 { eval=+5.59 d=13 n=21295 } 25... Kh8 { eval=-1.60 d=5 n=49152 } 26. Bc3 { eval=+5.65 d=14 n=22234 } 26... Rb7 { eval=-1.61 d=7 n=61440 } 27. Nf6 { eval=+5.39 d=14 n=22160 } 27... Nxb4 { eval=-1.86 d=7 n=65536 } 28. Rxb4 { eval=+6.29 d=10 n=1379 } 28... a5 { eval=-1.84 d=8 n=65536 } 29. Rb2 { eval=+6.56 d=14 n=11623 } 29... gxf6 { eval=-2.53 d=8 n=58820 } 30. e6 { eval=+6.72 d=13 n=3316 } 30... fxe6 { eval=-2.98 d=8 n=51200 } 31. Bxf6+ { eval=+6.35 d=15 n=37608 } 31... Kg8 { eval=-3.91 d=11 n=73728 } 32. Bxd8 { eval=+6.83 d=13 n=4971 } 32... Bxe3+ { eval=-3.63 d=11 n=69632 } 33. Kxe3 { eval=+6.48 d=13 n=4681 } 33... Rxb2 { eval=-3.78 d=11 n=86016 } 34. Bxc7 { eval=+6.58 d=13 n=26132 } 34... d5 { eval=-3.07 d=9 n=102400 } 35. Bxa5 { eval=+6.13 d=14 n=36414 } 35... Rxh2 { eval=-2.80 d=9 n=77824 } 36. Ra1 { eval=+6.29 d=12 n=7697 } 36... Rh3+ { eval=-2.14 d=9 n=86016 } 37. Kd4 { eval=+6.46 d=13 n=13739 } 37... Rg3 { eval=-1.90 d=9 n=75776 } 38. Bc7 { eval=+7.03 d=13 n=7754 } 38... Rxg4 { eval=-1.49 d=10 n=90112 } 39. a5 { eval=+7.03 d=11 n=3107 } 39... Rg7 { eval=-1.56 d=8 n=90112 } 40. Be5 { eval=+7.15 d=14 n=29924 } 40... Ra7 { eval=-2.60 d=9 n=69632 } 41. Kc5 { eval=+7.21 d=12 n=3692 } 41... h5 { eval=-2.27 d=9 n=67584 } 42. Kb6 { eval=+7.26 d=14 n=11498 } 42... Ra8 { eval=-3.34 d=9 n=75776 } 43. Kb7 { eval=+7.37 d=13 n=5273 } 43... Rd8 { eval=-3.79 d=10 n=67584 } 44. a6 { eval=+7.71 d=14 n=31027 } 44... Rd7+ { eval=-4.97 d=11 n=57344 } 45. Bc7 { eval=+7.54 d=14 n=33717 } 45... Re7 { eval=-5.29 d=12 n=73728 } 46. Rg1+ { eval=+7.48 d=13 n=36661 } 46... Kf7 { eval=-6.03 d=14 n=79872 } 47. a7 { eval=+7.65 d=13 n=26688 } 47... Re8 { eval=-6.20 d=14 n=88064 } 48. Be5 { eval=+7.74 d=13 n=23696 } 48... h4 { eval=-6.30 d=11 n=57344 } 49. Rg7+ { eval=+8.18 d=11 n=1624 } 49... Kf8 { eval=-9.82 d=13 n=71680 } 50. Rh7 { eval=+8.31 d=12 n=2647 } 50... h3 { eval=-10.69 d=13 n=77824 } 51. Rh8+ { eval=+10.28 d=15 n=24301 } 51... Ke7 { eval=-10.69 d=12 n=61440 } 52. Rxe8+ { eval=+10.29 d=12 n=1852 } 52... Kxe8 { eval=-11.67 d=12 n=69632 } 53. a8=Q+ { eval=+11.22 d=14 n=8312 } 53... Kf7 { eval=-11.67 d=10 n=73728 } 54. Qh8 { eval=+12.73 d=18 n=7576 } 54... Ke7 { eval=-289.94 d=9 n=114688 } 55. Bf6+ { eval=+11.22 d=42 n=7158 } 55... Kf7 { eval=-289.96 d=10 n=94208 } 56. Qg7+ { eval=+11.69 d=9 n=941 } 56... Ke8 { eval=-289.98 d=10 n=102400 } 57. Qe7# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X7"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Bremen Smyslov System"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. g3 Bb4 4. Bg2 O-O 5. e4 Bxc3 6. bxc3 Re8 { eval=-0.27 d=14 n=48901 } 7. d3 { eval=-0.52 d=8 n=124928 } 7... c6 { eval=-0.13 d=13 n=41027 } 8. Ba3 { eval=-0.10 d=6 n=83968 } 8... d5 { eval=+0.65 d=11 n=11510 } 9. cxd5 { eval=+0.66 d=9 n=77824 } 9... cxd5 { eval=+0.71 d=13 n=9429 } 10. exd5 { eval=+0.18 d=8 n=94208 } 10... Nxd5 { eval=+0.89 d=12 n=13932 } 11. Ne2 { eval=-0.11 d=7 n=71680 } 11... Nc6 { eval=+0.95 d=12 n=9915 } 12. Qb3 { eval=+0.08 d=7 n=53248 } 12... Nb6 { eval=+0.87 d=14 n=58135 } 13. Be4 { eval=-0.25 d=7 n=90112 } 13... Bh3 { eval=+1.75 d=12 n=27246 } 14. Rd1 { eval=-0.20 d=6 n=65536 } 14... Rc8 { eval=+1.81 d=13 n=26397 } 15. Bc5 { eval=-0.43 d=6 n=59392 } 15... Nd7 { eval=+2.41 d=13 n=45930 } 16. Be3 { eval=+0.00 d=6 n=67584 } 16... Qc7 { eval=+2.21 d=14 n=19471 } 17. Qa3 { eval=-0.17 d=6 n=73728 } 17... Nf6 { eval=+3.33 d=15 n=16007 } 18. Bf3 { eval=-0.84 d=6 n=61440 } 18... e4 { eval=+5.96 d=14 n=17524 } 19. Bxe4 { eval=-1.13 d=8 n=75776 } 19... Nxe4 { eval=+6.38 d=14 n=47393 } 20. dxe4 { eval=-1.19 d=8 n=61440 } 20... Ne5 { eval=+6.27 d=15 n=32853 } 21. Nf4 { eval=-0.61 d=6 n=75776 } 21... Qc4 { eval=+6.28 d=14 n=19727 } 22. f3 { eval=-2.12 d=7 n=69632 } 22... Nxf3+ { eval=+6.79 d=14 n=8959 } 23. Kf2 { eval=-2.54 d=8 n=63488 } 23... Qxe4 { eval=+6.92 d=14 n=37184 } 24. Qc1 { eval=-2.61 d=7 n=69632 } 24... Bf5 { eval=+7.01 d=13 n=8281 } 25. Bxa7 { eval=-2.21 d=6 n=51200 } 25... Ng5 { eval=+7.62 d=15 n=16068 } 26. Kg1 { eval=-1.67 d=5 n=59392 } 26... Nf3+ { eval=+7.62 d=14 n=10112 } 27. Kf2 { eval=+0.00 d=17 n=94208 } 27... Ng5 { eval=+7.28 d=16 n=22601 } 28. Kg1 { eval=+0.00 d=11 n=75776 } 28... Nh3+ { eval=+10.00 d=14 n=77014 } 29. Nxh3 { eval=-2.58 d=8 n=86016 } 29... Bxh3 { eval=+10.77 d=12 n=6184 } 30. Qd2 { eval=-4.80 d=8 n=65536 } 30... Rcd8 { eval=+20.63 d=14 n=21816 } 31. Bd4 { eval=-2.47 d=7 n=51200 } 31... Qf3 { eval=+21.01 d=15 n=7121 } 32. Rb1 { eval=-5.42 d=7 n=55296 } 32... Re2 { eval=+10.86 d=17 n=5437 } 33. Qxe2 { eval=-6.06 d=6 n=57344 } 33... Qxe2 { eval=+10.78 d=47 n=9418 } 34. Bf2 { eval=-289.96 d=9 n=112640 } 34... Rd2 35. Bd4 { eval=-289.98 d=9 n=100352 } 35... Qg2# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X7"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Bremen Smyslov System"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. g3 Bb4 4. Bg2 O-O 5. e4 Bxc3 6. bxc3 d6 { eval=+0.77 d=7 n=63488 } 7. Ne2 { eval=+0.57 d=13 n=68241 } 7... Be6 { eval=+0.75 d=7 n=94208 } 8. d3 { eval=+0.66 d=12 n=12014 } 8... Nbd7 { eval=+0.74 d=7 n=102400 } 9. O-O { eval=+0.64 d=12 n=68771 } 9... Nc5 { eval=+0.74 d=6 n=81920 } 10. f4 { eval=+0.98 d=10 n=18033 } 10... Qe7 { eval=+0.88 d=6 n=81920 } 11. h3 { eval=+1.20 d=11 n=19127 } 11... Qd7 { eval=+0.91 d=5 n=63488 } 12. f5 { eval=+5.16 d=14 n=8286 } 12... Bxc4 { eval=+0.75 d=8 n=65536 } 13. dxc4 { eval=+4.97 d=15 n=17908 } 13... Nfxe4 { eval=+0.61 d=7 n=57344 } 14. Qc2 { eval=+5.80 d=15 n=42222 } 14... Qc6 { eval=+0.44 d=7 n=59392 } 15. Be3 { eval=+6.41 d=14 n=60963 } 15... a5 { eval=+0.45 d=5 n=47104 } 16. f6 { eval=+6.85 d=14 n=16219 } 16... gxf6 { eval=+0.16 d=6 n=88064 } 17. g4 { eval=+7.09 d=14 n=43093 } 17... a4 { eval=+0.16 d=4 n=65536 } 18. Ng3 { eval=+7.66 d=15 n=90993 } 18... f5 { eval=-1.51 d=7 n=86016 } 19. Rxf5 { eval=+7.85 d=15 n=4243 } 19... Nb3 { eval=-3.54 d=6 n=69632 } 20. Nxe4 { eval=+10.48 d=15 n=23263 } 20... Nxa1 { eval=-1.11 d=8 n=67584 } 21. Nf6+ { eval=+11.62 d=13 n=7358 } 21... Kg7 { eval=-3.71 d=10 n=73728 } 22. Qf2 { eval=+11.73 d=13 n=11054 } 22... Qxc4 { eval=-0.91 d=6 n=55296 } 23. Qh4 { eval=+14.30 d=23 n=9610 } 23... h5 { eval=-0.80 d=4 n=57344 } 24. Qg5+ { eval=+12.12 d=3 n=273 } 24... Kh8 { eval=-289.98 d=9 n=90112 } 25. Qh6# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X7"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Keres Defense"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. g3 c6 4. Nf3 e4 5. Nd4 d5 6. cxd5 Qb6 7. Qa4 { eval=+0.32 d=8 n=67536 } 7... Bc5 { eval=+0.23 d=14 n=55686 } 8. e3 { eval=+0.50 d=7 n=61440 } 8... O-O { eval=+0.39 d=13 n=18989 } 9. dxc6 { eval=+0.83 d=7 n=61440 } 9... Bxd4 { eval=+0.07 d=13 n=46024 } 10. cxb7 { eval=+1.74 d=7 n=71680 } 10... Qxb7 { eval=+0.25 d=15 n=21647 } 11. exd4 { eval=+1.71 d=8 n=71680 } 11... e3 { eval=+0.27 d=14 n=10416 } 12. Rg1 { eval=+1.25 d=7 n=71680 } 12... exf2+ { eval=+4.04 d=14 n=33989 } 13. Kxf2 { eval=+0.75 d=9 n=69632 } 13... Ng4+ { eval=+3.82 d=15 n=27867 } 14. Ke2 { eval=+0.35 d=9 n=75776 } 14... Bd7 { eval=+4.69 d=12 n=12928 } 15. Qb3 { eval=+0.16 d=8 n=69632 } 15... Re8+ { eval=+8.71 d=15 n=98090 } 16. Kd1 { eval=-0.57 d=10 n=73728 } 16... Qf3+ { eval=+8.62 d=15 n=22567 } 17. Be2 { eval=-0.87 d=10 n=69632 } 17... Nf2+ { eval=+8.72 d=15 n=96688 } 18. Ke1 { eval=-1.19 d=8 n=57344 } 18... Rxe2+ { eval=+9.06 d=13 n=70024 } 19. Nxe2 { eval=+0.00 d=13 n=98304 } 19... Nd3+ { eval=+8.88 d=14 n=6569 } 20. Kd1 { eval=+0.00 d=12 n=73728 } 20... Na6 { eval=+9.50 d=14 n=61853 } 21. Qc4 { eval=+0.00 d=7 n=71680 } 21... Nab4 { eval=+12.18 d=14 n=13417 } 22. a3 { eval=+0.00 d=6 n=67584 } 22... Nf2+ { eval=+12.92 d=14 n=3413 } 23. Ke1 { eval=-289.92 d=10 n=126976 } 23... Nbd3+ { eval=+13.31 d=16 n=3214 } 24. Qxd3 { eval=-289.94 d=10 n=116736 } 24... Nxd3+ { eval=+13.25 d=44 n=8828 } 25. Kd1 { eval=-289.96 d=10 n=129024 } 25... Ba4+ 26. b3 { eval=-289.98 d=10 n=114688 } 26... Bxb3# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X7"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Keres Defense"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. g3 c6 4. Nf3 e4 5. Nd4 d5 6. cxd5 Qb6 7. Nb3 { eval=+0.34 d=15 n=72060 } 7... cxd5 { eval=+0.55 d=7 n=79872 } 8. Bg2 { eval=+0.41 d=15 n=22184 } 8... Nc6 { eval=+0.85 d=7 n=75776 } 9. d3 { eval=+0.59 d=14 n=52234 } 9... Bb4 { eval=+0.76 d=7 n=83968 } 10. O-O { eval=+0.80 d=13 n=15502 } 10... Bxc3 { eval=+0.72 d=6 n=75776 } 11. bxc3 { eval=+0.79 d=15 n=11449 } 11... Bf5 { eval=+0.61 d=6 n=71680 } 12. Ba3 { eval=+1.54 d=12 n=16189 } 12... O-O-O { eval=+0.67 d=6 n=65536 } 13. Bc1 { eval=+1.86 d=14 n=104440 } 13... Kb8 { eval=+0.85 d=6 n=75776 } 14. Rb1 { eval=+4.25 d=14 n=57407 } 14... exd3 { eval=+0.60 d=5 n=57344 } 15. exd3 { eval=+4.50 d=13 n=28198 } 15... Qb5 { eval=+0.63 d=6 n=67584 } 16. Nd4 { eval=+6.04 d=15 n=52007 } 16... Nxd4 { eval=-0.44 d=9 n=81920 } 17. Rxb5 { eval=+6.07 d=14 n=10599 } 17... Nxb5 { eval=-0.44 d=9 n=65536 } 18. a4 { eval=+6.42 d=14 n=33944 } 18... Nxc3 { eval=+0.57 d=7 n=73728 } 19. Qd2 { eval=+6.60 d=14 n=11272 } 19... Bxd3 { eval=-0.83 d=8 n=86016 } 20. Qxd3 { eval=+7.78 d=13 n=7564 } 20... Nxa4 { eval=-1.12 d=8 n=75776 } 21. Qa3 { eval=+8.19 d=15 n=53929 } 21... Nb6 { eval=-0.97 d=9 n=96256 } 22. Bf4+ { eval=+8.15 d=13 n=4685 } 22... Ka8 { eval=-1.16 d=10 n=75776 } 23. Ra1 { eval=+7.95 d=14 n=38607 } 23... Nc8 { eval=-1.21 d=8 n=73728 } 24. Bh3 { eval=+8.33 d=14 n=25984 } 24... a6 { eval=-1.31 d=8 n=63488 } 25. Bf1 { eval=+8.21 d=14 n=17626 } 25... Rd7 { eval=-1.36 d=8 n=73728 } 26. Bxa6 { eval=+10.68 d=14 n=7794 } 26... bxa6 { eval=-1.57 d=9 n=75776 } 27. Qxa6+ { eval=+12.56 d=14 n=17270 } 27... Na7 { eval=-4.73 d=9 n=75776 } 28. Be3 { eval=+12.47 d=14 n=8217 } 28... d4 { eval=-5.17 d=8 n=75776 } 29. Qc6+ { eval=+13.87 d=20 n=12105 } 29... Rb7 { eval=-11.72 d=10 n=104448 } 30. Bxd4 { eval=+11.42 d=20 n=5747 } 30... Kb8 { eval=-289.92 d=9 n=94208 } 31. Bxa7+ { eval=+11.42 d=30 n=10447 } 31... Ka8 { eval=-289.94 d=9 n=110592 } 32. Qa6 { eval=+11.31 d=44 n=14333 } 32... Rb1+ { eval=-289.96 d=11 n=106496 } 33. Rxb1 Rd8 { eval=-289.98 d=9 n=112640 } 34. Qb7# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X7"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical 3.Nf3"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nc3 Nf6 3. Nf3 d5 4. cxd5 Nxd5 5. e3 e6 6. d4 Nc6 { eval=-0.20 d=14 n=75486 } 7. Bb5 { eval=+0.19 d=7 n=67584 } 7... cxd4 { eval=-0.16 d=11 n=15449 } 8. exd4 { eval=+0.20 d=7 n=69632 } 8... Bd6 { eval=-0.17 d=11 n=19653 } 9. Qb3 { eval=+0.20 d=7 n=75776 } 9... O-O { eval=+0.17 d=11 n=17066 } 10. Bd2 { eval=+0.24 d=6 n=69632 } 10... Nxc3 { eval=+0.22 d=16 n=94305 } 11. Bxc6 { eval=+0.11 d=7 n=65536 } 11... bxc6 { eval=+0.48 d=11 n=26957 } 12. Qxc3 { eval=+0.20 d=7 n=94208 } 12... Ba6 { eval=+0.22 d=13 n=79202 } 13. Qxc6 { eval=+0.86 d=7 n=83968 } 13... Bd3 { eval=+0.20 d=14 n=50744 } 14. Qc3 { eval=+0.64 d=6 n=77824 } 14... Bb5 { eval=+0.19 d=14 n=28592 } 15. a4 { eval=+0.75 d=7 n=69632 } 15... Ba6 { eval=+0.28 d=13 n=12818 } 16. Qc2 { eval=+0.62 d=6 n=71680 } 16... Rc8 { eval=+2.90 d=12 n=8437 } 17. Qb3 { eval=+0.44 d=6 n=59392 } 17... Re8 { eval=+3.66 d=14 n=28647 } 18. h3 { eval=+0.30 d=6 n=57344 } 18... e5 { eval=+6.00 d=13 n=4094 } 19. d5 { eval=-0.83 d=7 n=73728 } 19... Qf6 { eval=+6.28 d=15 n=64746 } 20. Rc1 { eval=+0.18 d=6 n=73728 } 20... Rxc1+ { eval=+6.63 d=13 n=9870 } 21. Bxc1 { eval=-0.67 d=9 n=81920 } 21... Rc8 { eval=+7.45 d=14 n=34360 } 22. Be3 { eval=-0.27 d=7 n=63488 } 22... Qg6 { eval=+9.18 d=12 n=9212 } 23. Rg1 { eval=-0.23 d=6 n=73728 } 23... Bb4+ { eval=+11.94 d=16 n=15871 } 24. Nd2 { eval=-11.12 d=11 n=81920 } 24... Rc1+ { eval=+10.28 d=29 n=5940 } 25. Qd1 { eval=-289.96 d=10 n=118784 } 25... Qd3 { eval=+9.89 d=2 n=148 } 26. Qxc1 { eval=-289.98 d=10 n=131072 } 26... Qe2# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X7"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical 3.Nf3"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nc3 Nf6 3. Nf3 d5 4. cxd5 Nxd5 5. e3 e6 6. d4 Nxc3 { eval=-0.10 d=7 n=69632 } 7. bxc3 { eval=+0.21 d=11 n=27418 } 7... cxd4 { eval=-0.15 d=7 n=88064 } 8. cxd4 { eval=+0.29 d=14 n=34308 } 8... Bd6 { eval=-0.23 d=7 n=63488 } 9. Bd3 { eval=+0.41 d=12 n=13861 } 9... Nc6 { eval=-0.11 d=7 n=63488 } 10. O-O { eval=+0.50 d=13 n=22850 } 10... Nb4 { eval=-0.22 d=6 n=59392 } 11. Bb1 { eval=+0.83 d=10 n=20813 } 11... Bd7 { eval=+0.19 d=6 n=65536 } 12. e4 { eval=+0.94 d=11 n=18448 } 12... Bb5 { eval=+0.28 d=7 n=94208 } 13. Re1 { eval=+1.37 d=10 n=13661 } 13... Qc7 { eval=-0.03 d=6 n=69632 } 14. Bb2 { eval=+1.48 d=14 n=121275 } 14... Nc6 { eval=-0.05 d=6 n=73728 } 15. Qb3 { eval=+1.83 d=13 n=36761 } 15... Qb6 { eval=-0.09 d=6 n=69632 } 16. d5 { eval=+2.67 d=10 n=11780 } 16... Bc5 { eval=-0.02 d=6 n=73728 } 17. Rc1 { eval=+2.04 d=15 n=78524 } 17... Bxf2+ { eval=-0.02 d=6 n=67584 } 18. Kh1 { eval=+2.51 d=13 n=5242 } 18... exd5 { eval=-0.45 d=6 n=61440 } 19. exd5 { eval=+4.87 d=11 n=7619 } 19... Ne7 { eval=-0.88 d=6 n=65536 } 20. d6 { eval=+5.04 d=12 n=8032 } 20... Nc8 { eval=-1.18 d=6 n=61440 } 21. Bxg7 { eval=+6.55 d=14 n=10448 } 21... Rg8 { eval=-2.02 d=7 n=67584 } 22. Qb2 { eval=+6.73 d=14 n=8823 } 22... Nxd6 { eval=-1.63 d=7 n=75776 } 23. Qe5+ { eval=+8.89 d=15 n=112792 } 23... Kd7 { eval=-2.10 d=8 n=63488 } 24. Bf5+ { eval=+8.75 d=13 n=59061 } 24... Nxf5 { eval=-1.34 d=8 n=61440 } 25. Qxf5+ { eval=+8.73 d=13 n=7299 } 25... Ke7 { eval=-1.56 d=8 n=67584 } 26. Qe5+ { eval=+8.87 d=14 n=8224 } 26... Kd7 { eval=-2.70 d=8 n=57344 } 27. Rd1+ { eval=+11.45 d=14 n=10857 } 27... Kc8 { eval=-4.11 d=8 n=59392 } 28. Rac1+ { eval=+10.95 d=17 n=9893 } 28... Bc6 { eval=-8.24 d=10 n=71680 } 29. Qf5+ { eval=+10.89 d=15 n=20047 } 29... Kb8 { eval=-7.51 d=10 n=63488 } 30. Be5+ { eval=+10.87 d=14 n=6521 } 30... Qc7 { eval=-13.49 d=10 n=63488 } 31. Bxc7+ { eval=+11.67 d=15 n=7556 } 31... Kxc7 { eval=-8.90 d=8 n=55296 } 32. Qxf7+ { eval=+11.83 d=13 n=9309 } 32... Kb6 { eval=-7.88 d=8 n=53248 } 33. Rxc6+ { eval=+12.20 d=15 n=14828 } 33... bxc6 { eval=-7.54 d=8 n=63488 } 34. Rb1+ { eval=+13.76 d=13 n=7634 } 34... Ka5 { eval=-8.13 d=8 n=73728 } 35. Qf5+ { eval=+13.71 d=23 n=11733 } 35... c5 { eval=-7.10 d=7 n=63488 } 36. Qd3 { eval=+10.63 d=2 n=159 } 36... Rg6 { eval=-289.98 d=9 n=83968 } 37. Qb5# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X7"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical Rubinstein"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. Nf3 e6 6. O-O Nge7 7. e4 { eval=+0.31 d=7 n=69632 } 7... O-O { eval=+0.25 d=13 n=29812 } 8. d3 { eval=+0.33 d=6 n=61440 } 8... d6 { eval=+0.27 d=12 n=10858 } 9. Qb3 { eval=+0.38 d=7 n=67584 } 9... a6 { eval=+0.54 d=11 n=13963 } 10. Be3 { eval=+0.48 d=6 n=59392 } 10... Nd4 { eval=+0.84 d=12 n=15013 } 11. Bxd4 { eval=+0.17 d=8 n=79872 } 11... cxd4 { eval=+1.26 d=12 n=6779 } 12. Na4 { eval=+0.05 d=8 n=59392 } 12... b5 { eval=+6.20 d=13 n=5632 } 13. cxb5 { eval=-1.07 d=9 n=75776 } 13... axb5 { eval=+5.83 d=16 n=120964 } 14. Qxb5 { eval=-1.00 d=9 n=88064 } 14... Bd7 { eval=+5.84 d=15 n=41264 } 15. Qb4 { eval=-1.01 d=9 n=83968 } 15... Bxa4 { eval=+6.10 d=15 n=13562 } 16. Nxd4 { eval=-0.99 d=7 n=83968 } 16... Qb8 { eval=+6.40 d=15 n=36488 } 17. Qxb8 { eval=-3.15 d=8 n=88064 } 17... Raxb8 { eval=+6.38 d=14 n=43492 } 18. Nb3 { eval=-2.58 d=8 n=81920 } 18... Rfd8 { eval=+6.36 d=14 n=36156 } 19. Rfb1 { eval=-2.44 d=8 n=71680 } 19... g5 { eval=+6.34 d=15 n=83742 } 20. h4 { eval=-2.27 d=7 n=75776 } 20... gxh4 { eval=+6.52 d=14 n=18520 } 21. gxh4 { eval=-2.57 d=9 n=67584 } 21... Ng6 { eval=+6.84 d=14 n=27736 } 22. h5 { eval=-2.85 d=8 n=65536 } 22... Nf4 { eval=+6.86 d=13 n=10988 } 23. d4 { eval=-3.21 d=8 n=75776 } 23... Kh8 { eval=+6.80 d=16 n=60704 } 24. d5 { eval=-2.77 d=8 n=83968 } 24... Rg8 { eval=+8.08 d=14 n=15431 } 25. dxe6 { eval=-2.87 d=7 n=63488 } 25... Be5 { eval=+8.91 d=14 n=46437 } 26. exf7 { eval=-3.07 d=8 n=57344 } 26... Rxg2+ { eval=+8.98 d=13 n=6516 } 27. Kh1 { eval=-4.27 d=9 n=67584 } 27... Rg5 { eval=+9.15 d=13 n=7179 } 28. h6 { eval=-2.43 d=7 n=59392 } 28... Rf8 { eval=+9.32 d=15 n=34848 } 29. Rd1 { eval=-4.13 d=8 n=71680 } 29... Rxf7 { eval=+9.66 d=13 n=14911 } 30. Rac1 { eval=-5.87 d=8 n=67584 } 30... Rf8 { eval=+10.98 d=14 n=16888 } 31. Rc7 { eval=-5.32 d=8 n=83968 } 31... Rh5+ { eval=+12.98 d=15 n=5115 } 32. Kg1 { eval=-13.51 d=10 n=65536 } 32... Rg8+ { eval=+11.08 d=17 n=4468 } 33. Rg7 { eval=-289.92 d=9 n=86016 } 33... Bxg7 { eval=+10.29 d=30 n=8016 } 34. Rd3 { eval=-289.94 d=9 n=86016 } 34... Bd4+ { eval=+13.06 d=46 n=8400 } 35. Rg3 { eval=-289.96 d=10 n=108544 } 35... Rxg3+ { eval=+13.06 d=3 n=167 } 36. Kf1 { eval=-289.98 d=10 n=124928 } 36... Rh1# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X7"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical Rubinstein"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. Nf3 e6 6. O-O Nge7 7. d4 { eval=+0.04 d=14 n=53468 } 7... Nxd4 { eval=+0.67 d=7 n=69632 } 8. Ne4 { eval=-0.07 d=13 n=32796 } 8... d6 { eval=+0.73 d=6 n=65536 } 9. Nxd4 { eval=+0.87 d=12 n=12085 } 9... cxd4 { eval=+0.52 d=8 n=73728 } 10. Qa4+ { eval=+0.63 d=15 n=19785 } 10... Nc6 { eval=+0.71 d=9 n=71680 } 11. Qa3 { eval=+0.64 d=15 n=34415 } 11... O-O { eval=+0.25 d=7 n=59392 } 12. Nxd6 { eval=+0.67 d=13 n=8831 } 12... Qc7 { eval=+0.04 d=6 n=55296 } 13. c5 { eval=+0.83 d=13 n=25576 } 13... Bd7 { eval=-0.04 d=6 n=61440 } 14. Bd2 { eval=+0.80 d=11 n=11626 } 14... b6 { eval=-0.07 d=6 n=57344 } 15. b4 { eval=+1.40 d=14 n=40092 } 15... a6 { eval=+0.00 d=5 n=53248 } 16. Nc4 { eval=+1.41 d=16 n=70517 } 16... bxc5 { eval=+0.02 d=6 n=63488 } 17. bxc5 { eval=+1.40 d=14 n=22012 } 17... Rfb8 { eval=-0.31 d=6 n=59392 } 18. h4 { eval=+2.01 d=14 n=88140 } 18... e5 { eval=+0.14 d=6 n=51200 } 19. Rab1 { eval=+2.61 d=13 n=29371 } 19... Bg4 { eval=+0.02 d=6 n=57344 } 20. Rb6 { eval=+4.20 d=13 n=6217 } 20... Bd7 { eval=-0.38 d=6 n=53248 } 21. Bd5 { eval=+5.01 d=14 n=21941 } 21... Kh8 { eval=-0.40 d=5 n=43008 } 22. Nd6 { eval=+5.98 d=16 n=39300 } 22... h6 { eval=-1.74 d=6 n=51200 } 23. Nxf7+ { eval=+7.68 d=14 n=31108 } 23... Kh7 { eval=-1.80 d=7 n=45056 } 24. h5 { eval=+8.23 d=12 n=2916 } 24... Rxb6 { eval=-2.39 d=6 n=57344 } 25. cxb6 { eval=+8.60 d=12 n=7877 } 25... Qb8 { eval=-3.61 d=8 n=59392 } 26. Rc1 { eval=+9.58 d=15 n=30250 } 26... Qxb6 { eval=-4.04 d=6 n=71680 } 27. hxg6+ { eval=+10.08 d=13 n=2851 } 27... Kxg6 { eval=-6.83 d=9 n=65536 } 28. Qd6+ { eval=+10.80 d=14 n=7250 } 28... Kh7 { eval=-7.40 d=8 n=59392 } 29. Be4+ { eval=+10.49 d=15 n=17377 } 29... Kg8 { eval=-7.03 d=8 n=67584 } 30. Nxh6+ { eval=+8.96 d=14 n=3002 } 30... Kh8 { eval=-8.33 d=9 n=79872 } 31. Qg6 { eval=+10.37 d=29 n=8081 } 31... Bf5 { eval=-9.94 d=7 n=69632 } 32. Bxf5 { eval=+16.86 d=3 n=317 } 32... Bxh6 { eval=-289.98 d=8 n=100352 } 33. Qh7# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X7"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical Anti-Benoni"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nf3 Nf6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d5 6. cxd5 Bc5 7. d6 { eval=+1.31 d=7 n=75776 } 7... O-O { eval=+0.66 d=13 n=52521 } 8. Nc7 { eval=+1.80 d=8 n=102400 } 8... Ne4 { eval=+0.86 d=15 n=37319 } 9. e3 { eval=+1.80 d=6 n=75776 } 9... Bb4+ { eval=+0.99 d=14 n=30844 } 10. Ke2 { eval=+0.26 d=8 n=77824 } 10... Qh4 { eval=+5.15 d=12 n=10787 } 11. g3 { eval=-0.66 d=7 n=88064 } 11... Nxg3+ { eval=+6.42 d=13 n=21749 } 12. hxg3 { eval=-2.50 d=9 n=67584 } 12... Qxh1 { eval=+6.50 d=13 n=10132 } 13. Nd2 { eval=-1.66 d=8 n=81920 } 13... Bxd6 { eval=+7.67 d=15 n=102903 } 14. Nxa8 { eval=-0.63 d=8 n=90112 } 14... Bg4+ { eval=+8.81 d=14 n=29609 } 15. f3 { eval=-0.61 d=10 n=90112 } 15... e4 { eval=+8.91 d=15 n=33237 } 16. Kf2 { eval=-2.08 d=8 n=75776 } 16... Qh2+ { eval=+8.69 d=32 n=13367 } 17. Bg2 { eval=-289.94 d=10 n=122880 } 17... Bxg3+ { eval=+8.69 d=64 n=31009 } 18. Kf1 { eval=-289.96 d=10 n=129024 } 18... Bh3 { eval=+8.67 d=3 n=199 } 19. Bxh3 { eval=-289.98 d=9 n=124928 } 19... Qf2# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X7"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical Anti-Benoni"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nf3 Nf6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d5 6. cxd5 Bc5 7. N5c3 { eval=+0.22 d=14 n=28586 } 7... Bg4 { eval=-0.51 d=5 n=67584 } 8. h3 { eval=+0.89 d=15 n=71370 } 8... Qb6 { eval=-0.91 d=6 n=63488 } 9. hxg4 { eval=+1.49 d=11 n=12755 } 9... Bxf2+ { eval=-0.70 d=7 n=79872 } 10. Kd2 { eval=+1.79 d=12 n=12155 } 10... Be3+ { eval=-0.83 d=7 n=83968 } 11. Kc2 { eval=+2.25 d=15 n=44849 } 11... Nxg4 { eval=-0.58 d=7 n=67584 } 12. Rh4 { eval=+2.25 d=15 n=82394 } 12... Bxc1 { eval=-0.84 d=6 n=67584 } 13. Kxc1 { eval=+2.38 d=13 n=14965 } 13... Ne3 { eval=-1.49 d=7 n=65536 } 14. Qe1 { eval=+2.36 d=14 n=15879 } 14... Nd7 { eval=-0.51 d=7 n=79872 } 15. Na3 { eval=+2.60 d=13 n=28754 } 15... Qg6 { eval=-0.32 d=6 n=83968 } 16. Rh3 { eval=+4.75 d=14 n=9010 } 16... Nxg2 { eval=-0.55 d=6 n=96256 } 17. Bxg2 { eval=+5.16 d=15 n=18876 } 17... Qxg2 { eval=-1.07 d=7 n=90112 } 18. Rg3 { eval=+4.81 d=15 n=40945 } 18... Qh2 { eval=-1.01 d=8 n=83968 } 19. Kc2 { eval=+4.92 d=14 n=12369 } 19... O-O { eval=-0.74 d=7 n=88064 } 20. Rd1 { eval=+5.19 d=14 n=11126 } 20... Rac8 { eval=-0.58 d=6 n=79872 } 21. Kb1 { eval=+4.99 d=14 n=12998 } 21... f5 { eval=-0.98 d=6 n=71680 } 22. Rg1 { eval=+5.02 d=15 n=47466 } 22... e4 { eval=-0.77 d=6 n=75776 } 23. Nab5 { eval=+5.16 d=16 n=72762 } 23... a5 { eval=-0.99 d=6 n=67584 } 24. d6 { eval=+5.53 d=14 n=33991 } 24... Rc5 { eval=-1.09 d=6 n=49152 } 25. Nc7 { eval=+5.57 d=14 n=29576 } 25... Rf6 { eval=-0.89 d=5 n=43008 } 26. Na4 { eval=+6.40 d=11 n=1838 } 26... Rc4 { eval=-0.85 d=6 n=51200 } 27. Qxa5 { eval=+7.48 d=14 n=9320 } 27... Rxd6 { eval=-0.25 d=7 n=59392 } 28. Rxg7+ { eval=+7.87 d=13 n=15697 } 28... Kxg7 { eval=-3.59 d=9 n=77824 } 29. Ne8+ { eval=+8.15 d=13 n=9003 } 29... Kg6 { eval=-3.94 d=10 n=81920 } 30. Nxd6 { eval=+8.54 d=13 n=6051 } 30... Ne5 { eval=-3.95 d=8 n=77824 } 31. Qd5 { eval=+7.86 d=15 n=47044 } 31... Rxa4 { eval=-1.20 d=8 n=75776 } 32. Qe6+ { eval=+9.03 d=13 n=3255 } 32... Kg5 { eval=-3.65 d=10 n=69632 } 33. Qxf5+ { eval=+9.31 d=14 n=4783 } 33... Kh6 { eval=-3.70 d=10 n=81920 } 34. Qf6+ { eval=+8.94 d=14 n=7600 } 34... Kh5 { eval=-2.61 d=9 n=77824 } 35. Qf5+ { eval=+8.65 d=13 n=51221 } 35... Kh6 { eval=+0.00 d=17 n=54097 } 36. Qf6+ { eval=+9.55 d=12 n=4526 } 36... Kh5 { eval=+0.00 d=19 n=63488 } 37. Rf1 { eval=+9.83 d=13 n=7784 } 37... Ng6 { eval=-2.77 d=6 n=61440 } 38. Rf5+ { eval=+13.04 d=13 n=2815 } 38... Kg4 { eval=-289.92 d=9 n=79872 } 39. Rg5+ { eval=+7.71 d=16 n=4170 } 39... Kh4 { eval=-289.94 d=8 n=83968 } 40. Rxg6+ { eval=+9.18 d=24 n=5763 } 40... Kh3 { eval=-289.96 d=8 n=83968 } 41. Qf5+ { eval=+11.78 d=2 n=121 } 41... Kh4 { eval=-289.98 d=9 n=96256 } 42. Qg4# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X7"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti Reversed Blumenfeld"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. c4 d4 3. e3 c5 4. b4 dxe3 5. fxe3 cxb4 6. d4 Nf6 { eval=-0.09 d=13 n=29254 } 7. Qa4+ { eval=-0.68 d=7 n=71680 } 7... Bd7 { eval=+0.03 d=13 n=6741 } 8. Qxb4 { eval=+0.05 d=7 n=73728 } 8... Nc6 { eval=+0.20 d=14 n=33780 } 9. Qxb7 { eval=+0.66 d=8 n=65536 } 9... Rb8 { eval=+4.45 d=11 n=10340 } 10. Qa6 { eval=-2.44 d=8 n=67584 } 10... Nb4 { eval=+4.72 d=13 n=7540 } 11. Qxa7 { eval=-1.68 d=9 n=67584 } 11... Nc2+ { eval=+4.34 d=14 n=38736 } 12. Kd2 { eval=-1.68 d=9 n=73728 } 12... Nxa1 { eval=+4.65 d=13 n=20247 } 13. Nc3 { eval=-1.75 d=8 n=67584 } 13... e6 { eval=+5.22 d=15 n=69478 } 14. c5 { eval=-1.71 d=7 n=71680 } 14... Ra8 { eval=+5.23 d=15 n=15932 } 15. Qb7 { eval=-2.30 d=8 n=65536 } 15... Bxc5 { eval=+7.22 d=13 n=10879 } 16. Qb1 { eval=-1.59 d=7 n=55296 } 16... Bd6 { eval=+6.50 d=16 n=93756 } 17. Qxa1 { eval=-1.60 d=7 n=67584 } 17... Qa5 { eval=+6.46 d=15 n=75064 } 18. Ke2 { eval=-2.02 d=6 n=57344 } 18... Rc8 { eval=+7.74 d=15 n=64054 } 19. Bd2 { eval=-2.84 d=7 n=71680 } 19... Bb4 { eval=+7.40 d=19 n=21852 } 20. Nb1 { eval=-3.51 d=7 n=63488 } 20... Bb5+ { eval=+8.50 d=14 n=14315 } 21. Kf2 { eval=-2.67 d=7 n=67584 } 21... Ne4+ { eval=+8.10 d=14 n=6689 } 22. Kg1 { eval=-4.34 d=9 n=65536 } 22... Bxf1 { eval=+8.40 d=14 n=27080 } 23. Qb2 { eval=-5.01 d=9 n=83968 } 23... Bxd2 { eval=+8.43 d=13 n=7308 } 24. Nbxd2 { eval=-4.24 d=8 n=79872 } 24... Bd3 { eval=+8.07 d=14 n=12684 } 25. Nxe4 { eval=-4.70 d=8 n=75776 } 25... Bxe4 { eval=+8.15 d=13 n=10091 } 26. Nd2 { eval=-4.57 d=8 n=79872 } 26... O-O { eval=+8.41 d=13 n=21624 } 27. Nf3 { eval=-6.76 d=8 n=73728 } 27... Rc2 { eval=+9.42 d=13 n=26789 } 28. Qxc2 { eval=-9.38 d=10 n=88064 } 28... Bxc2 { eval=+9.32 d=12 n=3270 } 29. h4 { eval=-9.38 d=8 n=86016 } 29... Qc3 { eval=+9.73 d=14 n=46483 } 30. Kh2 { eval=-9.63 d=8 n=79872 } 30... Bf5 { eval=+9.33 d=14 n=40215 } 31. Re1 { eval=-9.43 d=9 n=77824 } 31... Qc7+ { eval=+9.19 d=12 n=19479 } 32. Kh1 { eval=-8.92 d=8 n=79872 } 32... f6 { eval=+9.08 d=13 n=20118 } 33. e4 { eval=-8.15 d=9 n=79872 } 33... Bg6 { eval=+9.31 d=11 n=2865 } 34. e5 { eval=-8.12 d=8 n=73728 } 34... Bf5 { eval=+9.28 d=12 n=18900 } 35. exf6 { eval=-8.09 d=7 n=75776 } 35... gxf6 { eval=+10.03 d=9 n=1455 } 36. Re2 { eval=-8.66 d=7 n=77824 } 36... Qf4 { eval=+9.53 d=14 n=24228 } 37. h5 { eval=-9.03 d=7 n=71680 } 37... Rb8 { eval=+9.57 d=12 n=7458 } 38. Kg1 { eval=-9.76 d=9 n=69632 } 38... Bg4 { eval=+10.73 d=15 n=18657 } 39. Kf2 { eval=-10.43 d=9 n=73728 } 39... Bxf3 { eval=+10.70 d=11 n=2194 } 40. gxf3 { eval=-10.10 d=10 n=79872 } 40... Rb1 { eval=+11.38 d=14 n=30336 } 41. Kg2 { eval=-10.09 d=9 n=71680 } 41... Qg5+ { eval=+11.93 d=13 n=8935 } 42. Kh2 { eval=-10.24 d=9 n=110592 } 42... Qxh5+ { eval=+12.89 d=14 n=37731 } 43. Kg3 { eval=-11.03 d=10 n=106496 } 43... Qg5+ { eval=+13.79 d=13 n=27392 } 44. Kh3 { eval=-289.94 d=10 n=122880 } 44... Rg1 { eval=+18.47 d=26 n=4486 } 45. Rg2 { eval=-289.96 d=10 n=122880 } 45... Rxg2 { eval=+18.44 d=2 n=96 } 46. a4 { eval=-289.98 d=9 n=135168 } 46... Qg3# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X7"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti Reversed Blumenfeld"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. c4 d4 3. e3 c5 4. b4 dxe3 5. fxe3 cxb4 6. d4 e6 { eval=+0.83 d=7 n=83968 } 7. Bd3 { eval=+0.47 d=15 n=30057 } 7... Nf6 { eval=+0.80 d=7 n=81920 } 8. O-O { eval=+0.33 d=15 n=91354 } 8... Nc6 { eval=+0.88 d=7 n=77824 } 9. Nbd2 { eval=+0.38 d=13 n=77830 } 9... Qc7 { eval=+0.72 d=6 n=69632 } 10. Bb2 { eval=+1.05 d=10 n=10924 } 10... Ng4 { eval=+0.90 d=6 n=69632 } 11. Qe2 { eval=+2.04 d=14 n=31404 } 11... Bd6 { eval=+0.66 d=6 n=75776 } 12. h3 { eval=+2.34 d=11 n=20073 } 12... Nf6 { eval=+0.46 d=7 n=71680 } 13. e4 { eval=+3.13 d=11 n=11571 } 13... Nh5 { eval=+0.69 d=6 n=59392 } 14. e5 { eval=+3.53 d=14 n=38566 } 14... Be7 { eval=+0.39 d=7 n=86016 } 15. Ne4 { eval=+3.85 d=15 n=38898 } 15... Nf4 { eval=+0.42 d=7 n=69632 } 16. Qe3 { eval=+3.85 d=15 n=7001 } 16... Nxd3 { eval=+0.23 d=7 n=47104 } 17. Qxd3 { eval=+3.79 d=14 n=12771 } 17... O-O { eval=+0.20 d=6 n=51200 } 18. Nfg5 { eval=+5.19 d=12 n=9200 } 18... f5 { eval=+0.01 d=5 n=53248 } 19. exf6 { eval=+6.09 d=15 n=7834 } 19... Bxf6 { eval=-0.29 d=7 n=67584 } 20. Nxh7 { eval=+7.51 d=15 n=31106 } 20... Bxd4+ { eval=-0.66 d=8 n=51200 } 21. Bxd4 { eval=+7.67 d=14 n=34059 } 21... Rxf1+ { eval=-1.80 d=8 n=65536 } 22. Rxf1 { eval=+9.92 d=13 n=10824 } 22... Nxd4 { eval=-1.47 d=7 n=96256 } 23. Rf8+ { eval=+7.13 d=29 n=10551 } 23... Kxh7 { eval=-289.94 d=8 n=92160 } 24. Nf6+ { eval=+6.07 d=44 n=14796 } 24... Kh6 { eval=-289.96 d=9 n=98304 } 25. Qh7+ { eval=+6.40 d=3 n=187 } 25... Kg5 { eval=-289.98 d=9 n=88064 } 26. Ne4# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X7"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti Advance 3...f6"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. c4 d4 3. e3 Nc6 4. exd4 Nxd4 5. Nxd4 Qxd4 6. Nc3 e5 7. Nb5 { eval=+0.38 d=8 n=83968 } 7... Qd8 { eval=+0.42 d=17 n=70043 } 8. Qe2 { eval=+0.04 d=7 n=83968 } 8... f6 { eval=+0.38 d=12 n=14585 } 9. Qh5+ { eval=+0.48 d=7 n=73728 } 9... g6 { eval=+0.92 d=12 n=12438 } 10. Qf3 { eval=+0.21 d=7 n=73728 } 10... c6 { eval=+1.50 d=11 n=11872 } 11. Nc3 { eval=+0.33 d=7 n=73728 } 11... Nh6 { eval=+1.55 d=13 n=15194 } 12. d3 { eval=+0.09 d=7 n=92160 } 12... Nf5 { eval=+1.74 d=14 n=55155 } 13. Ne4 { eval=+0.08 d=7 n=55296 } 13... Bb4+ { eval=+1.95 d=15 n=30533 } 14. Nc3 { eval=-0.53 d=8 n=61440 } 14... Be7 { eval=+2.03 d=13 n=45588 } 15. Be3 { eval=-0.13 d=6 n=71680 } 15... Qa5 { eval=+1.88 d=13 n=38050 } 16. a3 { eval=-0.12 d=7 n=71680 } 16... Be6 { eval=+2.13 d=13 n=24195 } 17. Be2 { eval=-0.30 d=7 n=63488 } 17... Nd4 { eval=+3.07 d=12 n=9723 } 18. Qg3 { eval=-1.96 d=8 n=57344 } 18... Nc2+ { eval=+3.61 d=15 n=47280 } 19. Kd2 { eval=-1.78 d=9 n=47104 } 19... Nxa1 { eval=+3.95 d=14 n=47577 } 20. Rxa1 { eval=-1.80 d=8 n=53248 } 20... O-O { eval=+4.08 d=15 n=52556 } 21. Kc2 { eval=-1.71 d=6 n=53248 } 21... b5 { eval=+4.89 d=11 n=3557 } 22. Bg4 { eval=-1.58 d=6 n=61440 } 22... Bxg4 { eval=+4.77 d=12 n=5579 } 23. Qxg4 { eval=-1.52 d=7 n=77824 } 23... f5 { eval=+4.03 d=15 n=54654 } 24. Qf3 { eval=-2.05 d=7 n=81920 } 24... bxc4 { eval=+4.34 d=14 n=4499 } 25. dxc4 { eval=-1.52 d=6 n=67584 } 25... Qa6 { eval=+4.03 d=13 n=8681 } 26. Qe2 { eval=-1.56 d=6 n=61440 } 26... Rf7 { eval=+4.11 d=13 n=16128 } 27. Bh6 { eval=-1.24 d=5 n=63488 } 27... e4 { eval=+4.34 d=15 n=24280 } 28. Rd1 { eval=-1.07 d=5 n=59392 } 28... Bf6 { eval=+3.78 d=15 n=35800 } 29. c5 { eval=-1.62 d=6 n=61440 } 29... Qxe2+ { eval=+3.95 d=14 n=8036 } 30. Nxe2 { eval=-1.65 d=9 n=79872 } 30... Rb7 { eval=+4.03 d=14 n=14936 } 31. b3 { eval=-1.46 d=8 n=67584 } 31... Rd8 { eval=+4.04 d=15 n=10395 } 32. Rd6 { eval=-1.22 d=8 n=63488 } 32... Rxd6 { eval=+5.34 d=11 n=1783 } 33. cxd6 { eval=-2.51 d=9 n=83968 } 33... Kf7 { eval=+5.18 d=14 n=21193 } 34. Bf4 { eval=-1.28 d=7 n=77824 } 34... Ke6 { eval=+5.60 d=14 n=15587 } 35. Bg3 { eval=-1.41 d=7 n=75776 } 35... Be5 { eval=+5.69 d=15 n=14890 } 36. Bxe5 { eval=-2.23 d=9 n=88064 } 36... Kxe5 { eval=+5.50 d=10 n=3303 } 37. Kb2 { eval=-2.27 d=8 n=98304 } 37... Kxd6 { eval=+5.89 d=12 n=1892 } 38. Nc3 { eval=-2.52 d=9 n=126976 } 38... Re7 { eval=+5.80 d=14 n=34863 } 39. Kb1 { eval=-2.62 d=8 n=86016 } 39... e3 { eval=+6.19 d=13 n=7862 } 40. fxe3 { eval=-2.41 d=12 n=90112 } 40... Rxe3 { eval=+6.03 d=11 n=3183 } 41. Kb2 { eval=-2.51 d=11 n=106496 } 41... Re1 { eval=+6.14 d=16 n=40135 } 42. g4 { eval=-3.83 d=9 n=90112 } 42... fxg4 { eval=+6.91 d=14 n=27262 } 43. b4 { eval=-6.46 d=10 n=96256 } 43... Rh1 { eval=+7.09 d=13 n=22484 } 44. Kb3 { eval=-6.76 d=10 n=90112 } 44... Rxh2 { eval=+7.14 d=10 n=3289 } 45. Ne4+ { eval=-7.14 d=10 n=92160 } 45... Ke5 { eval=+7.50 d=12 n=5985 } 46. Ng5 { eval=-7.74 d=9 n=94208 } 46... Kf5 { eval=+8.36 d=14 n=39890 } 47. b5 { eval=-9.12 d=11 n=94208 } 47... cxb5 { eval=+8.51 d=12 n=2943 } 48. Nf7 { eval=-13.02 d=11 n=94208 } 48... g3 { eval=+9.02 d=12 n=3629 } 49. Nd6+ { eval=-13.72 d=12 n=96256 } 49... Kf4 { eval=+9.87 d=13 n=8044 } 50. Nxb5 { eval=-13.59 d=11 n=96256 } 50... g2 { eval=+9.96 d=12 n=3653 } 51. Nxa7 { eval=-14.57 d=10 n=59392 } 51... g1=Q { eval=+10.64 d=14 n=26973 } 52. Nb5 { eval=-14.90 d=10 n=75776 } 52... Qb6 { eval=+11.80 d=14 n=26847 } 53. a4 { eval=-14.52 d=9 n=90112 } 53... Qc5 { eval=+12.55 d=12 n=3418 } 54. Nc3 { eval=-17.18 d=8 n=79872 } 54... Rh3 { eval=+12.02 d=17 n=6790 } 55. Kb2 { eval=-289.94 d=8 n=98304 } 55... Rxc3 { eval=+12.15 d=57 n=16918 } 56. Kb1 { eval=-289.96 d=9 n=155648 } 56... Rb3+ { eval=+12.53 d=2 n=114 } 57. Ka1 { eval=-289.98 d=9 n=133120 } 57... Qa3# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X7"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti Advance 3...f6"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. c4 d4 3. e3 Nc6 4. exd4 Nxd4 5. Nxd4 Qxd4 6. Nc3 e5 7. d3 { eval=-0.04 d=13 n=70281 } 7... Bg4 { eval=-0.18 d=6 n=86016 } 8. Qb3 { eval=+0.23 d=14 n=16934 } 8... Qb6 { eval=-0.42 d=6 n=79872 } 9. Qxb6 { eval=-0.05 d=15 n=76905 } 9... axb6 { eval=-0.25 d=8 n=77824 } 10. f4 { eval=-0.05 d=14 n=27869 } 10... Bd6 { eval=+0.04 d=7 n=102400 } 11. Nb5 { eval=+0.46 d=13 n=10519 } 11... Nf6 { eval=-0.33 d=8 n=79872 } 12. Nxd6+ { eval=+0.51 d=15 n=47575 } 12... cxd6 { eval=-0.18 d=10 n=88064 } 13. fxe5 { eval=+0.52 d=12 n=17492 } 13... dxe5 { eval=-0.08 d=9 n=96256 } 14. a4 { eval=+0.51 d=11 n=10306 } 14... Bd7 { eval=+0.08 d=7 n=86016 } 15. b3 { eval=+0.70 d=12 n=9122 } 15... O-O { eval=+0.24 d=7 n=71680 } 16. Be2 { eval=+0.73 d=13 n=27929 } 16... Bg4 { eval=+0.20 d=7 n=83968 } 17. Bxg4 { eval=+1.11 d=12 n=14620 } 17... Nxg4 { eval=+0.06 d=10 n=92160 } 18. h3 { eval=+0.99 d=14 n=29338 } 18... Nf6 { eval=+0.10 d=9 n=92160 } 19. Be3 { eval=+1.05 d=14 n=25066 } 19... b5 { eval=+0.27 d=8 n=79872 } 20. cxb5 { eval=+2.25 d=13 n=37715 } 20... Rac8 { eval=+0.28 d=7 n=69632 } 21. b4 { eval=+2.31 d=14 n=59126 } 21... Rfd8 { eval=+0.88 d=8 n=75776 } 22. a5 { eval=+2.29 d=15 n=46822 } 22... Rxd3 { eval=+1.58 d=9 n=118784 } 23. Ke2 { eval=+3.22 d=10 n=11083 } 23... Rb3 { eval=+1.57 d=7 n=73728 } 24. Rhb1 { eval=+3.17 d=14 n=42660 } 24... Rc2+ { eval=+2.74 d=9 n=67584 } 25. Kd1 { eval=+3.32 d=14 n=17401 } 25... Rxb1+ { eval=+2.61 d=10 n=120832 } 26. Rxb1 { eval=+3.71 d=13 n=15693 } 26... Rxg2 { eval=+2.17 d=9 n=86016 } 27. Rc1 { eval=+3.50 d=12 n=8963 } 27... h6 { eval=+1.64 d=10 n=81920 } 28. Rc5 { eval=+4.14 d=14 n=25597 } 28... Rg3 { eval=+2.55 d=8 n=94208 } 29. Rxe5 { eval=+4.95 d=13 n=5062 } 29... Rxh3 { eval=+2.03 d=9 n=79872 } 30. a6 { eval=+5.19 d=12 n=6654 } 30... Rh1+ { eval=+1.05 d=10 n=98304 } 31. Kd2 { eval=+6.00 d=15 n=76777 } 31... bxa6 { eval=+0.86 d=9 n=71680 } 32. bxa6 { eval=+5.93 d=12 n=3215 } 32... Rh2+ { eval=+0.82 d=8 n=71680 } 33. Kc3 { eval=+6.62 d=14 n=35780 } 33... Ra2 { eval=+0.47 d=9 n=65536 } 34. a7 { eval=+6.72 d=12 n=4707 } 34... g6 { eval=+0.50 d=8 n=69632 } 35. Kb3 { eval=+7.39 d=14 n=26677 } 35... Rxa7 { eval=-1.42 d=10 n=69632 } 36. Bxa7 { eval=+7.07 d=13 n=6457 } 36... h5 { eval=-1.82 d=9 n=88064 } 37. Re1 { eval=+6.84 d=14 n=40370 } 37... Nd5 { eval=-2.00 d=10 n=81920 } 38. Bd4 { eval=+7.36 d=13 n=14997 } 38... f5 { eval=-2.56 d=10 n=86016 } 39. b5 { eval=+7.18 d=12 n=1728 } 39... Kf7 { eval=-3.59 d=10 n=86016 } 40. Kc4 { eval=+7.35 d=14 n=34698 } 40... Ne7 { eval=-3.63 d=12 n=83968 } 41. Kc5 { eval=+6.73 d=14 n=27228 } 41... Nc8 { eval=-3.76 d=11 n=75776 } 42. Kc6 { eval=+7.58 d=11 n=2600 } 42... h4 { eval=-5.02 d=10 n=90112 } 43. Kd7 { eval=+7.65 d=15 n=5064 } 43... Nb6+ { eval=-7.34 d=10 n=116736 } 44. Bxb6 { eval=+7.90 d=13 n=2829 } 44... f4 { eval=-11.48 d=11 n=83968 } 45. Bd4 { eval=+8.83 d=15 n=54636 } 45... g5 { eval=-13.19 d=11 n=73728 } 46. b6 { eval=+10.23 d=11 n=2313 } 46... Kg6 { eval=-14.56 d=11 n=81920 } 47. b7 { eval=+12.37 d=13 n=13140 } 47... Kh5 { eval=-14.91 d=10 n=124928 } 48. b8=Q { eval=+11.00 d=13 n=5532 } 48... f3 { eval=-15.92 d=9 n=102400 } 49. Qh8+ { eval=+12.25 d=15 n=5739 } 49... Kg4 { eval=-289.92 d=9 n=94208 } 50. Rg1+ { eval=+12.87 d=20 n=7631 } 50... Kf5 { eval=-289.94 d=9 n=153600 } 51. Qe5+ { eval=+12.87 d=27 n=6663 } 51... Kg6 { eval=-289.96 d=9 n=126976 } 52. Qf6+ { eval=+12.75 d=2 n=163 } 52... Kh7 { eval=-289.98 d=9 n=92160 } 53. Qg7# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X7"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti vs Old Indian"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. g3 Nf6 3. Bg2 Nbd7 4. O-O e5 5. d3 Bd6 6. c4 c6 7. Nbd2 { eval=-0.52 d=6 n=86016 } 7... d4 { eval=+0.01 d=13 n=43702 } 8. Nb3 { eval=-0.35 d=7 n=88064 } 8... a5 { eval=+0.30 d=12 n=24836 } 9. a4 { eval=-0.29 d=8 n=106496 } 9... O-O { eval=+0.51 d=15 n=16477 } 10. e3 { eval=-0.18 d=7 n=98304 } 10... c5 { eval=+0.55 d=13 n=18352 } 11. e4 { eval=-0.29 d=8 n=92160 } 11... Nb8 { eval=+0.88 d=13 n=23256 } 12. Bg5 { eval=-0.54 d=7 n=98304 } 12... h6 { eval=+0.91 d=15 n=86156 } 13. Bd2 { eval=-0.71 d=7 n=83968 } 13... Nc6 { eval=+0.92 d=10 n=14682 } 14. h3 { eval=-0.78 d=7 n=96256 } 14... Kh8 { eval=+1.29 d=14 n=50724 } 15. g4 { eval=-0.56 d=7 n=90112 } 15... Ra6 { eval=+1.78 d=15 n=107502 } 16. Qc2 { eval=-0.35 d=7 n=75776 } 16... h5 { eval=+3.20 d=14 n=16606 } 17. gxh5 { eval=+0.24 d=6 n=98304 } 17... Nxh5 { eval=+4.65 d=13 n=10439 } 18. Rfe1 { eval=-0.27 d=6 n=83968 } 18... Nb4 { eval=+4.71 d=16 n=77040 } 19. Qb1 { eval=-0.52 d=8 n=86016 } 19... Kg8 { eval=+5.13 d=14 n=28423 } 20. Rd1 { eval=-0.44 d=7 n=75776 } 20... Bc7 { eval=+5.63 d=15 n=44378 } 21. Nxc5 { eval=+1.04 d=5 n=53248 } 21... Rg6 { eval=+6.01 d=15 n=34912 } 22. Kh1 { eval=+0.74 d=7 n=69632 } 22... Qe7 { eval=+6.95 d=14 n=12068 } 23. Nb3 { eval=+0.33 d=7 n=65536 } 23... Qf6 { eval=+6.32 d=14 n=6862 } 24. h4 { eval=-0.30 d=7 n=63488 } 24... Rxg2 { eval=+7.45 d=15 n=20160 } 25. Kxg2 { eval=-0.66 d=8 n=65536 } 25... Bh3+ { eval=+7.62 d=14 n=7817 } 26. Kh2 { eval=-4.26 d=9 n=59392 } 26... Qxf3 { eval=+7.43 d=14 n=21991 } 27. Rg1 { eval=-4.44 d=8 n=45056 } 27... Nxd3 { eval=+8.24 d=15 n=31612 } 28. Qd1 { eval=-4.12 d=7 n=55296 } 28... Qxf2+ { eval=+8.81 d=13 n=23360 } 29. Kxh3 { eval=-3.16 d=10 n=59392 } 29... Nhf4+ { eval=+8.72 d=14 n=41866 } 30. Bxf4 { eval=-3.29 d=10 n=69632 } 30... Nxf4+ { eval=+8.69 d=16 n=3350 } 31. Kg4 { eval=-3.23 d=10 n=59392 } 31... f5+ { eval=+8.65 d=13 n=33914 } 32. exf5 { eval=-2.66 d=9 n=63488 } 32... Ng6 { eval=+8.85 d=15 n=5828 } 33. h5 { eval=-2.43 d=5 n=57344 } 33... Qxf5+ { eval=+10.82 d=18 n=4193 } 34. Kg3 { eval=-289.94 d=8 n=77824 } 34... Qf2+ { eval=+15.52 d=26 n=5495 } 35. Kh3 { eval=-289.96 d=9 n=92160 } 35... Qh4+ { eval=+9.26 d=2 n=108 } 36. Kg2 { eval=-289.98 d=9 n=75776 } 36... Rf2# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X7"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti vs Old Indian"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. g3 Nf6 3. Bg2 Nbd7 4. O-O e5 5. d3 Bd6 6. c4 c6 7. cxd5 { eval=+0.16 d=13 n=31814 } 7... cxd5 { eval=+0.33 d=7 n=77824 } 8. e4 { eval=+0.21 d=13 n=39000 } 8... dxe4 { eval=+1.15 d=7 n=81920 } 9. dxe4 { eval=+0.41 d=11 n=6314 } 9... Nxe4 { eval=+0.57 d=6 n=73728 } 10. Nh4 { eval=+4.94 d=14 n=22230 } 10... g5 { eval=+0.22 d=7 n=94208 } 11. Bxe4 { eval=+5.77 d=15 n=13647 } 11... Nc5 { eval=-1.15 d=7 n=86016 } 12. Ng2 { eval=+5.27 d=16 n=85279 } 12... Nxe4 { eval=-0.63 d=7 n=92160 } 13. Qa4+ { eval=+5.15 d=15 n=21641 } 13... Bd7 { eval=-1.20 d=8 n=71680 } 14. Qxe4 { eval=+4.68 d=15 n=44250 } 14... Bc6 { eval=-1.25 d=7 n=79872 } 15. Qf5 { eval=+5.10 d=15 n=61834 } 15... h6 { eval=-1.45 d=6 n=67584 } 16. Nc3 { eval=+5.67 d=15 n=31487 } 16... O-O { eval=-1.66 d=6 n=81920 } 17. Rd1 { eval=+6.05 d=15 n=47723 } 17... Rc8 { eval=-1.95 d=6 n=65536 } 18. Ne4 { eval=+6.47 d=14 n=27871 } 18... Bxe4 { eval=-2.09 d=8 n=63488 } 19. Qxe4 { eval=+6.33 d=14 n=18497 } 19... Qb6 { eval=-2.12 d=7 n=67584 } 20. Be3 { eval=+6.53 d=15 n=39349 } 20... Qb4 { eval=-2.55 d=8 n=88064 } 21. Qf5 { eval=+6.66 d=15 n=26734 } 21... Rfd8 { eval=-1.60 d=6 n=51200 } 22. h4 { eval=+6.79 d=13 n=6471 } 22... gxh4 { eval=-2.00 d=5 n=53248 } 23. Bxh6 { eval=+7.35 d=15 n=13205 } 23... hxg3 { eval=-0.88 d=4 n=57344 } 24. Qg5+ { eval=+7.90 d=3 n=226 } 24... Kh7 { eval=-289.98 d=9 n=90112 } 25. Qg7# 1-0
+
+
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X8"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Anglo-Scandinavian"]
+[Termination "checkmate"]
+
+1. c4 d5 2. cxd5 Nf6 3. e4 Nxe4 4. Qa4+ c6 5. Qxe4 cxd5 { eval=-4.92 d=16 n=174811 } 6. Qf4 { eval=+1.48 d=9 n=201895 } 6... f6 { eval=-3.80 d=16 n=127869 } 7. Qa4+ { eval=+1.65 d=7 n=188416 } 7... Nc6 { eval=-3.64 d=15 n=72542 } 8. Nf3 { eval=+1.58 d=8 n=155648 } 8... e5 { eval=-3.47 d=16 n=124914 } 9. Nc3 { eval=+1.57 d=7 n=147456 } 9... d4 { eval=-1.23 d=10 n=27099 } 10. Ne4 { eval=+1.65 d=8 n=133120 } 10... Bd7 { eval=-2.60 d=16 n=251211 } 11. Bc4 { eval=+1.86 d=8 n=149504 } 11... f5 { eval=-2.42 d=12 n=29093 } 12. Neg5 { eval=+2.43 d=7 n=139264 } 12... e4 { eval=-2.66 d=14 n=231680 } 13. Bf7+ { eval=+3.14 d=8 n=159744 } 13... Ke7 { eval=-2.13 d=12 n=40382 } 14. Nxd4 { eval=+3.07 d=8 n=151552 } 14... Ne5 { eval=-1.80 d=14 n=79425 } 15. Qb3 { eval=+3.73 d=6 n=94208 } 15... Qb6 { eval=-1.80 d=14 n=7061 } 16. Qd5 { eval=+4.13 d=5 n=55296 } 16... Nd3+ { eval=-1.99 d=14 n=69185 } 17. Kf1 { eval=+3.35 d=7 n=61440 } 17... g6 { eval=-1.85 d=11 n=19051 } 18. b3 { eval=+3.61 d=5 n=57344 } 18... Rd8 { eval=-2.61 d=13 n=56588 } 19. Ba3+ { eval=+4.37 d=5 n=53248 } 19... Kf6 { eval=+0.25 d=10 n=6770 } 20. Bxf8 { eval=+4.28 d=6 n=61440 } 20... Bc8 { eval=+0.64 d=10 n=5184 } 21. Qc4 { eval=+3.28 d=4 n=49152 } 21... Rdxf8 { eval=+0.96 d=10 n=5632 } 22. h4 { eval=+3.69 d=4 n=79872 } 22... Rd8 { eval=+1.56 d=9 n=18147 } 23. Bd5 { eval=+1.87 d=6 n=57344 } 23... Ne5 { eval=+1.79 d=11 n=4227 } 24. Qc3 { eval=-0.43 d=6 n=59392 } 24... Rxd5 { eval=+1.81 d=10 n=14147 } 25. Ne2 { eval=-0.71 d=6 n=65536 } 25... Bd7 { eval=+1.88 d=11 n=4611 } 26. f4 { eval=+0.19 d=5 n=49152 } 26... exf3 { eval=+1.67 d=11 n=11706 } 27. Nxf3 { eval=-0.62 d=7 n=59392 } 27... Rc8 { eval=+2.67 d=9 n=10847 } 28. Qb2 { eval=-0.90 d=7 n=51200 } 28... Re8 { eval=+2.78 d=13 n=57365 } 29. Nf4 { eval=+0.16 d=5 n=45056 } 29... Bb5+ { eval=+3.11 d=12 n=10648 } 30. d3 { eval=-0.57 d=6 n=49152 } 30... Rxd3 { eval=+3.83 d=13 n=46176 } 31. Nxd3 { eval=-0.56 d=8 n=69632 } 31... Bxd3+ { eval=+4.70 d=13 n=5129 } 32. Ke1 { eval=-0.56 d=7 n=61440 } 32... Qe3+ { eval=+4.51 d=12 n=5962 } 33. Kd1 { eval=-0.84 d=8 n=61440 } 33... Bc2+ { eval=+11.21 d=14 n=13991 } 34. Qxc2 { eval=-4.03 d=10 n=75776 } 34... Nxf3 { eval=+12.27 d=12 n=3132 } 35. Qb2+ { eval=-6.28 d=9 n=69632 } 35... Kf7 { eval=+14.46 d=13 n=9943 } 36. gxf3 { eval=-7.93 d=7 n=79872 } 36... Rd8+ { eval=+13.73 d=14 n=4935 } 37. Kc2 { eval=-17.09 d=9 n=73728 } 37... Qd3+ { eval=+8.58 d=13 n=3695 } 38. Kc1 { eval=-17.76 d=9 n=90112 } 38... Rc8+ { eval=+13.91 d=14 n=3994 } 39. Qc3 { eval=-17.59 d=9 n=81920 } 39... Qxc3+ { eval=+13.91 d=15 n=5335 } 40. Kd1 { eval=-289.92 d=8 n=100352 } 40... Rd8+ { eval=+13.65 d=18 n=5863 } 41. Ke2 { eval=-289.94 d=8 n=102400 } 41... Rd2+ { eval=+13.47 d=40 n=12584 } 42. Ke1 { eval=-289.96 d=8 n=137216 } 42... Rxa2+ 43. Kf1 { eval=-289.98 d=9 n=163840 } 43... Qxa1# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X8"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Anglo-Scandinavian"]
+[Termination "checkmate"]
+
+1. c4 d5 2. cxd5 Nf6 3. e4 Nxe4 4. Qa4+ c6 5. Qxe4 cxd5 { eval=-1.41 d=7 n=94208 } 6. Bb5+ { eval=+4.93 d=15 n=62495 } 6... Nc6 { eval=-1.59 d=8 n=83968 } 7. Qa4 { eval=+4.84 d=15 n=60184 } 7... Bd7 { eval=-1.29 d=7 n=65536 } 8. d4 { eval=+4.99 d=13 n=9180 } 8... e5 { eval=-1.26 d=6 n=67584 } 9. dxe5 { eval=+4.67 d=15 n=83490 } 9... Nxe5 { eval=-1.32 d=7 n=67584 } 10. Nf3 { eval=+5.75 d=13 n=23061 } 10... Nxf3+ { eval=-1.02 d=8 n=67584 } 11. gxf3 { eval=+5.90 d=14 n=10117 } 11... d4 { eval=-1.09 d=8 n=69632 } 12. O-O { eval=+5.77 d=17 n=96024 } 12... Qe7 { eval=-1.43 d=7 n=67584 } 13. Bxd7+ { eval=+6.16 d=15 n=15097 } 13... Qxd7 { eval=-1.33 d=9 n=71680 } 14. Qxd7+ { eval=+6.12 d=15 n=21073 } 14... Kxd7 { eval=-1.77 d=9 n=77824 } 15. Rd1 { eval=+5.99 d=14 n=7567 } 15... Bc5 { eval=-1.77 d=8 n=81920 } 16. Nd2 { eval=+5.95 d=13 n=6796 } 16... Kc6 { eval=-1.96 d=7 n=88064 } 17. Nb3 { eval=+5.88 d=17 n=73438 } 17... Rad8 { eval=-2.35 d=7 n=73728 } 18. Nxc5 { eval=+6.11 d=13 n=8675 } 18... Kxc5 { eval=-1.89 d=8 n=83968 } 19. b3 { eval=+5.99 d=13 n=19129 } 19... Rhe8 { eval=-1.49 d=6 n=108544 } 20. Kf1 { eval=+5.87 d=15 n=53587 } 20... f6 { eval=-1.12 d=6 n=110592 } 21. Bd2 { eval=+6.00 d=14 n=30399 } 21... Kb6 { eval=-1.25 d=7 n=110592 } 22. a4 { eval=+6.03 d=13 n=15479 } 22... d3 { eval=-1.09 d=7 n=108544 } 23. Rac1 { eval=+6.37 d=14 n=47079 } 23... Rd7 { eval=-1.21 d=8 n=100352 } 24. b4 { eval=+6.35 d=14 n=36117 } 24... Ka6 { eval=-1.51 d=7 n=92160 } 25. b5+ { eval=+6.08 d=15 n=48711 } 25... Kb6 { eval=-1.59 d=9 n=57344 } 26. Be3+ { eval=+6.17 d=13 n=32947 } 26... Ka5 { eval=-1.82 d=9 n=79872 } 27. Rc4 { eval=+6.49 d=12 n=3018 } 27... Red8 { eval=-1.82 d=8 n=110592 } 28. Bd2+ { eval=+6.68 d=12 n=2638 } 28... Kb6 { eval=-1.82 d=11 n=108544 } 29. Rb1 { eval=+6.99 d=13 n=12139 } 29... a6 { eval=-1.87 d=10 n=94208 } 30. Be3+ { eval=+6.94 d=14 n=45020 } 30... Ka5 { eval=-1.48 d=11 n=108459 } 31. Bd2+ { eval=+7.09 d=14 n=3392 } 31... Kb6 { eval=+0.00 d=64 n=128 } 32. bxa6+ { eval=+7.05 d=13 n=5977 } 32... Kxa6 { eval=-2.51 d=9 n=100352 } 33. Rcb4 { eval=+6.88 d=17 n=24208 } 33... Ka7 { eval=-1.20 d=7 n=94208 } 34. Rb5 { eval=+6.88 d=13 n=12100 } 34... g5 { eval=-1.21 d=8 n=92160 } 35. f4 { eval=+6.18 d=16 n=61510 } 35... g4 { eval=-1.16 d=7 n=96256 } 36. f5 { eval=+7.15 d=15 n=13607 } 36... Rc7 { eval=-2.68 d=9 n=100352 } 37. Ba5 { eval=+7.31 d=13 n=20754 } 37... d2 { eval=-4.06 d=9 n=100352 } 38. Bxc7 { eval=+8.96 d=11 n=2329 } 38... d1=R+ { eval=-9.76 d=9 n=58851 } 39. Rxd1 { eval=+8.06 d=14 n=25914 } 39... Rxd1+ { eval=-4.72 d=10 n=124928 } 40. Ke2 { eval=+7.63 d=14 n=58799 } 40... Rd6 { eval=-10.00 d=11 n=102400 } 41. Bxd6 { eval=+8.40 d=11 n=3412 } 41... b6 { eval=-11.22 d=11 n=116736 } 42. Bg3 { eval=+8.33 d=12 n=15400 } 42... Ka6 { eval=-10.96 d=10 n=92160 } 43. Bc7 { eval=+8.57 d=12 n=13578 } 43... Kb7 { eval=-11.23 d=10 n=96256 } 44. Bxb6 { eval=+8.79 d=13 n=28701 } 44... h6 { eval=-12.19 d=10 n=122880 } 45. Be3+ { eval=+9.15 d=13 n=19514 } 45... Kc7 { eval=-13.24 d=11 n=114688 } 46. Rb6 { eval=+10.73 d=13 n=27068 } 46... h5 { eval=-12.56 d=9 n=131072 } 47. a5 { eval=+11.91 d=13 n=7308 } 47... h4 { eval=-13.42 d=10 n=131072 } 48. a6 { eval=+17.38 d=15 n=7059 } 48... g3 { eval=-20.89 d=10 n=129024 } 49. fxg3 { eval=+13.11 d=16 n=6926 } 49... hxg3 { eval=-13.27 d=10 n=83968 } 50. hxg3 { eval=+12.83 d=19 n=4274 } 50... Kd7 { eval=-21.62 d=10 n=88064 } 51. a7 { eval=+8.73 d=30 n=7334 } 51... Ke7 { eval=-289.94 d=8 n=92160 } 52. a8=Q { eval=+12.75 d=54 n=14023 } 52... Kd7 { eval=-289.96 d=8 n=106496 } 53. Qa7+ { eval=+13.22 d=2 n=151 } 53... Kc8 { eval=-289.98 d=8 n=86016 } 54. Rb8# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X8"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Bellon Gambit"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. Nf3 e4 4. Ng5 b5 5. d4 { eval=+0.90 d=6 n=81920 } 5... Bb4 { eval=-0.10 d=13 n=95473 } 6. cxb5 { eval=+0.45 d=7 n=86016 } 6... a6 { eval=-0.04 d=13 n=10960 } 7. Qb3 { eval=+1.35 d=6 n=57344 } 7... Bxc3+ { eval=+0.21 d=13 n=9580 } 8. bxc3 { eval=+0.58 d=7 n=65536 } 8... O-O { eval=+0.34 d=13 n=21830 } 9. Ba3 { eval=+1.34 d=6 n=63488 } 9... d6 { eval=+1.35 d=11 n=11607 } 10. bxa6 { eval=+0.88 d=6 n=63488 } 10... Bxa6 { eval=+1.63 d=14 n=28329 } 11. f3 { eval=+0.83 d=5 n=43008 } 11... h6 { eval=+3.08 d=13 n=15170 } 12. Nxe4 { eval=-0.02 d=6 n=57344 } 12... Nxe4 { eval=+3.91 d=13 n=9472 } 13. fxe4 { eval=-0.13 d=7 n=49152 } 13... Qh4+ { eval=+4.01 d=14 n=12175 } 14. Kd2 { eval=-0.34 d=8 n=53248 } 14... Nd7 { eval=+5.56 d=12 n=12638 } 15. e5 { eval=+0.20 d=5 n=40960 } 15... Nb6 { eval=+6.39 d=15 n=39942 } 16. exd6 { eval=+1.09 d=5 n=75776 } 16... Nc4+ { eval=+7.31 d=15 n=13006 } 17. Kc2 { eval=+0.00 d=7 n=75776 } 17... Nxa3+ { eval=+8.15 d=15 n=78023 } 18. Qxa3 { eval=-1.96 d=7 n=59392 } 18... Bd3+ { eval=+8.57 d=14 n=18000 } 19. exd3 { eval=-2.36 d=7 n=57344 } 19... Rxa3 { eval=+8.83 d=14 n=28852 } 20. g3 { eval=-2.99 d=8 n=108544 } 20... Qg5 { eval=+9.22 d=14 n=104117 } 21. dxc7 { eval=-2.15 d=7 n=55296 } 21... Qa5 { eval=+9.60 d=14 n=11544 } 22. c4 { eval=-2.96 d=8 n=69632 } 22... Qc3+ { eval=+10.71 d=14 n=7411 } 23. Kb1 { eval=-3.14 d=7 n=45056 } 23... Rfa8 { eval=+13.37 d=23 n=14647 } 24. c8=Q+ { eval=-289.94 d=8 n=53248 } 24... Rxc8 25. Bg2 { eval=-289.96 d=8 n=92160 } 25... Rb8+ 26. Bb7 { eval=-289.98 d=9 n=98304 } 26... Rxb7# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X8"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Bellon Gambit"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. Nf3 e4 4. Ng5 b5 5. d3 { eval=+0.54 d=15 n=63888 } 5... exd3 { eval=-0.79 d=6 n=63488 } 6. cxb5 { eval=+0.56 d=12 n=8380 } 6... h6 { eval=-0.32 d=8 n=90112 } 7. Nf3 { eval=+0.70 d=12 n=13390 } 7... dxe2 { eval=-0.43 d=8 n=86016 } 8. Bxe2 { eval=+1.08 d=11 n=23917 } 8... d5 { eval=-0.26 d=7 n=53248 } 9. a4 { eval=+0.66 d=11 n=84147 } 9... Be6 { eval=+0.24 d=5 n=49152 } 10. Nd4 { eval=+1.18 d=12 n=25451 } 10... Qd6 { eval=-0.12 d=6 n=65536 } 11. O-O { eval=+2.65 d=11 n=9017 } 11... Nbd7 { eval=-0.05 d=6 n=45056 } 12. a5 { eval=+4.41 d=16 n=54208 } 12... Nc5 { eval=+0.45 d=5 n=43008 } 13. b4 { eval=+4.38 d=13 n=9018 } 13... Nce4 { eval=+1.13 d=6 n=47104 } 14. Nxe4 { eval=+3.56 d=14 n=68091 } 14... Nxe4 { eval=+0.54 d=7 n=49152 } 15. Qc2 { eval=+3.49 d=13 n=17370 } 15... Be7 { eval=+0.74 d=6 n=75776 } 16. Bf4 { eval=+6.12 d=14 n=24588 } 16... Qd7 { eval=-0.12 d=6 n=49152 } 17. b6 { eval=+6.18 d=13 n=5509 } 17... axb6 { eval=-0.11 d=4 n=47104 } 18. Bb5 { eval=+7.62 d=14 n=8946 } 18... Bxb4 { eval=-3.52 d=5 n=38912 } 19. Nxe6 { eval=+8.92 d=15 n=56046 } 19... fxe6 { eval=-6.78 d=7 n=57344 } 20. Bxd7+ { eval=+10.18 d=14 n=6241 } 20... Kxd7 { eval=-7.37 d=7 n=51200 } 21. Qxc7+ { eval=+10.18 d=15 n=66780 } 21... Ke8 { eval=-9.37 d=8 n=63488 } 22. axb6 { eval=+12.05 d=14 n=31327 } 22... Rd8 { eval=-9.40 d=8 n=59392 } 23. Ra7 { eval=+12.15 d=14 n=19890 } 23... Ng5 { eval=-289.94 d=8 n=79872 } 24. Bxg5 { eval=+19.01 d=17 n=5098 } 24... Rd7 { eval=-289.96 d=9 n=124928 } 25. Qxd7+ { eval=+20.09 d=3 n=196 } 25... Kf8 { eval=-289.98 d=9 n=157696 } 26. Qf7# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X8"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Bremen Smyslov System"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. g3 Bb4 4. Bg2 O-O 5. e4 Bxc3 6. bxc3 Re8 { eval=-0.27 d=14 n=48901 } 7. d3 { eval=-0.52 d=7 n=79872 } 7... c6 { eval=-0.10 d=13 n=23898 } 8. Bg5 { eval=-0.02 d=5 n=63488 } 8... h6 { eval=+0.12 d=12 n=15546 } 9. Bxf6 { eval=-0.06 d=6 n=69632 } 9... Qxf6 { eval=+0.08 d=13 n=14764 } 10. Qf3 { eval=-0.33 d=6 n=63488 } 10... Qd8 { eval=+0.31 d=14 n=20863 } 11. d4 { eval=-0.34 d=7 n=108544 } 11... d5 { eval=+1.24 d=12 n=29596 } 12. cxd5 { eval=+0.32 d=7 n=71680 } 12... cxd5 { eval=+1.26 d=12 n=13654 } 13. exd5 { eval=-0.74 d=7 n=96256 } 13... exd4+ { eval=+1.50 d=13 n=15096 } 14. Ne2 { eval=-0.65 d=8 n=61440 } 14... Qg5 { eval=+1.53 d=12 n=15998 } 15. h4 { eval=+0.37 d=7 n=67584 } 15... Qg6 { eval=+1.87 d=13 n=21583 } 16. h5 { eval=-0.80 d=6 n=67584 } 16... Qa6 { eval=+2.32 d=16 n=71481 } 17. cxd4 { eval=-0.24 d=7 n=73728 } 17... Bd7 { eval=+2.20 d=15 n=85777 } 18. Rh4 { eval=+0.65 d=7 n=61440 } 18... Bb5 { eval=+2.60 d=11 n=17070 } 19. Re4 { eval=+0.70 d=7 n=57344 } 19... Nd7 { eval=+2.58 d=12 n=7516 } 20. Nc3 { eval=+0.64 d=6 n=73728 } 20... Qa5 { eval=+3.30 d=12 n=30193 } 21. Rc1 { eval=+0.84 d=6 n=43008 } 21... Nb6 { eval=+3.12 d=15 n=101137 } 22. Re3 { eval=+0.51 d=6 n=40960 } 22... Rxe3+ { eval=+5.49 d=12 n=9235 } 23. fxe3 { eval=-0.61 d=8 n=55296 } 23... Rc8 { eval=+5.70 d=14 n=33464 } 24. e4 { eval=-0.61 d=6 n=61440 } 24... Na4 { eval=+5.30 d=15 n=14779 } 25. Qf4 { eval=-2.18 d=7 n=65536 } 25... Rxc3 { eval=+6.14 d=14 n=12253 } 26. Kf2 { eval=-2.36 d=7 n=65536 } 26... Rxc1 { eval=+5.93 d=15 n=50685 } 27. Qxc1 { eval=-2.22 d=9 n=75776 } 27... Nb6 { eval=+5.80 d=14 n=11821 } 28. Qb2 { eval=-2.22 d=8 n=75776 } 28... Bd7 { eval=+5.84 d=15 n=51166 } 29. a3 { eval=-1.51 d=6 n=75776 } 29... Nc4 { eval=+5.76 d=14 n=13662 } 30. Qb4 { eval=-1.97 d=8 n=79872 } 30... Qxb4 { eval=+5.82 d=13 n=3908 } 31. axb4 { eval=-2.24 d=10 n=98304 } 31... Na3 { eval=+5.06 d=14 n=39698 } 32. d6 { eval=-2.24 d=10 n=81920 } 32... Nc2 { eval=+5.63 d=11 n=2704 } 33. e5 { eval=-2.26 d=10 n=88064 } 33... Nxd4 { eval=+5.58 d=15 n=27859 } 34. Bxb7 { eval=-1.90 d=11 n=100352 } 34... Nc2 { eval=+5.53 d=16 n=52846 } 35. b5 { eval=-1.84 d=11 n=118784 } 35... Bxb5 { eval=+5.96 d=12 n=10058 } 36. Bh1 { eval=-2.02 d=9 n=100352 } 36... Kf8 { eval=+6.16 d=14 n=9708 } 37. Be4 { eval=-1.89 d=9 n=79872 } 37... Nd4 { eval=+6.18 d=12 n=4628 } 38. g4 { eval=-1.97 d=7 n=71680 } 38... Nc6 { eval=+6.17 d=14 n=29597 } 39. Bxc6 { eval=-3.00 d=9 n=83968 } 39... Bxc6 { eval=+6.09 d=13 n=6342 } 40. Ke3 { eval=-3.70 d=9 n=90112 } 40... Bd7 { eval=+6.12 d=12 n=4950 } 41. Kf4 { eval=-3.57 d=10 n=81920 } 41... a5 { eval=+6.57 d=14 n=19807 } 42. g5 { eval=-4.68 d=10 n=86016 } 42... a4 { eval=+7.28 d=14 n=21099 } 43. Ke4 { eval=-4.84 d=10 n=86016 } 43... a3 { eval=+7.92 d=12 n=5618 } 44. gxh6 { eval=-11.10 d=9 n=83968 } 44... gxh6 { eval=+8.19 d=14 n=9510 } 45. Kd5 { eval=-11.10 d=9 n=94208 } 45... a2 { eval=+9.09 d=14 n=40423 } 46. Kd4 { eval=-13.79 d=9 n=86016 } 46... a1=Q+ { eval=+10.45 d=13 n=12216 } 47. Kd5 { eval=-13.79 d=9 n=83968 } 47... Qc3 { eval=+11.42 d=25 n=5906 } 48. Ke4 { eval=-289.96 d=8 n=102400 } 48... Bc6+ { eval=+12.40 d=2 n=111 } 49. Kf4 { eval=-289.98 d=9 n=114688 } 49... Qf3# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X8"]
+[Result "1/2-1/2"]
+[TimeControl "2.0+0.05"]
+[Opening "English Bremen Smyslov System"]
+[Termination "threefold_repetition"]
+
+1. c4 e5 2. Nc3 Nf6 3. g3 Bb4 4. Bg2 O-O 5. e4 Bxc3 6. bxc3 d6 { eval=+0.77 d=7 n=81920 } 7. Ne2 { eval=+0.57 d=13 n=68241 } 7... Qe8 { eval=+0.60 d=6 n=77824 } 8. O-O { eval=+0.57 d=13 n=41037 } 8... Nbd7 { eval=+0.79 d=7 n=73728 } 9. h3 { eval=+0.61 d=13 n=27106 } 9... Nc5 { eval=+0.94 d=7 n=73728 } 10. d4 { eval=+0.77 d=9 n=11365 } 10... Ncd7 { eval=+0.19 d=6 n=67584 } 11. c5 { eval=+1.41 d=13 n=20138 } 11... dxc5 { eval=+0.78 d=7 n=67584 } 12. f4 { eval=+1.89 d=15 n=14068 } 12... cxd4 { eval=+1.13 d=7 n=63488 } 13. cxd4 { eval=+2.18 d=12 n=23507 } 13... exd4 { eval=+1.14 d=7 n=65536 } 14. Qxd4 { eval=+2.03 d=15 n=71942 } 14... c5 { eval=+0.99 d=7 n=81920 } 15. Qe3 { eval=+2.39 d=12 n=10749 } 15... Qe6 { eval=+0.96 d=7 n=55296 } 16. Rd1 { eval=+2.84 d=11 n=9007 } 16... Re8 { eval=+0.89 d=7 n=65536 } 17. Nc3 { eval=+2.20 d=14 n=21749 } 17... c4 { eval=+0.89 d=5 n=43008 } 18. e5 { eval=+4.79 d=11 n=7042 } 18... Nb6 { eval=+0.75 d=5 n=53248 } 19. exf6 { eval=+6.27 d=15 n=31458 } 19... Qxe3+ { eval=-1.18 d=8 n=86016 } 20. Bxe3 { eval=+5.72 d=15 n=20831 } 20... Bxh3 { eval=-1.18 d=8 n=75776 } 21. Bd4 { eval=+5.44 d=17 n=140082 } 21... Bxg2 { eval=-0.72 d=7 n=77824 } 22. Kxg2 { eval=+5.47 d=14 n=21585 } 22... gxf6 { eval=-1.02 d=8 n=75776 } 23. a4 { eval=+5.43 d=15 n=59741 } 23... Rad8 { eval=-0.68 d=7 n=77824 } 24. Bxf6 { eval=+5.50 d=15 n=9026 } 24... Rd3 { eval=-1.16 d=8 n=81920 } 25. Rxd3 { eval=+5.48 d=15 n=69417 } 25... cxd3 { eval=-1.39 d=9 n=90112 } 26. Rd1 { eval=+5.26 d=13 n=5974 } 26... Re3 { eval=-1.38 d=9 n=96256 } 27. Kf2 { eval=+5.31 d=15 n=44321 } 27... Re6 { eval=-2.00 d=7 n=79872 } 28. Bd4 { eval=+5.70 d=12 n=2330 } 28... a6 { eval=-2.18 d=7 n=77824 } 29. Rxd3 { eval=+6.10 d=14 n=21288 } 29... Nc4 { eval=-2.34 d=8 n=79872 } 30. Bc5 { eval=+6.23 d=13 n=8660 } 30... h5 { eval=-2.54 d=7 n=79719 } 31. Rd5 { eval=+6.41 d=13 n=8510 } 31... Re8 { eval=-3.15 d=7 n=106496 } 32. Bd4 { eval=+6.89 d=14 n=37134 } 32... Kf8 { eval=-3.36 d=8 n=75776 } 33. Rxh5 { eval=+6.48 d=14 n=23778 } 33... Re6 { eval=-3.76 d=7 n=104448 } 34. g4 { eval=+6.42 d=13 n=26068 } 34... Rg6 { eval=-3.35 d=8 n=75776 } 35. Nd5 { eval=+6.61 d=13 n=16831 } 35... Rxg4 { eval=-2.70 d=8 n=79872 } 36. Rh8+ { eval=+7.50 d=10 n=1048 } 36... Rg8 { eval=-3.61 d=10 n=75776 } 37. Rh7 { eval=+6.26 d=15 n=29257 } 37... b6 { eval=-3.61 d=10 n=79872 } 38. Rh5 { eval=+6.36 d=13 n=11989 } 38... Rg6 { eval=-3.23 d=8 n=67584 } 39. Rh8+ { eval=+6.40 d=13 n=18009 } 39... Rg8 { eval=-3.72 d=10 n=77824 } 40. Rh6 { eval=+6.43 d=12 n=10820 } 40... Rg6 { eval=-3.72 d=9 n=71680 } 41. Rh8+ { eval=+6.43 d=14 n=8274 } 41... Rg8 { eval=+0.00 d=64 n=128 } 42. Rh5 { eval=+6.44 d=13 n=4473 } 42... Rg6 { eval=+0.00 d=15 n=73728 } 1/2-1/2
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X8"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Keres Defense"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. g3 c6 4. Nf3 e4 5. Nd4 d5 6. cxd5 Qb6 7. Qa4 { eval=+0.43 d=7 n=67584 } 7... Bc5 { eval=+0.23 d=14 n=55686 } 8. e3 { eval=+0.50 d=7 n=77824 } 8... O-O { eval=+0.39 d=13 n=18989 } 9. dxc6 { eval=+0.83 d=7 n=54932 } 9... Bxd4 { eval=+0.07 d=13 n=46024 } 10. cxb7 { eval=+1.25 d=7 n=92160 } 10... Qxb7 { eval=+0.25 d=15 n=21647 } 11. exd4 { eval=+1.71 d=7 n=61440 } 11... e3 { eval=+0.27 d=14 n=10416 } 12. d5 { eval=+1.01 d=8 n=75776 } 12... exf2+ { eval=+0.30 d=13 n=22170 } 13. Kxf2 { eval=+1.18 d=8 n=67584 } 13... Qb6+ { eval=+0.28 d=13 n=12663 } 14. d4 { eval=+2.46 d=7 n=75776 } 14... Bd7 { eval=+0.21 d=12 n=19835 } 15. Qc4 { eval=+2.62 d=6 n=67584 } 15... Rc8 { eval=+0.74 d=12 n=13592 } 16. Qd3 { eval=+2.56 d=6 n=57344 } 16... Na6 { eval=+0.67 d=15 n=49509 } 17. a3 { eval=+2.06 d=5 n=69632 } 17... Nc7 { eval=+0.59 d=14 n=57103 } 18. Bg2 { eval=+2.01 d=6 n=59392 } 18... Ng4+ { eval=+1.32 d=13 n=21023 } 19. Kg1 { eval=+2.36 d=7 n=73728 } 19... Re8 { eval=+1.49 d=11 n=21540 } 20. Be4 { eval=+2.55 d=5 n=65536 } 20... Nb5 { eval=+2.37 d=12 n=38554 } 21. Bxh7+ { eval=+2.89 d=6 n=57344 } 21... Kh8 { eval=+3.26 d=13 n=11472 } 22. h3 { eval=+2.68 d=6 n=51200 } 22... Ne5 { eval=+5.56 d=12 n=23762 } 23. Qe4 { eval=+1.95 d=6 n=51200 } 23... Nxd4 { eval=+5.58 d=13 n=10474 } 24. Kg2 { eval=+1.73 d=4 n=51200 } 24... Nef3 { eval=+5.80 d=15 n=23508 } 25. Qd3 { eval=-0.24 d=7 n=51200 } 25... Ne1+ { eval=+7.49 d=15 n=55093 } 26. Rxe1 { eval=-0.80 d=8 n=53248 } 26... Rxe1 { eval=+7.52 d=13 n=11843 } 27. Rb1 { eval=-0.80 d=7 n=47104 } 27... Nb3 { eval=+8.51 d=13 n=9145 } 28. Bg5 { eval=-0.89 d=6 n=49152 } 28... Qg1+ { eval=+6.76 d=20 n=8161 } 29. Kf3 { eval=-6.56 d=8 n=71680 } 29... Nd4+ { eval=+7.87 d=28 n=12266 } 30. Qxd4 { eval=-289.94 d=8 n=69632 } 30... Qh1+ { eval=+8.54 d=65 n=28333 } 31. Kf4 { eval=-289.96 d=9 n=86016 } 31... Qf1+ 32. Qf2 { eval=-289.98 d=9 n=86016 } 32... Qxf2# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X8"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Keres Defense"]
+[Termination "checkmate"]
+
+1. c4 e5 2. Nc3 Nf6 3. g3 c6 4. Nf3 e4 5. Nd4 d5 6. cxd5 Qb6 7. Nb3 { eval=+0.34 d=15 n=72060 } 7... cxd5 { eval=+0.48 d=7 n=67584 } 8. Bg2 { eval=+0.41 d=15 n=22184 } 8... Nc6 { eval=+0.85 d=6 n=67584 } 9. d3 { eval=+0.44 d=13 n=40333 } 9... Bb4 { eval=+0.76 d=6 n=69632 } 10. O-O { eval=+0.70 d=10 n=13003 } 10... Bxc3 { eval=+0.72 d=6 n=69587 } 11. bxc3 { eval=+0.77 d=13 n=14094 } 11... Bf5 { eval=+0.61 d=6 n=73728 } 12. Ba3 { eval=+1.91 d=12 n=16988 } 12... Rd8 { eval=+0.65 d=5 n=57344 } 13. Qc1 { eval=+2.96 d=12 n=14044 } 13... exd3 { eval=+0.78 d=4 n=45056 } 14. exd3 { eval=+5.32 d=12 n=7396 } 14... Bxd3 { eval=+0.87 d=6 n=73728 } 15. Re1+ { eval=+4.82 d=16 n=104248 } 15... Be4 { eval=+0.27 d=7 n=57344 } 16. Bc5 { eval=+6.44 d=14 n=43248 } 16... Qc7 { eval=-0.51 d=7 n=67584 } 17. f3 { eval=+6.16 d=13 n=9795 } 17... Qe5 { eval=-0.51 d=6 n=69632 } 18. fxe4 { eval=+6.86 d=15 n=58378 } 18... dxe4 { eval=-1.61 d=6 n=61440 } 19. Qa3 { eval=+6.37 d=17 n=84634 } 19... b6 { eval=-0.28 d=4 n=55296 } 20. Qa4 { eval=+6.95 d=15 n=5455 } 20... bxc5 { eval=-2.09 d=6 n=53248 } 21. Qxc6+ { eval=+7.14 d=14 n=9794 } 21... Kf8 { eval=-2.51 d=8 n=73728 } 22. Qxc5+ { eval=+6.92 d=15 n=34175 } 22... Qxc5+ { eval=-3.00 d=8 n=94208 } 23. Nxc5 { eval=+6.87 d=13 n=4996 } 23... Rc8 { eval=-3.00 d=7 n=90112 } 24. Nxe4 { eval=+6.77 d=14 n=6077 } 24... Nxe4 { eval=-3.39 d=8 n=71680 } 25. Rxe4 { eval=+6.75 d=15 n=33309 } 25... Rxc3 { eval=-3.41 d=7 n=81920 } 26. Rd4 { eval=+6.56 d=14 n=16796 } 26... Re3 { eval=-3.22 d=8 n=102400 } 27. Rd8+ { eval=+6.83 d=14 n=11393 } 27... Re8 { eval=-3.19 d=9 n=71680 } 28. Rxe8+ { eval=+6.91 d=17 n=35722 } 28... Kxe8 { eval=-3.05 d=9 n=104448 } 29. Bd5 { eval=+6.36 d=14 n=9683 } 29... a6 { eval=-3.22 d=8 n=92160 } 30. Re1+ { eval=+6.63 d=14 n=48699 } 30... Kf8 { eval=-3.29 d=9 n=83968 } 31. Rb1 { eval=+6.73 d=14 n=21624 } 31... g6 { eval=-4.10 d=8 n=79872 } 32. Rb7 { eval=+7.06 d=13 n=7297 } 32... f5 { eval=-4.25 d=9 n=86016 } 33. h4 { eval=+7.39 d=14 n=35771 } 33... a5 { eval=-4.25 d=9 n=112640 } 34. Kg2 { eval=+7.64 d=14 n=16998 } 34... h5 { eval=-3.82 d=10 n=94208 } 35. Kf3 { eval=+7.70 d=13 n=4289 } 35... Rh6 { eval=-4.17 d=10 n=118784 } 36. Rf7+ { eval=+7.54 d=14 n=46155 } 36... Ke8 { eval=-4.12 d=11 n=98304 } 37. Kf4 { eval=+7.45 d=14 n=23780 } 37... Rh8 { eval=-4.60 d=9 n=86016 } 38. Ra7 { eval=+8.47 d=12 n=3430 } 38... Rf8 { eval=-4.75 d=10 n=81920 } 39. Ke5 { eval=+8.78 d=13 n=8833 } 39... f4 { eval=-3.95 d=10 n=88064 } 40. Ke6 { eval=+9.26 d=14 n=5767 } 40... Kd8 { eval=-7.87 d=10 n=92160 } 41. Ra8+ { eval=+9.18 d=15 n=25818 } 41... Kc7 { eval=-8.60 d=11 n=79872 } 42. Rxf8 { eval=+9.21 d=14 n=11239 } 42... fxg3 { eval=-8.39 d=11 n=81920 } 43. Bg2 { eval=+9.02 d=14 n=12900 } 43... Kb6 { eval=-8.46 d=9 n=92160 } 44. Ke5 { eval=+8.53 d=16 n=81346 } 44... Kc5 { eval=-8.41 d=10 n=115480 } 45. Rf4 { eval=+8.56 d=14 n=24541 } 45... Kb6 { eval=-8.76 d=10 n=96256 } 46. Rf3 { eval=+8.59 d=14 n=28977 } 46... a4 { eval=-9.34 d=8 n=110592 } 47. a3 { eval=+8.67 d=15 n=53677 } 47... Kc5 { eval=-9.64 d=8 n=69632 } 48. Rc3+ { eval=+8.74 d=12 n=2629 } 48... Kb6 { eval=-9.55 d=10 n=59392 } 49. Rc6+ { eval=+8.68 d=14 n=19085 } 49... Ka7 { eval=-8.90 d=11 n=75776 } 50. Rxg6 { eval=+11.20 d=16 n=4097 } 50... Kb8 { eval=-10.78 d=11 n=81920 } 51. Rg7 { eval=+9.96 d=14 n=2422 } 51... Kc8 { eval=-10.92 d=11 n=81920 } 52. Rb7 { eval=+9.69 d=26 n=5397 } 52... Kd8 { eval=-10.78 d=12 n=90112 } 53. Ke6 { eval=+9.65 d=55 n=9525 } 53... Kc8 { eval=-289.96 d=11 n=104448 } 54. Kd6 { eval=+11.27 d=3 n=120 } 54... Kd8 { eval=-289.98 d=11 n=100352 } 55. Rb8# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X8"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical 3.Nf3"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nc3 Nf6 3. Nf3 d5 4. cxd5 Nxd5 5. e3 e6 6. d4 Nc6 { eval=-0.20 d=14 n=75486 } 7. Bd3 { eval=+0.20 d=7 n=69632 } 7... Be7 { eval=-0.13 d=10 n=11127 } 8. O-O { eval=+0.20 d=6 n=63488 } 8... O-O { eval=-0.20 d=12 n=11167 } 9. Qc2 { eval=+0.53 d=6 n=61440 } 9... Ndb4 { eval=+0.09 d=14 n=21002 } 10. Bxh7+ { eval=+0.32 d=7 n=75776 } 10... Kh8 { eval=+0.18 d=13 n=13524 } 11. Qb1 { eval=+0.44 d=8 n=77824 } 11... g6 { eval=+0.41 d=13 n=18725 } 12. a3 { eval=+0.58 d=7 n=75776 } 12... Nd5 { eval=+0.38 d=12 n=25565 } 13. Bxg6 { eval=+0.48 d=6 n=65536 } 13... Nxc3 { eval=+0.37 d=13 n=8775 } 14. bxc3 { eval=+0.54 d=7 n=59392 } 14... fxg6 { eval=+0.22 d=10 n=21953 } 15. Qxg6 { eval=+0.72 d=8 n=57344 } 15... Rf6 { eval=+0.20 d=15 n=80425 } 16. Qh5+ { eval=+0.97 d=7 n=61026 } 16... Kg7 { eval=+0.42 d=14 n=14692 } 17. e4 { eval=+0.97 d=5 n=53248 } 17... Qh8 { eval=+0.35 d=13 n=38189 } 18. Qxh8+ { eval=+1.54 d=7 n=59392 } 18... Kxh8 { eval=+0.37 d=15 n=63982 } 19. Be3 { eval=+1.49 d=8 n=83968 } 19... b6 { eval=+0.77 d=11 n=13580 } 20. d5 { eval=+1.45 d=6 n=51200 } 20... exd5 { eval=+2.40 d=14 n=17272 } 21. exd5 { eval=+1.92 d=8 n=61440 } 21... Rxf3 { eval=+2.17 d=15 n=41159 } 22. gxf3 { eval=+1.93 d=8 n=63488 } 22... Bh3 { eval=+2.58 d=13 n=17445 } 23. Bf4 { eval=+1.03 d=7 n=83968 } 23... Rg8+ { eval=+2.09 d=15 n=74370 } 24. Bg3 { eval=+0.45 d=10 n=73728 } 24... Ne5 { eval=+2.33 d=13 n=29889 } 25. Rfd1 { eval=+0.45 d=10 n=83968 } 25... c4 { eval=+2.59 d=15 n=67291 } 26. d6 { eval=+0.50 d=9 n=83968 } 26... Bf6 { eval=+2.81 d=14 n=20296 } 27. Rd5 { eval=+0.50 d=8 n=86016 } 27... Nxf3+ { eval=+2.83 d=13 n=28853 } 28. Kh1 { eval=+0.06 d=9 n=61440 } 28... Be6 { eval=+2.78 d=14 n=16899 } 29. Rh5+ { eval=+0.10 d=9 n=61440 } 29... Kg7 { eval=+3.81 d=13 n=15724 } 30. Rc1 { eval=+0.10 d=9 n=83968 } 30... Kg6 { eval=+4.72 d=15 n=46243 } 31. Rb5 { eval=+0.59 d=8 n=51200 } 31... Bd7 { eval=+4.86 d=12 n=4807 } 32. Rb4 { eval=+0.89 d=7 n=71680 } 32... b5 { eval=+5.42 d=14 n=27171 } 33. a4 { eval=+1.01 d=8 n=51200 } 33... a6 { eval=+4.89 d=14 n=8602 } 34. axb5 { eval=+0.99 d=6 n=49152 } 34... axb5 { eval=+5.20 d=15 n=26553 } 35. Rb2 { eval=+0.93 d=7 n=53248 } 35... Bc6 { eval=+3.81 d=15 n=30213 } 36. Ra2 { eval=+0.34 d=6 n=53248 } 36... Ne5+ { eval=+3.81 d=14 n=15384 } 37. Kg1 { eval=+0.00 d=10 n=63488 } 37... Nd3 { eval=+3.92 d=13 n=4682 } 38. Rcc2 { eval=+0.00 d=10 n=65536 } 38... Re8 { eval=+2.87 d=14 n=48312 } 39. f3 { eval=+0.54 d=6 n=53248 } 39... Re6 { eval=+3.00 d=12 n=10191 } 40. Ra7 { eval=+0.76 d=6 n=49152 } 40... b4 { eval=+4.72 d=8 n=2983 } 41. d7 { eval=-0.62 d=5 n=40960 } 41... b3 { eval=+5.44 d=11 n=4213 } 42. Rd2 { eval=-1.44 d=6 n=51200 } 42... b2 { eval=+5.28 d=12 n=4425 } 43. Rd1 { eval=-1.56 d=7 n=53248 } 43... Bxf3 { eval=+5.17 d=14 n=21438 } 44. Rb1 { eval=-1.56 d=6 n=45056 } 44... Bc6 { eval=+5.16 d=12 n=3118 } 45. Rf1 { eval=-0.97 d=6 n=45056 } 45... Be7 { eval=+5.43 d=14 n=14782 } 46. h3 { eval=-1.39 d=4 n=32768 } 46... Bc5+ { eval=+9.02 d=13 n=7049 } 47. Kh2 { eval=-5.81 d=7 n=45056 } 47... Re2+ { eval=+19.77 d=13 n=6117 } 48. Bf2 { eval=-5.71 d=7 n=40960 } 48... Rxf2+ { eval=+17.21 d=12 n=3344 } 49. Rxf2 { eval=-10.89 d=7 n=69632 } 49... Bd6+ { eval=+9.98 d=17 n=3963 } 50. Kg1 { eval=-289.94 d=9 n=63488 } 50... b1=Q+ 51. Rf1 { eval=-289.96 d=9 n=83968 } 51... Qb6+ 52. Rf2 { eval=-289.98 d=10 n=102400 } 52... Qxf2# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X8"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical 3.Nf3"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nc3 Nf6 3. Nf3 d5 4. cxd5 Nxd5 5. e3 e6 6. d4 Nc6 { eval=-0.07 d=6 n=65536 } 7. Bc4 { eval=+0.23 d=15 n=49982 } 7... cxd4 { eval=+0.00 d=7 n=55296 } 8. exd4 { eval=+0.23 d=10 n=8612 } 8... Bb4 { eval=-0.17 d=6 n=59392 } 9. Qc2 { eval=+0.17 d=14 n=90923 } 9... Nxd4 { eval=+1.39 d=6 n=75776 } 10. Nxd4 { eval=+4.81 d=13 n=63271 } 10... Nxc3 { eval=-1.69 d=8 n=73728 } 11. bxc3 { eval=+4.73 d=16 n=61273 } 11... Qxd4 { eval=-1.70 d=8 n=63488 } 12. Qa4+ { eval=+4.80 d=15 n=38145 } 12... Bd7 { eval=-1.70 d=8 n=65536 } 13. Qxb4 { eval=+4.77 d=15 n=57876 } 13... Qe4+ { eval=-1.67 d=8 n=63488 } 14. Be2 { eval=+4.47 d=15 n=45181 } 14... Qxg2 { eval=-0.44 d=7 n=67584 } 15. Rf1 { eval=+4.58 d=13 n=7102 } 15... e5 { eval=-0.44 d=6 n=55296 } 16. Be3 { eval=+5.75 d=14 n=19255 } 16... a5 { eval=-0.32 d=7 n=55296 } 17. Qd6 { eval=+6.79 d=14 n=17713 } 17... Qxh2 { eval=-0.77 d=7 n=67584 } 18. Bc5 { eval=+12.45 d=15 n=20927 } 18... Qh4 { eval=-5.51 d=7 n=61440 } 19. Qxe5+ { eval=+11.86 d=14 n=5361 } 19... Be6 { eval=-2.78 d=8 n=55296 } 20. O-O-O { eval=+11.88 d=14 n=9429 } 20... Qh6+ { eval=-5.57 d=7 n=67584 } 21. Kb2 { eval=+15.89 d=14 n=3584 } 21... Qc1+ { eval=-11.03 d=8 n=75776 } 22. Kxc1 { eval=+15.21 d=53 n=7775 } 22... Rc8 { eval=-289.94 d=7 n=100352 } 23. Qd6 { eval=+15.08 d=2 n=173 } 23... Bxa2 { eval=-289.98 d=9 n=112640 } 24. Qe7# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X8"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical Rubinstein"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. Nf3 e6 6. O-O Nge7 7. e4 { eval=+0.31 d=7 n=79872 } 7... O-O { eval=+0.24 d=16 n=82586 } 8. d3 { eval=+0.42 d=7 n=73728 } 8... d6 { eval=+0.18 d=13 n=12012 } 9. Qb3 { eval=+0.40 d=6 n=67584 } 9... a6 { eval=+0.56 d=13 n=31864 } 10. Be3 { eval=+0.48 d=6 n=61440 } 10... Nd4 { eval=+0.76 d=10 n=15105 } 11. Qd1 { eval=+0.19 d=7 n=71680 } 11... Rb8 { eval=+0.80 d=10 n=11789 } 12. Bg5 { eval=+0.30 d=6 n=67584 } 12... h6 { eval=+1.14 d=12 n=12907 } 13. Bd2 { eval=+0.02 d=7 n=65536 } 13... Nxf3+ { eval=+0.75 d=14 n=61374 } 14. Bxf3 { eval=+0.35 d=8 n=69632 } 14... b5 { eval=+1.01 d=15 n=14350 } 15. cxb5 { eval=+0.57 d=6 n=83968 } 15... axb5 { eval=+1.56 d=11 n=15429 } 16. a3 { eval=+0.54 d=6 n=65536 } 16... Nc6 { eval=+1.53 d=12 n=22209 } 17. Rc1 { eval=+0.24 d=6 n=65536 } 17... b4 { eval=+2.09 d=11 n=12290 } 18. axb4 { eval=-0.29 d=6 n=55296 } 18... Rxb4 { eval=+2.21 d=13 n=17086 } 19. Rb1 { eval=-0.21 d=6 n=65536 } 19... Ba6 { eval=+2.69 d=11 n=12475 } 20. Be2 { eval=-0.28 d=6 n=55296 } 20... Qa8 { eval=+2.59 d=15 n=90965 } 21. Qc1 { eval=-0.09 d=5 n=47104 } 21... Kh7 { eval=+3.32 d=12 n=10674 } 22. Re1 { eval=-0.13 d=5 n=47104 } 22... Nd4 { eval=+4.27 d=13 n=9966 } 23. Qd1 { eval=-0.65 d=5 n=38912 } 23... Rfb8 { eval=+4.00 d=14 n=19708 } 24. Bf4 { eval=-0.73 d=6 n=45056 } 24... Qc6 { eval=+4.22 d=14 n=26637 } 25. Qd2 { eval=-0.69 d=6 n=40960 } 25... Nxe2+ { eval=+5.69 d=11 n=8634 } 26. Rxe2 { eval=-1.13 d=7 n=38912 } 26... Rb3 { eval=+5.38 d=14 n=14462 } 27. Rc1 { eval=-1.61 d=6 n=43008 } 27... Rxb2 { eval=+4.26 d=15 n=60797 } 28. Qxb2 { eval=-1.51 d=6 n=51200 } 28... Rxb2 { eval=+6.18 d=15 n=17983 } 29. Rxb2 { eval=-2.34 d=8 n=77824 } 29... g5 { eval=+6.35 d=14 n=21425 } 30. Be3 { eval=-2.15 d=6 n=55296 } 30... Bxd3 { eval=+6.18 d=13 n=6349 } 31. f3 { eval=-2.42 d=6 n=47104 } 31... c4 { eval=+5.95 d=17 n=76027 } 32. Rb6 { eval=-1.82 d=6 n=49152 } 32... Qa8 { eval=+6.61 d=13 n=5044 } 33. Rxd6 { eval=-1.31 d=7 n=65536 } 33... Qa3 { eval=+6.34 d=16 n=40617 } 34. Nb5 { eval=-0.69 d=6 n=53248 } 34... Qb2 { eval=+6.47 d=13 n=3656 } 35. Nc7 { eval=-1.75 d=6 n=57344 } 35... Qe2 { eval=+7.01 d=13 n=4272 } 36. Bc5 { eval=-2.46 d=6 n=49152 } 36... Qxf3 { eval=+7.58 d=14 n=16250 } 37. e5 { eval=-3.35 d=6 n=73728 } 37... Be4 { eval=+8.08 d=13 n=4557 } 38. Rd2 { eval=-8.19 d=8 n=51200 } 38... c3 { eval=+8.98 d=14 n=27216 } 39. Ra2 { eval=-7.96 d=6 n=47104 } 39... Qh1+ { eval=+10.12 d=14 n=3225 } 40. Kf2 { eval=-9.42 d=7 n=45056 } 40... Qg2+ { eval=+10.10 d=13 n=4719 } 41. Ke1 { eval=-10.56 d=8 n=53248 } 41... Qxa2 { eval=+10.32 d=14 n=3651 } 42. Rxc3 { eval=-10.89 d=7 n=49152 } 42... Qb1+ { eval=+12.27 d=17 n=39909 } 43. Ke2 { eval=-12.95 d=8 n=67584 } 43... Qb2+ { eval=+12.33 d=12 n=3541 } 44. Kf1 { eval=-13.93 d=9 n=77824 } 44... Qxc3 { eval=+12.91 d=13 n=11088 } 45. Bd6 { eval=-13.93 d=7 n=61440 } 45... Bd3+ { eval=+11.96 d=15 n=3804 } 46. Kg2 { eval=-289.94 d=8 n=86016 } 46... Qd2+ { eval=+11.81 d=39 n=7166 } 47. Kh1 { eval=-289.96 d=9 n=139264 } 47... Qe1+ { eval=+13.60 d=2 n=94 } 48. Kg2 { eval=-289.98 d=10 n=215040 } 48... Qf1# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X8"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical Rubinstein"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. Nf3 e6 6. O-O Nge7 7. e3 { eval=+0.06 d=18 n=211216 } 7... d5 { eval=-0.01 d=7 n=149504 } 8. cxd5 { eval=+0.07 d=15 n=19882 } 8... Nxd5 { eval=-0.15 d=8 n=133120 } 9. d4 { eval=+0.25 d=16 n=41763 } 9... Nxc3 { eval=-0.15 d=6 n=131072 } 10. bxc3 { eval=+1.29 d=14 n=40343 } 10... Bf6 { eval=-0.23 d=6 n=137216 } 11. Ba3 { eval=+1.37 d=14 n=81529 } 11... cxd4 { eval=-0.40 d=7 n=137216 } 12. Nxd4 { eval=+1.73 d=14 n=59382 } 12... Ne7 { eval=-0.52 d=7 n=139264 } 13. Qf3 { eval=+3.25 d=15 n=40221 } 13... Nd5 { eval=-0.18 d=8 n=137216 } 14. c4 { eval=+5.81 d=15 n=43054 } 14... Nb6 { eval=-0.89 d=8 n=135168 } 15. Nb5 { eval=+6.75 d=16 n=115520 } 15... Bxa1 { eval=-0.88 d=8 n=137216 } 16. Rd1 { eval=+7.69 d=15 n=51859 } 16... Qxd1+ { eval=-0.02 d=8 n=153600 } 17. Qxd1 { eval=+7.70 d=15 n=28997 } 17... Be5 { eval=-2.64 d=9 n=180224 } 18. f4 { eval=+7.85 d=15 n=64319 } 18... Bb8 { eval=-0.30 d=8 n=147456 } 19. Nd6+ { eval=+10.20 d=34 n=28911 } 19... Kd7 { eval=-5.70 d=8 n=190464 } 20. Nxb7+ { eval=+9.78 d=44 n=67819 } 20... Nd5 { eval=-289.94 d=9 n=106496 } 21. Qa4+ { eval=+10.98 d=120 n=76187 } 21... Kc7 { eval=-289.96 d=9 n=135168 } 22. Bd6+ { eval=+9.27 d=2 n=140 } 22... Kxb7 { eval=-289.98 d=9 n=104448 } 23. Qb5# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X8"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical Anti-Benoni"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nf3 Nf6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d5 6. cxd5 Bc5 7. d6 { eval=+1.31 d=7 n=57344 } 7... O-O { eval=+0.79 d=13 n=32311 } 8. Nc7 { eval=+1.81 d=7 n=71680 } 8... Ne4 { eval=+0.95 d=14 n=39311 } 9. e3 { eval=+1.84 d=6 n=47104 } 9... Bb4+ { eval=+0.99 d=15 n=22528 } 10. Nc3 { eval=+0.52 d=8 n=71680 } 10... Nxc3 { eval=+0.82 d=14 n=21626 } 11. bxc3 { eval=+1.00 d=8 n=75776 } 11... Bxc3+ { eval=+0.68 d=14 n=18312 } 12. Bd2 { eval=-0.14 d=8 n=83968 } 12... Bxa1 { eval=+0.78 d=16 n=16729 } 13. Qxa1 { eval=-0.34 d=9 n=83968 } 13... Qxd6 { eval=+0.80 d=15 n=14665 } 14. Nxa8 { eval=-0.34 d=9 n=92160 } 14... Bf5 { eval=+0.80 d=15 n=13619 } 15. Qb2 { eval=+0.27 d=6 n=83968 } 15... Rc8 { eval=+0.80 d=13 n=51278 } 16. Bb4 { eval=+0.49 d=6 n=98304 } 16... Qd5 { eval=+1.16 d=11 n=19387 } 17. f3 { eval=+0.15 d=7 n=88064 } 17... Rc2 { eval=+1.11 d=12 n=40435 } 18. Qb3 { eval=+0.18 d=8 n=86016 } 18... Qc6 { eval=+1.36 d=14 n=75871 } 19. Be2 { eval=+0.61 d=6 n=49152 } 19... Rc1+ { eval=+5.42 d=12 n=14025 } 20. Kf2 { eval=-3.75 d=7 n=63488 } 20... Rxh1 { eval=+6.21 d=14 n=22913 } 21. e4 { eval=-3.89 d=7 n=65536 } 21... Be6 { eval=+6.26 d=15 n=30069 } 22. Qa3 { eval=-3.89 d=7 n=53248 } 22... Nd7 { eval=+7.12 d=14 n=34925 } 23. Qa5 { eval=-3.32 d=6 n=53248 } 23... b6 { eval=+7.56 d=14 n=4832 } 24. Qxa7 { eval=-3.74 d=7 n=61440 } 24... Qc1 { eval=+11.16 d=14 n=15412 } 25. Bb5 { eval=-4.05 d=6 n=53248 } 25... Qg1+ { eval=+23.16 d=15 n=9702 } 26. Ke2 { eval=-10.04 d=9 n=86016 } 26... Qxg2+ { eval=+23.40 d=16 n=11880 } 27. Ke3 { eval=-13.11 d=9 n=92160 } 27... Rxh2 { eval=+19.68 d=26 n=17045 } 28. Qb8+ { eval=-20.14 d=8 n=114688 } 28... Nxb8 29. Be1 { eval=-289.94 d=9 n=108544 } 29... Qg1+ { eval=+18.14 d=57 n=23518 } 30. Bf2 { eval=-289.96 d=9 n=112640 } 30... Qxf2+ 31. Kd3 { eval=-289.98 d=9 n=106496 } 31... Qxf3# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X8"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "English Symmetrical Anti-Benoni"]
+[Termination "checkmate"]
+
+1. c4 c5 2. Nf3 Nf6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d5 6. cxd5 Bc5 7. N5c3 { eval=+0.22 d=13 n=28423 } 7... Ng4 { eval=-0.62 d=5 n=63488 } 8. e3 { eval=+1.41 d=13 n=15788 } 8... Qh4 { eval=-0.73 d=7 n=54372 } 9. g3 { eval=+2.13 d=12 n=5840 } 9... Qf6 { eval=-1.30 d=6 n=61440 } 10. Ne4 { eval=+3.20 d=15 n=34825 } 10... Qf5 { eval=-1.55 d=6 n=57344 } 11. f3 { eval=+4.59 d=15 n=25309 } 11... Bb4+ { eval=-1.90 d=5 n=57344 } 12. Nec3 { eval=+5.49 d=14 n=16655 } 12... Nf6 { eval=-1.85 d=6 n=59392 } 13. Qa4+ { eval=+5.81 d=14 n=5056 } 13... Nbd7 { eval=-1.67 d=8 n=69632 } 14. Qxb4 { eval=+5.67 d=15 n=17039 } 14... Qxf3 { eval=-2.00 d=8 n=61440 } 15. Rg1 { eval=+5.65 d=15 n=33990 } 15... Ng4 { eval=-2.28 d=7 n=65536 } 16. Rg2 { eval=+6.41 d=14 n=8678 } 16... Nxe3 { eval=-1.67 d=6 n=55296 } 17. Bxe3 { eval=+6.57 d=15 n=26039 } 17... Qxe3+ { eval=-1.87 d=8 n=63488 } 18. Re2 { eval=+6.34 d=14 n=10209 } 18... Qc1+ { eval=-1.87 d=7 n=59392 } 19. Nd1 { eval=+6.38 d=13 n=7658 } 19... f6 { eval=-1.39 d=5 n=49152 } 20. a4 { eval=+6.36 d=15 n=51587 } 20... Nc5 { eval=-1.13 d=6 n=53248 } 21. Re3 { eval=+7.09 d=13 n=6427 } 21... Bf5 { eval=-0.68 d=4 n=43008 } 22. Rc3 { eval=+8.45 d=15 n=78074 } 22... Bc2 { eval=-0.89 d=6 n=57344 } 23. Na3 { eval=+9.12 d=14 n=12229 } 23... Qxa1 { eval=-3.31 d=6 n=66431 } 24. Nxc2 { eval=+9.13 d=13 n=13403 } 24... Qb1 { eval=-3.84 d=7 n=65536 } 25. Qxc5 { eval=+9.84 d=13 n=6092 } 25... a6 { eval=-3.85 d=6 n=59392 } 26. Qd6 { eval=+10.88 d=15 n=35616 } 26... Rd8 { eval=-4.17 d=6 n=47104 } 27. Qe6+ { eval=+16.84 d=16 n=3810 } 27... Kf8 { eval=-14.51 d=8 n=65536 } 28. Rc7 { eval=+9.64 d=20 n=5684 } 28... Qxd1+ { eval=-17.66 d=8 n=90112 } 29. Kxd1 Rxd5+ { eval=-289.94 d=9 n=110592 } 30. Qxd5 { eval=+16.70 d=152 n=15109 } 30... Ke8 { eval=-289.96 d=8 n=100352 } 31. Qd7+ Kf8 { eval=-289.98 d=9 n=104448 } 32. Qc8# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X8"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti Reversed Blumenfeld"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. c4 d4 3. e3 c5 4. b4 dxe3 5. fxe3 cxb4 6. d4 Nf6 { eval=-0.09 d=14 n=29497 } 7. Nbd2 { eval=-0.75 d=7 n=86016 } 7... g6 { eval=+0.16 d=11 n=12133 } 8. Qa4+ { eval=-0.05 d=7 n=73728 } 8... Nbd7 { eval=+0.11 d=11 n=11746 } 9. Ne5 { eval=+0.07 d=7 n=96256 } 9... a5 { eval=+2.24 d=13 n=44537 } 10. Ndf3 { eval=+0.28 d=5 n=53248 } 10... Bg7 { eval=+2.05 d=14 n=15505 } 11. c5 { eval=-0.54 d=6 n=65536 } 11... O-O { eval=+2.89 d=11 n=11942 } 12. Qb3 { eval=-0.69 d=6 n=59392 } 12... Nxe5 { eval=+5.24 d=13 n=12549 } 13. Nxe5 { eval=-0.92 d=7 n=53248 } 13... Ne4 { eval=+5.08 d=15 n=19047 } 14. Qc2 { eval=-1.02 d=7 n=69632 } 14... Nc3 { eval=+5.38 d=15 n=9369 } 15. Nf3 { eval=-1.42 d=5 n=40960 } 15... Bf5 { eval=+6.44 d=15 n=51492 } 16. Bd3 { eval=-1.28 d=5 n=45056 } 16... Bxd3 { eval=+7.08 d=14 n=6499 } 17. Qxd3 { eval=-1.44 d=6 n=40960 } 17... e5 { eval=+7.05 d=15 n=38517 } 18. O-O { eval=-1.80 d=5 n=38912 } 18... e4 { eval=+7.14 d=14 n=12456 } 19. Qc4 { eval=-2.64 d=6 n=43008 } 19... exf3 { eval=+7.23 d=15 n=34714 } 20. Rxf3 { eval=-2.97 d=7 n=49152 } 20... b6 { eval=+7.36 d=15 n=87422 } 21. c6 { eval=-1.70 d=6 n=47104 } 21... Qd6 { eval=+7.84 d=13 n=7156 } 22. c7 { eval=-2.27 d=5 n=40960 } 22... Rac8 { eval=+8.31 d=13 n=5488 } 23. Qb3 { eval=-4.01 d=5 n=45056 } 23... a4 { eval=+8.82 d=16 n=48674 } 24. Qb2 { eval=-4.33 d=6 n=36864 } 24... Rxc7 { eval=+8.91 d=13 n=5806 } 25. Bd2 { eval=-4.28 d=6 n=45056 } 25... Rfc8 { eval=+8.45 d=15 n=36677 } 26. Kh1 { eval=-4.12 d=5 n=40960 } 26... Bf8 { eval=+8.41 d=15 n=45861 } 27. Qc2 { eval=-4.08 d=5 n=38912 } 27... Qe6 { eval=+9.10 d=13 n=12992 } 28. Bxc3 { eval=-4.16 d=7 n=69632 } 28... bxc3 { eval=+8.61 d=15 n=25157 } 29. Qxa4 { eval=-4.16 d=6 n=49152 } 29... c2 { eval=+8.71 d=12 n=3580 } 30. Rc1 { eval=-4.21 d=7 n=47104 } 30... b5 { eval=+8.77 d=13 n=5190 } 31. Qxb5 { eval=-3.83 d=6 n=45056 } 31... Ba3 { eval=+9.48 d=13 n=3488 } 32. Qf1 { eval=-5.86 d=6 n=59392 } 32... Bxc1 { eval=+9.37 d=14 n=21369 } 33. Qxc1 { eval=-6.54 d=8 n=71680 } 33... f5 { eval=+9.07 d=13 n=36644 } 34. a4 { eval=-5.79 d=6 n=59392 } 34... Qd7 { eval=+9.06 d=14 n=29708 } 35. a5 { eval=-5.65 d=7 n=81920 } 35... h6 { eval=+9.02 d=13 n=17142 } 36. Rh3 { eval=-4.95 d=7 n=67584 } 36... Rb7 { eval=+9.61 d=13 n=13334 } 37. Rxh6 { eval=-4.43 d=6 n=63488 } 37... Qg7 { eval=+11.73 d=11 n=1427 } 38. e4 { eval=-8.27 d=6 n=67584 } 38... Rb1 { eval=+14.70 d=12 n=2153 } 39. g4 { eval=-18.82 d=7 n=77824 } 39... Rxc1+ { eval=+18.83 d=13 n=4891 } 40. Kg2 { eval=-20.50 d=9 n=100352 } 40... Rg1+ { eval=+18.35 d=16 n=3942 } 41. Kxg1 { eval=-22.60 d=8 n=98304 } 41... Qxd4+ { eval=+18.06 d=21 n=5240 } 42. Kg2 { eval=-289.94 d=8 n=94208 } 42... Qd2+ { eval=+16.88 d=42 n=7644 } 43. Kh3 { eval=-289.96 d=8 n=108544 } 43... Rc3+ 44. Kh4 { eval=-289.98 d=8 n=90112 } 44... Qxh6# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X8"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti Reversed Blumenfeld"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. c4 d4 3. e3 c5 4. b4 dxe3 5. fxe3 cxb4 6. d4 e6 { eval=+0.78 d=8 n=92160 } 7. Bd3 { eval=+0.47 d=15 n=30057 } 7... Nf6 { eval=+0.78 d=7 n=94208 } 8. Bb2 { eval=+0.31 d=15 n=96229 } 8... Nc6 { eval=+0.87 d=6 n=65536 } 9. O-O { eval=+0.55 d=12 n=20852 } 9... Ng4 { eval=+1.08 d=5 n=63488 } 10. Qe2 { eval=+1.21 d=13 n=19514 } 10... Qc7 { eval=+0.57 d=6 n=67584 } 11. Nbd2 { eval=+1.43 d=12 n=7969 } 11... Bd6 { eval=+0.90 d=5 n=53248 } 12. h3 { eval=+2.46 d=12 n=8113 } 12... Nf6 { eval=+0.40 d=6 n=53248 } 13. e4 { eval=+3.20 d=11 n=5215 } 13... Nh5 { eval=+0.69 d=6 n=100352 } 14. e5 { eval=+3.89 d=14 n=12981 } 14... Ng3 { eval=+0.62 d=6 n=83968 } 15. Qf2 { eval=+4.84 d=14 n=13671 } 15... Nxe5 { eval=+0.07 d=7 n=55296 } 16. Nxe5 { eval=+5.43 d=13 n=6754 } 16... Nxf1 { eval=-0.12 d=8 n=73728 } 17. Ne4 { eval=+5.51 d=14 n=16925 } 17... f6 { eval=+0.87 d=7 n=59392 } 18. c5 { eval=+5.58 d=14 n=11010 } 18... Bxe5 { eval=+0.16 d=6 n=65536 } 19. dxe5 { eval=+5.14 d=15 n=25744 } 19... Nd2 { eval=-0.42 d=6 n=69632 } 20. Nd6+ { eval=+8.36 d=14 n=30635 } 20... Kd7 { eval=-0.42 d=6 n=40960 } 21. exf6 { eval=+9.33 d=14 n=42827 } 21... Rf8 { eval=-1.66 d=5 n=45056 } 22. Bb5+ { eval=+10.63 d=14 n=28812 } 22... Kd8 { eval=-3.48 d=8 n=40960 } 23. fxg7 { eval=+11.54 d=15 n=106701 } 23... Qxg7 { eval=-3.98 d=6 n=61440 } 24. Qxd2 { eval=+11.58 d=14 n=21430 } 24... Qc7 { eval=-7.16 d=6 n=49152 } 25. Nxb7+ { eval=+10.84 d=29 n=7413 } 25... Ke7 { eval=-289.96 d=9 n=77824 } 26. Qg5+ { eval=+10.51 d=3 n=189 } 26... Kf7 { eval=-289.98 d=8 n=75776 } 27. Qg7# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X8"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti Advance 3...f6"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. c4 d4 3. e3 Nc6 4. exd4 Nxd4 5. Nxd4 Qxd4 6. Nc3 e5 7. Nb5 { eval=+0.38 d=7 n=73728 } 7... Qd8 { eval=+0.41 d=18 n=95509 } 8. Qe2 { eval=+0.03 d=6 n=73728 } 8... f6 { eval=+0.44 d=14 n=32908 } 9. d4 { eval=+0.30 d=6 n=63488 } 9... Bb4+ { eval=+0.41 d=12 n=19090 } 10. Bd2 { eval=-0.39 d=9 n=69632 } 10... Bxd2+ { eval=+0.47 d=12 n=9865 } 11. Kxd2 { eval=-0.39 d=7 n=75776 } 11... c6 { eval=+2.37 d=14 n=26627 } 12. Kc1 { eval=-1.28 d=6 n=86016 } 12... cxb5 { eval=+5.84 d=13 n=5888 } 13. dxe5 { eval=-1.56 d=8 n=90112 } 13... Be6 { eval=+6.03 d=14 n=32847 } 14. exf6 { eval=-1.70 d=6 n=69632 } 14... Qxf6 { eval=+6.14 d=14 n=19461 } 15. Qh5+ { eval=-1.71 d=6 n=71680 } 15... Kf8 { eval=+6.52 d=14 n=8569 } 16. Qxb5 { eval=-2.39 d=7 n=88064 } 16... Rd8 { eval=+6.47 d=15 n=78118 } 17. Qc5+ { eval=-1.66 d=6 n=53248 } 17... Kf7 { eval=+6.27 d=12 n=5964 } 18. Qxa7 { eval=-1.13 d=6 n=51200 } 18... Ne7 { eval=+6.79 d=14 n=12858 } 19. Qxb7 { eval=-1.10 d=6 n=49152 } 19... Qf4+ { eval=+15.16 d=17 n=15708 } 20. Kc2 { eval=-7.13 d=9 n=83968 } 20... Qd2+ { eval=+9.62 d=23 n=11969 } 21. Kb3 { eval=-289.94 d=9 n=88064 } 21... Rb8 { eval=+13.68 d=55 n=19449 } 22. Qxb8 { eval=-289.96 d=9 n=116736 } 22... Rxb8+ { eval=+13.73 d=3 n=226 } 23. Ka3 { eval=-289.98 d=9 n=163840 } 23... Qb4# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X8"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti Advance 3...f6"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. c4 d4 3. e3 Nc6 4. exd4 Nxd4 5. Nxd4 Qxd4 6. Nc3 e5 7. Be2 { eval=-0.01 d=18 n=260020 } 7... Bc5 { eval=+0.38 d=8 n=172032 } 8. O-O { eval=-0.04 d=14 n=42964 } 8... Nf6 { eval=+0.14 d=7 n=163840 } 9. b4 { eval=-0.02 d=17 n=104121 } 9... Be7 { eval=+0.66 d=7 n=143360 } 10. a3 { eval=-0.07 d=15 n=67719 } 10... Be6 { eval=+0.82 d=6 n=122880 } 11. Bb2 { eval=+0.06 d=14 n=18413 } 11... Bxc4 { eval=+1.12 d=6 n=147456 } 12. Nb5 { eval=+1.47 d=13 n=46545 } 12... Bxe2 { eval=+0.69 d=8 n=161792 } 13. Nxc7+ { eval=+1.18 d=13 n=102310 } 13... Kd7 { eval=+0.10 d=9 n=157696 } 14. Qa4+ { eval=+1.09 d=13 n=40245 } 14... b5 { eval=+1.93 d=9 n=153600 } 15. Nxb5 { eval=+1.21 d=14 n=48009 } 15... Qxb2 { eval=+1.93 d=8 n=131072 } 16. Nd4+ { eval=+1.45 d=14 n=97716 } 16... Kd8 { eval=+1.45 d=8 n=139264 } 17. Nxe2 { eval=+1.40 d=14 n=56450 } 17... Nd7 { eval=+1.45 d=7 n=143360 } 18. Rfb1 { eval=+6.50 d=15 n=97016 } 18... Qxd2 { eval=-2.25 d=8 n=176128 } 19. Rd1 { eval=+7.50 d=17 n=23858 } 19... Qd6 { eval=-4.98 d=9 n=180224 } 20. Rxd6 { eval=+8.02 d=14 n=52625 } 20... Bxd6 { eval=-5.18 d=11 n=192512 } 21. Ng3 { eval=+8.22 d=16 n=58502 } 21... Nb6 { eval=-3.48 d=7 n=180224 } 22. Qc6 { eval=+9.39 d=15 n=63637 } 22... Bxb4 { eval=-4.47 d=8 n=188416 } 23. Rd1+ { eval=+11.36 d=29 n=36537 } 23... Nd5 { eval=-12.21 d=8 n=229376 } 24. Rxd5+ { eval=+13.30 d=161 n=144749 } 24... Ke7 { eval=-289.96 d=9 n=286720 } 25. Nf5+ Kf8 { eval=-289.98 d=11 n=301056 } 26. Qxa8# 1-0
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Janus Classical X8"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti vs Old Indian"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. g3 Nf6 3. Bg2 Nbd7 4. O-O e5 5. d3 Bd6 6. c4 c6 7. cxd5 { eval=-0.39 d=9 n=167936 } 7... cxd5 { eval=-0.23 d=14 n=85354 } 8. Nc3 { eval=-0.39 d=8 n=147456 } 8... O-O { eval=-0.08 d=15 n=41221 } 9. e4 { eval=-0.29 d=8 n=165888 } 9... d4 { eval=+0.07 d=17 n=31482 } 10. Nb5 { eval=-0.19 d=8 n=129024 } 10... Bc5 { eval=+0.08 d=18 n=101981 } 11. Bd2 { eval=-0.11 d=6 n=139264 } 11... a6 { eval=+0.70 d=14 n=43094 } 12. Na3 { eval=-0.37 d=7 n=137216 } 12... Bxa3 { eval=+0.73 d=13 n=37324 } 13. bxa3 { eval=-0.12 d=8 n=133120 } 13... Re8 { eval=+0.46 d=19 n=360747 } 14. Qc2 { eval=+0.00 d=8 n=135168 } 14... a5 { eval=+0.87 d=15 n=203344 } 15. Rfc1 { eval=-0.02 d=6 n=112640 } 15... b6 { eval=+0.68 d=18 n=191444 } 16. Qc7 { eval=-0.11 d=5 n=98304 } 16... Ba6 { eval=+0.64 d=16 n=37582 } 17. Qxd8 { eval=-0.48 d=7 n=124928 } 17... Raxd8 { eval=+0.55 d=16 n=66377 } 18. Bf1 { eval=-0.44 d=8 n=133120 } 18... Nc5 { eval=+1.18 d=13 n=37914 } 19. Bxa5 { eval=-0.51 d=7 n=135168 } 19... Nxd3 { eval=+1.08 d=15 n=70555 } 20. Bxb6 { eval=-0.46 d=8 n=137216 } 20... Nxc1 { eval=+2.76 d=14 n=33544 } 21. Bxa6 { eval=-1.92 d=8 n=153600 } 21... Rd6 { eval=+2.79 d=14 n=65478 } 22. Bb5 { eval=-1.81 d=9 n=163840 } 22... Rxb6 { eval=+4.84 d=15 n=119430 } 23. Bxe8 { eval=-0.95 d=10 n=192512 } 23... Ne2+ { eval=+4.87 d=17 n=168704 } 24. Kf1 { eval=-1.07 d=11 n=198656 } 24... Nc3 { eval=+4.84 d=15 n=51041 } 25. Bxf7+ { eval=-1.07 d=10 n=190464 } 25... Kxf7 { eval=+5.20 d=16 n=49552 } 26. Nxe5+ { eval=-1.36 d=10 n=194560 } 26... Ke6 { eval=+5.30 d=16 n=126059 } 27. Nc4 { eval=-1.35 d=11 n=204800 } 27... Rb8 { eval=+5.43 d=15 n=73789 } 28. f3 { eval=-0.69 d=10 n=190464 } 28... Nd7 { eval=+5.42 d=16 n=20922 } 29. Rc1 { eval=-0.80 d=8 n=190464 } 29... Ne5 { eval=+5.53 d=15 n=29469 } 30. Nxe5 { eval=-1.33 d=9 n=188416 } 30... Kxe5 { eval=+5.83 d=15 n=23184 } 31. Rc2 { eval=-1.15 d=11 n=182272 } 31... Kd6 { eval=+6.09 d=15 n=49884 } 32. Kg1 { eval=-0.80 d=9 n=196608 } 32... Kc5 { eval=+6.55 d=15 n=67747 } 33. a4 { eval=-1.04 d=8 n=194560 } 33... Kc4 { eval=+6.49 d=15 n=52337 } 34. e5 { eval=-1.42 d=8 n=192512 } 34... d3 { eval=+6.93 d=15 n=58617 } 35. Rd2 { eval=-1.95 d=10 n=194560 } 35... Nd5 { eval=+7.58 d=16 n=134995 } 36. Kf2 { eval=-1.85 d=8 n=169984 } 36... Kc3 { eval=+7.91 d=14 n=23422 } 37. Rd1 { eval=-3.96 d=11 n=194560 } 37... Rb2+ { eval=+8.13 d=14 n=50978 } 38. Kg1 { eval=-4.45 d=11 n=198656 } 38... Kc2 { eval=+9.43 d=15 n=94078 } 39. Rf1 { eval=-4.85 d=11 n=198656 } 39... Rb1 { eval=+11.06 d=15 n=130074 } 40. Rxb1 { eval=-3.76 d=11 n=210944 } 40... Kxb1 { eval=+10.39 d=17 n=19300 } 41. Kf1 { eval=-3.76 d=10 n=231424 } 41... d2 { eval=+11.72 d=14 n=49751 } 42. Ke2 { eval=-8.96 d=10 n=206848 } 42... Kc2 { eval=+13.63 d=17 n=13969 } 43. Kf2 { eval=-8.96 d=10 n=202752 } 43... d1=Q { eval=+13.65 d=23 n=25850 } 44. f4 { eval=-9.13 d=9 n=208896 } 44... Qd2+ { eval=+15.51 d=32 n=33943 } 45. Kf3 { eval=-12.38 d=10 n=198656 } 45... Kd3 { eval=+14.84 d=47 n=50983 } 46. Kg4 { eval=-289.94 d=10 n=288768 } 46... Ne3+ { eval=+13.08 d=187 n=115234 } 47. Kh3 { eval=-289.96 d=11 n=292864 } 47... Qe2 { eval=+14.50 d=2 n=103 } 48. a3 { eval=-289.98 d=11 n=288768 } 48... Qg4# 0-1
+
+[Event "Janus P1.3 Strength Validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish 19"]
+[Black "Janus Classical X8"]
+[Result "1-0"]
+[TimeControl "2.0+0.05"]
+[Opening "Reti vs Old Indian"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. g3 Nf6 3. Bg2 Nbd7 4. O-O e5 5. d3 Bd6 6. c4 c6 7. cxd5 { eval=+0.04 d=15 n=88168 } 7... cxd5 { eval=+0.30 d=8 n=157696 } 8. e4 { eval=+0.24 d=17 n=32766 } 8... dxe4 { eval=+0.74 d=7 n=176128 } 9. dxe4 { eval=+0.40 d=12 n=38130 } 9... Nxe4 { eval=+0.55 d=8 n=163840 } 10. Nh4 { eval=+4.44 d=17 n=144477 } 10... Ndc5 { eval=-0.02 d=7 n=174080 } 11. b4 { eval=+5.10 d=14 n=30181 } 11... O-O { eval=-0.38 d=6 n=143360 } 12. bxc5 { eval=+5.29 d=15 n=31423 } 12... Nxc5 { eval=-0.40 d=7 n=129024 } 13. Nc3 { eval=+4.70 d=17 n=231547 } 13... Be6 { eval=-0.55 d=7 n=143360 } 14. Be3 { eval=+4.83 d=16 n=176073 } 14... Bc4 { eval=-0.44 d=7 n=139264 } 15. Nf5 { eval=+7.34 d=14 n=30059 } 15... Bxf1 { eval=-2.10 d=6 n=159744 } 16. Bxf1 { eval=+7.30 d=15 n=62230 } 16... Qa5 { eval=-2.88 d=7 n=163840 } 17. Nb5 { eval=+7.84 d=14 n=39897 } 17... Ne4 { eval=-2.98 d=7 n=157696 } 18. Qg4 { eval=+8.30 d=15 n=229634 } 18... g6 { eval=-4.26 d=8 n=133120 } 19. Qxe4 { eval=+9.31 d=15 n=77404 } 19... gxf5 { eval=-2.36 d=7 n=143360 } 20. Qxf5 { eval=+9.58 d=14 n=38939 } 20... Ba3 { eval=-2.94 d=7 n=133120 } 21. Qg5+ { eval=+10.32 d=41 n=39977 } 21... Kh8 { eval=-289.94 d=10 n=219136 } 22. Qf6+ { eval=+10.56 d=135 n=124665 } 22... Kg8 { eval=-289.96 d=10 n=251904 } 23. Bh6 { eval=+10.26 d=2 n=201 } 23... Rfe8 { eval=-289.98 d=10 n=253952 } 24. Qg7# 1-0
+
+
+

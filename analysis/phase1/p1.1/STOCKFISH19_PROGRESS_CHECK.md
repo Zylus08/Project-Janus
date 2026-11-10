@@ -78,3 +78,4 @@ In the 17 losses, Stockfish 19 did not defeat Classical X via sharp short-horizo
 This forensic analysis confirms the roadmap sequence: **Milestone P1.1 fixed the search horizon crisis; Milestone P1.2 must address move ordering and handcrafted evaluation modernizations (King Safety, Mobility, Pawn Structure).**
 
 *Artifact Reference: `analysis/phase1/p1.1/raw/janus_x_vs_sf19_diagnostic_raw.json`*
+

@@ -95,3 +95,4 @@ Milestone P1.1 has delivered a definitive, scientifically validated playing stre
 - **Rule 1 Compliance:** 100% classical algorithms, zero neural networks, zero learned weights.
 
 *Artifact Reference: `analysis/phase1/p1.1/raw/janus_x_vs_c1_tournament_raw.json`*
+

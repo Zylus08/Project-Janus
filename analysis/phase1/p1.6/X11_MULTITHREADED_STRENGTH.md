@@ -105,3 +105,4 @@ X11 confirms that the ~160–190 Elo recovery vs unrestricted Stockfish 19 achie
 | **Match 2** | X11 (4T) vs X7 (1T) | 1.0+0.05s | 40 | 14.0 / 40 | 35.00% | −107.5 Elo | **Blitz Parallel Dispersion**; Needs longer TC / shared history |
 | **Match 3** | X11 (1T) vs SF19 (1T)| 2.0+0.05s | 40 | 2.0 / 40 | 5.00% | −511.5 Elo | **Durable External Baseline**; 4 draws held vs SF19 |
 | **Match 4** | X11 (4T) vs SF19 (4T)| 2.0+0.05s | 40 | 0.5 / 40 | 1.25% | −759.1 Elo | **Multicore Scaling Reality**; SF19 depth 20+ dominates |
+

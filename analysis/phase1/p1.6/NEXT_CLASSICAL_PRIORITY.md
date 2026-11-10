@@ -96,3 +96,4 @@ The recommended course of action for Milestone P1.7 is:
 1. **P1.7A:** Implement SPSA Classical Parameter Tuning to mathematically optimize the E10 evaluation terms and search pruning parameters.
 2. **P1.7B:** Enhance Lazy SMP with cooperative history sharing to unlock the full competitive power of 4-thread parallel search.
 3. **P1.7C:** Integrate 5-piece Syzygy tablebases for deterministic endgame perfection.
+

@@ -76,3 +76,4 @@ In accordance with the taxonomy of Project Janus:
 1. **Non-ML Rule:** Janus Classical X11 contains strictly zero neural networks, zero NNUE weights, zero learned heuristics, and zero machine learning dependencies.
 2. **Stockfish Integrity:** Stockfish 19 was tested strictly in its official release configuration with default NNUE enabled.
 3. **Reproducibility:** Every game, move, and metric is backed by raw JSON logs and full PGN records.
+

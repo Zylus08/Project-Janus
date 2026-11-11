@@ -46,3 +46,4 @@ However, the empirical evidence from Match C (slower time controls) and Match SF
 |  Phase 6: Matched Unrestricted Stockfish 19 Qualification                     |
 +-------------------------------------------------------------------------------+
 ```
+

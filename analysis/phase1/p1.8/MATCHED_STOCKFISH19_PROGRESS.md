@@ -72,3 +72,4 @@ While securing 2 draws against unrestricted Stockfish 19 represents genuine clas
 
 - **Match SF PGN**: [`analysis/phase1/p1.8/pgn/x13_4t_vs_sf19_4t.pgn`](file:///E:/ChessXML/project-janus-phase1/analysis/phase1/p1.8/pgn/x13_4t_vs_sf19_4t.pgn) (40 games).
 - **Raw Evidence Data**: `analysis/phase1/p1.8/raw/x13_vs_sf19_raw.json`.
+

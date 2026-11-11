@@ -1,0 +1,86 @@
+{
+  "milestone": "P1.10",
+  "title": "Classical Strength Regression Forensics, Evaluation\u2013Search Interaction Repair & Verified Endgame Infrastructure",
+  "repository": "project-janus-phase1",
+  "branch": "phase1/classical-janus",
+  "parent_commit": "617becb",
+  "lineage": {
+    "qualified_single_thread_baseline": {
+      "name": "Janus Classical X7",
+      "commit": "b34e342",
+      "sha256": "86392a2f4bd4182a4d7dc21e32940bd7939f6816794d5e1ab02f4082431ca28b",
+      "threads": 1,
+      "status": "RETAINED"
+    },
+    "qualified_four_thread_baseline": {
+      "name": "Janus Classical X12",
+      "commit": "78ca3d5",
+      "sha256": "00b4f5fedea02a392a1af9713a96512e5199a0e3ae55c295ad1c7cfff1b47059",
+      "threads": 4,
+      "status": "RETAINED"
+    },
+    "candidate_evaluated": {
+      "name": "Janus Classical X15",
+      "threads": "1 / 4 (thread-adaptive)",
+      "sha256_exe": "5b3cfcfe85b81ca03acd85f65196fb6599d29a100f272d2c1fbd66af26374e28",
+      "promotion_status": "ADVANCED_UNIFIED_CLASSICAL_REFERENCE_ENGINE"
+    },
+    "external_reference": {
+      "name": "Stockfish 19",
+      "commit": "edb0d9d",
+      "sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "nnue": "nn-1a298aa575a0.nnue"
+    }
+  },
+  "phases_completed": {
+    "phase_0": "P1.9 Evidence & Integrity Audit (zero-variance binomial fix, Syzygy classified Adapter/Fallback Only)",
+    "phase_1": "Cross-Version Regression Archaeology (X7 through X14 causal dependency map)",
+    "phase_2": "Evaluation Consistency & Score-Scale Audit (100% bit-exact color symmetry, mate bounds, root churn)",
+    "phase_3": "Isolated Evaluation Feature Ablations (DEV_12 tactical blindness identified & eliminated)",
+    "phase_4": "Generalized Positional Validation (240 Atlas, tactical solve rate 62.5%, endgame depth 19.46 plies)",
+    "phase_5": "Evaluation Performance Engineering (Candidate S 750K NPS 1T; Candidate P 1.73M NPS 4T, 25% L2 cache pawn hash)",
+    "phase_6": "Real Syzygy Qualification (0 tablebase files present, 12/12 test cases fallback verified)",
+    "phase_7": "Candidate Selection (Candidate S + Candidate P unified in Janus Classical X15)",
+    "phase_8": "P1.10 Correctness Suite (8/8 symmetry, 3/3 mate, DEV_12 fixed, 4/4 low-clock pass)",
+    "phase_9": "Independent Strength Qualification Tournaments (Matches A, B, C)",
+    "phase_10": "Matched Unrestricted Stockfish 19 Benchmark (Match SF: 5 draws, 6.25%, -470.4 Elo)",
+    "phase_11": "Final Lineage Adjudication (X7 & X12 retained, X15 designated Unified Classical Reference)",
+    "phase_12": "Next Classical Direction (P1.11 SPSA, capture history, multi-ply continuation history)",
+    "phase_13": "Final Deliverables, Manifests & Local Git Commit"
+  },
+  "tournament_summary": {
+    "match_a_1t_vs_x7": {
+      "time_control": "1.0s + 50ms",
+      "games": 200,
+      "score": "92.0 / 200 (46.00%)",
+      "elo": -27.9,
+      "p_value": 0.183766,
+      "verdict": "Regression Eliminated / Statistical Parity (p > 0.05)"
+    },
+    "match_b_4t_vs_x12": {
+      "time_control": "1.0s + 50ms",
+      "games": 200,
+      "score": "94.0 / 200 (47.00%)",
+      "elo": -20.9,
+      "p_value": 0.271441,
+      "verdict": "Statistical Parity Maintained (p > 0.05)"
+    },
+    "match_c_4t_vs_x12_slow": {
+      "time_control": "3.0s + 100ms",
+      "games": 100,
+      "score": "46.5 / 100 (46.50%)",
+      "elo": -24.4,
+      "p_value": 0.397892,
+      "verdict": "Scaling Parity Verified (p > 0.05)"
+    },
+    "match_sf_4t_vs_sf19": {
+      "time_control": "2.0s + 50ms",
+      "games": 40,
+      "score": "2.5 / 40 (6.25%)",
+      "elo": -470.4,
+      "p_value": 1.39e-11,
+      "draws": 5,
+      "verdict": "Defensive Holding Recovery (5 draws against unrestricted Stockfish 19)"
+    }
+  }
+}

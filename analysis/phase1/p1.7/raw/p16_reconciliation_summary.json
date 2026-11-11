@@ -1,0 +1,89 @@
+{
+  "match_results": {
+    "Match 1 (X11 1T vs X7 1T)": {
+      "games": 200,
+      "pairs": 100,
+      "a_wins": 69,
+      "b_wins": 70,
+      "draws": 61,
+      "a_points": 99.5,
+      "score_pct": 49.75,
+      "elo_diff": -1.7,
+      "ci_95": [
+        -87.1,
+        83.4
+      ],
+      "mean_diff": -0.01,
+      "se_diff": 0.1227,
+      "t_stat": -0.0815,
+      "df": 99,
+      "p_norm_two_sided": 0.935,
+      "p_norm_one_sided": 0.4675
+    },
+    "Match 2 (X11 4T vs X7 1T)": {
+      "games": 40,
+      "pairs": 20,
+      "a_wins": 9,
+      "b_wins": 21,
+      "draws": 10,
+      "a_points": 14.0,
+      "score_pct": 35.0,
+      "elo_diff": -107.5,
+      "ci_95": [
+        -309.7,
+        39.1
+      ],
+      "mean_diff": -0.6,
+      "se_diff": 0.2103,
+      "t_stat": -2.8536,
+      "df": 19,
+      "p_norm_two_sided": 0.0043,
+      "p_norm_one_sided": 0.0022
+    },
+    "Match 3 (X11 1T vs SF19 1T)": {
+      "games": 40,
+      "pairs": 20,
+      "a_wins": 0,
+      "b_wins": 36,
+      "draws": 4,
+      "a_points": 2.0,
+      "score_pct": 5.0,
+      "elo_diff": -511.5,
+      "ci_95": [
+        -800.0,
+        -315.4
+      ],
+      "mean_diff": -1.8,
+      "se_diff": 0.0918,
+      "t_stat": -19.615,
+      "df": 19,
+      "p_norm_two_sided": 0.0,
+      "p_norm_one_sided": 0.0
+    },
+    "Match 4 (X11 4T vs SF19 4T)": {
+      "games": 40,
+      "pairs": 20,
+      "a_wins": 0,
+      "b_wins": 39,
+      "draws": 1,
+      "a_points": 0.5,
+      "score_pct": 1.25,
+      "elo_diff": -759.1,
+      "ci_95": [
+        -800.0,
+        -473.4
+      ],
+      "mean_diff": -1.95,
+      "se_diff": 0.05,
+      "t_stat": -39.0,
+      "df": 19,
+      "p_norm_two_sided": 0.0,
+      "p_norm_one_sided": 0.0
+    }
+  },
+  "scaling_2t_speedup": 1.955,
+  "scaling_4t_speedup": 3.26,
+  "lmp_node_reduction_pct": 11.8,
+  "tt_overhead_pct": 2.4,
+  "tt_layout_diagnostics": "sizeof(TTEntry): 16\nalignof(TTEntry): 8\nsizeof(std::atomic_flag): 4\nsizeof(TTCluster): 128\nalignof(TTCluster): 64\noffsetof(TTCluster, lock): 0\noffsetof(TTCluster, entries): 8\nNUM_TT_CLUSTERS: 262144\nTotal cluster memory bytes: 33554432 (32 MB)"
+}

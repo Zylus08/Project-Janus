@@ -1,0 +1,4226 @@
+{
+  "time_100ms": {
+    "threads_1": {
+      "aggregate_shallower_overwrites": 0,
+      "aggregate_lock_spins": 0,
+      "aggregate_probes": 0,
+      "aggregate_stores": 0,
+      "positions": [
+        {
+          "final_bestmove": "d2d4",
+          "final_depth": 7,
+          "final_nodes": 155648,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 7,
+              "score": 34,
+              "nodes": 155648,
+              "bestmove": "d2d4"
+            }
+          ],
+          "position_name": "startpos"
+        },
+        {
+          "final_bestmove": "d5e6",
+          "final_depth": 6,
+          "final_nodes": 124928,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 6,
+              "score": 42,
+              "nodes": 124928,
+              "bestmove": "d5e6"
+            }
+          ],
+          "position_name": "kiwipete"
+        },
+        {
+          "final_bestmove": "b4f4",
+          "final_depth": 12,
+          "final_nodes": 198656,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 12,
+              "score": 14,
+              "nodes": 198656,
+              "bestmove": "b4f4"
+            }
+          ],
+          "position_name": "pos3_endgame"
+        },
+        {
+          "final_bestmove": "e2b5",
+          "final_depth": 7,
+          "final_nodes": 133120,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 7,
+              "score": 4,
+              "nodes": 133120,
+              "bestmove": "e2b5"
+            }
+          ],
+          "position_name": "sharp_sicilian"
+        },
+        {
+          "final_bestmove": "g8h6",
+          "final_depth": 7,
+          "final_nodes": 108544,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 7,
+              "score": 2,
+              "nodes": 108544,
+              "bestmove": "g8h6"
+            }
+          ],
+          "position_name": "closed_french"
+        },
+        {
+          "final_bestmove": "c3d5",
+          "final_depth": 8,
+          "final_nodes": 157696,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 8,
+              "score": 199,
+              "nodes": 157696,
+              "bestmove": "c3d5"
+            }
+          ],
+          "position_name": "king_safety_sharp"
+        },
+        {
+          "final_bestmove": "e2f3",
+          "final_depth": 11,
+          "final_nodes": 231424,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 11,
+              "score": 0,
+              "nodes": 231424,
+              "bestmove": "e2f3"
+            }
+          ],
+          "position_name": "opposite_bishops"
+        },
+        {
+          "final_bestmove": "d3c3",
+          "final_depth": 18,
+          "final_nodes": 194560,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 18,
+              "score": 245,
+              "nodes": 194560,
+              "bestmove": "d3c3"
+            }
+          ],
+          "position_name": "rook_endgame"
+        },
+        {
+          "final_bestmove": "h5f7",
+          "final_depth": 7,
+          "final_nodes": 190464,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 7,
+              "score": 28999,
+              "nodes": 190464,
+              "bestmove": "h5f7"
+            }
+          ],
+          "position_name": "scholars_mate"
+        },
+        {
+          "final_bestmove": "d5f6",
+          "final_depth": 7,
+          "final_nodes": 198656,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 7,
+              "score": 28997,
+              "nodes": 198656,
+              "bestmove": "d5f6"
+            }
+          ],
+          "position_name": "legals_mate"
+        }
+      ]
+    },
+    "threads_2": {
+      "aggregate_shallower_overwrites": 10055,
+      "aggregate_lock_spins": 7502,
+      "aggregate_probes": 789735,
+      "aggregate_stores": 337227,
+      "positions": [
+        {
+          "final_bestmove": "e2e4",
+          "final_depth": 9,
+          "final_nodes": 231424,
+          "tt": {
+            "probes": 40133,
+            "hits": 12664,
+            "cutoffs": 8205,
+            "stores": 22891,
+            "same_key_overwrites": 9243,
+            "shallower_overwrites": 122,
+            "cross_key_evictions": 0,
+            "lock_spins": 387
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": 32,
+              "nodes": 116736,
+              "bestmove": "e2e4"
+            },
+            {
+              "id": 1,
+              "depth": 9,
+              "score": 32,
+              "nodes": 114688,
+              "bestmove": "e2e4"
+            }
+          ],
+          "position_name": "startpos"
+        },
+        {
+          "final_bestmove": "d5e6",
+          "final_depth": 6,
+          "final_nodes": 172032,
+          "tt": {
+            "probes": 37478,
+            "hits": 1933,
+            "cutoffs": 435,
+            "stores": 6456,
+            "same_key_overwrites": 4138,
+            "shallower_overwrites": 3,
+            "cross_key_evictions": 0,
+            "lock_spins": 850
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 6,
+              "score": 42,
+              "nodes": 90112,
+              "bestmove": "d5e6"
+            },
+            {
+              "id": 1,
+              "depth": 6,
+              "score": 42,
+              "nodes": 81920,
+              "bestmove": "d5e6"
+            }
+          ],
+          "position_name": "kiwipete"
+        },
+        {
+          "final_bestmove": "b4f4",
+          "final_depth": 12,
+          "final_nodes": 352256,
+          "tt": {
+            "probes": 80933,
+            "hits": 18663,
+            "cutoffs": 13973,
+            "stores": 38928,
+            "same_key_overwrites": 18718,
+            "shallower_overwrites": 544,
+            "cross_key_evictions": 0,
+            "lock_spins": 416
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 12,
+              "score": 2,
+              "nodes": 178176,
+              "bestmove": "b4f4"
+            },
+            {
+              "id": 1,
+              "depth": 12,
+              "score": 2,
+              "nodes": 174080,
+              "bestmove": "b4f4"
+            }
+          ],
+          "position_name": "pos3_endgame"
+        },
+        {
+          "final_bestmove": "e2b5",
+          "final_depth": 7,
+          "final_nodes": 182272,
+          "tt": {
+            "probes": 27553,
+            "hits": 5952,
+            "cutoffs": 3842,
+            "stores": 11871,
+            "same_key_overwrites": 5877,
+            "shallower_overwrites": 46,
+            "cross_key_evictions": 0,
+            "lock_spins": 485
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 7,
+              "score": 4,
+              "nodes": 92160,
+              "bestmove": "e2b5"
+            },
+            {
+              "id": 1,
+              "depth": 7,
+              "score": 4,
+              "nodes": 90112,
+              "bestmove": "e2b5"
+            }
+          ],
+          "position_name": "sharp_sicilian"
+        },
+        {
+          "final_bestmove": "g8h6",
+          "final_depth": 7,
+          "final_nodes": 235520,
+          "tt": {
+            "probes": 47631,
+            "hits": 6897,
+            "cutoffs": 4818,
+            "stores": 14380,
+            "same_key_overwrites": 6527,
+            "shallower_overwrites": 50,
+            "cross_key_evictions": 0,
+            "lock_spins": 68
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 7,
+              "score": 2,
+              "nodes": 114688,
+              "bestmove": "g8h6"
+            },
+            {
+              "id": 1,
+              "depth": 7,
+              "score": 2,
+              "nodes": 120832,
+              "bestmove": "g8h6"
+            }
+          ],
+          "position_name": "closed_french"
+        },
+        {
+          "final_bestmove": "c3d5",
+          "final_depth": 9,
+          "final_nodes": 262144,
+          "tt": {
+            "probes": 67562,
+            "hits": 4114,
+            "cutoffs": 2385,
+            "stores": 9864,
+            "same_key_overwrites": 6212,
+            "shallower_overwrites": 16,
+            "cross_key_evictions": 0,
+            "lock_spins": 735
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": 199,
+              "nodes": 133120,
+              "bestmove": "c3d5"
+            },
+            {
+              "id": 1,
+              "depth": 9,
+              "score": 199,
+              "nodes": 129024,
+              "bestmove": "c3d5"
+            }
+          ],
+          "position_name": "king_safety_sharp"
+        },
+        {
+          "final_bestmove": "e2f3",
+          "final_depth": 13,
+          "final_nodes": 514048,
+          "tt": {
+            "probes": 153353,
+            "hits": 79399,
+            "cutoffs": 65207,
+            "stores": 71729,
+            "same_key_overwrites": 35685,
+            "shallower_overwrites": 3824,
+            "cross_key_evictions": 0,
+            "lock_spins": 575
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 13,
+              "score": 0,
+              "nodes": 258048,
+              "bestmove": "e2f3"
+            },
+            {
+              "id": 1,
+              "depth": 13,
+              "score": 0,
+              "nodes": 256000,
+              "bestmove": "e2f3"
+            }
+          ],
+          "position_name": "opposite_bishops"
+        },
+        {
+          "final_bestmove": "d3c3",
+          "final_depth": 18,
+          "final_nodes": 315392,
+          "tt": {
+            "probes": 198602,
+            "hits": 88460,
+            "cutoffs": 74370,
+            "stores": 78370,
+            "same_key_overwrites": 60955,
+            "shallower_overwrites": 5448,
+            "cross_key_evictions": 0,
+            "lock_spins": 1457
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 18,
+              "score": 259,
+              "nodes": 157696,
+              "bestmove": "d3c3"
+            },
+            {
+              "id": 1,
+              "depth": 18,
+              "score": 259,
+              "nodes": 157696,
+              "bestmove": "d3c3"
+            }
+          ],
+          "position_name": "rook_endgame"
+        },
+        {
+          "final_bestmove": "h5f7",
+          "final_depth": 6,
+          "final_nodes": 303104,
+          "tt": {
+            "probes": 49055,
+            "hits": 23516,
+            "cutoffs": 23516,
+            "stores": 25442,
+            "same_key_overwrites": 14894,
+            "shallower_overwrites": 1,
+            "cross_key_evictions": 0,
+            "lock_spins": 600
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 6,
+              "score": 28999,
+              "nodes": 153600,
+              "bestmove": "h5f7"
+            },
+            {
+              "id": 1,
+              "depth": 6,
+              "score": 28999,
+              "nodes": 149504,
+              "bestmove": "h5f7"
+            }
+          ],
+          "position_name": "scholars_mate"
+        },
+        {
+          "final_bestmove": "d5f6",
+          "final_depth": 7,
+          "final_nodes": 366592,
+          "tt": {
+            "probes": 87435,
+            "hits": 29719,
+            "cutoffs": 29713,
+            "stores": 57296,
+            "same_key_overwrites": 33204,
+            "shallower_overwrites": 1,
+            "cross_key_evictions": 0,
+            "lock_spins": 1929
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 7,
+              "score": 28997,
+              "nodes": 184320,
+              "bestmove": "d5f6"
+            },
+            {
+              "id": 1,
+              "depth": 7,
+              "score": 28997,
+              "nodes": 182272,
+              "bestmove": "d5f6"
+            }
+          ],
+          "position_name": "legals_mate"
+        }
+      ]
+    },
+    "threads_4": {
+      "aggregate_shallower_overwrites": 17233,
+      "aggregate_lock_spins": 71995,
+      "aggregate_probes": 1530695,
+      "aggregate_stores": 619611,
+      "positions": [
+        {
+          "final_bestmove": "e2e4",
+          "final_depth": 9,
+          "final_nodes": 557056,
+          "tt": {
+            "probes": 107641,
+            "hits": 34523,
+            "cutoffs": 26540,
+            "stores": 48674,
+            "same_key_overwrites": 21404,
+            "shallower_overwrites": 596,
+            "cross_key_evictions": 0,
+            "lock_spins": 1463
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": 32,
+              "nodes": 131072,
+              "bestmove": "e2e4"
+            },
+            {
+              "id": 1,
+              "depth": 9,
+              "score": 32,
+              "nodes": 151552,
+              "bestmove": "e2e4"
+            },
+            {
+              "id": 2,
+              "depth": 9,
+              "score": 32,
+              "nodes": 135168,
+              "bestmove": "e2e4"
+            },
+            {
+              "id": 3,
+              "depth": 9,
+              "score": 32,
+              "nodes": 139264,
+              "bestmove": "e2e4"
+            }
+          ],
+          "position_name": "startpos"
+        },
+        {
+          "final_bestmove": "d5e6",
+          "final_depth": 6,
+          "final_nodes": 301056,
+          "tt": {
+            "probes": 65558,
+            "hits": 4569,
+            "cutoffs": 2378,
+            "stores": 10508,
+            "same_key_overwrites": 8427,
+            "shallower_overwrites": 1,
+            "cross_key_evictions": 0,
+            "lock_spins": 5521
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 6,
+              "score": 42,
+              "nodes": 94208,
+              "bestmove": "d5e6"
+            },
+            {
+              "id": 1,
+              "depth": 6,
+              "score": 42,
+              "nodes": 55296,
+              "bestmove": "d5e6"
+            },
+            {
+              "id": 2,
+              "depth": 6,
+              "score": 42,
+              "nodes": 94208,
+              "bestmove": "d5e6"
+            },
+            {
+              "id": 3,
+              "depth": 6,
+              "score": 42,
+              "nodes": 57344,
+              "bestmove": "d5e6"
+            }
+          ],
+          "position_name": "kiwipete"
+        },
+        {
+          "final_bestmove": "b4f4",
+          "final_depth": 13,
+          "final_nodes": 706560,
+          "tt": {
+            "probes": 175984,
+            "hits": 50242,
+            "cutoffs": 36855,
+            "stores": 76447,
+            "same_key_overwrites": 38592,
+            "shallower_overwrites": 1624,
+            "cross_key_evictions": 0,
+            "lock_spins": 1184
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 13,
+              "score": 20,
+              "nodes": 174080,
+              "bestmove": "b4f4"
+            },
+            {
+              "id": 1,
+              "depth": 13,
+              "score": 20,
+              "nodes": 172032,
+              "bestmove": "b4f4"
+            },
+            {
+              "id": 2,
+              "depth": 13,
+              "score": 14,
+              "nodes": 178176,
+              "bestmove": "b4f4"
+            },
+            {
+              "id": 3,
+              "depth": 13,
+              "score": 5,
+              "nodes": 182272,
+              "bestmove": "b4f4"
+            }
+          ],
+          "position_name": "pos3_endgame"
+        },
+        {
+          "final_bestmove": "e2b5",
+          "final_depth": 7,
+          "final_nodes": 313344,
+          "tt": {
+            "probes": 50669,
+            "hits": 12882,
+            "cutoffs": 9760,
+            "stores": 19037,
+            "same_key_overwrites": 12574,
+            "shallower_overwrites": 59,
+            "cross_key_evictions": 0,
+            "lock_spins": 785
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 7,
+              "score": 4,
+              "nodes": 73728,
+              "bestmove": "e2b5"
+            },
+            {
+              "id": 1,
+              "depth": 7,
+              "score": 4,
+              "nodes": 73728,
+              "bestmove": "e2b5"
+            },
+            {
+              "id": 2,
+              "depth": 7,
+              "score": 4,
+              "nodes": 83968,
+              "bestmove": "e2b5"
+            },
+            {
+              "id": 3,
+              "depth": 7,
+              "score": 4,
+              "nodes": 81920,
+              "bestmove": "e2b5"
+            }
+          ],
+          "position_name": "sharp_sicilian"
+        },
+        {
+          "final_bestmove": "g8h6",
+          "final_depth": 7,
+          "final_nodes": 421888,
+          "tt": {
+            "probes": 90779,
+            "hits": 15565,
+            "cutoffs": 12510,
+            "stores": 24232,
+            "same_key_overwrites": 15022,
+            "shallower_overwrites": 49,
+            "cross_key_evictions": 0,
+            "lock_spins": 1089
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 7,
+              "score": 2,
+              "nodes": 110592,
+              "bestmove": "g8h6"
+            },
+            {
+              "id": 1,
+              "depth": 7,
+              "score": 2,
+              "nodes": 100352,
+              "bestmove": "g8h6"
+            },
+            {
+              "id": 2,
+              "depth": 7,
+              "score": 2,
+              "nodes": 96256,
+              "bestmove": "g8h6"
+            },
+            {
+              "id": 3,
+              "depth": 7,
+              "score": 2,
+              "nodes": 114688,
+              "bestmove": "g8h6"
+            }
+          ],
+          "position_name": "closed_french"
+        },
+        {
+          "final_bestmove": "c3d5",
+          "final_depth": 8,
+          "final_nodes": 382976,
+          "tt": {
+            "probes": 98146,
+            "hits": 10843,
+            "cutoffs": 7527,
+            "stores": 13408,
+            "same_key_overwrites": 9248,
+            "shallower_overwrites": 75,
+            "cross_key_evictions": 0,
+            "lock_spins": 8554
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 8,
+              "score": 199,
+              "nodes": 83968,
+              "bestmove": "c3d5"
+            },
+            {
+              "id": 1,
+              "depth": 7,
+              "score": 100,
+              "nodes": 100352,
+              "bestmove": "b3d5"
+            },
+            {
+              "id": 2,
+              "depth": 8,
+              "score": 199,
+              "nodes": 81920,
+              "bestmove": "c3d5"
+            },
+            {
+              "id": 3,
+              "depth": 8,
+              "score": 199,
+              "nodes": 116736,
+              "bestmove": "c3d5"
+            }
+          ],
+          "position_name": "king_safety_sharp"
+        },
+        {
+          "final_bestmove": "e2f3",
+          "final_depth": 14,
+          "final_nodes": 720896,
+          "tt": {
+            "probes": 236703,
+            "hits": 127943,
+            "cutoffs": 112695,
+            "stores": 93944,
+            "same_key_overwrites": 50643,
+            "shallower_overwrites": 3926,
+            "cross_key_evictions": 0,
+            "lock_spins": 3686
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 14,
+              "score": -4,
+              "nodes": 172032,
+              "bestmove": "e2f3"
+            },
+            {
+              "id": 1,
+              "depth": 14,
+              "score": -4,
+              "nodes": 180224,
+              "bestmove": "e2f3"
+            },
+            {
+              "id": 2,
+              "depth": 14,
+              "score": -4,
+              "nodes": 190464,
+              "bestmove": "e2f3"
+            },
+            {
+              "id": 3,
+              "depth": 14,
+              "score": -4,
+              "nodes": 178176,
+              "bestmove": "e2f3"
+            }
+          ],
+          "position_name": "opposite_bishops"
+        },
+        {
+          "final_bestmove": "d3c3",
+          "final_depth": 19,
+          "final_nodes": 550912,
+          "tt": {
+            "probes": 351604,
+            "hits": 186685,
+            "cutoffs": 153672,
+            "stores": 134629,
+            "same_key_overwrites": 114700,
+            "shallower_overwrites": 10897,
+            "cross_key_evictions": 0,
+            "lock_spins": 14428
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 19,
+              "score": 275,
+              "nodes": 135168,
+              "bestmove": "d3c3"
+            },
+            {
+              "id": 1,
+              "depth": 19,
+              "score": 275,
+              "nodes": 145408,
+              "bestmove": "d3c3"
+            },
+            {
+              "id": 2,
+              "depth": 19,
+              "score": 275,
+              "nodes": 135168,
+              "bestmove": "d3c3"
+            },
+            {
+              "id": 3,
+              "depth": 19,
+              "score": 275,
+              "nodes": 135168,
+              "bestmove": "d3c3"
+            }
+          ],
+          "position_name": "rook_endgame"
+        },
+        {
+          "final_bestmove": "h5f7",
+          "final_depth": 7,
+          "final_nodes": 796672,
+          "tt": {
+            "probes": 155302,
+            "hits": 65749,
+            "cutoffs": 65749,
+            "stores": 89224,
+            "same_key_overwrites": 67421,
+            "shallower_overwrites": 3,
+            "cross_key_evictions": 0,
+            "lock_spins": 18979
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 7,
+              "score": 28999,
+              "nodes": 204800,
+              "bestmove": "h5f7"
+            },
+            {
+              "id": 1,
+              "depth": 7,
+              "score": 28999,
+              "nodes": 194560,
+              "bestmove": "h5f7"
+            },
+            {
+              "id": 2,
+              "depth": 7,
+              "score": 28999,
+              "nodes": 196608,
+              "bestmove": "h5f7"
+            },
+            {
+              "id": 3,
+              "depth": 7,
+              "score": 28999,
+              "nodes": 200704,
+              "bestmove": "h5f7"
+            }
+          ],
+          "position_name": "scholars_mate"
+        },
+        {
+          "final_bestmove": "d5f6",
+          "final_depth": 8,
+          "final_nodes": 733184,
+          "tt": {
+            "probes": 198309,
+            "hits": 88427,
+            "cutoffs": 88399,
+            "stores": 109508,
+            "same_key_overwrites": 75096,
+            "shallower_overwrites": 3,
+            "cross_key_evictions": 0,
+            "lock_spins": 16306
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 8,
+              "score": 28997,
+              "nodes": 176128,
+              "bestmove": "d5f6"
+            },
+            {
+              "id": 1,
+              "depth": 8,
+              "score": 28997,
+              "nodes": 182272,
+              "bestmove": "d5f6"
+            },
+            {
+              "id": 2,
+              "depth": 8,
+              "score": 28997,
+              "nodes": 186368,
+              "bestmove": "d5f6"
+            },
+            {
+              "id": 3,
+              "depth": 8,
+              "score": 28997,
+              "nodes": 188416,
+              "bestmove": "d5f6"
+            }
+          ],
+          "position_name": "legals_mate"
+        }
+      ]
+    }
+  },
+  "time_250ms": {
+    "threads_1": {
+      "aggregate_shallower_overwrites": 0,
+      "aggregate_lock_spins": 0,
+      "aggregate_probes": 0,
+      "aggregate_stores": 0,
+      "positions": [
+        {
+          "final_bestmove": "e2e4",
+          "final_depth": 9,
+          "final_nodes": 348160,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": 32,
+              "nodes": 348160,
+              "bestmove": "e2e4"
+            }
+          ],
+          "position_name": "startpos"
+        },
+        {
+          "final_bestmove": "e2a6",
+          "final_depth": 7,
+          "final_nodes": 272384,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 7,
+              "score": 14,
+              "nodes": 272384,
+              "bestmove": "e2a6"
+            }
+          ],
+          "position_name": "kiwipete"
+        },
+        {
+          "final_bestmove": "b4f4",
+          "final_depth": 13,
+          "final_nodes": 557056,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 13,
+              "score": 10,
+              "nodes": 557056,
+              "bestmove": "b4f4"
+            }
+          ],
+          "position_name": "pos3_endgame"
+        },
+        {
+          "final_bestmove": "a2a3",
+          "final_depth": 8,
+          "final_nodes": 284672,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 8,
+              "score": 0,
+              "nodes": 284672,
+              "bestmove": "a2a3"
+            }
+          ],
+          "position_name": "sharp_sicilian"
+        },
+        {
+          "final_bestmove": "g8h6",
+          "final_depth": 9,
+          "final_nodes": 348160,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": -3,
+              "nodes": 348160,
+              "bestmove": "g8h6"
+            }
+          ],
+          "position_name": "closed_french"
+        },
+        {
+          "final_bestmove": "c3d5",
+          "final_depth": 10,
+          "final_nodes": 356352,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": 188,
+              "nodes": 356352,
+              "bestmove": "c3d5"
+            }
+          ],
+          "position_name": "king_safety_sharp"
+        },
+        {
+          "final_bestmove": "e2f3",
+          "final_depth": 17,
+          "final_nodes": 757760,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 17,
+              "score": 0,
+              "nodes": 757760,
+              "bestmove": "e2f3"
+            }
+          ],
+          "position_name": "opposite_bishops"
+        },
+        {
+          "final_bestmove": "d3c3",
+          "final_depth": 22,
+          "final_nodes": 702464,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 22,
+              "score": 283,
+              "nodes": 702464,
+              "bestmove": "d3c3"
+            }
+          ],
+          "position_name": "rook_endgame"
+        },
+        {
+          "final_bestmove": "h5f7",
+          "final_depth": 8,
+          "final_nodes": 620544,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 8,
+              "score": 28999,
+              "nodes": 620544,
+              "bestmove": "h5f7"
+            }
+          ],
+          "position_name": "scholars_mate"
+        },
+        {
+          "final_bestmove": "d5f6",
+          "final_depth": 9,
+          "final_nodes": 557056,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": 28997,
+              "nodes": 557056,
+              "bestmove": "d5f6"
+            }
+          ],
+          "position_name": "legals_mate"
+        }
+      ]
+    },
+    "threads_2": {
+      "aggregate_shallower_overwrites": 32496,
+      "aggregate_lock_spins": 23890,
+      "aggregate_probes": 2567808,
+      "aggregate_stores": 980649,
+      "positions": [
+        {
+          "final_bestmove": "e2e4",
+          "final_depth": 11,
+          "final_nodes": 808960,
+          "tt": {
+            "probes": 144956,
+            "hits": 32598,
+            "cutoffs": 23359,
+            "stores": 71613,
+            "same_key_overwrites": 22330,
+            "shallower_overwrites": 621,
+            "cross_key_evictions": 1,
+            "lock_spins": 149
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 11,
+              "score": 32,
+              "nodes": 403456,
+              "bestmove": "e2e4"
+            },
+            {
+              "id": 1,
+              "depth": 11,
+              "score": 32,
+              "nodes": 405504,
+              "bestmove": "e2e4"
+            }
+          ],
+          "position_name": "startpos"
+        },
+        {
+          "final_bestmove": "e2a6",
+          "final_depth": 8,
+          "final_nodes": 516096,
+          "tt": {
+            "probes": 120725,
+            "hits": 6440,
+            "cutoffs": 2047,
+            "stores": 19295,
+            "same_key_overwrites": 13198,
+            "shallower_overwrites": 22,
+            "cross_key_evictions": 0,
+            "lock_spins": 998
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 8,
+              "score": 9,
+              "nodes": 260096,
+              "bestmove": "e2a6"
+            },
+            {
+              "id": 1,
+              "depth": 8,
+              "score": 9,
+              "nodes": 256000,
+              "bestmove": "e2a6"
+            }
+          ],
+          "position_name": "kiwipete"
+        },
+        {
+          "final_bestmove": "b4f4",
+          "final_depth": 15,
+          "final_nodes": 1028096,
+          "tt": {
+            "probes": 258246,
+            "hits": 49357,
+            "cutoffs": 38912,
+            "stores": 113341,
+            "same_key_overwrites": 45779,
+            "shallower_overwrites": 1509,
+            "cross_key_evictions": 0,
+            "lock_spins": 793
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 15,
+              "score": 21,
+              "nodes": 509952,
+              "bestmove": "b4f4"
+            },
+            {
+              "id": 1,
+              "depth": 14,
+              "score": 10,
+              "nodes": 518144,
+              "bestmove": "b4f4"
+            }
+          ],
+          "position_name": "pos3_endgame"
+        },
+        {
+          "final_bestmove": "a2a3",
+          "final_depth": 8,
+          "final_nodes": 600064,
+          "tt": {
+            "probes": 99702,
+            "hits": 19308,
+            "cutoffs": 12275,
+            "stores": 38122,
+            "same_key_overwrites": 16478,
+            "shallower_overwrites": 251,
+            "cross_key_evictions": 0,
+            "lock_spins": 179
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 8,
+              "score": 0,
+              "nodes": 303104,
+              "bestmove": "a2a3"
+            },
+            {
+              "id": 1,
+              "depth": 8,
+              "score": 0,
+              "nodes": 296960,
+              "bestmove": "a2a3"
+            }
+          ],
+          "position_name": "sharp_sicilian"
+        },
+        {
+          "final_bestmove": "g8h6",
+          "final_depth": 9,
+          "final_nodes": 632832,
+          "tt": {
+            "probes": 136422,
+            "hits": 17105,
+            "cutoffs": 11896,
+            "stores": 38657,
+            "same_key_overwrites": 16328,
+            "shallower_overwrites": 183,
+            "cross_key_evictions": 0,
+            "lock_spins": 360
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": 2,
+              "nodes": 313344,
+              "bestmove": "g8h6"
+            },
+            {
+              "id": 1,
+              "depth": 9,
+              "score": 2,
+              "nodes": 319488,
+              "bestmove": "g8h6"
+            }
+          ],
+          "position_name": "closed_french"
+        },
+        {
+          "final_bestmove": "c3d5",
+          "final_depth": 10,
+          "final_nodes": 712704,
+          "tt": {
+            "probes": 197869,
+            "hits": 8510,
+            "cutoffs": 5128,
+            "stores": 27294,
+            "same_key_overwrites": 16765,
+            "shallower_overwrites": 112,
+            "cross_key_evictions": 0,
+            "lock_spins": 1360
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": 188,
+              "nodes": 356352,
+              "bestmove": "c3d5"
+            },
+            {
+              "id": 1,
+              "depth": 10,
+              "score": 188,
+              "nodes": 356352,
+              "bestmove": "c3d5"
+            }
+          ],
+          "position_name": "king_safety_sharp"
+        },
+        {
+          "final_bestmove": "e2f3",
+          "final_depth": 20,
+          "final_nodes": 1280000,
+          "tt": {
+            "probes": 491236,
+            "hits": 274763,
+            "cutoffs": 253157,
+            "stores": 163745,
+            "same_key_overwrites": 89538,
+            "shallower_overwrites": 6617,
+            "cross_key_evictions": 2,
+            "lock_spins": 3167
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 20,
+              "score": 0,
+              "nodes": 641024,
+              "bestmove": "e2f3"
+            },
+            {
+              "id": 1,
+              "depth": 20,
+              "score": 0,
+              "nodes": 638976,
+              "bestmove": "e2f3"
+            }
+          ],
+          "position_name": "opposite_bishops"
+        },
+        {
+          "final_bestmove": "d3c3",
+          "final_depth": 22,
+          "final_nodes": 991232,
+          "tt": {
+            "probes": 663761,
+            "hits": 317826,
+            "cutoffs": 259456,
+            "stores": 238628,
+            "same_key_overwrites": 184038,
+            "shallower_overwrites": 23179,
+            "cross_key_evictions": 2,
+            "lock_spins": 6414
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 22,
+              "score": 275,
+              "nodes": 491520,
+              "bestmove": "d3c3"
+            },
+            {
+              "id": 1,
+              "depth": 22,
+              "score": 275,
+              "nodes": 499712,
+              "bestmove": "d3c3"
+            }
+          ],
+          "position_name": "rook_endgame"
+        },
+        {
+          "final_bestmove": "h5f7",
+          "final_depth": 8,
+          "final_nodes": 929792,
+          "tt": {
+            "probes": 195990,
+            "hits": 75851,
+            "cutoffs": 75851,
+            "stores": 119758,
+            "same_key_overwrites": 68517,
+            "shallower_overwrites": 1,
+            "cross_key_evictions": 0,
+            "lock_spins": 5699
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 8,
+              "score": 28999,
+              "nodes": 466944,
+              "bestmove": "h5f7"
+            },
+            {
+              "id": 1,
+              "depth": 8,
+              "score": 28999,
+              "nodes": 462848,
+              "bestmove": "h5f7"
+            }
+          ],
+          "position_name": "scholars_mate"
+        },
+        {
+          "final_bestmove": "d5f6",
+          "final_depth": 9,
+          "final_nodes": 1079296,
+          "tt": {
+            "probes": 258901,
+            "hits": 108359,
+            "cutoffs": 108344,
+            "stores": 150196,
+            "same_key_overwrites": 68430,
+            "shallower_overwrites": 1,
+            "cross_key_evictions": 5,
+            "lock_spins": 4771
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": 28997,
+              "nodes": 540672,
+              "bestmove": "d5f6"
+            },
+            {
+              "id": 1,
+              "depth": 9,
+              "score": 28997,
+              "nodes": 538624,
+              "bestmove": "d5f6"
+            }
+          ],
+          "position_name": "legals_mate"
+        }
+      ]
+    },
+    "threads_4": {
+      "aggregate_shallower_overwrites": 40820,
+      "aggregate_lock_spins": 173076,
+      "aggregate_probes": 4564212,
+      "aggregate_stores": 1578625,
+      "positions": [
+        {
+          "final_bestmove": "e2e4",
+          "final_depth": 11,
+          "final_nodes": 1464320,
+          "tt": {
+            "probes": 280484,
+            "hits": 75987,
+            "cutoffs": 60029,
+            "stores": 118809,
+            "same_key_overwrites": 46241,
+            "shallower_overwrites": 1136,
+            "cross_key_evictions": 2,
+            "lock_spins": 2613
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 11,
+              "score": 34,
+              "nodes": 378880,
+              "bestmove": "e2e4"
+            },
+            {
+              "id": 1,
+              "depth": 11,
+              "score": 34,
+              "nodes": 374784,
+              "bestmove": "e2e4"
+            },
+            {
+              "id": 2,
+              "depth": 11,
+              "score": 34,
+              "nodes": 348160,
+              "bestmove": "e2e4"
+            },
+            {
+              "id": 3,
+              "depth": 11,
+              "score": 34,
+              "nodes": 362496,
+              "bestmove": "e2e4"
+            }
+          ],
+          "position_name": "startpos"
+        },
+        {
+          "final_bestmove": "e2a6",
+          "final_depth": 7,
+          "final_nodes": 933888,
+          "tt": {
+            "probes": 225605,
+            "hits": 11337,
+            "cutoffs": 4892,
+            "stores": 34347,
+            "same_key_overwrites": 28705,
+            "shallower_overwrites": 21,
+            "cross_key_evictions": 0,
+            "lock_spins": 6734
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 7,
+              "score": 14,
+              "nodes": 245760,
+              "bestmove": "e2a6"
+            },
+            {
+              "id": 1,
+              "depth": 7,
+              "score": 14,
+              "nodes": 229376,
+              "bestmove": "e2a6"
+            },
+            {
+              "id": 2,
+              "depth": 7,
+              "score": 14,
+              "nodes": 223232,
+              "bestmove": "e2a6"
+            },
+            {
+              "id": 3,
+              "depth": 7,
+              "score": 14,
+              "nodes": 235520,
+              "bestmove": "e2a6"
+            }
+          ],
+          "position_name": "kiwipete"
+        },
+        {
+          "final_bestmove": "b4c4",
+          "final_depth": 14,
+          "final_nodes": 1845248,
+          "tt": {
+            "probes": 460752,
+            "hits": 109736,
+            "cutoffs": 84390,
+            "stores": 201978,
+            "same_key_overwrites": 92956,
+            "shallower_overwrites": 4152,
+            "cross_key_evictions": 27,
+            "lock_spins": 5925
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 14,
+              "score": 13,
+              "nodes": 471040,
+              "bestmove": "b4c4"
+            },
+            {
+              "id": 1,
+              "depth": 14,
+              "score": 10,
+              "nodes": 464896,
+              "bestmove": "b4f4"
+            },
+            {
+              "id": 2,
+              "depth": 14,
+              "score": 13,
+              "nodes": 450560,
+              "bestmove": "b4c4"
+            },
+            {
+              "id": 3,
+              "depth": 14,
+              "score": 13,
+              "nodes": 458752,
+              "bestmove": "b4c4"
+            }
+          ],
+          "position_name": "pos3_endgame"
+        },
+        {
+          "final_bestmove": "a2a3",
+          "final_depth": 9,
+          "final_nodes": 1185792,
+          "tt": {
+            "probes": 203922,
+            "hits": 42613,
+            "cutoffs": 34140,
+            "stores": 71467,
+            "same_key_overwrites": 42247,
+            "shallower_overwrites": 226,
+            "cross_key_evictions": 0,
+            "lock_spins": 4746
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": 4,
+              "nodes": 309248,
+              "bestmove": "a2a3"
+            },
+            {
+              "id": 1,
+              "depth": 9,
+              "score": 4,
+              "nodes": 294912,
+              "bestmove": "a2a3"
+            },
+            {
+              "id": 2,
+              "depth": 9,
+              "score": 4,
+              "nodes": 288768,
+              "bestmove": "a2a3"
+            },
+            {
+              "id": 3,
+              "depth": 9,
+              "score": 4,
+              "nodes": 292864,
+              "bestmove": "a2a3"
+            }
+          ],
+          "position_name": "sharp_sicilian"
+        },
+        {
+          "final_bestmove": "b6c7",
+          "final_depth": 10,
+          "final_nodes": 1251428,
+          "tt": {
+            "probes": 283459,
+            "hits": 40731,
+            "cutoffs": 32153,
+            "stores": 72472,
+            "same_key_overwrites": 38818,
+            "shallower_overwrites": 251,
+            "cross_key_evictions": 0,
+            "lock_spins": 3275
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": 30,
+              "nodes": 311260,
+              "bestmove": "b6c7"
+            },
+            {
+              "id": 1,
+              "depth": 9,
+              "score": 2,
+              "nodes": 317096,
+              "bestmove": "g8h6"
+            },
+            {
+              "id": 2,
+              "depth": 9,
+              "score": 2,
+              "nodes": 313344,
+              "bestmove": "g8h6"
+            },
+            {
+              "id": 3,
+              "depth": 9,
+              "score": 2,
+              "nodes": 309728,
+              "bestmove": "g8h6"
+            }
+          ],
+          "position_name": "closed_french"
+        },
+        {
+          "final_bestmove": "c3d5",
+          "final_depth": 10,
+          "final_nodes": 1267712,
+          "tt": {
+            "probes": 358633,
+            "hits": 16864,
+            "cutoffs": 11512,
+            "stores": 46585,
+            "same_key_overwrites": 37069,
+            "shallower_overwrites": 108,
+            "cross_key_evictions": 0,
+            "lock_spins": 5408
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": 188,
+              "nodes": 317440,
+              "bestmove": "c3d5"
+            },
+            {
+              "id": 1,
+              "depth": 10,
+              "score": 188,
+              "nodes": 315392,
+              "bestmove": "c3d5"
+            },
+            {
+              "id": 2,
+              "depth": 10,
+              "score": 188,
+              "nodes": 317440,
+              "bestmove": "c3d5"
+            },
+            {
+              "id": 3,
+              "depth": 10,
+              "score": 188,
+              "nodes": 317440,
+              "bestmove": "c3d5"
+            }
+          ],
+          "position_name": "king_safety_sharp"
+        },
+        {
+          "final_bestmove": "e1d1",
+          "final_depth": 23,
+          "final_nodes": 1994752,
+          "tt": {
+            "probes": 849245,
+            "hits": 490757,
+            "cutoffs": 462125,
+            "stores": 240590,
+            "same_key_overwrites": 142733,
+            "shallower_overwrites": 10213,
+            "cross_key_evictions": 9,
+            "lock_spins": 8642
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 23,
+              "score": 0,
+              "nodes": 495616,
+              "bestmove": "e1d1"
+            },
+            {
+              "id": 1,
+              "depth": 23,
+              "score": 0,
+              "nodes": 487424,
+              "bestmove": "e1d1"
+            },
+            {
+              "id": 2,
+              "depth": 23,
+              "score": 0,
+              "nodes": 501760,
+              "bestmove": "e1d1"
+            },
+            {
+              "id": 3,
+              "depth": 23,
+              "score": 0,
+              "nodes": 509952,
+              "bestmove": "e2f3"
+            }
+          ],
+          "position_name": "opposite_bishops"
+        },
+        {
+          "final_bestmove": "d3c3",
+          "final_depth": 22,
+          "final_nodes": 1447936,
+          "tt": {
+            "probes": 1019302,
+            "hits": 477844,
+            "cutoffs": 406837,
+            "stores": 354073,
+            "same_key_overwrites": 297838,
+            "shallower_overwrites": 24689,
+            "cross_key_evictions": 0,
+            "lock_spins": 36055
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 22,
+              "score": 275,
+              "nodes": 350208,
+              "bestmove": "d3c3"
+            },
+            {
+              "id": 1,
+              "depth": 22,
+              "score": 275,
+              "nodes": 374784,
+              "bestmove": "d3c3"
+            },
+            {
+              "id": 2,
+              "depth": 22,
+              "score": 275,
+              "nodes": 350208,
+              "bestmove": "d3c3"
+            },
+            {
+              "id": 3,
+              "depth": 22,
+              "score": 275,
+              "nodes": 372736,
+              "bestmove": "d3c3"
+            }
+          ],
+          "position_name": "rook_endgame"
+        },
+        {
+          "final_bestmove": "h5f7",
+          "final_depth": 8,
+          "final_nodes": 1966080,
+          "tt": {
+            "probes": 429048,
+            "hits": 211690,
+            "cutoffs": 211690,
+            "stores": 216555,
+            "same_key_overwrites": 161581,
+            "shallower_overwrites": 4,
+            "cross_key_evictions": 0,
+            "lock_spins": 53419
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 8,
+              "score": 28999,
+              "nodes": 505856,
+              "bestmove": "h5f7"
+            },
+            {
+              "id": 1,
+              "depth": 8,
+              "score": 28999,
+              "nodes": 462848,
+              "bestmove": "h5f7"
+            },
+            {
+              "id": 2,
+              "depth": 8,
+              "score": 28999,
+              "nodes": 493568,
+              "bestmove": "h5f7"
+            },
+            {
+              "id": 3,
+              "depth": 8,
+              "score": 28999,
+              "nodes": 503808,
+              "bestmove": "h5f7"
+            }
+          ],
+          "position_name": "scholars_mate"
+        },
+        {
+          "final_bestmove": "d5f6",
+          "final_depth": 9,
+          "final_nodes": 1867776,
+          "tt": {
+            "probes": 453762,
+            "hits": 231708,
+            "cutoffs": 231317,
+            "stores": 221749,
+            "same_key_overwrites": 157997,
+            "shallower_overwrites": 20,
+            "cross_key_evictions": 2,
+            "lock_spins": 46259
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": 28997,
+              "nodes": 477184,
+              "bestmove": "d5f6"
+            },
+            {
+              "id": 1,
+              "depth": 9,
+              "score": 28997,
+              "nodes": 483328,
+              "bestmove": "d5f6"
+            },
+            {
+              "id": 2,
+              "depth": 9,
+              "score": 28997,
+              "nodes": 446464,
+              "bestmove": "d5f6"
+            },
+            {
+              "id": 3,
+              "depth": 9,
+              "score": 28997,
+              "nodes": 460800,
+              "bestmove": "d5f6"
+            }
+          ],
+          "position_name": "legals_mate"
+        }
+      ]
+    }
+  },
+  "time_500ms": {
+    "threads_1": {
+      "aggregate_shallower_overwrites": 0,
+      "aggregate_lock_spins": 0,
+      "aggregate_probes": 0,
+      "aggregate_stores": 0,
+      "positions": [
+        {
+          "final_bestmove": "e2e4",
+          "final_depth": 11,
+          "final_nodes": 788480,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 11,
+              "score": 32,
+              "nodes": 788480,
+              "bestmove": "e2e4"
+            }
+          ],
+          "position_name": "startpos"
+        },
+        {
+          "final_bestmove": "e2a6",
+          "final_depth": 8,
+          "final_nodes": 495616,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 8,
+              "score": 9,
+              "nodes": 495616,
+              "bestmove": "e2a6"
+            }
+          ],
+          "position_name": "kiwipete"
+        },
+        {
+          "final_bestmove": "b4f4",
+          "final_depth": 15,
+          "final_nodes": 1126400,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 15,
+              "score": 21,
+              "nodes": 1126400,
+              "bestmove": "b4f4"
+            }
+          ],
+          "position_name": "pos3_endgame"
+        },
+        {
+          "final_bestmove": "a2a3",
+          "final_depth": 9,
+          "final_nodes": 673792,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": 5,
+              "nodes": 673792,
+              "bestmove": "a2a3"
+            }
+          ],
+          "position_name": "sharp_sicilian"
+        },
+        {
+          "final_bestmove": "b6c7",
+          "final_depth": 10,
+          "final_nodes": 694272,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": 30,
+              "nodes": 694272,
+              "bestmove": "b6c7"
+            }
+          ],
+          "position_name": "closed_french"
+        },
+        {
+          "final_bestmove": "c3d5",
+          "final_depth": 11,
+          "final_nodes": 679936,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 11,
+              "score": 176,
+              "nodes": 679936,
+              "bestmove": "c3d5"
+            }
+          ],
+          "position_name": "king_safety_sharp"
+        },
+        {
+          "final_bestmove": "e2f3",
+          "final_depth": 24,
+          "final_nodes": 1464320,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 24,
+              "score": 0,
+              "nodes": 1464320,
+              "bestmove": "e2f3"
+            }
+          ],
+          "position_name": "opposite_bishops"
+        },
+        {
+          "final_bestmove": "d3c3",
+          "final_depth": 22,
+          "final_nodes": 1396736,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 22,
+              "score": 283,
+              "nodes": 1396736,
+              "bestmove": "d3c3"
+            }
+          ],
+          "position_name": "rook_endgame"
+        },
+        {
+          "final_bestmove": "h5f7",
+          "final_depth": 9,
+          "final_nodes": 1230848,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": 28999,
+              "nodes": 1230848,
+              "bestmove": "h5f7"
+            }
+          ],
+          "position_name": "scholars_mate"
+        },
+        {
+          "final_bestmove": "d5f6",
+          "final_depth": 9,
+          "final_nodes": 1013760,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": 28997,
+              "nodes": 1013760,
+              "bestmove": "d5f6"
+            }
+          ],
+          "position_name": "legals_mate"
+        }
+      ]
+    },
+    "threads_2": {
+      "aggregate_shallower_overwrites": 72200,
+      "aggregate_lock_spins": 54600,
+      "aggregate_probes": 5444555,
+      "aggregate_stores": 1979357,
+      "positions": [
+        {
+          "final_bestmove": "e2e4",
+          "final_depth": 11,
+          "final_nodes": 1486848,
+          "tt": {
+            "probes": 259619,
+            "hits": 52925,
+            "cutoffs": 39292,
+            "stores": 123453,
+            "same_key_overwrites": 34910,
+            "shallower_overwrites": 1035,
+            "cross_key_evictions": 3,
+            "lock_spins": 303
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 11,
+              "score": 32,
+              "nodes": 765952,
+              "bestmove": "e2e4"
+            },
+            {
+              "id": 1,
+              "depth": 11,
+              "score": 32,
+              "nodes": 720896,
+              "bestmove": "e2e4"
+            }
+          ],
+          "position_name": "startpos"
+        },
+        {
+          "final_bestmove": "e2a6",
+          "final_depth": 9,
+          "final_nodes": 1026048,
+          "tt": {
+            "probes": 216481,
+            "hits": 18458,
+            "cutoffs": 5988,
+            "stores": 40573,
+            "same_key_overwrites": 26186,
+            "shallower_overwrites": 135,
+            "cross_key_evictions": 0,
+            "lock_spins": 1835
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": -33,
+              "nodes": 516096,
+              "bestmove": "e2a6"
+            },
+            {
+              "id": 1,
+              "depth": 9,
+              "score": -33,
+              "nodes": 509952,
+              "bestmove": "e2a6"
+            }
+          ],
+          "position_name": "kiwipete"
+        },
+        {
+          "final_bestmove": "b4f4",
+          "final_depth": 16,
+          "final_nodes": 1980416,
+          "tt": {
+            "probes": 536684,
+            "hits": 112667,
+            "cutoffs": 82288,
+            "stores": 215181,
+            "same_key_overwrites": 92393,
+            "shallower_overwrites": 5002,
+            "cross_key_evictions": 35,
+            "lock_spins": 2810
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 16,
+              "score": 59,
+              "nodes": 997376,
+              "bestmove": "b4f4"
+            },
+            {
+              "id": 1,
+              "depth": 16,
+              "score": 59,
+              "nodes": 983040,
+              "bestmove": "b4f4"
+            }
+          ],
+          "position_name": "pos3_endgame"
+        },
+        {
+          "final_bestmove": "a2a3",
+          "final_depth": 10,
+          "final_nodes": 1298432,
+          "tt": {
+            "probes": 237932,
+            "hits": 36366,
+            "cutoffs": 25630,
+            "stores": 80356,
+            "same_key_overwrites": 33133,
+            "shallower_overwrites": 777,
+            "cross_key_evictions": 0,
+            "lock_spins": 505
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": 0,
+              "nodes": 647168,
+              "bestmove": "a2a3"
+            },
+            {
+              "id": 1,
+              "depth": 10,
+              "score": 0,
+              "nodes": 651264,
+              "bestmove": "a2a3"
+            }
+          ],
+          "position_name": "sharp_sicilian"
+        },
+        {
+          "final_bestmove": "b6c7",
+          "final_depth": 10,
+          "final_nodes": 1232896,
+          "tt": {
+            "probes": 253324,
+            "hits": 30350,
+            "cutoffs": 22664,
+            "stores": 73431,
+            "same_key_overwrites": 26717,
+            "shallower_overwrites": 395,
+            "cross_key_evictions": 0,
+            "lock_spins": 1207
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": 21,
+              "nodes": 622592,
+              "bestmove": "b6c7"
+            },
+            {
+              "id": 1,
+              "depth": 10,
+              "score": 21,
+              "nodes": 610304,
+              "bestmove": "b6c7"
+            }
+          ],
+          "position_name": "closed_french"
+        },
+        {
+          "final_bestmove": "c3d5",
+          "final_depth": 11,
+          "final_nodes": 1433600,
+          "tt": {
+            "probes": 384370,
+            "hits": 19975,
+            "cutoffs": 11908,
+            "stores": 58993,
+            "same_key_overwrites": 35833,
+            "shallower_overwrites": 359,
+            "cross_key_evictions": 0,
+            "lock_spins": 3263
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 11,
+              "score": 176,
+              "nodes": 716800,
+              "bestmove": "c3d5"
+            },
+            {
+              "id": 1,
+              "depth": 11,
+              "score": 176,
+              "nodes": 716800,
+              "bestmove": "c3d5"
+            }
+          ],
+          "position_name": "king_safety_sharp"
+        },
+        {
+          "final_bestmove": "e2d3",
+          "final_depth": 27,
+          "final_nodes": 2459648,
+          "tt": {
+            "probes": 1130755,
+            "hits": 650265,
+            "cutoffs": 623218,
+            "stores": 282739,
+            "same_key_overwrites": 167889,
+            "shallower_overwrites": 9195,
+            "cross_key_evictions": 19,
+            "lock_spins": 11793
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 27,
+              "score": 0,
+              "nodes": 1236992,
+              "bestmove": "e2d3"
+            },
+            {
+              "id": 1,
+              "depth": 27,
+              "score": 0,
+              "nodes": 1222656,
+              "bestmove": "e2d3"
+            }
+          ],
+          "position_name": "opposite_bishops"
+        },
+        {
+          "final_bestmove": "d3c3",
+          "final_depth": 25,
+          "final_nodes": 2191360,
+          "tt": {
+            "probes": 1427541,
+            "hits": 671602,
+            "cutoffs": 552314,
+            "stores": 509504,
+            "same_key_overwrites": 388666,
+            "shallower_overwrites": 55298,
+            "cross_key_evictions": 55,
+            "lock_spins": 5099
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 25,
+              "score": 409,
+              "nodes": 1083392,
+              "bestmove": "d3c3"
+            },
+            {
+              "id": 1,
+              "depth": 25,
+              "score": 409,
+              "nodes": 1107968,
+              "bestmove": "d3c3"
+            }
+          ],
+          "position_name": "rook_endgame"
+        },
+        {
+          "final_bestmove": "h5f7",
+          "final_depth": 9,
+          "final_nodes": 2234368,
+          "tt": {
+            "probes": 468646,
+            "hits": 185055,
+            "cutoffs": 185053,
+            "stores": 282851,
+            "same_key_overwrites": 160879,
+            "shallower_overwrites": 1,
+            "cross_key_evictions": 33,
+            "lock_spins": 19275
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": 28999,
+              "nodes": 1118208,
+              "bestmove": "h5f7"
+            },
+            {
+              "id": 1,
+              "depth": 9,
+              "score": 28999,
+              "nodes": 1116160,
+              "bestmove": "h5f7"
+            }
+          ],
+          "position_name": "scholars_mate"
+        },
+        {
+          "final_bestmove": "d5f6",
+          "final_depth": 10,
+          "final_nodes": 2138112,
+          "tt": {
+            "probes": 529203,
+            "hits": 216495,
+            "cutoffs": 216480,
+            "stores": 312276,
+            "same_key_overwrites": 142079,
+            "shallower_overwrites": 3,
+            "cross_key_evictions": 257,
+            "lock_spins": 8510
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": 28997,
+              "nodes": 1067008,
+              "bestmove": "d5f6"
+            },
+            {
+              "id": 1,
+              "depth": 10,
+              "score": 28997,
+              "nodes": 1071104,
+              "bestmove": "d5f6"
+            }
+          ],
+          "position_name": "legals_mate"
+        }
+      ]
+    },
+    "threads_4": {
+      "aggregate_shallower_overwrites": 72467,
+      "aggregate_lock_spins": 371097,
+      "aggregate_probes": 9577837,
+      "aggregate_stores": 3069359,
+      "positions": [
+        {
+          "final_bestmove": "e2e4",
+          "final_depth": 12,
+          "final_nodes": 2924544,
+          "tt": {
+            "probes": 562469,
+            "hits": 136090,
+            "cutoffs": 109520,
+            "stores": 228862,
+            "same_key_overwrites": 87163,
+            "shallower_overwrites": 2053,
+            "cross_key_evictions": 76,
+            "lock_spins": 3556
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 12,
+              "score": 18,
+              "nodes": 743424,
+              "bestmove": "e2e4"
+            },
+            {
+              "id": 1,
+              "depth": 12,
+              "score": 18,
+              "nodes": 735232,
+              "bestmove": "e2e4"
+            },
+            {
+              "id": 2,
+              "depth": 12,
+              "score": 18,
+              "nodes": 731136,
+              "bestmove": "e2e4"
+            },
+            {
+              "id": 3,
+              "depth": 12,
+              "score": 18,
+              "nodes": 714752,
+              "bestmove": "e2e4"
+            }
+          ],
+          "position_name": "startpos"
+        },
+        {
+          "final_bestmove": "e2a6",
+          "final_depth": 8,
+          "final_nodes": 1695744,
+          "tt": {
+            "probes": 369603,
+            "hits": 30669,
+            "cutoffs": 17653,
+            "stores": 61471,
+            "same_key_overwrites": 48429,
+            "shallower_overwrites": 135,
+            "cross_key_evictions": 0,
+            "lock_spins": 27322
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 8,
+              "score": 9,
+              "nodes": 405504,
+              "bestmove": "e2a6"
+            },
+            {
+              "id": 1,
+              "depth": 8,
+              "score": 9,
+              "nodes": 415744,
+              "bestmove": "e2a6"
+            },
+            {
+              "id": 2,
+              "depth": 8,
+              "score": 9,
+              "nodes": 425984,
+              "bestmove": "e2a6"
+            },
+            {
+              "id": 3,
+              "depth": 8,
+              "score": 9,
+              "nodes": 448512,
+              "bestmove": "e2a6"
+            }
+          ],
+          "position_name": "kiwipete"
+        },
+        {
+          "final_bestmove": "b4f4",
+          "final_depth": 16,
+          "final_nodes": 3762176,
+          "tt": {
+            "probes": 1049584,
+            "hits": 249313,
+            "cutoffs": 207005,
+            "stores": 397791,
+            "same_key_overwrites": 187663,
+            "shallower_overwrites": 7324,
+            "cross_key_evictions": 425,
+            "lock_spins": 10520
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 16,
+              "score": 59,
+              "nodes": 937984,
+              "bestmove": "b4f4"
+            },
+            {
+              "id": 1,
+              "depth": 16,
+              "score": 59,
+              "nodes": 950272,
+              "bestmove": "b4f4"
+            },
+            {
+              "id": 2,
+              "depth": 16,
+              "score": 59,
+              "nodes": 948224,
+              "bestmove": "b4f4"
+            },
+            {
+              "id": 3,
+              "depth": 16,
+              "score": 59,
+              "nodes": 925696,
+              "bestmove": "b4f4"
+            }
+          ],
+          "position_name": "pos3_endgame"
+        },
+        {
+          "final_bestmove": "a2a3",
+          "final_depth": 10,
+          "final_nodes": 2418688,
+          "tt": {
+            "probes": 458680,
+            "hits": 87420,
+            "cutoffs": 64915,
+            "stores": 145485,
+            "same_key_overwrites": 69058,
+            "shallower_overwrites": 1395,
+            "cross_key_evictions": 1,
+            "lock_spins": 3438
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": 0,
+              "nodes": 614400,
+              "bestmove": "a2a3"
+            },
+            {
+              "id": 1,
+              "depth": 10,
+              "score": 0,
+              "nodes": 598016,
+              "bestmove": "a2a3"
+            },
+            {
+              "id": 2,
+              "depth": 10,
+              "score": 0,
+              "nodes": 610304,
+              "bestmove": "a2a3"
+            },
+            {
+              "id": 3,
+              "depth": 10,
+              "score": 0,
+              "nodes": 595968,
+              "bestmove": "a2a3"
+            }
+          ],
+          "position_name": "sharp_sicilian"
+        },
+        {
+          "final_bestmove": "b6c7",
+          "final_depth": 11,
+          "final_nodes": 2344960,
+          "tt": {
+            "probes": 509632,
+            "hits": 78554,
+            "cutoffs": 58637,
+            "stores": 137552,
+            "same_key_overwrites": 61854,
+            "shallower_overwrites": 1198,
+            "cross_key_evictions": 2,
+            "lock_spins": 3575
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 11,
+              "score": 36,
+              "nodes": 569344,
+              "bestmove": "b6c7"
+            },
+            {
+              "id": 1,
+              "depth": 11,
+              "score": 11,
+              "nodes": 587776,
+              "bestmove": "b6c7"
+            },
+            {
+              "id": 2,
+              "depth": 11,
+              "score": 36,
+              "nodes": 600064,
+              "bestmove": "b6c7"
+            },
+            {
+              "id": 3,
+              "depth": 11,
+              "score": 11,
+              "nodes": 587776,
+              "bestmove": "b6c7"
+            }
+          ],
+          "position_name": "closed_french"
+        },
+        {
+          "final_bestmove": "c3d5",
+          "final_depth": 12,
+          "final_nodes": 2562048,
+          "tt": {
+            "probes": 709510,
+            "hits": 59408,
+            "cutoffs": 34638,
+            "stores": 101427,
+            "same_key_overwrites": 75373,
+            "shallower_overwrites": 554,
+            "cross_key_evictions": 0,
+            "lock_spins": 29062
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 11,
+              "score": 176,
+              "nodes": 643072,
+              "bestmove": "c3d5"
+            },
+            {
+              "id": 1,
+              "depth": 11,
+              "score": 176,
+              "nodes": 638976,
+              "bestmove": "c3d5"
+            },
+            {
+              "id": 2,
+              "depth": 12,
+              "score": 176,
+              "nodes": 645120,
+              "bestmove": "c3d5"
+            },
+            {
+              "id": 3,
+              "depth": 11,
+              "score": 176,
+              "nodes": 634880,
+              "bestmove": "c3d5"
+            }
+          ],
+          "position_name": "king_safety_sharp"
+        },
+        {
+          "final_bestmove": "e2f3",
+          "final_depth": 30,
+          "final_nodes": 3993600,
+          "tt": {
+            "probes": 2046040,
+            "hits": 1193782,
+            "cutoffs": 1146000,
+            "stores": 412103,
+            "same_key_overwrites": 271292,
+            "shallower_overwrites": 16918,
+            "cross_key_evictions": 94,
+            "lock_spins": 29899
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 30,
+              "score": 0,
+              "nodes": 985088,
+              "bestmove": "e2f3"
+            },
+            {
+              "id": 1,
+              "depth": 30,
+              "score": 0,
+              "nodes": 997376,
+              "bestmove": "e2f3"
+            },
+            {
+              "id": 2,
+              "depth": 30,
+              "score": 0,
+              "nodes": 1015808,
+              "bestmove": "e2f3"
+            },
+            {
+              "id": 3,
+              "depth": 30,
+              "score": 0,
+              "nodes": 995328,
+              "bestmove": "e2f3"
+            }
+          ],
+          "position_name": "opposite_bishops"
+        },
+        {
+          "final_bestmove": "d3c3",
+          "final_depth": 25,
+          "final_nodes": 2893824,
+          "tt": {
+            "probes": 2075316,
+            "hits": 977983,
+            "cutoffs": 845767,
+            "stores": 681033,
+            "same_key_overwrites": 567787,
+            "shallower_overwrites": 42879,
+            "cross_key_evictions": 27,
+            "lock_spins": 63402
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 25,
+              "score": 307,
+              "nodes": 704512,
+              "bestmove": "d3c3"
+            },
+            {
+              "id": 1,
+              "depth": 25,
+              "score": 307,
+              "nodes": 718848,
+              "bestmove": "d3c3"
+            },
+            {
+              "id": 2,
+              "depth": 25,
+              "score": 307,
+              "nodes": 737280,
+              "bestmove": "d3c3"
+            },
+            {
+              "id": 3,
+              "depth": 25,
+              "score": 307,
+              "nodes": 733184,
+              "bestmove": "d3c3"
+            }
+          ],
+          "position_name": "rook_endgame"
+        },
+        {
+          "final_bestmove": "h5f7",
+          "final_depth": 9,
+          "final_nodes": 3670016,
+          "tt": {
+            "probes": 824349,
+            "hits": 427624,
+            "cutoffs": 427620,
+            "stores": 395296,
+            "same_key_overwrites": 291854,
+            "shallower_overwrites": 3,
+            "cross_key_evictions": 14,
+            "lock_spins": 106459
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": 28999,
+              "nodes": 958464,
+              "bestmove": "h5f7"
+            },
+            {
+              "id": 1,
+              "depth": 9,
+              "score": 28999,
+              "nodes": 905216,
+              "bestmove": "h5f7"
+            },
+            {
+              "id": 2,
+              "depth": 9,
+              "score": 28999,
+              "nodes": 886784,
+              "bestmove": "h5f7"
+            },
+            {
+              "id": 3,
+              "depth": 9,
+              "score": 28999,
+              "nodes": 919552,
+              "bestmove": "h5f7"
+            }
+          ],
+          "position_name": "scholars_mate"
+        },
+        {
+          "final_bestmove": "d5f6",
+          "final_depth": 10,
+          "final_nodes": 3530752,
+          "tt": {
+            "probes": 972654,
+            "hits": 463287,
+            "cutoffs": 463275,
+            "stores": 508339,
+            "same_key_overwrites": 355284,
+            "shallower_overwrites": 8,
+            "cross_key_evictions": 123,
+            "lock_spins": 93864
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": 28997,
+              "nodes": 849920,
+              "bestmove": "d5f6"
+            },
+            {
+              "id": 1,
+              "depth": 10,
+              "score": 28997,
+              "nodes": 880640,
+              "bestmove": "d5f6"
+            },
+            {
+              "id": 2,
+              "depth": 10,
+              "score": 28997,
+              "nodes": 946176,
+              "bestmove": "d5f6"
+            },
+            {
+              "id": 3,
+              "depth": 10,
+              "score": 28997,
+              "nodes": 854016,
+              "bestmove": "d5f6"
+            }
+          ],
+          "position_name": "legals_mate"
+        }
+      ]
+    }
+  },
+  "time_1000ms": {
+    "threads_1": {
+      "aggregate_shallower_overwrites": 0,
+      "aggregate_lock_spins": 0,
+      "aggregate_probes": 0,
+      "aggregate_stores": 0,
+      "positions": [
+        {
+          "final_bestmove": "e2e4",
+          "final_depth": 12,
+          "final_nodes": 1591296,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 12,
+              "score": 15,
+              "nodes": 1591296,
+              "bestmove": "e2e4"
+            }
+          ],
+          "position_name": "startpos"
+        },
+        {
+          "final_bestmove": "e2a6",
+          "final_depth": 9,
+          "final_nodes": 1060864,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 9,
+              "score": -33,
+              "nodes": 1060864,
+              "bestmove": "e2a6"
+            }
+          ],
+          "position_name": "kiwipete"
+        },
+        {
+          "final_bestmove": "b4f4",
+          "final_depth": 17,
+          "final_nodes": 2297856,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 17,
+              "score": 89,
+              "nodes": 2297856,
+              "bestmove": "b4f4"
+            }
+          ],
+          "position_name": "pos3_endgame"
+        },
+        {
+          "final_bestmove": "a2a3",
+          "final_depth": 10,
+          "final_nodes": 1202176,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": 0,
+              "nodes": 1202176,
+              "bestmove": "a2a3"
+            }
+          ],
+          "position_name": "sharp_sicilian"
+        },
+        {
+          "final_bestmove": "b6c7",
+          "final_depth": 11,
+          "final_nodes": 1198080,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 11,
+              "score": 45,
+              "nodes": 1198080,
+              "bestmove": "b6c7"
+            }
+          ],
+          "position_name": "closed_french"
+        },
+        {
+          "final_bestmove": "c3d5",
+          "final_depth": 12,
+          "final_nodes": 1282048,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 12,
+              "score": 166,
+              "nodes": 1282048,
+              "bestmove": "c3d5"
+            }
+          ],
+          "position_name": "king_safety_sharp"
+        },
+        {
+          "final_bestmove": "e2f3",
+          "final_depth": 32,
+          "final_nodes": 2779136,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 32,
+              "score": 0,
+              "nodes": 2779136,
+              "bestmove": "e2f3"
+            }
+          ],
+          "position_name": "opposite_bishops"
+        },
+        {
+          "final_bestmove": "d3c3",
+          "final_depth": 23,
+          "final_nodes": 2338816,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 23,
+              "score": 435,
+              "nodes": 2338816,
+              "bestmove": "d3c3"
+            }
+          ],
+          "position_name": "rook_endgame"
+        },
+        {
+          "final_bestmove": "h5f7",
+          "final_depth": 10,
+          "final_nodes": 2353152,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": 28999,
+              "nodes": 2353152,
+              "bestmove": "h5f7"
+            }
+          ],
+          "position_name": "scholars_mate"
+        },
+        {
+          "final_bestmove": "d5f6",
+          "final_depth": 10,
+          "final_nodes": 2201600,
+          "tt": {
+            "probes": 0,
+            "hits": 0,
+            "cutoffs": 0,
+            "stores": 0,
+            "same_key_overwrites": 0,
+            "shallower_overwrites": 0,
+            "cross_key_evictions": 0,
+            "lock_spins": 0
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": 28997,
+              "nodes": 2201600,
+              "bestmove": "d5f6"
+            }
+          ],
+          "position_name": "legals_mate"
+        }
+      ]
+    },
+    "threads_2": {
+      "aggregate_shallower_overwrites": 130070,
+      "aggregate_lock_spins": 127653,
+      "aggregate_probes": 12180581,
+      "aggregate_stores": 3949419,
+      "positions": [
+        {
+          "final_bestmove": "e2e4",
+          "final_depth": 13,
+          "final_nodes": 3139584,
+          "tt": {
+            "probes": 582786,
+            "hits": 109968,
+            "cutoffs": 81869,
+            "stores": 246882,
+            "same_key_overwrites": 77994,
+            "shallower_overwrites": 2486,
+            "cross_key_evictions": 146,
+            "lock_spins": 1829
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 13,
+              "score": 32,
+              "nodes": 1572864,
+              "bestmove": "e2e4"
+            },
+            {
+              "id": 1,
+              "depth": 13,
+              "score": 32,
+              "nodes": 1566720,
+              "bestmove": "e2e4"
+            }
+          ],
+          "position_name": "startpos"
+        },
+        {
+          "final_bestmove": "e2a6",
+          "final_depth": 10,
+          "final_nodes": 2258944,
+          "tt": {
+            "probes": 465734,
+            "hits": 32865,
+            "cutoffs": 16768,
+            "stores": 84535,
+            "same_key_overwrites": 53386,
+            "shallower_overwrites": 451,
+            "cross_key_evictions": 0,
+            "lock_spins": 2710
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": -33,
+              "nodes": 1134592,
+              "bestmove": "e2a6"
+            },
+            {
+              "id": 1,
+              "depth": 10,
+              "score": -33,
+              "nodes": 1124352,
+              "bestmove": "e2a6"
+            }
+          ],
+          "position_name": "kiwipete"
+        },
+        {
+          "final_bestmove": "b4f4",
+          "final_depth": 18,
+          "final_nodes": 4460544,
+          "tt": {
+            "probes": 1185978,
+            "hits": 248657,
+            "cutoffs": 177588,
+            "stores": 490301,
+            "same_key_overwrites": 205562,
+            "shallower_overwrites": 11024,
+            "cross_key_evictions": 1678,
+            "lock_spins": 4361
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 18,
+              "score": 93,
+              "nodes": 2228224,
+              "bestmove": "b4f4"
+            },
+            {
+              "id": 1,
+              "depth": 17,
+              "score": 89,
+              "nodes": 2232320,
+              "bestmove": "b4f4"
+            }
+          ],
+          "position_name": "pos3_endgame"
+        },
+        {
+          "final_bestmove": "e1g1",
+          "final_depth": 11,
+          "final_nodes": 2627584,
+          "tt": {
+            "probes": 469169,
+            "hits": 62592,
+            "cutoffs": 39352,
+            "stores": 167686,
+            "same_key_overwrites": 56095,
+            "shallower_overwrites": 1806,
+            "cross_key_evictions": 23,
+            "lock_spins": 492
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 11,
+              "score": 6,
+              "nodes": 1298432,
+              "bestmove": "e1g1"
+            },
+            {
+              "id": 1,
+              "depth": 11,
+              "score": -1,
+              "nodes": 1329152,
+              "bestmove": "a2a3"
+            }
+          ],
+          "position_name": "sharp_sicilian"
+        },
+        {
+          "final_bestmove": "a7a5",
+          "final_depth": 12,
+          "final_nodes": 2699264,
+          "tt": {
+            "probes": 561464,
+            "hits": 69201,
+            "cutoffs": 43069,
+            "stores": 163458,
+            "same_key_overwrites": 60119,
+            "shallower_overwrites": 1463,
+            "cross_key_evictions": 16,
+            "lock_spins": 271
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 12,
+              "score": 18,
+              "nodes": 1378304,
+              "bestmove": "a7a5"
+            },
+            {
+              "id": 1,
+              "depth": 12,
+              "score": 23,
+              "nodes": 1320960,
+              "bestmove": "b6c7"
+            }
+          ],
+          "position_name": "closed_french"
+        },
+        {
+          "final_bestmove": "c3d5",
+          "final_depth": 12,
+          "final_nodes": 2811904,
+          "tt": {
+            "probes": 831479,
+            "hits": 45519,
+            "cutoffs": 27960,
+            "stores": 124419,
+            "same_key_overwrites": 71271,
+            "shallower_overwrites": 908,
+            "cross_key_evictions": 0,
+            "lock_spins": 6320
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 12,
+              "score": 166,
+              "nodes": 1409024,
+              "bestmove": "c3d5"
+            },
+            {
+              "id": 1,
+              "depth": 12,
+              "score": 166,
+              "nodes": 1402880,
+              "bestmove": "c3d5"
+            }
+          ],
+          "position_name": "king_safety_sharp"
+        },
+        {
+          "final_bestmove": "e2f3",
+          "final_depth": 38,
+          "final_nodes": 5406720,
+          "tt": {
+            "probes": 3203771,
+            "hits": 1790614,
+            "cutoffs": 1750597,
+            "stores": 478193,
+            "same_key_overwrites": 327143,
+            "shallower_overwrites": 13233,
+            "cross_key_evictions": 91,
+            "lock_spins": 25837
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 38,
+              "score": 0,
+              "nodes": 2689024,
+              "bestmove": "e2f3"
+            },
+            {
+              "id": 1,
+              "depth": 38,
+              "score": 0,
+              "nodes": 2717696,
+              "bestmove": "e2f3"
+            }
+          ],
+          "position_name": "opposite_bishops"
+        },
+        {
+          "final_bestmove": "d3c3",
+          "final_depth": 25,
+          "final_nodes": 4345856,
+          "tt": {
+            "probes": 2768875,
+            "hits": 1357429,
+            "cutoffs": 1101255,
+            "stores": 949299,
+            "same_key_overwrites": 728282,
+            "shallower_overwrites": 98678,
+            "cross_key_evictions": 708,
+            "lock_spins": 27958
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 25,
+              "score": 553,
+              "nodes": 2164736,
+              "bestmove": "d3c3"
+            },
+            {
+              "id": 1,
+              "depth": 25,
+              "score": 553,
+              "nodes": 2181120,
+              "bestmove": "d3c3"
+            }
+          ],
+          "position_name": "rook_endgame"
+        },
+        {
+          "final_bestmove": "h5f7",
+          "final_depth": 10,
+          "final_nodes": 4530176,
+          "tt": {
+            "probes": 997206,
+            "hits": 399609,
+            "cutoffs": 399605,
+            "stores": 596378,
+            "same_key_overwrites": 338298,
+            "shallower_overwrites": 1,
+            "cross_key_evictions": 1262,
+            "lock_spins": 34984
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": 28999,
+              "nodes": 2263040,
+              "bestmove": "h5f7"
+            },
+            {
+              "id": 1,
+              "depth": 10,
+              "score": 28999,
+              "nodes": 2267136,
+              "bestmove": "h5f7"
+            }
+          ],
+          "position_name": "scholars_mate"
+        },
+        {
+          "final_bestmove": "d5f6",
+          "final_depth": 11,
+          "final_nodes": 4499456,
+          "tt": {
+            "probes": 1114119,
+            "hits": 465372,
+            "cutoffs": 465256,
+            "stores": 648268,
+            "same_key_overwrites": 311153,
+            "shallower_overwrites": 20,
+            "cross_key_evictions": 4259,
+            "lock_spins": 22891
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 11,
+              "score": 28997,
+              "nodes": 2234368,
+              "bestmove": "d5f6"
+            },
+            {
+              "id": 1,
+              "depth": 11,
+              "score": 28997,
+              "nodes": 2265088,
+              "bestmove": "d5f6"
+            }
+          ],
+          "position_name": "legals_mate"
+        }
+      ]
+    },
+    "threads_4": {
+      "aggregate_shallower_overwrites": 203349,
+      "aggregate_lock_spins": 780634,
+      "aggregate_probes": 21851737,
+      "aggregate_stores": 6766500,
+      "positions": [
+        {
+          "final_bestmove": "e2e4",
+          "final_depth": 13,
+          "final_nodes": 6096896,
+          "tt": {
+            "probes": 1178291,
+            "hits": 269769,
+            "cutoffs": 185818,
+            "stores": 462793,
+            "same_key_overwrites": 181781,
+            "shallower_overwrites": 7174,
+            "cross_key_evictions": 1646,
+            "lock_spins": 3462
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 13,
+              "score": 32,
+              "nodes": 1527808,
+              "bestmove": "e2e4"
+            },
+            {
+              "id": 1,
+              "depth": 13,
+              "score": 32,
+              "nodes": 1536000,
+              "bestmove": "e2e4"
+            },
+            {
+              "id": 2,
+              "depth": 13,
+              "score": 32,
+              "nodes": 1513472,
+              "bestmove": "e2e4"
+            },
+            {
+              "id": 3,
+              "depth": 13,
+              "score": 32,
+              "nodes": 1519616,
+              "bestmove": "e2e4"
+            }
+          ],
+          "position_name": "startpos"
+        },
+        {
+          "final_bestmove": "e2a6",
+          "final_depth": 10,
+          "final_nodes": 4237312,
+          "tt": {
+            "probes": 878314,
+            "hits": 63898,
+            "cutoffs": 40263,
+            "stores": 153091,
+            "same_key_overwrites": 123525,
+            "shallower_overwrites": 440,
+            "cross_key_evictions": 0,
+            "lock_spins": 21883
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": -33,
+              "nodes": 1058816,
+              "bestmove": "e2a6"
+            },
+            {
+              "id": 1,
+              "depth": 10,
+              "score": -33,
+              "nodes": 1052672,
+              "bestmove": "e2a6"
+            },
+            {
+              "id": 2,
+              "depth": 10,
+              "score": -33,
+              "nodes": 1052672,
+              "bestmove": "e2a6"
+            },
+            {
+              "id": 3,
+              "depth": 10,
+              "score": -33,
+              "nodes": 1073152,
+              "bestmove": "e2a6"
+            }
+          ],
+          "position_name": "kiwipete"
+        },
+        {
+          "final_bestmove": "b4f4",
+          "final_depth": 18,
+          "final_nodes": 7751680,
+          "tt": {
+            "probes": 2125182,
+            "hits": 487954,
+            "cutoffs": 382988,
+            "stores": 836315,
+            "same_key_overwrites": 394482,
+            "shallower_overwrites": 17756,
+            "cross_key_evictions": 10915,
+            "lock_spins": 29405
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 18,
+              "score": 92,
+              "nodes": 1927168,
+              "bestmove": "b4f4"
+            },
+            {
+              "id": 1,
+              "depth": 17,
+              "score": 78,
+              "nodes": 1931264,
+              "bestmove": "b4f4"
+            },
+            {
+              "id": 2,
+              "depth": 17,
+              "score": 78,
+              "nodes": 1931264,
+              "bestmove": "b4f4"
+            },
+            {
+              "id": 3,
+              "depth": 17,
+              "score": 78,
+              "nodes": 1961984,
+              "bestmove": "b4f4"
+            }
+          ],
+          "position_name": "pos3_endgame"
+        },
+        {
+          "final_bestmove": "h2h3",
+          "final_depth": 12,
+          "final_nodes": 5197824,
+          "tt": {
+            "probes": 1021655,
+            "hits": 165256,
+            "cutoffs": 121845,
+            "stores": 299252,
+            "same_key_overwrites": 141524,
+            "shallower_overwrites": 2575,
+            "cross_key_evictions": 117,
+            "lock_spins": 5177
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 12,
+              "score": -3,
+              "nodes": 1318912,
+              "bestmove": "h2h3"
+            },
+            {
+              "id": 1,
+              "depth": 12,
+              "score": -3,
+              "nodes": 1261568,
+              "bestmove": "h2h3"
+            },
+            {
+              "id": 2,
+              "depth": 12,
+              "score": -3,
+              "nodes": 1290240,
+              "bestmove": "h2h3"
+            },
+            {
+              "id": 3,
+              "depth": 12,
+              "score": -3,
+              "nodes": 1327104,
+              "bestmove": "h2h3"
+            }
+          ],
+          "position_name": "sharp_sicilian"
+        },
+        {
+          "final_bestmove": "b6c7",
+          "final_depth": 13,
+          "final_nodes": 5126144,
+          "tt": {
+            "probes": 1215390,
+            "hits": 166854,
+            "cutoffs": 113462,
+            "stores": 294431,
+            "same_key_overwrites": 126803,
+            "shallower_overwrites": 4143,
+            "cross_key_evictions": 206,
+            "lock_spins": 3328
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 13,
+              "score": 20,
+              "nodes": 1232896,
+              "bestmove": "b6c7"
+            },
+            {
+              "id": 1,
+              "depth": 13,
+              "score": 20,
+              "nodes": 1294336,
+              "bestmove": "b6c7"
+            },
+            {
+              "id": 2,
+              "depth": 13,
+              "score": 18,
+              "nodes": 1308672,
+              "bestmove": "g8h6"
+            },
+            {
+              "id": 3,
+              "depth": 13,
+              "score": 18,
+              "nodes": 1290240,
+              "bestmove": "g8h6"
+            }
+          ],
+          "position_name": "closed_french"
+        },
+        {
+          "final_bestmove": "c3d5",
+          "final_depth": 12,
+          "final_nodes": 5412864,
+          "tt": {
+            "probes": 1622870,
+            "hits": 93753,
+            "cutoffs": 62195,
+            "stores": 232192,
+            "same_key_overwrites": 182010,
+            "shallower_overwrites": 939,
+            "cross_key_evictions": 0,
+            "lock_spins": 25182
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 12,
+              "score": 166,
+              "nodes": 1347584,
+              "bestmove": "c3d5"
+            },
+            {
+              "id": 1,
+              "depth": 12,
+              "score": 166,
+              "nodes": 1357824,
+              "bestmove": "c3d5"
+            },
+            {
+              "id": 2,
+              "depth": 12,
+              "score": 166,
+              "nodes": 1353728,
+              "bestmove": "c3d5"
+            },
+            {
+              "id": 3,
+              "depth": 12,
+              "score": 166,
+              "nodes": 1353728,
+              "bestmove": "c3d5"
+            }
+          ],
+          "position_name": "king_safety_sharp"
+        },
+        {
+          "final_bestmove": "e2f3",
+          "final_depth": 37,
+          "final_nodes": 8239104,
+          "tt": {
+            "probes": 5061022,
+            "hits": 2914760,
+            "cutoffs": 2847701,
+            "stores": 718312,
+            "same_key_overwrites": 504680,
+            "shallower_overwrites": 30010,
+            "cross_key_evictions": 617,
+            "lock_spins": 30975
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 37,
+              "score": 0,
+              "nodes": 1992704,
+              "bestmove": "e2f3"
+            },
+            {
+              "id": 1,
+              "depth": 37,
+              "score": 0,
+              "nodes": 2093056,
+              "bestmove": "e1d1"
+            },
+            {
+              "id": 2,
+              "depth": 37,
+              "score": 0,
+              "nodes": 2093056,
+              "bestmove": "e2f3"
+            },
+            {
+              "id": 3,
+              "depth": 37,
+              "score": 0,
+              "nodes": 2060288,
+              "bestmove": "e2f3"
+            }
+          ],
+          "position_name": "opposite_bishops"
+        },
+        {
+          "final_bestmove": "d3c3",
+          "final_depth": 26,
+          "final_nodes": 6236160,
+          "tt": {
+            "probes": 4368634,
+            "hits": 2241567,
+            "cutoffs": 1857956,
+            "stores": 1452018,
+            "same_key_overwrites": 1259789,
+            "shallower_overwrites": 140285,
+            "cross_key_evictions": 465,
+            "lock_spins": 150494
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 26,
+              "score": 423,
+              "nodes": 1499136,
+              "bestmove": "d3c3"
+            },
+            {
+              "id": 1,
+              "depth": 25,
+              "score": 409,
+              "nodes": 1658880,
+              "bestmove": "d3c3"
+            },
+            {
+              "id": 2,
+              "depth": 26,
+              "score": 423,
+              "nodes": 1548288,
+              "bestmove": "d3c3"
+            },
+            {
+              "id": 3,
+              "depth": 26,
+              "score": 423,
+              "nodes": 1529856,
+              "bestmove": "d3c3"
+            }
+          ],
+          "position_name": "rook_endgame"
+        },
+        {
+          "final_bestmove": "h5f7",
+          "final_depth": 10,
+          "final_nodes": 8986624,
+          "tt": {
+            "probes": 2053091,
+            "hits": 964110,
+            "cutoffs": 964104,
+            "stores": 1086596,
+            "same_key_overwrites": 820549,
+            "shallower_overwrites": 3,
+            "cross_key_evictions": 1415,
+            "lock_spins": 271663
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 10,
+              "score": 28999,
+              "nodes": 2236416,
+              "bestmove": "h5f7"
+            },
+            {
+              "id": 1,
+              "depth": 10,
+              "score": 28999,
+              "nodes": 2263040,
+              "bestmove": "h5f7"
+            },
+            {
+              "id": 2,
+              "depth": 10,
+              "score": 28999,
+              "nodes": 2201600,
+              "bestmove": "h5f7"
+            },
+            {
+              "id": 3,
+              "depth": 10,
+              "score": 28999,
+              "nodes": 2285568,
+              "bestmove": "h5f7"
+            }
+          ],
+          "position_name": "scholars_mate"
+        },
+        {
+          "final_bestmove": "d5f6",
+          "final_depth": 11,
+          "final_nodes": 8892416,
+          "tt": {
+            "probes": 2327288,
+            "hits": 1094968,
+            "cutoffs": 1094755,
+            "stores": 1231500,
+            "same_key_overwrites": 870270,
+            "shallower_overwrites": 24,
+            "cross_key_evictions": 5701,
+            "lock_spins": 239065
+          },
+          "workers": [
+            {
+              "id": 0,
+              "depth": 11,
+              "score": 28997,
+              "nodes": 2162688,
+              "bestmove": "d5f6"
+            },
+            {
+              "id": 1,
+              "depth": 11,
+              "score": 28997,
+              "nodes": 2224128,
+              "bestmove": "d5f6"
+            },
+            {
+              "id": 2,
+              "depth": 11,
+              "score": 28997,
+              "nodes": 2275328,
+              "bestmove": "d5f6"
+            },
+            {
+              "id": 3,
+              "depth": 11,
+              "score": 28997,
+              "nodes": 2230272,
+              "bestmove": "d5f6"
+            }
+          ],
+          "position_name": "legals_mate"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1250 @@
+{
+  "X11 (1T)": {
+    "50ms": {
+      "budget_ms": 50,
+      "avg_wall_elapsed_ms": 132.52,
+      "avg_latency_overrun_ms": 82.52,
+      "avg_depth": 7.0,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 50,
+          "wall_elapsed_ms": 131.45,
+          "engine_reported_ms": 51,
+          "latency_overrun_ms": 81.45,
+          "depth": 7,
+          "nodes": 75776,
+          "bestmove": "d2d4",
+          "legal": true,
+          "pv_length": 7,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 50,
+          "wall_elapsed_ms": 148.52,
+          "engine_reported_ms": 50,
+          "latency_overrun_ms": 98.52,
+          "depth": 5,
+          "nodes": 61440,
+          "bestmove": "d5e6",
+          "legal": true,
+          "pv_length": 5,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 50,
+          "wall_elapsed_ms": 122.76,
+          "engine_reported_ms": 50,
+          "latency_overrun_ms": 72.76,
+          "depth": 10,
+          "nodes": 88064,
+          "bestmove": "b4f4",
+          "legal": true,
+          "pv_length": 10,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 50,
+          "wall_elapsed_ms": 136.01,
+          "engine_reported_ms": 50,
+          "latency_overrun_ms": 86.01,
+          "depth": 6,
+          "nodes": 38055,
+          "bestmove": "e2b5",
+          "legal": true,
+          "pv_length": 6,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 50,
+          "wall_elapsed_ms": 123.85,
+          "engine_reported_ms": 50,
+          "latency_overrun_ms": 73.85,
+          "depth": 7,
+          "nodes": 63488,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 7,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    },
+    "100ms": {
+      "budget_ms": 100,
+      "avg_wall_elapsed_ms": 159.89,
+      "avg_latency_overrun_ms": 59.89,
+      "avg_depth": 8.0,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 100,
+          "wall_elapsed_ms": 153.16,
+          "engine_reported_ms": 101,
+          "latency_overrun_ms": 53.16,
+          "depth": 7,
+          "nodes": 155648,
+          "bestmove": "d2d4",
+          "legal": true,
+          "pv_length": 7,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 100,
+          "wall_elapsed_ms": 160.39,
+          "engine_reported_ms": 101,
+          "latency_overrun_ms": 60.39,
+          "depth": 6,
+          "nodes": 106496,
+          "bestmove": "d5e6",
+          "legal": true,
+          "pv_length": 6,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 100,
+          "wall_elapsed_ms": 157.81,
+          "engine_reported_ms": 100,
+          "latency_overrun_ms": 57.81,
+          "depth": 12,
+          "nodes": 202752,
+          "bestmove": "b4f4",
+          "legal": true,
+          "pv_length": 12,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 100,
+          "wall_elapsed_ms": 169.12,
+          "engine_reported_ms": 100,
+          "latency_overrun_ms": 69.12,
+          "depth": 7,
+          "nodes": 118784,
+          "bestmove": "e2b5",
+          "legal": true,
+          "pv_length": 7,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 100,
+          "wall_elapsed_ms": 158.98,
+          "engine_reported_ms": 101,
+          "latency_overrun_ms": 58.98,
+          "depth": 8,
+          "nodes": 161792,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 8,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    },
+    "250ms": {
+      "budget_ms": 250,
+      "avg_wall_elapsed_ms": 323.12,
+      "avg_latency_overrun_ms": 73.12,
+      "avg_depth": 9.4,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 250,
+          "wall_elapsed_ms": 315.91,
+          "engine_reported_ms": 251,
+          "latency_overrun_ms": 65.91,
+          "depth": 9,
+          "nodes": 382976,
+          "bestmove": "e2e4",
+          "legal": true,
+          "pv_length": 9,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 250,
+          "wall_elapsed_ms": 323.62,
+          "engine_reported_ms": 250,
+          "latency_overrun_ms": 73.62,
+          "depth": 7,
+          "nodes": 247595,
+          "bestmove": "e2a6",
+          "legal": true,
+          "pv_length": 7,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 250,
+          "wall_elapsed_ms": 346.23,
+          "engine_reported_ms": 250,
+          "latency_overrun_ms": 96.23,
+          "depth": 13,
+          "nodes": 413696,
+          "bestmove": "b4f4",
+          "legal": true,
+          "pv_length": 12,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 250,
+          "wall_elapsed_ms": 314.48,
+          "engine_reported_ms": 252,
+          "latency_overrun_ms": 64.48,
+          "depth": 8,
+          "nodes": 292864,
+          "bestmove": "a2a3",
+          "legal": true,
+          "pv_length": 8,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 250,
+          "wall_elapsed_ms": 315.35,
+          "engine_reported_ms": 251,
+          "latency_overrun_ms": 65.35,
+          "depth": 10,
+          "nodes": 378880,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 10,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    },
+    "400ms": {
+      "budget_ms": 400,
+      "avg_wall_elapsed_ms": 490.2,
+      "avg_latency_overrun_ms": 90.2,
+      "avg_depth": 10.8,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 400,
+          "wall_elapsed_ms": 494.88,
+          "engine_reported_ms": 400,
+          "latency_overrun_ms": 94.88,
+          "depth": 11,
+          "nodes": 628736,
+          "bestmove": "e2e4",
+          "legal": true,
+          "pv_length": 11,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 400,
+          "wall_elapsed_ms": 502.31,
+          "engine_reported_ms": 400,
+          "latency_overrun_ms": 102.31,
+          "depth": 8,
+          "nodes": 419840,
+          "bestmove": "e2a6",
+          "legal": true,
+          "pv_length": 8,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 400,
+          "wall_elapsed_ms": 476.15,
+          "engine_reported_ms": 400,
+          "latency_overrun_ms": 76.15,
+          "depth": 15,
+          "nodes": 915456,
+          "bestmove": "b4f4",
+          "legal": true,
+          "pv_length": 15,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 400,
+          "wall_elapsed_ms": 486.59,
+          "engine_reported_ms": 401,
+          "latency_overrun_ms": 86.59,
+          "depth": 9,
+          "nodes": 475136,
+          "bestmove": "a2a3",
+          "legal": true,
+          "pv_length": 9,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 400,
+          "wall_elapsed_ms": 491.08,
+          "engine_reported_ms": 400,
+          "latency_overrun_ms": 91.08,
+          "depth": 11,
+          "nodes": 552960,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 11,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    },
+    "1000ms": {
+      "budget_ms": 1000,
+      "avg_wall_elapsed_ms": 1091.59,
+      "avg_latency_overrun_ms": 91.59,
+      "avg_depth": 12.0,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 1000,
+          "wall_elapsed_ms": 1070.57,
+          "engine_reported_ms": 1000,
+          "latency_overrun_ms": 70.57,
+          "depth": 12,
+          "nodes": 1538048,
+          "bestmove": "e2e4",
+          "legal": true,
+          "pv_length": 12,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 1000,
+          "wall_elapsed_ms": 1116.77,
+          "engine_reported_ms": 1001,
+          "latency_overrun_ms": 116.77,
+          "depth": 9,
+          "nodes": 1028096,
+          "bestmove": "e2a6",
+          "legal": true,
+          "pv_length": 9,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 1000,
+          "wall_elapsed_ms": 1095.92,
+          "engine_reported_ms": 1001,
+          "latency_overrun_ms": 95.92,
+          "depth": 17,
+          "nodes": 2080768,
+          "bestmove": "b4f4",
+          "legal": true,
+          "pv_length": 17,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 1000,
+          "wall_elapsed_ms": 1088.01,
+          "engine_reported_ms": 1000,
+          "latency_overrun_ms": 88.01,
+          "depth": 10,
+          "nodes": 1230848,
+          "bestmove": "a2a3",
+          "legal": true,
+          "pv_length": 10,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 1000,
+          "wall_elapsed_ms": 1086.68,
+          "engine_reported_ms": 1000,
+          "latency_overrun_ms": 86.68,
+          "depth": 12,
+          "nodes": 1357824,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 12,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    },
+    "3000ms": {
+      "budget_ms": 3000,
+      "avg_wall_elapsed_ms": 3097.17,
+      "avg_latency_overrun_ms": 97.17,
+      "avg_depth": 14.0,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 3000,
+          "wall_elapsed_ms": 3079.64,
+          "engine_reported_ms": 3003,
+          "latency_overrun_ms": 79.64,
+          "depth": 14,
+          "nodes": 4524032,
+          "bestmove": "e2e4",
+          "legal": true,
+          "pv_length": 14,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 3000,
+          "wall_elapsed_ms": 3095.28,
+          "engine_reported_ms": 3004,
+          "latency_overrun_ms": 95.28,
+          "depth": 11,
+          "nodes": 3008512,
+          "bestmove": "e2a6",
+          "legal": true,
+          "pv_length": 11,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 3000,
+          "wall_elapsed_ms": 3106.0,
+          "engine_reported_ms": 3000,
+          "latency_overrun_ms": 106.0,
+          "depth": 20,
+          "nodes": 6389760,
+          "bestmove": "b4f4",
+          "legal": true,
+          "pv_length": 20,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 3000,
+          "wall_elapsed_ms": 3112.7,
+          "engine_reported_ms": 3001,
+          "latency_overrun_ms": 112.7,
+          "depth": 12,
+          "nodes": 3780608,
+          "bestmove": "e1g1",
+          "legal": true,
+          "pv_length": 12,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 3000,
+          "wall_elapsed_ms": 3092.23,
+          "engine_reported_ms": 3002,
+          "latency_overrun_ms": 92.23,
+          "depth": 13,
+          "nodes": 4052992,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 12,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    }
+  },
+  "X11 (4T)": {
+    "50ms": {
+      "budget_ms": 50,
+      "avg_wall_elapsed_ms": 114.02,
+      "avg_latency_overrun_ms": 64.02,
+      "avg_depth": 7.2,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 50,
+          "wall_elapsed_ms": 133.9,
+          "engine_reported_ms": 51,
+          "latency_overrun_ms": 83.9,
+          "depth": 8,
+          "nodes": 276480,
+          "bestmove": "b1c3",
+          "legal": true,
+          "pv_length": 3,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 50,
+          "wall_elapsed_ms": 102.98,
+          "engine_reported_ms": 52,
+          "latency_overrun_ms": 52.98,
+          "depth": 5,
+          "nodes": 202752,
+          "bestmove": "d5e6",
+          "legal": true,
+          "pv_length": 1,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 50,
+          "wall_elapsed_ms": 118.46,
+          "engine_reported_ms": 52,
+          "latency_overrun_ms": 68.46,
+          "depth": 10,
+          "nodes": 278528,
+          "bestmove": "b4c4",
+          "legal": true,
+          "pv_length": 10,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 50,
+          "wall_elapsed_ms": 106.16,
+          "engine_reported_ms": 52,
+          "latency_overrun_ms": 56.16,
+          "depth": 6,
+          "nodes": 247808,
+          "bestmove": "e2b5",
+          "legal": true,
+          "pv_length": 3,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 50,
+          "wall_elapsed_ms": 108.6,
+          "engine_reported_ms": 52,
+          "latency_overrun_ms": 58.6,
+          "depth": 7,
+          "nodes": 235520,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 2,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    },
+    "100ms": {
+      "budget_ms": 100,
+      "avg_wall_elapsed_ms": 156.75,
+      "avg_latency_overrun_ms": 56.75,
+      "avg_depth": 8.6,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 100,
+          "wall_elapsed_ms": 157.47,
+          "engine_reported_ms": 101,
+          "latency_overrun_ms": 57.47,
+          "depth": 9,
+          "nodes": 618496,
+          "bestmove": "e2e4",
+          "legal": true,
+          "pv_length": 2,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 100,
+          "wall_elapsed_ms": 158.67,
+          "engine_reported_ms": 102,
+          "latency_overrun_ms": 58.67,
+          "depth": 6,
+          "nodes": 393216,
+          "bestmove": "d5e6",
+          "legal": true,
+          "pv_length": 6,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 100,
+          "wall_elapsed_ms": 157.29,
+          "engine_reported_ms": 101,
+          "latency_overrun_ms": 57.29,
+          "depth": 12,
+          "nodes": 815104,
+          "bestmove": "b4f4",
+          "legal": true,
+          "pv_length": 5,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 100,
+          "wall_elapsed_ms": 157.45,
+          "engine_reported_ms": 104,
+          "latency_overrun_ms": 57.45,
+          "depth": 7,
+          "nodes": 413696,
+          "bestmove": "e2b5",
+          "legal": true,
+          "pv_length": 7,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 100,
+          "wall_elapsed_ms": 152.89,
+          "engine_reported_ms": 102,
+          "latency_overrun_ms": 52.89,
+          "depth": 9,
+          "nodes": 489472,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 9,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    },
+    "250ms": {
+      "budget_ms": 250,
+      "avg_wall_elapsed_ms": 331.2,
+      "avg_latency_overrun_ms": 81.2,
+      "avg_depth": 10.4,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 250,
+          "wall_elapsed_ms": 303.45,
+          "engine_reported_ms": 251,
+          "latency_overrun_ms": 53.45,
+          "depth": 11,
+          "nodes": 1597440,
+          "bestmove": "e2e4",
+          "legal": true,
+          "pv_length": 2,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 250,
+          "wall_elapsed_ms": 307.31,
+          "engine_reported_ms": 253,
+          "latency_overrun_ms": 57.31,
+          "depth": 7,
+          "nodes": 1005568,
+          "bestmove": "e2a6",
+          "legal": true,
+          "pv_length": 1,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 250,
+          "wall_elapsed_ms": 304.39,
+          "engine_reported_ms": 251,
+          "latency_overrun_ms": 54.39,
+          "depth": 15,
+          "nodes": 2035712,
+          "bestmove": "b4f4",
+          "legal": true,
+          "pv_length": 15,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 250,
+          "wall_elapsed_ms": 338.46,
+          "engine_reported_ms": 251,
+          "latency_overrun_ms": 88.46,
+          "depth": 9,
+          "nodes": 1224704,
+          "bestmove": "a2a3",
+          "legal": true,
+          "pv_length": 9,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 250,
+          "wall_elapsed_ms": 402.41,
+          "engine_reported_ms": 252,
+          "latency_overrun_ms": 152.41,
+          "depth": 10,
+          "nodes": 1148928,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 10,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    },
+    "400ms": {
+      "budget_ms": 400,
+      "avg_wall_elapsed_ms": 457.33,
+      "avg_latency_overrun_ms": 57.33,
+      "avg_depth": 11.2,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 400,
+          "wall_elapsed_ms": 461.34,
+          "engine_reported_ms": 400,
+          "latency_overrun_ms": 61.34,
+          "depth": 12,
+          "nodes": 2521088,
+          "bestmove": "e2e4",
+          "legal": true,
+          "pv_length": 12,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 400,
+          "wall_elapsed_ms": 456.89,
+          "engine_reported_ms": 402,
+          "latency_overrun_ms": 56.89,
+          "depth": 8,
+          "nodes": 1724416,
+          "bestmove": "e2a6",
+          "legal": true,
+          "pv_length": 8,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 400,
+          "wall_elapsed_ms": 455.54,
+          "engine_reported_ms": 401,
+          "latency_overrun_ms": 55.54,
+          "depth": 15,
+          "nodes": 3287040,
+          "bestmove": "b4c4",
+          "legal": true,
+          "pv_length": 8,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 400,
+          "wall_elapsed_ms": 454.03,
+          "engine_reported_ms": 401,
+          "latency_overrun_ms": 54.03,
+          "depth": 10,
+          "nodes": 2064384,
+          "bestmove": "a2a3",
+          "legal": true,
+          "pv_length": 10,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 400,
+          "wall_elapsed_ms": 458.83,
+          "engine_reported_ms": 401,
+          "latency_overrun_ms": 58.83,
+          "depth": 11,
+          "nodes": 2166784,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 11,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    },
+    "1000ms": {
+      "budget_ms": 1000,
+      "avg_wall_elapsed_ms": 1063.82,
+      "avg_latency_overrun_ms": 63.82,
+      "avg_depth": 12.8,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 1000,
+          "wall_elapsed_ms": 1055.98,
+          "engine_reported_ms": 1001,
+          "latency_overrun_ms": 55.98,
+          "depth": 13,
+          "nodes": 6080512,
+          "bestmove": "e2e4",
+          "legal": true,
+          "pv_length": 13,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 1000,
+          "wall_elapsed_ms": 1074.99,
+          "engine_reported_ms": 1001,
+          "latency_overrun_ms": 74.99,
+          "depth": 10,
+          "nodes": 4313088,
+          "bestmove": "e2a6",
+          "legal": true,
+          "pv_length": 9,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 1000,
+          "wall_elapsed_ms": 1064.9,
+          "engine_reported_ms": 1001,
+          "latency_overrun_ms": 64.9,
+          "depth": 18,
+          "nodes": 8392704,
+          "bestmove": "b4f4",
+          "legal": true,
+          "pv_length": 16,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 1000,
+          "wall_elapsed_ms": 1066.54,
+          "engine_reported_ms": 1002,
+          "latency_overrun_ms": 66.54,
+          "depth": 11,
+          "nodes": 5185536,
+          "bestmove": "a2a3",
+          "legal": true,
+          "pv_length": 11,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 1000,
+          "wall_elapsed_ms": 1056.67,
+          "engine_reported_ms": 1002,
+          "latency_overrun_ms": 56.67,
+          "depth": 12,
+          "nodes": 5576704,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 1,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    },
+    "3000ms": {
+      "budget_ms": 3000,
+      "avg_wall_elapsed_ms": 3087.78,
+      "avg_latency_overrun_ms": 87.78,
+      "avg_depth": 15.2,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 3000,
+          "wall_elapsed_ms": 3072.14,
+          "engine_reported_ms": 3009,
+          "latency_overrun_ms": 72.14,
+          "depth": 15,
+          "nodes": 18251776,
+          "bestmove": "e2e4",
+          "legal": true,
+          "pv_length": 15,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 3000,
+          "wall_elapsed_ms": 3099.47,
+          "engine_reported_ms": 3010,
+          "latency_overrun_ms": 99.47,
+          "depth": 12,
+          "nodes": 12748800,
+          "bestmove": "e2a6",
+          "legal": true,
+          "pv_length": 12,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 3000,
+          "wall_elapsed_ms": 3081.67,
+          "engine_reported_ms": 3003,
+          "latency_overrun_ms": 81.67,
+          "depth": 21,
+          "nodes": 24733696,
+          "bestmove": "b4f4",
+          "legal": true,
+          "pv_length": 4,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 3000,
+          "wall_elapsed_ms": 3081.04,
+          "engine_reported_ms": 3008,
+          "latency_overrun_ms": 81.04,
+          "depth": 13,
+          "nodes": 15441920,
+          "bestmove": "a2a3",
+          "legal": true,
+          "pv_length": 1,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 3000,
+          "wall_elapsed_ms": 3104.6,
+          "engine_reported_ms": 3004,
+          "latency_overrun_ms": 104.6,
+          "depth": 15,
+          "nodes": 16117760,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 15,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    }
+  },
+  "Candidate X12 Prototype (4T)": {
+    "50ms": {
+      "budget_ms": 50,
+      "avg_wall_elapsed_ms": 101.29,
+      "avg_latency_overrun_ms": 51.29,
+      "avg_depth": 7.2,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 50,
+          "wall_elapsed_ms": 118.41,
+          "engine_reported_ms": 51,
+          "latency_overrun_ms": 68.41,
+          "depth": 7,
+          "nodes": 81920,
+          "bestmove": "d2d4",
+          "legal": true,
+          "pv_length": 7,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 50,
+          "wall_elapsed_ms": 97.73,
+          "engine_reported_ms": 51,
+          "latency_overrun_ms": 47.73,
+          "depth": 5,
+          "nodes": 65536,
+          "bestmove": "d5e6",
+          "legal": true,
+          "pv_length": 5,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 50,
+          "wall_elapsed_ms": 93.76,
+          "engine_reported_ms": 50,
+          "latency_overrun_ms": 43.76,
+          "depth": 11,
+          "nodes": 116736,
+          "bestmove": "b4f4",
+          "legal": true,
+          "pv_length": 11,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 50,
+          "wall_elapsed_ms": 95.89,
+          "engine_reported_ms": 50,
+          "latency_overrun_ms": 45.89,
+          "depth": 6,
+          "nodes": 67584,
+          "bestmove": "e2b5",
+          "legal": true,
+          "pv_length": 6,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 50,
+          "wall_elapsed_ms": 100.65,
+          "engine_reported_ms": 50,
+          "latency_overrun_ms": 50.65,
+          "depth": 7,
+          "nodes": 79872,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 7,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    },
+    "100ms": {
+      "budget_ms": 100,
+      "avg_wall_elapsed_ms": 158.65,
+      "avg_latency_overrun_ms": 58.65,
+      "avg_depth": 8.2,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 100,
+          "wall_elapsed_ms": 155.15,
+          "engine_reported_ms": 100,
+          "latency_overrun_ms": 55.15,
+          "depth": 8,
+          "nodes": 165888,
+          "bestmove": "b1c3",
+          "legal": true,
+          "pv_length": 8,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 100,
+          "wall_elapsed_ms": 163.78,
+          "engine_reported_ms": 101,
+          "latency_overrun_ms": 63.78,
+          "depth": 6,
+          "nodes": 106496,
+          "bestmove": "d5e6",
+          "legal": true,
+          "pv_length": 6,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 100,
+          "wall_elapsed_ms": 157.05,
+          "engine_reported_ms": 100,
+          "latency_overrun_ms": 57.05,
+          "depth": 12,
+          "nodes": 208896,
+          "bestmove": "b4f4",
+          "legal": true,
+          "pv_length": 12,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 100,
+          "wall_elapsed_ms": 162.97,
+          "engine_reported_ms": 101,
+          "latency_overrun_ms": 62.97,
+          "depth": 7,
+          "nodes": 135168,
+          "bestmove": "e2b5",
+          "legal": true,
+          "pv_length": 7,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 100,
+          "wall_elapsed_ms": 154.3,
+          "engine_reported_ms": 100,
+          "latency_overrun_ms": 54.3,
+          "depth": 8,
+          "nodes": 147456,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 8,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    },
+    "250ms": {
+      "budget_ms": 250,
+      "avg_wall_elapsed_ms": 305.32,
+      "avg_latency_overrun_ms": 55.32,
+      "avg_depth": 10.4,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 250,
+          "wall_elapsed_ms": 323.64,
+          "engine_reported_ms": 252,
+          "latency_overrun_ms": 73.64,
+          "depth": 11,
+          "nodes": 1538048,
+          "bestmove": "e2e4",
+          "legal": true,
+          "pv_length": 11,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 250,
+          "wall_elapsed_ms": 302.63,
+          "engine_reported_ms": 253,
+          "latency_overrun_ms": 52.63,
+          "depth": 7,
+          "nodes": 1085440,
+          "bestmove": "e2a6",
+          "legal": true,
+          "pv_length": 7,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 250,
+          "wall_elapsed_ms": 300.62,
+          "engine_reported_ms": 251,
+          "latency_overrun_ms": 50.62,
+          "depth": 15,
+          "nodes": 1957888,
+          "bestmove": "b4f4",
+          "legal": true,
+          "pv_length": 3,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 250,
+          "wall_elapsed_ms": 300.08,
+          "engine_reported_ms": 252,
+          "latency_overrun_ms": 50.08,
+          "depth": 9,
+          "nodes": 1284096,
+          "bestmove": "a2a3",
+          "legal": true,
+          "pv_length": 9,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 250,
+          "wall_elapsed_ms": 299.65,
+          "engine_reported_ms": 252,
+          "latency_overrun_ms": 49.65,
+          "depth": 10,
+          "nodes": 1380352,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 10,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    },
+    "400ms": {
+      "budget_ms": 400,
+      "avg_wall_elapsed_ms": 450.84,
+      "avg_latency_overrun_ms": 50.84,
+      "avg_depth": 11.0,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 400,
+          "wall_elapsed_ms": 448.19,
+          "engine_reported_ms": 401,
+          "latency_overrun_ms": 48.19,
+          "depth": 11,
+          "nodes": 2484224,
+          "bestmove": "e2e4",
+          "legal": true,
+          "pv_length": 11,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 400,
+          "wall_elapsed_ms": 451.05,
+          "engine_reported_ms": 403,
+          "latency_overrun_ms": 51.05,
+          "depth": 8,
+          "nodes": 1665024,
+          "bestmove": "e2a6",
+          "legal": true,
+          "pv_length": 8,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 400,
+          "wall_elapsed_ms": 450.5,
+          "engine_reported_ms": 401,
+          "latency_overrun_ms": 50.5,
+          "depth": 16,
+          "nodes": 3063808,
+          "bestmove": "b4f4",
+          "legal": true,
+          "pv_length": 16,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 400,
+          "wall_elapsed_ms": 455.39,
+          "engine_reported_ms": 401,
+          "latency_overrun_ms": 55.39,
+          "depth": 9,
+          "nodes": 1331200,
+          "bestmove": "a2a3",
+          "legal": true,
+          "pv_length": 9,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 400,
+          "wall_elapsed_ms": 449.08,
+          "engine_reported_ms": 401,
+          "latency_overrun_ms": 49.08,
+          "depth": 11,
+          "nodes": 2045952,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 11,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    },
+    "1000ms": {
+      "budget_ms": 1000,
+      "avg_wall_elapsed_ms": 1052.74,
+      "avg_latency_overrun_ms": 52.74,
+      "avg_depth": 12.4,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 1000,
+          "wall_elapsed_ms": 1048.92,
+          "engine_reported_ms": 1001,
+          "latency_overrun_ms": 48.92,
+          "depth": 13,
+          "nodes": 5588992,
+          "bestmove": "e2e4",
+          "legal": true,
+          "pv_length": 4,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 1000,
+          "wall_elapsed_ms": 1053.15,
+          "engine_reported_ms": 1003,
+          "latency_overrun_ms": 53.15,
+          "depth": 9,
+          "nodes": 3622912,
+          "bestmove": "e2a6",
+          "legal": true,
+          "pv_length": 6,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 1000,
+          "wall_elapsed_ms": 1047.63,
+          "engine_reported_ms": 1001,
+          "latency_overrun_ms": 47.63,
+          "depth": 17,
+          "nodes": 7725056,
+          "bestmove": "b4f4",
+          "legal": true,
+          "pv_length": 17,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 1000,
+          "wall_elapsed_ms": 1061.65,
+          "engine_reported_ms": 1002,
+          "latency_overrun_ms": 61.65,
+          "depth": 11,
+          "nodes": 4960256,
+          "bestmove": "e1g1",
+          "legal": true,
+          "pv_length": 11,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 1000,
+          "wall_elapsed_ms": 1052.35,
+          "engine_reported_ms": 1003,
+          "latency_overrun_ms": 52.35,
+          "depth": 12,
+          "nodes": 5351424,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 12,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    },
+    "3000ms": {
+      "budget_ms": 3000,
+      "avg_wall_elapsed_ms": 3078.73,
+      "avg_latency_overrun_ms": 78.73,
+      "avg_depth": 15.0,
+      "all_legal": true,
+      "positions": [
+        {
+          "budget_ms": 3000,
+          "wall_elapsed_ms": 3062.6,
+          "engine_reported_ms": 3005,
+          "latency_overrun_ms": 62.6,
+          "depth": 15,
+          "nodes": 17471488,
+          "bestmove": "e2e4",
+          "legal": true,
+          "pv_length": 6,
+          "pos": "startpos"
+        },
+        {
+          "budget_ms": 3000,
+          "wall_elapsed_ms": 3082.68,
+          "engine_reported_ms": 3005,
+          "latency_overrun_ms": 82.68,
+          "depth": 12,
+          "nodes": 13494272,
+          "bestmove": "e2a6",
+          "legal": true,
+          "pv_length": 12,
+          "pos": "kiwipete"
+        },
+        {
+          "budget_ms": 3000,
+          "wall_elapsed_ms": 3077.68,
+          "engine_reported_ms": 3007,
+          "latency_overrun_ms": 77.68,
+          "depth": 21,
+          "nodes": 24573952,
+          "bestmove": "b4f4",
+          "legal": true,
+          "pv_length": 18,
+          "pos": "pos3_endgame"
+        },
+        {
+          "budget_ms": 3000,
+          "wall_elapsed_ms": 3088.96,
+          "engine_reported_ms": 3004,
+          "latency_overrun_ms": 88.96,
+          "depth": 13,
+          "nodes": 15196160,
+          "bestmove": "a2a3",
+          "legal": true,
+          "pv_length": 13,
+          "pos": "sharp_sicilian"
+        },
+        {
+          "budget_ms": 3000,
+          "wall_elapsed_ms": 3081.74,
+          "engine_reported_ms": 3006,
+          "latency_overrun_ms": 81.74,
+          "depth": 14,
+          "nodes": 16521216,
+          "bestmove": "c3d5",
+          "legal": true,
+          "pv_length": 14,
+          "pos": "king_safety_sharp"
+        }
+      ]
+    }
+  }
+}

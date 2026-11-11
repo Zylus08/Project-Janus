@@ -1,0 +1,36 @@
+{
+  "tt_stress_test": {
+    "output": "[STRESS] Starting Packed Transposition Table Concurrency Stress Test...\n[STRESS] sizeof(TTCluster) = 64 bytes (Cache-line aligned: YES)\n[STRESS] Completed 20000000 operations across 4 threads in 0.600579s\n[STRESS] Throughput: 33.3012 million ops/sec\n[STRESS] Corrupted reads: 0\n[STRESS] Result: PASSED (100% DATA INTEGRITY)",
+    "passed": true
+  },
+  "uci_lifecycle_test": {
+    "cycles_attempted": 20,
+    "bestmoves_returned": 20,
+    "elapsed_sec": 0.652,
+    "passed": true
+  },
+  "mate_normalization_test": {
+    "cases": {
+      "scholars_mate": {
+        "expected": "h5f7",
+        "found": "h5f7",
+        "passed": true
+      },
+      "legals_mate": {
+        "expected": "d5f6",
+        "found": "d5f6",
+        "passed": true
+      }
+    },
+    "all_passed": true
+  },
+  "repetition_test": {
+    "score_cp": 0,
+    "is_exact_zero_draw": true
+  },
+  "consecutive_games_isolation": {
+    "moves_returned": 10,
+    "passed": true
+  },
+  "all_passed": true
+}

@@ -1,0 +1,78 @@
+{
+  "milestone": "P1.7",
+  "title": "Parallel Search Recovery, Transposition-Table Cooperation & Useful Search Efficiency",
+  "branch": "phase1/classical-janus",
+  "parent_commit": "37d0ade",
+  "candidate": "Janus Classical X12",
+  "baselines": {
+    "single_thread_production": "Janus Classical X7 (b34e342)",
+    "multithread_predecessor": "Janus Classical X11 (54559ce)"
+  },
+  "external_reference": {
+    "engine": "Stockfish 19",
+    "weights": "nn-1a298aa575a0.nnue",
+    "threads": 4,
+    "hash_mb": 32
+  },
+  "governing_constraints": {
+    "strictly_non_ml": true,
+    "zero_nnue": true,
+    "zero_learned_weights": true,
+    "zero_spsa_tuning": true,
+    "remote_git_push": false
+  },
+  "key_experiments": {
+    "phase0_concurrency_audit": "analysis/phase1/p1.7/P16_EVIDENCE_AND_CONCURRENCY_AUDIT.md",
+    "phase1_thread_forensics": "analysis/phase1/p1.7/THREAD_LEVEL_SEARCH_FORENSICS.md",
+    "phase2_tt_isolation": "analysis/phase1/p1.7/TRANSPOSITION_TABLE_COOPERATION.md",
+    "phase3_worker_cooperation": "analysis/phase1/p1.7/WORKER_SEARCH_COOPERATION.md",
+    "phase4_root_clock_audit": "analysis/phase1/p1.7/PARALLEL_ROOT_AND_CLOCK_AUDIT.md",
+    "phase5_concurrency_correctness": "analysis/phase1/p1.7/P17_CONCURRENCY_CORRECTNESS.md",
+    "phase6_useful_computation": "analysis/phase1/p1.7/USEFUL_COMPUTATION_BENCHMARK.md",
+    "phase7_factorial_ablation": "analysis/phase1/p1.7/P17_MULTITHREAD_FACTORIAL.md",
+    "phase8_internal_tournaments": "analysis/phase1/p1.7/X12_INTERNAL_STRENGTH.md",
+    "phase9_stockfish_benchmark": "analysis/phase1/p1.7/MATCHED_STOCKFISH19_MULTICORE.md",
+    "phase10_promotion_decision": "analysis/phase1/p1.7/FINAL_RESEARCH_DECISION.md",
+    "phase11_next_priorities": "analysis/phase1/p1.7/NEXT_CLASSICAL_PRIORITY.md"
+  },
+  "tournament_results": {
+    "match_a_x12_4t_vs_x11_4t": {
+      "games": 200,
+      "score": "93W - 50D - 57L (59.00%)",
+      "elo_delta": "+63.2 Elo",
+      "paired_t_statistic": 3.1532,
+      "df": 99,
+      "p_value": 0.002138,
+      "significant": true
+    },
+    "match_b_x12_4t_vs_x7_1t": {
+      "games": 40,
+      "score": "15W - 11D - 14L (51.25%)",
+      "elo_delta": "+8.7 Elo",
+      "paired_t_statistic": 0.1951,
+      "df": 19,
+      "p_value": 0.847398,
+      "significant": false
+    },
+    "match_c_x12_1t_vs_x7_1t": {
+      "games": 40,
+      "score": "15W - 8D - 17L (47.50%)",
+      "elo_delta": "-17.4 Elo",
+      "paired_t_statistic": -0.3258,
+      "df": 19,
+      "p_value": 0.748138,
+      "significant": false
+    },
+    "match_sf_x12_4t_vs_sf19_4t": {
+      "games": 40,
+      "score": "0W - 0D - 40L (0.00%)",
+      "elo_delta": "-800.0 Elo",
+      "ci_upper_elo": -407.0
+    }
+  },
+  "final_adjudication": {
+    "category": "Category A \u2014 Parallel Strength Advancement Qualified",
+    "promoted_parallel_baseline": "Janus Classical X12",
+    "retained_single_thread_production_anchor": "Janus Classical X7"
+  }
+}

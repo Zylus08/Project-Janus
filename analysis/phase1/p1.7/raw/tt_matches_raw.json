@@ -1,0 +1,188 @@
+{
+  "T1_vs_T2": {
+    "engine_a": "T1_PrivateTT_4T",
+    "engine_b": "T2_SharedX11_4T",
+    "games": 20,
+    "pairs": 10,
+    "time_control": "1.0s+0.05s",
+    "duration_sec": 64.5,
+    "a_wins": 5,
+    "b_wins": 12,
+    "draws": 3,
+    "a_points": 6.5,
+    "score_pct": 32.5,
+    "elo_diff": -127.0,
+    "ci_95": [
+      -800.0,
+      110.1
+    ],
+    "t_stat": -2.0896,
+    "p_val": 0.0367,
+    "significant": true,
+    "pair_results": [
+      {
+        "pair_idx": 1,
+        "opening": "English Anglo-Scandinavian",
+        "g1_result": "0-1",
+        "g2_result": "1-0",
+        "a_score": 0.0
+      },
+      {
+        "pair_idx": 2,
+        "opening": "English Bellon Gambit",
+        "g1_result": "0-1",
+        "g2_result": "1/2-1/2",
+        "a_score": 0.5
+      },
+      {
+        "pair_idx": 3,
+        "opening": "English Bremen Smyslov System",
+        "g1_result": "0-1",
+        "g2_result": "1-0",
+        "a_score": 0.0
+      },
+      {
+        "pair_idx": 4,
+        "opening": "English Keres Defense",
+        "g1_result": "1-0",
+        "g2_result": "1-0",
+        "a_score": 1.0
+      },
+      {
+        "pair_idx": 5,
+        "opening": "English Symmetrical 3.Nf3",
+        "g1_result": "1-0",
+        "g2_result": "1-0",
+        "a_score": 1.0
+      },
+      {
+        "pair_idx": 6,
+        "opening": "English Symmetrical Rubinstein",
+        "g1_result": "0-1",
+        "g2_result": "1-0",
+        "a_score": 0.0
+      },
+      {
+        "pair_idx": 7,
+        "opening": "English Symmetrical Anti-Benoni",
+        "g1_result": "1-0",
+        "g2_result": "1-0",
+        "a_score": 1.0
+      },
+      {
+        "pair_idx": 8,
+        "opening": "Reti Reversed Blumenfeld",
+        "g1_result": "0-1",
+        "g2_result": "1/2-1/2",
+        "a_score": 0.5
+      },
+      {
+        "pair_idx": 9,
+        "opening": "Reti Advance 3...f6",
+        "g1_result": "1-0",
+        "g2_result": "1-0",
+        "a_score": 1.0
+      },
+      {
+        "pair_idx": 10,
+        "opening": "Reti vs Old Indian",
+        "g1_result": "1/2-1/2",
+        "g2_result": "0-1",
+        "a_score": 1.5
+      }
+    ]
+  },
+  "T4_vs_T2": {
+    "engine_a": "T4_SmartPackedTT_4T",
+    "engine_b": "T2_SharedX11_4T",
+    "games": 20,
+    "pairs": 10,
+    "time_control": "1.0s+0.05s",
+    "duration_sec": 60.1,
+    "a_wins": 10,
+    "b_wins": 9,
+    "draws": 1,
+    "a_points": 10.5,
+    "score_pct": 52.5,
+    "elo_diff": 17.4,
+    "ci_95": [
+      -296.0,
+      374.2
+    ],
+    "t_stat": 0.2641,
+    "p_val": 0.7917,
+    "significant": false,
+    "pair_results": [
+      {
+        "pair_idx": 1,
+        "opening": "English Anglo-Scandinavian",
+        "g1_result": "0-1",
+        "g2_result": "1-0",
+        "a_score": 0.0
+      },
+      {
+        "pair_idx": 2,
+        "opening": "English Bellon Gambit",
+        "g1_result": "1-0",
+        "g2_result": "1-0",
+        "a_score": 1.0
+      },
+      {
+        "pair_idx": 3,
+        "opening": "English Bremen Smyslov System",
+        "g1_result": "1-0",
+        "g2_result": "0-1",
+        "a_score": 2.0
+      },
+      {
+        "pair_idx": 4,
+        "opening": "English Keres Defense",
+        "g1_result": "1-0",
+        "g2_result": "1-0",
+        "a_score": 1.0
+      },
+      {
+        "pair_idx": 5,
+        "opening": "English Symmetrical 3.Nf3",
+        "g1_result": "1/2-1/2",
+        "g2_result": "1-0",
+        "a_score": 0.5
+      },
+      {
+        "pair_idx": 6,
+        "opening": "English Symmetrical Rubinstein",
+        "g1_result": "1-0",
+        "g2_result": "1-0",
+        "a_score": 1.0
+      },
+      {
+        "pair_idx": 7,
+        "opening": "English Symmetrical Anti-Benoni",
+        "g1_result": "1-0",
+        "g2_result": "1-0",
+        "a_score": 1.0
+      },
+      {
+        "pair_idx": 8,
+        "opening": "Reti Reversed Blumenfeld",
+        "g1_result": "1-0",
+        "g2_result": "1-0",
+        "a_score": 1.0
+      },
+      {
+        "pair_idx": 9,
+        "opening": "Reti Advance 3...f6",
+        "g1_result": "1-0",
+        "g2_result": "1-0",
+        "a_score": 1.0
+      },
+      {
+        "pair_idx": 10,
+        "opening": "Reti vs Old Indian",
+        "g1_result": "1-0",
+        "g2_result": "0-1",
+        "a_score": 2.0
+      }
+    ]
+  }
+}

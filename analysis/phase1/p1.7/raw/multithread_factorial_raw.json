@@ -1,0 +1,2062 @@
+{
+  "B0_X7_1T": {
+    "desc": "Frozen X7 Control (1T)",
+    "threads": 1,
+    "exe": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.3\\control\\janus_classical_x7.exe",
+    "runs_500ms": {
+      "quiet_middlegame": {
+        "depth": 10,
+        "nodes": 868352,
+        "score_cp": 50,
+        "bestmove": "e1g1",
+        "elapsed_s": 0.5401,
+        "nps": 1607827
+      },
+      "open_tactical": {
+        "depth": 10,
+        "nodes": 823296,
+        "score_cp": 0,
+        "bestmove": "a2a3",
+        "elapsed_s": 0.5405,
+        "nps": 1523212
+      },
+      "closed_pawn": {
+        "depth": 10,
+        "nodes": 827392,
+        "score_cp": 30,
+        "bestmove": "b6c7",
+        "elapsed_s": 0.5556,
+        "nps": 1489155
+      },
+      "defensive_pos": {
+        "depth": 12,
+        "nodes": 866304,
+        "score_cp": 154,
+        "bestmove": "d5d4",
+        "elapsed_s": 0.5482,
+        "nps": 1580235
+      },
+      "endgame_transition": {
+        "depth": 14,
+        "nodes": 1648640,
+        "score_cp": 105,
+        "bestmove": "f7f6",
+        "elapsed_s": 0.5474,
+        "nps": 3011752
+      },
+      "passed_pawn_race": {
+        "depth": 16,
+        "nodes": 1497088,
+        "score_cp": 56,
+        "bestmove": "b4f4",
+        "elapsed_s": 0.5349,
+        "nps": 2798732
+      },
+      "forced_check_mate": {
+        "depth": 9,
+        "nodes": 1576960,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 0.5596,
+        "nps": 2817954
+      },
+      "multi_candidate_1": {
+        "depth": 11,
+        "nodes": 1062912,
+        "score_cp": 32,
+        "bestmove": "e2e4",
+        "elapsed_s": 0.5486,
+        "nps": 1937528
+      },
+      "multi_candidate_2": {
+        "depth": 8,
+        "nodes": 694272,
+        "score_cp": 9,
+        "bestmove": "e2a6",
+        "elapsed_s": 0.53,
+        "nps": 1309844
+      },
+      "tactical_sacrifice": {
+        "depth": 10,
+        "nodes": 1443840,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 0.5608,
+        "nps": 2574657
+      },
+      "opposite_bishops_draw": {
+        "depth": 28,
+        "nodes": 1925120,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 0.5386,
+        "nps": 3574121
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 22,
+        "nodes": 1886208,
+        "score_cp": 283,
+        "bestmove": "d3c3",
+        "elapsed_s": 0.5394,
+        "nps": 3497170
+      }
+    },
+    "runs_1000ms": {
+      "quiet_middlegame": {
+        "depth": 11,
+        "nodes": 1716224,
+        "score_cp": 64,
+        "bestmove": "e1g1",
+        "elapsed_s": 1.0368,
+        "nps": 1655350
+      },
+      "open_tactical": {
+        "depth": 11,
+        "nodes": 1652736,
+        "score_cp": -1,
+        "bestmove": "a2a3",
+        "elapsed_s": 1.0334,
+        "nps": 1599258
+      },
+      "closed_pawn": {
+        "depth": 11,
+        "nodes": 1697792,
+        "score_cp": 45,
+        "bestmove": "b6c7",
+        "elapsed_s": 1.0425,
+        "nps": 1628594
+      },
+      "defensive_pos": {
+        "depth": 13,
+        "nodes": 1761280,
+        "score_cp": 153,
+        "bestmove": "d5d4",
+        "elapsed_s": 1.0481,
+        "nps": 1680426
+      },
+      "endgame_transition": {
+        "depth": 17,
+        "nodes": 3299328,
+        "score_cp": 140,
+        "bestmove": "f7f5",
+        "elapsed_s": 1.0282,
+        "nps": 3208888
+      },
+      "passed_pawn_race": {
+        "depth": 18,
+        "nodes": 2893824,
+        "score_cp": 78,
+        "bestmove": "b4f4",
+        "elapsed_s": 1.0366,
+        "nps": 2791682
+      },
+      "forced_check_mate": {
+        "depth": 10,
+        "nodes": 3143680,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 1.0425,
+        "nps": 3015522
+      },
+      "multi_candidate_1": {
+        "depth": 13,
+        "nodes": 2064384,
+        "score_cp": 30,
+        "bestmove": "e2e4",
+        "elapsed_s": 1.0402,
+        "nps": 1984561
+      },
+      "multi_candidate_2": {
+        "depth": 10,
+        "nodes": 1353728,
+        "score_cp": -33,
+        "bestmove": "e2a6",
+        "elapsed_s": 1.0453,
+        "nps": 1295069
+      },
+      "tactical_sacrifice": {
+        "depth": 11,
+        "nodes": 2990080,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 1.0288,
+        "nps": 2906398
+      },
+      "opposite_bishops_draw": {
+        "depth": 38,
+        "nodes": 4311040,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 1.029,
+        "nps": 4189683
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 24,
+        "nodes": 3667968,
+        "score_cp": 435,
+        "bestmove": "d3c3",
+        "elapsed_s": 1.0373,
+        "nps": 3535910
+      }
+    },
+    "stability": 91.7,
+    "tactics_solved": 5,
+    "avg_depth_1000ms": 15.58,
+    "avg_nps_1000ms": 2454237,
+    "speedup_vs_1t": 1.05
+  },
+  "B1_X10_1T": {
+    "desc": "Frozen X10 Reference (1T)",
+    "threads": 1,
+    "exe": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.5\\control\\janus_classical_x10.exe",
+    "runs_500ms": {
+      "quiet_middlegame": {
+        "depth": 10,
+        "nodes": 847872,
+        "score_cp": 50,
+        "bestmove": "e1g1",
+        "elapsed_s": 0.5485,
+        "nps": 1545806
+      },
+      "open_tactical": {
+        "depth": 10,
+        "nodes": 835584,
+        "score_cp": 0,
+        "bestmove": "a2a3",
+        "elapsed_s": 0.5318,
+        "nps": 1571093
+      },
+      "closed_pawn": {
+        "depth": 10,
+        "nodes": 821248,
+        "score_cp": 30,
+        "bestmove": "b6c7",
+        "elapsed_s": 0.5408,
+        "nps": 1518639
+      },
+      "defensive_pos": {
+        "depth": 12,
+        "nodes": 823296,
+        "score_cp": 154,
+        "bestmove": "d5d4",
+        "elapsed_s": 0.5314,
+        "nps": 1549325
+      },
+      "endgame_transition": {
+        "depth": 14,
+        "nodes": 1648640,
+        "score_cp": 105,
+        "bestmove": "f7f6",
+        "elapsed_s": 0.5463,
+        "nps": 3017704
+      },
+      "passed_pawn_race": {
+        "depth": 16,
+        "nodes": 1499136,
+        "score_cp": 56,
+        "bestmove": "b4f4",
+        "elapsed_s": 0.5316,
+        "nps": 2820239
+      },
+      "forced_check_mate": {
+        "depth": 9,
+        "nodes": 1484800,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 0.5556,
+        "nps": 2672427
+      },
+      "multi_candidate_1": {
+        "depth": 11,
+        "nodes": 1038336,
+        "score_cp": 32,
+        "bestmove": "e2e4",
+        "elapsed_s": 0.5396,
+        "nps": 1924208
+      },
+      "multi_candidate_2": {
+        "depth": 8,
+        "nodes": 677888,
+        "score_cp": 9,
+        "bestmove": "e2a6",
+        "elapsed_s": 0.5315,
+        "nps": 1275308
+      },
+      "tactical_sacrifice": {
+        "depth": 10,
+        "nodes": 1495040,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 0.5408,
+        "nps": 2764427
+      },
+      "opposite_bishops_draw": {
+        "depth": 28,
+        "nodes": 1925120,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 0.5335,
+        "nps": 3608600
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 22,
+        "nodes": 1792000,
+        "score_cp": 283,
+        "bestmove": "d3c3",
+        "elapsed_s": 0.5319,
+        "nps": 3368942
+      }
+    },
+    "runs_1000ms": {
+      "quiet_middlegame": {
+        "depth": 11,
+        "nodes": 1730560,
+        "score_cp": 64,
+        "bestmove": "e1g1",
+        "elapsed_s": 1.0439,
+        "nps": 1657742
+      },
+      "open_tactical": {
+        "depth": 11,
+        "nodes": 1624064,
+        "score_cp": -1,
+        "bestmove": "a2a3",
+        "elapsed_s": 1.039,
+        "nps": 1563049
+      },
+      "closed_pawn": {
+        "depth": 11,
+        "nodes": 1648640,
+        "score_cp": 45,
+        "bestmove": "b6c7",
+        "elapsed_s": 1.0344,
+        "nps": 1593877
+      },
+      "defensive_pos": {
+        "depth": 13,
+        "nodes": 1783808,
+        "score_cp": 153,
+        "bestmove": "d5d4",
+        "elapsed_s": 1.049,
+        "nps": 1700447
+      },
+      "endgame_transition": {
+        "depth": 17,
+        "nodes": 3315712,
+        "score_cp": 140,
+        "bestmove": "f7f5",
+        "elapsed_s": 1.0391,
+        "nps": 3190819
+      },
+      "passed_pawn_race": {
+        "depth": 18,
+        "nodes": 2924544,
+        "score_cp": 78,
+        "bestmove": "b4f4",
+        "elapsed_s": 1.035,
+        "nps": 2825615
+      },
+      "forced_check_mate": {
+        "depth": 10,
+        "nodes": 3115008,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 1.0363,
+        "nps": 3005835
+      },
+      "multi_candidate_1": {
+        "depth": 13,
+        "nodes": 2037760,
+        "score_cp": 30,
+        "bestmove": "e2e4",
+        "elapsed_s": 1.0336,
+        "nps": 1971594
+      },
+      "multi_candidate_2": {
+        "depth": 10,
+        "nodes": 1394688,
+        "score_cp": -33,
+        "bestmove": "e2a6",
+        "elapsed_s": 1.047,
+        "nps": 1332105
+      },
+      "tactical_sacrifice": {
+        "depth": 11,
+        "nodes": 2928640,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 1.0375,
+        "nps": 2822683
+      },
+      "opposite_bishops_draw": {
+        "depth": 38,
+        "nodes": 4270080,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 1.0421,
+        "nps": 4097712
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 24,
+        "nodes": 3604480,
+        "score_cp": 435,
+        "bestmove": "d3c3",
+        "elapsed_s": 1.0289,
+        "nps": 3503074
+      }
+    },
+    "stability": 91.7,
+    "tactics_solved": 5,
+    "avg_depth_1000ms": 15.58,
+    "avg_nps_1000ms": 2436906,
+    "speedup_vs_1t": 1.04
+  },
+  "B2_X11_1T": {
+    "desc": "Frozen X11 (1T)",
+    "threads": 1,
+    "exe": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.6\\control\\janus_classical_x11.exe",
+    "runs_500ms": {
+      "quiet_middlegame": {
+        "depth": 10,
+        "nodes": 849920,
+        "score_cp": 50,
+        "bestmove": "e1g1",
+        "elapsed_s": 0.5516,
+        "nps": 1540791
+      },
+      "open_tactical": {
+        "depth": 10,
+        "nodes": 823296,
+        "score_cp": 0,
+        "bestmove": "a2a3",
+        "elapsed_s": 0.5521,
+        "nps": 1491093
+      },
+      "closed_pawn": {
+        "depth": 10,
+        "nodes": 811008,
+        "score_cp": 30,
+        "bestmove": "b6c7",
+        "elapsed_s": 0.5547,
+        "nps": 1462128
+      },
+      "defensive_pos": {
+        "depth": 12,
+        "nodes": 870400,
+        "score_cp": 154,
+        "bestmove": "d5d4",
+        "elapsed_s": 0.5497,
+        "nps": 1583432
+      },
+      "endgame_transition": {
+        "depth": 14,
+        "nodes": 1601536,
+        "score_cp": 105,
+        "bestmove": "f7f6",
+        "elapsed_s": 0.5516,
+        "nps": 2903305
+      },
+      "passed_pawn_race": {
+        "depth": 16,
+        "nodes": 1386496,
+        "score_cp": 56,
+        "bestmove": "b4f4",
+        "elapsed_s": 0.5454,
+        "nps": 2541996
+      },
+      "forced_check_mate": {
+        "depth": 9,
+        "nodes": 1499136,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 0.5579,
+        "nps": 2687268
+      },
+      "multi_candidate_1": {
+        "depth": 11,
+        "nodes": 960512,
+        "score_cp": 32,
+        "bestmove": "e2e4",
+        "elapsed_s": 0.5571,
+        "nps": 1724233
+      },
+      "multi_candidate_2": {
+        "depth": 8,
+        "nodes": 704512,
+        "score_cp": 9,
+        "bestmove": "e2a6",
+        "elapsed_s": 0.5486,
+        "nps": 1284302
+      },
+      "tactical_sacrifice": {
+        "depth": 10,
+        "nodes": 1368064,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 0.5518,
+        "nps": 2479089
+      },
+      "opposite_bishops_draw": {
+        "depth": 27,
+        "nodes": 1910784,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 0.5622,
+        "nps": 3398914
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 22,
+        "nodes": 1789952,
+        "score_cp": 283,
+        "bestmove": "d3c3",
+        "elapsed_s": 0.6046,
+        "nps": 2960312
+      }
+    },
+    "runs_1000ms": {
+      "quiet_middlegame": {
+        "depth": 11,
+        "nodes": 1724416,
+        "score_cp": 64,
+        "bestmove": "e1g1",
+        "elapsed_s": 1.0497,
+        "nps": 1642761
+      },
+      "open_tactical": {
+        "depth": 11,
+        "nodes": 1642496,
+        "score_cp": -1,
+        "bestmove": "a2a3",
+        "elapsed_s": 1.0486,
+        "nps": 1566367
+      },
+      "closed_pawn": {
+        "depth": 11,
+        "nodes": 1630208,
+        "score_cp": 45,
+        "bestmove": "b6c7",
+        "elapsed_s": 1.0424,
+        "nps": 1563864
+      },
+      "defensive_pos": {
+        "depth": 13,
+        "nodes": 1728512,
+        "score_cp": 153,
+        "bestmove": "d5d4",
+        "elapsed_s": 1.0521,
+        "nps": 1642899
+      },
+      "endgame_transition": {
+        "depth": 17,
+        "nodes": 3125248,
+        "score_cp": 140,
+        "bestmove": "f7f5",
+        "elapsed_s": 1.0448,
+        "nps": 2991232
+      },
+      "passed_pawn_race": {
+        "depth": 17,
+        "nodes": 2754560,
+        "score_cp": 89,
+        "bestmove": "b4f4",
+        "elapsed_s": 1.0443,
+        "nps": 2637818
+      },
+      "forced_check_mate": {
+        "depth": 10,
+        "nodes": 3039232,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 1.0776,
+        "nps": 2820479
+      },
+      "multi_candidate_1": {
+        "depth": 13,
+        "nodes": 2019328,
+        "score_cp": 30,
+        "bestmove": "e2e4",
+        "elapsed_s": 1.0455,
+        "nps": 1931450
+      },
+      "multi_candidate_2": {
+        "depth": 10,
+        "nodes": 1353728,
+        "score_cp": -33,
+        "bestmove": "e2a6",
+        "elapsed_s": 1.0609,
+        "nps": 1276054
+      },
+      "tactical_sacrifice": {
+        "depth": 11,
+        "nodes": 2897920,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 1.0658,
+        "nps": 2719023
+      },
+      "opposite_bishops_draw": {
+        "depth": 37,
+        "nodes": 4059136,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 1.0449,
+        "nps": 3884849
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 24,
+        "nodes": 3516416,
+        "score_cp": 435,
+        "bestmove": "d3c3",
+        "elapsed_s": 1.0468,
+        "nps": 3359061
+      }
+    },
+    "stability": 91.7,
+    "tactics_solved": 5,
+    "avg_depth_1000ms": 15.42,
+    "avg_nps_1000ms": 2336232,
+    "speedup_vs_1t": 1.0
+  },
+  "B2_X11_2T": {
+    "desc": "Frozen X11 (2T)",
+    "threads": 2,
+    "exe": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.6\\control\\janus_classical_x11.exe",
+    "runs_500ms": {
+      "quiet_middlegame": {
+        "depth": 11,
+        "nodes": 1689600,
+        "score_cp": 63,
+        "bestmove": "e1g1",
+        "elapsed_s": 0.5598,
+        "nps": 3018316
+      },
+      "open_tactical": {
+        "depth": 10,
+        "nodes": 1640448,
+        "score_cp": 0,
+        "bestmove": "a2a3",
+        "elapsed_s": 0.5478,
+        "nps": 2994600
+      },
+      "closed_pawn": {
+        "depth": 11,
+        "nodes": 1665024,
+        "score_cp": 19,
+        "bestmove": "g8h6",
+        "elapsed_s": 0.5469,
+        "nps": 3044527
+      },
+      "defensive_pos": {
+        "depth": 12,
+        "nodes": 1695744,
+        "score_cp": 154,
+        "bestmove": "d5d4",
+        "elapsed_s": 0.5558,
+        "nps": 3050856
+      },
+      "endgame_transition": {
+        "depth": 16,
+        "nodes": 2859008,
+        "score_cp": 131,
+        "bestmove": "f7f5",
+        "elapsed_s": 0.5463,
+        "nps": 5233026
+      },
+      "passed_pawn_race": {
+        "depth": 17,
+        "nodes": 2727936,
+        "score_cp": 56,
+        "bestmove": "b4f4",
+        "elapsed_s": 0.5561,
+        "nps": 4905577
+      },
+      "forced_check_mate": {
+        "depth": 9,
+        "nodes": 2828288,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 0.5511,
+        "nps": 5131798
+      },
+      "multi_candidate_1": {
+        "depth": 11,
+        "nodes": 2066432,
+        "score_cp": 32,
+        "bestmove": "e2e4",
+        "elapsed_s": 0.5552,
+        "nps": 3722025
+      },
+      "multi_candidate_2": {
+        "depth": 9,
+        "nodes": 1376256,
+        "score_cp": -33,
+        "bestmove": "e2a6",
+        "elapsed_s": 0.5525,
+        "nps": 2491177
+      },
+      "tactical_sacrifice": {
+        "depth": 10,
+        "nodes": 2875392,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 0.5542,
+        "nps": 5188272
+      },
+      "opposite_bishops_draw": {
+        "depth": 30,
+        "nodes": 3538944,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 0.5478,
+        "nps": 6460445
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 25,
+        "nodes": 2797568,
+        "score_cp": 517,
+        "bestmove": "d3c3",
+        "elapsed_s": 0.5516,
+        "nps": 5071426
+      }
+    },
+    "runs_1000ms": {
+      "quiet_middlegame": {
+        "depth": 11,
+        "nodes": 3287040,
+        "score_cp": 65,
+        "bestmove": "e1g1",
+        "elapsed_s": 1.05,
+        "nps": 3130430
+      },
+      "open_tactical": {
+        "depth": 11,
+        "nodes": 3301376,
+        "score_cp": 6,
+        "bestmove": "e1g1",
+        "elapsed_s": 1.056,
+        "nps": 3126311
+      },
+      "closed_pawn": {
+        "depth": 13,
+        "nodes": 3436544,
+        "score_cp": 18,
+        "bestmove": "g8h6",
+        "elapsed_s": 1.0577,
+        "nps": 3249174
+      },
+      "defensive_pos": {
+        "depth": 13,
+        "nodes": 3395584,
+        "score_cp": 145,
+        "bestmove": "d5d4",
+        "elapsed_s": 1.0537,
+        "nps": 3222567
+      },
+      "endgame_transition": {
+        "depth": 18,
+        "nodes": 5640192,
+        "score_cp": 140,
+        "bestmove": "f7f5",
+        "elapsed_s": 1.0494,
+        "nps": 5374743
+      },
+      "passed_pawn_race": {
+        "depth": 18,
+        "nodes": 5494784,
+        "score_cp": 96,
+        "bestmove": "b4f4",
+        "elapsed_s": 1.044,
+        "nps": 5263400
+      },
+      "forced_check_mate": {
+        "depth": 10,
+        "nodes": 5902336,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 1.0487,
+        "nps": 5628498
+      },
+      "multi_candidate_1": {
+        "depth": 13,
+        "nodes": 3973120,
+        "score_cp": 30,
+        "bestmove": "e2e4",
+        "elapsed_s": 1.0625,
+        "nps": 3739446
+      },
+      "multi_candidate_2": {
+        "depth": 10,
+        "nodes": 2734080,
+        "score_cp": -33,
+        "bestmove": "e2a6",
+        "elapsed_s": 1.0503,
+        "nps": 2603154
+      },
+      "tactical_sacrifice": {
+        "depth": 11,
+        "nodes": 5537792,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 1.0516,
+        "nps": 5265884
+      },
+      "opposite_bishops_draw": {
+        "depth": 48,
+        "nodes": 7729152,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 1.0468,
+        "nps": 7383404
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 27,
+        "nodes": 5556224,
+        "score_cp": 549,
+        "bestmove": "d3c3",
+        "elapsed_s": 1.0505,
+        "nps": 5288904
+      }
+    },
+    "stability": 91.7,
+    "tactics_solved": 5,
+    "avg_depth_1000ms": 16.92,
+    "avg_nps_1000ms": 4436046,
+    "speedup_vs_1t": 1.9
+  },
+  "B3_X11_4T": {
+    "desc": "Frozen X11 (4T)",
+    "threads": 4,
+    "exe": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.6\\control\\janus_classical_x11.exe",
+    "runs_500ms": {
+      "quiet_middlegame": {
+        "depth": 11,
+        "nodes": 3291136,
+        "score_cp": 65,
+        "bestmove": "e1g1",
+        "elapsed_s": 0.5475,
+        "nps": 6011177
+      },
+      "open_tactical": {
+        "depth": 11,
+        "nodes": 3051520,
+        "score_cp": 0,
+        "bestmove": "a2a3",
+        "elapsed_s": 0.5502,
+        "nps": 5546221
+      },
+      "closed_pawn": {
+        "depth": 11,
+        "nodes": 3301376,
+        "score_cp": 45,
+        "bestmove": "b6c7",
+        "elapsed_s": 0.5484,
+        "nps": 6019806
+      },
+      "defensive_pos": {
+        "depth": 13,
+        "nodes": 3362816,
+        "score_cp": 145,
+        "bestmove": "d5d4",
+        "elapsed_s": 0.5489,
+        "nps": 6126891
+      },
+      "endgame_transition": {
+        "depth": 17,
+        "nodes": 5015552,
+        "score_cp": 136,
+        "bestmove": "f7f5",
+        "elapsed_s": 0.5475,
+        "nps": 9160156
+      },
+      "passed_pawn_race": {
+        "depth": 17,
+        "nodes": 4941824,
+        "score_cp": 92,
+        "bestmove": "b4f4",
+        "elapsed_s": 0.5439,
+        "nps": 9085198
+      },
+      "forced_check_mate": {
+        "depth": 9,
+        "nodes": 5308416,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 0.546,
+        "nps": 9722265
+      },
+      "multi_candidate_1": {
+        "depth": 12,
+        "nodes": 3860480,
+        "score_cp": 15,
+        "bestmove": "e2e4",
+        "elapsed_s": 0.5524,
+        "nps": 6988643
+      },
+      "multi_candidate_2": {
+        "depth": 9,
+        "nodes": 2172928,
+        "score_cp": -33,
+        "bestmove": "e2a6",
+        "elapsed_s": 0.5502,
+        "nps": 3949288
+      },
+      "tactical_sacrifice": {
+        "depth": 10,
+        "nodes": 5126144,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 0.5431,
+        "nps": 9439430
+      },
+      "opposite_bishops_draw": {
+        "depth": 38,
+        "nodes": 5724160,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 0.5457,
+        "nps": 10489580
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 25,
+        "nodes": 4569088,
+        "score_cp": 513,
+        "bestmove": "d3c3",
+        "elapsed_s": 0.5416,
+        "nps": 8436966
+      }
+    },
+    "runs_1000ms": {
+      "quiet_middlegame": {
+        "depth": 13,
+        "nodes": 6746112,
+        "score_cp": 59,
+        "bestmove": "e1g1",
+        "elapsed_s": 1.054,
+        "nps": 6400626
+      },
+      "open_tactical": {
+        "depth": 12,
+        "nodes": 6412288,
+        "score_cp": -2,
+        "bestmove": "a2a3",
+        "elapsed_s": 1.0602,
+        "nps": 6048163
+      },
+      "closed_pawn": {
+        "depth": 13,
+        "nodes": 6658048,
+        "score_cp": 11,
+        "bestmove": "g8h6",
+        "elapsed_s": 1.0484,
+        "nps": 6350869
+      },
+      "defensive_pos": {
+        "depth": 14,
+        "nodes": 6873088,
+        "score_cp": 152,
+        "bestmove": "d5d4",
+        "elapsed_s": 1.0458,
+        "nps": 6572313
+      },
+      "endgame_transition": {
+        "depth": 19,
+        "nodes": 9728000,
+        "score_cp": 140,
+        "bestmove": "f7f5",
+        "elapsed_s": 1.044,
+        "nps": 9318145
+      },
+      "passed_pawn_race": {
+        "depth": 19,
+        "nodes": 10219520,
+        "score_cp": 78,
+        "bestmove": "b4f4",
+        "elapsed_s": 1.0451,
+        "nps": 9778358
+      },
+      "forced_check_mate": {
+        "depth": 10,
+        "nodes": 10348544,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 1.0515,
+        "nps": 9841829
+      },
+      "multi_candidate_1": {
+        "depth": 14,
+        "nodes": 7557120,
+        "score_cp": 20,
+        "bestmove": "e2e4",
+        "elapsed_s": 1.0436,
+        "nps": 7241632
+      },
+      "multi_candidate_2": {
+        "depth": 10,
+        "nodes": 5001216,
+        "score_cp": -33,
+        "bestmove": "e2a6",
+        "elapsed_s": 1.0421,
+        "nps": 4799084
+      },
+      "tactical_sacrifice": {
+        "depth": 11,
+        "nodes": 10334208,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 1.0432,
+        "nps": 9906185
+      },
+      "opposite_bishops_draw": {
+        "depth": 45,
+        "nodes": 12359680,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 1.0428,
+        "nps": 11852720
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 28,
+        "nodes": 9072640,
+        "score_cp": 526,
+        "bestmove": "d3c3",
+        "elapsed_s": 1.0458,
+        "nps": 8675380
+      }
+    },
+    "stability": 91.7,
+    "tactics_solved": 5,
+    "avg_depth_1000ms": 17.33,
+    "avg_nps_1000ms": 8061947,
+    "speedup_vs_1t": 3.45
+  },
+  "B4_T1_PrivateTT_4T": {
+    "desc": "X11 + Private TTs (4T)",
+    "threads": 4,
+    "exe": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.7\\tests\\engine_t1.exe",
+    "runs_500ms": {
+      "quiet_middlegame": {
+        "depth": 10,
+        "nodes": 3131392,
+        "score_cp": 55,
+        "bestmove": "e1g1",
+        "elapsed_s": 0.5501,
+        "nps": 5692358
+      },
+      "open_tactical": {
+        "depth": 10,
+        "nodes": 2988032,
+        "score_cp": 0,
+        "bestmove": "a2a3",
+        "elapsed_s": 0.5423,
+        "nps": 5509613
+      },
+      "closed_pawn": {
+        "depth": 11,
+        "nodes": 3176448,
+        "score_cp": 27,
+        "bestmove": "b6c7",
+        "elapsed_s": 0.5392,
+        "nps": 5891183
+      },
+      "defensive_pos": {
+        "depth": 12,
+        "nodes": 3266560,
+        "score_cp": 154,
+        "bestmove": "d5d4",
+        "elapsed_s": 0.5397,
+        "nps": 6052362
+      },
+      "endgame_transition": {
+        "depth": 15,
+        "nodes": 5541888,
+        "score_cp": 137,
+        "bestmove": "f7f5",
+        "elapsed_s": 0.5402,
+        "nps": 10259865
+      },
+      "passed_pawn_race": {
+        "depth": 15,
+        "nodes": 4904960,
+        "score_cp": 59,
+        "bestmove": "b4f4",
+        "elapsed_s": 0.5543,
+        "nps": 8849009
+      },
+      "forced_check_mate": {
+        "depth": 9,
+        "nodes": 4935680,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 0.5401,
+        "nps": 9137611
+      },
+      "multi_candidate_1": {
+        "depth": 11,
+        "nodes": 3860480,
+        "score_cp": 32,
+        "bestmove": "e2e4",
+        "elapsed_s": 0.5444,
+        "nps": 7090796
+      },
+      "multi_candidate_2": {
+        "depth": 9,
+        "nodes": 2715648,
+        "score_cp": -33,
+        "bestmove": "e2a6",
+        "elapsed_s": 0.5408,
+        "nps": 5021655
+      },
+      "tactical_sacrifice": {
+        "depth": 10,
+        "nodes": 4370432,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 0.547,
+        "nps": 7990476
+      },
+      "opposite_bishops_draw": {
+        "depth": 22,
+        "nodes": 4681728,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 0.5517,
+        "nps": 8485687
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 22,
+        "nodes": 4503552,
+        "score_cp": 285,
+        "bestmove": "d3c3",
+        "elapsed_s": 0.5458,
+        "nps": 8250841
+      }
+    },
+    "runs_1000ms": {
+      "quiet_middlegame": {
+        "depth": 11,
+        "nodes": 6486016,
+        "score_cp": 56,
+        "bestmove": "e1g1",
+        "elapsed_s": 1.0416,
+        "nps": 6227020
+      },
+      "open_tactical": {
+        "depth": 11,
+        "nodes": 6133760,
+        "score_cp": -1,
+        "bestmove": "a2a3",
+        "elapsed_s": 1.0436,
+        "nps": 5877289
+      },
+      "closed_pawn": {
+        "depth": 12,
+        "nodes": 6320128,
+        "score_cp": 16,
+        "bestmove": "b6c7",
+        "elapsed_s": 1.0422,
+        "nps": 6064092
+      },
+      "defensive_pos": {
+        "depth": 13,
+        "nodes": 6547456,
+        "score_cp": 153,
+        "bestmove": "d5d4",
+        "elapsed_s": 1.0417,
+        "nps": 6285108
+      },
+      "endgame_transition": {
+        "depth": 17,
+        "nodes": 10332160,
+        "score_cp": 140,
+        "bestmove": "f7f5",
+        "elapsed_s": 1.0394,
+        "nps": 9940147
+      },
+      "passed_pawn_race": {
+        "depth": 17,
+        "nodes": 9988096,
+        "score_cp": 56,
+        "bestmove": "b4f4",
+        "elapsed_s": 1.0408,
+        "nps": 9596571
+      },
+      "forced_check_mate": {
+        "depth": 10,
+        "nodes": 10850304,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 1.0427,
+        "nps": 10406172
+      },
+      "multi_candidate_1": {
+        "depth": 13,
+        "nodes": 7858176,
+        "score_cp": 32,
+        "bestmove": "e2e4",
+        "elapsed_s": 1.0436,
+        "nps": 7530071
+      },
+      "multi_candidate_2": {
+        "depth": 10,
+        "nodes": 4151296,
+        "score_cp": -33,
+        "bestmove": "e2a6",
+        "elapsed_s": 1.0414,
+        "nps": 3986162
+      },
+      "tactical_sacrifice": {
+        "depth": 10,
+        "nodes": 8189952,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 1.0432,
+        "nps": 7851173
+      },
+      "opposite_bishops_draw": {
+        "depth": 32,
+        "nodes": 10293248,
+        "score_cp": 0,
+        "bestmove": "e1d1",
+        "elapsed_s": 1.0515,
+        "nps": 9789055
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 23,
+        "nodes": 9191424,
+        "score_cp": 315,
+        "bestmove": "d3c3",
+        "elapsed_s": 1.0454,
+        "nps": 8792280
+      }
+    },
+    "stability": 91.7,
+    "tactics_solved": 5,
+    "avg_depth_1000ms": 14.92,
+    "avg_nps_1000ms": 7696832,
+    "speedup_vs_1t": 3.29
+  },
+  "B5_T4_SmartTT_4T": {
+    "desc": "X11 + 64B Smart TT (4T)",
+    "threads": 4,
+    "exe": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.7\\tests\\engine_t4.exe",
+    "runs_500ms": {
+      "quiet_middlegame": {
+        "depth": 11,
+        "nodes": 2416640,
+        "score_cp": 56,
+        "bestmove": "e1g1",
+        "elapsed_s": 0.5544,
+        "nps": 4359293
+      },
+      "open_tactical": {
+        "depth": 10,
+        "nodes": 2637824,
+        "score_cp": 1,
+        "bestmove": "a2a3",
+        "elapsed_s": 0.5437,
+        "nps": 4851633
+      },
+      "closed_pawn": {
+        "depth": 11,
+        "nodes": 2811904,
+        "score_cp": 11,
+        "bestmove": "b6c7",
+        "elapsed_s": 0.5442,
+        "nps": 5167268
+      },
+      "defensive_pos": {
+        "depth": 12,
+        "nodes": 2883584,
+        "score_cp": 154,
+        "bestmove": "d5d4",
+        "elapsed_s": 0.5447,
+        "nps": 5294073
+      },
+      "endgame_transition": {
+        "depth": 16,
+        "nodes": 4665344,
+        "score_cp": 125,
+        "bestmove": "f7f5",
+        "elapsed_s": 0.5601,
+        "nps": 8330068
+      },
+      "passed_pawn_race": {
+        "depth": 16,
+        "nodes": 4372480,
+        "score_cp": 59,
+        "bestmove": "b4f4",
+        "elapsed_s": 0.5441,
+        "nps": 8036311
+      },
+      "forced_check_mate": {
+        "depth": 9,
+        "nodes": 4077568,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 0.5481,
+        "nps": 7439804
+      },
+      "multi_candidate_1": {
+        "depth": 12,
+        "nodes": 3000320,
+        "score_cp": 15,
+        "bestmove": "e2e4",
+        "elapsed_s": 0.5452,
+        "nps": 5503351
+      },
+      "multi_candidate_2": {
+        "depth": 9,
+        "nodes": 2181120,
+        "score_cp": -33,
+        "bestmove": "e2a6",
+        "elapsed_s": 0.5447,
+        "nps": 4004165
+      },
+      "tactical_sacrifice": {
+        "depth": 10,
+        "nodes": 4550656,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 0.5466,
+        "nps": 8325541
+      },
+      "opposite_bishops_draw": {
+        "depth": 31,
+        "nodes": 5244928,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 0.5434,
+        "nps": 9652421
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 24,
+        "nodes": 4169728,
+        "score_cp": 371,
+        "bestmove": "d3c3",
+        "elapsed_s": 0.5465,
+        "nps": 7630018
+      }
+    },
+    "runs_1000ms": {
+      "quiet_middlegame": {
+        "depth": 12,
+        "nodes": 5267456,
+        "score_cp": 56,
+        "bestmove": "e1g1",
+        "elapsed_s": 1.0474,
+        "nps": 5029116
+      },
+      "open_tactical": {
+        "depth": 12,
+        "nodes": 5111808,
+        "score_cp": -7,
+        "bestmove": "e1g1",
+        "elapsed_s": 1.0468,
+        "nps": 4883201
+      },
+      "closed_pawn": {
+        "depth": 13,
+        "nodes": 5425152,
+        "score_cp": 18,
+        "bestmove": "g8h6",
+        "elapsed_s": 1.0509,
+        "nps": 5162558
+      },
+      "defensive_pos": {
+        "depth": 14,
+        "nodes": 5769216,
+        "score_cp": 145,
+        "bestmove": "d5d4",
+        "elapsed_s": 1.0646,
+        "nps": 5419222
+      },
+      "endgame_transition": {
+        "depth": 17,
+        "nodes": 8767488,
+        "score_cp": 140,
+        "bestmove": "f7f5",
+        "elapsed_s": 1.0462,
+        "nps": 8380177
+      },
+      "passed_pawn_race": {
+        "depth": 18,
+        "nodes": 8060928,
+        "score_cp": 59,
+        "bestmove": "b4f4",
+        "elapsed_s": 1.0494,
+        "nps": 7681167
+      },
+      "forced_check_mate": {
+        "depth": 10,
+        "nodes": 8538112,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 1.0452,
+        "nps": 8168752
+      },
+      "multi_candidate_1": {
+        "depth": 13,
+        "nodes": 5812224,
+        "score_cp": 30,
+        "bestmove": "e2e4",
+        "elapsed_s": 1.0444,
+        "nps": 5565349
+      },
+      "multi_candidate_2": {
+        "depth": 10,
+        "nodes": 4605952,
+        "score_cp": -33,
+        "bestmove": "e2a6",
+        "elapsed_s": 1.0475,
+        "nps": 4396900
+      },
+      "tactical_sacrifice": {
+        "depth": 11,
+        "nodes": 9154560,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 1.0463,
+        "nps": 8749320
+      },
+      "opposite_bishops_draw": {
+        "depth": 26,
+        "nodes": 9633792,
+        "score_cp": 2,
+        "bestmove": "e1d1",
+        "elapsed_s": 1.0577,
+        "nps": 9108214
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 27,
+        "nodes": 9216000,
+        "score_cp": 429,
+        "bestmove": "d3c3",
+        "elapsed_s": 1.0442,
+        "nps": 8826088
+      }
+    },
+    "stability": 75.0,
+    "tactics_solved": 5,
+    "avg_depth_1000ms": 15.25,
+    "avg_nps_1000ms": 6779874,
+    "speedup_vs_1t": 2.9
+  },
+  "B6_W3_WorkerCoord_4T": {
+    "desc": "X11 + Worker Coord + Smart TT (4T)",
+    "threads": 4,
+    "exe": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.7\\tests\\engine_w3.exe",
+    "runs_500ms": {
+      "quiet_middlegame": {
+        "depth": 11,
+        "nodes": 2613248,
+        "score_cp": 56,
+        "bestmove": "e2d3",
+        "elapsed_s": 0.5606,
+        "nps": 4661894
+      },
+      "open_tactical": {
+        "depth": 11,
+        "nodes": 2777088,
+        "score_cp": 4,
+        "bestmove": "a2a3",
+        "elapsed_s": 0.5493,
+        "nps": 5056125
+      },
+      "closed_pawn": {
+        "depth": 11,
+        "nodes": 2727936,
+        "score_cp": 36,
+        "bestmove": "b6c7",
+        "elapsed_s": 0.5467,
+        "nps": 4990098
+      },
+      "defensive_pos": {
+        "depth": 12,
+        "nodes": 2918400,
+        "score_cp": 154,
+        "bestmove": "d5d4",
+        "elapsed_s": 0.5448,
+        "nps": 5357124
+      },
+      "endgame_transition": {
+        "depth": 16,
+        "nodes": 4126720,
+        "score_cp": 131,
+        "bestmove": "f7f5",
+        "elapsed_s": 0.5442,
+        "nps": 7583502
+      },
+      "passed_pawn_race": {
+        "depth": 16,
+        "nodes": 3532800,
+        "score_cp": 65,
+        "bestmove": "b4f4",
+        "elapsed_s": 0.5503,
+        "nps": 6419347
+      },
+      "forced_check_mate": {
+        "depth": 9,
+        "nodes": 4507648,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 0.5584,
+        "nps": 8072056
+      },
+      "multi_candidate_1": {
+        "depth": 12,
+        "nodes": 3211264,
+        "score_cp": 15,
+        "bestmove": "e2e4",
+        "elapsed_s": 0.5489,
+        "nps": 5850688
+      },
+      "multi_candidate_2": {
+        "depth": 8,
+        "nodes": 2267136,
+        "score_cp": 9,
+        "bestmove": "e2a6",
+        "elapsed_s": 0.5518,
+        "nps": 4108592
+      },
+      "tactical_sacrifice": {
+        "depth": 10,
+        "nodes": 4130816,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 0.5471,
+        "nps": 7550209
+      },
+      "opposite_bishops_draw": {
+        "depth": 33,
+        "nodes": 5165056,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 0.5442,
+        "nps": 9490634
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 23,
+        "nodes": 4419584,
+        "score_cp": 301,
+        "bestmove": "d3c3",
+        "elapsed_s": 0.5485,
+        "nps": 8057256
+      }
+    },
+    "runs_1000ms": {
+      "quiet_middlegame": {
+        "depth": 12,
+        "nodes": 5345280,
+        "score_cp": 53,
+        "bestmove": "e1g1",
+        "elapsed_s": 1.0475,
+        "nps": 5102962
+      },
+      "open_tactical": {
+        "depth": 11,
+        "nodes": 5414912,
+        "score_cp": 0,
+        "bestmove": "a2a3",
+        "elapsed_s": 1.0453,
+        "nps": 5180204
+      },
+      "closed_pawn": {
+        "depth": 13,
+        "nodes": 5758976,
+        "score_cp": 18,
+        "bestmove": "g8h6",
+        "elapsed_s": 1.0496,
+        "nps": 5486629
+      },
+      "defensive_pos": {
+        "depth": 13,
+        "nodes": 5548032,
+        "score_cp": 145,
+        "bestmove": "d5d4",
+        "elapsed_s": 1.0429,
+        "nps": 5319950
+      },
+      "endgame_transition": {
+        "depth": 19,
+        "nodes": 7737344,
+        "score_cp": 135,
+        "bestmove": "f7f5",
+        "elapsed_s": 1.0448,
+        "nps": 7405649
+      },
+      "passed_pawn_race": {
+        "depth": 17,
+        "nodes": 7446528,
+        "score_cp": 88,
+        "bestmove": "b4f4",
+        "elapsed_s": 1.0531,
+        "nps": 7071269
+      },
+      "forced_check_mate": {
+        "depth": 10,
+        "nodes": 8925184,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 1.0494,
+        "nps": 8505282
+      },
+      "multi_candidate_1": {
+        "depth": 14,
+        "nodes": 6166528,
+        "score_cp": 26,
+        "bestmove": "e2e4",
+        "elapsed_s": 1.0508,
+        "nps": 5868533
+      },
+      "multi_candidate_2": {
+        "depth": 9,
+        "nodes": 4368384,
+        "score_cp": -33,
+        "bestmove": "e2a6",
+        "elapsed_s": 1.0443,
+        "nps": 4182947
+      },
+      "tactical_sacrifice": {
+        "depth": 11,
+        "nodes": 8245248,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 1.047,
+        "nps": 7875470
+      },
+      "opposite_bishops_draw": {
+        "depth": 43,
+        "nodes": 10840064,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 1.044,
+        "nps": 10383576
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 25,
+        "nodes": 8714240,
+        "score_cp": 517,
+        "bestmove": "d3c3",
+        "elapsed_s": 1.0489,
+        "nps": 8307849
+      }
+    },
+    "stability": 83.3,
+    "tactics_solved": 5,
+    "avg_depth_1000ms": 16.42,
+    "avg_nps_1000ms": 6724491,
+    "speedup_vs_1t": 2.88
+  },
+  "B7_X12_2T": {
+    "desc": "Candidate X12 (2T)",
+    "threads": 2,
+    "exe": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.7\\control\\janus_classical_x12.exe",
+    "runs_500ms": {
+      "quiet_middlegame": {
+        "depth": 11,
+        "nodes": 1443840,
+        "score_cp": 65,
+        "bestmove": "e1g1",
+        "elapsed_s": 0.5603,
+        "nps": 2576798
+      },
+      "open_tactical": {
+        "depth": 10,
+        "nodes": 1163264,
+        "score_cp": 0,
+        "bestmove": "e1g1",
+        "elapsed_s": 0.5636,
+        "nps": 2063825
+      },
+      "closed_pawn": {
+        "depth": 11,
+        "nodes": 1134592,
+        "score_cp": 7,
+        "bestmove": "b6c7",
+        "elapsed_s": 0.5555,
+        "nps": 2042414
+      },
+      "defensive_pos": {
+        "depth": 13,
+        "nodes": 1308672,
+        "score_cp": 163,
+        "bestmove": "d5d4",
+        "elapsed_s": 0.5449,
+        "nps": 2401508
+      },
+      "endgame_transition": {
+        "depth": 14,
+        "nodes": 2607104,
+        "score_cp": 119,
+        "bestmove": "b7b5",
+        "elapsed_s": 0.5534,
+        "nps": 4710996
+      },
+      "passed_pawn_race": {
+        "depth": 16,
+        "nodes": 2195456,
+        "score_cp": 58,
+        "bestmove": "b4f4",
+        "elapsed_s": 0.5505,
+        "nps": 3987888
+      },
+      "forced_check_mate": {
+        "depth": 9,
+        "nodes": 2680832,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 0.5499,
+        "nps": 4874948
+      },
+      "multi_candidate_1": {
+        "depth": 12,
+        "nodes": 1718272,
+        "score_cp": 16,
+        "bestmove": "e2e4",
+        "elapsed_s": 0.5447,
+        "nps": 3154615
+      },
+      "multi_candidate_2": {
+        "depth": 8,
+        "nodes": 1239040,
+        "score_cp": 14,
+        "bestmove": "e2a6",
+        "elapsed_s": 0.5484,
+        "nps": 2259390
+      },
+      "tactical_sacrifice": {
+        "depth": 10,
+        "nodes": 2766848,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 0.5613,
+        "nps": 4929717
+      },
+      "opposite_bishops_draw": {
+        "depth": 35,
+        "nodes": 2916352,
+        "score_cp": 0,
+        "bestmove": "e1d1",
+        "elapsed_s": 0.5635,
+        "nps": 5175379
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 24,
+        "nodes": 2447360,
+        "score_cp": 502,
+        "bestmove": "d3c3",
+        "elapsed_s": 0.562,
+        "nps": 4354719
+      }
+    },
+    "runs_1000ms": {
+      "quiet_middlegame": {
+        "depth": 11,
+        "nodes": 2160640,
+        "score_cp": 56,
+        "bestmove": "e1g1",
+        "elapsed_s": 1.0571,
+        "nps": 2044013
+      },
+      "open_tactical": {
+        "depth": 11,
+        "nodes": 2609152,
+        "score_cp": -11,
+        "bestmove": "f3e5",
+        "elapsed_s": 1.0637,
+        "nps": 2452794
+      },
+      "closed_pawn": {
+        "depth": 12,
+        "nodes": 2435072,
+        "score_cp": 7,
+        "bestmove": "b6c7",
+        "elapsed_s": 1.053,
+        "nps": 2312570
+      },
+      "defensive_pos": {
+        "depth": 14,
+        "nodes": 2578432,
+        "score_cp": 186,
+        "bestmove": "d5d4",
+        "elapsed_s": 1.0465,
+        "nps": 2463804
+      },
+      "endgame_transition": {
+        "depth": 18,
+        "nodes": 4999168,
+        "score_cp": 166,
+        "bestmove": "f7f5",
+        "elapsed_s": 1.0483,
+        "nps": 4768713
+      },
+      "passed_pawn_race": {
+        "depth": 19,
+        "nodes": 4614144,
+        "score_cp": 80,
+        "bestmove": "b4f4",
+        "elapsed_s": 1.0414,
+        "nps": 4430845
+      },
+      "forced_check_mate": {
+        "depth": 10,
+        "nodes": 5517312,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 1.114,
+        "nps": 4952773
+      },
+      "multi_candidate_1": {
+        "depth": 13,
+        "nodes": 3405824,
+        "score_cp": 30,
+        "bestmove": "e2e4",
+        "elapsed_s": 1.0482,
+        "nps": 3249258
+      },
+      "multi_candidate_2": {
+        "depth": 10,
+        "nodes": 2383872,
+        "score_cp": -45,
+        "bestmove": "e2a6",
+        "elapsed_s": 1.0539,
+        "nps": 2262050
+      },
+      "tactical_sacrifice": {
+        "depth": 11,
+        "nodes": 5394432,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 1.0486,
+        "nps": 5144480
+      },
+      "opposite_bishops_draw": {
+        "depth": 46,
+        "nodes": 6627328,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 1.0679,
+        "nps": 6206164
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 27,
+        "nodes": 4548608,
+        "score_cp": 546,
+        "bestmove": "d3c3",
+        "elapsed_s": 1.1411,
+        "nps": 3986106
+      }
+    },
+    "stability": 75.0,
+    "tactics_solved": 5,
+    "avg_depth_1000ms": 16.83,
+    "avg_nps_1000ms": 3697989,
+    "speedup_vs_1t": 1.58
+  },
+  "B7_X12_4T": {
+    "desc": "Candidate X12 (4T)",
+    "threads": 4,
+    "exe": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.7\\control\\janus_classical_x12.exe",
+    "runs_500ms": {
+      "quiet_middlegame": {
+        "depth": 12,
+        "nodes": 2658304,
+        "score_cp": 62,
+        "bestmove": "e1g1",
+        "elapsed_s": 0.549,
+        "nps": 4841884
+      },
+      "open_tactical": {
+        "depth": 10,
+        "nodes": 2260992,
+        "score_cp": -9,
+        "bestmove": "f3e5",
+        "elapsed_s": 0.5579,
+        "nps": 4052495
+      },
+      "closed_pawn": {
+        "depth": 11,
+        "nodes": 2138112,
+        "score_cp": 7,
+        "bestmove": "b6c7",
+        "elapsed_s": 0.5648,
+        "nps": 3785789
+      },
+      "defensive_pos": {
+        "depth": 13,
+        "nodes": 2067221,
+        "score_cp": 163,
+        "bestmove": "d5d4",
+        "elapsed_s": 0.5542,
+        "nps": 3730202
+      },
+      "endgame_transition": {
+        "depth": 15,
+        "nodes": 3194880,
+        "score_cp": 119,
+        "bestmove": "e8d8",
+        "elapsed_s": 0.557,
+        "nps": 5735454
+      },
+      "passed_pawn_race": {
+        "depth": 16,
+        "nodes": 3086336,
+        "score_cp": 53,
+        "bestmove": "b4f4",
+        "elapsed_s": 0.5544,
+        "nps": 5566920
+      },
+      "forced_check_mate": {
+        "depth": 9,
+        "nodes": 3629056,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 0.5603,
+        "nps": 6476546
+      },
+      "multi_candidate_1": {
+        "depth": 12,
+        "nodes": 2586624,
+        "score_cp": 19,
+        "bestmove": "e2e4",
+        "elapsed_s": 0.5581,
+        "nps": 4634931
+      },
+      "multi_candidate_2": {
+        "depth": 8,
+        "nodes": 1923072,
+        "score_cp": 14,
+        "bestmove": "e2a6",
+        "elapsed_s": 0.5663,
+        "nps": 3395908
+      },
+      "tactical_sacrifice": {
+        "depth": 10,
+        "nodes": 3964928,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 0.5616,
+        "nps": 7059625
+      },
+      "opposite_bishops_draw": {
+        "depth": 29,
+        "nodes": 3299328,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 0.5604,
+        "nps": 5886938
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 23,
+        "nodes": 2740224,
+        "score_cp": 494,
+        "bestmove": "d3c3",
+        "elapsed_s": 0.55,
+        "nps": 4982249
+      }
+    },
+    "runs_1000ms": {
+      "quiet_middlegame": {
+        "depth": 13,
+        "nodes": 4052992,
+        "score_cp": 65,
+        "bestmove": "e1g1",
+        "elapsed_s": 1.052,
+        "nps": 3852560
+      },
+      "open_tactical": {
+        "depth": 12,
+        "nodes": 4630528,
+        "score_cp": -10,
+        "bestmove": "e1g1",
+        "elapsed_s": 1.0574,
+        "nps": 4379151
+      },
+      "closed_pawn": {
+        "depth": 13,
+        "nodes": 4161536,
+        "score_cp": 23,
+        "bestmove": "g8h6",
+        "elapsed_s": 1.0576,
+        "nps": 3934742
+      },
+      "defensive_pos": {
+        "depth": 14,
+        "nodes": 4048896,
+        "score_cp": 186,
+        "bestmove": "d5d4",
+        "elapsed_s": 1.0542,
+        "nps": 3840549
+      },
+      "endgame_transition": {
+        "depth": 17,
+        "nodes": 6148096,
+        "score_cp": 156,
+        "bestmove": "f7f5",
+        "elapsed_s": 1.0514,
+        "nps": 5847546
+      },
+      "passed_pawn_race": {
+        "depth": 18,
+        "nodes": 5584896,
+        "score_cp": 56,
+        "bestmove": "b4f4",
+        "elapsed_s": 1.0616,
+        "nps": 5260803
+      },
+      "forced_check_mate": {
+        "depth": 10,
+        "nodes": 6918144,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "elapsed_s": 1.0554,
+        "nps": 6554929
+      },
+      "multi_candidate_1": {
+        "depth": 13,
+        "nodes": 5238784,
+        "score_cp": 27,
+        "bestmove": "e2e4",
+        "elapsed_s": 1.0546,
+        "nps": 4967701
+      },
+      "multi_candidate_2": {
+        "depth": 9,
+        "nodes": 4009984,
+        "score_cp": -31,
+        "bestmove": "e2a6",
+        "elapsed_s": 1.0532,
+        "nps": 3807301
+      },
+      "tactical_sacrifice": {
+        "depth": 11,
+        "nodes": 7776256,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "elapsed_s": 1.0586,
+        "nps": 7345669
+      },
+      "opposite_bishops_draw": {
+        "depth": 41,
+        "nodes": 7518208,
+        "score_cp": 0,
+        "bestmove": "e2f3",
+        "elapsed_s": 1.0585,
+        "nps": 7102716
+      },
+      "rook_pawn_breakthrough": {
+        "depth": 25,
+        "nodes": 5371904,
+        "score_cp": 533,
+        "bestmove": "d3c3",
+        "elapsed_s": 1.0536,
+        "nps": 5098551
+      }
+    },
+    "stability": 75.0,
+    "tactics_solved": 5,
+    "avg_depth_1000ms": 16.33,
+    "avg_nps_1000ms": 5167327,
+    "speedup_vs_1t": 2.21
+  }
+}

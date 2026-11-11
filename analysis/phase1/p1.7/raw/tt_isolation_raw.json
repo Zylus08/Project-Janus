@@ -1,0 +1,452 @@
+{
+  "T0": {
+    "name": "T0: Single-Thread Baseline (1T)",
+    "threads": 1,
+    "total_nodes": 7979008,
+    "total_elapsed_sec": 5.784,
+    "avg_depth": 12.6,
+    "nps": 1379401,
+    "positions": [
+      {
+        "bestmove": "e2e4",
+        "depth": 11,
+        "nodes": 616448,
+        "score": 32,
+        "elapsed_sec": 0.6773,
+        "position": "startpos"
+      },
+      {
+        "bestmove": "e2a6",
+        "depth": 8,
+        "nodes": 401408,
+        "score": 9,
+        "elapsed_sec": 0.5705,
+        "position": "kiwipete"
+      },
+      {
+        "bestmove": "b4f4",
+        "depth": 15,
+        "nodes": 907264,
+        "score": 21,
+        "elapsed_sec": 0.5615,
+        "position": "pos3_endgame"
+      },
+      {
+        "bestmove": "a2a3",
+        "depth": 9,
+        "nodes": 503808,
+        "score": 5,
+        "elapsed_sec": 0.5581,
+        "position": "sharp_sicilian"
+      },
+      {
+        "bestmove": "g8h6",
+        "depth": 9,
+        "nodes": 528384,
+        "score": -3,
+        "elapsed_sec": 0.5662,
+        "position": "closed_french"
+      },
+      {
+        "bestmove": "c3d5",
+        "depth": 11,
+        "nodes": 559104,
+        "score": 176,
+        "elapsed_sec": 0.5695,
+        "position": "king_safety_sharp"
+      },
+      {
+        "bestmove": "e2f3",
+        "depth": 22,
+        "nodes": 1271808,
+        "score": 0,
+        "elapsed_sec": 0.5679,
+        "position": "opposite_bishops"
+      },
+      {
+        "bestmove": "d3c3",
+        "depth": 22,
+        "nodes": 1214464,
+        "score": 283,
+        "elapsed_sec": 0.5728,
+        "position": "rook_endgame"
+      },
+      {
+        "bestmove": "h5f7",
+        "depth": 9,
+        "nodes": 946176,
+        "score": 28999,
+        "elapsed_sec": 0.5721,
+        "position": "scholars_mate"
+      },
+      {
+        "bestmove": "d5f6",
+        "depth": 10,
+        "nodes": 1030144,
+        "score": 28997,
+        "elapsed_sec": 0.5685,
+        "position": "legals_mate"
+      }
+    ]
+  },
+  "T1": {
+    "name": "T1: Independent Private TTs (4T)",
+    "threads": 4,
+    "total_nodes": 32086016,
+    "total_elapsed_sec": 5.795,
+    "avg_depth": 12.6,
+    "nps": 5536367,
+    "positions": [
+      {
+        "bestmove": "e2e4",
+        "depth": 11,
+        "nodes": 2985984,
+        "score": 32,
+        "elapsed_sec": 0.6961,
+        "position": "startpos"
+      },
+      {
+        "bestmove": "e2a6",
+        "depth": 8,
+        "nodes": 2041856,
+        "score": 9,
+        "elapsed_sec": 0.5557,
+        "position": "kiwipete"
+      },
+      {
+        "bestmove": "b4f4",
+        "depth": 15,
+        "nodes": 3633152,
+        "score": 59,
+        "elapsed_sec": 0.6272,
+        "position": "pos3_endgame"
+      },
+      {
+        "bestmove": "a2a3",
+        "depth": 9,
+        "nodes": 2334720,
+        "score": 5,
+        "elapsed_sec": 0.5637,
+        "position": "sharp_sicilian"
+      },
+      {
+        "bestmove": "b6c7",
+        "depth": 10,
+        "nodes": 2455552,
+        "score": 21,
+        "elapsed_sec": 0.5544,
+        "position": "closed_french"
+      },
+      {
+        "bestmove": "c3d5",
+        "depth": 11,
+        "nodes": 2426880,
+        "score": 176,
+        "elapsed_sec": 0.5613,
+        "position": "king_safety_sharp"
+      },
+      {
+        "bestmove": "e2f3",
+        "depth": 22,
+        "nodes": 4507648,
+        "score": 0,
+        "elapsed_sec": 0.5583,
+        "position": "opposite_bishops"
+      },
+      {
+        "bestmove": "d3c3",
+        "depth": 22,
+        "nodes": 3858432,
+        "score": 285,
+        "elapsed_sec": 0.5591,
+        "position": "rook_endgame"
+      },
+      {
+        "bestmove": "h5f7",
+        "depth": 9,
+        "nodes": 3950592,
+        "score": 28999,
+        "elapsed_sec": 0.5591,
+        "position": "scholars_mate"
+      },
+      {
+        "bestmove": "d5f6",
+        "depth": 9,
+        "nodes": 3891200,
+        "score": 28997,
+        "elapsed_sec": 0.5606,
+        "position": "legals_mate"
+      }
+    ]
+  },
+  "T2": {
+    "name": "T2: Existing X11 Shared TT (4T)",
+    "threads": 4,
+    "total_nodes": 32249856,
+    "total_elapsed_sec": 5.514,
+    "avg_depth": 14.8,
+    "nps": 5848510,
+    "positions": [
+      {
+        "bestmove": "e2e4",
+        "depth": 12,
+        "nodes": 2887680,
+        "score": 11,
+        "elapsed_sec": 0.5543,
+        "position": "startpos"
+      },
+      {
+        "bestmove": "e2a6",
+        "depth": 9,
+        "nodes": 1935360,
+        "score": -33,
+        "elapsed_sec": 0.5503,
+        "position": "kiwipete"
+      },
+      {
+        "bestmove": "b4f4",
+        "depth": 16,
+        "nodes": 3751936,
+        "score": 53,
+        "elapsed_sec": 0.552,
+        "position": "pos3_endgame"
+      },
+      {
+        "bestmove": "a2a3",
+        "depth": 11,
+        "nodes": 2496512,
+        "score": 0,
+        "elapsed_sec": 0.5496,
+        "position": "sharp_sicilian"
+      },
+      {
+        "bestmove": "b6c7",
+        "depth": 11,
+        "nodes": 2449408,
+        "score": 36,
+        "elapsed_sec": 0.5558,
+        "position": "closed_french"
+      },
+      {
+        "bestmove": "c3d5",
+        "depth": 11,
+        "nodes": 2592768,
+        "score": 176,
+        "elapsed_sec": 0.5522,
+        "position": "king_safety_sharp"
+      },
+      {
+        "bestmove": "e1d1",
+        "depth": 34,
+        "nodes": 4773888,
+        "score": 0,
+        "elapsed_sec": 0.5482,
+        "position": "opposite_bishops"
+      },
+      {
+        "bestmove": "d3c3",
+        "depth": 25,
+        "nodes": 3569664,
+        "score": 360,
+        "elapsed_sec": 0.5521,
+        "position": "rook_endgame"
+      },
+      {
+        "bestmove": "h5f7",
+        "depth": 9,
+        "nodes": 3946496,
+        "score": 28999,
+        "elapsed_sec": 0.5482,
+        "position": "scholars_mate"
+      },
+      {
+        "bestmove": "d5f6",
+        "depth": 10,
+        "nodes": 3846144,
+        "score": 28997,
+        "elapsed_sec": 0.5515,
+        "position": "legals_mate"
+      }
+    ]
+  },
+  "T3": {
+    "name": "T3: Restricted Helper Writes (4T)",
+    "threads": 4,
+    "total_nodes": 34699264,
+    "total_elapsed_sec": 5.577,
+    "avg_depth": 13.4,
+    "nps": 6221962,
+    "positions": [
+      {
+        "bestmove": "e2e4",
+        "depth": 11,
+        "nodes": 2742272,
+        "score": 32,
+        "elapsed_sec": 0.6357,
+        "position": "startpos"
+      },
+      {
+        "bestmove": "e2a6",
+        "depth": 8,
+        "nodes": 1902592,
+        "score": 9,
+        "elapsed_sec": 0.5549,
+        "position": "kiwipete"
+      },
+      {
+        "bestmove": "b4f4",
+        "depth": 15,
+        "nodes": 3907584,
+        "score": 67,
+        "elapsed_sec": 0.5491,
+        "position": "pos3_endgame"
+      },
+      {
+        "bestmove": "a2a3",
+        "depth": 10,
+        "nodes": 2527232,
+        "score": 3,
+        "elapsed_sec": 0.546,
+        "position": "sharp_sicilian"
+      },
+      {
+        "bestmove": "a7a5",
+        "depth": 11,
+        "nodes": 2566144,
+        "score": 34,
+        "elapsed_sec": 0.5472,
+        "position": "closed_french"
+      },
+      {
+        "bestmove": "c3d5",
+        "depth": 11,
+        "nodes": 2801664,
+        "score": 176,
+        "elapsed_sec": 0.5505,
+        "position": "king_safety_sharp"
+      },
+      {
+        "bestmove": "e2f3",
+        "depth": 27,
+        "nodes": 5076992,
+        "score": 0,
+        "elapsed_sec": 0.5521,
+        "position": "opposite_bishops"
+      },
+      {
+        "bestmove": "d3c3",
+        "depth": 22,
+        "nodes": 4546560,
+        "score": 275,
+        "elapsed_sec": 0.5469,
+        "position": "rook_endgame"
+      },
+      {
+        "bestmove": "h5f7",
+        "depth": 9,
+        "nodes": 4427776,
+        "score": 28999,
+        "elapsed_sec": 0.5479,
+        "position": "scholars_mate"
+      },
+      {
+        "bestmove": "d5f6",
+        "depth": 10,
+        "nodes": 4200448,
+        "score": 28997,
+        "elapsed_sec": 0.5466,
+        "position": "legals_mate"
+      }
+    ]
+  },
+  "T4": {
+    "name": "T4: 64B Cache-Packed Cluster + Smart Replacement (4T)",
+    "threads": 4,
+    "total_nodes": 34107392,
+    "total_elapsed_sec": 5.601,
+    "avg_depth": 14.6,
+    "nps": 6089953,
+    "positions": [
+      {
+        "bestmove": "e2e3",
+        "depth": 12,
+        "nodes": 3057664,
+        "score": 12,
+        "elapsed_sec": 0.6188,
+        "position": "startpos"
+      },
+      {
+        "bestmove": "e2a6",
+        "depth": 9,
+        "nodes": 2082816,
+        "score": -33,
+        "elapsed_sec": 0.549,
+        "position": "kiwipete"
+      },
+      {
+        "bestmove": "b4f4",
+        "depth": 16,
+        "nodes": 4124672,
+        "score": 59,
+        "elapsed_sec": 0.5496,
+        "position": "pos3_endgame"
+      },
+      {
+        "bestmove": "a2a3",
+        "depth": 10,
+        "nodes": 2410496,
+        "score": 0,
+        "elapsed_sec": 0.5521,
+        "position": "sharp_sicilian"
+      },
+      {
+        "bestmove": "b6c7",
+        "depth": 11,
+        "nodes": 2469888,
+        "score": 36,
+        "elapsed_sec": 0.5509,
+        "position": "closed_french"
+      },
+      {
+        "bestmove": "c3d5",
+        "depth": 11,
+        "nodes": 2717696,
+        "score": 176,
+        "elapsed_sec": 0.5586,
+        "position": "king_safety_sharp"
+      },
+      {
+        "bestmove": "e1d1",
+        "depth": 35,
+        "nodes": 4954112,
+        "score": 0,
+        "elapsed_sec": 0.5501,
+        "position": "opposite_bishops"
+      },
+      {
+        "bestmove": "d3c3",
+        "depth": 23,
+        "nodes": 4122624,
+        "score": 297,
+        "elapsed_sec": 0.5634,
+        "position": "rook_endgame"
+      },
+      {
+        "bestmove": "h5f7",
+        "depth": 9,
+        "nodes": 4165632,
+        "score": 28999,
+        "elapsed_sec": 0.555,
+        "position": "scholars_mate"
+      },
+      {
+        "bestmove": "d5f6",
+        "depth": 10,
+        "nodes": 4001792,
+        "score": 28997,
+        "elapsed_sec": 0.5531,
+        "position": "legals_mate"
+      }
+    ]
+  }
+}

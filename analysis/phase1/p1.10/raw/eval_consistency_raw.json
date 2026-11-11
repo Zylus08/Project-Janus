@@ -1,0 +1,318 @@
+{
+  "metadata": {
+    "title": "Evaluation Consistency & Pruning Bounds Telemetry",
+    "positions_tested": 50
+  },
+  "color_symmetry_audit": {
+    "tested": 50,
+    "passed": 50,
+    "failed": 0
+  },
+  "mate_score_separation_audit": {
+    "max_static_score": 952,
+    "min_static_score": -347,
+    "safe_separation_verified": true
+  },
+  "score_divergence_and_pruning_audit": [
+    {
+      "id": "DEV_001",
+      "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 5",
+      "x7": {
+        "static_cp": -100,
+        "search_cp": -90,
+        "divergence": 10,
+        "nodes": 55106,
+        "bestmove": "b1c3"
+      },
+      "x14": {
+        "static_cp": -149,
+        "search_cp": -103,
+        "divergence": 46,
+        "nodes": 32539,
+        "bestmove": "c4d5"
+      },
+      "rfp_inflation_risk": false,
+      "move_agreement": false
+    },
+    {
+      "id": "DEV_002",
+      "fen": "r1b2rk1/pp1nbppp/2p1pn2/q5B1/2BP4/2N1PN2/PP3PPP/R2Q1RK1 w - - 3 10",
+      "x7": {
+        "static_cp": 99,
+        "search_cp": 82,
+        "divergence": 17,
+        "nodes": 154104,
+        "bestmove": "d1c2"
+      },
+      "x14": {
+        "static_cp": 99,
+        "search_cp": 83,
+        "divergence": 16,
+        "nodes": 143251,
+        "bestmove": "e3e4"
+      },
+      "rfp_inflation_risk": false,
+      "move_agreement": false
+    },
+    {
+      "id": "DEV_003",
+      "fen": "r2q1rk1/1pp1bppp/p1np1nb1/4p3/B3P1P1/2PP1N1P/PP3P2/RNBQR1K1 w - - 1 11",
+      "x7": {
+        "static_cp": -53,
+        "search_cp": 8,
+        "divergence": 61,
+        "nodes": 24347,
+        "bestmove": "a4c6"
+      },
+      "x14": {
+        "static_cp": -41,
+        "search_cp": 28,
+        "divergence": 69,
+        "nodes": 20023,
+        "bestmove": "a4c6"
+      },
+      "rfp_inflation_risk": false,
+      "move_agreement": true
+    },
+    {
+      "id": "DEV_004",
+      "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/3NP3/2N1BP2/PPPQ2PP/R3KB1R w KQ - 1 9",
+      "x7": {
+        "static_cp": 97,
+        "search_cp": 108,
+        "divergence": 11,
+        "nodes": 34860,
+        "bestmove": "d4c6"
+      },
+      "x14": {
+        "static_cp": 97,
+        "search_cp": 93,
+        "divergence": 4,
+        "nodes": 35026,
+        "bestmove": "d4c6"
+      },
+      "rfp_inflation_risk": false,
+      "move_agreement": true
+    },
+    {
+      "id": "DEV_005",
+      "fen": "r3k2r/pb1n1ppp/1p1bp3/3p4/2PP4/1P1B1N2/PB1N1PPP/R4RK1 w kq - 1 13",
+      "x7": {
+        "static_cp": 343,
+        "search_cp": 383,
+        "divergence": 40,
+        "nodes": 28093,
+        "bestmove": "c4d5"
+      },
+      "x14": {
+        "static_cp": 349,
+        "search_cp": 364,
+        "divergence": 15,
+        "nodes": 31865,
+        "bestmove": "c4d5"
+      },
+      "rfp_inflation_risk": false,
+      "move_agreement": true
+    },
+    {
+      "id": "DEV_006",
+      "fen": "2r2rk1/1bqnbppp/p2ppn2/1p6/3NPPP1/P1N1B3/1PPQB2P/2KR3R w - - 1 14",
+      "x7": {
+        "static_cp": 15,
+        "search_cp": -5,
+        "divergence": 20,
+        "nodes": 80118,
+        "bestmove": "e2f3"
+      },
+      "x14": {
+        "static_cp": 19,
+        "search_cp": -9,
+        "divergence": 28,
+        "nodes": 85508,
+        "bestmove": "e2f3"
+      },
+      "rfp_inflation_risk": false,
+      "move_agreement": true
+    },
+    {
+      "id": "DEV_007",
+      "fen": "r2qk2r/pb1nbppp/1pn1p3/2ppP3/3P4/2PB1NN1/PP3PPP/R1BQK2R w KQkq - 1 10",
+      "x7": {
+        "static_cp": 66,
+        "search_cp": 40,
+        "divergence": 26,
+        "nodes": 94554,
+        "bestmove": "c1f4"
+      },
+      "x14": {
+        "static_cp": 62,
+        "search_cp": 35,
+        "divergence": 27,
+        "nodes": 74706,
+        "bestmove": "g3h5"
+      },
+      "rfp_inflation_risk": false,
+      "move_agreement": false
+    },
+    {
+      "id": "DEV_008",
+      "fen": "r1b1k2r/ppppqppp/2n5/b3P3/2B5/1Q3N2/PB3PPP/R4RK1 w kq - 3 12",
+      "x7": {
+        "static_cp": -46,
+        "search_cp": -98,
+        "divergence": 52,
+        "nodes": 197732,
+        "bestmove": "f1d1"
+      },
+      "x14": {
+        "static_cp": -12,
+        "search_cp": -72,
+        "divergence": 60,
+        "nodes": 127539,
+        "bestmove": "b3d3"
+      },
+      "rfp_inflation_risk": false,
+      "move_agreement": false
+    },
+    {
+      "id": "DEV_009",
+      "fen": "r2q1rk1/pp1b1ppp/2n1p3/2b5/8/2NB1N2/PPP2PPP/R2Q1RK1 w - - 0 12",
+      "x7": {
+        "static_cp": 21,
+        "search_cp": 8,
+        "divergence": 13,
+        "nodes": 162402,
+        "bestmove": "d1d2"
+      },
+      "x14": {
+        "static_cp": 4,
+        "search_cp": -13,
+        "divergence": 17,
+        "nodes": 165536,
+        "bestmove": "c3e4"
+      },
+      "rfp_inflation_risk": false,
+      "move_agreement": false
+    },
+    {
+      "id": "DEV_010",
+      "fen": "r1b1k2r/ppqn1ppp/2pbpn2/3p4/2PP4/2N1PN2/PPQ2PPP/R1B1KB1R w KQkq - 3 8",
+      "x7": {
+        "static_cp": 23,
+        "search_cp": 55,
+        "divergence": 32,
+        "nodes": 29632,
+        "bestmove": "c4c5"
+      },
+      "x14": {
+        "static_cp": 27,
+        "search_cp": 52,
+        "divergence": 25,
+        "nodes": 79901,
+        "bestmove": "c4c5"
+      },
+      "rfp_inflation_risk": false,
+      "move_agreement": true
+    },
+    {
+      "id": "DEV_011",
+      "fen": "rnbq1rk1/ppp1bppp/4pn2/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R w KQ - 0 6",
+      "x7": {
+        "static_cp": 55,
+        "search_cp": 28,
+        "divergence": 27,
+        "nodes": 73959,
+        "bestmove": "f1d3"
+      },
+      "x14": {
+        "static_cp": 59,
+        "search_cp": 35,
+        "divergence": 24,
+        "nodes": 90740,
+        "bestmove": "c4c5"
+      },
+      "rfp_inflation_risk": false,
+      "move_agreement": false
+    },
+    {
+      "id": "DEV_012",
+      "fen": "r1bq1rk1/pp1n1pbp/2pp1np1/4p3/2PPP3/2N1BP2/PP2N1PP/R2QKB1R w KQ - 0 9",
+      "x7": {
+        "static_cp": 38,
+        "search_cp": 9,
+        "divergence": 29,
+        "nodes": 173763,
+        "bestmove": "g2g4"
+      },
+      "x14": {
+        "static_cp": 42,
+        "search_cp": 24,
+        "divergence": 18,
+        "nodes": 113478,
+        "bestmove": "d1b3"
+      },
+      "rfp_inflation_risk": false,
+      "move_agreement": false
+    },
+    {
+      "id": "DEV_013",
+      "fen": "r2q1rk1/1p1nbppp/p1p1pn2/3p4/2PP4/1PN1PN2/PB2BPPP/R2Q1RK1 b - - 2 10",
+      "x7": {
+        "static_cp": -315,
+        "search_cp": -340,
+        "divergence": 25,
+        "nodes": 142022,
+        "bestmove": "c6c5"
+      },
+      "x14": {
+        "static_cp": -318,
+        "search_cp": -332,
+        "divergence": 14,
+        "nodes": 106757,
+        "bestmove": "d8c7"
+      },
+      "rfp_inflation_risk": false,
+      "move_agreement": false
+    },
+    {
+      "id": "DEV_014",
+      "fen": "r1bq1rk1/pp1n1ppp/2p1pn2/3p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQ - 1 8",
+      "x7": {
+        "static_cp": 394,
+        "search_cp": 403,
+        "divergence": 9,
+        "nodes": 111976,
+        "bestmove": "f1d3"
+      },
+      "x14": {
+        "static_cp": 403,
+        "search_cp": 414,
+        "divergence": 11,
+        "nodes": 89918,
+        "bestmove": "d1c2"
+      },
+      "rfp_inflation_risk": false,
+      "move_agreement": false
+    },
+    {
+      "id": "DEV_015",
+      "fen": "rnbqk2r/pp1p1ppp/2p1pn2/8/1bPP4/2N1P3/PP3PPP/R1BQKBNR w KQkq - 0 5",
+      "x7": {
+        "static_cp": 82,
+        "search_cp": 48,
+        "divergence": 34,
+        "nodes": 48039,
+        "bestmove": "g1e2"
+      },
+      "x14": {
+        "static_cp": 86,
+        "search_cp": 51,
+        "divergence": 35,
+        "nodes": 39171,
+        "bestmove": "c1d2"
+      },
+      "rfp_inflation_risk": false,
+      "move_agreement": false
+    }
+  ]
+}

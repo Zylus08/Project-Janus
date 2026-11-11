@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "title": "Cross-Version Evaluation and Search Forensics",
+    "positions_tested": 60
+  },
+  "score_distributions": {
+    "X7": {
+      "name": "Janus Classical X7 (1T Baseline)",
+      "eval_mode": "E5",
+      "mean_score": 103.17,
+      "mean_absolute_score": 159.93,
+      "std_dev": 244.81,
+      "max_score": 953,
+      "min_score": -563
+    },
+    "X10": {
+      "name": "Janus Classical X10 (1T Eval Ref)",
+      "eval_mode": "E10",
+      "mean_score": 109.63,
+      "mean_absolute_score": 171.43,
+      "std_dev": 263.23,
+      "max_score": 972,
+      "min_score": -593
+    },
+    "X12": {
+      "name": "Janus Classical X12 (4T Baseline)",
+      "eval_mode": "E10",
+      "mean_score": 109.63,
+      "mean_absolute_score": 171.43,
+      "std_dev": 263.23,
+      "max_score": 972,
+      "min_score": -593
+    },
+    "X13": {
+      "name": "Janus Classical X13 (Experimental)",
+      "eval_mode": "E10",
+      "mean_score": 109.63,
+      "mean_absolute_score": 171.43,
+      "std_dev": 263.23,
+      "max_score": 972,
+      "min_score": -593
+    },
+    "X14": {
+      "name": "Janus Classical X14 (Candidate)",
+      "eval_mode": "E11",
+      "mean_score": 111.62,
+      "mean_absolute_score": 171.45,
+      "std_dev": 262.49,
+      "max_score": 972,
+      "min_score": -583
+    }
+  },
+  "fixed_depth_8_search": {
+    "X7": {
+      "avg_nodes_per_pos": 161444,
+      "avg_nps": 877105,
+      "total_time_s": 3.681,
+      "total_nodes": 3228890
+    },
+    "X10": {
+      "avg_nodes_per_pos": 170383,
+      "avg_nps": 908277,
+      "total_time_s": 3.752,
+      "total_nodes": 3407677
+    },
+    "X12": {
+      "avg_nodes_per_pos": 154713,
+      "avg_nps": 764056,
+      "total_time_s": 4.05,
+      "total_nodes": 3094274
+    },
+    "X13": {
+      "avg_nodes_per_pos": 154713,
+      "avg_nps": 749963,
+      "total_time_s": 4.126,
+      "total_nodes": 3094274
+    },
+    "X14": {
+      "avg_nodes_per_pos": 155939,
+      "avg_nps": 740770,
+      "total_time_s": 4.21,
+      "total_nodes": 3118793
+    }
+  }
+}

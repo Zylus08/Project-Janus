@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "title": "Janus Classical X15 Correctness Regression Report",
+    "executable": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.10\\control\\janus_classical_x15.exe",
+    "timestamp": "2026-11-12T01:34:08"
+  },
+  "tests": {
+    "color_symmetry": {
+      "passed": true,
+      "total": 8,
+      "successful": 8,
+      "details": [
+        {
+          "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+          "mirrored_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR b KQkq - 0 1",
+          "score": 64,
+          "mirrored_score": 64,
+          "passed": true
+        },
+        {
+          "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+          "mirrored_fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 2 3",
+          "score": 50,
+          "mirrored_score": 50,
+          "passed": true
+        },
+        {
+          "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 5",
+          "mirrored_fen": "rnbqk2r/pppp1ppp/5n2/2b1N3/4P3/2N5/PPPP1PPP/R1BQKB1R b KQkq - 0 5",
+          "score": -149,
+          "mirrored_score": -149,
+          "passed": true
+        },
+        {
+          "fen": "r1b1k2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 0 7",
+          "mirrored_fen": "r1bqk2r/pp1n1ppp/2pbpn2/3p4/2PP4/2N1PN2/PP2BPPP/R1B1K2R b KQkq - 0 7",
+          "score": 893,
+          "mirrored_score": 893,
+          "passed": true
+        },
+        {
+          "fen": "8/8/4k3/8/4K3/8/8/8 w - - 0 1",
+          "mirrored_fen": "8/8/8/4k3/8/4K3/8/8 b - - 0 1",
+          "score": 0,
+          "mirrored_score": 0,
+          "passed": true
+        },
+        {
+          "fen": "8/5p2/8/2k2p1p/2P2P1P/3K2P1/8/8 w - - 0 40",
+          "mirrored_fen": "8/8/3k2p1/2p2p1p/2K2P1P/8/5P2/8 b - - 0 40",
+          "score": 182,
+          "mirrored_score": 182,
+          "passed": true
+        },
+        {
+          "fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+          "mirrored_fen": "r3k2r/pppbbppp/2n2q1P/1P2p3/3pn3/BN2PNP1/P1PPQPB1/R3K2R b KQkq - 0 1",
+          "score": 138,
+          "mirrored_score": 138,
+          "passed": true
+        },
+        {
+          "fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+          "mirrored_fen": "8/4p1p1/8/1r3P1K/kp5R/3P4/2P5/8 b - - 0 1",
+          "score": 11,
+          "mirrored_score": 11,
+          "passed": true
+        }
+      ]
+    },
+    "mate_precision": {
+      "passed": true,
+      "total": 3,
+      "successful": 3,
+      "details": [
+        {
+          "desc": "Scholar's Mate (Mate in 1)",
+          "expected": "h5f7",
+          "bestmove": "h5f7",
+          "passed": true
+        },
+        {
+          "desc": "L\u00e9gal Trap Smothered Mate (Mate in 2)",
+          "expected": "d5f6",
+          "bestmove": "d5f6",
+          "passed": true
+        },
+        {
+          "desc": "Back-rank Mate in 1",
+          "expected": "e2e8",
+          "bestmove": "e2e8",
+          "passed": true
+        }
+      ]
+    },
+    "tactical_blindness_dev12": {
+      "passed": true,
+      "bestmove_1t": "e2a6",
+      "bestmove_4t": "e2a6",
+      "expected": "e2a6"
+    },
+    "low_clock_compliance": {
+      "passed": true,
+      "total": 4,
+      "successful": 4,
+      "details": [
+        {
+          "target_ms": 10,
+          "actual_ms": 96.7,
+          "bestmove": "bestmove b1c3",
+          "passed": true
+        },
+        {
+          "target_ms": 25,
+          "actual_ms": 100.8,
+          "bestmove": "bestmove b1c3",
+          "passed": true
+        },
+        {
+          "target_ms": 50,
+          "actual_ms": 173.0,
+          "bestmove": "bestmove d2d4",
+          "passed": true
+        },
+        {
+          "target_ms": 100,
+          "actual_ms": 183.0,
+          "bestmove": "bestmove d2d4",
+          "passed": true
+        }
+      ]
+    }
+  },
+  "all_passed": true
+}

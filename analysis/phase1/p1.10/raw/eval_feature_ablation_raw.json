@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "title": "Phase 3 Isolated Evaluation Feature Ablations",
+    "positions_tested": 12,
+    "movetime_ms": 400
+  },
+  "single_thread_study": {
+    "E0_X7_BASE": {
+      "name": "E0: Frozen X7 Baseline (Flat E5, No LMP, Fixed Time)",
+      "threads": 1,
+      "variant": "X7",
+      "eval": "E5",
+      "lmp": "L0",
+      "dyntime": false,
+      "avg_depth": 15.33,
+      "avg_nps": 1410028,
+      "tactics_solved": 5,
+      "total_nodes": 7205248,
+      "total_time_s": 5.11
+    },
+    "E1_PAWN_E10": {
+      "name": "E1: X7 Search + Pawn Structure v2 only",
+      "threads": 1,
+      "variant": "X7",
+      "eval": "E1",
+      "lmp": "L0",
+      "dyntime": false,
+      "avg_depth": 16.25,
+      "avg_nps": 1833922,
+      "tactics_solved": 5,
+      "total_nodes": 10109312,
+      "total_time_s": 5.51
+    },
+    "E2_KING_E10": {
+      "name": "E2: X7 Search + King Safety v2 only",
+      "threads": 1,
+      "variant": "X7",
+      "eval": "E2",
+      "lmp": "L0",
+      "dyntime": false,
+      "avg_depth": 15.83,
+      "avg_nps": 1725231,
+      "tactics_solved": 5,
+      "total_nodes": 9662848,
+      "total_time_s": 5.6
+    },
+    "E3_ACT_E10": {
+      "name": "E3: X7 Search + Piece Activity v2 only",
+      "threads": 1,
+      "variant": "X7",
+      "eval": "E3",
+      "lmp": "L0",
+      "dyntime": false,
+      "avg_depth": 16.08,
+      "avg_nps": 1810884,
+      "tactics_solved": 5,
+      "total_nodes": 9789824,
+      "total_time_s": 5.41
+    },
+    "E4_END_E10": {
+      "name": "E4: X7 Search + Endgame Positional v2 only",
+      "threads": 1,
+      "variant": "X7",
+      "eval": "E4",
+      "lmp": "L0",
+      "dyntime": false,
+      "avg_depth": 16.25,
+      "avg_nps": 2154838,
+      "tactics_solved": 5,
+      "total_nodes": 11342208,
+      "total_time_s": 5.26
+    },
+    "E5_E10_FULL": {
+      "name": "E5: X7 Search + Full E10 Eval (No LMP, Fixed Time)",
+      "threads": 1,
+      "variant": "X7",
+      "eval": "E10",
+      "lmp": "L0",
+      "dyntime": false,
+      "avg_depth": 15.42,
+      "avg_nps": 1322565,
+      "tactics_solved": 5,
+      "total_nodes": 6908288,
+      "total_time_s": 5.22
+    },
+    "E6_E11_FULL": {
+      "name": "E6: X7 Search + Refined E11 Eval (No LMP, Fixed Time)",
+      "threads": 1,
+      "variant": "X7",
+      "eval": "E14",
+      "lmp": "L0",
+      "dyntime": false,
+      "avg_depth": 15.17,
+      "avg_nps": 1204849,
+      "tactics_solved": 4,
+      "total_nodes": 6263168,
+      "total_time_s": 5.2
+    },
+    "E7_X14_FULL": {
+      "name": "E7: Full Frozen X14 (Refined E11, Quadratic LMP, DynTime)",
+      "threads": 1,
+      "variant": "X14",
+      "eval": "E11",
+      "lmp": "L1",
+      "dyntime": true,
+      "avg_depth": 15.83,
+      "avg_nps": 1197260,
+      "tactics_solved": 4,
+      "total_nodes": 6408576,
+      "total_time_s": 5.35
+    }
+  },
+  "four_thread_study": {
+    "T0_X12_BASE": {
+      "name": "T0: Frozen X12 Baseline (4T, E10 Eval, LMP L1)",
+      "threads": 4,
+      "variant": "X12",
+      "eval": "E10",
+      "lmp": "L1",
+      "dyntime": true,
+      "avg_depth": 16.17,
+      "avg_nps": 4224827,
+      "tactics_solved": 5,
+      "total_nodes": 22028672,
+      "total_time_s": 5.21
+    },
+    "T1_PAWN_REFINED": {
+      "name": "T1: X12 Search + Refined Pawn Structure (E11)",
+      "threads": 4,
+      "variant": "X12",
+      "eval": "E11",
+      "lmp": "L1",
+      "dyntime": true,
+      "avg_depth": 15.75,
+      "avg_nps": 3850461,
+      "tactics_solved": 4,
+      "total_nodes": 20021632,
+      "total_time_s": 5.2
+    },
+    "T2_KING_REFINED": {
+      "name": "T2: X12 Search + Refined King Safety (E12)",
+      "threads": 4,
+      "variant": "X12",
+      "eval": "E12",
+      "lmp": "L1",
+      "dyntime": true,
+      "avg_depth": 16.08,
+      "avg_nps": 4392805,
+      "tactics_solved": 4,
+      "total_nodes": 22253952,
+      "total_time_s": 5.07
+    },
+    "T3_END_REFINED": {
+      "name": "T3: X12 Search + Refined Endgame Terms (E13)",
+      "threads": 4,
+      "variant": "X12",
+      "eval": "E13",
+      "lmp": "L1",
+      "dyntime": true,
+      "avg_depth": 15.83,
+      "avg_nps": 4464899,
+      "tactics_solved": 5,
+      "total_nodes": 22784384,
+      "total_time_s": 5.1
+    },
+    "T4_FULL_E11": {
+      "name": "T4: X12 Search + Full Refined E11 (E14, LMP L1)",
+      "threads": 4,
+      "variant": "X12",
+      "eval": "E14",
+      "lmp": "L1",
+      "dyntime": true,
+      "avg_depth": 16.0,
+      "avg_nps": 4147735,
+      "tactics_solved": 4,
+      "total_nodes": 21211520,
+      "total_time_s": 5.11
+    },
+    "T5_NO_LMP": {
+      "name": "T5: X12 Search + Full Refined E11 with LMP OFF (LMP L0)",
+      "threads": 4,
+      "variant": "X12",
+      "eval": "E14",
+      "lmp": "L0",
+      "dyntime": true,
+      "avg_depth": 15.67,
+      "avg_nps": 4317681,
+      "tactics_solved": 4,
+      "total_nodes": 21930368,
+      "total_time_s": 5.08
+    }
+  }
+}

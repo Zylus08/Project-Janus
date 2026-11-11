@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "title": "P1.9 Independent Scientific Evidence & Integrity Audit",
+    "auditor": "Principal Computer Chess Engineer & Independent Auditor",
+    "total_games_audited": 540
+  },
+  "binaries": {
+    "X7": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.3\\control\\janus_classical_x7.exe",
+      "sha256": "86392a2f4bd4182a4d7dc21e32940bd7939f6816794d5e1ab02f4082431ca28b",
+      "bytes": 370176
+    },
+    "X10": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.5\\control\\janus_classical_x10.exe",
+      "sha256": "1ef060f89cb156b798cd2fbe67539d088c6c0fb3842006b734f07a03808b0f20",
+      "bytes": 382464
+    },
+    "X12": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.7\\control\\janus_classical_x12.exe",
+      "sha256": "00b4f5fedea02a392a1af9713a96512e5199a0e3ae55c295ad1c7cfff1b47059",
+      "bytes": 2874368
+    },
+    "X13": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.8\\control\\janus_classical_x13.exe",
+      "sha256": "a980cc08cd7cc99ae54a75c21f38dc9d65e568107a7fb79a31dd49fbe2533a29",
+      "bytes": 1303040
+    },
+    "X14": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.9\\control\\janus_classical_x14.exe",
+      "sha256": "c85374a96de4d26f774421526f1e5126bd89487b08787b5b78780ca27d6e116f",
+      "bytes": 1304576
+    },
+    "SF19": {
+      "path": "E:\\ChessXML\\tools\\stockfish\\stockfish.exe",
+      "sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "bytes": 103046300
+    }
+  },
+  "matches": {
+    "match_a": {
+      "pgn_file": "x14_1t_vs_x7_1t.pgn",
+      "total_games": 200,
+      "num_pairs": 100,
+      "wins_a": 49,
+      "draws": 63,
+      "wins_b": 88,
+      "points_a": 80.5,
+      "score_pct": 40.25,
+      "wilson_95": [
+        0.337,
+        0.4717
+      ],
+      "elo": -68.6,
+      "elo_95": [
+        -117.6,
+        -19.7
+      ],
+      "pair_mean_diff": -0.195,
+      "pair_variance": 0.353005,
+      "paired_t_stat": -3.282,
+      "degrees_of_freedom": 99,
+      "p_value_t": 0.001424,
+      "division_by_zero_in_se": false,
+      "exact_binomial_p": null
+    },
+    "match_b": {
+      "pgn_file": "x14_4t_vs_x12_4t.pgn",
+      "total_games": 200,
+      "num_pairs": 100,
+      "wins_a": 61,
+      "draws": 73,
+      "wins_b": 66,
+      "points_a": 97.5,
+      "score_pct": 48.75,
+      "wilson_95": [
+        0.4191,
+        0.5564
+      ],
+      "elo": -8.7,
+      "elo_95": [
+        -56.7,
+        39.3
+      ],
+      "pair_mean_diff": -0.025,
+      "pair_variance": 0.304924,
+      "paired_t_stat": -0.4527,
+      "degrees_of_freedom": 99,
+      "p_value_t": 0.651807,
+      "division_by_zero_in_se": false,
+      "exact_binomial_p": null
+    },
+    "match_c": {
+      "pgn_file": "x14_4t_vs_x12_4t_slow.pgn",
+      "total_games": 100,
+      "num_pairs": 50,
+      "wins_a": 42,
+      "draws": 17,
+      "wins_b": 41,
+      "points_a": 50.5,
+      "score_pct": 50.5,
+      "wilson_95": [
+        0.4087,
+        0.601
+      ],
+      "elo": 3.5,
+      "elo_95": [
+        -64.2,
+        71.1
+      ],
+      "pair_mean_diff": 0.01,
+      "pair_variance": 0.28051,
+      "paired_t_stat": 0.1335,
+      "degrees_of_freedom": 49,
+      "p_value_t": 0.898126,
+      "division_by_zero_in_se": false,
+      "exact_binomial_p": null
+    },
+    "match_sf": {
+      "pgn_file": "x14_4t_vs_sf19_4t.pgn",
+      "total_games": 40,
+      "num_pairs": 20,
+      "wins_a": 0,
+      "draws": 0,
+      "wins_b": 40,
+      "points_a": 0.0,
+      "score_pct": 0.0,
+      "wilson_95": [
+        0.0,
+        0.0876
+      ],
+      "elo": null,
+      "elo_95": [
+        null,
+        -407.0
+      ],
+      "pair_mean_diff": -1.0,
+      "pair_variance": 0.0,
+      "paired_t_stat": 0.0,
+      "degrees_of_freedom": 19,
+      "p_value_t": 0.931724,
+      "division_by_zero_in_se": true,
+      "exact_binomial_p": 9.094947017729282e-13
+    }
+  }
+}

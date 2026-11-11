@@ -322,29 +322,29 @@ static int  g_quiescence_see_mode = 2;         // Phase 2: 0=Q0 (Off), 1=Q1 (Ord
 static bool g_use_null_move_pruning = true;    // Phase 3: Null-Move Pruning (R=3, zugzwang protection)
 static int  g_nmp_reduction = 3;               // Base NMP reduction R=3
 static bool g_use_reverse_futility = true;     // Phase 4: Reverse Futility Pruning (d <= 3, margin = 80 * d)
-static int  g_rfp_margin_per_depth = 80;       // Margin per ply
+static int  g_rfp_margin_per_depth = 120;      // Margin per ply (120 for 1T, 90 for 4T)
 static bool g_use_aspiration_window = true;    // Phase 5: Aspiration Windows (delta = 25 cp)
 static int  g_aspiration_delta = 25;           // Aspiration delta
-static std::string g_search_variant = "X14";    // Active variant identifier (Default Candidate X7)
+static std::string g_search_variant = "X15";    // Active variant identifier (Default Candidate X15)
 
 // ============================================================================
 // Search Modernization & Positional Evaluation Options (Milestone P1.2)
 // ============================================================================
 static int g_conthist_mode = 3;       // 0=H0 (Off), 1=H1 (1-ply), 2=H2 (2-ply), 3=H3 (1-ply+2-ply)
 static int g_dynamic_lmr_mode = 3;     // 0=L0 (Static base), 1=L1 (Log table), 2=L2 (Hist mod), 3=L3 (Conthist mod)
-static int g_eval_mode = 5;            // 0=E0..5=E5 (X7), 6=E6..10=E10 (X10)
-static bool g_use_pawn_hash = false;   // P1.5: 64K entry Pawn Hash Table
-static bool g_dynamic_time_mgmt = false; // P1.5: Dynamic Time Management with stability & hard limits
+static int g_eval_mode = 15;           // 0=E0..5=E5 (X7), 10=E10 (X10), 11=E11 (X14), 15=E15 (X15)
+static bool g_use_pawn_hash = false;   // P1.10: 16K Thread-local Pawn Hash Table
+static bool g_dynamic_time_mgmt = false; // P1.10: Adaptive Time Management
 static std::chrono::steady_clock::time_point g_hard_deadline;
 static std::chrono::steady_clock::time_point g_search_start_time;
 static uint64_t g_telemetry_pawn_probes = 0;
 static uint64_t g_telemetry_pawn_hits = 0;
 
-// Milestone P1.6: Lazy SMP Multithreading & Safe Late Move Pruning
+// Milestone P1.10: Adaptive Search Architecture (Candidate S on 1T, Candidate P on 4T)
 static int g_num_threads = 1;
 static std::atomic<bool> g_stop_search{false};
 static bool g_use_lmp = false;
-static int g_lmp_mode = 1; // 0=L0 (Off), 1=L1 (Conservative quadratic), 2=L2 (History-aware), 3=L3 (Integrated)
+static int g_lmp_mode = 0; // 0=L0 (Off for 1T), 1=L1 (Conservative quadratic for 4T)
 static int g_lmp_max_depth = 4;
 static uint64_t g_telemetry_lmp_pruned = 0;
 static uint64_t g_telemetry_tt_hits = 0;
@@ -606,6 +606,34 @@ EXPORT void native_apply_search_variant(const char* var_str) {
         g_use_lmp = true; // Safe Late Move Pruning
         g_lmp_mode = 1; // L1: Conservative Quadratic LMP
         g_lmp_max_depth = 4;
+    } else if (var == "X15") { // P1.10 Candidate: Calibrated Evaluation, Tactical Safety & Thread-Adaptive Search
+        g_use_staged_movegen = true;
+        g_quiescence_see_mode = 2;
+        g_use_see_in_quiescence = true;
+        g_use_null_move_pruning = true;
+        g_use_reverse_futility = true;
+        g_use_aspiration_window = true;
+        g_conthist_mode = 3; // H3
+        g_dynamic_lmr_mode = 3; // L3 Calibrated
+        g_eval_mode = 15; // E15 Calibrated Classical Evaluation
+        g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
+        g_singular_extension_mode = 0; // S0 Off
+        g_multicut_mode = 0; // C0 Off
+        g_probcut_mode = 0; // P0 Off
+        if (g_num_threads == 1) {
+            g_use_pawn_hash = false;
+            g_dynamic_time_mgmt = false;
+            g_use_lmp = false;
+            g_lmp_mode = 0;
+            g_rfp_margin_per_depth = 120;
+        } else {
+            g_use_pawn_hash = true; // 16K Thread-local Pawn Hash Table
+            g_dynamic_time_mgmt = true;
+            g_use_lmp = true;
+            g_lmp_mode = 1; // Conservative Quadratic LMP
+            g_lmp_max_depth = 4;
+            g_rfp_margin_per_depth = 90;
+        }
     }
 }
 
@@ -2560,6 +2588,112 @@ EXPORT int native_evaluate_internal(const NativeBoard* b, int emode) {
                         int rr = rsq / 8;
                         if ((c == WHITE && rr < pr) || (c == BLACK && rr > pr)) {
                             eg_score[c] += 25;
+                        }
+                    }
+                }
+            }
+        }
+    } else if (emode == 15) { // E15: Janus Classical X15 Calibrated Evaluation
+        if (g_use_pawn_hash) {
+            g_telemetry_pawn_probes++;
+            uint64_t p_key = compute_pawn_zobrist(b);
+            size_t p_idx = p_key & (PAWN_HASH_SIZE - 1);
+            if (g_pawn_table[p_idx].key == p_key) {
+                g_telemetry_pawn_hits++;
+                mg_score[WHITE] += g_pawn_table[p_idx].mg[WHITE];
+                mg_score[BLACK] += g_pawn_table[p_idx].mg[BLACK];
+                eg_score[WHITE] += g_pawn_table[p_idx].eg[WHITE];
+                eg_score[BLACK] += g_pawn_table[p_idx].eg[BLACK];
+                passed_bb[WHITE] = g_pawn_table[p_idx].passed_pawns[WHITE];
+                passed_bb[BLACK] = g_pawn_table[p_idx].passed_pawns[BLACK];
+            } else {
+                int p_mg[2] = { 0, 0 };
+                int p_eg[2] = { 0, 0 };
+                eval_pawn_structure_v2(b, p_mg, p_eg, passed_bb);
+                g_pawn_table[p_idx].key = p_key;
+                g_pawn_table[p_idx].mg[WHITE] = (int16_t)p_mg[WHITE];
+                g_pawn_table[p_idx].mg[BLACK] = (int16_t)p_mg[BLACK];
+                g_pawn_table[p_idx].eg[WHITE] = (int16_t)p_eg[WHITE];
+                g_pawn_table[p_idx].eg[BLACK] = (int16_t)p_eg[BLACK];
+                g_pawn_table[p_idx].passed_pawns[WHITE] = passed_bb[WHITE];
+                g_pawn_table[p_idx].passed_pawns[BLACK] = passed_bb[BLACK];
+                mg_score[WHITE] += p_mg[WHITE];
+                mg_score[BLACK] += p_mg[BLACK];
+                eg_score[WHITE] += p_eg[WHITE];
+                eg_score[BLACK] += p_eg[BLACK];
+            }
+        } else {
+            eval_pawn_structure_v2(b, mg_score, eg_score, passed_bb);
+        }
+
+        // Calibrated Passer Blockade (conservative)
+        for (int c = 0; c < 2; c++) {
+            int them = 1 - c;
+            uint64_t my_passers = passed_bb[c];
+            while (my_passers) {
+                int psq = bitscan_forward(my_passers);
+                my_passers &= my_passers - 1;
+                int stop_sq = (c == WHITE) ? (psq + 8) : (psq - 8);
+                if (stop_sq >= 0 && stop_sq < 64) {
+                    if ((1ULL << stop_sq) & b->occupancy[them]) {
+                        mg_score[c] -= 10; eg_score[c] -= 15;
+                    }
+                }
+            }
+        }
+
+        eval_mobility_and_coordination_v2(b, mg_score, eg_score, passed_bb);
+        eval_king_safety_v2(b, mg_score, eg_score);
+
+        // Clamped King Central Open-File Term (prevents tactical blindness)
+        for (int c = 0; c < 2; c++) {
+            uint64_t kbb = b->pieces[c][KING];
+            if (!kbb) continue;
+            int ksq = bitscan_forward(kbb);
+            int kf = ksq % 8;
+            int kr = ksq / 8;
+            int them = 1 - c;
+            int enemy_queens = popcount64(b->pieces[them][QUEEN]);
+            if (kf >= 3 && kf <= 4 && ((c == WHITE && kr == 0) || (c == BLACK && kr == 7))) {
+                if ((b->pieces[c][PAWN] & FILE_MASKS[kf]) == 0) {
+                    mg_score[c] -= (enemy_queens > 0 ? 12 : 6);
+                }
+            }
+        }
+
+        // Calibrated Endgame Terms: Opposition & Tarrasch Rooks
+        eval_endgame_positional_v2(b, mg_score, eg_score, passed_bb);
+        uint64_t kw = b->pieces[WHITE][KING];
+        uint64_t kb = b->pieces[BLACK][KING];
+        if (kw && kb) {
+            int w_ksq = bitscan_forward(kw);
+            int b_ksq = bitscan_forward(kb);
+            int w_kf = w_ksq % 8, w_kr = w_ksq / 8;
+            int b_kf = b_ksq % 8, b_kr = b_ksq / 8;
+
+            int non_pawns = popcount64(b->occupancy[2] & ~(b->pieces[0][PAWN] | b->pieces[1][PAWN] | kw | kb));
+            if (non_pawns == 0) {
+                if (w_kf == b_kf && std::abs(w_kr - b_kr) == 2) {
+                    eg_score[b->side_to_move] -= 18;
+                    eg_score[1 - b->side_to_move] += 18;
+                }
+            }
+
+            for (int c = 0; c < 2; c++) {
+                uint64_t my_rooks = b->pieces[c][ROOK];
+                uint64_t passers = passed_bb[c];
+                while (passers) {
+                    int psq = bitscan_forward(passers);
+                    passers &= passers - 1;
+                    int pf = psq % 8;
+                    int pr = psq / 8;
+                    uint64_t file_rooks = my_rooks & FILE_MASKS[pf];
+                    while (file_rooks) {
+                        int rsq = bitscan_forward(file_rooks);
+                        file_rooks &= file_rooks - 1;
+                        int rr = rsq / 8;
+                        if ((c == WHITE && rr < pr) || (c == BLACK && rr > pr)) {
+                            eg_score[c] += 20;
                         }
                     }
                 }
@@ -4539,7 +4673,7 @@ static void uci_loop() {
         iss >> cmd;
 
         if (cmd == "uci") {
-            std::cout << "id name Janus Classical X (P1.9 Candidate X14)" << std::endl;
+            std::cout << "id name Janus Classical X (P1.10 Candidate X15)" << std::endl;
             std::cout << "id author Project Janus Developers" << std::endl;
             std::cout << "option name Threads type spin default 1 min 1 max 16" << std::endl;
             std::cout << "option name UCI_LMP type combo default L1 var L0 var L1 var L2 var L3" << std::endl;
@@ -4552,10 +4686,10 @@ static void uci_loop() {
             std::cout << "option name LMRBaseReduction type spin default 1 min 1 max 3" << std::endl;
             std::cout << "option name UseSEEOrdering type check default false" << std::endl;
             std::cout << "option name UseSEEInQuiescence type check default false" << std::endl;
-            std::cout << "option name UCI_Variant type combo default X14 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14" << std::endl;
+            std::cout << "option name UCI_Variant type combo default X15 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15" << std::endl;
             std::cout << "option name UCI_ContinuationHistory type combo default H3 var H0 var H1 var H2 var H3" << std::endl;
             std::cout << "option name UCI_DynamicLMR type combo default L3 var L0 var L1 var L2 var L3" << std::endl;
-            std::cout << "option name UCI_ClassicalEval type combo default E11 var E0 var E1 var E2 var E3 var E4 var E5 var E6 var E7 var E8 var E9 var E10 var E11" << std::endl;
+            std::cout << "option name UCI_ClassicalEval type combo default E15 var E0 var E1 var E2 var E3 var E4 var E5 var E6 var E7 var E8 var E9 var E10 var E11 var E15" << std::endl;
             std::cout << "option name SyzygyPath type string default <empty>" << std::endl;
             std::cout << "option name SyzygyProbeDepth type spin default 1 min 1 max 100" << std::endl;
             std::cout << "option name SyzygyProbeLimit type spin default 5 min 0 max 7" << std::endl;
@@ -4588,6 +4722,22 @@ static void uci_loop() {
                 }
                 if (opt_name == "Threads" && !opt_val.empty()) {
                     g_num_threads = std::max(1, std::min(16, std::stoi(opt_val)));
+                    if (g_search_variant == "X15") {
+                        if (g_num_threads == 1) {
+                            g_use_pawn_hash = false;
+                            g_dynamic_time_mgmt = false;
+                            g_use_lmp = false;
+                            g_lmp_mode = 0;
+                            g_rfp_margin_per_depth = 120;
+                        } else {
+                            g_use_pawn_hash = true;
+                            g_dynamic_time_mgmt = true;
+                            g_use_lmp = true;
+                            g_lmp_mode = 1;
+                            g_lmp_max_depth = 4;
+                            g_rfp_margin_per_depth = 90;
+                        }
+                    }
                 } else if (opt_name == "UCI_LMP" && !opt_val.empty()) {
                     if (opt_val == "L0") { g_use_lmp = false; g_lmp_mode = 0; }
                     else if (opt_val == "L1") { g_use_lmp = true; g_lmp_mode = 1; }
@@ -4671,6 +4821,7 @@ static void uci_loop() {
                     else if (opt_val == "E9") g_eval_mode = 9;
                     else if (opt_val == "E10") g_eval_mode = 10;
                     else if (opt_val == "E11") g_eval_mode = 11;
+                    else if (opt_val == "E15") g_eval_mode = 15;
                 } else if (opt_name == "SyzygyPath") {
                     g_syzygy_path = opt_val;
                 } else if (opt_name == "SyzygyProbeDepth" && !opt_val.empty()) {

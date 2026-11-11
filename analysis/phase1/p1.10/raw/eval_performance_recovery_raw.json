@@ -1,0 +1,296 @@
+{
+  "X7_1T": {
+    "name": "Frozen X7 Baseline (1T)",
+    "threads": 1,
+    "avg_depth": 21.0,
+    "aggregate_nps": 823641,
+    "total_nodes": 3717504,
+    "total_time_s": 4.51,
+    "positions": {
+      "STARTPOS": {
+        "depth": 11,
+        "nodes": 718848,
+        "nps": 837264,
+        "elapsed_s": 0.8586
+      },
+      "KIWIPETE": {
+        "depth": 8,
+        "nodes": 479232,
+        "nps": 553378,
+        "elapsed_s": 0.866
+      },
+      "MID_OPEN": {
+        "depth": 11,
+        "nodes": 587776,
+        "nps": 679121,
+        "elapsed_s": 0.8655
+      },
+      "MID_CLOSED": {
+        "depth": 10,
+        "nodes": 661504,
+        "nps": 756284,
+        "elapsed_s": 0.8747
+      },
+      "END_ROOK": {
+        "depth": 22,
+        "nodes": 1269760,
+        "nps": 1301735,
+        "elapsed_s": 0.9754
+      },
+      "END_PAWN": {
+        "depth": 64,
+        "nodes": 384,
+        "nps": 5237,
+        "elapsed_s": 0.0733
+      }
+    }
+  },
+  "X14_1T": {
+    "name": "Frozen X14 (1T Mode)",
+    "threads": 1,
+    "avg_depth": 21.17,
+    "aggregate_nps": 696648,
+    "total_nodes": 3230080,
+    "total_time_s": 4.64,
+    "positions": {
+      "STARTPOS": {
+        "depth": 11,
+        "nodes": 645120,
+        "nps": 703545,
+        "elapsed_s": 0.917
+      },
+      "KIWIPETE": {
+        "depth": 8,
+        "nodes": 428032,
+        "nps": 477167,
+        "elapsed_s": 0.897
+      },
+      "MID_OPEN": {
+        "depth": 10,
+        "nodes": 495616,
+        "nps": 550459,
+        "elapsed_s": 0.9004
+      },
+      "MID_CLOSED": {
+        "depth": 10,
+        "nodes": 634880,
+        "nps": 700898,
+        "elapsed_s": 0.9058
+      },
+      "END_ROOK": {
+        "depth": 24,
+        "nodes": 1026048,
+        "nps": 1111583,
+        "elapsed_s": 0.9231
+      },
+      "END_PAWN": {
+        "depth": 64,
+        "nodes": 384,
+        "nps": 4116,
+        "elapsed_s": 0.0933
+      }
+    }
+  },
+  "CAND_S_1T": {
+    "name": "Candidate S (1T Lean)",
+    "threads": 1,
+    "avg_depth": 21.0,
+    "aggregate_nps": 750660,
+    "total_nodes": 3398016,
+    "total_time_s": 4.53,
+    "positions": {
+      "STARTPOS": {
+        "depth": 11,
+        "nodes": 686080,
+        "nps": 776752,
+        "elapsed_s": 0.8833
+      },
+      "KIWIPETE": {
+        "depth": 8,
+        "nodes": 479232,
+        "nps": 535379,
+        "elapsed_s": 0.8951
+      },
+      "MID_OPEN": {
+        "depth": 10,
+        "nodes": 536576,
+        "nps": 607366,
+        "elapsed_s": 0.8834
+      },
+      "MID_CLOSED": {
+        "depth": 10,
+        "nodes": 647168,
+        "nps": 729778,
+        "elapsed_s": 0.8868
+      },
+      "END_ROOK": {
+        "depth": 23,
+        "nodes": 1048576,
+        "nps": 1176153,
+        "elapsed_s": 0.8915
+      },
+      "END_PAWN": {
+        "depth": 64,
+        "nodes": 384,
+        "nps": 4433,
+        "elapsed_s": 0.0866
+      }
+    }
+  },
+  "X12_4T": {
+    "name": "Frozen X12 Baseline (4T)",
+    "threads": 4,
+    "avg_depth": 20.83,
+    "aggregate_nps": 1475618,
+    "total_nodes": 7774592,
+    "total_time_s": 5.27,
+    "positions": {
+      "STARTPOS": {
+        "depth": 11,
+        "nodes": 1640448,
+        "nps": 1792733,
+        "elapsed_s": 0.9151
+      },
+      "KIWIPETE": {
+        "depth": 7,
+        "nodes": 1161216,
+        "nps": 1282820,
+        "elapsed_s": 0.9052
+      },
+      "MID_OPEN": {
+        "depth": 10,
+        "nodes": 1351680,
+        "nps": 1401381,
+        "elapsed_s": 0.9645
+      },
+      "MID_CLOSED": {
+        "depth": 11,
+        "nodes": 1587200,
+        "nps": 1607217,
+        "elapsed_s": 0.9875
+      },
+      "END_ROOK": {
+        "depth": 22,
+        "nodes": 2033664,
+        "nps": 1989694,
+        "elapsed_s": 1.0221
+      },
+      "END_PAWN": {
+        "depth": 64,
+        "nodes": 384,
+        "nps": 809,
+        "elapsed_s": 0.4743
+      }
+    }
+  },
+  "X14_4T": {
+    "name": "Frozen X14 Platform (4T)",
+    "threads": 4,
+    "avg_depth": 21.0,
+    "aggregate_nps": 1572120,
+    "total_nodes": 8161664,
+    "total_time_s": 5.19,
+    "positions": {
+      "STARTPOS": {
+        "depth": 11,
+        "nodes": 1769472,
+        "nps": 1764850,
+        "elapsed_s": 1.0026
+      },
+      "KIWIPETE": {
+        "depth": 8,
+        "nodes": 1216512,
+        "nps": 1277756,
+        "elapsed_s": 0.9521
+      },
+      "MID_OPEN": {
+        "depth": 10,
+        "nodes": 1396736,
+        "nps": 1489975,
+        "elapsed_s": 0.9374
+      },
+      "MID_CLOSED": {
+        "depth": 11,
+        "nodes": 1665024,
+        "nps": 1652234,
+        "elapsed_s": 1.0077
+      },
+      "END_ROOK": {
+        "depth": 22,
+        "nodes": 2113536,
+        "nps": 1913821,
+        "elapsed_s": 1.1044
+      },
+      "END_PAWN": {
+        "depth": 64,
+        "nodes": 384,
+        "nps": 2050,
+        "elapsed_s": 0.1873
+      }
+    }
+  },
+  "CAND_P_4T": {
+    "name": "Candidate P (4T Hash Opt)",
+    "threads": 4,
+    "avg_depth": 21.33,
+    "aggregate_nps": 1728902,
+    "total_nodes": 8296832,
+    "total_time_s": 4.8,
+    "positions": {
+      "STARTPOS": {
+        "depth": 11,
+        "nodes": 1775616,
+        "nps": 1865047,
+        "elapsed_s": 0.952
+      },
+      "KIWIPETE": {
+        "depth": 8,
+        "nodes": 1390592,
+        "nps": 1483028,
+        "elapsed_s": 0.9377
+      },
+      "MID_OPEN": {
+        "depth": 10,
+        "nodes": 1425408,
+        "nps": 1513292,
+        "elapsed_s": 0.9419
+      },
+      "MID_CLOSED": {
+        "depth": 11,
+        "nodes": 1642496,
+        "nps": 1744994,
+        "elapsed_s": 0.9413
+      },
+      "END_ROOK": {
+        "depth": 24,
+        "nodes": 2062336,
+        "nps": 2279463,
+        "elapsed_s": 0.9047
+      },
+      "END_PAWN": {
+        "depth": 64,
+        "nodes": 384,
+        "nps": 3164,
+        "elapsed_s": 0.1213
+      }
+    }
+  },
+  "throughput_comparison": {
+    "single_thread": {
+      "X7_Baseline_NPS": 823641,
+      "X14_Regressed_NPS": 696648,
+      "X14_Throughput_Delta": "-15.42%",
+      "Candidate_S_NPS": 750660,
+      "Candidate_S_Delta_vs_X7": "-8.86%",
+      "Candidate_S_Recovery_vs_X14": "+7.75%"
+    },
+    "four_thread": {
+      "X12_Baseline_NPS": 1475618,
+      "X14_Platform_NPS": 1572120,
+      "X14_Throughput_Delta": "6.54%",
+      "Candidate_P_NPS": 1728902,
+      "Candidate_P_Delta_vs_X12": "+17.16%",
+      "Candidate_P_Advantage_vs_X14": "+9.97%"
+    }
+  }
+}

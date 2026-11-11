@@ -83,3 +83,4 @@ However, **Project Janus cannot progress further against Stockfish 19 by optimiz
 2. Complex pawn structure bitboards (passed, isolated, backward, candidate passers).
 3. Attacking king safety bitboard models.
 4. Syzygy 3-4-5 piece endgame tablebase probing.
+

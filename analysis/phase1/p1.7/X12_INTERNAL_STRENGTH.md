@@ -103,3 +103,4 @@ In controlled tournament testing across 280 tournament games (140 opening pairs)
 | **P1.7** | X12 (1T) | X7 (1T) | 19.0 / 40 (47.5%) | -17.4 | -0.3258 | 0.7481 | **Single-Thread Parity Preserved** |
 
 The combination of 64B cache-line packing, depth-preferred TT protection, warm history inheritance, and authoritative master root arbitration has successfully converted multithreaded throughput into verifiable playing strength.
+

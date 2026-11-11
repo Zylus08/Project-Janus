@@ -91,3 +91,4 @@ Establish **Janus Classical X13** with:
 2. Embedded Syzygy Tablebase Probing ($\le 5$ pieces).
 3. Verified multithreaded scaling across 1T, 2T, 4T, and 8T.
 4. Independent qualification against Frozen X7, Frozen X12, and Matched Stockfish 19.
+

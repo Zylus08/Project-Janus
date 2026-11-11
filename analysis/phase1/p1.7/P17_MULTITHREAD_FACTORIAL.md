@@ -98,3 +98,4 @@ The factorial ablation confirms that Candidate X12 reconciles the multicore sear
 2. **Depth Protection:** Shallow helper searches can no longer overwrite deep cutoff bounds.
 3. **Warm History Seeding:** Helper threads achieve immediate high-quality move ordering without cold-start delay.
 4. **Authoritative Root Arbitration:** The engine returns verified master PV moves, preventing superficial helper overrides.
+

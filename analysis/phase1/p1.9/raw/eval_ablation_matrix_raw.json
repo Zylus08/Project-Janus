@@ -1,0 +1,4857 @@
+{
+  "E0": {
+    "id": "E0",
+    "emode": "E10",
+    "desc": "Frozen X13 baseline (E10 as-is)",
+    "avg_depth": 13.29,
+    "avg_nps": 3956305,
+    "tactics_solved": 6,
+    "elapsed_total": 42.08,
+    "positions": {
+      "DEV_001": {
+        "depth": 10,
+        "nodes": 1130496,
+        "score_cp": -108,
+        "bestmove": "b1c3",
+        "nps": 2425182,
+        "elapsed_s": 0.4661
+      },
+      "DEV_002": {
+        "depth": 9,
+        "nodes": 1198080,
+        "score_cp": 80,
+        "bestmove": "e3e4",
+        "nps": 3308247,
+        "elapsed_s": 0.3621
+      },
+      "DEV_003": {
+        "depth": 12,
+        "nodes": 1159168,
+        "score_cp": 36,
+        "bestmove": "a4c6",
+        "nps": 3239062,
+        "elapsed_s": 0.3579
+      },
+      "DEV_004": {
+        "depth": 10,
+        "nodes": 1193984,
+        "score_cp": 97,
+        "bestmove": "d4c6",
+        "nps": 3376090,
+        "elapsed_s": 0.3537
+      },
+      "DEV_005": {
+        "depth": 11,
+        "nodes": 1339392,
+        "score_cp": 363,
+        "bestmove": "c4d5",
+        "nps": 3759485,
+        "elapsed_s": 0.3563
+      },
+      "DEV_006": {
+        "depth": 9,
+        "nodes": 1097066,
+        "score_cp": 15,
+        "bestmove": "e2f3",
+        "nps": 2994334,
+        "elapsed_s": 0.3664
+      },
+      "DEV_007": {
+        "depth": 9,
+        "nodes": 1236992,
+        "score_cp": 23,
+        "bestmove": "e1g1",
+        "nps": 3410812,
+        "elapsed_s": 0.3627
+      },
+      "DEV_008": {
+        "depth": 12,
+        "nodes": 1169408,
+        "score_cp": 13,
+        "bestmove": "b2a3",
+        "nps": 3267619,
+        "elapsed_s": 0.3579
+      },
+      "DEV_009": {
+        "depth": 9,
+        "nodes": 1224704,
+        "score_cp": -8,
+        "bestmove": "d3c4",
+        "nps": 3391287,
+        "elapsed_s": 0.3611
+      },
+      "DEV_010": {
+        "depth": 9,
+        "nodes": 1144832,
+        "score_cp": 42,
+        "bestmove": "c1d2",
+        "nps": 3144096,
+        "elapsed_s": 0.3641
+      },
+      "DEV_011": {
+        "depth": 10,
+        "nodes": 1288192,
+        "score_cp": 31,
+        "bestmove": "a2a3",
+        "nps": 3636131,
+        "elapsed_s": 0.3543
+      },
+      "DEV_012": {
+        "depth": 9,
+        "nodes": 1134592,
+        "score_cp": 27,
+        "bestmove": "g2g4",
+        "nps": 3148785,
+        "elapsed_s": 0.3603
+      },
+      "DEV_013": {
+        "depth": 9,
+        "nodes": 1251328,
+        "score_cp": -348,
+        "bestmove": "d8c7",
+        "nps": 3474963,
+        "elapsed_s": 0.3601
+      },
+      "DEV_014": {
+        "depth": 9,
+        "nodes": 1187840,
+        "score_cp": 421,
+        "bestmove": "d1c2",
+        "nps": 3326887,
+        "elapsed_s": 0.357
+      },
+      "DEV_015": {
+        "depth": 10,
+        "nodes": 1241088,
+        "score_cp": 46,
+        "bestmove": "g1e2",
+        "nps": 3427359,
+        "elapsed_s": 0.3621
+      },
+      "DEV_016": {
+        "depth": 12,
+        "nodes": 1202176,
+        "score_cp": 226,
+        "bestmove": "d3h7",
+        "nps": 2961104,
+        "elapsed_s": 0.406
+      },
+      "DEV_017": {
+        "depth": 10,
+        "nodes": 1165312,
+        "score_cp": 712,
+        "bestmove": "d1d3",
+        "nps": 3242491,
+        "elapsed_s": 0.3594
+      },
+      "DEV_018": {
+        "depth": 9,
+        "nodes": 1083392,
+        "score_cp": 40,
+        "bestmove": "h2h3",
+        "nps": 3000612,
+        "elapsed_s": 0.3611
+      },
+      "DEV_019": {
+        "depth": 12,
+        "nodes": 1495040,
+        "score_cp": -347,
+        "bestmove": "d5c4",
+        "nps": 4136013,
+        "elapsed_s": 0.3615
+      },
+      "DEV_020": {
+        "depth": 12,
+        "nodes": 1142784,
+        "score_cp": 324,
+        "bestmove": "c3a4",
+        "nps": 3189459,
+        "elapsed_s": 0.3583
+      },
+      "DEV_021": {
+        "depth": 12,
+        "nodes": 2355200,
+        "score_cp": 28999,
+        "bestmove": "e1e8",
+        "nps": 5559105,
+        "elapsed_s": 0.4237
+      },
+      "DEV_022": {
+        "depth": 12,
+        "nodes": 1536000,
+        "score_cp": 99,
+        "bestmove": "f1c1",
+        "nps": 3773602,
+        "elapsed_s": 0.407
+      },
+      "DEV_023": {
+        "depth": 16,
+        "nodes": 1429504,
+        "score_cp": 1055,
+        "bestmove": "f8d8",
+        "nps": 2977341,
+        "elapsed_s": 0.4801
+      },
+      "DEV_024": {
+        "depth": 9,
+        "nodes": 1085440,
+        "score_cp": -131,
+        "bestmove": "d8a5",
+        "nps": 2920418,
+        "elapsed_s": 0.3717
+      },
+      "DEV_025": {
+        "depth": 64,
+        "nodes": 64,
+        "score_cp": 0,
+        "bestmove": "0000",
+        "nps": 753,
+        "elapsed_s": 0.0849
+      },
+      "DEV_026": {
+        "depth": 10,
+        "nodes": 1343488,
+        "score_cp": 54,
+        "bestmove": "d4e5",
+        "nps": 3620558,
+        "elapsed_s": 0.3711
+      },
+      "DEV_027": {
+        "depth": 11,
+        "nodes": 1437696,
+        "score_cp": 50,
+        "bestmove": "e4e5",
+        "nps": 4102720,
+        "elapsed_s": 0.3504
+      },
+      "DEV_028": {
+        "depth": 11,
+        "nodes": 1198080,
+        "score_cp": -50,
+        "bestmove": "f5e4",
+        "nps": 3153170,
+        "elapsed_s": 0.38
+      },
+      "DEV_029": {
+        "depth": 13,
+        "nodes": 1714176,
+        "score_cp": 15,
+        "bestmove": "d8d1",
+        "nps": 4775491,
+        "elapsed_s": 0.359
+      },
+      "DEV_030": {
+        "depth": 11,
+        "nodes": 1394688,
+        "score_cp": -40,
+        "bestmove": "e7e6",
+        "nps": 3935407,
+        "elapsed_s": 0.3544
+      },
+      "DEV_031": {
+        "depth": 12,
+        "nodes": 1355776,
+        "score_cp": -1,
+        "bestmove": "c2c3",
+        "nps": 3733384,
+        "elapsed_s": 0.3631
+      },
+      "DEV_032": {
+        "depth": 10,
+        "nodes": 1288192,
+        "score_cp": -6,
+        "bestmove": "e8g8",
+        "nps": 3664155,
+        "elapsed_s": 0.3516
+      },
+      "DEV_033": {
+        "depth": 11,
+        "nodes": 1427456,
+        "score_cp": -28,
+        "bestmove": "b4c3",
+        "nps": 4057936,
+        "elapsed_s": 0.3518
+      },
+      "DEV_034": {
+        "depth": 11,
+        "nodes": 1196032,
+        "score_cp": 32,
+        "bestmove": "e3f4",
+        "nps": 3397686,
+        "elapsed_s": 0.352
+      },
+      "DEV_035": {
+        "depth": 10,
+        "nodes": 1329152,
+        "score_cp": 139,
+        "bestmove": "c4e2",
+        "nps": 3747260,
+        "elapsed_s": 0.3547
+      },
+      "DEV_036": {
+        "depth": 10,
+        "nodes": 1257472,
+        "score_cp": 93,
+        "bestmove": "d7d6",
+        "nps": 3586179,
+        "elapsed_s": 0.3506
+      },
+      "DEV_037": {
+        "depth": 16,
+        "nodes": 1239040,
+        "score_cp": 0,
+        "bestmove": "a8b8",
+        "nps": 3538312,
+        "elapsed_s": 0.3502
+      },
+      "DEV_038": {
+        "depth": 9,
+        "nodes": 1048576,
+        "score_cp": 150,
+        "bestmove": "e3d4",
+        "nps": 2931895,
+        "elapsed_s": 0.3576
+      },
+      "DEV_039": {
+        "depth": 11,
+        "nodes": 1273856,
+        "score_cp": -18,
+        "bestmove": "g8f6",
+        "nps": 3547914,
+        "elapsed_s": 0.359
+      },
+      "DEV_040": {
+        "depth": 11,
+        "nodes": 1312768,
+        "score_cp": -5,
+        "bestmove": "h7h6",
+        "nps": 3704080,
+        "elapsed_s": 0.3544
+      },
+      "DEV_041": {
+        "depth": 11,
+        "nodes": 1359872,
+        "score_cp": 139,
+        "bestmove": "d5e6",
+        "nps": 3878938,
+        "elapsed_s": 0.3506
+      },
+      "DEV_042": {
+        "depth": 10,
+        "nodes": 1361920,
+        "score_cp": 50,
+        "bestmove": "c8d7",
+        "nps": 3886424,
+        "elapsed_s": 0.3504
+      },
+      "DEV_043": {
+        "depth": 11,
+        "nodes": 1482752,
+        "score_cp": 104,
+        "bestmove": "b1c3",
+        "nps": 4260105,
+        "elapsed_s": 0.3481
+      },
+      "DEV_044": {
+        "depth": 10,
+        "nodes": 1298432,
+        "score_cp": 82,
+        "bestmove": "h2h3",
+        "nps": 3728745,
+        "elapsed_s": 0.3482
+      },
+      "DEV_045": {
+        "depth": 8,
+        "nodes": 2283520,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "nps": 6521298,
+        "elapsed_s": 0.3502
+      },
+      "DEV_046": {
+        "depth": 10,
+        "nodes": 1462272,
+        "score_cp": -16,
+        "bestmove": "c4d5",
+        "nps": 4192401,
+        "elapsed_s": 0.3488
+      },
+      "DEV_047": {
+        "depth": 10,
+        "nodes": 1239040,
+        "score_cp": 407,
+        "bestmove": "d3h7",
+        "nps": 3471690,
+        "elapsed_s": 0.3569
+      },
+      "DEV_048": {
+        "depth": 11,
+        "nodes": 1343488,
+        "score_cp": 327,
+        "bestmove": "e4c3",
+        "nps": 3836843,
+        "elapsed_s": 0.3502
+      },
+      "DEV_049": {
+        "depth": 21,
+        "nodes": 1736704,
+        "score_cp": 0,
+        "bestmove": "c2b1",
+        "nps": 4970135,
+        "elapsed_s": 0.3494
+      },
+      "DEV_050": {
+        "depth": 10,
+        "nodes": 1417216,
+        "score_cp": -1,
+        "bestmove": "d4c5",
+        "nps": 4009897,
+        "elapsed_s": 0.3534
+      },
+      "DEV_051": {
+        "depth": 11,
+        "nodes": 1372160,
+        "score_cp": -7,
+        "bestmove": "d1c2",
+        "nps": 3965315,
+        "elapsed_s": 0.346
+      },
+      "DEV_052": {
+        "depth": 14,
+        "nodes": 2271232,
+        "score_cp": 999,
+        "bestmove": "f7f8q",
+        "nps": 6430123,
+        "elapsed_s": 0.3532
+      },
+      "DEV_053": {
+        "depth": 16,
+        "nodes": 2111488,
+        "score_cp": 992,
+        "bestmove": "d5e6",
+        "nps": 6006688,
+        "elapsed_s": 0.3515
+      },
+      "DEV_054": {
+        "depth": 11,
+        "nodes": 1318912,
+        "score_cp": 139,
+        "bestmove": "c4f7",
+        "nps": 3718235,
+        "elapsed_s": 0.3547
+      },
+      "DEV_055": {
+        "depth": 64,
+        "nodes": 772,
+        "score_cp": 0,
+        "bestmove": "b6a6",
+        "nps": 12814,
+        "elapsed_s": 0.0602
+      },
+      "DEV_056": {
+        "depth": 20,
+        "nodes": 1654784,
+        "score_cp": 0,
+        "bestmove": "a1d1",
+        "nps": 4603714,
+        "elapsed_s": 0.3594
+      },
+      "DEV_057": {
+        "depth": 9,
+        "nodes": 1411072,
+        "score_cp": 155,
+        "bestmove": "b5c6",
+        "nps": 4018523,
+        "elapsed_s": 0.3511
+      },
+      "DEV_058": {
+        "depth": 11,
+        "nodes": 1148928,
+        "score_cp": 216,
+        "bestmove": "c3d5",
+        "nps": 3257012,
+        "elapsed_s": 0.3528
+      },
+      "DEV_059": {
+        "depth": 22,
+        "nodes": 1587200,
+        "score_cp": 506,
+        "bestmove": "d3c3",
+        "nps": 4520796,
+        "elapsed_s": 0.3511
+      },
+      "DEV_060": {
+        "depth": 10,
+        "nodes": 1312768,
+        "score_cp": 53,
+        "bestmove": "e3e4",
+        "nps": 3750819,
+        "elapsed_s": 0.35
+      },
+      "DEV_061": {
+        "depth": 11,
+        "nodes": 1456128,
+        "score_cp": 877,
+        "bestmove": "c3c4",
+        "nps": 4193646,
+        "elapsed_s": 0.3472
+      },
+      "DEV_062": {
+        "depth": 9,
+        "nodes": 2230272,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "nps": 6318874,
+        "elapsed_s": 0.353
+      },
+      "DEV_063": {
+        "depth": 8,
+        "nodes": 2238464,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "nps": 6255236,
+        "elapsed_s": 0.3579
+      },
+      "DEV_064": {
+        "depth": 15,
+        "nodes": 1921024,
+        "score_cp": 10,
+        "bestmove": "b4f4",
+        "nps": 5446254,
+        "elapsed_s": 0.3527
+      },
+      "DEV_065": {
+        "depth": 10,
+        "nodes": 1302528,
+        "score_cp": 27,
+        "bestmove": "b6c7",
+        "nps": 3683362,
+        "elapsed_s": 0.3536
+      },
+      "DEV_066": {
+        "depth": 7,
+        "nodes": 1181696,
+        "score_cp": 1,
+        "bestmove": "d5e6",
+        "nps": 3312136,
+        "elapsed_s": 0.3568
+      },
+      "DEV_067": {
+        "depth": 9,
+        "nodes": 1189888,
+        "score_cp": 49,
+        "bestmove": "c4d5",
+        "nps": 3408319,
+        "elapsed_s": 0.3491
+      },
+      "DEV_068": {
+        "depth": 11,
+        "nodes": 1243136,
+        "score_cp": -19,
+        "bestmove": "d3d4",
+        "nps": 3559032,
+        "elapsed_s": 0.3493
+      },
+      "DEV_069": {
+        "depth": 9,
+        "nodes": 1169408,
+        "score_cp": 101,
+        "bestmove": "c1f4",
+        "nps": 3314833,
+        "elapsed_s": 0.3528
+      },
+      "DEV_070": {
+        "depth": 9,
+        "nodes": 1251328,
+        "score_cp": -34,
+        "bestmove": "e1f1",
+        "nps": 3591732,
+        "elapsed_s": 0.3484
+      },
+      "DEV_071": {
+        "depth": 10,
+        "nodes": 1406976,
+        "score_cp": 79,
+        "bestmove": "a2a3",
+        "nps": 4016884,
+        "elapsed_s": 0.3503
+      },
+      "DEV_072": {
+        "depth": 9,
+        "nodes": 1223548,
+        "score_cp": 55,
+        "bestmove": "d1b3",
+        "nps": 3399606,
+        "elapsed_s": 0.3599
+      },
+      "DEV_073": {
+        "depth": 10,
+        "nodes": 1216512,
+        "score_cp": 40,
+        "bestmove": "d1c2",
+        "nps": 3466945,
+        "elapsed_s": 0.3509
+      },
+      "DEV_074": {
+        "depth": 10,
+        "nodes": 1320960,
+        "score_cp": 45,
+        "bestmove": "c4d5",
+        "nps": 3789211,
+        "elapsed_s": 0.3486
+      },
+      "DEV_075": {
+        "depth": 12,
+        "nodes": 1433600,
+        "score_cp": 66,
+        "bestmove": "a2a4",
+        "nps": 4105174,
+        "elapsed_s": 0.3492
+      },
+      "DEV_076": {
+        "depth": 9,
+        "nodes": 1257472,
+        "score_cp": -365,
+        "bestmove": "h7h6",
+        "nps": 3584623,
+        "elapsed_s": 0.3508
+      },
+      "DEV_077": {
+        "depth": 10,
+        "nodes": 1339392,
+        "score_cp": -31,
+        "bestmove": "b1d2",
+        "nps": 3845457,
+        "elapsed_s": 0.3483
+      },
+      "DEV_078": {
+        "depth": 9,
+        "nodes": 1400832,
+        "score_cp": -20,
+        "bestmove": "d1d2",
+        "nps": 3970545,
+        "elapsed_s": 0.3528
+      },
+      "DEV_079": {
+        "depth": 9,
+        "nodes": 1155072,
+        "score_cp": 198,
+        "bestmove": "a2a3",
+        "nps": 3285583,
+        "elapsed_s": 0.3516
+      },
+      "DEV_080": {
+        "depth": 11,
+        "nodes": 1204224,
+        "score_cp": -8,
+        "bestmove": "c4d5",
+        "nps": 3442479,
+        "elapsed_s": 0.3498
+      },
+      "DEV_081": {
+        "depth": 10,
+        "nodes": 1206272,
+        "score_cp": 235,
+        "bestmove": "e5f6",
+        "nps": 3428020,
+        "elapsed_s": 0.3519
+      },
+      "DEV_082": {
+        "depth": 10,
+        "nodes": 1216512,
+        "score_cp": -17,
+        "bestmove": "c3b5",
+        "nps": 3485928,
+        "elapsed_s": 0.349
+      },
+      "DEV_083": {
+        "depth": 26,
+        "nodes": 1454080,
+        "score_cp": 119,
+        "bestmove": "d2c1",
+        "nps": 4149129,
+        "elapsed_s": 0.3505
+      },
+      "DEV_084": {
+        "depth": 14,
+        "nodes": 2117632,
+        "score_cp": 617,
+        "bestmove": "c1c7",
+        "nps": 6110657,
+        "elapsed_s": 0.3465
+      },
+      "DEV_085": {
+        "depth": 18,
+        "nodes": 1835008,
+        "score_cp": 0,
+        "bestmove": "d3e2",
+        "nps": 5263778,
+        "elapsed_s": 0.3486
+      },
+      "DEV_086": {
+        "depth": 31,
+        "nodes": 2097152,
+        "score_cp": 0,
+        "bestmove": "e2f1",
+        "nps": 5973973,
+        "elapsed_s": 0.351
+      },
+      "DEV_087": {
+        "depth": 28,
+        "nodes": 2000896,
+        "score_cp": 0,
+        "bestmove": "e2d2",
+        "nps": 5658541,
+        "elapsed_s": 0.3536
+      },
+      "DEV_088": {
+        "depth": 21,
+        "nodes": 1693696,
+        "score_cp": 240,
+        "bestmove": "e3f4",
+        "nps": 4809473,
+        "elapsed_s": 0.3522
+      },
+      "DEV_089": {
+        "depth": 25,
+        "nodes": 1892352,
+        "score_cp": 154,
+        "bestmove": "g2g3",
+        "nps": 5371121,
+        "elapsed_s": 0.3523
+      },
+      "DEV_090": {
+        "depth": 10,
+        "nodes": 1687552,
+        "score_cp": 32,
+        "bestmove": "c4d5",
+        "nps": 4710365,
+        "elapsed_s": 0.3583
+      },
+      "DEV_091": {
+        "depth": 24,
+        "nodes": 1705984,
+        "score_cp": 174,
+        "bestmove": "e1d2",
+        "nps": 4825737,
+        "elapsed_s": 0.3535
+      },
+      "DEV_092": {
+        "depth": 20,
+        "nodes": 2025472,
+        "score_cp": -246,
+        "bestmove": "e1f1",
+        "nps": 5719284,
+        "elapsed_s": 0.3541
+      },
+      "DEV_093": {
+        "depth": 19,
+        "nodes": 1628160,
+        "score_cp": 684,
+        "bestmove": "b7b8q",
+        "nps": 4665828,
+        "elapsed_s": 0.349
+      },
+      "DEV_094": {
+        "depth": 0,
+        "nodes": 0,
+        "score_cp": 0,
+        "bestmove": null,
+        "nps": 0,
+        "elapsed_s": 0.0473
+      },
+      "DEV_095": {
+        "depth": 11,
+        "nodes": 1232896,
+        "score_cp": 132,
+        "bestmove": "a2a3",
+        "nps": 3536396,
+        "elapsed_s": 0.3486
+      },
+      "DEV_096": {
+        "depth": 11,
+        "nodes": 1402880,
+        "score_cp": 202,
+        "bestmove": "e1c1",
+        "nps": 3971137,
+        "elapsed_s": 0.3533
+      },
+      "DEV_097": {
+        "depth": 13,
+        "nodes": 1497088,
+        "score_cp": 199,
+        "bestmove": "c3d5",
+        "nps": 4267004,
+        "elapsed_s": 0.3509
+      },
+      "DEV_098": {
+        "depth": 13,
+        "nodes": 1253376,
+        "score_cp": -99,
+        "bestmove": "g5f7",
+        "nps": 3567523,
+        "elapsed_s": 0.3513
+      },
+      "DEV_099": {
+        "depth": 12,
+        "nodes": 1363968,
+        "score_cp": -280,
+        "bestmove": "f7d5",
+        "nps": 3873474,
+        "elapsed_s": 0.3521
+      },
+      "DEV_100": {
+        "depth": 11,
+        "nodes": 1736704,
+        "score_cp": -1231,
+        "bestmove": "d2d3",
+        "nps": 4957154,
+        "elapsed_s": 0.3503
+      },
+      "DEV_101": {
+        "depth": 11,
+        "nodes": 1275904,
+        "score_cp": -30,
+        "bestmove": "g2e4",
+        "nps": 3610956,
+        "elapsed_s": 0.3533
+      },
+      "DEV_102": {
+        "depth": 13,
+        "nodes": 1337344,
+        "score_cp": 0,
+        "bestmove": "f1c1",
+        "nps": 3831611,
+        "elapsed_s": 0.349
+      },
+      "DEV_103": {
+        "depth": 14,
+        "nodes": 1366016,
+        "score_cp": -971,
+        "bestmove": "b1b2",
+        "nps": 3894225,
+        "elapsed_s": 0.3508
+      },
+      "DEV_104": {
+        "depth": 12,
+        "nodes": 1755136,
+        "score_cp": -24,
+        "bestmove": "d4d5",
+        "nps": 4932320,
+        "elapsed_s": 0.3558
+      },
+      "DEV_105": {
+        "depth": 11,
+        "nodes": 1736704,
+        "score_cp": -145,
+        "bestmove": "f1e2",
+        "nps": 4949480,
+        "elapsed_s": 0.3509
+      },
+      "DEV_106": {
+        "depth": 15,
+        "nodes": 1609728,
+        "score_cp": 0,
+        "bestmove": "c1d2",
+        "nps": 4564595,
+        "elapsed_s": 0.3527
+      },
+      "DEV_107": {
+        "depth": 10,
+        "nodes": 1404928,
+        "score_cp": 26,
+        "bestmove": "c1f4",
+        "nps": 4025522,
+        "elapsed_s": 0.349
+      },
+      "DEV_108": {
+        "depth": 9,
+        "nodes": 1146880,
+        "score_cp": 46,
+        "bestmove": "b1e1",
+        "nps": 3260026,
+        "elapsed_s": 0.3518
+      },
+      "DEV_109": {
+        "depth": 10,
+        "nodes": 1267712,
+        "score_cp": -47,
+        "bestmove": "g3e3",
+        "nps": 3589284,
+        "elapsed_s": 0.3532
+      },
+      "DEV_110": {
+        "depth": 13,
+        "nodes": 1314816,
+        "score_cp": -106,
+        "bestmove": "c4b5",
+        "nps": 3758193,
+        "elapsed_s": 0.3499
+      },
+      "DEV_111": {
+        "depth": 13,
+        "nodes": 1640448,
+        "score_cp": -302,
+        "bestmove": "d4b3",
+        "nps": 4657213,
+        "elapsed_s": 0.3522
+      },
+      "DEV_112": {
+        "depth": 17,
+        "nodes": 1583104,
+        "score_cp": 0,
+        "bestmove": "g1h1",
+        "nps": 4531049,
+        "elapsed_s": 0.3494
+      },
+      "DEV_113": {
+        "depth": 13,
+        "nodes": 1396736,
+        "score_cp": 0,
+        "bestmove": "d1c1",
+        "nps": 3964567,
+        "elapsed_s": 0.3523
+      },
+      "DEV_114": {
+        "depth": 13,
+        "nodes": 1427456,
+        "score_cp": 8,
+        "bestmove": "b2b3",
+        "nps": 4057980,
+        "elapsed_s": 0.3518
+      },
+      "DEV_115": {
+        "depth": 64,
+        "nodes": 1069321,
+        "score_cp": 0,
+        "bestmove": "f2g3",
+        "nps": 3050575,
+        "elapsed_s": 0.3505
+      },
+      "DEV_116": {
+        "depth": 9,
+        "nodes": 1200128,
+        "score_cp": -31,
+        "bestmove": "d1c2",
+        "nps": 3417979,
+        "elapsed_s": 0.3511
+      },
+      "DEV_117": {
+        "depth": 10,
+        "nodes": 1284096,
+        "score_cp": -255,
+        "bestmove": "e4f3",
+        "nps": 3667254,
+        "elapsed_s": 0.3502
+      },
+      "DEV_118": {
+        "depth": 10,
+        "nodes": 1339392,
+        "score_cp": -275,
+        "bestmove": "c1f1",
+        "nps": 3779643,
+        "elapsed_s": 0.3544
+      },
+      "DEV_119": {
+        "depth": 11,
+        "nodes": 1298432,
+        "score_cp": -434,
+        "bestmove": "f3h5",
+        "nps": 3484899,
+        "elapsed_s": 0.3726
+      },
+      "DEV_120": {
+        "depth": 11,
+        "nodes": 1114112,
+        "score_cp": -462,
+        "bestmove": "a1a2",
+        "nps": 3189160,
+        "elapsed_s": 0.3493
+      }
+    }
+  },
+  "E1": {
+    "id": "E1",
+    "emode": "E11",
+    "desc": "Pawn structure fixes (blockades, open-file backward, phalanx)",
+    "avg_depth": 13.18,
+    "avg_nps": 3796517,
+    "tactics_solved": 5,
+    "elapsed_total": 41.59,
+    "positions": {
+      "DEV_001": {
+        "depth": 10,
+        "nodes": 1239040,
+        "score_cp": -108,
+        "bestmove": "b1c3",
+        "nps": 3477229,
+        "elapsed_s": 0.3563
+      },
+      "DEV_002": {
+        "depth": 9,
+        "nodes": 1241088,
+        "score_cp": 80,
+        "bestmove": "e3e4",
+        "nps": 3565660,
+        "elapsed_s": 0.3481
+      },
+      "DEV_003": {
+        "depth": 12,
+        "nodes": 1167360,
+        "score_cp": 36,
+        "bestmove": "a4c6",
+        "nps": 3340573,
+        "elapsed_s": 0.3494
+      },
+      "DEV_004": {
+        "depth": 10,
+        "nodes": 1146880,
+        "score_cp": 73,
+        "bestmove": "d4c6",
+        "nps": 3289856,
+        "elapsed_s": 0.3486
+      },
+      "DEV_005": {
+        "depth": 11,
+        "nodes": 1390592,
+        "score_cp": 371,
+        "bestmove": "c4d5",
+        "nps": 4000316,
+        "elapsed_s": 0.3476
+      },
+      "DEV_006": {
+        "depth": 10,
+        "nodes": 1067008,
+        "score_cp": 15,
+        "bestmove": "e2f3",
+        "nps": 3046526,
+        "elapsed_s": 0.3502
+      },
+      "DEV_007": {
+        "depth": 10,
+        "nodes": 1159168,
+        "score_cp": 27,
+        "bestmove": "c1e3",
+        "nps": 3305792,
+        "elapsed_s": 0.3506
+      },
+      "DEV_008": {
+        "depth": 10,
+        "nodes": 1189888,
+        "score_cp": -23,
+        "bestmove": "b2a3",
+        "nps": 3361120,
+        "elapsed_s": 0.354
+      },
+      "DEV_009": {
+        "depth": 10,
+        "nodes": 1312768,
+        "score_cp": -8,
+        "bestmove": "d3c4",
+        "nps": 3757113,
+        "elapsed_s": 0.3494
+      },
+      "DEV_010": {
+        "depth": 10,
+        "nodes": 1177600,
+        "score_cp": 45,
+        "bestmove": "c4c5",
+        "nps": 3328643,
+        "elapsed_s": 0.3538
+      },
+      "DEV_011": {
+        "depth": 10,
+        "nodes": 1247232,
+        "score_cp": 32,
+        "bestmove": "f1d3",
+        "nps": 3556687,
+        "elapsed_s": 0.3507
+      },
+      "DEV_012": {
+        "depth": 10,
+        "nodes": 1202176,
+        "score_cp": 26,
+        "bestmove": "g2g4",
+        "nps": 3470781,
+        "elapsed_s": 0.3464
+      },
+      "DEV_013": {
+        "depth": 9,
+        "nodes": 1247232,
+        "score_cp": -350,
+        "bestmove": "e7b4",
+        "nps": 3540118,
+        "elapsed_s": 0.3523
+      },
+      "DEV_014": {
+        "depth": 9,
+        "nodes": 1261568,
+        "score_cp": 415,
+        "bestmove": "d1c2",
+        "nps": 3648067,
+        "elapsed_s": 0.3458
+      },
+      "DEV_015": {
+        "depth": 11,
+        "nodes": 1226752,
+        "score_cp": 55,
+        "bestmove": "c1d2",
+        "nps": 3506641,
+        "elapsed_s": 0.3498
+      },
+      "DEV_016": {
+        "depth": 12,
+        "nodes": 1208320,
+        "score_cp": 212,
+        "bestmove": "d3h7",
+        "nps": 3436602,
+        "elapsed_s": 0.3516
+      },
+      "DEV_017": {
+        "depth": 10,
+        "nodes": 1245184,
+        "score_cp": 712,
+        "bestmove": "d1d3",
+        "nps": 3552919,
+        "elapsed_s": 0.3505
+      },
+      "DEV_018": {
+        "depth": 9,
+        "nodes": 1046528,
+        "score_cp": 39,
+        "bestmove": "h2h3",
+        "nps": 2992716,
+        "elapsed_s": 0.3497
+      },
+      "DEV_019": {
+        "depth": 12,
+        "nodes": 1683456,
+        "score_cp": -355,
+        "bestmove": "d5c4",
+        "nps": 4815122,
+        "elapsed_s": 0.3496
+      },
+      "DEV_020": {
+        "depth": 12,
+        "nodes": 1159168,
+        "score_cp": 310,
+        "bestmove": "c3a4",
+        "nps": 3340995,
+        "elapsed_s": 0.347
+      },
+      "DEV_021": {
+        "depth": 12,
+        "nodes": 2486272,
+        "score_cp": 28999,
+        "bestmove": "e1e8",
+        "nps": 7149034,
+        "elapsed_s": 0.3478
+      },
+      "DEV_022": {
+        "depth": 12,
+        "nodes": 1617920,
+        "score_cp": 99,
+        "bestmove": "f1c1",
+        "nps": 4625681,
+        "elapsed_s": 0.3498
+      },
+      "DEV_023": {
+        "depth": 16,
+        "nodes": 1646592,
+        "score_cp": 1085,
+        "bestmove": "f8d8",
+        "nps": 4668016,
+        "elapsed_s": 0.3527
+      },
+      "DEV_024": {
+        "depth": 9,
+        "nodes": 1077248,
+        "score_cp": -127,
+        "bestmove": "a7a6",
+        "nps": 3056394,
+        "elapsed_s": 0.3525
+      },
+      "DEV_025": {
+        "depth": 64,
+        "nodes": 64,
+        "score_cp": 0,
+        "bestmove": "0000",
+        "nps": 1290,
+        "elapsed_s": 0.0496
+      },
+      "DEV_026": {
+        "depth": 10,
+        "nodes": 1296384,
+        "score_cp": 56,
+        "bestmove": "d4e5",
+        "nps": 3658480,
+        "elapsed_s": 0.3544
+      },
+      "DEV_027": {
+        "depth": 11,
+        "nodes": 1243136,
+        "score_cp": 50,
+        "bestmove": "e4e5",
+        "nps": 3537943,
+        "elapsed_s": 0.3514
+      },
+      "DEV_028": {
+        "depth": 11,
+        "nodes": 1288192,
+        "score_cp": -61,
+        "bestmove": "h7h6",
+        "nps": 3686304,
+        "elapsed_s": 0.3495
+      },
+      "DEV_029": {
+        "depth": 13,
+        "nodes": 1546240,
+        "score_cp": 15,
+        "bestmove": "d8d1",
+        "nps": 4428267,
+        "elapsed_s": 0.3492
+      },
+      "DEV_030": {
+        "depth": 11,
+        "nodes": 1353728,
+        "score_cp": -40,
+        "bestmove": "e7e6",
+        "nps": 3837046,
+        "elapsed_s": 0.3528
+      },
+      "DEV_031": {
+        "depth": 13,
+        "nodes": 1243136,
+        "score_cp": -7,
+        "bestmove": "c2c3",
+        "nps": 3531655,
+        "elapsed_s": 0.352
+      },
+      "DEV_032": {
+        "depth": 11,
+        "nodes": 1216512,
+        "score_cp": 0,
+        "bestmove": "f6g4",
+        "nps": 3469124,
+        "elapsed_s": 0.3507
+      },
+      "DEV_033": {
+        "depth": 10,
+        "nodes": 1333248,
+        "score_cp": -23,
+        "bestmove": "b4c3",
+        "nps": 3828093,
+        "elapsed_s": 0.3483
+      },
+      "DEV_034": {
+        "depth": 11,
+        "nodes": 1157120,
+        "score_cp": 32,
+        "bestmove": "e3f4",
+        "nps": 3274120,
+        "elapsed_s": 0.3534
+      },
+      "DEV_035": {
+        "depth": 10,
+        "nodes": 1130496,
+        "score_cp": 122,
+        "bestmove": "c4e2",
+        "nps": 3246138,
+        "elapsed_s": 0.3483
+      },
+      "DEV_036": {
+        "depth": 10,
+        "nodes": 1069056,
+        "score_cp": 93,
+        "bestmove": "d7d6",
+        "nps": 3069047,
+        "elapsed_s": 0.3483
+      },
+      "DEV_037": {
+        "depth": 11,
+        "nodes": 1218560,
+        "score_cp": -149,
+        "bestmove": "g7g6",
+        "nps": 3480086,
+        "elapsed_s": 0.3502
+      },
+      "DEV_038": {
+        "depth": 9,
+        "nodes": 1081344,
+        "score_cp": 150,
+        "bestmove": "e3d4",
+        "nps": 3104910,
+        "elapsed_s": 0.3483
+      },
+      "DEV_039": {
+        "depth": 11,
+        "nodes": 1230848,
+        "score_cp": -17,
+        "bestmove": "d5d4",
+        "nps": 3492711,
+        "elapsed_s": 0.3524
+      },
+      "DEV_040": {
+        "depth": 11,
+        "nodes": 1132544,
+        "score_cp": -7,
+        "bestmove": "h7h6",
+        "nps": 3207715,
+        "elapsed_s": 0.3531
+      },
+      "DEV_041": {
+        "depth": 10,
+        "nodes": 1280000,
+        "score_cp": 139,
+        "bestmove": "d5e6",
+        "nps": 3648129,
+        "elapsed_s": 0.3509
+      },
+      "DEV_042": {
+        "depth": 11,
+        "nodes": 1159168,
+        "score_cp": 22,
+        "bestmove": "b8c6",
+        "nps": 3278033,
+        "elapsed_s": 0.3536
+      },
+      "DEV_043": {
+        "depth": 11,
+        "nodes": 1347584,
+        "score_cp": 107,
+        "bestmove": "d2d4",
+        "nps": 3832721,
+        "elapsed_s": 0.3516
+      },
+      "DEV_044": {
+        "depth": 10,
+        "nodes": 1202176,
+        "score_cp": 82,
+        "bestmove": "d1f3",
+        "nps": 3414725,
+        "elapsed_s": 0.3521
+      },
+      "DEV_045": {
+        "depth": 8,
+        "nodes": 2109440,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "nps": 6061006,
+        "elapsed_s": 0.348
+      },
+      "DEV_046": {
+        "depth": 9,
+        "nodes": 1361920,
+        "score_cp": -10,
+        "bestmove": "c4d5",
+        "nps": 3866691,
+        "elapsed_s": 0.3522
+      },
+      "DEV_047": {
+        "depth": 9,
+        "nodes": 1161216,
+        "score_cp": 417,
+        "bestmove": "d3h7",
+        "nps": 3269711,
+        "elapsed_s": 0.3551
+      },
+      "DEV_048": {
+        "depth": 10,
+        "nodes": 1179648,
+        "score_cp": 335,
+        "bestmove": "e4c3",
+        "nps": 3332143,
+        "elapsed_s": 0.354
+      },
+      "DEV_049": {
+        "depth": 22,
+        "nodes": 1781760,
+        "score_cp": 0,
+        "bestmove": "c2b1",
+        "nps": 5090875,
+        "elapsed_s": 0.35
+      },
+      "DEV_050": {
+        "depth": 10,
+        "nodes": 1331200,
+        "score_cp": 0,
+        "bestmove": "d3b5",
+        "nps": 3799289,
+        "elapsed_s": 0.3504
+      },
+      "DEV_051": {
+        "depth": 11,
+        "nodes": 1286144,
+        "score_cp": -12,
+        "bestmove": "d1c2",
+        "nps": 3584937,
+        "elapsed_s": 0.3588
+      },
+      "DEV_052": {
+        "depth": 14,
+        "nodes": 2340864,
+        "score_cp": 999,
+        "bestmove": "f7f8q",
+        "nps": 6725490,
+        "elapsed_s": 0.3481
+      },
+      "DEV_053": {
+        "depth": 16,
+        "nodes": 2088960,
+        "score_cp": 990,
+        "bestmove": "d5e6",
+        "nps": 5960187,
+        "elapsed_s": 0.3505
+      },
+      "DEV_054": {
+        "depth": 11,
+        "nodes": 1234944,
+        "score_cp": 139,
+        "bestmove": "c4f7",
+        "nps": 3491293,
+        "elapsed_s": 0.3537
+      },
+      "DEV_055": {
+        "depth": 64,
+        "nodes": 772,
+        "score_cp": 0,
+        "bestmove": "b6a6",
+        "nps": 14980,
+        "elapsed_s": 0.0515
+      },
+      "DEV_056": {
+        "depth": 20,
+        "nodes": 1775616,
+        "score_cp": 0,
+        "bestmove": "a1d1",
+        "nps": 5055714,
+        "elapsed_s": 0.3512
+      },
+      "DEV_057": {
+        "depth": 9,
+        "nodes": 1375296,
+        "score_cp": 137,
+        "bestmove": "b5c6",
+        "nps": 3916965,
+        "elapsed_s": 0.3511
+      },
+      "DEV_058": {
+        "depth": 11,
+        "nodes": 1107968,
+        "score_cp": 216,
+        "bestmove": "c3d5",
+        "nps": 3134037,
+        "elapsed_s": 0.3535
+      },
+      "DEV_059": {
+        "depth": 21,
+        "nodes": 1683456,
+        "score_cp": 284,
+        "bestmove": "d3c3",
+        "nps": 4782863,
+        "elapsed_s": 0.352
+      },
+      "DEV_060": {
+        "depth": 10,
+        "nodes": 1236992,
+        "score_cp": 57,
+        "bestmove": "e3e4",
+        "nps": 3493834,
+        "elapsed_s": 0.3541
+      },
+      "DEV_061": {
+        "depth": 11,
+        "nodes": 1310720,
+        "score_cp": 876,
+        "bestmove": "c3c4",
+        "nps": 3728216,
+        "elapsed_s": 0.3516
+      },
+      "DEV_062": {
+        "depth": 9,
+        "nodes": 2099200,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "nps": 6003486,
+        "elapsed_s": 0.3497
+      },
+      "DEV_063": {
+        "depth": 8,
+        "nodes": 2127872,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "nps": 6033702,
+        "elapsed_s": 0.3527
+      },
+      "DEV_064": {
+        "depth": 16,
+        "nodes": 1867776,
+        "score_cp": 43,
+        "bestmove": "b4f4",
+        "nps": 5293824,
+        "elapsed_s": 0.3528
+      },
+      "DEV_065": {
+        "depth": 10,
+        "nodes": 1091584,
+        "score_cp": 28,
+        "bestmove": "b6c7",
+        "nps": 3009614,
+        "elapsed_s": 0.3627
+      },
+      "DEV_066": {
+        "depth": 7,
+        "nodes": 1081344,
+        "score_cp": 1,
+        "bestmove": "d5e6",
+        "nps": 3035179,
+        "elapsed_s": 0.3563
+      },
+      "DEV_067": {
+        "depth": 9,
+        "nodes": 974848,
+        "score_cp": 50,
+        "bestmove": "c4d5",
+        "nps": 2706543,
+        "elapsed_s": 0.3602
+      },
+      "DEV_068": {
+        "depth": 10,
+        "nodes": 1044480,
+        "score_cp": -36,
+        "bestmove": "d3d4",
+        "nps": 2937555,
+        "elapsed_s": 0.3556
+      },
+      "DEV_069": {
+        "depth": 8,
+        "nodes": 1175552,
+        "score_cp": 80,
+        "bestmove": "c1f4",
+        "nps": 3318899,
+        "elapsed_s": 0.3542
+      },
+      "DEV_070": {
+        "depth": 9,
+        "nodes": 1093632,
+        "score_cp": -26,
+        "bestmove": "e1f1",
+        "nps": 3048951,
+        "elapsed_s": 0.3587
+      },
+      "DEV_071": {
+        "depth": 9,
+        "nodes": 1208320,
+        "score_cp": 81,
+        "bestmove": "a2a3",
+        "nps": 3394336,
+        "elapsed_s": 0.356
+      },
+      "DEV_072": {
+        "depth": 9,
+        "nodes": 1030144,
+        "score_cp": 63,
+        "bestmove": "d1b3",
+        "nps": 2844947,
+        "elapsed_s": 0.3621
+      },
+      "DEV_073": {
+        "depth": 9,
+        "nodes": 1112064,
+        "score_cp": 45,
+        "bestmove": "d1c2",
+        "nps": 3149362,
+        "elapsed_s": 0.3531
+      },
+      "DEV_074": {
+        "depth": 10,
+        "nodes": 1157120,
+        "score_cp": 47,
+        "bestmove": "c4d5",
+        "nps": 3217514,
+        "elapsed_s": 0.3596
+      },
+      "DEV_075": {
+        "depth": 12,
+        "nodes": 1228800,
+        "score_cp": 66,
+        "bestmove": "a2a4",
+        "nps": 3436993,
+        "elapsed_s": 0.3575
+      },
+      "DEV_076": {
+        "depth": 9,
+        "nodes": 1087488,
+        "score_cp": -365,
+        "bestmove": "h7h6",
+        "nps": 3048247,
+        "elapsed_s": 0.3568
+      },
+      "DEV_077": {
+        "depth": 10,
+        "nodes": 1146880,
+        "score_cp": -20,
+        "bestmove": "b1d2",
+        "nps": 3229608,
+        "elapsed_s": 0.3551
+      },
+      "DEV_078": {
+        "depth": 9,
+        "nodes": 1206272,
+        "score_cp": -16,
+        "bestmove": "h2h3",
+        "nps": 3376665,
+        "elapsed_s": 0.3572
+      },
+      "DEV_079": {
+        "depth": 9,
+        "nodes": 1015808,
+        "score_cp": 198,
+        "bestmove": "a2a3",
+        "nps": 2820433,
+        "elapsed_s": 0.3602
+      },
+      "DEV_080": {
+        "depth": 11,
+        "nodes": 1214464,
+        "score_cp": -11,
+        "bestmove": "c4d5",
+        "nps": 3424300,
+        "elapsed_s": 0.3547
+      },
+      "DEV_081": {
+        "depth": 10,
+        "nodes": 1052672,
+        "score_cp": 228,
+        "bestmove": "e5f6",
+        "nps": 2931502,
+        "elapsed_s": 0.3591
+      },
+      "DEV_082": {
+        "depth": 10,
+        "nodes": 1081344,
+        "score_cp": -19,
+        "bestmove": "c3b5",
+        "nps": 3080684,
+        "elapsed_s": 0.351
+      },
+      "DEV_083": {
+        "depth": 25,
+        "nodes": 1470464,
+        "score_cp": 115,
+        "bestmove": "d2c1",
+        "nps": 4155467,
+        "elapsed_s": 0.3539
+      },
+      "DEV_084": {
+        "depth": 14,
+        "nodes": 2172928,
+        "score_cp": 617,
+        "bestmove": "c1c7",
+        "nps": 6089822,
+        "elapsed_s": 0.3568
+      },
+      "DEV_085": {
+        "depth": 20,
+        "nodes": 1817250,
+        "score_cp": 0,
+        "bestmove": "d3c2",
+        "nps": 5130365,
+        "elapsed_s": 0.3542
+      },
+      "DEV_086": {
+        "depth": 31,
+        "nodes": 2121728,
+        "score_cp": 0,
+        "bestmove": "e2f2",
+        "nps": 6053026,
+        "elapsed_s": 0.3505
+      },
+      "DEV_087": {
+        "depth": 27,
+        "nodes": 1921024,
+        "score_cp": 0,
+        "bestmove": "e2d2",
+        "nps": 5397655,
+        "elapsed_s": 0.3559
+      },
+      "DEV_088": {
+        "depth": 22,
+        "nodes": 1814528,
+        "score_cp": 842,
+        "bestmove": "e3f4",
+        "nps": 5087508,
+        "elapsed_s": 0.3567
+      },
+      "DEV_089": {
+        "depth": 23,
+        "nodes": 1738752,
+        "score_cp": 164,
+        "bestmove": "e2f3",
+        "nps": 4751642,
+        "elapsed_s": 0.3659
+      },
+      "DEV_090": {
+        "depth": 11,
+        "nodes": 1382400,
+        "score_cp": 27,
+        "bestmove": "a1c1",
+        "nps": 3904751,
+        "elapsed_s": 0.354
+      },
+      "DEV_091": {
+        "depth": 27,
+        "nodes": 1763328,
+        "score_cp": 182,
+        "bestmove": "e1f2",
+        "nps": 4940179,
+        "elapsed_s": 0.3569
+      },
+      "DEV_092": {
+        "depth": 19,
+        "nodes": 2199552,
+        "score_cp": -273,
+        "bestmove": "e1d1",
+        "nps": 6290969,
+        "elapsed_s": 0.3496
+      },
+      "DEV_093": {
+        "depth": 20,
+        "nodes": 1640448,
+        "score_cp": 684,
+        "bestmove": "b7b8q",
+        "nps": 4665109,
+        "elapsed_s": 0.3516
+      },
+      "DEV_094": {
+        "depth": 0,
+        "nodes": 0,
+        "score_cp": 0,
+        "bestmove": null,
+        "nps": 0,
+        "elapsed_s": 0.0531
+      },
+      "DEV_095": {
+        "depth": 10,
+        "nodes": 1099776,
+        "score_cp": 147,
+        "bestmove": "f4f3",
+        "nps": 3024268,
+        "elapsed_s": 0.3637
+      },
+      "DEV_096": {
+        "depth": 11,
+        "nodes": 1288192,
+        "score_cp": 198,
+        "bestmove": "e1c1",
+        "nps": 3595509,
+        "elapsed_s": 0.3583
+      },
+      "DEV_097": {
+        "depth": 12,
+        "nodes": 1298432,
+        "score_cp": 188,
+        "bestmove": "c3d5",
+        "nps": 3518426,
+        "elapsed_s": 0.369
+      },
+      "DEV_098": {
+        "depth": 12,
+        "nodes": 1032192,
+        "score_cp": -117,
+        "bestmove": "g5f7",
+        "nps": 2848174,
+        "elapsed_s": 0.3624
+      },
+      "DEV_099": {
+        "depth": 12,
+        "nodes": 1236992,
+        "score_cp": -237,
+        "bestmove": "f7d5",
+        "nps": 3446348,
+        "elapsed_s": 0.3589
+      },
+      "DEV_100": {
+        "depth": 11,
+        "nodes": 1458176,
+        "score_cp": -1231,
+        "bestmove": "d2d3",
+        "nps": 4085581,
+        "elapsed_s": 0.3569
+      },
+      "DEV_101": {
+        "depth": 11,
+        "nodes": 1171456,
+        "score_cp": 0,
+        "bestmove": "g2e4",
+        "nps": 3286141,
+        "elapsed_s": 0.3565
+      },
+      "DEV_102": {
+        "depth": 13,
+        "nodes": 1144832,
+        "score_cp": 0,
+        "bestmove": "f1c1",
+        "nps": 3196046,
+        "elapsed_s": 0.3582
+      },
+      "DEV_103": {
+        "depth": 13,
+        "nodes": 1173504,
+        "score_cp": -951,
+        "bestmove": "b1b2",
+        "nps": 3287304,
+        "elapsed_s": 0.357
+      },
+      "DEV_104": {
+        "depth": 11,
+        "nodes": 1548288,
+        "score_cp": -9,
+        "bestmove": "f1g2",
+        "nps": 4317422,
+        "elapsed_s": 0.3586
+      },
+      "DEV_105": {
+        "depth": 11,
+        "nodes": 1609728,
+        "score_cp": -175,
+        "bestmove": "d1e1",
+        "nps": 4544571,
+        "elapsed_s": 0.3542
+      },
+      "DEV_106": {
+        "depth": 16,
+        "nodes": 1380352,
+        "score_cp": 0,
+        "bestmove": "c1d2",
+        "nps": 3815279,
+        "elapsed_s": 0.3618
+      },
+      "DEV_107": {
+        "depth": 10,
+        "nodes": 1169408,
+        "score_cp": 28,
+        "bestmove": "f3e5",
+        "nps": 3235071,
+        "elapsed_s": 0.3615
+      },
+      "DEV_108": {
+        "depth": 8,
+        "nodes": 997376,
+        "score_cp": 28,
+        "bestmove": "f3h3",
+        "nps": 2788518,
+        "elapsed_s": 0.3577
+      },
+      "DEV_109": {
+        "depth": 9,
+        "nodes": 1150976,
+        "score_cp": -36,
+        "bestmove": "g3e3",
+        "nps": 3233752,
+        "elapsed_s": 0.3559
+      },
+      "DEV_110": {
+        "depth": 13,
+        "nodes": 1077248,
+        "score_cp": 0,
+        "bestmove": "f1c1",
+        "nps": 2931074,
+        "elapsed_s": 0.3675
+      },
+      "DEV_111": {
+        "depth": 13,
+        "nodes": 1562624,
+        "score_cp": -289,
+        "bestmove": "d4b3",
+        "nps": 4426775,
+        "elapsed_s": 0.353
+      },
+      "DEV_112": {
+        "depth": 15,
+        "nodes": 1413120,
+        "score_cp": 0,
+        "bestmove": "g1h1",
+        "nps": 3998127,
+        "elapsed_s": 0.3534
+      },
+      "DEV_113": {
+        "depth": 13,
+        "nodes": 1280000,
+        "score_cp": 0,
+        "bestmove": "d1c1",
+        "nps": 3649281,
+        "elapsed_s": 0.3508
+      },
+      "DEV_114": {
+        "depth": 12,
+        "nodes": 1394688,
+        "score_cp": -8,
+        "bestmove": "b2b3",
+        "nps": 3951422,
+        "elapsed_s": 0.353
+      },
+      "DEV_115": {
+        "depth": 64,
+        "nodes": 707299,
+        "score_cp": 0,
+        "bestmove": "f2g3",
+        "nps": 2001607,
+        "elapsed_s": 0.3534
+      },
+      "DEV_116": {
+        "depth": 9,
+        "nodes": 1103872,
+        "score_cp": -34,
+        "bestmove": "d1e2",
+        "nps": 3157724,
+        "elapsed_s": 0.3496
+      },
+      "DEV_117": {
+        "depth": 10,
+        "nodes": 1251328,
+        "score_cp": -255,
+        "bestmove": "e4f3",
+        "nps": 3575956,
+        "elapsed_s": 0.3499
+      },
+      "DEV_118": {
+        "depth": 10,
+        "nodes": 1269760,
+        "score_cp": -254,
+        "bestmove": "c1f1",
+        "nps": 3611148,
+        "elapsed_s": 0.3516
+      },
+      "DEV_119": {
+        "depth": 11,
+        "nodes": 1300480,
+        "score_cp": -423,
+        "bestmove": "f3h5",
+        "nps": 3705018,
+        "elapsed_s": 0.351
+      },
+      "DEV_120": {
+        "depth": 10,
+        "nodes": 1075200,
+        "score_cp": -452,
+        "bestmove": "a1a2",
+        "nps": 3035850,
+        "elapsed_s": 0.3542
+      }
+    }
+  },
+  "E2": {
+    "id": "E2",
+    "emode": "E12",
+    "desc": "King safety fixes (stranded central king on open files)",
+    "avg_depth": 13.37,
+    "avg_nps": 4098032,
+    "tactics_solved": 6,
+    "elapsed_total": 41.96,
+    "positions": {
+      "DEV_001": {
+        "depth": 10,
+        "nodes": 1337344,
+        "score_cp": -114,
+        "bestmove": "b1c3",
+        "nps": 3739899,
+        "elapsed_s": 0.3576
+      },
+      "DEV_002": {
+        "depth": 9,
+        "nodes": 1318912,
+        "score_cp": 80,
+        "bestmove": "e3e4",
+        "nps": 3729856,
+        "elapsed_s": 0.3536
+      },
+      "DEV_003": {
+        "depth": 12,
+        "nodes": 1226752,
+        "score_cp": 28,
+        "bestmove": "a4c6",
+        "nps": 3490272,
+        "elapsed_s": 0.3515
+      },
+      "DEV_004": {
+        "depth": 11,
+        "nodes": 1214464,
+        "score_cp": 86,
+        "bestmove": "d4c6",
+        "nps": 3486173,
+        "elapsed_s": 0.3484
+      },
+      "DEV_005": {
+        "depth": 11,
+        "nodes": 1560576,
+        "score_cp": 368,
+        "bestmove": "c4d5",
+        "nps": 4441339,
+        "elapsed_s": 0.3514
+      },
+      "DEV_006": {
+        "depth": 10,
+        "nodes": 1200128,
+        "score_cp": 15,
+        "bestmove": "e2f3",
+        "nps": 3397484,
+        "elapsed_s": 0.3532
+      },
+      "DEV_007": {
+        "depth": 9,
+        "nodes": 1335296,
+        "score_cp": 32,
+        "bestmove": "e1g1",
+        "nps": 3772264,
+        "elapsed_s": 0.354
+      },
+      "DEV_008": {
+        "depth": 11,
+        "nodes": 1282048,
+        "score_cp": 8,
+        "bestmove": "b2a3",
+        "nps": 3572963,
+        "elapsed_s": 0.3588
+      },
+      "DEV_009": {
+        "depth": 9,
+        "nodes": 1368064,
+        "score_cp": -4,
+        "bestmove": "d3c4",
+        "nps": 3880828,
+        "elapsed_s": 0.3525
+      },
+      "DEV_010": {
+        "depth": 10,
+        "nodes": 1214464,
+        "score_cp": 45,
+        "bestmove": "a2a3",
+        "nps": 3473085,
+        "elapsed_s": 0.3497
+      },
+      "DEV_011": {
+        "depth": 10,
+        "nodes": 1333248,
+        "score_cp": 31,
+        "bestmove": "a2a3",
+        "nps": 3831757,
+        "elapsed_s": 0.3479
+      },
+      "DEV_012": {
+        "depth": 10,
+        "nodes": 1271808,
+        "score_cp": 23,
+        "bestmove": "g2g4",
+        "nps": 3582863,
+        "elapsed_s": 0.355
+      },
+      "DEV_013": {
+        "depth": 9,
+        "nodes": 1343488,
+        "score_cp": -342,
+        "bestmove": "d8c7",
+        "nps": 3842359,
+        "elapsed_s": 0.3497
+      },
+      "DEV_014": {
+        "depth": 9,
+        "nodes": 1396736,
+        "score_cp": 419,
+        "bestmove": "d1c2",
+        "nps": 3977401,
+        "elapsed_s": 0.3512
+      },
+      "DEV_015": {
+        "depth": 10,
+        "nodes": 1320960,
+        "score_cp": 50,
+        "bestmove": "g1e2",
+        "nps": 3790471,
+        "elapsed_s": 0.3485
+      },
+      "DEV_016": {
+        "depth": 12,
+        "nodes": 1318912,
+        "score_cp": 215,
+        "bestmove": "d3h7",
+        "nps": 3750358,
+        "elapsed_s": 0.3517
+      },
+      "DEV_017": {
+        "depth": 9,
+        "nodes": 1343488,
+        "score_cp": 728,
+        "bestmove": "d1d3",
+        "nps": 3816067,
+        "elapsed_s": 0.3521
+      },
+      "DEV_018": {
+        "depth": 10,
+        "nodes": 1191936,
+        "score_cp": 37,
+        "bestmove": "a2d5",
+        "nps": 3363507,
+        "elapsed_s": 0.3544
+      },
+      "DEV_019": {
+        "depth": 12,
+        "nodes": 1744896,
+        "score_cp": -350,
+        "bestmove": "d5c4",
+        "nps": 4968727,
+        "elapsed_s": 0.3512
+      },
+      "DEV_020": {
+        "depth": 12,
+        "nodes": 1239040,
+        "score_cp": 312,
+        "bestmove": "c3a4",
+        "nps": 3510321,
+        "elapsed_s": 0.353
+      },
+      "DEV_021": {
+        "depth": 12,
+        "nodes": 2631680,
+        "score_cp": 28999,
+        "bestmove": "e1e8",
+        "nps": 7559240,
+        "elapsed_s": 0.3481
+      },
+      "DEV_022": {
+        "depth": 13,
+        "nodes": 1757184,
+        "score_cp": 104,
+        "bestmove": "f1c1",
+        "nps": 5039732,
+        "elapsed_s": 0.3487
+      },
+      "DEV_023": {
+        "depth": 16,
+        "nodes": 1675264,
+        "score_cp": 1063,
+        "bestmove": "f8d8",
+        "nps": 4813651,
+        "elapsed_s": 0.348
+      },
+      "DEV_024": {
+        "depth": 9,
+        "nodes": 1243136,
+        "score_cp": -131,
+        "bestmove": "d8a5",
+        "nps": 3534662,
+        "elapsed_s": 0.3517
+      },
+      "DEV_025": {
+        "depth": 64,
+        "nodes": 64,
+        "score_cp": 0,
+        "bestmove": "0000",
+        "nps": 1166,
+        "elapsed_s": 0.0549
+      },
+      "DEV_026": {
+        "depth": 10,
+        "nodes": 1437696,
+        "score_cp": 63,
+        "bestmove": "d4e5",
+        "nps": 3902256,
+        "elapsed_s": 0.3684
+      },
+      "DEV_027": {
+        "depth": 12,
+        "nodes": 1409024,
+        "score_cp": 46,
+        "bestmove": "e4e5",
+        "nps": 4006819,
+        "elapsed_s": 0.3517
+      },
+      "DEV_028": {
+        "depth": 12,
+        "nodes": 1343488,
+        "score_cp": -50,
+        "bestmove": "f5e4",
+        "nps": 3815862,
+        "elapsed_s": 0.3521
+      },
+      "DEV_029": {
+        "depth": 13,
+        "nodes": 1728512,
+        "score_cp": 30,
+        "bestmove": "d8d1",
+        "nps": 4943159,
+        "elapsed_s": 0.3497
+      },
+      "DEV_030": {
+        "depth": 11,
+        "nodes": 1492992,
+        "score_cp": -38,
+        "bestmove": "e7e6",
+        "nps": 4213690,
+        "elapsed_s": 0.3543
+      },
+      "DEV_031": {
+        "depth": 13,
+        "nodes": 1341440,
+        "score_cp": 3,
+        "bestmove": "c2c3",
+        "nps": 3845673,
+        "elapsed_s": 0.3488
+      },
+      "DEV_032": {
+        "depth": 10,
+        "nodes": 1288192,
+        "score_cp": -6,
+        "bestmove": "d6b4",
+        "nps": 3676572,
+        "elapsed_s": 0.3504
+      },
+      "DEV_033": {
+        "depth": 11,
+        "nodes": 1374208,
+        "score_cp": -28,
+        "bestmove": "b4c3",
+        "nps": 3813168,
+        "elapsed_s": 0.3604
+      },
+      "DEV_034": {
+        "depth": 11,
+        "nodes": 1269760,
+        "score_cp": 32,
+        "bestmove": "e3f4",
+        "nps": 3536465,
+        "elapsed_s": 0.359
+      },
+      "DEV_035": {
+        "depth": 10,
+        "nodes": 1370112,
+        "score_cp": 128,
+        "bestmove": "d1h5",
+        "nps": 3841103,
+        "elapsed_s": 0.3567
+      },
+      "DEV_036": {
+        "depth": 10,
+        "nodes": 1220608,
+        "score_cp": 92,
+        "bestmove": "d8f6",
+        "nps": 3451378,
+        "elapsed_s": 0.3537
+      },
+      "DEV_037": {
+        "depth": 15,
+        "nodes": 1224704,
+        "score_cp": 0,
+        "bestmove": "e6g4",
+        "nps": 3449061,
+        "elapsed_s": 0.3551
+      },
+      "DEV_038": {
+        "depth": 10,
+        "nodes": 1181696,
+        "score_cp": 171,
+        "bestmove": "e3d4",
+        "nps": 3240428,
+        "elapsed_s": 0.3647
+      },
+      "DEV_039": {
+        "depth": 11,
+        "nodes": 1323008,
+        "score_cp": -17,
+        "bestmove": "d5d4",
+        "nps": 3661604,
+        "elapsed_s": 0.3613
+      },
+      "DEV_040": {
+        "depth": 11,
+        "nodes": 1249280,
+        "score_cp": 4,
+        "bestmove": "h7h6",
+        "nps": 3484736,
+        "elapsed_s": 0.3585
+      },
+      "DEV_041": {
+        "depth": 10,
+        "nodes": 1335296,
+        "score_cp": 147,
+        "bestmove": "d5e6",
+        "nps": 3698755,
+        "elapsed_s": 0.361
+      },
+      "DEV_042": {
+        "depth": 11,
+        "nodes": 1361920,
+        "score_cp": 27,
+        "bestmove": "b8c6",
+        "nps": 3708622,
+        "elapsed_s": 0.3672
+      },
+      "DEV_043": {
+        "depth": 11,
+        "nodes": 1329152,
+        "score_cp": 106,
+        "bestmove": "d2d4",
+        "nps": 3731813,
+        "elapsed_s": 0.3562
+      },
+      "DEV_044": {
+        "depth": 10,
+        "nodes": 1335296,
+        "score_cp": 82,
+        "bestmove": "d1f3",
+        "nps": 3734033,
+        "elapsed_s": 0.3576
+      },
+      "DEV_045": {
+        "depth": 8,
+        "nodes": 2347008,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "nps": 6618165,
+        "elapsed_s": 0.3546
+      },
+      "DEV_046": {
+        "depth": 10,
+        "nodes": 1447936,
+        "score_cp": -15,
+        "bestmove": "c4d5",
+        "nps": 4028641,
+        "elapsed_s": 0.3594
+      },
+      "DEV_047": {
+        "depth": 10,
+        "nodes": 1253376,
+        "score_cp": 428,
+        "bestmove": "d3h7",
+        "nps": 3495122,
+        "elapsed_s": 0.3586
+      },
+      "DEV_048": {
+        "depth": 11,
+        "nodes": 1398784,
+        "score_cp": 327,
+        "bestmove": "e4c3",
+        "nps": 3893879,
+        "elapsed_s": 0.3592
+      },
+      "DEV_049": {
+        "depth": 22,
+        "nodes": 1744896,
+        "score_cp": 0,
+        "bestmove": "c2b1",
+        "nps": 4819514,
+        "elapsed_s": 0.362
+      },
+      "DEV_050": {
+        "depth": 10,
+        "nodes": 1388544,
+        "score_cp": 1,
+        "bestmove": "d4c5",
+        "nps": 3863507,
+        "elapsed_s": 0.3594
+      },
+      "DEV_051": {
+        "depth": 12,
+        "nodes": 1388544,
+        "score_cp": 5,
+        "bestmove": "d1c2",
+        "nps": 3865507,
+        "elapsed_s": 0.3592
+      },
+      "DEV_052": {
+        "depth": 14,
+        "nodes": 2353152,
+        "score_cp": 28987,
+        "bestmove": "f7f8q",
+        "nps": 6645234,
+        "elapsed_s": 0.3541
+      },
+      "DEV_053": {
+        "depth": 16,
+        "nodes": 2203648,
+        "score_cp": 990,
+        "bestmove": "d5e6",
+        "nps": 6215115,
+        "elapsed_s": 0.3546
+      },
+      "DEV_054": {
+        "depth": 11,
+        "nodes": 1296384,
+        "score_cp": 139,
+        "bestmove": "c4f7",
+        "nps": 3642705,
+        "elapsed_s": 0.3559
+      },
+      "DEV_055": {
+        "depth": 64,
+        "nodes": 772,
+        "score_cp": 0,
+        "bestmove": "b6a6",
+        "nps": 14246,
+        "elapsed_s": 0.0542
+      },
+      "DEV_056": {
+        "depth": 19,
+        "nodes": 1773568,
+        "score_cp": 0,
+        "bestmove": "a1d1",
+        "nps": 4972286,
+        "elapsed_s": 0.3567
+      },
+      "DEV_057": {
+        "depth": 10,
+        "nodes": 1431552,
+        "score_cp": 110,
+        "bestmove": "b5c6",
+        "nps": 4024731,
+        "elapsed_s": 0.3557
+      },
+      "DEV_058": {
+        "depth": 11,
+        "nodes": 1122304,
+        "score_cp": 216,
+        "bestmove": "c3d5",
+        "nps": 3097114,
+        "elapsed_s": 0.3624
+      },
+      "DEV_059": {
+        "depth": 22,
+        "nodes": 1665024,
+        "score_cp": 506,
+        "bestmove": "d3c3",
+        "nps": 4651448,
+        "elapsed_s": 0.358
+      },
+      "DEV_060": {
+        "depth": 10,
+        "nodes": 1353728,
+        "score_cp": 54,
+        "bestmove": "e1g1",
+        "nps": 3758565,
+        "elapsed_s": 0.3602
+      },
+      "DEV_061": {
+        "depth": 10,
+        "nodes": 1449984,
+        "score_cp": 863,
+        "bestmove": "d4c5",
+        "nps": 4077562,
+        "elapsed_s": 0.3556
+      },
+      "DEV_062": {
+        "depth": 9,
+        "nodes": 2242560,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "nps": 6294057,
+        "elapsed_s": 0.3563
+      },
+      "DEV_063": {
+        "depth": 8,
+        "nodes": 2349056,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "nps": 6646033,
+        "elapsed_s": 0.3535
+      },
+      "DEV_064": {
+        "depth": 15,
+        "nodes": 1976320,
+        "score_cp": 10,
+        "bestmove": "b4f4",
+        "nps": 5485287,
+        "elapsed_s": 0.3603
+      },
+      "DEV_065": {
+        "depth": 11,
+        "nodes": 1286144,
+        "score_cp": 31,
+        "bestmove": "b6c7",
+        "nps": 3607395,
+        "elapsed_s": 0.3565
+      },
+      "DEV_066": {
+        "depth": 7,
+        "nodes": 1140736,
+        "score_cp": 24,
+        "bestmove": "d5e6",
+        "nps": 3182779,
+        "elapsed_s": 0.3584
+      },
+      "DEV_067": {
+        "depth": 10,
+        "nodes": 1273856,
+        "score_cp": 50,
+        "bestmove": "c4d5",
+        "nps": 3608683,
+        "elapsed_s": 0.353
+      },
+      "DEV_068": {
+        "depth": 11,
+        "nodes": 1198080,
+        "score_cp": -15,
+        "bestmove": "d3d4",
+        "nps": 3208105,
+        "elapsed_s": 0.3735
+      },
+      "DEV_069": {
+        "depth": 9,
+        "nodes": 1310720,
+        "score_cp": 101,
+        "bestmove": "c1f4",
+        "nps": 3686826,
+        "elapsed_s": 0.3555
+      },
+      "DEV_070": {
+        "depth": 10,
+        "nodes": 1284096,
+        "score_cp": -17,
+        "bestmove": "c1d2",
+        "nps": 3536644,
+        "elapsed_s": 0.3631
+      },
+      "DEV_071": {
+        "depth": 9,
+        "nodes": 1445888,
+        "score_cp": 79,
+        "bestmove": "a2a3",
+        "nps": 4006427,
+        "elapsed_s": 0.3609
+      },
+      "DEV_072": {
+        "depth": 10,
+        "nodes": 1208320,
+        "score_cp": 59,
+        "bestmove": "d1b3",
+        "nps": 3391325,
+        "elapsed_s": 0.3563
+      },
+      "DEV_073": {
+        "depth": 9,
+        "nodes": 1298432,
+        "score_cp": 46,
+        "bestmove": "e2d3",
+        "nps": 3627377,
+        "elapsed_s": 0.358
+      },
+      "DEV_074": {
+        "depth": 10,
+        "nodes": 1343488,
+        "score_cp": 55,
+        "bestmove": "c4d5",
+        "nps": 3705846,
+        "elapsed_s": 0.3625
+      },
+      "DEV_075": {
+        "depth": 11,
+        "nodes": 1443840,
+        "score_cp": 66,
+        "bestmove": "a2a4",
+        "nps": 4012538,
+        "elapsed_s": 0.3598
+      },
+      "DEV_076": {
+        "depth": 9,
+        "nodes": 1331200,
+        "score_cp": -347,
+        "bestmove": "h7h6",
+        "nps": 3667394,
+        "elapsed_s": 0.363
+      },
+      "DEV_077": {
+        "depth": 10,
+        "nodes": 1329152,
+        "score_cp": -20,
+        "bestmove": "b1d2",
+        "nps": 3730708,
+        "elapsed_s": 0.3563
+      },
+      "DEV_078": {
+        "depth": 9,
+        "nodes": 1329152,
+        "score_cp": -20,
+        "bestmove": "d1d2",
+        "nps": 3700887,
+        "elapsed_s": 0.3591
+      },
+      "DEV_079": {
+        "depth": 9,
+        "nodes": 1169408,
+        "score_cp": 198,
+        "bestmove": "a2a3",
+        "nps": 3267769,
+        "elapsed_s": 0.3579
+      },
+      "DEV_080": {
+        "depth": 11,
+        "nodes": 1351680,
+        "score_cp": -18,
+        "bestmove": "c4d5",
+        "nps": 3794500,
+        "elapsed_s": 0.3562
+      },
+      "DEV_081": {
+        "depth": 10,
+        "nodes": 1251328,
+        "score_cp": 199,
+        "bestmove": "e5f6",
+        "nps": 3429745,
+        "elapsed_s": 0.3648
+      },
+      "DEV_082": {
+        "depth": 10,
+        "nodes": 1239040,
+        "score_cp": -17,
+        "bestmove": "c3b5",
+        "nps": 3457546,
+        "elapsed_s": 0.3584
+      },
+      "DEV_083": {
+        "depth": 25,
+        "nodes": 1607680,
+        "score_cp": 119,
+        "bestmove": "d2d1",
+        "nps": 4436255,
+        "elapsed_s": 0.3624
+      },
+      "DEV_084": {
+        "depth": 15,
+        "nodes": 2222080,
+        "score_cp": 617,
+        "bestmove": "c1c7",
+        "nps": 6223517,
+        "elapsed_s": 0.357
+      },
+      "DEV_085": {
+        "depth": 20,
+        "nodes": 1896448,
+        "score_cp": 0,
+        "bestmove": "d3c2",
+        "nps": 5283395,
+        "elapsed_s": 0.3589
+      },
+      "DEV_086": {
+        "depth": 31,
+        "nodes": 2138112,
+        "score_cp": 0,
+        "bestmove": "e2f2",
+        "nps": 6046743,
+        "elapsed_s": 0.3536
+      },
+      "DEV_087": {
+        "depth": 30,
+        "nodes": 2052939,
+        "score_cp": 0,
+        "bestmove": "e3f5",
+        "nps": 5740508,
+        "elapsed_s": 0.3576
+      },
+      "DEV_088": {
+        "depth": 21,
+        "nodes": 1914880,
+        "score_cp": 670,
+        "bestmove": "e3f4",
+        "nps": 5416496,
+        "elapsed_s": 0.3535
+      },
+      "DEV_089": {
+        "depth": 26,
+        "nodes": 1914880,
+        "score_cp": 154,
+        "bestmove": "e2e3",
+        "nps": 5356199,
+        "elapsed_s": 0.3575
+      },
+      "DEV_090": {
+        "depth": 11,
+        "nodes": 1689600,
+        "score_cp": 27,
+        "bestmove": "c4d5",
+        "nps": 4709013,
+        "elapsed_s": 0.3588
+      },
+      "DEV_091": {
+        "depth": 26,
+        "nodes": 1947648,
+        "score_cp": 202,
+        "bestmove": "e1d2",
+        "nps": 5460506,
+        "elapsed_s": 0.3567
+      },
+      "DEV_092": {
+        "depth": 20,
+        "nodes": 1951744,
+        "score_cp": -246,
+        "bestmove": "e1f1",
+        "nps": 5469516,
+        "elapsed_s": 0.3568
+      },
+      "DEV_093": {
+        "depth": 18,
+        "nodes": 1708032,
+        "score_cp": 684,
+        "bestmove": "b7b8q",
+        "nps": 4736103,
+        "elapsed_s": 0.3606
+      },
+      "DEV_094": {
+        "depth": 0,
+        "nodes": 0,
+        "score_cp": 0,
+        "bestmove": null,
+        "nps": 0,
+        "elapsed_s": 0.0566
+      },
+      "DEV_095": {
+        "depth": 11,
+        "nodes": 1300480,
+        "score_cp": 138,
+        "bestmove": "a2a3",
+        "nps": 3536683,
+        "elapsed_s": 0.3677
+      },
+      "DEV_096": {
+        "depth": 11,
+        "nodes": 1452032,
+        "score_cp": 203,
+        "bestmove": "e1c1",
+        "nps": 4063087,
+        "elapsed_s": 0.3574
+      },
+      "DEV_097": {
+        "depth": 12,
+        "nodes": 1531904,
+        "score_cp": 195,
+        "bestmove": "c3d5",
+        "nps": 4227173,
+        "elapsed_s": 0.3624
+      },
+      "DEV_098": {
+        "depth": 13,
+        "nodes": 1280000,
+        "score_cp": -117,
+        "bestmove": "g5f7",
+        "nps": 3558510,
+        "elapsed_s": 0.3597
+      },
+      "DEV_099": {
+        "depth": 12,
+        "nodes": 1411072,
+        "score_cp": -280,
+        "bestmove": "f7d5",
+        "nps": 3913258,
+        "elapsed_s": 0.3606
+      },
+      "DEV_100": {
+        "depth": 11,
+        "nodes": 1708032,
+        "score_cp": -1246,
+        "bestmove": "d2d3",
+        "nps": 4798722,
+        "elapsed_s": 0.3559
+      },
+      "DEV_101": {
+        "depth": 11,
+        "nodes": 1300480,
+        "score_cp": 11,
+        "bestmove": "g2e4",
+        "nps": 3650983,
+        "elapsed_s": 0.3562
+      },
+      "DEV_102": {
+        "depth": 13,
+        "nodes": 1351680,
+        "score_cp": 0,
+        "bestmove": "f1c1",
+        "nps": 3801496,
+        "elapsed_s": 0.3556
+      },
+      "DEV_103": {
+        "depth": 13,
+        "nodes": 1437696,
+        "score_cp": -965,
+        "bestmove": "b1b2",
+        "nps": 4111829,
+        "elapsed_s": 0.3496
+      },
+      "DEV_104": {
+        "depth": 11,
+        "nodes": 1679360,
+        "score_cp": -17,
+        "bestmove": "f1g2",
+        "nps": 4706226,
+        "elapsed_s": 0.3568
+      },
+      "DEV_105": {
+        "depth": 12,
+        "nodes": 1701888,
+        "score_cp": -149,
+        "bestmove": "f1e2",
+        "nps": 4813811,
+        "elapsed_s": 0.3535
+      },
+      "DEV_106": {
+        "depth": 14,
+        "nodes": 1658880,
+        "score_cp": -34,
+        "bestmove": "e5g4",
+        "nps": 4711168,
+        "elapsed_s": 0.3521
+      },
+      "DEV_107": {
+        "depth": 10,
+        "nodes": 1294336,
+        "score_cp": 25,
+        "bestmove": "e1g1",
+        "nps": 3615132,
+        "elapsed_s": 0.358
+      },
+      "DEV_108": {
+        "depth": 8,
+        "nodes": 1083392,
+        "score_cp": 31,
+        "bestmove": "b1e1",
+        "nps": 2987718,
+        "elapsed_s": 0.3626
+      },
+      "DEV_109": {
+        "depth": 10,
+        "nodes": 1320960,
+        "score_cp": -47,
+        "bestmove": "g3e3",
+        "nps": 3720770,
+        "elapsed_s": 0.355
+      },
+      "DEV_110": {
+        "depth": 13,
+        "nodes": 1306624,
+        "score_cp": -106,
+        "bestmove": "c4b5",
+        "nps": 3648102,
+        "elapsed_s": 0.3582
+      },
+      "DEV_111": {
+        "depth": 13,
+        "nodes": 1665024,
+        "score_cp": -278,
+        "bestmove": "d4b3",
+        "nps": 4700642,
+        "elapsed_s": 0.3542
+      },
+      "DEV_112": {
+        "depth": 16,
+        "nodes": 1564672,
+        "score_cp": 0,
+        "bestmove": "g1h1",
+        "nps": 4272337,
+        "elapsed_s": 0.3662
+      },
+      "DEV_113": {
+        "depth": 13,
+        "nodes": 1200128,
+        "score_cp": 0,
+        "bestmove": "d1c1",
+        "nps": 3235886,
+        "elapsed_s": 0.3709
+      },
+      "DEV_114": {
+        "depth": 12,
+        "nodes": 1470464,
+        "score_cp": -8,
+        "bestmove": "b2b3",
+        "nps": 4062920,
+        "elapsed_s": 0.3619
+      },
+      "DEV_115": {
+        "depth": 64,
+        "nodes": 756466,
+        "score_cp": 0,
+        "bestmove": "f2g3",
+        "nps": 2101243,
+        "elapsed_s": 0.36
+      },
+      "DEV_116": {
+        "depth": 9,
+        "nodes": 1142784,
+        "score_cp": -34,
+        "bestmove": "d1e2",
+        "nps": 3164278,
+        "elapsed_s": 0.3612
+      },
+      "DEV_117": {
+        "depth": 10,
+        "nodes": 1257472,
+        "score_cp": -255,
+        "bestmove": "e4f3",
+        "nps": 3540580,
+        "elapsed_s": 0.3552
+      },
+      "DEV_118": {
+        "depth": 10,
+        "nodes": 1361920,
+        "score_cp": -254,
+        "bestmove": "c1f1",
+        "nps": 3888305,
+        "elapsed_s": 0.3503
+      },
+      "DEV_119": {
+        "depth": 10,
+        "nodes": 1423360,
+        "score_cp": -413,
+        "bestmove": "f3h5",
+        "nps": 4043848,
+        "elapsed_s": 0.352
+      },
+      "DEV_120": {
+        "depth": 11,
+        "nodes": 1095680,
+        "score_cp": -500,
+        "bestmove": "d3c2",
+        "nps": 3127045,
+        "elapsed_s": 0.3504
+      }
+    }
+  },
+  "E3": {
+    "id": "E3",
+    "emode": "E13",
+    "desc": "Endgame refinements (opposition, Tarrasch rooks)",
+    "avg_depth": 13.32,
+    "avg_nps": 4163334,
+    "tactics_solved": 6,
+    "elapsed_total": 41.47,
+    "positions": {
+      "DEV_001": {
+        "depth": 10,
+        "nodes": 1363968,
+        "score_cp": -108,
+        "bestmove": "d2d3",
+        "nps": 3864142,
+        "elapsed_s": 0.353
+      },
+      "DEV_002": {
+        "depth": 9,
+        "nodes": 1318912,
+        "score_cp": 80,
+        "bestmove": "e3e4",
+        "nps": 3648453,
+        "elapsed_s": 0.3615
+      },
+      "DEV_003": {
+        "depth": 12,
+        "nodes": 1271808,
+        "score_cp": 36,
+        "bestmove": "a4c6",
+        "nps": 3561122,
+        "elapsed_s": 0.3571
+      },
+      "DEV_004": {
+        "depth": 11,
+        "nodes": 1239040,
+        "score_cp": 84,
+        "bestmove": "d4c6",
+        "nps": 3543797,
+        "elapsed_s": 0.3496
+      },
+      "DEV_005": {
+        "depth": 11,
+        "nodes": 1585152,
+        "score_cp": 369,
+        "bestmove": "c4d5",
+        "nps": 4505423,
+        "elapsed_s": 0.3518
+      },
+      "DEV_006": {
+        "depth": 10,
+        "nodes": 1218560,
+        "score_cp": 15,
+        "bestmove": "e2f3",
+        "nps": 3537828,
+        "elapsed_s": 0.3444
+      },
+      "DEV_007": {
+        "depth": 9,
+        "nodes": 1345536,
+        "score_cp": 26,
+        "bestmove": "c1f4",
+        "nps": 3808486,
+        "elapsed_s": 0.3533
+      },
+      "DEV_008": {
+        "depth": 11,
+        "nodes": 1292288,
+        "score_cp": 15,
+        "bestmove": "b2a3",
+        "nps": 3674010,
+        "elapsed_s": 0.3517
+      },
+      "DEV_009": {
+        "depth": 9,
+        "nodes": 1339392,
+        "score_cp": -4,
+        "bestmove": "d3c4",
+        "nps": 3760235,
+        "elapsed_s": 0.3562
+      },
+      "DEV_010": {
+        "depth": 9,
+        "nodes": 1347584,
+        "score_cp": 45,
+        "bestmove": "c1d2",
+        "nps": 3802192,
+        "elapsed_s": 0.3544
+      },
+      "DEV_011": {
+        "depth": 10,
+        "nodes": 1314205,
+        "score_cp": 31,
+        "bestmove": "f1d3",
+        "nps": 3742663,
+        "elapsed_s": 0.3511
+      },
+      "DEV_012": {
+        "depth": 10,
+        "nodes": 1310720,
+        "score_cp": 27,
+        "bestmove": "g2g4",
+        "nps": 3701002,
+        "elapsed_s": 0.3542
+      },
+      "DEV_013": {
+        "depth": 9,
+        "nodes": 1298432,
+        "score_cp": -342,
+        "bestmove": "d8c7",
+        "nps": 3661202,
+        "elapsed_s": 0.3546
+      },
+      "DEV_014": {
+        "depth": 10,
+        "nodes": 1388544,
+        "score_cp": 404,
+        "bestmove": "d1c2",
+        "nps": 3978442,
+        "elapsed_s": 0.349
+      },
+      "DEV_015": {
+        "depth": 10,
+        "nodes": 1355776,
+        "score_cp": 42,
+        "bestmove": "g1e2",
+        "nps": 3853150,
+        "elapsed_s": 0.3519
+      },
+      "DEV_016": {
+        "depth": 12,
+        "nodes": 1355776,
+        "score_cp": 220,
+        "bestmove": "d3h7",
+        "nps": 3728598,
+        "elapsed_s": 0.3636
+      },
+      "DEV_017": {
+        "depth": 9,
+        "nodes": 1318912,
+        "score_cp": 722,
+        "bestmove": "g5f4",
+        "nps": 3688823,
+        "elapsed_s": 0.3575
+      },
+      "DEV_018": {
+        "depth": 10,
+        "nodes": 1163264,
+        "score_cp": 37,
+        "bestmove": "d1d2",
+        "nps": 3214722,
+        "elapsed_s": 0.3619
+      },
+      "DEV_019": {
+        "depth": 12,
+        "nodes": 1769472,
+        "score_cp": -350,
+        "bestmove": "d5c4",
+        "nps": 4996265,
+        "elapsed_s": 0.3542
+      },
+      "DEV_020": {
+        "depth": 13,
+        "nodes": 1234944,
+        "score_cp": 324,
+        "bestmove": "c3a4",
+        "nps": 3459894,
+        "elapsed_s": 0.3569
+      },
+      "DEV_021": {
+        "depth": 12,
+        "nodes": 2566144,
+        "score_cp": 28999,
+        "bestmove": "e1e8",
+        "nps": 7296458,
+        "elapsed_s": 0.3517
+      },
+      "DEV_022": {
+        "depth": 12,
+        "nodes": 1748992,
+        "score_cp": 99,
+        "bestmove": "f1c1",
+        "nps": 4959006,
+        "elapsed_s": 0.3527
+      },
+      "DEV_023": {
+        "depth": 16,
+        "nodes": 1742848,
+        "score_cp": 1055,
+        "bestmove": "f8d8",
+        "nps": 4946932,
+        "elapsed_s": 0.3523
+      },
+      "DEV_024": {
+        "depth": 9,
+        "nodes": 1273856,
+        "score_cp": -131,
+        "bestmove": "d8a5",
+        "nps": 3557156,
+        "elapsed_s": 0.3581
+      },
+      "DEV_025": {
+        "depth": 64,
+        "nodes": 64,
+        "score_cp": 0,
+        "bestmove": "0000",
+        "nps": 1152,
+        "elapsed_s": 0.0556
+      },
+      "DEV_026": {
+        "depth": 10,
+        "nodes": 1462272,
+        "score_cp": 56,
+        "bestmove": "d4e5",
+        "nps": 4068706,
+        "elapsed_s": 0.3594
+      },
+      "DEV_027": {
+        "depth": 11,
+        "nodes": 1394688,
+        "score_cp": 45,
+        "bestmove": "e4e5",
+        "nps": 3849990,
+        "elapsed_s": 0.3623
+      },
+      "DEV_028": {
+        "depth": 11,
+        "nodes": 1409024,
+        "score_cp": -51,
+        "bestmove": "f5e4",
+        "nps": 4016891,
+        "elapsed_s": 0.3508
+      },
+      "DEV_029": {
+        "depth": 13,
+        "nodes": 1732608,
+        "score_cp": 28,
+        "bestmove": "d8d1",
+        "nps": 5008655,
+        "elapsed_s": 0.3459
+      },
+      "DEV_030": {
+        "depth": 11,
+        "nodes": 1402880,
+        "score_cp": -33,
+        "bestmove": "e7e6",
+        "nps": 4013129,
+        "elapsed_s": 0.3496
+      },
+      "DEV_031": {
+        "depth": 12,
+        "nodes": 1402880,
+        "score_cp": -4,
+        "bestmove": "c2c3",
+        "nps": 4034199,
+        "elapsed_s": 0.3477
+      },
+      "DEV_032": {
+        "depth": 11,
+        "nodes": 1304576,
+        "score_cp": 0,
+        "bestmove": "c6b8",
+        "nps": 3763927,
+        "elapsed_s": 0.3466
+      },
+      "DEV_033": {
+        "depth": 11,
+        "nodes": 1492992,
+        "score_cp": -28,
+        "bestmove": "b4c3",
+        "nps": 4239746,
+        "elapsed_s": 0.3521
+      },
+      "DEV_034": {
+        "depth": 11,
+        "nodes": 1196032,
+        "score_cp": 32,
+        "bestmove": "e3f4",
+        "nps": 3316121,
+        "elapsed_s": 0.3607
+      },
+      "DEV_035": {
+        "depth": 10,
+        "nodes": 1300480,
+        "score_cp": 128,
+        "bestmove": "c4e2",
+        "nps": 3688860,
+        "elapsed_s": 0.3525
+      },
+      "DEV_036": {
+        "depth": 10,
+        "nodes": 1316864,
+        "score_cp": 93,
+        "bestmove": "d7d6",
+        "nps": 3782145,
+        "elapsed_s": 0.3482
+      },
+      "DEV_037": {
+        "depth": 11,
+        "nodes": 1277952,
+        "score_cp": -151,
+        "bestmove": "g7g6",
+        "nps": 3655221,
+        "elapsed_s": 0.3496
+      },
+      "DEV_038": {
+        "depth": 10,
+        "nodes": 1191936,
+        "score_cp": 154,
+        "bestmove": "e3d4",
+        "nps": 3392886,
+        "elapsed_s": 0.3513
+      },
+      "DEV_039": {
+        "depth": 11,
+        "nodes": 1318912,
+        "score_cp": -31,
+        "bestmove": "d5d4",
+        "nps": 3731752,
+        "elapsed_s": 0.3534
+      },
+      "DEV_040": {
+        "depth": 11,
+        "nodes": 1327104,
+        "score_cp": -10,
+        "bestmove": "h7h6",
+        "nps": 3797656,
+        "elapsed_s": 0.3495
+      },
+      "DEV_041": {
+        "depth": 10,
+        "nodes": 1404928,
+        "score_cp": 139,
+        "bestmove": "d5e6",
+        "nps": 4032800,
+        "elapsed_s": 0.3484
+      },
+      "DEV_042": {
+        "depth": 11,
+        "nodes": 1380352,
+        "score_cp": 27,
+        "bestmove": "b8c6",
+        "nps": 3935472,
+        "elapsed_s": 0.3507
+      },
+      "DEV_043": {
+        "depth": 11,
+        "nodes": 1501184,
+        "score_cp": 107,
+        "bestmove": "b1c3",
+        "nps": 4271144,
+        "elapsed_s": 0.3515
+      },
+      "DEV_044": {
+        "depth": 10,
+        "nodes": 1282048,
+        "score_cp": 88,
+        "bestmove": "e1g1",
+        "nps": 3539633,
+        "elapsed_s": 0.3622
+      },
+      "DEV_045": {
+        "depth": 8,
+        "nodes": 2199552,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "nps": 6138422,
+        "elapsed_s": 0.3583
+      },
+      "DEV_046": {
+        "depth": 10,
+        "nodes": 1462272,
+        "score_cp": -16,
+        "bestmove": "c4d5",
+        "nps": 4190711,
+        "elapsed_s": 0.3489
+      },
+      "DEV_047": {
+        "depth": 10,
+        "nodes": 1249280,
+        "score_cp": 417,
+        "bestmove": "d3h7",
+        "nps": 3398657,
+        "elapsed_s": 0.3676
+      },
+      "DEV_048": {
+        "depth": 11,
+        "nodes": 1396736,
+        "score_cp": 328,
+        "bestmove": "e4c3",
+        "nps": 3885770,
+        "elapsed_s": 0.3594
+      },
+      "DEV_049": {
+        "depth": 22,
+        "nodes": 1859408,
+        "score_cp": 0,
+        "bestmove": "c2b1",
+        "nps": 5312302,
+        "elapsed_s": 0.35
+      },
+      "DEV_050": {
+        "depth": 10,
+        "nodes": 1349632,
+        "score_cp": -1,
+        "bestmove": "d4c5",
+        "nps": 3705649,
+        "elapsed_s": 0.3642
+      },
+      "DEV_051": {
+        "depth": 11,
+        "nodes": 1384448,
+        "score_cp": -7,
+        "bestmove": "d1c2",
+        "nps": 3955037,
+        "elapsed_s": 0.35
+      },
+      "DEV_052": {
+        "depth": 14,
+        "nodes": 2449408,
+        "score_cp": 999,
+        "bestmove": "f7f8q",
+        "nps": 6955119,
+        "elapsed_s": 0.3522
+      },
+      "DEV_053": {
+        "depth": 16,
+        "nodes": 2234368,
+        "score_cp": 995,
+        "bestmove": "d5e6",
+        "nps": 6419155,
+        "elapsed_s": 0.3481
+      },
+      "DEV_054": {
+        "depth": 11,
+        "nodes": 1282048,
+        "score_cp": 139,
+        "bestmove": "c4f7",
+        "nps": 3675934,
+        "elapsed_s": 0.3488
+      },
+      "DEV_055": {
+        "depth": 64,
+        "nodes": 772,
+        "score_cp": 0,
+        "bestmove": "b6a6",
+        "nps": 15385,
+        "elapsed_s": 0.0502
+      },
+      "DEV_056": {
+        "depth": 19,
+        "nodes": 1779712,
+        "score_cp": 0,
+        "bestmove": "a1d1",
+        "nps": 5180673,
+        "elapsed_s": 0.3435
+      },
+      "DEV_057": {
+        "depth": 9,
+        "nodes": 1435648,
+        "score_cp": 146,
+        "bestmove": "b5c6",
+        "nps": 4057916,
+        "elapsed_s": 0.3538
+      },
+      "DEV_058": {
+        "depth": 11,
+        "nodes": 1206272,
+        "score_cp": 216,
+        "bestmove": "c3d5",
+        "nps": 3440223,
+        "elapsed_s": 0.3506
+      },
+      "DEV_059": {
+        "depth": 22,
+        "nodes": 1632256,
+        "score_cp": 492,
+        "bestmove": "d3c3",
+        "nps": 4576691,
+        "elapsed_s": 0.3566
+      },
+      "DEV_060": {
+        "depth": 10,
+        "nodes": 1312768,
+        "score_cp": 63,
+        "bestmove": "e3e4",
+        "nps": 3722616,
+        "elapsed_s": 0.3526
+      },
+      "DEV_061": {
+        "depth": 11,
+        "nodes": 1478656,
+        "score_cp": 873,
+        "bestmove": "c3c4",
+        "nps": 4235874,
+        "elapsed_s": 0.3491
+      },
+      "DEV_062": {
+        "depth": 9,
+        "nodes": 2213888,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "nps": 6361321,
+        "elapsed_s": 0.348
+      },
+      "DEV_063": {
+        "depth": 8,
+        "nodes": 2342912,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "nps": 6701963,
+        "elapsed_s": 0.3496
+      },
+      "DEV_064": {
+        "depth": 16,
+        "nodes": 1959936,
+        "score_cp": 58,
+        "bestmove": "b4f4",
+        "nps": 5572844,
+        "elapsed_s": 0.3517
+      },
+      "DEV_065": {
+        "depth": 10,
+        "nodes": 1280000,
+        "score_cp": 28,
+        "bestmove": "b6c7",
+        "nps": 3665734,
+        "elapsed_s": 0.3492
+      },
+      "DEV_066": {
+        "depth": 7,
+        "nodes": 1193984,
+        "score_cp": 1,
+        "bestmove": "d5e6",
+        "nps": 3397781,
+        "elapsed_s": 0.3514
+      },
+      "DEV_067": {
+        "depth": 10,
+        "nodes": 1300480,
+        "score_cp": 50,
+        "bestmove": "c4d5",
+        "nps": 3696355,
+        "elapsed_s": 0.3518
+      },
+      "DEV_068": {
+        "depth": 11,
+        "nodes": 1144832,
+        "score_cp": -18,
+        "bestmove": "d3d4",
+        "nps": 3238880,
+        "elapsed_s": 0.3535
+      },
+      "DEV_069": {
+        "depth": 9,
+        "nodes": 1245184,
+        "score_cp": 101,
+        "bestmove": "c1f4",
+        "nps": 3567725,
+        "elapsed_s": 0.349
+      },
+      "DEV_070": {
+        "depth": 9,
+        "nodes": 1232896,
+        "score_cp": -30,
+        "bestmove": "e1f1",
+        "nps": 3509304,
+        "elapsed_s": 0.3513
+      },
+      "DEV_071": {
+        "depth": 9,
+        "nodes": 1439744,
+        "score_cp": 76,
+        "bestmove": "f3d2",
+        "nps": 4094057,
+        "elapsed_s": 0.3517
+      },
+      "DEV_072": {
+        "depth": 10,
+        "nodes": 1241088,
+        "score_cp": 55,
+        "bestmove": "d1b3",
+        "nps": 3517513,
+        "elapsed_s": 0.3528
+      },
+      "DEV_073": {
+        "depth": 9,
+        "nodes": 1136640,
+        "score_cp": 44,
+        "bestmove": "e2d3",
+        "nps": 3225830,
+        "elapsed_s": 0.3524
+      },
+      "DEV_074": {
+        "depth": 10,
+        "nodes": 1286144,
+        "score_cp": 47,
+        "bestmove": "c4d5",
+        "nps": 3645584,
+        "elapsed_s": 0.3528
+      },
+      "DEV_075": {
+        "depth": 12,
+        "nodes": 1415168,
+        "score_cp": 64,
+        "bestmove": "a2a4",
+        "nps": 4028850,
+        "elapsed_s": 0.3513
+      },
+      "DEV_076": {
+        "depth": 9,
+        "nodes": 1200128,
+        "score_cp": -365,
+        "bestmove": "h7h6",
+        "nps": 3236855,
+        "elapsed_s": 0.3708
+      },
+      "DEV_077": {
+        "depth": 10,
+        "nodes": 1361920,
+        "score_cp": -20,
+        "bestmove": "b1d2",
+        "nps": 3882654,
+        "elapsed_s": 0.3508
+      },
+      "DEV_078": {
+        "depth": 10,
+        "nodes": 1351680,
+        "score_cp": -18,
+        "bestmove": "d1d2",
+        "nps": 3842568,
+        "elapsed_s": 0.3518
+      },
+      "DEV_079": {
+        "depth": 9,
+        "nodes": 1206272,
+        "score_cp": 198,
+        "bestmove": "a2a3",
+        "nps": 3425903,
+        "elapsed_s": 0.3521
+      },
+      "DEV_080": {
+        "depth": 11,
+        "nodes": 1323008,
+        "score_cp": -11,
+        "bestmove": "d4c5",
+        "nps": 3743309,
+        "elapsed_s": 0.3534
+      },
+      "DEV_081": {
+        "depth": 10,
+        "nodes": 1239040,
+        "score_cp": 228,
+        "bestmove": "e5f6",
+        "nps": 3518412,
+        "elapsed_s": 0.3522
+      },
+      "DEV_082": {
+        "depth": 11,
+        "nodes": 1286144,
+        "score_cp": -11,
+        "bestmove": "c3b5",
+        "nps": 3672495,
+        "elapsed_s": 0.3502
+      },
+      "DEV_083": {
+        "depth": 24,
+        "nodes": 1603584,
+        "score_cp": 112,
+        "bestmove": "d2c1",
+        "nps": 4578016,
+        "elapsed_s": 0.3503
+      },
+      "DEV_084": {
+        "depth": 15,
+        "nodes": 2148352,
+        "score_cp": 617,
+        "bestmove": "c1a1",
+        "nps": 6138990,
+        "elapsed_s": 0.35
+      },
+      "DEV_085": {
+        "depth": 20,
+        "nodes": 1847296,
+        "score_cp": 0,
+        "bestmove": "d3c2",
+        "nps": 5295179,
+        "elapsed_s": 0.3489
+      },
+      "DEV_086": {
+        "depth": 32,
+        "nodes": 2239604,
+        "score_cp": 0,
+        "bestmove": "e2f1",
+        "nps": 6401462,
+        "elapsed_s": 0.3499
+      },
+      "DEV_087": {
+        "depth": 28,
+        "nodes": 2000896,
+        "score_cp": 0,
+        "bestmove": "e2d2",
+        "nps": 5618657,
+        "elapsed_s": 0.3561
+      },
+      "DEV_088": {
+        "depth": 22,
+        "nodes": 1812480,
+        "score_cp": 274,
+        "bestmove": "e3f4",
+        "nps": 5189337,
+        "elapsed_s": 0.3493
+      },
+      "DEV_089": {
+        "depth": 23,
+        "nodes": 1806336,
+        "score_cp": 174,
+        "bestmove": "e2f3",
+        "nps": 5162204,
+        "elapsed_s": 0.3499
+      },
+      "DEV_090": {
+        "depth": 12,
+        "nodes": 1697792,
+        "score_cp": 27,
+        "bestmove": "a1c1",
+        "nps": 4862288,
+        "elapsed_s": 0.3492
+      },
+      "DEV_091": {
+        "depth": 28,
+        "nodes": 1765376,
+        "score_cp": 178,
+        "bestmove": "e1d2",
+        "nps": 5039499,
+        "elapsed_s": 0.3503
+      },
+      "DEV_092": {
+        "depth": 19,
+        "nodes": 2070528,
+        "score_cp": -246,
+        "bestmove": "e1f1",
+        "nps": 5750989,
+        "elapsed_s": 0.36
+      },
+      "DEV_093": {
+        "depth": 19,
+        "nodes": 1724416,
+        "score_cp": 686,
+        "bestmove": "b7b8q",
+        "nps": 4949127,
+        "elapsed_s": 0.3484
+      },
+      "DEV_094": {
+        "depth": 0,
+        "nodes": 0,
+        "score_cp": 0,
+        "bestmove": null,
+        "nps": 0,
+        "elapsed_s": 0.0497
+      },
+      "DEV_095": {
+        "depth": 10,
+        "nodes": 1296384,
+        "score_cp": 147,
+        "bestmove": "f4f3",
+        "nps": 3692247,
+        "elapsed_s": 0.3511
+      },
+      "DEV_096": {
+        "depth": 11,
+        "nodes": 1420766,
+        "score_cp": 198,
+        "bestmove": "e1c1",
+        "nps": 4055770,
+        "elapsed_s": 0.3503
+      },
+      "DEV_097": {
+        "depth": 12,
+        "nodes": 1527808,
+        "score_cp": 198,
+        "bestmove": "c3d5",
+        "nps": 4339447,
+        "elapsed_s": 0.3521
+      },
+      "DEV_098": {
+        "depth": 13,
+        "nodes": 1306624,
+        "score_cp": -117,
+        "bestmove": "g5f7",
+        "nps": 3593274,
+        "elapsed_s": 0.3636
+      },
+      "DEV_099": {
+        "depth": 12,
+        "nodes": 1378304,
+        "score_cp": -280,
+        "bestmove": "f7d5",
+        "nps": 3924911,
+        "elapsed_s": 0.3512
+      },
+      "DEV_100": {
+        "depth": 11,
+        "nodes": 1660928,
+        "score_cp": -1231,
+        "bestmove": "d2d3",
+        "nps": 4761991,
+        "elapsed_s": 0.3488
+      },
+      "DEV_101": {
+        "depth": 10,
+        "nodes": 1286144,
+        "score_cp": 22,
+        "bestmove": "g2e4",
+        "nps": 3662291,
+        "elapsed_s": 0.3512
+      },
+      "DEV_102": {
+        "depth": 12,
+        "nodes": 1447936,
+        "score_cp": -33,
+        "bestmove": "b3b7",
+        "nps": 4125240,
+        "elapsed_s": 0.351
+      },
+      "DEV_103": {
+        "depth": 14,
+        "nodes": 1380352,
+        "score_cp": -972,
+        "bestmove": "b1b2",
+        "nps": 3942610,
+        "elapsed_s": 0.3501
+      },
+      "DEV_104": {
+        "depth": 11,
+        "nodes": 1798144,
+        "score_cp": -18,
+        "bestmove": "f1g2",
+        "nps": 5114464,
+        "elapsed_s": 0.3516
+      },
+      "DEV_105": {
+        "depth": 12,
+        "nodes": 1826816,
+        "score_cp": -152,
+        "bestmove": "d1e1",
+        "nps": 5110017,
+        "elapsed_s": 0.3575
+      },
+      "DEV_106": {
+        "depth": 15,
+        "nodes": 1574912,
+        "score_cp": 0,
+        "bestmove": "c1d2",
+        "nps": 4507061,
+        "elapsed_s": 0.3494
+      },
+      "DEV_107": {
+        "depth": 10,
+        "nodes": 1404928,
+        "score_cp": 34,
+        "bestmove": "e1g1",
+        "nps": 3987806,
+        "elapsed_s": 0.3523
+      },
+      "DEV_108": {
+        "depth": 9,
+        "nodes": 1206272,
+        "score_cp": 32,
+        "bestmove": "b1e1",
+        "nps": 3439140,
+        "elapsed_s": 0.3507
+      },
+      "DEV_109": {
+        "depth": 10,
+        "nodes": 1271808,
+        "score_cp": -47,
+        "bestmove": "g3e3",
+        "nps": 3593462,
+        "elapsed_s": 0.3539
+      },
+      "DEV_110": {
+        "depth": 13,
+        "nodes": 1292288,
+        "score_cp": -99,
+        "bestmove": "c4b5",
+        "nps": 3679625,
+        "elapsed_s": 0.3512
+      },
+      "DEV_111": {
+        "depth": 13,
+        "nodes": 1652736,
+        "score_cp": -284,
+        "bestmove": "d4b3",
+        "nps": 4706489,
+        "elapsed_s": 0.3512
+      },
+      "DEV_112": {
+        "depth": 16,
+        "nodes": 1583104,
+        "score_cp": 0,
+        "bestmove": "g1h1",
+        "nps": 4514456,
+        "elapsed_s": 0.3507
+      },
+      "DEV_113": {
+        "depth": 13,
+        "nodes": 1359872,
+        "score_cp": 0,
+        "bestmove": "d1b1",
+        "nps": 3883234,
+        "elapsed_s": 0.3502
+      },
+      "DEV_114": {
+        "depth": 12,
+        "nodes": 1458176,
+        "score_cp": 0,
+        "bestmove": "b2b3",
+        "nps": 4162725,
+        "elapsed_s": 0.3503
+      },
+      "DEV_115": {
+        "depth": 64,
+        "nodes": 744245,
+        "score_cp": 0,
+        "bestmove": "f2g3",
+        "nps": 2115877,
+        "elapsed_s": 0.3517
+      },
+      "DEV_116": {
+        "depth": 9,
+        "nodes": 1163264,
+        "score_cp": -31,
+        "bestmove": "d1c2",
+        "nps": 3271943,
+        "elapsed_s": 0.3555
+      },
+      "DEV_117": {
+        "depth": 11,
+        "nodes": 1273856,
+        "score_cp": -246,
+        "bestmove": "e4f3",
+        "nps": 3644628,
+        "elapsed_s": 0.3495
+      },
+      "DEV_118": {
+        "depth": 10,
+        "nodes": 1411072,
+        "score_cp": -261,
+        "bestmove": "c1f1",
+        "nps": 4023475,
+        "elapsed_s": 0.3507
+      },
+      "DEV_119": {
+        "depth": 11,
+        "nodes": 1411072,
+        "score_cp": -423,
+        "bestmove": "f3h5",
+        "nps": 4008081,
+        "elapsed_s": 0.3521
+      },
+      "DEV_120": {
+        "depth": 10,
+        "nodes": 1173504,
+        "score_cp": -468,
+        "bestmove": "d3b1",
+        "nps": 3369561,
+        "elapsed_s": 0.3483
+      }
+    }
+  },
+  "E4": {
+    "id": "E4",
+    "emode": "E14",
+    "desc": "Combined improvements (E1 + E2 + E3 = Refined E10 / E11)",
+    "avg_depth": 13.28,
+    "avg_nps": 3856094,
+    "tactics_solved": 6,
+    "elapsed_total": 41.62,
+    "positions": {
+      "DEV_001": {
+        "depth": 11,
+        "nodes": 1273856,
+        "score_cp": -109,
+        "bestmove": "c4d5",
+        "nps": 3643415,
+        "elapsed_s": 0.3496
+      },
+      "DEV_002": {
+        "depth": 9,
+        "nodes": 1196032,
+        "score_cp": 80,
+        "bestmove": "e3e4",
+        "nps": 3371866,
+        "elapsed_s": 0.3547
+      },
+      "DEV_003": {
+        "depth": 12,
+        "nodes": 1126400,
+        "score_cp": 36,
+        "bestmove": "a4c6",
+        "nps": 3201713,
+        "elapsed_s": 0.3518
+      },
+      "DEV_004": {
+        "depth": 11,
+        "nodes": 1120256,
+        "score_cp": 86,
+        "bestmove": "d4c6",
+        "nps": 3167101,
+        "elapsed_s": 0.3537
+      },
+      "DEV_005": {
+        "depth": 10,
+        "nodes": 1501184,
+        "score_cp": 361,
+        "bestmove": "c4d5",
+        "nps": 4314619,
+        "elapsed_s": 0.3479
+      },
+      "DEV_006": {
+        "depth": 10,
+        "nodes": 1089536,
+        "score_cp": 15,
+        "bestmove": "e2f3",
+        "nps": 3104473,
+        "elapsed_s": 0.351
+      },
+      "DEV_007": {
+        "depth": 9,
+        "nodes": 1191936,
+        "score_cp": 41,
+        "bestmove": "g3h5",
+        "nps": 3420433,
+        "elapsed_s": 0.3485
+      },
+      "DEV_008": {
+        "depth": 11,
+        "nodes": 1204224,
+        "score_cp": 12,
+        "bestmove": "b2a3",
+        "nps": 3453343,
+        "elapsed_s": 0.3487
+      },
+      "DEV_009": {
+        "depth": 9,
+        "nodes": 1247232,
+        "score_cp": -4,
+        "bestmove": "d3c4",
+        "nps": 3550556,
+        "elapsed_s": 0.3513
+      },
+      "DEV_010": {
+        "depth": 9,
+        "nodes": 1224704,
+        "score_cp": 46,
+        "bestmove": "c1d2",
+        "nps": 3461729,
+        "elapsed_s": 0.3538
+      },
+      "DEV_011": {
+        "depth": 10,
+        "nodes": 1105920,
+        "score_cp": 32,
+        "bestmove": "f1d3",
+        "nps": 3132836,
+        "elapsed_s": 0.353
+      },
+      "DEV_012": {
+        "depth": 9,
+        "nodes": 1183744,
+        "score_cp": 25,
+        "bestmove": "g2g4",
+        "nps": 3327295,
+        "elapsed_s": 0.3558
+      },
+      "DEV_013": {
+        "depth": 9,
+        "nodes": 1155072,
+        "score_cp": -348,
+        "bestmove": "e7b4",
+        "nps": 3237548,
+        "elapsed_s": 0.3568
+      },
+      "DEV_014": {
+        "depth": 10,
+        "nodes": 1263616,
+        "score_cp": 405,
+        "bestmove": "d1c2",
+        "nps": 3582836,
+        "elapsed_s": 0.3527
+      },
+      "DEV_015": {
+        "depth": 10,
+        "nodes": 1206272,
+        "score_cp": 43,
+        "bestmove": "c1d2",
+        "nps": 3423201,
+        "elapsed_s": 0.3524
+      },
+      "DEV_016": {
+        "depth": 12,
+        "nodes": 1210368,
+        "score_cp": 222,
+        "bestmove": "d3h7",
+        "nps": 3416334,
+        "elapsed_s": 0.3543
+      },
+      "DEV_017": {
+        "depth": 10,
+        "nodes": 1239040,
+        "score_cp": 726,
+        "bestmove": "d1d3",
+        "nps": 3538997,
+        "elapsed_s": 0.3501
+      },
+      "DEV_018": {
+        "depth": 9,
+        "nodes": 1021952,
+        "score_cp": 40,
+        "bestmove": "a2d5",
+        "nps": 2885208,
+        "elapsed_s": 0.3542
+      },
+      "DEV_019": {
+        "depth": 12,
+        "nodes": 1622016,
+        "score_cp": -343,
+        "bestmove": "d5c4",
+        "nps": 4517429,
+        "elapsed_s": 0.3591
+      },
+      "DEV_020": {
+        "depth": 12,
+        "nodes": 1101824,
+        "score_cp": 310,
+        "bestmove": "c3a4",
+        "nps": 2649823,
+        "elapsed_s": 0.4158
+      },
+      "DEV_021": {
+        "depth": 12,
+        "nodes": 2463744,
+        "score_cp": 28999,
+        "bestmove": "e1e8",
+        "nps": 6937950,
+        "elapsed_s": 0.3551
+      },
+      "DEV_022": {
+        "depth": 12,
+        "nodes": 1626112,
+        "score_cp": 99,
+        "bestmove": "f1c1",
+        "nps": 4620926,
+        "elapsed_s": 0.3519
+      },
+      "DEV_023": {
+        "depth": 15,
+        "nodes": 1611776,
+        "score_cp": 1106,
+        "bestmove": "f8d8",
+        "nps": 4582052,
+        "elapsed_s": 0.3518
+      },
+      "DEV_024": {
+        "depth": 8,
+        "nodes": 1185792,
+        "score_cp": -135,
+        "bestmove": "a7a6",
+        "nps": 3285849,
+        "elapsed_s": 0.3609
+      },
+      "DEV_025": {
+        "depth": 64,
+        "nodes": 64,
+        "score_cp": 0,
+        "bestmove": "0000",
+        "nps": 1263,
+        "elapsed_s": 0.0507
+      },
+      "DEV_026": {
+        "depth": 10,
+        "nodes": 1406976,
+        "score_cp": 64,
+        "bestmove": "d4e5",
+        "nps": 4011676,
+        "elapsed_s": 0.3507
+      },
+      "DEV_027": {
+        "depth": 12,
+        "nodes": 1351680,
+        "score_cp": 46,
+        "bestmove": "e4e5",
+        "nps": 3851922,
+        "elapsed_s": 0.3509
+      },
+      "DEV_028": {
+        "depth": 13,
+        "nodes": 1200128,
+        "score_cp": 0,
+        "bestmove": "f6h5",
+        "nps": 3369007,
+        "elapsed_s": 0.3562
+      },
+      "DEV_029": {
+        "depth": 12,
+        "nodes": 1630219,
+        "score_cp": 24,
+        "bestmove": "d8d1",
+        "nps": 4660374,
+        "elapsed_s": 0.3498
+      },
+      "DEV_030": {
+        "depth": 11,
+        "nodes": 1312768,
+        "score_cp": -37,
+        "bestmove": "e7e6",
+        "nps": 3683612,
+        "elapsed_s": 0.3564
+      },
+      "DEV_031": {
+        "depth": 13,
+        "nodes": 1253376,
+        "score_cp": 8,
+        "bestmove": "c2c3",
+        "nps": 3555805,
+        "elapsed_s": 0.3525
+      },
+      "DEV_032": {
+        "depth": 11,
+        "nodes": 1247232,
+        "score_cp": 0,
+        "bestmove": "f6d5",
+        "nps": 3513890,
+        "elapsed_s": 0.3549
+      },
+      "DEV_033": {
+        "depth": 10,
+        "nodes": 1347584,
+        "score_cp": -43,
+        "bestmove": "b4c3",
+        "nps": 3853256,
+        "elapsed_s": 0.3497
+      },
+      "DEV_034": {
+        "depth": 10,
+        "nodes": 1208320,
+        "score_cp": 32,
+        "bestmove": "e3f4",
+        "nps": 3435244,
+        "elapsed_s": 0.3517
+      },
+      "DEV_035": {
+        "depth": 10,
+        "nodes": 1294336,
+        "score_cp": 148,
+        "bestmove": "d1h5",
+        "nps": 3678627,
+        "elapsed_s": 0.3519
+      },
+      "DEV_036": {
+        "depth": 10,
+        "nodes": 1093632,
+        "score_cp": 109,
+        "bestmove": "d7d6",
+        "nps": 3113815,
+        "elapsed_s": 0.3512
+      },
+      "DEV_037": {
+        "depth": 11,
+        "nodes": 1159168,
+        "score_cp": -148,
+        "bestmove": "g7g6",
+        "nps": 3263544,
+        "elapsed_s": 0.3552
+      },
+      "DEV_038": {
+        "depth": 10,
+        "nodes": 1060864,
+        "score_cp": 171,
+        "bestmove": "e3d4",
+        "nps": 2969810,
+        "elapsed_s": 0.3572
+      },
+      "DEV_039": {
+        "depth": 11,
+        "nodes": 1234944,
+        "score_cp": -17,
+        "bestmove": "d5d4",
+        "nps": 3501641,
+        "elapsed_s": 0.3527
+      },
+      "DEV_040": {
+        "depth": 11,
+        "nodes": 1216512,
+        "score_cp": 4,
+        "bestmove": "h7h6",
+        "nps": 3453869,
+        "elapsed_s": 0.3522
+      },
+      "DEV_041": {
+        "depth": 10,
+        "nodes": 1206272,
+        "score_cp": 154,
+        "bestmove": "d5e6",
+        "nps": 3425032,
+        "elapsed_s": 0.3522
+      },
+      "DEV_042": {
+        "depth": 11,
+        "nodes": 1290240,
+        "score_cp": 23,
+        "bestmove": "d8d7",
+        "nps": 3634162,
+        "elapsed_s": 0.355
+      },
+      "DEV_043": {
+        "depth": 11,
+        "nodes": 1357824,
+        "score_cp": 90,
+        "bestmove": "b1c3",
+        "nps": 3846216,
+        "elapsed_s": 0.353
+      },
+      "DEV_044": {
+        "depth": 10,
+        "nodes": 1218560,
+        "score_cp": 88,
+        "bestmove": "e1g1",
+        "nps": 3456570,
+        "elapsed_s": 0.3525
+      },
+      "DEV_045": {
+        "depth": 8,
+        "nodes": 2154496,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "nps": 6175269,
+        "elapsed_s": 0.3489
+      },
+      "DEV_046": {
+        "depth": 9,
+        "nodes": 1390592,
+        "score_cp": -20,
+        "bestmove": "c4d5",
+        "nps": 3959509,
+        "elapsed_s": 0.3512
+      },
+      "DEV_047": {
+        "depth": 10,
+        "nodes": 1175552,
+        "score_cp": 428,
+        "bestmove": "d3h7",
+        "nps": 3352715,
+        "elapsed_s": 0.3506
+      },
+      "DEV_048": {
+        "depth": 11,
+        "nodes": 1271808,
+        "score_cp": 328,
+        "bestmove": "e4c3",
+        "nps": 3641430,
+        "elapsed_s": 0.3493
+      },
+      "DEV_049": {
+        "depth": 22,
+        "nodes": 1726464,
+        "score_cp": 0,
+        "bestmove": "c2b1",
+        "nps": 4877761,
+        "elapsed_s": 0.3539
+      },
+      "DEV_050": {
+        "depth": 10,
+        "nodes": 1333248,
+        "score_cp": -1,
+        "bestmove": "d4c5",
+        "nps": 3770979,
+        "elapsed_s": 0.3536
+      },
+      "DEV_051": {
+        "depth": 12,
+        "nodes": 1308672,
+        "score_cp": -3,
+        "bestmove": "d1c2",
+        "nps": 3719720,
+        "elapsed_s": 0.3518
+      },
+      "DEV_052": {
+        "depth": 15,
+        "nodes": 2293760,
+        "score_cp": 28987,
+        "bestmove": "f7f8q",
+        "nps": 6558408,
+        "elapsed_s": 0.3497
+      },
+      "DEV_053": {
+        "depth": 16,
+        "nodes": 2140160,
+        "score_cp": 992,
+        "bestmove": "d5e6",
+        "nps": 6094545,
+        "elapsed_s": 0.3512
+      },
+      "DEV_054": {
+        "depth": 11,
+        "nodes": 1179648,
+        "score_cp": 139,
+        "bestmove": "c4f7",
+        "nps": 3385486,
+        "elapsed_s": 0.3484
+      },
+      "DEV_055": {
+        "depth": 64,
+        "nodes": 772,
+        "score_cp": 0,
+        "bestmove": "b6a6",
+        "nps": 15263,
+        "elapsed_s": 0.0506
+      },
+      "DEV_056": {
+        "depth": 19,
+        "nodes": 1804288,
+        "score_cp": 0,
+        "bestmove": "a1d1",
+        "nps": 5125451,
+        "elapsed_s": 0.352
+      },
+      "DEV_057": {
+        "depth": 10,
+        "nodes": 1331200,
+        "score_cp": 110,
+        "bestmove": "b5c6",
+        "nps": 3778537,
+        "elapsed_s": 0.3523
+      },
+      "DEV_058": {
+        "depth": 11,
+        "nodes": 1099776,
+        "score_cp": 216,
+        "bestmove": "c3d5",
+        "nps": 3110637,
+        "elapsed_s": 0.3536
+      },
+      "DEV_059": {
+        "depth": 22,
+        "nodes": 1501184,
+        "score_cp": 302,
+        "bestmove": "d3c3",
+        "nps": 4247517,
+        "elapsed_s": 0.3534
+      },
+      "DEV_060": {
+        "depth": 10,
+        "nodes": 1193984,
+        "score_cp": 55,
+        "bestmove": "e1g1",
+        "nps": 3383440,
+        "elapsed_s": 0.3529
+      },
+      "DEV_061": {
+        "depth": 10,
+        "nodes": 1245184,
+        "score_cp": 862,
+        "bestmove": "c3c4",
+        "nps": 3502031,
+        "elapsed_s": 0.3556
+      },
+      "DEV_062": {
+        "depth": 9,
+        "nodes": 1779712,
+        "score_cp": 28997,
+        "bestmove": "d5f6",
+        "nps": 4536683,
+        "elapsed_s": 0.3923
+      },
+      "DEV_063": {
+        "depth": 8,
+        "nodes": 2109440,
+        "score_cp": 28999,
+        "bestmove": "h5f7",
+        "nps": 5984461,
+        "elapsed_s": 0.3525
+      },
+      "DEV_064": {
+        "depth": 16,
+        "nodes": 1820672,
+        "score_cp": 77,
+        "bestmove": "b4f4",
+        "nps": 5132305,
+        "elapsed_s": 0.3547
+      },
+      "DEV_065": {
+        "depth": 9,
+        "nodes": 1134592,
+        "score_cp": 1,
+        "bestmove": "f7f6",
+        "nps": 3245548,
+        "elapsed_s": 0.3496
+      },
+      "DEV_066": {
+        "depth": 7,
+        "nodes": 1105920,
+        "score_cp": 24,
+        "bestmove": "d5e6",
+        "nps": 3134281,
+        "elapsed_s": 0.3528
+      },
+      "DEV_067": {
+        "depth": 10,
+        "nodes": 1157120,
+        "score_cp": 49,
+        "bestmove": "c4d5",
+        "nps": 3298518,
+        "elapsed_s": 0.3508
+      },
+      "DEV_068": {
+        "depth": 10,
+        "nodes": 1130496,
+        "score_cp": -44,
+        "bestmove": "d3d4",
+        "nps": 3177181,
+        "elapsed_s": 0.3558
+      },
+      "DEV_069": {
+        "depth": 9,
+        "nodes": 1144832,
+        "score_cp": 101,
+        "bestmove": "c1f4",
+        "nps": 3115375,
+        "elapsed_s": 0.3675
+      },
+      "DEV_070": {
+        "depth": 10,
+        "nodes": 1175552,
+        "score_cp": -10,
+        "bestmove": "c1d2",
+        "nps": 3287980,
+        "elapsed_s": 0.3575
+      },
+      "DEV_071": {
+        "depth": 9,
+        "nodes": 1269760,
+        "score_cp": 79,
+        "bestmove": "a2a3",
+        "nps": 3627785,
+        "elapsed_s": 0.35
+      },
+      "DEV_072": {
+        "depth": 9,
+        "nodes": 1142784,
+        "score_cp": 61,
+        "bestmove": "d1b3",
+        "nps": 3257979,
+        "elapsed_s": 0.3508
+      },
+      "DEV_073": {
+        "depth": 9,
+        "nodes": 1083392,
+        "score_cp": 45,
+        "bestmove": "d1d3",
+        "nps": 3092451,
+        "elapsed_s": 0.3503
+      },
+      "DEV_074": {
+        "depth": 10,
+        "nodes": 1245184,
+        "score_cp": 55,
+        "bestmove": "c4d5",
+        "nps": 3557743,
+        "elapsed_s": 0.35
+      },
+      "DEV_075": {
+        "depth": 12,
+        "nodes": 1327104,
+        "score_cp": 72,
+        "bestmove": "a2a4",
+        "nps": 3636232,
+        "elapsed_s": 0.365
+      },
+      "DEV_076": {
+        "depth": 9,
+        "nodes": 1206272,
+        "score_cp": -359,
+        "bestmove": "h7h6",
+        "nps": 3440455,
+        "elapsed_s": 0.3506
+      },
+      "DEV_077": {
+        "depth": 10,
+        "nodes": 1204224,
+        "score_cp": -20,
+        "bestmove": "b1d2",
+        "nps": 3409742,
+        "elapsed_s": 0.3532
+      },
+      "DEV_078": {
+        "depth": 9,
+        "nodes": 1290240,
+        "score_cp": -13,
+        "bestmove": "h2h3",
+        "nps": 3642883,
+        "elapsed_s": 0.3542
+      },
+      "DEV_079": {
+        "depth": 9,
+        "nodes": 1071104,
+        "score_cp": 198,
+        "bestmove": "a2a3",
+        "nps": 2995537,
+        "elapsed_s": 0.3576
+      },
+      "DEV_080": {
+        "depth": 11,
+        "nodes": 1220608,
+        "score_cp": -8,
+        "bestmove": "d4c5",
+        "nps": 3493782,
+        "elapsed_s": 0.3494
+      },
+      "DEV_081": {
+        "depth": 10,
+        "nodes": 1167360,
+        "score_cp": 199,
+        "bestmove": "e5f6",
+        "nps": 3334936,
+        "elapsed_s": 0.35
+      },
+      "DEV_082": {
+        "depth": 10,
+        "nodes": 1140736,
+        "score_cp": -13,
+        "bestmove": "c3b5",
+        "nps": 3223170,
+        "elapsed_s": 0.3539
+      },
+      "DEV_083": {
+        "depth": 25,
+        "nodes": 1531904,
+        "score_cp": 116,
+        "bestmove": "d2c1",
+        "nps": 4284262,
+        "elapsed_s": 0.3576
+      },
+      "DEV_084": {
+        "depth": 15,
+        "nodes": 2138112,
+        "score_cp": 617,
+        "bestmove": "c1c7",
+        "nps": 5981144,
+        "elapsed_s": 0.3575
+      },
+      "DEV_085": {
+        "depth": 20,
+        "nodes": 1900544,
+        "score_cp": 0,
+        "bestmove": "d3c2",
+        "nps": 5414854,
+        "elapsed_s": 0.351
+      },
+      "DEV_086": {
+        "depth": 30,
+        "nodes": 2129920,
+        "score_cp": 0,
+        "bestmove": "e2f2",
+        "nps": 6080409,
+        "elapsed_s": 0.3503
+      },
+      "DEV_087": {
+        "depth": 32,
+        "nodes": 2041856,
+        "score_cp": 0,
+        "bestmove": "e3c4",
+        "nps": 5803411,
+        "elapsed_s": 0.3518
+      },
+      "DEV_088": {
+        "depth": 22,
+        "nodes": 1918976,
+        "score_cp": 872,
+        "bestmove": "e3f4",
+        "nps": 5471620,
+        "elapsed_s": 0.3507
+      },
+      "DEV_089": {
+        "depth": 27,
+        "nodes": 1775616,
+        "score_cp": 149,
+        "bestmove": "e2f3",
+        "nps": 5015882,
+        "elapsed_s": 0.354
+      },
+      "DEV_090": {
+        "depth": 11,
+        "nodes": 1562624,
+        "score_cp": 27,
+        "bestmove": "a1c1",
+        "nps": 4380549,
+        "elapsed_s": 0.3567
+      },
+      "DEV_091": {
+        "depth": 25,
+        "nodes": 1683456,
+        "score_cp": 188,
+        "bestmove": "e1f2",
+        "nps": 4777630,
+        "elapsed_s": 0.3524
+      },
+      "DEV_092": {
+        "depth": 19,
+        "nodes": 2187264,
+        "score_cp": -271,
+        "bestmove": "e1f1",
+        "nps": 6045382,
+        "elapsed_s": 0.3618
+      },
+      "DEV_093": {
+        "depth": 18,
+        "nodes": 1720320,
+        "score_cp": 684,
+        "bestmove": "b7b8q",
+        "nps": 4825525,
+        "elapsed_s": 0.3565
+      },
+      "DEV_094": {
+        "depth": 0,
+        "nodes": 0,
+        "score_cp": 0,
+        "bestmove": null,
+        "nps": 0,
+        "elapsed_s": 0.0485
+      },
+      "DEV_095": {
+        "depth": 11,
+        "nodes": 1228800,
+        "score_cp": 129,
+        "bestmove": "a2a3",
+        "nps": 3487492,
+        "elapsed_s": 0.3523
+      },
+      "DEV_096": {
+        "depth": 11,
+        "nodes": 1325056,
+        "score_cp": 203,
+        "bestmove": "e1c1",
+        "nps": 3746288,
+        "elapsed_s": 0.3537
+      },
+      "DEV_097": {
+        "depth": 11,
+        "nodes": 1462272,
+        "score_cp": 190,
+        "bestmove": "c3d5",
+        "nps": 4169007,
+        "elapsed_s": 0.3507
+      },
+      "DEV_098": {
+        "depth": 13,
+        "nodes": 1189888,
+        "score_cp": -117,
+        "bestmove": "g5f7",
+        "nps": 3363843,
+        "elapsed_s": 0.3537
+      },
+      "DEV_099": {
+        "depth": 12,
+        "nodes": 1296384,
+        "score_cp": -280,
+        "bestmove": "f7d5",
+        "nps": 3658793,
+        "elapsed_s": 0.3543
+      },
+      "DEV_100": {
+        "depth": 11,
+        "nodes": 1495040,
+        "score_cp": -1246,
+        "bestmove": "d2d3",
+        "nps": 4236221,
+        "elapsed_s": 0.3529
+      },
+      "DEV_101": {
+        "depth": 11,
+        "nodes": 1163264,
+        "score_cp": 11,
+        "bestmove": "g2e4",
+        "nps": 3274652,
+        "elapsed_s": 0.3552
+      },
+      "DEV_102": {
+        "depth": 12,
+        "nodes": 1249280,
+        "score_cp": -36,
+        "bestmove": "b3b7",
+        "nps": 3543900,
+        "elapsed_s": 0.3525
+      },
+      "DEV_103": {
+        "depth": 13,
+        "nodes": 1392640,
+        "score_cp": -954,
+        "bestmove": "b1b2",
+        "nps": 3969838,
+        "elapsed_s": 0.3508
+      },
+      "DEV_104": {
+        "depth": 11,
+        "nodes": 1615872,
+        "score_cp": -13,
+        "bestmove": "f1g2",
+        "nps": 4555309,
+        "elapsed_s": 0.3547
+      },
+      "DEV_105": {
+        "depth": 11,
+        "nodes": 1562624,
+        "score_cp": -161,
+        "bestmove": "f1e2",
+        "nps": 4429297,
+        "elapsed_s": 0.3528
+      },
+      "DEV_106": {
+        "depth": 14,
+        "nodes": 1513472,
+        "score_cp": 0,
+        "bestmove": "c1d2",
+        "nps": 4303377,
+        "elapsed_s": 0.3517
+      },
+      "DEV_107": {
+        "depth": 10,
+        "nodes": 1265664,
+        "score_cp": 28,
+        "bestmove": "e1g1",
+        "nps": 3486055,
+        "elapsed_s": 0.3631
+      },
+      "DEV_108": {
+        "depth": 8,
+        "nodes": 1015808,
+        "score_cp": 21,
+        "bestmove": "b1f1",
+        "nps": 2848829,
+        "elapsed_s": 0.3566
+      },
+      "DEV_109": {
+        "depth": 9,
+        "nodes": 1202176,
+        "score_cp": -37,
+        "bestmove": "g3e3",
+        "nps": 3390461,
+        "elapsed_s": 0.3546
+      },
+      "DEV_110": {
+        "depth": 14,
+        "nodes": 1134592,
+        "score_cp": 0,
+        "bestmove": "f1c1",
+        "nps": 3236502,
+        "elapsed_s": 0.3506
+      },
+      "DEV_111": {
+        "depth": 12,
+        "nodes": 1458176,
+        "score_cp": -286,
+        "bestmove": "d4b3",
+        "nps": 4210173,
+        "elapsed_s": 0.3463
+      },
+      "DEV_112": {
+        "depth": 16,
+        "nodes": 1501184,
+        "score_cp": 0,
+        "bestmove": "g1h1",
+        "nps": 4282667,
+        "elapsed_s": 0.3505
+      },
+      "DEV_113": {
+        "depth": 13,
+        "nodes": 1320960,
+        "score_cp": 0,
+        "bestmove": "d1c1",
+        "nps": 3776505,
+        "elapsed_s": 0.3498
+      },
+      "DEV_114": {
+        "depth": 12,
+        "nodes": 1355776,
+        "score_cp": -25,
+        "bestmove": "b2b3",
+        "nps": 3871542,
+        "elapsed_s": 0.3502
+      },
+      "DEV_115": {
+        "depth": 64,
+        "nodes": 706828,
+        "score_cp": 0,
+        "bestmove": "f2g3",
+        "nps": 2010001,
+        "elapsed_s": 0.3517
+      },
+      "DEV_116": {
+        "depth": 10,
+        "nodes": 1142784,
+        "score_cp": -31,
+        "bestmove": "d1c2",
+        "nps": 3184764,
+        "elapsed_s": 0.3588
+      },
+      "DEV_117": {
+        "depth": 10,
+        "nodes": 1153024,
+        "score_cp": -255,
+        "bestmove": "e4f3",
+        "nps": 3256178,
+        "elapsed_s": 0.3541
+      },
+      "DEV_118": {
+        "depth": 10,
+        "nodes": 1280000,
+        "score_cp": -248,
+        "bestmove": "c1f1",
+        "nps": 3638173,
+        "elapsed_s": 0.3518
+      },
+      "DEV_119": {
+        "depth": 13,
+        "nodes": 1226752,
+        "score_cp": 0,
+        "bestmove": "f3e3",
+        "nps": 3488347,
+        "elapsed_s": 0.3517
+      },
+      "DEV_120": {
+        "depth": 11,
+        "nodes": 1071104,
+        "score_cp": -476,
+        "bestmove": "d3c2",
+        "nps": 3081629,
+        "elapsed_s": 0.3476
+      }
+    }
+  }
+}

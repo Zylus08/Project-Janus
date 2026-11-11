@@ -1,0 +1,37 @@
+{
+  "X7_1T": {
+    "name": "X7 (1T, Flat Eval E5, No Pawn Hash)",
+    "threads": 1,
+    "avg_depth": 15.58,
+    "avg_nps": 1392304,
+    "total_elapsed_s": 5.11
+  },
+  "X10_1T": {
+    "name": "X10 (1T, E10 Eval, 64K Shared Pawn Hash)",
+    "threads": 1,
+    "avg_depth": 15.08,
+    "avg_nps": 1156236,
+    "total_elapsed_s": 5.11
+  },
+  "X12_4T": {
+    "name": "X12 (4T, E10 Eval, 64K Shared Pawn Hash)",
+    "threads": 4,
+    "avg_depth": 15.92,
+    "avg_nps": 4102523,
+    "total_elapsed_s": 5.27
+  },
+  "X13_4T": {
+    "name": "X13 (4T, E10 Eval, 16K Thread-Local Hash)",
+    "threads": 4,
+    "avg_depth": 16.0,
+    "avg_nps": 3816767,
+    "total_elapsed_s": 5.39
+  },
+  "Refined_E11": {
+    "name": "Refined E11 (4T, E11 Eval, 16K Thread-Local)",
+    "threads": 4,
+    "avg_depth": 16.08,
+    "avg_nps": 4013721,
+    "total_elapsed_s": 5.1
+  }
+}

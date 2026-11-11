@@ -1,0 +1,825 @@
+{
+  "milestone": "P1.8",
+  "phase": "Phase 2 Evaluation Transfer Audit",
+  "symmetry_audit": [
+    {
+      "fen": "r1bq1rk1/pp4pp/2n2p2/1BbpP3/5Q2/2N5/PP3PPP/R1B1K1NR w KQ - 3 11",
+      "emode": "E0",
+      "score_white": 285,
+      "score_black": 285,
+      "sum": 570,
+      "is_symmetric": false
+    },
+    {
+      "fen": "r1bq1rk1/pp4pp/2n2p2/1BbpP3/5Q2/2N5/PP3PPP/R1B1K1NR w KQ - 3 11",
+      "emode": "E5",
+      "score_white": 191,
+      "score_black": 191,
+      "sum": 382,
+      "is_symmetric": false
+    },
+    {
+      "fen": "r1bq1rk1/pp4pp/2n2p2/1BbpP3/5Q2/2N5/PP3PPP/R1B1K1NR w KQ - 3 11",
+      "emode": "E10",
+      "score_white": 198,
+      "score_black": 198,
+      "sum": 396,
+      "is_symmetric": false
+    },
+    {
+      "fen": "r1b2rk1/pp1n1ppp/2p1pn2/q2p4/2PP4/2N1PN2/PP1QBPPP/R3K2R w KQ - 4 10",
+      "emode": "E0",
+      "score_white": 35,
+      "score_black": 35,
+      "sum": 70,
+      "is_symmetric": false
+    },
+    {
+      "fen": "r1b2rk1/pp1n1ppp/2p1pn2/q2p4/2PP4/2N1PN2/PP1QBPPP/R3K2R w KQ - 4 10",
+      "emode": "E5",
+      "score_white": 51,
+      "score_black": 51,
+      "sum": 102,
+      "is_symmetric": false
+    },
+    {
+      "fen": "r1b2rk1/pp1n1ppp/2p1pn2/q2p4/2PP4/2N1PN2/PP1QBPPP/R3K2R w KQ - 4 10",
+      "emode": "E10",
+      "score_white": 53,
+      "score_black": 53,
+      "sum": 106,
+      "is_symmetric": false
+    },
+    {
+      "fen": "r2q1rk1/1pp1bppp/p1np1n2/4p3/2B1P1b1/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 9",
+      "emode": "E0",
+      "score_white": 10,
+      "score_black": 10,
+      "sum": 20,
+      "is_symmetric": false
+    },
+    {
+      "fen": "r2q1rk1/1pp1bppp/p1np1n2/4p3/2B1P1b1/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 9",
+      "emode": "E5",
+      "score_white": 9,
+      "score_black": 7,
+      "sum": 16,
+      "is_symmetric": false
+    },
+    {
+      "fen": "r2q1rk1/1pp1bppp/p1np1n2/4p3/2B1P1b1/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 9",
+      "emode": "E10",
+      "score_white": 18,
+      "score_black": 18,
+      "sum": 36,
+      "is_symmetric": false
+    },
+    {
+      "fen": "8/8/4k3/8/4K3/8/8/8 w - - 0 1",
+      "emode": "E0",
+      "score_white": 0,
+      "score_black": 0,
+      "sum": 0,
+      "is_symmetric": true
+    },
+    {
+      "fen": "8/8/4k3/8/4K3/8/8/8 w - - 0 1",
+      "emode": "E5",
+      "score_white": 0,
+      "score_black": 0,
+      "sum": 0,
+      "is_symmetric": true
+    },
+    {
+      "fen": "8/8/4k3/8/4K3/8/8/8 w - - 0 1",
+      "emode": "E10",
+      "score_white": 0,
+      "score_black": 0,
+      "sum": 0,
+      "is_symmetric": true
+    }
+  ],
+  "feature_matrix": {
+    "E0": {
+      "desc": "Base Classical Material + PST only (emode=0)",
+      "positions": {
+        "DEV_01_PAWN_WEAK": {
+          "bestmove": "b5c6",
+          "depth": 12,
+          "nodes": 1218560,
+          "score_cp": 225,
+          "nps": 2212706,
+          "elapsed_s": 0.5507
+        },
+        "DEV_02_KING_ATTACK": {
+          "bestmove": "c3d5",
+          "depth": 12,
+          "nodes": 1196032,
+          "score_cp": 120,
+          "nps": 2156199,
+          "elapsed_s": 0.5547
+        },
+        "DEV_03_ROOK_ENDGAME": {
+          "bestmove": "d3c3",
+          "depth": 23,
+          "nodes": 1996800,
+          "score_cp": 155,
+          "nps": 3627316,
+          "elapsed_s": 0.5505
+        },
+        "DEV_04_IQP": {
+          "bestmove": "e3e4",
+          "depth": 12,
+          "nodes": 1400832,
+          "score_cp": 25,
+          "nps": 2536040,
+          "elapsed_s": 0.5524
+        },
+        "DEV_05_KNIGHT_OUTPOST": {
+          "bestmove": "c1e3",
+          "depth": 14,
+          "nodes": 1253376,
+          "score_cp": 10,
+          "nps": 2254361,
+          "elapsed_s": 0.556
+        },
+        "DEV_06_BACKWARD_PAWN": {
+          "bestmove": "e3e4",
+          "depth": 13,
+          "nodes": 1409024,
+          "score_cp": 905,
+          "nps": 2560896,
+          "elapsed_s": 0.5502
+        },
+        "DEV_07_TACTICAL_DEFENSE": {
+          "bestmove": "d5f6",
+          "depth": 11,
+          "nodes": 2490368,
+          "score_cp": 28997,
+          "nps": 4538412,
+          "elapsed_s": 0.5487
+        },
+        "DEV_08_TACTICAL_DEFLECTION": {
+          "bestmove": "h5f7",
+          "depth": 10,
+          "nodes": 2541568,
+          "score_cp": 28999,
+          "nps": 4636697,
+          "elapsed_s": 0.5481
+        },
+        "DEV_09_PAWN_OPPOSITION": {
+          "bestmove": "e4d3",
+          "depth": 64,
+          "nodes": 384,
+          "score_cp": 0,
+          "nps": 8953,
+          "elapsed_s": 0.0429
+        },
+        "DEV_10_PASSED_PAWN_RACE": {
+          "bestmove": "b4f4",
+          "depth": 17,
+          "nodes": 1781760,
+          "score_cp": 40,
+          "nps": 3268547,
+          "elapsed_s": 0.5451
+        },
+        "DEV_11_CLOSED_CHAIN": {
+          "bestmove": "b6c7",
+          "depth": 12,
+          "nodes": 1316864,
+          "score_cp": 25,
+          "nps": 2412297,
+          "elapsed_s": 0.5459
+        },
+        "DEV_12_PARALLEL_STABILITY": {
+          "bestmove": "e2a6",
+          "depth": 10,
+          "nodes": 1040384,
+          "score_cp": -40,
+          "nps": 1911994,
+          "elapsed_s": 0.5441
+        }
+      },
+      "avg_depth": 17.5,
+      "avg_nps": 2897862
+    },
+    "E5": {
+      "desc": "Frozen X7 Baseline Positional Evaluation (emode=5)",
+      "positions": {
+        "DEV_01_PAWN_WEAK": {
+          "bestmove": "b5c6",
+          "depth": 10,
+          "nodes": 792576,
+          "score_cp": 132,
+          "nps": 1451656,
+          "elapsed_s": 0.546
+        },
+        "DEV_02_KING_ATTACK": {
+          "bestmove": "c3d5",
+          "depth": 12,
+          "nodes": 671744,
+          "score_cp": 166,
+          "nps": 1230279,
+          "elapsed_s": 0.546
+        },
+        "DEV_03_ROOK_ENDGAME": {
+          "bestmove": "d3c3",
+          "depth": 23,
+          "nodes": 1622016,
+          "score_cp": 277,
+          "nps": 2979321,
+          "elapsed_s": 0.5444
+        },
+        "DEV_04_IQP": {
+          "bestmove": "e2d3",
+          "depth": 10,
+          "nodes": 835584,
+          "score_cp": 52,
+          "nps": 1521750,
+          "elapsed_s": 0.5491
+        },
+        "DEV_05_KNIGHT_OUTPOST": {
+          "bestmove": "c1e3",
+          "depth": 12,
+          "nodes": 776192,
+          "score_cp": 9,
+          "nps": 1423574,
+          "elapsed_s": 0.5452
+        },
+        "DEV_06_BACKWARD_PAWN": {
+          "bestmove": "d4c5",
+          "depth": 11,
+          "nodes": 858112,
+          "score_cp": 883,
+          "nps": 1585059,
+          "elapsed_s": 0.5414
+        },
+        "DEV_07_TACTICAL_DEFENSE": {
+          "bestmove": "d5f6",
+          "depth": 10,
+          "nodes": 1462272,
+          "score_cp": 28997,
+          "nps": 2687980,
+          "elapsed_s": 0.544
+        },
+        "DEV_08_TACTICAL_DEFLECTION": {
+          "bestmove": "h5f7",
+          "depth": 9,
+          "nodes": 1527808,
+          "score_cp": 28999,
+          "nps": 2786367,
+          "elapsed_s": 0.5483
+        },
+        "DEV_09_PAWN_OPPOSITION": {
+          "bestmove": "e4d3",
+          "depth": 64,
+          "nodes": 384,
+          "score_cp": 0,
+          "nps": 8634,
+          "elapsed_s": 0.0445
+        },
+        "DEV_10_PASSED_PAWN_RACE": {
+          "bestmove": "b4f4",
+          "depth": 15,
+          "nodes": 1296384,
+          "score_cp": 10,
+          "nps": 2348379,
+          "elapsed_s": 0.552
+        },
+        "DEV_11_CLOSED_CHAIN": {
+          "bestmove": "b6c7",
+          "depth": 11,
+          "nodes": 806912,
+          "score_cp": 36,
+          "nps": 1485246,
+          "elapsed_s": 0.5433
+        },
+        "DEV_12_PARALLEL_STABILITY": {
+          "bestmove": "e2a6",
+          "depth": 8,
+          "nodes": 663552,
+          "score_cp": 9,
+          "nps": 1217531,
+          "elapsed_s": 0.545
+        }
+      },
+      "avg_depth": 16.25,
+      "avg_nps": 1870253
+    },
+    "E6": {
+      "desc": "X10 Enhanced Pawn Structure only (emode=6)",
+      "positions": {
+        "DEV_01_PAWN_WEAK": {
+          "bestmove": "b5c6",
+          "depth": 11,
+          "nodes": 1067008,
+          "score_cp": 187,
+          "nps": 1960453,
+          "elapsed_s": 0.5443
+        },
+        "DEV_02_KING_ATTACK": {
+          "bestmove": "c3d5",
+          "depth": 12,
+          "nodes": 962560,
+          "score_cp": 131,
+          "nps": 1764151,
+          "elapsed_s": 0.5456
+        },
+        "DEV_03_ROOK_ENDGAME": {
+          "bestmove": "d3c3",
+          "depth": 24,
+          "nodes": 1671168,
+          "score_cp": 312,
+          "nps": 3059892,
+          "elapsed_s": 0.5462
+        },
+        "DEV_04_IQP": {
+          "bestmove": "e3e4",
+          "depth": 12,
+          "nodes": 1056768,
+          "score_cp": 35,
+          "nps": 1939354,
+          "elapsed_s": 0.5449
+        },
+        "DEV_05_KNIGHT_OUTPOST": {
+          "bestmove": "c1e3",
+          "depth": 13,
+          "nodes": 991232,
+          "score_cp": -5,
+          "nps": 1819051,
+          "elapsed_s": 0.5449
+        },
+        "DEV_06_BACKWARD_PAWN": {
+          "bestmove": "d3b5",
+          "depth": 13,
+          "nodes": 1013760,
+          "score_cp": 900,
+          "nps": 1866873,
+          "elapsed_s": 0.543
+        },
+        "DEV_07_TACTICAL_DEFENSE": {
+          "bestmove": "d5f6",
+          "depth": 10,
+          "nodes": 1843200,
+          "score_cp": 28997,
+          "nps": 3369778,
+          "elapsed_s": 0.547
+        },
+        "DEV_08_TACTICAL_DEFLECTION": {
+          "bestmove": "h5f7",
+          "depth": 10,
+          "nodes": 1970176,
+          "score_cp": 28999,
+          "nps": 3631508,
+          "elapsed_s": 0.5425
+        },
+        "DEV_09_PAWN_OPPOSITION": {
+          "bestmove": "e4d3",
+          "depth": 64,
+          "nodes": 384,
+          "score_cp": 0,
+          "nps": 8124,
+          "elapsed_s": 0.0473
+        },
+        "DEV_10_PASSED_PAWN_RACE": {
+          "bestmove": "b4f4",
+          "depth": 17,
+          "nodes": 1484800,
+          "score_cp": 20,
+          "nps": 2732239,
+          "elapsed_s": 0.5434
+        },
+        "DEV_11_CLOSED_CHAIN": {
+          "bestmove": "f7f6",
+          "depth": 12,
+          "nodes": 1030144,
+          "score_cp": 33,
+          "nps": 1890227,
+          "elapsed_s": 0.545
+        },
+        "DEV_12_PARALLEL_STABILITY": {
+          "bestmove": "e2a6",
+          "depth": 9,
+          "nodes": 890880,
+          "score_cp": -58,
+          "nps": 1631634,
+          "elapsed_s": 0.546
+        }
+      },
+      "avg_depth": 17.25,
+      "avg_nps": 2314875
+    },
+    "E7": {
+      "desc": "X10 Enhanced King Safety only (emode=7)",
+      "positions": {
+        "DEV_01_PAWN_WEAK": {
+          "bestmove": "b5c6",
+          "depth": 11,
+          "nodes": 997376,
+          "score_cp": 235,
+          "nps": 1826704,
+          "elapsed_s": 0.546
+        },
+        "DEV_02_KING_ATTACK": {
+          "bestmove": "c3d5",
+          "depth": 12,
+          "nodes": 997376,
+          "score_cp": 120,
+          "nps": 1831282,
+          "elapsed_s": 0.5446
+        },
+        "DEV_03_ROOK_ENDGAME": {
+          "bestmove": "d3c3",
+          "depth": 23,
+          "nodes": 1861632,
+          "score_cp": 155,
+          "nps": 3419191,
+          "elapsed_s": 0.5445
+        },
+        "DEV_04_IQP": {
+          "bestmove": "e1g1",
+          "depth": 11,
+          "nodes": 1042432,
+          "score_cp": 35,
+          "nps": 1888370,
+          "elapsed_s": 0.552
+        },
+        "DEV_05_KNIGHT_OUTPOST": {
+          "bestmove": "c1e3",
+          "depth": 12,
+          "nodes": 1040384,
+          "score_cp": 10,
+          "nps": 1887673,
+          "elapsed_s": 0.5511
+        },
+        "DEV_06_BACKWARD_PAWN": {
+          "bestmove": "c3c4",
+          "depth": 12,
+          "nodes": 1157120,
+          "score_cp": 902,
+          "nps": 2129065,
+          "elapsed_s": 0.5435
+        },
+        "DEV_07_TACTICAL_DEFENSE": {
+          "bestmove": "d5f6",
+          "depth": 10,
+          "nodes": 2103296,
+          "score_cp": 28997,
+          "nps": 3858363,
+          "elapsed_s": 0.5451
+        },
+        "DEV_08_TACTICAL_DEFLECTION": {
+          "bestmove": "h5f7",
+          "depth": 10,
+          "nodes": 2060288,
+          "score_cp": 28999,
+          "nps": 3777928,
+          "elapsed_s": 0.5453
+        },
+        "DEV_09_PAWN_OPPOSITION": {
+          "bestmove": "e4d3",
+          "depth": 64,
+          "nodes": 384,
+          "score_cp": 0,
+          "nps": 9101,
+          "elapsed_s": 0.0422
+        },
+        "DEV_10_PASSED_PAWN_RACE": {
+          "bestmove": "b4f4",
+          "depth": 17,
+          "nodes": 1648640,
+          "score_cp": 38,
+          "nps": 3039459,
+          "elapsed_s": 0.5424
+        },
+        "DEV_11_CLOSED_CHAIN": {
+          "bestmove": "b6c7",
+          "depth": 12,
+          "nodes": 976896,
+          "score_cp": 13,
+          "nps": 1793264,
+          "elapsed_s": 0.5448
+        },
+        "DEV_12_PARALLEL_STABILITY": {
+          "bestmove": "e2a6",
+          "depth": 9,
+          "nodes": 792576,
+          "score_cp": 18,
+          "nps": 1456965,
+          "elapsed_s": 0.544
+        }
+      },
+      "avg_depth": 16.92,
+      "avg_nps": 2427987
+    },
+    "E8": {
+      "desc": "X10 Enhanced Piece Activity & Coordination only (emode=8)",
+      "positions": {
+        "DEV_01_PAWN_WEAK": {
+          "bestmove": "b5c6",
+          "depth": 11,
+          "nodes": 960512,
+          "score_cp": 166,
+          "nps": 1761176,
+          "elapsed_s": 0.5454
+        },
+        "DEV_02_KING_ATTACK": {
+          "bestmove": "c3d5",
+          "depth": 12,
+          "nodes": 843776,
+          "score_cp": 191,
+          "nps": 1541333,
+          "elapsed_s": 0.5474
+        },
+        "DEV_03_ROOK_ENDGAME": {
+          "bestmove": "d3c3",
+          "depth": 23,
+          "nodes": 1906688,
+          "score_cp": 155,
+          "nps": 3503530,
+          "elapsed_s": 0.5442
+        },
+        "DEV_04_IQP": {
+          "bestmove": "e1g1",
+          "depth": 10,
+          "nodes": 935936,
+          "score_cp": 56,
+          "nps": 1700656,
+          "elapsed_s": 0.5503
+        },
+        "DEV_05_KNIGHT_OUTPOST": {
+          "bestmove": "h2h3",
+          "depth": 12,
+          "nodes": 823296,
+          "score_cp": 20,
+          "nps": 1482695,
+          "elapsed_s": 0.5553
+        },
+        "DEV_06_BACKWARD_PAWN": {
+          "bestmove": "c3c4",
+          "depth": 11,
+          "nodes": 983040,
+          "score_cp": 867,
+          "nps": 1783632,
+          "elapsed_s": 0.5511
+        },
+        "DEV_07_TACTICAL_DEFENSE": {
+          "bestmove": "d5f6",
+          "depth": 10,
+          "nodes": 1869824,
+          "score_cp": 28997,
+          "nps": 3407311,
+          "elapsed_s": 0.5488
+        },
+        "DEV_08_TACTICAL_DEFLECTION": {
+          "bestmove": "h5f7",
+          "depth": 10,
+          "nodes": 1890304,
+          "score_cp": 28999,
+          "nps": 3418097,
+          "elapsed_s": 0.553
+        },
+        "DEV_09_PAWN_OPPOSITION": {
+          "bestmove": "e4d3",
+          "depth": 64,
+          "nodes": 384,
+          "score_cp": 0,
+          "nps": 8588,
+          "elapsed_s": 0.0447
+        },
+        "DEV_10_PASSED_PAWN_RACE": {
+          "bestmove": "b4f4",
+          "depth": 16,
+          "nodes": 1503232,
+          "score_cp": 33,
+          "nps": 2756862,
+          "elapsed_s": 0.5453
+        },
+        "DEV_11_CLOSED_CHAIN": {
+          "bestmove": "f7f6",
+          "depth": 12,
+          "nodes": 942080,
+          "score_cp": 11,
+          "nps": 1722091,
+          "elapsed_s": 0.5471
+        },
+        "DEV_12_PARALLEL_STABILITY": {
+          "bestmove": "e2a6",
+          "depth": 10,
+          "nodes": 755712,
+          "score_cp": 17,
+          "nps": 1375789,
+          "elapsed_s": 0.5493
+        }
+      },
+      "avg_depth": 16.75,
+      "avg_nps": 2205689
+    },
+    "E9": {
+      "desc": "X10 Enhanced Endgame Positional only (emode=9)",
+      "positions": {
+        "DEV_01_PAWN_WEAK": {
+          "bestmove": "b5c6",
+          "depth": 11,
+          "nodes": 1067008,
+          "score_cp": 188,
+          "nps": 1942773,
+          "elapsed_s": 0.5492
+        },
+        "DEV_02_KING_ATTACK": {
+          "bestmove": "c3d5",
+          "depth": 12,
+          "nodes": 960512,
+          "score_cp": 131,
+          "nps": 1739377,
+          "elapsed_s": 0.5522
+        },
+        "DEV_03_ROOK_ENDGAME": {
+          "bestmove": "d3c3",
+          "depth": 24,
+          "nodes": 1396736,
+          "score_cp": 492,
+          "nps": 2547296,
+          "elapsed_s": 0.5483
+        },
+        "DEV_04_IQP": {
+          "bestmove": "e3e4",
+          "depth": 12,
+          "nodes": 1028096,
+          "score_cp": 37,
+          "nps": 1881856,
+          "elapsed_s": 0.5463
+        },
+        "DEV_05_KNIGHT_OUTPOST": {
+          "bestmove": "c1e3",
+          "depth": 13,
+          "nodes": 983040,
+          "score_cp": -5,
+          "nps": 1749364,
+          "elapsed_s": 0.5619
+        },
+        "DEV_06_BACKWARD_PAWN": {
+          "bestmove": "d3b5",
+          "depth": 13,
+          "nodes": 1032192,
+          "score_cp": 900,
+          "nps": 1860891,
+          "elapsed_s": 0.5547
+        },
+        "DEV_07_TACTICAL_DEFENSE": {
+          "bestmove": "d5f6",
+          "depth": 10,
+          "nodes": 1888256,
+          "score_cp": 28997,
+          "nps": 3346259,
+          "elapsed_s": 0.5643
+        },
+        "DEV_08_TACTICAL_DEFLECTION": {
+          "bestmove": "h5f7",
+          "depth": 10,
+          "nodes": 1916928,
+          "score_cp": 28999,
+          "nps": 3403539,
+          "elapsed_s": 0.5632
+        },
+        "DEV_09_PAWN_OPPOSITION": {
+          "bestmove": "e4d3",
+          "depth": 64,
+          "nodes": 384,
+          "score_cp": 0,
+          "nps": 3728,
+          "elapsed_s": 0.103
+        },
+        "DEV_10_PASSED_PAWN_RACE": {
+          "bestmove": "b4f4",
+          "depth": 17,
+          "nodes": 1435648,
+          "score_cp": 40,
+          "nps": 2414983,
+          "elapsed_s": 0.5945
+        },
+        "DEV_11_CLOSED_CHAIN": {
+          "bestmove": "f7f6",
+          "depth": 12,
+          "nodes": 1062912,
+          "score_cp": 36,
+          "nps": 1865552,
+          "elapsed_s": 0.5698
+        },
+        "DEV_12_PARALLEL_STABILITY": {
+          "bestmove": "e2a6",
+          "depth": 9,
+          "nodes": 872448,
+          "score_cp": -45,
+          "nps": 1602345,
+          "elapsed_s": 0.5445
+        }
+      },
+      "avg_depth": 17.25,
+      "avg_nps": 2182402
+    },
+    "E10": {
+      "desc": "Full Enhanced Classical Evaluation (Candidate X10/X12, emode=10)",
+      "positions": {
+        "DEV_01_PAWN_WEAK": {
+          "bestmove": "b5c6",
+          "depth": 11,
+          "nodes": 755712,
+          "score_cp": 123,
+          "nps": 1376980,
+          "elapsed_s": 0.5488
+        },
+        "DEV_02_KING_ATTACK": {
+          "bestmove": "c3d5",
+          "depth": 12,
+          "nodes": 665600,
+          "score_cp": 174,
+          "nps": 1203645,
+          "elapsed_s": 0.553
+        },
+        "DEV_03_ROOK_ENDGAME": {
+          "bestmove": "d3c3",
+          "depth": 24,
+          "nodes": 1427456,
+          "score_cp": 492,
+          "nps": 2550738,
+          "elapsed_s": 0.5596
+        },
+        "DEV_04_IQP": {
+          "bestmove": "e1g1",
+          "depth": 11,
+          "nodes": 778240,
+          "score_cp": 63,
+          "nps": 1426549,
+          "elapsed_s": 0.5455
+        },
+        "DEV_05_KNIGHT_OUTPOST": {
+          "bestmove": "h2h3",
+          "depth": 12,
+          "nodes": 743424,
+          "score_cp": -3,
+          "nps": 1361311,
+          "elapsed_s": 0.5461
+        },
+        "DEV_06_BACKWARD_PAWN": {
+          "bestmove": "c3c4",
+          "depth": 12,
+          "nodes": 823296,
+          "score_cp": 876,
+          "nps": 1498579,
+          "elapsed_s": 0.5494
+        },
+        "DEV_07_TACTICAL_DEFENSE": {
+          "bestmove": "d5f6",
+          "depth": 10,
+          "nodes": 1452032,
+          "score_cp": 28997,
+          "nps": 2611703,
+          "elapsed_s": 0.556
+        },
+        "DEV_08_TACTICAL_DEFLECTION": {
+          "bestmove": "h5f7",
+          "depth": 9,
+          "nodes": 1509376,
+          "score_cp": 28999,
+          "nps": 2721694,
+          "elapsed_s": 0.5546
+        },
+        "DEV_09_PAWN_OPPOSITION": {
+          "bestmove": "e4d3",
+          "depth": 64,
+          "nodes": 384,
+          "score_cp": 0,
+          "nps": 7705,
+          "elapsed_s": 0.0498
+        },
+        "DEV_10_PASSED_PAWN_RACE": {
+          "bestmove": "b4f4",
+          "depth": 16,
+          "nodes": 1353728,
+          "score_cp": 61,
+          "nps": 2375444,
+          "elapsed_s": 0.5699
+        },
+        "DEV_11_CLOSED_CHAIN": {
+          "bestmove": "b6c7",
+          "depth": 11,
+          "nodes": 737280,
+          "score_cp": 31,
+          "nps": 1358046,
+          "elapsed_s": 0.5429
+        },
+        "DEV_12_PARALLEL_STABILITY": {
+          "bestmove": "e2a6",
+          "depth": 8,
+          "nodes": 651264,
+          "score_cp": 14,
+          "nps": 1189521,
+          "elapsed_s": 0.5475
+        }
+      },
+      "avg_depth": 16.67,
+      "avg_nps": 1779783
+    }
+  }
+}

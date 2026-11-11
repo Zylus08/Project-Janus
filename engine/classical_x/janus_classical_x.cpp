@@ -325,7 +325,7 @@ static bool g_use_reverse_futility = true;     // Phase 4: Reverse Futility Prun
 static int  g_rfp_margin_per_depth = 80;       // Margin per ply
 static bool g_use_aspiration_window = true;    // Phase 5: Aspiration Windows (delta = 25 cp)
 static int  g_aspiration_delta = 25;           // Aspiration delta
-static std::string g_search_variant = "X12";    // Active variant identifier (Default Candidate X7)
+static std::string g_search_variant = "X13";    // Active variant identifier (Default Candidate X7)
 
 // ============================================================================
 // Search Modernization & Positional Evaluation Options (Milestone P1.2)
@@ -545,6 +545,25 @@ EXPORT void native_apply_search_variant(const char* var_str) {
         g_multicut_mode = 0; // C0 Off
         g_probcut_mode = 0; // P0 Off
         g_use_pawn_hash = true; // 64K entry Pawn Hash Table
+        g_dynamic_time_mgmt = true; // Dynamic Time Management
+        g_use_lmp = true; // Safe Late Move Pruning
+        g_lmp_mode = 1; // L1: Conservative Quadratic LMP
+        g_lmp_max_depth = 4;
+    } else if (var == "X13") { // P1.8 Candidate: Full Co-Design (Packed 64B TT + E10 Eval + Thread-Local Pawn Hash + Safe LMP)
+        g_use_staged_movegen = true;
+        g_quiescence_see_mode = 2;
+        g_use_see_in_quiescence = true;
+        g_use_null_move_pruning = true;
+        g_use_reverse_futility = true;
+        g_use_aspiration_window = true;
+        g_conthist_mode = 3; // H3
+        g_dynamic_lmr_mode = 3; // L3 Calibrated
+        g_eval_mode = 10; // E10 Enhanced Classical Evaluation
+        g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
+        g_singular_extension_mode = 0; // S0 Off
+        g_multicut_mode = 0; // C0 Off
+        g_probcut_mode = 0; // P0 Off
+        g_use_pawn_hash = true; // Thread-local Pawn Hash Table
         g_dynamic_time_mgmt = true; // Dynamic Time Management
         g_use_lmp = true; // Safe Late Move Pruning
         g_lmp_mode = 1; // L1: Conservative Quadratic LMP
@@ -816,7 +835,7 @@ EXPORT int native_init() {
     std::memset(g_killer_moves, 0, sizeof(g_killer_moves));
     std::memset(g_history_table, 0, sizeof(g_history_table));
     g_game_history_len = 0;
-    native_apply_search_variant("X12");
+    native_apply_search_variant("X13");
     return 1;
 }
 
@@ -1605,7 +1624,7 @@ struct PawnHashEntry {
     int16_t eg[2];
     uint64_t passed_pawns[2];
 };
-constexpr size_t PAWN_HASH_SIZE = 65536; // 64K entries * 32 bytes = 2.0 MB (L3 resident)
+constexpr size_t PAWN_HASH_SIZE = 16384; // 16K entries * 32B = 512 KB (100% L2 cache resident) // 64K entries * 32 bytes = 2.0 MB (L3 resident)
 thread_local PawnHashEntry g_pawn_table[PAWN_HASH_SIZE];
 
 static void clear_pawn_table() {
@@ -3401,7 +3420,7 @@ static int negamax(
     TTEntry entry{};
     bool has_entry = false;
 
-    if (g_search_variant == "X11" || g_search_variant == "X12" || g_num_threads > 1) {
+    if (g_search_variant == "X11" || g_search_variant == "X12" || g_search_variant == "X13" || g_num_threads > 1) {
         int tt_score = 0;
         bool allow_cutoff = (ply > 0 && excluded_move == 0);
         if (g_parallel_tt.probe(key, depth, ply, alpha, beta, tt_score, tt_move, allow_cutoff)) {
@@ -3888,7 +3907,7 @@ static int negamax(
         if (best_score <= orig_alpha) flag = TT_UPPER;
         else if (best_score >= beta) flag = TT_LOWER;
 
-        if (g_search_variant == "X11" || g_search_variant == "X12" || g_num_threads > 1) {
+        if (g_search_variant == "X11" || g_search_variant == "X12" || g_search_variant == "X13" || g_num_threads > 1) {
             g_parallel_tt.store(key, best_score, (int8_t)depth, flag, ply, best_move);
         } else {
             size_t tt_idx = key % TT_SIZE;
@@ -4377,8 +4396,8 @@ static void uci_loop() {
         iss >> cmd;
 
         if (cmd == "uci") {
-            std::cout << "id name Janus Classical X (P1.7 Candidate X12)" << std::endl;
-            std::cout << "id author Project Janus Team" << std::endl;
+            std::cout << "id name Janus Classical X (P1.8 Candidate X13)" << std::endl;
+            std::cout << "id author Project Janus Developers" << std::endl;
             std::cout << "option name Threads type spin default 1 min 1 max 16" << std::endl;
             std::cout << "option name UCI_LMP type combo default L1 var L0 var L1 var L2 var L3" << std::endl;
             std::cout << "option name UseKillerOrdering type check default true" << std::endl;
@@ -4390,7 +4409,7 @@ static void uci_loop() {
             std::cout << "option name LMRBaseReduction type spin default 1 min 1 max 3" << std::endl;
             std::cout << "option name UseSEEOrdering type check default false" << std::endl;
             std::cout << "option name UseSEEInQuiescence type check default false" << std::endl;
-            std::cout << "option name UCI_Variant type combo default X12 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12" << std::endl;
+            std::cout << "option name UCI_Variant type combo default X13 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13" << std::endl;
             std::cout << "option name UCI_ContinuationHistory type combo default H3 var H0 var H1 var H2 var H3" << std::endl;
             std::cout << "option name UCI_DynamicLMR type combo default L3 var L0 var L1 var L2 var L3" << std::endl;
             std::cout << "option name UCI_ClassicalEval type combo default E10 var E0 var E1 var E2 var E3 var E4 var E5 var E6 var E7 var E8 var E9 var E10" << std::endl;

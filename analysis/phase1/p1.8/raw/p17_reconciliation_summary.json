@@ -1,0 +1,143 @@
+{
+  "milestone": "P1.8",
+  "phase": "Phase 0 Reconciliation",
+  "binaries": {
+    "X7": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.3\\control\\janus_classical_x7.exe",
+      "sha256": "86392a2f4bd4182a4d7dc21e32940bd7939f6816794d5e1ab02f4082431ca28b",
+      "size_bytes": 370176,
+      "exists": true
+    },
+    "X10": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.5\\control\\janus_classical_x10.exe",
+      "sha256": "1ef060f89cb156b798cd2fbe67539d088c6c0fb3842006b734f07a03808b0f20",
+      "size_bytes": 382464,
+      "exists": true
+    },
+    "X11": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.6\\control\\janus_classical_x11.exe",
+      "sha256": "5733fdaa4c6b95a772c6e065ae961af00fb00af43e20b9c9d2367bd33bee074f",
+      "size_bytes": 3162112,
+      "exists": true
+    },
+    "X12": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.7\\control\\janus_classical_x12.exe",
+      "sha256": "00b4f5fedea02a392a1af9713a96512e5199a0e3ae55c295ad1c7cfff1b47059",
+      "size_bytes": 2874368,
+      "exists": true
+    },
+    "SF19": {
+      "path": "E:\\ChessXML\\tools\\stockfish\\stockfish.exe",
+      "sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "size_bytes": 103046300,
+      "exists": true
+    }
+  },
+  "matches": {
+    "match_a_x12_4t_vs_x11_4t": {
+      "pgn": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.7\\pgn\\x12_4t_vs_x11_4t.pgn",
+      "total_games": 200,
+      "num_pairs": 100,
+      "wins_a": 93,
+      "draws": 50,
+      "wins_b": 57,
+      "points_a": 118.0,
+      "score_pct": 59.0,
+      "elo_point_estimate": 63.2,
+      "score_ci_95": [
+        0.5208,
+        0.6558
+      ],
+      "elo_ci_95": [
+        14.4,
+        112.0
+      ],
+      "mean_pair_diff": 0.18,
+      "se_pair_diff": 0.0571,
+      "paired_t_stat": 3.1532,
+      "df": 99,
+      "p_value": 0.002138,
+      "reject_null_at_05": true
+    },
+    "match_b_x12_4t_vs_x7_1t": {
+      "pgn": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.7\\pgn\\x12_4t_vs_x7_1t.pgn",
+      "total_games": 40,
+      "num_pairs": 20,
+      "wins_a": 15,
+      "draws": 11,
+      "wins_b": 14,
+      "points_a": 20.5,
+      "score_pct": 51.25,
+      "elo_point_estimate": 8.7,
+      "score_ci_95": [
+        0.3634,
+        0.6594
+      ],
+      "elo_ci_95": [
+        -97.4,
+        114.7
+      ],
+      "mean_pair_diff": 0.025,
+      "se_pair_diff": 0.1281,
+      "paired_t_stat": 0.1951,
+      "df": 19,
+      "p_value": 0.847398,
+      "reject_null_at_05": false
+    },
+    "match_c_x12_1t_vs_x7_1t": {
+      "pgn": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.7\\pgn\\x12_1t_vs_x7_1t.pgn",
+      "total_games": 40,
+      "num_pairs": 20,
+      "wins_a": 15,
+      "draws": 8,
+      "wins_b": 17,
+      "points_a": 19.0,
+      "score_pct": 47.5,
+      "elo_point_estimate": -17.4,
+      "score_ci_95": [
+        0.3294,
+        0.625
+      ],
+      "elo_ci_95": [
+        -123.5,
+        88.8
+      ],
+      "mean_pair_diff": -0.05,
+      "se_pair_diff": 0.1535,
+      "paired_t_stat": -0.3258,
+      "df": 19,
+      "p_value": 0.748138,
+      "reject_null_at_05": false
+    },
+    "match_sf_x12_4t_vs_sf19_4t": {
+      "pgn": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.7\\pgn\\x12_4t_vs_sf19_4t.pgn",
+      "total_games": 40,
+      "num_pairs": 20,
+      "wins_a": 0,
+      "draws": 0,
+      "wins_b": 40,
+      "points_a": 0.0,
+      "score_pct": 0.0,
+      "elo_point_estimate": null,
+      "score_ci_95": [
+        0.0,
+        0.0876
+      ],
+      "elo_ci_95": [
+        null,
+        -407.0
+      ],
+      "mean_pair_diff": -1.0,
+      "se_pair_diff": 0.0,
+      "paired_t_stat": 0.0,
+      "df": 19,
+      "p_value": 0.931724,
+      "reject_null_at_05": false
+    }
+  },
+  "methodological_corrections": {
+    "p_value_interpretation": "A p-value > 0.05 indicates failure to reject the null hypothesis of equal playing strength at alpha=0.05; it does NOT constitute mathematical proof of identical strength.",
+    "zero_score_elo_reporting": "For 0/40 scores, the empirical score is 0.0% with a Wilson 95% score interval of [0.0000, 0.0877] (corresponding to an upper bound of -407.0 Elo). Assigning arbitrary finite point estimates (such as -800 Elo) is methodologically unsound.",
+    "syzygy_stockfish_verification": "Stockfish 19 was invoked with default options without setting SyzygyPath. Therefore, Stockfish's 40-0 victory was achieved purely through its dual-net NNUE evaluation and selective search, not endgame tablebase assistance."
+  }
+}

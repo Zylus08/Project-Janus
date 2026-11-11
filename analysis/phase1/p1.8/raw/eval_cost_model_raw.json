@@ -1,0 +1,80 @@
+{
+  "milestone": "P1.8",
+  "phase": "Phase 4 Evaluation Cost Model",
+  "benchmarks": {
+    "E0_1T": {
+      "desc": "Material + PST only (1T)",
+      "data": {
+        "emode": "E0",
+        "threads": 1,
+        "nps": 2820457,
+        "avg_depth": 14.38,
+        "total_nodes": 12439552,
+        "total_time_s": 4.4105
+      }
+    },
+    "E5_1T": {
+      "desc": "X7 Positional Evaluation (1T)",
+      "data": {
+        "emode": "E5",
+        "threads": 1,
+        "nps": 1832837,
+        "avg_depth": 13.25,
+        "total_nodes": 8161280,
+        "total_time_s": 4.4528
+      }
+    },
+    "E10_1T": {
+      "desc": "X10 Full Enhanced Evaluation (1T)",
+      "data": {
+        "emode": "E10",
+        "threads": 1,
+        "nps": 1718023,
+        "avg_depth": 13.38,
+        "total_nodes": 7647232,
+        "total_time_s": 4.4512
+      }
+    },
+    "E0_4T": {
+      "desc": "Material + PST only (4T)",
+      "data": {
+        "emode": "E0",
+        "threads": 4,
+        "nps": 8678789,
+        "avg_depth": 14.88,
+        "total_nodes": 37563123,
+        "total_time_s": 4.3282
+      }
+    },
+    "E5_4T": {
+      "desc": "X7 Positional Evaluation (4T)",
+      "data": {
+        "emode": "E5",
+        "threads": 4,
+        "nps": 5780037,
+        "avg_depth": 13.88,
+        "total_nodes": 25344000,
+        "total_time_s": 4.3847
+      }
+    },
+    "E10_4T": {
+      "desc": "X10 Full Enhanced Evaluation (4T)",
+      "data": {
+        "emode": "E10",
+        "threads": 4,
+        "nps": 5363179,
+        "avg_depth": 13.88,
+        "total_nodes": 23484416,
+        "total_time_s": 4.3788
+      }
+    }
+  },
+  "pawn_hash_architecture": {
+    "entry_size_bytes": 32,
+    "entries_per_thread": 16384,
+    "bytes_per_thread": 524288,
+    "total_bytes_4t": 2097152,
+    "cache_residency": "100% L2 cache resident (512 KB fits inside 1024 KB L2 per core)",
+    "concurrency_model": "Thread-local private storage (0 locks, 0 bus contention, 0 false sharing)"
+  }
+}

@@ -1,0 +1,1774 @@
+{
+  "milestone": "P1.8",
+  "total_positions": 24,
+  "category_counts": {
+    "F1": 14,
+    "F2": 3,
+    "F3": 0,
+    "F4": 1,
+    "F5": 0,
+    "F6": 6,
+    "F7": 0
+  },
+  "leading_bottleneck": "F1",
+  "positions": [
+    {
+      "id": "DEV_01_SF19_LOSS_PAWN_WEAK",
+      "set": "dev",
+      "domain": "positional_pawn",
+      "fen": "r1bq1rk1/pp4pp/2n2p2/1BbpP3/5Q2/2N5/PP3PPP/R1B1K1NR w KQ - 3 11",
+      "desc": "Game 1 vs SF19: White accepted weak pawn structure and uncastled king exposure.",
+      "category": "F1",
+      "sf19_1t": {
+        "bestmove": "a2a3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "b5c6",
+        "depth": 11,
+        "nodes": 1724416,
+        "score_cp": 122,
+        "pv": [
+          "b5c6",
+          "b7c6",
+          "e5e6",
+          "c8e6",
+          "g1f3"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "e5e6",
+        "depth": 11,
+        "nodes": 1685504,
+        "score_cp": 128,
+        "pv": [
+          "e5e6",
+          "c8e6",
+          "g1e2",
+          "d8b6",
+          "b5c6"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "b5c6",
+        "depth": 12,
+        "nodes": 1419264,
+        "score_cp": 123,
+        "pv": [
+          "b5c6",
+          "b7c6",
+          "c1e3",
+          "f6e5",
+          "f4e5"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "b5c6",
+        "depth": 14,
+        "nodes": 4982784,
+        "score_cp": 134,
+        "pv": [
+          "b5c6",
+          "b7c6",
+          "c1e3",
+          "f6e5",
+          "f4e5"
+        ]
+      },
+      "eval_delta_x10_vs_x7": 6,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "DEV_02_SF19_LOSS_KING_ATTACK",
+      "set": "dev",
+      "domain": "king_safety",
+      "fen": "r1b2rk1/2q1bppp/p2p1n2/np2p3/4P3/1BN1BN1P/PP2QPP1/2RR2K1 w - - 0 15",
+      "desc": "Game 3 vs SF19: Dynamic Sicilian with loose king and knight infiltration on d5.",
+      "category": "F1",
+      "sf19_1t": {
+        "bestmove": "a2a3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "c3d5",
+        "depth": 12,
+        "nodes": 1800192,
+        "score_cp": 166,
+        "pv": [
+          "c3d5",
+          "f6d5",
+          "b3d5",
+          "c7b8",
+          "d5a8"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "c3d5",
+        "depth": 12,
+        "nodes": 1804288,
+        "score_cp": 174,
+        "pv": [
+          "c3d5",
+          "f6d5",
+          "b3d5",
+          "c7b8",
+          "d5a8"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "c3d5",
+        "depth": 12,
+        "nodes": 1339392,
+        "score_cp": 174,
+        "pv": [
+          "c3d5",
+          "f6d5",
+          "b3d5",
+          "c7b8",
+          "d5a8"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "c3d5",
+        "depth": 13,
+        "nodes": 4673536,
+        "score_cp": 169,
+        "pv": [
+          "c3d5",
+          "f6d5",
+          "b3d5",
+          "c7b8",
+          "d5a8"
+        ]
+      },
+      "eval_delta_x10_vs_x7": 8,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "DEV_03_SF19_LOSS_ROOK_ENDGAME",
+      "set": "dev",
+      "domain": "endgame",
+      "fen": "8/5p2/8/2k2p1p/2P2P1P/3K2P1/8/8 w - - 0 40",
+      "desc": "Game 7 vs SF19: Critical pawn endgame breakthrough requiring exact king triangulation.",
+      "category": "F6",
+      "sf19_1t": {
+        "bestmove": "g3g4",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "d3c3",
+        "depth": 24,
+        "nodes": 3518464,
+        "score_cp": 435,
+        "pv": [
+          "d3c3",
+          "c5c6",
+          "c3d4",
+          "c6d6",
+          "c4c5"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "d3c3",
+        "depth": 25,
+        "nodes": 3319808,
+        "score_cp": 554,
+        "pv": [
+          "d3c3",
+          "c5c6",
+          "c3d4",
+          "c6d6",
+          "c4c5"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "d3c3",
+        "depth": 26,
+        "nodes": 2932736,
+        "score_cp": 533,
+        "pv": [
+          "d3c3",
+          "c5c6",
+          "c3d4",
+          "c6d6",
+          "c4c5"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "d3c3",
+        "depth": 26,
+        "nodes": 6944768,
+        "score_cp": 492,
+        "pv": [
+          "d3c3",
+          "f7f6",
+          "c3d3",
+          "c5c6",
+          "d3d4"
+        ]
+      },
+      "eval_delta_x10_vs_x7": 119,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "DEV_04_ISOLATED_QUEEN_PAWN",
+      "set": "dev",
+      "domain": "positional_pawn",
+      "fen": "r1b2rk1/pp1n1ppp/2p1pn2/q2p4/2PP4/2N1PN2/PP1QBPPP/R3K2R w KQ - 4 10",
+      "desc": "Quiet IQP middlegame where blockading d5 or preparing c5 break is critical.",
+      "category": "F1",
+      "sf19_1t": {
+        "bestmove": "a2a3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "e1g1",
+        "depth": 11,
+        "nodes": 1769472,
+        "score_cp": 64,
+        "pv": [
+          "e1g1",
+          "a5c7",
+          "c4d5",
+          "e6d5",
+          "d2c2"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "e1g1",
+        "depth": 12,
+        "nodes": 1652736,
+        "score_cp": 62,
+        "pv": [
+          "e1g1",
+          "a5c7",
+          "e2d3",
+          "d5c4",
+          "d3c4"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "e1g1",
+        "depth": 11,
+        "nodes": 1515520,
+        "score_cp": 63,
+        "pv": [
+          "e1g1",
+          "a5c7",
+          "e2d3",
+          "h7h6",
+          "h2h3"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "e1g1",
+        "depth": 13,
+        "nodes": 5402624,
+        "score_cp": 62,
+        "pv": [
+          "e1g1",
+          "a5c7",
+          "h2h3",
+          "f8e8",
+          "a2a3"
+        ]
+      },
+      "eval_delta_x10_vs_x7": -2,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "DEV_05_KNIGHT_OUTPOST_D5",
+      "set": "dev",
+      "domain": "piece_activity",
+      "fen": "r2q1rk1/1pp1bppp/p1np1n2/4p3/2B1P1b1/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 9",
+      "desc": "Italian Game middlegame with Nd5 outpost battle and pin on f3.",
+      "category": "F1",
+      "sf19_1t": {
+        "bestmove": "a2a3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "c1e3",
+        "depth": 13,
+        "nodes": 1761280,
+        "score_cp": 20,
+        "pv": [
+          "c1e3",
+          "c6d4",
+          "e3d4",
+          "e5d4",
+          "c3d5"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "h2h3",
+        "depth": 12,
+        "nodes": 1644544,
+        "score_cp": 5,
+        "pv": [
+          "h2h3",
+          "g4f3",
+          "d1f3",
+          "c6d4",
+          "f3d1"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "h2h3",
+        "depth": 13,
+        "nodes": 1542144,
+        "score_cp": -3,
+        "pv": [
+          "h2h3",
+          "g4f3",
+          "d1f3",
+          "c6d4",
+          "f3d1"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "h2h3",
+        "depth": 13,
+        "nodes": 5093376,
+        "score_cp": -4,
+        "pv": [
+          "h2h3",
+          "g4f3",
+          "d1f3",
+          "c6d4",
+          "f3d1"
+        ]
+      },
+      "eval_delta_x10_vs_x7": -15,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "DEV_06_BACKWARD_PAWN_SEMIOPEN",
+      "set": "dev",
+      "domain": "positional_pawn",
+      "fen": "r1b1k2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 0 7",
+      "desc": "French structure with backward e6/c5 pawn tension.",
+      "category": "F1",
+      "sf19_1t": {
+        "bestmove": "a2a3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "d4c5",
+        "depth": 11,
+        "nodes": 1734656,
+        "score_cp": 880,
+        "pv": [
+          "d4c5",
+          "e7c5",
+          "d2b3",
+          "c5b6",
+          "b3d4"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "d4c5",
+        "depth": 11,
+        "nodes": 1763328,
+        "score_cp": 869,
+        "pv": [
+          "d4c5",
+          "e7c5",
+          "e3e4",
+          "e8g8",
+          "d1a4"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "c3c4",
+        "depth": 13,
+        "nodes": 1669120,
+        "score_cp": 886,
+        "pv": [
+          "c3c4",
+          "c8d7",
+          "c4d5",
+          "e6d5",
+          "d4c5"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "c3c4",
+        "depth": 14,
+        "nodes": 5705728,
+        "score_cp": 880,
+        "pv": [
+          "c3c4",
+          "c6b4",
+          "d3e2",
+          "c5d4",
+          "e3d4"
+        ]
+      },
+      "eval_delta_x10_vs_x7": -11,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "DEV_07_TACTICAL_DEFENSE",
+      "set": "dev",
+      "domain": "tactical",
+      "fen": "r2qkb1r/pp2nppp/3p4/2pNN3/2BnP3/3P4/PPP2PPP/R1BbK2R w KQkq - 1 9",
+      "desc": "L\u00e9gal trap resource: 9.Nf6+ gxf6 10.Bxf7#.",
+      "category": "F2",
+      "sf19_1t": {
+        "bestmove": "a2a3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "d5f6",
+        "depth": 11,
+        "nodes": 2940928,
+        "score_cp": 28997,
+        "pv": [
+          "d5f6",
+          "g7f6",
+          "c4f7"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "d5f6",
+        "depth": 11,
+        "nodes": 2975744,
+        "score_cp": 28997,
+        "pv": [
+          "d5f6",
+          "g7f6",
+          "c4f7"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "d5f6",
+        "depth": 11,
+        "nodes": 2951168,
+        "score_cp": 28997,
+        "pv": [
+          "d5f6",
+          "g7f6",
+          "c4f7"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "d5f6",
+        "depth": 11,
+        "nodes": 9158656,
+        "score_cp": 28997,
+        "pv": [
+          "d5f6",
+          "g7f6",
+          "c4f7"
+        ]
+      },
+      "eval_delta_x10_vs_x7": 0,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "DEV_08_TACTICAL_DEFLECTION",
+      "set": "dev",
+      "domain": "tactical",
+      "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4",
+      "desc": "Scholar's mate motif: 5.Qxf7#.",
+      "category": "F2",
+      "sf19_1t": {
+        "bestmove": "a2a3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "h5f7",
+        "depth": 10,
+        "nodes": 3059712,
+        "score_cp": 28999,
+        "pv": [
+          "h5f7"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "h5f7",
+        "depth": 10,
+        "nodes": 3115008,
+        "score_cp": 28999,
+        "pv": [
+          "h5f7"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "h5f7",
+        "depth": 10,
+        "nodes": 3069952,
+        "score_cp": 28999,
+        "pv": [
+          "h5f7"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "h5f7",
+        "depth": 10,
+        "nodes": 9269248,
+        "score_cp": 28999,
+        "pv": [
+          "h5f7"
+        ]
+      },
+      "eval_delta_x10_vs_x7": 0,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "DEV_09_PAWN_OPPOSITION",
+      "set": "dev",
+      "domain": "endgame",
+      "fen": "8/8/4k3/8/4K3/8/8/8 w - - 0 1",
+      "desc": "Elementary king opposition (dead draw).",
+      "category": "F6",
+      "sf19_1t": {
+        "bestmove": "e4d3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "e4d3",
+        "depth": 64,
+        "nodes": 384,
+        "score_cp": 0,
+        "pv": [
+          "e4d3"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "e4d3",
+        "depth": 64,
+        "nodes": 384,
+        "score_cp": 0,
+        "pv": [
+          "e4d3"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "e4d3",
+        "depth": 64,
+        "nodes": 384,
+        "score_cp": 0,
+        "pv": [
+          "e4d3"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "e4d3",
+        "depth": 64,
+        "nodes": 384,
+        "score_cp": 0,
+        "pv": [
+          "e4d3"
+        ]
+      },
+      "eval_delta_x10_vs_x7": 0,
+      "move_agreement_x12_4t_vs_sf": true
+    },
+    {
+      "id": "DEV_10_PASSED_PAWN_RACE",
+      "set": "dev",
+      "domain": "endgame",
+      "fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "desc": "Complex rook & pawn race where Rf4+ checks and cuts off the black king.",
+      "category": "F6",
+      "sf19_1t": {
+        "bestmove": "e2e3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "b4f4",
+        "depth": 18,
+        "nodes": 2883584,
+        "score_cp": 78,
+        "pv": [
+          "b4f4",
+          "h4g3",
+          "f4c4",
+          "h5h7",
+          "a5a6"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "b4f4",
+        "depth": 18,
+        "nodes": 3174400,
+        "score_cp": 52,
+        "pv": [
+          "b4f4",
+          "h4g3",
+          "f4c4",
+          "h5h7",
+          "e2e4"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "b4f4",
+        "depth": 18,
+        "nodes": 2627584,
+        "score_cp": 61,
+        "pv": [
+          "b4f4",
+          "h4g3",
+          "f4c4",
+          "h5h7",
+          "a5a6"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "b4f4",
+        "depth": 19,
+        "nodes": 7686144,
+        "score_cp": 80,
+        "pv": [
+          "b4f4",
+          "h4g3",
+          "f4c4",
+          "h5h7",
+          "a5a6"
+        ]
+      },
+      "eval_delta_x10_vs_x7": -26,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "DEV_11_CLOSED_CHAIN_BREAK",
+      "set": "dev",
+      "domain": "positional_pawn",
+      "fen": "r1b1k1nr/pp3ppp/1qn1p3/2bpP3/8/2P2N2/PP2BPPP/RNBQ1RK1 b kq - 1 8",
+      "desc": "French Advance closed chain where Queen and Bishop pressurize d4/b2.",
+      "category": "F1",
+      "sf19_1t": {
+        "bestmove": "d5d4",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "b6c7",
+        "depth": 11,
+        "nodes": 1665024,
+        "score_cp": 45,
+        "pv": [
+          "b6c7",
+          "b2b4",
+          "c5b6",
+          "c1f4",
+          "g8e7"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "b6c7",
+        "depth": 12,
+        "nodes": 1654784,
+        "score_cp": 18,
+        "pv": [
+          "b6c7",
+          "f1e1",
+          "g8e7",
+          "e2d3",
+          "e7g6"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "b6c7",
+        "depth": 12,
+        "nodes": 1470464,
+        "score_cp": 18,
+        "pv": [
+          "b6c7",
+          "f1e1",
+          "g8e7",
+          "e2d3",
+          "e7g6"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "b6c7",
+        "depth": 13,
+        "nodes": 5158912,
+        "score_cp": 12,
+        "pv": [
+          "b6c7",
+          "d1a4",
+          "c8d7",
+          "a4g4",
+          "e8f8"
+        ]
+      },
+      "eval_delta_x10_vs_x7": -27,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "DEV_12_PARALLEL_STABILITY_CHECK",
+      "set": "dev",
+      "domain": "concurrency",
+      "fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "desc": "Kiwipete complex multi-candidate tactical position; tests parallel move stability.",
+      "category": "F1",
+      "sf19_1t": {
+        "bestmove": "a2a3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "e2a6",
+        "depth": 10,
+        "nodes": 1386496,
+        "score_cp": -33,
+        "pv": [
+          "e2a6",
+          "b4c3",
+          "d2c3",
+          "e6d5",
+          "e5g4"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "e2a6",
+        "depth": 9,
+        "nodes": 1343488,
+        "score_cp": -31,
+        "pv": [
+          "e2a6",
+          "b4c3",
+          "d2c3",
+          "e6d5",
+          "e5g4"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "e2a6",
+        "depth": 9,
+        "nodes": 1177600,
+        "score_cp": -31,
+        "pv": [
+          "e2a6",
+          "b4c3",
+          "d2c3",
+          "e6d5",
+          "e5g4"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "e2a6",
+        "depth": 9,
+        "nodes": 4333568,
+        "score_cp": -31,
+        "pv": [
+          "e2a6",
+          "b4c3",
+          "d2c3",
+          "e6d5",
+          "e5g4"
+        ]
+      },
+      "eval_delta_x10_vs_x7": 2,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "HELD_01_SF19_LOSS_BAD_BISHOP",
+      "set": "held_out",
+      "domain": "piece_activity",
+      "fen": "r2q1rk1/1b1nbppp/pp1ppn2/8/2PNP3/1PN5/PB2BPPP/R2Q1RK1 w - - 4 12",
+      "desc": "Hedgehog Sicilian: White has space, Black has compact bishop pair on b7/e7.",
+      "category": "F1",
+      "sf19_1t": {
+        "bestmove": "a2a3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "d1c2",
+        "depth": 11,
+        "nodes": 1501184,
+        "score_cp": 19,
+        "pv": [
+          "d1c2",
+          "d8c7",
+          "h2h3",
+          "d7e5",
+          "a1d1"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "d1c2",
+        "depth": 11,
+        "nodes": 1439744,
+        "score_cp": 20,
+        "pv": [
+          "d1c2",
+          "d8c7",
+          "h2h3",
+          "d7e5",
+          "f2f4"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "d1c2",
+        "depth": 12,
+        "nodes": 1265664,
+        "score_cp": 22,
+        "pv": [
+          "d1c2",
+          "d7e5",
+          "h2h3",
+          "d8c7",
+          "a1d1"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "d1c2",
+        "depth": 13,
+        "nodes": 4608000,
+        "score_cp": 25,
+        "pv": [
+          "d1c2",
+          "d7e5",
+          "a1d1",
+          "d8c7",
+          "h2h3"
+        ]
+      },
+      "eval_delta_x10_vs_x7": 1,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "HELD_02_SF19_LOSS_SEMIOPEN_FILE",
+      "set": "held_out",
+      "domain": "piece_activity",
+      "fen": "r1b2rk1/ppqn1ppp/2p1pn2/8/2PP4/2N2N2/PPQ1BPPP/R4RK1 w - - 4 12",
+      "desc": "Caro-Kann Classical: open c-file and d4-d5 central tension.",
+      "category": "F1",
+      "sf19_1t": {
+        "bestmove": "a2a3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "f1e1",
+        "depth": 11,
+        "nodes": 1656832,
+        "score_cp": 77,
+        "pv": [
+          "f1e1",
+          "e6e5",
+          "a1d1",
+          "e5d4",
+          "d1d4"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "a1d1",
+        "depth": 11,
+        "nodes": 1568768,
+        "score_cp": 82,
+        "pv": [
+          "a1d1",
+          "c7f4",
+          "e2d3",
+          "f8d8",
+          "f1e1"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "f1e1",
+        "depth": 11,
+        "nodes": 1515520,
+        "score_cp": 79,
+        "pv": [
+          "f1e1",
+          "e6e5",
+          "a1d1",
+          "e5d4",
+          "f3d4"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "a1d1",
+        "depth": 12,
+        "nodes": 5097472,
+        "score_cp": 79,
+        "pv": [
+          "a1d1",
+          "c7f4",
+          "e2d3",
+          "c6c5",
+          "d3e4"
+        ]
+      },
+      "eval_delta_x10_vs_x7": 5,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "HELD_03_SF19_LOSS_QUEENLESS_EVAL",
+      "set": "held_out",
+      "domain": "endgame",
+      "fen": "4k3/1p3pp1/p3p3/3pP3/3P1P2/P3K3/1P6/8 b - - 0 35",
+      "desc": "Pure pawn endgame: white has space, black must not advance pawns prematurely.",
+      "category": "F6",
+      "sf19_1t": {
+        "bestmove": "a6a5",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "f7f5",
+        "depth": 17,
+        "nodes": 3000320,
+        "score_cp": 140,
+        "pv": [
+          "f7f5",
+          "e5f6",
+          "g7f6",
+          "e3d2",
+          "e8f8"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "f7f5",
+        "depth": 16,
+        "nodes": 3196928,
+        "score_cp": 136,
+        "pv": [
+          "f7f5",
+          "e3f2",
+          "e8f7",
+          "f2g3",
+          "f7g6"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "f7f5",
+        "depth": 16,
+        "nodes": 2957312,
+        "score_cp": 151,
+        "pv": [
+          "f7f5",
+          "e3d2",
+          "e8f7",
+          "d2e3",
+          "f7g6"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "f7f5",
+        "depth": 17,
+        "nodes": 7542784,
+        "score_cp": 154,
+        "pv": [
+          "f7f5",
+          "e3f2",
+          "e8f7"
+        ]
+      },
+      "eval_delta_x10_vs_x7": -4,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "HELD_04_OPPOSITE_BISHOPS_DRAW",
+      "set": "held_out",
+      "domain": "endgame",
+      "fen": "8/4b3/8/2k5/8/8/4B3/4K3 w - - 0 1",
+      "desc": "Opposite colored bishops endgame: drawn regardless of pawn presence if fortress holds.",
+      "category": "F6",
+      "sf19_1t": {
+        "bestmove": "e2d1",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "e2f3",
+        "depth": 38,
+        "nodes": 4272128,
+        "score_cp": 0,
+        "pv": [
+          "e2f3",
+          "e7f6",
+          "f3e4",
+          "c5b6",
+          "e1f1"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "e2f3",
+        "depth": 38,
+        "nodes": 4399104,
+        "score_cp": 0,
+        "pv": [
+          "e2f3",
+          "e7f6",
+          "f3e4",
+          "c5d6",
+          "e1d1"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "e2f3",
+        "depth": 39,
+        "nodes": 3715072,
+        "score_cp": 0,
+        "pv": [
+          "e2f3",
+          "e7f6",
+          "e1d1",
+          "c5b6",
+          "d1c2"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "e2f3",
+        "depth": 44,
+        "nodes": 8935424,
+        "score_cp": 0,
+        "pv": [
+          "e2f3",
+          "c5b6",
+          "f3e4",
+          "b6a7",
+          "e1d1"
+        ]
+      },
+      "eval_delta_x10_vs_x7": 0,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "HELD_05_ROOK_ACTIVE_7TH",
+      "set": "held_out",
+      "domain": "piece_activity",
+      "fen": "2r2rk1/1b2bppp/pp2p3/3qN3/3P4/P2B1P2/1P2Q1PP/2RR2K1 b - - 0 20",
+      "desc": "Rook pressure on d-file and potential invasion on the 7th rank.",
+      "category": "F1",
+      "sf19_1t": {
+        "bestmove": "a6a5",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "d5d4",
+        "depth": 13,
+        "nodes": 1654784,
+        "score_cp": 153,
+        "pv": [
+          "d5d4",
+          "g1f1",
+          "c8c1",
+          "d1c1",
+          "e7d6"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "d5d4",
+        "depth": 13,
+        "nodes": 1656832,
+        "score_cp": 163,
+        "pv": [
+          "d5d4",
+          "g1h1",
+          "c8c1",
+          "d1c1",
+          "e7d6"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "d5d4",
+        "depth": 13,
+        "nodes": 1345536,
+        "score_cp": 156,
+        "pv": [
+          "d5d4",
+          "g1h1",
+          "c8c1",
+          "d1c1",
+          "e7d6"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "d5d4",
+        "depth": 14,
+        "nodes": 4567040,
+        "score_cp": 186,
+        "pv": [
+          "d5d4",
+          "g1h1",
+          "c8c1",
+          "d1c1",
+          "e7d6"
+        ]
+      },
+      "eval_delta_x10_vs_x7": 10,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "HELD_06_KING_ZONE_EXPOSURE",
+      "set": "held_out",
+      "domain": "king_safety",
+      "fen": "r1bq1rk1/pp3ppp/2n1pn2/2pp4/3P4/2N1PN2/PPP1BPPP/R1BQK2R w KQkq - 2 6",
+      "desc": "Symmetrical open position where king safety hinges on castling speed.",
+      "category": "F1",
+      "sf19_1t": {
+        "bestmove": "a2a3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "e2b5",
+        "depth": 11,
+        "nodes": 1736704,
+        "score_cp": 315,
+        "pv": [
+          "e2b5",
+          "c5d4",
+          "e3d4",
+          "c8d7",
+          "c1f4"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "e2b5",
+        "depth": 11,
+        "nodes": 1726464,
+        "score_cp": 301,
+        "pv": [
+          "e2b5",
+          "c5d4",
+          "e3d4",
+          "c8d7",
+          "c1f4"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "d4c5",
+        "depth": 12,
+        "nodes": 1622016,
+        "score_cp": 304,
+        "pv": [
+          "d4c5",
+          "d8e7",
+          "c3a4",
+          "f6e4",
+          "d1d3"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "d4c5",
+        "depth": 13,
+        "nodes": 5437440,
+        "score_cp": 306,
+        "pv": [
+          "d4c5",
+          "d8e7",
+          "c3a4",
+          "f6e4",
+          "d1d3"
+        ]
+      },
+      "eval_delta_x10_vs_x7": -14,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "HELD_07_BISHOP_PAIR_ADVANTAGE",
+      "set": "held_out",
+      "domain": "piece_activity",
+      "fen": "r1b1k2r/ppq1bppp/2n1pn2/2pp4/2PP4/2N1PN2/PP2BPPP/R1BQ1RK1 w kq - 2 8",
+      "desc": "Open center where retaining both bishops yields a lasting positional edge.",
+      "category": "F1",
+      "sf19_1t": {
+        "bestmove": "a2a3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "d4c5",
+        "depth": 12,
+        "nodes": 1708032,
+        "score_cp": 71,
+        "pv": [
+          "d4c5",
+          "d5c4",
+          "c3b5",
+          "c7a5",
+          "b5d6"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "d4c5",
+        "depth": 12,
+        "nodes": 1695744,
+        "score_cp": 50,
+        "pv": [
+          "d4c5",
+          "d5c4",
+          "c3b5",
+          "c7b8",
+          "b5d6"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "c4d5",
+        "depth": 12,
+        "nodes": 1409024,
+        "score_cp": 55,
+        "pv": [
+          "c4d5",
+          "f6d5",
+          "c3d5",
+          "e6d5",
+          "d4c5"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "d4c5",
+        "depth": 13,
+        "nodes": 5060608,
+        "score_cp": 58,
+        "pv": [
+          "d4c5",
+          "d5c4",
+          "c3b5",
+          "c7a5",
+          "b5d6"
+        ]
+      },
+      "eval_delta_x10_vs_x7": -21,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "HELD_08_TACTICAL_PIN_DEFENSE",
+      "set": "held_out",
+      "domain": "tactical",
+      "fen": "r1bqk2r/pppp1ppp/2n5/1B2p3/4P1n1/3P1N2/PPP2PPP/RN1QK2R w KQkq - 0 6",
+      "desc": "Ruy Lopez defense against Nd4 and f2-f4 tricks.",
+      "category": "F2",
+      "sf19_1t": {
+        "bestmove": "a2a3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "h2h3",
+        "depth": 13,
+        "nodes": 2076672,
+        "score_cp": 89,
+        "pv": [
+          "h2h3",
+          "g4f6",
+          "b5c6",
+          "d7c6",
+          "b1d2"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "b1d2",
+        "depth": 12,
+        "nodes": 1898496,
+        "score_cp": 96,
+        "pv": [
+          "b1d2",
+          "d7d6",
+          "b5c6",
+          "b7c6",
+          "h2h3"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "b5c6",
+        "depth": 12,
+        "nodes": 1763328,
+        "score_cp": 88,
+        "pv": [
+          "b5c6",
+          "d7c6",
+          "b1c3",
+          "d8d6",
+          "h2h3"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "b5c6",
+        "depth": 13,
+        "nodes": 6049792,
+        "score_cp": 93,
+        "pv": [
+          "b5c6",
+          "d7c6",
+          "d1d2",
+          "d8e7",
+          "h2h3"
+        ]
+      },
+      "eval_delta_x10_vs_x7": 7,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "HELD_09_PROMOTION_RACE_SQUARE",
+      "set": "held_out",
+      "domain": "endgame",
+      "fen": "8/8/8/p7/8/8/1P6/K1k5 w - - 0 1",
+      "desc": "Rule of the square promotion race with outside passed pawns.",
+      "category": "F6",
+      "sf19_1t": {
+        "bestmove": "b2b3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "a1a2",
+        "depth": 36,
+        "nodes": 3966976,
+        "score_cp": 0,
+        "pv": [
+          "a1a2",
+          "c1c2",
+          "a2a3",
+          "c2d2",
+          "a3b3"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "a1a2",
+        "depth": 35,
+        "nodes": 3629056,
+        "score_cp": 0,
+        "pv": [
+          "a1a2",
+          "c1c2",
+          "a2a3",
+          "c2d2",
+          "a3b3"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "a1a2",
+        "depth": 38,
+        "nodes": 2271232,
+        "score_cp": 0,
+        "pv": [
+          "a1a2",
+          "c1c2",
+          "a2a3",
+          "c2d2",
+          "b2b3"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "a1a2",
+        "depth": 40,
+        "nodes": 5949440,
+        "score_cp": 0,
+        "pv": [
+          "a1a2",
+          "c1c2",
+          "a2a3",
+          "c2d2",
+          "b2b3"
+        ]
+      },
+      "eval_delta_x10_vs_x7": 0,
+      "move_agreement_x12_4t_vs_sf": false
+    },
+    {
+      "id": "HELD_10_PAWN_MAJORITY_KINGSIDE",
+      "set": "held_out",
+      "domain": "positional_pawn",
+      "fen": "rnbq1rk1/ppp1bppp/4pn2/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R w KQ - 0 6",
+      "desc": "Queens Gambit Declined: pawn majority dynamics in center vs flank.",
+      "category": "F1",
+      "sf19_1t": {
+        "bestmove": "a2a3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "f1d3",
+        "depth": 11,
+        "nodes": 1628160,
+        "score_cp": 22,
+        "pv": [
+          "f1d3",
+          "b8c6",
+          "c4c5",
+          "c6b4",
+          "e1g1"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "f1d3",
+        "depth": 12,
+        "nodes": 1632256,
+        "score_cp": 34,
+        "pv": [
+          "f1d3",
+          "b8c6",
+          "a2a3",
+          "a7a6",
+          "c4c5"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "f1d3",
+        "depth": 12,
+        "nodes": 1544192,
+        "score_cp": 29,
+        "pv": [
+          "f1d3",
+          "b8c6",
+          "a2a3",
+          "a7a6",
+          "h2h3"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "a2a3",
+        "depth": 14,
+        "nodes": 5214208,
+        "score_cp": 35,
+        "pv": [
+          "a2a3",
+          "b8c6",
+          "f1d3",
+          "a7a6",
+          "c4c5"
+        ]
+      },
+      "eval_delta_x10_vs_x7": 12,
+      "move_agreement_x12_4t_vs_sf": true
+    },
+    {
+      "id": "HELD_11_TIME_STRESS_COMPLEX",
+      "set": "held_out",
+      "domain": "time_management",
+      "fen": "r1bq1rk1/1pp2ppp/p1np1n2/2b1p3/2B1P3/2NP1N2/PPPB1PPP/R2Q1RK1 w - - 0 8",
+      "desc": "Multi-candidate branching middlegame testing time budget allocation.",
+      "category": "F4",
+      "sf19_1t": {
+        "bestmove": "a2a3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "a2a3",
+        "depth": 12,
+        "nodes": 1654784,
+        "score_cp": 2,
+        "pv": [
+          "a2a3",
+          "h7h6",
+          "h2h3",
+          "c8d7",
+          "d1e2"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "a2a3",
+        "depth": 12,
+        "nodes": 1601536,
+        "score_cp": 0,
+        "pv": [
+          "a2a3",
+          "b7b5",
+          "c4a2",
+          "c8d7",
+          "c3d5"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "a2a3",
+        "depth": 11,
+        "nodes": 1423360,
+        "score_cp": 6,
+        "pv": [
+          "a2a3",
+          "c8d7",
+          "h2h3",
+          "h7h6",
+          "b2b4"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "a2a3",
+        "depth": 13,
+        "nodes": 5093376,
+        "score_cp": 3,
+        "pv": [
+          "a2a3",
+          "b7b5",
+          "c4d5",
+          "f6d5",
+          "c3d5"
+        ]
+      },
+      "eval_delta_x10_vs_x7": -2,
+      "move_agreement_x12_4t_vs_sf": true
+    },
+    {
+      "id": "HELD_12_PARALLEL_PV_AGREEMENT",
+      "set": "held_out",
+      "domain": "concurrency",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "desc": "Startpos opening book transition under 1T vs 4T.",
+      "category": "F1",
+      "sf19_1t": {
+        "bestmove": "a2a3",
+        "depth": 1,
+        "nodes": 0,
+        "score_cp": 0,
+        "pv": [
+          "1",
+          "score",
+          "cp",
+          "0",
+          "nodes"
+        ]
+      },
+      "x7_1t": {
+        "bestmove": "e2e4",
+        "depth": 13,
+        "nodes": 2095104,
+        "score_cp": 30,
+        "pv": [
+          "e2e4",
+          "g8f6",
+          "e4e5",
+          "f6d5",
+          "g1f3"
+        ]
+      },
+      "x10_1t": {
+        "bestmove": "e2e4",
+        "depth": 12,
+        "nodes": 1968128,
+        "score_cp": 27,
+        "pv": [
+          "e2e4",
+          "b8c6",
+          "g1f3",
+          "g8f6",
+          "b1c3"
+        ]
+      },
+      "x12_1t": {
+        "bestmove": "e2e4",
+        "depth": 12,
+        "nodes": 1746944,
+        "score_cp": 21,
+        "pv": [
+          "e2e4",
+          "b8c6",
+          "g1f3",
+          "e7e6",
+          "d2d4"
+        ]
+      },
+      "x12_4t": {
+        "bestmove": "e2e4",
+        "depth": 14,
+        "nodes": 6242304,
+        "score_cp": 30,
+        "pv": [
+          "e2e4",
+          "e7e6",
+          "b1c3",
+          "d7d5",
+          "d2d4"
+        ]
+      },
+      "eval_delta_x10_vs_x7": -3,
+      "move_agreement_x12_4t_vs_sf": false
+    }
+  ]
+}

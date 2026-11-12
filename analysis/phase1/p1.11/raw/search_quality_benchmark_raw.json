@@ -1,0 +1,2950 @@
+{
+  "summary": {
+    "C0_X15_BASE": {
+      "avg_depth": 11.53,
+      "avg_nodes": 288380.0,
+      "nps": 1441898
+    },
+    "C1_EAPS_IMPR": {
+      "avg_depth": 10.97,
+      "avg_nodes": 304688.0,
+      "nps": 1523437
+    },
+    "C2_X16_FULL": {
+      "avg_depth": 12.19,
+      "avg_nodes": 885832.0,
+      "nps": 4429159
+    },
+    "disagreements_c0_vs_c1": {
+      "count": 30,
+      "rate_pct": 25.64
+    }
+  },
+  "positions": [
+    {
+      "idx": 0,
+      "id": "HELD_OUT_001",
+      "category": "std50_Quiet",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c3a4",
+          "depth": 8,
+          "score": 21,
+          "nodes": 198656
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c3a4",
+          "depth": 7,
+          "score": 22,
+          "nodes": 215040
+        },
+        "C2_X16_FULL": {
+          "best_move": "c3a4",
+          "depth": 8,
+          "score": 25,
+          "nodes": 479232
+        }
+      }
+    },
+    {
+      "idx": 1,
+      "id": "HELD_OUT_002",
+      "category": "std50_Quiet",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c1e3",
+          "depth": 8,
+          "score": 9,
+          "nodes": 215040
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c1e3",
+          "depth": 8,
+          "score": 9,
+          "nodes": 227328
+        },
+        "C2_X16_FULL": {
+          "best_move": "c1e3",
+          "depth": 8,
+          "score": 9,
+          "nodes": 540672
+        }
+      }
+    },
+    {
+      "idx": 2,
+      "id": "HELD_OUT_003",
+      "category": "std50_Quiet",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d1b3",
+          "depth": 7,
+          "score": 45,
+          "nodes": 202752
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "f1e1",
+          "depth": 6,
+          "score": 40,
+          "nodes": 190464
+        },
+        "C2_X16_FULL": {
+          "best_move": "c1d2",
+          "depth": 7,
+          "score": 51,
+          "nodes": 479232
+        }
+      }
+    },
+    {
+      "idx": 3,
+      "id": "HELD_OUT_004",
+      "category": "std50_Quiet",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e7d6",
+          "depth": 7,
+          "score": 25,
+          "nodes": 172032
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "a7a6",
+          "depth": 6,
+          "score": 18,
+          "nodes": 176128
+        },
+        "C2_X16_FULL": {
+          "best_move": "a7a6",
+          "depth": 6,
+          "score": 20,
+          "nodes": 385024
+        }
+      }
+    },
+    {
+      "idx": 4,
+      "id": "HELD_OUT_005",
+      "category": "std50_Quiet",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c6c5",
+          "depth": 8,
+          "score": -16,
+          "nodes": 191177
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c6c5",
+          "depth": 7,
+          "score": -14,
+          "nodes": 215040
+        },
+        "C2_X16_FULL": {
+          "best_move": "c6c5",
+          "depth": 7,
+          "score": -14,
+          "nodes": 557056
+        }
+      }
+    },
+    {
+      "idx": 5,
+      "id": "HELD_OUT_006",
+      "category": "std50_Open",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e5d4",
+          "depth": 9,
+          "score": -33,
+          "nodes": 212992
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e5d4",
+          "depth": 9,
+          "score": -33,
+          "nodes": 215040
+        },
+        "C2_X16_FULL": {
+          "best_move": "e5d4",
+          "depth": 9,
+          "score": -33,
+          "nodes": 481280
+        }
+      }
+    },
+    {
+      "idx": 6,
+      "id": "HELD_OUT_007",
+      "category": "std50_Open",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c3a4",
+          "depth": 9,
+          "score": 106,
+          "nodes": 239616
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c3a4",
+          "depth": 9,
+          "score": 106,
+          "nodes": 235520
+        },
+        "C2_X16_FULL": {
+          "best_move": "c3a4",
+          "depth": 9,
+          "score": 106,
+          "nodes": 548864
+        }
+      }
+    },
+    {
+      "idx": 7,
+      "id": "HELD_OUT_008",
+      "category": "std50_Open",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c1d2",
+          "depth": 8,
+          "score": -60,
+          "nodes": 215040
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c3c4",
+          "depth": 8,
+          "score": -72,
+          "nodes": 217088
+        },
+        "C2_X16_FULL": {
+          "best_move": "c1d2",
+          "depth": 8,
+          "score": -70,
+          "nodes": 475136
+        }
+      }
+    },
+    {
+      "idx": 8,
+      "id": "HELD_OUT_009",
+      "category": "std50_Open",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c1d2",
+          "depth": 7,
+          "score": 18,
+          "nodes": 223232
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c1d2",
+          "depth": 7,
+          "score": 18,
+          "nodes": 251904
+        },
+        "C2_X16_FULL": {
+          "best_move": "c1d2",
+          "depth": 7,
+          "score": 16,
+          "nodes": 706560
+        }
+      }
+    },
+    {
+      "idx": 9,
+      "id": "HELD_OUT_010",
+      "category": "std50_Open",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c6d4",
+          "depth": 8,
+          "score": 5,
+          "nodes": 296960
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "a7a6",
+          "depth": 7,
+          "score": 5,
+          "nodes": 305152
+        },
+        "C2_X16_FULL": {
+          "best_move": "c6d4",
+          "depth": 8,
+          "score": 5,
+          "nodes": 839680
+        }
+      }
+    },
+    {
+      "idx": 10,
+      "id": "HELD_OUT_011",
+      "category": "std50_Endgame",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e3b3",
+          "depth": 13,
+          "score": 127,
+          "nodes": 419840
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e3b3",
+          "depth": 12,
+          "score": 127,
+          "nodes": 444416
+        },
+        "C2_X16_FULL": {
+          "best_move": "e3c3",
+          "depth": 12,
+          "score": 123,
+          "nodes": 1097728
+        }
+      }
+    },
+    {
+      "idx": 11,
+      "id": "HELD_OUT_012",
+      "category": "std50_Endgame",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "f3d1",
+          "depth": 14,
+          "score": 215,
+          "nodes": 587776
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "f3g4",
+          "depth": 13,
+          "score": 219,
+          "nodes": 579584
+        },
+        "C2_X16_FULL": {
+          "best_move": "f3e2",
+          "depth": 14,
+          "score": 211,
+          "nodes": 1210368
+        }
+      }
+    },
+    {
+      "idx": 12,
+      "id": "HELD_OUT_013",
+      "category": "std50_Endgame",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "h2h4",
+          "depth": 18,
+          "score": 813,
+          "nodes": 458752
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "h2h4",
+          "depth": 18,
+          "score": 845,
+          "nodes": 489472
+        },
+        "C2_X16_FULL": {
+          "best_move": "h2h4",
+          "depth": 17,
+          "score": 816,
+          "nodes": 1241088
+        }
+      }
+    },
+    {
+      "idx": 13,
+      "id": "HELD_OUT_014",
+      "category": "std50_Endgame",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e4d3",
+          "depth": 64,
+          "score": 0,
+          "nodes": 384
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e4d3",
+          "depth": 64,
+          "score": 0,
+          "nodes": 384
+        },
+        "C2_X16_FULL": {
+          "best_move": "e4d3",
+          "depth": 64,
+          "score": 0,
+          "nodes": 384
+        }
+      }
+    },
+    {
+      "idx": 14,
+      "id": "HELD_OUT_015",
+      "category": "std50_Endgame",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "f4g4",
+          "depth": 26,
+          "score": 0,
+          "nodes": 563200
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "f4g4",
+          "depth": 25,
+          "score": 0,
+          "nodes": 591872
+        },
+        "C2_X16_FULL": {
+          "best_move": "f4g4",
+          "depth": 29,
+          "score": 0,
+          "nodes": 1198080
+        }
+      }
+    },
+    {
+      "idx": 15,
+      "id": "HELD_OUT_016",
+      "category": "std50_Endgame",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "f3f2",
+          "depth": 31,
+          "score": 0,
+          "nodes": 595968
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "f3f2",
+          "depth": 29,
+          "score": 0,
+          "nodes": 636928
+        },
+        "C2_X16_FULL": {
+          "best_move": "f3f2",
+          "depth": 30,
+          "score": 0,
+          "nodes": 1292288
+        }
+      }
+    },
+    {
+      "idx": 16,
+      "id": "HELD_OUT_017",
+      "category": "std50_Endgame",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "b2h2",
+          "depth": 12,
+          "score": 0,
+          "nodes": 487424
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "b2f2",
+          "depth": 11,
+          "score": 10,
+          "nodes": 415744
+        },
+        "C2_X16_FULL": {
+          "best_move": "b2f2",
+          "depth": 13,
+          "score": 0,
+          "nodes": 1519616
+        }
+      }
+    },
+    {
+      "idx": 17,
+      "id": "HELD_OUT_018",
+      "category": "std50_Endgame",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d3e4",
+          "depth": 21,
+          "score": 996,
+          "nodes": 413696
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d3e4",
+          "depth": 20,
+          "score": 1020,
+          "nodes": 450560
+        },
+        "C2_X16_FULL": {
+          "best_move": "d3e4",
+          "depth": 20,
+          "score": 971,
+          "nodes": 942080
+        }
+      }
+    },
+    {
+      "idx": 18,
+      "id": "HELD_OUT_019",
+      "category": "std50_Endgame",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e3e4",
+          "depth": 20,
+          "score": 603,
+          "nodes": 575488
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e3e4",
+          "depth": 18,
+          "score": 648,
+          "nodes": 565248
+        },
+        "C2_X16_FULL": {
+          "best_move": "e3e4",
+          "depth": 20,
+          "score": 648,
+          "nodes": 1183744
+        }
+      }
+    },
+    {
+      "idx": 19,
+      "id": "HELD_OUT_020",
+      "category": "std50_Endgame",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "a1d1",
+          "depth": 10,
+          "score": 330,
+          "nodes": 344064
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "a1d1",
+          "depth": 10,
+          "score": 327,
+          "nodes": 401408
+        },
+        "C2_X16_FULL": {
+          "best_move": "a1d1",
+          "depth": 11,
+          "score": 330,
+          "nodes": 1019904
+        }
+      }
+    },
+    {
+      "idx": 20,
+      "id": "HELD_OUT_021",
+      "category": "std50_Candidates",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d7d5",
+          "depth": 7,
+          "score": 77,
+          "nodes": 229376
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d7d5",
+          "depth": 7,
+          "score": 77,
+          "nodes": 196608
+        },
+        "C2_X16_FULL": {
+          "best_move": "d7d5",
+          "depth": 8,
+          "score": 53,
+          "nodes": 899072
+        }
+      }
+    },
+    {
+      "idx": 21,
+      "id": "HELD_OUT_022",
+      "category": "std50_Candidates",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c6d4",
+          "depth": 9,
+          "score": -57,
+          "nodes": 206848
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c6d4",
+          "depth": 8,
+          "score": -44,
+          "nodes": 227328
+        },
+        "C2_X16_FULL": {
+          "best_move": "c6d4",
+          "depth": 9,
+          "score": -61,
+          "nodes": 634880
+        }
+      }
+    },
+    {
+      "idx": 22,
+      "id": "HELD_OUT_023",
+      "category": "std50_Candidates",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "f3e5",
+          "depth": 7,
+          "score": 14,
+          "nodes": 194560
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "f3e5",
+          "depth": 7,
+          "score": 14,
+          "nodes": 223232
+        },
+        "C2_X16_FULL": {
+          "best_move": "f3e5",
+          "depth": 7,
+          "score": 14,
+          "nodes": 598016
+        }
+      }
+    },
+    {
+      "idx": 23,
+      "id": "HELD_OUT_024",
+      "category": "std50_Candidates",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "b7b5",
+          "depth": 9,
+          "score": 48,
+          "nodes": 215040
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "b7b5",
+          "depth": 8,
+          "score": 48,
+          "nodes": 227328
+        },
+        "C2_X16_FULL": {
+          "best_move": "b7b5",
+          "depth": 8,
+          "score": 48,
+          "nodes": 626688
+        }
+      }
+    },
+    {
+      "idx": 24,
+      "id": "HELD_OUT_025",
+      "category": "std50_Candidates",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c3c4",
+          "depth": 7,
+          "score": -9,
+          "nodes": 243712
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d1b3",
+          "depth": 7,
+          "score": -20,
+          "nodes": 204800
+        },
+        "C2_X16_FULL": {
+          "best_move": "d2b3",
+          "depth": 8,
+          "score": -15,
+          "nodes": 880640
+        }
+      }
+    },
+    {
+      "idx": 25,
+      "id": "HELD_OUT_026",
+      "category": "v056_pair_2",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d2d4",
+          "depth": 8,
+          "score": 16,
+          "nodes": 245760
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d1e2",
+          "depth": 7,
+          "score": 18,
+          "nodes": 247808
+        },
+        "C2_X16_FULL": {
+          "best_move": "d2d4",
+          "depth": 9,
+          "score": 28,
+          "nodes": 753664
+        }
+      }
+    },
+    {
+      "idx": 26,
+      "id": "HELD_OUT_027",
+      "category": "v056_pair_4",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "b1c3",
+          "depth": 8,
+          "score": 65,
+          "nodes": 227328
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e4e5",
+          "depth": 8,
+          "score": 72,
+          "nodes": 253952
+        },
+        "C2_X16_FULL": {
+          "best_move": "e4e5",
+          "depth": 8,
+          "score": 72,
+          "nodes": 802816
+        }
+      }
+    },
+    {
+      "idx": 27,
+      "id": "HELD_OUT_028",
+      "category": "v056_pair_10",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "b1c3",
+          "depth": 9,
+          "score": 22,
+          "nodes": 251904
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c1g5",
+          "depth": 8,
+          "score": 3,
+          "nodes": 288768
+        },
+        "C2_X16_FULL": {
+          "best_move": "b1c3",
+          "depth": 8,
+          "score": 0,
+          "nodes": 860160
+        }
+      }
+    },
+    {
+      "idx": 28,
+      "id": "HELD_OUT_029",
+      "category": "v056_pair_13",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "b8c6",
+          "depth": 9,
+          "score": 11,
+          "nodes": 280576
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "b8c6",
+          "depth": 8,
+          "score": 11,
+          "nodes": 258048
+        },
+        "C2_X16_FULL": {
+          "best_move": "b8c6",
+          "depth": 9,
+          "score": 6,
+          "nodes": 1026048
+        }
+      }
+    },
+    {
+      "idx": 29,
+      "id": "HELD_OUT_030",
+      "category": "v056_pair_24",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c8e6",
+          "depth": 8,
+          "score": 243,
+          "nodes": 217088
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c8e6",
+          "depth": 8,
+          "score": 253,
+          "nodes": 258048
+        },
+        "C2_X16_FULL": {
+          "best_move": "c8e6",
+          "depth": 8,
+          "score": 246,
+          "nodes": 813056
+        }
+      }
+    },
+    {
+      "idx": 30,
+      "id": "HELD_OUT_031",
+      "category": "v056_pair_32",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "f6g4",
+          "depth": 9,
+          "score": 53,
+          "nodes": 202752
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "f6g4",
+          "depth": 8,
+          "score": 19,
+          "nodes": 258048
+        },
+        "C2_X16_FULL": {
+          "best_move": "f6g4",
+          "depth": 9,
+          "score": 53,
+          "nodes": 724992
+        }
+      }
+    },
+    {
+      "idx": 31,
+      "id": "HELD_OUT_032",
+      "category": "v056_pair_37",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "g8f6",
+          "depth": 9,
+          "score": -9,
+          "nodes": 231424
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "g8f6",
+          "depth": 9,
+          "score": -21,
+          "nodes": 274432
+        },
+        "C2_X16_FULL": {
+          "best_move": "g8f6",
+          "depth": 9,
+          "score": 0,
+          "nodes": 778240
+        }
+      }
+    },
+    {
+      "idx": 32,
+      "id": "HELD_OUT_033",
+      "category": "v056_pair_45",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "b2b4",
+          "depth": 11,
+          "score": 153,
+          "nodes": 284672
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "b2b4",
+          "depth": 10,
+          "score": 135,
+          "nodes": 239616
+        },
+        "C2_X16_FULL": {
+          "best_move": "b2b4",
+          "depth": 12,
+          "score": 135,
+          "nodes": 878592
+        }
+      }
+    },
+    {
+      "idx": 33,
+      "id": "HELD_OUT_034",
+      "category": "v056_pair_45",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "f6e4",
+          "depth": 8,
+          "score": 17,
+          "nodes": 243712
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "f6e4",
+          "depth": 7,
+          "score": 29,
+          "nodes": 274432
+        },
+        "C2_X16_FULL": {
+          "best_move": "f6e4",
+          "depth": 9,
+          "score": 29,
+          "nodes": 886784
+        }
+      }
+    },
+    {
+      "idx": 34,
+      "id": "HELD_OUT_035",
+      "category": "v056_pair_61",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c5e7",
+          "depth": 8,
+          "score": -187,
+          "nodes": 219136
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c5e7",
+          "depth": 8,
+          "score": -187,
+          "nodes": 260096
+        },
+        "C2_X16_FULL": {
+          "best_move": "c5e7",
+          "depth": 8,
+          "score": -187,
+          "nodes": 731136
+        }
+      }
+    },
+    {
+      "idx": 35,
+      "id": "HELD_OUT_036",
+      "category": "v056_pair_73",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "g6f5",
+          "depth": 10,
+          "score": -52,
+          "nodes": 253952
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "g6f5",
+          "depth": 9,
+          "score": -44,
+          "nodes": 282624
+        },
+        "C2_X16_FULL": {
+          "best_move": "g6f5",
+          "depth": 10,
+          "score": -59,
+          "nodes": 745472
+        }
+      }
+    },
+    {
+      "idx": 36,
+      "id": "HELD_OUT_037",
+      "category": "v056_pair_78",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d3c4",
+          "depth": 9,
+          "score": 36,
+          "nodes": 223232
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d3c4",
+          "depth": 8,
+          "score": 33,
+          "nodes": 231424
+        },
+        "C2_X16_FULL": {
+          "best_move": "d3c4",
+          "depth": 9,
+          "score": 36,
+          "nodes": 873906
+        }
+      }
+    },
+    {
+      "idx": 37,
+      "id": "HELD_OUT_038",
+      "category": "v056_pair_99",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "f1b5",
+          "depth": 10,
+          "score": -29,
+          "nodes": 253952
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "f1b5",
+          "depth": 9,
+          "score": -19,
+          "nodes": 274432
+        },
+        "C2_X16_FULL": {
+          "best_move": "f1b5",
+          "depth": 10,
+          "score": -32,
+          "nodes": 821248
+        }
+      }
+    },
+    {
+      "idx": 38,
+      "id": "HELD_OUT_039",
+      "category": "v056_pair_99",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "b8c6",
+          "depth": 8,
+          "score": 16,
+          "nodes": 268288
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "b8c6",
+          "depth": 7,
+          "score": 19,
+          "nodes": 294912
+        },
+        "C2_X16_FULL": {
+          "best_move": "b8c6",
+          "depth": 8,
+          "score": 11,
+          "nodes": 839680
+        }
+      }
+    },
+    {
+      "idx": 39,
+      "id": "HELD_OUT_040",
+      "category": "v056_pair_7",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "b1c3",
+          "depth": 9,
+          "score": 99,
+          "nodes": 260096
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "g1f3",
+          "depth": 8,
+          "score": 88,
+          "nodes": 317440
+        },
+        "C2_X16_FULL": {
+          "best_move": "b1c3",
+          "depth": 9,
+          "score": 96,
+          "nodes": 882688
+        }
+      }
+    },
+    {
+      "idx": 40,
+      "id": "HELD_OUT_041",
+      "category": "v056_pair_7",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d7d6",
+          "depth": 9,
+          "score": -25,
+          "nodes": 249856
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d7d6",
+          "depth": 9,
+          "score": -16,
+          "nodes": 229376
+        },
+        "C2_X16_FULL": {
+          "best_move": "d7d6",
+          "depth": 10,
+          "score": -32,
+          "nodes": 874496
+        }
+      }
+    },
+    {
+      "idx": 41,
+      "id": "HELD_OUT_042",
+      "category": "v056_pair_14",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "g1f3",
+          "depth": 9,
+          "score": 24,
+          "nodes": 245760
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "g1f3",
+          "depth": 8,
+          "score": 18,
+          "nodes": 319488
+        },
+        "C2_X16_FULL": {
+          "best_move": "g1f3",
+          "depth": 9,
+          "score": 24,
+          "nodes": 919552
+        }
+      }
+    },
+    {
+      "idx": 42,
+      "id": "HELD_OUT_043",
+      "category": "v056_pair_40",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "b8a6",
+          "depth": 8,
+          "score": -10,
+          "nodes": 231424
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "b8a6",
+          "depth": 7,
+          "score": -14,
+          "nodes": 260096
+        },
+        "C2_X16_FULL": {
+          "best_move": "b8a6",
+          "depth": 8,
+          "score": -17,
+          "nodes": 698368
+        }
+      }
+    },
+    {
+      "idx": 43,
+      "id": "HELD_OUT_044",
+      "category": "v056_validation",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c4d5",
+          "depth": 7,
+          "score": -314,
+          "nodes": 237568
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c4d5",
+          "depth": 7,
+          "score": -314,
+          "nodes": 278528
+        },
+        "C2_X16_FULL": {
+          "best_move": "c4d5",
+          "depth": 8,
+          "score": -330,
+          "nodes": 628736
+        }
+      }
+    },
+    {
+      "idx": 44,
+      "id": "HELD_OUT_045",
+      "category": "v056_validation",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d3b5",
+          "depth": 7,
+          "score": -19,
+          "nodes": 258048
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d3b5",
+          "depth": 7,
+          "score": -19,
+          "nodes": 235520
+        },
+        "C2_X16_FULL": {
+          "best_move": "d3b5",
+          "depth": 7,
+          "score": -19,
+          "nodes": 729088
+        }
+      }
+    },
+    {
+      "idx": 45,
+      "id": "HELD_OUT_046",
+      "category": "v056_validation",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e3f4",
+          "depth": 21,
+          "score": 0,
+          "nodes": 563200
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e3f2",
+          "depth": 24,
+          "score": 0,
+          "nodes": 653312
+        },
+        "C2_X16_FULL": {
+          "best_move": "e3f2",
+          "depth": 25,
+          "score": 0,
+          "nodes": 1257472
+        }
+      }
+    },
+    {
+      "idx": 46,
+      "id": "HELD_OUT_047",
+      "category": "v056_validation",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c2b1",
+          "depth": 19,
+          "score": 0,
+          "nodes": 464896
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c2b1",
+          "depth": 18,
+          "score": 0,
+          "nodes": 526336
+        },
+        "C2_X16_FULL": {
+          "best_move": "c2b1",
+          "depth": 19,
+          "score": 0,
+          "nodes": 995328
+        }
+      }
+    },
+    {
+      "idx": 47,
+      "id": "HELD_OUT_048",
+      "category": "v056_validation",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e2f1",
+          "depth": 26,
+          "score": 0,
+          "nodes": 571392
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e2f1",
+          "depth": 25,
+          "score": 0,
+          "nodes": 638976
+        },
+        "C2_X16_FULL": {
+          "best_move": "e2f2",
+          "depth": 26,
+          "score": 0,
+          "nodes": 1200128
+        }
+      }
+    },
+    {
+      "idx": 48,
+      "id": "HELD_OUT_049",
+      "category": "v056_validation",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e7e8q",
+          "depth": 13,
+          "score": 999,
+          "nodes": 528384
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e7e8q",
+          "depth": 12,
+          "score": 986,
+          "nodes": 518144
+        },
+        "C2_X16_FULL": {
+          "best_move": "e7e8q",
+          "depth": 13,
+          "score": 999,
+          "nodes": 1558528
+        }
+      }
+    },
+    {
+      "idx": 49,
+      "id": "HELD_OUT_050",
+      "category": "v056_validation",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d2d3",
+          "depth": 8,
+          "score": 15,
+          "nodes": 212992
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d2d3",
+          "depth": 7,
+          "score": 12,
+          "nodes": 251904
+        },
+        "C2_X16_FULL": {
+          "best_move": "d2d3",
+          "depth": 8,
+          "score": 13,
+          "nodes": 798720
+        }
+      }
+    },
+    {
+      "idx": 50,
+      "id": "HELD_OUT_051",
+      "category": "v056_validation",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e8g8",
+          "depth": 8,
+          "score": -195,
+          "nodes": 229376
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e8g8",
+          "depth": 8,
+          "score": -195,
+          "nodes": 266240
+        },
+        "C2_X16_FULL": {
+          "best_move": "e8g8",
+          "depth": 8,
+          "score": -195,
+          "nodes": 757760
+        }
+      }
+    },
+    {
+      "idx": 51,
+      "id": "HELD_OUT_052",
+      "category": "v056_validation",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "g8f6",
+          "depth": 9,
+          "score": -14,
+          "nodes": 272384
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "b8c6",
+          "depth": 9,
+          "score": -14,
+          "nodes": 329728
+        },
+        "C2_X16_FULL": {
+          "best_move": "g8f6",
+          "depth": 10,
+          "score": -14,
+          "nodes": 995328
+        }
+      }
+    },
+    {
+      "idx": 52,
+      "id": "HELD_OUT_053",
+      "category": "v056_validation",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e3d2",
+          "depth": 64,
+          "score": 0,
+          "nodes": 576
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e3d2",
+          "depth": 64,
+          "score": 0,
+          "nodes": 576
+        },
+        "C2_X16_FULL": {
+          "best_move": "e3d2",
+          "depth": 64,
+          "score": 0,
+          "nodes": 576
+        }
+      }
+    },
+    {
+      "idx": 53,
+      "id": "HELD_OUT_054",
+      "category": "v056_validation",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e6f7",
+          "depth": 12,
+          "score": 0,
+          "nodes": 360448
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e6f7",
+          "depth": 12,
+          "score": 0,
+          "nodes": 321536
+        },
+        "C2_X16_FULL": {
+          "best_move": "e6f7",
+          "depth": 15,
+          "score": 0,
+          "nodes": 1081344
+        }
+      }
+    },
+    {
+      "idx": 54,
+      "id": "HELD_OUT_055",
+      "category": "p18_HELD",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d1c2",
+          "depth": 8,
+          "score": 23,
+          "nodes": 231424
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d1c2",
+          "depth": 8,
+          "score": 23,
+          "nodes": 268288
+        },
+        "C2_X16_FULL": {
+          "best_move": "d1c2",
+          "depth": 8,
+          "score": 23,
+          "nodes": 827392
+        }
+      }
+    },
+    {
+      "idx": 55,
+      "id": "HELD_OUT_056",
+      "category": "p18_HELD",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e2d3",
+          "depth": 7,
+          "score": 85,
+          "nodes": 249856
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e2d3",
+          "depth": 7,
+          "score": 85,
+          "nodes": 278528
+        },
+        "C2_X16_FULL": {
+          "best_move": "f1e1",
+          "depth": 8,
+          "score": 73,
+          "nodes": 888832
+        }
+      }
+    },
+    {
+      "idx": 56,
+      "id": "HELD_OUT_057",
+      "category": "p18_HELD",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "b7b5",
+          "depth": 12,
+          "score": 120,
+          "nodes": 425984
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e8f8",
+          "depth": 11,
+          "score": 120,
+          "nodes": 436224
+        },
+        "C2_X16_FULL": {
+          "best_move": "b7b5",
+          "depth": 12,
+          "score": 120,
+          "nodes": 1212416
+        }
+      }
+    },
+    {
+      "idx": 57,
+      "id": "HELD_OUT_058",
+      "category": "p18_HELD",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e2d3",
+          "depth": 15,
+          "score": 0,
+          "nodes": 579584
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e2f3",
+          "depth": 14,
+          "score": 0,
+          "nodes": 460800
+        },
+        "C2_X16_FULL": {
+          "best_move": "e2f3",
+          "depth": 16,
+          "score": 0,
+          "nodes": 1640448
+        }
+      }
+    },
+    {
+      "idx": 58,
+      "id": "HELD_OUT_059",
+      "category": "p18_HELD",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d5d4",
+          "depth": 9,
+          "score": 172,
+          "nodes": 233472
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d5d4",
+          "depth": 9,
+          "score": 172,
+          "nodes": 237568
+        },
+        "C2_X16_FULL": {
+          "best_move": "d5d4",
+          "depth": 10,
+          "score": 172,
+          "nodes": 700416
+        }
+      }
+    },
+    {
+      "idx": 59,
+      "id": "HELD_OUT_061",
+      "category": "p18_HELD",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c4d5",
+          "depth": 8,
+          "score": 56,
+          "nodes": 233472
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c4d5",
+          "depth": 8,
+          "score": 56,
+          "nodes": 233472
+        },
+        "C2_X16_FULL": {
+          "best_move": "c4d5",
+          "depth": 9,
+          "score": 65,
+          "nodes": 666820
+        }
+      }
+    },
+    {
+      "idx": 60,
+      "id": "HELD_OUT_062",
+      "category": "p18_HELD",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "b5c6",
+          "depth": 9,
+          "score": 163,
+          "nodes": 262144
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "b5c6",
+          "depth": 8,
+          "score": 165,
+          "nodes": 301056
+        },
+        "C2_X16_FULL": {
+          "best_move": "h2h3",
+          "depth": 9,
+          "score": 143,
+          "nodes": 819200
+        }
+      }
+    },
+    {
+      "idx": 61,
+      "id": "HELD_OUT_063",
+      "category": "p18_HELD",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "a1a2",
+          "depth": 30,
+          "score": 0,
+          "nodes": 419840
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "b2b3",
+          "depth": 28,
+          "score": 0,
+          "nodes": 331776
+        },
+        "C2_X16_FULL": {
+          "best_move": "b2b3",
+          "depth": 42,
+          "score": 0,
+          "nodes": 1269760
+        }
+      }
+    },
+    {
+      "idx": 62,
+      "id": "HELD_OUT_064",
+      "category": "p18_HELD",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c3d5",
+          "depth": 8,
+          "score": 4,
+          "nodes": 208896
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c3d5",
+          "depth": 7,
+          "score": 2,
+          "nodes": 227328
+        },
+        "C2_X16_FULL": {
+          "best_move": "a2a3",
+          "depth": 8,
+          "score": 4,
+          "nodes": 774144
+        }
+      }
+    },
+    {
+      "idx": 63,
+      "id": "HELD_OUT_065",
+      "category": "p18_HELD",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d2d4",
+          "depth": 9,
+          "score": 35,
+          "nodes": 256000
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "g1f3",
+          "depth": 7,
+          "score": 38,
+          "nodes": 313344
+        },
+        "C2_X16_FULL": {
+          "best_move": "b1c3",
+          "depth": 9,
+          "score": 32,
+          "nodes": 962560
+        }
+      }
+    },
+    {
+      "idx": 64,
+      "id": "HELD_OUT_066",
+      "category": "curated_open_mg_2",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c4c5",
+          "depth": 7,
+          "score": 379,
+          "nodes": 202752
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e2d3",
+          "depth": 7,
+          "score": 369,
+          "nodes": 229376
+        },
+        "C2_X16_FULL": {
+          "best_move": "c4c5",
+          "depth": 8,
+          "score": 368,
+          "nodes": 748554
+        }
+      }
+    },
+    {
+      "idx": 65,
+      "id": "HELD_OUT_067",
+      "category": "curated_open_mg_4",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d1c2",
+          "depth": 8,
+          "score": 62,
+          "nodes": 243712
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d1c2",
+          "depth": 6,
+          "score": 65,
+          "nodes": 194560
+        },
+        "C2_X16_FULL": {
+          "best_move": "g5f4",
+          "depth": 7,
+          "score": 72,
+          "nodes": 892928
+        }
+      }
+    },
+    {
+      "idx": 66,
+      "id": "HELD_OUT_068",
+      "category": "curated_open_mg_6",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d4c5",
+          "depth": 9,
+          "score": 54,
+          "nodes": 280576
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d4c5",
+          "depth": 8,
+          "score": 52,
+          "nodes": 290816
+        },
+        "C2_X16_FULL": {
+          "best_move": "d4c5",
+          "depth": 10,
+          "score": 51,
+          "nodes": 862208
+        }
+      }
+    },
+    {
+      "idx": 67,
+      "id": "HELD_OUT_069",
+      "category": "curated_closed_2",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "f6g4",
+          "depth": 8,
+          "score": -57,
+          "nodes": 194560
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e5d4",
+          "depth": 8,
+          "score": -51,
+          "nodes": 241664
+        },
+        "C2_X16_FULL": {
+          "best_move": "e5d4",
+          "depth": 8,
+          "score": -51,
+          "nodes": 655360
+        }
+      }
+    },
+    {
+      "idx": 68,
+      "id": "HELD_OUT_070",
+      "category": "curated_closed_4",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c3a4",
+          "depth": 9,
+          "score": 111,
+          "nodes": 180224
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c3a4",
+          "depth": 8,
+          "score": 110,
+          "nodes": 264192
+        },
+        "C2_X16_FULL": {
+          "best_move": "c3a4",
+          "depth": 10,
+          "score": 105,
+          "nodes": 710656
+        }
+      }
+    },
+    {
+      "idx": 69,
+      "id": "HELD_OUT_071",
+      "category": "curated_break_1",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e2d3",
+          "depth": 7,
+          "score": 64,
+          "nodes": 215040
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d1b3",
+          "depth": 7,
+          "score": 68,
+          "nodes": 212992
+        },
+        "C2_X16_FULL": {
+          "best_move": "d1b3",
+          "depth": 9,
+          "score": 69,
+          "nodes": 946176
+        }
+      }
+    },
+    {
+      "idx": 70,
+      "id": "HELD_OUT_072",
+      "category": "curated_break_3",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "h2h3",
+          "depth": 8,
+          "score": 46,
+          "nodes": 229376
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "h2h3",
+          "depth": 7,
+          "score": 49,
+          "nodes": 258048
+        },
+        "C2_X16_FULL": {
+          "best_move": "a1b1",
+          "depth": 8,
+          "score": 47,
+          "nodes": 857462
+        }
+      }
+    },
+    {
+      "idx": 71,
+      "id": "HELD_OUT_073",
+      "category": "curated_break_5",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c4c5",
+          "depth": 7,
+          "score": 61,
+          "nodes": 247808
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c4c5",
+          "depth": 7,
+          "score": 58,
+          "nodes": 256000
+        },
+        "C2_X16_FULL": {
+          "best_move": "c4c5",
+          "depth": 8,
+          "score": 50,
+          "nodes": 688923
+        }
+      }
+    },
+    {
+      "idx": 72,
+      "id": "HELD_OUT_074",
+      "category": "curated_opp_3",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d4b3",
+          "depth": 7,
+          "score": 401,
+          "nodes": 165888
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d4b3",
+          "depth": 7,
+          "score": 399,
+          "nodes": 192512
+        },
+        "C2_X16_FULL": {
+          "best_move": "d4b3",
+          "depth": 7,
+          "score": 399,
+          "nodes": 565248
+        }
+      }
+    },
+    {
+      "idx": 73,
+      "id": "HELD_OUT_075",
+      "category": "curated_king_2",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d1c2",
+          "depth": 6,
+          "score": 35,
+          "nodes": 169984
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "f3e5",
+          "depth": 5,
+          "score": 30,
+          "nodes": 174080
+        },
+        "C2_X16_FULL": {
+          "best_move": "b5c6",
+          "depth": 6,
+          "score": 24,
+          "nodes": 706560
+        }
+      }
+    },
+    {
+      "idx": 74,
+      "id": "HELD_OUT_076",
+      "category": "curated_king_4",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d1b3",
+          "depth": 8,
+          "score": 16,
+          "nodes": 208896
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d1b3",
+          "depth": 8,
+          "score": 16,
+          "nodes": 202752
+        },
+        "C2_X16_FULL": {
+          "best_move": "e2d3",
+          "depth": 8,
+          "score": 24,
+          "nodes": 808960
+        }
+      }
+    },
+    {
+      "idx": 75,
+      "id": "HELD_OUT_077",
+      "category": "curated_defense_3",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e1g1",
+          "depth": 7,
+          "score": 60,
+          "nodes": 188416
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d2c2",
+          "depth": 7,
+          "score": 57,
+          "nodes": 253952
+        },
+        "C2_X16_FULL": {
+          "best_move": "e2d3",
+          "depth": 8,
+          "score": 53,
+          "nodes": 770048
+        }
+      }
+    },
+    {
+      "idx": 76,
+      "id": "HELD_OUT_078",
+      "category": "curated_iqp_2",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c3c4",
+          "depth": 7,
+          "score": 137,
+          "nodes": 186368
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c3c4",
+          "depth": 7,
+          "score": 135,
+          "nodes": 247808
+        },
+        "C2_X16_FULL": {
+          "best_move": "c3c4",
+          "depth": 8,
+          "score": 140,
+          "nodes": 815104
+        }
+      }
+    },
+    {
+      "idx": 77,
+      "id": "HELD_OUT_079",
+      "category": "curated_iqp_4",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c4d5",
+          "depth": 7,
+          "score": 165,
+          "nodes": 221184
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d1b3",
+          "depth": 7,
+          "score": 172,
+          "nodes": 186368
+        },
+        "C2_X16_FULL": {
+          "best_move": "d1b3",
+          "depth": 8,
+          "score": 175,
+          "nodes": 933888
+        }
+      }
+    },
+    {
+      "idx": 78,
+      "id": "HELD_OUT_080",
+      "category": "curated_backward_3",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d3d4",
+          "depth": 8,
+          "score": 359,
+          "nodes": 221184
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d3d4",
+          "depth": 7,
+          "score": 360,
+          "nodes": 247808
+        },
+        "C2_X16_FULL": {
+          "best_move": "d3d4",
+          "depth": 8,
+          "score": 362,
+          "nodes": 749568
+        }
+      }
+    },
+    {
+      "idx": 79,
+      "id": "HELD_OUT_081",
+      "category": "curated_passer_3",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e1d1",
+          "depth": 25,
+          "score": 25,
+          "nodes": 481280
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e1d1",
+          "depth": 34,
+          "score": 25,
+          "nodes": 485376
+        },
+        "C2_X16_FULL": {
+          "best_move": "e1d1",
+          "depth": 63,
+          "score": 0,
+          "nodes": 1066758
+        }
+      }
+    },
+    {
+      "idx": 80,
+      "id": "HELD_OUT_082",
+      "category": "curated_rook_eg_1",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c4c1",
+          "depth": 15,
+          "score": 28999,
+          "nodes": 552960
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c4c1",
+          "depth": 14,
+          "score": 28999,
+          "nodes": 550912
+        },
+        "C2_X16_FULL": {
+          "best_move": "c4c1",
+          "depth": 13,
+          "score": 28999,
+          "nodes": 1347584
+        }
+      }
+    },
+    {
+      "idx": 81,
+      "id": "HELD_OUT_083",
+      "category": "curated_rook_eg_3",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e2d1",
+          "depth": 10,
+          "score": 44,
+          "nodes": 485376
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e2f1",
+          "depth": 10,
+          "score": 37,
+          "nodes": 456704
+        },
+        "C2_X16_FULL": {
+          "best_move": "e2d1",
+          "depth": 12,
+          "score": 34,
+          "nodes": 1622016
+        }
+      }
+    },
+    {
+      "idx": 82,
+      "id": "HELD_OUT_084",
+      "category": "curated_rook_eg_5",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "a3a7",
+          "depth": 12,
+          "score": 145,
+          "nodes": 471040
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "a3a7",
+          "depth": 11,
+          "score": 148,
+          "nodes": 477184
+        },
+        "C2_X16_FULL": {
+          "best_move": "a3a7",
+          "depth": 13,
+          "score": 145,
+          "nodes": 1404928
+        }
+      }
+    },
+    {
+      "idx": 83,
+      "id": "HELD_OUT_087",
+      "category": "curated_pawn_eg_3",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e2f2",
+          "depth": 24,
+          "score": 146,
+          "nodes": 483328
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e2f2",
+          "depth": 24,
+          "score": 148,
+          "nodes": 557056
+        },
+        "C2_X16_FULL": {
+          "best_move": "e2f2",
+          "depth": 23,
+          "score": 159,
+          "nodes": 1226752
+        }
+      }
+    },
+    {
+      "idx": 84,
+      "id": "HELD_OUT_088",
+      "category": "curated_queenless_1",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e2d3",
+          "depth": 8,
+          "score": 63,
+          "nodes": 311296
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e2d3",
+          "depth": 7,
+          "score": 66,
+          "nodes": 358400
+        },
+        "C2_X16_FULL": {
+          "best_move": "f1e1",
+          "depth": 8,
+          "score": 65,
+          "nodes": 1097728
+        }
+      }
+    },
+    {
+      "idx": 85,
+      "id": "HELD_OUT_089",
+      "category": "curated_queenless_3",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "f1d1",
+          "depth": 8,
+          "score": -216,
+          "nodes": 319488
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c3e4",
+          "depth": 7,
+          "score": -214,
+          "nodes": 335872
+        },
+        "C2_X16_FULL": {
+          "best_move": "d3e4",
+          "depth": 10,
+          "score": -206,
+          "nodes": 1296384
+        }
+      }
+    },
+    {
+      "idx": 86,
+      "id": "HELD_OUT_090",
+      "category": "curated_fortress_2",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "b2a3",
+          "depth": 26,
+          "score": -162,
+          "nodes": 532480
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "b2a3",
+          "depth": 21,
+          "score": -144,
+          "nodes": 585728
+        },
+        "C2_X16_FULL": {
+          "best_move": "b2a3",
+          "depth": 22,
+          "score": -169,
+          "nodes": 1409024
+        }
+      }
+    },
+    {
+      "idx": 87,
+      "id": "HELD_OUT_091",
+      "category": "curated_fortress_4",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e1d1",
+          "depth": 15,
+          "score": 30,
+          "nodes": 477184
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e1d1",
+          "depth": 13,
+          "score": 27,
+          "nodes": 526336
+        },
+        "C2_X16_FULL": {
+          "best_move": "e1d1",
+          "depth": 14,
+          "score": 28,
+          "nodes": 1325056
+        }
+      }
+    },
+    {
+      "idx": 88,
+      "id": "HELD_OUT_092",
+      "category": "curated_race_2",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "a1a2",
+          "depth": 22,
+          "score": 676,
+          "nodes": 622592
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "a1a2",
+          "depth": 20,
+          "score": 654,
+          "nodes": 649216
+        },
+        "C2_X16_FULL": {
+          "best_move": "a1a2",
+          "depth": 21,
+          "score": 648,
+          "nodes": 1302528
+        }
+      }
+    },
+    {
+      "idx": 89,
+      "id": "HELD_OUT_093",
+      "category": "curated_forced_3",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e2e8",
+          "depth": 10,
+          "score": 28999,
+          "nodes": 536576
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e2e8",
+          "depth": 9,
+          "score": 28999,
+          "nodes": 458752
+        },
+        "C2_X16_FULL": {
+          "best_move": "e2e8",
+          "depth": 9,
+          "score": 28999,
+          "nodes": 1785856
+        }
+      }
+    },
+    {
+      "idx": 90,
+      "id": "HELD_OUT_094",
+      "category": "sf_p1.4_g2",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c1e3",
+          "depth": 8,
+          "score": 188,
+          "nodes": 204800
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c1e3",
+          "depth": 8,
+          "score": 188,
+          "nodes": 241664
+        },
+        "C2_X16_FULL": {
+          "best_move": "c1e3",
+          "depth": 8,
+          "score": 199,
+          "nodes": 874496
+        }
+      }
+    },
+    {
+      "idx": 91,
+      "id": "HELD_OUT_095",
+      "category": "sf_p1.4_g2",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "a1d1",
+          "depth": 8,
+          "score": 190,
+          "nodes": 196608
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "a1d1",
+          "depth": 7,
+          "score": 191,
+          "nodes": 210944
+        },
+        "C2_X16_FULL": {
+          "best_move": "a1d1",
+          "depth": 8,
+          "score": 191,
+          "nodes": 720896
+        }
+      }
+    },
+    {
+      "idx": 92,
+      "id": "HELD_OUT_096",
+      "category": "sf_p1.4_g2",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "b1b8",
+          "depth": 13,
+          "score": 254,
+          "nodes": 337920
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "b1b8",
+          "depth": 12,
+          "score": 250,
+          "nodes": 350208
+        },
+        "C2_X16_FULL": {
+          "best_move": "b1b8",
+          "depth": 13,
+          "score": 254,
+          "nodes": 942080
+        }
+      }
+    },
+    {
+      "idx": 93,
+      "id": "HELD_OUT_097",
+      "category": "sf_p1.4_g4",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "f2f4",
+          "depth": 9,
+          "score": 148,
+          "nodes": 225280
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c3d5",
+          "depth": 7,
+          "score": 138,
+          "nodes": 253952
+        },
+        "C2_X16_FULL": {
+          "best_move": "e1g1",
+          "depth": 9,
+          "score": 149,
+          "nodes": 987136
+        }
+      }
+    },
+    {
+      "idx": 94,
+      "id": "HELD_OUT_098",
+      "category": "sf_p1.4_g4",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "a4a6",
+          "depth": 9,
+          "score": 141,
+          "nodes": 247808
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "a4c6",
+          "depth": 9,
+          "score": 79,
+          "nodes": 292864
+        },
+        "C2_X16_FULL": {
+          "best_move": "a4c2",
+          "depth": 10,
+          "score": 110,
+          "nodes": 921600
+        }
+      }
+    },
+    {
+      "idx": 95,
+      "id": "HELD_OUT_099",
+      "category": "sf_p1.4_g4",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c3d5",
+          "depth": 12,
+          "score": 563,
+          "nodes": 278528
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c3d5",
+          "depth": 12,
+          "score": 556,
+          "nodes": 294912
+        },
+        "C2_X16_FULL": {
+          "best_move": "c3d5",
+          "depth": 13,
+          "score": 576,
+          "nodes": 772874
+        }
+      }
+    },
+    {
+      "idx": 96,
+      "id": "HELD_OUT_100",
+      "category": "sf_p1.4_g6",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "a1b1",
+          "depth": 9,
+          "score": -42,
+          "nodes": 229376
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "a1b1",
+          "depth": 8,
+          "score": -47,
+          "nodes": 241664
+        },
+        "C2_X16_FULL": {
+          "best_move": "d1c2",
+          "depth": 10,
+          "score": -17,
+          "nodes": 743424
+        }
+      }
+    },
+    {
+      "idx": 97,
+      "id": "HELD_OUT_101",
+      "category": "sf_p1.4_g6",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d1g4",
+          "depth": 9,
+          "score": 32,
+          "nodes": 243712
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d1g4",
+          "depth": 8,
+          "score": 32,
+          "nodes": 212992
+        },
+        "C2_X16_FULL": {
+          "best_move": "d1h5",
+          "depth": 9,
+          "score": 48,
+          "nodes": 964608
+        }
+      }
+    },
+    {
+      "idx": 98,
+      "id": "HELD_OUT_102",
+      "category": "sf_p1.4_g6",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "g4e6",
+          "depth": 10,
+          "score": 498,
+          "nodes": 288768
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "g4e6",
+          "depth": 10,
+          "score": 498,
+          "nodes": 264192
+        },
+        "C2_X16_FULL": {
+          "best_move": "g4e6",
+          "depth": 11,
+          "score": 498,
+          "nodes": 673792
+        }
+      }
+    },
+    {
+      "idx": 99,
+      "id": "HELD_OUT_103",
+      "category": "sf_p1.4_g8",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "a3c5",
+          "depth": 8,
+          "score": -43,
+          "nodes": 186368
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "a3c5",
+          "depth": 7,
+          "score": -39,
+          "nodes": 206848
+        },
+        "C2_X16_FULL": {
+          "best_move": "a3c5",
+          "depth": 8,
+          "score": -37,
+          "nodes": 626688
+        }
+      }
+    },
+    {
+      "idx": 100,
+      "id": "HELD_OUT_104",
+      "category": "sf_p1.4_g8",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "h2h3",
+          "depth": 9,
+          "score": 90,
+          "nodes": 233472
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "h2h3",
+          "depth": 9,
+          "score": 90,
+          "nodes": 256000
+        },
+        "C2_X16_FULL": {
+          "best_move": "h2h3",
+          "depth": 9,
+          "score": 124,
+          "nodes": 698368
+        }
+      }
+    },
+    {
+      "idx": 101,
+      "id": "HELD_OUT_105",
+      "category": "sf_p1.4_g8",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c1b2",
+          "depth": 8,
+          "score": 384,
+          "nodes": 200704
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c3c4",
+          "depth": 7,
+          "score": 322,
+          "nodes": 198656
+        },
+        "C2_X16_FULL": {
+          "best_move": "b1b7",
+          "depth": 8,
+          "score": 325,
+          "nodes": 974848
+        }
+      }
+    },
+    {
+      "idx": 102,
+      "id": "HELD_OUT_106",
+      "category": "sf_p1.4_g10",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d5e6",
+          "depth": 7,
+          "score": -43,
+          "nodes": 192512
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d5e6",
+          "depth": 7,
+          "score": -43,
+          "nodes": 225280
+        },
+        "C2_X16_FULL": {
+          "best_move": "d5e6",
+          "depth": 7,
+          "score": -43,
+          "nodes": 798720
+        }
+      }
+    },
+    {
+      "idx": 103,
+      "id": "HELD_OUT_107",
+      "category": "sf_p1.4_g10",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "b7e7",
+          "depth": 8,
+          "score": 216,
+          "nodes": 221184
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "b7e7",
+          "depth": 7,
+          "score": 165,
+          "nodes": 247808
+        },
+        "C2_X16_FULL": {
+          "best_move": "e2b5",
+          "depth": 8,
+          "score": 227,
+          "nodes": 778240
+        }
+      }
+    },
+    {
+      "idx": 104,
+      "id": "HELD_OUT_108",
+      "category": "sf_p1.4_g10",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "b1b2",
+          "depth": 9,
+          "score": 28999,
+          "nodes": 352256
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "b1b2",
+          "depth": 8,
+          "score": 28999,
+          "nodes": 342016
+        },
+        "C2_X16_FULL": {
+          "best_move": "b1b2",
+          "depth": 8,
+          "score": 28999,
+          "nodes": 1042432
+        }
+      }
+    },
+    {
+      "idx": 105,
+      "id": "HELD_OUT_109",
+      "category": "sf_p1.4_g12",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "a1b1",
+          "depth": 10,
+          "score": 82,
+          "nodes": 225280
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "a1b1",
+          "depth": 9,
+          "score": 81,
+          "nodes": 200704
+        },
+        "C2_X16_FULL": {
+          "best_move": "a1b1",
+          "depth": 10,
+          "score": 89,
+          "nodes": 765952
+        }
+      }
+    },
+    {
+      "idx": 106,
+      "id": "HELD_OUT_110",
+      "category": "sf_p1.4_g12",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d4b5",
+          "depth": 11,
+          "score": 392,
+          "nodes": 237568
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d4b5",
+          "depth": 10,
+          "score": 392,
+          "nodes": 241664
+        },
+        "C2_X16_FULL": {
+          "best_move": "d4b5",
+          "depth": 11,
+          "score": 398,
+          "nodes": 714752
+        }
+      }
+    },
+    {
+      "idx": 107,
+      "id": "HELD_OUT_111",
+      "category": "sf_p1.4_g12",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "d1f3",
+          "depth": 8,
+          "score": 413,
+          "nodes": 210944
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d1f3",
+          "depth": 8,
+          "score": 424,
+          "nodes": 272384
+        },
+        "C2_X16_FULL": {
+          "best_move": "d1f3",
+          "depth": 9,
+          "score": 415,
+          "nodes": 819200
+        }
+      }
+    },
+    {
+      "idx": 108,
+      "id": "HELD_OUT_112",
+      "category": "sf_p1.4_g14",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c1g5",
+          "depth": 10,
+          "score": 155,
+          "nodes": 270336
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c1g5",
+          "depth": 9,
+          "score": 155,
+          "nodes": 311296
+        },
+        "C2_X16_FULL": {
+          "best_move": "c1g5",
+          "depth": 10,
+          "score": 149,
+          "nodes": 923648
+        }
+      }
+    },
+    {
+      "idx": 109,
+      "id": "HELD_OUT_113",
+      "category": "sf_p1.4_g14",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "g2g3",
+          "depth": 10,
+          "score": 340,
+          "nodes": 299008
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "a2a3",
+          "depth": 9,
+          "score": 341,
+          "nodes": 290816
+        },
+        "C2_X16_FULL": {
+          "best_move": "a2a3",
+          "depth": 10,
+          "score": 336,
+          "nodes": 1249280
+        }
+      }
+    },
+    {
+      "idx": 110,
+      "id": "HELD_OUT_114",
+      "category": "sf_p1.4_g14",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c4b5",
+          "depth": 10,
+          "score": 342,
+          "nodes": 292864
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c4b5",
+          "depth": 9,
+          "score": 366,
+          "nodes": 348160
+        },
+        "C2_X16_FULL": {
+          "best_move": "h1d1",
+          "depth": 10,
+          "score": 368,
+          "nodes": 1042432
+        }
+      }
+    },
+    {
+      "idx": 111,
+      "id": "HELD_OUT_115",
+      "category": "sf_p1.4_g16",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "g1h1",
+          "depth": 7,
+          "score": -51,
+          "nodes": 194560
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "d4d5",
+          "depth": 7,
+          "score": -52,
+          "nodes": 247808
+        },
+        "C2_X16_FULL": {
+          "best_move": "c4c5",
+          "depth": 7,
+          "score": -49,
+          "nodes": 710656
+        }
+      }
+    },
+    {
+      "idx": 112,
+      "id": "HELD_OUT_116",
+      "category": "sf_p1.4_g16",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "c4d5",
+          "depth": 8,
+          "score": -125,
+          "nodes": 204800
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "c4d5",
+          "depth": 8,
+          "score": -125,
+          "nodes": 223232
+        },
+        "C2_X16_FULL": {
+          "best_move": "c4d5",
+          "depth": 8,
+          "score": -125,
+          "nodes": 735232
+        }
+      }
+    },
+    {
+      "idx": 113,
+      "id": "HELD_OUT_117",
+      "category": "sf_p1.4_g16",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e4g6",
+          "depth": 11,
+          "score": 567,
+          "nodes": 208896
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e4g6",
+          "depth": 11,
+          "score": 567,
+          "nodes": 219136
+        },
+        "C2_X16_FULL": {
+          "best_move": "e4g6",
+          "depth": 12,
+          "score": 873,
+          "nodes": 751616
+        }
+      }
+    },
+    {
+      "idx": 114,
+      "id": "HELD_OUT_118",
+      "category": "sf_p1.4_g18",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "f1b5",
+          "depth": 9,
+          "score": -53,
+          "nodes": 217088
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "f1b5",
+          "depth": 9,
+          "score": -17,
+          "nodes": 241664
+        },
+        "C2_X16_FULL": {
+          "best_move": "d1a4",
+          "depth": 11,
+          "score": 0,
+          "nodes": 784384
+        }
+      }
+    },
+    {
+      "idx": 115,
+      "id": "HELD_OUT_119",
+      "category": "sf_p1.4_g18",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "f1d1",
+          "depth": 7,
+          "score": -58,
+          "nodes": 204800
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "f1d1",
+          "depth": 7,
+          "score": -58,
+          "nodes": 243712
+        },
+        "C2_X16_FULL": {
+          "best_move": "f1d1",
+          "depth": 7,
+          "score": -44,
+          "nodes": 792576
+        }
+      }
+    },
+    {
+      "idx": 116,
+      "id": "HELD_OUT_120",
+      "category": "sf_p1.4_g17",
+      "runs": {
+        "C0_X15_BASE": {
+          "best_move": "e2d2",
+          "depth": 9,
+          "score": -1206,
+          "nodes": 210944
+        },
+        "C1_EAPS_IMPR": {
+          "best_move": "e2d2",
+          "depth": 9,
+          "score": -1206,
+          "nodes": 237568
+        },
+        "C2_X16_FULL": {
+          "best_move": "e2d2",
+          "depth": 10,
+          "score": -1206,
+          "nodes": 722944
+        }
+      }
+    }
+  ]
+}

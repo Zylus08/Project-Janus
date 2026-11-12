@@ -1,0 +1,516 @@
+{
+  "summary": {
+    "CELL_1_E5_ORIG": {
+      "name": "Cell 1: X7 E5 + X7 Original Pruning (Frozen Ref)",
+      "tactical_solve_rate": "5 / 12 (41.7%)",
+      "dev_12_kiwipete_move": "e2a6",
+      "dev_12_kiwipete_solved": true
+    },
+    "CELL_2_E10_ORIG": {
+      "name": "Cell 2: X10 E10 + X7 Original Pruning (Isolate E10)",
+      "tactical_solve_rate": "5 / 12 (41.7%)",
+      "dev_12_kiwipete_move": "e2a6",
+      "dev_12_kiwipete_solved": true
+    },
+    "CELL_3_E11_ORIG": {
+      "name": "Cell 3: X14 E11 + X7 Original Pruning (Isolate E11)",
+      "tactical_solve_rate": "5 / 12 (41.7%)",
+      "dev_12_kiwipete_move": "e2a6",
+      "dev_12_kiwipete_solved": true
+    },
+    "CELL_4_E5_CONS": {
+      "name": "Cell 4: X7 E5 + Conservative Pruning (Isolate Search)",
+      "tactical_solve_rate": "5 / 12 (41.7%)",
+      "dev_12_kiwipete_move": "e2a6",
+      "dev_12_kiwipete_solved": true
+    },
+    "CELL_5_E10_CONS": {
+      "name": "Cell 5: X10 E10 + Conservative Pruning (Test Interaction)",
+      "tactical_solve_rate": "5 / 12 (41.7%)",
+      "dev_12_kiwipete_move": "e2a6",
+      "dev_12_kiwipete_solved": true
+    },
+    "CELL_6_E11_CONS": {
+      "name": "Cell 6: X14 E11 + Conservative Pruning (Test Interaction)",
+      "tactical_solve_rate": "5 / 12 (41.7%)",
+      "dev_12_kiwipete_move": "e2a6",
+      "dev_12_kiwipete_solved": true
+    }
+  },
+  "details": {
+    "CELL_1_E5_ORIG": {
+      "name": "Cell 1: X7 E5 + X7 Original Pruning (Frozen Ref)",
+      "solved": 5,
+      "total": 12,
+      "positions": {
+        "DEV_01_FORK": {
+          "move": "b1c3",
+          "score": -62,
+          "nodes": 137339,
+          "correct": false
+        },
+        "DEV_02_PIN": {
+          "move": "d1c2",
+          "score": 82,
+          "nodes": 225434,
+          "correct": false
+        },
+        "DEV_04_QUIET_DEF": {
+          "move": "d5f7",
+          "score": 28999,
+          "nodes": 219127,
+          "correct": false
+        },
+        "DEV_05_OUTPOST": {
+          "move": "c1e3",
+          "score": 5,
+          "nodes": 102772,
+          "correct": false
+        },
+        "DEV_06_BACKWARD": {
+          "move": "d4c5",
+          "score": 871,
+          "nodes": 198979,
+          "correct": false
+        },
+        "DEV_07_SACRIFICE": {
+          "move": "d5f6",
+          "score": 28997,
+          "nodes": 230910,
+          "correct": true
+        },
+        "DEV_08_DEFLECTION": {
+          "move": "h5f7",
+          "score": 28999,
+          "nodes": 347264,
+          "correct": true
+        },
+        "DEV_09_OPPOSITION": {
+          "move": "e4d3",
+          "score": 0,
+          "nodes": 48,
+          "correct": false
+        },
+        "DEV_10_RACE": {
+          "move": "b4f4",
+          "score": 19,
+          "nodes": 23250,
+          "correct": true
+        },
+        "DEV_11_CHAIN": {
+          "move": "b6c7",
+          "score": 12,
+          "nodes": 201522,
+          "correct": false
+        },
+        "DEV_12_KIWIPETE": {
+          "move": "e2a6",
+          "score": -33,
+          "nodes": 588398,
+          "correct": true
+        },
+        "DEV_13_QUEEN_TRAP": {
+          "move": "c1d2",
+          "score": 369,
+          "nodes": 118542,
+          "correct": true
+        }
+      }
+    },
+    "CELL_2_E10_ORIG": {
+      "name": "Cell 2: X10 E10 + X7 Original Pruning (Isolate E10)",
+      "solved": 5,
+      "total": 12,
+      "positions": {
+        "DEV_01_FORK": {
+          "move": "b1c3",
+          "score": -67,
+          "nodes": 106009,
+          "correct": false
+        },
+        "DEV_02_PIN": {
+          "move": "e3e4",
+          "score": 73,
+          "nodes": 514633,
+          "correct": false
+        },
+        "DEV_04_QUIET_DEF": {
+          "move": "d5f7",
+          "score": 28999,
+          "nodes": 219127,
+          "correct": false
+        },
+        "DEV_05_OUTPOST": {
+          "move": "c1e3",
+          "score": 9,
+          "nodes": 97903,
+          "correct": false
+        },
+        "DEV_06_BACKWARD": {
+          "move": "c3c4",
+          "score": 863,
+          "nodes": 207041,
+          "correct": false
+        },
+        "DEV_07_SACRIFICE": {
+          "move": "d5f6",
+          "score": 28997,
+          "nodes": 231178,
+          "correct": true
+        },
+        "DEV_08_DEFLECTION": {
+          "move": "h5f7",
+          "score": 28999,
+          "nodes": 347265,
+          "correct": true
+        },
+        "DEV_09_OPPOSITION": {
+          "move": "e4d3",
+          "score": 0,
+          "nodes": 48,
+          "correct": false
+        },
+        "DEV_10_RACE": {
+          "move": "b4f4",
+          "score": 6,
+          "nodes": 25295,
+          "correct": true
+        },
+        "DEV_11_CHAIN": {
+          "move": "b6c7",
+          "score": 20,
+          "nodes": 198363,
+          "correct": false
+        },
+        "DEV_12_KIWIPETE": {
+          "move": "e2a6",
+          "score": -31,
+          "nodes": 503940,
+          "correct": true
+        },
+        "DEV_13_QUEEN_TRAP": {
+          "move": "c1d2",
+          "score": 367,
+          "nodes": 86809,
+          "correct": true
+        }
+      }
+    },
+    "CELL_3_E11_ORIG": {
+      "name": "Cell 3: X14 E11 + X7 Original Pruning (Isolate E11)",
+      "solved": 5,
+      "total": 12,
+      "positions": {
+        "DEV_01_FORK": {
+          "move": "b1c3",
+          "score": -110,
+          "nodes": 99801,
+          "correct": false
+        },
+        "DEV_02_PIN": {
+          "move": "e3e4",
+          "score": 73,
+          "nodes": 474517,
+          "correct": false
+        },
+        "DEV_04_QUIET_DEF": {
+          "move": "d5f7",
+          "score": 28999,
+          "nodes": 219127,
+          "correct": false
+        },
+        "DEV_05_OUTPOST": {
+          "move": "c1e3",
+          "score": 9,
+          "nodes": 97905,
+          "correct": false
+        },
+        "DEV_06_BACKWARD": {
+          "move": "c3c4",
+          "score": 861,
+          "nodes": 232984,
+          "correct": false
+        },
+        "DEV_07_SACRIFICE": {
+          "move": "d5f6",
+          "score": 28997,
+          "nodes": 231179,
+          "correct": true
+        },
+        "DEV_08_DEFLECTION": {
+          "move": "h5f7",
+          "score": 28999,
+          "nodes": 347265,
+          "correct": true
+        },
+        "DEV_09_OPPOSITION": {
+          "move": "e4d3",
+          "score": 0,
+          "nodes": 48,
+          "correct": false
+        },
+        "DEV_10_RACE": {
+          "move": "b4f4",
+          "score": 6,
+          "nodes": 24650,
+          "correct": true
+        },
+        "DEV_11_CHAIN": {
+          "move": "b6c7",
+          "score": 20,
+          "nodes": 197969,
+          "correct": false
+        },
+        "DEV_12_KIWIPETE": {
+          "move": "e2a6",
+          "score": -31,
+          "nodes": 629437,
+          "correct": true
+        },
+        "DEV_13_QUEEN_TRAP": {
+          "move": "c1d2",
+          "score": 363,
+          "nodes": 78045,
+          "correct": true
+        }
+      }
+    },
+    "CELL_4_E5_CONS": {
+      "name": "Cell 4: X7 E5 + Conservative Pruning (Isolate Search)",
+      "solved": 5,
+      "total": 12,
+      "positions": {
+        "DEV_01_FORK": {
+          "move": "b1c3",
+          "score": -62,
+          "nodes": 137339,
+          "correct": false
+        },
+        "DEV_02_PIN": {
+          "move": "d1c2",
+          "score": 82,
+          "nodes": 225434,
+          "correct": false
+        },
+        "DEV_04_QUIET_DEF": {
+          "move": "d5f7",
+          "score": 28999,
+          "nodes": 219127,
+          "correct": false
+        },
+        "DEV_05_OUTPOST": {
+          "move": "c1e3",
+          "score": 5,
+          "nodes": 102772,
+          "correct": false
+        },
+        "DEV_06_BACKWARD": {
+          "move": "d4c5",
+          "score": 871,
+          "nodes": 198979,
+          "correct": false
+        },
+        "DEV_07_SACRIFICE": {
+          "move": "d5f6",
+          "score": 28997,
+          "nodes": 230910,
+          "correct": true
+        },
+        "DEV_08_DEFLECTION": {
+          "move": "h5f7",
+          "score": 28999,
+          "nodes": 347264,
+          "correct": true
+        },
+        "DEV_09_OPPOSITION": {
+          "move": "e4d3",
+          "score": 0,
+          "nodes": 48,
+          "correct": false
+        },
+        "DEV_10_RACE": {
+          "move": "b4f4",
+          "score": 19,
+          "nodes": 23250,
+          "correct": true
+        },
+        "DEV_11_CHAIN": {
+          "move": "b6c7",
+          "score": 12,
+          "nodes": 201522,
+          "correct": false
+        },
+        "DEV_12_KIWIPETE": {
+          "move": "e2a6",
+          "score": -33,
+          "nodes": 588398,
+          "correct": true
+        },
+        "DEV_13_QUEEN_TRAP": {
+          "move": "c1d2",
+          "score": 369,
+          "nodes": 118542,
+          "correct": true
+        }
+      }
+    },
+    "CELL_5_E10_CONS": {
+      "name": "Cell 5: X10 E10 + Conservative Pruning (Test Interaction)",
+      "solved": 5,
+      "total": 12,
+      "positions": {
+        "DEV_01_FORK": {
+          "move": "b1c3",
+          "score": -67,
+          "nodes": 106009,
+          "correct": false
+        },
+        "DEV_02_PIN": {
+          "move": "e3e4",
+          "score": 73,
+          "nodes": 514633,
+          "correct": false
+        },
+        "DEV_04_QUIET_DEF": {
+          "move": "d5f7",
+          "score": 28999,
+          "nodes": 219127,
+          "correct": false
+        },
+        "DEV_05_OUTPOST": {
+          "move": "c1e3",
+          "score": 9,
+          "nodes": 97903,
+          "correct": false
+        },
+        "DEV_06_BACKWARD": {
+          "move": "c3c4",
+          "score": 863,
+          "nodes": 207041,
+          "correct": false
+        },
+        "DEV_07_SACRIFICE": {
+          "move": "d5f6",
+          "score": 28997,
+          "nodes": 231178,
+          "correct": true
+        },
+        "DEV_08_DEFLECTION": {
+          "move": "h5f7",
+          "score": 28999,
+          "nodes": 347265,
+          "correct": true
+        },
+        "DEV_09_OPPOSITION": {
+          "move": "e4d3",
+          "score": 0,
+          "nodes": 48,
+          "correct": false
+        },
+        "DEV_10_RACE": {
+          "move": "b4f4",
+          "score": 6,
+          "nodes": 25295,
+          "correct": true
+        },
+        "DEV_11_CHAIN": {
+          "move": "b6c7",
+          "score": 20,
+          "nodes": 198363,
+          "correct": false
+        },
+        "DEV_12_KIWIPETE": {
+          "move": "e2a6",
+          "score": -31,
+          "nodes": 503940,
+          "correct": true
+        },
+        "DEV_13_QUEEN_TRAP": {
+          "move": "c1d2",
+          "score": 367,
+          "nodes": 86809,
+          "correct": true
+        }
+      }
+    },
+    "CELL_6_E11_CONS": {
+      "name": "Cell 6: X14 E11 + Conservative Pruning (Test Interaction)",
+      "solved": 5,
+      "total": 12,
+      "positions": {
+        "DEV_01_FORK": {
+          "move": "b1c3",
+          "score": -110,
+          "nodes": 99801,
+          "correct": false
+        },
+        "DEV_02_PIN": {
+          "move": "e3e4",
+          "score": 73,
+          "nodes": 474517,
+          "correct": false
+        },
+        "DEV_04_QUIET_DEF": {
+          "move": "d5f7",
+          "score": 28999,
+          "nodes": 219127,
+          "correct": false
+        },
+        "DEV_05_OUTPOST": {
+          "move": "c1e3",
+          "score": 9,
+          "nodes": 97905,
+          "correct": false
+        },
+        "DEV_06_BACKWARD": {
+          "move": "c3c4",
+          "score": 861,
+          "nodes": 232984,
+          "correct": false
+        },
+        "DEV_07_SACRIFICE": {
+          "move": "d5f6",
+          "score": 28997,
+          "nodes": 231179,
+          "correct": true
+        },
+        "DEV_08_DEFLECTION": {
+          "move": "h5f7",
+          "score": 28999,
+          "nodes": 347265,
+          "correct": true
+        },
+        "DEV_09_OPPOSITION": {
+          "move": "e4d3",
+          "score": 0,
+          "nodes": 48,
+          "correct": false
+        },
+        "DEV_10_RACE": {
+          "move": "b4f4",
+          "score": 6,
+          "nodes": 24650,
+          "correct": true
+        },
+        "DEV_11_CHAIN": {
+          "move": "b6c7",
+          "score": 20,
+          "nodes": 197969,
+          "correct": false
+        },
+        "DEV_12_KIWIPETE": {
+          "move": "e2a6",
+          "score": -31,
+          "nodes": 629437,
+          "correct": true
+        },
+        "DEV_13_QUEEN_TRAP": {
+          "move": "c1d2",
+          "score": 363,
+          "nodes": 78045,
+          "correct": true
+        }
+      }
+    }
+  }
+}

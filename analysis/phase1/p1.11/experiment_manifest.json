@@ -1,0 +1,102 @@
+{
+  "milestone": "P1.11",
+  "title": "Classical Search Architecture Decision, Counterfactual Pruning Verification & Competitive Strength Recovery",
+  "repository": "project-janus-phase1",
+  "branch": "phase1/classical-janus",
+  "parent_commit": "24c663c",
+  "lineage": {
+    "qualified_single_thread_baseline": {
+      "name": "Janus Classical X7",
+      "commit": "b34e342",
+      "sha256": "86392a2f4bd4182a4d7dc21e32940bd7939f6816794d5e1ab02f4082431ca28b",
+      "threads": 1,
+      "status": "RETAINED"
+    },
+    "qualified_four_thread_baseline": {
+      "name": "Janus Classical X12",
+      "commit": "78ca3d5",
+      "sha256": "00b4f5fedea02a392a1af9713a96512e5199a0e3ae55c295ad1c7cfff1b47059",
+      "threads": 4,
+      "status": "RETAINED"
+    },
+    "candidate_evaluated": {
+      "name": "Janus Classical X16",
+      "threads": "1 / 4 (thread-adaptive)",
+      "sha256_exe": "97e69fa99c708400c33e95b2bb32e3db79d8467970e1a895927a459f34061ab9",
+      "promotion_status": "ARCHIVED_RESEARCH_CANDIDATE"
+    },
+    "external_reference": {
+      "name": "Stockfish 19",
+      "commit": "edb0d9d",
+      "sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "nnue": "nn-1a298aa575a0.nnue"
+    }
+  },
+  "phases_completed": {
+    "phase_0": "P1.10 Evidence Reconciliation & Integrity Audit (TOST equivalence refuted, Syzygy classified Adapter/Fallback Only)",
+    "phase_1": "Classical Search Architecture Map (16 subsystems mapped across X7, X12, X15)",
+    "phase_2": "Counterfactual Pruning Verification Audit (LMR identified as #1 defect, 33.3% move disagreement)",
+    "phase_3": "Evaluation-Search Reliability Study (6-cell factorial compatibility matrix, scale shifts)",
+    "phase_4": "Architecture Decision Record (Direction A: Pruning Safety & History-Dampened LMR selected)",
+    "phase_5": "Architectural Intervention Implementation (SearchStackEntry.static_eval, improving flag, RFP margin expansion)",
+    "phase_6": "Search Quality Benchmark (117 positions, 4.43M NPS on 4T, 25.64% move disagreement rate)",
+    "phase_7": "Competitive Testing Standard (JCTS v1.11, pentanomial model, TOST equivalence testing)",
+    "phase_8": "Correctness and Reliability Qualification (4 gates passed at 100.0%)",
+    "phase_9": "Candidate Selection and Freeze (Janus Classical X16 frozen)",
+    "phase_10": "Independent Strength Qualification Tournaments (Matches A, B, C)",
+    "phase_11": "Stockfish 19 External Benchmark (Matches SF-1T, SF-4T, 3 draws held)",
+    "phase_12": "Final Research Decision (Category C: Retention of X7 and X12)",
+    "phase_13": "Strategic Future Roadmap (SPSA tuning, bifurcated 1T/4T architecture, real Syzygy probing)",
+    "phase_14": "Final Deliverables, Manifests & Atomic Git Commit"
+  },
+  "tournament_summary": {
+    "match_a_1t_vs_x7": {
+      "time_control": "1.0s + 50ms",
+      "games": 200,
+      "score": "67.5 / 200 (33.75%)",
+      "elo": -117.2,
+      "p_value": 1.02e-07,
+      "verdict": "Statistically Significant Regression (X7 Retained)"
+    },
+    "match_b_4t_vs_x12": {
+      "time_control": "1.0s + 50ms",
+      "games": 200,
+      "score": "91.0 / 200 (45.50%)",
+      "elo": -31.4,
+      "p_value": 0.117678,
+      "verdict": "Inconclusive Deficit, Equivalence Not Proven (X12 Retained)"
+    },
+    "match_c_4t_vs_x12_slow": {
+      "time_control": "3.0s + 100ms",
+      "games": 100,
+      "score": "45.5 / 100 (45.50%)",
+      "elo": -31.4,
+      "p_value": 0.192114,
+      "verdict": "Scale-Invariant Deficit (X12 Retained)"
+    },
+    "match_sf_1t": {
+      "time_control": "2.0s + 50ms",
+      "games": 40,
+      "score": "1.0 / 40 (2.50%)",
+      "draws": 2,
+      "elo": -636.4,
+      "p_value": 8.49e-17,
+      "verdict": "2 Draws Held against Unrestricted Stockfish 19"
+    },
+    "match_sf_4t": {
+      "time_control": "2.0s + 50ms",
+      "games": 40,
+      "score": "0.5 / 40 (1.25%)",
+      "draws": 1,
+      "elo": -759.1,
+      "p_value": 1.34e-19,
+      "verdict": "1 Draw Held against Unrestricted Stockfish 19"
+    }
+  },
+  "final_adjudication": {
+    "pathway": "Category C (Formal Baseline Retention)",
+    "single_thread_baseline": "Janus Classical X7 (b34e342) - RETAINED",
+    "four_thread_baseline": "Janus Classical X12 (78ca3d5) - RETAINED",
+    "candidate_x16": "Archived Research Candidate"
+  }
+}

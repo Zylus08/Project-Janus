@@ -325,7 +325,7 @@ static bool g_use_reverse_futility = true;     // Phase 4: Reverse Futility Prun
 static int  g_rfp_margin_per_depth = 120;      // Margin per ply (120 for 1T, 90 for 4T)
 static bool g_use_aspiration_window = true;    // Phase 5: Aspiration Windows (delta = 25 cp)
 static int  g_aspiration_delta = 25;           // Aspiration delta
-static std::string g_search_variant = "X15";    // Active variant identifier (Default Candidate X15)
+static std::string g_search_variant = "X16";    // Active variant identifier (Default Candidate X16)
 
 // ============================================================================
 // Search Modernization & Positional Evaluation Options (Milestone P1.2)
@@ -349,10 +349,14 @@ static int g_lmp_max_depth = 4;
 static uint64_t g_telemetry_lmp_pruned = 0;
 static uint64_t g_telemetry_tt_hits = 0;
 
-// Search stack for continuation history tracking
+// Milestone P1.11: Direction A - Evaluation-Aware Pruning Safety & History-Dampened LMR
+static bool g_use_pruning_safety = true;
+
+// Search stack for continuation history tracking & improving flag
 struct SearchStackEntry {
     uint16_t current_move;
     int piece;
+    int static_eval;
 };
 thread_local SearchStackEntry g_ss[MAX_SEARCH_PLY];
 thread_local int16_t g_conthist_1ply[6][64][6][64];
@@ -620,6 +624,35 @@ EXPORT void native_apply_search_variant(const char* var_str) {
         g_singular_extension_mode = 0; // S0 Off
         g_multicut_mode = 0; // C0 Off
         g_probcut_mode = 0; // P0 Off
+        if (g_num_threads == 1) {
+            g_use_pawn_hash = false;
+            g_dynamic_time_mgmt = false;
+            g_use_lmp = false;
+            g_lmp_mode = 0;
+            g_rfp_margin_per_depth = 120;
+        } else {
+            g_use_pawn_hash = true; // 16K Thread-local Pawn Hash Table
+            g_dynamic_time_mgmt = true;
+            g_use_lmp = true;
+            g_lmp_mode = 1; // Conservative Quadratic LMP
+            g_lmp_max_depth = 4;
+            g_rfp_margin_per_depth = 90;
+        }
+    } else if (var == "X16") { // P1.11 Candidate: Evaluation-Aware Pruning Safety & History-Dampened LMR
+        g_use_staged_movegen = true;
+        g_quiescence_see_mode = 2;
+        g_use_see_in_quiescence = true;
+        g_use_null_move_pruning = true;
+        g_use_reverse_futility = true;
+        g_use_aspiration_window = true;
+        g_conthist_mode = 3; // H3
+        g_dynamic_lmr_mode = 3; // L3 Calibrated
+        g_eval_mode = 15; // E15 Calibrated Classical Evaluation
+        g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
+        g_singular_extension_mode = 0; // S0 Off
+        g_multicut_mode = 0; // C0 Off
+        g_probcut_mode = 0; // P0 Off
+        g_use_pruning_safety = true; // Evaluation-Aware Pruning Safety (Direction A)
         if (g_num_threads == 1) {
             g_use_pawn_hash = false;
             g_dynamic_time_mgmt = false;
@@ -3754,13 +3787,23 @@ static int negamax(
 
     bool in_check = (native_is_check(b) != 0);
 
+    // Track static evaluation & compute 'improving' flag for search safety
+    int static_eval = native_evaluate(b);
+    g_ss[ply].static_eval = static_eval;
+    bool improving = false;
+    if (ply >= 2 && !in_check && g_ss[ply - 2].static_eval != -INF) {
+        improving = (static_eval > g_ss[ply - 2].static_eval);
+    }
+
     // ========================================================================
     // Reverse Futility Pruning (RFP / Static Null Move Pruning, Phase 4)
     // ========================================================================
     if (g_use_reverse_futility && depth <= 3 && ply > 0 && !in_check && std::abs(beta) < MATE_SCORE - 100) {
         g_telemetry_rfp_probes++;
-        int static_eval = native_evaluate(b);
         int rfp_margin = g_rfp_margin_per_depth * depth;
+        if (g_use_pruning_safety && !improving) {
+            rfp_margin += 40 * depth;
+        }
         if (static_eval - rfp_margin >= beta) {
             g_telemetry_rfp_cutoffs++;
             return static_eval;
@@ -3986,6 +4029,17 @@ static int negamax(
                 int h_neg_thresh = (g_search_variant == "X8" || g_search_variant == "X9") ? (-h_thresh / 2) : -5000;
                 if (tot_h > h_thresh) dynamic_reduction -= 1;
                 else if (tot_h < h_neg_thresh) dynamic_reduction += 1;
+
+                if (g_use_pruning_safety) {
+                    if (!improving) {
+                        dynamic_reduction = std::max(1, dynamic_reduction - 1);
+                    }
+                    if (tot_h > 2000) {
+                        dynamic_reduction = std::max(1, dynamic_reduction - 1);
+                    } else if (tot_h < -2000) {
+                        dynamic_reduction += 1;
+                    }
+                }
                 if (dynamic_reduction < 1) dynamic_reduction = 1;
             }
             if (child_depth - dynamic_reduction < 1) dynamic_reduction = child_depth - 1;
@@ -4234,6 +4288,7 @@ static void run_worker_search(
     }
     std::memset(g_killer_moves, 0, sizeof(g_killer_moves));
     std::memset(g_ss, 0, sizeof(g_ss));
+    for (int i = 0; i < MAX_SEARCH_PLY; i++) g_ss[i].static_eval = -INF;
     if (g_tactical_ordering_mode > 0) {
         std::memset(g_countermove_table, 0, sizeof(g_countermove_table));
     }
@@ -4686,7 +4741,7 @@ static void uci_loop() {
             std::cout << "option name LMRBaseReduction type spin default 1 min 1 max 3" << std::endl;
             std::cout << "option name UseSEEOrdering type check default false" << std::endl;
             std::cout << "option name UseSEEInQuiescence type check default false" << std::endl;
-            std::cout << "option name UCI_Variant type combo default X15 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15" << std::endl;
+            std::cout << "option name UCI_Variant type combo default X16 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16" << std::endl;
             std::cout << "option name UCI_ContinuationHistory type combo default H3 var H0 var H1 var H2 var H3" << std::endl;
             std::cout << "option name UCI_DynamicLMR type combo default L3 var L0 var L1 var L2 var L3" << std::endl;
             std::cout << "option name UCI_ClassicalEval type combo default E15 var E0 var E1 var E2 var E3 var E4 var E5 var E6 var E7 var E8 var E9 var E10 var E11 var E15" << std::endl;
@@ -4705,6 +4760,7 @@ static void uci_loop() {
             std::cout << "option name UCI_AspirationWindow type check default true" << std::endl;
             std::cout << "option name UCI_DynamicTime type check default true" << std::endl;
             std::cout << "option name UCI_PawnHash type check default true" << std::endl;
+            std::cout << "option name UCI_PruningSafety type check default true" << std::endl;
             std::cout << "uciok" << std::endl;
         } else if (cmd == "isready") {
             std::cout << "readyok" << std::endl;
@@ -4722,7 +4778,7 @@ static void uci_loop() {
                 }
                 if (opt_name == "Threads" && !opt_val.empty()) {
                     g_num_threads = std::max(1, std::min(16, std::stoi(opt_val)));
-                    if (g_search_variant == "X15") {
+                    if (g_search_variant == "X15" || g_search_variant == "X16") {
                         if (g_num_threads == 1) {
                             g_use_pawn_hash = false;
                             g_dynamic_time_mgmt = false;
@@ -4834,6 +4890,8 @@ static void uci_loop() {
                     g_dynamic_time_mgmt = (opt_val == "true" || opt_val == "1");
                 } else if (opt_name == "UCI_PawnHash" && !opt_val.empty()) {
                     g_use_pawn_hash = (opt_val == "true" || opt_val == "1");
+                } else if (opt_name == "UCI_PruningSafety") {
+                    g_use_pruning_safety = (opt_val.empty() || opt_val == "true" || opt_val == "1");
                 } else if (opt_name == "UCI_TacticalOrdering" && !opt_val.empty()) {
                     if (opt_val == "M0") g_tactical_ordering_mode = 0;
                     else if (opt_val == "M1") g_tactical_ordering_mode = 1;

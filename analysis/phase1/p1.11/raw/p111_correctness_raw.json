@@ -1,0 +1,178 @@
+{
+  "gate_1_color_symmetry": {
+    "passed": 8,
+    "total": 8,
+    "pass_rate_pct": 100.0,
+    "details": [
+      {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "s1": 38,
+        "bm1": "g1f3",
+        "s2": 38,
+        "bm2": "g8f6",
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "s1": 12,
+        "bm1": "d2d3",
+        "s2": 12,
+        "bm2": "d7d6",
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "fen": "r1b1k2r/pppp1ppp/2n5/4p3/4P3/2N5/PPPP1PPP/R1B1K2R w KQkq - 0 7",
+        "s1": 67,
+        "bm1": "c3d5",
+        "s2": 67,
+        "bm2": "c6d4",
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "fen": "8/4k3/8/8/8/8/4K3/8 w - - 0 1",
+        "s1": 0,
+        "bm1": "e2d1",
+        "s2": 0,
+        "bm2": "e7d6",
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "fen": "8/4k3/4p3/8/8/4P3/4K3/8 w - - 0 1",
+        "s1": 0,
+        "bm1": "e2f1",
+        "s2": 0,
+        "bm2": "e7f8",
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "s1": 0,
+        "bm1": "e3f2",
+        "s2": 0,
+        "bm2": "e6f7",
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1",
+        "s1": 1132,
+        "bm1": "a1a8",
+        "s2": 1132,
+        "bm2": "a8a1",
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "fen": "4k3/pppppppp/8/8/8/8/PPPPPPPP/4K3 w - - 0 1",
+        "s1": 16,
+        "bm1": "d2d4",
+        "s2": 16,
+        "bm2": "d7d5",
+        "diff": 0,
+        "pass": true
+      }
+    ]
+  },
+  "gate_2_mate_precision": {
+    "passed": 3,
+    "total": 3,
+    "pass_rate_pct": 100.0,
+    "details": [
+      {
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4",
+        "expected": "h5f7",
+        "actual": "h5f7",
+        "score": 28999,
+        "pass": true
+      },
+      {
+        "fen": "r2qkb1r/pp2nppp/3p4/2pNN3/2BnP3/3P4/PPP2PPP/R1BbK2R w KQkq - 1 9",
+        "expected": "d5f6",
+        "actual": "d5f6",
+        "score": 28997,
+        "pass": true
+      },
+      {
+        "fen": "6k1/5ppp/8/8/8/8/1R6/1R4K1 w - - 0 1",
+        "expected": "b2b8",
+        "actual": "b2b8",
+        "score": 28999,
+        "pass": true
+      }
+    ]
+  },
+  "gate_3_low_clock_stability": {
+    "passed": 4,
+    "total": 4,
+    "pass_rate_pct": 100.0,
+    "details": [
+      {
+        "budget_ms": 10,
+        "elapsed_ms": 63.4,
+        "best_move": "c4d5",
+        "pass": true
+      },
+      {
+        "budget_ms": 25,
+        "elapsed_ms": 78.8,
+        "best_move": "c4d5",
+        "pass": true
+      },
+      {
+        "budget_ms": 50,
+        "elapsed_ms": 104.6,
+        "best_move": "c4d5",
+        "pass": true
+      },
+      {
+        "budget_ms": 100,
+        "elapsed_ms": 157.0,
+        "best_move": "c4d5",
+        "pass": true
+      }
+    ]
+  },
+  "gate_4_x15_reproducibility": {
+    "matched": 5,
+    "total": 5,
+    "pass_rate_pct": 100.0,
+    "details": [
+      {
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 5",
+        "x15_move": "c4d5",
+        "x16_safety_false_move": "c4d5",
+        "match": true
+      },
+      {
+        "fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+        "x15_move": "e2a6",
+        "x16_safety_false_move": "e2a6",
+        "match": true
+      },
+      {
+        "fen": "8/8/4k3/8/4K3/8/8/8 w - - 0 1",
+        "x15_move": "e4d3",
+        "x16_safety_false_move": "e4d3",
+        "match": true
+      },
+      {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "x15_move": "d2d4",
+        "x16_safety_false_move": "d2d4",
+        "match": true
+      },
+      {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "x15_move": "d2d3",
+        "x16_safety_false_move": "d2d3",
+        "match": true
+      }
+    ]
+  },
+  "overall_correctness_pass": true
+}

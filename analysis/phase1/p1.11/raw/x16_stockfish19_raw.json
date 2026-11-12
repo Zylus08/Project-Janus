@@ -1,0 +1,412 @@
+{
+  "match_sf_1t_x16_1t_vs_sf19_1t": {
+    "engine_a": "Janus Classical X16-S (1T)",
+    "engine_b": "Stockfish 19 (1T)",
+    "num_pairs": 20,
+    "total_games": 40,
+    "wins_a": 0,
+    "draws": 2,
+    "wins_b": 38,
+    "points_a": 1.0,
+    "score_pct": 2.5,
+    "score_interval_95": [
+      0.0044,
+      0.1288
+    ],
+    "elo_delta": -636.4,
+    "elo_ci_95": [
+      -940.8,
+      -332.1
+    ],
+    "pentanomial": {
+      "2.0": 0,
+      "1.5": 0,
+      "1.0": 0,
+      "0.5": 2,
+      "0.0": 18
+    },
+    "mean_pair_diff": -0.95,
+    "variance_pair_diff": 0.0237,
+    "std_error_pair_diff": 0.0344,
+    "paired_t_statistic": -27.6064,
+    "degrees_of_freedom": 19,
+    "two_tailed_p_value": 8.49e-17,
+    "statistically_significant_superiority": false,
+    "tost": {
+      "delta_eq": 0.1,
+      "t1": -24.7004,
+      "t2": -30.5123,
+      "p_tost": 1.0,
+      "equivalence_proven": false
+    },
+    "duration_seconds": 85.91,
+    "pgn_file": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.11\\pgn\\x16_1t_vs_sf19_1t.pgn",
+    "pairs": [
+      {
+        "pair_idx": 0,
+        "opening": "English Anglo-Scandinavian",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 1,
+        "opening": "English Bellon Gambit",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 2,
+        "opening": "English Bremen Smyslov System",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 3,
+        "opening": "English Keres Defense",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 4,
+        "opening": "English Symmetrical 3.Nf3",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 5,
+        "opening": "English Symmetrical Rubinstein",
+        "game1_result": "1/2-1/2",
+        "game2_result": "1-0",
+        "score_a": 0.5,
+        "pair_diff": -0.5
+      },
+      {
+        "pair_idx": 6,
+        "opening": "English Symmetrical Anti-Benoni",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 7,
+        "opening": "Reti Reversed Blumenfeld",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 8,
+        "opening": "Reti Advance 3...f6",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 9,
+        "opening": "Reti vs Old Indian",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 10,
+        "opening": "Dutch Defense Fianchetto 2...Nf6",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 11,
+        "opening": "Dutch Defense 2.Nc3",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 12,
+        "opening": "Dutch Defense Krejcik Gambit",
+        "game1_result": "0-1",
+        "game2_result": "1/2-1/2",
+        "score_a": 0.5,
+        "pair_diff": -0.5
+      },
+      {
+        "pair_idx": 13,
+        "opening": "Dutch Hort-Antoshin System",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 14,
+        "opening": "Modern Benoni Snake Variation",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 15,
+        "opening": "Old Indian Defense 3.Nc3",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 16,
+        "opening": "Bird's Opening Hobbs Gambit",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 17,
+        "opening": "Larsen Spassky Variation",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 18,
+        "opening": "Polish Opening Outflank",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 19,
+        "opening": "Hungarian Opening Reversed Pirc",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      }
+    ]
+  },
+  "match_sf_4t_x16_4t_vs_sf19_4t": {
+    "engine_a": "Janus Classical X16-P (4T)",
+    "engine_b": "Stockfish 19 (4T)",
+    "num_pairs": 20,
+    "total_games": 40,
+    "wins_a": 0,
+    "draws": 1,
+    "wins_b": 39,
+    "points_a": 0.5,
+    "score_pct": 1.25,
+    "score_interval_95": [
+      0.0013,
+      0.1091
+    ],
+    "elo_delta": -759.1,
+    "elo_ci_95": [
+      -1153.3,
+      -364.8
+    ],
+    "pentanomial": {
+      "2.0": 0,
+      "1.5": 0,
+      "1.0": 0,
+      "0.5": 1,
+      "0.0": 19
+    },
+    "mean_pair_diff": -0.975,
+    "variance_pair_diff": 0.0125,
+    "std_error_pair_diff": 0.025,
+    "paired_t_statistic": -39.0,
+    "degrees_of_freedom": 19,
+    "two_tailed_p_value": 1.34e-19,
+    "statistically_significant_superiority": false,
+    "tost": {
+      "delta_eq": 0.1,
+      "t1": -35.0,
+      "t2": -43.0,
+      "p_tost": 1.0,
+      "equivalence_proven": false
+    },
+    "duration_seconds": 90.66,
+    "pgn_file": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.11\\pgn\\x16_4t_vs_sf19_4t.pgn",
+    "pairs": [
+      {
+        "pair_idx": 0,
+        "opening": "English Anglo-Scandinavian",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 1,
+        "opening": "English Bellon Gambit",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 2,
+        "opening": "English Bremen Smyslov System",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 3,
+        "opening": "English Keres Defense",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 4,
+        "opening": "English Symmetrical 3.Nf3",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 5,
+        "opening": "English Symmetrical Rubinstein",
+        "game1_result": "1/2-1/2",
+        "game2_result": "1-0",
+        "score_a": 0.5,
+        "pair_diff": -0.5
+      },
+      {
+        "pair_idx": 6,
+        "opening": "English Symmetrical Anti-Benoni",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 7,
+        "opening": "Reti Reversed Blumenfeld",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 8,
+        "opening": "Reti Advance 3...f6",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 9,
+        "opening": "Reti vs Old Indian",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 10,
+        "opening": "Dutch Defense Fianchetto 2...Nf6",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 11,
+        "opening": "Dutch Defense 2.Nc3",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 12,
+        "opening": "Dutch Defense Krejcik Gambit",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 13,
+        "opening": "Dutch Hort-Antoshin System",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 14,
+        "opening": "Modern Benoni Snake Variation",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 15,
+        "opening": "Old Indian Defense 3.Nc3",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 16,
+        "opening": "Bird's Opening Hobbs Gambit",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 17,
+        "opening": "Larsen Spassky Variation",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 18,
+        "opening": "Polish Opening Outflank",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      },
+      {
+        "pair_idx": 19,
+        "opening": "Hungarian Opening Reversed Pirc",
+        "game1_result": "0-1",
+        "game2_result": "1-0",
+        "score_a": 0.0,
+        "pair_diff": -1.0
+      }
+    ]
+  }
+}

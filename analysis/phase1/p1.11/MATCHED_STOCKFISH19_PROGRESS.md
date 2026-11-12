@@ -85,3 +85,4 @@ The results against Stockfish 19 provide vital empirical clarity on the capabili
    - In pure classical chess, every handcrafted evaluation term introduces non-linear interactions and tuning noise unless optimized via large-scale parameter fitting (such as SPSA or Texel tuning).
 3. **Conclusion:**
    Without machine learning or automated parameter optimization, handcrafted classical chess architectures face an asymptotic strength ceiling. Janus's search safety interventions successfully stabilized tactical decision-making, but cannot bridge the profound evaluation representation deficit against state-of-the-art neural architectures.
+

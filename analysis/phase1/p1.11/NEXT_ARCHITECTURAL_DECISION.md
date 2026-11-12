@@ -48,3 +48,4 @@ To break through this plateau and achieve genuine competitive gains in subsequen
 | **Real Syzygy 5-man Files** | Medium | +15 to +25 Elo | Full | **Priority 3** |
 | **Quiet Threat Detection** | Medium | +10 to +20 Elo | Full | **Priority 4** |
 | **NNUE Hybridization** | High | +500 to +700 Elo | Violates Current Charter | **Deferred to Phase 2** |
+

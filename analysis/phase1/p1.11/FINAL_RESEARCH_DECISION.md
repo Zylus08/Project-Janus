@@ -53,3 +53,4 @@ Based on the definitive experimental findings across 540 tournament games:
    The Phase 2 audit demonstrated that standard Late Move Reductions aggressively prune 33.3% of quiet defensive moves. Direction A proved that static evaluation tracking and continuation history dampening successfully prevent these tactical blunders, allowing Janus to hold 3 draws against unrestricted Stockfish 19.
 3. **The Complexity Penalty on Single-Core CPUs:**
    The massive divergence between 1T (-117 Elo) and 4T (-31 Elo) proves that complex evaluation terms and search heuristics impose severe latency penalties that cannot be justified on single-threaded architectures. Leaner engines (like X7) dominate single-thread classical chess.
+

@@ -77,3 +77,4 @@ In alpha-beta search, the computational cost of failing to achieve a cutoff on M
 ## 4. Diagnostic Conclusion
 
 The telemetry confirms that Janus's search tree inflation is directly driven by quiet move ordering latency. In quiet middlegames, closed structures, and defensive positions, the absence of local continuation history and the premature search of losing captures force the engine to search deep into the quiet move list before discovering beta cutoffs. Addressing this ordering inefficiency is the central mission of P1.14.
+

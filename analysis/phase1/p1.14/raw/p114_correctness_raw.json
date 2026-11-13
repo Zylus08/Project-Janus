@@ -1,0 +1,122 @@
+{
+  "timestamp": "2026-11-13 22:12:00",
+  "candidate": "Janus Classical X19",
+  "movepicker_property_tests": [
+    {
+      "fen_index": 0,
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "legal_moves_count": 20,
+      "best_move": 1153,
+      "best_move_is_legal": true,
+      "score": 64
+    },
+    {
+      "fen_index": 1,
+      "fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "legal_moves_count": 48,
+      "best_move": 2572,
+      "best_move_is_legal": true,
+      "score": 114
+    },
+    {
+      "fen_index": 2,
+      "fen": "r1bqk2r/pppp1ppp/2n5/1B2p3/1b1Pn3/2N2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+      "legal_moves_count": 35,
+      "best_move": 2325,
+      "best_move_is_legal": true,
+      "score": -51
+    },
+    {
+      "fen_index": 3,
+      "fen": "r1b1k2r/pppp1Npp/8/4p3/2Bn4/8/PPPP2PP/RNB1b1KR b kq - 1 9",
+      "legal_moves_count": 31,
+      "best_move": 667,
+      "best_move_is_legal": true,
+      "score": -95
+    },
+    {
+      "fen_index": 4,
+      "fen": "8/4P3/8/8/8/8/8/4K2k w - - 0 1",
+      "legal_moves_count": 9,
+      "best_move": 65332,
+      "best_move_is_legal": true,
+      "score": 932
+    },
+    {
+      "fen_index": 5,
+      "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
+      "legal_moves_count": 31,
+      "best_move": 1153,
+      "best_move_is_legal": true,
+      "score": 102
+    },
+    {
+      "fen_index": 6,
+      "fen": "r3k2r/pppppppp/8/8/8/8/PPPPPPPP/R3K2R w KQkq - 0 1",
+      "legal_moves_count": 25,
+      "best_move": 1739,
+      "best_move_is_legal": true,
+      "score": 35
+    },
+    {
+      "fen_index": 7,
+      "fen": "k7/8/1Q6/8/8/8/8/7K b - - 0 1",
+      "legal_moves_count": 0,
+      "best_move": 0,
+      "best_move_is_legal": true,
+      "score": 0
+    },
+    {
+      "fen_index": 8,
+      "fen": "k7/7R/6R1/8/8/8/8/7K w - - 0 1",
+      "legal_moves_count": 30,
+      "best_move": 3502,
+      "best_move_is_legal": true,
+      "score": 1138
+    },
+    {
+      "fen_index": 9,
+      "fen": "2r3k1/1p3pp1/pq5p/3p4/3Nn3/1PP2P1P/P2Q2P1/4R1K1 b - - 0 24",
+      "legal_moves_count": 41,
+      "best_move": 732,
+      "best_move_is_legal": true,
+      "score": 900
+    }
+  ],
+  "perft_tests": {
+    "startpos_d1": {
+      "depth": 1,
+      "computed": 20,
+      "target": 20,
+      "pass": true
+    },
+    "startpos_d2": {
+      "depth": 2,
+      "computed": 400,
+      "target": 400,
+      "pass": true
+    },
+    "startpos_d3": {
+      "depth": 3,
+      "computed": 8902,
+      "target": 8902,
+      "pass": true
+    },
+    "startpos_d4": {
+      "depth": 4,
+      "computed": 197281,
+      "target": 197281,
+      "pass": true
+    }
+  },
+  "uci_tests": {
+    "engine_name": "id name Janus Classical X (P1.14 Candidate X19)",
+    "uciok": true,
+    "readyok": true,
+    "bestmove": "d2d4",
+    "info_received": true,
+    "search_duration_ms": 104.11906242370605,
+    "compliance_pass": true
+  },
+  "overall_status": "ALL_TESTS_PASSED"
+}

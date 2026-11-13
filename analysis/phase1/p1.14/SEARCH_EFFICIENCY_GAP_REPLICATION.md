@@ -117,3 +117,4 @@ Why does Janus search 30× to 50× more nodes than Stockfish 11 in quiet and clo
 ## 5. Conclusion
 
 The search efficiency gap reported in P1.13 is fully replicated under strict normalized testing. Janus's search inefficiency is real, massive, and concentrated in quiet/closed positions where quiet move ordering governs alpha-beta tree size. Addressing quiet-move ordering architecture in P1.14 directly targets the single largest computational bottleneck in Project Janus.
+

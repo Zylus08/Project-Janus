@@ -68,3 +68,4 @@ Immediately after `STAGE_KILLERS` exhausts Killer 1 and Killer 2:
    When `g_movepicker_stage_reform == false` (Variants `X7`, `X12`, `X17`, `X18`), the engine executes the legacy stage sequence, ensuring bit-for-bit equivalence with the frozen controls.
 3. **Thread Safety & Race Freedom:**  
    All arrays (`good_caps`, `bad_caps`, `yielded`) reside inside the thread-local `MovePicker` instance on the search stack. No shared mutable state is accessed without synchronization.
+

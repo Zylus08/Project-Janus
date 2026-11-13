@@ -4181,7 +4181,7 @@ static int negamax(
                                (native_is_check(b) == 0); // Non-checking move
 
         // Milestone P1.12 & P1.13 Targeted Intervention: Protect pawn moves in pure pawn endgames from LMR reduction
-        if ((g_search_variant == "X17" || g_search_variant == "X18") && non_pawn_mat == 0 && moved_piece == PAWN) {
+        if ((g_search_variant == "X17" || g_search_variant == "X18" || g_search_variant == "X19") && non_pawn_mat == 0 && moved_piece == PAWN) {
             is_lmr_eligible = false;
         }
 
@@ -4923,7 +4923,7 @@ static void uci_loop() {
         iss >> cmd;
 
         if (cmd == "uci") {
-            std::cout << "id name Janus Classical X (P1.13 Candidate X18)" << std::endl;
+            std::cout << "id name Janus Classical X (P1.14 Candidate X19)" << std::endl;
             std::cout << "id author Project Janus Developers" << std::endl;
             std::cout << "option name Threads type spin default 1 min 1 max 16" << std::endl;
             std::cout << "option name UCI_LMP type combo default L1 var L0 var L1 var L2 var L3" << std::endl;
@@ -4936,7 +4936,7 @@ static void uci_loop() {
             std::cout << "option name LMRBaseReduction type spin default 1 min 1 max 3" << std::endl;
             std::cout << "option name UseSEEOrdering type check default false" << std::endl;
             std::cout << "option name UseSEEInQuiescence type check default false" << std::endl;
-            std::cout << "option name UCI_Variant type combo default X18 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18" << std::endl;
+            std::cout << "option name UCI_Variant type combo default X19 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18 var X19" << std::endl;
             std::cout << "option name UCI_ContinuationHistory type combo default H3 var H0 var H1 var H2 var H3" << std::endl;
             std::cout << "option name UCI_DynamicLMR type combo default L3 var L0 var L1 var L2 var L3" << std::endl;
             std::cout << "option name UCI_ClassicalEval type combo default E15 var E0 var E1 var E2 var E3 var E4 var E5 var E6 var E7 var E8 var E9 var E10 var E11 var E15" << std::endl;
@@ -4973,13 +4973,16 @@ static void uci_loop() {
                 }
                 if (opt_name == "Threads" && !opt_val.empty()) {
                     g_num_threads = std::max(1, std::min(16, std::stoi(opt_val)));
-                    if (g_search_variant == "X15" || g_search_variant == "X16" || g_search_variant == "X17" || g_search_variant == "X18") {
+                    if (g_search_variant == "X15" || g_search_variant == "X16" || g_search_variant == "X17" || g_search_variant == "X18" || g_search_variant == "X19") {
                         if (g_num_threads == 1) {
                             g_use_pawn_hash = false;
                             g_dynamic_time_mgmt = false;
                             g_use_lmp = false;
                             g_lmp_mode = 0;
                             g_rfp_margin_per_depth = 120;
+                            if (g_search_variant == "X19") {
+                                g_eval_mode = 5;
+                            }
                         } else {
                             g_use_pawn_hash = true;
                             g_dynamic_time_mgmt = true;
@@ -4987,6 +4990,9 @@ static void uci_loop() {
                             g_lmp_mode = 1;
                             g_lmp_max_depth = 4;
                             g_rfp_margin_per_depth = 90;
+                            if (g_search_variant == "X19") {
+                                g_eval_mode = 10;
+                            }
                         }
                     }
                 } else if (opt_name == "UCI_LMP" && !opt_val.empty()) {

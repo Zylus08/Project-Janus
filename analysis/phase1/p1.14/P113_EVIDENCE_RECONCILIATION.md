@@ -85,3 +85,4 @@ In Match 5, Janus-X18-1T scored 0.0 / 40 against Stockfish 11.
 * **Mathematical Property:** A score of zero has no finite logistic Elo estimate ($\lim_{S \to 0} -400 \log_{10}(1/S - 1) = -\infty$).
 * **Exact Statistical Upper Bound:** The Clopper-Pearson 95% confidence interval for 0 successes in 40 trials yields an upper bound on win rate of $p < 0.0876$. This bounds the relative strength to $\Delta\text{Elo} < -407.03$.
 * **Critical Boundary Warning:** This shutout does not establish an "absolute rating" for Stockfish 11 or Janus. It merely confirms that under 1.5s + 50ms time controls, Stockfish 11's combination of multi-ply continuation histories, multi-cut pruning, and 200+ tuned classical evaluation terms produces a playing strength differential that completely exceeds Janus's current defensive horizon.
+

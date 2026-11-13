@@ -83,3 +83,4 @@ Across all 60 audited positions, move decisions and history distributions were c
    The purpose of history is to *sort* moves within `STAGE_QUIETS`, not to gate or reduce search depth.
 3. **Continuation History Is Required to Provide Local Context:**  
    A piece move to `c7` or `g1` means nothing without knowing the opponent's previous move. 2-ply continuation history (`continuation_history[piece][to][prev_piece][prev_to]`) resolves sparsity by capturing paired tactical responses.
+

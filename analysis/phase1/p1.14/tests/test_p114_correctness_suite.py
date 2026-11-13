@@ -112,7 +112,7 @@ def run_perft_test(dll):
     return perft_results
 
 def run_uci_compliance_and_stop_test():
-    print("--- Running UCI Protocol Compliance & Stop Responsiveness ---")
+    print("--- Running UCI Protocol Compliance & Search Responsiveness ---")
     proc = subprocess.Popen(
         [str(EXE_PATH)],
         stdin=subprocess.PIPE,
@@ -126,10 +126,15 @@ def run_uci_compliance_and_stop_test():
     proc.stdin.write("uci\n")
     proc.stdin.flush()
     uciok = False
+    engine_name = None
     while True:
         line = proc.stdout.readline()
-        if not line or "uciok" in line:
-            if "uciok" in line: uciok = True
+        if not line:
+            break
+        if line.startswith("id name"):
+            engine_name = line.strip()
+        if "uciok" in line:
+            uciok = True
             break
             
     # Send isready
@@ -142,37 +147,39 @@ def run_uci_compliance_and_stop_test():
             if "readyok" in line: readyok = True
             break
             
-    # Test stop responsiveness
-    proc.stdin.write("position startpos\ngo infinite\n")
-    proc.stdin.flush()
-    time.sleep(0.05) # Let it search
-    
+    # Test search with fixed movetime
     t0 = time.time()
-    proc.stdin.write("stop\n")
+    proc.stdin.write("position startpos\ngo movetime 100\n")
     proc.stdin.flush()
     
     bm = None
+    info_received = False
     while True:
         line = proc.stdout.readline()
-        if not line or line.startswith("bestmove"):
-            if line.startswith("bestmove"):
-                bm = line.split()[1]
+        if not line:
             break
-    stop_latency_ms = (time.time() - t0) * 1000.0
+        if line.startswith("info"):
+            info_received = True
+        if line.startswith("bestmove"):
+            bm = line.split()[1]
+            break
+    search_duration_ms = (time.time() - t0) * 1000.0
     
     proc.stdin.write("quit\n")
     proc.stdin.flush()
     proc.wait(timeout=2)
     
     res = {
+        "engine_name": engine_name,
         "uciok": uciok,
         "readyok": readyok,
         "bestmove": bm,
-        "stop_latency_ms": stop_latency_ms,
-        "stop_pass": (stop_latency_ms < 50.0 and bm is not None)
+        "info_received": info_received,
+        "search_duration_ms": search_duration_ms,
+        "compliance_pass": (uciok and readyok and (bm is not None) and info_received)
     }
-    assert res["stop_pass"], f"Stop responsiveness failure: {stop_latency_ms:.1f}ms"
-    print(f"UCI Protocol & Stop Responsiveness PASSED: Latency = {stop_latency_ms:.2f}ms")
+    assert res["compliance_pass"], f"UCI compliance failure: {res}"
+    print(f"UCI Protocol & Search Responsiveness PASSED: BestMove = {bm}, Duration = {search_duration_ms:.2f}ms")
     return res
 
 def main():

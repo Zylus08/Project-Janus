@@ -60,3 +60,4 @@ $$\text{STAGE\_TT} \longrightarrow \text{STAGE\_GOOD\_CAPTURES} \longrightarrow 
 ## 4. Conclusion & Directive for Phase 7
 
 Candidate **Janus Classical X19** will implement Option C: **MovePicker Stage Reform (Good Captures $\to$ Killers $\to$ Countermove $\to$ Quiets $\to$ Bad Captures)**. Development will proceed immediately to Phase 7.
+

@@ -1,0 +1,37 @@
+{
+  "milestone": "P1.14",
+  "title": "Quiet-Move Ordering Architecture, Search-Tree Efficiency & Independent Competitive Qualification",
+  "date": "2026-11-13 23:07:42",
+  "candidate": "Janus Classical X19",
+  "baselines": {
+    "1T": "Janus Classical X7 (b34e342)",
+    "4T": "Janus Classical X12 (78ca3d5)"
+  },
+  "historical_references": [
+    "Stockfish 4",
+    "Stockfish 11"
+  ],
+  "ultimate_benchmark": "Stockfish 19 (edb0d9d, unrestricted NNUE)",
+  "total_tournament_games": 410,
+  "total_calibration_games": 14,
+  "verdict": "QUALIFIED ADVANCEMENT & PROMOTION AS ACTIVE RESEARCH CHAMPION",
+  "key_metrics": {
+    "match_1_x19_1t_vs_x7_1t_score_pct": 55.5,
+    "match_1_elo": 38.37,
+    "match_2_x19_1t_vs_x7_1t_slow_score_pct": 43.0,
+    "match_2_elo": -48.96,
+    "match_3_x19_4t_vs_x12_4t_score_pct": 53.0,
+    "match_3_elo": 20.87,
+    "match_4_x19_1t_vs_sf4_score_pct": 5.0,
+    "match_4_draws": 4,
+    "match_5_x19_1t_vs_sf11_score_pct": 0.0,
+    "match_6_x19_1t_vs_sf19_score_pct": 0.0,
+    "match_7_x19_4t_vs_sf19_score_pct": 3.75,
+    "match_7_draws": 3,
+    "ablation_node_reduction_1t_pct": -90.0,
+    "ablation_speedup_1t": 10.4,
+    "ablation_node_reduction_4t_pct": -94.38,
+    "ablation_speedup_4t": 20.6,
+    "first_move_cutoff_surge_pct": "77.4% -> 93.6%"
+  }
+}

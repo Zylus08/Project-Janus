@@ -75,3 +75,4 @@ In multithreaded searches (X12):
 ## 4. Architectural Verdict for Phase 6
 
 Root move ordering is stable and does not represent the primary source of search inefficiency. The root PV move is correctly propagated via TT in over $99\%$ of iterations. The bottleneck resides in **interior node quiet move ordering** (where $22.3\%$ of cutoffs require searching multiple moves, and losing captures are searched ahead of killers).
+

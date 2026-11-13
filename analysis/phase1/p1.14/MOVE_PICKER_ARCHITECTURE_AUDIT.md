@@ -115,3 +115,4 @@ The audit revealed a severe structural disconnect between the numerical scoring 
    Introduce `STAGE_COUNTERMOVE` immediately after `STAGE_KILLERS`. This avoids generating and sorting 30+ quiet moves if the countermove produces an immediate beta-cutoff.
 3. **Incremental Selection Sort for Quiets:**  
    Replace full array sorting ($O(N^2)$ across all 40 quiets) with on-demand incremental selection sort, finding the next highest-scoring quiet move only when the previous move fails to produce a cutoff.
+

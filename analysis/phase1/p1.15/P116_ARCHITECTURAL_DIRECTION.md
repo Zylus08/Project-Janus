@@ -77,3 +77,4 @@ To recover competitive playing strength without violating the strictly non-ML ch
 - **No Singular Extensions:** Phase 1 experiments in X8 and X14 confirmed that singular verification searches add 25–40% node overhead and degrade playing strength on shallow classical engines.
 - **No Learned Evaluation / Neural Inference / SPSA:** Strictly non-ML classical parameters only.
 - **No Further Stage Splitting:** MovePicker has reached structural saturation; no additional sub-stages are justified.
+

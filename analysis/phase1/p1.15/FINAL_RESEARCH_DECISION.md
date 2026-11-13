@@ -68,3 +68,4 @@ Following Milestone P1.15 adjudication:
 ## 5. Architectural Takeaway
 
 Project Janus has demonstrated that further refinements to alpha-beta move ordering, staging, and history aging yield diminishing returns in actual playing strength. While X20 achieves a 98.6% node reduction at shallow depths, its competitive performance remains constrained by **evaluation knowledge deficits** (Pawn structure, King Safety, and piece mobility). The architectural direction for Milestone P1.16 must pivot away from move-ordering heuristics and toward evaluation fidelity and quiescence search accuracy.
+

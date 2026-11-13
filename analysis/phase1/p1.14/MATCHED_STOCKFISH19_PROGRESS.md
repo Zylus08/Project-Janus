@@ -98,3 +98,4 @@ In Milestone P1.14, two matches were conducted against Stockfish 19 (80 games to
 
 **Net Improvement over X18-P:** **+105.0 Elo** against modern Stockfish 19.
 This confirms that the 94% tree node reduction achieved in X19-P directly translates into defensive stamina against even the strongest NNUE engine in the world.
+

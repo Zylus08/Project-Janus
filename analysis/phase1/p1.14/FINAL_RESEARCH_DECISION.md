@@ -67,3 +67,4 @@ Applying the Project Janus Scientific Integrity Charter:
    - **Janus Classical X7:** Preserved Qualified 1T Baseline Control.
    - **Janus Classical X12:** Preserved Qualified 4T Baseline Control.
    - **Janus Classical X19-S / X19-P:** **PROMOTED ACTIVE CLASSICAL CHAMPION**.
+

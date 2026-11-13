@@ -115,3 +115,4 @@ Tracking Janus candidates across milestones against historical classical benchma
    In P1.13, X18 suffered from early tactical collapses because it tried to prune quiet moves before examining killers and countermoves, while simultaneously sorting bad captures ahead of killers. In X19, every good capture, killer, and countermove is searched before any negative-SEE sacrifice or unproven quiet move. This allowed X19 to hold 4 solid draws against SF4.
 2. **Why SF11 remains unbreachable:**
    SF11 is not merely faster; its evaluation contains hundreds of non-linear terms (complex pawn shelter, passed pawn blockers, piece-square interpolation by phase, king attack weights) that Janus Classical E5/E10 does not have. Furthermore, SF11 employs Singular Extensions to extend forcing lines when one move is decisively better than all alternatives. Janus searches uniformly, occasionally missing deep tactical refutations in unbalanced middlegames.
+

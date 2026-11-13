@@ -54,3 +54,4 @@ Milestone P1.15 must consolidate the massive search tree savings of X19 while el
 2. **Mandatory Multi-Control Testing:** Every proposed modification in P1.15 must be qualified across BOTH the standard rapid time control (1.0s + 50ms) and the slow time control (2.5s + 100ms) against X7, X12, and X19.
 3. **Preservation of Baselines:** Janus Classical X7 and X12 remain permanent immutable controls.
 4. **Reproducibility Standard:** 100% paired-opening books with color reversal, exact SHA-256 manifests, and open PGN archives.
+

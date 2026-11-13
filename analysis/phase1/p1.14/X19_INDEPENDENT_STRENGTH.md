@@ -142,3 +142,4 @@ All matches utilized color-reversed paired openings from the independent v0.56 o
    By increasing BF1 from 77.4% to 93.6% in interior nodes, X19 avoids exploring entire subtrees beneath tactical blunders, allowing the search to reach critical tactical depth faster at rapid time controls.
 3. **Time-Control Sensitivity:**
    The divergence between Match 1 (55.5%) and Match 2 (43.0%) reveals that as time controls expand and tree depths reach ply 14–16, deferring bad captures without a safety cap can occasionally cause tactical horizon blindness in quiet endgames. This highlights the precise direction for Milestone P1.15: calibrating bad capture deferral at high search plies.
+

@@ -1,0 +1,164 @@
+[
+  {
+    "match_name": "x7_1t_vs_sf4_1t",
+    "eng_a": "Janus-X7-1T",
+    "eng_b": "Stockfish-4-1T",
+    "games": 20,
+    "wins_a": 1,
+    "draws": 0,
+    "losses_a": 19,
+    "pts_a": 1.0,
+    "score_pct": 5.0,
+    "ci_pct": [
+      0.8881474177213009,
+      23.613067346022454
+    ],
+    "elo": -511.50144038113154,
+    "elo_ci": [
+      -819.0562146161135,
+      -203.94666614614925
+    ],
+    "pentanomial": {
+      "WW": 0,
+      "WD": 0,
+      "DD_WL": 1,
+      "LD": 0,
+      "LL": 9
+    }
+  },
+  {
+    "match_name": "x7_1t_vs_sf6_1t",
+    "eng_a": "Janus-X7-1T",
+    "eng_b": "Stockfish-6-1T",
+    "games": 20,
+    "wins_a": 8,
+    "draws": 0,
+    "losses_a": 12,
+    "pts_a": 8.0,
+    "score_pct": 40.0,
+    "ci_pct": [
+      21.880681614666518,
+      61.34181055505432
+    ],
+    "elo": -70.4365036222725,
+    "elo_ci": [
+      -221.07903940502788,
+      80.20603216048293
+    ],
+    "pentanomial": {
+      "WW": 0,
+      "WD": 0,
+      "DD_WL": 8,
+      "LD": 0,
+      "LL": 2
+    }
+  },
+  {
+    "match_name": "x7_1t_vs_sf8_1t",
+    "eng_a": "Janus-X7-1T",
+    "eng_b": "Stockfish-8-1T",
+    "games": 20,
+    "wins_a": 2,
+    "draws": 0,
+    "losses_a": 18,
+    "pts_a": 2.0,
+    "score_pct": 10.0,
+    "ci_pct": [
+      2.7866546182390843,
+      30.103314060644248
+    ],
+    "elo": -381.69700377572997,
+    "elo_ci": [
+      -617.0570974675503,
+      -146.3369100839095
+    ],
+    "pentanomial": {
+      "WW": 0,
+      "WD": 0,
+      "DD_WL": 2,
+      "LD": 0,
+      "LL": 8
+    }
+  },
+  {
+    "match_name": "sf4_1t_vs_sf6_1t",
+    "eng_a": "Stockfish-4-1T",
+    "eng_b": "Stockfish-6-1T",
+    "games": 20,
+    "wins_a": 10,
+    "draws": 2,
+    "losses_a": 8,
+    "pts_a": 11.0,
+    "score_pct": 55.00000000000001,
+    "ci_pct": [
+      34.20857113219844,
+      74.18018278294116
+    ],
+    "elo": 34.86007028756008,
+    "elo_ci": [
+      -113.61375367175765,
+      183.33389424687792
+    ],
+    "pentanomial": {
+      "WW": 0,
+      "WD": 2,
+      "DD_WL": 8,
+      "LD": 0,
+      "LL": 0
+    }
+  },
+  {
+    "match_name": "sf6_1t_vs_sf8_1t",
+    "eng_a": "Stockfish-6-1T",
+    "eng_b": "Stockfish-8-1T",
+    "games": 20,
+    "wins_a": 2,
+    "draws": 6,
+    "losses_a": 12,
+    "pts_a": 5.0,
+    "score_pct": 25.0,
+    "ci_pct": [
+      11.186188380284175,
+      46.8700420440179
+    ],
+    "elo": -190.84850188786498,
+    "elo_ci": [
+      -359.91935212104005,
+      -21.777651654689983
+    ],
+    "pentanomial": {
+      "WW": 0,
+      "WD": 0,
+      "DD_WL": 2,
+      "LD": 6,
+      "LL": 2
+    }
+  },
+  {
+    "match_name": "x12_4t_vs_sf4_4t",
+    "eng_a": "Janus-X12-4T",
+    "eng_b": "Stockfish-4-4T",
+    "games": 20,
+    "wins_a": 0,
+    "draws": 0,
+    "losses_a": 20,
+    "pts_a": 0.0,
+    "score_pct": 0.0,
+    "ci_pct": [
+      0.0,
+      16.11246084860417
+    ],
+    "elo": null,
+    "elo_ci": [
+      -Infinity,
+      -286.61423177491844
+    ],
+    "pentanomial": {
+      "WW": 0,
+      "WD": 0,
+      "DD_WL": 0,
+      "LD": 0,
+      "LL": 10
+    }
+  }
+]

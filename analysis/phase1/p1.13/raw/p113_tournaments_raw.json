@@ -1,0 +1,195 @@
+{
+  "total_tournaments": 7,
+  "total_games_played": 410,
+  "tournaments": [
+    {
+      "match_name": "x18_1t_vs_x7_1t",
+      "eng_a": "Janus-X18-1T",
+      "eng_b": "Janus-X7-1T",
+      "games": 100,
+      "wins_a": 18,
+      "draws": 46,
+      "losses_a": 36,
+      "pts_a": 41.0,
+      "score_pct": 41.0,
+      "ci_pct": [
+        31.867330271851348,
+        50.79855008859933
+      ],
+      "elo": -63.22726196896347,
+      "elo_ci": [
+        -132.00389015303108,
+        5.54936621510404
+      ],
+      "pentanomial": {
+        "WW": 1,
+        "WD": 7,
+        "DD_WL": 21,
+        "LD": 15,
+        "LL": 6
+      }
+    },
+    {
+      "match_name": "x18_1t_vs_x7_1t_slow",
+      "eng_a": "Janus-X18-1T",
+      "eng_b": "Janus-X7-1T",
+      "games": 50,
+      "wins_a": 8,
+      "draws": 27,
+      "losses_a": 15,
+      "pts_a": 21.5,
+      "score_pct": 43.0,
+      "ci_pct": [
+        30.266074333600702,
+        56.73278828271195
+      ],
+      "elo": -48.962560037161964,
+      "elo_ci": [
+        -144.99520804061467,
+        47.07008796629071
+      ],
+      "pentanomial": {
+        "WW": 1,
+        "WD": 3,
+        "DD_WL": 10,
+        "LD": 10,
+        "LL": 1
+      }
+    },
+    {
+      "match_name": "x18_4t_vs_x12_4t",
+      "eng_a": "Janus-X18-4T",
+      "eng_b": "Janus-X12-4T",
+      "games": 100,
+      "wins_a": 28,
+      "draws": 45,
+      "losses_a": 27,
+      "pts_a": 50.5,
+      "score_pct": 50.5,
+      "ci_pct": [
+        40.86513825201472,
+        60.09786839462693
+      ],
+      "elo": 3.474471674037067,
+      "elo_ci": [
+        -64.19624531008353,
+        71.14518865815775
+      ],
+      "pentanomial": {
+        "WW": 1,
+        "WD": 15,
+        "DD_WL": 21,
+        "LD": 10,
+        "LL": 3
+      }
+    },
+    {
+      "match_name": "x18_1t_vs_sf4_1t",
+      "eng_a": "Janus-X18-1T",
+      "eng_b": "Stockfish-4-1T",
+      "games": 40,
+      "wins_a": 1,
+      "draws": 1,
+      "losses_a": 38,
+      "pts_a": 1.5,
+      "score_pct": 3.75,
+      "ci_pct": [
+        0.870786458678674,
+        14.734181585234444
+      ],
+      "elo": -563.7477881811278,
+      "elo_ci": [
+        -822.5159975179165,
+        -304.97957884433896
+      ],
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 1,
+        "LD": 1,
+        "LL": 18
+      }
+    },
+    {
+      "match_name": "x18_1t_vs_sf11_1t",
+      "eng_a": "Janus-X18-1T",
+      "eng_b": "Stockfish-11-1T",
+      "games": 40,
+      "wins_a": 0,
+      "draws": 0,
+      "losses_a": 40,
+      "pts_a": 0.0,
+      "score_pct": 0.0,
+      "ci_pct": [
+        0.0,
+        8.762127615041209
+      ],
+      "elo": null,
+      "elo_ci": [
+        -Infinity,
+        -407.02623004051094
+      ],
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 0,
+        "LD": 0,
+        "LL": 20
+      }
+    },
+    {
+      "match_name": "x18_1t_vs_sf19_1t",
+      "eng_a": "Janus-X18-1T",
+      "eng_b": "Stockfish-19-1T",
+      "games": 40,
+      "wins_a": 0,
+      "draws": 2,
+      "losses_a": 38,
+      "pts_a": 1.0,
+      "score_pct": 2.5,
+      "ci_pct": [
+        0.442684412571679,
+        12.88133682171747
+      ],
+      "elo": -636.4258428105996,
+      "elo_ci": [
+        -940.7915791044477,
+        -332.0601065167512
+      ],
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 0,
+        "LD": 2,
+        "LL": 18
+      }
+    },
+    {
+      "match_name": "x18_4t_vs_sf19_4t",
+      "eng_a": "Janus-X18-4T",
+      "eng_b": "Stockfish-19-4T",
+      "games": 40,
+      "wins_a": 0,
+      "draws": 2,
+      "losses_a": 38,
+      "pts_a": 1.0,
+      "score_pct": 2.5,
+      "ci_pct": [
+        0.442684412571679,
+        12.88133682171747
+      ],
+      "elo": -636.4258428105996,
+      "elo_ci": [
+        -940.7915791044477,
+        -332.0601065167512
+      ],
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 0,
+        "LD": 2,
+        "LL": 18
+      }
+    }
+  ]
+}

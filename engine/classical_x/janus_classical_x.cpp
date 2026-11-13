@@ -325,7 +325,7 @@ static bool g_use_reverse_futility = true;     // Phase 4: Reverse Futility Prun
 static int  g_rfp_margin_per_depth = 120;      // Margin per ply (120 for 1T, 90 for 4T)
 static bool g_use_aspiration_window = true;    // Phase 5: Aspiration Windows (delta = 25 cp)
 static int  g_aspiration_delta = 25;           // Aspiration delta
-static std::string g_search_variant = "X17";    // Active variant identifier (Default Candidate X17)
+static std::string g_search_variant = "X18";    // Active variant identifier (Default Candidate X18)
 
 // ============================================================================
 // Search Modernization & Positional Evaluation Options (Milestone P1.2)
@@ -697,6 +697,40 @@ EXPORT void native_apply_search_variant(const char* var_str) {
             g_use_pawn_hash = true; // 64K entry Pawn Hash Table
             g_dynamic_time_mgmt = true;
             g_use_lmp = true;
+            g_lmp_mode = 1; // Conservative Quadratic LMP
+            g_lmp_max_depth = 4;
+            g_rfp_margin_per_depth = 90;
+        }
+    } else if (var == "X18") { // P1.13 Candidate: Targeted History-Modulated LMR on Qualified Baselines
+        g_use_staged_movegen = true;
+        g_quiescence_see_mode = 2;
+        g_use_see_in_quiescence = true;
+        g_use_null_move_pruning = true;
+        g_use_reverse_futility = true;
+        g_use_aspiration_window = true;
+        g_conthist_mode = 3; // H3
+        g_dynamic_lmr_mode = 2; // L2: History Modulated LMR
+        g_use_pruning_safety = false;
+        if (g_num_threads == 1) { // Track S: X18-S (X7 foundation + History-LMR)
+            g_eval_mode = 5; // E5 Combined Classical Eval
+            g_tactical_ordering_mode = 0; // M0 Off
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = false;
+            g_dynamic_time_mgmt = false;
+            g_use_lmp = false;
+            g_lmp_mode = 0;
+            g_rfp_margin_per_depth = 120;
+        } else { // Track P: X18-P (X12 foundation + History-LMR)
+            g_eval_mode = 10; // E10 Enhanced Classical Evaluation
+            g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = true; // 64K entry Pawn Hash Table
+            g_dynamic_time_mgmt = true;
+            g_use_lmp = true; // Safe Late Move Pruning
             g_lmp_mode = 1; // Conservative Quadratic LMP
             g_lmp_max_depth = 4;
             g_rfp_margin_per_depth = 90;
@@ -4030,8 +4064,8 @@ static int negamax(
                                (m != tt_move) &&
                                (native_is_check(b) == 0); // Non-checking move
 
-        // Milestone P1.12 Targeted Intervention: Protect pawn moves in pure pawn endgames from LMR reduction
-        if (g_search_variant == "X17" && non_pawn_mat == 0 && moved_piece == PAWN) {
+        // Milestone P1.12 & P1.13 Targeted Intervention: Protect pawn moves in pure pawn endgames from LMR reduction
+        if ((g_search_variant == "X17" || g_search_variant == "X18") && non_pawn_mat == 0 && moved_piece == PAWN) {
             is_lmr_eligible = false;
         }
 
@@ -4042,13 +4076,13 @@ static int negamax(
                 int m_idx = std::min(moves_searched, MAX_MOVES - 1);
                 dynamic_reduction = g_lmr_table[d_idx][m_idx];
                 if (dynamic_reduction < 1) dynamic_reduction = 1;
-            } else if (g_dynamic_lmr_mode == 2) { // L2: History modulated
+            } else if (g_dynamic_lmr_mode == 2) { // L2: History modulated (P1.13 Intervention)
                 int d_idx = std::min(depth, MAX_SEARCH_PLY - 1);
                 int m_idx = std::min(moves_searched, MAX_MOVES - 1);
                 dynamic_reduction = g_lmr_table[d_idx][m_idx];
                 int h = g_history_table[us_side][move_from(m)][move_to(m)];
                 if (h > 8000) dynamic_reduction -= 1;
-                else if (h < -4000) dynamic_reduction += 1;
+                else if (h < -2000 && depth >= 5) dynamic_reduction += 1;
                 if (dynamic_reduction < 1) dynamic_reduction = 1;
             } else if (g_dynamic_lmr_mode == 3) { // L3: Dynamic + Conthist modulated
                 int d_idx = std::min(depth, MAX_SEARCH_PLY - 1);
@@ -4773,7 +4807,7 @@ static void uci_loop() {
         iss >> cmd;
 
         if (cmd == "uci") {
-            std::cout << "id name Janus Classical X (P1.12 Candidate X17)" << std::endl;
+            std::cout << "id name Janus Classical X (P1.13 Candidate X18)" << std::endl;
             std::cout << "id author Project Janus Developers" << std::endl;
             std::cout << "option name Threads type spin default 1 min 1 max 16" << std::endl;
             std::cout << "option name UCI_LMP type combo default L1 var L0 var L1 var L2 var L3" << std::endl;
@@ -4786,7 +4820,7 @@ static void uci_loop() {
             std::cout << "option name LMRBaseReduction type spin default 1 min 1 max 3" << std::endl;
             std::cout << "option name UseSEEOrdering type check default false" << std::endl;
             std::cout << "option name UseSEEInQuiescence type check default false" << std::endl;
-            std::cout << "option name UCI_Variant type combo default X17 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17" << std::endl;
+            std::cout << "option name UCI_Variant type combo default X18 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18" << std::endl;
             std::cout << "option name UCI_ContinuationHistory type combo default H3 var H0 var H1 var H2 var H3" << std::endl;
             std::cout << "option name UCI_DynamicLMR type combo default L3 var L0 var L1 var L2 var L3" << std::endl;
             std::cout << "option name UCI_ClassicalEval type combo default E15 var E0 var E1 var E2 var E3 var E4 var E5 var E6 var E7 var E8 var E9 var E10 var E11 var E15" << std::endl;
@@ -4823,7 +4857,7 @@ static void uci_loop() {
                 }
                 if (opt_name == "Threads" && !opt_val.empty()) {
                     g_num_threads = std::max(1, std::min(16, std::stoi(opt_val)));
-                    if (g_search_variant == "X15" || g_search_variant == "X16" || g_search_variant == "X17") {
+                    if (g_search_variant == "X15" || g_search_variant == "X16" || g_search_variant == "X17" || g_search_variant == "X18") {
                         if (g_num_threads == 1) {
                             g_use_pawn_hash = false;
                             g_dynamic_time_mgmt = false;

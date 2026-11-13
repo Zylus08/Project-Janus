@@ -1,0 +1,136 @@
+{
+  "milestone": "P1.13",
+  "title": "Classical Search Gap Analysis, Reference-Engine Calibration & Targeted Architectural Advancement",
+  "branch": "phase1/classical-janus",
+  "parent_commit": "5b44c3f",
+  "date": "2026-11-13",
+  "candidate": {
+    "name": "Janus Classical X18",
+    "binary": "analysis/phase1/p1.13/control/janus_classical_x18.exe",
+    "sha256": "912c8554928a1845d3f16e699fe06b970fc7eeb3ab6ee6c37900fe81662b6b50",
+    "source_file": "engine/classical_x/janus_classical_x.cpp",
+    "feature": "History-Modulated Late Move Reductions (History-LMR)"
+  },
+  "baselines": {
+    "1T": {
+      "name": "Janus Classical X7",
+      "commit": "b34e342",
+      "binary": "E:/ChessXML/tools/janus_classical_x7/janus_classical_x.exe",
+      "status": "RETAINED_QUALIFIED_BASELINE"
+    },
+    "4T": {
+      "name": "Janus Classical X12",
+      "commit": "78ca3d5",
+      "binary": "engine/classical_x/janus_classical_x.exe (variant X12)",
+      "status": "RETAINED_QUALIFIED_BASELINE"
+    }
+  },
+  "reference_engines": {
+    "Stockfish-4": {
+      "epoch": "2013-04-30",
+      "sha256": "1128cab83386063359947f04155a2210c966080e71176dd385d8bdc3b6c32674",
+      "binary": "E:/ChessXML/tools/stockfish_4/stockfish_4.exe"
+    },
+    "Stockfish-6": {
+      "epoch": "2015-01-28",
+      "sha256": "d45bdd88827c32a5097a401f6ce30e7b6d6b2cda9a19258cf93adabf3d47454c",
+      "binary": "E:/ChessXML/tools/stockfish_6/stockfish_6.exe"
+    },
+    "Stockfish-8": {
+      "epoch": "2016-11-01",
+      "sha256": "8a6bcca93538c02051c8c636d677576c8346a822bc2b0758d7a6c0bcbaeb43d3",
+      "binary": "E:/ChessXML/tools/stockfish_8/stockfish_8.exe"
+    },
+    "Stockfish-11": {
+      "epoch": "2020-01-18",
+      "sha256": "b004c03bd71bb84e8bc1832c580e72a7e883f121e1834ea6da2802d1575e8048",
+      "binary": "E:/ChessXML/tools/stockfish_11/stockfish_11.exe"
+    },
+    "Stockfish-19": {
+      "commit": "edb0d9d",
+      "binary": "E:/ChessXML/tools/stockfish_19/stockfish_19.exe"
+    }
+  },
+  "total_games_played": 530,
+  "calibration_games": 120,
+  "qualification_games": 410,
+  "tournaments": {
+    "Match_1": {
+      "id": "x18_1t_vs_x7_1t",
+      "tc": "1.0s + 50ms",
+      "games": 100,
+      "score": 41.0,
+      "score_pct": 41.0,
+      "ci_95": [31.87, 50.80],
+      "elo_delta": -63.22,
+      "pentanomial": {"WW": 1, "WD": 7, "DD_WL": 21, "LD": 15, "LL": 6}
+    },
+    "Match_2": {
+      "id": "x18_1t_vs_x7_1t_slow",
+      "tc": "2.5s + 100ms",
+      "games": 50,
+      "score": 21.5,
+      "score_pct": 43.0,
+      "ci_95": [30.27, 56.73],
+      "elo_delta": -48.96,
+      "pentanomial": {"WW": 1, "WD": 3, "DD_WL": 10, "LD": 10, "LL": 1}
+    },
+    "Match_3": {
+      "id": "x18_4t_vs_x12_4t",
+      "tc": "1.0s + 50ms",
+      "games": 100,
+      "score": 50.5,
+      "score_pct": 50.5,
+      "ci_95": [40.87, 60.10],
+      "elo_delta": 3.47,
+      "pentanomial": {"WW": 1, "WD": 15, "DD_WL": 21, "LD": 10, "LL": 3}
+    },
+    "Match_4": {
+      "id": "x18_1t_vs_sf4_1t",
+      "tc": "1.5s + 50ms",
+      "games": 40,
+      "score": 1.5,
+      "score_pct": 3.75,
+      "ci_95": [0.87, 14.73],
+      "elo_delta": -563.75,
+      "pentanomial": {"WW": 0, "WD": 0, "DD_WL": 1, "LD": 1, "LL": 18}
+    },
+    "Match_5": {
+      "id": "x18_1t_vs_sf11_1t",
+      "tc": "1.5s + 50ms",
+      "games": 40,
+      "score": 0.0,
+      "score_pct": 0.0,
+      "ci_95": [0.00, 8.76],
+      "elo_delta": "<-407.03",
+      "pentanomial": {"WW": 0, "WD": 0, "DD_WL": 0, "LD": 0, "LL": 20}
+    },
+    "Match_6": {
+      "id": "x18_1t_vs_sf19_1t",
+      "tc": "1.5s + 50ms",
+      "games": 40,
+      "score": 1.0,
+      "score_pct": 2.50,
+      "ci_95": [0.44, 12.88],
+      "elo_delta": -636.43,
+      "pentanomial": {"WW": 0, "WD": 0, "DD_WL": 0, "LD": 2, "LL": 18}
+    },
+    "Match_7": {
+      "id": "x18_4t_vs_sf19_4t",
+      "tc": "1.5s + 50ms",
+      "games": 40,
+      "score": 1.0,
+      "score_pct": 2.50,
+      "ci_95": [0.44, 12.88],
+      "elo_delta": -636.43,
+      "pentanomial": {"WW": 0, "WD": 0, "DD_WL": 0, "LD": 2, "LL": 18}
+    }
+  },
+  "research_decision": {
+    "verdict": "PROMOTION_DENIED",
+    "category": "Category C (Hypothesis Rejected / Inconclusive)",
+    "retained_1T_baseline": "Janus Classical X7 (b34e342)",
+    "retained_4T_baseline": "Janus Classical X12 (78ca3d5)",
+    "candidate_status": "FROZEN_RESEARCH_REFERENCE"
+  }
+}

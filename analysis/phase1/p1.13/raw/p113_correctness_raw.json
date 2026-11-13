@@ -1,0 +1,178 @@
+{
+  "summary": {
+    "candidate": "Janus Classical X18",
+    "all_passed": true,
+    "perft": true,
+    "eval_symmetry": true,
+    "mate_precision": true,
+    "determinism": true,
+    "low_clock_resilience": true,
+    "baseline_reproduction": true
+  },
+  "perft_details": {
+    "passed": true,
+    "details": {
+      "Startpos": {
+        "1": {
+          "expected": 20,
+          "found": 20,
+          "passed": true
+        },
+        "2": {
+          "expected": 400,
+          "found": 400,
+          "passed": true
+        },
+        "3": {
+          "expected": 8902,
+          "found": 8902,
+          "passed": true
+        },
+        "4": {
+          "expected": 197281,
+          "found": 197281,
+          "passed": true
+        },
+        "5": {
+          "expected": 4865609,
+          "found": 4865609,
+          "passed": true
+        }
+      },
+      "Kiwipete": {
+        "1": {
+          "expected": 48,
+          "found": 48,
+          "passed": true
+        },
+        "2": {
+          "expected": 2039,
+          "found": 2039,
+          "passed": true
+        },
+        "3": {
+          "expected": 97862,
+          "found": 97862,
+          "passed": true
+        },
+        "4": {
+          "expected": 4085603,
+          "found": 4085603,
+          "passed": true
+        }
+      }
+    }
+  },
+  "symmetry_details": {
+    "passed": true,
+    "passed_count": 8,
+    "total": 8,
+    "details": [
+      {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "eval": 0,
+        "passed": true
+      },
+      {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 4 5",
+        "eval": 0,
+        "passed": true
+      },
+      {
+        "fen": "r1b1k2r/pppp1ppp/2n5/4p3/4P3/2N5/PPPP1PPP/R1B1K2R w KQkq - 0 7",
+        "eval": 0,
+        "passed": true
+      },
+      {
+        "fen": "8/4k3/8/8/8/8/4K3/8 w - - 0 1",
+        "eval": 0,
+        "passed": true
+      },
+      {
+        "fen": "8/4k3/4p3/8/8/4P3/4K3/8 w - - 0 1",
+        "eval": 0,
+        "passed": true
+      },
+      {
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "eval": 0,
+        "passed": true
+      },
+      {
+        "fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1",
+        "eval": 0,
+        "passed": true
+      },
+      {
+        "fen": "4k3/pppppppp/8/8/8/8/PPPPPPPP/4K3 w - - 0 1",
+        "eval": 0,
+        "passed": true
+      }
+    ]
+  },
+  "mate_details": {
+    "passed": true,
+    "passed_count": 4,
+    "total": 4,
+    "details": [
+      {
+        "desc": "Scholar's Mate",
+        "expected": "h5f7",
+        "found": "h5f7",
+        "mate_found": false,
+        "passed": true
+      },
+      {
+        "desc": "Legal's Mate",
+        "expected": "d5f6",
+        "found": "d5f6",
+        "mate_found": false,
+        "passed": true
+      },
+      {
+        "desc": "Back-rank Mate",
+        "expected": "b2b8",
+        "found": "b2b8",
+        "mate_found": false,
+        "passed": true
+      },
+      {
+        "desc": "Anastasia's Mate",
+        "expected": "c8c1",
+        "found": "c8c1",
+        "mate_found": false,
+        "passed": true
+      }
+    ]
+  },
+  "determinism_details": {
+    "passed": true,
+    "runs": [
+      {
+        "run": 1,
+        "bestmove": "d2d3",
+        "nodes": 172965
+      },
+      {
+        "run": 2,
+        "bestmove": "d2d3",
+        "nodes": 172965
+      },
+      {
+        "run": 3,
+        "bestmove": "d2d3",
+        "nodes": 172965
+      }
+    ]
+  },
+  "low_clock_details": {
+    "passed": true,
+    "passed_count": 30,
+    "total": 30
+  },
+  "reproduction_details": {
+    "passed": true,
+    "bm_x18_as_x7": "d2d4",
+    "bm_x7": "d2d4"
+  }
+}

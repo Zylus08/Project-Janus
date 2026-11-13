@@ -1,0 +1,166 @@
+{
+  "B0": {
+    "description": "Baseline Static LMR (X7)",
+    "threads": 1,
+    "total_nodes": 714783,
+    "total_time_s": 0.4418017864227295,
+    "avg_nps": 1617881,
+    "records": [
+      {
+        "nodes": 202144,
+        "nps": 2124365,
+        "bestmove": "e2e4",
+        "score_cp": 32,
+        "time_s": 0.09544110298156738,
+        "pos_id": "STARTPOS"
+      },
+      {
+        "nodes": 221656,
+        "nps": 1560267,
+        "bestmove": "c4d5",
+        "score_cp": -60,
+        "time_s": 0.14230823516845703,
+        "pos_id": "TACTICAL_FORK"
+      },
+      {
+        "nodes": 281553,
+        "nps": 1400569,
+        "bestmove": "d1d3",
+        "score_cp": 468,
+        "time_s": 0.20131278038024902,
+        "pos_id": "QUIET_MIDDLEGAME"
+      },
+      {
+        "nodes": 9430,
+        "nps": 3712159,
+        "bestmove": "e3f2",
+        "score_cp": -20,
+        "time_s": 0.0027396678924560547,
+        "pos_id": "PAWN_ENDGAME"
+      }
+    ]
+  },
+  "B1": {
+    "description": "Primary Intervention (X18 History-LMR)",
+    "threads": 1,
+    "total_nodes": 734117,
+    "total_time_s": 0.42830729484558105,
+    "avg_nps": 1713996,
+    "records": [
+      {
+        "nodes": 215340,
+        "nps": 2012903,
+        "bestmove": "e2e4",
+        "score_cp": 32,
+        "time_s": 0.10724639892578125,
+        "pos_id": "STARTPOS"
+      },
+      {
+        "nodes": 226479,
+        "nps": 1766513,
+        "bestmove": "b1c3",
+        "score_cp": -78,
+        "time_s": 0.1284191608428955,
+        "pos_id": "TACTICAL_FORK"
+      },
+      {
+        "nodes": 281989,
+        "nps": 1489167,
+        "bestmove": "d1d3",
+        "score_cp": 468,
+        "time_s": 0.18957972526550293,
+        "pos_id": "QUIET_MIDDLEGAME"
+      },
+      {
+        "nodes": 10309,
+        "nps": 3551031,
+        "bestmove": "e3f2",
+        "score_cp": -20,
+        "time_s": 0.003062009811401367,
+        "pos_id": "PAWN_ENDGAME"
+      }
+    ]
+  },
+  "B2": {
+    "description": "Baseline Static LMR (X12 4T)",
+    "threads": 4,
+    "total_nodes": 1505853,
+    "total_time_s": 0.3272092342376709,
+    "avg_nps": 4602110,
+    "records": [
+      {
+        "nodes": 323959,
+        "nps": 6160392,
+        "bestmove": "e2e4",
+        "score_cp": 30,
+        "time_s": 0.05275297164916992,
+        "pos_id": "STARTPOS"
+      },
+      {
+        "nodes": 326506,
+        "nps": 5369140,
+        "bestmove": "b1c3",
+        "score_cp": -67,
+        "time_s": 0.061069488525390625,
+        "pos_id": "TACTICAL_FORK"
+      },
+      {
+        "nodes": 836044,
+        "nps": 3994877,
+        "bestmove": "d1d2",
+        "score_cp": 453,
+        "time_s": 0.20955276489257812,
+        "pos_id": "QUIET_MIDDLEGAME"
+      },
+      {
+        "nodes": 19344,
+        "nps": 5343056,
+        "bestmove": "e3f2",
+        "score_cp": -35,
+        "time_s": 0.0038340091705322266,
+        "pos_id": "PAWN_ENDGAME"
+      }
+    ]
+  },
+  "B3": {
+    "description": "Primary Intervention (X18 4T History-LMR)",
+    "threads": 4,
+    "total_nodes": 1144216,
+    "total_time_s": 0.20912551879882812,
+    "avg_nps": 5471431,
+    "records": [
+      {
+        "nodes": 326986,
+        "nps": 6847759,
+        "bestmove": "g1f3",
+        "score_cp": 30,
+        "time_s": 0.0482177734375,
+        "pos_id": "STARTPOS"
+      },
+      {
+        "nodes": 279629,
+        "nps": 5450060,
+        "bestmove": "c4d5",
+        "score_cp": -81,
+        "time_s": 0.051514625549316406,
+        "pos_id": "TACTICAL_FORK"
+      },
+      {
+        "nodes": 520380,
+        "nps": 4925154,
+        "bestmove": "d1d3",
+        "score_cp": 440,
+        "time_s": 0.10589790344238281,
+        "pos_id": "QUIET_MIDDLEGAME"
+      },
+      {
+        "nodes": 17221,
+        "nps": 5260569,
+        "bestmove": "e3f2",
+        "score_cp": -35,
+        "time_s": 0.0034952163696289062,
+        "pos_id": "PAWN_ENDGAME"
+      }
+    ]
+  }
+}

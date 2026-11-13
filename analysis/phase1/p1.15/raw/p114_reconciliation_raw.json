@@ -1,0 +1,327 @@
+{
+  "total_tournament_games": 410,
+  "matches": [
+    {
+      "file": "x19_1t_vs_x7_1t.pgn",
+      "total_games": 100,
+      "num_pairs": 50,
+      "wins_a": 36,
+      "draws": 39,
+      "losses_a": 25,
+      "pts_a": 55.5,
+      "score_pct": 55.50000000000001,
+      "wilson_ci_pct": [
+        45.73590206766443,
+        64.85717104539349
+      ],
+      "paired_ci_pct": [
+        47.92332151771569,
+        63.07667848228432
+      ],
+      "proper_boundary_ci_pct": null,
+      "pentanomial": {
+        "WW": 6,
+        "WD": 14,
+        "DD_WL": 19,
+        "LD": 7,
+        "LL": 4
+      },
+      "terminations": {
+        "eval_resignation_adjudication": 54,
+        "checkmate": 7,
+        "threefold_repetition": 7,
+        "max_plies_drawn": 17,
+        "eval_draw_adjudication": 13,
+        "insufficient_material": 2
+      }
+    },
+    {
+      "file": "x19_1t_vs_x7_1t_slow.pgn",
+      "total_games": 50,
+      "num_pairs": 25,
+      "wins_a": 12,
+      "draws": 19,
+      "losses_a": 19,
+      "pts_a": 21.5,
+      "score_pct": 43.0,
+      "wilson_ci_pct": [
+        30.266074333600702,
+        56.73278828271195
+      ],
+      "paired_ci_pct": [
+        32.598045848091814,
+        53.40195415190819
+      ],
+      "proper_boundary_ci_pct": null,
+      "pentanomial": {
+        "WW": 1,
+        "WD": 5,
+        "DD_WL": 8,
+        "LD": 8,
+        "LL": 3
+      },
+      "terminations": {
+        "max_plies_drawn": 10,
+        "eval_resignation_adjudication": 29,
+        "eval_draw_adjudication": 7,
+        "checkmate": 2,
+        "threefold_repetition": 2
+      }
+    },
+    {
+      "file": "x19_4t_vs_x12_4t.pgn",
+      "total_games": 100,
+      "num_pairs": 50,
+      "wins_a": 32,
+      "draws": 42,
+      "losses_a": 26,
+      "pts_a": 53.0,
+      "score_pct": 53.0,
+      "wilson_ci_pct": [
+        43.28887620196781,
+        62.489163677881955
+      ],
+      "paired_ci_pct": [
+        45.0017633926818,
+        60.998236607318205
+      ],
+      "proper_boundary_ci_pct": null,
+      "pentanomial": {
+        "WW": 7,
+        "WD": 12,
+        "DD_WL": 14,
+        "LD": 14,
+        "LL": 3
+      },
+      "terminations": {
+        "max_plies_drawn": 19,
+        "eval_resignation_adjudication": 57,
+        "eval_draw_adjudication": 13,
+        "insufficient_material": 2,
+        "threefold_repetition": 7,
+        "checkmate": 1,
+        "fifty_moves": 1
+      }
+    },
+    {
+      "file": "x19_1t_vs_sf4_1t.pgn",
+      "total_games": 40,
+      "num_pairs": 20,
+      "wins_a": 0,
+      "draws": 4,
+      "losses_a": 36,
+      "pts_a": 2.0,
+      "score_pct": 5.0,
+      "wilson_ci_pct": [
+        1.3820699497090596,
+        16.50384490382803
+      ],
+      "paired_ci_pct": [
+        0.503543382430538,
+        9.496456617569462
+      ],
+      "proper_boundary_ci_pct": null,
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 0,
+        "LD": 4,
+        "LL": 16
+      },
+      "terminations": {
+        "eval_resignation_adjudication": 35,
+        "max_plies_drawn": 2,
+        "threefold_repetition": 2,
+        "checkmate": 1
+      }
+    },
+    {
+      "file": "x19_1t_vs_sf11_1t.pgn",
+      "total_games": 40,
+      "num_pairs": 20,
+      "wins_a": 0,
+      "draws": 0,
+      "losses_a": 40,
+      "pts_a": 0.0,
+      "score_pct": 0.0,
+      "wilson_ci_pct": [
+        0.0,
+        8.762127615041209
+      ],
+      "paired_ci_pct": [
+        0.0,
+        0.0
+      ],
+      "proper_boundary_ci_pct": [
+        0.0,
+        8.809730287880235
+      ],
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 0,
+        "LD": 0,
+        "LL": 20
+      },
+      "terminations": {
+        "eval_resignation_adjudication": 32,
+        "checkmate": 8
+      }
+    },
+    {
+      "file": "x19_1t_vs_sf19_1t.pgn",
+      "total_games": 40,
+      "num_pairs": 20,
+      "wins_a": 0,
+      "draws": 0,
+      "losses_a": 40,
+      "pts_a": 0.0,
+      "score_pct": 0.0,
+      "wilson_ci_pct": [
+        0.0,
+        8.762127615041209
+      ],
+      "paired_ci_pct": [
+        0.0,
+        0.0
+      ],
+      "proper_boundary_ci_pct": [
+        0.0,
+        8.809730287880235
+      ],
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 0,
+        "LD": 0,
+        "LL": 20
+      },
+      "terminations": {
+        "eval_resignation_adjudication": 33,
+        "checkmate": 7
+      }
+    },
+    {
+      "file": "x19_4t_vs_sf19_4t.pgn",
+      "total_games": 40,
+      "num_pairs": 20,
+      "wins_a": 0,
+      "draws": 3,
+      "losses_a": 37,
+      "pts_a": 1.5,
+      "score_pct": 3.75,
+      "wilson_ci_pct": [
+        0.870786458678674,
+        14.734181585234444
+      ],
+      "paired_ci_pct": [
+        0.0,
+        7.7638903895525235
+      ],
+      "proper_boundary_ci_pct": null,
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 0,
+        "LD": 3,
+        "LL": 17
+      },
+      "terminations": {
+        "threefold_repetition": 3,
+        "eval_resignation_adjudication": 30,
+        "checkmate": 7
+      }
+    }
+  ],
+  "ablations": {
+    "num_benchmark_positions": 14,
+    "1T": {
+      "nodes_b0_x7": 2092687,
+      "nodes_b1_x19": 209388,
+      "node_reduction_pct": -89.99429919524515,
+      "time_b0_x7": 1.4967503,
+      "time_b1_x19": 0.1441959,
+      "speedup_factor": 10.379978210198765,
+      "score_mismatches": [],
+      "bf1_b0": 77.39663563553621,
+      "bf1_b1": 93.58984854686861
+    },
+    "4T": {
+      "nodes_b0_x12": 1884080,
+      "nodes_b1_x19": 105940,
+      "node_reduction_pct": -94.37709651394846,
+      "time_b0_x12": 1.4436154999999995,
+      "time_b1_x19": 0.06989959999999999,
+      "speedup_factor": 20.652700444637734,
+      "score_mismatches": [
+        [
+          "tactical_1",
+          -35,
+          -44
+        ],
+        [
+          "tactical_2",
+          81,
+          45
+        ],
+        [
+          "quiet_1",
+          12,
+          7
+        ],
+        [
+          "quiet_2",
+          3,
+          -8
+        ],
+        [
+          "open_1",
+          -53,
+          -54
+        ],
+        [
+          "open_2",
+          -43,
+          -42
+        ],
+        [
+          "closed_1",
+          60,
+          62
+        ],
+        [
+          "closed_2",
+          75,
+          71
+        ],
+        [
+          "queenless_1",
+          32,
+          22
+        ],
+        [
+          "queenless_2",
+          220,
+          188
+        ],
+        [
+          "endgame_2",
+          31,
+          4
+        ],
+        [
+          "defensive_1",
+          368,
+          369
+        ],
+        [
+          "defensive_2",
+          25,
+          18
+        ]
+      ],
+      "bf1_b0": 76.18809404702351,
+      "bf1_b1": 93.07279693486589
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "see_microbenchmark": {
+    "total_calls": 100000,
+    "elapsed_seconds": 0.0775,
+    "ns_per_see_call": 774.82,
+    "calls_per_second": 1290622
+  },
+  "movepicker_microbenchmark": {
+    "iterations": 50000,
+    "total_moves_yielded": 1650000,
+    "elapsed_seconds": 0.2111,
+    "ns_per_full_picker": 4221.41,
+    "ns_per_move_yield": 127.92
+  },
+  "search_economics": {
+    "X7_Baseline": {
+      "fixed_depth": 6,
+      "total_nodes": 284825,
+      "total_elapsed_seconds": 0.2007,
+      "nps": 1419480,
+      "total_cutoffs": 21125,
+      "first_move_cutoffs": 15956,
+      "bf1_percentage": 75.53,
+      "tt_cutoffs": 5258,
+      "killer_cutoffs": 9182,
+      "history_cutoffs": 9854,
+      "capture_cutoffs": 11101
+    },
+    "X19_Frozen": {
+      "fixed_depth": 6,
+      "total_nodes": 13289,
+      "total_elapsed_seconds": 0.0085,
+      "nps": 1563135,
+      "total_cutoffs": 824,
+      "first_move_cutoffs": 787,
+      "bf1_percentage": 95.51,
+      "tt_cutoffs": 540,
+      "killer_cutoffs": 231,
+      "history_cutoffs": 254,
+      "capture_cutoffs": 548
+    },
+    "X20_AdaptiveC1": {
+      "fixed_depth": 6,
+      "total_nodes": 8212,
+      "total_elapsed_seconds": 0.0042,
+      "nps": 1951706,
+      "total_cutoffs": 250,
+      "first_move_cutoffs": 248,
+      "bf1_percentage": 99.2,
+      "tt_cutoffs": 211,
+      "killer_cutoffs": 111,
+      "history_cutoffs": 118,
+      "capture_cutoffs": 120
+    },
+    "X20_HistoryH2": {
+      "fixed_depth": 6,
+      "total_nodes": 4025,
+      "total_elapsed_seconds": 0.0024,
+      "nps": 1687560,
+      "total_cutoffs": 188,
+      "first_move_cutoffs": 186,
+      "bf1_percentage": 98.94,
+      "tt_cutoffs": 186,
+      "killer_cutoffs": 85,
+      "history_cutoffs": 92,
+      "capture_cutoffs": 86
+    },
+    "X20_Integrated": {
+      "fixed_depth": 6,
+      "total_nodes": 4041,
+      "total_elapsed_seconds": 0.0024,
+      "nps": 1679900,
+      "total_cutoffs": 193,
+      "first_move_cutoffs": 191,
+      "bf1_percentage": 98.96,
+      "tt_cutoffs": 191,
+      "killer_cutoffs": 85,
+      "history_cutoffs": 92,
+      "capture_cutoffs": 91
+    }
+  },
+  "memory_footprint": {
+    "transposition_table_mb": 16.0,
+    "history_table_kb": 32.0,
+    "continuation_history_kb": 576.0,
+    "pawn_hash_table_kb": 256.0,
+    "total_static_memory_mb": 16.84
+  }
+}

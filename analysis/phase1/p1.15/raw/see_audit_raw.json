@@ -1,0 +1,252 @@
+{
+  "timestamp": "2026-11-13 23:21:22",
+  "total_test_cases": 15,
+  "results": [
+    {
+      "index": 0,
+      "category": "Capture exchanges on occupied squares",
+      "fen": "1k1r4/1pp4p/p7/4p3/8/8/PPP2PPP/2K1R3 w - - 0 1",
+      "move": "e1e5",
+      "expected_sign": "positive",
+      "actual_sign": "positive",
+      "expected_value": 100,
+      "actual_see_value": 100,
+      "error_category": "S0",
+      "sign_match": true,
+      "description": "RxP on e5, completely free pawn"
+    },
+    {
+      "index": 1,
+      "category": "Capture exchanges on occupied squares",
+      "fen": "2kr4/1pp4p/p7/4p3/8/8/PPP2PPP/2KR4 w - - 0 1",
+      "move": "d1d8",
+      "expected_sign": "neutral",
+      "actual_sign": "neutral",
+      "expected_value": 0,
+      "actual_see_value": 0,
+      "error_category": "S0",
+      "sign_match": true,
+      "description": "RxR on d8, adjacent king recaptures (500 - 500 = 0)"
+    },
+    {
+      "index": 2,
+      "category": "Pinned attackers",
+      "fen": "4k3/8/8/3r4/4P3/8/8/4K2R w - - 0 1",
+      "move": "e4d5",
+      "expected_sign": "positive",
+      "actual_sign": "positive",
+      "expected_value": 500,
+      "actual_see_value": 500,
+      "error_category": "S0",
+      "sign_match": true,
+      "description": "PxR on d5, undefended"
+    },
+    {
+      "index": 3,
+      "category": "Pinned defenders",
+      "fen": "3rk3/8/8/3q4/3R4/8/8/3QK3 w - - 0 1",
+      "move": "d4d5",
+      "expected_sign": "positive",
+      "actual_sign": "positive",
+      "expected_value": 900,
+      "actual_see_value": 900,
+      "error_category": "S0",
+      "sign_match": true,
+      "description": "RxQ on d5: Black Rd8 is pinned to King e8 along d-file by Qd1"
+    },
+    {
+      "index": 4,
+      "category": "X-ray attacks",
+      "fen": "3r2k1/3r1ppp/8/8/3R4/3R4/8/4K3 w - - 0 1",
+      "move": "d4d7",
+      "expected_sign": "positive",
+      "actual_sign": "positive",
+      "expected_value": 500,
+      "actual_see_value": 500,
+      "error_category": "S0",
+      "sign_match": true,
+      "description": "White battery Rd4+Rd3 vs Black Rd8+Rd7: RxR wins a rook (500 - 500 + 500)"
+    },
+    {
+      "index": 5,
+      "category": "King recaptures",
+      "fen": "4k3/8/8/8/4b3/5P2/8/4K3 w - - 0 1",
+      "move": "f3e4",
+      "expected_sign": "positive",
+      "actual_sign": "positive",
+      "expected_value": 335,
+      "actual_see_value": 335,
+      "error_category": "S0",
+      "sign_match": true,
+      "description": "PxB on e4, free bishop"
+    },
+    {
+      "index": 6,
+      "category": "King recaptures",
+      "fen": "4k3/8/8/4r3/3B4/8/8/4K3 w - - 0 1",
+      "move": "d4e5",
+      "expected_sign": "positive",
+      "actual_sign": "positive",
+      "expected_value": 500,
+      "actual_see_value": 500,
+      "error_category": "S0",
+      "sign_match": true,
+      "description": "BxR on e5, free rook"
+    },
+    {
+      "index": 7,
+      "category": "En passant",
+      "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
+      "move": "e5f6",
+      "expected_sign": "neutral",
+      "actual_sign": "neutral",
+      "expected_value": 0,
+      "actual_see_value": 0,
+      "error_category": "S0",
+      "sign_match": true,
+      "description": "En passant capture on f6, defended by g7 pawn (100 - 100 = 0)"
+    },
+    {
+      "index": 8,
+      "category": "Capture promotions",
+      "fen": "1r4k1/2P5/8/8/8/8/8/4K3 w - - 0 1",
+      "move": "c7b8q",
+      "expected_sign": "positive",
+      "actual_sign": "positive",
+      "expected_value": 1300,
+      "actual_see_value": 1300,
+      "error_category": "S0",
+      "sign_match": true,
+      "description": "Pawn captures rook on b8 and promotes to Queen (500 + 800 = 1300)"
+    },
+    {
+      "index": 9,
+      "category": "Underpromotions",
+      "fen": "1r4k1/2P5/8/8/8/8/8/4K3 w - - 0 1",
+      "move": "c7b8n",
+      "expected_sign": "positive",
+      "actual_sign": "positive",
+      "expected_value": 720,
+      "actual_see_value": 720,
+      "error_category": "S0",
+      "sign_match": true,
+      "description": "Pawn captures rook on b8 promoting to Knight (500 + 220 = 720)"
+    },
+    {
+      "index": 10,
+      "category": "Hanging queens",
+      "fen": "r1b1k2r/pppp1ppp/8/4q3/1b2P3/2N2N2/PPP2PPP/R1BQK2R w KQkq - 0 8",
+      "move": "f3e5",
+      "expected_sign": "positive",
+      "actual_sign": "positive",
+      "expected_value": 900,
+      "actual_see_value": 900,
+      "error_category": "S0",
+      "sign_match": true,
+      "description": "NxQ on e5, undefended Queen"
+    },
+    {
+      "index": 11,
+      "category": "Exchange sacrifices",
+      "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQ1RK1 w kq - 0 8",
+      "move": "d4c5",
+      "expected_sign": "neutral",
+      "actual_sign": "neutral",
+      "expected_value": 0,
+      "actual_see_value": 0,
+      "error_category": "S0",
+      "sign_match": true,
+      "description": "PxP on c5, Bishop can recapture (100 - 100 = 0)"
+    },
+    {
+      "index": 12,
+      "category": "Exchange sacrifices",
+      "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+      "move": "c4f7",
+      "expected_sign": "negative",
+      "actual_sign": "negative",
+      "expected_value": -235,
+      "actual_see_value": -235,
+      "error_category": "S0",
+      "sign_match": true,
+      "description": "BxP+ sacrifice on f7, King recaptures (100 - 335 = -235)"
+    },
+    {
+      "index": 13,
+      "category": "Multiple attackers of equal value",
+      "fen": "3r2k1/3r1ppp/4p3/8/3n4/8/3R1PPP/3R2K1 b - - 0 1",
+      "move": "d4e2",
+      "expected_sign": "negative",
+      "actual_sign": "negative",
+      "expected_value": -320,
+      "actual_see_value": -320,
+      "error_category": "S0",
+      "sign_match": true,
+      "description": "Ne2 check, attacked by Rd2 (0 - 320 = -320)"
+    },
+    {
+      "index": 14,
+      "category": "Discovered attacks after a capture",
+      "fen": "r1bqk2r/pp2bppp/2n1pn2/2p5/3PN3/3B1N2/PPP2PPP/R1BQK2R w KQkq - 1 7",
+      "move": "e4c5",
+      "expected_sign": "positive",
+      "actual_sign": "positive",
+      "expected_value": 100,
+      "actual_see_value": 100,
+      "error_category": "S0",
+      "sign_match": true,
+      "description": "NxP on c5 defended by d4 pawn: Black Bxc5 loses 15 cp on trade (net +100)"
+    }
+  ],
+  "category_summary": {
+    "Capture exchanges on occupied squares": {
+      "total": 2,
+      "correct_sign": 2
+    },
+    "Pinned attackers": {
+      "total": 1,
+      "correct_sign": 1
+    },
+    "Pinned defenders": {
+      "total": 1,
+      "correct_sign": 1
+    },
+    "X-ray attacks": {
+      "total": 1,
+      "correct_sign": 1
+    },
+    "King recaptures": {
+      "total": 2,
+      "correct_sign": 2
+    },
+    "En passant": {
+      "total": 1,
+      "correct_sign": 1
+    },
+    "Capture promotions": {
+      "total": 1,
+      "correct_sign": 1
+    },
+    "Underpromotions": {
+      "total": 1,
+      "correct_sign": 1
+    },
+    "Hanging queens": {
+      "total": 1,
+      "correct_sign": 1
+    },
+    "Exchange sacrifices": {
+      "total": 2,
+      "correct_sign": 2
+    },
+    "Multiple attackers of equal value": {
+      "total": 1,
+      "correct_sign": 1
+    },
+    "Discovered attacks after a capture": {
+      "total": 1,
+      "correct_sign": 1
+    }
+  },
+  "overall_classification": "PASS"
+}

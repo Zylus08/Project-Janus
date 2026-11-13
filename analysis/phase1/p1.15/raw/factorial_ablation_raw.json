@@ -1,0 +1,1143 @@
+{
+  "B0": {
+    "description": "Frozen X19",
+    "variant": "X19",
+    "capture_mode": 0,
+    "history_mode": 0,
+    "threads": 1,
+    "fixed_depth_6": {
+      "total_nodes": 533966,
+      "elapsed_seconds": 0.4043,
+      "nps": 1320875,
+      "first_move_cutoff_rate": 90.33,
+      "average_cutoff_index": 1.34,
+      "total_cutoffs": 37992,
+      "positions": [
+        {
+          "id": "G12_crisis",
+          "best_move": "e8e7",
+          "score": -246,
+          "nodes": 64667,
+          "elapsed": 0.0432
+        },
+        {
+          "id": "Tactical_pin_defense",
+          "best_move": "a1c1",
+          "score": -51,
+          "nodes": 19150,
+          "elapsed": 0.0147
+        },
+        {
+          "id": "Minor_exchange_center",
+          "best_move": "f3e5",
+          "score": 411,
+          "nodes": 55665,
+          "elapsed": 0.0519
+        },
+        {
+          "id": "Open_file_clash",
+          "best_move": "f3e5",
+          "score": 10,
+          "nodes": 33562,
+          "elapsed": 0.0237
+        },
+        {
+          "id": "Complex_middlegame_1",
+          "best_move": "d4c6",
+          "score": 58,
+          "nodes": 31114,
+          "elapsed": 0.0254
+        },
+        {
+          "id": "Complex_middlegame_2",
+          "best_move": "d1c2",
+          "score": 16,
+          "nodes": 74361,
+          "elapsed": 0.066
+        },
+        {
+          "id": "Attacking_crisis_1",
+          "best_move": "c4d5",
+          "score": 410,
+          "nodes": 26417,
+          "elapsed": 0.0196
+        },
+        {
+          "id": "Attacking_crisis_2",
+          "best_move": "d4f5",
+          "score": 31,
+          "nodes": 11226,
+          "elapsed": 0.0076
+        },
+        {
+          "id": "Endgame_rook_pawn",
+          "best_move": "b3c3",
+          "score": 104,
+          "nodes": 12218,
+          "elapsed": 0.0068
+        },
+        {
+          "id": "Endgame_minor_piece",
+          "best_move": "e3c5",
+          "score": -323,
+          "nodes": 8772,
+          "elapsed": 0.0042
+        },
+        {
+          "id": "Endgame_queen_pawn",
+          "best_move": "b2c2",
+          "score": 67,
+          "nodes": 11101,
+          "elapsed": 0.0046
+        },
+        {
+          "id": "Endgame_pawn_race",
+          "best_move": "e2e3",
+          "score": -72,
+          "nodes": 3728,
+          "elapsed": 0.0013
+        },
+        {
+          "id": "Endgame_tactical_break",
+          "best_move": "c3c2",
+          "score": -150,
+          "nodes": 1691,
+          "elapsed": 0.0005
+        },
+        {
+          "id": "Endgame_bishop_opposite",
+          "best_move": "e2f1",
+          "score": 0,
+          "nodes": 9263,
+          "elapsed": 0.003
+        },
+        {
+          "id": "Tactical_queen_sac",
+          "best_move": "h1h2",
+          "score": 164,
+          "nodes": 8507,
+          "elapsed": 0.007
+        },
+        {
+          "id": "Defensive_desperado",
+          "best_move": "d1d2",
+          "score": -322,
+          "nodes": 35867,
+          "elapsed": 0.0264
+        },
+        {
+          "id": "Counter_sacrifice",
+          "best_move": "d3e4",
+          "score": -30,
+          "nodes": 17926,
+          "elapsed": 0.0146
+        },
+        {
+          "id": "Check_pressure",
+          "best_move": "d1d3",
+          "score": 894,
+          "nodes": 23273,
+          "elapsed": 0.018
+        },
+        {
+          "id": "Quiet_maneuver",
+          "best_move": "c4d5",
+          "score": 349,
+          "nodes": 57922,
+          "elapsed": 0.0499
+        },
+        {
+          "id": "Starting_pos",
+          "best_move": "b1c3",
+          "score": 0,
+          "nodes": 27536,
+          "elapsed": 0.0161
+        }
+      ]
+    },
+    "fixed_time_250ms": {
+      "average_depth": 11.55,
+      "total_nodes": 8783872,
+      "elapsed_seconds": 5.0136,
+      "nps": 1751996
+    }
+  },
+  "B1": {
+    "description": "Adaptive Capture C1",
+    "variant": "X19",
+    "capture_mode": 1,
+    "history_mode": 0,
+    "threads": 1,
+    "fixed_depth_6": {
+      "total_nodes": 117236,
+      "elapsed_seconds": 0.0869,
+      "nps": 1348367,
+      "first_move_cutoff_rate": 91.7,
+      "average_cutoff_index": 1.184,
+      "total_cutoffs": 6530,
+      "positions": [
+        {
+          "id": "G12_crisis",
+          "best_move": "c6e5",
+          "score": -325,
+          "nodes": 38250,
+          "elapsed": 0.0273
+        },
+        {
+          "id": "Tactical_pin_defense",
+          "best_move": "a1c1",
+          "score": -20,
+          "nodes": 814,
+          "elapsed": 0.0006
+        },
+        {
+          "id": "Minor_exchange_center",
+          "best_move": "d4c5",
+          "score": 419,
+          "nodes": 6088,
+          "elapsed": 0.0039
+        },
+        {
+          "id": "Open_file_clash",
+          "best_move": "f3e5",
+          "score": 23,
+          "nodes": 2400,
+          "elapsed": 0.0012
+        },
+        {
+          "id": "Complex_middlegame_1",
+          "best_move": "d4c6",
+          "score": 60,
+          "nodes": 4424,
+          "elapsed": 0.0028
+        },
+        {
+          "id": "Complex_middlegame_2",
+          "best_move": "d1c2",
+          "score": 16,
+          "nodes": 14638,
+          "elapsed": 0.0115
+        },
+        {
+          "id": "Attacking_crisis_1",
+          "best_move": "d1c2",
+          "score": 399,
+          "nodes": 25578,
+          "elapsed": 0.0234
+        },
+        {
+          "id": "Attacking_crisis_2",
+          "best_move": "d4f5",
+          "score": 45,
+          "nodes": 3899,
+          "elapsed": 0.0022
+        },
+        {
+          "id": "Endgame_rook_pawn",
+          "best_move": "b3c3",
+          "score": 108,
+          "nodes": 632,
+          "elapsed": 0.0005
+        },
+        {
+          "id": "Endgame_minor_piece",
+          "best_move": "g3g4",
+          "score": -343,
+          "nodes": 2081,
+          "elapsed": 0.001
+        },
+        {
+          "id": "Endgame_queen_pawn",
+          "best_move": "b2c2",
+          "score": 66,
+          "nodes": 614,
+          "elapsed": 0.0002
+        },
+        {
+          "id": "Endgame_pawn_race",
+          "best_move": "e2d2",
+          "score": -83,
+          "nodes": 577,
+          "elapsed": 0.0002
+        },
+        {
+          "id": "Endgame_tactical_break",
+          "best_move": "c3d3",
+          "score": -298,
+          "nodes": 298,
+          "elapsed": 0.0001
+        },
+        {
+          "id": "Endgame_bishop_opposite",
+          "best_move": "e3d4",
+          "score": 0,
+          "nodes": 145,
+          "elapsed": 0.0
+        },
+        {
+          "id": "Tactical_queen_sac",
+          "best_move": "h1h2",
+          "score": 205,
+          "nodes": 1253,
+          "elapsed": 0.0009
+        },
+        {
+          "id": "Defensive_desperado",
+          "best_move": "d1d2",
+          "score": -314,
+          "nodes": 4784,
+          "elapsed": 0.0035
+        },
+        {
+          "id": "Counter_sacrifice",
+          "best_move": "e1g1",
+          "score": -16,
+          "nodes": 7380,
+          "elapsed": 0.0051
+        },
+        {
+          "id": "Check_pressure",
+          "best_move": "d1d3",
+          "score": 884,
+          "nodes": 1902,
+          "elapsed": 0.0016
+        },
+        {
+          "id": "Quiet_maneuver",
+          "best_move": "d1c2",
+          "score": 361,
+          "nodes": 1180,
+          "elapsed": 0.0007
+        },
+        {
+          "id": "Starting_pos",
+          "best_move": "e2e4",
+          "score": 11,
+          "nodes": 299,
+          "elapsed": 0.0001
+        }
+      ]
+    },
+    "fixed_time_250ms": {
+      "average_depth": 12.55,
+      "total_nodes": 8740864,
+      "elapsed_seconds": 5.0107,
+      "nps": 1744426
+    }
+  },
+  "B2": {
+    "description": "History Aging H2",
+    "variant": "X19",
+    "capture_mode": 0,
+    "history_mode": 2,
+    "threads": 1,
+    "fixed_depth_6": {
+      "total_nodes": 97289,
+      "elapsed_seconds": 0.0657,
+      "nps": 1481277,
+      "first_move_cutoff_rate": 93.71,
+      "average_cutoff_index": 1.186,
+      "total_cutoffs": 5674,
+      "positions": [
+        {
+          "id": "G12_crisis",
+          "best_move": "e8e7",
+          "score": -242,
+          "nodes": 10125,
+          "elapsed": 0.0061
+        },
+        {
+          "id": "Tactical_pin_defense",
+          "best_move": "a1c1",
+          "score": -21,
+          "nodes": 1781,
+          "elapsed": 0.0012
+        },
+        {
+          "id": "Minor_exchange_center",
+          "best_move": "d4c5",
+          "score": 429,
+          "nodes": 17264,
+          "elapsed": 0.0136
+        },
+        {
+          "id": "Open_file_clash",
+          "best_move": "f3e5",
+          "score": 22,
+          "nodes": 8107,
+          "elapsed": 0.0047
+        },
+        {
+          "id": "Complex_middlegame_1",
+          "best_move": "d4c6",
+          "score": 44,
+          "nodes": 15550,
+          "elapsed": 0.0108
+        },
+        {
+          "id": "Complex_middlegame_2",
+          "best_move": "d4c5",
+          "score": 17,
+          "nodes": 21015,
+          "elapsed": 0.0153
+        },
+        {
+          "id": "Attacking_crisis_1",
+          "best_move": "c4d5",
+          "score": 406,
+          "nodes": 5308,
+          "elapsed": 0.0034
+        },
+        {
+          "id": "Attacking_crisis_2",
+          "best_move": "d4f5",
+          "score": 45,
+          "nodes": 2215,
+          "elapsed": 0.0011
+        },
+        {
+          "id": "Endgame_rook_pawn",
+          "best_move": "b3c3",
+          "score": 103,
+          "nodes": 1435,
+          "elapsed": 0.0008
+        },
+        {
+          "id": "Endgame_minor_piece",
+          "best_move": "e3c5",
+          "score": -312,
+          "nodes": 2470,
+          "elapsed": 0.0011
+        },
+        {
+          "id": "Endgame_queen_pawn",
+          "best_move": "b2c2",
+          "score": 61,
+          "nodes": 1494,
+          "elapsed": 0.0006
+        },
+        {
+          "id": "Endgame_pawn_race",
+          "best_move": "e2d2",
+          "score": -93,
+          "nodes": 770,
+          "elapsed": 0.0003
+        },
+        {
+          "id": "Endgame_tactical_break",
+          "best_move": "c3b2",
+          "score": -298,
+          "nodes": 242,
+          "elapsed": 0.0001
+        },
+        {
+          "id": "Endgame_bishop_opposite",
+          "best_move": "e3d4",
+          "score": 0,
+          "nodes": 164,
+          "elapsed": 0.0001
+        },
+        {
+          "id": "Tactical_queen_sac",
+          "best_move": "h1h2",
+          "score": 216,
+          "nodes": 20,
+          "elapsed": 0.0
+        },
+        {
+          "id": "Defensive_desperado",
+          "best_move": "d1d2",
+          "score": -311,
+          "nodes": 4859,
+          "elapsed": 0.0035
+        },
+        {
+          "id": "Counter_sacrifice",
+          "best_move": "e1g1",
+          "score": -16,
+          "nodes": 1673,
+          "elapsed": 0.001
+        },
+        {
+          "id": "Check_pressure",
+          "best_move": "d1d3",
+          "score": 893,
+          "nodes": 1580,
+          "elapsed": 0.0013
+        },
+        {
+          "id": "Quiet_maneuver",
+          "best_move": "d1c2",
+          "score": 361,
+          "nodes": 1061,
+          "elapsed": 0.0006
+        },
+        {
+          "id": "Starting_pos",
+          "best_move": "g1f3",
+          "score": 14,
+          "nodes": 156,
+          "elapsed": 0.0001
+        }
+      ]
+    },
+    "fixed_time_250ms": {
+      "average_depth": 13.05,
+      "total_nodes": 8654848,
+      "elapsed_seconds": 5.0162,
+      "nps": 1725385
+    }
+  },
+  "B3": {
+    "description": "Integrated X20-S (C1+H2)",
+    "variant": "X20",
+    "capture_mode": 1,
+    "history_mode": 2,
+    "threads": 1,
+    "fixed_depth_6": {
+      "total_nodes": 80418,
+      "elapsed_seconds": 0.0575,
+      "nps": 1399204,
+      "first_move_cutoff_rate": 91.15,
+      "average_cutoff_index": 1.16,
+      "total_cutoffs": 4895,
+      "positions": [
+        {
+          "id": "G12_crisis",
+          "best_move": "e8e7",
+          "score": -242,
+          "nodes": 9454,
+          "elapsed": 0.0061
+        },
+        {
+          "id": "Tactical_pin_defense",
+          "best_move": "a1c1",
+          "score": -21,
+          "nodes": 1213,
+          "elapsed": 0.0009
+        },
+        {
+          "id": "Minor_exchange_center",
+          "best_move": "d4c5",
+          "score": 433,
+          "nodes": 1226,
+          "elapsed": 0.0009
+        },
+        {
+          "id": "Open_file_clash",
+          "best_move": "f3e5",
+          "score": 22,
+          "nodes": 3119,
+          "elapsed": 0.0019
+        },
+        {
+          "id": "Complex_middlegame_1",
+          "best_move": "d4c6",
+          "score": 55,
+          "nodes": 4927,
+          "elapsed": 0.0034
+        },
+        {
+          "id": "Complex_middlegame_2",
+          "best_move": "d1c2",
+          "score": 4,
+          "nodes": 13524,
+          "elapsed": 0.0112
+        },
+        {
+          "id": "Attacking_crisis_1",
+          "best_move": "c4d5",
+          "score": 406,
+          "nodes": 7107,
+          "elapsed": 0.0055
+        },
+        {
+          "id": "Attacking_crisis_2",
+          "best_move": "d4f5",
+          "score": 49,
+          "nodes": 6448,
+          "elapsed": 0.0042
+        },
+        {
+          "id": "Endgame_rook_pawn",
+          "best_move": "b3c3",
+          "score": 103,
+          "nodes": 842,
+          "elapsed": 0.0005
+        },
+        {
+          "id": "Endgame_minor_piece",
+          "best_move": "e3c5",
+          "score": -312,
+          "nodes": 753,
+          "elapsed": 0.0003
+        },
+        {
+          "id": "Endgame_queen_pawn",
+          "best_move": "b2b1",
+          "score": 62,
+          "nodes": 2758,
+          "elapsed": 0.0011
+        },
+        {
+          "id": "Endgame_pawn_race",
+          "best_move": "f4f5",
+          "score": -125,
+          "nodes": 666,
+          "elapsed": 0.0003
+        },
+        {
+          "id": "Endgame_tactical_break",
+          "best_move": "c3c2",
+          "score": -152,
+          "nodes": 762,
+          "elapsed": 0.0002
+        },
+        {
+          "id": "Endgame_bishop_opposite",
+          "best_move": "e3d4",
+          "score": 0,
+          "nodes": 180,
+          "elapsed": 0.0001
+        },
+        {
+          "id": "Tactical_queen_sac",
+          "best_move": "h1h2",
+          "score": 216,
+          "nodes": 20,
+          "elapsed": 0.0
+        },
+        {
+          "id": "Defensive_desperado",
+          "best_move": "d1d2",
+          "score": -311,
+          "nodes": 4605,
+          "elapsed": 0.0034
+        },
+        {
+          "id": "Counter_sacrifice",
+          "best_move": "e1g1",
+          "score": -16,
+          "nodes": 6138,
+          "elapsed": 0.0043
+        },
+        {
+          "id": "Check_pressure",
+          "best_move": "d1d3",
+          "score": 900,
+          "nodes": 1688,
+          "elapsed": 0.0014
+        },
+        {
+          "id": "Quiet_maneuver",
+          "best_move": "d1c2",
+          "score": 359,
+          "nodes": 12120,
+          "elapsed": 0.0099
+        },
+        {
+          "id": "Starting_pos",
+          "best_move": "d2d4",
+          "score": 31,
+          "nodes": 2868,
+          "elapsed": 0.0018
+        }
+      ]
+    },
+    "fixed_time_250ms": {
+      "average_depth": 13.7,
+      "total_nodes": 8491008,
+      "elapsed_seconds": 5.0167,
+      "nps": 1692534
+    }
+  },
+  "B4_1T": {
+    "description": "Frozen X7 Baseline",
+    "variant": "X7",
+    "capture_mode": 0,
+    "history_mode": 0,
+    "threads": 1,
+    "fixed_depth_6": {
+      "total_nodes": 64923,
+      "elapsed_seconds": 0.0398,
+      "nps": 1631563,
+      "first_move_cutoff_rate": 85.94,
+      "average_cutoff_index": 1.34,
+      "total_cutoffs": 4125,
+      "positions": [
+        {
+          "id": "G12_crisis",
+          "best_move": "e8e7",
+          "score": -242,
+          "nodes": 16306,
+          "elapsed": 0.0103
+        },
+        {
+          "id": "Tactical_pin_defense",
+          "best_move": "a1c1",
+          "score": -21,
+          "nodes": 1492,
+          "elapsed": 0.001
+        },
+        {
+          "id": "Minor_exchange_center",
+          "best_move": "d4c5",
+          "score": 433,
+          "nodes": 2265,
+          "elapsed": 0.0014
+        },
+        {
+          "id": "Open_file_clash",
+          "best_move": "f3e5",
+          "score": 22,
+          "nodes": 3450,
+          "elapsed": 0.0018
+        },
+        {
+          "id": "Complex_middlegame_1",
+          "best_move": "d4c6",
+          "score": 55,
+          "nodes": 5732,
+          "elapsed": 0.0043
+        },
+        {
+          "id": "Complex_middlegame_2",
+          "best_move": "d4c5",
+          "score": 17,
+          "nodes": 3027,
+          "elapsed": 0.0023
+        },
+        {
+          "id": "Attacking_crisis_1",
+          "best_move": "c4d5",
+          "score": 406,
+          "nodes": 2682,
+          "elapsed": 0.0016
+        },
+        {
+          "id": "Attacking_crisis_2",
+          "best_move": "d4f5",
+          "score": 49,
+          "nodes": 2735,
+          "elapsed": 0.0014
+        },
+        {
+          "id": "Endgame_rook_pawn",
+          "best_move": "b3c3",
+          "score": 115,
+          "nodes": 1844,
+          "elapsed": 0.001
+        },
+        {
+          "id": "Endgame_minor_piece",
+          "best_move": "e3c5",
+          "score": -327,
+          "nodes": 1542,
+          "elapsed": 0.0007
+        },
+        {
+          "id": "Endgame_queen_pawn",
+          "best_move": "b2b1",
+          "score": 62,
+          "nodes": 430,
+          "elapsed": 0.0001
+        },
+        {
+          "id": "Endgame_pawn_race",
+          "best_move": "e2d2",
+          "score": -97,
+          "nodes": 1110,
+          "elapsed": 0.0003
+        },
+        {
+          "id": "Endgame_tactical_break",
+          "best_move": "c3b2",
+          "score": -150,
+          "nodes": 364,
+          "elapsed": 0.0001
+        },
+        {
+          "id": "Endgame_bishop_opposite",
+          "best_move": "e3d4",
+          "score": 0,
+          "nodes": 252,
+          "elapsed": 0.0001
+        },
+        {
+          "id": "Tactical_queen_sac",
+          "best_move": "h1h2",
+          "score": 219,
+          "nodes": 20,
+          "elapsed": 0.0
+        },
+        {
+          "id": "Defensive_desperado",
+          "best_move": "d1d2",
+          "score": -311,
+          "nodes": 5158,
+          "elapsed": 0.0032
+        },
+        {
+          "id": "Counter_sacrifice",
+          "best_move": "e1g1",
+          "score": -26,
+          "nodes": 3660,
+          "elapsed": 0.003
+        },
+        {
+          "id": "Check_pressure",
+          "best_move": "d1d3",
+          "score": 900,
+          "nodes": 1629,
+          "elapsed": 0.0013
+        },
+        {
+          "id": "Quiet_maneuver",
+          "best_move": "c1d2",
+          "score": 361,
+          "nodes": 1316,
+          "elapsed": 0.0007
+        },
+        {
+          "id": "Starting_pos",
+          "best_move": "b1c3",
+          "score": 11,
+          "nodes": 9909,
+          "elapsed": 0.0051
+        }
+      ]
+    },
+    "fixed_time_250ms": {
+      "average_depth": 13.8,
+      "total_nodes": 8855552,
+      "elapsed_seconds": 5.0103,
+      "nps": 1767458
+    }
+  },
+  "B3_4T": {
+    "description": "Integrated X20-P (4T)",
+    "variant": "X20",
+    "capture_mode": 1,
+    "history_mode": 2,
+    "threads": 4,
+    "fixed_depth_6": {
+      "total_nodes": 121484,
+      "elapsed_seconds": 0.0852,
+      "nps": 1426251,
+      "first_move_cutoff_rate": 93.01,
+      "average_cutoff_index": 1.137,
+      "total_cutoffs": 6909,
+      "positions": [
+        {
+          "id": "G12_crisis",
+          "best_move": "c6e5",
+          "score": -338,
+          "nodes": 17993,
+          "elapsed": 0.0115
+        },
+        {
+          "id": "Tactical_pin_defense",
+          "best_move": "a1c1",
+          "score": -27,
+          "nodes": 1265,
+          "elapsed": 0.0009
+        },
+        {
+          "id": "Minor_exchange_center",
+          "best_move": "d4c5",
+          "score": 412,
+          "nodes": 39152,
+          "elapsed": 0.0321
+        },
+        {
+          "id": "Open_file_clash",
+          "best_move": "f3e5",
+          "score": 22,
+          "nodes": 2917,
+          "elapsed": 0.0017
+        },
+        {
+          "id": "Complex_middlegame_1",
+          "best_move": "d4c6",
+          "score": 55,
+          "nodes": 4934,
+          "elapsed": 0.0036
+        },
+        {
+          "id": "Complex_middlegame_2",
+          "best_move": "d4c5",
+          "score": 29,
+          "nodes": 11834,
+          "elapsed": 0.0086
+        },
+        {
+          "id": "Attacking_crisis_1",
+          "best_move": "c4d5",
+          "score": 411,
+          "nodes": 7783,
+          "elapsed": 0.0051
+        },
+        {
+          "id": "Attacking_crisis_2",
+          "best_move": "d4f5",
+          "score": 49,
+          "nodes": 2152,
+          "elapsed": 0.0013
+        },
+        {
+          "id": "Endgame_rook_pawn",
+          "best_move": "b3c3",
+          "score": 117,
+          "nodes": 849,
+          "elapsed": 0.0005
+        },
+        {
+          "id": "Endgame_minor_piece",
+          "best_move": "e3b6",
+          "score": -324,
+          "nodes": 2681,
+          "elapsed": 0.0012
+        },
+        {
+          "id": "Endgame_queen_pawn",
+          "best_move": "b2b1",
+          "score": 64,
+          "nodes": 5199,
+          "elapsed": 0.0023
+        },
+        {
+          "id": "Endgame_pawn_race",
+          "best_move": "f4f5",
+          "score": -140,
+          "nodes": 1329,
+          "elapsed": 0.0005
+        },
+        {
+          "id": "Endgame_tactical_break",
+          "best_move": "c3b2",
+          "score": -150,
+          "nodes": 687,
+          "elapsed": 0.0002
+        },
+        {
+          "id": "Endgame_bishop_opposite",
+          "best_move": "e3d4",
+          "score": 0,
+          "nodes": 171,
+          "elapsed": 0.0001
+        },
+        {
+          "id": "Tactical_queen_sac",
+          "best_move": "h1h2",
+          "score": 204,
+          "nodes": 284,
+          "elapsed": 0.0002
+        },
+        {
+          "id": "Defensive_desperado",
+          "best_move": "d1d2",
+          "score": -322,
+          "nodes": 15318,
+          "elapsed": 0.0108
+        },
+        {
+          "id": "Counter_sacrifice",
+          "best_move": "e1g1",
+          "score": -26,
+          "nodes": 2251,
+          "elapsed": 0.0018
+        },
+        {
+          "id": "Check_pressure",
+          "best_move": "d1d3",
+          "score": 900,
+          "nodes": 1903,
+          "elapsed": 0.0016
+        },
+        {
+          "id": "Quiet_maneuver",
+          "best_move": "c1d2",
+          "score": 363,
+          "nodes": 985,
+          "elapsed": 0.0006
+        },
+        {
+          "id": "Starting_pos",
+          "best_move": "b1c3",
+          "score": 11,
+          "nodes": 1797,
+          "elapsed": 0.0009
+        }
+      ]
+    },
+    "fixed_time_250ms": {
+      "average_depth": 13.75,
+      "total_nodes": 8640512,
+      "elapsed_seconds": 5.0142,
+      "nps": 1723220
+    }
+  },
+  "B4_4T": {
+    "description": "Frozen X12 Baseline (4T)",
+    "variant": "X12",
+    "capture_mode": 0,
+    "history_mode": 0,
+    "threads": 4,
+    "fixed_depth_6": {
+      "total_nodes": 444117,
+      "elapsed_seconds": 0.3395,
+      "nps": 1308033,
+      "first_move_cutoff_rate": 74.13,
+      "average_cutoff_index": 1.559,
+      "total_cutoffs": 29584,
+      "positions": [
+        {
+          "id": "G12_crisis",
+          "best_move": "e8e7",
+          "score": -262,
+          "nodes": 65140,
+          "elapsed": 0.0462
+        },
+        {
+          "id": "Tactical_pin_defense",
+          "best_move": "a1c1",
+          "score": -60,
+          "nodes": 14638,
+          "elapsed": 0.0128
+        },
+        {
+          "id": "Minor_exchange_center",
+          "best_move": "f3e5",
+          "score": 419,
+          "nodes": 48244,
+          "elapsed": 0.0463
+        },
+        {
+          "id": "Open_file_clash",
+          "best_move": "e1g1",
+          "score": 15,
+          "nodes": 33346,
+          "elapsed": 0.0256
+        },
+        {
+          "id": "Complex_middlegame_1",
+          "best_move": "d4c6",
+          "score": 56,
+          "nodes": 32262,
+          "elapsed": 0.0311
+        },
+        {
+          "id": "Complex_middlegame_2",
+          "best_move": "d1c2",
+          "score": 36,
+          "nodes": 30934,
+          "elapsed": 0.0263
+        },
+        {
+          "id": "Attacking_crisis_1",
+          "best_move": "d1c2",
+          "score": 420,
+          "nodes": 15830,
+          "elapsed": 0.0127
+        },
+        {
+          "id": "Attacking_crisis_2",
+          "best_move": "d4f5",
+          "score": 49,
+          "nodes": 14582,
+          "elapsed": 0.0116
+        },
+        {
+          "id": "Endgame_rook_pawn",
+          "best_move": "b3c3",
+          "score": 116,
+          "nodes": 6520,
+          "elapsed": 0.0036
+        },
+        {
+          "id": "Endgame_minor_piece",
+          "best_move": "e3g1",
+          "score": -261,
+          "nodes": 10585,
+          "elapsed": 0.0041
+        },
+        {
+          "id": "Endgame_queen_pawn",
+          "best_move": "b2b6",
+          "score": 135,
+          "nodes": 27359,
+          "elapsed": 0.0141
+        },
+        {
+          "id": "Endgame_pawn_race",
+          "best_move": "e2d2",
+          "score": -65,
+          "nodes": 4981,
+          "elapsed": 0.0017
+        },
+        {
+          "id": "Endgame_tactical_break",
+          "best_move": "c3b2",
+          "score": -162,
+          "nodes": 1322,
+          "elapsed": 0.0004
+        },
+        {
+          "id": "Endgame_bishop_opposite",
+          "best_move": "e3d4",
+          "score": 0,
+          "nodes": 8225,
+          "elapsed": 0.0025
+        },
+        {
+          "id": "Tactical_queen_sac",
+          "best_move": "h1h2",
+          "score": 181,
+          "nodes": 5772,
+          "elapsed": 0.0046
+        },
+        {
+          "id": "Defensive_desperado",
+          "best_move": "d1d2",
+          "score": -332,
+          "nodes": 17018,
+          "elapsed": 0.0119
+        },
+        {
+          "id": "Counter_sacrifice",
+          "best_move": "d3e4",
+          "score": -32,
+          "nodes": 18514,
+          "elapsed": 0.0161
+        },
+        {
+          "id": "Check_pressure",
+          "best_move": "d1d3",
+          "score": 892,
+          "nodes": 17191,
+          "elapsed": 0.0135
+        },
+        {
+          "id": "Quiet_maneuver",
+          "best_move": "e2d3",
+          "score": 358,
+          "nodes": 48698,
+          "elapsed": 0.0416
+        },
+        {
+          "id": "Starting_pos",
+          "best_move": "g1f3",
+          "score": 3,
+          "nodes": 22956,
+          "elapsed": 0.0128
+        }
+      ]
+    },
+    "fixed_time_250ms": {
+      "average_depth": 12.0,
+      "total_nodes": 7987200,
+      "elapsed_seconds": 5.0166,
+      "nps": 1592147
+    }
+  }
+}

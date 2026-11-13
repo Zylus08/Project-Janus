@@ -1,0 +1,2685 @@
+{
+  "exact_minimax_contract": {
+    "match_rate_percentage": 100.0,
+    "depth_audits": {
+      "depth_1": [
+        {
+          "id": "Startpos",
+          "depth": 1,
+          "reference_score": 64,
+          "orderings": {
+            "X7_legacy": {
+              "score": 64,
+              "best_move": "b1c3",
+              "nodes": 21,
+              "elapsed": 0.0011
+            },
+            "X19_C0": {
+              "score": 64,
+              "best_move": "b1c3",
+              "nodes": 21,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 64,
+              "best_move": "b1c3",
+              "nodes": 21,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 64,
+              "best_move": "b1c3",
+              "nodes": 21,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 64,
+              "best_move": "b1c3",
+              "nodes": 21,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Open_tactical",
+          "depth": 1,
+          "reference_score": 450,
+          "orderings": {
+            "X7_legacy": {
+              "score": 450,
+              "best_move": "b5c6",
+              "nodes": 34,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 450,
+              "best_move": "b5c6",
+              "nodes": 34,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 450,
+              "best_move": "b5c6",
+              "nodes": 34,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 450,
+              "best_move": "b5c6",
+              "nodes": 34,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 450,
+              "best_move": "b5c6",
+              "nodes": 34,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Closed_position",
+          "depth": 1,
+          "reference_score": 496,
+          "orderings": {
+            "X7_legacy": {
+              "score": 496,
+              "best_move": "c3d5",
+              "nodes": 33,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 496,
+              "best_move": "c3d5",
+              "nodes": 33,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 496,
+              "best_move": "c3d5",
+              "nodes": 33,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 496,
+              "best_move": "c3d5",
+              "nodes": 33,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 496,
+              "best_move": "c3d5",
+              "nodes": 33,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "King_check",
+          "depth": 1,
+          "reference_score": 253,
+          "orderings": {
+            "X7_legacy": {
+              "score": 253,
+              "best_move": "b5c6",
+              "nodes": 36,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 253,
+              "best_move": "b5c6",
+              "nodes": 36,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 253,
+              "best_move": "b5c6",
+              "nodes": 36,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 253,
+              "best_move": "b5c6",
+              "nodes": 36,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 253,
+              "best_move": "b5c6",
+              "nodes": 36,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Pin_pressure",
+          "depth": 1,
+          "reference_score": 56,
+          "orderings": {
+            "X7_legacy": {
+              "score": 56,
+              "best_move": "c3d5",
+              "nodes": 34,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 56,
+              "best_move": "c3d5",
+              "nodes": 34,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 56,
+              "best_move": "c3d5",
+              "nodes": 34,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 56,
+              "best_move": "c3d5",
+              "nodes": 34,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 56,
+              "best_move": "c3d5",
+              "nodes": 34,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "En_passant",
+          "depth": 1,
+          "reference_score": 106,
+          "orderings": {
+            "X7_legacy": {
+              "score": 106,
+              "best_move": "e5f6",
+              "nodes": 32,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 106,
+              "best_move": "e5f6",
+              "nodes": 32,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 106,
+              "best_move": "e5f6",
+              "nodes": 32,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 106,
+              "best_move": "e5f6",
+              "nodes": 32,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 106,
+              "best_move": "e5f6",
+              "nodes": 32,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Promotion_adjacent",
+          "depth": 1,
+          "reference_score": 929,
+          "orderings": {
+            "X7_legacy": {
+              "score": 929,
+              "best_move": "e7e8q",
+              "nodes": 10,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 929,
+              "best_move": "e7e8q",
+              "nodes": 10,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 929,
+              "best_move": "e7e8q",
+              "nodes": 10,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 929,
+              "best_move": "e7e8q",
+              "nodes": 10,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 929,
+              "best_move": "e7e8q",
+              "nodes": 10,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Endgame_pawns",
+          "depth": 1,
+          "reference_score": 27,
+          "orderings": {
+            "X7_legacy": {
+              "score": 27,
+              "best_move": "e2f1",
+              "nodes": 9,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 27,
+              "best_move": "e2f1",
+              "nodes": 9,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 27,
+              "best_move": "e2f1",
+              "nodes": 9,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 27,
+              "best_move": "e2f1",
+              "nodes": 9,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 27,
+              "best_move": "e2f1",
+              "nodes": 9,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Endgame_minor",
+          "depth": 1,
+          "reference_score": 10,
+          "orderings": {
+            "X7_legacy": {
+              "score": 10,
+              "best_move": "e2f1",
+              "nodes": 15,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 10,
+              "best_move": "e2f1",
+              "nodes": 15,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 10,
+              "best_move": "e2f1",
+              "nodes": 15,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 10,
+              "best_move": "e2f1",
+              "nodes": 15,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 10,
+              "best_move": "e2f1",
+              "nodes": 15,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Heavy_pieces",
+          "depth": 1,
+          "reference_score": 534,
+          "orderings": {
+            "X7_legacy": {
+              "score": 534,
+              "best_move": "e1e8",
+              "nodes": 21,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 534,
+              "best_move": "e1e8",
+              "nodes": 21,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 534,
+              "best_move": "e1e8",
+              "nodes": 21,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 534,
+              "best_move": "e1e8",
+              "nodes": 21,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 534,
+              "best_move": "e1e8",
+              "nodes": 21,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "G12_crisis",
+          "depth": 1,
+          "reference_score": 275,
+          "orderings": {
+            "X7_legacy": {
+              "score": 275,
+              "best_move": "e6f6",
+              "nodes": 27,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 275,
+              "best_move": "e6f6",
+              "nodes": 27,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 275,
+              "best_move": "e6f6",
+              "nodes": 27,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 275,
+              "best_move": "e6f6",
+              "nodes": 27,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 275,
+              "best_move": "e6f6",
+              "nodes": 27,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Queen_clash",
+          "depth": 1,
+          "reference_score": 177,
+          "orderings": {
+            "X7_legacy": {
+              "score": 177,
+              "best_move": "h1h2",
+              "nodes": 3,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 177,
+              "best_move": "h1h2",
+              "nodes": 3,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 177,
+              "best_move": "h1h2",
+              "nodes": 3,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 177,
+              "best_move": "h1h2",
+              "nodes": 3,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 177,
+              "best_move": "h1h2",
+              "nodes": 3,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Middlegame_clash",
+          "depth": 1,
+          "reference_score": 391,
+          "orderings": {
+            "X7_legacy": {
+              "score": 391,
+              "best_move": "d4c6",
+              "nodes": 47,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 391,
+              "best_move": "d4c6",
+              "nodes": 47,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 391,
+              "best_move": "d4c6",
+              "nodes": 47,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 391,
+              "best_move": "d4c6",
+              "nodes": 47,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 391,
+              "best_move": "d4c6",
+              "nodes": 47,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Quiet_maneuver",
+          "depth": 1,
+          "reference_score": 48,
+          "orderings": {
+            "X7_legacy": {
+              "score": 48,
+              "best_move": "e1f1",
+              "nodes": 7,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 48,
+              "best_move": "e1f1",
+              "nodes": 7,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 48,
+              "best_move": "e1f1",
+              "nodes": 7,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 48,
+              "best_move": "e1f1",
+              "nodes": 7,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 48,
+              "best_move": "e1f1",
+              "nodes": 7,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Check_pressure",
+          "depth": 1,
+          "reference_score": 680,
+          "orderings": {
+            "X7_legacy": {
+              "score": 680,
+              "best_move": "f3h4",
+              "nodes": 30,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 680,
+              "best_move": "f3h4",
+              "nodes": 30,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 680,
+              "best_move": "f3h4",
+              "nodes": 30,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 680,
+              "best_move": "f3h4",
+              "nodes": 30,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 680,
+              "best_move": "f3h4",
+              "nodes": 30,
+              "elapsed": 0.0
+            }
+          }
+        }
+      ],
+      "depth_2": [
+        {
+          "id": "Startpos",
+          "depth": 2,
+          "reference_score": 0,
+          "orderings": {
+            "X7_legacy": {
+              "score": 0,
+              "best_move": "b1c3",
+              "nodes": 112,
+              "elapsed": 0.0001
+            },
+            "X19_C0": {
+              "score": 0,
+              "best_move": "b1c3",
+              "nodes": 81,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 0,
+              "best_move": "b1c3",
+              "nodes": 81,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 0,
+              "best_move": "b1c3",
+              "nodes": 81,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 0,
+              "best_move": "b1c3",
+              "nodes": 81,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Open_tactical",
+          "depth": 2,
+          "reference_score": 120,
+          "orderings": {
+            "X7_legacy": {
+              "score": 120,
+              "best_move": "b5c6",
+              "nodes": 105,
+              "elapsed": 0.0001
+            },
+            "X19_C0": {
+              "score": 120,
+              "best_move": "b5c6",
+              "nodes": 105,
+              "elapsed": 0.0001
+            },
+            "X20_C1": {
+              "score": 120,
+              "best_move": "b5c6",
+              "nodes": 105,
+              "elapsed": 0.0001
+            },
+            "X20_C2": {
+              "score": 120,
+              "best_move": "b5c6",
+              "nodes": 105,
+              "elapsed": 0.0001
+            },
+            "X20_C3": {
+              "score": 120,
+              "best_move": "b5c6",
+              "nodes": 105,
+              "elapsed": 0.0001
+            }
+          }
+        },
+        {
+          "id": "Closed_position",
+          "depth": 2,
+          "reference_score": 327,
+          "orderings": {
+            "X7_legacy": {
+              "score": 327,
+              "best_move": "c4d5",
+              "nodes": 166,
+              "elapsed": 0.0001
+            },
+            "X19_C0": {
+              "score": 327,
+              "best_move": "c4d5",
+              "nodes": 166,
+              "elapsed": 0.0001
+            },
+            "X20_C1": {
+              "score": 327,
+              "best_move": "c4d5",
+              "nodes": 166,
+              "elapsed": 0.0001
+            },
+            "X20_C2": {
+              "score": 327,
+              "best_move": "c4d5",
+              "nodes": 166,
+              "elapsed": 0.0001
+            },
+            "X20_C3": {
+              "score": 327,
+              "best_move": "c4d5",
+              "nodes": 166,
+              "elapsed": 0.0001
+            }
+          }
+        },
+        {
+          "id": "King_check",
+          "depth": 2,
+          "reference_score": -121,
+          "orderings": {
+            "X7_legacy": {
+              "score": -121,
+              "best_move": "b5c6",
+              "nodes": 144,
+              "elapsed": 0.0001
+            },
+            "X19_C0": {
+              "score": -121,
+              "best_move": "b5c6",
+              "nodes": 144,
+              "elapsed": 0.0001
+            },
+            "X20_C1": {
+              "score": -121,
+              "best_move": "b5c6",
+              "nodes": 144,
+              "elapsed": 0.0001
+            },
+            "X20_C2": {
+              "score": -121,
+              "best_move": "b5c6",
+              "nodes": 144,
+              "elapsed": 0.0001
+            },
+            "X20_C3": {
+              "score": -121,
+              "best_move": "b5c6",
+              "nodes": 144,
+              "elapsed": 0.0001
+            }
+          }
+        },
+        {
+          "id": "Pin_pressure",
+          "depth": 2,
+          "reference_score": -136,
+          "orderings": {
+            "X7_legacy": {
+              "score": -136,
+              "best_move": "c3a4",
+              "nodes": 319,
+              "elapsed": 0.0002
+            },
+            "X19_C0": {
+              "score": -136,
+              "best_move": "c3a4",
+              "nodes": 319,
+              "elapsed": 0.0002
+            },
+            "X20_C1": {
+              "score": -136,
+              "best_move": "c3a4",
+              "nodes": 319,
+              "elapsed": 0.0002
+            },
+            "X20_C2": {
+              "score": -136,
+              "best_move": "c3a4",
+              "nodes": 319,
+              "elapsed": 0.0002
+            },
+            "X20_C3": {
+              "score": -136,
+              "best_move": "c3a4",
+              "nodes": 319,
+              "elapsed": 0.0002
+            }
+          }
+        },
+        {
+          "id": "En_passant",
+          "depth": 2,
+          "reference_score": 45,
+          "orderings": {
+            "X7_legacy": {
+              "score": 45,
+              "best_move": "d1h5",
+              "nodes": 255,
+              "elapsed": 0.0002
+            },
+            "X19_C0": {
+              "score": 45,
+              "best_move": "d1h5",
+              "nodes": 238,
+              "elapsed": 0.0002
+            },
+            "X20_C1": {
+              "score": 45,
+              "best_move": "d1h5",
+              "nodes": 238,
+              "elapsed": 0.0001
+            },
+            "X20_C2": {
+              "score": 45,
+              "best_move": "d1h5",
+              "nodes": 238,
+              "elapsed": 0.0001
+            },
+            "X20_C3": {
+              "score": 45,
+              "best_move": "d1h5",
+              "nodes": 238,
+              "elapsed": 0.0001
+            }
+          }
+        },
+        {
+          "id": "Promotion_adjacent",
+          "depth": 2,
+          "reference_score": 925,
+          "orderings": {
+            "X7_legacy": {
+              "score": 925,
+              "best_move": "e7e8q",
+              "nodes": 31,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 925,
+              "best_move": "e7e8q",
+              "nodes": 31,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 925,
+              "best_move": "e7e8q",
+              "nodes": 31,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 925,
+              "best_move": "e7e8q",
+              "nodes": 31,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 925,
+              "best_move": "e7e8q",
+              "nodes": 31,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Endgame_pawns",
+          "depth": 2,
+          "reference_score": 25,
+          "orderings": {
+            "X7_legacy": {
+              "score": 25,
+              "best_move": "e2f1",
+              "nodes": 30,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 25,
+              "best_move": "e2f1",
+              "nodes": 30,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 25,
+              "best_move": "e2f1",
+              "nodes": 30,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 25,
+              "best_move": "e2f1",
+              "nodes": 30,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 25,
+              "best_move": "e2f1",
+              "nodes": 30,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Endgame_minor",
+          "depth": 2,
+          "reference_score": 0,
+          "orderings": {
+            "X7_legacy": {
+              "score": 0,
+              "best_move": "e4c5",
+              "nodes": 61,
+              "elapsed": 0.0001
+            },
+            "X19_C0": {
+              "score": 0,
+              "best_move": "e4c5",
+              "nodes": 57,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 0,
+              "best_move": "e4c5",
+              "nodes": 57,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 0,
+              "best_move": "e4c5",
+              "nodes": 57,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 0,
+              "best_move": "e4c5",
+              "nodes": 57,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Heavy_pieces",
+          "depth": 2,
+          "reference_score": 28999,
+          "orderings": {
+            "X7_legacy": {
+              "score": 28999,
+              "best_move": "e1e8",
+              "nodes": 61,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 28999,
+              "best_move": "e1e8",
+              "nodes": 61,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 28999,
+              "best_move": "e1e8",
+              "nodes": 61,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 28999,
+              "best_move": "e1e8",
+              "nodes": 61,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 28999,
+              "best_move": "e1e8",
+              "nodes": 61,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "G12_crisis",
+          "depth": 2,
+          "reference_score": -195,
+          "orderings": {
+            "X7_legacy": {
+              "score": -195,
+              "best_move": "b7b6",
+              "nodes": 240,
+              "elapsed": 0.0002
+            },
+            "X19_C0": {
+              "score": -195,
+              "best_move": "b7b6",
+              "nodes": 194,
+              "elapsed": 0.0001
+            },
+            "X20_C1": {
+              "score": -195,
+              "best_move": "b7b6",
+              "nodes": 194,
+              "elapsed": 0.0001
+            },
+            "X20_C2": {
+              "score": -195,
+              "best_move": "b7b6",
+              "nodes": 194,
+              "elapsed": 0.0001
+            },
+            "X20_C3": {
+              "score": -195,
+              "best_move": "b7b6",
+              "nodes": 194,
+              "elapsed": 0.0001
+            }
+          }
+        },
+        {
+          "id": "Queen_clash",
+          "depth": 2,
+          "reference_score": -141,
+          "orderings": {
+            "X7_legacy": {
+              "score": -141,
+              "best_move": "h1h2",
+              "nodes": 40,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": -141,
+              "best_move": "h1h2",
+              "nodes": 40,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": -141,
+              "best_move": "h1h2",
+              "nodes": 40,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": -141,
+              "best_move": "h1h2",
+              "nodes": 40,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": -141,
+              "best_move": "h1h2",
+              "nodes": 40,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Middlegame_clash",
+          "depth": 2,
+          "reference_score": 67,
+          "orderings": {
+            "X7_legacy": {
+              "score": 67,
+              "best_move": "d4c6",
+              "nodes": 171,
+              "elapsed": 0.0001
+            },
+            "X19_C0": {
+              "score": 67,
+              "best_move": "d4c6",
+              "nodes": 171,
+              "elapsed": 0.0001
+            },
+            "X20_C1": {
+              "score": 67,
+              "best_move": "d4c6",
+              "nodes": 171,
+              "elapsed": 0.0001
+            },
+            "X20_C2": {
+              "score": 67,
+              "best_move": "d4c6",
+              "nodes": 171,
+              "elapsed": 0.0001
+            },
+            "X20_C3": {
+              "score": 67,
+              "best_move": "d4c6",
+              "nodes": 171,
+              "elapsed": 0.0001
+            }
+          }
+        },
+        {
+          "id": "Quiet_maneuver",
+          "depth": 2,
+          "reference_score": 44,
+          "orderings": {
+            "X7_legacy": {
+              "score": 44,
+              "best_move": "e1f1",
+              "nodes": 30,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 44,
+              "best_move": "e1f1",
+              "nodes": 22,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 44,
+              "best_move": "e1f1",
+              "nodes": 22,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 44,
+              "best_move": "e1f1",
+              "nodes": 22,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 44,
+              "best_move": "e1f1",
+              "nodes": 22,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Check_pressure",
+          "depth": 2,
+          "reference_score": 598,
+          "orderings": {
+            "X7_legacy": {
+              "score": 598,
+              "best_move": "f3h4",
+              "nodes": 123,
+              "elapsed": 0.0001
+            },
+            "X19_C0": {
+              "score": 598,
+              "best_move": "f3h4",
+              "nodes": 123,
+              "elapsed": 0.0001
+            },
+            "X20_C1": {
+              "score": 598,
+              "best_move": "f3h4",
+              "nodes": 123,
+              "elapsed": 0.0001
+            },
+            "X20_C2": {
+              "score": 598,
+              "best_move": "f3h4",
+              "nodes": 123,
+              "elapsed": 0.0001
+            },
+            "X20_C3": {
+              "score": 598,
+              "best_move": "f3h4",
+              "nodes": 123,
+              "elapsed": 0.0001
+            }
+          }
+        }
+      ],
+      "depth_3": [
+        {
+          "id": "Startpos",
+          "depth": 3,
+          "reference_score": 64,
+          "orderings": {
+            "X7_legacy": {
+              "score": 64,
+              "best_move": "b1c3",
+              "nodes": 704,
+              "elapsed": 0.0005
+            },
+            "X19_C0": {
+              "score": 64,
+              "best_move": "b1c3",
+              "nodes": 603,
+              "elapsed": 0.0004
+            },
+            "X20_C1": {
+              "score": 64,
+              "best_move": "b1c3",
+              "nodes": 603,
+              "elapsed": 0.0003
+            },
+            "X20_C2": {
+              "score": 64,
+              "best_move": "b1c3",
+              "nodes": 603,
+              "elapsed": 0.0003
+            },
+            "X20_C3": {
+              "score": 64,
+              "best_move": "b1c3",
+              "nodes": 603,
+              "elapsed": 0.0003
+            }
+          }
+        },
+        {
+          "id": "Open_tactical",
+          "depth": 3,
+          "reference_score": 146,
+          "orderings": {
+            "X7_legacy": {
+              "score": 146,
+              "best_move": "b5c6",
+              "nodes": 1345,
+              "elapsed": 0.001
+            },
+            "X19_C0": {
+              "score": 146,
+              "best_move": "b5c6",
+              "nodes": 1167,
+              "elapsed": 0.0008
+            },
+            "X20_C1": {
+              "score": 146,
+              "best_move": "b5c6",
+              "nodes": 1167,
+              "elapsed": 0.0008
+            },
+            "X20_C2": {
+              "score": 146,
+              "best_move": "b5c6",
+              "nodes": 1167,
+              "elapsed": 0.0008
+            },
+            "X20_C3": {
+              "score": 146,
+              "best_move": "b5c6",
+              "nodes": 1167,
+              "elapsed": 0.0008
+            }
+          }
+        },
+        {
+          "id": "Closed_position",
+          "depth": 3,
+          "reference_score": 479,
+          "orderings": {
+            "X7_legacy": {
+              "score": 479,
+              "best_move": "c4c5",
+              "nodes": 1600,
+              "elapsed": 0.001
+            },
+            "X19_C0": {
+              "score": 479,
+              "best_move": "c4c5",
+              "nodes": 1603,
+              "elapsed": 0.001
+            },
+            "X20_C1": {
+              "score": 479,
+              "best_move": "c4c5",
+              "nodes": 1594,
+              "elapsed": 0.001
+            },
+            "X20_C2": {
+              "score": 479,
+              "best_move": "c4c5",
+              "nodes": 1594,
+              "elapsed": 0.001
+            },
+            "X20_C3": {
+              "score": 479,
+              "best_move": "c4c5",
+              "nodes": 1594,
+              "elapsed": 0.001
+            }
+          }
+        },
+        {
+          "id": "King_check",
+          "depth": 3,
+          "reference_score": 49,
+          "orderings": {
+            "X7_legacy": {
+              "score": 49,
+              "best_move": "f3e5",
+              "nodes": 1624,
+              "elapsed": 0.0012
+            },
+            "X19_C0": {
+              "score": 49,
+              "best_move": "f3e5",
+              "nodes": 1542,
+              "elapsed": 0.0012
+            },
+            "X20_C1": {
+              "score": 49,
+              "best_move": "f3e5",
+              "nodes": 1542,
+              "elapsed": 0.0011
+            },
+            "X20_C2": {
+              "score": 49,
+              "best_move": "f3e5",
+              "nodes": 1542,
+              "elapsed": 0.0011
+            },
+            "X20_C3": {
+              "score": 49,
+              "best_move": "f3e5",
+              "nodes": 1542,
+              "elapsed": 0.0011
+            }
+          }
+        },
+        {
+          "id": "Pin_pressure",
+          "depth": 3,
+          "reference_score": 131,
+          "orderings": {
+            "X7_legacy": {
+              "score": 131,
+              "best_move": "e2c4",
+              "nodes": 3759,
+              "elapsed": 0.0026
+            },
+            "X19_C0": {
+              "score": 131,
+              "best_move": "e2c4",
+              "nodes": 4416,
+              "elapsed": 0.003
+            },
+            "X20_C1": {
+              "score": 131,
+              "best_move": "e2c4",
+              "nodes": 4416,
+              "elapsed": 0.003
+            },
+            "X20_C2": {
+              "score": 131,
+              "best_move": "e2c4",
+              "nodes": 4416,
+              "elapsed": 0.003
+            },
+            "X20_C3": {
+              "score": 131,
+              "best_move": "e2c4",
+              "nodes": 4416,
+              "elapsed": 0.0032
+            }
+          }
+        },
+        {
+          "id": "En_passant",
+          "depth": 3,
+          "reference_score": 168,
+          "orderings": {
+            "X7_legacy": {
+              "score": 168,
+              "best_move": "f1b5",
+              "nodes": 2164,
+              "elapsed": 0.0014
+            },
+            "X19_C0": {
+              "score": 168,
+              "best_move": "f1b5",
+              "nodes": 1544,
+              "elapsed": 0.001
+            },
+            "X20_C1": {
+              "score": 168,
+              "best_move": "f1b5",
+              "nodes": 1542,
+              "elapsed": 0.001
+            },
+            "X20_C2": {
+              "score": 168,
+              "best_move": "f1b5",
+              "nodes": 1542,
+              "elapsed": 0.001
+            },
+            "X20_C3": {
+              "score": 168,
+              "best_move": "f1b5",
+              "nodes": 1542,
+              "elapsed": 0.001
+            }
+          }
+        },
+        {
+          "id": "Promotion_adjacent",
+          "depth": 3,
+          "reference_score": 935,
+          "orderings": {
+            "X7_legacy": {
+              "score": 935,
+              "best_move": "e7e8q",
+              "nodes": 167,
+              "elapsed": 0.0001
+            },
+            "X19_C0": {
+              "score": 935,
+              "best_move": "e7e8q",
+              "nodes": 153,
+              "elapsed": 0.0001
+            },
+            "X20_C1": {
+              "score": 935,
+              "best_move": "e7e8q",
+              "nodes": 153,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 935,
+              "best_move": "e7e8q",
+              "nodes": 153,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 935,
+              "best_move": "e7e8q",
+              "nodes": 153,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Endgame_pawns",
+          "depth": 3,
+          "reference_score": 41,
+          "orderings": {
+            "X7_legacy": {
+              "score": 41,
+              "best_move": "e2f1",
+              "nodes": 126,
+              "elapsed": 0.0
+            },
+            "X19_C0": {
+              "score": 41,
+              "best_move": "e2f1",
+              "nodes": 110,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 41,
+              "best_move": "e2f1",
+              "nodes": 110,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 41,
+              "best_move": "e2f1",
+              "nodes": 110,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 41,
+              "best_move": "e2f1",
+              "nodes": 110,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Endgame_minor",
+          "depth": 3,
+          "reference_score": 4,
+          "orderings": {
+            "X7_legacy": {
+              "score": 4,
+              "best_move": "e2f1",
+              "nodes": 307,
+              "elapsed": 0.0001
+            },
+            "X19_C0": {
+              "score": 4,
+              "best_move": "e2f1",
+              "nodes": 228,
+              "elapsed": 0.0001
+            },
+            "X20_C1": {
+              "score": 4,
+              "best_move": "e2f1",
+              "nodes": 228,
+              "elapsed": 0.0001
+            },
+            "X20_C2": {
+              "score": 4,
+              "best_move": "e2f1",
+              "nodes": 228,
+              "elapsed": 0.0001
+            },
+            "X20_C3": {
+              "score": 4,
+              "best_move": "e2f1",
+              "nodes": 228,
+              "elapsed": 0.0001
+            }
+          }
+        },
+        {
+          "id": "Heavy_pieces",
+          "depth": 3,
+          "reference_score": 28999,
+          "orderings": {
+            "X7_legacy": {
+              "score": 28999,
+              "best_move": "e1e8",
+              "nodes": 249,
+              "elapsed": 0.0001
+            },
+            "X19_C0": {
+              "score": 28999,
+              "best_move": "e1e8",
+              "nodes": 249,
+              "elapsed": 0.0001
+            },
+            "X20_C1": {
+              "score": 28999,
+              "best_move": "e1e8",
+              "nodes": 249,
+              "elapsed": 0.0001
+            },
+            "X20_C2": {
+              "score": 28999,
+              "best_move": "e1e8",
+              "nodes": 249,
+              "elapsed": 0.0001
+            },
+            "X20_C3": {
+              "score": 28999,
+              "best_move": "e1e8",
+              "nodes": 249,
+              "elapsed": 0.0001
+            }
+          }
+        },
+        {
+          "id": "G12_crisis",
+          "depth": 3,
+          "reference_score": 111,
+          "orderings": {
+            "X7_legacy": {
+              "score": 111,
+              "best_move": "c8d7",
+              "nodes": 2035,
+              "elapsed": 0.0014
+            },
+            "X19_C0": {
+              "score": 111,
+              "best_move": "c8d7",
+              "nodes": 2209,
+              "elapsed": 0.0015
+            },
+            "X20_C1": {
+              "score": 111,
+              "best_move": "c8d7",
+              "nodes": 2207,
+              "elapsed": 0.0015
+            },
+            "X20_C2": {
+              "score": 111,
+              "best_move": "c8d7",
+              "nodes": 2207,
+              "elapsed": 0.0016
+            },
+            "X20_C3": {
+              "score": 111,
+              "best_move": "c8d7",
+              "nodes": 2207,
+              "elapsed": 0.0015
+            }
+          }
+        },
+        {
+          "id": "Queen_clash",
+          "depth": 3,
+          "reference_score": 286,
+          "orderings": {
+            "X7_legacy": {
+              "score": 286,
+              "best_move": "h1h2",
+              "nodes": 312,
+              "elapsed": 0.0002
+            },
+            "X19_C0": {
+              "score": 286,
+              "best_move": "h1h2",
+              "nodes": 280,
+              "elapsed": 0.0002
+            },
+            "X20_C1": {
+              "score": 286,
+              "best_move": "h1h2",
+              "nodes": 280,
+              "elapsed": 0.0002
+            },
+            "X20_C2": {
+              "score": 286,
+              "best_move": "h1h2",
+              "nodes": 280,
+              "elapsed": 0.0002
+            },
+            "X20_C3": {
+              "score": 286,
+              "best_move": "h1h2",
+              "nodes": 280,
+              "elapsed": 0.0002
+            }
+          }
+        },
+        {
+          "id": "Middlegame_clash",
+          "depth": 3,
+          "reference_score": 200,
+          "orderings": {
+            "X7_legacy": {
+              "score": 200,
+              "best_move": "d4c6",
+              "nodes": 2336,
+              "elapsed": 0.0016
+            },
+            "X19_C0": {
+              "score": 200,
+              "best_move": "d4c6",
+              "nodes": 2147,
+              "elapsed": 0.0014
+            },
+            "X20_C1": {
+              "score": 200,
+              "best_move": "d4c6",
+              "nodes": 2147,
+              "elapsed": 0.0014
+            },
+            "X20_C2": {
+              "score": 200,
+              "best_move": "d4c6",
+              "nodes": 2147,
+              "elapsed": 0.0014
+            },
+            "X20_C3": {
+              "score": 200,
+              "best_move": "d4c6",
+              "nodes": 2147,
+              "elapsed": 0.0014
+            }
+          }
+        },
+        {
+          "id": "Quiet_maneuver",
+          "depth": 3,
+          "reference_score": 44,
+          "orderings": {
+            "X7_legacy": {
+              "score": 44,
+              "best_move": "e1d1",
+              "nodes": 111,
+              "elapsed": 0.0001
+            },
+            "X19_C0": {
+              "score": 44,
+              "best_move": "e1d1",
+              "nodes": 89,
+              "elapsed": 0.0
+            },
+            "X20_C1": {
+              "score": 44,
+              "best_move": "e1d1",
+              "nodes": 89,
+              "elapsed": 0.0
+            },
+            "X20_C2": {
+              "score": 44,
+              "best_move": "e1d1",
+              "nodes": 89,
+              "elapsed": 0.0
+            },
+            "X20_C3": {
+              "score": 44,
+              "best_move": "e1d1",
+              "nodes": 89,
+              "elapsed": 0.0
+            }
+          }
+        },
+        {
+          "id": "Check_pressure",
+          "depth": 3,
+          "reference_score": 736,
+          "orderings": {
+            "X7_legacy": {
+              "score": 736,
+              "best_move": "f3h4",
+              "nodes": 1250,
+              "elapsed": 0.0009
+            },
+            "X19_C0": {
+              "score": 736,
+              "best_move": "f3h4",
+              "nodes": 1244,
+              "elapsed": 0.0009
+            },
+            "X20_C1": {
+              "score": 736,
+              "best_move": "f3h4",
+              "nodes": 1244,
+              "elapsed": 0.0008
+            },
+            "X20_C2": {
+              "score": 736,
+              "best_move": "f3h4",
+              "nodes": 1244,
+              "elapsed": 0.0008
+            },
+            "X20_C3": {
+              "score": 736,
+              "best_move": "f3h4",
+              "nodes": 1244,
+              "elapsed": 0.0008
+            }
+          }
+        }
+      ],
+      "depth_4": [
+        {
+          "id": "Startpos",
+          "depth": 4,
+          "reference_score": 0,
+          "orderings": {
+            "X7_legacy": {
+              "score": 0,
+              "best_move": "b1c3",
+              "nodes": 2151,
+              "elapsed": 0.0014
+            },
+            "X19_C0": {
+              "score": 0,
+              "best_move": "b1c3",
+              "nodes": 2011,
+              "elapsed": 0.0012
+            },
+            "X20_C1": {
+              "score": 0,
+              "best_move": "b1c3",
+              "nodes": 2011,
+              "elapsed": 0.0011
+            },
+            "X20_C2": {
+              "score": 0,
+              "best_move": "b1c3",
+              "nodes": 2011,
+              "elapsed": 0.0011
+            },
+            "X20_C3": {
+              "score": 0,
+              "best_move": "b1c3",
+              "nodes": 2011,
+              "elapsed": 0.0011
+            }
+          }
+        },
+        {
+          "id": "Open_tactical",
+          "depth": 4,
+          "reference_score": 14,
+          "orderings": {
+            "X7_legacy": {
+              "score": 14,
+              "best_move": "e1g1",
+              "nodes": 8540,
+              "elapsed": 0.0063
+            },
+            "X19_C0": {
+              "score": 14,
+              "best_move": "e1g1",
+              "nodes": 8239,
+              "elapsed": 0.0059
+            },
+            "X20_C1": {
+              "score": 14,
+              "best_move": "e1g1",
+              "nodes": 8239,
+              "elapsed": 0.0058
+            },
+            "X20_C2": {
+              "score": 14,
+              "best_move": "e1g1",
+              "nodes": 8239,
+              "elapsed": 0.0058
+            },
+            "X20_C3": {
+              "score": 14,
+              "best_move": "e1g1",
+              "nodes": 8239,
+              "elapsed": 0.0063
+            }
+          }
+        },
+        {
+          "id": "Closed_position",
+          "depth": 4,
+          "reference_score": 276,
+          "orderings": {
+            "X7_legacy": {
+              "score": 276,
+              "best_move": "c4d5",
+              "nodes": 12437,
+              "elapsed": 0.008
+            },
+            "X19_C0": {
+              "score": 276,
+              "best_move": "c4d5",
+              "nodes": 10441,
+              "elapsed": 0.0071
+            },
+            "X20_C1": {
+              "score": 276,
+              "best_move": "c4d5",
+              "nodes": 9953,
+              "elapsed": 0.0061
+            },
+            "X20_C2": {
+              "score": 276,
+              "best_move": "c4d5",
+              "nodes": 9953,
+              "elapsed": 0.0068
+            },
+            "X20_C3": {
+              "score": 276,
+              "best_move": "c4d5",
+              "nodes": 9953,
+              "elapsed": 0.0065
+            }
+          }
+        },
+        {
+          "id": "King_check",
+          "depth": 4,
+          "reference_score": -153,
+          "orderings": {
+            "X7_legacy": {
+              "score": -153,
+              "best_move": "d4e5",
+              "nodes": 8893,
+              "elapsed": 0.0061
+            },
+            "X19_C0": {
+              "score": -153,
+              "best_move": "d4e5",
+              "nodes": 7192,
+              "elapsed": 0.0051
+            },
+            "X20_C1": {
+              "score": -153,
+              "best_move": "d4e5",
+              "nodes": 7192,
+              "elapsed": 0.0046
+            },
+            "X20_C2": {
+              "score": -153,
+              "best_move": "d4e5",
+              "nodes": 7192,
+              "elapsed": 0.0046
+            },
+            "X20_C3": {
+              "score": -153,
+              "best_move": "d4e5",
+              "nodes": 7192,
+              "elapsed": 0.0052
+            }
+          }
+        },
+        {
+          "id": "Pin_pressure",
+          "depth": 4,
+          "reference_score": -184,
+          "orderings": {
+            "X7_legacy": {
+              "score": -184,
+              "best_move": "e2c4",
+              "nodes": 16428,
+              "elapsed": 0.0116
+            },
+            "X19_C0": {
+              "score": -184,
+              "best_move": "e2c4",
+              "nodes": 13185,
+              "elapsed": 0.0091
+            },
+            "X20_C1": {
+              "score": -184,
+              "best_move": "e2c4",
+              "nodes": 13095,
+              "elapsed": 0.0086
+            },
+            "X20_C2": {
+              "score": -184,
+              "best_move": "e2c4",
+              "nodes": 12925,
+              "elapsed": 0.0089
+            },
+            "X20_C3": {
+              "score": -184,
+              "best_move": "e2c4",
+              "nodes": 12952,
+              "elapsed": 0.0085
+            }
+          }
+        },
+        {
+          "id": "En_passant",
+          "depth": 4,
+          "reference_score": 53,
+          "orderings": {
+            "X7_legacy": {
+              "score": 53,
+              "best_move": "b1c3",
+              "nodes": 5903,
+              "elapsed": 0.0042
+            },
+            "X19_C0": {
+              "score": 53,
+              "best_move": "b1c3",
+              "nodes": 5518,
+              "elapsed": 0.0035
+            },
+            "X20_C1": {
+              "score": 53,
+              "best_move": "b1c3",
+              "nodes": 5486,
+              "elapsed": 0.0034
+            },
+            "X20_C2": {
+              "score": 53,
+              "best_move": "b1c3",
+              "nodes": 5518,
+              "elapsed": 0.0037
+            },
+            "X20_C3": {
+              "score": 53,
+              "best_move": "b1c3",
+              "nodes": 5486,
+              "elapsed": 0.0036
+            }
+          }
+        },
+        {
+          "id": "Promotion_adjacent",
+          "depth": 4,
+          "reference_score": 935,
+          "orderings": {
+            "X7_legacy": {
+              "score": 935,
+              "best_move": "e7e8q",
+              "nodes": 461,
+              "elapsed": 0.0002
+            },
+            "X19_C0": {
+              "score": 935,
+              "best_move": "e7e8q",
+              "nodes": 425,
+              "elapsed": 0.0001
+            },
+            "X20_C1": {
+              "score": 935,
+              "best_move": "e7e8q",
+              "nodes": 425,
+              "elapsed": 0.0001
+            },
+            "X20_C2": {
+              "score": 935,
+              "best_move": "e7e8q",
+              "nodes": 425,
+              "elapsed": 0.0001
+            },
+            "X20_C3": {
+              "score": 935,
+              "best_move": "e7e8q",
+              "nodes": 425,
+              "elapsed": 0.0001
+            }
+          }
+        },
+        {
+          "id": "Endgame_pawns",
+          "depth": 4,
+          "reference_score": 25,
+          "orderings": {
+            "X7_legacy": {
+              "score": 25,
+              "best_move": "e2f1",
+              "nodes": 298,
+              "elapsed": 0.0001
+            },
+            "X19_C0": {
+              "score": 25,
+              "best_move": "e2f1",
+              "nodes": 271,
+              "elapsed": 0.0001
+            },
+            "X20_C1": {
+              "score": 25,
+              "best_move": "e2f1",
+              "nodes": 271,
+              "elapsed": 0.0001
+            },
+            "X20_C2": {
+              "score": 25,
+              "best_move": "e2f1",
+              "nodes": 271,
+              "elapsed": 0.0001
+            },
+            "X20_C3": {
+              "score": 25,
+              "best_move": "e2f1",
+              "nodes": 271,
+              "elapsed": 0.0001
+            }
+          }
+        },
+        {
+          "id": "Endgame_minor",
+          "depth": 4,
+          "reference_score": 0,
+          "orderings": {
+            "X7_legacy": {
+              "score": 0,
+              "best_move": "e2f1",
+              "nodes": 969,
+              "elapsed": 0.0004
+            },
+            "X19_C0": {
+              "score": 0,
+              "best_move": "e2f1",
+              "nodes": 847,
+              "elapsed": 0.0003
+            },
+            "X20_C1": {
+              "score": 0,
+              "best_move": "e2f1",
+              "nodes": 846,
+              "elapsed": 0.0003
+            },
+            "X20_C2": {
+              "score": 0,
+              "best_move": "e2f1",
+              "nodes": 846,
+              "elapsed": 0.0003
+            },
+            "X20_C3": {
+              "score": 0,
+              "best_move": "e2f1",
+              "nodes": 846,
+              "elapsed": 0.0003
+            }
+          }
+        },
+        {
+          "id": "Heavy_pieces",
+          "depth": 4,
+          "reference_score": 28999,
+          "orderings": {
+            "X7_legacy": {
+              "score": 28999,
+              "best_move": "e1e8",
+              "nodes": 585,
+              "elapsed": 0.0003
+            },
+            "X19_C0": {
+              "score": 28999,
+              "best_move": "e1e8",
+              "nodes": 585,
+              "elapsed": 0.0002
+            },
+            "X20_C1": {
+              "score": 28999,
+              "best_move": "e1e8",
+              "nodes": 585,
+              "elapsed": 0.0002
+            },
+            "X20_C2": {
+              "score": 28999,
+              "best_move": "e1e8",
+              "nodes": 585,
+              "elapsed": 0.0002
+            },
+            "X20_C3": {
+              "score": 28999,
+              "best_move": "e1e8",
+              "nodes": 585,
+              "elapsed": 0.0002
+            }
+          }
+        },
+        {
+          "id": "G12_crisis",
+          "depth": 4,
+          "reference_score": -262,
+          "orderings": {
+            "X7_legacy": {
+              "score": -262,
+              "best_move": "b7b5",
+              "nodes": 18392,
+              "elapsed": 0.0121
+            },
+            "X19_C0": {
+              "score": -262,
+              "best_move": "b7b5",
+              "nodes": 15266,
+              "elapsed": 0.0103
+            },
+            "X20_C1": {
+              "score": -262,
+              "best_move": "b7b5",
+              "nodes": 14748,
+              "elapsed": 0.0101
+            },
+            "X20_C2": {
+              "score": -262,
+              "best_move": "b7b5",
+              "nodes": 14710,
+              "elapsed": 0.0101
+            },
+            "X20_C3": {
+              "score": -262,
+              "best_move": "b7b5",
+              "nodes": 14748,
+              "elapsed": 0.0098
+            }
+          }
+        },
+        {
+          "id": "Queen_clash",
+          "depth": 4,
+          "reference_score": -85,
+          "orderings": {
+            "X7_legacy": {
+              "score": -85,
+              "best_move": "h1h2",
+              "nodes": 1518,
+              "elapsed": 0.001
+            },
+            "X19_C0": {
+              "score": -85,
+              "best_move": "h1h2",
+              "nodes": 1434,
+              "elapsed": 0.0009
+            },
+            "X20_C1": {
+              "score": -85,
+              "best_move": "h1h2",
+              "nodes": 1434,
+              "elapsed": 0.0009
+            },
+            "X20_C2": {
+              "score": -85,
+              "best_move": "h1h2",
+              "nodes": 1404,
+              "elapsed": 0.0009
+            },
+            "X20_C3": {
+              "score": -85,
+              "best_move": "h1h2",
+              "nodes": 1404,
+              "elapsed": 0.0009
+            }
+          }
+        },
+        {
+          "id": "Middlegame_clash",
+          "depth": 4,
+          "reference_score": -47,
+          "orderings": {
+            "X7_legacy": {
+              "score": -47,
+              "best_move": "d4c6",
+              "nodes": 7817,
+              "elapsed": 0.0051
+            },
+            "X19_C0": {
+              "score": -47,
+              "best_move": "d4c6",
+              "nodes": 7035,
+              "elapsed": 0.0042
+            },
+            "X20_C1": {
+              "score": -47,
+              "best_move": "d4c6",
+              "nodes": 7035,
+              "elapsed": 0.004
+            },
+            "X20_C2": {
+              "score": -47,
+              "best_move": "d4c6",
+              "nodes": 7035,
+              "elapsed": 0.004
+            },
+            "X20_C3": {
+              "score": -47,
+              "best_move": "d4c6",
+              "nodes": 7035,
+              "elapsed": 0.0041
+            }
+          }
+        },
+        {
+          "id": "Quiet_maneuver",
+          "depth": 4,
+          "reference_score": 38,
+          "orderings": {
+            "X7_legacy": {
+              "score": 38,
+              "best_move": "e1d1",
+              "nodes": 347,
+              "elapsed": 0.0002
+            },
+            "X19_C0": {
+              "score": 38,
+              "best_move": "e1d1",
+              "nodes": 296,
+              "elapsed": 0.0001
+            },
+            "X20_C1": {
+              "score": 38,
+              "best_move": "e1d1",
+              "nodes": 296,
+              "elapsed": 0.0001
+            },
+            "X20_C2": {
+              "score": 38,
+              "best_move": "e1d1",
+              "nodes": 296,
+              "elapsed": 0.0001
+            },
+            "X20_C3": {
+              "score": 38,
+              "best_move": "e1d1",
+              "nodes": 296,
+              "elapsed": 0.0001
+            }
+          }
+        },
+        {
+          "id": "Check_pressure",
+          "depth": 4,
+          "reference_score": 602,
+          "orderings": {
+            "X7_legacy": {
+              "score": 602,
+              "best_move": "f3h4",
+              "nodes": 5091,
+              "elapsed": 0.0036
+            },
+            "X19_C0": {
+              "score": 602,
+              "best_move": "f3h4",
+              "nodes": 4848,
+              "elapsed": 0.0031
+            },
+            "X20_C1": {
+              "score": 602,
+              "best_move": "f3h4",
+              "nodes": 4844,
+              "elapsed": 0.0031
+            },
+            "X20_C2": {
+              "score": 602,
+              "best_move": "f3h4",
+              "nodes": 4844,
+              "elapsed": 0.0031
+            },
+            "X20_C3": {
+              "score": 602,
+              "best_move": "f3h4",
+              "nodes": 4844,
+              "elapsed": 0.0034
+            }
+          }
+        }
+      ]
+    }
+  },
+  "selective_search_comparison": {
+    "X7_1T": {
+      "total_nodes": 347769,
+      "total_elapsed_seconds": 0.2395,
+      "nps": 1452274,
+      "positions": [
+        {
+          "id": "Startpos",
+          "score": 0,
+          "best_move": "b1c3",
+          "nodes": 29550,
+          "elapsed": 0.0165
+        },
+        {
+          "id": "Open_tactical",
+          "score": 136,
+          "best_move": "c1d2",
+          "nodes": 12516,
+          "elapsed": 0.008
+        },
+        {
+          "id": "Closed_position",
+          "score": 364,
+          "best_move": "c4c5",
+          "nodes": 69917,
+          "elapsed": 0.0555
+        },
+        {
+          "id": "King_check",
+          "score": -28,
+          "best_move": "d1d3",
+          "nodes": 23878,
+          "elapsed": 0.0188
+        },
+        {
+          "id": "Pin_pressure",
+          "score": 25,
+          "best_move": "e2b5",
+          "nodes": 57130,
+          "elapsed": 0.0432
+        },
+        {
+          "id": "En_passant",
+          "score": 72,
+          "best_move": "g1f3",
+          "nodes": 30953,
+          "elapsed": 0.0173
+        },
+        {
+          "id": "Promotion_adjacent",
+          "score": 949,
+          "best_move": "e1f1",
+          "nodes": 2735,
+          "elapsed": 0.0011
+        },
+        {
+          "id": "Endgame_pawns",
+          "score": 25,
+          "best_move": "e2f1",
+          "nodes": 1492,
+          "elapsed": 0.0004
+        },
+        {
+          "id": "Endgame_minor",
+          "score": 0,
+          "best_move": "e2f1",
+          "nodes": 2859,
+          "elapsed": 0.001
+        },
+        {
+          "id": "Heavy_pieces",
+          "score": 28999,
+          "best_move": "e1e8",
+          "nodes": 3879,
+          "elapsed": 0.001
+        },
+        {
+          "id": "G12_crisis",
+          "score": -243,
+          "best_move": "e8e7",
+          "nodes": 56568,
+          "elapsed": 0.0384
+        },
+        {
+          "id": "Queen_clash",
+          "score": 156,
+          "best_move": "h1h2",
+          "nodes": 4311,
+          "elapsed": 0.0029
+        },
+        {
+          "id": "Middlegame_clash",
+          "score": 55,
+          "best_move": "d4c6",
+          "nodes": 35566,
+          "elapsed": 0.0252
+        },
+        {
+          "id": "Quiet_maneuver",
+          "score": 40,
+          "best_move": "f2f4",
+          "nodes": 1172,
+          "elapsed": 0.0004
+        },
+        {
+          "id": "Check_pressure",
+          "score": 682,
+          "best_move": "f3h4",
+          "nodes": 15243,
+          "elapsed": 0.0098
+        }
+      ]
+    },
+    "X12_4T": {
+      "total_nodes": 290649,
+      "total_elapsed_seconds": 0.2175,
+      "nps": 1336274,
+      "positions": [
+        {
+          "id": "Startpos",
+          "score": 5,
+          "best_move": "g1f3",
+          "nodes": 20791,
+          "elapsed": 0.0104
+        },
+        {
+          "id": "Open_tactical",
+          "score": 172,
+          "best_move": "b5c6",
+          "nodes": 7682,
+          "elapsed": 0.0057
+        },
+        {
+          "id": "Closed_position",
+          "score": 374,
+          "best_move": "c4c5",
+          "nodes": 46185,
+          "elapsed": 0.0391
+        },
+        {
+          "id": "King_check",
+          "score": -23,
+          "best_move": "d1d3",
+          "nodes": 24944,
+          "elapsed": 0.023
+        },
+        {
+          "id": "Pin_pressure",
+          "score": 2,
+          "best_move": "e2b5",
+          "nodes": 42194,
+          "elapsed": 0.0335
+        },
+        {
+          "id": "En_passant",
+          "score": 86,
+          "best_move": "b1c3",
+          "nodes": 28233,
+          "elapsed": 0.0181
+        },
+        {
+          "id": "Promotion_adjacent",
+          "score": 973,
+          "best_move": "e7e8q",
+          "nodes": 3665,
+          "elapsed": 0.0013
+        },
+        {
+          "id": "Endgame_pawns",
+          "score": 25,
+          "best_move": "e2f1",
+          "nodes": 1794,
+          "elapsed": 0.0005
+        },
+        {
+          "id": "Endgame_minor",
+          "score": 0,
+          "best_move": "e4c5",
+          "nodes": 3741,
+          "elapsed": 0.0015
+        },
+        {
+          "id": "Heavy_pieces",
+          "score": 28999,
+          "best_move": "e1e8",
+          "nodes": 4491,
+          "elapsed": 0.0016
+        },
+        {
+          "id": "G12_crisis",
+          "score": -262,
+          "best_move": "e8e7",
+          "nodes": 61931,
+          "elapsed": 0.0456
+        },
+        {
+          "id": "Queen_clash",
+          "score": 199,
+          "best_move": "h1h2",
+          "nodes": 6296,
+          "elapsed": 0.0049
+        },
+        {
+          "id": "Middlegame_clash",
+          "score": 56,
+          "best_move": "d4c6",
+          "nodes": 29200,
+          "elapsed": 0.0262
+        },
+        {
+          "id": "Quiet_maneuver",
+          "score": 40,
+          "best_move": "f2f4",
+          "nodes": 1588,
+          "elapsed": 0.0005
+        },
+        {
+          "id": "Check_pressure",
+          "score": 669,
+          "best_move": "f3h4",
+          "nodes": 7914,
+          "elapsed": 0.0056
+        }
+      ]
+    },
+    "X19_1T": {
+      "total_nodes": 9499,
+      "total_elapsed_seconds": 0.0051,
+      "nps": 1880543,
+      "positions": [
+        {
+          "id": "Startpos",
+          "score": 0,
+          "best_move": "b1c3",
+          "nodes": 146,
+          "elapsed": 0.0001
+        },
+        {
+          "id": "Open_tactical",
+          "score": 136,
+          "best_move": "c1d2",
+          "nodes": 416,
+          "elapsed": 0.0003
+        },
+        {
+          "id": "Closed_position",
+          "score": 364,
+          "best_move": "c4c5",
+          "nodes": 420,
+          "elapsed": 0.0002
+        },
+        {
+          "id": "King_check",
+          "score": -28,
+          "best_move": "d1d3",
+          "nodes": 880,
+          "elapsed": 0.0007
+        },
+        {
+          "id": "Pin_pressure",
+          "score": 25,
+          "best_move": "e2b5",
+          "nodes": 1883,
+          "elapsed": 0.001
+        },
+        {
+          "id": "En_passant",
+          "score": 72,
+          "best_move": "g1f3",
+          "nodes": 1141,
+          "elapsed": 0.0007
+        },
+        {
+          "id": "Promotion_adjacent",
+          "score": 949,
+          "best_move": "e1f1",
+          "nodes": 948,
+          "elapsed": 0.0003
+        },
+        {
+          "id": "Endgame_pawns",
+          "score": 25,
+          "best_move": "e2f1",
+          "nodes": 69,
+          "elapsed": 0.0
+        },
+        {
+          "id": "Endgame_minor",
+          "score": 0,
+          "best_move": "e2f1",
+          "nodes": 103,
+          "elapsed": 0.0
+        },
+        {
+          "id": "Heavy_pieces",
+          "score": 28999,
+          "best_move": "e1e8",
+          "nodes": 146,
+          "elapsed": 0.0
+        },
+        {
+          "id": "G12_crisis",
+          "score": -243,
+          "best_move": "e8e7",
+          "nodes": 2504,
+          "elapsed": 0.0013
+        },
+        {
+          "id": "Queen_clash",
+          "score": 156,
+          "best_move": "h1h2",
+          "nodes": 20,
+          "elapsed": 0.0
+        },
+        {
+          "id": "Middlegame_clash",
+          "score": 55,
+          "best_move": "d4c6",
+          "nodes": 381,
+          "elapsed": 0.0002
+        },
+        {
+          "id": "Quiet_maneuver",
+          "score": 40,
+          "best_move": "f2f4",
+          "nodes": 149,
+          "elapsed": 0.0001
+        },
+        {
+          "id": "Check_pressure",
+          "score": 682,
+          "best_move": "f3h4",
+          "nodes": 293,
+          "elapsed": 0.0001
+        }
+      ]
+    },
+    "X20_1T_C1": {
+      "total_nodes": 5416,
+      "total_elapsed_seconds": 0.003,
+      "nps": 1819220,
+      "positions": [
+        {
+          "id": "Startpos",
+          "score": 0,
+          "best_move": "b1c3",
+          "nodes": 146,
+          "elapsed": 0.0
+        },
+        {
+          "id": "Open_tactical",
+          "score": 136,
+          "best_move": "c1d2",
+          "nodes": 375,
+          "elapsed": 0.0002
+        },
+        {
+          "id": "Closed_position",
+          "score": 364,
+          "best_move": "c4c5",
+          "nodes": 349,
+          "elapsed": 0.0002
+        },
+        {
+          "id": "King_check",
+          "score": -28,
+          "best_move": "d1d3",
+          "nodes": 1352,
+          "elapsed": 0.0009
+        },
+        {
+          "id": "Pin_pressure",
+          "score": 25,
+          "best_move": "e2b5",
+          "nodes": 770,
+          "elapsed": 0.0004
+        },
+        {
+          "id": "En_passant",
+          "score": 72,
+          "best_move": "g1f3",
+          "nodes": 460,
+          "elapsed": 0.0002
+        },
+        {
+          "id": "Promotion_adjacent",
+          "score": 949,
+          "best_move": "e1f1",
+          "nodes": 81,
+          "elapsed": 0.0
+        },
+        {
+          "id": "Endgame_pawns",
+          "score": 25,
+          "best_move": "e2f1",
+          "nodes": 62,
+          "elapsed": 0.0001
+        },
+        {
+          "id": "Endgame_minor",
+          "score": 0,
+          "best_move": "e2f1",
+          "nodes": 103,
+          "elapsed": 0.0
+        },
+        {
+          "id": "Heavy_pieces",
+          "score": 28999,
+          "best_move": "e1e8",
+          "nodes": 146,
+          "elapsed": 0.0
+        },
+        {
+          "id": "G12_crisis",
+          "score": -243,
+          "best_move": "e8e7",
+          "nodes": 729,
+          "elapsed": 0.0004
+        },
+        {
+          "id": "Queen_clash",
+          "score": 156,
+          "best_move": "h1h2",
+          "nodes": 20,
+          "elapsed": 0.0
+        },
+        {
+          "id": "Middlegame_clash",
+          "score": 55,
+          "best_move": "d4c6",
+          "nodes": 381,
+          "elapsed": 0.0002
+        },
+        {
+          "id": "Quiet_maneuver",
+          "score": 40,
+          "best_move": "f2f4",
+          "nodes": 149,
+          "elapsed": 0.0001
+        },
+        {
+          "id": "Check_pressure",
+          "score": 682,
+          "best_move": "f3h4",
+          "nodes": 293,
+          "elapsed": 0.0001
+        }
+      ]
+    }
+  }
+}

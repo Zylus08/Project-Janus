@@ -1,0 +1,57 @@
+{
+  "milestone": "P1.15",
+  "title": "Adaptive Capture Ordering, Search Completeness, History Reliability & Independent Strength Qualification",
+  "date": "2026-11-14 00:05:00",
+  "candidate": "Janus Classical X20 (563f1db)",
+  "candidate_sha256": "AF126A4D22C312F2AE61014A56005B9E9BAFD022F95A17DA81D81769048F7415",
+  "baselines": {
+    "1T": "Janus Classical X7 (b34e342, 86392A2F...)",
+    "4T": "Janus Classical X12 (78ca3d5, 00B4F5FE...)"
+  },
+  "historical_references": [
+    "Stockfish 4 (1128CAB8...)",
+    "Stockfish 11 (B004C03B...)",
+    "Janus Classical X19 (bcfdecd, CBB7785A...)"
+  ],
+  "ultimate_benchmark": "Stockfish 19 (edb0d9d, 45BC8E49..., unrestricted NNUE)",
+  "total_tournament_games": 420,
+  "verdict": "CATEGORY B \u2014 ENGINEERING PROGRESS, STRENGTH INCONCLUSIVE (Baselines X7 and X12 retained)",
+  "key_metrics": {
+    "match_1_x20_1t_vs_x7_1t_score_pct": 46.0,
+    "match_1_elo": -27.9,
+    "match_1_ci": [
+      36.57,
+      55.43
+    ],
+    "match_2_x20_1t_vs_x7_1t_slow_score_pct": 48.0,
+    "match_2_elo": -13.9,
+    "match_2_ci": [
+      39.09,
+      56.91
+    ],
+    "match_3_x20_4t_vs_x12_4t_score_pct": 46.5,
+    "match_3_elo": -24.4,
+    "match_3_ci": [
+      38.96,
+      54.04
+    ],
+    "match_4_x20_1t_vs_x19_1t_score_pct": 45.0,
+    "match_4_elo": -34.9,
+    "match_4_ci": [
+      34.04,
+      55.96
+    ],
+    "match_5_x20_1t_vs_sf4_score_pct": 3.75,
+    "match_5_draws": 3,
+    "match_6_x20_1t_vs_sf11_score_pct": 1.25,
+    "match_6_draws": 1,
+    "match_7_x20_1t_vs_sf19_score_pct": 1.25,
+    "match_7_draws": 1,
+    "movepicker_completeness_legal_pct": 100.0,
+    "see_suite_accuracy_pct": 100.0,
+    "exact_search_contract_match_pct": 100.0,
+    "first_move_cutoff_rate_bf1_pct": 98.96,
+    "node_reduction_vs_x7_pct": -98.58,
+    "slower_tc_degradation_pct": 0.0
+  }
+}

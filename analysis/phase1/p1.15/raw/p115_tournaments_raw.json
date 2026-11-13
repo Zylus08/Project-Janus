@@ -1,0 +1,247 @@
+{
+  "match1_x20s_vs_x7_fast": {
+    "match": "x20_1t_vs_x7_1t",
+    "engine_a": "Janus Classical X20-S (1T)",
+    "engine_b": "Janus Classical X7 (1T)",
+    "total_games": 100,
+    "pairs": 50,
+    "time_control": "1.0s + 0.05s",
+    "wins": 27,
+    "draws": 38,
+    "losses": 35,
+    "points": 46.0,
+    "score_pct": 46.0,
+    "elo": -27.9,
+    "wilson_ci_95": [
+      36.56,
+      55.74
+    ],
+    "paired_ci_95": [
+      36.57,
+      55.43
+    ],
+    "p_value_onesided": 0.79715,
+    "statistically_superior": false,
+    "pentanomial": {
+      "WW": 8,
+      "WD": 9,
+      "DD_WL": 9,
+      "LD": 15,
+      "LL": 9
+    },
+    "technical_incidents": {
+      "time_forfeits": 0,
+      "illegal_moves": 0
+    }
+  },
+  "match2_x20s_vs_x7_slow": {
+    "match": "x20_1t_vs_x7_1t_slow",
+    "engine_a": "Janus Classical X20-S (1T)",
+    "engine_b": "Janus Classical X7 (1T)",
+    "total_games": 50,
+    "pairs": 25,
+    "time_control": "2.5s + 0.1s",
+    "wins": 17,
+    "draws": 14,
+    "losses": 19,
+    "points": 24.0,
+    "score_pct": 48.0,
+    "elo": -13.9,
+    "wilson_ci_95": [
+      34.8,
+      61.49
+    ],
+    "paired_ci_95": [
+      39.09,
+      56.91
+    ],
+    "p_value_onesided": 0.67001,
+    "statistically_superior": false,
+    "pentanomial": {
+      "WW": 1,
+      "WD": 5,
+      "DD_WL": 11,
+      "LD": 7,
+      "LL": 1
+    },
+    "technical_incidents": {
+      "time_forfeits": 0,
+      "illegal_moves": 0
+    }
+  },
+  "match3_x20p_vs_x12_fast": {
+    "match": "x20_4t_vs_x12_4t",
+    "engine_a": "Janus Classical X20-P (4T)",
+    "engine_b": "Janus Classical X12 (4T)",
+    "total_games": 100,
+    "pairs": 50,
+    "time_control": "1.0s + 0.05s",
+    "wins": 26,
+    "draws": 41,
+    "losses": 33,
+    "points": 46.5,
+    "score_pct": 46.5,
+    "elo": -24.4,
+    "wilson_ci_95": [
+      37.04,
+      56.22
+    ],
+    "paired_ci_95": [
+      38.96,
+      54.04
+    ],
+    "p_value_onesided": 0.81852,
+    "statistically_superior": false,
+    "pentanomial": {
+      "WW": 3,
+      "WD": 12,
+      "DD_WL": 15,
+      "LD": 15,
+      "LL": 5
+    },
+    "technical_incidents": {
+      "time_forfeits": 0,
+      "illegal_moves": 0
+    }
+  },
+  "match4_x20s_vs_x19s_fast": {
+    "match": "x20_1t_vs_x19_1t",
+    "engine_a": "Janus Classical X20-S (1T)",
+    "engine_b": "Janus Classical X19-S (1T)",
+    "total_games": 50,
+    "pairs": 25,
+    "time_control": "1.0s + 0.05s",
+    "wins": 11,
+    "draws": 23,
+    "losses": 16,
+    "points": 22.5,
+    "score_pct": 45.0,
+    "elo": -34.9,
+    "wilson_ci_95": [
+      32.06,
+      58.65
+    ],
+    "paired_ci_95": [
+      34.04,
+      55.96
+    ],
+    "p_value_onesided": 0.81445,
+    "statistically_superior": false,
+    "pentanomial": {
+      "WW": 1,
+      "WD": 7,
+      "DD_WL": 6,
+      "LD": 8,
+      "LL": 3
+    },
+    "technical_incidents": {
+      "time_forfeits": 0,
+      "illegal_moves": 0
+    }
+  },
+  "match5_x20s_vs_sf4": {
+    "match": "x20_1t_vs_sf4_1t",
+    "engine_a": "Janus Classical X20-S (1T)",
+    "engine_b": "Stockfish 4 (1T)",
+    "total_games": 40,
+    "pairs": 20,
+    "time_control": "1.5s + 0.05s",
+    "wins": 0,
+    "draws": 3,
+    "losses": 37,
+    "points": 1.5,
+    "score_pct": 3.75,
+    "elo": -563.7,
+    "wilson_ci_95": [
+      0.87,
+      14.73
+    ],
+    "paired_ci_95": [
+      0.0,
+      7.76
+    ],
+    "p_value_onesided": 1.0,
+    "statistically_superior": false,
+    "pentanomial": {
+      "WW": 0,
+      "WD": 0,
+      "DD_WL": 0,
+      "LD": 3,
+      "LL": 17
+    },
+    "technical_incidents": {
+      "time_forfeits": 0,
+      "illegal_moves": 0
+    }
+  },
+  "match6_x20s_vs_sf11": {
+    "match": "x20_1t_vs_sf11_1t",
+    "engine_a": "Janus Classical X20-S (1T)",
+    "engine_b": "Stockfish 11 (1T)",
+    "total_games": 40,
+    "pairs": 20,
+    "time_control": "1.5s + 0.05s",
+    "wins": 0,
+    "draws": 1,
+    "losses": 39,
+    "points": 0.5,
+    "score_pct": 1.25,
+    "elo": -759.1,
+    "wilson_ci_95": [
+      0.13,
+      10.91
+    ],
+    "paired_ci_95": [
+      0.0,
+      3.7
+    ],
+    "p_value_onesided": 1.0,
+    "statistically_superior": false,
+    "pentanomial": {
+      "WW": 0,
+      "WD": 0,
+      "DD_WL": 0,
+      "LD": 1,
+      "LL": 19
+    },
+    "technical_incidents": {
+      "time_forfeits": 0,
+      "illegal_moves": 0
+    }
+  },
+  "match7_x20s_vs_sf19": {
+    "match": "x20_1t_vs_sf19_1t",
+    "engine_a": "Janus Classical X20-S (1T)",
+    "engine_b": "Stockfish 19 (1T)",
+    "total_games": 40,
+    "pairs": 20,
+    "time_control": "1.5s + 0.05s",
+    "wins": 0,
+    "draws": 1,
+    "losses": 39,
+    "points": 0.5,
+    "score_pct": 1.25,
+    "elo": -759.1,
+    "wilson_ci_95": [
+      0.13,
+      10.91
+    ],
+    "paired_ci_95": [
+      0.0,
+      3.7
+    ],
+    "p_value_onesided": 1.0,
+    "statistically_superior": false,
+    "pentanomial": {
+      "WW": 0,
+      "WD": 0,
+      "DD_WL": 0,
+      "LD": 1,
+      "LL": 19
+    },
+    "technical_incidents": {
+      "time_forfeits": 0,
+      "illegal_moves": 0
+    }
+  }
+}

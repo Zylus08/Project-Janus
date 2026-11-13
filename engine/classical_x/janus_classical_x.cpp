@@ -328,6 +328,11 @@ static int  g_aspiration_delta = 25;           // Aspiration delta
 static bool g_movepicker_stage_reform = false; // Phase 1, Milestone P1.14: Good Captures -> Killers -> Countermove -> Quiets -> Bad Captures
 static std::string g_search_variant = "X19";    // Active variant identifier (Default Candidate X19)
 
+// Milestone P1.15 Adaptive Capture Ordering, History Modes & Exact Search Contract
+static int  g_adaptive_capture_mode = 0; // 0=C0 (Frozen X19), 1=C1 (Near-even [-100, 0)), 2=C2 (Endgame conditional), 3=C3 (Defensive / check exception)
+static int  g_history_mode = 0;          // 0=H0 (Frozen X19), 1=H1 (Aging/decay at root), 2=H2 (Conservative aging), 3=H3 (In-search gravity)
+static bool g_exact_search_mode = false; // Phase 6 exact full-width verification
+
 // ============================================================================
 // Search Modernization & Positional Evaluation Options (Milestone P1.2)
 // ============================================================================
@@ -760,6 +765,43 @@ EXPORT void native_apply_search_variant(const char* var_str) {
             g_lmp_mode = 0;
             g_rfp_margin_per_depth = 120;
         } else { // Track P: X19-P (X12 foundation + Stage Reform)
+            g_eval_mode = 10; // E10 Enhanced Classical Evaluation
+            g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = true; // 64K entry Pawn Hash Table
+            g_dynamic_time_mgmt = true;
+            g_use_lmp = true; // Safe Late Move Pruning
+            g_lmp_mode = 1; // Conservative Quadratic LMP
+            g_lmp_max_depth = 4;
+            g_rfp_margin_per_depth = 90;
+        }
+        g_adaptive_capture_mode = 0; // C0 Frozen X19 baseline
+    } else if (var == "X20") { // P1.15 Candidate: Adaptive Capture Ordering & Staging
+        g_use_staged_movegen = true;
+        g_quiescence_see_mode = 2;
+        g_use_see_in_quiescence = true;
+        g_use_null_move_pruning = true;
+        g_use_reverse_futility = true;
+        g_use_aspiration_window = true;
+        g_conthist_mode = 3; // H3
+        g_dynamic_lmr_mode = 3; // L3 Calibrated LMR
+        g_use_pruning_safety = false;
+        g_movepicker_stage_reform = true;
+        g_adaptive_capture_mode = 1; // C1 Near-Even Capture Promotion [-100, 0)
+        if (g_num_threads == 1) { // Track S: X20-S (X7 foundation + Stage Reform + Adaptive Captures)
+            g_eval_mode = 5; // E5 Combined Classical Eval
+            g_tactical_ordering_mode = 2; // Enable Countermove table for staging
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = false;
+            g_dynamic_time_mgmt = false;
+            g_use_lmp = false;
+            g_lmp_mode = 0;
+            g_rfp_margin_per_depth = 120;
+        } else { // Track P: X20-P (X12 foundation + Stage Reform + Adaptive Captures)
             g_eval_mode = 10; // E10 Enhanced Classical Evaluation
             g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
             g_singular_extension_mode = 0; // S0 Off
@@ -3498,6 +3540,7 @@ enum MovePickerStage {
     STAGE_CAPTURES,
     STAGE_KILLERS,
     STAGE_COUNTERMOVE,
+    STAGE_NEAR_EVEN_CAPTURES,
     STAGE_GEN_QUIETS,
     STAGE_QUIETS,
     STAGE_BAD_CAPTURES,
@@ -3520,6 +3563,10 @@ struct MovePicker {
     uint16_t good_caps[MAX_MOVES];
     int num_good_caps;
     int cur_good_cap;
+
+    uint16_t near_even_caps[MAX_MOVES];
+    int num_near_even_caps;
+    int cur_near_even_cap;
 
     uint16_t bad_caps[MAX_MOVES];
     int num_bad_caps;
@@ -3553,6 +3600,8 @@ struct MovePicker {
         num_caps = 0;
         num_good_caps = 0;
         cur_good_cap = 0;
+        num_near_even_caps = 0;
+        cur_near_even_cap = 0;
         num_bad_caps = 0;
         cur_bad_cap = 0;
         cur_quiet = 0;
@@ -3613,7 +3662,13 @@ struct MovePicker {
                     }
                     if (g_movepicker_stage_reform) {
                         num_good_caps = 0;
+                        num_near_even_caps = 0;
                         num_bad_caps = 0;
+                        bool is_endgame = false;
+                        if (g_adaptive_capture_mode == 2 || g_adaptive_capture_mode == 3) {
+                            int non_pawns = popcount64(board->occupancy[2] & ~(board->pieces[0][PAWN] | board->pieces[1][PAWN] | board->pieces[0][KING] | board->pieces[1][KING]));
+                            is_endgame = (non_pawns <= 4) || ((board->pieces[0][QUEEN] | board->pieces[1][QUEEN]) == 0);
+                        }
                         for (int i = 0; i < num_caps; i++) {
                             uint16_t m = caps[i];
                             int flag = move_flag(m);
@@ -3624,11 +3679,24 @@ struct MovePicker {
                                 if (see_val >= 0) {
                                     good_caps[num_good_caps++] = m;
                                 } else {
-                                    bad_caps[num_bad_caps++] = m;
+                                    bool promote = false;
+                                    if (g_adaptive_capture_mode == 1) { // C1: Near-even capture promotion (-100 <= see_val < 0)
+                                        if (see_val >= -100) promote = true;
+                                    } else if (g_adaptive_capture_mode == 2) { // C2: Endgame-conditional near-even
+                                        if (is_endgame && see_val >= -100) promote = true;
+                                    } else if (g_adaptive_capture_mode == 3) { // C3: Defensive / near-even / minor piece sacrifice
+                                        if (see_val >= -100 || (see_val >= -250 && is_endgame)) promote = true;
+                                    }
+                                    if (promote) {
+                                        near_even_caps[num_near_even_caps++] = m;
+                                    } else {
+                                        bad_caps[num_bad_caps++] = m;
+                                    }
                                 }
                             }
                         }
                         cur_good_cap = 0;
+                        cur_near_even_cap = 0;
                     }
                     stage = STAGE_CAPTURES;
                     cur_cap = 0;
@@ -3677,7 +3745,7 @@ struct MovePicker {
                 }
                 case STAGE_COUNTERMOVE: {
                     if (g_movepicker_stage_reform) {
-                        stage = STAGE_GEN_QUIETS;
+                        stage = STAGE_NEAR_EVEN_CAPTURES;
                         if (ply >= 1 && g_ss[ply - 1].current_move != 0) {
                             int prev_from = move_from(g_ss[ply - 1].current_move);
                             int prev_to = move_to(g_ss[ply - 1].current_move);
@@ -3688,6 +3756,18 @@ struct MovePicker {
                             }
                         }
                     }
+                }
+                case STAGE_NEAR_EVEN_CAPTURES: {
+                    if (g_movepicker_stage_reform) {
+                        while (cur_near_even_cap < num_near_even_caps) {
+                            uint16_t m = near_even_caps[cur_near_even_cap++];
+                            if (!has_been_yielded(m)) {
+                                yielded[num_yielded++] = m;
+                                return m;
+                            }
+                        }
+                    }
+                    stage = STAGE_GEN_QUIETS;
                 }
                 case STAGE_GEN_QUIETS: {
                     num_quiets = native_generate_quiets(board, quiets);
@@ -3749,6 +3829,65 @@ struct MovePicker {
         return false;
     }
 };
+
+EXPORT int native_test_movepicker(NativeBoard* b, uint16_t tt_m, int ply, int depth, uint16_t* out_moves, int* out_stages) {
+    bool in_chk = (native_is_check(b) != 0);
+    MovePicker mp;
+    mp.init(b, tt_m, ply, depth, in_chk);
+    int count = 0;
+    while (true) {
+        int s = (int)mp.stage;
+        uint16_t m = mp.next_move();
+        if (m == 0) break;
+        if (out_moves) out_moves[count] = m;
+        if (out_stages) out_stages[count] = s;
+        count++;
+        if (count >= MAX_MOVES) break;
+    }
+    return count;
+}
+
+EXPORT void native_set_killer(int ply, int slot, uint16_t m) {
+    if (ply >= 0 && ply < MAX_PLY && slot >= 0 && slot < KILLER_SLOTS) {
+        g_killer_moves[ply][slot] = m;
+    }
+}
+
+EXPORT void native_set_countermove(int from, int to, uint16_t cm) {
+    if (from >= 0 && from < 64 && to >= 0 && to < 64) {
+        g_countermove_table[from][to] = cm;
+    }
+}
+
+EXPORT void native_set_prev_move(int ply, uint16_t m) {
+    if (ply >= 0 && ply < MAX_PLY) {
+        g_ss[ply].current_move = m;
+    }
+}
+
+EXPORT void native_set_adaptive_capture_mode(int mode) {
+    g_adaptive_capture_mode = mode;
+}
+
+EXPORT int native_get_adaptive_capture_mode() {
+    return g_adaptive_capture_mode;
+}
+
+EXPORT void native_set_history_mode(int mode) {
+    g_history_mode = mode;
+}
+
+EXPORT int native_get_history_mode() {
+    return g_history_mode;
+}
+
+EXPORT void native_set_exact_search_mode(int enable) {
+    g_exact_search_mode = (enable != 0);
+}
+
+EXPORT int native_get_exact_search_mode() {
+    return g_exact_search_mode ? 1 : 0;
+}
 
 static int quiescence(NativeBoard* b, int alpha, int beta, uint64_t& nodes, std::chrono::steady_clock::time_point deadline, bool& aborted) {
     nodes++;
@@ -3905,6 +4044,9 @@ static int negamax(
 
     // Leaf evaluation
     if (depth <= 0 || ply >= MAX_SEARCH_PLY - 1) {
+        if (g_exact_search_mode) {
+            return native_evaluate(b);
+        }
         return quiescence(b, alpha, beta, nodes, deadline, aborted);
     }
 
@@ -3914,7 +4056,7 @@ static int negamax(
     TTEntry entry{};
     bool has_entry = false;
 
-    if (g_search_variant == "X11" || g_search_variant == "X12" || g_search_variant == "X13" || g_search_variant == "X14" || g_num_threads > 1) {
+    if (!g_exact_search_mode && (g_search_variant == "X11" || g_search_variant == "X12" || g_search_variant == "X13" || g_search_variant == "X14" || g_num_threads > 1)) {
         int tt_score = 0;
         bool allow_cutoff = (ply > 0 && excluded_move == 0);
         if (g_parallel_tt.probe(key, depth, ply, alpha, beta, tt_score, tt_move, allow_cutoff)) {
@@ -3927,7 +4069,7 @@ static int negamax(
         if (entry.key == key) {
             has_entry = true;
             tt_move = entry.best_move;
-            if (entry.depth >= depth && ply > 0 && excluded_move == 0) {
+            if (!g_exact_search_mode && entry.depth >= depth && ply > 0 && excluded_move == 0) {
                 int tt_score = score_from_tt(entry.score, ply);
                 if (entry.flag == TT_EXACT) return tt_score;
                 if (entry.flag == TT_LOWER && tt_score >= beta) return tt_score;
@@ -3939,7 +4081,8 @@ static int negamax(
     int extension = 0;
     // Singular Extension & Multi-Cut Verification (Phases 3 & 4)
     int min_se_depth = (g_singular_extension_mode == 3) ? 8 : 6;
-    if (g_singular_extension_mode > 0 &&
+    if (!g_exact_search_mode &&
+        g_singular_extension_mode > 0 &&
         depth >= min_se_depth &&
         ply > 0 &&
         excluded_move == 0 &&
@@ -3985,7 +4128,7 @@ static int negamax(
     // ========================================================================
     // Reverse Futility Pruning (RFP / Static Null Move Pruning, Phase 4)
     // ========================================================================
-    if (g_use_reverse_futility && depth <= 3 && ply > 0 && !in_check && std::abs(beta) < MATE_SCORE - 100) {
+    if (!g_exact_search_mode && g_use_reverse_futility && depth <= 3 && ply > 0 && !in_check && std::abs(beta) < MATE_SCORE - 100) {
         g_telemetry_rfp_probes++;
         if (!g_use_pruning_safety) {
             static_eval = native_evaluate(b);
@@ -4007,7 +4150,7 @@ static int negamax(
     int them_side = 1 - us_side;
     uint64_t non_pawn_mat = b->pieces[us_side][KNIGHT] | b->pieces[us_side][BISHOP] | 
                             b->pieces[us_side][ROOK]   | b->pieces[us_side][QUEEN];
-    if (g_use_null_move_pruning && depth >= 3 && ply > 0 && !in_check && non_pawn_mat != 0 && std::abs(beta) < MATE_SCORE - 100) {
+    if (!g_exact_search_mode && g_use_null_move_pruning && depth >= 3 && ply > 0 && !in_check && non_pawn_mat != 0 && std::abs(beta) < MATE_SCORE - 100) {
         g_telemetry_nmp_probes++;
         int R = g_nmp_reduction;
 
@@ -4035,7 +4178,8 @@ static int negamax(
 
     // ProbCut Pruning (Phase 5)
     int min_pc_depth = (g_probcut_mode == 3) ? 6 : 5;
-    if (g_probcut_mode > 0 &&
+    if (!g_exact_search_mode &&
+        g_probcut_mode > 0 &&
         depth >= min_pc_depth &&
         ply > 0 &&
         excluded_move == 0 &&
@@ -4132,7 +4276,7 @@ static int negamax(
         // ========================================================================
         // Late Move Pruning (LMP, Phase 5)
         // ========================================================================
-        if (g_use_lmp && depth <= g_lmp_max_depth && ply > 0 && !in_check && (beta - alpha == 1)) {
+        if (!g_exact_search_mode && g_use_lmp && depth <= g_lmp_max_depth && ply > 0 && !in_check && (beta - alpha == 1)) {
             if (moves_searched > 0 && std::abs(alpha) < MATE_SCORE - 100 && std::abs(beta) < MATE_SCORE - 100) {
                 int to_sq = move_to(m);
                 int them_side = 1 - us_side;
@@ -4170,7 +4314,8 @@ static int negamax(
         uint16_t child_best = 0;
 
         // LMR Eligibility Check (10 Invariants)
-        bool is_lmr_eligible = g_use_lmr &&
+        bool is_lmr_eligible = !g_exact_search_mode &&
+                               g_use_lmr &&
                                (ply > 0) &&
                                (depth >= g_lmr_min_depth) &&
                                (moves_searched >= g_lmr_move_threshold) &&
@@ -4181,7 +4326,7 @@ static int negamax(
                                (native_is_check(b) == 0); // Non-checking move
 
         // Milestone P1.12 & P1.13 Targeted Intervention: Protect pawn moves in pure pawn endgames from LMR reduction
-        if ((g_search_variant == "X17" || g_search_variant == "X18" || g_search_variant == "X19") && non_pawn_mat == 0 && moved_piece == PAWN) {
+        if ((g_search_variant == "X17" || g_search_variant == "X18" || g_search_variant == "X19" || g_search_variant == "X20") && non_pawn_mat == 0 && moved_piece == PAWN) {
             is_lmr_eligible = false;
         }
 
@@ -4315,6 +4460,16 @@ static int negamax(
                 g_pv_table[ply][j + 1] = g_pv_table[ply + 1][j];
             }
             g_pv_len[ply] = g_pv_len[ply + 1] + 1;
+        }
+
+        bool is_quiet = (undo.captured_piece == NO_PIECE) && (move_flag(m) != 3);
+        if (g_history_mode == 3 && g_use_history_ordering && is_quiet && score < beta) {
+            int side = b->side_to_move;
+            int from = move_from(m);
+            int to = move_to(m);
+            int penalty = std::min(300, depth * depth);
+            int cur_h = g_history_table[side][from][to];
+            g_history_table[side][from][to] = cur_h - penalty - (cur_h * std::abs(penalty)) / 16384;
         }
         if (alpha >= beta) {
             g_ordering_total_cutoffs++;
@@ -4499,7 +4654,7 @@ static void run_worker_search(
         uint16_t iter_best_move = 0;
         int score = 0;
 
-        if (g_use_aspiration_window && d >= 4) {
+        if (!g_exact_search_mode && g_use_aspiration_window && d >= 4) {
             int prev_score = out_wres->score;
             int asp_alpha = prev_score - asp_delta;
             int asp_beta = prev_score + asp_delta;
@@ -4567,6 +4722,24 @@ EXPORT int native_search(
 
     g_tt_age++;
     g_parallel_tt.current_age.fetch_add(1, std::memory_order_relaxed);
+
+    if (g_history_mode == 1) {
+        for (int s = 0; s < 2; s++) {
+            for (int f = 0; f < 64; f++) {
+                for (int t = 0; t < 64; t++) {
+                    g_history_table[s][f][t] /= 2;
+                }
+            }
+        }
+    } else if (g_history_mode == 2) {
+        for (int s = 0; s < 2; s++) {
+            for (int f = 0; f < 64; f++) {
+                for (int t = 0; t < 64; t++) {
+                    g_history_table[s][f][t] = (g_history_table[s][f][t] * 7) / 8;
+                }
+            }
+        }
+    }
 
     g_master_game_history_len = g_game_history_len;
     for (int i = 0; i < g_game_history_len; ++i) {
@@ -4936,7 +5109,10 @@ static void uci_loop() {
             std::cout << "option name LMRBaseReduction type spin default 1 min 1 max 3" << std::endl;
             std::cout << "option name UseSEEOrdering type check default false" << std::endl;
             std::cout << "option name UseSEEInQuiescence type check default false" << std::endl;
-            std::cout << "option name UCI_Variant type combo default X19 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18 var X19" << std::endl;
+            std::cout << "option name UCI_Variant type combo default X19 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18 var X19 var X20" << std::endl;
+            std::cout << "option name UCI_AdaptiveCapture type combo default C0 var C0 var C1 var C2 var C3" << std::endl;
+            std::cout << "option name UCI_HistoryMode type combo default H0 var H0 var H1 var H2 var H3" << std::endl;
+            std::cout << "option name UCI_ExactSearchMode type check default false" << std::endl;
             std::cout << "option name UCI_ContinuationHistory type combo default H3 var H0 var H1 var H2 var H3" << std::endl;
             std::cout << "option name UCI_DynamicLMR type combo default L3 var L0 var L1 var L2 var L3" << std::endl;
             std::cout << "option name UCI_ClassicalEval type combo default E15 var E0 var E1 var E2 var E3 var E4 var E5 var E6 var E7 var E8 var E9 var E10 var E11 var E15" << std::endl;
@@ -5112,6 +5288,18 @@ static void uci_loop() {
                     else if (opt_val == "P1") g_probcut_mode = 1;
                     else if (opt_val == "P2") g_probcut_mode = 2;
                     else if (opt_val == "P3") g_probcut_mode = 3;
+                } else if (opt_name == "UCI_AdaptiveCapture" && !opt_val.empty()) {
+                    if (opt_val == "C0") g_adaptive_capture_mode = 0;
+                    else if (opt_val == "C1") g_adaptive_capture_mode = 1;
+                    else if (opt_val == "C2") g_adaptive_capture_mode = 2;
+                    else if (opt_val == "C3") g_adaptive_capture_mode = 3;
+                } else if (opt_name == "UCI_HistoryMode" && !opt_val.empty()) {
+                    if (opt_val == "H0") g_history_mode = 0;
+                    else if (opt_val == "H1") g_history_mode = 1;
+                    else if (opt_val == "H2") g_history_mode = 2;
+                    else if (opt_val == "H3") g_history_mode = 3;
+                } else if (opt_name == "UCI_ExactSearchMode") {
+                    g_exact_search_mode = (opt_val.empty() || opt_val == "true" || opt_val == "1");
                 }
             }
                 } else if (cmd == "telemetry_report") {

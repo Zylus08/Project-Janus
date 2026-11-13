@@ -1,0 +1,193 @@
+{
+  "candidate": "Janus Classical X20 (X20-S & X20-P)",
+  "perft_verification": {
+    "startpos_d1": {
+      "depth": 1,
+      "computed": 20,
+      "target": 20,
+      "passed": true
+    },
+    "startpos_d2": {
+      "depth": 2,
+      "computed": 400,
+      "target": 400,
+      "passed": true
+    },
+    "startpos_d3": {
+      "depth": 3,
+      "computed": 8902,
+      "target": 8902,
+      "passed": true
+    },
+    "startpos_d4": {
+      "depth": 4,
+      "computed": 197281,
+      "target": 197281,
+      "passed": true
+    },
+    "kiwipete_d1": {
+      "depth": 1,
+      "computed": 48,
+      "target": 48,
+      "passed": true
+    },
+    "kiwipete_d2": {
+      "depth": 2,
+      "computed": 2039,
+      "target": 2039,
+      "passed": true
+    },
+    "kiwipete_d3": {
+      "depth": 3,
+      "computed": 97862,
+      "target": 97862,
+      "passed": true
+    }
+  },
+  "stratified_tactical_invariants": [
+    {
+      "class": "Starting position",
+      "legal_count": 20,
+      "yielded_count": 20,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "Open tactical middlegames",
+      "legal_count": 33,
+      "yielded_count": 33,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "Closed positions",
+      "legal_count": 32,
+      "yielded_count": 32,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "King in check",
+      "legal_count": 35,
+      "yielded_count": 35,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "Double check",
+      "legal_count": 31,
+      "yielded_count": 31,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "Pinned pieces",
+      "legal_count": 33,
+      "yielded_count": 33,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "Castling",
+      "legal_count": 25,
+      "yielded_count": 25,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "En passant",
+      "legal_count": 31,
+      "yielded_count": 31,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "Quiet promotions",
+      "legal_count": 9,
+      "yielded_count": 9,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "Capture promotions",
+      "legal_count": 44,
+      "yielded_count": 44,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "Underpromotions",
+      "legal_count": 9,
+      "yielded_count": 9,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "Exchange sacrifices",
+      "legal_count": 38,
+      "yielded_count": 38,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "Discovered attacks",
+      "legal_count": 39,
+      "yielded_count": 39,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "Forced recaptures",
+      "legal_count": 41,
+      "yielded_count": 41,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "Stalemate-adjacent positions",
+      "legal_count": 0,
+      "yielded_count": 0,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "Checkmate-in-one positions",
+      "legal_count": 30,
+      "yielded_count": 30,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "Forced defensive captures",
+      "legal_count": 23,
+      "yielded_count": 23,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "Pure pawn endgames",
+      "legal_count": 5,
+      "yielded_count": 5,
+      "exact_match": true,
+      "no_duplicates": true
+    },
+    {
+      "class": "Queen and rook endgames",
+      "legal_count": 44,
+      "yielded_count": 44,
+      "exact_match": true,
+      "no_duplicates": true
+    }
+  ],
+  "zobrist_consistency": {
+    "status": "PASSED"
+  },
+  "uci_protocol_and_concurrency": {
+    "uciok": true,
+    "readyok": true,
+    "bestmove": "e2e4",
+    "options_registered": 34,
+    "passed": true
+  },
+  "overall_status": "ALL_TESTS_PASSED"
+}

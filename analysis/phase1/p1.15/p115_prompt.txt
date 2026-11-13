@@ -1,0 +1,948 @@
+<USER_REQUEST>
+# PROJECT JANUS — PHASE 1, MILESTONE P1.15
+
+## Adaptive Capture Ordering, Search Completeness, History Reliability & Independent Strength Qualification
+
+**Role:** Principal Computer Chess Engine Architect, C++17 Search Engineer, Alpha-Beta Researcher, Tactical Search Specialist, Performance Engineer, and Independent Statistical Auditor.
+
+**Development repository:** `E:\ChessXML\project-janus-phase1`
+
+**Branch:** `phase1/classical-janus`
+
+**Expected parent commit:** `bcfdecd`
+
+**Qualified single-thread baseline:** Janus Classical X7 (`b34e342`)
+
+**Qualified four-thread baseline:** Janus Classical X12 (`78ca3d5`)
+
+**Leading research candidate:** Janus Classical X19 (`bcfdecd`)
+
+**Frozen X19 executable SHA-256:** `CBB7785A47E5F9EC64C51C20B8387DE3EFE782F42BDFCEA38008F6450E534629`
+
+**Potential successor:** Janus Classical X20, conditional on successful validation.
+
+**Historical references:** Stockfish 4 and Stockfish 11, full strength.
+
+**Ultimate external benchmark:** Stockfish 19, unrestricted, NNUE enabled.
+
+**Charter:** Strictly non-ML. Zero neural networks, NNUE, learned evaluation parameters, offline model fitting, SPSA or Texel tuning.
+
+---
+
+# PRIMARY MISSION
+
+Investigate whether Janus Classical X19's substantial search-tree reduction reflects genuinely improved alpha-beta move ordering, and determine why its competitive results apparently deteriorate at longer time controls.
+
+Preserve the useful aspects of X19's staged capture ordering while preventing tactical omissions, unsafe capture deferral, inaccurate SEE classifications and unreliable history-score prioritization.
+
+The milestone has five central objectives:
+
+1. Prove that the restructured MovePicker preserves complete and legal move enumeration.
+2. Identify whether deferring unfavorable captures damages search correctness or practical playing strength.
+3. Determine whether X19's apparent slower-time regression is reproducible and attributable to capture ordering.
+4. Investigate history-score reliability only after isolating capture-ordering behavior.
+5. Produce a stronger engine candidate only if independent evidence supports promotion.
+
+**The goal is not to reduce another 90% of nodes. The goal is to convert X19's search efficiency into reproducibly stronger chess.**
+
+---
+
+# GOVERNING RULES
+
+- Preserve X7, X12 and X19 frozen binaries and source snapshots.
+- Implement experimental changes in an isolated development branch or worktree based on the verified X19 source.
+- Never alter historical tournament PGNs or benchmark outputs.
+- Do not introduce new evaluation families.
+- Do not introduce new aggressive pruning algorithms.
+- Do not reintroduce singular extensions, ProbCut or multi-cut.
+- Do not change LMR formulas merely to compensate for a MovePicker regression.
+- Do not use NNUE, learned evaluation parameters or automated parameter fitting.
+- In-search bounded history heuristics are permitted.
+- Keep all interventions independently switchable.
+- Use an untouched confirmation dataset for strength qualification.
+- Do not claim statistically demonstrated superiority from positive point estimates alone.
+- No remote push or destructive Git operations.
+
+---
+
+# PHASE 0 — P1.14 EVIDENCE RECONCILIATION
+
+Verify the parent commit, branch, working-tree status and frozen engine checksums.
+
+Independently reconstruct all 410 tournament games.
+
+## Internal results
+
+**Match 1 — X19-S vs X7**
+
+- 100 games.
+- 55.5/100 points.
+- 55.5%.
+- Paired 95% score interval: 47.92–63.08%.
+
+**Match 2 — X19-S vs X7, slower**
+
+- 50 games.
+- 21.5/50 points.
+- 43.0%.
+- Paired 95% score interval: 32.60–53.40%.
+
+**Match 3 — X19-P vs X12**
+
+- 100 games.
+- 53/100 points.
+- 53.0%.
+- Paired 95% score interval: 45.00–61.00%.
+
+## External results
+
+- X19 vs Stockfish 4: 2/40.
+- X19 vs Stockfish 11: 0/40.
+- X19 1T vs Stockfish 19: 0/40.
+- X19 4T vs Stockfish 19: 1.5/40.
+
+## Required reconciliation
+
+Verify:
+
+- WDL totals.
+- Complete opening pairs.
+- Pentanomial counts.
+- Engine identities.
+- Time controls.
+- Tournament termination reasons.
+- All PGNs and logs.
+- Statistical calculations.
+- Sample-level uncertainty.
+
+Correct the description of X19's external draw results.
+
+Do not describe the 55.5% and 53.0% internal matches as statistically confirmed superiority.
+
+Audit the 0/40 paired confidence interval reported as [0%, 0%]. A degenerate empirical interval is not an appropriate confidence statement about the unknown underlying scoring rate.
+
+Verify the alleged 90–94% fixed-depth node reduction from raw benchmark records.
+
+Do not assume that fixed-depth score agreement establishes exact minimax equivalence in selective search.
+
+**Deliverable:** `P114_SCIENTIFIC_RECONCILIATION.md`
+
+---
+
+# PHASE 1 — COMPLETE MOVEPICKER CORRECTNESS AUDIT
+
+This is the highest-priority correctness phase.
+
+Inspect the actual source code for X7, X12 and X19.
+
+Reconstruct the exact move-selection state machine.
+
+The P1.14 report describes five stages:
+
+1. Favorable captures.
+2. Killer moves.
+3. Countermoves.
+4. History-ranked quiet moves.
+5. Unfavorable captures.
+
+However, the report does not explicitly describe the treatment of the principal variation or transposition-table move.
+
+Establish where TT/PV moves are handled and whether they can be duplicated or omitted.
+
+## Exhaustive move-set preservation
+
+For every tested position:
+
+1. Generate the complete legal move set using an independent reference enumerator.
+2. Generate the complete move sequence yielded by MovePicker.
+3. Normalize move encodings.
+4. Compare the resulting sets.
+5. Detect duplicates.
+6. Detect omissions.
+7. Validate every emitted move.
+8. Verify stage membership.
+
+Test both single-thread and multithreaded configurations.
+
+### Required position classes
+
+- Starting position.
+- Open tactical middlegames.
+- Closed positions.
+- King in check.
+- Double check.
+- Pinned pieces.
+- Castling.
+- En passant.
+- Quiet promotions.
+- Capture promotions.
+- Underpromotions.
+- Exchange sacrifices.
+- Discovered attacks.
+- Forced recaptures.
+- Stalemate-adjacent positions.
+- Checkmate-in-one positions.
+- Forced defensive captures.
+- Pure pawn endgames.
+- Queen and rook endgames.
+
+## Stage invariants
+
+Every legal move must be yielded exactly once.
+
+A TT move already returned must never reappear in another stage.
+
+Killer and countermove entries must be validated for legality.
+
+Capture and quiet classifications must handle promotions and en passant correctly.
+
+If the side to move is in check, verify that the special evasion path is complete and does not blindly apply normal ordering assumptions.
+
+If the MovePicker intentionally supports pseudo-legal moves, distinguish that contract from full legal enumeration and validate the downstream legality filtering.
+
+Do not force a legal-only implementation if the established engine architecture correctly uses pseudo-legal move generation.
+
+### Randomized testing
+
+Generate thousands of legal chess positions using deterministic seeds.
+
+Compare MovePicker output against the appropriate independent move-generation reference.
+
+Run the same tests under different history, killer, countermove and TT states.
+
+### Release gate
+
+Any unexplained missing legal move, duplicate search of the same move, invalid move encoding or unhandled promotion blocks advancement.
+
+**Deliverable:** `MOVEPICKER_COMPLETENESS_AND_LEGALITY.md`
+
+---
+
+# PHASE 2 — STATIC EXCHANGE EVALUATION VERIFICATION
+
+Audit the actual SEE implementation used to classify good and bad captures.
+
+Test:
+
+- Capture exchanges on occupied squares.
+- Pinned attackers.
+- Pinned defenders.
+- X-ray attacks.
+- King recaptures.
+- En passant.
+- Capture promotions.
+- Underpromotions.
+- Hanging queens.
+- Exchange sacrifices.
+- Multiple attackers of equal value.
+- Discovered attacks after a capture.
+
+Determine whether SEE assumes legal recapture sequences or permits pseudo-legal exchange steps.
+
+Document the limitations of the implementation.
+
+## Independent verification
+
+For suitable simple positions, compare SEE against a verified exchange-resolution reference.
+
+A negative SEE must not be interpreted as proof that a move is positionally or tactically losing.
+
+SEE estimates the local material consequences of exchanges, not the complete value of a chess move.
+
+### Error categories
+
+**S0:** SEE classification correct.
+
+**S1:** SEE numerical approximation differs but move remains correctly classified for staging.
+
+**S2:** Incorrect favorable/unfavorable classification.
+
+**S3:** Special-move handling error.
+
+**S4:** Search-significant tactical misclassification.
+
+**S5:** Inconclusive.
+
+Create a reproducible FEN and move for every meaningful discrepancy.
+
+**Deliverable:** `STATIC_EXCHANGE_EVALUATION_AUDIT.md`
+
+---
+
+# PHASE 3 — BAD-CAPTURE DEFERRAL FORENSICS
+
+Investigate whether X19's final-stage bad-capture ordering is causing search instability.
+
+Separate these possibilities:
+
+- A legal capture is omitted.
+- A capture is searched too late but remains available.
+- A capture is incorrectly reduced.
+- A capture is pruned by an unrelated mechanism.
+- A capture enters the wrong stage because of SEE error.
+- A capture receives insufficient time because the search terminates before completing an iteration.
+- No actual capture-deferral problem exists.
+
+For every suspected failure, record:
+
+- FEN.
+- Side to move.
+- Candidate move.
+- SEE value.
+- MovePicker stage.
+- Search depth.
+- Ply.
+- Alpha/beta bounds.
+- TT state.
+- Search score.
+- Reduction and pruning decisions.
+- Principal variation.
+- Root decision.
+- Wall-clock budget.
+
+## Counterfactual experiment
+
+Compare the same position using:
+
+**D0:** X19 original capture deferral.
+
+**D1:** All captures before quiet moves.
+
+**D2:** Favorable captures first, near-even captures before ordinary quiet moves.
+
+**D3:** Favorable captures first, near-even captures before the final bad-capture stage only in verified eligible endgame conditions.
+
+Keep search evaluation, LMR and other settings fixed.
+
+Use independent search state or reset TT/history between experiments where required.
+
+Do not claim an improved tactical outcome without validating the continuation.
+
+### Special focus
+
+Investigate the original slower-time failure positions from Match 2.
+
+Determine whether exchange sacrifices, defensive captures or endgame recaptures actually explain any lost games.
+
+If no supporting causal evidence exists, reject adaptive capture promotion as the main intervention.
+
+**Deliverable:** `BAD_CAPTURE_DEFERRAL_FORENSICS.md`
+
+---
+
+# PHASE 4 — ADAPTIVE CAPTURE ORDERING
+
+This phase is conditional on Phase 3 identifying a reproducible issue.
+
+Investigate whether certain mildly unfavorable captures deserve earlier consideration.
+
+A proposed research interval is:
+
+`-100 <= SEE < 0`
+
+Treat this as an experimental hypothesis, not an established optimal threshold.
+
+Do not introduce numerous thresholds and retrospectively select the best on the final tournament openings.
+
+## Candidate criteria
+
+Consider:
+
+- Endgame material configuration.
+- Current tactical pressure.
+- Capture recency and recapture status.
+- Checking moves.
+- Promotion threats.
+- Side-to-move king safety.
+- TT move identity.
+- Static exchange value.
+- Search depth.
+- Node type.
+
+Avoid expensive board-wide tactical evaluations merely to decide a move's ordering stage.
+
+## Constraints
+
+No move may be omitted.
+
+No new selective-pruning rule is permitted.
+
+No automatic SEE coefficient fitting.
+
+The mechanism must be independently switchable.
+
+Measure classification overhead.
+
+Ensure the adjusted ordering remains compatible with existing history and TT move priorities.
+
+### Development variants
+
+**C0:** Frozen X19 ordering.
+
+**C1:** Near-even capture promotion.
+
+**C2:** Endgame-conditional near-even capture promotion.
+
+**C3:** Narrow, evidence-supported defensive capture exception.
+
+Implement C3 only if the failure corpus justifies it.
+
+**Deliverable:** `ADAPTIVE_CAPTURE_ORDERING.md`
+
+---
+
+# PHASE 5 — HISTORY SCORE RELIABILITY
+
+Investigate the P1.14 claim that 44.7% of useful moves had zero history scores.
+
+First reconstruct the population, denominator and definition of a useful move.
+
+Determine whether the result was calculated from root moves, non-PV moves, beta-cutoff moves or another sampled population.
+
+A zero history value may mean:
+
+- The move has never been visited.
+- The relevant history table was reset.
+- Positive and negative updates canceled.
+- The position context was not represented.
+- The move genuinely has little historical support.
+
+Do not classify every zero value as a faulty history system.
+
+## Metrics
+
+Record:
+
+- History score distributions.
+- Frequency of zero values.
+- Countermove hits.
+- Continuation-history hits.
+- Killer hits.
+- Score saturation.
+- Score aging.
+- History update cost.
+- First-move cutoff performance.
+- Tactical errors associated with bad history priorities.
+
+## Optional history gravity investigation
+
+If evidence supports an issue, study a bounded in-search history update rule that limits saturation and stale values.
+
+No offline fitting is permitted.
+
+Test history normalization separately from capture ordering.
+
+Do not automatically combine both changes.
+
+### Development variants
+
+**H0:** Frozen X19 history.
+
+**H1:** Corrected history score bounds or reset semantics.
+
+**H2:** Conservative history aging, if justified.
+
+**H3:** In-search history gravity, if justified.
+
+Choose only from documented evidence.
+
+**Deliverable:** `HISTORY_AGING_AND_NORMALIZATION.md`
+
+---
+
+# PHASE 6 — FIXED-DEPTH SEARCH CONTRACT VERIFICATION
+
+The reported 90–94% node reductions require stronger independent validation.
+
+Implement a small exact-search reference mode suitable for shallow positions.
+
+This reference mode must:
+
+- Disable selective pruning.
+- Disable LMR.
+- Disable LMP.
+- Disable null-move pruning.
+- Disable RFP.
+- Disable aspiration effects.
+- Avoid history-dependent evaluation.
+- Use a deterministic static leaf evaluation.
+- Avoid TT contamination or use a correctness-validated TT.
+- Preserve correct alpha-beta bound semantics.
+
+Compare the exact reference search under different move orderings.
+
+At a fixed depth and identical evaluation, correctly implemented full-width alpha-beta must preserve the same root minimax score regardless of move ordering.
+
+The number of searched nodes and elapsed time may differ substantially.
+
+### Separate selective-search experiment
+
+Run normal X7, X12 and X19 search with all original selective mechanisms enabled.
+
+Record:
+
+- Score differences.
+- Root move differences.
+- Node differences.
+- Depth differences.
+- TT effects.
+- Search history effects.
+
+Do not assert exact minimax equivalence for selective search merely because 14 diagnostic positions have identical reported scores.
+
+### Required output
+
+Clearly separate:
+
+1. Exact full-width search correctness.
+2. Selective-search behavior.
+3. Move-ordering efficiency.
+4. Actual playing strength.
+
+**Deliverable:** `FIXED_DEPTH_SEARCH_CONTRACT.md`
+
+---
+
+# PHASE 7 — TIME-CONTROL GENERALIZATION
+
+Investigate the apparent reversal:
+
+- Fast: X19-S scored 55.5% against X7.
+- Slower: X19-S scored 43.0% against X7.
+
+Do not assume the difference is real or that capture deferral causes it.
+
+## Diagnostic time budgets
+
+Use:
+
+- 100 ms.
+- 250 ms.
+- 500 ms.
+- 1 second.
+- 2.5 seconds.
+- 5 seconds.
+
+Use identical fixed positions and verified engine configurations.
+
+Measure:
+
+- Completed depth.
+- Selective depth.
+- Root bestmove.
+- PV stability.
+- Evaluation trajectory.
+- Capture-stage visitation.
+- Bad-capture search frequency.
+- Time to complete iterations.
+- TT usage.
+- Time budget overrun.
+- Search termination correctness.
+
+Compare X7, X12, X19 and justified experimental ordering variants.
+
+## Controlled full-game validation
+
+Conduct separate development tournaments at short and slower Fischer time controls.
+
+Test whether a meaningful interaction between time budget and capture-ordering policy persists.
+
+Do not infer an interaction merely because one sample scores above 50% and another below 50%.
+
+Use a preregistered comparison of the time-control effects where enough data are available.
+
+**Deliverable:** `TIME_CONTROL_GENERALIZATION.md`
+
+---
+
+# PHASE 8 — SEARCH EFFICIENCY AND COMPUTATIONAL COST
+
+Measure the impact of each isolated intervention.
+
+Required:
+
+- Node counts.
+- Wall-clock latency.
+- Full-search NPS.
+- First-move beta-cutoff frequency.
+- MovePicker scoring overhead.
+- SEE call count.
+- SEE computation latency.
+- History lookup cost.
+- TT hit and cutoff rates.
+- Completed depth.
+- Root stability.
+- Tactical accuracy.
+- Memory footprint.
+
+Run tests using the same compiler, optimization settings and hardware.
+
+Record CPU frequency, worker count and benchmark warmup conditions where available.
+
+Do not report a single raw NPS measurement as a full architectural performance characterization.
+
+**Deliverable:** `P115_SEARCH_ECONOMICS.md`
+
+---
+
+# PHASE 9 — CONTROLLED INTEGRATION
+
+Construct an ablation matrix.
+
+| Variant | Capture ordering | History |
+|---|---|---|
+| B0 | Frozen X19 | Frozen X19 |
+| B1 | Selected adaptive capture policy | Frozen X19 |
+| B2 | Frozen X19 | Selected history refinement |
+| B3 | Selected capture policy | Selected history refinement |
+| B4 | Frozen X7/X12 | Their original policies |
+
+B3 is permitted only if B1 and B2 show credible independent benefits and the interaction is worth evaluating.
+
+Do not automatically combine every available feature.
+
+Build distinct one-thread and four-thread configurations if both are justified.
+
+Use development-only openings and positions for candidate selection.
+
+**Deliverable:** `P115_FACTORIAL_ABLATION.md`
+
+---
+
+# PHASE 10 — FULL CORRECTNESS QUALIFICATION
+
+Run inherited regression suites and expanded MovePicker property tests.
+
+Required:
+
+- Perft.
+- Move-set preservation.
+- Duplicate-move detection.
+- Legal move verification.
+- TT move handling.
+- SEE edge cases.
+- Castling.
+- En passant.
+- Promotions.
+- Underpromotions.
+- Check evasions.
+- Stalemate.
+- Checkmate.
+- Repetition.
+- Rule-50 handling.
+- Make/unmake.
+- Zobrist hashing.
+- Mate-distance scores.
+- Search cancellation.
+- UCI compliance.
+- Low-clock reliability.
+- Multithreaded concurrency correctness.
+
+With new features disabled, verify reproduction of the correct frozen engine's behavior.
+
+All required tests must pass before tournament qualification.
+
+**Deliverable:** `P115_CORRECTNESS_REPORT.md`
+
+---
+
+# PHASE 11 — CANDIDATE FREEZE
+
+Freeze a new candidate only if correctness and development evidence justify one.
+
+Potential designations:
+
+**Janus Classical X20-S:** Single-thread candidate.
+
+**Janus Classical X20-P:** Four-thread candidate.
+
+Preserve X19 without modification.
+
+Record:
+
+- Exact source SHA-256.
+- Binary SHA-256.
+- Build configuration.
+- Compiler and optimization flags.
+- UCI options.
+- Thread count.
+- Hash size.
+- Feature settings.
+- Opening-book identities.
+- Hardware environment.
+
+Do not modify candidate binaries after confirmatory testing begins.
+
+If no candidate is justified, complete the milestone without producing X20.
+
+**Deliverable:** `X20_CANDIDATE_SELECTION.md`
+
+---
+
+# PHASE 12 — INDEPENDENT STRENGTH QUALIFICATION
+
+Use the existing JCTS v2 infrastructure, correcting any statistical or configuration flaws discovered in Phase 0.
+
+### Primary single-thread comparison
+
+If X20-S exists:
+
+**X20-S vs frozen X7, 1T vs 1T**
+
+Fischer 1s+50ms.
+
+Use independent colour-reversed opening pairs.
+
+Plan a sufficiently powered sample or preregistered sequential test.
+
+A 400-game initial target may be used if computationally feasible, but compute a justified sample size rather than assuming 400 games is enough.
+
+### Secondary research comparison
+
+**X20-S vs frozen X19-S**
+
+This measures whether the adaptive improvements strengthen the previous research candidate.
+
+It cannot replace qualification against X7.
+
+### Primary four-thread comparison
+
+If X20-P exists:
+
+**X20-P vs frozen X12, 4T vs 4T**
+
+Use the same independent qualification principles.
+
+### Slower-time verification
+
+Run a separate preregistered experiment at:
+
+**Fischer 3s+100ms.**
+
+Where feasible, target at least 200 games.
+
+Assess both superiority against the qualified baseline and whether the candidate exhibits an unacceptable slower-time regression.
+
+If a noninferiority claim is desired, define the margin and power requirement before testing; do not substitute p > 0.05.
+
+### Required statistics
+
+- WDL.
+- Total score.
+- Paired opening outcomes.
+- Pentanomial distribution.
+- Elo point estimate.
+- Paired confidence interval.
+- Appropriate paired hypothesis testing.
+- Sample-size justification.
+- Technical incidents.
+- Time forfeits.
+- Illegal moves.
+
+Do not reuse development opening pairs for confirmatory promotion.
+
+**Deliverable:** `X20_INDEPENDENT_STRENGTH.md`
+
+---
+
+# PHASE 13 — EXTERNAL REFERENCE CALIBRATION
+
+If a candidate qualifies internally, run matched external comparisons.
+
+### Historical classical opponents
+
+- Stockfish 4, full strength.
+- Stockfish 11, full strength.
+
+### Ultimate reference
+
+- Stockfish 19, unrestricted, default NNUE enabled.
+
+Use:
+
+- Equal thread counts.
+- Equal hash allocations.
+- Identical hardware.
+- Reproducible colour-reversed opening pairs.
+- Verified executable identities.
+- Matching time controls.
+
+Continue to preserve the first verified Stockfish 4 victory from P1.13 as a historical milestone.
+
+Do not describe three Stockfish 19 draws as an all-time record without comparing the matched historical data.
+
+Do not claim that an increase from 1.5 to 2.0 points in a 40-game sample proves a meaningful Elo increase.
+
+Report actual scores and uncertainty.
+
+**Deliverable:** `P115_EXTERNAL_COMPETITIVE_CALIBRATION.md`
+
+---
+
+# PHASE 14 — PROMOTION ADJUDICATION
+
+## Category A — Verified competitive advancement
+
+At least one new configuration passes all correctness gates and demonstrates independently supported playing-strength superiority over the corresponding qualified baseline.
+
+If a candidate also passes a preregistered slower-time generalization requirement, record that separately.
+
+Promote only the successful resource configuration.
+
+## Category B — Engineering progress, strength inconclusive
+
+Useful capture-ordering or history improvements exist, but independent evidence does not establish superiority.
+
+Retain X7 and X12.
+
+Preserve X19 as the leading research reference unless a new candidate surpasses it in a properly supported comparison.
+
+## Category C — Hypothesis rejected
+
+The proposed intervention consistently harms playing strength or fails the preregistered development criterion.
+
+Archive the results and retain the qualified baselines.
+
+## Category D — Blocked
+
+Critical correctness, reproducibility, concurrency or statistical-integrity failures.
+
+Do not call a milestone Category A solely because source code is completed or NPS improves.
+
+**Deliverable:** `FINAL_RESEARCH_DECISION.md`
+
+---
+
+# PHASE 15 — ARCHITECTURAL EXIT REVIEW
+
+Determine whether:
+
+1. The original staged capture leak was genuinely responsible for the large node reduction.
+2. X19's fixed-depth performance improvements survive independent reproduction.
+3. Any bad-capture deferral failure was verified.
+4. Adaptive capture staging improves actual playing strength.
+5. History normalization provides an independent advantage.
+6. The slower-time weakness is reproducible.
+7. X19 or X20 has earned promotion over X7 or X12.
+8. The search-efficiency gap against historical classical engines is meaningfully narrowing.
+
+If no candidate earns promotion, make a clear architectural recommendation.
+
+Possible future directions include:
+
+- Root search stability.
+- Quiescence and exchange search.
+- Search correctness.
+- Transposition-table efficiency.
+- Non-neural alternative search.
+- Specialized deterministic endgame reasoning.
+- CPU-specific optimization.
+
+Do not automatically begin singular extensions again.
+
+A separate singular-extension experiment would require new evidence explaining how it avoids the previously observed X8 verification-search overhead and regression.
+
+**Deliverable:** `P116_ARCHITECTURAL_DIRECTION.md`
+
+---
+
+# FINAL REQUIRED ARTIFACTS
+
+Create:
+
+`docs/phase1/p1.15_report.md`
+
+`analysis/phase1/p1.15/P114_SCIENTIFIC_RECONCILIATION.md`
+
+`analysis/phase1/p1.15/MOVEPICKER_COMPLETENESS_AND_LEGALITY.md`
+
+`analysis/phase1/p1.15/STATIC_EXCHANGE_EVALUATION_AUDIT.md`
+
+`analysis/phase1/p1.15/BAD_CAPTURE_DEFERRAL_FORENSICS.md`
+
+`analysis/phase1/p1.15/ADAPTIVE_CAPTURE_ORDERING.md`, conditional.
+
+`analysis/phase1/p1.15/HISTORY_AGING_AND_NORMALIZATION.md`
+
+`analysis/phase1/p1.15/FIXED_DEPTH_SEARCH_CONTRACT.md`
+
+`analysis/phase1/p1.15/TIME_CONTROL_GENERALIZATION.md`
+
+`analysis/phase1/p1.15/P115_SEARCH_ECONOMICS.md`
+
+`analysis/phase1/p1.15/P115_FACTORIAL_ABLATION.md`
+
+`analysis/phase1/p1.15/P115_CORRECTNESS_REPORT.md`
+
+`analysis/phase1/p1.15/X20_CANDIDATE_SELECTION.md`, conditional.
+
+`analysis/phase1/p1.15/X20_INDEPENDENT_STRENGTH.md`, conditional.
+
+`analysis/phase1/p1.15/P115_EXTERNAL_COMPETITIVE_CALIBRATION.md`
+
+`analysis/phase1/p1.15/FINAL_RESEARCH_DECISION.md`
+
+`analysis/phase1/p1.15/P116_ARCHITECTURAL_DIRECTION.md`
+
+`analysis/phase1/p1.15/experiment_manifest.json`
+
+`analysis/phase1/p1.15/sha256_manifest.json`
+
+Preserve:
+
+- Frozen X7, X12 and X19 binaries.
+- Source snapshots.
+- MovePicker property-test data.
+- SEE reference positions.
+- Full-width alpha-beta comparison traces.
+- Fixed-depth and fixed-time benchmarks.
+- Tournament PGNs.
+- Pentanomial statistics.
+- Opening manifests.
+- Raw JSON telemetry.
+- Compiler and hardware details.
+- Reproduction scripts.
+
+Commit all completed and verified work locally.
+
+Do not push.
+
+---
+
+# FINAL EXECUTION INSTRUCTION
+
+Execute Project Janus P1.15 as a strictly non-ML move-ordering correctness and strength-generalization milestone.
+
+Begin from frozen X19, preserving X7 and X12 as immutable competitive controls.
+
+First establish that the P1.14 node reduction comes from correct alpha-beta ordering rather than missing moves or invalid shortcuts.
+
+Independently verify SEE and unfavorable-capture classification.
+
+Investigate the slower-time competitive reversal using controlled experiments.
+
+Implement adaptive capture staging only when a reproducible causal issue supports it.
+
+Investigate history normalization separately, avoiding uncontrolled integration.
+
+Freeze a new X20 candidate only when justified.
+
+Qualify it using independent, adequately powered real-game testing.
+
+Retain X7 and X12 unless a candidate earns promotion through the predefined strength gates.
+
+**The objective is to transform Janus's new search-efficiency advantage into reproducible competitive strength—not merely create another engine with fewer searched nodes.**
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-11-13T23:12:18+05:30.
+
+The user's current state is as follows:
+Active Document: e:\ChessXML\project-janus-phase1\analysis\phase1\p1.11\tests\test_p111_correctness_suite.py (LANGUAGE_UNSPECIFIED)
+Cursor is on line: 1
+Other open documents:
+- e:\ChessXML\project-janus-phase1\analysis\phase1\p1.14\tests\run_p114_tournaments.py (LANGUAGE_UNSPECIFIED)
+- e:\ChessXML\project-janus-phase1\engine\classical_x\janus_classical_x.cpp (LANGUAGE_UNSPECIFIED)
+- e:\ChessXML\project-janus-phase1\analysis\phase1\p1.14\tests\test_p114_correctness_suite.py (LANGUAGE_UNSPECIFIED)
+- e:\ChessXML\project-janus-phase1\analysis\phase1\p1.14\tests\run_search_efficiency_replication.py (LANGUAGE_UNSPECIFIED)
+- e:\ChessXML\project-janus-phase1\analysis\phase1\p1.14\tests\run_development_ablations.py (LANGUAGE_UNSPECIFIED)
+</ADDITIONAL_METADATA>

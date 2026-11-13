@@ -1,0 +1,1162 @@
+{
+  "diagnostic_time_budgets": {
+    "X7_Baseline": {
+      "100ms": {
+        "budget_seconds": 0.1,
+        "total_nodes": 770048,
+        "total_elapsed_seconds": 0.5032,
+        "nps": 1530420,
+        "average_depth": 9.2,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 0.1,
+            "depth_achieved": 8,
+            "score": 7,
+            "best_move": "b1c3",
+            "nodes": 172032,
+            "wall_time_sec": 0.1007,
+            "overrun_sec": 0.0007,
+            "overrun_percentage": 0.72
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 0.1,
+            "depth_achieved": 8,
+            "score": 62,
+            "best_move": "d4c6",
+            "nodes": 122880,
+            "wall_time_sec": 0.1003,
+            "overrun_sec": 0.0003,
+            "overrun_percentage": 0.31
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 0.1,
+            "depth_achieved": 8,
+            "score": -250,
+            "best_move": "e8e7",
+            "nodes": 155648,
+            "wall_time_sec": 0.1006,
+            "overrun_sec": 0.0006,
+            "overrun_percentage": 0.59
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 0.1,
+            "depth_achieved": 11,
+            "score": 184,
+            "best_move": "h1h2",
+            "nodes": 143360,
+            "wall_time_sec": 0.1012,
+            "overrun_sec": 0.0012,
+            "overrun_percentage": 1.19
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 0.1,
+            "depth_achieved": 11,
+            "score": 96,
+            "best_move": "b3c3",
+            "nodes": 176128,
+            "wall_time_sec": 0.1003,
+            "overrun_sec": 0.0003,
+            "overrun_percentage": 0.35
+          }
+        ]
+      },
+      "250ms": {
+        "budget_seconds": 0.25,
+        "total_nodes": 1847296,
+        "total_elapsed_seconds": 1.2541,
+        "nps": 1472977,
+        "average_depth": 11.2,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 0.25,
+            "depth_achieved": 10,
+            "score": 11,
+            "best_move": "e2e4",
+            "nodes": 399360,
+            "wall_time_sec": 0.251,
+            "overrun_sec": 0.001,
+            "overrun_percentage": 0.4
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 0.25,
+            "depth_achieved": 10,
+            "score": 55,
+            "best_move": "d4c6",
+            "nodes": 317440,
+            "wall_time_sec": 0.2509,
+            "overrun_sec": 0.0009,
+            "overrun_percentage": 0.34
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 0.25,
+            "depth_achieved": 10,
+            "score": -341,
+            "best_move": "c6e5",
+            "nodes": 352256,
+            "wall_time_sec": 0.2508,
+            "overrun_sec": 0.0008,
+            "overrun_percentage": 0.34
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 0.25,
+            "depth_achieved": 12,
+            "score": 186,
+            "best_move": "h1h2",
+            "nodes": 350208,
+            "wall_time_sec": 0.2508,
+            "overrun_sec": 0.0008,
+            "overrun_percentage": 0.3
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 0.25,
+            "depth_achieved": 14,
+            "score": 97,
+            "best_move": "b3c3",
+            "nodes": 428032,
+            "wall_time_sec": 0.2507,
+            "overrun_sec": 0.0007,
+            "overrun_percentage": 0.27
+          }
+        ]
+      },
+      "500ms": {
+        "budget_seconds": 0.5,
+        "total_nodes": 3731456,
+        "total_elapsed_seconds": 2.5031,
+        "nps": 1490762,
+        "average_depth": 12.4,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 0.5,
+            "depth_achieved": 11,
+            "score": 32,
+            "best_move": "e2e4",
+            "nodes": 813056,
+            "wall_time_sec": 0.5007,
+            "overrun_sec": 0.0007,
+            "overrun_percentage": 0.13
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 0.5,
+            "depth_achieved": 11,
+            "score": 51,
+            "best_move": "d4c6",
+            "nodes": 636928,
+            "wall_time_sec": 0.5003,
+            "overrun_sec": 0.0003,
+            "overrun_percentage": 0.06
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 0.5,
+            "depth_achieved": 10,
+            "score": -341,
+            "best_move": "c6e5",
+            "nodes": 722944,
+            "wall_time_sec": 0.5005,
+            "overrun_sec": 0.0005,
+            "overrun_percentage": 0.11
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 0.5,
+            "depth_achieved": 14,
+            "score": 203,
+            "best_move": "h1h2",
+            "nodes": 681984,
+            "wall_time_sec": 0.5015,
+            "overrun_sec": 0.0015,
+            "overrun_percentage": 0.3
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 0.5,
+            "depth_achieved": 16,
+            "score": 139,
+            "best_move": "d3c3",
+            "nodes": 876544,
+            "wall_time_sec": 0.5001,
+            "overrun_sec": 0.0001,
+            "overrun_percentage": 0.01
+          }
+        ]
+      },
+      "1000ms": {
+        "budget_seconds": 1.0,
+        "total_nodes": 7364608,
+        "total_elapsed_seconds": 5.0034,
+        "nps": 1471924,
+        "average_depth": 14.0,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 1.0,
+            "depth_achieved": 13,
+            "score": 36,
+            "best_move": "e2e4",
+            "nodes": 1556480,
+            "wall_time_sec": 1.0008,
+            "overrun_sec": 0.0008,
+            "overrun_percentage": 0.08
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 1.0,
+            "depth_achieved": 12,
+            "score": 44,
+            "best_move": "d4c6",
+            "nodes": 1220608,
+            "wall_time_sec": 1.0015,
+            "overrun_sec": 0.0015,
+            "overrun_percentage": 0.15
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 1.0,
+            "depth_achieved": 11,
+            "score": -488,
+            "best_move": "c6e5",
+            "nodes": 1542144,
+            "wall_time_sec": 1.0003,
+            "overrun_sec": 0.0003,
+            "overrun_percentage": 0.03
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 1.0,
+            "depth_achieved": 16,
+            "score": 216,
+            "best_move": "h1h2",
+            "nodes": 1366016,
+            "wall_time_sec": 1.0005,
+            "overrun_sec": 0.0005,
+            "overrun_percentage": 0.05
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 1.0,
+            "depth_achieved": 18,
+            "score": 107,
+            "best_move": "d3c3",
+            "nodes": 1679360,
+            "wall_time_sec": 1.0003,
+            "overrun_sec": 0.0003,
+            "overrun_percentage": 0.03
+          }
+        ]
+      },
+      "2500ms": {
+        "budget_seconds": 2.5,
+        "total_nodes": 17420288,
+        "total_elapsed_seconds": 12.5056,
+        "nps": 1393002,
+        "average_depth": 15.4,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 2.5,
+            "depth_achieved": 14,
+            "score": 18,
+            "best_move": "g1f3",
+            "nodes": 3713024,
+            "wall_time_sec": 2.5001,
+            "overrun_sec": 0.0001,
+            "overrun_percentage": 0.0
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 2.5,
+            "depth_achieved": 14,
+            "score": 43,
+            "best_move": "d4c6",
+            "nodes": 3008512,
+            "wall_time_sec": 2.501,
+            "overrun_sec": 0.001,
+            "overrun_percentage": 0.04
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 2.5,
+            "depth_achieved": 14,
+            "score": -808,
+            "best_move": "e6f6",
+            "nodes": 3518464,
+            "wall_time_sec": 2.5019,
+            "overrun_sec": 0.0019,
+            "overrun_percentage": 0.08
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 2.5,
+            "depth_achieved": 17,
+            "score": 225,
+            "best_move": "h1h2",
+            "nodes": 2998272,
+            "wall_time_sec": 2.5013,
+            "overrun_sec": 0.0013,
+            "overrun_percentage": 0.05
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 2.5,
+            "depth_achieved": 18,
+            "score": 107,
+            "best_move": "b3c3",
+            "nodes": 4182016,
+            "wall_time_sec": 2.5013,
+            "overrun_sec": 0.0013,
+            "overrun_percentage": 0.05
+          }
+        ]
+      },
+      "5000ms": {
+        "budget_seconds": 5.0,
+        "total_nodes": 36947968,
+        "total_elapsed_seconds": 25.0033,
+        "nps": 1477725,
+        "average_depth": 16.6,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 5.0,
+            "depth_achieved": 15,
+            "score": 22,
+            "best_move": "e2e4",
+            "nodes": 7383040,
+            "wall_time_sec": 5.0012,
+            "overrun_sec": 0.0012,
+            "overrun_percentage": 0.02
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 5.0,
+            "depth_achieved": 15,
+            "score": 43,
+            "best_move": "d4c6",
+            "nodes": 6162432,
+            "wall_time_sec": 5.0012,
+            "overrun_sec": 0.0012,
+            "overrun_percentage": 0.02
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 5.0,
+            "depth_achieved": 15,
+            "score": -835,
+            "best_move": "e6f6",
+            "nodes": 7665664,
+            "wall_time_sec": 5.0003,
+            "overrun_sec": 0.0003,
+            "overrun_percentage": 0.01
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 5.0,
+            "depth_achieved": 18,
+            "score": 235,
+            "best_move": "h1h2",
+            "nodes": 6465536,
+            "wall_time_sec": 5.0003,
+            "overrun_sec": 0.0003,
+            "overrun_percentage": 0.01
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 5.0,
+            "depth_achieved": 20,
+            "score": 107,
+            "best_move": "d3c3",
+            "nodes": 9271296,
+            "wall_time_sec": 5.0002,
+            "overrun_sec": 0.0002,
+            "overrun_percentage": 0.0
+          }
+        ]
+      }
+    },
+    "X19_Frozen": {
+      "100ms": {
+        "budget_seconds": 0.1,
+        "total_nodes": 718848,
+        "total_elapsed_seconds": 0.5039,
+        "nps": 1426667,
+        "average_depth": 9.2,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 0.1,
+            "depth_achieved": 9,
+            "score": 27,
+            "best_move": "b1c3",
+            "nodes": 163840,
+            "wall_time_sec": 0.1013,
+            "overrun_sec": 0.0013,
+            "overrun_percentage": 1.31
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 0.1,
+            "depth_achieved": 8,
+            "score": 54,
+            "best_move": "d4c6",
+            "nodes": 122880,
+            "wall_time_sec": 0.101,
+            "overrun_sec": 0.001,
+            "overrun_percentage": 0.97
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 0.1,
+            "depth_achieved": 7,
+            "score": -251,
+            "best_move": "e8e7",
+            "nodes": 137216,
+            "wall_time_sec": 0.1009,
+            "overrun_sec": 0.0009,
+            "overrun_percentage": 0.93
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 0.1,
+            "depth_achieved": 11,
+            "score": 235,
+            "best_move": "h1h2",
+            "nodes": 129024,
+            "wall_time_sec": 0.1005,
+            "overrun_sec": 0.0005,
+            "overrun_percentage": 0.49
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 0.1,
+            "depth_achieved": 11,
+            "score": 110,
+            "best_move": "b3c3",
+            "nodes": 165888,
+            "wall_time_sec": 0.1002,
+            "overrun_sec": 0.0002,
+            "overrun_percentage": 0.17
+          }
+        ]
+      },
+      "250ms": {
+        "budget_seconds": 0.25,
+        "total_nodes": 1857536,
+        "total_elapsed_seconds": 1.2546,
+        "nps": 1480571,
+        "average_depth": 11.8,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 0.25,
+            "depth_achieved": 10,
+            "score": 11,
+            "best_move": "e2e4",
+            "nodes": 403456,
+            "wall_time_sec": 0.2511,
+            "overrun_sec": 0.0011,
+            "overrun_percentage": 0.45
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 0.25,
+            "depth_achieved": 10,
+            "score": 51,
+            "best_move": "d4c6",
+            "nodes": 337920,
+            "wall_time_sec": 0.2504,
+            "overrun_sec": 0.0004,
+            "overrun_percentage": 0.17
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 0.25,
+            "depth_achieved": 11,
+            "score": -771,
+            "best_move": "h5h4",
+            "nodes": 376832,
+            "wall_time_sec": 0.2511,
+            "overrun_sec": 0.0011,
+            "overrun_percentage": 0.43
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 0.25,
+            "depth_achieved": 13,
+            "score": 235,
+            "best_move": "h1h2",
+            "nodes": 329728,
+            "wall_time_sec": 0.2512,
+            "overrun_sec": 0.0012,
+            "overrun_percentage": 0.48
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 0.25,
+            "depth_achieved": 15,
+            "score": 113,
+            "best_move": "d3c3",
+            "nodes": 409600,
+            "wall_time_sec": 0.2507,
+            "overrun_sec": 0.0007,
+            "overrun_percentage": 0.3
+          }
+        ]
+      },
+      "500ms": {
+        "budget_seconds": 0.5,
+        "total_nodes": 3727360,
+        "total_elapsed_seconds": 2.5046,
+        "nps": 1488204,
+        "average_depth": 13.4,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 0.5,
+            "depth_achieved": 11,
+            "score": 20,
+            "best_move": "b1c3",
+            "nodes": 772096,
+            "wall_time_sec": 0.5007,
+            "overrun_sec": 0.0007,
+            "overrun_percentage": 0.15
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 0.5,
+            "depth_achieved": 11,
+            "score": 55,
+            "best_move": "d4c6",
+            "nodes": 663552,
+            "wall_time_sec": 0.5003,
+            "overrun_sec": 0.0003,
+            "overrun_percentage": 0.07
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 0.5,
+            "depth_achieved": 12,
+            "score": -825,
+            "best_move": "e6f6",
+            "nodes": 751616,
+            "wall_time_sec": 0.5015,
+            "overrun_sec": 0.0015,
+            "overrun_percentage": 0.31
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 0.5,
+            "depth_achieved": 16,
+            "score": 235,
+            "best_move": "h1h2",
+            "nodes": 706560,
+            "wall_time_sec": 0.5012,
+            "overrun_sec": 0.0012,
+            "overrun_percentage": 0.24
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 0.5,
+            "depth_achieved": 17,
+            "score": 113,
+            "best_move": "d3c3",
+            "nodes": 833536,
+            "wall_time_sec": 0.5008,
+            "overrun_sec": 0.0008,
+            "overrun_percentage": 0.16
+          }
+        ]
+      },
+      "1000ms": {
+        "budget_seconds": 1.0,
+        "total_nodes": 6969344,
+        "total_elapsed_seconds": 5.0037,
+        "nps": 1392832,
+        "average_depth": 13.6,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 1.0,
+            "depth_achieved": 12,
+            "score": 11,
+            "best_move": "e2e4",
+            "nodes": 1517568,
+            "wall_time_sec": 1.0006,
+            "overrun_sec": 0.0006,
+            "overrun_percentage": 0.06
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 1.0,
+            "depth_achieved": 12,
+            "score": 48,
+            "best_move": "d4c6",
+            "nodes": 1245184,
+            "wall_time_sec": 1.0007,
+            "overrun_sec": 0.0007,
+            "overrun_percentage": 0.07
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 1.0,
+            "depth_achieved": 13,
+            "score": -812,
+            "best_move": "g8h7",
+            "nodes": 1179648,
+            "wall_time_sec": 1.001,
+            "overrun_sec": 0.001,
+            "overrun_percentage": 0.1
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 1.0,
+            "depth_achieved": 16,
+            "score": 235,
+            "best_move": "h1h2",
+            "nodes": 1327104,
+            "wall_time_sec": 1.0011,
+            "overrun_sec": 0.0011,
+            "overrun_percentage": 0.11
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 1.0,
+            "depth_achieved": 15,
+            "score": 113,
+            "best_move": "d3c3",
+            "nodes": 1699840,
+            "wall_time_sec": 1.0003,
+            "overrun_sec": 0.0003,
+            "overrun_percentage": 0.03
+          }
+        ]
+      },
+      "2500ms": {
+        "budget_seconds": 2.5,
+        "total_nodes": 18454528,
+        "total_elapsed_seconds": 12.5026,
+        "nps": 1476049,
+        "average_depth": 15.0,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 2.5,
+            "depth_achieved": 14,
+            "score": 20,
+            "best_move": "e2e4",
+            "nodes": 3799040,
+            "wall_time_sec": 2.5001,
+            "overrun_sec": 0.0001,
+            "overrun_percentage": 0.0
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 2.5,
+            "depth_achieved": 13,
+            "score": 44,
+            "best_move": "d4c6",
+            "nodes": 3332096,
+            "wall_time_sec": 2.5009,
+            "overrun_sec": 0.0009,
+            "overrun_percentage": 0.04
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 2.5,
+            "depth_achieved": 15,
+            "score": -835,
+            "best_move": "e6f6",
+            "nodes": 3878912,
+            "wall_time_sec": 2.5007,
+            "overrun_sec": 0.0007,
+            "overrun_percentage": 0.03
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 2.5,
+            "depth_achieved": 16,
+            "score": 235,
+            "best_move": "h1h2",
+            "nodes": 3092480,
+            "wall_time_sec": 2.5007,
+            "overrun_sec": 0.0007,
+            "overrun_percentage": 0.03
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 2.5,
+            "depth_achieved": 17,
+            "score": 104,
+            "best_move": "b3c3",
+            "nodes": 4352000,
+            "wall_time_sec": 2.5002,
+            "overrun_sec": 0.0002,
+            "overrun_percentage": 0.01
+          }
+        ]
+      },
+      "5000ms": {
+        "budget_seconds": 5.0,
+        "total_nodes": 37232640,
+        "total_elapsed_seconds": 25.0037,
+        "nps": 1489084,
+        "average_depth": 15.8,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 5.0,
+            "depth_achieved": 15,
+            "score": 22,
+            "best_move": "e2e4",
+            "nodes": 7536640,
+            "wall_time_sec": 5.001,
+            "overrun_sec": 0.001,
+            "overrun_percentage": 0.02
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 5.0,
+            "depth_achieved": 14,
+            "score": 42,
+            "best_move": "d4c6",
+            "nodes": 6561792,
+            "wall_time_sec": 5.0005,
+            "overrun_sec": 0.0005,
+            "overrun_percentage": 0.01
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 5.0,
+            "depth_achieved": 15,
+            "score": -885,
+            "best_move": "e6f6",
+            "nodes": 7403520,
+            "wall_time_sec": 5.0011,
+            "overrun_sec": 0.0011,
+            "overrun_percentage": 0.02
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 5.0,
+            "depth_achieved": 16,
+            "score": 236,
+            "best_move": "h1h2",
+            "nodes": 6662144,
+            "wall_time_sec": 5.0007,
+            "overrun_sec": 0.0007,
+            "overrun_percentage": 0.01
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 5.0,
+            "depth_achieved": 19,
+            "score": 110,
+            "best_move": "d3c3",
+            "nodes": 9068544,
+            "wall_time_sec": 5.0005,
+            "overrun_sec": 0.0005,
+            "overrun_percentage": 0.01
+          }
+        ]
+      }
+    },
+    "X20_Candidate": {
+      "100ms": {
+        "budget_seconds": 0.1,
+        "total_nodes": 784384,
+        "total_elapsed_seconds": 0.5028,
+        "nps": 1560145,
+        "average_depth": 12.0,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 0.1,
+            "depth_achieved": 9,
+            "score": 25,
+            "best_move": "e2e4",
+            "nodes": 159744,
+            "wall_time_sec": 0.1002,
+            "overrun_sec": 0.0002,
+            "overrun_percentage": 0.19
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 0.1,
+            "depth_achieved": 9,
+            "score": 58,
+            "best_move": "d4c6",
+            "nodes": 126976,
+            "wall_time_sec": 0.1002,
+            "overrun_sec": 0.0002,
+            "overrun_percentage": 0.17
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 0.1,
+            "depth_achieved": 9,
+            "score": -424,
+            "best_move": "c6e5",
+            "nodes": 151552,
+            "wall_time_sec": 0.1007,
+            "overrun_sec": 0.0007,
+            "overrun_percentage": 0.68
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 0.1,
+            "depth_achieved": 16,
+            "score": 236,
+            "best_move": "h1h2",
+            "nodes": 161792,
+            "wall_time_sec": 0.101,
+            "overrun_sec": 0.001,
+            "overrun_percentage": 1.0
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 0.1,
+            "depth_achieved": 17,
+            "score": 110,
+            "best_move": "d3c3",
+            "nodes": 184320,
+            "wall_time_sec": 0.1007,
+            "overrun_sec": 0.0007,
+            "overrun_percentage": 0.72
+          }
+        ]
+      },
+      "250ms": {
+        "budget_seconds": 0.25,
+        "total_nodes": 1933312,
+        "total_elapsed_seconds": 1.2536,
+        "nps": 1542208,
+        "average_depth": 12.4,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 0.25,
+            "depth_achieved": 10,
+            "score": 10,
+            "best_move": "e2e4",
+            "nodes": 401408,
+            "wall_time_sec": 0.2506,
+            "overrun_sec": 0.0006,
+            "overrun_percentage": 0.26
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 0.25,
+            "depth_achieved": 10,
+            "score": 48,
+            "best_move": "d4c6",
+            "nodes": 333824,
+            "wall_time_sec": 0.2503,
+            "overrun_sec": 0.0003,
+            "overrun_percentage": 0.13
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 0.25,
+            "depth_achieved": 10,
+            "score": -634,
+            "best_move": "c6e5",
+            "nodes": 389120,
+            "wall_time_sec": 0.2508,
+            "overrun_sec": 0.0008,
+            "overrun_percentage": 0.33
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 0.25,
+            "depth_achieved": 16,
+            "score": 236,
+            "best_move": "h1h2",
+            "nodes": 368640,
+            "wall_time_sec": 0.2515,
+            "overrun_sec": 0.0015,
+            "overrun_percentage": 0.58
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 0.25,
+            "depth_achieved": 16,
+            "score": 110,
+            "best_move": "b3c3",
+            "nodes": 440320,
+            "wall_time_sec": 0.2504,
+            "overrun_sec": 0.0004,
+            "overrun_percentage": 0.15
+          }
+        ]
+      },
+      "500ms": {
+        "budget_seconds": 0.5,
+        "total_nodes": 3756032,
+        "total_elapsed_seconds": 2.5032,
+        "nps": 1500466,
+        "average_depth": 13.2,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 0.5,
+            "depth_achieved": 11,
+            "score": 34,
+            "best_move": "e2e4",
+            "nodes": 780288,
+            "wall_time_sec": 0.5001,
+            "overrun_sec": 0.0001,
+            "overrun_percentage": 0.01
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 0.5,
+            "depth_achieved": 11,
+            "score": 51,
+            "best_move": "d4c6",
+            "nodes": 643072,
+            "wall_time_sec": 0.501,
+            "overrun_sec": 0.001,
+            "overrun_percentage": 0.19
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 0.5,
+            "depth_achieved": 12,
+            "score": -702,
+            "best_move": "c6d8",
+            "nodes": 772096,
+            "wall_time_sec": 0.5012,
+            "overrun_sec": 0.0012,
+            "overrun_percentage": 0.23
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 0.5,
+            "depth_achieved": 16,
+            "score": 236,
+            "best_move": "h1h2",
+            "nodes": 696320,
+            "wall_time_sec": 0.501,
+            "overrun_sec": 0.001,
+            "overrun_percentage": 0.2
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 0.5,
+            "depth_achieved": 16,
+            "score": 110,
+            "best_move": "b3c3",
+            "nodes": 864256,
+            "wall_time_sec": 0.5,
+            "overrun_sec": 0.0,
+            "overrun_percentage": 0.01
+          }
+        ]
+      },
+      "1000ms": {
+        "budget_seconds": 1.0,
+        "total_nodes": 7526400,
+        "total_elapsed_seconds": 5.0034,
+        "nps": 1504261,
+        "average_depth": 14.8,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 1.0,
+            "depth_achieved": 13,
+            "score": 20,
+            "best_move": "e2e4",
+            "nodes": 1540096,
+            "wall_time_sec": 1.0006,
+            "overrun_sec": 0.0006,
+            "overrun_percentage": 0.06
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 1.0,
+            "depth_achieved": 12,
+            "score": 42,
+            "best_move": "d4c6",
+            "nodes": 1341440,
+            "wall_time_sec": 1.0018,
+            "overrun_sec": 0.0018,
+            "overrun_percentage": 0.18
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 1.0,
+            "depth_achieved": 14,
+            "score": -891,
+            "best_move": "e6f6",
+            "nodes": 1492992,
+            "wall_time_sec": 1.0005,
+            "overrun_sec": 0.0005,
+            "overrun_percentage": 0.05
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 1.0,
+            "depth_achieved": 17,
+            "score": 234,
+            "best_move": "h1h2",
+            "nodes": 1458176,
+            "wall_time_sec": 1.0004,
+            "overrun_sec": 0.0004,
+            "overrun_percentage": 0.04
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 1.0,
+            "depth_achieved": 18,
+            "score": 110,
+            "best_move": "d3c3",
+            "nodes": 1693696,
+            "wall_time_sec": 1.0,
+            "overrun_sec": 0.0,
+            "overrun_percentage": 0.0
+          }
+        ]
+      },
+      "2500ms": {
+        "budget_seconds": 2.5,
+        "total_nodes": 18585600,
+        "total_elapsed_seconds": 12.5023,
+        "nps": 1486569,
+        "average_depth": 15.4,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 2.5,
+            "depth_achieved": 14,
+            "score": 20,
+            "best_move": "e2e4",
+            "nodes": 3833856,
+            "wall_time_sec": 2.5004,
+            "overrun_sec": 0.0004,
+            "overrun_percentage": 0.01
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 2.5,
+            "depth_achieved": 13,
+            "score": 45,
+            "best_move": "d4c6",
+            "nodes": 3309568,
+            "wall_time_sec": 2.5004,
+            "overrun_sec": 0.0004,
+            "overrun_percentage": 0.02
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 2.5,
+            "depth_achieved": 15,
+            "score": -891,
+            "best_move": "e6f6",
+            "nodes": 3866624,
+            "wall_time_sec": 2.5003,
+            "overrun_sec": 0.0003,
+            "overrun_percentage": 0.01
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 2.5,
+            "depth_achieved": 17,
+            "score": 234,
+            "best_move": "h1h2",
+            "nodes": 3231744,
+            "wall_time_sec": 2.5011,
+            "overrun_sec": 0.0011,
+            "overrun_percentage": 0.04
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 2.5,
+            "depth_achieved": 18,
+            "score": 110,
+            "best_move": "d3c3",
+            "nodes": 4343808,
+            "wall_time_sec": 2.5001,
+            "overrun_sec": 0.0001,
+            "overrun_percentage": 0.01
+          }
+        ]
+      },
+      "5000ms": {
+        "budget_seconds": 5.0,
+        "total_nodes": 36012032,
+        "total_elapsed_seconds": 25.0038,
+        "nps": 1440261,
+        "average_depth": 15.8,
+        "positions": [
+          {
+            "id": "Startpos",
+            "budget_sec": 5.0,
+            "depth_achieved": 14,
+            "score": 20,
+            "best_move": "e2e4",
+            "nodes": 6316032,
+            "wall_time_sec": 5.0004,
+            "overrun_sec": 0.0004,
+            "overrun_percentage": 0.01
+          },
+          {
+            "id": "Complex_middlegame",
+            "budget_sec": 5.0,
+            "depth_achieved": 14,
+            "score": 44,
+            "best_move": "d4c6",
+            "nodes": 6326272,
+            "wall_time_sec": 5.0014,
+            "overrun_sec": 0.0014,
+            "overrun_percentage": 0.03
+          },
+          {
+            "id": "G12_crisis",
+            "budget_sec": 5.0,
+            "depth_achieved": 16,
+            "score": -874,
+            "best_move": "e6f6",
+            "nodes": 7620608,
+            "wall_time_sec": 5.0009,
+            "overrun_sec": 0.0009,
+            "overrun_percentage": 0.02
+          },
+          {
+            "id": "Tactical_sacrifice",
+            "budget_sec": 5.0,
+            "depth_achieved": 16,
+            "score": 222,
+            "best_move": "h1h2",
+            "nodes": 6676480,
+            "wall_time_sec": 5.0001,
+            "overrun_sec": 0.0001,
+            "overrun_percentage": 0.0
+          },
+          {
+            "id": "Endgame_rook_pawn",
+            "budget_sec": 5.0,
+            "depth_achieved": 19,
+            "score": 108,
+            "best_move": "d3c3",
+            "nodes": 9072640,
+            "wall_time_sec": 5.001,
+            "overrun_sec": 0.001,
+            "overrun_percentage": 0.02
+          }
+        ]
+      }
+    }
+  }
+}

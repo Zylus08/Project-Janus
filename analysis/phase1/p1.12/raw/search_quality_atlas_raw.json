@@ -1,0 +1,946 @@
+[
+  {
+    "id": "TAC_01",
+    "category": "tactical",
+    "description": "Scholar's Mate in 1",
+    "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4",
+    "ground_truth_sf19": "a2a3",
+    "track_s_1t": {
+      "x7": {
+        "best_move": "h5f7",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 520192,
+        "nps": 2592587,
+        "score_cp": 28999
+      },
+      "x15": {
+        "best_move": "h5f7",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 434176,
+        "nps": 2161515,
+        "score_cp": 28999
+      },
+      "x16": {
+        "best_move": "h5f7",
+        "depth": 7,
+        "seldepth": 7,
+        "nodes": 376832,
+        "nps": 1875951,
+        "score_cp": 28999
+      }
+    },
+    "track_p_4t": {
+      "x12": {
+        "best_move": "h5f7",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 1476608,
+        "nps": 7339210,
+        "score_cp": 28999
+      },
+      "x15": {
+        "best_move": "h5f7",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 1615872,
+        "nps": 8027534,
+        "score_cp": 28999
+      },
+      "x16": {
+        "best_move": "h5f7",
+        "depth": 7,
+        "seldepth": 7,
+        "nodes": 1443840,
+        "nps": 7152768,
+        "score_cp": 28999
+      }
+    }
+  },
+  {
+    "id": "TAC_02",
+    "category": "tactical",
+    "description": "Legal's Mate in 2",
+    "fen": "r2qkb1r/pp2nppp/3p4/2pNN3/2BnP3/3P4/PPP2PPP/R1BbK2R w KQkq - 1 9",
+    "ground_truth_sf19": "a2a3",
+    "track_s_1t": {
+      "x7": {
+        "best_move": "d5f6",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 501760,
+        "nps": 2502733,
+        "score_cp": 28997
+      },
+      "x15": {
+        "best_move": "d5f6",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 415744,
+        "nps": 2069646,
+        "score_cp": 28997
+      },
+      "x16": {
+        "best_move": "d5f6",
+        "depth": 7,
+        "seldepth": 7,
+        "nodes": 360448,
+        "nps": 1793117,
+        "score_cp": 28997
+      }
+    },
+    "track_p_4t": {
+      "x12": {
+        "best_move": "d5f6",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 1318912,
+        "nps": 6523551,
+        "score_cp": 28997
+      },
+      "x15": {
+        "best_move": "d5f6",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 1638400,
+        "nps": 8147753,
+        "score_cp": 28997
+      },
+      "x16": {
+        "best_move": "d5f6",
+        "depth": 7,
+        "seldepth": 7,
+        "nodes": 1490944,
+        "nps": 7393014,
+        "score_cp": 28997
+      }
+    }
+  },
+  {
+    "id": "TAC_03",
+    "category": "tactical",
+    "description": "Quiet deflection / mate threat",
+    "fen": "r1b2rk1/pp1p1pp1/1b1p2B1/n1q1p1p1/4P3/1QPP4/PP3PPP/R1B1K2R w KQ - 0 14",
+    "ground_truth_sf19": "a2a3",
+    "track_s_1t": {
+      "x7": {
+        "best_move": "b3c2",
+        "depth": 11,
+        "seldepth": 11,
+        "nodes": 301056,
+        "nps": 1498524,
+        "score_cp": -487
+      },
+      "x15": {
+        "best_move": "b3c2",
+        "depth": 10,
+        "seldepth": 10,
+        "nodes": 253952,
+        "nps": 1265669,
+        "score_cp": -467
+      },
+      "x16": {
+        "best_move": "b3c2",
+        "depth": 10,
+        "seldepth": 10,
+        "nodes": 260096,
+        "nps": 1290577,
+        "score_cp": -467
+      }
+    },
+    "track_p_4t": {
+      "x12": {
+        "best_move": "b3c2",
+        "depth": 11,
+        "seldepth": 11,
+        "nodes": 856064,
+        "nps": 4227184,
+        "score_cp": -472
+      },
+      "x15": {
+        "best_move": "b3c2",
+        "depth": 11,
+        "seldepth": 11,
+        "nodes": 954368,
+        "nps": 4723712,
+        "score_cp": -464
+      },
+      "x16": {
+        "best_move": "b3c2",
+        "depth": 10,
+        "seldepth": 10,
+        "nodes": 952320,
+        "nps": 4712449,
+        "score_cp": -472
+      }
+    }
+  },
+  {
+    "id": "TAC_04",
+    "category": "tactical",
+    "description": "Back-rank tactic / rook trade",
+    "fen": "2r3k1/1p3ppp/pq2p3/3p4/3P4/1P1Q4/P4PPP/2R3K1 b - - 0 20",
+    "ground_truth_sf19": "a6a5",
+    "track_s_1t": {
+      "x7": {
+        "best_move": "c8c1",
+        "depth": 15,
+        "seldepth": 15,
+        "nodes": 489472,
+        "nps": 2442542,
+        "score_cp": 1523
+      },
+      "x15": {
+        "best_move": "c8c1",
+        "depth": 15,
+        "seldepth": 15,
+        "nodes": 358400,
+        "nps": 1788480,
+        "score_cp": 1530
+      },
+      "x16": {
+        "best_move": "c8c1",
+        "depth": 14,
+        "seldepth": 14,
+        "nodes": 354304,
+        "nps": 1765265,
+        "score_cp": 1517
+      }
+    },
+    "track_p_4t": {
+      "x12": {
+        "best_move": "c8c1",
+        "depth": 15,
+        "seldepth": 15,
+        "nodes": 1052672,
+        "nps": 5202801,
+        "score_cp": 1530
+      },
+      "x15": {
+        "best_move": "c8c1",
+        "depth": 15,
+        "seldepth": 15,
+        "nodes": 1163264,
+        "nps": 5759550,
+        "score_cp": 1530
+      },
+      "x16": {
+        "best_move": "c8c1",
+        "depth": 15,
+        "seldepth": 15,
+        "nodes": 1208320,
+        "nps": 6001903,
+        "score_cp": 1530
+      }
+    }
+  },
+  {
+    "id": "POS_01",
+    "category": "positional",
+    "description": "Rubinstein French pawn center",
+    "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 0 7",
+    "ground_truth_sf19": "a2a3",
+    "track_s_1t": {
+      "x7": {
+        "best_move": "d4c5",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 296960,
+        "nps": 1484599,
+        "score_cp": -24
+      },
+      "x15": {
+        "best_move": "d3b5",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 256000,
+        "nps": 1278940,
+        "score_cp": -22
+      },
+      "x16": {
+        "best_move": "d3b5",
+        "depth": 7,
+        "seldepth": 7,
+        "nodes": 262144,
+        "nps": 1299057,
+        "score_cp": -19
+      }
+    },
+    "track_p_4t": {
+      "x12": {
+        "best_move": "d3b5",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 956416,
+        "nps": 4746415,
+        "score_cp": -22
+      },
+      "x15": {
+        "best_move": "d3b5",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 985088,
+        "nps": 4852026,
+        "score_cp": -23
+      },
+      "x16": {
+        "best_move": "d4c5",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 1017856,
+        "nps": 5053656,
+        "score_cp": -26
+      }
+    }
+  },
+  {
+    "id": "POS_02",
+    "category": "positional",
+    "description": "Italian King-side prophylaxis",
+    "fen": "r2q1rk1/1pp1bppp/p1np1nb1/4p3/2B1P1P1/2NP1N1P/PPP1QP2/R1B2RK1 w - - 1 11",
+    "ground_truth_sf19": "a2a3",
+    "track_s_1t": {
+      "x7": {
+        "best_move": "c1e3",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 243712,
+        "nps": 1214343,
+        "score_cp": 15
+      },
+      "x15": {
+        "best_move": "c1e3",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 219136,
+        "nps": 1094894,
+        "score_cp": 30
+      },
+      "x16": {
+        "best_move": "c1e3",
+        "depth": 7,
+        "seldepth": 7,
+        "nodes": 239616,
+        "nps": 1188901,
+        "score_cp": 29
+      }
+    },
+    "track_p_4t": {
+      "x12": {
+        "best_move": "c1e3",
+        "depth": 9,
+        "seldepth": 9,
+        "nodes": 817152,
+        "nps": 4045188,
+        "score_cp": 29
+      },
+      "x15": {
+        "best_move": "c1e3",
+        "depth": 9,
+        "seldepth": 9,
+        "nodes": 870400,
+        "nps": 4285831,
+        "score_cp": 39
+      },
+      "x16": {
+        "best_move": "c1e3",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 940032,
+        "nps": 4617021,
+        "score_cp": 23
+      }
+    }
+  },
+  {
+    "id": "POS_03",
+    "category": "positional",
+    "description": "Caro-Kann outpost tension",
+    "fen": "r1b2rk1/ppqn1ppp/2pbpn2/3p4/2PP4/2N1PNB1/PPQ2PPP/R3KB1R w KQ - 4 9",
+    "ground_truth_sf19": "a2a3",
+    "track_s_1t": {
+      "x7": {
+        "best_move": "g3d6",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 280576,
+        "nps": 1396556,
+        "score_cp": 54
+      },
+      "x15": {
+        "best_move": "g3d6",
+        "depth": 7,
+        "seldepth": 7,
+        "nodes": 221184,
+        "nps": 1098949,
+        "score_cp": 65
+      },
+      "x16": {
+        "best_move": "g3d6",
+        "depth": 7,
+        "seldepth": 7,
+        "nodes": 227328,
+        "nps": 1127899,
+        "score_cp": 76
+      }
+    },
+    "track_p_4t": {
+      "x12": {
+        "best_move": "g3d6",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 868352,
+        "nps": 4289873,
+        "score_cp": 60
+      },
+      "x15": {
+        "best_move": "g3d6",
+        "depth": 9,
+        "seldepth": 9,
+        "nodes": 937984,
+        "nps": 4625245,
+        "score_cp": 63
+      },
+      "x16": {
+        "best_move": "g3d6",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 964608,
+        "nps": 4789941,
+        "score_cp": 60
+      }
+    }
+  },
+  {
+    "id": "POS_04",
+    "category": "positional",
+    "description": "Queen's Indian space struggle",
+    "fen": "r2q1rk1/pp1nbppp/2p1pn2/3p4/2PP4/1PN1PN2/PB2BPPP/R2Q1RK1 b - - 0 9",
+    "ground_truth_sf19": "c6c5",
+    "track_s_1t": {
+      "x7": {
+        "best_move": "d8c7",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 286720,
+        "nps": 1427434,
+        "score_cp": -338
+      },
+      "x15": {
+        "best_move": "d8a5",
+        "depth": 7,
+        "seldepth": 7,
+        "nodes": 210944,
+        "nps": 1052013,
+        "score_cp": -343
+      },
+      "x16": {
+        "best_move": "f8e8",
+        "depth": 6,
+        "seldepth": 6,
+        "nodes": 217088,
+        "nps": 1079011,
+        "score_cp": -356
+      }
+    },
+    "track_p_4t": {
+      "x12": {
+        "best_move": "e7b4",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 878592,
+        "nps": 4356643,
+        "score_cp": -350
+      },
+      "x15": {
+        "best_move": "e7b4",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 905216,
+        "nps": 4504720,
+        "score_cp": -350
+      },
+      "x16": {
+        "best_move": "e7b4",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 1073152,
+        "nps": 5316312,
+        "score_cp": -350
+      }
+    }
+  },
+  {
+    "id": "DEF_01",
+    "category": "defensive",
+    "description": "Neutralizing pin on c3",
+    "fen": "r1b1k2r/pppp1ppp/8/4q3/1bP5/2N1P3/PP1B1PPP/R2QKB1R b KQkq - 0 9",
+    "ground_truth_sf19": "a7a6",
+    "track_s_1t": {
+      "x7": {
+        "best_move": "e5d6",
+        "depth": 7,
+        "seldepth": 7,
+        "nodes": 294912,
+        "nps": 1467908,
+        "score_cp": -372
+      },
+      "x15": {
+        "best_move": "e8g8",
+        "depth": 7,
+        "seldepth": 7,
+        "nodes": 239616,
+        "nps": 1187747,
+        "score_cp": -368
+      },
+      "x16": {
+        "best_move": "e8g8",
+        "depth": 7,
+        "seldepth": 7,
+        "nodes": 247808,
+        "nps": 1236218,
+        "score_cp": -363
+      }
+    },
+    "track_p_4t": {
+      "x12": {
+        "best_move": "c7c6",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 921600,
+        "nps": 4564995,
+        "score_cp": -367
+      },
+      "x15": {
+        "best_move": "e8g8",
+        "depth": 9,
+        "seldepth": 9,
+        "nodes": 999424,
+        "nps": 4951212,
+        "score_cp": -372
+      },
+      "x16": {
+        "best_move": "e8g8",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 1067008,
+        "nps": 5273010,
+        "score_cp": -371
+      }
+    }
+  },
+  {
+    "id": "DEF_02",
+    "category": "defensive",
+    "description": "Dragon Sicilian English attack defense",
+    "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/3NP3/2N1BP2/PPPQ2PP/R3KB1R w KQ - 3 9",
+    "ground_truth_sf19": "a2a3",
+    "track_s_1t": {
+      "x7": {
+        "best_move": "d4c6",
+        "depth": 9,
+        "seldepth": 9,
+        "nodes": 280576,
+        "nps": 1399039,
+        "score_cp": 96
+      },
+      "x15": {
+        "best_move": "d4c6",
+        "depth": 9,
+        "seldepth": 9,
+        "nodes": 235520,
+        "nps": 1172235,
+        "score_cp": 95
+      },
+      "x16": {
+        "best_move": "d4c6",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 256000,
+        "nps": 1272702,
+        "score_cp": 95
+      }
+    },
+    "track_p_4t": {
+      "x12": {
+        "best_move": "d4c6",
+        "depth": 10,
+        "seldepth": 10,
+        "nodes": 783389,
+        "nps": 3904244,
+        "score_cp": 81
+      },
+      "x15": {
+        "best_move": "d4c6",
+        "depth": 9,
+        "seldepth": 9,
+        "nodes": 692224,
+        "nps": 3442242,
+        "score_cp": 81
+      },
+      "x16": {
+        "best_move": "d4c6",
+        "depth": 9,
+        "seldepth": 9,
+        "nodes": 878592,
+        "nps": 4307404,
+        "score_cp": 84
+      }
+    }
+  },
+  {
+    "id": "DEF_03",
+    "category": "defensive",
+    "description": "Tarrasch IQP blockade",
+    "fen": "r1bqr1k1/pp3ppp/2n5/1B1p4/3P4/5N2/PP1Q1PPP/R4RK1 w - - 0 13",
+    "ground_truth_sf19": "a2a3",
+    "track_s_1t": {
+      "x7": {
+        "best_move": "b5c6",
+        "depth": 9,
+        "seldepth": 9,
+        "nodes": 335872,
+        "nps": 1670582,
+        "score_cp": 67
+      },
+      "x15": {
+        "best_move": "f3e5",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 266240,
+        "nps": 1324541,
+        "score_cp": 62
+      },
+      "x16": {
+        "best_move": "f1c1",
+        "depth": 7,
+        "seldepth": 7,
+        "nodes": 270336,
+        "nps": 1347128,
+        "score_cp": 88
+      }
+    },
+    "track_p_4t": {
+      "x12": {
+        "best_move": "b5c6",
+        "depth": 10,
+        "seldepth": 10,
+        "nodes": 944128,
+        "nps": 4658150,
+        "score_cp": 62
+      },
+      "x15": {
+        "best_move": "b5c6",
+        "depth": 9,
+        "seldepth": 9,
+        "nodes": 1073152,
+        "nps": 5340549,
+        "score_cp": 66
+      },
+      "x16": {
+        "best_move": "b5c6",
+        "depth": 9,
+        "seldepth": 9,
+        "nodes": 1087488,
+        "nps": 5383726,
+        "score_cp": 65
+      }
+    }
+  },
+  {
+    "id": "DEF_04",
+    "category": "defensive",
+    "description": "Four Knights tactical fork trick defense",
+    "fen": "r1bqk2r/pppp1ppp/2n5/4p3/2B1n3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 5",
+    "ground_truth_sf19": "a2a3",
+    "track_s_1t": {
+      "x7": {
+        "best_move": "c4d5",
+        "depth": 9,
+        "seldepth": 9,
+        "nodes": 309248,
+        "nps": 1542264,
+        "score_cp": 262
+      },
+      "x15": {
+        "best_move": "c4d5",
+        "depth": 9,
+        "seldepth": 9,
+        "nodes": 264192,
+        "nps": 1316806,
+        "score_cp": 261
+      },
+      "x16": {
+        "best_move": "c4d5",
+        "depth": 8,
+        "seldepth": 8,
+        "nodes": 290816,
+        "nps": 1449160,
+        "score_cp": 238
+      }
+    },
+    "track_p_4t": {
+      "x12": {
+        "best_move": "c4d5",
+        "depth": 10,
+        "seldepth": 10,
+        "nodes": 931840,
+        "nps": 4621953,
+        "score_cp": 259
+      },
+      "x15": {
+        "best_move": "c4d5",
+        "depth": 10,
+        "seldepth": 10,
+        "nodes": 1015808,
+        "nps": 5021312,
+        "score_cp": 249
+      },
+      "x16": {
+        "best_move": "c4d5",
+        "depth": 9,
+        "seldepth": 9,
+        "nodes": 1036288,
+        "nps": 5111514,
+        "score_cp": 261
+      }
+    }
+  },
+  {
+    "id": "END_01",
+    "category": "endgame",
+    "description": "Key square opposition K+P",
+    "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+    "ground_truth_sf19": "e3d2",
+    "track_s_1t": {
+      "x7": {
+        "best_move": "e3f4",
+        "depth": 49,
+        "seldepth": 49,
+        "nodes": 706560,
+        "nps": 3528637,
+        "score_cp": 0
+      },
+      "x15": {
+        "best_move": "e3f4",
+        "depth": 21,
+        "seldepth": 21,
+        "nodes": 557056,
+        "nps": 2776621,
+        "score_cp": 0
+      },
+      "x16": {
+        "best_move": "e3f2",
+        "depth": 24,
+        "seldepth": 24,
+        "nodes": 602112,
+        "nps": 3006986,
+        "score_cp": 0
+      }
+    },
+    "track_p_4t": {
+      "x12": {
+        "best_move": "e3f2",
+        "depth": 24,
+        "seldepth": 24,
+        "nodes": 1116160,
+        "nps": 5507824,
+        "score_cp": 0
+      },
+      "x15": {
+        "best_move": "e3f4",
+        "depth": 26,
+        "seldepth": 26,
+        "nodes": 1589248,
+        "nps": 7857046,
+        "score_cp": 0
+      },
+      "x16": {
+        "best_move": "e3f4",
+        "depth": 21,
+        "seldepth": 21,
+        "nodes": 1718272,
+        "nps": 8542191,
+        "score_cp": 0
+      }
+    }
+  },
+  {
+    "id": "END_02",
+    "category": "endgame",
+    "description": "Rook endgame active king",
+    "fen": "8/5pk1/4p1p1/7p/3R3P/4PKP1/5P2/2r5 b - - 6 42",
+    "ground_truth_sf19": "e6e5",
+    "track_s_1t": {
+      "x7": {
+        "best_move": "e6e5",
+        "depth": 12,
+        "seldepth": 12,
+        "nodes": 489472,
+        "nps": 2440563,
+        "score_cp": 0
+      },
+      "x15": {
+        "best_move": "c1c7",
+        "depth": 11,
+        "seldepth": 11,
+        "nodes": 425984,
+        "nps": 2122861,
+        "score_cp": 14
+      },
+      "x16": {
+        "best_move": "e6e5",
+        "depth": 11,
+        "seldepth": 11,
+        "nodes": 442368,
+        "nps": 2210280,
+        "score_cp": 2
+      }
+    },
+    "track_p_4t": {
+      "x12": {
+        "best_move": "e6e5",
+        "depth": 14,
+        "seldepth": 14,
+        "nodes": 1292288,
+        "nps": 6406637,
+        "score_cp": 0
+      },
+      "x15": {
+        "best_move": "c1c2",
+        "depth": 14,
+        "seldepth": 14,
+        "nodes": 1585152,
+        "nps": 7858144,
+        "score_cp": 0
+      },
+      "x16": {
+        "best_move": "g7f8",
+        "depth": 12,
+        "seldepth": 12,
+        "nodes": 1634304,
+        "nps": 8124180,
+        "score_cp": 3
+      }
+    }
+  },
+  {
+    "id": "END_03",
+    "category": "endgame",
+    "description": "Triangulation / waiting pawn endgame",
+    "fen": "8/2k5/4p3/3pP3/3P4/8/3K4/8 w - - 0 1",
+    "ground_truth_sf19": "d2c1",
+    "track_s_1t": {
+      "x7": {
+        "best_move": "d2e3",
+        "depth": 28,
+        "seldepth": 28,
+        "nodes": 577536,
+        "nps": 2881032,
+        "score_cp": 0
+      },
+      "x15": {
+        "best_move": "d2e3",
+        "depth": 21,
+        "seldepth": 21,
+        "nodes": 591872,
+        "nps": 2958959,
+        "score_cp": 14
+      },
+      "x16": {
+        "best_move": "d2c1",
+        "depth": 21,
+        "seldepth": 21,
+        "nodes": 587776,
+        "nps": 2934217,
+        "score_cp": 0
+      }
+    },
+    "track_p_4t": {
+      "x12": {
+        "best_move": "d2e3",
+        "depth": 24,
+        "seldepth": 24,
+        "nodes": 1081344,
+        "nps": 5353813,
+        "score_cp": 0
+      },
+      "x15": {
+        "best_move": "d2c2",
+        "depth": 27,
+        "seldepth": 27,
+        "nodes": 1552384,
+        "nps": 7735499,
+        "score_cp": 0
+      },
+      "x16": {
+        "best_move": "d2c1",
+        "depth": 24,
+        "seldepth": 24,
+        "nodes": 1552384,
+        "nps": 7692476,
+        "score_cp": 0
+      }
+    }
+  },
+  {
+    "id": "END_04",
+    "category": "endgame",
+    "description": "Pawn break test position",
+    "fen": "8/8/3k4/3p4/3P4/4K3/8/8 w - - 0 1",
+    "ground_truth_sf19": "e3d2",
+    "track_s_1t": {
+      "x7": {
+        "best_move": "e3f4",
+        "depth": 20,
+        "seldepth": 20,
+        "nodes": 841728,
+        "nps": 4204401,
+        "score_cp": 152
+      },
+      "x15": {
+        "best_move": "e3f4",
+        "depth": 20,
+        "seldepth": 20,
+        "nodes": 684032,
+        "nps": 3414110,
+        "score_cp": 147
+      },
+      "x16": {
+        "best_move": "e3f4",
+        "depth": 18,
+        "seldepth": 18,
+        "nodes": 675840,
+        "nps": 3377237,
+        "score_cp": 133
+      }
+    },
+    "track_p_4t": {
+      "x12": {
+        "best_move": "e3f4",
+        "depth": 23,
+        "seldepth": 23,
+        "nodes": 1193984,
+        "nps": 5922254,
+        "score_cp": 182
+      },
+      "x15": {
+        "best_move": "e3f4",
+        "depth": 25,
+        "seldepth": 25,
+        "nodes": 1521664,
+        "nps": 7555345,
+        "score_cp": 186
+      },
+      "x16": {
+        "best_move": "e3f4",
+        "depth": 24,
+        "seldepth": 24,
+        "nodes": 1474301,
+        "nps": 7344052,
+        "score_cp": 163
+      }
+    }
+  }
+]

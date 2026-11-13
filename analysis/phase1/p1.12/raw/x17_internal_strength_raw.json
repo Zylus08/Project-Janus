@@ -1,0 +1,56 @@
+{
+  "match1_x17_vs_x7_1t": {
+    "engine_a": "Janus Classical X17-S (1T)",
+    "engine_b": "Janus Classical X7 (1T)",
+    "total_pairs": 50,
+    "total_games": 100,
+    "points_a": 51.5,
+    "score_pct": 51.5,
+    "wins_a": 33,
+    "draws": 37,
+    "wins_b": 30,
+    "elo_delta": 10.4,
+    "elo_ci_95": [
+      -57.3,
+      78.1
+    ],
+    "duration_seconds": 103.08,
+    "pgn_file": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.12\\pgn\\x17_1t_vs_x7_1t.pgn"
+  },
+  "match2_x17_vs_x7_1t_slow": {
+    "engine_a": "Janus Classical X17-S (1T)",
+    "engine_b": "Janus Classical X7 (1T)",
+    "total_pairs": 25,
+    "total_games": 50,
+    "points_a": 25.0,
+    "score_pct": 50.0,
+    "wins_a": 15,
+    "draws": 20,
+    "wins_b": 15,
+    "elo_delta": -0.0,
+    "elo_ci_95": [
+      -95.1,
+      95.1
+    ],
+    "duration_seconds": 108.61,
+    "pgn_file": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.12\\pgn\\x17_1t_vs_x7_1t_slow.pgn"
+  },
+  "match3_x17_vs_x12_4t": {
+    "engine_a": "Janus Classical X17-P (4T)",
+    "engine_b": "Janus Classical X12 (4T)",
+    "total_pairs": 50,
+    "total_games": 100,
+    "points_a": 50.0,
+    "score_pct": 50.0,
+    "wins_a": 33,
+    "draws": 34,
+    "wins_b": 33,
+    "elo_delta": -0.0,
+    "elo_ci_95": [
+      -67.7,
+      67.7
+    ],
+    "duration_seconds": 97.16,
+    "pgn_file": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.12\\pgn\\x17_4t_vs_x12_4t.pgn"
+  }
+}

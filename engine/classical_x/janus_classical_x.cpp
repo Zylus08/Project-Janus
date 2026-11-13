@@ -325,7 +325,7 @@ static bool g_use_reverse_futility = true;     // Phase 4: Reverse Futility Prun
 static int  g_rfp_margin_per_depth = 120;      // Margin per ply (120 for 1T, 90 for 4T)
 static bool g_use_aspiration_window = true;    // Phase 5: Aspiration Windows (delta = 25 cp)
 static int  g_aspiration_delta = 25;           // Aspiration delta
-static std::string g_search_variant = "X16";    // Active variant identifier (Default Candidate X16)
+static std::string g_search_variant = "X17";    // Active variant identifier (Default Candidate X17)
 
 // ============================================================================
 // Search Modernization & Positional Evaluation Options (Milestone P1.2)
@@ -349,8 +349,8 @@ static int g_lmp_max_depth = 4;
 static uint64_t g_telemetry_lmp_pruned = 0;
 static uint64_t g_telemetry_tt_hits = 0;
 
-// Milestone P1.11: Direction A - Evaluation-Aware Pruning Safety & History-Dampened LMR
-static bool g_use_pruning_safety = true;
+// Milestone P1.11: Direction A - Evaluation-Aware Pruning Safety & History-Dampened LMR (Disabled in X17)
+static bool g_use_pruning_safety = false;
 
 // Search stack for continuation history tracking & improving flag
 struct SearchStackEntry {
@@ -661,6 +661,40 @@ EXPORT void native_apply_search_variant(const char* var_str) {
             g_rfp_margin_per_depth = 120;
         } else {
             g_use_pawn_hash = true; // 16K Thread-local Pawn Hash Table
+            g_dynamic_time_mgmt = true;
+            g_use_lmp = true;
+            g_lmp_mode = 1; // Conservative Quadratic LMP
+            g_lmp_max_depth = 4;
+            g_rfp_margin_per_depth = 90;
+        }
+    } else if (var == "X17") { // P1.12 Candidate: Classical Baseline Reboot & Targeted Endgame LMR Safety
+        g_use_staged_movegen = true;
+        g_quiescence_see_mode = 2;
+        g_use_see_in_quiescence = true;
+        g_use_null_move_pruning = true;
+        g_use_reverse_futility = true;
+        g_use_aspiration_window = true;
+        g_conthist_mode = 3; // H3
+        g_dynamic_lmr_mode = 3; // L3 Calibrated
+        g_use_pruning_safety = false; // Purge toxic Direction A
+        if (g_num_threads == 1) { // Track S: Pure X7 foundation
+            g_eval_mode = 5; // E5 Combined Classical Eval
+            g_tactical_ordering_mode = 0; // M0 Off
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = false;
+            g_dynamic_time_mgmt = false;
+            g_use_lmp = false;
+            g_lmp_mode = 0;
+            g_rfp_margin_per_depth = 120;
+        } else { // Track P: Pure X12 foundation
+            g_eval_mode = 10; // E10 Enhanced Classical Evaluation
+            g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = true; // 64K entry Pawn Hash Table
             g_dynamic_time_mgmt = true;
             g_use_lmp = true;
             g_lmp_mode = 1; // Conservative Quadratic LMP
@@ -3787,12 +3821,15 @@ static int negamax(
 
     bool in_check = (native_is_check(b) != 0);
 
-    // Track static evaluation & compute 'improving' flag for search safety
-    int static_eval = native_evaluate(b);
-    g_ss[ply].static_eval = static_eval;
+    // Track static evaluation & compute 'improving' flag for search safety (P1.11 legacy only)
+    int static_eval = -INF;
     bool improving = false;
-    if (ply >= 2 && !in_check && g_ss[ply - 2].static_eval != -INF) {
-        improving = (static_eval > g_ss[ply - 2].static_eval);
+    if (g_use_pruning_safety) {
+        static_eval = native_evaluate(b);
+        g_ss[ply].static_eval = static_eval;
+        if (ply >= 2 && !in_check && g_ss[ply - 2].static_eval != -INF) {
+            improving = (static_eval > g_ss[ply - 2].static_eval);
+        }
     }
 
     // ========================================================================
@@ -3800,6 +3837,9 @@ static int negamax(
     // ========================================================================
     if (g_use_reverse_futility && depth <= 3 && ply > 0 && !in_check && std::abs(beta) < MATE_SCORE - 100) {
         g_telemetry_rfp_probes++;
+        if (!g_use_pruning_safety) {
+            static_eval = native_evaluate(b);
+        }
         int rfp_margin = g_rfp_margin_per_depth * depth;
         if (g_use_pruning_safety && !improving) {
             rfp_margin += 40 * depth;
@@ -3989,6 +4029,11 @@ static int negamax(
                                (move_flag(m) != 3) && // Non-promotion
                                (m != tt_move) &&
                                (native_is_check(b) == 0); // Non-checking move
+
+        // Milestone P1.12 Targeted Intervention: Protect pawn moves in pure pawn endgames from LMR reduction
+        if (g_search_variant == "X17" && non_pawn_mat == 0 && moved_piece == PAWN) {
+            is_lmr_eligible = false;
+        }
 
         int dynamic_reduction = g_lmr_base_reduction;
         if (is_lmr_eligible) {
@@ -4728,7 +4773,7 @@ static void uci_loop() {
         iss >> cmd;
 
         if (cmd == "uci") {
-            std::cout << "id name Janus Classical X (P1.10 Candidate X15)" << std::endl;
+            std::cout << "id name Janus Classical X (P1.12 Candidate X17)" << std::endl;
             std::cout << "id author Project Janus Developers" << std::endl;
             std::cout << "option name Threads type spin default 1 min 1 max 16" << std::endl;
             std::cout << "option name UCI_LMP type combo default L1 var L0 var L1 var L2 var L3" << std::endl;
@@ -4741,7 +4786,7 @@ static void uci_loop() {
             std::cout << "option name LMRBaseReduction type spin default 1 min 1 max 3" << std::endl;
             std::cout << "option name UseSEEOrdering type check default false" << std::endl;
             std::cout << "option name UseSEEInQuiescence type check default false" << std::endl;
-            std::cout << "option name UCI_Variant type combo default X16 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16" << std::endl;
+            std::cout << "option name UCI_Variant type combo default X17 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17" << std::endl;
             std::cout << "option name UCI_ContinuationHistory type combo default H3 var H0 var H1 var H2 var H3" << std::endl;
             std::cout << "option name UCI_DynamicLMR type combo default L3 var L0 var L1 var L2 var L3" << std::endl;
             std::cout << "option name UCI_ClassicalEval type combo default E15 var E0 var E1 var E2 var E3 var E4 var E5 var E6 var E7 var E8 var E9 var E10 var E11 var E15" << std::endl;
@@ -4778,7 +4823,7 @@ static void uci_loop() {
                 }
                 if (opt_name == "Threads" && !opt_val.empty()) {
                     g_num_threads = std::max(1, std::min(16, std::stoi(opt_val)));
-                    if (g_search_variant == "X15" || g_search_variant == "X16") {
+                    if (g_search_variant == "X15" || g_search_variant == "X16" || g_search_variant == "X17") {
                         if (g_num_threads == 1) {
                             g_use_pawn_hash = false;
                             g_dynamic_time_mgmt = false;
@@ -5072,6 +5117,14 @@ static void uci_loop() {
             std::cout << std::endl;
 
             std::cout << "bestmove " << best_uci << std::endl;
+        } else if (cmd == "perft") {
+            int depth = 1;
+            iss >> depth;
+            uint64_t nodes = native_perft(&board, depth);
+            std::cout << "Nodes searched: " << nodes << std::endl;
+        } else if (cmd == "eval") {
+            int ev = native_evaluate(&board);
+            std::cout << "Evaluation: " << ev << std::endl;
         } else if (cmd == "stop") {
             g_stop_search.store(true, std::memory_order_relaxed);
         } else if (cmd == "quit") {

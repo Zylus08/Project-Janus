@@ -1,0 +1,142 @@
+{
+  "x16_1t_vs_x7_1t.pgn": {
+    "games": 200,
+    "pairs": 100,
+    "wins_a": 36,
+    "draws": 63,
+    "wins_b": 101,
+    "points_a": 67.5,
+    "score_pct": 33.75,
+    "elo": -117.2,
+    "elo_ci_95": [
+      -167.9,
+      -66.4
+    ],
+    "pentanomial": {
+      "2.0": 4,
+      "1.5": 13,
+      "1.0": 24,
+      "0.5": 32,
+      "0.0": 27
+    },
+    "mean_pair_diff": -0.325,
+    "std_error": 0.0566,
+    "paired_t_statistic": -5.7446,
+    "degrees_of_freedom": 99,
+    "p_value": 1.0174518164444221e-07,
+    "p_tost": 0.9999,
+    "tost_equivalent": false
+  },
+  "x16_4t_vs_x12_4t.pgn": {
+    "games": 200,
+    "pairs": 100,
+    "wins_a": 53,
+    "draws": 76,
+    "wins_b": 71,
+    "points_a": 91.0,
+    "score_pct": 45.5,
+    "elo": -31.4,
+    "elo_ci_95": [
+      -79.5,
+      16.8
+    ],
+    "pentanomial": {
+      "2.0": 6,
+      "1.5": 24,
+      "1.0": 31,
+      "0.5": 24,
+      "0.0": 15
+    },
+    "mean_pair_diff": -0.09,
+    "std_error": 0.057,
+    "paired_t_statistic": -1.5783,
+    "degrees_of_freedom": 99,
+    "p_value": 0.11767838912423982,
+    "p_tost": 0.4342,
+    "tost_equivalent": false
+  },
+  "x16_4t_vs_x12_4t_slow.pgn": {
+    "games": 100,
+    "pairs": 50,
+    "wins_a": 38,
+    "draws": 15,
+    "wins_b": 47,
+    "points_a": 45.5,
+    "score_pct": 45.5,
+    "elo": -31.4,
+    "elo_ci_95": [
+      -99.3,
+      36.6
+    ],
+    "pentanomial": {
+      "2.0": 3,
+      "1.5": 4,
+      "1.0": 30,
+      "0.5": 7,
+      "0.0": 6
+    },
+    "mean_pair_diff": -0.09,
+    "std_error": 0.068,
+    "paired_t_statistic": -1.3226,
+    "degrees_of_freedom": 49,
+    "p_value": 0.19211367205272084,
+    "p_tost": 0.4432,
+    "tost_equivalent": false
+  },
+  "x16_1t_vs_sf19_1t.pgn": {
+    "games": 40,
+    "pairs": 20,
+    "wins_a": 0,
+    "draws": 2,
+    "wins_b": 38,
+    "points_a": 1.0,
+    "score_pct": 2.5,
+    "elo": -636.4,
+    "elo_ci_95": [
+      -940.8,
+      -332.1
+    ],
+    "pentanomial": {
+      "2.0": 0,
+      "1.5": 0,
+      "1.0": 0,
+      "0.5": 2,
+      "0.0": 18
+    },
+    "mean_pair_diff": -0.95,
+    "std_error": 0.0344,
+    "paired_t_statistic": -27.6064,
+    "degrees_of_freedom": 19,
+    "p_value": 8.493212504953093e-17,
+    "p_tost": 1.0,
+    "tost_equivalent": false
+  },
+  "x16_4t_vs_sf19_4t.pgn": {
+    "games": 40,
+    "pairs": 20,
+    "wins_a": 0,
+    "draws": 1,
+    "wins_b": 39,
+    "points_a": 0.5,
+    "score_pct": 1.25,
+    "elo": -759.1,
+    "elo_ci_95": [
+      -1153.3,
+      -364.8
+    ],
+    "pentanomial": {
+      "2.0": 0,
+      "1.5": 0,
+      "1.0": 0,
+      "0.5": 1,
+      "0.0": 19
+    },
+    "mean_pair_diff": -0.975,
+    "std_error": 0.025,
+    "paired_t_statistic": -39.0,
+    "degrees_of_freedom": 19,
+    "p_value": 1.3366004671307548e-19,
+    "p_tost": 1.0,
+    "tost_equivalent": false
+  }
+}

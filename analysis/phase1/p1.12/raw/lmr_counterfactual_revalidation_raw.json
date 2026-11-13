@@ -1,0 +1,1459 @@
+{
+  "total_cases": 39,
+  "classification_breakdown": {
+    "D0": 38,
+    "D1": 0,
+    "D2": 1,
+    "D3": 0,
+    "D4": 0
+  },
+  "d7_disagreement_count": 9,
+  "d7_disagreement_pct": 23.08,
+  "d9_disagreement_count": 9,
+  "verified_tactical_error_pct (D2)": 2.56,
+  "results": [
+    {
+      "id": "TAC_01",
+      "category": "tactical_combination",
+      "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 5",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "c4d5",
+          "score": -103,
+          "nodes": 45353
+        },
+        "no_lmr": {
+          "best_move": "c4d5",
+          "score": -80,
+          "nodes": 309185
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "c4d5",
+          "score": -109,
+          "nodes": 263848
+        },
+        "no_lmr": {
+          "best_move": "b1c3",
+          "score": -99,
+          "nodes": 1691240
+        },
+        "disagreement": true
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "TAC_02",
+      "category": "tactical_combination",
+      "fen": "r1b2rk1/pp1nbppp/2p1pn2/q5B1/2BP4/2N1PN2/PP3PPP/R2Q1RK1 w - - 3 10",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "e3e4",
+          "score": 83,
+          "nodes": 147187
+        },
+        "no_lmr": {
+          "best_move": "e3e4",
+          "score": 87,
+          "nodes": 663938
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "e3e4",
+          "score": 80,
+          "nodes": 598018
+        },
+        "no_lmr": {
+          "best_move": "d1c2",
+          "score": 78,
+          "nodes": 8911182
+        },
+        "disagreement": true
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "TAC_03",
+      "category": "tactical_combination",
+      "fen": "r2q1rk1/1pp1bppp/p1np1nb1/4p3/B3P1P1/2PP1N1P/PP3P2/RNBQR1K1 w - - 1 11",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "a4c6",
+          "score": 28,
+          "nodes": 38655
+        },
+        "no_lmr": {
+          "best_move": "a4c6",
+          "score": 28,
+          "nodes": 85992
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "a4c6",
+          "score": 26,
+          "nodes": 112331
+        },
+        "no_lmr": {
+          "best_move": "a4c6",
+          "score": 26,
+          "nodes": 311306
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "TAC_04",
+      "category": "tactical_combination",
+      "fen": "r1bqk2r/pppp1ppp/2n5/3QP3/1bB1n3/2N2N2/PPP2PPP/R1B1K2R w KQkq - 0 8",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "d5f7",
+          "score": 28999,
+          "nodes": 106929
+        },
+        "no_lmr": {
+          "best_move": "d5f7",
+          "score": 28999,
+          "nodes": 823983
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "d5f7",
+          "score": 28999,
+          "nodes": 578263
+        },
+        "no_lmr": {
+          "best_move": "d5f7",
+          "score": 28999,
+          "nodes": 11594542
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "TAC_05",
+      "category": "tactical_combination",
+      "fen": "r2qkb1r/pp2nppp/3p4/2pNN3/2BnP3/3P4/PPP2PPP/R1BbK2R w KQkq - 1 9",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "d5f6",
+          "score": 28997,
+          "nodes": 113601
+        },
+        "no_lmr": {
+          "best_move": "d5f6",
+          "score": 28997,
+          "nodes": 698561
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "d5f6",
+          "score": 28997,
+          "nodes": 523735
+        },
+        "no_lmr": {
+          "best_move": "d5f6",
+          "score": 28997,
+          "nodes": 7576193
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "TAC_06",
+      "category": "tactical_combination",
+      "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "h5f7",
+          "score": 28999,
+          "nodes": 160467
+        },
+        "no_lmr": {
+          "best_move": "h5f7",
+          "score": 28999,
+          "nodes": 2076796
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "h5f7",
+          "score": 28999,
+          "nodes": 860155
+        },
+        "no_lmr": {
+          "best_move": "h5f7",
+          "score": 28999,
+          "nodes": 39140949
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "TAC_07",
+      "category": "tactical_combination",
+      "fen": "2r3k1/ppp2ppp/8/3P4/8/1P6/P4PPP/2R3K1 w - - 0 1",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "d5d6",
+          "score": 130,
+          "nodes": 6386
+        },
+        "no_lmr": {
+          "best_move": "d5d6",
+          "score": 130,
+          "nodes": 15075
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "d5d6",
+          "score": 130,
+          "nodes": 40674
+        },
+        "no_lmr": {
+          "best_move": "d5d6",
+          "score": 130,
+          "nodes": 73373
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "TAC_08",
+      "category": "tactical_combination",
+      "fen": "r1b1k2r/pppp1ppp/8/4q3/1bP5/2N1P3/PP3PPP/R1BQKB1R w KQkq - 0 9",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "c1d2",
+          "score": 378,
+          "nodes": 57786
+        },
+        "no_lmr": {
+          "best_move": "c1d2",
+          "score": 383,
+          "nodes": 268951
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "c1d2",
+          "score": 377,
+          "nodes": 144025
+        },
+        "no_lmr": {
+          "best_move": "c1d2",
+          "score": 377,
+          "nodes": 1197928
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "DEF_01",
+      "category": "quiet_defense",
+      "fen": "r2q1rk1/1pp1bppp/p1np1n2/4p3/2B1P1b1/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 9",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "c1e3",
+          "score": 7,
+          "nodes": 55477
+        },
+        "no_lmr": {
+          "best_move": "h2h3",
+          "score": 15,
+          "nodes": 106056
+        },
+        "disagreement": true
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "c1e3",
+          "score": 11,
+          "nodes": 185950
+        },
+        "no_lmr": {
+          "best_move": "h2h3",
+          "score": 11,
+          "nodes": 686408
+        },
+        "disagreement": true
+      },
+      "classification": "D0",
+      "justification": "Benign disagreement: score difference is minor (8cp); both moves objectively playable."
+    },
+    {
+      "id": "DEF_02",
+      "category": "quiet_defense",
+      "fen": "r1b1k2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 0 7",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "c3c4",
+          "score": 867,
+          "nodes": 98180
+        },
+        "no_lmr": {
+          "best_move": "f3e5",
+          "score": 867,
+          "nodes": 261352
+        },
+        "disagreement": true
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "c3c4",
+          "score": 863,
+          "nodes": 321804
+        },
+        "no_lmr": {
+          "best_move": "e3e4",
+          "score": 872,
+          "nodes": 1302134
+        },
+        "disagreement": true
+      },
+      "classification": "D0",
+      "justification": "Benign disagreement: score difference is minor (0cp); both moves objectively playable."
+    },
+    {
+      "id": "DEF_03",
+      "category": "quiet_defense",
+      "fen": "r1b1k1nr/pp3ppp/1qn1p3/2bpP3/8/2P2N2/PP2BPPP/RNBQ1RK1 b kq - 1 8",
+      "ground_truth_sf19": {
+        "best_move": "d5d4",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "g8h6",
+          "score": -8,
+          "nodes": 98891
+        },
+        "no_lmr": {
+          "best_move": "f7f6",
+          "score": 17,
+          "nodes": 309081
+        },
+        "disagreement": true
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "b6c7",
+          "score": 19,
+          "nodes": 268243
+        },
+        "no_lmr": {
+          "best_move": "g8h6",
+          "score": 24,
+          "nodes": 2038822
+        },
+        "disagreement": true
+      },
+      "classification": "D0",
+      "justification": "Benign disagreement: score difference is minor (25cp); both moves objectively playable."
+    },
+    {
+      "id": "DEF_04",
+      "category": "quiet_defense",
+      "fen": "r2qk2r/ppp2ppp/2np1n2/2b1p1B1/2B1P1b1/2NP1N2/PPP2PPP/R2Q1RK1 b kq - 4 7",
+      "ground_truth_sf19": {
+        "best_move": "d6d5",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "c6d4",
+          "score": 8,
+          "nodes": 109646
+        },
+        "no_lmr": {
+          "best_move": "c6d4",
+          "score": 20,
+          "nodes": 216203
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "c6d4",
+          "score": 13,
+          "nodes": 328688
+        },
+        "no_lmr": {
+          "best_move": "c6d4",
+          "score": 12,
+          "nodes": 1659414
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "DEF_05",
+      "category": "quiet_defense",
+      "fen": "r1bqr1k1/pp1nbppp/2p2n2/3p2B1/3P4/2NBPN2/PP3PPP/R2Q1RK1 w - - 0 10",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "g5f4",
+          "score": 64,
+          "nodes": 109827
+        },
+        "no_lmr": {
+          "best_move": "d1c2",
+          "score": 68,
+          "nodes": 578799
+        },
+        "disagreement": true
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "d1c2",
+          "score": 64,
+          "nodes": 421660
+        },
+        "no_lmr": {
+          "best_move": "d1c2",
+          "score": 56,
+          "nodes": 5640099
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Benign disagreement: score difference is minor (4cp); both moves objectively playable."
+    },
+    {
+      "id": "DEF_06",
+      "category": "quiet_defense",
+      "fen": "2r1r1k1/1p1q1ppp/p1np1n2/3p4/3P4/P1N1PN2/1P3PPP/2RQ1RK1 w - - 0 14",
+      "ground_truth_sf19": {
+        "best_move": "b2b3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "d1c2",
+          "score": 35,
+          "nodes": 105831
+        },
+        "no_lmr": {
+          "best_move": "d1b3",
+          "score": 46,
+          "nodes": 454644
+        },
+        "disagreement": true
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "d1d3",
+          "score": 29,
+          "nodes": 358772
+        },
+        "no_lmr": {
+          "best_move": "h2h3",
+          "score": 30,
+          "nodes": 3954478
+        },
+        "disagreement": true
+      },
+      "classification": "D0",
+      "justification": "Benign disagreement: score difference is minor (11cp); both moves objectively playable."
+    },
+    {
+      "id": "PWN_01",
+      "category": "pawn_structure",
+      "fen": "r1bqr1k1/ppp2pbp/2np1np1/4p3/2PPP3/2N1BP2/PP2N1PP/R2QKB1R w KQ - 0 9",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "d4d5",
+          "score": 51,
+          "nodes": 42513
+        },
+        "no_lmr": {
+          "best_move": "d4d5",
+          "score": 51,
+          "nodes": 93799
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "d4d5",
+          "score": 50,
+          "nodes": 127914
+        },
+        "no_lmr": {
+          "best_move": "d4d5",
+          "score": 51,
+          "nodes": 851053
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "PWN_02",
+      "category": "pawn_structure",
+      "fen": "r1bq1rk1/pp1n1pbp/2p1pnp1/3p4/2PP4/1PN1PN2/PB2BPPP/R2Q1RK1 w - - 0 10",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "b2a3",
+          "score": 62,
+          "nodes": 108178
+        },
+        "no_lmr": {
+          "best_move": "b2a3",
+          "score": 62,
+          "nodes": 371138
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "d1c2",
+          "score": 52,
+          "nodes": 596122
+        },
+        "no_lmr": {
+          "best_move": "d1c2",
+          "score": 55,
+          "nodes": 4643860
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "PWN_03",
+      "category": "pawn_structure",
+      "fen": "r1bq1rk1/pppnbppp/4pn2/3p4/2PP4/2N1PN2/PP2BPPP/R1BQK2R w KQ - 4 7",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "d1b3",
+          "score": 54,
+          "nodes": 42600
+        },
+        "no_lmr": {
+          "best_move": "d1b3",
+          "score": 52,
+          "nodes": 301446
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "d1b3",
+          "score": 36,
+          "nodes": 479425
+        },
+        "no_lmr": {
+          "best_move": "d1b3",
+          "score": 46,
+          "nodes": 2279954
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "PWN_04",
+      "category": "pawn_structure",
+      "fen": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "e2e3",
+          "score": 44,
+          "nodes": 62382
+        },
+        "no_lmr": {
+          "best_move": "e2e3",
+          "score": 51,
+          "nodes": 199761
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "e2e3",
+          "score": 53,
+          "nodes": 249071
+        },
+        "no_lmr": {
+          "best_move": "e2e3",
+          "score": 54,
+          "nodes": 1270627
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "PWN_05",
+      "category": "pawn_structure",
+      "fen": "r1bq1rk1/1pp1bppp/p1np1n2/4p3/B3P3/2PP1N2/PP3PPP/RNBQ1RK1 w - - 0 8",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "a4c6",
+          "score": 6,
+          "nodes": 18022
+        },
+        "no_lmr": {
+          "best_move": "a4c6",
+          "score": 24,
+          "nodes": 67041
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "a4c6",
+          "score": 13,
+          "nodes": 152448
+        },
+        "no_lmr": {
+          "best_move": "a4c6",
+          "score": 13,
+          "nodes": 574759
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "KNG_01",
+      "category": "king_attack",
+      "fen": "r1b2rk1/ppqn1ppp/2p1pn2/8/2PP4/2N1PN2/PPB2PPP/R2Q1RK1 w - - 0 11",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "c2d3",
+          "score": 196,
+          "nodes": 265997
+        },
+        "no_lmr": {
+          "best_move": "d1d3",
+          "score": 199,
+          "nodes": 484691
+        },
+        "disagreement": true
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "c2b3",
+          "score": 193,
+          "nodes": 674248
+        },
+        "no_lmr": {
+          "best_move": "c2d3",
+          "score": 198,
+          "nodes": 5009857
+        },
+        "disagreement": true
+      },
+      "classification": "D0",
+      "justification": "Benign disagreement: score difference is minor (3cp); both moves objectively playable."
+    },
+    {
+      "id": "KNG_02",
+      "category": "king_attack",
+      "fen": "r2q1rk1/pp1nbppp/2p1pn2/6B1/3PN3/3B1Q1P/PPP2PP1/R4RK1 w - - 3 12",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "e4f6",
+          "score": 80,
+          "nodes": 250299
+        },
+        "no_lmr": {
+          "best_move": "c2c3",
+          "score": 85,
+          "nodes": 3022665
+        },
+        "disagreement": true
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "g5e3",
+          "score": 82,
+          "nodes": 976360
+        },
+        "no_lmr": {
+          "best_move": "f1d1",
+          "score": 77,
+          "nodes": 18585787
+        },
+        "disagreement": true
+      },
+      "classification": "D0",
+      "justification": "Benign disagreement: score difference is minor (5cp); both moves objectively playable."
+    },
+    {
+      "id": "KNG_03",
+      "category": "king_attack",
+      "fen": "r1bq1rk1/ppp1bppp/2n1pn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQK2R w KQ - 4 6",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "e1g1",
+          "score": 13,
+          "nodes": 120686
+        },
+        "no_lmr": {
+          "best_move": "e1g1",
+          "score": 9,
+          "nodes": 689527
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "e1g1",
+          "score": 11,
+          "nodes": 345336
+        },
+        "no_lmr": {
+          "best_move": "e1g1",
+          "score": 15,
+          "nodes": 3412668
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "KNG_04",
+      "category": "king_attack",
+      "fen": "r2qk2r/pb1nbppp/1pp1pn2/3p4/2PP4/1PN1PN2/PB2BPPP/R2Q1RK1 w kq - 2 10",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "d1c2",
+          "score": 42,
+          "nodes": 71400
+        },
+        "no_lmr": {
+          "best_move": "a1c1",
+          "score": 49,
+          "nodes": 331308
+        },
+        "disagreement": true
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "e2d3",
+          "score": 52,
+          "nodes": 420833
+        },
+        "no_lmr": {
+          "best_move": "e2d3",
+          "score": 50,
+          "nodes": 2635278
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Benign disagreement: score difference is minor (7cp); both moves objectively playable."
+    },
+    {
+      "id": "KNG_05",
+      "category": "king_attack",
+      "fen": "r1b1k2r/pppp1ppp/2n5/4p3/1bB1n2q/2NP1Q2/PPP2PPP/R1B1K1NR w KQkq - 1 7",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "f3f7",
+          "score": 157,
+          "nodes": 95548
+        },
+        "no_lmr": {
+          "best_move": "f3f7",
+          "score": 157,
+          "nodes": 107125
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "d3e4",
+          "score": 168,
+          "nodes": 163755
+        },
+        "no_lmr": {
+          "best_move": "f3e4",
+          "score": 187,
+          "nodes": 992565
+        },
+        "disagreement": true
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "END_01",
+      "category": "endgame",
+      "fen": "8/8/4k3/8/4K3/8/8/8 w - - 0 1",
+      "ground_truth_sf19": {
+        "best_move": "e4d3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "e4d3",
+          "score": 0,
+          "nodes": 42
+        },
+        "no_lmr": {
+          "best_move": "e4d3",
+          "score": 0,
+          "nodes": 42
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "e4d3",
+          "score": 0,
+          "nodes": 54
+        },
+        "no_lmr": {
+          "best_move": "e4d3",
+          "score": 0,
+          "nodes": 54
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "END_02",
+      "category": "endgame",
+      "fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "ground_truth_sf19": {
+        "best_move": "e2e3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "b4f4",
+          "score": 8,
+          "nodes": 16251
+        },
+        "no_lmr": {
+          "best_move": "b4f4",
+          "score": 8,
+          "nodes": 36811
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "b4f4",
+          "score": 31,
+          "nodes": 32847
+        },
+        "no_lmr": {
+          "best_move": "b4f4",
+          "score": 31,
+          "nodes": 82630
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "END_03",
+      "category": "endgame",
+      "fen": "8/8/1p1k4/p1pP1p2/P1P2P2/1P1K4/8/8 w - - 0 1",
+      "ground_truth_sf19": {
+        "best_move": "b3b4",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "d3c2",
+          "score": 229,
+          "nodes": 2542
+        },
+        "no_lmr": {
+          "best_move": "d3c2",
+          "score": 229,
+          "nodes": 3357
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "d3c2",
+          "score": 226,
+          "nodes": 6240
+        },
+        "no_lmr": {
+          "best_move": "d3c2",
+          "score": 229,
+          "nodes": 9662
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "END_04",
+      "category": "endgame",
+      "fen": "8/8/4k3/8/3PK3/8/8/8 w - - 0 1",
+      "ground_truth_sf19": {
+        "best_move": "d4d5",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "e4d3",
+          "score": 147,
+          "nodes": 3048
+        },
+        "no_lmr": {
+          "best_move": "d4d5",
+          "score": 159,
+          "nodes": 4652
+        },
+        "disagreement": true
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "d4d5",
+          "score": 179,
+          "nodes": 6917
+        },
+        "no_lmr": {
+          "best_move": "d4d5",
+          "score": 179,
+          "nodes": 8679
+        },
+        "disagreement": false
+      },
+      "classification": "D2",
+      "justification": "LMR caused omission of ground truth best move d4d5; baseline chose e4d3."
+    },
+    {
+      "id": "END_05",
+      "category": "endgame",
+      "fen": "8/8/8/4k3/8/4K3/4P3/8 w - - 0 1",
+      "ground_truth_sf19": {
+        "best_move": "e3d2",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "e3f3",
+          "score": 147,
+          "nodes": 4778
+        },
+        "no_lmr": {
+          "best_move": "e3f3",
+          "score": 147,
+          "nodes": 7019
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "e3f3",
+          "score": 147,
+          "nodes": 9180
+        },
+        "no_lmr": {
+          "best_move": "e3f3",
+          "score": 149,
+          "nodes": 16576
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "END_06",
+      "category": "endgame",
+      "fen": "8/8/8/8/3k4/8/R7/4K3 w - - 0 1",
+      "ground_truth_sf19": {
+        "best_move": "a2a1",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "a2a5",
+          "score": 622,
+          "nodes": 27617
+        },
+        "no_lmr": {
+          "best_move": "a2a5",
+          "score": 622,
+          "nodes": 76095
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "a2a5",
+          "score": 617,
+          "nodes": 95269
+        },
+        "no_lmr": {
+          "best_move": "a2a5",
+          "score": 634,
+          "nodes": 345409
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "END_07",
+      "category": "endgame",
+      "fen": "8/5pk1/6p1/7p/7P/5KP1/5P2/8 w - - 0 1",
+      "ground_truth_sf19": {
+        "best_move": "g3g4",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "f3g2",
+          "score": 0,
+          "nodes": 3566
+        },
+        "no_lmr": {
+          "best_move": "f3g2",
+          "score": 0,
+          "nodes": 6231
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "f3g2",
+          "score": 0,
+          "nodes": 9319
+        },
+        "no_lmr": {
+          "best_move": "f3g2",
+          "score": 0,
+          "nodes": 19623
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "ZUG_01",
+      "category": "zugzwang",
+      "fen": "8/8/p1k5/1p1p4/1P1P4/P1K5/8/8 w - - 0 1",
+      "ground_truth_sf19": {
+        "best_move": "a3a4",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "c3b2",
+          "score": 0,
+          "nodes": 2368
+        },
+        "no_lmr": {
+          "best_move": "c3b2",
+          "score": 0,
+          "nodes": 3459
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "c3b2",
+          "score": 0,
+          "nodes": 4719
+        },
+        "no_lmr": {
+          "best_move": "c3b2",
+          "score": 0,
+          "nodes": 8159
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "ZUG_02",
+      "category": "zugzwang",
+      "fen": "8/p7/1p6/8/8/1P6/P7/k1K5 w - - 0 1",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "a2a4",
+          "score": 22,
+          "nodes": 1999
+        },
+        "no_lmr": {
+          "best_move": "a2a4",
+          "score": 22,
+          "nodes": 2546
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "a2a4",
+          "score": 18,
+          "nodes": 4144
+        },
+        "no_lmr": {
+          "best_move": "a2a4",
+          "score": 18,
+          "nodes": 5949
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "ZUG_03",
+      "category": "zugzwang",
+      "fen": "8/8/p7/Pk6/8/1K6/8/8 w - - 0 1",
+      "ground_truth_sf19": {
+        "best_move": "b3a2",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "b3a3",
+          "score": -123,
+          "nodes": 2078
+        },
+        "no_lmr": {
+          "best_move": "b3a3",
+          "score": -123,
+          "nodes": 2513
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "b3a3",
+          "score": -123,
+          "nodes": 3772
+        },
+        "no_lmr": {
+          "best_move": "b3a3",
+          "score": -123,
+          "nodes": 5066
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "SHP_01",
+      "category": "sharp_pv",
+      "fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "e2a6",
+          "score": -1,
+          "nodes": 317286
+        },
+        "no_lmr": {
+          "best_move": "e2a6",
+          "score": -1,
+          "nodes": 956963
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "e2a6",
+          "score": -31,
+          "nodes": 914398
+        },
+        "no_lmr": {
+          "best_move": "e2a6",
+          "score": -31,
+          "nodes": 2709479
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "SHP_02",
+      "category": "sharp_pv",
+      "fen": "r2q1rk1/1pp1bppp/p1np1nb1/4p3/B3P1P1/2PP1N1P/PP3P2/RNBQR1K1 w - - 1 11",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "a4c6",
+          "score": 28,
+          "nodes": 38655
+        },
+        "no_lmr": {
+          "best_move": "a4c6",
+          "score": 28,
+          "nodes": 85992
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "a4c6",
+          "score": 26,
+          "nodes": 112331
+        },
+        "no_lmr": {
+          "best_move": "a4c6",
+          "score": 26,
+          "nodes": 311306
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "SHP_03",
+      "category": "sharp_pv",
+      "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2PBPN2/PP1N1PPP/R1BQK2R w KQkq - 0 7",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "d4c5",
+          "score": -26,
+          "nodes": 145898
+        },
+        "no_lmr": {
+          "best_move": "d4c5",
+          "score": -23,
+          "nodes": 864422
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "d4c5",
+          "score": -24,
+          "nodes": 471999
+        },
+        "no_lmr": {
+          "best_move": "d4c5",
+          "score": -16,
+          "nodes": 2608639
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "SHP_04",
+      "category": "sharp_pv",
+      "fen": "r2qk2r/ppp2ppp/2np1n2/2b1p1B1/2B1P1b1/2NP1N2/PPP2PPP/R2Q1RK1 b kq - 4 7",
+      "ground_truth_sf19": {
+        "best_move": "d6d5",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "c6d4",
+          "score": 8,
+          "nodes": 109646
+        },
+        "no_lmr": {
+          "best_move": "c6d4",
+          "score": 20,
+          "nodes": 216203
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "c6d4",
+          "score": 13,
+          "nodes": 328688
+        },
+        "no_lmr": {
+          "best_move": "c6d4",
+          "score": 12,
+          "nodes": 1659414
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    },
+    {
+      "id": "SHP_05",
+      "category": "sharp_pv",
+      "fen": "r1b1k2r/pppp1ppp/8/4q3/1bP5/2N1P3/PP3PPP/R1BQKB1R w KQkq - 0 9",
+      "ground_truth_sf19": {
+        "best_move": "a2a3",
+        "score": 0
+      },
+      "depth_7": {
+        "baseline": {
+          "best_move": "c1d2",
+          "score": 378,
+          "nodes": 57786
+        },
+        "no_lmr": {
+          "best_move": "c1d2",
+          "score": 383,
+          "nodes": 268951
+        },
+        "disagreement": false
+      },
+      "depth_9": {
+        "baseline": {
+          "best_move": "c1d2",
+          "score": 377,
+          "nodes": 144025
+        },
+        "no_lmr": {
+          "best_move": "c1d2",
+          "score": 377,
+          "nodes": 1197928
+        },
+        "disagreement": false
+      },
+      "classification": "D0",
+      "justification": "Identical best move at depth 7."
+    }
+  ]
+}

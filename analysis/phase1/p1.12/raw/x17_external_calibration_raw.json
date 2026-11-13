@@ -1,0 +1,74 @@
+{
+  "match4_x17_vs_sf11_1t": {
+    "engine_a": "Janus Classical X17-S (1T)",
+    "engine_b": "Stockfish 11 (1T)",
+    "total_pairs": 20,
+    "total_games": 40,
+    "points_a": 0.0,
+    "score_pct": 0.0,
+    "wins_a": 0,
+    "draws": 0,
+    "wins_b": 40,
+    "elo_delta": null,
+    "elo_ci_95": [
+      -9999.0,
+      -407.0
+    ],
+    "duration_seconds": 29.3,
+    "pgn_file": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.12\\pgn\\x17_1t_vs_sf11_1t.pgn"
+  },
+  "match5_x17_vs_sf11_4t": {
+    "engine_a": "Janus Classical X17-P (4T)",
+    "engine_b": "Stockfish 11 (4T)",
+    "total_pairs": 20,
+    "total_games": 40,
+    "points_a": 0.0,
+    "score_pct": 0.0,
+    "wins_a": 0,
+    "draws": 0,
+    "wins_b": 40,
+    "elo_delta": null,
+    "elo_ci_95": [
+      -9999.0,
+      -407.0
+    ],
+    "duration_seconds": 31.93,
+    "pgn_file": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.12\\pgn\\x17_4t_vs_sf11_4t.pgn"
+  },
+  "match6_x17_vs_sf19_1t": {
+    "engine_a": "Janus Classical X17-S (1T)",
+    "engine_b": "Stockfish 19 (1T)",
+    "total_pairs": 20,
+    "total_games": 40,
+    "points_a": 2.0,
+    "score_pct": 5.0,
+    "wins_a": 0,
+    "draws": 4,
+    "wins_b": 36,
+    "elo_delta": -511.5,
+    "elo_ci_95": [
+      -741.4,
+      -281.6
+    ],
+    "duration_seconds": 32.97,
+    "pgn_file": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.12\\pgn\\x17_1t_vs_sf19_1t.pgn"
+  },
+  "match7_x17_vs_sf19_4t": {
+    "engine_a": "Janus Classical X17-P (4T)",
+    "engine_b": "Stockfish 19 (4T)",
+    "total_pairs": 20,
+    "total_games": 40,
+    "points_a": 0.0,
+    "score_pct": 0.0,
+    "wins_a": 0,
+    "draws": 0,
+    "wins_b": 40,
+    "elo_delta": null,
+    "elo_ci_95": [
+      -9999.0,
+      -407.0
+    ],
+    "duration_seconds": 33.18,
+    "pgn_file": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.12\\pgn\\x17_4t_vs_sf19_4t.pgn"
+  }
+}

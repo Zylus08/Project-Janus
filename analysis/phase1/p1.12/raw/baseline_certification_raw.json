@@ -1,0 +1,306 @@
+{
+  "track_s_x7": {
+    "name": "Janus Classical X7 (Track S)",
+    "threads": 1,
+    "exe_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.3\\control\\janus_classical_x7.exe",
+    "options_count": 18,
+    "benchmark": [
+      {
+        "id": "STARTPOS",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "depth_7": {
+          "best_move": "d2d4",
+          "depth": 7,
+          "nodes": 52122,
+          "nps": 1948697,
+          "score_cp": 34,
+          "wall_s": 0.057
+        },
+        "depth_8": {
+          "best_move": "b1c3",
+          "depth": 8,
+          "nodes": 157778,
+          "nps": 1829168,
+          "score_cp": 7,
+          "wall_s": 0.124
+        },
+        "movetime_100ms": {
+          "best_move": "b1c3",
+          "depth": 8,
+          "nodes": 184320,
+          "nps": 1823549,
+          "score_cp": 7,
+          "wall_s": 0.135
+        },
+        "movetime_250ms": {
+          "best_move": "e2e4",
+          "depth": 10,
+          "nodes": 448512,
+          "nps": 1790273,
+          "score_cp": 11,
+          "wall_s": 0.281
+        }
+      },
+      {
+        "id": "KIWIPETE",
+        "fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+        "depth_7": {
+          "best_move": "e2a6",
+          "depth": 7,
+          "nodes": 247595,
+          "nps": 1194005,
+          "score_cp": 14,
+          "wall_s": 0.24
+        },
+        "depth_8": {
+          "best_move": "e2a6",
+          "depth": 8,
+          "nodes": 362809,
+          "nps": 1111004,
+          "score_cp": 9,
+          "wall_s": 0.357
+        },
+        "movetime_100ms": {
+          "best_move": "d5e6",
+          "depth": 6,
+          "nodes": 122880,
+          "nps": 1225085,
+          "score_cp": 42,
+          "wall_s": 0.132
+        },
+        "movetime_250ms": {
+          "best_move": "e2a6",
+          "depth": 7,
+          "nodes": 292864,
+          "nps": 1167861,
+          "score_cp": 14,
+          "wall_s": 0.285
+        }
+      },
+      {
+        "id": "TACTICAL_01",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4",
+        "depth_7": {
+          "best_move": "h5f7",
+          "depth": 7,
+          "nodes": 161079,
+          "nps": 2736139,
+          "score_cp": 28999,
+          "wall_s": 0.093
+        },
+        "depth_8": {
+          "best_move": "h5f7",
+          "depth": 8,
+          "nodes": 349324,
+          "nps": 2550439,
+          "score_cp": 28999,
+          "wall_s": 0.169
+        },
+        "movetime_100ms": {
+          "best_move": "h5f7",
+          "depth": 7,
+          "nodes": 260096,
+          "nps": 2592213,
+          "score_cp": 28999,
+          "wall_s": 0.131
+        },
+        "movetime_250ms": {
+          "best_move": "h5f7",
+          "depth": 8,
+          "nodes": 655360,
+          "nps": 2621299,
+          "score_cp": 28999,
+          "wall_s": 0.282
+        }
+      },
+      {
+        "id": "ENDGAME_01",
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "depth_7": {
+          "best_move": "e3f4",
+          "depth": 7,
+          "nodes": 4154,
+          "nps": 3646418,
+          "score_cp": 6,
+          "wall_s": 0.032
+        },
+        "depth_8": {
+          "best_move": "e3f4",
+          "depth": 8,
+          "nodes": 5845,
+          "nps": 3858849,
+          "score_cp": 0,
+          "wall_s": 0.033
+        },
+        "movetime_100ms": {
+          "best_move": "e3f4",
+          "depth": 32,
+          "nodes": 366592,
+          "nps": 3655439,
+          "score_cp": 0,
+          "wall_s": 0.132
+        },
+        "movetime_250ms": {
+          "best_move": "e3f4",
+          "depth": 58,
+          "nodes": 876544,
+          "nps": 3505624,
+          "score_cp": 0,
+          "wall_s": 0.282
+        }
+      }
+    ]
+  },
+  "track_p_x12": {
+    "name": "Janus Classical X12 (Track P)",
+    "threads": 4,
+    "exe_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.7\\control\\janus_classical_x12.exe",
+    "options_count": 26,
+    "benchmark": [
+      {
+        "id": "STARTPOS",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "depth_7": {
+          "best_move": "b1c3",
+          "depth": 7,
+          "nodes": 94376,
+          "nps": 4841632,
+          "score_cp": 38,
+          "wall_s": 0.08
+        },
+        "depth_8": {
+          "best_move": "b1c3",
+          "depth": 8,
+          "nodes": 283543,
+          "nps": 5482725,
+          "score_cp": 10,
+          "wall_s": 0.119
+        },
+        "movetime_100ms": {
+          "best_move": "g1f3",
+          "depth": 7,
+          "nodes": 161792,
+          "nps": 1606488,
+          "score_cp": 38,
+          "wall_s": 0.162
+        },
+        "movetime_250ms": {
+          "best_move": "e2e4",
+          "depth": 11,
+          "nodes": 1327104,
+          "nps": 5286449,
+          "score_cp": 37,
+          "wall_s": 0.312
+        }
+      },
+      {
+        "id": "KIWIPETE",
+        "fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+        "depth_7": {
+          "best_move": "d5e6",
+          "depth": 7,
+          "nodes": 1029457,
+          "nps": 4178621,
+          "score_cp": 1,
+          "wall_s": 0.308
+        },
+        "depth_8": {
+          "best_move": "e2a6",
+          "depth": 8,
+          "nodes": 1402945,
+          "nps": 3763158,
+          "score_cp": 14,
+          "wall_s": 0.432
+        },
+        "movetime_100ms": {
+          "best_move": "e2a6",
+          "depth": 6,
+          "nodes": 118784,
+          "nps": 1177517,
+          "score_cp": 41,
+          "wall_s": 0.163
+        },
+        "movetime_250ms": {
+          "best_move": "d5e6",
+          "depth": 7,
+          "nodes": 1040384,
+          "nps": 4110668,
+          "score_cp": 1,
+          "wall_s": 0.313
+        }
+      },
+      {
+        "id": "TACTICAL_01",
+        "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4",
+        "depth_7": {
+          "best_move": "h5f7",
+          "depth": 7,
+          "nodes": 596427,
+          "nps": 7898293,
+          "score_cp": 28999,
+          "wall_s": 0.137
+        },
+        "depth_8": {
+          "best_move": "h5f7",
+          "depth": 8,
+          "nodes": 1312799,
+          "nps": 7274740,
+          "score_cp": 28999,
+          "wall_s": 0.24
+        },
+        "movetime_100ms": {
+          "best_move": "h5f7",
+          "depth": 7,
+          "nodes": 251904,
+          "nps": 2498611,
+          "score_cp": 28999,
+          "wall_s": 0.162
+        },
+        "movetime_250ms": {
+          "best_move": "h5f7",
+          "depth": 8,
+          "nodes": 1896448,
+          "nps": 7536709,
+          "score_cp": 28999,
+          "wall_s": 0.317
+        }
+      },
+      {
+        "id": "ENDGAME_01",
+        "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+        "depth_7": {
+          "best_move": "e3f4",
+          "depth": 7,
+          "nodes": 4134,
+          "nps": 1335789,
+          "score_cp": 6,
+          "wall_s": 0.065
+        },
+        "depth_8": {
+          "best_move": "e3f4",
+          "depth": 8,
+          "nodes": 5750,
+          "nps": 2015351,
+          "score_cp": 0,
+          "wall_s": 0.066
+        },
+        "movetime_100ms": {
+          "best_move": "e3f4",
+          "depth": 30,
+          "nodes": 319488,
+          "nps": 3189139,
+          "score_cp": 0,
+          "wall_s": 0.163
+        },
+        "movetime_250ms": {
+          "best_move": "e3f4",
+          "depth": 32,
+          "nodes": 1632256,
+          "nps": 6498369,
+          "score_cp": 0,
+          "wall_s": 0.31
+        }
+      }
+    ]
+  }
+}

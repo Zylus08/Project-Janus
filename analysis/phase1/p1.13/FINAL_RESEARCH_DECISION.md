@@ -80,3 +80,4 @@ Under Section 4 of the JCTS Governance Charter, a candidate engine must satisfy 
 * **Production Codebase:** The changes in `engine/classical_x/janus_classical_x.cpp` introducing variant `X18` remain strictly isolated under `variant == "X18"`. The default engine variant remains configured to match baseline behavior (`X7` / `X12`).
 * **Active Baselines:** All future milestones must continue to benchmark against `X7` for single-thread research and `X12` for parallel search research.
 * **Audit Signature:** Sealed and ratified by Independent Reproducibility Auditor on November 13, 2026.
+

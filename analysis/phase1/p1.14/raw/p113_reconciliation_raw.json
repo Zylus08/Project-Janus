@@ -1,0 +1,5273 @@
+{
+  "tournament_games_count": 410,
+  "calibration_games_count": 120,
+  "grand_total_unique_games": 530,
+  "tournaments": [
+    {
+      "match": "x18_1t_vs_x7_1t",
+      "eng_a": "Janus-X18-1T",
+      "eng_b": "Janus-X7-1T",
+      "games": 100,
+      "pairs": 50,
+      "wins_a": 18,
+      "draws": 46,
+      "losses_a": 36,
+      "pts_a": 41.0,
+      "score_pct": 41.0,
+      "wilson_ci": [
+        31.867157095664655,
+        50.79874943890338
+      ],
+      "paired_ci": [
+        34.46933387777326,
+        47.530666122226734
+      ],
+      "elo": -63.22726196896347,
+      "elo_paired_ci": [
+        -111.6046767533311,
+        -17.172659949869534
+      ],
+      "pentanomial": {
+        "WW": 1,
+        "WD": 7,
+        "DD_WL": 21,
+        "LD": 15,
+        "LL": 6
+      },
+      "crashes": 0,
+      "time_forfeits": 0,
+      "illegal_moves": 0,
+      "pair_details": [
+        {
+          "pair_index": 0,
+          "opening": "English Anglo-Scandinavian",
+          "eco": "A10",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 1,
+          "opening": "English Bellon Gambit",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "insufficient_material"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 2,
+          "opening": "English Bremen Smyslov System",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 3,
+          "opening": "English Keres Defense",
+          "eco": "A23",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 4,
+          "opening": "English Symmetrical 3.Nf3",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 5,
+          "opening": "English Symmetrical Rubinstein",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 6,
+          "opening": "English Symmetrical Anti-Benoni",
+          "eco": "A31",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 7,
+          "opening": "Reti Reversed Blumenfeld",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 8,
+          "opening": "Reti Advance 3...f6",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 9,
+          "opening": "Reti vs Old Indian",
+          "eco": "A06",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 10,
+          "opening": "Dutch Defense Fianchetto 2...Nf6",
+          "eco": "A81",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 11,
+          "opening": "Dutch Defense 2.Nc3",
+          "eco": "A80",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 12,
+          "opening": "Dutch Defense Krejcik Gambit",
+          "eco": "A80",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 13,
+          "opening": "Dutch Hort-Antoshin System",
+          "eco": "A84",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 14,
+          "opening": "Modern Benoni Snake Variation",
+          "eco": "A60",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 15,
+          "opening": "Old Indian Defense 3.Nc3",
+          "eco": "A53",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 16,
+          "opening": "Bird's Opening Hobbs Gambit",
+          "eco": "A02",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 17,
+          "opening": "Larsen Spassky Variation",
+          "eco": "A01",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 18,
+          "opening": "Polish Opening Outflank",
+          "eco": "A00",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 19,
+          "opening": "Hungarian Opening Reversed Pirc",
+          "eco": "A00",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 20,
+          "opening": "Scandinavian Modern 3...Nf6 4.Nf3",
+          "eco": "B01",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 21,
+          "opening": "Scandinavian Gubinsky-Melts",
+          "eco": "B01",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 22,
+          "opening": "Scandinavian 3...Qa5 4.d4 Nf6",
+          "eco": "B01",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 23,
+          "opening": "Alekhine Four Pawns Attack",
+          "eco": "B03",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 24,
+          "opening": "Alekhine Modern Albay Line",
+          "eco": "B04",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 25,
+          "opening": "Pirc Defense Classical 4...Bg7 5.Be2",
+          "eco": "B08",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 26,
+          "opening": "Pirc Austrian Attack 5...c5",
+          "eco": "B09",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 27,
+          "opening": "Modern Defense Averbakh",
+          "eco": "B06",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 28,
+          "opening": "Caro-Kann Korchnoi Line",
+          "eco": "B15",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 2.0
+        },
+        {
+          "pair_index": 29,
+          "opening": "Caro-Kann Advance 4.Nc3",
+          "eco": "B12",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 30,
+          "opening": "Caro-Kann Panov 5...Nc6",
+          "eco": "B13",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "stalemate"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 31,
+          "opening": "Caro-Kann Classical 6.h4 h6 7.Nf3",
+          "eco": "B18",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 32,
+          "opening": "Sicilian Morphy Gambit",
+          "eco": "B20",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 33,
+          "opening": "Sicilian Closed 3.g3",
+          "eco": "B25",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 34,
+          "opening": "Sicilian Alapin 2...e6",
+          "eco": "B22",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 35,
+          "opening": "Sicilian Kan 5.Bd3",
+          "eco": "B42",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 36,
+          "opening": "Sicilian Taimanov 5.Nc3 a6",
+          "eco": "B46",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 37,
+          "opening": "Sicilian Four Knights 6.Ndb5",
+          "eco": "B45",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 38,
+          "opening": "Sicilian Richter-Rauzer 6.Bg5",
+          "eco": "B60",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 39,
+          "opening": "Sicilian Dragon Classical 6.Be2",
+          "eco": "B72",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 40,
+          "opening": "Sicilian Najdorf Adams Attack",
+          "eco": "B90",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 41,
+          "opening": "Sicilian Najdorf 6.f4",
+          "eco": "B93",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "insufficient_material"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 42,
+          "opening": "Sicilian Najdorf 6.Be2",
+          "eco": "B92",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 43,
+          "opening": "Sicilian Scheveningen Classical 6.Be2",
+          "eco": "B84",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 44,
+          "opening": "Sicilian Rossolimo 3...g6",
+          "eco": "B51",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 45,
+          "opening": "Vienna Game Paulsen System",
+          "eco": "C26",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 46,
+          "opening": "Vienna Game Max Lange",
+          "eco": "C28",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 47,
+          "opening": "Bishop's Opening Del Rio",
+          "eco": "C24",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 48,
+          "opening": "King's Gambit Fischer Defense",
+          "eco": "C34",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 49,
+          "opening": "King's Gambit Modern 3...d5",
+          "eco": "C36",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        }
+      ]
+    },
+    {
+      "match": "x18_1t_vs_x7_1t_slow",
+      "eng_a": "Janus-X18-1T",
+      "eng_b": "Janus-X7-1T",
+      "games": 50,
+      "pairs": 25,
+      "wins_a": 8,
+      "draws": 27,
+      "losses_a": 15,
+      "pts_a": 21.5,
+      "score_pct": 43.0,
+      "wilson_ci": [
+        30.265842103012165,
+        56.7330583754283
+      ],
+      "paired_ci": [
+        34.27121237895358,
+        51.72878762104642
+      ],
+      "elo": -48.962560037161964,
+      "elo_paired_ci": [
+        -113.1304613626605,
+        12.017637273878101
+      ],
+      "pentanomial": {
+        "WW": 1,
+        "WD": 3,
+        "DD_WL": 10,
+        "LD": 10,
+        "LL": 1
+      },
+      "crashes": 0,
+      "time_forfeits": 0,
+      "illegal_moves": 0,
+      "pair_details": [
+        {
+          "pair_index": 0,
+          "opening": "English Anglo-Scandinavian",
+          "eco": "A10",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 1,
+          "opening": "English Bellon Gambit",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 2,
+          "opening": "English Bremen Smyslov System",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 3,
+          "opening": "English Keres Defense",
+          "eco": "A23",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 4,
+          "opening": "English Symmetrical 3.Nf3",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 5,
+          "opening": "English Symmetrical Rubinstein",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 6,
+          "opening": "English Symmetrical Anti-Benoni",
+          "eco": "A31",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 7,
+          "opening": "Reti Reversed Blumenfeld",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 8,
+          "opening": "Reti Advance 3...f6",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 9,
+          "opening": "Reti vs Old Indian",
+          "eco": "A06",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 10,
+          "opening": "Dutch Defense Fianchetto 2...Nf6",
+          "eco": "A81",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 11,
+          "opening": "Dutch Defense 2.Nc3",
+          "eco": "A80",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 12,
+          "opening": "Dutch Defense Krejcik Gambit",
+          "eco": "A80",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 13,
+          "opening": "Dutch Hort-Antoshin System",
+          "eco": "A84",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 14,
+          "opening": "Modern Benoni Snake Variation",
+          "eco": "A60",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 15,
+          "opening": "Old Indian Defense 3.Nc3",
+          "eco": "A53",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "insufficient_material"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 16,
+          "opening": "Bird's Opening Hobbs Gambit",
+          "eco": "A02",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 17,
+          "opening": "Larsen Spassky Variation",
+          "eco": "A01",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 18,
+          "opening": "Polish Opening Outflank",
+          "eco": "A00",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 19,
+          "opening": "Hungarian Opening Reversed Pirc",
+          "eco": "A00",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 2.0
+        },
+        {
+          "pair_index": 20,
+          "opening": "Scandinavian Modern 3...Nf6 4.Nf3",
+          "eco": "B01",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 21,
+          "opening": "Scandinavian Gubinsky-Melts",
+          "eco": "B01",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 22,
+          "opening": "Scandinavian 3...Qa5 4.d4 Nf6",
+          "eco": "B01",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 23,
+          "opening": "Alekhine Four Pawns Attack",
+          "eco": "B03",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 24,
+          "opening": "Alekhine Modern Albay Line",
+          "eco": "B04",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X7-1T",
+            "black": "Janus-X18-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.5
+        }
+      ]
+    },
+    {
+      "match": "x18_4t_vs_x12_4t",
+      "eng_a": "Janus-X18-4T",
+      "eng_b": "Janus-X12-4T",
+      "games": 100,
+      "pairs": 50,
+      "wins_a": 28,
+      "draws": 45,
+      "losses_a": 27,
+      "pts_a": 50.5,
+      "score_pct": 50.5,
+      "wilson_ci": [
+        40.86494852829769,
+        60.0980566642263
+      ],
+      "paired_ci": [
+        44.162776633256485,
+        56.837223366743515
+      ],
+      "elo": 3.474471674037067,
+      "elo_paired_ci": [
+        -40.746977207974005,
+        47.809391466924126
+      ],
+      "pentanomial": {
+        "WW": 1,
+        "WD": 15,
+        "DD_WL": 21,
+        "LD": 10,
+        "LL": 3
+      },
+      "crashes": 0,
+      "time_forfeits": 0,
+      "illegal_moves": 0,
+      "pair_details": [
+        {
+          "pair_index": 0,
+          "opening": "English Anglo-Scandinavian",
+          "eco": "A10",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 1,
+          "opening": "English Bellon Gambit",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 2,
+          "opening": "English Bremen Smyslov System",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 3,
+          "opening": "English Keres Defense",
+          "eco": "A23",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 4,
+          "opening": "English Symmetrical 3.Nf3",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 5,
+          "opening": "English Symmetrical Rubinstein",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 6,
+          "opening": "English Symmetrical Anti-Benoni",
+          "eco": "A31",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 7,
+          "opening": "Reti Reversed Blumenfeld",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 8,
+          "opening": "Reti Advance 3...f6",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 9,
+          "opening": "Reti vs Old Indian",
+          "eco": "A06",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 10,
+          "opening": "Dutch Defense Fianchetto 2...Nf6",
+          "eco": "A81",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 11,
+          "opening": "Dutch Defense 2.Nc3",
+          "eco": "A80",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 12,
+          "opening": "Dutch Defense Krejcik Gambit",
+          "eco": "A80",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 13,
+          "opening": "Dutch Hort-Antoshin System",
+          "eco": "A84",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 14,
+          "opening": "Modern Benoni Snake Variation",
+          "eco": "A60",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 15,
+          "opening": "Old Indian Defense 3.Nc3",
+          "eco": "A53",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 16,
+          "opening": "Bird's Opening Hobbs Gambit",
+          "eco": "A02",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 17,
+          "opening": "Larsen Spassky Variation",
+          "eco": "A01",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 18,
+          "opening": "Polish Opening Outflank",
+          "eco": "A00",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 19,
+          "opening": "Hungarian Opening Reversed Pirc",
+          "eco": "A00",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 20,
+          "opening": "Scandinavian Modern 3...Nf6 4.Nf3",
+          "eco": "B01",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 21,
+          "opening": "Scandinavian Gubinsky-Melts",
+          "eco": "B01",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 22,
+          "opening": "Scandinavian 3...Qa5 4.d4 Nf6",
+          "eco": "B01",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 23,
+          "opening": "Alekhine Four Pawns Attack",
+          "eco": "B03",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 24,
+          "opening": "Alekhine Modern Albay Line",
+          "eco": "B04",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 25,
+          "opening": "Pirc Defense Classical 4...Bg7 5.Be2",
+          "eco": "B08",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 26,
+          "opening": "Pirc Austrian Attack 5...c5",
+          "eco": "B09",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 27,
+          "opening": "Modern Defense Averbakh",
+          "eco": "B06",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 28,
+          "opening": "Caro-Kann Korchnoi Line",
+          "eco": "B15",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 29,
+          "opening": "Caro-Kann Advance 4.Nc3",
+          "eco": "B12",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 30,
+          "opening": "Caro-Kann Panov 5...Nc6",
+          "eco": "B13",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 31,
+          "opening": "Caro-Kann Classical 6.h4 h6 7.Nf3",
+          "eco": "B18",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 32,
+          "opening": "Sicilian Morphy Gambit",
+          "eco": "B20",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 33,
+          "opening": "Sicilian Closed 3.g3",
+          "eco": "B25",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 34,
+          "opening": "Sicilian Alapin 2...e6",
+          "eco": "B22",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 35,
+          "opening": "Sicilian Kan 5.Bd3",
+          "eco": "B42",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 36,
+          "opening": "Sicilian Taimanov 5.Nc3 a6",
+          "eco": "B46",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 37,
+          "opening": "Sicilian Four Knights 6.Ndb5",
+          "eco": "B45",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 38,
+          "opening": "Sicilian Richter-Rauzer 6.Bg5",
+          "eco": "B60",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 39,
+          "opening": "Sicilian Dragon Classical 6.Be2",
+          "eco": "B72",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "pair_score_a": 2.0
+        },
+        {
+          "pair_index": 40,
+          "opening": "Sicilian Najdorf Adams Attack",
+          "eco": "B90",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 41,
+          "opening": "Sicilian Najdorf 6.f4",
+          "eco": "B93",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 42,
+          "opening": "Sicilian Najdorf 6.Be2",
+          "eco": "B92",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 43,
+          "opening": "Sicilian Scheveningen Classical 6.Be2",
+          "eco": "B84",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 44,
+          "opening": "Sicilian Rossolimo 3...g6",
+          "eco": "B51",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 45,
+          "opening": "Vienna Game Paulsen System",
+          "eco": "C26",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 46,
+          "opening": "Vienna Game Max Lange",
+          "eco": "C28",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 47,
+          "opening": "Bishop's Opening Del Rio",
+          "eco": "C24",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 48,
+          "opening": "King's Gambit Fischer Defense",
+          "eco": "C34",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 49,
+          "opening": "King's Gambit Modern 3...d5",
+          "eco": "C36",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Janus-X12-4T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Janus-X12-4T",
+            "black": "Janus-X18-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.5
+        }
+      ]
+    },
+    {
+      "match": "x18_1t_vs_sf4_1t",
+      "eng_a": "Janus-X18-1T",
+      "eng_b": "Stockfish-4-1T",
+      "games": 40,
+      "pairs": 20,
+      "wins_a": 1,
+      "draws": 1,
+      "losses_a": 38,
+      "pts_a": 1.5,
+      "score_pct": 3.75,
+      "wilson_ci": [
+        0.8707641902894081,
+        14.73450569037188
+      ],
+      "paired_ci": [
+        0.0,
+        9.111792218043673
+      ],
+      "elo": -563.7477881811278,
+      "elo_paired_ci": [
+        -Infinity,
+        -399.56149279733575
+      ],
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 1,
+        "LD": 1,
+        "LL": 18
+      },
+      "crashes": 0,
+      "time_forfeits": 0,
+      "illegal_moves": 0,
+      "pair_details": [
+        {
+          "pair_index": 0,
+          "opening": "English Anglo-Scandinavian",
+          "eco": "A10",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 1,
+          "opening": "English Bellon Gambit",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 2,
+          "opening": "English Bremen Smyslov System",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 3,
+          "opening": "English Keres Defense",
+          "eco": "A23",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 4,
+          "opening": "English Symmetrical 3.Nf3",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 5,
+          "opening": "English Symmetrical Rubinstein",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 6,
+          "opening": "English Symmetrical Anti-Benoni",
+          "eco": "A31",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 7,
+          "opening": "Reti Reversed Blumenfeld",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 8,
+          "opening": "Reti Advance 3...f6",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 9,
+          "opening": "Reti vs Old Indian",
+          "eco": "A06",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 10,
+          "opening": "Dutch Defense Fianchetto 2...Nf6",
+          "eco": "A81",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 11,
+          "opening": "Dutch Defense 2.Nc3",
+          "eco": "A80",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 12,
+          "opening": "Dutch Defense Krejcik Gambit",
+          "eco": "A80",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 13,
+          "opening": "Dutch Hort-Antoshin System",
+          "eco": "A84",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 14,
+          "opening": "Modern Benoni Snake Variation",
+          "eco": "A60",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 15,
+          "opening": "Old Indian Defense 3.Nc3",
+          "eco": "A53",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 16,
+          "opening": "Bird's Opening Hobbs Gambit",
+          "eco": "A02",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 17,
+          "opening": "Larsen Spassky Variation",
+          "eco": "A01",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 18,
+          "opening": "Polish Opening Outflank",
+          "eco": "A00",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 19,
+          "opening": "Hungarian Opening Reversed Pirc",
+          "eco": "A00",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        }
+      ]
+    },
+    {
+      "match": "x18_1t_vs_sf11_1t",
+      "eng_a": "Janus-X18-1T",
+      "eng_b": "Stockfish-11-1T",
+      "games": 40,
+      "pairs": 20,
+      "wins_a": 0,
+      "draws": 0,
+      "losses_a": 40,
+      "pts_a": 0.0,
+      "score_pct": 0.0,
+      "wilson_ci": [
+        0.0,
+        8.762453925039232
+      ],
+      "paired_ci": [
+        0.0,
+        0.0
+      ],
+      "elo": null,
+      "elo_paired_ci": [
+        -Infinity,
+        null
+      ],
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 0,
+        "LD": 0,
+        "LL": 20
+      },
+      "crashes": 0,
+      "time_forfeits": 0,
+      "illegal_moves": 0,
+      "pair_details": [
+        {
+          "pair_index": 0,
+          "opening": "English Anglo-Scandinavian",
+          "eco": "A10",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 1,
+          "opening": "English Bellon Gambit",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 2,
+          "opening": "English Bremen Smyslov System",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 3,
+          "opening": "English Keres Defense",
+          "eco": "A23",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 4,
+          "opening": "English Symmetrical 3.Nf3",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 5,
+          "opening": "English Symmetrical Rubinstein",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 6,
+          "opening": "English Symmetrical Anti-Benoni",
+          "eco": "A31",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 7,
+          "opening": "Reti Reversed Blumenfeld",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 8,
+          "opening": "Reti Advance 3...f6",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 9,
+          "opening": "Reti vs Old Indian",
+          "eco": "A06",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 10,
+          "opening": "Dutch Defense Fianchetto 2...Nf6",
+          "eco": "A81",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 11,
+          "opening": "Dutch Defense 2.Nc3",
+          "eco": "A80",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 12,
+          "opening": "Dutch Defense Krejcik Gambit",
+          "eco": "A80",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 13,
+          "opening": "Dutch Hort-Antoshin System",
+          "eco": "A84",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 14,
+          "opening": "Modern Benoni Snake Variation",
+          "eco": "A60",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 15,
+          "opening": "Old Indian Defense 3.Nc3",
+          "eco": "A53",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 16,
+          "opening": "Bird's Opening Hobbs Gambit",
+          "eco": "A02",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 17,
+          "opening": "Larsen Spassky Variation",
+          "eco": "A01",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 18,
+          "opening": "Polish Opening Outflank",
+          "eco": "A00",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 19,
+          "opening": "Hungarian Opening Reversed Pirc",
+          "eco": "A00",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-11-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-11-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        }
+      ]
+    },
+    {
+      "match": "x18_1t_vs_sf19_1t",
+      "eng_a": "Janus-X18-1T",
+      "eng_b": "Stockfish-19-1T",
+      "games": 40,
+      "pairs": 20,
+      "wins_a": 0,
+      "draws": 2,
+      "losses_a": 38,
+      "pts_a": 1.0,
+      "score_pct": 2.5,
+      "wilson_ci": [
+        0.44267174077949195,
+        12.881659488007779
+      ],
+      "paired_ci": [
+        0.0,
+        5.872411287897258
+      ],
+      "elo": -636.4258428105996,
+      "elo_paired_ci": [
+        -Infinity,
+        -481.9601874475006
+      ],
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 0,
+        "LD": 2,
+        "LL": 18
+      },
+      "crashes": 0,
+      "time_forfeits": 0,
+      "illegal_moves": 0,
+      "pair_details": [
+        {
+          "pair_index": 0,
+          "opening": "English Anglo-Scandinavian",
+          "eco": "A10",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 1,
+          "opening": "English Bellon Gambit",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 2,
+          "opening": "English Bremen Smyslov System",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 3,
+          "opening": "English Keres Defense",
+          "eco": "A23",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 4,
+          "opening": "English Symmetrical 3.Nf3",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 5,
+          "opening": "English Symmetrical Rubinstein",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 6,
+          "opening": "English Symmetrical Anti-Benoni",
+          "eco": "A31",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 7,
+          "opening": "Reti Reversed Blumenfeld",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 8,
+          "opening": "Reti Advance 3...f6",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 9,
+          "opening": "Reti vs Old Indian",
+          "eco": "A06",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 10,
+          "opening": "Dutch Defense Fianchetto 2...Nf6",
+          "eco": "A81",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 11,
+          "opening": "Dutch Defense 2.Nc3",
+          "eco": "A80",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 12,
+          "opening": "Dutch Defense Krejcik Gambit",
+          "eco": "A80",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 13,
+          "opening": "Dutch Hort-Antoshin System",
+          "eco": "A84",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 14,
+          "opening": "Modern Benoni Snake Variation",
+          "eco": "A60",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 15,
+          "opening": "Old Indian Defense 3.Nc3",
+          "eco": "A53",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 16,
+          "opening": "Bird's Opening Hobbs Gambit",
+          "eco": "A02",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 17,
+          "opening": "Larsen Spassky Variation",
+          "eco": "A01",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 18,
+          "opening": "Polish Opening Outflank",
+          "eco": "A00",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 19,
+          "opening": "Hungarian Opening Reversed Pirc",
+          "eco": "A00",
+          "g1": {
+            "white": "Janus-X18-1T",
+            "black": "Stockfish-19-1T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-1T",
+            "black": "Janus-X18-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        }
+      ]
+    },
+    {
+      "match": "x18_4t_vs_sf19_4t",
+      "eng_a": "Janus-X18-4T",
+      "eng_b": "Stockfish-19-4T",
+      "games": 40,
+      "pairs": 20,
+      "wins_a": 0,
+      "draws": 2,
+      "losses_a": 38,
+      "pts_a": 1.0,
+      "score_pct": 2.5,
+      "wilson_ci": [
+        0.44267174077949195,
+        12.881659488007779
+      ],
+      "paired_ci": [
+        0.0,
+        5.872411287897258
+      ],
+      "elo": -636.4258428105996,
+      "elo_paired_ci": [
+        -Infinity,
+        -481.9601874475006
+      ],
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 0,
+        "LD": 2,
+        "LL": 18
+      },
+      "crashes": 0,
+      "time_forfeits": 0,
+      "illegal_moves": 0,
+      "pair_details": [
+        {
+          "pair_index": 0,
+          "opening": "English Anglo-Scandinavian",
+          "eco": "A10",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 1,
+          "opening": "English Bellon Gambit",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 2,
+          "opening": "English Bremen Smyslov System",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 3,
+          "opening": "English Keres Defense",
+          "eco": "A23",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 4,
+          "opening": "English Symmetrical 3.Nf3",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 5,
+          "opening": "English Symmetrical Rubinstein",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 6,
+          "opening": "English Symmetrical Anti-Benoni",
+          "eco": "A31",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 7,
+          "opening": "Reti Reversed Blumenfeld",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 8,
+          "opening": "Reti Advance 3...f6",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 9,
+          "opening": "Reti vs Old Indian",
+          "eco": "A06",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 10,
+          "opening": "Dutch Defense Fianchetto 2...Nf6",
+          "eco": "A81",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 11,
+          "opening": "Dutch Defense 2.Nc3",
+          "eco": "A80",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 12,
+          "opening": "Dutch Defense Krejcik Gambit",
+          "eco": "A80",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 13,
+          "opening": "Dutch Hort-Antoshin System",
+          "eco": "A84",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 14,
+          "opening": "Modern Benoni Snake Variation",
+          "eco": "A60",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 15,
+          "opening": "Old Indian Defense 3.Nc3",
+          "eco": "A53",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 16,
+          "opening": "Bird's Opening Hobbs Gambit",
+          "eco": "A02",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 17,
+          "opening": "Larsen Spassky Variation",
+          "eco": "A01",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 18,
+          "opening": "Polish Opening Outflank",
+          "eco": "A00",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 19,
+          "opening": "Hungarian Opening Reversed Pirc",
+          "eco": "A00",
+          "g1": {
+            "white": "Janus-X18-4T",
+            "black": "Stockfish-19-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-19-4T",
+            "black": "Janus-X18-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        }
+      ]
+    }
+  ],
+  "calibrations": [
+    {
+      "match": "sf4_1t_vs_sf6_1t",
+      "eng_a": "Stockfish-4-1T",
+      "eng_b": "Stockfish-6-1T",
+      "games": 20,
+      "pairs": 10,
+      "wins_a": 10,
+      "draws": 2,
+      "losses_a": 8,
+      "pts_a": 11.0,
+      "score_pct": 55.00000000000001,
+      "wilson_ci": [
+        34.20820083075997,
+        74.18049791429071
+      ],
+      "paired_ci": [
+        48.46666666666667,
+        61.53333333333334
+      ],
+      "elo": 34.86007028756008,
+      "elo_paired_ci": [
+        -10.658033223714817,
+        81.61035514807232
+      ],
+      "pentanomial": {
+        "WW": 0,
+        "WD": 2,
+        "DD_WL": 8,
+        "LD": 0,
+        "LL": 0
+      },
+      "crashes": 0,
+      "time_forfeits": 10,
+      "illegal_moves": 0,
+      "pair_details": [
+        {
+          "pair_index": 0,
+          "opening": "English Anglo-Scandinavian",
+          "eco": "A10",
+          "g1": {
+            "white": "Stockfish-4-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-4-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 1,
+          "opening": "English Bellon Gambit",
+          "eco": "A22",
+          "g1": {
+            "white": "Stockfish-4-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-4-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 2,
+          "opening": "English Bremen Smyslov System",
+          "eco": "A22",
+          "g1": {
+            "white": "Stockfish-4-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-4-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 3,
+          "opening": "English Keres Defense",
+          "eco": "A23",
+          "g1": {
+            "white": "Stockfish-4-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-4-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 4,
+          "opening": "English Symmetrical 3.Nf3",
+          "eco": "A34",
+          "g1": {
+            "white": "Stockfish-4-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-4-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 5,
+          "opening": "English Symmetrical Rubinstein",
+          "eco": "A34",
+          "g1": {
+            "white": "Stockfish-4-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-4-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 6,
+          "opening": "English Symmetrical Anti-Benoni",
+          "eco": "A31",
+          "g1": {
+            "white": "Stockfish-4-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-4-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 7,
+          "opening": "Reti Reversed Blumenfeld",
+          "eco": "A09",
+          "g1": {
+            "white": "Stockfish-4-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-4-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "pair_score_a": 1.5
+        },
+        {
+          "pair_index": 8,
+          "opening": "Reti Advance 3...f6",
+          "eco": "A09",
+          "g1": {
+            "white": "Stockfish-4-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-4-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 9,
+          "opening": "Reti vs Old Indian",
+          "eco": "A06",
+          "g1": {
+            "white": "Stockfish-4-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-4-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        }
+      ]
+    },
+    {
+      "match": "sf6_1t_vs_sf8_1t",
+      "eng_a": "Stockfish-6-1T",
+      "eng_b": "Stockfish-8-1T",
+      "games": 20,
+      "pairs": 10,
+      "wins_a": 2,
+      "draws": 6,
+      "losses_a": 12,
+      "pts_a": 5.0,
+      "score_pct": 25.0,
+      "wilson_ci": [
+        11.186005278940309,
+        46.87050099580636
+      ],
+      "paired_ci": [
+        14.669892976783295,
+        35.330107023216705
+      ],
+      "elo": -190.84850188786498,
+      "elo_paired_ci": [
+        -305.87013793904674,
+        -105.02287568394273
+      ],
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 2,
+        "LD": 6,
+        "LL": 2
+      },
+      "crashes": 0,
+      "time_forfeits": 10,
+      "illegal_moves": 0,
+      "pair_details": [
+        {
+          "pair_index": 0,
+          "opening": "English Anglo-Scandinavian",
+          "eco": "A10",
+          "g1": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-8-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 1,
+          "opening": "English Bellon Gambit",
+          "eco": "A22",
+          "g1": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-8-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 2,
+          "opening": "English Bremen Smyslov System",
+          "eco": "A22",
+          "g1": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-8-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 3,
+          "opening": "English Keres Defense",
+          "eco": "A23",
+          "g1": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-8-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 4,
+          "opening": "English Symmetrical 3.Nf3",
+          "eco": "A34",
+          "g1": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-8-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 5,
+          "opening": "English Symmetrical Rubinstein",
+          "eco": "A34",
+          "g1": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-8-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 6,
+          "opening": "English Symmetrical Anti-Benoni",
+          "eco": "A31",
+          "g1": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-8-1T",
+            "result": "1/2-1/2",
+            "term": "eval_draw_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 7,
+          "opening": "Reti Reversed Blumenfeld",
+          "eco": "A09",
+          "g1": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-8-1T",
+            "result": "1/2-1/2",
+            "term": "threefold_repetition"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.5
+        },
+        {
+          "pair_index": 8,
+          "opening": "Reti Advance 3...f6",
+          "eco": "A09",
+          "g1": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-8-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 9,
+          "opening": "Reti vs Old Indian",
+          "eco": "A06",
+          "g1": {
+            "white": "Stockfish-6-1T",
+            "black": "Stockfish-8-1T",
+            "result": "1/2-1/2",
+            "term": "max_plies_drawn"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.5
+        }
+      ]
+    },
+    {
+      "match": "x7_1t_vs_sf4_1t",
+      "eng_a": "Janus-X7-1T",
+      "eng_b": "Stockfish-4-1T",
+      "games": 20,
+      "pairs": 10,
+      "wins_a": 1,
+      "draws": 0,
+      "losses_a": 19,
+      "pts_a": 1.0,
+      "score_pct": 5.0,
+      "wilson_ci": [
+        0.8881219432873135,
+        23.613589351256675
+      ],
+      "paired_ci": [
+        0.0,
+        14.800000000000002
+      ],
+      "elo": -511.50144038113154,
+      "elo_paired_ci": [
+        -Infinity,
+        -304.07115174869705
+      ],
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 1,
+        "LD": 0,
+        "LL": 9
+      },
+      "crashes": 0,
+      "time_forfeits": 6,
+      "illegal_moves": 0,
+      "pair_details": [
+        {
+          "pair_index": 0,
+          "opening": "English Anglo-Scandinavian",
+          "eco": "A10",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-4-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 1,
+          "opening": "English Bellon Gambit",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 2,
+          "opening": "English Bremen Smyslov System",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 3,
+          "opening": "English Keres Defense",
+          "eco": "A23",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 4,
+          "opening": "English Symmetrical 3.Nf3",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 5,
+          "opening": "English Symmetrical Rubinstein",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 6,
+          "opening": "English Symmetrical Anti-Benoni",
+          "eco": "A31",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 7,
+          "opening": "Reti Reversed Blumenfeld",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 8,
+          "opening": "Reti Advance 3...f6",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 9,
+          "opening": "Reti vs Old Indian",
+          "eco": "A06",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-4-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        }
+      ]
+    },
+    {
+      "match": "x7_1t_vs_sf6_1t",
+      "eng_a": "Janus-X7-1T",
+      "eng_b": "Stockfish-6-1T",
+      "games": 20,
+      "pairs": 10,
+      "wins_a": 8,
+      "draws": 0,
+      "losses_a": 12,
+      "pts_a": 8.0,
+      "score_pct": 40.0,
+      "wilson_ci": [
+        21.880396741419272,
+        61.342205768479396
+      ],
+      "paired_ci": [
+        26.933333333333337,
+        53.06666666666666
+      ],
+      "elo": -70.4365036222725,
+      "elo_paired_ci": [
+        -173.37167561509813,
+        21.336163438222677
+      ],
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 8,
+        "LD": 0,
+        "LL": 2
+      },
+      "crashes": 0,
+      "time_forfeits": 8,
+      "illegal_moves": 0,
+      "pair_details": [
+        {
+          "pair_index": 0,
+          "opening": "English Anglo-Scandinavian",
+          "eco": "A10",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 1,
+          "opening": "English Bellon Gambit",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 2,
+          "opening": "English Bremen Smyslov System",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 3,
+          "opening": "English Keres Defense",
+          "eco": "A23",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 4,
+          "opening": "English Symmetrical 3.Nf3",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 5,
+          "opening": "English Symmetrical Rubinstein",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-6-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 6,
+          "opening": "English Symmetrical Anti-Benoni",
+          "eco": "A31",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 7,
+          "opening": "Reti Reversed Blumenfeld",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-6-1T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 8,
+          "opening": "Reti Advance 3...f6",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 9,
+          "opening": "Reti vs Old Indian",
+          "eco": "A06",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-6-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-6-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        }
+      ]
+    },
+    {
+      "match": "x7_1t_vs_sf8_1t",
+      "eng_a": "Janus-X7-1T",
+      "eng_b": "Stockfish-8-1T",
+      "games": 20,
+      "pairs": 10,
+      "wins_a": 2,
+      "draws": 0,
+      "losses_a": 18,
+      "pts_a": 2.0,
+      "score_pct": 10.0,
+      "wilson_ci": [
+        2.7865893984153205,
+        30.103820641179336
+      ],
+      "paired_ci": [
+        0.0,
+        23.06666666666667
+      ],
+      "elo": -381.69700377572997,
+      "elo_paired_ci": [
+        -Infinity,
+        -209.2518840107744
+      ],
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 2,
+        "LD": 0,
+        "LL": 8
+      },
+      "crashes": 0,
+      "time_forfeits": 2,
+      "illegal_moves": 0,
+      "pair_details": [
+        {
+          "pair_index": 0,
+          "opening": "English Anglo-Scandinavian",
+          "eco": "A10",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-8-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 1,
+          "opening": "English Bellon Gambit",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-8-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 2,
+          "opening": "English Bremen Smyslov System",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-8-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 3,
+          "opening": "English Keres Defense",
+          "eco": "A23",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-8-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 4,
+          "opening": "English Symmetrical 3.Nf3",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-8-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 5,
+          "opening": "English Symmetrical Rubinstein",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-8-1T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 6,
+          "opening": "English Symmetrical Anti-Benoni",
+          "eco": "A31",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-8-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 7,
+          "opening": "Reti Reversed Blumenfeld",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-8-1T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 1.0
+        },
+        {
+          "pair_index": 8,
+          "opening": "Reti Advance 3...f6",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-8-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 9,
+          "opening": "Reti vs Old Indian",
+          "eco": "A06",
+          "g1": {
+            "white": "Janus-X7-1T",
+            "black": "Stockfish-8-1T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-8-1T",
+            "black": "Janus-X7-1T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        }
+      ]
+    },
+    {
+      "match": "x12_4t_vs_sf4_4t",
+      "eng_a": "Janus-X12-4T",
+      "eng_b": "Stockfish-4-4T",
+      "games": 20,
+      "pairs": 10,
+      "wins_a": 0,
+      "draws": 0,
+      "losses_a": 20,
+      "pts_a": 0.0,
+      "score_pct": 0.0,
+      "wilson_ci": [
+        0.0,
+        16.113012549493323
+      ],
+      "paired_ci": [
+        0.0,
+        0.0
+      ],
+      "elo": null,
+      "elo_paired_ci": [
+        -Infinity,
+        null
+      ],
+      "pentanomial": {
+        "WW": 0,
+        "WD": 0,
+        "DD_WL": 0,
+        "LD": 0,
+        "LL": 10
+      },
+      "crashes": 0,
+      "time_forfeits": 6,
+      "illegal_moves": 0,
+      "pair_details": [
+        {
+          "pair_index": 0,
+          "opening": "English Anglo-Scandinavian",
+          "eco": "A10",
+          "g1": {
+            "white": "Janus-X12-4T",
+            "black": "Stockfish-4-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-4-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 1,
+          "opening": "English Bellon Gambit",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X12-4T",
+            "black": "Stockfish-4-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 2,
+          "opening": "English Bremen Smyslov System",
+          "eco": "A22",
+          "g1": {
+            "white": "Janus-X12-4T",
+            "black": "Stockfish-4-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 3,
+          "opening": "English Keres Defense",
+          "eco": "A23",
+          "g1": {
+            "white": "Janus-X12-4T",
+            "black": "Stockfish-4-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-4-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 4,
+          "opening": "English Symmetrical 3.Nf3",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X12-4T",
+            "black": "Stockfish-4-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 5,
+          "opening": "English Symmetrical Rubinstein",
+          "eco": "A34",
+          "g1": {
+            "white": "Janus-X12-4T",
+            "black": "Stockfish-4-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 6,
+          "opening": "English Symmetrical Anti-Benoni",
+          "eco": "A31",
+          "g1": {
+            "white": "Janus-X12-4T",
+            "black": "Stockfish-4-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-4-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "checkmate"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 7,
+          "opening": "Reti Reversed Blumenfeld",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X12-4T",
+            "black": "Stockfish-4-4T",
+            "result": "0-1",
+            "term": "eval_resignation_adjudication"
+          },
+          "g2": {
+            "white": "Stockfish-4-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 8,
+          "opening": "Reti Advance 3...f6",
+          "eco": "A09",
+          "g1": {
+            "white": "Janus-X12-4T",
+            "black": "Stockfish-4-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-4-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "time_forfeit_black"
+          },
+          "pair_score_a": 0.0
+        },
+        {
+          "pair_index": 9,
+          "opening": "Reti vs Old Indian",
+          "eco": "A06",
+          "g1": {
+            "white": "Janus-X12-4T",
+            "black": "Stockfish-4-4T",
+            "result": "0-1",
+            "term": "checkmate"
+          },
+          "g2": {
+            "white": "Stockfish-4-4T",
+            "black": "Janus-X12-4T",
+            "result": "1-0",
+            "term": "eval_resignation_adjudication"
+          },
+          "pair_score_a": 0.0
+        }
+      ]
+    }
+  ],
+  "sf4_victory_audit": {
+    "round": "25",
+    "white": "Janus-X18-1T",
+    "black": "Stockfish-4-1T",
+    "result": "1-0",
+    "termination": "eval_resignation_adjudication",
+    "eco": "A80",
+    "opening": "Dutch Defense Krejcik Gambit",
+    "plies": 133,
+    "final_fen": "8/4Pb1P/1P1k4/5p2/3N1P2/2K5/8/8 b - - 0 67",
+    "is_legal": true,
+    "final_is_game_over": false
+  }
+}

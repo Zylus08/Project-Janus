@@ -325,7 +325,8 @@ static bool g_use_reverse_futility = true;     // Phase 4: Reverse Futility Prun
 static int  g_rfp_margin_per_depth = 120;      // Margin per ply (120 for 1T, 90 for 4T)
 static bool g_use_aspiration_window = true;    // Phase 5: Aspiration Windows (delta = 25 cp)
 static int  g_aspiration_delta = 25;           // Aspiration delta
-static std::string g_search_variant = "X18";    // Active variant identifier (Default Candidate X18)
+static bool g_movepicker_stage_reform = false; // Phase 1, Milestone P1.14: Good Captures -> Killers -> Countermove -> Quiets -> Bad Captures
+static std::string g_search_variant = "X19";    // Active variant identifier (Default Candidate X19)
 
 // ============================================================================
 // Search Modernization & Positional Evaluation Options (Milestone P1.2)
@@ -421,6 +422,7 @@ EXPORT void native_apply_search_variant(const char* var_str) {
     if (!var_str) return;
     std::string var(var_str);
     g_search_variant = var;
+    g_movepicker_stage_reform = false;
     if (var == "X0") { // C1 Frozen Baseline Equivalent
         g_use_staged_movegen = false;
         g_quiescence_see_mode = 0;
@@ -723,6 +725,41 @@ EXPORT void native_apply_search_variant(const char* var_str) {
             g_lmp_mode = 0;
             g_rfp_margin_per_depth = 120;
         } else { // Track P: X18-P (X12 foundation + History-LMR)
+            g_eval_mode = 10; // E10 Enhanced Classical Evaluation
+            g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = true; // 64K entry Pawn Hash Table
+            g_dynamic_time_mgmt = true;
+            g_use_lmp = true; // Safe Late Move Pruning
+            g_lmp_mode = 1; // Conservative Quadratic LMP
+            g_lmp_max_depth = 4;
+            g_rfp_margin_per_depth = 90;
+        }
+    } else if (var == "X19") { // P1.14 Candidate: MovePicker Stage Reform (Good Captures -> Killers -> Countermove -> Quiets -> Bad Captures)
+        g_use_staged_movegen = true;
+        g_quiescence_see_mode = 2;
+        g_use_see_in_quiescence = true;
+        g_use_null_move_pruning = true;
+        g_use_reverse_futility = true;
+        g_use_aspiration_window = true;
+        g_conthist_mode = 3; // H3
+        g_dynamic_lmr_mode = 3; // L3 Calibrated LMR (Purge toxic X18 history-LMR)
+        g_use_pruning_safety = false;
+        g_movepicker_stage_reform = true;
+        if (g_num_threads == 1) { // Track S: X19-S (X7 foundation + Stage Reform)
+            g_eval_mode = 5; // E5 Combined Classical Eval
+            g_tactical_ordering_mode = 2; // Enable Countermove table for staging
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = false;
+            g_dynamic_time_mgmt = false;
+            g_use_lmp = false;
+            g_lmp_mode = 0;
+            g_rfp_margin_per_depth = 120;
+        } else { // Track P: X19-P (X12 foundation + Stage Reform)
             g_eval_mode = 10; // E10 Enhanced Classical Evaluation
             g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
             g_singular_extension_mode = 0; // S0 Off
@@ -3460,8 +3497,10 @@ enum MovePickerStage {
     STAGE_GEN_CAPTURES,
     STAGE_CAPTURES,
     STAGE_KILLERS,
+    STAGE_COUNTERMOVE,
     STAGE_GEN_QUIETS,
     STAGE_QUIETS,
+    STAGE_BAD_CAPTURES,
     STAGE_DONE
 };
 
@@ -3477,6 +3516,14 @@ struct MovePicker {
     int caps_scores[MAX_MOVES];
     int num_caps;
     int cur_cap;
+
+    uint16_t good_caps[MAX_MOVES];
+    int num_good_caps;
+    int cur_good_cap;
+
+    uint16_t bad_caps[MAX_MOVES];
+    int num_bad_caps;
+    int cur_bad_cap;
 
     uint16_t quiets[MAX_MOVES];
     int quiets_scores[MAX_MOVES];
@@ -3504,6 +3551,10 @@ struct MovePicker {
         num_yielded = 0;
         cur_cap = 0;
         num_caps = 0;
+        num_good_caps = 0;
+        cur_good_cap = 0;
+        num_bad_caps = 0;
+        cur_bad_cap = 0;
         cur_quiet = 0;
         num_quiets = 0;
         cur_killer = 0;
@@ -3560,15 +3611,44 @@ struct MovePicker {
                         std::swap(caps[i], caps[best_idx]);
                         std::swap(caps_scores[i], caps_scores[best_idx]);
                     }
+                    if (g_movepicker_stage_reform) {
+                        num_good_caps = 0;
+                        num_bad_caps = 0;
+                        for (int i = 0; i < num_caps; i++) {
+                            uint16_t m = caps[i];
+                            int flag = move_flag(m);
+                            if (flag == 3) { // Promotion is always good
+                                good_caps[num_good_caps++] = m;
+                            } else {
+                                int see_val = janus_see(board, m);
+                                if (see_val >= 0) {
+                                    good_caps[num_good_caps++] = m;
+                                } else {
+                                    bad_caps[num_bad_caps++] = m;
+                                }
+                            }
+                        }
+                        cur_good_cap = 0;
+                    }
                     stage = STAGE_CAPTURES;
                     cur_cap = 0;
                 }
                 case STAGE_CAPTURES: {
-                    while (cur_cap < num_caps) {
-                        uint16_t m = caps[cur_cap++];
-                        if (!has_been_yielded(m)) {
-                            yielded[num_yielded++] = m;
-                            return m;
+                    if (g_movepicker_stage_reform) {
+                        while (cur_good_cap < num_good_caps) {
+                            uint16_t m = good_caps[cur_good_cap++];
+                            if (!has_been_yielded(m)) {
+                                yielded[num_yielded++] = m;
+                                return m;
+                            }
+                        }
+                    } else {
+                        while (cur_cap < num_caps) {
+                            uint16_t m = caps[cur_cap++];
+                            if (!has_been_yielded(m)) {
+                                yielded[num_yielded++] = m;
+                                return m;
+                            }
                         }
                     }
                     stage = STAGE_KILLERS;
@@ -3589,7 +3669,25 @@ struct MovePicker {
                             return killer2;
                         }
                     }
-                    stage = STAGE_GEN_QUIETS;
+                    if (g_movepicker_stage_reform) {
+                        stage = STAGE_COUNTERMOVE;
+                    } else {
+                        stage = STAGE_GEN_QUIETS;
+                    }
+                }
+                case STAGE_COUNTERMOVE: {
+                    if (g_movepicker_stage_reform) {
+                        stage = STAGE_GEN_QUIETS;
+                        if (ply >= 1 && g_ss[ply - 1].current_move != 0) {
+                            int prev_from = move_from(g_ss[ply - 1].current_move);
+                            int prev_to = move_to(g_ss[ply - 1].current_move);
+                            uint16_t cm = g_countermove_table[prev_from][prev_to];
+                            if (cm != 0 && !has_been_yielded(cm) && is_legal_move(board, cm)) {
+                                yielded[num_yielded++] = cm;
+                                return cm;
+                            }
+                        }
+                    }
                 }
                 case STAGE_GEN_QUIETS: {
                     num_quiets = native_generate_quiets(board, quiets);
@@ -3613,6 +3711,24 @@ struct MovePicker {
                         if (!has_been_yielded(m)) {
                             yielded[num_yielded++] = m;
                             return m;
+                        }
+                    }
+                    if (g_movepicker_stage_reform) {
+                        stage = STAGE_BAD_CAPTURES;
+                        cur_bad_cap = 0;
+                    } else {
+                        stage = STAGE_DONE;
+                        break;
+                    }
+                }
+                case STAGE_BAD_CAPTURES: {
+                    if (g_movepicker_stage_reform) {
+                        while (cur_bad_cap < num_bad_caps) {
+                            uint16_t m = bad_caps[cur_bad_cap++];
+                            if (!has_been_yielded(m)) {
+                                yielded[num_yielded++] = m;
+                                return m;
+                            }
                         }
                     }
                     stage = STAGE_DONE;

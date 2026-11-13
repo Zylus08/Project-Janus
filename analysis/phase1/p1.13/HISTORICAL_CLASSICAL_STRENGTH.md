@@ -103,3 +103,4 @@ Combining the results of the reference calibration tournament (Phase 1) with the
 
 ## 4. Conclusion
 Janus Classical X18 has not bridged the historical gap to Stockfish 4, and remains outclassed by Stockfish 11. The historical calibration confirms that Janus's true developmental peer group lies in early 2000s classical engines, and that architectural progress requires principled continuation-history frameworks rather than static cutoff heuristics.
+

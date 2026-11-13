@@ -106,3 +106,4 @@ Despite securing 2 draws at 1T and 2 draws at 4T, the audit explicitly rejects a
 
 ### 3.3 Historical Significance
 These benchmarks establish an empirical lower anchor for future milestones. Under non-ML constraints, matching Stockfish 19 is not an achievable short-term goal; rather, Stockfish 19 defines the theoretical ceiling against which Janus's classical stability and defensive tenacity are calibrated.
+

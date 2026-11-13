@@ -79,3 +79,4 @@ To systematically address the Q2 (quiet horizon instability) and Q3 (move orderi
 ## 5. Conclusion & Transition Plan
 
 Milestone P1.13 successfully identified the quantitative mechanism behind Janus's search inefficiency. Milestone P1.14 has a concrete, empirically verified target: replace noisy 1-ply butterfly reductions with **principled 2-ply continuation history and soft dynamic scaling**, targeting a measurable reduction in Q2/Q3 decision defects while safeguarding tactical stability on 1 thread.
+

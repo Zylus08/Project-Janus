@@ -1,0 +1,550 @@
+{
+  "B0_X7_1T": {
+    "variant": "B0_X7_1T",
+    "threads": 1,
+    "total_nodes": 2092687,
+    "total_time_s": 1.4967503,
+    "avg_nps": 1398153.7200961309,
+    "total_cutoffs": 110749,
+    "bf1_pct": 77.39663563553621,
+    "positions": [
+      {
+        "id": "tactical_1",
+        "category": "tactical_middlegame",
+        "nodes": 77985,
+        "time_s": 0.059443,
+        "score": -44,
+        "cutoffs": 3614,
+        "bf1": 3271
+      },
+      {
+        "id": "tactical_2",
+        "category": "tactical_middlegame",
+        "nodes": 140504,
+        "time_s": 0.0891236,
+        "score": 45,
+        "cutoffs": 7113,
+        "bf1": 5161
+      },
+      {
+        "id": "quiet_1",
+        "category": "quiet_middlegame",
+        "nodes": 383474,
+        "time_s": 0.3400105,
+        "score": 7,
+        "cutoffs": 17609,
+        "bf1": 13989
+      },
+      {
+        "id": "quiet_2",
+        "category": "quiet_middlegame",
+        "nodes": 223456,
+        "time_s": 0.1641347,
+        "score": -8,
+        "cutoffs": 11226,
+        "bf1": 7687
+      },
+      {
+        "id": "open_1",
+        "category": "open_position",
+        "nodes": 64034,
+        "time_s": 0.0540631,
+        "score": -54,
+        "cutoffs": 3151,
+        "bf1": 2628
+      },
+      {
+        "id": "open_2",
+        "category": "open_position",
+        "nodes": 81753,
+        "time_s": 0.0599198,
+        "score": -42,
+        "cutoffs": 3706,
+        "bf1": 3172
+      },
+      {
+        "id": "closed_1",
+        "category": "closed_position",
+        "nodes": 165353,
+        "time_s": 0.1099767,
+        "score": 62,
+        "cutoffs": 6650,
+        "bf1": 5434
+      },
+      {
+        "id": "closed_2",
+        "category": "closed_position",
+        "nodes": 390254,
+        "time_s": 0.2503379,
+        "score": 71,
+        "cutoffs": 21970,
+        "bf1": 17979
+      },
+      {
+        "id": "queenless_1",
+        "category": "queenless_position",
+        "nodes": 53972,
+        "time_s": 0.0329491,
+        "score": 22,
+        "cutoffs": 3069,
+        "bf1": 2533
+      },
+      {
+        "id": "queenless_2",
+        "category": "queenless_position",
+        "nodes": 77899,
+        "time_s": 0.0480526,
+        "score": 188,
+        "cutoffs": 4977,
+        "bf1": 3806
+      },
+      {
+        "id": "endgame_1",
+        "category": "endgame",
+        "nodes": 12382,
+        "time_s": 0.0042295,
+        "score": 39,
+        "cutoffs": 1709,
+        "bf1": 1579
+      },
+      {
+        "id": "endgame_2",
+        "category": "endgame",
+        "nodes": 11846,
+        "time_s": 0.0047489,
+        "score": 4,
+        "cutoffs": 1493,
+        "bf1": 1400
+      },
+      {
+        "id": "defensive_1",
+        "category": "defensive_position",
+        "nodes": 244072,
+        "time_s": 0.1710607,
+        "score": 369,
+        "cutoffs": 15470,
+        "bf1": 10937
+      },
+      {
+        "id": "defensive_2",
+        "category": "defensive_position",
+        "nodes": 165703,
+        "time_s": 0.1087002,
+        "score": 18,
+        "cutoffs": 8992,
+        "bf1": 6140
+      }
+    ]
+  },
+  "B1_X19_1T": {
+    "variant": "B1_X19_1T",
+    "threads": 1,
+    "total_nodes": 209388,
+    "total_time_s": 0.1441959,
+    "avg_nps": 1452107.8615966197,
+    "total_cutoffs": 12215,
+    "bf1_pct": 93.58984854686861,
+    "positions": [
+      {
+        "id": "tactical_1",
+        "category": "tactical_middlegame",
+        "nodes": 3089,
+        "time_s": 0.0025644,
+        "score": -44,
+        "cutoffs": 123,
+        "bf1": 121
+      },
+      {
+        "id": "tactical_2",
+        "category": "tactical_middlegame",
+        "nodes": 17224,
+        "time_s": 0.0108226,
+        "score": 45,
+        "cutoffs": 912,
+        "bf1": 845
+      },
+      {
+        "id": "quiet_1",
+        "category": "quiet_middlegame",
+        "nodes": 18397,
+        "time_s": 0.0153885,
+        "score": 7,
+        "cutoffs": 848,
+        "bf1": 772
+      },
+      {
+        "id": "quiet_2",
+        "category": "quiet_middlegame",
+        "nodes": 2306,
+        "time_s": 0.0012354,
+        "score": -8,
+        "cutoffs": 53,
+        "bf1": 48
+      },
+      {
+        "id": "open_1",
+        "category": "open_position",
+        "nodes": 110,
+        "time_s": 0.0001266,
+        "score": -54,
+        "cutoffs": 7,
+        "bf1": 7
+      },
+      {
+        "id": "open_2",
+        "category": "open_position",
+        "nodes": 17436,
+        "time_s": 0.0131305,
+        "score": -42,
+        "cutoffs": 725,
+        "bf1": 688
+      },
+      {
+        "id": "closed_1",
+        "category": "closed_position",
+        "nodes": 2349,
+        "time_s": 0.0015836,
+        "score": 62,
+        "cutoffs": 71,
+        "bf1": 70
+      },
+      {
+        "id": "closed_2",
+        "category": "closed_position",
+        "nodes": 99392,
+        "time_s": 0.0649999,
+        "score": 71,
+        "cutoffs": 6086,
+        "bf1": 5789
+      },
+      {
+        "id": "queenless_1",
+        "category": "queenless_position",
+        "nodes": 76,
+        "time_s": 6.45e-05,
+        "score": 22,
+        "cutoffs": 0,
+        "bf1": 0
+      },
+      {
+        "id": "queenless_2",
+        "category": "queenless_position",
+        "nodes": 1091,
+        "time_s": 0.0004691,
+        "score": 188,
+        "cutoffs": 39,
+        "bf1": 38
+      },
+      {
+        "id": "endgame_1",
+        "category": "endgame",
+        "nodes": 122,
+        "time_s": 3.85e-05,
+        "score": 39,
+        "cutoffs": 13,
+        "bf1": 12
+      },
+      {
+        "id": "endgame_2",
+        "category": "endgame",
+        "nodes": 1585,
+        "time_s": 0.0005785,
+        "score": 4,
+        "cutoffs": 258,
+        "bf1": 246
+      },
+      {
+        "id": "defensive_1",
+        "category": "defensive_position",
+        "nodes": 4967,
+        "time_s": 0.0036282,
+        "score": 369,
+        "cutoffs": 152,
+        "bf1": 146
+      },
+      {
+        "id": "defensive_2",
+        "category": "defensive_position",
+        "nodes": 41244,
+        "time_s": 0.0295656,
+        "score": 18,
+        "cutoffs": 2928,
+        "bf1": 2650
+      }
+    ]
+  },
+  "B0_X12_4T": {
+    "variant": "B0_X12_4T",
+    "threads": 4,
+    "total_nodes": 1884080,
+    "total_time_s": 1.4436154999999995,
+    "avg_nps": 1305112.060656041,
+    "total_cutoffs": 95952,
+    "bf1_pct": 76.18809404702351,
+    "positions": [
+      {
+        "id": "tactical_1",
+        "category": "tactical_middlegame",
+        "nodes": 74672,
+        "time_s": 0.0638305,
+        "score": -35,
+        "cutoffs": 3508,
+        "bf1": 3229
+      },
+      {
+        "id": "tactical_2",
+        "category": "tactical_middlegame",
+        "nodes": 134603,
+        "time_s": 0.1053363,
+        "score": 81,
+        "cutoffs": 6531,
+        "bf1": 4971
+      },
+      {
+        "id": "quiet_1",
+        "category": "quiet_middlegame",
+        "nodes": 282563,
+        "time_s": 0.2712896,
+        "score": 12,
+        "cutoffs": 12063,
+        "bf1": 9967
+      },
+      {
+        "id": "quiet_2",
+        "category": "quiet_middlegame",
+        "nodes": 126426,
+        "time_s": 0.1029115,
+        "score": 3,
+        "cutoffs": 6767,
+        "bf1": 4463
+      },
+      {
+        "id": "open_1",
+        "category": "open_position",
+        "nodes": 58471,
+        "time_s": 0.0455847,
+        "score": -53,
+        "cutoffs": 2537,
+        "bf1": 2119
+      },
+      {
+        "id": "open_2",
+        "category": "open_position",
+        "nodes": 86344,
+        "time_s": 0.068595,
+        "score": -43,
+        "cutoffs": 3394,
+        "bf1": 2888
+      },
+      {
+        "id": "closed_1",
+        "category": "closed_position",
+        "nodes": 204202,
+        "time_s": 0.1469862,
+        "score": 60,
+        "cutoffs": 7967,
+        "bf1": 6536
+      },
+      {
+        "id": "closed_2",
+        "category": "closed_position",
+        "nodes": 350928,
+        "time_s": 0.2394104,
+        "score": 75,
+        "cutoffs": 17377,
+        "bf1": 14141
+      },
+      {
+        "id": "queenless_1",
+        "category": "queenless_position",
+        "nodes": 41238,
+        "time_s": 0.021127,
+        "score": 32,
+        "cutoffs": 2214,
+        "bf1": 1977
+      },
+      {
+        "id": "queenless_2",
+        "category": "queenless_position",
+        "nodes": 31636,
+        "time_s": 0.0158076,
+        "score": 220,
+        "cutoffs": 1886,
+        "bf1": 1654
+      },
+      {
+        "id": "endgame_1",
+        "category": "endgame",
+        "nodes": 9490,
+        "time_s": 0.003402,
+        "score": 39,
+        "cutoffs": 1264,
+        "bf1": 1196
+      },
+      {
+        "id": "endgame_2",
+        "category": "endgame",
+        "nodes": 16277,
+        "time_s": 0.0062995,
+        "score": 31,
+        "cutoffs": 2230,
+        "bf1": 2068
+      },
+      {
+        "id": "defensive_1",
+        "category": "defensive_position",
+        "nodes": 319458,
+        "time_s": 0.2505303,
+        "score": 368,
+        "cutoffs": 20406,
+        "bf1": 12405
+      },
+      {
+        "id": "defensive_2",
+        "category": "defensive_position",
+        "nodes": 147772,
+        "time_s": 0.1025049,
+        "score": 25,
+        "cutoffs": 7808,
+        "bf1": 5490
+      }
+    ]
+  },
+  "B1_X19_4T": {
+    "variant": "B1_X19_4T",
+    "threads": 4,
+    "total_nodes": 105940,
+    "total_time_s": 0.06989959999999999,
+    "avg_nps": 1515602.378268259,
+    "total_cutoffs": 6525,
+    "bf1_pct": 93.07279693486589,
+    "positions": [
+      {
+        "id": "tactical_1",
+        "category": "tactical_middlegame",
+        "nodes": 1150,
+        "time_s": 0.0010485,
+        "score": -44,
+        "cutoffs": 48,
+        "bf1": 47
+      },
+      {
+        "id": "tactical_2",
+        "category": "tactical_middlegame",
+        "nodes": 25163,
+        "time_s": 0.018456,
+        "score": 45,
+        "cutoffs": 1733,
+        "bf1": 1574
+      },
+      {
+        "id": "quiet_1",
+        "category": "quiet_middlegame",
+        "nodes": 676,
+        "time_s": 0.0006211,
+        "score": 7,
+        "cutoffs": 2,
+        "bf1": 2
+      },
+      {
+        "id": "quiet_2",
+        "category": "quiet_middlegame",
+        "nodes": 431,
+        "time_s": 0.0001514,
+        "score": -8,
+        "cutoffs": 0,
+        "bf1": 0
+      },
+      {
+        "id": "open_1",
+        "category": "open_position",
+        "nodes": 88,
+        "time_s": 0.0001071,
+        "score": -54,
+        "cutoffs": 0,
+        "bf1": 0
+      },
+      {
+        "id": "open_2",
+        "category": "open_position",
+        "nodes": 6926,
+        "time_s": 0.0052041,
+        "score": -42,
+        "cutoffs": 270,
+        "bf1": 270
+      },
+      {
+        "id": "closed_1",
+        "category": "closed_position",
+        "nodes": 1019,
+        "time_s": 0.0006305,
+        "score": 62,
+        "cutoffs": 41,
+        "bf1": 40
+      },
+      {
+        "id": "closed_2",
+        "category": "closed_position",
+        "nodes": 20440,
+        "time_s": 0.0119794,
+        "score": 71,
+        "cutoffs": 1641,
+        "bf1": 1588
+      },
+      {
+        "id": "queenless_1",
+        "category": "queenless_position",
+        "nodes": 76,
+        "time_s": 6.22e-05,
+        "score": 22,
+        "cutoffs": 0,
+        "bf1": 0
+      },
+      {
+        "id": "queenless_2",
+        "category": "queenless_position",
+        "nodes": 789,
+        "time_s": 0.0003494,
+        "score": 188,
+        "cutoffs": 32,
+        "bf1": 32
+      },
+      {
+        "id": "endgame_1",
+        "category": "endgame",
+        "nodes": 114,
+        "time_s": 3.42e-05,
+        "score": 39,
+        "cutoffs": 6,
+        "bf1": 5
+      },
+      {
+        "id": "endgame_2",
+        "category": "endgame",
+        "nodes": 126,
+        "time_s": 3.06e-05,
+        "score": 4,
+        "cutoffs": 6,
+        "bf1": 5
+      },
+      {
+        "id": "defensive_1",
+        "category": "defensive_position",
+        "nodes": 710,
+        "time_s": 0.0003387,
+        "score": 369,
+        "cutoffs": 18,
+        "bf1": 18
+      },
+      {
+        "id": "defensive_2",
+        "category": "defensive_position",
+        "nodes": 48232,
+        "time_s": 0.0308864,
+        "score": 18,
+        "cutoffs": 2728,
+        "bf1": 2492
+      }
+    ]
+  }
+}

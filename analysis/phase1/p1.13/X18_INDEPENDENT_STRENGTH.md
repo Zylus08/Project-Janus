@@ -154,3 +154,4 @@ Forensic investigation of the tournament games (`x18_1t_vs_x7_1t.pgn`) and move-
    - Four-Thread Baseline: **Janus Classical X12 (`78ca3d5`) RETAINED**.
 3. **Scientific Value of the Result:**
    This negative result provides decisive experimental proof that raw node reduction (e.g., saving 24% nodes) does not equal playing strength. Selectivity without multi-ply continuation context degrades tactical decision accuracy faster than additional depth can compensate.
+

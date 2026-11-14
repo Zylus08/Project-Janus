@@ -336,6 +336,8 @@ static bool g_exact_search_mode = false; // Phase 6 exact full-width verificatio
 // Milestone P1.16 Quiescence Search Architecture & Correctness
 static int  g_qsearch_mode = 1;          // 0=Q0 (Frozen legacy), 1=Q1 (Corrected in-check evasions & mate detection), 2=Q2 (Q1 + quiet checks at qply 0), 3=Q3 (Q2 + conservative check filter)
 static int  g_use_true_outposts = 1;     // 0=Legacy E5 outposts, 1=True outposts with enemy pawn immunity & central bishop outposts
+static int  g_use_backward_pawns = 0;    // P1.18 Track A: 0=Disabled (Legacy), 1=Classical Backward Pawn Detection (-10 mg / -15 eg)
+static int  g_use_king_file_exposure = 0;// P1.18 Track B: 0=Disabled (Legacy), 1=Open & Semi-Open File King Exposure Penalty
 static uint64_t g_telemetry_qsearch_in_check = 0;
 static uint64_t g_telemetry_qsearch_checkmates = 0;
 static uint64_t g_telemetry_qsearch_checks_generated = 0;
@@ -873,6 +875,8 @@ EXPORT void native_apply_search_variant(const char* var_str) {
         g_adaptive_capture_mode = 1; // C1 Near-Even Capture Promotion
         g_qsearch_mode = 1; // Q1 Corrected Quiescence Search
         g_use_true_outposts = 1; // True Outposts with Pawn Immunity
+        g_use_backward_pawns = 0;
+        g_use_king_file_exposure = 0;
         if (g_num_threads == 1) { // Track S: X22-S (1T)
             g_eval_mode = 5; // E5 Combined Classical Eval
             g_tactical_ordering_mode = 2; // Enable Countermove table for staging
@@ -885,6 +889,46 @@ EXPORT void native_apply_search_variant(const char* var_str) {
             g_lmp_mode = 0;
             g_rfp_margin_per_depth = 120;
         } else { // Track P: X22-P (4T)
+            g_eval_mode = 10; // E10 Enhanced Classical Evaluation
+            g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = true; // 64K entry Pawn Hash Table
+            g_dynamic_time_mgmt = true;
+            g_use_lmp = true; // Safe Late Move Pruning
+            g_lmp_mode = 1; // Conservative Quadratic LMP
+            g_lmp_max_depth = 4;
+            g_rfp_margin_per_depth = 90;
+        }
+    } else if (var == "X23") { // P1.18 Candidate: Backward Pawns + King File Exposure + True Outposts + Pawn Hash
+        g_use_staged_movegen = true;
+        g_quiescence_see_mode = 2;
+        g_use_see_in_quiescence = true;
+        g_use_null_move_pruning = true;
+        g_use_reverse_futility = true;
+        g_use_aspiration_window = true;
+        g_conthist_mode = 3; // H3
+        g_dynamic_lmr_mode = 3; // L3 Calibrated LMR
+        g_use_pruning_safety = false;
+        g_movepicker_stage_reform = true;
+        g_adaptive_capture_mode = 1; // C1 Near-Even Capture Promotion
+        g_qsearch_mode = 1; // Q1 Corrected Quiescence Search
+        g_use_true_outposts = 1; // True Outposts with Pawn Immunity
+        g_use_backward_pawns = 1; // Track A: Classical Backward Pawn Detection
+        g_use_king_file_exposure = 1; // Track B: Open/Semi-Open King File Exposure
+        if (g_num_threads == 1) { // Track S: X23-S (1T)
+            g_eval_mode = 5; // E5 Combined Classical Eval
+            g_tactical_ordering_mode = 2; // Enable Countermove table for staging
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = true; // 64K entry Pawn Hash Table
+            g_dynamic_time_mgmt = false;
+            g_use_lmp = false;
+            g_lmp_mode = 0;
+            g_rfp_margin_per_depth = 120;
+        } else { // Track P: X23-P (4T)
             g_eval_mode = 10; // E10 Enhanced Classical Evaluation
             g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
             g_singular_extension_mode = 0; // S0 Off

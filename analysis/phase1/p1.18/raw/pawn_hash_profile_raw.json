@@ -1,0 +1,35 @@
+{
+  "eval_benchmark": {
+    "iterations": 200000,
+    "ns_with_pawn_hash": 2139.419499999349,
+    "ns_without_pawn_hash": 2427.641499998572,
+    "eval_speedup": 1.1347197218681566
+  },
+  "searches": [
+    {
+      "pos": "Startpos",
+      "depth": 11,
+      "nodes": 174080
+    },
+    {
+      "pos": "Sicilian Najdorf",
+      "depth": 10,
+      "nodes": 137216
+    },
+    {
+      "pos": "French Defense Backward e6",
+      "depth": 9,
+      "nodes": 143360
+    },
+    {
+      "pos": "Ruy Lopez Open",
+      "depth": 9,
+      "nodes": 139264
+    },
+    {
+      "pos": "Open King File Attacking",
+      "depth": 9,
+      "nodes": 152905
+    }
+  ]
+}

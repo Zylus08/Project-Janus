@@ -1,0 +1,86 @@
+{
+  "scenarios": [
+    {
+      "scenario": "T1_TRUE_KNIGHT_OUTPOST_WHITE",
+      "description": "White Nd5 defended by e4 pawn; Black has no c/e pawns on ranks 5-7 (Permanent Immunity)",
+      "fen": "8/p4pkp/8/3N4/4P3/8/5PKP/8 w - - 0 1",
+      "score": 414,
+      "mirrored_score": 414,
+      "symmetry_verified": true
+    },
+    {
+      "scenario": "T2_UNPROTECTED_KNIGHT_SQUARE",
+      "description": "White Nd5 with no friendly pawn support (Unprotected square -> 0 bonus)",
+      "fen": "8/p4pkp/8/3N4/8/8/5PKP/8 w - - 0 1",
+      "score": 256,
+      "mirrored_score": 256,
+      "symmetry_verified": true
+    },
+    {
+      "scenario": "T3_TRANSIENT_PSEUDO_OUTPOST",
+      "description": "White Nd5 defended by e4, but Black has pawn on c7 (Kickable by c6 -> Transient bonus)",
+      "fen": "8/p1p2pkp/8/3N4/4P3/8/5PKP/8 w - - 0 1",
+      "score": 294,
+      "mirrored_score": 294,
+      "symmetry_verified": true
+    },
+    {
+      "scenario": "T4_ENEMY_PAWN_CHALLENGE",
+      "description": "White Nd5 defended by e4, but Black pawn on c6 currently attacks d5",
+      "fen": "8/p4pkp/2p5/3N4/4P3/8/5PKP/8 w - - 0 1",
+      "score": 310,
+      "mirrored_score": 310,
+      "symmetry_verified": true
+    },
+    {
+      "scenario": "T5_BLOCKED_ENEMY_PAWN",
+      "description": "White Nd5 defended by e4; Black pawn on c7 is blocked by White pawn on c6",
+      "fen": "8/p1p2pkp/2P5/3N4/4P3/8/5PKP/8 w - - 0 1",
+      "score": 410,
+      "mirrored_score": 410,
+      "symmetry_verified": true
+    },
+    {
+      "scenario": "T6_TRUE_KNIGHT_OUTPOST_BLACK",
+      "description": "Black Nd4 defended by e5 pawn; White has no c/e pawns behind rank 4 (Permanent Immunity)",
+      "fen": "8/5pkp/8/4p3/3n4/8/P4PKP/8 b - - 0 1",
+      "score": 414,
+      "mirrored_score": 414,
+      "symmetry_verified": true
+    },
+    {
+      "scenario": "T7_TRUE_BISHOP_OUTPOST_WHITE",
+      "description": "White Bd5 defended by e4 pawn; Black has no c/e pawns on ranks 5-7 (Central Bishop Immunity)",
+      "fen": "8/p4pkp/8/3B4/4P3/8/5PKP/8 w - - 0 1",
+      "score": 398,
+      "mirrored_score": 398,
+      "symmetry_verified": true
+    },
+    {
+      "scenario": "T8_TRUE_BISHOP_OUTPOST_BLACK",
+      "description": "Black Bd4 defended by e5 pawn; White has no c/e pawns behind rank 4 (Central Bishop Immunity)",
+      "fen": "8/5pkp/8/4p3/3b4/8/P4PKP/8 b - - 0 1",
+      "score": 398,
+      "mirrored_score": 398,
+      "symmetry_verified": true
+    },
+    {
+      "scenario": "T9_EN_PASSANT_BOUNDARY",
+      "description": "Position with en-passant square active; verifies no corruption of outpost evaluation",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq d3 0 3",
+      "score": -41,
+      "mirrored_score": -41,
+      "symmetry_verified": true
+    },
+    {
+      "scenario": "T10_MIRROR_SYMMETRY_PAIR",
+      "description": "White outpost Nd5 vs Black outpost Nd4 exact mirror comparison",
+      "fen": "8/p4pkp/8/3N4/4P3/8/5PKP/8 w - - 0 1",
+      "score": 414,
+      "mirrored_score": 414,
+      "symmetry_verified": true
+    }
+  ],
+  "symmetry_225_passed": 225,
+  "total_tested": 225
+}

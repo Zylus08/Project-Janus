@@ -1,0 +1,637 @@
+{
+  "p117_reconciliation": {
+    "Match_1": {
+      "match_id": "Match_1",
+      "file": "match1_x22s_vs_x7.pgn",
+      "candidate": "Janus Classical X22-S",
+      "opponent": "Janus Classical X7 (Baseline 1T)",
+      "games_count": 100,
+      "pairs_count": 50,
+      "cand_wins": 31,
+      "draws": 38,
+      "cand_losses": 31,
+      "cand_points": 50.0,
+      "cand_score_pct": 0.5,
+      "white_record": {
+        "wins": 12,
+        "draws": 25,
+        "losses": 13
+      },
+      "black_record": {
+        "wins": 19,
+        "draws": 13,
+        "losses": 18
+      },
+      "elo_difference": -0.0,
+      "paired_ci_95": [
+        0.42205288971019767,
+        0.5779471102898024
+      ],
+      "one_sided_p_value": 0.5,
+      "terminations": {
+        "adjudication_resignation": 57,
+        "repetition": 10,
+        "checkmate": 5,
+        "max_plies_reached": 16,
+        "adjudication_eval_draw": 10,
+        "insufficient_material": 2
+      }
+    },
+    "Match_2": {
+      "match_id": "Match_2",
+      "file": "match2_x22s_vs_x7_slow.pgn",
+      "candidate": "Janus Classical X22-S",
+      "opponent": "Janus Classical X7 (Baseline 1T)",
+      "games_count": 50,
+      "pairs_count": 25,
+      "cand_wins": 18,
+      "draws": 19,
+      "cand_losses": 13,
+      "cand_points": 27.5,
+      "cand_score_pct": 0.55,
+      "white_record": {
+        "wins": 13,
+        "draws": 8,
+        "losses": 4
+      },
+      "black_record": {
+        "wins": 5,
+        "draws": 11,
+        "losses": 9
+      },
+      "elo_difference": 34.86007028756008,
+      "paired_ci_95": [
+        0.452002,
+        0.6479980000000001
+      ],
+      "one_sided_p_value": 0.15865525393145685,
+      "terminations": {
+        "adjudication_eval_draw": 4,
+        "adjudication_resignation": 27,
+        "repetition": 6,
+        "max_plies_reached": 9,
+        "checkmate": 4
+      }
+    },
+    "Match_3": {
+      "match_id": "Match_3",
+      "file": "match3_x22p_vs_x12.pgn",
+      "candidate": "Janus Classical X22-P",
+      "opponent": "Janus Classical X12 (Baseline 4T)",
+      "games_count": 100,
+      "pairs_count": 50,
+      "cand_wins": 24,
+      "draws": 47,
+      "cand_losses": 29,
+      "cand_points": 47.5,
+      "cand_score_pct": 0.475,
+      "white_record": {
+        "wins": 11,
+        "draws": 27,
+        "losses": 12
+      },
+      "black_record": {
+        "wins": 13,
+        "draws": 20,
+        "losses": 17
+      },
+      "elo_difference": -17.386277512436106,
+      "paired_ci_95": [
+        0.3980015714285714,
+        0.5519984285714286
+      ],
+      "one_sided_p_value": 0.7377302817823437,
+      "terminations": {
+        "repetition": 6,
+        "adjudication_resignation": 46,
+        "insufficient_material": 1,
+        "max_plies_reached": 31,
+        "checkmate": 7,
+        "adjudication_eval_draw": 9
+      }
+    },
+    "Match_4": {
+      "match_id": "Match_4",
+      "file": "match4_x22s_vs_x21s.pgn",
+      "candidate": "Janus Classical X22-S",
+      "opponent": "Janus Classical X21-S (Ref 1T)",
+      "games_count": 50,
+      "pairs_count": 25,
+      "cand_wins": 20,
+      "draws": 20,
+      "cand_losses": 10,
+      "cand_points": 30.0,
+      "cand_score_pct": 0.6,
+      "white_record": {
+        "wins": 13,
+        "draws": 8,
+        "losses": 4
+      },
+      "black_record": {
+        "wins": 7,
+        "draws": 12,
+        "losses": 6
+      },
+      "elo_difference": 70.43650362227247,
+      "paired_ci_95": [
+        0.4703608315091461,
+        0.7296391684908539
+      ],
+      "one_sided_p_value": 0.06528500905786816,
+      "terminations": {
+        "repetition": 2,
+        "adjudication_resignation": 28,
+        "max_plies_reached": 17,
+        "checkmate": 2,
+        "adjudication_eval_draw": 1
+      }
+    },
+    "Match_5": {
+      "match_id": "Match_5",
+      "file": "match5_x22s_vs_sf4.pgn",
+      "candidate": "Janus Classical X22-S",
+      "opponent": "Stockfish 4 (Classical Ref 1)",
+      "games_count": 40,
+      "pairs_count": 20,
+      "cand_wins": 0,
+      "draws": 1,
+      "cand_losses": 39,
+      "cand_points": 0.5,
+      "cand_score_pct": 0.0125,
+      "white_record": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 20
+      },
+      "black_record": {
+        "wins": 0,
+        "draws": 1,
+        "losses": 19
+      },
+      "elo_difference": -759.0508365161766,
+      "paired_ci_95": [
+        0.0,
+        0.0369995
+      ],
+      "one_sided_p_value": 1.0,
+      "terminations": {
+        "checkmate": 8,
+        "adjudication_resignation": 31,
+        "adjudication_eval_draw": 1
+      }
+    },
+    "Match_6": {
+      "match_id": "Match_6",
+      "file": "match6_x22s_vs_sf11.pgn",
+      "candidate": "Janus Classical X22-S",
+      "opponent": "Stockfish 11 (Classical Ref 2)",
+      "games_count": 40,
+      "pairs_count": 20,
+      "cand_wins": 0,
+      "draws": 0,
+      "cand_losses": 40,
+      "cand_points": 0.0,
+      "cand_score_pct": 0.0,
+      "white_record": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 20
+      },
+      "black_record": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 20
+      },
+      "elo_difference": null,
+      "paired_ci_95": [
+        0.0,
+        1.95996e-06
+      ],
+      "one_sided_p_value": 1.0,
+      "terminations": {
+        "adjudication_resignation": 27,
+        "checkmate": 13
+      }
+    },
+    "Match_7": {
+      "match_id": "Match_7",
+      "file": "match7_x22s_vs_sf19.pgn",
+      "candidate": "Janus Classical X22-S",
+      "opponent": "Stockfish 19 (Ultimate NNUE)",
+      "games_count": 40,
+      "pairs_count": 20,
+      "cand_wins": 0,
+      "draws": 1,
+      "cand_losses": 39,
+      "cand_points": 0.5,
+      "cand_score_pct": 0.0125,
+      "white_record": {
+        "wins": 0,
+        "draws": 1,
+        "losses": 19
+      },
+      "black_record": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 20
+      },
+      "elo_difference": -759.0508365161766,
+      "paired_ci_95": [
+        0.0,
+        0.0369995
+      ],
+      "one_sided_p_value": 1.0,
+      "terminations": {
+        "adjudication_resignation": 22,
+        "checkmate": 17,
+        "repetition": 1
+      }
+    }
+  },
+  "p117_total_games": 420,
+  "p116_stockfish_claims": {
+    "total_claimed_wins": 29,
+    "total_inverted_resignations": 29,
+    "other_claims_count": 0,
+    "other_claims": [],
+    "full_ledger": [
+      {
+        "match": "Match_5",
+        "opponent": "Stockfish 4",
+        "game_number": 4,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 158,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "8/8/2p2k1p/P1P2p1P/2B5/5PK1/8/8 w - - 3 80",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_5",
+        "opponent": "Stockfish 4",
+        "game_number": 6,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 104,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "5k2/4R3/1r3P2/p2K2B1/P5PP/3p4/8/8 w - - 7 53",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_5",
+        "opponent": "Stockfish 4",
+        "game_number": 8,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 130,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "8/5P1k/2p1Q3/2p3r1/1K1P2p1/2P3P1/P7/8 w - - 0 66",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_5",
+        "opponent": "Stockfish 4",
+        "game_number": 10,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 68,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "8/2P1k1pp/8/8/8/5P2/P4BPP/6K1 w - - 1 35",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_5",
+        "opponent": "Stockfish 4",
+        "game_number": 12,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 72,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "4B3/2p2pQ1/pp5P/5k2/2b3p1/2P5/P4P1P/6K1 w - - 2 37",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_5",
+        "opponent": "Stockfish 4",
+        "game_number": 20,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 70,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "3r2r1/k5p1/pR5p/2Q5/8/2P5/5PPP/6K1 w - - 11 36",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_5",
+        "opponent": "Stockfish 4",
+        "game_number": 24,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 84,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "8/1k4p1/7p/2Q5/1Bp1p3/3p4/5PPP/3K4 w - - 2 43",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_5",
+        "opponent": "Stockfish 4",
+        "game_number": 26,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 110,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "1k6/7R/5P1p/3NK3/3PP3/5r1P/8/8 w - - 1 56",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_5",
+        "opponent": "Stockfish 4",
+        "game_number": 30,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 78,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "7r/3rk1q1/1Q4pp/2pB4/5P2/6P1/P6P/3R2K1 w - - 1 40",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_5",
+        "opponent": "Stockfish 4",
+        "game_number": 38,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 76,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "8/2p5/P3k3/2P2p2/3P1P2/4P2p/6P1/6K1 w - - 0 39",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_6",
+        "opponent": "Stockfish 11",
+        "game_number": 8,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 92,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "8/7k/8/4Q3/5P2/6PK/r6P/8 w - - 6 47",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_6",
+        "opponent": "Stockfish 11",
+        "game_number": 10,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 126,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "6k1/8/7p/5Q2/5pK1/8/5P1P/8 w - - 1 64",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_6",
+        "opponent": "Stockfish 11",
+        "game_number": 12,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 80,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "1rR5/5kp1/2P4p/4p3/8/3pK1PP/3N1P2/8 w - - 0 41",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_6",
+        "opponent": "Stockfish 11",
+        "game_number": 16,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 76,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "2Q5/2n4p/1kp1Bp2/1p4r1/8/P4P2/2K2P1P/7R w - - 2 39",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_6",
+        "opponent": "Stockfish 11",
+        "game_number": 18,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 82,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "1R5Q/1pr2p2/pk3p2/5N2/6P1/P4PK1/8/8 w - - 1 42",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_6",
+        "opponent": "Stockfish 11",
+        "game_number": 20,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 104,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "4R3/6pk/4K3/P4P1p/1p5P/8/8/8 w - - 0 53",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_6",
+        "opponent": "Stockfish 11",
+        "game_number": 24,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 66,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "1k1r2B1/1pp3pp/2Q5/5p2/1b1P4/4P3/6PP/1R4K1 w - - 1 34",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_6",
+        "opponent": "Stockfish 11",
+        "game_number": 26,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 86,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "6B1/4k3/4p3/8/3K1B2/5P1P/7P/8 w - - 1 44",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_6",
+        "opponent": "Stockfish 11",
+        "game_number": 36,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 100,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "4k3/8/1P1rpQ2/5p2/P7/6P1/5PKP/8 w - - 5 51",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_6",
+        "opponent": "Stockfish 11",
+        "game_number": 38,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 66,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "1R1b1kr1/4R1pp/8/1p6/1B6/3pp3/PP4PP/6K1 w - - 4 34",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_6",
+        "opponent": "Stockfish 11",
+        "game_number": 40,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 106,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "Q4R2/6p1/4p2p/2K2n2/5k2/1P6/5P2/8 w - - 3 54",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_7",
+        "opponent": "Stockfish 19",
+        "game_number": 2,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 90,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "4N3/k5p1/2K4p/p4p2/p7/5P2/P6P/1R6 w - - 0 46",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_7",
+        "opponent": "Stockfish 19",
+        "game_number": 6,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 82,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "6k1/1p2Rq1r/1p4Np/p5p1/4Q3/8/5PPP/4R1K1 w - - 3 42",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_7",
+        "opponent": "Stockfish 19",
+        "game_number": 8,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 78,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "4k3/R5rR/2p4p/1p6/8/1P1K1P2/1P5P/8 w - - 3 40",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_7",
+        "opponent": "Stockfish 19",
+        "game_number": 25,
+        "janus_color": "White",
+        "pgn_result": "1-0",
+        "termination": "adjudication_resignation",
+        "plies": 110,
+        "is_checkmate": true,
+        "mate_winner": "Black",
+        "final_fen": "8/3n4/8/3p4/3P4/7r/5k2/7K w - - 2 56",
+        "classification": "CHECKMATED_BUT_AWARDED_WIN"
+      },
+      {
+        "match": "Match_7",
+        "opponent": "Stockfish 19",
+        "game_number": 30,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 94,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "7r/2P2R2/8/6pp/3N2k1/7R/5PK1/8 w - - 0 48",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_7",
+        "opponent": "Stockfish 19",
+        "game_number": 34,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 84,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "5N2/2k1B1P1/4p3/p7/4P3/3p4/PP4P1/4K3 w - - 0 43",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_7",
+        "opponent": "Stockfish 19",
+        "game_number": 38,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 90,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "5k2/5p2/p1KP4/PP3Pp1/6Pp/8/7P/8 w - - 1 46",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      },
+      {
+        "match": "Match_7",
+        "opponent": "Stockfish 19",
+        "game_number": 40,
+        "janus_color": "Black",
+        "pgn_result": "0-1",
+        "termination": "adjudication_resignation",
+        "plies": 84,
+        "is_checkmate": false,
+        "mate_winner": null,
+        "final_fen": "3k3r/2p1b1p1/2P1Q1p1/p7/P2rN1P1/5R1P/5P2/4R1K1 w - - 1 43",
+        "classification": "INVERTED_RESIGNATION_BLACK"
+      }
+    ]
+  }
+}

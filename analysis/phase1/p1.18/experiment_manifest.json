@@ -1,0 +1,200 @@
+{
+  "milestone": "P1.18",
+  "title": "Classical Pawn-Structure Intelligence, King-Safety Fidelity & Verified Competitive Strength",
+  "governing_charter": "Strictly Non-ML Classical Computer Chess Architecture",
+  "branch": "phase1/classical-janus",
+  "parent_commit": "e33f292",
+  "frozen_baselines": {
+    "x7_single_thread": {
+      "commit": "b34e342",
+      "path": "analysis/phase1/p1.3/control/janus_classical_x7.exe",
+      "sha256": "86392A2F4BD4182A4D7DC21E32940BD7939F6816794D5E1AB02F4082431CA28B"
+    },
+    "x12_four_thread": {
+      "commit": "78ca3d5",
+      "path": "analysis/phase1/p1.7/control/janus_classical_x12.exe",
+      "sha256": "00B4F5FEDEA02A392A1AF9713A96512E5199A0E3AE55C295AD1C7CFFF1B47059"
+    },
+    "x22_research_reference": {
+      "commit": "e33f292",
+      "path": "analysis/phase1/p1.17/control/janus_classical_x22.exe",
+      "sha256": "35D095CFFE8A2EDA412171803C09BE52A74DFB3F9744C04F573D2A7FFB1C2F1C"
+    }
+  },
+  "candidate": {
+    "name": "Janus Classical Candidate X23",
+    "tracks": {
+      "track_s": "X23-S (Single-Thread 1T, E5 Classical Evaluation)",
+      "track_p": "X23-P (Four-Thread 4T SMP, E10 Enhanced Evaluation)"
+    },
+    "features": [
+      "Track A: Classical Backward Pawn Detection (-10 mg / -15 eg) with 64K Pawn Hash Caching",
+      "Track B: Open and Semi-Open File King Exposure Penalty (-15 to -40 mg)",
+      "True Outpost Semantics with Enemy Pawn Bitboard Ray Span Immunity",
+      "Corrected Quiescence Search (Q1) with Legal In-Check Evasions",
+      "Staged Capture Ordering & C1 Near-Even Capture Promotion"
+    ],
+    "binaries": {
+      "exe": {
+        "path": "analysis/phase1/p1.18/control/janus_classical_x23.exe",
+        "sha256": "39E875841B36AC82F464ABC7F31DB19D7CF5ABCD0F15B0A923B086A5BB393E39"
+      },
+      "dll": {
+        "path": "analysis/phase1/p1.18/control/janus_classical_x23.dll",
+        "sha256": "482789FAA7069EECEB9B4F2AFA1A9F61D9BBC10CC1F22002C817B6DF87036367"
+      },
+      "cpp": {
+        "path": "analysis/phase1/p1.18/control/janus_classical_x23.cpp",
+        "sha256": "CBBDA4A915013E19725628C0B1B5B7FD578639B3AC7174B1D1B8E7E29AE71298"
+      }
+    }
+  },
+  "correctness_qualification": {
+    "total_gates": 7,
+    "passed_gates": 7,
+    "pass_rate": 1.0,
+    "status": "PASSED (100% Green)"
+  },
+  "development_ablations": {
+    "match_dev1_joint_x23": {
+      "win_rate": 35.0,
+      "elo": -107.5
+    },
+    "match_dev2_track_a_alone": {
+      "win_rate": 52.5,
+      "elo": 17.4,
+      "finding": "Elo-positive (+17.4 Elo)"
+    },
+    "match_dev3_track_b_alone": {
+      "win_rate": 37.5,
+      "elo": -88.7,
+      "finding": "Elo-negative (-88.7 Elo) due to defensive timidity"
+    }
+  },
+  "tournaments_summary": {
+    "match_1": {
+      "match_name": "Match 1 (X23-S vs X7 Baseline 1T)",
+      "cand": "Janus Classical X23-S",
+      "ref": "Janus Classical X7",
+      "total_games": 100,
+      "score": 44.0,
+      "win_rate": 44.0,
+      "wins": 22,
+      "draws": 44,
+      "losses": 34,
+      "paired_ci": [
+        0.3706201504613559,
+        0.5093798495386441
+      ],
+      "p_value": 0.9549605875599866,
+      "elo": -41.89414020800522
+    },
+    "match_2": {
+      "match_name": "Match 2 (X23-S vs X22-S Reference 1T)",
+      "cand": "Janus Classical X23-S",
+      "ref": "Janus Classical X22-S",
+      "total_games": 50,
+      "score": 24.5,
+      "win_rate": 49.0,
+      "wins": 15,
+      "draws": 19,
+      "losses": 16,
+      "paired_ci": [
+        0.3683876802040188,
+        0.6116123197959812
+      ],
+      "p_value": 0.5640181163148958,
+      "elo": -6.94963842776909
+    },
+    "match_3": {
+      "match_name": "Match 3 (X23-P vs X12 Baseline 4T SMP)",
+      "cand": "Janus Classical X23-P",
+      "ref": "Janus Classical X12",
+      "total_games": 100,
+      "score": 48.0,
+      "win_rate": 48.0,
+      "wins": 25,
+      "draws": 46,
+      "losses": 29,
+      "paired_ci": [
+        0.4074712106664462,
+        0.5525287893335538
+      ],
+      "p_value": 0.705561461197622,
+      "elo": -13.904842503684801
+    },
+    "match_4": {
+      "match_name": "Match 4 (X23-S vs X7 Baseline 1T Slow TC)",
+      "cand": "Janus Classical X23-S",
+      "ref": "Janus Classical X7",
+      "total_games": 50,
+      "score": 24.5,
+      "win_rate": 49.0,
+      "wins": 16,
+      "draws": 17,
+      "losses": 17,
+      "paired_ci": [
+        0.37869566798565296,
+        0.6013043320143471
+      ],
+      "p_value": 0.5698884526942847,
+      "elo": -6.94963842776909
+    },
+    "match_5": {
+      "match_name": "Match 5 (X23-S vs Stockfish 4)",
+      "cand": "Janus Classical X23-S",
+      "ref": "Stockfish 4",
+      "total_games": 40,
+      "score": 0.5,
+      "win_rate": 1.25,
+      "wins": 0,
+      "draws": 1,
+      "losses": 39,
+      "paired_ci": [
+        0.0,
+        0.0369995
+      ],
+      "p_value": 1.0,
+      "elo": -759.0508365161766
+    },
+    "match_6": {
+      "match_name": "Match 6 (X23-S vs Stockfish 11)",
+      "cand": "Janus Classical X23-S",
+      "ref": "Stockfish 11",
+      "total_games": 40,
+      "score": 1.0,
+      "win_rate": 2.5,
+      "wins": 0,
+      "draws": 2,
+      "losses": 38,
+      "paired_ci": [
+        0.0,
+        0.058723424631770965
+      ],
+      "p_value": 1.0,
+      "elo": -636.4258428105996
+    },
+    "match_7": {
+      "match_name": "Match 7 (X23-S vs Stockfish 19 NNUE)",
+      "cand": "Janus Classical X23-S",
+      "ref": "Stockfish 19 NNUE",
+      "total_games": 40,
+      "score": 1.0,
+      "win_rate": 2.5,
+      "wins": 0,
+      "draws": 2,
+      "losses": 38,
+      "paired_ci": [
+        0.0,
+        0.058723424631770965
+      ],
+      "p_value": 1.0,
+      "elo": -636.4258428105996
+    }
+  },
+  "adjudication": {
+    "decision": "CATEGORY B \u2014 PRESERVED RESEARCH REFERENCE (NOT PROMOTED)",
+    "reason": "Candidate X23 did not satisfy paired CI lower bound > 50.0% against Qualified Baselines X7 (44.0%, CI_low=37.1%) and X12 (48.0%, CI_low=40.7%). Track B caused significant Elo drag that suppressed the gains of Track A.",
+    "next_direction": "Milestone P1.19 Candidate X24 will isolate Track A alone (backward pawns + pawn hash + true outposts), removing Track B entirely to capture the +17.4 Elo gain."
+  }
+}

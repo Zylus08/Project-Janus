@@ -1,0 +1,2260 @@
+{
+  "total_positions": 250,
+  "classifications": {
+    "P0_CORRECT_EXISTING_EVAL": 175,
+    "P1_GENUINE_MISSING_FEATURE": 60,
+    "P5_SEARCH_INTERACTION": 15
+  },
+  "positions": [
+    {
+      "id": "P_001",
+      "archetype": "IQP",
+      "fen": "r1bq1rk1/pp1nbppp/4p3/3p4/3P1B2/P1NBPN2/1PQ2PPP/R3K2R b KQ - 2 10",
+      "turn": "Black",
+      "eval_cp": -414,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_002",
+      "archetype": "IQP",
+      "fen": "r3k2r/1pq2ppp/p1nbpn2/3p1b2/3P4/4P3/PP1NBPPP/R1BQ1RK1 w kq - 2 10",
+      "turn": "White",
+      "eval_cp": -414,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_003",
+      "archetype": "IQP",
+      "fen": "r1bq1r1k/pp1nbppp/4p3/3p4/3P1B2/P1NBPN2/1PQ2PPP/R3K2R w KQ - 3 11",
+      "turn": "White",
+      "eval_cp": 423,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_004",
+      "archetype": "IQP",
+      "fen": "r1bqr1k1/pp1nbppp/4p3/3p4/3P1B2/P1NBPN2/1PQ2PPP/R3K2R w KQ - 3 11",
+      "turn": "White",
+      "eval_cp": 401,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_005",
+      "archetype": "IQP",
+      "fen": "r1b1qrk1/pp1nbppp/4p3/3p4/3P1B2/P1NBPN2/1PQ2PPP/R3K2R w KQ - 3 11",
+      "turn": "White",
+      "eval_cp": 412,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_006",
+      "archetype": "IQP",
+      "fen": "r1bq1rk1/pp3ppp/2n1pn2/3p4/3P4/2PB1N2/PP1N1PPP/R2QK2R w KQ - 0 10",
+      "turn": "White",
+      "eval_cp": -1,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_007",
+      "archetype": "IQP",
+      "fen": "r2qk2r/pp1n1ppp/2pb1n2/3p4/3P4/2N1PN2/PP3PPP/R1BQ1RK1 b kq - 0 10",
+      "turn": "Black",
+      "eval_cp": -1,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_008",
+      "archetype": "IQP",
+      "fen": "r1bq1rk1/pp3ppp/2n1pn2/3p2N1/3P4/2PB4/PP1N1PPP/R2QK2R b KQ - 1 10",
+      "turn": "Black",
+      "eval_cp": -27,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_009",
+      "archetype": "IQP",
+      "fen": "r1bq1rk1/pp3ppp/2n1pn2/3pN3/3P4/2PB4/PP1N1PPP/R2QK2R b KQ - 1 10",
+      "turn": "Black",
+      "eval_cp": -49,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_010",
+      "archetype": "IQP",
+      "fen": "r1bq1rk1/pp3ppp/2n1pn2/3p4/3P3N/2PB4/PP1N1PPP/R2QK2R b KQ - 1 10",
+      "turn": "Black",
+      "eval_cp": 49,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_011",
+      "archetype": "IQP",
+      "fen": "r2q1rk1/1b1nbppp/pp2p3/3p4/3P4/1PNBPN2/P4PPP/R2Q1RK1 w - - 0 13",
+      "turn": "White",
+      "eval_cp": 0,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_012",
+      "archetype": "IQP",
+      "fen": "r2q1rk1/p4ppp/1pnbpn2/3p4/3P4/PP2P3/1B1NBPPP/R2Q1RK1 b - - 0 13",
+      "turn": "Black",
+      "eval_cp": 0,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_013",
+      "archetype": "IQP",
+      "fen": "r2q1rk1/1b1nbppp/pp2p3/3p2N1/3P4/1PNBP3/P4PPP/R2Q1RK1 b - - 1 13",
+      "turn": "Black",
+      "eval_cp": -24,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_014",
+      "archetype": "IQP",
+      "fen": "r2q1rk1/1b1nbppp/pp2p3/3pN3/3P4/1PNBP3/P4PPP/R2Q1RK1 b - - 1 13",
+      "turn": "Black",
+      "eval_cp": -47,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_015",
+      "archetype": "IQP",
+      "fen": "r2q1rk1/1b1nbppp/pp2p3/3p4/3P3N/1PNBP3/P4PPP/R2Q1RK1 b - - 1 13",
+      "turn": "Black",
+      "eval_cp": 55,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_016",
+      "archetype": "IQP",
+      "fen": "r1b2rk1/ppqn1ppp/4p3/3p4/3P4/2PB1N2/PP1N1PPP/R2Q1RK1 w - - 0 12",
+      "turn": "White",
+      "eval_cp": 346,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_017",
+      "archetype": "IQP",
+      "fen": "r2q1rk1/pp1n1ppp/2pb1n2/3p4/3P4/4P3/PPQN1PPP/R1B2RK1 b - - 0 12",
+      "turn": "Black",
+      "eval_cp": 346,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_018",
+      "archetype": "IQP",
+      "fen": "r1b2rk1/ppqn1ppp/4p3/3p2N1/3P4/2PB4/PP1N1PPP/R2Q1RK1 b - - 1 12",
+      "turn": "Black",
+      "eval_cp": -373,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_019",
+      "archetype": "IQP",
+      "fen": "r1b2rk1/ppqn1ppp/4p3/3pN3/3P4/2PB4/PP1N1PPP/R2Q1RK1 b - - 1 12",
+      "turn": "Black",
+      "eval_cp": -395,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_020",
+      "archetype": "IQP",
+      "fen": "r1b2rk1/ppqn1ppp/4p3/3p4/3P3N/2PB4/PP1N1PPP/R2Q1RK1 b - - 1 12",
+      "turn": "Black",
+      "eval_cp": -298,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_021",
+      "archetype": "IQP",
+      "fen": "r4rk1/pp1nbppp/4p3/3p4/3P4/2PB1N2/PP3PPP/R4RK1 w - - 0 15",
+      "turn": "White",
+      "eval_cp": 13,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_022",
+      "archetype": "IQP",
+      "fen": "r4rk1/pp3ppp/2pb1n2/3p4/3P4/4P3/PP1NBPPP/R4RK1 b - - 0 15",
+      "turn": "Black",
+      "eval_cp": 13,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_023",
+      "archetype": "IQP",
+      "fen": "r4rk1/pp1nbppp/4p3/3p2N1/3P4/2PB4/PP3PPP/R4RK1 b - - 1 15",
+      "turn": "Black",
+      "eval_cp": -24,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_024",
+      "archetype": "IQP",
+      "fen": "r4rk1/pp1nbppp/4p3/3pN3/3P4/2PB4/PP3PPP/R4RK1 b - - 1 15",
+      "turn": "Black",
+      "eval_cp": -41,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_025",
+      "archetype": "IQP",
+      "fen": "r4rk1/pp1nbppp/4p3/3p4/3P3N/2PB4/PP3PPP/R4RK1 b - - 1 15",
+      "turn": "Black",
+      "eval_cp": 43,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_026",
+      "archetype": "HANGING_PAWNS",
+      "fen": "r2q1rk1/pb1nbppp/1p2p3/2pp4/2PP4/2NBPN2/PP3PPP/R2Q1RK1 w - - 0 11",
+      "turn": "White",
+      "eval_cp": 21,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_027",
+      "archetype": "HANGING_PAWNS",
+      "fen": "r2q1rk1/pp3ppp/2nbpn2/2pp4/2PP4/1P2P3/PB1NBPPP/R2Q1RK1 b - - 0 11",
+      "turn": "Black",
+      "eval_cp": 21,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_028",
+      "archetype": "HANGING_PAWNS",
+      "fen": "r2q1rk1/pb1nbppp/1p2p3/2pp2N1/2PP4/2NBP3/PP3PPP/R2Q1RK1 b - - 1 11",
+      "turn": "Black",
+      "eval_cp": -45,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_029",
+      "archetype": "HANGING_PAWNS",
+      "fen": "r2q1rk1/pb1nbppp/1p2p3/2ppN3/2PP4/2NBP3/PP3PPP/R2Q1RK1 b - - 1 11",
+      "turn": "Black",
+      "eval_cp": -68,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_030",
+      "archetype": "HANGING_PAWNS",
+      "fen": "r2q1rk1/pb1nbppp/1p2p3/2pp4/2PP3N/2NBP3/PP3PPP/R2Q1RK1 b - - 1 11",
+      "turn": "Black",
+      "eval_cp": 34,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_031",
+      "archetype": "HANGING_PAWNS",
+      "fen": "r1bq1rk1/pp2bppp/2n1p3/2pp4/2PP4/1PNBPN2/P4PPP/R2Q1RK1 w - - 0 11",
+      "turn": "White",
+      "eval_cp": 7,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_032",
+      "archetype": "HANGING_PAWNS",
+      "fen": "r2q1rk1/p4ppp/1pnbpn2/2pp4/2PP4/2N1P3/PP2BPPP/R1BQ1RK1 b - - 0 11",
+      "turn": "Black",
+      "eval_cp": 7,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_033",
+      "archetype": "HANGING_PAWNS",
+      "fen": "r1bq1rk1/pp2bppp/2n1p3/2pp2N1/2PP4/1PNBP3/P4PPP/R2Q1RK1 b - - 1 11",
+      "turn": "Black",
+      "eval_cp": -31,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_034",
+      "archetype": "HANGING_PAWNS",
+      "fen": "r1bq1rk1/pp2bppp/2n1p3/2ppN3/2PP4/1PNBP3/P4PPP/R2Q1RK1 b - - 1 11",
+      "turn": "Black",
+      "eval_cp": -50,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_035",
+      "archetype": "HANGING_PAWNS",
+      "fen": "r1bq1rk1/pp2bppp/2n1p3/2pp4/2PP3N/1PNBP3/P4PPP/R2Q1RK1 b - - 1 11",
+      "turn": "Black",
+      "eval_cp": 48,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_036",
+      "archetype": "HANGING_PAWNS",
+      "fen": "2rq1rk1/1b1nbppp/pp2p3/2pp4/2PP4/1PN1PN2/PB2BPPP/2RQ1RK1 w - - 0 13",
+      "turn": "White",
+      "eval_cp": 325,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_037",
+      "archetype": "HANGING_PAWNS",
+      "fen": "2rq1rk1/pb2bppp/1pn1pn2/2pp4/2PP4/PP2P3/1B1NBPPP/2RQ1RK1 b - - 0 13",
+      "turn": "Black",
+      "eval_cp": 325,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_038",
+      "archetype": "HANGING_PAWNS",
+      "fen": "2rq1rk1/1b1nbppp/pp2p3/2pp2N1/2PP4/1PN1P3/PB2BPPP/2RQ1RK1 b - - 1 13",
+      "turn": "Black",
+      "eval_cp": -332,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_039",
+      "archetype": "HANGING_PAWNS",
+      "fen": "2rq1rk1/1b1nbppp/pp2p3/2ppN3/2PP4/1PN1P3/PB2BPPP/2RQ1RK1 b - - 1 13",
+      "turn": "Black",
+      "eval_cp": -358,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_040",
+      "archetype": "HANGING_PAWNS",
+      "fen": "2rq1rk1/1b1nbppp/pp2p3/2pp4/2PP3N/1PN1P3/PB2BPPP/2RQ1RK1 b - - 1 13",
+      "turn": "Black",
+      "eval_cp": -281,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_041",
+      "archetype": "HANGING_PAWNS",
+      "fen": "3r1rk1/pb2bppp/1pn1p3/2pp4/2PP4/1PNBPN2/P4PPP/R2R2K1 w - - 0 14",
+      "turn": "White",
+      "eval_cp": -5,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_042",
+      "archetype": "HANGING_PAWNS",
+      "fen": "r2r2k1/p4ppp/1pnbpn2/2pp4/2PP4/1PN1P3/PB2BPPP/3R1RK1 b - - 0 14",
+      "turn": "Black",
+      "eval_cp": -5,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_043",
+      "archetype": "HANGING_PAWNS",
+      "fen": "3r1rk1/pb2bppp/1pn1p3/2pp2N1/2PP4/1PNBP3/P4PPP/R2R2K1 b - - 1 14",
+      "turn": "Black",
+      "eval_cp": -8,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_044",
+      "archetype": "HANGING_PAWNS",
+      "fen": "3r1rk1/pb2bppp/1pn1p3/2ppN3/2PP4/1PNBP3/P4PPP/R2R2K1 b - - 1 14",
+      "turn": "Black",
+      "eval_cp": -29,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_045",
+      "archetype": "HANGING_PAWNS",
+      "fen": "3r1rk1/pb2bppp/1pn1p3/2pp4/2PP3N/1PNBP3/P4PPP/R2R2K1 b - - 1 14",
+      "turn": "Black",
+      "eval_cp": 61,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_046",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "r1bq1rk1/pp1n1pbp/3p1np1/2p1p3/2PPP3/2N1BP2/PP2N1PP/R2QKB1R w KQ - 0 8",
+      "turn": "White",
+      "eval_cp": 20,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_047",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "r2qkb1r/pp2n1pp/2n1bp2/2ppp3/2P1P3/3P1NP1/PP1N1PBP/R1BQ1RK1 b kq - 0 8",
+      "turn": "Black",
+      "eval_cp": 20,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_048",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "r1bq1rk1/pp1n1pbp/3p1npB/2p1p3/2PPP3/2N2P2/PP2N1PP/R2QKB1R b KQ - 1 8",
+      "turn": "Black",
+      "eval_cp": 4,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_049",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "r1bq1rk1/pp1n1pbp/3p1np1/2p1p1B1/2PPP3/2N2P2/PP2N1PP/R2QKB1R b KQ - 1 8",
+      "turn": "Black",
+      "eval_cp": -15,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_050",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "r1bq1rk1/pp1n1pbp/3p1np1/2p1p3/2PPPB2/2N2P2/PP2N1PP/R2QKB1R b KQ - 1 8",
+      "turn": "Black",
+      "eval_cp": -20,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_051",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "r2q1rk1/1p1n1ppp/p2p4/3Pp3/8/3B1N2/PPP2PPP/R2Q1RK1 b - - 0 12",
+      "turn": "Black",
+      "eval_cp": -350,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_052",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "r2q1rk1/ppp2ppp/3b1n2/8/3pP3/P2P4/1P1N1PPP/R2Q1RK1 w - - 0 12",
+      "turn": "White",
+      "eval_cp": -350,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_053",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "r2q1r1k/1p1n1ppp/p2p4/3Pp3/8/3B1N2/PPP2PPP/R2Q1RK1 w - - 1 13",
+      "turn": "White",
+      "eval_cp": 358,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_054",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "r2qr1k1/1p1n1ppp/p2p4/3Pp3/8/3B1N2/PPP2PPP/R2Q1RK1 w - - 1 13",
+      "turn": "White",
+      "eval_cp": 339,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_055",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "r3qrk1/1p1n1ppp/p2p4/3Pp3/8/3B1N2/PPP2PPP/R2Q1RK1 w - - 1 13",
+      "turn": "White",
+      "eval_cp": 350,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_056",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "r1b2rk1/pp2qppp/2np4/2p1p3/2P1P3/2NP1N2/PP3PPP/R2Q1RK1 w - - 0 10",
+      "turn": "White",
+      "eval_cp": 21,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_057",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "r2q1rk1/pp3ppp/2np1n2/2p1p3/2P1P3/2NP4/PP2QPPP/R1B2RK1 b - - 0 10",
+      "turn": "Black",
+      "eval_cp": 21,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_058",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "r1b2rk1/pp2qppp/2np4/2p1p1N1/2P1P3/2NP4/PP3PPP/R2Q1RK1 b - - 1 10",
+      "turn": "Black",
+      "eval_cp": -16,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_059",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "r1b2rk1/pp2qppp/2np4/2p1N3/2P1P3/2NP4/PP3PPP/R2Q1RK1 b - - 0 10",
+      "turn": "Black",
+      "eval_cp": -147,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_060",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "r1b2rk1/pp2qppp/2np4/2p1p3/2P1P2N/2NP4/PP3PPP/R2Q1RK1 b - - 1 10",
+      "turn": "Black",
+      "eval_cp": 27,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_061",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "2r2rk1/1p1nqppp/p2p4/2p1p3/P1P1P3/1P1P1N2/5PPP/R2Q1RK1 w - - 0 14",
+      "turn": "White",
+      "eval_cp": -22,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_062",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "r2q1rk1/5ppp/1p1p1n2/p1p1p3/2P1P3/P2P4/1P1NQPPP/2R2RK1 b - - 0 14",
+      "turn": "Black",
+      "eval_cp": -22,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_063",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "2r2rk1/1p1nqppp/p2p4/2p1p1N1/P1P1P3/1P1P4/5PPP/R2Q1RK1 b - - 1 14",
+      "turn": "Black",
+      "eval_cp": 27,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_064",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "2r2rk1/1p1nqppp/p2p4/2p1N3/P1P1P3/1P1P4/5PPP/R2Q1RK1 b - - 0 14",
+      "turn": "Black",
+      "eval_cp": -104,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_065",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "2r2rk1/1p1nqppp/p2p4/2p1p3/P1P1P2N/1P1P4/5PPP/R2Q1RK1 b - - 1 14",
+      "turn": "Black",
+      "eval_cp": 70,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_066",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "4rrk1/1p1n1ppp/p2p4/3Pp3/8/3B1N2/PPP2PPP/4RRK1 w - - 0 16",
+      "turn": "White",
+      "eval_cp": 364,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_067",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "4rrk1/ppp2ppp/3b1n2/8/3pP3/P2P4/1P1N1PPP/4RRK1 b - - 0 16",
+      "turn": "Black",
+      "eval_cp": 364,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_068",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "4rrk1/1p1n1ppp/p2p4/3Pp1N1/8/3B4/PPP2PPP/4RRK1 b - - 1 16",
+      "turn": "Black",
+      "eval_cp": -382,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_069",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "4rrk1/1p1n1ppp/p2p4/3PN3/8/3B4/PPP2PPP/4RRK1 b - - 0 16",
+      "turn": "Black",
+      "eval_cp": -515,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_070",
+      "archetype": "BACKWARD_PAWNS",
+      "fen": "4rrk1/1p1n1ppp/p2p4/3Pp3/7N/3B4/PPP2PPP/4RRK1 b - - 1 16",
+      "turn": "Black",
+      "eval_cp": -320,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Backward pawns completely unpenalized in active E5 evaluator"
+    },
+    {
+      "id": "P_071",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "r1bq1rk1/ppp2ppp/2n5/4p3/8/2PP1N2/PP1N1PPP/R2Q1RK1 b - - 0 10",
+      "turn": "Black",
+      "eval_cp": 17,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_072",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "r2q1rk1/pp1n1ppp/2pp1n2/8/4P3/2N5/PPP2PPP/R1BQ1RK1 w - - 0 10",
+      "turn": "White",
+      "eval_cp": 17,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_073",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "r1bq1r1k/ppp2ppp/2n5/4p3/8/2PP1N2/PP1N1PPP/R2Q1RK1 w - - 1 11",
+      "turn": "White",
+      "eval_cp": -8,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_074",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "r1bqr1k1/ppp2ppp/2n5/4p3/8/2PP1N2/PP1N1PPP/R2Q1RK1 w - - 1 11",
+      "turn": "White",
+      "eval_cp": -26,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_075",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "r1b1qrk1/ppp2ppp/2n5/4p3/8/2PP1N2/PP1N1PPP/R2Q1RK1 w - - 1 11",
+      "turn": "White",
+      "eval_cp": -19,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_076",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "r2q1rk1/ppp2ppp/8/4n3/8/2PP4/PP1N1PPP/R2Q1RK1 w - - 0 12",
+      "turn": "White",
+      "eval_cp": 65,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_077",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "r2q1rk1/pp1n1ppp/2pp4/8/4N3/8/PPP2PPP/R2Q1RK1 b - - 0 12",
+      "turn": "Black",
+      "eval_cp": 65,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_078",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "r2q1rk1/ppp2ppp/8/4n3/4N3/2PP4/PP3PPP/R2Q1RK1 b - - 1 12",
+      "turn": "Black",
+      "eval_cp": -83,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_079",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "r2q1rk1/ppp2ppp/8/4n3/2N5/2PP4/PP3PPP/R2Q1RK1 b - - 1 12",
+      "turn": "Black",
+      "eval_cp": -82,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_080",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "r2q1rk1/ppp2ppp/8/4n3/8/2PP1N2/PP3PPP/R2Q1RK1 b - - 1 12",
+      "turn": "Black",
+      "eval_cp": -74,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_081",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "4r1k1/ppp2ppp/8/8/8/2PP4/PP1N1PPP/4R1K1 w - - 0 16",
+      "turn": "White",
+      "eval_cp": 415,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_082",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "4r1k1/pp1n1ppp/2pp4/8/8/8/PPP2PPP/4R1K1 b - - 0 16",
+      "turn": "Black",
+      "eval_cp": 415,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_083",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "4r1k1/ppp2ppp/8/8/4N3/2PP4/PP3PPP/4R1K1 b - - 1 16",
+      "turn": "Black",
+      "eval_cp": -422,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_084",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "4r1k1/ppp2ppp/8/8/2N5/2PP4/PP3PPP/4R1K1 b - - 1 16",
+      "turn": "Black",
+      "eval_cp": -425,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_085",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "4r1k1/ppp2ppp/8/8/8/2PP1N2/PP3PPP/4R1K1 b - - 1 16",
+      "turn": "Black",
+      "eval_cp": -416,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_086",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "8/ppp2ppp/8/8/8/2PP4/PP3PPP/4K3 w - - 0 20",
+      "turn": "White",
+      "eval_cp": 20080,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_087",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "4k3/pp3ppp/2pp4/8/8/8/PPP2PPP/8 b - - 0 20",
+      "turn": "Black",
+      "eval_cp": -20080,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_088",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "8/ppp2ppp/8/8/8/2PP4/PP2KPPP/8 b - - 1 20",
+      "turn": "Black",
+      "eval_cp": 20080,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_089",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "8/ppp2ppp/8/8/8/2PP4/PP1K1PPP/8 b - - 1 20",
+      "turn": "Black",
+      "eval_cp": 20080,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_090",
+      "archetype": "DOUBLED_ISOLATED",
+      "fen": "8/ppp2ppp/8/8/8/2PP4/PP3PPP/5K2 b - - 1 20",
+      "turn": "Black",
+      "eval_cp": 20090,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly penalizes both isolation (-12/-20) and doubling (-15/-25)"
+    },
+    {
+      "id": "P_091",
+      "archetype": "PASSED_RACE",
+      "fen": "8/5p2/8/p7/4P3/8/5P2/4K2k w - - 0 35",
+      "turn": "White",
+      "eval_cp": 85,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_092",
+      "archetype": "PASSED_RACE",
+      "fen": "4k2K/5p2/8/4p3/P7/8/5P2/8 b - - 0 35",
+      "turn": "Black",
+      "eval_cp": 85,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_093",
+      "archetype": "PASSED_RACE",
+      "fen": "8/5p2/8/p7/4P3/8/4KP2/7k b - - 1 35",
+      "turn": "Black",
+      "eval_cp": -89,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_094",
+      "archetype": "PASSED_RACE",
+      "fen": "8/5p2/8/p7/4P3/8/3K1P2/7k b - - 1 35",
+      "turn": "Black",
+      "eval_cp": -95,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_095",
+      "archetype": "PASSED_RACE",
+      "fen": "8/5p2/8/p7/4P3/8/5P2/5K1k b - - 1 35",
+      "turn": "Black",
+      "eval_cp": -85,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_096",
+      "archetype": "PASSED_RACE",
+      "fen": "8/p7/8/8/4P3/8/8/k6K w - - 0 40",
+      "turn": "White",
+      "eval_cp": 90,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_097",
+      "archetype": "PASSED_RACE",
+      "fen": "K6k/8/8/4p3/8/8/P7/8 b - - 0 40",
+      "turn": "Black",
+      "eval_cp": 90,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_098",
+      "archetype": "PASSED_RACE",
+      "fen": "8/p7/8/8/4P3/8/7K/k7 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": -94,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_099",
+      "archetype": "PASSED_RACE",
+      "fen": "8/p7/8/8/4P3/8/6K1/k7 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": -110,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_100",
+      "archetype": "PASSED_RACE",
+      "fen": "8/p7/8/8/4P3/8/8/k5K1 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": -110,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_101",
+      "archetype": "PASSED_RACE",
+      "fen": "8/1p6/8/8/5P2/8/8/k6K w - - 0 40",
+      "turn": "White",
+      "eval_cp": 77,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_102",
+      "archetype": "PASSED_RACE",
+      "fen": "K6k/8/8/5p2/8/8/1P6/8 b - - 0 40",
+      "turn": "Black",
+      "eval_cp": 77,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_103",
+      "archetype": "PASSED_RACE",
+      "fen": "8/1p6/8/8/5P2/8/7K/k7 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": -87,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_104",
+      "archetype": "PASSED_RACE",
+      "fen": "8/1p6/8/8/5P2/8/6K1/k7 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": -97,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_105",
+      "archetype": "PASSED_RACE",
+      "fen": "8/1p6/8/8/5P2/8/8/k5K1 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": -91,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_106",
+      "archetype": "PASSED_RACE",
+      "fen": "8/2p5/8/8/6P1/8/8/k6K w - - 0 40",
+      "turn": "White",
+      "eval_cp": 83,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_107",
+      "archetype": "PASSED_RACE",
+      "fen": "K6k/8/8/6p1/8/8/2P5/8 b - - 0 40",
+      "turn": "Black",
+      "eval_cp": 83,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_108",
+      "archetype": "PASSED_RACE",
+      "fen": "8/2p5/8/8/6P1/8/7K/k7 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": -99,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_109",
+      "archetype": "PASSED_RACE",
+      "fen": "8/2p5/8/8/6P1/8/6K1/k7 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": -103,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_110",
+      "archetype": "PASSED_RACE",
+      "fen": "8/2p5/8/8/6P1/8/8/k5K1 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": -97,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_111",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/5p2/4k3/p7/4P3/3K4/5P2/8 w - - 0 36",
+      "turn": "White",
+      "eval_cp": 31,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_112",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/5p2/3k4/4p3/P7/4K3/5P2/8 b - - 0 36",
+      "turn": "Black",
+      "eval_cp": 31,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_113",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/5p2/4k3/p7/3KP3/8/5P2/8 b - - 1 36",
+      "turn": "Black",
+      "eval_cp": -15,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_114",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/5p2/4k3/p7/2K1P3/8/5P2/8 b - - 1 36",
+      "turn": "Black",
+      "eval_cp": -27,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_115",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/5p2/4k3/p7/4P3/4K3/5P2/8 b - - 1 36",
+      "turn": "Black",
+      "eval_cp": -25,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_116",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/8/1p1k4/8/P2K4/8/8/8 w - - 0 42",
+      "turn": "White",
+      "eval_cp": -11,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_117",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/8/8/p2k4/8/1P1K4/8/8 b - - 0 42",
+      "turn": "Black",
+      "eval_cp": -11,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_118",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/8/1p1k4/8/P3K3/8/8/8 b - - 1 42",
+      "turn": "Black",
+      "eval_cp": 11,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_119",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/8/1p1k4/8/P1K5/8/8/8 b - - 1 42",
+      "turn": "Black",
+      "eval_cp": 5,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_120",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/8/1p1k4/8/P7/4K3/8/8 b - - 1 42",
+      "turn": "Black",
+      "eval_cp": -5,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_121",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/5p2/1p1k4/8/P3PK2/8/8/8 w - - 0 42",
+      "turn": "White",
+      "eval_cp": 5,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_122",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/8/8/p3pk2/8/1P1K4/5P2/8 b - - 0 42",
+      "turn": "Black",
+      "eval_cp": 5,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_123",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/5p2/1p1k4/6K1/P3P3/8/8/8 b - - 1 42",
+      "turn": "Black",
+      "eval_cp": 9,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_124",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/5p2/1p1k4/5K2/P3P3/8/8/8 b - - 1 42",
+      "turn": "Black",
+      "eval_cp": 5,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_125",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/5p2/1p1k4/8/P3P1K1/8/8/8 b - - 1 42",
+      "turn": "Black",
+      "eval_cp": -1,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_126",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/8/5p2/1p1k4/P4K2/8/8/8 w - - 0 43",
+      "turn": "White",
+      "eval_cp": -84,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_127",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/8/8/p4k2/1P1K4/5P2/8/8 b - - 0 43",
+      "turn": "Black",
+      "eval_cp": -84,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_128",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/8/5p2/1p1k1K2/P7/8/8/8 b - - 1 43",
+      "turn": "Black",
+      "eval_cp": 88,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_129",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/8/5p2/1p1k4/P5K1/8/8/8 b - - 1 43",
+      "turn": "Black",
+      "eval_cp": 88,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_130",
+      "archetype": "OUTSIDE_PASSER",
+      "fen": "8/8/5p2/1p1k4/P7/6K1/8/8 b - - 1 43",
+      "turn": "Black",
+      "eval_cp": 88,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_131",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/8/3PP3/4K3/8/8 w - - 0 45",
+      "turn": "White",
+      "eval_cp": 372,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_132",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/3pp3/8/4K3/8/8 b - - 0 45",
+      "turn": "Black",
+      "eval_cp": 372,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_133",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/8/3PPK2/8/8/8 b - - 1 45",
+      "turn": "Black",
+      "eval_cp": -356,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_134",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/8/3PP3/5K2/8/8 b - - 1 45",
+      "turn": "Black",
+      "eval_cp": -362,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_135",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/8/3PP3/3K4/8/8 b - - 1 45",
+      "turn": "Black",
+      "eval_cp": -372,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_136",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/4pp2/8/4K3/8/8 b - - 0 45",
+      "turn": "Black",
+      "eval_cp": 352,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_137",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/8/4PP2/4K3/8/8 w - - 0 45",
+      "turn": "White",
+      "eval_cp": 352,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_138",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/5k2/8/4pp2/8/4K3/8/8 w - - 1 46",
+      "turn": "White",
+      "eval_cp": -352,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_139",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/4k3/8/4pp2/8/4K3/8/8 w - - 1 46",
+      "turn": "White",
+      "eval_cp": -356,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_140",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/3k4/8/4pp2/8/4K3/8/8 w - - 1 46",
+      "turn": "White",
+      "eval_cp": -356,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_141",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/8/2PPP3/4K3/8/8 w - - 0 46",
+      "turn": "White",
+      "eval_cp": 532,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_142",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/2ppp3/8/4K3/8/8 b - - 0 46",
+      "turn": "Black",
+      "eval_cp": 532,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_143",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/8/2PPPK2/8/8/8 b - - 1 46",
+      "turn": "Black",
+      "eval_cp": -510,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_144",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/8/2PPP3/5K2/8/8 b - - 1 46",
+      "turn": "Black",
+      "eval_cp": -516,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_145",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/8/2PPP3/3K4/8/8 b - - 1 46",
+      "turn": "Black",
+      "eval_cp": -538,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_146",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/8/4PP2/4K3/8/8 w - - 0 46",
+      "turn": "White",
+      "eval_cp": 352,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_147",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/4pp2/8/4K3/8/8 b - - 0 46",
+      "turn": "Black",
+      "eval_cp": 352,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_148",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/8/3KPP2/8/8/8 b - - 1 46",
+      "turn": "Black",
+      "eval_cp": -330,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_149",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/8/4PP2/5K2/8/8 b - - 1 46",
+      "turn": "Black",
+      "eval_cp": -348,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_150",
+      "archetype": "CONNECTED_PASSERS",
+      "fen": "8/8/4k3/8/4PP2/3K4/8/8 b - - 1 46",
+      "turn": "Black",
+      "eval_cp": -346,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Correctly awards connected passer bonus (+15/+25)"
+    },
+    {
+      "id": "P_151",
+      "archetype": "CANDIDATE_PASSER",
+      "fen": "8/ppp2p2/4k3/8/PPP2P2/4K3/8/8 w - - 0 38",
+      "turn": "White",
+      "eval_cp": -35,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Candidate passers with pawn majority not credited in E5"
+    },
+    {
+      "id": "P_152",
+      "archetype": "CANDIDATE_PASSER",
+      "fen": "8/8/4k3/ppp2p2/8/4K3/PPP2P2/8 b - - 0 38",
+      "turn": "Black",
+      "eval_cp": -35,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Candidate passers with pawn majority not credited in E5"
+    },
+    {
+      "id": "P_153",
+      "archetype": "CANDIDATE_PASSER",
+      "fen": "8/ppp2p2/4k3/8/PPP1KP2/8/8/8 b - - 1 38",
+      "turn": "Black",
+      "eval_cp": 51,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Candidate passers with pawn majority not credited in E5"
+    },
+    {
+      "id": "P_154",
+      "archetype": "CANDIDATE_PASSER",
+      "fen": "8/ppp2p2/4k3/8/PPPK1P2/8/8/8 b - - 1 38",
+      "turn": "Black",
+      "eval_cp": 51,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Candidate passers with pawn majority not credited in E5"
+    },
+    {
+      "id": "P_155",
+      "archetype": "CANDIDATE_PASSER",
+      "fen": "8/ppp2p2/4k3/8/PPP2P2/5K2/8/8 b - - 1 38",
+      "turn": "Black",
+      "eval_cp": 39,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Candidate passers with pawn majority not credited in E5"
+    },
+    {
+      "id": "P_156",
+      "archetype": "CANDIDATE_PASSER",
+      "fen": "8/1pp2p2/4k3/8/1PP2P2/4K3/8/8 w - - 0 38",
+      "turn": "White",
+      "eval_cp": -30,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Candidate passers with pawn majority not credited in E5"
+    },
+    {
+      "id": "P_157",
+      "archetype": "CANDIDATE_PASSER",
+      "fen": "8/8/4k3/1pp2p2/8/4K3/1PP2P2/8 b - - 0 38",
+      "turn": "Black",
+      "eval_cp": -30,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Candidate passers with pawn majority not credited in E5"
+    },
+    {
+      "id": "P_158",
+      "archetype": "CANDIDATE_PASSER",
+      "fen": "8/1pp2p2/4k3/8/1PP1KP2/8/8/8 b - - 1 38",
+      "turn": "Black",
+      "eval_cp": 46,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Candidate passers with pawn majority not credited in E5"
+    },
+    {
+      "id": "P_159",
+      "archetype": "CANDIDATE_PASSER",
+      "fen": "8/1pp2p2/4k3/8/1PPK1P2/8/8/8 b - - 1 38",
+      "turn": "Black",
+      "eval_cp": 46,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Candidate passers with pawn majority not credited in E5"
+    },
+    {
+      "id": "P_160",
+      "archetype": "CANDIDATE_PASSER",
+      "fen": "8/1pp2p2/4k3/8/1PP2P2/5K2/8/8 b - - 1 38",
+      "turn": "Black",
+      "eval_cp": 34,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Candidate passers with pawn majority not credited in E5"
+    },
+    {
+      "id": "P_161",
+      "archetype": "CANDIDATE_PASSER",
+      "fen": "8/pp3p2/4k3/8/PP3P2/4K3/8/8 w - - 0 38",
+      "turn": "White",
+      "eval_cp": -25,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Candidate passers with pawn majority not credited in E5"
+    },
+    {
+      "id": "P_162",
+      "archetype": "CANDIDATE_PASSER",
+      "fen": "8/8/4k3/pp3p2/8/4K3/PP3P2/8 b - - 0 38",
+      "turn": "Black",
+      "eval_cp": -25,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Candidate passers with pawn majority not credited in E5"
+    },
+    {
+      "id": "P_163",
+      "archetype": "CANDIDATE_PASSER",
+      "fen": "8/pp3p2/4k3/8/PP2KP2/8/8/8 b - - 1 38",
+      "turn": "Black",
+      "eval_cp": 41,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Candidate passers with pawn majority not credited in E5"
+    },
+    {
+      "id": "P_164",
+      "archetype": "CANDIDATE_PASSER",
+      "fen": "8/pp3p2/4k3/8/PP1K1P2/8/8/8 b - - 1 38",
+      "turn": "Black",
+      "eval_cp": 41,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Candidate passers with pawn majority not credited in E5"
+    },
+    {
+      "id": "P_165",
+      "archetype": "CANDIDATE_PASSER",
+      "fen": "8/pp3p2/4k3/8/PP3P2/5K2/8/8 b - - 1 38",
+      "turn": "Black",
+      "eval_cp": 29,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Candidate passers with pawn majority not credited in E5"
+    },
+    {
+      "id": "P_166",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3b4/3P4/8/5PKP/8 w - - 0 35",
+      "turn": "White",
+      "eval_cp": -217,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_167",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3p4/3B4/8/5PKP/8 b - - 0 35",
+      "turn": "Black",
+      "eval_cp": -217,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_168",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3b4/3P4/7K/5P1P/8 b - - 1 35",
+      "turn": "Black",
+      "eval_cp": 257,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_169",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3b4/3P4/6K1/5P1P/8 b - - 1 35",
+      "turn": "Black",
+      "eval_cp": 257,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_170",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3b4/3P4/8/5P1P/6K1 b - - 1 35",
+      "turn": "Black",
+      "eval_cp": 215,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_171",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3n4/3P4/8/5PKP/8 w - - 0 35",
+      "turn": "White",
+      "eval_cp": -217,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_172",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3p4/3N4/8/5PKP/8 b - - 0 35",
+      "turn": "Black",
+      "eval_cp": -217,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_173",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3n4/3P4/7K/5P1P/8 b - - 1 35",
+      "turn": "Black",
+      "eval_cp": 253,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_174",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3n4/3P4/6K1/5P1P/8 b - - 1 35",
+      "turn": "Black",
+      "eval_cp": 253,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_175",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3n4/3P4/5K2/5P1P/8 b - - 1 35",
+      "turn": "Black",
+      "eval_cp": 244,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_176",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3r4/3P4/8/5PKP/8 w - - 0 35",
+      "turn": "White",
+      "eval_cp": -384,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_177",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3p4/3R4/8/5PKP/8 b - - 0 35",
+      "turn": "Black",
+      "eval_cp": -384,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_178",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3r4/3P4/7K/5P1P/8 b - - 1 35",
+      "turn": "Black",
+      "eval_cp": 419,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_179",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3r4/3P4/6K1/5P1P/8 b - - 1 35",
+      "turn": "Black",
+      "eval_cp": 420,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_180",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3r4/3P4/5K2/5P1P/8 b - - 1 35",
+      "turn": "Black",
+      "eval_cp": 412,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_181",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3k4/3P4/4K3/5P2/8 w - - 0 40",
+      "turn": "White",
+      "eval_cp": 56,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_182",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5p2/4k3/3p4/3K4/8/5PKP/8 b - - 0 40",
+      "turn": "Black",
+      "eval_cp": -6,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_183",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3k4/3P1K2/8/5P2/8 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": 46,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_184",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3k4/3P4/5K2/5P2/8 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": 46,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_185",
+      "archetype": "BLOCKADED_PASSER",
+      "fen": "8/5pkp/8/3k4/3P4/3K4/5P2/8 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": 56,
+      "classification": "P1_GENUINE_MISSING_FEATURE",
+      "defect_description": "Passed pawn receives full bonus despite being firmly blockaded by enemy piece"
+    },
+    {
+      "id": "P_186",
+      "archetype": "WEAK_COLOR_COMPLEX",
+      "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/2PNP3/2N1BP2/PP4PP/R2QKB1R w KQ - 0 9",
+      "turn": "White",
+      "eval_cp": 46,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_187",
+      "archetype": "WEAK_COLOR_COMPLEX",
+      "fen": "r2qkb1r/pp4pp/2n1bp2/2pnp3/8/2NP1NP1/PP2PPBP/R1BQ1RK1 b kq - 0 9",
+      "turn": "Black",
+      "eval_cp": 46,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_188",
+      "archetype": "WEAK_COLOR_COMPLEX",
+      "fen": "r1bq1rk1/pp2ppbp/2npNnp1/8/2P1P3/2N1BP2/PP4PP/R2QKB1R b KQ - 1 9",
+      "turn": "Black",
+      "eval_cp": -61,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_189",
+      "archetype": "WEAK_COLOR_COMPLEX",
+      "fen": "r1bq1rk1/pp2ppbp/2Np1np1/8/2P1P3/2N1BP2/PP4PP/R2QKB1R b KQ - 0 9",
+      "turn": "Black",
+      "eval_cp": -391,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_190",
+      "archetype": "WEAK_COLOR_COMPLEX",
+      "fen": "r1bq1rk1/pp2ppbp/2np1np1/5N2/2P1P3/2N1BP2/PP4PP/R2QKB1R b KQ - 1 9",
+      "turn": "Black",
+      "eval_cp": -65,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_191",
+      "archetype": "WEAK_COLOR_COMPLEX",
+      "fen": "r2q1rk1/pp1bppbp/2np1np1/8/2PNP3/2N1BP2/PP2B1PP/R2Q1RK1 b - - 0 10",
+      "turn": "Black",
+      "eval_cp": -60,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_192",
+      "archetype": "WEAK_COLOR_COMPLEX",
+      "fen": "r2q1rk1/pp2b1pp/2n1bp2/2pnp3/8/2NP1NP1/PP1BPPBP/R2Q1RK1 w - - 0 10",
+      "turn": "White",
+      "eval_cp": -60,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_193",
+      "archetype": "WEAK_COLOR_COMPLEX",
+      "fen": "r2q1r1k/pp1bppbp/2np1np1/8/2PNP3/2N1BP2/PP2B1PP/R2Q1RK1 w - - 1 11",
+      "turn": "White",
+      "eval_cp": 68,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_194",
+      "archetype": "WEAK_COLOR_COMPLEX",
+      "fen": "r2qr1k1/pp1bppbp/2np1np1/8/2PNP3/2N1BP2/PP2B1PP/R2Q1RK1 w - - 1 11",
+      "turn": "White",
+      "eval_cp": 59,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_195",
+      "archetype": "WEAK_COLOR_COMPLEX",
+      "fen": "r3qrk1/pp1bppbp/2np1np1/8/2PNP3/2N1BP2/PP2B1PP/R2Q1RK1 w - - 1 11",
+      "turn": "White",
+      "eval_cp": 64,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_196",
+      "archetype": "WEAK_COLOR_COMPLEX",
+      "fen": "2rq1rk1/pp1bppbp/2np1np1/8/2PNP3/1PN1BP2/P3B1PP/2RQ1RK1 b - - 0 12",
+      "turn": "Black",
+      "eval_cp": -31,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_197",
+      "archetype": "WEAK_COLOR_COMPLEX",
+      "fen": "2rq1rk1/p3b1pp/1pn1bp2/2pnp3/8/2NP1NP1/PP1BPPBP/2RQ1RK1 w - - 0 12",
+      "turn": "White",
+      "eval_cp": -31,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_198",
+      "archetype": "WEAK_COLOR_COMPLEX",
+      "fen": "2rq1r1k/pp1bppbp/2np1np1/8/2PNP3/1PN1BP2/P3B1PP/2RQ1RK1 w - - 1 13",
+      "turn": "White",
+      "eval_cp": 39,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_199",
+      "archetype": "WEAK_COLOR_COMPLEX",
+      "fen": "2rqr1k1/pp1bppbp/2np1np1/8/2PNP3/1PN1BP2/P3B1PP/2RQ1RK1 w - - 1 13",
+      "turn": "White",
+      "eval_cp": 30,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_200",
+      "archetype": "WEAK_COLOR_COMPLEX",
+      "fen": "2r1qrk1/pp1bppbp/2np1np1/8/2PNP3/1PN1BP2/P3B1PP/2RQ1RK1 w - - 1 13",
+      "turn": "White",
+      "eval_cp": 35,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_201",
+      "archetype": "FIXED_CHAIN",
+      "fen": "r1bqkb1r/pp1n1ppp/2p1pn2/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R w KQkq - 0 6",
+      "turn": "White",
+      "eval_cp": 23,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_202",
+      "archetype": "FIXED_CHAIN",
+      "fen": "r1bqkb1r/pp3ppp/2n1pn2/2pp4/3P4/2P1PN2/PP1N1PPP/R1BQKB1R b KQkq - 0 6",
+      "turn": "Black",
+      "eval_cp": 23,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_203",
+      "archetype": "FIXED_CHAIN",
+      "fen": "r1bqkb1r/pp1n1ppp/2p1pn2/3p2N1/2PP4/2N1P3/PP3PPP/R1BQKB1R b KQkq - 1 6",
+      "turn": "Black",
+      "eval_cp": -14,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_204",
+      "archetype": "FIXED_CHAIN",
+      "fen": "r1bqkb1r/pp1n1ppp/2p1pn2/3pN3/2PP4/2N1P3/PP3PPP/R1BQKB1R b KQkq - 1 6",
+      "turn": "Black",
+      "eval_cp": -41,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_205",
+      "archetype": "FIXED_CHAIN",
+      "fen": "r1bqkb1r/pp1n1ppp/2p1pn2/3p4/2PP3N/2N1P3/PP3PPP/R1BQKB1R b KQkq - 1 6",
+      "turn": "Black",
+      "eval_cp": 33,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_206",
+      "archetype": "FIXED_CHAIN",
+      "fen": "rnbqk2r/ppp1bppp/4pn2/3p2B1/2PP4/2N1P3/PP3PPP/R2QKBNR b KQkq - 0 5",
+      "turn": "Black",
+      "eval_cp": 9,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_207",
+      "archetype": "FIXED_CHAIN",
+      "fen": "r2qkbnr/pp3ppp/2n1p3/2pp4/3P2b1/4PN2/PPP1BPPP/RNBQK2R w KQkq - 0 5",
+      "turn": "White",
+      "eval_cp": 9,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_208",
+      "archetype": "FIXED_CHAIN",
+      "fen": "rnbqk1r1/ppp1bppp/4pn2/3p2B1/2PP4/2N1P3/PP3PPP/R2QKBNR w KQq - 1 6",
+      "turn": "White",
+      "eval_cp": 10,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_209",
+      "archetype": "FIXED_CHAIN",
+      "fen": "rnbqkr2/ppp1bppp/4pn2/3p2B1/2PP4/2N1P3/PP3PPP/R2QKBNR w KQq - 1 6",
+      "turn": "White",
+      "eval_cp": 10,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_210",
+      "archetype": "FIXED_CHAIN",
+      "fen": "rnbq1k1r/ppp1bppp/4pn2/3p2B1/2PP4/2N1P3/PP3PPP/R2QKBNR w KQ - 1 6",
+      "turn": "White",
+      "eval_cp": -2,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_211",
+      "archetype": "FIXED_CHAIN",
+      "fen": "r1bq1rk1/pp1nbppp/2p1pn2/3p4/2PP4/1PN1PN2/P3BPPP/R1BQ1RK1 w - - 0 9",
+      "turn": "White",
+      "eval_cp": 8,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_212",
+      "archetype": "FIXED_CHAIN",
+      "fen": "r1bq1rk1/p3bppp/1pn1pn2/2pp4/3P4/2P1PN2/PP1NBPPP/R1BQ1RK1 b - - 0 9",
+      "turn": "Black",
+      "eval_cp": 8,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_213",
+      "archetype": "FIXED_CHAIN",
+      "fen": "r1bq1rk1/pp1nbppp/2p1pn2/3p2N1/2PP4/1PN1P3/P3BPPP/R1BQ1RK1 b - - 1 9",
+      "turn": "Black",
+      "eval_cp": -11,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_214",
+      "archetype": "FIXED_CHAIN",
+      "fen": "r1bq1rk1/pp1nbppp/2p1pn2/3pN3/2PP4/1PN1P3/P3BPPP/R1BQ1RK1 b - - 1 9",
+      "turn": "Black",
+      "eval_cp": -38,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_215",
+      "archetype": "FIXED_CHAIN",
+      "fen": "r1bq1rk1/pp1nbppp/2p1pn2/3p4/2PP3N/1PN1P3/P3BPPP/R1BQ1RK1 b - - 1 9",
+      "turn": "Black",
+      "eval_cp": 36,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_216",
+      "archetype": "FIXED_CHAIN",
+      "fen": "r1bq1rk1/1p1nbppp/p1p1pn2/3p4/2PP4/1PN1PN2/PB2BPPP/R2Q1RK1 b - - 0 10",
+      "turn": "Black",
+      "eval_cp": -19,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_217",
+      "archetype": "FIXED_CHAIN",
+      "fen": "r2q1rk1/pb2bppp/1pn1pn2/2pp4/3P4/P1P1PN2/1P1NBPPP/R1BQ1RK1 w - - 0 10",
+      "turn": "White",
+      "eval_cp": -19,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_218",
+      "archetype": "FIXED_CHAIN",
+      "fen": "r1bq1r1k/1p1nbppp/p1p1pn2/3p4/2PP4/1PN1PN2/PB2BPPP/R2Q1RK1 w - - 1 11",
+      "turn": "White",
+      "eval_cp": 23,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_219",
+      "archetype": "FIXED_CHAIN",
+      "fen": "r1bqr1k1/1p1nbppp/p1p1pn2/3p4/2PP4/1PN1PN2/PB2BPPP/R2Q1RK1 w - - 1 11",
+      "turn": "White",
+      "eval_cp": 10,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_220",
+      "archetype": "FIXED_CHAIN",
+      "fen": "r1b1qrk1/1p1nbppp/p1p1pn2/3p4/2PP4/1PN1PN2/PB2BPPP/R2Q1RK1 w - - 1 11",
+      "turn": "White",
+      "eval_cp": 21,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_221",
+      "archetype": "BREAKTHROUGH",
+      "fen": "8/ppp5/8/PPP5/8/8/8/k6K w - - 0 40",
+      "turn": "White",
+      "eval_cp": 45,
+      "classification": "P5_SEARCH_INTERACTION",
+      "defect_description": "Tactical breakthrough requires search depth >= 6 plies"
+    },
+    {
+      "id": "P_222",
+      "archetype": "BREAKTHROUGH",
+      "fen": "K6k/8/8/8/ppp5/8/PPP5/8 b - - 0 40",
+      "turn": "Black",
+      "eval_cp": 45,
+      "classification": "P5_SEARCH_INTERACTION",
+      "defect_description": "Tactical breakthrough requires search depth >= 6 plies"
+    },
+    {
+      "id": "P_223",
+      "archetype": "BREAKTHROUGH",
+      "fen": "8/ppp5/8/PPP5/8/8/7K/k7 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": -49,
+      "classification": "P5_SEARCH_INTERACTION",
+      "defect_description": "Tactical breakthrough requires search depth >= 6 plies"
+    },
+    {
+      "id": "P_224",
+      "archetype": "BREAKTHROUGH",
+      "fen": "8/ppp5/8/PPP5/8/8/6K1/k7 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": -53,
+      "classification": "P5_SEARCH_INTERACTION",
+      "defect_description": "Tactical breakthrough requires search depth >= 6 plies"
+    },
+    {
+      "id": "P_225",
+      "archetype": "BREAKTHROUGH",
+      "fen": "8/ppp5/8/PPP5/8/8/8/k5K1 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": -59,
+      "classification": "P5_SEARCH_INTERACTION",
+      "defect_description": "Tactical breakthrough requires search depth >= 6 plies"
+    },
+    {
+      "id": "P_226",
+      "archetype": "BREAKTHROUGH",
+      "fen": "8/1pp5/8/1PP5/8/8/8/k6K w - - 0 40",
+      "turn": "White",
+      "eval_cp": 45,
+      "classification": "P5_SEARCH_INTERACTION",
+      "defect_description": "Tactical breakthrough requires search depth >= 6 plies"
+    },
+    {
+      "id": "P_227",
+      "archetype": "BREAKTHROUGH",
+      "fen": "K6k/8/8/8/1pp5/8/1PP5/8 b - - 0 40",
+      "turn": "Black",
+      "eval_cp": 45,
+      "classification": "P5_SEARCH_INTERACTION",
+      "defect_description": "Tactical breakthrough requires search depth >= 6 plies"
+    },
+    {
+      "id": "P_228",
+      "archetype": "BREAKTHROUGH",
+      "fen": "8/1pp5/8/1PP5/8/8/7K/k7 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": -49,
+      "classification": "P5_SEARCH_INTERACTION",
+      "defect_description": "Tactical breakthrough requires search depth >= 6 plies"
+    },
+    {
+      "id": "P_229",
+      "archetype": "BREAKTHROUGH",
+      "fen": "8/1pp5/8/1PP5/8/8/6K1/k7 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": -53,
+      "classification": "P5_SEARCH_INTERACTION",
+      "defect_description": "Tactical breakthrough requires search depth >= 6 plies"
+    },
+    {
+      "id": "P_230",
+      "archetype": "BREAKTHROUGH",
+      "fen": "8/1pp5/8/1PP5/8/8/8/k5K1 b - - 1 40",
+      "turn": "Black",
+      "eval_cp": -59,
+      "classification": "P5_SEARCH_INTERACTION",
+      "defect_description": "Tactical breakthrough requires search depth >= 6 plies"
+    },
+    {
+      "id": "P_231",
+      "archetype": "BREAKTHROUGH",
+      "fen": "8/8/1p6/pP6/P7/8/8/k6K w - - 0 45",
+      "turn": "White",
+      "eval_cp": 60,
+      "classification": "P5_SEARCH_INTERACTION",
+      "defect_description": "Tactical breakthrough requires search depth >= 6 plies"
+    },
+    {
+      "id": "P_232",
+      "archetype": "BREAKTHROUGH",
+      "fen": "K6k/8/8/p7/Pp6/1P6/8/8 b - - 0 45",
+      "turn": "Black",
+      "eval_cp": 60,
+      "classification": "P5_SEARCH_INTERACTION",
+      "defect_description": "Tactical breakthrough requires search depth >= 6 plies"
+    },
+    {
+      "id": "P_233",
+      "archetype": "BREAKTHROUGH",
+      "fen": "8/8/1p6/pP6/P7/8/7K/k7 b - - 1 45",
+      "turn": "Black",
+      "eval_cp": -64,
+      "classification": "P5_SEARCH_INTERACTION",
+      "defect_description": "Tactical breakthrough requires search depth >= 6 plies"
+    },
+    {
+      "id": "P_234",
+      "archetype": "BREAKTHROUGH",
+      "fen": "8/8/1p6/pP6/P7/8/6K1/k7 b - - 1 45",
+      "turn": "Black",
+      "eval_cp": -68,
+      "classification": "P5_SEARCH_INTERACTION",
+      "defect_description": "Tactical breakthrough requires search depth >= 6 plies"
+    },
+    {
+      "id": "P_235",
+      "archetype": "BREAKTHROUGH",
+      "fen": "8/8/1p6/pP6/P7/8/8/k5K1 b - - 1 45",
+      "turn": "Black",
+      "eval_cp": -74,
+      "classification": "P5_SEARCH_INTERACTION",
+      "defect_description": "Tactical breakthrough requires search depth >= 6 plies"
+    },
+    {
+      "id": "P_236",
+      "archetype": "CLOSED_STRUCTURE",
+      "fen": "r1bq1rk1/pp2nppp/2n1p3/2ppP3/3P4/P1PB1N2/2P2PPP/R1BQK2R w KQ - 0 9",
+      "turn": "White",
+      "eval_cp": 30,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_237",
+      "archetype": "CLOSED_STRUCTURE",
+      "fen": "r1bqk2r/2p2ppp/p1pb1n2/3p4/2PPp3/2N1P3/PP2NPPP/R1BQ1RK1 b kq - 0 9",
+      "turn": "Black",
+      "eval_cp": 30,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_238",
+      "archetype": "CLOSED_STRUCTURE",
+      "fen": "r1bq1rk1/pp2nppp/2n1p3/2ppP1N1/3P4/P1PB4/2P2PPP/R1BQK2R b KQ - 1 9",
+      "turn": "Black",
+      "eval_cp": -50,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_239",
+      "archetype": "CLOSED_STRUCTURE",
+      "fen": "r1bq1rk1/pp2nppp/2n1p3/2ppP3/3P3N/P1PB4/2P2PPP/R1BQK2R b KQ - 1 9",
+      "turn": "Black",
+      "eval_cp": 21,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_240",
+      "archetype": "CLOSED_STRUCTURE",
+      "fen": "r1bq1rk1/pp2nppp/2n1p3/2ppP3/3P4/P1PB4/2PN1PPP/R1BQK2R b KQ - 1 9",
+      "turn": "Black",
+      "eval_cp": -10,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_241",
+      "archetype": "CLOSED_STRUCTURE",
+      "fen": "r1bq1rk1/pp1n1pbp/2p1p1p1/3pP3/2PP4/2N1PN2/PP2B1PP/R2Q1RK1 w - - 0 11",
+      "turn": "White",
+      "eval_cp": 27,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_242",
+      "archetype": "CLOSED_STRUCTURE",
+      "fen": "r2q1rk1/pp2b1pp/2n1pn2/2pp4/3Pp3/2P1P1P1/PP1N1PBP/R1BQ1RK1 b - - 0 11",
+      "turn": "Black",
+      "eval_cp": 27,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_243",
+      "archetype": "CLOSED_STRUCTURE",
+      "fen": "r1bq1rk1/pp1n1pbp/2p1p1p1/3pP1N1/2PP4/2N1P3/PP2B1PP/R2Q1RK1 b - - 1 11",
+      "turn": "Black",
+      "eval_cp": -84,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_244",
+      "archetype": "CLOSED_STRUCTURE",
+      "fen": "r1bq1rk1/pp1n1pbp/2p1p1p1/3pP3/2PP3N/2N1P3/PP2B1PP/R2Q1RK1 b - - 1 11",
+      "turn": "Black",
+      "eval_cp": 8,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_245",
+      "archetype": "CLOSED_STRUCTURE",
+      "fen": "r1bq1rk1/pp1n1pbp/2p1p1p1/3pP3/2PP4/2N1P3/PP1NB1PP/R2Q1RK1 b - - 1 11",
+      "turn": "Black",
+      "eval_cp": -34,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_246",
+      "archetype": "CLOSED_STRUCTURE",
+      "fen": "r2q1rk1/1p1nbpbp/p1p1p1p1/3pP3/2PP4/1PN1PN2/P2QB1PP/R4RK1 w - - 0 13",
+      "turn": "White",
+      "eval_cp": 1,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_247",
+      "archetype": "CLOSED_STRUCTURE",
+      "fen": "r4rk1/p2qb1pp/1pn1pn2/2pp4/3Pp3/P1P1P1P1/1P1NBPBP/R2Q1RK1 b - - 0 13",
+      "turn": "Black",
+      "eval_cp": 1,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_248",
+      "archetype": "CLOSED_STRUCTURE",
+      "fen": "r2q1rk1/1p1nbpbp/p1p1p1p1/3pP1N1/2PP4/1PN1P3/P2QB1PP/R4RK1 b - - 1 13",
+      "turn": "Black",
+      "eval_cp": -66,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_249",
+      "archetype": "CLOSED_STRUCTURE",
+      "fen": "r2q1rk1/1p1nbpbp/p1p1p1p1/3pP3/2PP3N/1PN1P3/P2QB1PP/R4RK1 b - - 1 13",
+      "turn": "Black",
+      "eval_cp": 30,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    },
+    {
+      "id": "P_250",
+      "archetype": "CLOSED_STRUCTURE",
+      "fen": "r2q1rk1/1p1nbpbp/p1p1p1p1/3pP3/2PP4/1PN1P3/P2QB1PP/R3NRK1 b - - 1 13",
+      "turn": "Black",
+      "eval_cp": 32,
+      "classification": "P0_CORRECT_EXISTING_EVAL",
+      "defect_description": "Evaluation operates within standard classical parameters"
+    }
+  ]
+}

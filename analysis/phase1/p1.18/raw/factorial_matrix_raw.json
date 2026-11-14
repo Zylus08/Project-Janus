@@ -1,0 +1,961 @@
+{
+  "F0": {
+    "config": {
+      "id": "F0",
+      "name": "Reference X22-S (1T: E5, Outposts=1, PawnHash=1, BP=0, KFE=0)",
+      "variant": "X22",
+      "threads": 1,
+      "bp": 0,
+      "kfe": 0,
+      "phash": 1
+    },
+    "avg_depth": 7.916666666666667,
+    "total_nodes": 1232704,
+    "total_time": 1.8174177000018972,
+    "aggregate_nps": 678272,
+    "positions": [
+      {
+        "pos_name": "Startpos",
+        "depth": 7,
+        "nodes": 90112,
+        "elapsed": 0.15200999999979103,
+        "nps": 592803,
+        "score": 34,
+        "best_move": "d2d4",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Sicilian Najdorf",
+        "depth": 8,
+        "nodes": 90112,
+        "elapsed": 0.1503714000009495,
+        "nps": 599262,
+        "score": 969,
+        "best_move": "g5d8",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "French Defense Backward e6",
+        "depth": 7,
+        "nodes": 81728,
+        "elapsed": 0.15050019999944197,
+        "nps": 543042,
+        "score": 389,
+        "best_move": "f1d3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Ruy Lopez Open",
+        "depth": 6,
+        "nodes": 86016,
+        "elapsed": 0.1517615000011574,
+        "nps": 566784,
+        "score": 19,
+        "best_move": "b1c3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Open King File Attacking",
+        "depth": 7,
+        "nodes": 98304,
+        "elapsed": 0.15246010000009846,
+        "nps": 644785,
+        "score": -48,
+        "best_move": "d6b4",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Severe King Exposure g-file",
+        "depth": 7,
+        "nodes": 104448,
+        "elapsed": 0.15211749999980384,
+        "nps": 686627,
+        "score": 59,
+        "best_move": "f1d1",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Isolated Queen Pawn",
+        "depth": 7,
+        "nodes": 88064,
+        "elapsed": 0.1512499000000389,
+        "nps": 582241,
+        "score": 365,
+        "best_move": "c1g5",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Endgame Lucena Rook",
+        "depth": 11,
+        "nodes": 133120,
+        "elapsed": 0.15177979999862146,
+        "nps": 877060,
+        "score": 570,
+        "best_move": "d8d6",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Tarrasch Rook Behind Passer",
+        "depth": 11,
+        "nodes": 131072,
+        "elapsed": 0.1503604000008636,
+        "nps": 871718,
+        "score": -70,
+        "best_move": "a5a6",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Pawns + Minor Pieces Tactical",
+        "depth": 7,
+        "nodes": 100352,
+        "elapsed": 0.15129349999915576,
+        "nps": 663293,
+        "score": -7,
+        "best_move": "f8b4",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Backward Pawn d6 Endgame",
+        "depth": 11,
+        "nodes": 155648,
+        "elapsed": 0.15108780000082334,
+        "nps": 1030182,
+        "score": -53,
+        "best_move": "f1d2",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Symmetric Pawn Chain",
+        "depth": 6,
+        "nodes": 73728,
+        "elapsed": 0.1524256000011519,
+        "nps": 483698,
+        "score": 168,
+        "best_move": "e4d5",
+        "eval_calls": 0
+      }
+    ]
+  },
+  "F1": {
+    "config": {
+      "id": "F1",
+      "name": "Track A Alone (1T: E5, Outposts=1, PawnHash=1, BP=1, KFE=0)",
+      "variant": "X22",
+      "threads": 1,
+      "bp": 1,
+      "kfe": 0,
+      "phash": 1
+    },
+    "avg_depth": 8.75,
+    "total_nodes": 1267712,
+    "total_time": 1.8203660999988642,
+    "aggregate_nps": 696404,
+    "positions": [
+      {
+        "pos_name": "Startpos",
+        "depth": 8,
+        "nodes": 94208,
+        "elapsed": 0.15134159999979602,
+        "nps": 622485,
+        "score": 7,
+        "best_move": "b1c3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Sicilian Najdorf",
+        "depth": 9,
+        "nodes": 88064,
+        "elapsed": 0.15118950000032783,
+        "nps": 582474,
+        "score": 996,
+        "best_move": "g5d8",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "French Defense Backward e6",
+        "depth": 7,
+        "nodes": 83968,
+        "elapsed": 0.15292829999998503,
+        "nps": 549067,
+        "score": 389,
+        "best_move": "f1d3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Ruy Lopez Open",
+        "depth": 7,
+        "nodes": 94208,
+        "elapsed": 0.15371899999991,
+        "nps": 612858,
+        "score": 7,
+        "best_move": "h2h3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Open King File Attacking",
+        "depth": 8,
+        "nodes": 100352,
+        "elapsed": 0.1514102000001003,
+        "nps": 662782,
+        "score": -48,
+        "best_move": "d6b4",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Severe King Exposure g-file",
+        "depth": 8,
+        "nodes": 114688,
+        "elapsed": 0.15149799999926472,
+        "nps": 757026,
+        "score": 53,
+        "best_move": "a1d1",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Isolated Queen Pawn",
+        "depth": 7,
+        "nodes": 100352,
+        "elapsed": 0.15018330000020796,
+        "nps": 668196,
+        "score": 352,
+        "best_move": "c1g5",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Endgame Lucena Rook",
+        "depth": 13,
+        "nodes": 133120,
+        "elapsed": 0.15217909999955737,
+        "nps": 874758,
+        "score": 578,
+        "best_move": "d8d7",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Tarrasch Rook Behind Passer",
+        "depth": 12,
+        "nodes": 131072,
+        "elapsed": 0.15143859999989218,
+        "nps": 865512,
+        "score": -77,
+        "best_move": "a5a6",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Pawns + Minor Pieces Tactical",
+        "depth": 7,
+        "nodes": 102400,
+        "elapsed": 0.1508426000000327,
+        "nps": 678853,
+        "score": -22,
+        "best_move": "f8b4",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Backward Pawn d6 Endgame",
+        "depth": 12,
+        "nodes": 153600,
+        "elapsed": 0.15141640000001644,
+        "nps": 1014421,
+        "score": -58,
+        "best_move": "f1d2",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Symmetric Pawn Chain",
+        "depth": 7,
+        "nodes": 71680,
+        "elapsed": 0.1522194999997737,
+        "nps": 470898,
+        "score": 168,
+        "best_move": "e4d5",
+        "eval_calls": 0
+      }
+    ]
+  },
+  "F2": {
+    "config": {
+      "id": "F2",
+      "name": "Track B Alone (1T: E5, Outposts=1, PawnHash=1, BP=0, KFE=1)",
+      "variant": "X22",
+      "threads": 1,
+      "bp": 0,
+      "kfe": 1,
+      "phash": 1
+    },
+    "avg_depth": 9.666666666666666,
+    "total_nodes": 1273856,
+    "total_time": 1.824116599997069,
+    "aggregate_nps": 698341,
+    "positions": [
+      {
+        "pos_name": "Startpos",
+        "depth": 9,
+        "nodes": 94208,
+        "elapsed": 0.15243670000018028,
+        "nps": 618013,
+        "score": 27,
+        "best_move": "b1c3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Sicilian Najdorf",
+        "depth": 10,
+        "nodes": 106496,
+        "elapsed": 0.15294320000066364,
+        "nps": 696310,
+        "score": 984,
+        "best_move": "g5d8",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "French Defense Backward e6",
+        "depth": 8,
+        "nodes": 88064,
+        "elapsed": 0.15207209999971383,
+        "nps": 579093,
+        "score": 391,
+        "best_move": "f1d3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Ruy Lopez Open",
+        "depth": 8,
+        "nodes": 96256,
+        "elapsed": 0.1510032999995019,
+        "nps": 637443,
+        "score": 12,
+        "best_move": "b1c3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Open King File Attacking",
+        "depth": 8,
+        "nodes": 92160,
+        "elapsed": 0.15164439999898605,
+        "nps": 607737,
+        "score": -37,
+        "best_move": "d6b4",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Severe King Exposure g-file",
+        "depth": 9,
+        "nodes": 114688,
+        "elapsed": 0.15172309999979916,
+        "nps": 755903,
+        "score": 58,
+        "best_move": "a1d1",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Isolated Queen Pawn",
+        "depth": 8,
+        "nodes": 100352,
+        "elapsed": 0.1529700999999477,
+        "nps": 656023,
+        "score": 352,
+        "best_move": "c1g5",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Endgame Lucena Rook",
+        "depth": 14,
+        "nodes": 129024,
+        "elapsed": 0.15191330000016023,
+        "nps": 849326,
+        "score": 578,
+        "best_move": "d8d7",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Tarrasch Rook Behind Passer",
+        "depth": 12,
+        "nodes": 126976,
+        "elapsed": 0.15104219999921042,
+        "nps": 840665,
+        "score": -77,
+        "best_move": "a5a6",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Pawns + Minor Pieces Tactical",
+        "depth": 8,
+        "nodes": 94208,
+        "elapsed": 0.15240049999920302,
+        "nps": 618160,
+        "score": -22,
+        "best_move": "f8b4",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Backward Pawn d6 Endgame",
+        "depth": 14,
+        "nodes": 153600,
+        "elapsed": 0.1514409000010346,
+        "nps": 1014257,
+        "score": -33,
+        "best_move": "g2f3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Symmetric Pawn Chain",
+        "depth": 8,
+        "nodes": 77824,
+        "elapsed": 0.15252679999866814,
+        "nps": 510231,
+        "score": 168,
+        "best_move": "e4d5",
+        "eval_calls": 0
+      }
+    ]
+  },
+  "F3": {
+    "config": {
+      "id": "F3",
+      "name": "Candidate X23-S (1T: E5, Outposts=1, PawnHash=1, BP=1, KFE=1)",
+      "variant": "X23",
+      "threads": 1,
+      "bp": 1,
+      "kfe": 1,
+      "phash": 1
+    },
+    "avg_depth": 9.75,
+    "total_nodes": 1243136,
+    "total_time": 1.8254640999930416,
+    "aggregate_nps": 680997,
+    "positions": [
+      {
+        "pos_name": "Startpos",
+        "depth": 9,
+        "nodes": 94208,
+        "elapsed": 0.15274419999877864,
+        "nps": 616769,
+        "score": 27,
+        "best_move": "b1c3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Sicilian Najdorf",
+        "depth": 10,
+        "nodes": 90112,
+        "elapsed": 0.1519111999987217,
+        "nps": 593188,
+        "score": 984,
+        "best_move": "g5d8",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "French Defense Backward e6",
+        "depth": 8,
+        "nodes": 83968,
+        "elapsed": 0.15402870000070834,
+        "nps": 545145,
+        "score": 391,
+        "best_move": "f1d3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Ruy Lopez Open",
+        "depth": 7,
+        "nodes": 90112,
+        "elapsed": 0.15351519999967422,
+        "nps": 586990,
+        "score": 2,
+        "best_move": "b1c3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Open King File Attacking",
+        "depth": 9,
+        "nodes": 92160,
+        "elapsed": 0.15203979999932926,
+        "nps": 606157,
+        "score": -37,
+        "best_move": "d6b4",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Severe King Exposure g-file",
+        "depth": 9,
+        "nodes": 114688,
+        "elapsed": 0.15189379999901576,
+        "nps": 755053,
+        "score": 50,
+        "best_move": "a1d1",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Isolated Queen Pawn",
+        "depth": 7,
+        "nodes": 102400,
+        "elapsed": 0.15021929999966233,
+        "nps": 681670,
+        "score": 348,
+        "best_move": "e1g1",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Endgame Lucena Rook",
+        "depth": 14,
+        "nodes": 137216,
+        "elapsed": 0.15147739999883925,
+        "nps": 905851,
+        "score": 578,
+        "best_move": "d8d7",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Tarrasch Rook Behind Passer",
+        "depth": 13,
+        "nodes": 129024,
+        "elapsed": 0.15210619999925257,
+        "nps": 848249,
+        "score": -77,
+        "best_move": "a5a6",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Pawns + Minor Pieces Tactical",
+        "depth": 9,
+        "nodes": 79872,
+        "elapsed": 0.1512643999994907,
+        "nps": 528029,
+        "score": -11,
+        "best_move": "f8b4",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Backward Pawn d6 Endgame",
+        "depth": 15,
+        "nodes": 157696,
+        "elapsed": 0.15189920000011625,
+        "nps": 1038162,
+        "score": -29,
+        "best_move": "g2f3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Symmetric Pawn Chain",
+        "depth": 7,
+        "nodes": 71680,
+        "elapsed": 0.15236469999945257,
+        "nps": 470450,
+        "score": 149,
+        "best_move": "e4d5",
+        "eval_calls": 0
+      }
+    ]
+  },
+  "F4": {
+    "config": {
+      "id": "F4",
+      "name": "Control X7 (1T Baseline: E5, Outposts=0, PawnHash=0, BP=0, KFE=0, Q0)",
+      "variant": "X7",
+      "threads": 1,
+      "bp": 0,
+      "kfe": 0,
+      "phash": 0
+    },
+    "avg_depth": 10.083333333333334,
+    "total_nodes": 1261568,
+    "total_time": 1.8202935999997862,
+    "aggregate_nps": 693057,
+    "positions": [
+      {
+        "pos_name": "Startpos",
+        "depth": 9,
+        "nodes": 106496,
+        "elapsed": 0.15343790000042645,
+        "nps": 694065,
+        "score": 26,
+        "best_move": "d2d4",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Sicilian Najdorf",
+        "depth": 10,
+        "nodes": 96256,
+        "elapsed": 0.15272799999911513,
+        "nps": 630244,
+        "score": 984,
+        "best_move": "g5d8",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "French Defense Backward e6",
+        "depth": 9,
+        "nodes": 83968,
+        "elapsed": 0.1518462999993062,
+        "nps": 552980,
+        "score": 399,
+        "best_move": "f1d3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Ruy Lopez Open",
+        "depth": 9,
+        "nodes": 98304,
+        "elapsed": 0.15399470000011206,
+        "nps": 638359,
+        "score": 2,
+        "best_move": "b1c3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Open King File Attacking",
+        "depth": 9,
+        "nodes": 90112,
+        "elapsed": 0.15037320000010368,
+        "nps": 599255,
+        "score": -37,
+        "best_move": "d6b4",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Severe King Exposure g-file",
+        "depth": 9,
+        "nodes": 108544,
+        "elapsed": 0.1526345999991463,
+        "nps": 711136,
+        "score": 50,
+        "best_move": "a1d1",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Isolated Queen Pawn",
+        "depth": 7,
+        "nodes": 86016,
+        "elapsed": 0.15252330000112124,
+        "nps": 563953,
+        "score": 353,
+        "best_move": "c4c5",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Endgame Lucena Rook",
+        "depth": 14,
+        "nodes": 143360,
+        "elapsed": 0.15115309999964666,
+        "nps": 948442,
+        "score": 579,
+        "best_move": "d8d7",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Tarrasch Rook Behind Passer",
+        "depth": 13,
+        "nodes": 129024,
+        "elapsed": 0.15026529999886407,
+        "nps": 858641,
+        "score": -77,
+        "best_move": "a5a6",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Pawns + Minor Pieces Tactical",
+        "depth": 9,
+        "nodes": 88064,
+        "elapsed": 0.15084870000100636,
+        "nps": 583790,
+        "score": -11,
+        "best_move": "f8b4",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Backward Pawn d6 Endgame",
+        "depth": 15,
+        "nodes": 151552,
+        "elapsed": 0.15006720000019413,
+        "nps": 1009894,
+        "score": -29,
+        "best_move": "g2f3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Symmetric Pawn Chain",
+        "depth": 8,
+        "nodes": 79872,
+        "elapsed": 0.15042130000074394,
+        "nps": 530988,
+        "score": 149,
+        "best_move": "e4d5",
+        "eval_calls": 0
+      }
+    ]
+  },
+  "F5": {
+    "config": {
+      "id": "F5",
+      "name": "Candidate X23-P (4T SMP: E10, Outposts=1, PawnHash=1, BP=1, KFE=1)",
+      "variant": "X23",
+      "threads": 4,
+      "bp": 1,
+      "kfe": 1,
+      "phash": 1
+    },
+    "avg_depth": 8.25,
+    "total_nodes": 4406414,
+    "total_time": 1.862680600001113,
+    "aggregate_nps": 2365630,
+    "positions": [
+      {
+        "pos_name": "Startpos",
+        "depth": 8,
+        "nodes": 378494,
+        "elapsed": 0.15804609999941022,
+        "nps": 2394832,
+        "score": 10,
+        "best_move": "b1c3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Sicilian Najdorf",
+        "depth": 9,
+        "nodes": 305152,
+        "elapsed": 0.1540647000001627,
+        "nps": 1980674,
+        "score": 1031,
+        "best_move": "g5d8",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "French Defense Backward e6",
+        "depth": 7,
+        "nodes": 319488,
+        "elapsed": 0.15471450000040932,
+        "nps": 2065016,
+        "score": 389,
+        "best_move": "f1d3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Ruy Lopez Open",
+        "depth": 6,
+        "nodes": 307200,
+        "elapsed": 0.1572919999998703,
+        "nps": 1953055,
+        "score": 19,
+        "best_move": "b1c3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Open King File Attacking",
+        "depth": 6,
+        "nodes": 264192,
+        "elapsed": 0.15733580000051006,
+        "nps": 1679160,
+        "score": -50,
+        "best_move": "d6b4",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Severe King Exposure g-file",
+        "depth": 7,
+        "nodes": 319488,
+        "elapsed": 0.152308599999742,
+        "nps": 2097635,
+        "score": 56,
+        "best_move": "f1e1",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Isolated Queen Pawn",
+        "depth": 7,
+        "nodes": 354304,
+        "elapsed": 0.15530720000060683,
+        "nps": 2281310,
+        "score": 344,
+        "best_move": "c1g5",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Endgame Lucena Rook",
+        "depth": 12,
+        "nodes": 491520,
+        "elapsed": 0.15572620000057213,
+        "nps": 3156308,
+        "score": 573,
+        "best_move": "d8d7",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Tarrasch Rook Behind Passer",
+        "depth": 11,
+        "nodes": 468992,
+        "elapsed": 0.1532446000001073,
+        "nps": 3060414,
+        "score": -75,
+        "best_move": "a5a6",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Pawns + Minor Pieces Tactical",
+        "depth": 7,
+        "nodes": 358400,
+        "elapsed": 0.15642470000057074,
+        "nps": 2291198,
+        "score": -2,
+        "best_move": "f8b4",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Backward Pawn d6 Endgame",
+        "depth": 13,
+        "nodes": 562704,
+        "elapsed": 0.15388050000001385,
+        "nps": 3656759,
+        "score": -26,
+        "best_move": "f1d2",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Symmetric Pawn Chain",
+        "depth": 6,
+        "nodes": 276480,
+        "elapsed": 0.15433569999913743,
+        "nps": 1791419,
+        "score": 149,
+        "best_move": "e4d5",
+        "eval_calls": 0
+      }
+    ]
+  },
+  "F6": {
+    "config": {
+      "id": "F6",
+      "name": "Control X12 (4T Baseline: E10, Outposts=0, PawnHash=1, BP=0, KFE=0, Q0)",
+      "variant": "X12",
+      "threads": 4,
+      "bp": 0,
+      "kfe": 0,
+      "phash": 1
+    },
+    "avg_depth": 9.333333333333334,
+    "total_nodes": 4446881,
+    "total_time": 1.8626155000001745,
+    "aggregate_nps": 2387439,
+    "positions": [
+      {
+        "pos_name": "Startpos",
+        "depth": 9,
+        "nodes": 350208,
+        "elapsed": 0.15811150000081398,
+        "nps": 2214943,
+        "score": 28,
+        "best_move": "b1c3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Sicilian Najdorf",
+        "depth": 10,
+        "nodes": 281249,
+        "elapsed": 0.1515328999994381,
+        "nps": 1856025,
+        "score": 981,
+        "best_move": "g5d8",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "French Defense Backward e6",
+        "depth": 8,
+        "nodes": 327680,
+        "elapsed": 0.15650190000087605,
+        "nps": 2093776,
+        "score": 386,
+        "best_move": "f1d3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Ruy Lopez Open",
+        "depth": 7,
+        "nodes": 327680,
+        "elapsed": 0.1543087000009109,
+        "nps": 2123535,
+        "score": 12,
+        "best_move": "b1c3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Open King File Attacking",
+        "depth": 7,
+        "nodes": 352256,
+        "elapsed": 0.15756449999935285,
+        "nps": 2235630,
+        "score": -53,
+        "best_move": "d8f6",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Severe King Exposure g-file",
+        "depth": 9,
+        "nodes": 423936,
+        "elapsed": 0.15313380000043253,
+        "nps": 2768402,
+        "score": 62,
+        "best_move": "a1d1",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Isolated Queen Pawn",
+        "depth": 7,
+        "nodes": 294912,
+        "elapsed": 0.1566065000006347,
+        "nps": 1883140,
+        "score": 358,
+        "best_move": "c1e3",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Endgame Lucena Rook",
+        "depth": 14,
+        "nodes": 473088,
+        "elapsed": 0.15459720000035304,
+        "nps": 3060133,
+        "score": 579,
+        "best_move": "d8d7",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Tarrasch Rook Behind Passer",
+        "depth": 11,
+        "nodes": 487424,
+        "elapsed": 0.15369039999859524,
+        "nps": 3171466,
+        "score": -75,
+        "best_move": "a5a6",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Pawns + Minor Pieces Tactical",
+        "depth": 9,
+        "nodes": 339968,
+        "elapsed": 0.15434849999837752,
+        "nps": 2202599,
+        "score": 0,
+        "best_move": "c6e7",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Backward Pawn d6 Endgame",
+        "depth": 14,
+        "nodes": 530432,
+        "elapsed": 0.15330549999998766,
+        "nps": 3459967,
+        "score": -36,
+        "best_move": "f1d2",
+        "eval_calls": 0
+      },
+      {
+        "pos_name": "Symmetric Pawn Chain",
+        "depth": 7,
+        "nodes": 258048,
+        "elapsed": 0.15891410000040196,
+        "nps": 1623820,
+        "score": 149,
+        "best_move": "e4d5",
+        "eval_calls": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "dev_match_1": {
+    "match_id": "DEV_1_FAST",
+    "description": "B1 (Option B) vs B0 (Baseline) @ 1.0s+50ms",
+    "total_games": 50,
+    "wins": 8,
+    "draws": 40,
+    "losses": 2,
+    "points": 28.0,
+    "score_pct": 56.00000000000001,
+    "elo": 41.89414020800522,
+    "ci_low": 0.5014740497321061,
+    "ci_high": 0.618525950267894,
+    "se": 0.029860788111948196,
+    "p_value": 0.044502777933669614,
+    "elapsed_seconds": 96.65527582168579,
+    "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.20\\pgn\\p120_dev_m1_b1_vs_b0_fast.pgn"
+  },
+  "dev_match_2": {
+    "match_id": "DEV_2_SLOW",
+    "description": "B1 (Option B) vs B0 (Baseline) @ 3.0s+100ms",
+    "total_games": 50,
+    "wins": 10,
+    "draws": 34,
+    "losses": 6,
+    "points": 27.0,
+    "score_pct": 54.0,
+    "elo": 27.85437125655782,
+    "ci_low": 0.47257813567869844,
+    "ci_high": 0.6074218643213016,
+    "se": 0.03439961240091716,
+    "p_value": 0.24490911527100426,
+    "elapsed_seconds": 198.06035041809082,
+    "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.20\\pgn\\p120_dev_m2_b1_vs_b0_slow.pgn"
+  },
+  "dev_match_3": {
+    "match_id": "DEV_3_BP",
+    "description": "B1 (Option B) vs B2 (Option B + Backward Pawns) @ 1.0s+50ms",
+    "total_games": 50,
+    "wins": 4,
+    "draws": 38,
+    "losses": 8,
+    "points": 23.0,
+    "score_pct": 46.0,
+    "elo": -27.85437125655776,
+    "ci_low": 0.3925781356786984,
+    "ci_high": 0.5274218643213016,
+    "se": 0.03439961240091716,
+    "p_value": 0.24490911527100495,
+    "elapsed_seconds": 92.34396171569824,
+    "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.20\\pgn\\p120_dev_m3_b1_vs_b2_fast.pgn"
+  }
+}

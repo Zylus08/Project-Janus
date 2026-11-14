@@ -1,0 +1,345 @@
+{
+  "checksums": {
+    "x7_single_thread": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.3\\control\\janus_classical_x7.exe",
+      "sha256": "86392A2F4BD4182A4D7DC21E32940BD7939F6816794D5E1AB02F4082431CA28B",
+      "status": "EXISTS"
+    },
+    "x12_four_thread": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.7\\control\\janus_classical_x12.exe",
+      "sha256": "00B4F5FEDEA02A392A1AF9713A96512E5199A0E3AE55C295AD1C7CFFF1B47059",
+      "status": "EXISTS"
+    },
+    "x22_research_ref": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.17\\control\\janus_classical_x22.exe",
+      "sha256": "35D095CFFE8A2EDA412171803C09BE52A74DFB3F9744C04F573D2A7FFB1C2F1C",
+      "status": "EXISTS"
+    },
+    "x23_rejected_candidate": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.18\\control\\janus_classical_x23.exe",
+      "sha256": "39E875841B36AC82F464ABC7F31DB19D7CF5ABCD0F15B0A923B086A5BB393E39",
+      "status": "EXISTS"
+    },
+    "x24_candidate_exe": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.19\\control\\janus_classical_x24.exe",
+      "sha256": "FBEAF9072680A4DDD172615C56E7A42B2EE472C16FBF04AC9C36D4BF35D80C40",
+      "status": "EXISTS"
+    },
+    "x24_candidate_dll": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.19\\control\\janus_classical_x24.dll",
+      "sha256": "E56E8687C9E680BE57FDAA3CC1D5070EB40BDCFF52A1EB2A203FF97182786168",
+      "status": "EXISTS"
+    },
+    "x24_candidate_cpp": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.19\\control\\janus_classical_x24.cpp",
+      "sha256": "3A1A5C854C836AAEE9A5EC586983D0A46A2A28C588A986FC412915079023F9D8",
+      "status": "EXISTS"
+    }
+  },
+  "total_games": 570,
+  "reconstructed_matches": {
+    "match_dev_x24_vs_x22.pgn": {
+      "file": "match_dev_x24_vs_x22.pgn",
+      "total_games": 100,
+      "num_pairs": 50,
+      "cand_score": 45.5,
+      "wins": 31,
+      "draws": 29,
+      "losses": 40,
+      "win_rate_percent": 45.5,
+      "elo": -31.4,
+      "paired_ci_95": [
+        36.57,
+        54.43
+      ],
+      "p_value_one_sided": 0.8383,
+      "p_value_two_sided": 0.3233,
+      "pentanomial": {
+        "2.0": 7,
+        "1.5": 7,
+        "1.0": 15,
+        "0.5": 12,
+        "0.0": 9
+      },
+      "sample_pair_scores": [
+        0.75,
+        0.5,
+        0.0,
+        0.25,
+        0.25,
+        0.5,
+        0.25,
+        0.25,
+        0.75,
+        0.0
+      ]
+    },
+    "match_1_x24-s_vs_x22-s_ref_1t.pgn": {
+      "file": "match_1_x24-s_vs_x22-s_ref_1t.pgn",
+      "total_games": 100,
+      "num_pairs": 50,
+      "cand_score": 48.0,
+      "wins": 29,
+      "draws": 38,
+      "losses": 33,
+      "win_rate_percent": 48.0,
+      "elo": -13.9,
+      "paired_ci_95": [
+        39.62,
+        56.38
+      ],
+      "p_value_one_sided": 0.68,
+      "p_value_two_sided": 0.64,
+      "pentanomial": {
+        "2.0": 5,
+        "1.5": 13,
+        "1.0": 11,
+        "0.5": 15,
+        "0.0": 6
+      },
+      "sample_pair_scores": [
+        0.25,
+        0.75,
+        0.75,
+        1.0,
+        0.75,
+        0.5,
+        0.25,
+        0.0,
+        0.25,
+        0.25
+      ]
+    },
+    "match_2_x24-s_vs_x7_baseline_1t.pgn": {
+      "file": "match_2_x24-s_vs_x7_baseline_1t.pgn",
+      "total_games": 100,
+      "num_pairs": 50,
+      "cand_score": 48.0,
+      "wins": 27,
+      "draws": 42,
+      "losses": 31,
+      "win_rate_percent": 48.0,
+      "elo": -13.9,
+      "paired_ci_95": [
+        41.46,
+        54.54
+      ],
+      "p_value_one_sided": 0.7255,
+      "p_value_two_sided": 0.5491,
+      "pentanomial": {
+        "2.0": 2,
+        "1.5": 11,
+        "1.0": 21,
+        "0.5": 13,
+        "0.0": 3
+      },
+      "sample_pair_scores": [
+        0.75,
+        1.0,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.25,
+        0.5,
+        0.75,
+        0.0
+      ]
+    },
+    "match_3_x24-p_vs_x12_baseline_4t.pgn": {
+      "file": "match_3_x24-p_vs_x12_baseline_4t.pgn",
+      "total_games": 100,
+      "num_pairs": 50,
+      "cand_score": 47.0,
+      "wins": 29,
+      "draws": 36,
+      "losses": 35,
+      "win_rate_percent": 47.0,
+      "elo": -20.9,
+      "paired_ci_95": [
+        38.76,
+        55.24
+      ],
+      "p_value_one_sided": 0.7623,
+      "p_value_two_sided": 0.4755,
+      "pentanomial": {
+        "2.0": 4,
+        "1.5": 12,
+        "1.0": 16,
+        "0.5": 10,
+        "0.0": 8
+      },
+      "sample_pair_scores": [
+        0.0,
+        0.5,
+        0.75,
+        0.5,
+        0.5,
+        0.5,
+        0.0,
+        0.5,
+        0.0,
+        0.75
+      ]
+    },
+    "match_4_x24-s_vs_x7_slow_tc.pgn": {
+      "file": "match_4_x24-s_vs_x7_slow_tc.pgn",
+      "total_games": 50,
+      "num_pairs": 25,
+      "cand_score": 18.5,
+      "wins": 6,
+      "draws": 25,
+      "losses": 19,
+      "win_rate_percent": 37.0,
+      "elo": -92.5,
+      "paired_ci_95": [
+        26.75,
+        47.25
+      ],
+      "p_value_one_sided": 0.9936,
+      "p_value_two_sided": 0.0129,
+      "pentanomial": {
+        "2.0": 1,
+        "1.5": 3,
+        "1.0": 7,
+        "0.5": 10,
+        "0.0": 4
+      },
+      "sample_pair_scores": [
+        0.5,
+        0.25,
+        0.25,
+        0.25,
+        0.0,
+        0.75,
+        0.25,
+        0.5,
+        0.0,
+        0.5
+      ]
+    },
+    "match_5_x24-s_vs_stockfish_4.pgn": {
+      "file": "match_5_x24-s_vs_stockfish_4.pgn",
+      "total_games": 40,
+      "num_pairs": 20,
+      "cand_score": 0.0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 40,
+      "win_rate_percent": 0.0,
+      "elo": null,
+      "paired_ci_95": [
+        0.0,
+        0.0
+      ],
+      "p_value_one_sided": 1.0,
+      "p_value_two_sided": 0.0,
+      "pentanomial": {
+        "2.0": 0,
+        "1.5": 0,
+        "1.0": 0,
+        "0.5": 0,
+        "0.0": 20
+      },
+      "sample_pair_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "match_6_x24-s_vs_stockfish_11.pgn": {
+      "file": "match_6_x24-s_vs_stockfish_11.pgn",
+      "total_games": 40,
+      "num_pairs": 20,
+      "cand_score": 1.0,
+      "wins": 0,
+      "draws": 2,
+      "losses": 38,
+      "win_rate_percent": 2.5,
+      "elo": -636.4,
+      "paired_ci_95": [
+        0.0,
+        5.87
+      ],
+      "p_value_one_sided": 1.0,
+      "p_value_two_sided": 0.0,
+      "pentanomial": {
+        "2.0": 0,
+        "1.5": 0,
+        "1.0": 0,
+        "0.5": 2,
+        "0.0": 18
+      },
+      "sample_pair_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "match_7_x24-s_vs_stockfish_19.pgn": {
+      "file": "match_7_x24-s_vs_stockfish_19.pgn",
+      "total_games": 40,
+      "num_pairs": 20,
+      "cand_score": 2.5,
+      "wins": 0,
+      "draws": 5,
+      "losses": 35,
+      "win_rate_percent": 6.25,
+      "elo": -470.4,
+      "paired_ci_95": [
+        1.38,
+        11.12
+      ],
+      "p_value_one_sided": 1.0,
+      "p_value_two_sided": 0.0,
+      "pentanomial": {
+        "2.0": 0,
+        "1.5": 0,
+        "1.0": 0,
+        "0.5": 5,
+        "0.0": 15
+      },
+      "sample_pair_scores": [
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.0
+      ]
+    }
+  },
+  "p_value_audit": {
+    "match": "Match 4 (Slow TC)",
+    "games": 50,
+    "pairs": 25,
+    "score": 18.5,
+    "win_rate": 37.0,
+    "paired_ci_95": [
+      26.75,
+      47.25
+    ],
+    "reported_two_sided_p": 0.0129,
+    "recomputed_two_sided_p": 0.0129,
+    "recomputed_one_sided_p": 0.9936,
+    "match_exact": true
+  }
+}

@@ -1,0 +1,791 @@
+{
+  "total_tested": 30,
+  "move_agreement_rate": 70.0,
+  "move_mismatches": 9,
+  "large_score_deltas": 3,
+  "total_nodes_x22": 3532366,
+  "total_nodes_x24": 4496067,
+  "node_ratio_x24_to_x22": 1.2728,
+  "positions": [
+    {
+      "id": "COMP_01",
+      "fen": "r1bqkb1r/pp3ppp/2n1pn2/2pp4/3P4/2N1PN2/PPP1BPPP/R1BQK2R w KQkq - 2 6",
+      "theme": "Sicilian d6 backward",
+      "static_x22": 25,
+      "static_x24": 31,
+      "delta_static": 6,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "f3e5",
+        "score_cp": 0,
+        "nodes": 121455,
+        "nps": 1242515
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "a2a3",
+        "score_cp": -1,
+        "nodes": 364306,
+        "nps": 1251494
+      },
+      "delta_search": -1,
+      "move_match": false
+    },
+    {
+      "id": "COMP_02",
+      "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2N1PN2/PPP1BPPP/R1BQ1RK1 w kq - 0 7",
+      "theme": "French e6 backward",
+      "static_x22": 37,
+      "static_x24": 41,
+      "delta_static": 4,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "h2h3",
+        "score_cp": 1,
+        "nodes": 282162,
+        "nps": 1175810
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "a2a3",
+        "score_cp": 1,
+        "nodes": 366594,
+        "nps": 1193171
+      },
+      "delta_search": 0,
+      "move_match": false
+    },
+    {
+      "id": "COMP_03",
+      "fen": "r1bq1rk1/pp1n1ppp/2p1pn2/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R w KQ - 0 7",
+      "theme": "Semi-Slav backward c-pawn",
+      "static_x22": 382,
+      "static_x24": 377,
+      "delta_static": -5,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "f1d3",
+        "score_cp": 379,
+        "nodes": 123777,
+        "nps": 1095488
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "f1d3",
+        "score_cp": 375,
+        "nodes": 174497,
+        "nps": 1403179
+      },
+      "delta_search": -4,
+      "move_match": true
+    },
+    {
+      "id": "COMP_04",
+      "fen": "r1bqk2r/pp1n1ppp/2p1pn2/3p4/2PP4/2P1PN2/P4PPP/R1BQKB1R w KQkq - 1 7",
+      "theme": "White backward c3",
+      "static_x22": 8,
+      "static_x24": 9,
+      "delta_static": 1,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "c4d5",
+        "score_cp": 12,
+        "nodes": 84746,
+        "nps": 1231286
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "c4d5",
+        "score_cp": 5,
+        "nodes": 120912,
+        "nps": 1415794
+      },
+      "delta_search": -7,
+      "move_match": true
+    },
+    {
+      "id": "COMP_05",
+      "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/2PN4/2N3P1/PP2PPBP/R1BQ1RK1 b - - 0 8",
+      "theme": "Dragon d6 backward",
+      "static_x22": -8,
+      "static_x24": -8,
+      "delta_static": 0,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "c6d4",
+        "score_cp": 7,
+        "nodes": 75775,
+        "nps": 1214150
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "c6d4",
+        "score_cp": 12,
+        "nodes": 95898,
+        "nps": 1375305
+      },
+      "delta_search": 5,
+      "move_match": true
+    },
+    {
+      "id": "COMP_06",
+      "fen": "r1bq1rk1/pp1n1ppp/4pn2/8/2BP4/P1N1PN2/1P3PPP/R1BQK2R b KQ - 0 9",
+      "theme": "White d4 IQP",
+      "static_x22": -501,
+      "static_x24": -485,
+      "delta_static": 16,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "d8c7",
+        "score_cp": -506,
+        "nodes": 180354,
+        "nps": 1154575
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "d8a5",
+        "score_cp": -495,
+        "nodes": 221419,
+        "nps": 1227437
+      },
+      "delta_search": 11,
+      "move_match": false
+    },
+    {
+      "id": "COMP_07",
+      "fen": "r1b2rk1/pp3ppp/2n1pn2/a7/2BP4/P1N1PN2/1P3PPP/R1BQK2R w KQ - 1 10",
+      "theme": "IQP d4 blockade",
+      "static_x22": null,
+      "static_x24": null,
+      "delta_static": 0,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 0,
+        "bestmove": "",
+        "score_cp": null,
+        "nodes": 0,
+        "nps": 0
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 0,
+        "bestmove": "",
+        "score_cp": null,
+        "nodes": 0,
+        "nps": 0
+      },
+      "delta_search": 0,
+      "move_match": true
+    },
+    {
+      "id": "COMP_08",
+      "fen": "r2q1rk1/pp1nbppp/4pn2/8/2BP4/2N1PN2/PP3PPP/R1BQ1RK1 w - - 0 9",
+      "theme": "White IQP kingside attack",
+      "static_x22": 529,
+      "static_x24": 511,
+      "delta_static": -18,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "d1b3",
+        "score_cp": 503,
+        "nodes": 245595,
+        "nps": 1290377
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "e3e4",
+        "score_cp": 489,
+        "nodes": 309581,
+        "nps": 1397162
+      },
+      "delta_search": -14,
+      "move_match": false
+    },
+    {
+      "id": "COMP_09",
+      "fen": "r1bqk2r/pppp1ppp/2n5/4p3/2B1n3/5Q2/PPPP1PPP/RNB1K1NR w KQkq - 0 5",
+      "theme": "Queen mate threat",
+      "static_x22": 28999,
+      "static_x24": 28999,
+      "delta_static": 0,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "f3f7",
+        "score_cp": 28999,
+        "nodes": 342444,
+        "nps": 2349870
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "f3f7",
+        "score_cp": 28999,
+        "nodes": 417402,
+        "nps": 1946854
+      },
+      "delta_search": 0,
+      "move_match": true
+    },
+    {
+      "id": "COMP_10",
+      "fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "theme": "KiwiPete tactical crossroad",
+      "static_x22": 138,
+      "static_x24": 114,
+      "delta_static": -24,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "d5e6",
+        "score_cp": 20,
+        "nodes": 540145,
+        "nps": 1045135
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "d5e6",
+        "score_cp": 7,
+        "nodes": 612052,
+        "nps": 1099013
+      },
+      "delta_search": -13,
+      "move_match": true
+    },
+    {
+      "id": "COMP_11",
+      "fen": "8/5pk1/4p1p1/P1P4p/8/6P1/5PKP/8 w - - 0 35",
+      "theme": "Outside connected passers",
+      "static_x22": 1226,
+      "static_x24": 250,
+      "delta_static": -976,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "g3g4",
+        "score_cp": 1139,
+        "nodes": 38458,
+        "nps": 2490835
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "a5a6",
+        "score_cp": 902,
+        "nodes": 15303,
+        "nps": 2742423
+      },
+      "delta_search": -237,
+      "move_match": false
+    },
+    {
+      "id": "COMP_12",
+      "fen": "8/8/4k1p1/2P1P3/8/5K2/8/8 w - - 0 45",
+      "theme": "Central connected passers",
+      "static_x22": 211,
+      "static_x24": 204,
+      "delta_static": -7,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "c5c6",
+        "score_cp": 633,
+        "nodes": 4050,
+        "nps": 2602158
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "c5c6",
+        "score_cp": 277,
+        "nodes": 9957,
+        "nps": 2872515
+      },
+      "delta_search": -356,
+      "move_match": true
+    },
+    {
+      "id": "COMP_13",
+      "fen": "8/8/4k3/R7/8/3K4/8/7r w - - 0 55",
+      "theme": "Philidor rook defense",
+      "static_x22": 37,
+      "static_x24": 37,
+      "delta_static": 0,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "a5a6",
+        "score_cp": 0,
+        "nodes": 23165,
+        "nps": 1968841
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "a5a6",
+        "score_cp": 0,
+        "nodes": 25581,
+        "nps": 1913384
+      },
+      "delta_search": 0,
+      "move_match": true
+    },
+    {
+      "id": "COMP_14",
+      "fen": "8/5pk1/7p/R6P/8/3K4/8/7r w - - 0 56",
+      "theme": "Tarrasch rook behind pawn",
+      "static_x22": -95,
+      "static_x24": -117,
+      "delta_static": -22,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "d3c2",
+        "score_cp": -144,
+        "nodes": 45162,
+        "nps": 1917015
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "d3c2",
+        "score_cp": -165,
+        "nodes": 39085,
+        "nps": 1944624
+      },
+      "delta_search": -21,
+      "move_match": true
+    },
+    {
+      "id": "COMP_15",
+      "fen": "8/8/4k3/3R4/8/3K4/8/7r w - - 0 57",
+      "theme": "Active rook cutting off king",
+      "static_x22": 0,
+      "static_x24": 0,
+      "delta_static": 0,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "d5a5",
+        "score_cp": 0,
+        "nodes": 18287,
+        "nps": 2013853
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "d5a5",
+        "score_cp": 0,
+        "nodes": 25107,
+        "nps": 2032774
+      },
+      "delta_search": 0,
+      "move_match": true
+    },
+    {
+      "id": "COMP_16",
+      "fen": "r1bq1rk1/pp2bppp/2n1pn2/2pp4/2PP4/2N1PN2/PP2BPPP/R1BQ1RK1 w - - 0 8",
+      "theme": "Symmetrical central struggle",
+      "static_x22": 18,
+      "static_x24": 26,
+      "delta_static": 8,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "a2a3",
+        "score_cp": 7,
+        "nodes": 479501,
+        "nps": 1017838
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "f1e1",
+        "score_cp": 6,
+        "nodes": 431743,
+        "nps": 1144490
+      },
+      "delta_search": -1,
+      "move_match": false
+    },
+    {
+      "id": "COMP_17",
+      "fen": "r2q1rk1/1bp1bppp/p1n1pn2/1p6/3P4/2NBPN2/PP3PPP/R1BQ1RK1 w - - 0 11",
+      "theme": "QID central tension",
+      "static_x22": 46,
+      "static_x24": 42,
+      "delta_static": -4,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "a2a3",
+        "score_cp": 16,
+        "nodes": 304176,
+        "nps": 580328
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "a2a3",
+        "score_cp": 17,
+        "nodes": 291931,
+        "nps": 468893
+      },
+      "delta_search": 1,
+      "move_match": true
+    },
+    {
+      "id": "COMP_18",
+      "fen": "r1b2rk1/ppqn1ppp/2pbpn2/3p4/2PP4/1PN1PN2/PB2BPPP/R2Q1RK1 b - - 0 10",
+      "theme": "Capablanca freeing maneuver",
+      "static_x22": 32,
+      "static_x24": 36,
+      "delta_static": 4,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "f6g4",
+        "score_cp": -24,
+        "nodes": 346015,
+        "nps": 538692
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "e6e5",
+        "score_cp": -2,
+        "nodes": 378377,
+        "nps": 594202
+      },
+      "delta_search": 22,
+      "move_match": false
+    },
+    {
+      "id": "COMP_19",
+      "fen": "r1bq1rk1/1pp2ppp/p1np1n2/4p3/B3P3/2PP1N2/PP1N1PPP/R2Q1RK1 b - - 1 9",
+      "theme": "Ruy Lopez delayed exchange",
+      "static_x22": 61,
+      "static_x24": 63,
+      "delta_static": 2,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "b7b5",
+        "score_cp": 15,
+        "nodes": 84119,
+        "nps": 537465
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "b7b5",
+        "score_cp": 8,
+        "nodes": 183348,
+        "nps": 670217
+      },
+      "delta_search": -7,
+      "move_match": true
+    },
+    {
+      "id": "COMP_20",
+      "fen": "r1bqkb1r/pp3ppp/2n1pn2/2pp4/3P4/2N1PN2/PPP1BPPP/R1BQK2R w KQkq - 2 6",
+      "theme": "English symmetric development",
+      "static_x22": 25,
+      "static_x24": 31,
+      "delta_static": 6,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "e2b5",
+        "score_cp": 1,
+        "nodes": 138822,
+        "nps": 591938
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "a2a3",
+        "score_cp": 5,
+        "nodes": 348704,
+        "nps": 631759
+      },
+      "delta_search": 4,
+      "move_match": false
+    },
+    {
+      "id": "COMP_21",
+      "fen": "8/5pk1/4e1p1/8/3K4/5B2/8/8 w - - 0 50",
+      "theme": "Opposite colored bishops",
+      "static_x22": null,
+      "static_x24": null,
+      "delta_static": 0,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 0,
+        "bestmove": "",
+        "score_cp": null,
+        "nodes": 0,
+        "nps": 0
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 0,
+        "bestmove": "",
+        "score_cp": null,
+        "nodes": 0,
+        "nps": 0
+      },
+      "delta_search": 0,
+      "move_match": true
+    },
+    {
+      "id": "COMP_22",
+      "fen": "8/5pk1/6p1/4b3/3K4/5B2/8/8 w - - 0 52",
+      "theme": "Bishop trade decision",
+      "static_x22": -22,
+      "static_x24": -18,
+      "delta_static": 4,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "d4e5",
+        "score_cp": 0,
+        "nodes": 5298,
+        "nps": 2176753
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "d4e5",
+        "score_cp": 2,
+        "nodes": 6609,
+        "nps": 2061961
+      },
+      "delta_search": 2,
+      "move_match": true
+    },
+    {
+      "id": "COMP_23",
+      "fen": "8/5pk1/6p1/8/3Kn3/5N2/8/8 w - - 0 53",
+      "theme": "Knight centralization",
+      "static_x22": -24,
+      "static_x24": -20,
+      "delta_static": 4,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "d4e4",
+        "score_cp": -1,
+        "nodes": 7515,
+        "nps": 2324107
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "d4e4",
+        "score_cp": 0,
+        "nodes": 11143,
+        "nps": 1423898
+      },
+      "delta_search": 1,
+      "move_match": true
+    },
+    {
+      "id": "COMP_24",
+      "fen": "8/5pk1/4b1p1/8/3K4/5N2/8/8 w - - 0 55",
+      "theme": "Knight vs bishop",
+      "static_x22": -365,
+      "static_x24": -362,
+      "delta_static": 3,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "d4e5",
+        "score_cp": -361,
+        "nodes": 14770,
+        "nps": 2187532
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "d4e5",
+        "score_cp": -358,
+        "nodes": 18767,
+        "nps": 2235870
+      },
+      "delta_search": 3,
+      "move_match": true
+    },
+    {
+      "id": "COMP_25",
+      "fen": "8/1P6/8/8/8/8/1p6/k1K5 w - - 0 1",
+      "theme": "Pawn race promotion",
+      "static_x22": -583,
+      "static_x24": -571,
+      "delta_static": 12,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "c1d1",
+        "score_cp": -892,
+        "nodes": 5966,
+        "nps": 2229780
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "c1d2",
+        "score_cp": -860,
+        "nodes": 5770,
+        "nps": 2303025
+      },
+      "delta_search": 32,
+      "move_match": false
+    },
+    {
+      "id": "COMP_26",
+      "fen": "8/8/8/p7/P7/8/8/k1K5 w - - 0 1",
+      "theme": "Square of the king rule",
+      "static_x22": 46,
+      "static_x24": 46,
+      "delta_static": 0,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "c1c2",
+        "score_cp": -95,
+        "nodes": 1814,
+        "nps": 2712726
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "c1c2",
+        "score_cp": -85,
+        "nodes": 1858,
+        "nps": 2882407
+      },
+      "delta_search": 10,
+      "move_match": true
+    },
+    {
+      "id": "COMP_27",
+      "fen": "8/8/8/8/4k3/8/4p3/4K3 w - - 0 1",
+      "theme": "King in front of pawn fortress",
+      "static_x22": 0,
+      "static_x24": 0,
+      "delta_static": 0,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "e1e2",
+        "score_cp": 0,
+        "nodes": 72,
+        "nps": 1722488
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "e1e2",
+        "score_cp": 0,
+        "nodes": 86,
+        "nps": 1396103
+      },
+      "delta_search": 0,
+      "move_match": true
+    },
+    {
+      "id": "COMP_28",
+      "fen": "8/8/8/4p3/4k3/8/4P3/4K3 w - - 0 1",
+      "theme": "Opposition zugzwang",
+      "static_x22": 4,
+      "static_x24": 4,
+      "delta_static": 0,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "e1f2",
+        "score_cp": -13,
+        "nodes": 7946,
+        "nps": 2523501
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "e1f2",
+        "score_cp": -7,
+        "nodes": 6743,
+        "nps": 2465988
+      },
+      "delta_search": 6,
+      "move_match": true
+    },
+    {
+      "id": "COMP_29",
+      "fen": "8/8/8/4k3/4p3/4P3/8/4K3 w - - 0 1",
+      "theme": "Mutual zugzwang",
+      "static_x22": 9,
+      "static_x24": 9,
+      "delta_static": 0,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "e1d2",
+        "score_cp": -7,
+        "nodes": 4858,
+        "nps": 2870479
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "e1d2",
+        "score_cp": -7,
+        "nodes": 4731,
+        "nps": 3016257
+      },
+      "delta_search": 0,
+      "move_match": true
+    },
+    {
+      "id": "COMP_30",
+      "fen": "8/8/4k3/8/4P3/4K3/8/8 b - - 0 1",
+      "theme": "Key square cession",
+      "static_x22": -90,
+      "static_x24": -131,
+      "delta_static": -41,
+      "search_x22": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "e6e5",
+        "score_cp": -136,
+        "nodes": 5919,
+        "nps": 2735971
+      },
+      "search_x24": {
+        "depth_target": 8,
+        "depth_reached": 8,
+        "bestmove": "e6e5",
+        "score_cp": -149,
+        "nodes": 8563,
+        "nps": 2862826
+      },
+      "delta_search": -13,
+      "move_match": true
+    }
+  ]
+}

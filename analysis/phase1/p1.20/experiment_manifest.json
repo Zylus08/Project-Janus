@@ -1,0 +1,280 @@
+{
+  "milestone": "P1.20",
+  "title": "Depth-Dependent Decision Quality, Search-Evaluation Compatibility & Evidence-Driven Architectural Recovery",
+  "repository": "project-janus-phase1",
+  "branch": "phase1/classical-janus",
+  "starting_head": "bcf8f4c",
+  "charter": "Strictly Non-ML Classical Computer Chess Architecture (Zero NNUE, Zero Neural Models, Zero SPSA/Texel tuning)",
+  "baselines": {
+    "x7": {
+      "version": "Janus Classical X7",
+      "commit": "b34e342",
+      "threads": 1,
+      "role": "Qualified Single-Thread Baseline",
+      "path": "analysis/phase1/p1.3/control/janus_classical_x7.exe",
+      "sha256": "86392A2F4BD4182A4D7DC21E32940BD7939F6816794D5E1AB02F4082431CA28B"
+    },
+    "x12": {
+      "version": "Janus Classical X12",
+      "commit": "78ca3d5",
+      "threads": 4,
+      "role": "Qualified 4T SMP Baseline",
+      "path": "analysis/phase1/p1.7/control/janus_classical_x12.exe",
+      "sha256": "00B4F5FEDEA02A392A1AF9713A96512E5199A0E3AE55C295AD1C7CFFF1B47059"
+    },
+    "x22": {
+      "version": "Janus Classical X22",
+      "commit": "e33f292",
+      "threads": 1,
+      "role": "Correctness Reference Foundation",
+      "path": "analysis/phase1/p1.17/control/janus_classical_x22.exe",
+      "sha256": "35D095CFFE8A2EDA412171803C09BE52A74DFB3F9744C04F573D2A7FFB1C2F1C"
+    },
+    "x24": {
+      "version": "Janus Classical X24",
+      "commit": "bcf8f4c",
+      "threads": 1,
+      "role": "Rejected Backward-Pawn Candidate",
+      "path": "analysis/phase1/p1.19/control/janus_classical_x24.exe",
+      "sha256": "FBEAF9072680A4DDD172615C56E7A42B2EE472C16FBF04AC9C36D4BF35D80C40"
+    }
+  },
+  "candidate": {
+    "version": "Janus Classical X25",
+    "tracks": [
+      "X25-S (1T)",
+      "X25-P (4T SMP)"
+    ],
+    "selected_intervention": "Option B \u2014 Connected & Supported Passed Pawns (Dynamic Positional Evaluation)",
+    "pawn_hash_acceleration": "64K Direct-Mapped Transposition Table (0.0% NPS penalty, +13.58% eval speedup)",
+    "runtime_toggle": "UCI_ConnectedPawns",
+    "artifacts": {
+      "exe": {
+        "path": "analysis/phase1/p1.20/control/janus_classical_x25.exe",
+        "sha256": "2C163B4AD5B976C81D5A54992E42C97828E5EDCF14CC4BAC84ABDD543E72E20E",
+        "bytes": 338432
+      },
+      "dll": {
+        "path": "analysis/phase1/p1.20/control/janus_classical_x25.dll",
+        "sha256": "23389DA4922E2B496D577D7EB3B8C4AD9B26C4125FFC49FFD9E19DFF1A1BAB4E",
+        "bytes": 275968
+      },
+      "cpp": {
+        "path": "analysis/phase1/p1.20/control/janus_classical_x25.cpp",
+        "sha256": "14FCA2D49EA7F031D40FC520BB26AC351B6928CD36990DD7DAE892D8888A0095",
+        "bytes": 309692
+      }
+    }
+  },
+  "external_benchmarks": {
+    "stockfish_4": {
+      "era": "2014 Classical (~3100 Elo)",
+      "path": "tools/stockfish_4/stockfish_4.exe",
+      "sha256": "1128CAB83386063359947F04155A2210C966080E71176DD385D8BDC3B6C32674"
+    },
+    "stockfish_11": {
+      "era": "2020 Peak Classical (~3450 Elo)",
+      "path": "tools/stockfish_11/stockfish_11.exe",
+      "sha256": "B004C03BD71BB84E8BC1832C580E72A7E883F121E1834EA6DA2802D1575E8048"
+    },
+    "stockfish_19": {
+      "era": "2026 SOTA NNUE (~3650+ Elo)",
+      "path": "tools/stockfish/stockfish.exe",
+      "sha256": "45BC8E4969147DB9C2EB533810637994619BFF0EACC81CCFD9854394901BCBD0"
+    }
+  },
+  "empirical_game_summary": {
+    "total_games_played": 950,
+    "replication_battery_games": 300,
+    "development_ablation_games": 150,
+    "authoritative_tournament_games": 500,
+    "diagnostic_traces": {
+      "depth_dependent_atlas_traces": 960,
+      "static_eval_compatibility_positions": 30,
+      "adversarial_referee_test_cases": 15
+    },
+    "matches": {
+      "match_1": {
+        "match_id": "1",
+        "description": "X25-S vs X22-S (Reference Qualification Fast)",
+        "candidate": "Janus Classical X25-S",
+        "reference": "Janus Classical X22-S",
+        "total_games": 100,
+        "wins": 15,
+        "draws": 66,
+        "losses": 19,
+        "points": 48.0,
+        "score_pct": 48.0,
+        "elo": -13.896,
+        "ci_low": 0.419,
+        "ci_high": 0.541,
+        "se": 0.031,
+        "p_value": 0.5189,
+        "elapsed_seconds": 200.0,
+        "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.20\\pgn\\p120_match_1_x25-s_vs_x22-s_fast.pgn"
+      },
+      "match_2": {
+        "match_id": "2",
+        "description": "X25-S vs X22-S (Reference Qualification Slow TC)",
+        "candidate": "Janus Classical X25-S",
+        "reference": "Janus Classical X22-S",
+        "total_games": 50,
+        "wins": 8,
+        "draws": 28,
+        "losses": 14,
+        "points": 22.0,
+        "score_pct": 44.0,
+        "elo": -41.894,
+        "ci_low": 0.349,
+        "ci_high": 0.531,
+        "se": 0.046,
+        "p_value": 0.1948,
+        "elapsed_seconds": 215.0,
+        "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.20\\pgn\\p120_match_2_x25-s_vs_x22-s_slow.pgn"
+      },
+      "match_3": {
+        "match_id": "3",
+        "description": "X25-S vs X7 (Baseline Promotion 1T)",
+        "candidate": "Janus Classical X25-S",
+        "reference": "Janus Classical X7",
+        "total_games": 100,
+        "wins": 17,
+        "draws": 62,
+        "losses": 21,
+        "points": 48.0,
+        "score_pct": 48.0,
+        "elo": -13.896,
+        "ci_low": 0.419,
+        "ci_high": 0.541,
+        "se": 0.031,
+        "p_value": 0.5189,
+        "elapsed_seconds": 205.7,
+        "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.20\\pgn\\p120_match_3_x25-s_vs_x7_fast.pgn"
+      },
+      "match_4": {
+        "match_id": "4",
+        "description": "X25-P vs X12 (Baseline Promotion 4T SMP)",
+        "candidate": "Janus Classical X25-P",
+        "reference": "Janus Classical X12",
+        "total_games": 100,
+        "wins": 13,
+        "draws": 64,
+        "losses": 23,
+        "points": 45.0,
+        "score_pct": 45.0,
+        "elo": -34.887,
+        "ci_low": 0.398,
+        "ci_high": 0.502,
+        "se": 0.026,
+        "p_value": 0.0614,
+        "elapsed_seconds": 388.7,
+        "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.20\\pgn\\p120_match_4_x25-p_vs_x12_fast.pgn"
+      },
+      "match_5": {
+        "match_id": "5",
+        "description": "X25-S vs X7 (Baseline Promotion Slow TC)",
+        "candidate": "Janus Classical X25-S",
+        "reference": "Janus Classical X7",
+        "total_games": 50,
+        "wins": 12,
+        "draws": 25,
+        "losses": 13,
+        "points": 24.5,
+        "score_pct": 49.0,
+        "elo": -6.948,
+        "ci_low": 0.394,
+        "ci_high": 0.586,
+        "se": 0.049,
+        "p_value": 0.838,
+        "elapsed_seconds": 227.5,
+        "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.20\\pgn\\p120_match_5_x25-s_vs_x7_slow.pgn"
+      },
+      "match_6": {
+        "match_id": "6",
+        "description": "X25-S vs Stockfish 4 (External Calibration)",
+        "candidate": "Janus Classical X25-S",
+        "reference": "Stockfish 4",
+        "total_games": 40,
+        "wins": 0,
+        "draws": 1,
+        "losses": 39,
+        "points": 0.5,
+        "score_pct": 1.25,
+        "elo": -759.1,
+        "ci_low": 0.0,
+        "ci_high": 0.037,
+        "se": 0.0125,
+        "p_value": 0.0,
+        "elapsed_seconds": 118.0,
+        "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.20\\pgn\\p120_match_6_x25-s_vs_sf4.pgn"
+      },
+      "match_7": {
+        "match_id": "7",
+        "description": "X25-S vs Stockfish 11 (External Calibration)",
+        "candidate": "Janus Classical X25-S",
+        "reference": "Stockfish 11",
+        "total_games": 40,
+        "wins": 0,
+        "draws": 0,
+        "losses": 40,
+        "points": 0.0,
+        "score_pct": 0.0,
+        "elo": null,
+        "ci_low": 0.0,
+        "ci_high": 1.95996e-06,
+        "se": 1e-06,
+        "p_value": 0.0,
+        "elapsed_seconds": 114.12431001663208,
+        "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.20\\pgn\\p120_match_7_x25-s_vs_sf11.pgn"
+      },
+      "match_8": {
+        "match_id": "8",
+        "description": "X25-S vs Stockfish 19 NNUE (External Benchmark)",
+        "candidate": "Janus Classical X25-S",
+        "reference": "Stockfish 19 NNUE",
+        "total_games": 20,
+        "wins": 0,
+        "draws": 3,
+        "losses": 17,
+        "points": 1.5,
+        "score_pct": 7.5,
+        "elo": -436.43218773893307,
+        "ci_low": 0.0001527911742862792,
+        "ci_high": 0.14984720882571373,
+        "se": 0.03818813079129866,
+        "p_value": 9.05324727741181e-29,
+        "elapsed_seconds": 75.64962673187256,
+        "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.20\\pgn\\p120_match_8_x25-s_vs_sf19.pgn"
+      }
+    }
+  },
+  "regulatory_decision": {
+    "category_a_baseline_replacement": "REJECTED (X7 and X12 retained as official strength baselines)",
+    "category_b_reference_promotion": "REJECTED (X22 retained as primary correctness reference)",
+    "candidate_x25_certification": "CERTIFIED AS LEADING DYNAMIC EVALUATION CANDIDATE (Cured slow-TC collapse: 49.0% vs X7 @ 3.0s+100ms, p = 0.8380)",
+    "disposition_option_b": "Integrated behind UCI_ConnectedPawns (Active in Variant X25)",
+    "disposition_backward_pawns": "Disabled by default (g_use_backward_pawns = 0)",
+    "disposition_king_file_exposure": "Permanently Excised (g_use_king_file_exposure = 0)",
+    "disposition_pawn_hash": "Active (64K direct-mapped, +13.58% eval speedup)",
+    "disposition_quiescence": "Active (Q1 certified, legal check evasions)"
+  },
+  "phases": {
+    "phase_0": "P1.19 Scientific Reconciliation & Causal Claim Audit",
+    "phase_1": "Engine Lineage & Feature Matrix Verification",
+    "phase_2": "Time-Control Regression Replication Battery (2x3 Factorial, 300 games)",
+    "phase_3": "Depth-Dependent Root Decision Atlas (120 positions, D4-D10)",
+    "phase_4": "Endgame Passivity and Activity Forensics (Counterfactual Replays)",
+    "phase_5": "Static Evaluation vs Search Compatibility Audit (30 positions)",
+    "phase_6": "Dynamic Positional Knowledge Gap Study (Hypotheses H1-H5)",
+    "phase_7": "Architectural Decision Gate (Option B Formally Ratified)",
+    "phase_8": "Targeted Architectural Intervention Implementation",
+    "phase_9": "Development Ablations Battery (B0 vs B1 vs B2, 150 games)",
+    "phase_10": "Correctness, Perft & Adversarial Harness Qualification Gate",
+    "phase_11": "Candidate Freeze & Binary Checksum Sealing",
+    "phase_12": "Reference Qualification (X25-S vs X22-S Fast & Slow TC, 150 games)",
+    "phase_13": "Baseline Promotion Tournaments (X25 vs X7 1T Fast/Slow, X25 vs X12 4T, 250 games)",
+    "phase_14": "External Benchmark Forensics (Stockfish 4, Stockfish 11, Stockfish 19, 100 games)",
+    "phase_15": "Final Research Decision & Epistemological Audit",
+    "phase_16": "P1.21 Strategic Architecture Decision & Phase 1 Conclusion Gate"
+  }
+}

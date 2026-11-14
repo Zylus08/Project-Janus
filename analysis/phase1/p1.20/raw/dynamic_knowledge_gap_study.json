@@ -1,0 +1,52 @@
+[
+  {
+    "id": "H1_PASSER_MOBILITY",
+    "title": "Passed Pawn Mobility: Blocked vs Unblocked",
+    "fen_blocked": "8/8/3k4/8/3P4/3K4/8/8 w - - 0 1",
+    "fen_unblocked": "8/8/8/3k4/P7/3K4/8/8 w - - 0 1",
+    "current_behavior": "Janus Classical X22 scores passed pawns strictly by rank without checking advance square control or blockader presence.",
+    "search_impact": "At slow TC, engine overvalues blockaded passers that cannot advance, underestimating the opponent's blockade strength.",
+    "risk_double_counting": "Low if tied to empty advance square check.",
+    "runtime_cost_est": "+0.8% eval latency (single bitboard shift)."
+  },
+  {
+    "id": "H2_CONNECTED_PASSERS",
+    "title": "Connected Passers: Mutually Supporting Advancing Pawns",
+    "fen_connected": "8/8/4k3/1PP5/4K3/8/8/8 w - - 0 1",
+    "fen_isolated": "8/8/4k3/P1P5/4K3/8/8/8 w - - 0 1",
+    "current_behavior": "Janus Classical X22 scores b5 and c5 independently as isolated passers, giving zero bonus for mutual defense.",
+    "search_impact": "Engine fails to realize that connected passers on 5th/6th rank are unstoppable by a lone king or minor piece.",
+    "risk_double_counting": "Low; passed pawn mask adjacency check is cleanly orthogonal to base passed pawn score.",
+    "runtime_cost_est": "+1.2% eval latency (computed inside 64K pawn hash, amortized to 0.0% in search)."
+  },
+  {
+    "id": "H3_KING_SAFETY_ATTACK_ROUTE",
+    "title": "King Safety: Open File with vs without Enemy Attacking Pieces",
+    "fen_open_danger": "r4rk1/pp1n1ppp/2p1pn2/8/2PP4/2N2N2/PP2BPPP/R2Q1RK1 w - - 0 11",
+    "fen_open_benign": "4rk2/pp1n1ppp/2p1pn2/8/2PP4/2N2N2/PP2BPPP/4RRK1 w - - 0 11",
+    "current_behavior": "King shelter evaluates missing pawns in shelter files. Milestone P1.18 Track B penalized open files unconditionally, causing severe regression.",
+    "search_impact": "Static file penalties cause premature shield pushes unless gated by enemy attacking piece count.",
+    "risk_double_counting": "High risk of overlap with King Ring Attackers if not carefully structured.",
+    "runtime_cost_est": "+2.5% eval latency (requires enemy ray intersection)."
+  },
+  {
+    "id": "H4_TRAPPED_PIECES",
+    "title": "Trapped Pieces: Dominated Minor Pieces behind Pawn Chains",
+    "fen_trapped_bishop": "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP4/5NP1/PP2PPBP/RNBQK2R b KQkq - 1 5",
+    "fen_free_bishop": "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP4/4PN2/PP1B1PPP/RN1QKB1R b KQkq - 1 5",
+    "current_behavior": "Evaluates mobility linearly based on legal pseudo-move count. No discrete trap penalty.",
+    "search_impact": "Allows bishops to get locked out on a7/h7 or knights on a8/h8 because mobility only drops by 2-3 cp.",
+    "risk_double_counting": "Moderate overlap with mobility; must only trigger when mobility is strictly zero and piece is cut off.",
+    "runtime_cost_est": "+1.5% eval latency."
+  },
+  {
+    "id": "H5_PIECE_ACTIVITY_VS_PASSIVITY",
+    "title": "Piece Activity: Passive Weakness Defense vs Active Rook Play",
+    "fen_passive_defense": "8/5pk1/7p/R6P/8/3K4/8/7r w - - 0 56",
+    "fen_active_counterplay": "8/5pk1/7p/7P/R7/3K4/8/7r w - - 0 56",
+    "current_behavior": "Static pawn penalties (-20 cp) exceed rook mobility increments (+2 to +4 cp), incentivizing passive defense of doomed pawns.",
+    "search_impact": "In Match 4, X24 passively defended backward pawns, allowing X7's active rooks to dominate.",
+    "risk_double_counting": "Low; involves adjusting rook 7th rank / open file bonus and endgame mobility weights.",
+    "runtime_cost_est": "+0.5% eval latency."
+  }
+]

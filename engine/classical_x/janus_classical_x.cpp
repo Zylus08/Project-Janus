@@ -326,7 +326,7 @@ static int  g_rfp_margin_per_depth = 120;      // Margin per ply (120 for 1T, 90
 static bool g_use_aspiration_window = true;    // Phase 5: Aspiration Windows (delta = 25 cp)
 static int  g_aspiration_delta = 25;           // Aspiration delta
 static bool g_movepicker_stage_reform = false; // Phase 1, Milestone P1.14: Good Captures -> Killers -> Countermove -> Quiets -> Bad Captures
-static std::string g_search_variant = "X24";    // Active variant identifier (Default Candidate X23)
+static std::string g_search_variant = "X25";    // Active variant identifier (Default Candidate X25)
 
 // Milestone P1.15 Adaptive Capture Ordering, History Modes & Exact Search Contract
 static int  g_adaptive_capture_mode = 0; // 0=C0 (Frozen X19), 1=C1 (Near-even [-100, 0)), 2=C2 (Endgame conditional), 3=C3 (Defensive / check exception)
@@ -338,6 +338,7 @@ static int  g_qsearch_mode = 1;          // 0=Q0 (Frozen legacy), 1=Q1 (Correcte
 static int  g_use_true_outposts = 1;     // 0=Legacy E5 outposts, 1=True outposts with enemy pawn immunity & central bishop outposts
 static int  g_use_backward_pawns = 0;    // P1.18 Track A: 0=Disabled (Legacy), 1=Classical Backward Pawn Detection (-10 mg / -15 eg)
 static int  g_use_king_file_exposure = 0;// P1.18 Track B: 0=Disabled (Legacy), 1=Open & Semi-Open File King Exposure Penalty
+static int  g_use_connected_pawns = 1;   // P1.20 Option B: 0=Disabled (Legacy X22/X7), 1=Enhanced Connected & Supported Passed Pawns
 static uint64_t g_telemetry_qsearch_in_check = 0;
 static uint64_t g_telemetry_qsearch_checkmates = 0;
 static uint64_t g_telemetry_qsearch_checks_generated = 0;
@@ -889,6 +890,47 @@ EXPORT void native_apply_search_variant(const char* var_str) {
             g_lmp_mode = 0;
             g_rfp_margin_per_depth = 120;
         } else { // Track P: X22-P (4T)
+            g_eval_mode = 10; // E10 Enhanced Classical Evaluation
+            g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = true; // 64K entry Pawn Hash Table
+            g_dynamic_time_mgmt = true;
+            g_use_lmp = true; // Safe Late Move Pruning
+            g_lmp_mode = 1; // Conservative Quadratic LMP
+            g_lmp_max_depth = 4;
+            g_rfp_margin_per_depth = 90;
+        }
+    } else if (var == "X25") { // P1.20 Candidate: Option B (Connected & Supported Passed Pawns + 64K Pawn Hash, Zero Backward Pawns)
+        g_use_staged_movegen = true;
+        g_quiescence_see_mode = 2;
+        g_use_see_in_quiescence = true;
+        g_use_null_move_pruning = true;
+        g_use_reverse_futility = true;
+        g_use_aspiration_window = true;
+        g_conthist_mode = 3; // H3
+        g_dynamic_lmr_mode = 3; // L3 Calibrated LMR
+        g_use_pruning_safety = false;
+        g_movepicker_stage_reform = true;
+        g_adaptive_capture_mode = 1; // C1 Near-Even Capture Promotion
+        g_qsearch_mode = 1; // Q1 Corrected Quiescence Search
+        g_use_true_outposts = 1; // True Outposts with Pawn Immunity
+        g_use_backward_pawns = 0; // Strictly Disabled
+        g_use_king_file_exposure = 0; // Strictly Disabled
+        g_use_connected_pawns = 1; // Option B Enabled
+        if (g_num_threads == 1) { // Track S: X25-S (1T)
+            g_eval_mode = 5; // E5 Combined Classical Eval
+            g_tactical_ordering_mode = 2; // Enable Countermove table for staging
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = true; // 64K entry Pawn Hash Table
+            g_dynamic_time_mgmt = false;
+            g_use_lmp = false;
+            g_lmp_mode = 0;
+            g_rfp_margin_per_depth = 120;
+        } else { // Track P: X25-P (4T)
             g_eval_mode = 10; // E10 Enhanced Classical Evaluation
             g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
             g_singular_extension_mode = 0; // S0 Off
@@ -2063,32 +2105,65 @@ static void eval_pawn_structure(const NativeBoard* b, int mg[2], int eg[2]) {
         uint64_t enemy_pawns = b->pieces[1 - c][PAWN];
 
         // 1. Passed Pawns
+        uint64_t passed_bb = 0;
+        uint64_t tmp_p = my_pawns;
+        while (tmp_p) {
+            int sq = bitscan_forward(tmp_p);
+            tmp_p &= tmp_p - 1;
+            bool is_passed = (c == WHITE) ? ((enemy_pawns & white_passed_pawn_mask[sq]) == 0)
+                                          : ((enemy_pawns & black_passed_pawn_mask[sq]) == 0);
+            if (is_passed) passed_bb |= (1ULL << sq);
+        }
+
         uint64_t p = my_pawns;
         while (p) {
             int sq = bitscan_forward(p);
             p &= p - 1;
             int f = sq % 8;
             int r = (c == WHITE) ? (sq / 8) : (7 - (sq / 8));
-            bool is_passed = (c == WHITE) ? ((enemy_pawns & white_passed_pawn_mask[sq]) == 0)
-                                          : ((enemy_pawns & black_passed_pawn_mask[sq]) == 0);
+            bool is_passed = (passed_bb & (1ULL << sq)) != 0;
             if (is_passed) {
                 mg[c] += PASSED_PAWN_BONUS_MG[r];
                 eg[c] += PASSED_PAWN_BONUS_EG[r];
 
-                // Connected passer bonus: friendly pawn on adjacent file within +/- 1 rank
-                uint64_t adj = my_pawns & adjacent_files_mask(f);
-                int act_r = sq / 8;
-                uint64_t near_ranks = RANK_MASKS[act_r] | (act_r > 0 ? RANK_MASKS[act_r - 1] : 0) | (act_r < 7 ? RANK_MASKS[act_r + 1] : 0);
-                if (adj & near_ranks) {
-                    mg[c] += 15;
-                    eg[c] += 25;
-                }
+                if (g_use_connected_pawns) {
+                    // Option B: Enhanced Connected & Supported Passed Pawns
+                    uint64_t adj_passers = passed_bb & adjacent_files_mask(f);
+                    int act_r = sq / 8;
+                    uint64_t near_ranks = RANK_MASKS[act_r] | (act_r > 0 ? RANK_MASKS[act_r - 1] : 0) | (act_r < 7 ? RANK_MASKS[act_r + 1] : 0);
+                    if (adj_passers & near_ranks) {
+                        bool advanced = (r >= 4);
+                        if (advanced) {
+                            mg[c] += 30;
+                            eg[c] += 55;
+                        } else {
+                            mg[c] += 20;
+                            eg[c] += 35;
+                        }
+                    }
 
-                // Supported passer bonus
-                uint64_t defenders = (c == WHITE) ? pawn_attacks[BLACK][sq] : pawn_attacks[WHITE][sq];
-                if (defenders & my_pawns) {
-                    mg[c] += 10;
-                    eg[c] += 20;
+                    // Supported passer bonus (defended by friendly pawn from behind)
+                    uint64_t defenders = (c == WHITE) ? pawn_attacks[BLACK][sq] : pawn_attacks[WHITE][sq];
+                    if (defenders & my_pawns) {
+                        mg[c] += 15;
+                        eg[c] += 25;
+                    }
+                } else {
+                    // Legacy X22 / X7 logic
+                    uint64_t adj = my_pawns & adjacent_files_mask(f);
+                    int act_r = sq / 8;
+                    uint64_t near_ranks = RANK_MASKS[act_r] | (act_r > 0 ? RANK_MASKS[act_r - 1] : 0) | (act_r < 7 ? RANK_MASKS[act_r + 1] : 0);
+                    if (adj & near_ranks) {
+                        mg[c] += 15;
+                        eg[c] += 25;
+                    }
+
+                    // Supported passer bonus
+                    uint64_t defenders = (c == WHITE) ? pawn_attacks[BLACK][sq] : pawn_attacks[WHITE][sq];
+                    if (defenders & my_pawns) {
+                        mg[c] += 10;
+                        eg[c] += 20;
+                    }
                 }
             }
         }
@@ -2415,31 +2490,60 @@ static void eval_pawn_structure_v2(const NativeBoard* b, int mg[2], int eg[2], u
         uint64_t enemy_pawns = b->pieces[1 - c][PAWN];
 
         // 1. Passed Pawns & Candidate Passers
+        // First pass: populate passed_bb[c]
+        uint64_t tmp_p = my_pawns;
+        while (tmp_p) {
+            int sq = bitscan_forward(tmp_p);
+            tmp_p &= tmp_p - 1;
+            bool is_passed = (c == WHITE) ? ((enemy_pawns & white_passed_pawn_mask[sq]) == 0)
+                                          : ((enemy_pawns & black_passed_pawn_mask[sq]) == 0);
+            if (is_passed) passed_bb[c] |= (1ULL << sq);
+        }
+
         uint64_t p = my_pawns;
         while (p) {
             int sq = bitscan_forward(p);
             p &= p - 1;
             int f = sq % 8;
             int r = (c == WHITE) ? (sq / 8) : (7 - (sq / 8));
-            bool is_passed = (c == WHITE) ? ((enemy_pawns & white_passed_pawn_mask[sq]) == 0)
-                                          : ((enemy_pawns & black_passed_pawn_mask[sq]) == 0);
+            bool is_passed = (passed_bb[c] & (1ULL << sq)) != 0;
             if (is_passed) {
-                passed_bb[c] |= (1ULL << sq);
                 mg[c] += PASSED_PAWN_BONUS_MG[r];
                 eg[c] += PASSED_PAWN_BONUS_EG[r];
 
-                // Connected passer bonus
-                uint64_t adj = my_pawns & adjacent_files_mask(f);
-                int act_r = sq / 8;
-                uint64_t near_ranks = RANK_MASKS[act_r] | (act_r > 0 ? RANK_MASKS[act_r - 1] : 0) | (act_r < 7 ? RANK_MASKS[act_r + 1] : 0);
-                if (adj & near_ranks) {
-                    mg[c] += 15; eg[c] += 25;
-                }
+                if (g_use_connected_pawns) {
+                    // Option B: Enhanced Connected & Supported Passed Pawns
+                    uint64_t adj_passers = passed_bb[c] & adjacent_files_mask(f);
+                    int act_r = sq / 8;
+                    uint64_t near_ranks = RANK_MASKS[act_r] | (act_r > 0 ? RANK_MASKS[act_r - 1] : 0) | (act_r < 7 ? RANK_MASKS[act_r + 1] : 0);
+                    if (adj_passers & near_ranks) {
+                        bool advanced = (r >= 4);
+                        if (advanced) {
+                            mg[c] += 30; eg[c] += 55;
+                        } else {
+                            mg[c] += 20; eg[c] += 35;
+                        }
+                    }
 
-                // Supported passer bonus (defended by friendly pawn)
-                uint64_t defenders = (c == WHITE) ? pawn_attacks[BLACK][sq] : pawn_attacks[WHITE][sq];
-                if (defenders & my_pawns) {
-                    mg[c] += 15; eg[c] += 25;
+                    // Supported passer bonus (defended by friendly pawn)
+                    uint64_t defenders = (c == WHITE) ? pawn_attacks[BLACK][sq] : pawn_attacks[WHITE][sq];
+                    if (defenders & my_pawns) {
+                        mg[c] += 15; eg[c] += 25;
+                    }
+                } else {
+                    // Legacy logic
+                    uint64_t adj = my_pawns & adjacent_files_mask(f);
+                    int act_r = sq / 8;
+                    uint64_t near_ranks = RANK_MASKS[act_r] | (act_r > 0 ? RANK_MASKS[act_r - 1] : 0) | (act_r < 7 ? RANK_MASKS[act_r + 1] : 0);
+                    if (adj & near_ranks) {
+                        mg[c] += 15; eg[c] += 25;
+                    }
+
+                    // Supported passer bonus (defended by friendly pawn)
+                    uint64_t defenders = (c == WHITE) ? pawn_attacks[BLACK][sq] : pawn_attacks[WHITE][sq];
+                    if (defenders & my_pawns) {
+                        mg[c] += 15; eg[c] += 25;
+                    }
                 }
             } else {
                 // Candidate passed pawn: no enemy pawn directly ahead, and friendly support >= enemy opposition
@@ -5566,6 +5670,11 @@ EXPORT void native_set_backward_pawns_mode(int mode) {
 EXPORT int native_get_backward_pawns_mode() { return g_use_backward_pawns; }
 EXPORT void native_set_king_file_exposure_mode(int mode) { g_use_king_file_exposure = mode; }
 EXPORT int native_get_king_file_exposure_mode() { return g_use_king_file_exposure; }
+EXPORT void native_set_connected_pawns_mode(int mode) {
+    g_use_connected_pawns = mode;
+    clear_pawn_table();
+}
+EXPORT int native_get_connected_pawns_mode() { return g_use_connected_pawns; }
 EXPORT void native_reset_qsearch_telemetry() {
     g_telemetry_qsearch_in_check = 0;
     g_telemetry_qsearch_checkmates = 0;
@@ -5691,7 +5800,8 @@ static void uci_loop() {
             std::cout << "option name LMRBaseReduction type spin default 1 min 1 max 3" << std::endl;
             std::cout << "option name UseSEEOrdering type check default false" << std::endl;
             std::cout << "option name UseSEEInQuiescence type check default false" << std::endl;
-            std::cout << "option name UCI_Variant type combo default X24 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18 var X19 var X20 var X21 var X22 var X23 var X24" << std::endl;
+            std::cout << "option name UCI_Variant type combo default X25 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18 var X19 var X20 var X21 var X22 var X23 var X24 var X25" << std::endl;
+            std::cout << "option name UCI_ConnectedPawns type check default true" << std::endl;
             std::cout << "option name UCI_AdaptiveCapture type combo default C1 var C0 var C1 var C2 var C3" << std::endl;
             std::cout << "option name UCI_HistoryMode type combo default H0 var H0 var H1 var H2 var H3" << std::endl;
             std::cout << "option name UCI_ExactSearchMode type check default false" << std::endl;
@@ -5877,6 +5987,9 @@ static void uci_loop() {
                     clear_pawn_table();
                 } else if (opt_name == "UCI_KingFileExposure") {
                     g_use_king_file_exposure = (opt_val.empty() || opt_val == "true" || opt_val == "1") ? 1 : 0;
+                } else if (opt_name == "UCI_ConnectedPawns") {
+                    g_use_connected_pawns = (opt_val.empty() || opt_val == "true" || opt_val == "1") ? 1 : 0;
+                    clear_pawn_table();
                 }
             }
                 } else if (cmd == "telemetry_report") {

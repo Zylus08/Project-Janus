@@ -1,0 +1,98 @@
+{
+  "E5_NoHash": {
+    "config": {
+      "id": "E5_NoHash",
+      "eval_mode": 5,
+      "pawn_hash": 0,
+      "name": "Baseline X7 1T (E5 Combined Classical, No Pawn Hash)"
+    },
+    "symmetry": {
+      "mirror_passed": 225,
+      "mirror_rate": 1.0,
+      "invert_passed": 225,
+      "invert_rate": 1.0
+    },
+    "eval_throughput_eps": 498061,
+    "search_benchmarks": {
+      "startpos_nps": 1443946,
+      "startpos_depth": 9,
+      "startpos_nodes": 206742,
+      "kiwipete_nps": 1082133,
+      "kiwipete_depth": 8,
+      "kiwipete_nodes": 607103,
+      "combined_nps": 1263039
+    }
+  },
+  "E5_PawnHash": {
+    "config": {
+      "id": "E5_PawnHash",
+      "eval_mode": 5,
+      "pawn_hash": 1,
+      "name": "E5 Classical + 64K Entry Pawn Hash Table"
+    },
+    "symmetry": {
+      "mirror_passed": 225,
+      "mirror_rate": 1.0,
+      "invert_passed": 225,
+      "invert_rate": 1.0
+    },
+    "eval_throughput_eps": 524690,
+    "search_benchmarks": {
+      "startpos_nps": 2750000,
+      "startpos_depth": 9,
+      "startpos_nodes": 440,
+      "kiwipete_nps": 1091851,
+      "kiwipete_depth": 8,
+      "kiwipete_nodes": 17782,
+      "combined_nps": 1920925
+    }
+  },
+  "E10_NoHash": {
+    "config": {
+      "id": "E10_NoHash",
+      "eval_mode": 10,
+      "pawn_hash": 0,
+      "name": "E10 Enhanced (V2 Pawns + Outposts + Tarrasch, No Hash)"
+    },
+    "symmetry": {
+      "mirror_passed": 225,
+      "mirror_rate": 1.0,
+      "invert_passed": 210,
+      "invert_rate": 0.9333333333333333
+    },
+    "eval_throughput_eps": 446141,
+    "search_benchmarks": {
+      "startpos_nps": 2944015,
+      "startpos_depth": 9,
+      "startpos_nodes": 305,
+      "kiwipete_nps": 1031744,
+      "kiwipete_depth": 8,
+      "kiwipete_nodes": 5951,
+      "combined_nps": 1987879
+    }
+  },
+  "E10_PawnHash": {
+    "config": {
+      "id": "E10_PawnHash",
+      "eval_mode": 10,
+      "pawn_hash": 1,
+      "name": "E10 Enhanced + 64K Entry Pawn Hash Table"
+    },
+    "symmetry": {
+      "mirror_passed": 216,
+      "mirror_rate": 0.96,
+      "invert_passed": 216,
+      "invert_rate": 0.96
+    },
+    "eval_throughput_eps": 541030,
+    "search_benchmarks": {
+      "startpos_nps": 3007889,
+      "startpos_depth": 9,
+      "startpos_nodes": 305,
+      "kiwipete_nps": 1028268,
+      "kiwipete_depth": 8,
+      "kiwipete_nodes": 2037,
+      "combined_nps": 2018078
+    }
+  }
+}

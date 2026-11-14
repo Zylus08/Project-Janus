@@ -1,0 +1,807 @@
+{
+  "total_tested": 40,
+  "passed": 40,
+  "pass_rate": 1.0,
+  "results": [
+    {
+      "id": "M01",
+      "category": "checkmate",
+      "fen": "rnb1kbnr/pppp1ppp/8/4p3/6Pq/5P2/PPPPP2P/RNBQKBNR w KQkq - 1 3",
+      "description": "Fool's mate (W in mate)",
+      "in_check": true,
+      "score_q0": -89,
+      "score_q1": -29000,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 1,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "M02",
+      "category": "checkmate",
+      "fen": "r1bqkb1r/pppp1Qpp/2n5/4p3/2B1n3/8/PPPP1PPP/RNB1K1NR b KQkq - 0 4",
+      "description": "Scholar's mate (B in mate)",
+      "in_check": true,
+      "score_q0": 15,
+      "score_q1": -29000,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 1,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "M03",
+      "category": "checkmate",
+      "fen": "4R1k1/5ppp/8/8/8/8/8/6K1 b - - 1 1",
+      "description": "Back-rank mate (B in mate)",
+      "in_check": true,
+      "score_q0": 52,
+      "score_q1": -29000,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 1,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "M04",
+      "category": "checkmate",
+      "fen": "6nk/5Npp/8/8/8/8/8/7K b - - 1 1",
+      "description": "Smothered mate (B in mate)",
+      "in_check": true,
+      "score_q0": 329,
+      "score_q1": -29000,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 1,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "M05",
+      "category": "checkmate",
+      "fen": "7k/7R/5N2/8/8/8/8/6K1 b - - 1 1",
+      "description": "Arabian mate pattern (B in mate)",
+      "in_check": true,
+      "score_q0": -931,
+      "score_q1": -29000,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 1,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "M06",
+      "category": "checkmate",
+      "fen": "r1b1kbnr/pppp1Qpp/8/4p3/2B1P3/8/PPPP1PPP/RNB1K2R b KQkq - 0 5",
+      "description": "Queen/Bishop mate (B in mate)",
+      "in_check": true,
+      "score_q0": -1129,
+      "score_q1": -28998,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 2,
+        "checkmates": 1,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "M07",
+      "category": "checkmate",
+      "fen": "5k2/5Q2/5K2/8/8/8/8/8 b - - 1 1",
+      "description": "King/Queen box mate (B in mate)",
+      "in_check": true,
+      "score_q0": -871,
+      "score_q1": -29000,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 1,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "M08",
+      "category": "checkmate",
+      "fen": "7R/6R1/8/8/8/8/8/4K2k b - - 1 1",
+      "description": "Double rook mate (B in mate)",
+      "in_check": true,
+      "score_q0": -1156,
+      "score_q1": -29000,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 1,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "M09",
+      "category": "checkmate",
+      "fen": "8/8/8/8/8/5k2/4q3/4K3 w - - 0 1",
+      "description": "Queen in face mate (W in mate)",
+      "in_check": true,
+      "score_q0": -884,
+      "score_q1": -29000,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 1,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "M10",
+      "category": "checkmate",
+      "fen": "4r1k1/5ppp/8/8/8/8/8/3R2K1 w - - 0 1",
+      "description": "White to deliver back-rank mate (depth 1 search)",
+      "in_check": false,
+      "score_q0": -574,
+      "score_q1": -574,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "S01",
+      "category": "stalemate",
+      "fen": "k7/2Q5/1K6/8/8/8/8/8 b - - 0 1",
+      "description": "Queen corner stalemate",
+      "in_check": false,
+      "score_q0": -866,
+      "score_q1": 0,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "S02",
+      "category": "stalemate",
+      "fen": "7k/5Q2/6K1/8/8/8/8/8 b - - 0 1",
+      "description": "Queen edge stalemate",
+      "in_check": false,
+      "score_q0": -866,
+      "score_q1": 0,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "S03",
+      "category": "stalemate",
+      "fen": "8/8/8/8/8/5k2/5p2/5K2 w - - 0 1",
+      "description": "Pawn king stalemate",
+      "in_check": false,
+      "score_q0": -249,
+      "score_q1": 0,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "S04",
+      "category": "stalemate",
+      "fen": "8/8/8/8/8/8/p7/k1K5 b - - 0 1",
+      "description": "Black corner pawn stalemate",
+      "in_check": false,
+      "score_q0": 738,
+      "score_q1": 0,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "S05",
+      "category": "stalemate",
+      "fen": "5k2/5P2/5K2/8/8/8/8/8 b - - 0 1",
+      "description": "King and pawn textbook stalemate",
+      "in_check": false,
+      "score_q0": -249,
+      "score_q1": 0,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "K01",
+      "category": "quiet_king_evasion",
+      "fen": "8/8/8/8/8/8/1r6/4K2k w - - 0 1",
+      "description": "King in check can step to e2/d1/f1",
+      "in_check": false,
+      "score_q0": -542,
+      "score_q1": -542,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "K02",
+      "category": "quiet_king_evasion",
+      "fen": "k7/8/1K6/8/8/8/8/1r6 w - - 0 1",
+      "description": "White king in check steps to a6/c6",
+      "in_check": true,
+      "score_q0": -584,
+      "score_q1": -577,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "K03",
+      "category": "quiet_king_evasion",
+      "fen": "r3k2r/8/8/8/8/8/8/4R1K1 b kq - 0 1",
+      "description": "Black king in check steps to d8/f8/d7/f7",
+      "in_check": true,
+      "score_q0": 521,
+      "score_q1": 508,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "K04",
+      "category": "quiet_king_evasion",
+      "fen": "8/8/8/8/8/3k4/8/4R1K1 b - - 0 1",
+      "description": "Black king in check steps away",
+      "in_check": false,
+      "score_q0": -604,
+      "score_q1": -604,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "K05",
+      "category": "quiet_king_evasion",
+      "fen": "8/8/8/8/8/5k2/8/4q1K1 w - - 0 1",
+      "description": "White king escapes check to h2",
+      "in_check": true,
+      "score_q0": -852,
+      "score_q1": -861,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "I01",
+      "category": "quiet_interposition",
+      "fen": "rnb1kbnr/pppp1ppp/8/4p3/7q/5P2/PPPPP1PP/RNBQKBNR w KQkq - 1 3",
+      "description": "White in check, can interpose 1. g3",
+      "in_check": true,
+      "score_q0": -97,
+      "score_q1": -100,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "I02",
+      "category": "quiet_interposition",
+      "fen": "r1b1kbnr/pppp1ppp/8/4p3/3nP2q/5P2/PPPPP1PP/RNBQKBNR w KQkq - 2 4",
+      "description": "White in check, can interpose 1. g3",
+      "in_check": true,
+      "score_q0": -166,
+      "score_q1": -71,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "I03",
+      "category": "quiet_interposition",
+      "fen": "4k3/8/8/8/8/8/8/4R1K1 b - - 0 1",
+      "description": "Black in check, quiet bishop/knight interposition",
+      "in_check": true,
+      "score_q0": -563,
+      "score_q1": -556,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "I04",
+      "category": "quiet_interposition",
+      "fen": "3k4/8/8/8/8/8/8/3R2K1 b - - 0 1",
+      "description": "Black in check, Nd7/Bd7 interposition or Ke8",
+      "in_check": true,
+      "score_q0": -563,
+      "score_q1": -556,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "I05",
+      "category": "quiet_interposition",
+      "fen": "8/8/8/8/3b4/8/3P4/3K3k w - - 0 1",
+      "description": "White in check from Bd4, 1. d4 interposition or Ke1",
+      "in_check": false,
+      "score_q0": -227,
+      "score_q1": -227,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "D01",
+      "category": "double_check",
+      "fen": "3k4/4N3/8/8/8/8/8/3R2K1 b - - 0 1",
+      "description": "Black king in double check (Nd1-e7+ and Rd1+), must move king",
+      "in_check": true,
+      "score_q0": -559,
+      "score_q1": -559,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "D02",
+      "category": "double_check",
+      "fen": "4k3/4N3/8/8/8/8/8/4R1K1 b - - 0 1",
+      "description": "Double check from Ne7 and Re1, king must move",
+      "in_check": false,
+      "score_q0": -887,
+      "score_q1": -887,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "D03",
+      "category": "double_check",
+      "fen": "2k5/4B3/8/8/8/8/8/2R3K1 b - - 0 1",
+      "description": "Discovered double check with Bishop and Rook",
+      "in_check": true,
+      "score_q0": -890,
+      "score_q1": -872,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "D04",
+      "category": "double_check",
+      "fen": "1k6/4B3/8/8/8/8/8/1R4K1 b - - 0 1",
+      "description": "Discovered double check with Bishop and Rook on b-file",
+      "in_check": true,
+      "score_q0": -872,
+      "score_q1": -881,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "D05",
+      "category": "double_check",
+      "fen": "4k3/8/8/5N2/8/8/8/4R2K b - - 0 1",
+      "description": "Rook check with knight hovering, king must move",
+      "in_check": true,
+      "score_q0": -904,
+      "score_q1": -897,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "U01",
+      "category": "underpromotion",
+      "fen": "8/4P1k1/8/8/8/8/8/6K1 w - - 0 1",
+      "description": "Pawn promotion on e8",
+      "in_check": false,
+      "score_q0": 920,
+      "score_q1": 920,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "U02",
+      "category": "underpromotion",
+      "fen": "8/5P1k/8/8/8/8/8/6K1 w - - 0 1",
+      "description": "Pawn promotion on f8",
+      "in_check": false,
+      "score_q0": 916,
+      "score_q1": 916,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "U03",
+      "category": "underpromotion",
+      "fen": "4k3/1P6/8/8/8/8/8/4K3 w - - 0 1",
+      "description": "Pawn promotion on b8",
+      "in_check": false,
+      "score_q0": 905,
+      "score_q1": 907,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 2,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "U04",
+      "category": "underpromotion",
+      "fen": "8/8/8/8/8/8/4p1K1/4k3 b - - 0 1",
+      "description": "Black pawn ready to promote on e1",
+      "in_check": false,
+      "score_q0": 720,
+      "score_q1": 720,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "U05",
+      "category": "underpromotion",
+      "fen": "2r3k1/5ppp/8/8/8/8/4pPPP/4R1K1 b - - 0 1",
+      "description": "Promotion threat on e1",
+      "in_check": false,
+      "score_q0": 246,
+      "score_q1": 246,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "N01",
+      "category": "negative_see_evasion",
+      "fen": "4k3/8/8/8/8/8/4q3/4R1K1 b - - 0 1",
+      "description": "Queen pinned and in check, 1... Qxe1+ takes rook",
+      "in_check": false,
+      "score_q0": 884,
+      "score_q1": 893,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "N02",
+      "category": "negative_see_evasion",
+      "fen": "4k3/8/8/8/8/8/4r3/4R1K1 b - - 0 1",
+      "description": "Rook in check, 1... Rxe1+ wins rook",
+      "in_check": false,
+      "score_q0": 510,
+      "score_q1": 519,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 1,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "N03",
+      "category": "negative_see_evasion",
+      "fen": "4k3/8/8/8/8/8/8/3rR1K1 b - - 0 1",
+      "description": "Rook in check, 1... Rxe1+ wins rook",
+      "in_check": true,
+      "score_q0": 510,
+      "score_q1": 519,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 2,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "N04",
+      "category": "negative_see_evasion",
+      "fen": "k7/8/8/8/8/8/1q6/1R4K1 w - - 0 1",
+      "description": "Rook under attack, 1. Rxb2 captures queen",
+      "in_check": false,
+      "score_q0": 551,
+      "score_q1": 551,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "N05",
+      "category": "negative_see_evasion",
+      "fen": "k7/8/8/8/8/8/1r6/1R4K1 w - - 0 1",
+      "description": "Rook under attack, 1. Rxb2 captures rook",
+      "in_check": false,
+      "score_q0": 551,
+      "score_q1": 551,
+      "q0_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "q1_telemetry": {
+        "in_check": 0,
+        "checkmates": 0,
+        "checks_gen": 0
+      },
+      "passed": true
+    }
+  ]
+}

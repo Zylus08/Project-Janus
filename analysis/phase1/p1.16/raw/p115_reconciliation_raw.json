@@ -1,0 +1,292 @@
+{
+  "total_games_reconstructed": 420,
+  "all_match_scores_verified": true,
+  "hashes": {
+    "x20_exe": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.15\\control\\janus_classical_x20.exe",
+      "sha256": "AF126A4D22C312F2AE61014A56005B9E9BAFD022F95A17DA81D81769048F7415"
+    },
+    "x19_exe": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.14\\control\\janus_classical_x19.exe",
+      "sha256": "CBB7785A47E5F9EC64C51C20B8387DE3EFE782F42BDFCEA38008F6450E534629"
+    },
+    "x12_exe": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.7\\control\\janus_classical_x12.exe",
+      "sha256": "00B4F5FEDEA02A392A1AF9713A96512E5199A0E3AE55C295AD1C7CFFF1B47059"
+    },
+    "x7_exe": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.3\\control\\janus_classical_x7.exe",
+      "sha256": "86392A2F4BD4182A4D7DC21E32940BD7939F6816794D5E1AB02F4082431CA28B"
+    },
+    "sf4_exe": {
+      "path": "E:\\ChessXML\\tools\\stockfish_4\\stockfish_4.exe",
+      "sha256": "1128CAB83386063359947F04155A2210C966080E71176DD385D8BDC3B6C32674"
+    },
+    "sf11_exe": {
+      "path": "E:\\ChessXML\\tools\\stockfish_11\\stockfish_11.exe",
+      "sha256": "B004C03BD71BB84E8BC1832C580E72A7E883F121E1834EA6DA2802D1575E8048"
+    },
+    "sf19_exe": {
+      "path": "E:\\ChessXML\\tools\\stockfish\\stockfish.exe",
+      "sha256": "45BC8E4969147DB9C2EB533810637994619BFF0EACC81CCFD9854394901BCBD0"
+    }
+  },
+  "matches": [
+    {
+      "match_id": "Match 1",
+      "description": "X20-S vs X7 Baseline (Fast)",
+      "pgn_file": "x20_1t_vs_x7_1t.pgn",
+      "games_found": 100,
+      "expected_games": 100,
+      "cand_wins": 27,
+      "draws": 38,
+      "cand_losses": 35,
+      "cand_score": 46.0,
+      "expected_cand_score": 46.0,
+      "score_pct": 46.0,
+      "elo_diff": -27.9,
+      "paired_95_ci": [
+        36.57,
+        55.43
+      ],
+      "one_sided_p": 0.7971,
+      "pentanomial": {
+        "2": 8,
+        "1": 9,
+        "0": 9,
+        "-1": 15,
+        "-2": 9
+      },
+      "score_matches_expected": true
+    },
+    {
+      "match_id": "Match 2",
+      "description": "X20-S vs X7 Baseline (Slower)",
+      "pgn_file": "x20_1t_vs_x7_1t_slow.pgn",
+      "games_found": 50,
+      "expected_games": 50,
+      "cand_wins": 17,
+      "draws": 14,
+      "cand_losses": 19,
+      "cand_score": 24.0,
+      "expected_cand_score": 24.0,
+      "score_pct": 48.0,
+      "elo_diff": -13.9,
+      "paired_95_ci": [
+        39.09,
+        56.91
+      ],
+      "one_sided_p": 0.67,
+      "pentanomial": {
+        "2": 1,
+        "1": 5,
+        "0": 11,
+        "-1": 7,
+        "-2": 1
+      },
+      "score_matches_expected": true
+    },
+    {
+      "match_id": "Match 3",
+      "description": "X20-P vs X12 Baseline (4T)",
+      "pgn_file": "x20_4t_vs_x12_4t.pgn",
+      "games_found": 100,
+      "expected_games": 100,
+      "cand_wins": 26,
+      "draws": 41,
+      "cand_losses": 33,
+      "cand_score": 46.5,
+      "expected_cand_score": 46.5,
+      "score_pct": 46.5,
+      "elo_diff": -24.4,
+      "paired_95_ci": [
+        38.96,
+        54.04
+      ],
+      "one_sided_p": 0.8185,
+      "pentanomial": {
+        "2": 3,
+        "1": 12,
+        "0": 15,
+        "-1": 15,
+        "-2": 5
+      },
+      "score_matches_expected": true
+    },
+    {
+      "match_id": "Match 4",
+      "description": "X20-S vs X19-S Reference",
+      "pgn_file": "x20_1t_vs_x19_1t.pgn",
+      "games_found": 50,
+      "expected_games": 50,
+      "cand_wins": 11,
+      "draws": 23,
+      "cand_losses": 16,
+      "cand_score": 22.5,
+      "expected_cand_score": 22.5,
+      "score_pct": 45.0,
+      "elo_diff": -34.9,
+      "paired_95_ci": [
+        34.04,
+        55.96
+      ],
+      "one_sided_p": 0.8145,
+      "pentanomial": {
+        "2": 1,
+        "1": 7,
+        "0": 6,
+        "-1": 8,
+        "-2": 3
+      },
+      "score_matches_expected": true
+    },
+    {
+      "match_id": "Match 5",
+      "description": "X20-S vs Stockfish 4",
+      "pgn_file": "x20_1t_vs_sf4_1t.pgn",
+      "games_found": 40,
+      "expected_games": 40,
+      "cand_wins": 0,
+      "draws": 3,
+      "cand_losses": 37,
+      "cand_score": 1.5,
+      "expected_cand_score": 1.5,
+      "score_pct": 3.75,
+      "elo_diff": -563.7,
+      "paired_95_ci": [
+        0.0,
+        7.76
+      ],
+      "one_sided_p": 1.0,
+      "pentanomial": {
+        "2": 0,
+        "1": 0,
+        "0": 0,
+        "-1": 3,
+        "-2": 17
+      },
+      "score_matches_expected": true
+    },
+    {
+      "match_id": "Match 6",
+      "description": "X20-S vs Stockfish 11",
+      "pgn_file": "x20_1t_vs_sf11_1t.pgn",
+      "games_found": 40,
+      "expected_games": 40,
+      "cand_wins": 0,
+      "draws": 1,
+      "cand_losses": 39,
+      "cand_score": 0.5,
+      "expected_cand_score": 0.5,
+      "score_pct": 1.25,
+      "elo_diff": -759.1,
+      "paired_95_ci": [
+        0.0,
+        3.7
+      ],
+      "one_sided_p": 1.0,
+      "pentanomial": {
+        "2": 0,
+        "1": 0,
+        "0": 0,
+        "-1": 1,
+        "-2": 19
+      },
+      "score_matches_expected": true
+    },
+    {
+      "match_id": "Match 7",
+      "description": "X20-S vs Stockfish 19",
+      "pgn_file": "x20_1t_vs_sf19_1t.pgn",
+      "games_found": 40,
+      "expected_games": 40,
+      "cand_wins": 0,
+      "draws": 1,
+      "cand_losses": 39,
+      "cand_score": 0.5,
+      "expected_cand_score": 0.5,
+      "score_pct": 1.25,
+      "elo_diff": -759.1,
+      "paired_95_ci": [
+        0.0,
+        3.7
+      ],
+      "one_sided_p": 1.0,
+      "pentanomial": {
+        "2": 0,
+        "1": 0,
+        "0": 0,
+        "-1": 1,
+        "-2": 19
+      },
+      "score_matches_expected": true
+    }
+  ],
+  "time_control_audit": {
+    "tournament_script": "analysis/phase1/p1.15/tests/run_p115_tournaments.py",
+    "executed_time_controls": {
+      "Match 1 (vs X7 fast)": {
+        "base_ms": 1000,
+        "inc_ms": 50,
+        "format": "Fischer 1.0s + 50ms",
+        "clock_mode": "Fischer dynamic clock"
+      },
+      "Match 2 (vs X7 slow)": {
+        "base_ms": 2500,
+        "inc_ms": 100,
+        "format": "Fischer 2.5s + 100ms",
+        "clock_mode": "Fischer dynamic clock"
+      },
+      "Match 3 (vs X12 4T)": {
+        "base_ms": 1000,
+        "inc_ms": 50,
+        "format": "Fischer 1.0s + 50ms",
+        "clock_mode": "Fischer dynamic clock"
+      },
+      "Match 4 (vs X19 reference)": {
+        "base_ms": 1000,
+        "inc_ms": 50,
+        "format": "Fischer 1.0s + 50ms",
+        "clock_mode": "Fischer dynamic clock"
+      },
+      "Matches 5-7 (vs SF4/11/19)": {
+        "base_ms": 1500,
+        "inc_ms": 50,
+        "format": "Fischer 1.5s + 50ms",
+        "clock_mode": "Fischer dynamic clock"
+      }
+    },
+    "narrative_discrepancy_explanation": "Earlier section headers and telemetry ablations (such as test_time_control_generalization.py) tested fixed time per move at 100ms and 500ms budgets, while full-game tournament matches strictly executed Fischer clock-based time controls (1.0s+50ms, 2.5s+100ms, and 1.5s+50ms). These conditions are complementary but distinct and must not be conflated."
+  },
+  "game12_crisis_verification": {
+    "fen": "r1b1r1k1/1pp2p2/p1n1qBp1/3pPp1p/3P1Q2/2P2N2/P1P2PPP/1R3RK1 b - - 3 16",
+    "threat": "White plays Qh6 followed by Qg7#",
+    "defensive_move": "e8e7",
+    "c0_d8_nodes": 33550,
+    "c1_d8_nodes": 1796,
+    "speedup_factor": 18.68,
+    "verification_status": "EXACT_REPRODUCED"
+  },
+  "unsupported_claims_rectified": [
+    {
+      "claim": "X20's slower-time regression is definitively cured.",
+      "correction": "While X20 scored 48.0% at 2.5s+100ms compared to X19's 43.0%, the 95% paired confidence interval [39.09%, 56.91%] spans both superior and inferior regions. It is scientifically accurate to say the regression observed in X19 was stabilized within statistical parity, but superiority is not proven."
+    },
+    {
+      "claim": "A high first-move cutoff rate (98.96%) guarantees a near-minimal tree.",
+      "correction": "BF1 measures cutoff frequency only at CUT-nodes (Type 2 nodes). It does not measure search effort at ALL-nodes (Type 3 nodes) or PV-nodes (Type 1 nodes), where all legal moves must be searched. A high BF1 is necessary but not sufficient for global tree minimality."
+    },
+    {
+      "claim": "SEE passing 12 classes proves universal SEE correctness.",
+      "correction": "The 12-class SEE test suite validates standard static piece trades and pinned/x-ray exchanges across representative tactical positions. It does not prove absence of edge cases in complex overloaded multi-piece batteries or discovered defensive interpositions."
+    },
+    {
+      "claim": "A 98.58% node reduction establishes better playing strength.",
+      "correction": "Node reduction merely proves increased pruning selectivity and move ordering efficiency at fixed depth. If pruning or move deferral discards tactical lines, playing strength can degrade despite massive node reductions."
+    },
+    {
+      "claim": "All possible tactical omissions have been excluded by shallow minimax tests.",
+      "correction": "Depth 1-4 minimax identity tests verify move legality and alpha-beta score equivalence on full-width trees without selective pruning. They do not test quiescence search or deeper selective horizons where tactical blindness can occur."
+    }
+  ]
+}

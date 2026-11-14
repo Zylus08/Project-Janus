@@ -1,0 +1,2554 @@
+{
+  "selected_policy": "Q1",
+  "gate_verdicts": {
+    "Q0": {
+      "delta_solved_pct": 3.3333333333333335,
+      "delta_depth_ply": -0.2666666666666675,
+      "node_ratio": 1.2195070123246918,
+      "crit1_solve_rate": false,
+      "crit2_node_budget": true,
+      "crit3_depth_preserved": true,
+      "gate_adopted": false
+    },
+    "Q2": {
+      "delta_solved_pct": 0.0,
+      "delta_depth_ply": 0.0,
+      "node_ratio": 0.7233319167020824,
+      "crit1_solve_rate": false,
+      "crit2_node_budget": true,
+      "crit3_depth_preserved": true,
+      "gate_adopted": false
+    },
+    "Q3": {
+      "delta_solved_pct": -3.3333333333333335,
+      "delta_depth_ply": 0.1999999999999993,
+      "node_ratio": 0.7464562775579048,
+      "crit1_solve_rate": false,
+      "crit2_node_budget": true,
+      "crit3_depth_preserved": true,
+      "gate_adopted": false
+    }
+  },
+  "master_results": {
+    "Q0": {
+      "mode": 0,
+      "description": "Frozen Legacy (Captures only, stand-pat always)",
+      "time_controls": {
+        "100ms": {
+          "solved": 12,
+          "total_positions": 30,
+          "solve_rate": 0.4,
+          "avg_depth": 8.3,
+          "total_nodes": 5455872,
+          "avg_nodes": 181862.4,
+          "nps": 1805189,
+          "checks_generated": 0,
+          "positions": [
+            {
+              "id": "TAC_01",
+              "expected": "f3f7",
+              "found": "f3f7",
+              "solved": true,
+              "score": 28999,
+              "depth": 7,
+              "nodes": 247808,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_02",
+              "expected": "d1d8",
+              "found": "d1d8",
+              "solved": true,
+              "score": 28999,
+              "depth": 13,
+              "nodes": 403456,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_03",
+              "expected": "e1e8",
+              "found": "e1e8",
+              "solved": true,
+              "score": 28999,
+              "depth": 11,
+              "nodes": 362496,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_04",
+              "expected": "d3h7",
+              "found": "d3h7",
+              "solved": true,
+              "score": 45,
+              "depth": 7,
+              "nodes": 178176,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_05",
+              "expected": "b5d7",
+              "found": "b5d7",
+              "solved": true,
+              "score": 918,
+              "depth": 10,
+              "nodes": 198656,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_06",
+              "expected": "d3h7",
+              "found": "e1g1",
+              "solved": false,
+              "score": 45,
+              "depth": 10,
+              "nodes": 212992,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_07",
+              "expected": "d1h5",
+              "found": "d1f3",
+              "solved": false,
+              "score": 188,
+              "depth": 7,
+              "nodes": 163840,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_08",
+              "expected": "c2c3",
+              "found": "e1e2",
+              "solved": false,
+              "score": -370,
+              "depth": 10,
+              "nodes": 172032,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_09",
+              "expected": "d1d2",
+              "found": "f2f3",
+              "solved": false,
+              "score": 42,
+              "depth": 8,
+              "nodes": 169984,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_10",
+              "expected": "c1d2",
+              "found": "b5c6",
+              "solved": false,
+              "score": 133,
+              "depth": 9,
+              "nodes": 163840,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_11",
+              "expected": "f6g4",
+              "found": "c6d4",
+              "solved": false,
+              "score": -42,
+              "depth": 9,
+              "nodes": 163840,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_12",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 63,
+              "depth": 7,
+              "nodes": 163840,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_13",
+              "expected": "c2c3",
+              "found": "d2d3",
+              "solved": false,
+              "score": 11,
+              "depth": 8,
+              "nodes": 161792,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_14",
+              "expected": "e1g1",
+              "found": "a2a3",
+              "solved": false,
+              "score": 62,
+              "depth": 9,
+              "nodes": 172032,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_15",
+              "expected": "c2c3",
+              "found": "b1c3",
+              "solved": false,
+              "score": -15,
+              "depth": 8,
+              "nodes": 174080,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_16",
+              "expected": "e4d5",
+              "found": "c3d5",
+              "solved": false,
+              "score": 85,
+              "depth": 7,
+              "nodes": 169984,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_17",
+              "expected": "e8g8",
+              "found": "c6e5",
+              "solved": false,
+              "score": -220,
+              "depth": 7,
+              "nodes": 153600,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_18",
+              "expected": "b1c3",
+              "found": "d4c6",
+              "solved": false,
+              "score": 64,
+              "depth": 7,
+              "nodes": 161792,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_19",
+              "expected": "h4e4",
+              "found": "h4e4",
+              "solved": true,
+              "score": 49,
+              "depth": 9,
+              "nodes": 176128,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_20",
+              "expected": "c1d2",
+              "found": "c1d2",
+              "solved": true,
+              "score": -17,
+              "depth": 8,
+              "nodes": 153600,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_21",
+              "expected": "d4c5",
+              "found": "d4c5",
+              "solved": true,
+              "score": 34,
+              "depth": 8,
+              "nodes": 178176,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_22",
+              "expected": "c1g5",
+              "found": "c3d5",
+              "solved": false,
+              "score": 20,
+              "depth": 7,
+              "nodes": 163840,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_23",
+              "expected": "c3e4",
+              "found": "c3e4",
+              "solved": true,
+              "score": 1,
+              "depth": 8,
+              "nodes": 174080,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_24",
+              "expected": "f1d3",
+              "found": "c2c3",
+              "solved": false,
+              "score": -104,
+              "depth": 7,
+              "nodes": 147456,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_25",
+              "expected": "f1e2",
+              "found": "b1c3",
+              "solved": false,
+              "score": 35,
+              "depth": 8,
+              "nodes": 165888,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_26",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 142,
+              "depth": 9,
+              "nodes": 180224,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_27",
+              "expected": "f1d3",
+              "found": "c1d2",
+              "solved": false,
+              "score": 0,
+              "depth": 8,
+              "nodes": 145408,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_28",
+              "expected": "d4d5",
+              "found": "d4d5",
+              "solved": true,
+              "score": 9,
+              "depth": 9,
+              "nodes": 157696,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_29",
+              "expected": "f3g5",
+              "found": "b1c3",
+              "solved": false,
+              "score": 27,
+              "depth": 7,
+              "nodes": 155648,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_30",
+              "expected": "c3e4",
+              "found": "c1d2",
+              "solved": false,
+              "score": 30,
+              "depth": 7,
+              "nodes": 63488,
+              "checks_gen": 0
+            }
+          ]
+        },
+        "500ms": {
+          "solved": 14,
+          "total_positions": 30,
+          "solve_rate": 0.4666666666666667,
+          "avg_depth": 9.7,
+          "total_nodes": 11753472,
+          "avg_nodes": 391782.4,
+          "nps": 780820,
+          "checks_generated": 0,
+          "positions": [
+            {
+              "id": "TAC_01",
+              "expected": "f3f7",
+              "found": "f3f7",
+              "solved": true,
+              "score": 28999,
+              "depth": 8,
+              "nodes": 460800,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_02",
+              "expected": "d1d8",
+              "found": "d1d8",
+              "solved": true,
+              "score": 28999,
+              "depth": 14,
+              "nodes": 612352,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_03",
+              "expected": "e1e8",
+              "found": "e1e8",
+              "solved": true,
+              "score": 28999,
+              "depth": 12,
+              "nodes": 659456,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_04",
+              "expected": "d3h7",
+              "found": "d3h7",
+              "solved": true,
+              "score": 44,
+              "depth": 8,
+              "nodes": 362496,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_05",
+              "expected": "b5d7",
+              "found": "b5d7",
+              "solved": true,
+              "score": 971,
+              "depth": 12,
+              "nodes": 391168,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_06",
+              "expected": "d3h7",
+              "found": "e1g1",
+              "solved": false,
+              "score": 44,
+              "depth": 11,
+              "nodes": 382976,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_07",
+              "expected": "d1h5",
+              "found": "d1h5",
+              "solved": true,
+              "score": 125,
+              "depth": 9,
+              "nodes": 342016,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_08",
+              "expected": "c2c3",
+              "found": "e1e2",
+              "solved": false,
+              "score": -376,
+              "depth": 12,
+              "nodes": 370688,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_09",
+              "expected": "d1d2",
+              "found": "f2f3",
+              "solved": false,
+              "score": 22,
+              "depth": 9,
+              "nodes": 284672,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_10",
+              "expected": "c1d2",
+              "found": "c1d2",
+              "solved": true,
+              "score": 131,
+              "depth": 11,
+              "nodes": 358400,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_11",
+              "expected": "f6g4",
+              "found": "c6d4",
+              "solved": false,
+              "score": -42,
+              "depth": 9,
+              "nodes": 364544,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_12",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 50,
+              "depth": 9,
+              "nodes": 438272,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_13",
+              "expected": "c2c3",
+              "found": "b1c3",
+              "solved": false,
+              "score": 14,
+              "depth": 9,
+              "nodes": 380928,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_14",
+              "expected": "e1g1",
+              "found": "c2c3",
+              "solved": false,
+              "score": 61,
+              "depth": 10,
+              "nodes": 380928,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_15",
+              "expected": "c2c3",
+              "found": "c1g5",
+              "solved": false,
+              "score": -16,
+              "depth": 9,
+              "nodes": 348160,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_16",
+              "expected": "e4d5",
+              "found": "b5c6",
+              "solved": false,
+              "score": 77,
+              "depth": 9,
+              "nodes": 358400,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_17",
+              "expected": "e8g8",
+              "found": "c6e5",
+              "solved": false,
+              "score": -224,
+              "depth": 9,
+              "nodes": 331776,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_18",
+              "expected": "b1c3",
+              "found": "d4c6",
+              "solved": false,
+              "score": 64,
+              "depth": 9,
+              "nodes": 327680,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_19",
+              "expected": "h4e4",
+              "found": "h4e4",
+              "solved": true,
+              "score": 34,
+              "depth": 11,
+              "nodes": 348160,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_20",
+              "expected": "c1d2",
+              "found": "c1d2",
+              "solved": true,
+              "score": -6,
+              "depth": 9,
+              "nodes": 342016,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_21",
+              "expected": "d4c5",
+              "found": "d4c5",
+              "solved": true,
+              "score": 40,
+              "depth": 9,
+              "nodes": 266240,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_22",
+              "expected": "c1g5",
+              "found": "d1e2",
+              "solved": false,
+              "score": 14,
+              "depth": 8,
+              "nodes": 491520,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_23",
+              "expected": "c3e4",
+              "found": "c3e4",
+              "solved": true,
+              "score": 6,
+              "depth": 9,
+              "nodes": 456704,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_24",
+              "expected": "f1d3",
+              "found": "f1b5",
+              "solved": false,
+              "score": -71,
+              "depth": 9,
+              "nodes": 411648,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_25",
+              "expected": "f1e2",
+              "found": "f1b5",
+              "solved": false,
+              "score": 36,
+              "depth": 9,
+              "nodes": 466944,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_26",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 134,
+              "depth": 11,
+              "nodes": 509952,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_27",
+              "expected": "f1d3",
+              "found": "c1d2",
+              "solved": false,
+              "score": 23,
+              "depth": 9,
+              "nodes": 380928,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_28",
+              "expected": "d4d5",
+              "found": "d4d5",
+              "solved": true,
+              "score": 9,
+              "depth": 9,
+              "nodes": 264192,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_29",
+              "expected": "f3g5",
+              "found": "b1c3",
+              "solved": false,
+              "score": 30,
+              "depth": 9,
+              "nodes": 299008,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_30",
+              "expected": "c3e4",
+              "found": "c1d2",
+              "solved": false,
+              "score": 17,
+              "depth": 10,
+              "nodes": 360448,
+              "checks_gen": 0
+            }
+          ]
+        }
+      }
+    },
+    "Q1": {
+      "mode": 1,
+      "description": "Corrected Quiescence (In-check evasions & mate detection)",
+      "time_controls": {
+        "100ms": {
+          "solved": 14,
+          "total_positions": 30,
+          "solve_rate": 0.4666666666666667,
+          "avg_depth": 8.933333333333334,
+          "total_nodes": 1775616,
+          "avg_nodes": 59187.2,
+          "nps": 581393,
+          "checks_generated": 0,
+          "positions": [
+            {
+              "id": "TAC_01",
+              "expected": "f3f7",
+              "found": "f3f7",
+              "solved": true,
+              "score": 28999,
+              "depth": 8,
+              "nodes": 96256,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_02",
+              "expected": "d1d8",
+              "found": "d1d8",
+              "solved": true,
+              "score": 28999,
+              "depth": 14,
+              "nodes": 133120,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_03",
+              "expected": "e1e8",
+              "found": "e1e8",
+              "solved": true,
+              "score": 28999,
+              "depth": 10,
+              "nodes": 94208,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_04",
+              "expected": "d3h7",
+              "found": "b1b3",
+              "solved": false,
+              "score": 7,
+              "depth": 6,
+              "nodes": 61440,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_05",
+              "expected": "b5d7",
+              "found": "b5d7",
+              "solved": true,
+              "score": 971,
+              "depth": 12,
+              "nodes": 63488,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_06",
+              "expected": "d3h7",
+              "found": "e1g1",
+              "solved": false,
+              "score": 44,
+              "depth": 11,
+              "nodes": 69632,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_07",
+              "expected": "d1h5",
+              "found": "d1h5",
+              "solved": true,
+              "score": 125,
+              "depth": 9,
+              "nodes": 59392,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_08",
+              "expected": "c2c3",
+              "found": "e1e2",
+              "solved": false,
+              "score": -365,
+              "depth": 9,
+              "nodes": 45056,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_09",
+              "expected": "d1d2",
+              "found": "f2f4",
+              "solved": false,
+              "score": 26,
+              "depth": 8,
+              "nodes": 49152,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_10",
+              "expected": "c1d2",
+              "found": "c1d2",
+              "solved": true,
+              "score": 131,
+              "depth": 11,
+              "nodes": 59392,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_11",
+              "expected": "f6g4",
+              "found": "c6d4",
+              "solved": false,
+              "score": -58,
+              "depth": 8,
+              "nodes": 49152,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_12",
+              "expected": "f3g5",
+              "found": "b1c3",
+              "solved": false,
+              "score": 41,
+              "depth": 6,
+              "nodes": 38912,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_13",
+              "expected": "c2c3",
+              "found": "b1c3",
+              "solved": false,
+              "score": 15,
+              "depth": 10,
+              "nodes": 49152,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_14",
+              "expected": "e1g1",
+              "found": "a2a3",
+              "solved": false,
+              "score": 53,
+              "depth": 8,
+              "nodes": 59392,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_15",
+              "expected": "c2c3",
+              "found": "c1g5",
+              "solved": false,
+              "score": -16,
+              "depth": 9,
+              "nodes": 45056,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_16",
+              "expected": "e4d5",
+              "found": "e4d5",
+              "solved": true,
+              "score": 127,
+              "depth": 9,
+              "nodes": 49152,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_17",
+              "expected": "e8g8",
+              "found": "c6e5",
+              "solved": false,
+              "score": -220,
+              "depth": 7,
+              "nodes": 55296,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_18",
+              "expected": "b1c3",
+              "found": "b1c3",
+              "solved": true,
+              "score": 41,
+              "depth": 8,
+              "nodes": 51200,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_19",
+              "expected": "h4e4",
+              "found": "h4e4",
+              "solved": true,
+              "score": 34,
+              "depth": 11,
+              "nodes": 57344,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_20",
+              "expected": "c1d2",
+              "found": "c1g5",
+              "solved": false,
+              "score": -22,
+              "depth": 7,
+              "nodes": 53248,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_21",
+              "expected": "d4c5",
+              "found": "d4c5",
+              "solved": true,
+              "score": 40,
+              "depth": 8,
+              "nodes": 61440,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_22",
+              "expected": "c1g5",
+              "found": "e1g1",
+              "solved": false,
+              "score": 26,
+              "depth": 8,
+              "nodes": 55296,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_23",
+              "expected": "c3e4",
+              "found": "c3e4",
+              "solved": true,
+              "score": 6,
+              "depth": 8,
+              "nodes": 55296,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_24",
+              "expected": "f1d3",
+              "found": "f1b5",
+              "solved": false,
+              "score": -71,
+              "depth": 9,
+              "nodes": 67584,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_25",
+              "expected": "f1e2",
+              "found": "f1b5",
+              "solved": false,
+              "score": 26,
+              "depth": 8,
+              "nodes": 51200,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_26",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 134,
+              "depth": 11,
+              "nodes": 59392,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_27",
+              "expected": "f1d3",
+              "found": "c1d2",
+              "solved": false,
+              "score": 23,
+              "depth": 9,
+              "nodes": 40960,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_28",
+              "expected": "d4d5",
+              "found": "d4d5",
+              "solved": true,
+              "score": -14,
+              "depth": 9,
+              "nodes": 40960,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_29",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 55,
+              "depth": 7,
+              "nodes": 53248,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_30",
+              "expected": "c3e4",
+              "found": "c1d2",
+              "solved": false,
+              "score": 17,
+              "depth": 10,
+              "nodes": 51200,
+              "checks_gen": 0
+            }
+          ]
+        },
+        "500ms": {
+          "solved": 13,
+          "total_positions": 30,
+          "solve_rate": 0.43333333333333335,
+          "avg_depth": 9.966666666666667,
+          "total_nodes": 9637888,
+          "avg_nodes": 321262.93333333335,
+          "nps": 640268,
+          "checks_generated": 0,
+          "positions": [
+            {
+              "id": "TAC_01",
+              "expected": "f3f7",
+              "found": "f3f7",
+              "solved": true,
+              "score": 28999,
+              "depth": 8,
+              "nodes": 378880,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_02",
+              "expected": "d1d8",
+              "found": "d1d8",
+              "solved": true,
+              "score": 28999,
+              "depth": 15,
+              "nodes": 610304,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_03",
+              "expected": "e1e8",
+              "found": "e1e8",
+              "solved": true,
+              "score": 28999,
+              "depth": 12,
+              "nodes": 620544,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_04",
+              "expected": "d3h7",
+              "found": "g5f3",
+              "solved": false,
+              "score": 11,
+              "depth": 8,
+              "nodes": 274432,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_05",
+              "expected": "b5d7",
+              "found": "b5d7",
+              "solved": true,
+              "score": 971,
+              "depth": 12,
+              "nodes": 266240,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_06",
+              "expected": "d3h7",
+              "found": "e1g1",
+              "solved": false,
+              "score": 42,
+              "depth": 12,
+              "nodes": 307200,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_07",
+              "expected": "d1h5",
+              "found": "d1f3",
+              "solved": false,
+              "score": 116,
+              "depth": 9,
+              "nodes": 217088,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_08",
+              "expected": "c2c3",
+              "found": "e1e2",
+              "solved": false,
+              "score": -473,
+              "depth": 11,
+              "nodes": 239616,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_09",
+              "expected": "d1d2",
+              "found": "f2f4",
+              "solved": false,
+              "score": 47,
+              "depth": 10,
+              "nodes": 329728,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_10",
+              "expected": "c1d2",
+              "found": "c1d2",
+              "solved": true,
+              "score": 131,
+              "depth": 11,
+              "nodes": 358400,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_11",
+              "expected": "f6g4",
+              "found": "c6d4",
+              "solved": false,
+              "score": -58,
+              "depth": 10,
+              "nodes": 350208,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_12",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 44,
+              "depth": 9,
+              "nodes": 292864,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_13",
+              "expected": "c2c3",
+              "found": "b1c3",
+              "solved": false,
+              "score": 15,
+              "depth": 10,
+              "nodes": 286720,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_14",
+              "expected": "e1g1",
+              "found": "a2a3",
+              "solved": false,
+              "score": 53,
+              "depth": 10,
+              "nodes": 333824,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_15",
+              "expected": "c2c3",
+              "found": "b1c3",
+              "solved": false,
+              "score": -17,
+              "depth": 9,
+              "nodes": 274432,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_16",
+              "expected": "e4d5",
+              "found": "e4d5",
+              "solved": true,
+              "score": 127,
+              "depth": 10,
+              "nodes": 315392,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_17",
+              "expected": "e8g8",
+              "found": "c6e5",
+              "solved": false,
+              "score": -223,
+              "depth": 9,
+              "nodes": 346112,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_18",
+              "expected": "b1c3",
+              "found": "d4c6",
+              "solved": false,
+              "score": 51,
+              "depth": 9,
+              "nodes": 239616,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_19",
+              "expected": "h4e4",
+              "found": "h4e4",
+              "solved": true,
+              "score": 34,
+              "depth": 11,
+              "nodes": 333824,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_20",
+              "expected": "c1d2",
+              "found": "d1d2",
+              "solved": false,
+              "score": -24,
+              "depth": 10,
+              "nodes": 380928,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_21",
+              "expected": "d4c5",
+              "found": "d4c5",
+              "solved": true,
+              "score": 40,
+              "depth": 10,
+              "nodes": 428032,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_22",
+              "expected": "c1g5",
+              "found": "a2a3",
+              "solved": false,
+              "score": 29,
+              "depth": 9,
+              "nodes": 350208,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_23",
+              "expected": "c3e4",
+              "found": "c3e4",
+              "solved": true,
+              "score": -9,
+              "depth": 9,
+              "nodes": 251904,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_24",
+              "expected": "f1d3",
+              "found": "f1b5",
+              "solved": false,
+              "score": -71,
+              "depth": 9,
+              "nodes": 198656,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_25",
+              "expected": "f1e2",
+              "found": "b1c3",
+              "solved": false,
+              "score": 27,
+              "depth": 9,
+              "nodes": 309248,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_26",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 120,
+              "depth": 10,
+              "nodes": 301056,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_27",
+              "expected": "f1d3",
+              "found": "c1d2",
+              "solved": false,
+              "score": 23,
+              "depth": 9,
+              "nodes": 217088,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_28",
+              "expected": "d4d5",
+              "found": "d4d5",
+              "solved": true,
+              "score": -14,
+              "depth": 10,
+              "nodes": 286720,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_29",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 54,
+              "depth": 9,
+              "nodes": 225280,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_30",
+              "expected": "c3e4",
+              "found": "c1d2",
+              "solved": false,
+              "score": 23,
+              "depth": 10,
+              "nodes": 313344,
+              "checks_gen": 0
+            }
+          ]
+        }
+      }
+    },
+    "Q2": {
+      "mode": 2,
+      "description": "Q1 + Quiet Checks at qply 0",
+      "time_controls": {
+        "100ms": {
+          "solved": 13,
+          "total_positions": 30,
+          "solve_rate": 0.43333333333333335,
+          "avg_depth": 8.833333333333334,
+          "total_nodes": 1572864,
+          "avg_nodes": 52428.8,
+          "nps": 510934,
+          "checks_generated": 20109,
+          "positions": [
+            {
+              "id": "TAC_01",
+              "expected": "f3f7",
+              "found": "f3f7",
+              "solved": true,
+              "score": 28999,
+              "depth": 8,
+              "nodes": 112640,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_02",
+              "expected": "d1d8",
+              "found": "d1d8",
+              "solved": true,
+              "score": 28999,
+              "depth": 15,
+              "nodes": 157696,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_03",
+              "expected": "e1e8",
+              "found": "e1e8",
+              "solved": true,
+              "score": 28999,
+              "depth": 13,
+              "nodes": 149504,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_04",
+              "expected": "d3h7",
+              "found": "b1b3",
+              "solved": false,
+              "score": 7,
+              "depth": 6,
+              "nodes": 51200,
+              "checks_gen": 464
+            },
+            {
+              "id": "TAC_05",
+              "expected": "b5d7",
+              "found": "b5d7",
+              "solved": true,
+              "score": 971,
+              "depth": 12,
+              "nodes": 47104,
+              "checks_gen": 1453
+            },
+            {
+              "id": "TAC_06",
+              "expected": "d3h7",
+              "found": "e1g1",
+              "solved": false,
+              "score": 42,
+              "depth": 12,
+              "nodes": 65536,
+              "checks_gen": 421
+            },
+            {
+              "id": "TAC_07",
+              "expected": "d1h5",
+              "found": "d1f3",
+              "solved": false,
+              "score": 138,
+              "depth": 7,
+              "nodes": 45056,
+              "checks_gen": 3000
+            },
+            {
+              "id": "TAC_08",
+              "expected": "c2c3",
+              "found": "e1e2",
+              "solved": false,
+              "score": -473,
+              "depth": 11,
+              "nodes": 63488,
+              "checks_gen": 2924
+            },
+            {
+              "id": "TAC_09",
+              "expected": "d1d2",
+              "found": "f2f3",
+              "solved": false,
+              "score": 18,
+              "depth": 7,
+              "nodes": 36864,
+              "checks_gen": 1558
+            },
+            {
+              "id": "TAC_10",
+              "expected": "c1d2",
+              "found": "c1d2",
+              "solved": true,
+              "score": 124,
+              "depth": 9,
+              "nodes": 45056,
+              "checks_gen": 279
+            },
+            {
+              "id": "TAC_11",
+              "expected": "f6g4",
+              "found": "c6d4",
+              "solved": false,
+              "score": -47,
+              "depth": 10,
+              "nodes": 43008,
+              "checks_gen": 1075
+            },
+            {
+              "id": "TAC_12",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 51,
+              "depth": 7,
+              "nodes": 38912,
+              "checks_gen": 798
+            },
+            {
+              "id": "TAC_13",
+              "expected": "c2c3",
+              "found": "b1c3",
+              "solved": false,
+              "score": 15,
+              "depth": 10,
+              "nodes": 53248,
+              "checks_gen": 381
+            },
+            {
+              "id": "TAC_14",
+              "expected": "e1g1",
+              "found": "a2a3",
+              "solved": false,
+              "score": 53,
+              "depth": 10,
+              "nodes": 45056,
+              "checks_gen": 237
+            },
+            {
+              "id": "TAC_15",
+              "expected": "c2c3",
+              "found": "c1g5",
+              "solved": false,
+              "score": 0,
+              "depth": 5,
+              "nodes": 26624,
+              "checks_gen": 320
+            },
+            {
+              "id": "TAC_16",
+              "expected": "e4d5",
+              "found": "e4d5",
+              "solved": true,
+              "score": 129,
+              "depth": 6,
+              "nodes": 47104,
+              "checks_gen": 621
+            },
+            {
+              "id": "TAC_17",
+              "expected": "e8g8",
+              "found": "a5b6",
+              "solved": false,
+              "score": -222,
+              "depth": 6,
+              "nodes": 30720,
+              "checks_gen": 255
+            },
+            {
+              "id": "TAC_18",
+              "expected": "b1c3",
+              "found": "d4c6",
+              "solved": false,
+              "score": 51,
+              "depth": 8,
+              "nodes": 26624,
+              "checks_gen": 948
+            },
+            {
+              "id": "TAC_19",
+              "expected": "h4e4",
+              "found": "h4e4",
+              "solved": true,
+              "score": 34,
+              "depth": 11,
+              "nodes": 38912,
+              "checks_gen": 925
+            },
+            {
+              "id": "TAC_20",
+              "expected": "c1d2",
+              "found": "d1d2",
+              "solved": false,
+              "score": -24,
+              "depth": 9,
+              "nodes": 49152,
+              "checks_gen": 141
+            },
+            {
+              "id": "TAC_21",
+              "expected": "d4c5",
+              "found": "d4c5",
+              "solved": true,
+              "score": 40,
+              "depth": 7,
+              "nodes": 43008,
+              "checks_gen": 356
+            },
+            {
+              "id": "TAC_22",
+              "expected": "c1g5",
+              "found": "a2a3",
+              "solved": false,
+              "score": 28,
+              "depth": 8,
+              "nodes": 34816,
+              "checks_gen": 153
+            },
+            {
+              "id": "TAC_23",
+              "expected": "c3e4",
+              "found": "c3e4",
+              "solved": true,
+              "score": -23,
+              "depth": 6,
+              "nodes": 30720,
+              "checks_gen": 846
+            },
+            {
+              "id": "TAC_24",
+              "expected": "f1d3",
+              "found": "f1b5",
+              "solved": false,
+              "score": -71,
+              "depth": 9,
+              "nodes": 26624,
+              "checks_gen": 955
+            },
+            {
+              "id": "TAC_25",
+              "expected": "f1e2",
+              "found": "b1d2",
+              "solved": false,
+              "score": 26,
+              "depth": 7,
+              "nodes": 38912,
+              "checks_gen": 418
+            },
+            {
+              "id": "TAC_26",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 120,
+              "depth": 10,
+              "nodes": 55296,
+              "checks_gen": 500
+            },
+            {
+              "id": "TAC_27",
+              "expected": "f1d3",
+              "found": "c1d2",
+              "solved": false,
+              "score": 23,
+              "depth": 9,
+              "nodes": 36864,
+              "checks_gen": 245
+            },
+            {
+              "id": "TAC_28",
+              "expected": "d4d5",
+              "found": "d4d5",
+              "solved": true,
+              "score": 17,
+              "depth": 8,
+              "nodes": 47104,
+              "checks_gen": 158
+            },
+            {
+              "id": "TAC_29",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 38,
+              "depth": 9,
+              "nodes": 43008,
+              "checks_gen": 409
+            },
+            {
+              "id": "TAC_30",
+              "expected": "c3e4",
+              "found": "f1b5",
+              "solved": false,
+              "score": 30,
+              "depth": 10,
+              "nodes": 43008,
+              "checks_gen": 269
+            }
+          ]
+        },
+        "500ms": {
+          "solved": 13,
+          "total_positions": 30,
+          "solve_rate": 0.43333333333333335,
+          "avg_depth": 9.966666666666667,
+          "total_nodes": 6971392,
+          "avg_nodes": 232379.73333333334,
+          "nps": 462284,
+          "checks_generated": 116366,
+          "positions": [
+            {
+              "id": "TAC_01",
+              "expected": "f3f7",
+              "found": "f3f7",
+              "solved": true,
+              "score": 28999,
+              "depth": 9,
+              "nodes": 421888,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_02",
+              "expected": "d1d8",
+              "found": "d1d8",
+              "solved": true,
+              "score": 28999,
+              "depth": 15,
+              "nodes": 563200,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_03",
+              "expected": "e1e8",
+              "found": "e1e8",
+              "solved": true,
+              "score": 28999,
+              "depth": 13,
+              "nodes": 454656,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_04",
+              "expected": "d3h7",
+              "found": "b1b3",
+              "solved": false,
+              "score": 7,
+              "depth": 7,
+              "nodes": 217088,
+              "checks_gen": 2987
+            },
+            {
+              "id": "TAC_05",
+              "expected": "b5d7",
+              "found": "b5d7",
+              "solved": true,
+              "score": 971,
+              "depth": 12,
+              "nodes": 221184,
+              "checks_gen": 10139
+            },
+            {
+              "id": "TAC_06",
+              "expected": "d3h7",
+              "found": "e1g1",
+              "solved": false,
+              "score": 42,
+              "depth": 11,
+              "nodes": 206848,
+              "checks_gen": 3158
+            },
+            {
+              "id": "TAC_07",
+              "expected": "d1h5",
+              "found": "d1f3",
+              "solved": false,
+              "score": 103,
+              "depth": 8,
+              "nodes": 174080,
+              "checks_gen": 11617
+            },
+            {
+              "id": "TAC_08",
+              "expected": "c2c3",
+              "found": "e1e2",
+              "solved": false,
+              "score": -493,
+              "depth": 12,
+              "nodes": 176128,
+              "checks_gen": 12922
+            },
+            {
+              "id": "TAC_09",
+              "expected": "d1d2",
+              "found": "f2f3",
+              "solved": false,
+              "score": 18,
+              "depth": 9,
+              "nodes": 206848,
+              "checks_gen": 7338
+            },
+            {
+              "id": "TAC_10",
+              "expected": "c1d2",
+              "found": "c1d2",
+              "solved": true,
+              "score": 124,
+              "depth": 11,
+              "nodes": 208896,
+              "checks_gen": 1438
+            },
+            {
+              "id": "TAC_11",
+              "expected": "f6g4",
+              "found": "c6d4",
+              "solved": false,
+              "score": -47,
+              "depth": 11,
+              "nodes": 186368,
+              "checks_gen": 4943
+            },
+            {
+              "id": "TAC_12",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 41,
+              "depth": 8,
+              "nodes": 198656,
+              "checks_gen": 2276
+            },
+            {
+              "id": "TAC_13",
+              "expected": "c2c3",
+              "found": "b1c3",
+              "solved": false,
+              "score": 15,
+              "depth": 10,
+              "nodes": 157696,
+              "checks_gen": 1602
+            },
+            {
+              "id": "TAC_14",
+              "expected": "e1g1",
+              "found": "a2a3",
+              "solved": false,
+              "score": 53,
+              "depth": 10,
+              "nodes": 200704,
+              "checks_gen": 2321
+            },
+            {
+              "id": "TAC_15",
+              "expected": "c2c3",
+              "found": "c1g5",
+              "solved": false,
+              "score": -26,
+              "depth": 8,
+              "nodes": 221184,
+              "checks_gen": 2110
+            },
+            {
+              "id": "TAC_16",
+              "expected": "e4d5",
+              "found": "e4d5",
+              "solved": true,
+              "score": 127,
+              "depth": 9,
+              "nodes": 180224,
+              "checks_gen": 3099
+            },
+            {
+              "id": "TAC_17",
+              "expected": "e8g8",
+              "found": "a5b6",
+              "solved": false,
+              "score": -278,
+              "depth": 9,
+              "nodes": 280576,
+              "checks_gen": 4038
+            },
+            {
+              "id": "TAC_18",
+              "expected": "b1c3",
+              "found": "d4c6",
+              "solved": false,
+              "score": 51,
+              "depth": 9,
+              "nodes": 219136,
+              "checks_gen": 7389
+            },
+            {
+              "id": "TAC_19",
+              "expected": "h4e4",
+              "found": "h4e4",
+              "solved": true,
+              "score": 34,
+              "depth": 12,
+              "nodes": 301056,
+              "checks_gen": 6058
+            },
+            {
+              "id": "TAC_20",
+              "expected": "c1d2",
+              "found": "d1d2",
+              "solved": false,
+              "score": -24,
+              "depth": 10,
+              "nodes": 258048,
+              "checks_gen": 1819
+            },
+            {
+              "id": "TAC_21",
+              "expected": "d4c5",
+              "found": "d4c5",
+              "solved": true,
+              "score": 40,
+              "depth": 10,
+              "nodes": 239616,
+              "checks_gen": 2866
+            },
+            {
+              "id": "TAC_22",
+              "expected": "c1g5",
+              "found": "a2a3",
+              "solved": false,
+              "score": 28,
+              "depth": 9,
+              "nodes": 194560,
+              "checks_gen": 2271
+            },
+            {
+              "id": "TAC_23",
+              "expected": "c3e4",
+              "found": "c3e4",
+              "solved": true,
+              "score": -23,
+              "depth": 8,
+              "nodes": 194560,
+              "checks_gen": 4806
+            },
+            {
+              "id": "TAC_24",
+              "expected": "f1d3",
+              "found": "f1b5",
+              "solved": false,
+              "score": -71,
+              "depth": 9,
+              "nodes": 141312,
+              "checks_gen": 5418
+            },
+            {
+              "id": "TAC_25",
+              "expected": "f1e2",
+              "found": "b1d2",
+              "solved": false,
+              "score": 26,
+              "depth": 9,
+              "nodes": 186368,
+              "checks_gen": 1631
+            },
+            {
+              "id": "TAC_26",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 120,
+              "depth": 11,
+              "nodes": 217088,
+              "checks_gen": 6017
+            },
+            {
+              "id": "TAC_27",
+              "expected": "f1d3",
+              "found": "c1d2",
+              "solved": false,
+              "score": 19,
+              "depth": 9,
+              "nodes": 153600,
+              "checks_gen": 1689
+            },
+            {
+              "id": "TAC_28",
+              "expected": "d4d5",
+              "found": "d4d5",
+              "solved": true,
+              "score": 17,
+              "depth": 10,
+              "nodes": 180224,
+              "checks_gen": 1094
+            },
+            {
+              "id": "TAC_29",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 38,
+              "depth": 10,
+              "nodes": 190464,
+              "checks_gen": 2591
+            },
+            {
+              "id": "TAC_30",
+              "expected": "c3e4",
+              "found": "f1b5",
+              "solved": false,
+              "score": 30,
+              "depth": 11,
+              "nodes": 219136,
+              "checks_gen": 2729
+            }
+          ]
+        }
+      }
+    },
+    "Q3": {
+      "mode": 3,
+      "description": "Q2 + Conservative Check Filter (SEE >= 0 checks)",
+      "time_controls": {
+        "100ms": {
+          "solved": 14,
+          "total_positions": 30,
+          "solve_rate": 0.4666666666666667,
+          "avg_depth": 9.366666666666667,
+          "total_nodes": 1627702,
+          "avg_nodes": 54256.73333333333,
+          "nps": 530328,
+          "checks_generated": 8344,
+          "positions": [
+            {
+              "id": "TAC_01",
+              "expected": "f3f7",
+              "found": "f3f7",
+              "solved": true,
+              "score": 28999,
+              "depth": 8,
+              "nodes": 73728,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_02",
+              "expected": "d1d8",
+              "found": "d1d8",
+              "solved": true,
+              "score": 28999,
+              "depth": 14,
+              "nodes": 165888,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_03",
+              "expected": "e1e8",
+              "found": "e1e8",
+              "solved": true,
+              "score": 28999,
+              "depth": 11,
+              "nodes": 104448,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_04",
+              "expected": "d3h7",
+              "found": "b1b3",
+              "solved": false,
+              "score": -21,
+              "depth": 6,
+              "nodes": 53248,
+              "checks_gen": 76
+            },
+            {
+              "id": "TAC_05",
+              "expected": "b5d7",
+              "found": "b5d7",
+              "solved": true,
+              "score": 971,
+              "depth": 12,
+              "nodes": 67584,
+              "checks_gen": 688
+            },
+            {
+              "id": "TAC_06",
+              "expected": "d3h7",
+              "found": "a1b1",
+              "solved": false,
+              "score": 41,
+              "depth": 7,
+              "nodes": 57344,
+              "checks_gen": 129
+            },
+            {
+              "id": "TAC_07",
+              "expected": "d1h5",
+              "found": "d1f3",
+              "solved": false,
+              "score": 103,
+              "depth": 8,
+              "nodes": 34816,
+              "checks_gen": 460
+            },
+            {
+              "id": "TAC_08",
+              "expected": "c2c3",
+              "found": "e1e2",
+              "solved": false,
+              "score": -493,
+              "depth": 12,
+              "nodes": 28672,
+              "checks_gen": 1023
+            },
+            {
+              "id": "TAC_09",
+              "expected": "d1d2",
+              "found": "f2f3",
+              "solved": false,
+              "score": 9,
+              "depth": 9,
+              "nodes": 57344,
+              "checks_gen": 662
+            },
+            {
+              "id": "TAC_10",
+              "expected": "c1d2",
+              "found": "c1d2",
+              "solved": true,
+              "score": 124,
+              "depth": 11,
+              "nodes": 38912,
+              "checks_gen": 68
+            },
+            {
+              "id": "TAC_11",
+              "expected": "f6g4",
+              "found": "c6d4",
+              "solved": false,
+              "score": -47,
+              "depth": 9,
+              "nodes": 43008,
+              "checks_gen": 288
+            },
+            {
+              "id": "TAC_12",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 41,
+              "depth": 7,
+              "nodes": 51200,
+              "checks_gen": 574
+            },
+            {
+              "id": "TAC_13",
+              "expected": "c2c3",
+              "found": "b1c3",
+              "solved": false,
+              "score": 17,
+              "depth": 10,
+              "nodes": 38912,
+              "checks_gen": 114
+            },
+            {
+              "id": "TAC_14",
+              "expected": "e1g1",
+              "found": "a2a3",
+              "solved": false,
+              "score": 60,
+              "depth": 10,
+              "nodes": 45056,
+              "checks_gen": 213
+            },
+            {
+              "id": "TAC_15",
+              "expected": "c2c3",
+              "found": "c1g5",
+              "solved": false,
+              "score": -26,
+              "depth": 8,
+              "nodes": 53248,
+              "checks_gen": 200
+            },
+            {
+              "id": "TAC_16",
+              "expected": "e4d5",
+              "found": "e4d5",
+              "solved": true,
+              "score": 77,
+              "depth": 7,
+              "nodes": 46646,
+              "checks_gen": 162
+            },
+            {
+              "id": "TAC_17",
+              "expected": "e8g8",
+              "found": "c6e5",
+              "solved": false,
+              "score": -283,
+              "depth": 8,
+              "nodes": 40960,
+              "checks_gen": 320
+            },
+            {
+              "id": "TAC_18",
+              "expected": "b1c3",
+              "found": "b1c3",
+              "solved": true,
+              "score": 32,
+              "depth": 6,
+              "nodes": 59392,
+              "checks_gen": 666
+            },
+            {
+              "id": "TAC_19",
+              "expected": "h4e4",
+              "found": "h4e4",
+              "solved": true,
+              "score": 34,
+              "depth": 12,
+              "nodes": 45056,
+              "checks_gen": 321
+            },
+            {
+              "id": "TAC_20",
+              "expected": "c1d2",
+              "found": "d1d2",
+              "solved": false,
+              "score": -24,
+              "depth": 10,
+              "nodes": 45056,
+              "checks_gen": 45
+            },
+            {
+              "id": "TAC_21",
+              "expected": "d4c5",
+              "found": "d4c5",
+              "solved": true,
+              "score": 40,
+              "depth": 10,
+              "nodes": 36864,
+              "checks_gen": 182
+            },
+            {
+              "id": "TAC_22",
+              "expected": "c1g5",
+              "found": "a2a3",
+              "solved": false,
+              "score": 28,
+              "depth": 9,
+              "nodes": 36864,
+              "checks_gen": 220
+            },
+            {
+              "id": "TAC_23",
+              "expected": "c3e4",
+              "found": "c3e4",
+              "solved": true,
+              "score": -23,
+              "depth": 9,
+              "nodes": 43008,
+              "checks_gen": 277
+            },
+            {
+              "id": "TAC_24",
+              "expected": "f1d3",
+              "found": "f1b5",
+              "solved": false,
+              "score": -81,
+              "depth": 7,
+              "nodes": 47104,
+              "checks_gen": 372
+            },
+            {
+              "id": "TAC_25",
+              "expected": "f1e2",
+              "found": "b1d2",
+              "solved": false,
+              "score": 26,
+              "depth": 10,
+              "nodes": 51200,
+              "checks_gen": 271
+            },
+            {
+              "id": "TAC_26",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 120,
+              "depth": 11,
+              "nodes": 59392,
+              "checks_gen": 129
+            },
+            {
+              "id": "TAC_27",
+              "expected": "f1d3",
+              "found": "c1d2",
+              "solved": false,
+              "score": 19,
+              "depth": 9,
+              "nodes": 36864,
+              "checks_gen": 156
+            },
+            {
+              "id": "TAC_28",
+              "expected": "d4d5",
+              "found": "d4d5",
+              "solved": true,
+              "score": 17,
+              "depth": 10,
+              "nodes": 59392,
+              "checks_gen": 107
+            },
+            {
+              "id": "TAC_29",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 38,
+              "depth": 10,
+              "nodes": 53248,
+              "checks_gen": 326
+            },
+            {
+              "id": "TAC_30",
+              "expected": "c3e4",
+              "found": "f1b5",
+              "solved": false,
+              "score": 30,
+              "depth": 11,
+              "nodes": 53248,
+              "checks_gen": 295
+            }
+          ]
+        },
+        "500ms": {
+          "solved": 12,
+          "total_positions": 30,
+          "solve_rate": 0.4,
+          "avg_depth": 10.166666666666666,
+          "total_nodes": 7194262,
+          "avg_nodes": 239808.73333333334,
+          "nps": 474786,
+          "checks_generated": 47066,
+          "positions": [
+            {
+              "id": "TAC_01",
+              "expected": "f3f7",
+              "found": "f3f7",
+              "solved": true,
+              "score": 28999,
+              "depth": 9,
+              "nodes": 454656,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_02",
+              "expected": "d1d8",
+              "found": "d1d8",
+              "solved": true,
+              "score": 28999,
+              "depth": 16,
+              "nodes": 602112,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_03",
+              "expected": "e1e8",
+              "found": "e1e8",
+              "solved": true,
+              "score": 28999,
+              "depth": 13,
+              "nodes": 585728,
+              "checks_gen": 0
+            },
+            {
+              "id": "TAC_04",
+              "expected": "d3h7",
+              "found": "b1b3",
+              "solved": false,
+              "score": -21,
+              "depth": 8,
+              "nodes": 208896,
+              "checks_gen": 1182
+            },
+            {
+              "id": "TAC_05",
+              "expected": "b5d7",
+              "found": "b5d7",
+              "solved": true,
+              "score": 971,
+              "depth": 13,
+              "nodes": 245760,
+              "checks_gen": 5399
+            },
+            {
+              "id": "TAC_06",
+              "expected": "d3h7",
+              "found": "e1g1",
+              "solved": false,
+              "score": 35,
+              "depth": 10,
+              "nodes": 282624,
+              "checks_gen": 379
+            },
+            {
+              "id": "TAC_07",
+              "expected": "d1h5",
+              "found": "d1f3",
+              "solved": false,
+              "score": 103,
+              "depth": 8,
+              "nodes": 190464,
+              "checks_gen": 3622
+            },
+            {
+              "id": "TAC_08",
+              "expected": "c2c3",
+              "found": "e1e2",
+              "solved": false,
+              "score": -413,
+              "depth": 9,
+              "nodes": 172032,
+              "checks_gen": 5333
+            },
+            {
+              "id": "TAC_09",
+              "expected": "d1d2",
+              "found": "f2f3",
+              "solved": false,
+              "score": 9,
+              "depth": 10,
+              "nodes": 210944,
+              "checks_gen": 1931
+            },
+            {
+              "id": "TAC_10",
+              "expected": "c1d2",
+              "found": "b5c6",
+              "solved": false,
+              "score": 131,
+              "depth": 11,
+              "nodes": 192512,
+              "checks_gen": 1121
+            },
+            {
+              "id": "TAC_11",
+              "expected": "f6g4",
+              "found": "c6d4",
+              "solved": false,
+              "score": -47,
+              "depth": 9,
+              "nodes": 159744,
+              "checks_gen": 1275
+            },
+            {
+              "id": "TAC_12",
+              "expected": "f3g5",
+              "found": "b1c3",
+              "solved": false,
+              "score": 49,
+              "depth": 9,
+              "nodes": 190464,
+              "checks_gen": 1024
+            },
+            {
+              "id": "TAC_13",
+              "expected": "c2c3",
+              "found": "b1c3",
+              "solved": false,
+              "score": 17,
+              "depth": 10,
+              "nodes": 188416,
+              "checks_gen": 1007
+            },
+            {
+              "id": "TAC_14",
+              "expected": "e1g1",
+              "found": "a2a3",
+              "solved": false,
+              "score": 60,
+              "depth": 11,
+              "nodes": 198656,
+              "checks_gen": 579
+            },
+            {
+              "id": "TAC_15",
+              "expected": "c2c3",
+              "found": "c1g5",
+              "solved": false,
+              "score": -26,
+              "depth": 9,
+              "nodes": 274432,
+              "checks_gen": 1519
+            },
+            {
+              "id": "TAC_16",
+              "expected": "e4d5",
+              "found": "e4d5",
+              "solved": true,
+              "score": 127,
+              "depth": 10,
+              "nodes": 286720,
+              "checks_gen": 2197
+            },
+            {
+              "id": "TAC_17",
+              "expected": "e8g8",
+              "found": "c6e5",
+              "solved": false,
+              "score": -283,
+              "depth": 10,
+              "nodes": 264192,
+              "checks_gen": 4413
+            },
+            {
+              "id": "TAC_18",
+              "expected": "b1c3",
+              "found": "b1c3",
+              "solved": true,
+              "score": 27,
+              "depth": 9,
+              "nodes": 255638,
+              "checks_gen": 3940
+            },
+            {
+              "id": "TAC_19",
+              "expected": "h4e4",
+              "found": "h4e4",
+              "solved": true,
+              "score": 34,
+              "depth": 12,
+              "nodes": 233472,
+              "checks_gen": 2031
+            },
+            {
+              "id": "TAC_20",
+              "expected": "c1d2",
+              "found": "d1d2",
+              "solved": false,
+              "score": -24,
+              "depth": 10,
+              "nodes": 190464,
+              "checks_gen": 131
+            },
+            {
+              "id": "TAC_21",
+              "expected": "d4c5",
+              "found": "d4c5",
+              "solved": true,
+              "score": 40,
+              "depth": 10,
+              "nodes": 198656,
+              "checks_gen": 1045
+            },
+            {
+              "id": "TAC_22",
+              "expected": "c1g5",
+              "found": "a2a3",
+              "solved": false,
+              "score": 28,
+              "depth": 10,
+              "nodes": 215040,
+              "checks_gen": 681
+            },
+            {
+              "id": "TAC_23",
+              "expected": "c3e4",
+              "found": "c3e4",
+              "solved": true,
+              "score": -23,
+              "depth": 9,
+              "nodes": 225280,
+              "checks_gen": 2390
+            },
+            {
+              "id": "TAC_24",
+              "expected": "f1d3",
+              "found": "f1b5",
+              "solved": false,
+              "score": -81,
+              "depth": 9,
+              "nodes": 192512,
+              "checks_gen": 2435
+            },
+            {
+              "id": "TAC_25",
+              "expected": "f1e2",
+              "found": "b1d2",
+              "solved": false,
+              "score": 26,
+              "depth": 10,
+              "nodes": 204800,
+              "checks_gen": 836
+            },
+            {
+              "id": "TAC_26",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 120,
+              "depth": 11,
+              "nodes": 227328,
+              "checks_gen": 583
+            },
+            {
+              "id": "TAC_27",
+              "expected": "f1d3",
+              "found": "c1d2",
+              "solved": false,
+              "score": 19,
+              "depth": 10,
+              "nodes": 174080,
+              "checks_gen": 528
+            },
+            {
+              "id": "TAC_28",
+              "expected": "d4d5",
+              "found": "d4d5",
+              "solved": true,
+              "score": 17,
+              "depth": 11,
+              "nodes": 167936,
+              "checks_gen": 317
+            },
+            {
+              "id": "TAC_29",
+              "expected": "f3g5",
+              "found": "f3g5",
+              "solved": true,
+              "score": 38,
+              "depth": 10,
+              "nodes": 151552,
+              "checks_gen": 707
+            },
+            {
+              "id": "TAC_30",
+              "expected": "c3e4",
+              "found": "f1b5",
+              "solved": false,
+              "score": 30,
+              "depth": 9,
+              "nodes": 49152,
+              "checks_gen": 461
+            }
+          ]
+        }
+      }
+    }
+  }
+}

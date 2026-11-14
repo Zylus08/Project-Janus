@@ -1,0 +1,58 @@
+{
+  "overall_passed": true,
+  "perft": [
+    {
+      "label": "Startpos D1",
+      "depth": 1,
+      "nodes": 20,
+      "expected": 20,
+      "passed": true
+    },
+    {
+      "label": "Startpos D2",
+      "depth": 2,
+      "nodes": 400,
+      "expected": 400,
+      "passed": true
+    },
+    {
+      "label": "Startpos D3",
+      "depth": 3,
+      "nodes": 8902,
+      "expected": 8902,
+      "passed": true
+    },
+    {
+      "label": "Startpos D4",
+      "depth": 4,
+      "nodes": 197281,
+      "expected": 197281,
+      "passed": true
+    },
+    {
+      "label": "KiwiPete D1",
+      "depth": 1,
+      "nodes": 48,
+      "expected": 48,
+      "passed": true
+    },
+    {
+      "label": "KiwiPete D2",
+      "depth": 2,
+      "nodes": 2039,
+      "expected": 2039,
+      "passed": true
+    },
+    {
+      "label": "KiwiPete D3",
+      "depth": 3,
+      "nodes": 97862,
+      "expected": 97862,
+      "passed": true
+    }
+  ],
+  "determinism": true,
+  "smp_safety": true,
+  "uci_protocol": true,
+  "id_name": "id name Janus Classical X (P1.16 Candidate X21)"
+}

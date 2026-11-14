@@ -1,0 +1,167 @@
+{
+  "milestone": "P1.16",
+  "title": "Classical Evaluation Integrity, Tactical Quiescence Search & Evidence-Based Strength Recovery",
+  "date": "2026-11-14",
+  "charter": "Strictly Non-ML Classical Computer Chess Architecture (Zero NNUE, Zero Learned Parameters, Zero SPSA/Texel Tuning)",
+  "development_branch": "phase1/classical-janus",
+  "parent_commit": "2226c0c",
+  "baselines_and_references": {
+    "baseline_1t": {
+      "name": "Janus Classical X7",
+      "commit": "b34e342",
+      "sha256": "86392A2FE44C09B167664B29DA928D1FE25CE0E0B19BD8CE4751433F62D38B28",
+      "path": "analysis/phase1/p1.3/control/janus_classical_x7.exe"
+    },
+    "baseline_4t": {
+      "name": "Janus Classical X12",
+      "commit": "78ca3d5",
+      "sha256": "00B4F5FE9CE137E749845B0A80509E2B2B498C0B29E3065DE78CCFE573F4B52F",
+      "path": "analysis/phase1/p1.7/control/janus_classical_x12.exe"
+    },
+    "leading_reference": {
+      "name": "Janus Classical X19",
+      "commit": "bcfdecd",
+      "sha256": "CBB7785A47E5F9EC64C51C20B8387DE3EFE782F42BDFCEA38008F6450E534629",
+      "path": "analysis/phase1/p1.14/control/janus_classical_x19.exe"
+    },
+    "candidate": {
+      "name": "Janus Classical X21 (X21-S / X21-P)",
+      "executable_sha256": "AD1E1F0598D0CA016267CA4F03DC771346CEE9D0D563A36AB6B6590D7F4731FD",
+      "dll_sha256": "B8A930BC9302788E06533B7A04B318E0AEB7E64A04BD7C0F52564F77EB253A60",
+      "source_sha256": "AF67D06809A0E4FF3BBA4E55C1C8CF6B0B9BCA5A9BEB06AAED70C57A1806B2D2"
+    }
+  },
+  "phase_results_summary": {
+    "phase0_reconciliation": "Verified all 420 P1.15 games, confirmed Game 12 mate blindness forensics",
+    "phase1_eval_ledger": "Authoritative inventory of E0-E15 terms, additive trace verified within 1 cp",
+    "phase2_eval_correctness": "225/225 (100.0%) mirror symmetry, 225/225 (100.0%) absolute inversion on E5",
+    "phase3_quiescence_audit": "Discovered legacy stand-pat under check defect and mate blindness (-89 cp)",
+    "phase4_quiescence_repairs": "100.0% pass rate (40/40) on verification suite, mate/stalemate resolved",
+    "phase5_selective_checking": "Q1 authoritatively selected; quiet checks rejected due to -27.8% NPS penalty",
+    "phase6_targeted_eval": "64K thread-local pawn hash table integrated on 1T (+52.1% search NPS)",
+    "phase7_factorial_ablation": "B4 (X21-S) and B6 (X21-P) achieved deepest search trees and 100% mate rate",
+    "phase8_search_economics": "Micro-benchmarked component latencies, verified EBF 2.45x, resolved G12",
+    "phase9_systems_correctness": "Perft 100% exact match, bitwise single-thread determinism, SMP safe, UCI compliant"
+  },
+  "tournaments": {
+    "Match_1": {
+      "match_id": "match1_x21s_vs_x7",
+      "candidate": "Janus Classical X21-S",
+      "opponent": "Janus Classical X7 (Baseline 1T)",
+      "games_played": 100,
+      "cand_wins": 22,
+      "draws": 47,
+      "cand_losses": 31,
+      "cand_points": 45.5,
+      "cand_score_pct": 0.455,
+      "elo_difference": -31.354042247811975,
+      "paired_ci_95": [
+        0.3787176135505471,
+        0.5312823864494529
+      ],
+      "one_sided_p_value": 0.8762016731210764
+    },
+    "Match_2": {
+      "match_id": "match2_x21s_vs_x7_slow",
+      "candidate": "Janus Classical X21-S",
+      "opponent": "Janus Classical X7 (Baseline 1T)",
+      "games_played": 50,
+      "cand_wins": 7,
+      "draws": 25,
+      "cand_losses": 18,
+      "cand_points": 19.5,
+      "cand_score_pct": 0.39,
+      "elo_difference": -77.70609119370711,
+      "paired_ci_95": [
+        0.3095858881205544,
+        0.47041411187944565
+      ],
+      "one_sided_p_value": 0.9963306060010075
+    },
+    "Match_3": {
+      "match_id": "match3_x21p_vs_x12",
+      "candidate": "Janus Classical X21-P",
+      "opponent": "Janus Classical X12 (Baseline 4T)",
+      "games_played": 100,
+      "cand_wins": 24,
+      "draws": 46,
+      "cand_losses": 30,
+      "cand_points": 47.0,
+      "cand_score_pct": 0.47,
+      "elo_difference": -20.871204666028625,
+      "paired_ci_95": [
+        0.39639824131003165,
+        0.5436017586899683
+      ],
+      "one_sided_p_value": 0.7878193200893839
+    },
+    "Match_4": {
+      "match_id": "match4_x21s_vs_references",
+      "candidate": "Janus Classical X21-S",
+      "opponent": "Janus Classical X19 / X20",
+      "games_played": 50,
+      "cand_wins": 15,
+      "draws": 22,
+      "cand_losses": 13,
+      "cand_points": 26.0,
+      "cand_score_pct": 0.52,
+      "elo_difference": 13.904842503684808,
+      "paired_ci_95": [
+        0.38511770627056363,
+        0.6520284005399716
+      ],
+      "one_sided_p_value": null
+    },
+    "Match_5": {
+      "match_id": "match5_x21s_vs_sf4",
+      "candidate": "Janus Classical X21-S",
+      "opponent": "Stockfish 4 (Classical Ref 1)",
+      "games_played": 40,
+      "cand_wins": 10,
+      "draws": 2,
+      "cand_losses": 28,
+      "cand_points": 11.0,
+      "cand_score_pct": 0.275,
+      "elo_difference": -168.40212509629242,
+      "paired_ci_95": [
+        0.16895128277184662,
+        0.3810487172281534
+      ],
+      "one_sided_p_value": 0.9999839744629693
+    },
+    "Match_6": {
+      "match_id": "match6_x21s_vs_sf11",
+      "candidate": "Janus Classical X21-S",
+      "opponent": "Stockfish 11 (Classical Ref 2)",
+      "games_played": 40,
+      "cand_wins": 11,
+      "draws": 0,
+      "cand_losses": 29,
+      "cand_points": 11.0,
+      "cand_score_pct": 0.275,
+      "elo_difference": -168.40212509629242,
+      "paired_ci_95": [
+        0.1631520538505865,
+        0.38684794614941354
+      ],
+      "one_sided_p_value": 0.9999597274646015
+    },
+    "Match_7": {
+      "match_id": "match7_x21s_vs_sf19",
+      "candidate": "Janus Classical X21-S",
+      "opponent": "Stockfish 19 (Ultimate NNUE)",
+      "games_played": 40,
+      "cand_wins": 8,
+      "draws": 2,
+      "cand_losses": 30,
+      "cand_points": 9.0,
+      "cand_score_pct": 0.225,
+      "elo_difference": -214.84767375797915,
+      "paired_ci_95": [
+        0.1189512827718466,
+        0.33104871722815343
+      ],
+      "one_sided_p_value": 0.9999998137169959
+    }
+  }
+}

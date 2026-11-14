@@ -1,0 +1,96 @@
+{
+  "milestone": "P1.16",
+  "phase": 3,
+  "title": "Quiescence Search Architecture Audit",
+  "total_cases_audited": 7,
+  "critical_bugs_found": 4,
+  "audits": [
+    {
+      "case_id": "CASE_01_IN_CHECK_STAND_PAT",
+      "question": "Can Janus enter quiescence search while in check and use stand-pat?",
+      "fen": "6k1/8/8/8/8/8/8/6RK b - - 0 1",
+      "side_to_move": "Black",
+      "in_check": true,
+      "legal_moves_count": 4,
+      "captures_generated_count": 0,
+      "static_eval": -523,
+      "expected_behavior": "Must recognize in-check state, prohibit stand-pat, and search legal evasions",
+      "actual_behavior": "Evaluates stand_pat = -523. If beta <= -523, produces false beta cutoff without searching any move. Generates 0 captures (missing all 4 quiet king evasions).",
+      "defect_severity": "CRITICAL",
+      "defective_condition": "quiescence() lacks 'in_check' branch; uses stand_pat unconditionally"
+    },
+    {
+      "case_id": "CASE_02_CHECKMATE_STAND_PAT",
+      "question": "Can quiescence search return non-mate score in checkmate?",
+      "fen": "rnb1kbnr/pppp1ppp/8/4p3/6Pq/5P2/PPPPP2P/RNBQKBNR w KQkq - 1 3",
+      "side_to_move": "White",
+      "in_check": true,
+      "legal_moves_count": 0,
+      "captures_generated_count": 0,
+      "static_eval": -89,
+      "expected_behavior": "Must return -MATE (-30000) because White has 0 legal moves in check",
+      "actual_behavior": "quiescence() returns stand_pat = -89 cp! Returns -89 instead of -30000.",
+      "defect_severity": "CATASTROPHIC",
+      "defective_condition": "quiescence() does not check for checkmate when n_legal == 0 in check"
+    },
+    {
+      "case_id": "CASE_03_QUIET_EVASIONS_OMITTED",
+      "question": "Are non-capture check evasions omitted in quiescence?",
+      "fen": "R6k/8/8/8/8/8/8/7K b - - 0 1",
+      "side_to_move": "Black",
+      "in_check": true,
+      "legal_moves_count": 2,
+      "captures_generated_count": 0,
+      "expected_behavior": "Search Kh7 to escape check safely",
+      "actual_behavior": "Generates 0 captures. Quiescence aborts search without testing Kh7, returning stand-pat.",
+      "defect_severity": "CRITICAL",
+      "defective_condition": "native_generate_captures() only generates captures; all quiet evasions are omitted"
+    },
+    {
+      "case_id": "CASE_04_NEGATIVE_SEE_EVASION_PRUNING",
+      "question": "Can negative-SEE filtering discard the only legal evasion?",
+      "fen": "4k3/5Q2/8/8/2B5/8/8/7K b - - 0 1",
+      "side_to_move": "Black",
+      "in_check": true,
+      "legal_moves_count": 1,
+      "captures_generated_count": 0,
+      "capture_see": null,
+      "expected_behavior": "Must search Kxf7 (or Kd8 if legal). Evasions must never be pruned by SEE.",
+      "actual_behavior": "SEE is None < 0. Under g_quiescence_see_mode >= 2, line 3949 executes 'continue;', pruning the capture! Black is left with 0 moves searched.",
+      "defect_severity": "CRITICAL",
+      "defective_condition": "SEE pruning does not check whether position is in check or move is evasion"
+    },
+    {
+      "case_id": "CASE_05_STALEMATE_MISCLASSIFICATION",
+      "question": "Does quiescence correctly return 0 cp for stalemate?",
+      "fen": "k7/8/1K6/8/8/8/8/8 b - - 0 1",
+      "side_to_move": "Black",
+      "in_check": false,
+      "legal_moves_count": 1,
+      "static_eval": 48,
+      "expected_behavior": "Return 0 cp (Stalemate draw)",
+      "actual_behavior": "Returns stand_pat = 48 cp. Does not detect stalemate.",
+      "defect_severity": "MODERATE",
+      "defective_condition": "quiescence() lacks stalemate detection when n_legal == 0 and !in_check"
+    },
+    {
+      "case_id": "CASE_06_QUIET_CHECKS_EXCLUDED",
+      "question": "Are quiet checking moves searched in quiescence?",
+      "fen": "r1bqkb1r/pppp1ppp/2n5/4p2Q/2B1n3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 4",
+      "captures_generated": 4,
+      "expected_behavior": "Selective checking moves at first quiescence ply can discover forced tactics",
+      "actual_behavior": "Only captures and promotions are generated. Quiet checks are 100% ignored.",
+      "defect_severity": "ARCHITECTURAL_LIMITATION",
+      "defective_condition": "Standard captures-only quiescence search"
+    },
+    {
+      "case_id": "CASE_07_TT_AND_MATE_DISTANCE",
+      "question": "Are quiescence TT entries probed/stored and mate distance tracked?",
+      "fen": "ALL",
+      "expected_behavior": "Quiescence search should track search ply to normalize mate scores (-MATE + ply)",
+      "actual_behavior": "quiescence() signature lacks 'ply'; does not probe or store in transposition table; cannot normalize mate scores.",
+      "defect_severity": "HIGH",
+      "defective_condition": "Missing 'int ply' and 'int qply' parameters in quiescence signature"
+    }
+  ]
+}

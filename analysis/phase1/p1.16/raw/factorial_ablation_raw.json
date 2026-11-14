@@ -1,0 +1,154 @@
+{
+  "B0": {
+    "config": {
+      "id": "B0",
+      "threads": 1,
+      "qmode": 0,
+      "emode": 5,
+      "phash": 0,
+      "name": "X7 1T | Q0 (Legacy) | E5 (Baseline Control)"
+    },
+    "mate_detection_rate": 0.9,
+    "mate_solved": 9,
+    "tactical_solve_rate": 0.4,
+    "tactical_solved": 12,
+    "avg_depth": 8.733333333333333,
+    "total_nodes": 7899136,
+    "search_nps": 1748316,
+    "startpos_nps": 2056614,
+    "startpos_nodes": 226779
+  },
+  "B1": {
+    "config": {
+      "id": "B1",
+      "threads": 1,
+      "qmode": 1,
+      "emode": 5,
+      "phash": 0,
+      "name": "X7 1T | Q1 (Corrected QSearch) | E5 (Baseline Eval)"
+    },
+    "mate_detection_rate": 1.0,
+    "mate_solved": 10,
+    "tactical_solve_rate": 0.4,
+    "tactical_solved": 12,
+    "avg_depth": 9.233333333333333,
+    "total_nodes": 6369280,
+    "search_nps": 1406780,
+    "startpos_nps": 773734,
+    "startpos_nodes": 33381
+  },
+  "B2": {
+    "config": {
+      "id": "B2",
+      "threads": 1,
+      "qmode": 2,
+      "emode": 5,
+      "phash": 0,
+      "name": "X7 1T | Q2 (Quiet Checks) | E5 (Baseline Eval)"
+    },
+    "mate_detection_rate": 1.0,
+    "mate_solved": 10,
+    "tactical_solve_rate": 0.43333333333333335,
+    "tactical_solved": 13,
+    "avg_depth": 9.3,
+    "total_nodes": 4235264,
+    "search_nps": 933526,
+    "startpos_nps": 1127275,
+    "startpos_nodes": 14064
+  },
+  "B3": {
+    "config": {
+      "id": "B3",
+      "threads": 1,
+      "qmode": 0,
+      "emode": 5,
+      "phash": 1,
+      "name": "X7 1T | Q0 (Legacy) | E5 + 64K Pawn Hash"
+    },
+    "mate_detection_rate": 0.9,
+    "mate_solved": 9,
+    "tactical_solve_rate": 0.43333333333333335,
+    "tactical_solved": 13,
+    "avg_depth": 9.966666666666667,
+    "total_nodes": 6356992,
+    "search_nps": 1405469,
+    "startpos_nps": 852258,
+    "startpos_nodes": 28758
+  },
+  "B4": {
+    "config": {
+      "id": "B4",
+      "threads": 1,
+      "qmode": 1,
+      "emode": 5,
+      "phash": 1,
+      "name": "X7 1T | Q1 (Corrected) | E5 + 64K Pawn Hash [Candidate X21-S]"
+    },
+    "mate_detection_rate": 1.0,
+    "mate_solved": 10,
+    "tactical_solve_rate": 0.43333333333333335,
+    "tactical_solved": 13,
+    "avg_depth": 9.866666666666667,
+    "total_nodes": 5748736,
+    "search_nps": 1270317,
+    "startpos_nps": 1754955,
+    "startpos_nodes": 19523
+  },
+  "B5": {
+    "config": {
+      "id": "B5",
+      "threads": 4,
+      "qmode": 0,
+      "emode": 10,
+      "phash": 1,
+      "name": "X12 4T | Q0 (Legacy) | E10 (Baseline Control)"
+    },
+    "mate_detection_rate": 0.9,
+    "mate_solved": 9,
+    "tactical_solve_rate": 0.4666666666666667,
+    "tactical_solved": 14,
+    "avg_depth": 8.566666666666666,
+    "total_nodes": 21845658,
+    "search_nps": 4774678,
+    "startpos_nps": 5251225,
+    "startpos_nodes": 669243
+  },
+  "B6": {
+    "config": {
+      "id": "B6",
+      "threads": 4,
+      "qmode": 1,
+      "emode": 10,
+      "phash": 1,
+      "name": "X12 4T | Q1 (Corrected) | E10 [Candidate X21-P]"
+    },
+    "mate_detection_rate": 1.0,
+    "mate_solved": 10,
+    "tactical_solve_rate": 0.5,
+    "tactical_solved": 15,
+    "avg_depth": 9.5,
+    "total_nodes": 15898624,
+    "search_nps": 3448411,
+    "startpos_nps": 175535,
+    "startpos_nodes": 223
+  },
+  "B7": {
+    "config": {
+      "id": "B7",
+      "threads": 4,
+      "qmode": 2,
+      "emode": 10,
+      "phash": 1,
+      "name": "X12 4T | Q2 (Quiet Checks) | E10"
+    },
+    "mate_detection_rate": 1.0,
+    "mate_solved": 10,
+    "tactical_solve_rate": 0.4,
+    "tactical_solved": 12,
+    "avg_depth": 9.9,
+    "total_nodes": 13973504,
+    "search_nps": 3012605,
+    "startpos_nps": 209685,
+    "startpos_nodes": 223
+  }
+}

@@ -333,6 +333,12 @@ static int  g_adaptive_capture_mode = 0; // 0=C0 (Frozen X19), 1=C1 (Near-even [
 static int  g_history_mode = 0;          // 0=H0 (Frozen X19), 1=H1 (Aging/decay at root), 2=H2 (Conservative aging), 3=H3 (In-search gravity)
 static bool g_exact_search_mode = false; // Phase 6 exact full-width verification
 
+// Milestone P1.16 Quiescence Search Architecture & Correctness
+static int  g_qsearch_mode = 1;          // 0=Q0 (Frozen legacy), 1=Q1 (Corrected in-check evasions & mate detection), 2=Q2 (Q1 + quiet checks at qply 0), 3=Q3 (Q2 + conservative check filter)
+static uint64_t g_telemetry_qsearch_in_check = 0;
+static uint64_t g_telemetry_qsearch_checkmates = 0;
+static uint64_t g_telemetry_qsearch_checks_generated = 0;
+
 // ============================================================================
 // Search Modernization & Positional Evaluation Options (Milestone P1.2)
 // ============================================================================
@@ -802,6 +808,43 @@ EXPORT void native_apply_search_variant(const char* var_str) {
             g_lmp_mode = 0;
             g_rfp_margin_per_depth = 120;
         } else { // Track P: X20-P (X12 foundation + Stage Reform + Adaptive Captures)
+            g_eval_mode = 10; // E10 Enhanced Classical Evaluation
+            g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = true; // 64K entry Pawn Hash Table
+            g_dynamic_time_mgmt = true;
+            g_use_lmp = true; // Safe Late Move Pruning
+            g_lmp_mode = 1; // Conservative Quadratic LMP
+            g_lmp_max_depth = 4;
+            g_rfp_margin_per_depth = 90;
+        }
+    } else if (var == "X21") { // P1.16 Candidate: Quiescence Search Correctness & Tactical Reliability
+        g_use_staged_movegen = true;
+        g_quiescence_see_mode = 2;
+        g_use_see_in_quiescence = true;
+        g_use_null_move_pruning = true;
+        g_use_reverse_futility = true;
+        g_use_aspiration_window = true;
+        g_conthist_mode = 3; // H3
+        g_dynamic_lmr_mode = 3; // L3 Calibrated LMR
+        g_use_pruning_safety = false;
+        g_movepicker_stage_reform = true;
+        g_adaptive_capture_mode = 1; // C1 Near-Even Capture Promotion
+        g_qsearch_mode = 1; // Q1 Corrected Quiescence Search
+        if (g_num_threads == 1) { // Track S: X21-S (X7 foundation + Stage Reform + Adaptive Captures + Corrected QSearch)
+            g_eval_mode = 5; // E5 Combined Classical Eval
+            g_tactical_ordering_mode = 2; // Enable Countermove table for staging
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = false;
+            g_dynamic_time_mgmt = false;
+            g_use_lmp = false;
+            g_lmp_mode = 0;
+            g_rfp_margin_per_depth = 120;
+        } else { // Track P: X21-P (X12 foundation + Stage Reform + Adaptive Captures + Corrected QSearch)
             g_eval_mode = 10; // E10 Enhanced Classical Evaluation
             g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
             g_singular_extension_mode = 0; // S0 Off
@@ -2616,7 +2659,33 @@ EXPORT int native_evaluate_internal(const NativeBoard* b, int emode) {
     } else if (emode == 4) { // E4: Endgame only (X7)
         eval_endgame_positional(b, mg_score, eg_score);
     } else if (emode == 5) { // E5: Full combined positional evaluation (X7 Baseline)
-        eval_pawn_structure(b, mg_score, eg_score);
+        if (g_use_pawn_hash) {
+            g_telemetry_pawn_probes++;
+            uint64_t p_key = compute_pawn_zobrist(b);
+            size_t p_idx = p_key & (PAWN_HASH_SIZE - 1);
+            if (g_pawn_table[p_idx].key == p_key) {
+                g_telemetry_pawn_hits++;
+                mg_score[WHITE] += g_pawn_table[p_idx].mg[WHITE];
+                mg_score[BLACK] += g_pawn_table[p_idx].mg[BLACK];
+                eg_score[WHITE] += g_pawn_table[p_idx].eg[WHITE];
+                eg_score[BLACK] += g_pawn_table[p_idx].eg[BLACK];
+            } else {
+                int p_mg[2] = { 0, 0 };
+                int p_eg[2] = { 0, 0 };
+                eval_pawn_structure(b, p_mg, p_eg);
+                g_pawn_table[p_idx].key = p_key;
+                g_pawn_table[p_idx].mg[WHITE] = (int16_t)p_mg[WHITE];
+                g_pawn_table[p_idx].mg[BLACK] = (int16_t)p_mg[BLACK];
+                g_pawn_table[p_idx].eg[WHITE] = (int16_t)p_eg[WHITE];
+                g_pawn_table[p_idx].eg[BLACK] = (int16_t)p_eg[BLACK];
+                mg_score[WHITE] += p_mg[WHITE];
+                mg_score[BLACK] += p_mg[BLACK];
+                eg_score[WHITE] += p_eg[WHITE];
+                eg_score[BLACK] += p_eg[BLACK];
+            }
+        } else {
+            eval_pawn_structure(b, mg_score, eg_score);
+        }
         eval_mobility_and_coordination(b, mg_score, eg_score);
         eval_king_safety(b, mg_score, eg_score);
         eval_endgame_positional(b, mg_score, eg_score);
@@ -3889,114 +3958,321 @@ EXPORT int native_get_exact_search_mode() {
     return g_exact_search_mode ? 1 : 0;
 }
 
-static int quiescence(NativeBoard* b, int alpha, int beta, uint64_t& nodes, std::chrono::steady_clock::time_point deadline, bool& aborted) {
+static int quiescence(NativeBoard* b, int alpha, int beta, int ply, int qply, uint64_t& nodes, std::chrono::steady_clock::time_point deadline, bool& aborted) {
     nodes++;
 
     if ((nodes & 2047) == 0) {
-        if (std::chrono::steady_clock::now() >= deadline) {
+        if (g_stop_search.load(std::memory_order_relaxed) || (t_thread_id == 0 && std::chrono::steady_clock::now() >= deadline)) {
+            g_stop_search.store(true, std::memory_order_relaxed);
             aborted = true;
             return 0;
         }
     }
 
-    int stand_pat = native_evaluate(b);
-    if (stand_pat >= beta) return beta;
-    if (stand_pat > alpha) alpha = stand_pat;
+    // Draw Adjudication in Quiescence
+    if (ply > 0) {
+        if (b->halfmove_clock >= 100) return 0;
+        if (native_is_insufficient_material(b)) return 0;
+        if (native_is_repetition(b, 2)) return 0;
+    }
 
-    // Delta pruning margin: 900 (Queen) + 200 safety
-    constexpr int DELTA_MARGIN = 1100;
-    if (stand_pat + DELTA_MARGIN < alpha) {
+    // ========================================================================
+    // Legacy Q0 Quiescence Mode (Frozen Baseline)
+    // ========================================================================
+    if (g_qsearch_mode == 0) {
+        int stand_pat = native_evaluate(b);
+        if (stand_pat >= beta) return beta;
+        if (stand_pat > alpha) alpha = stand_pat;
+
+        constexpr int DELTA_MARGIN = 1100;
+        if (stand_pat + DELTA_MARGIN < alpha) {
+            return alpha;
+        }
+
+        struct ScoredMove {
+            uint16_t m;
+            int score;
+        };
+        ScoredMove caps[MAX_MOVES];
+        int n_caps = 0;
+
+        uint16_t raw_caps[MAX_MOVES];
+        int n_raw = 0;
+
+        if (g_use_staged_movegen) {
+            n_raw = native_generate_captures(b, raw_caps);
+        } else {
+            uint16_t all_m[MAX_MOVES];
+            int n_all = native_generate_legal_moves(b, all_m);
+            int them_side = 1 - b->side_to_move;
+            for (int i = 0; i < n_all; i++) {
+                int to = move_to(all_m[i]);
+                bool is_c = (b->occupancy[them_side] & (1ULL << to)) || (move_flag(all_m[i]) == 2);
+                if (is_c || move_flag(all_m[i]) == 3) {
+                    raw_caps[n_raw++] = all_m[i];
+                }
+            }
+        }
+
+        for (int i = 0; i < n_raw; i++) {
+            uint16_t m = raw_caps[i];
+            int to = move_to(m);
+            int them = 1 - b->side_to_move;
+            int score = 0;
+
+            if (move_flag(m) == 3) {
+                int promo = move_promo(m);
+                score = (promo == 3) ? 900000 : 800000;
+            } else if (g_quiescence_see_mode > 0 || g_use_see_in_quiescence) {
+                int see_val = janus_see(b, m);
+                g_see_total_evaluations++;
+                if (g_quiescence_see_mode >= 2 && see_val < 0 && move_flag(m) != 3) {
+                    g_telemetry_qmoves_pruned++;
+                    continue;
+                }
+                if (g_quiescence_see_mode == 3 && see_val < -50 && move_flag(m) != 3) {
+                    g_telemetry_qmoves_pruned++;
+                    continue;
+                }
+                int victim = NO_PIECE;
+                if (move_flag(m) == 2) {
+                    victim = PAWN;
+                } else {
+                    for (int p = 0; p < 6; p++) {
+                        if (b->pieces[them][p] & (1ULL << to)) { victim = p; break; }
+                    }
+                }
+                int attacker = NO_PIECE;
+                int from = move_from(m);
+                for (int p = 0; p < 6; p++) {
+                    if (b->pieces[b->side_to_move][p] & (1ULL << from)) { attacker = p; break; }
+                }
+                int mvv_lva = (victim * 10) - attacker;
+                if (see_val > 0) {
+                    g_see_positive_captures++;
+                    score = 100000 + mvv_lva;
+                } else if (see_val == 0) {
+                    g_see_neutral_captures++;
+                    score = 95000 + mvv_lva;
+                } else {
+                    g_see_negative_captures++;
+                    score = 10000 + std::max(-10000, see_val) + mvv_lva;
+                }
+            } else {
+                score = score_move_for_ordering(b, m, 0, 0);
+            }
+            caps[n_caps++] = { m, score };
+        }
+
+        std::sort(caps, caps + n_caps, [](const ScoredMove& a, const ScoredMove& b) {
+            return a.score > b.score;
+        });
+
+        UndoInfo undo;
+        for (int i = 0; i < n_caps; i++) {
+            if (!native_make_move(b, caps[i].m, &undo)) continue;
+            int score = -quiescence(b, -beta, -alpha, ply + 1, qply + 1, nodes, deadline, aborted);
+            native_unmake_move(b, caps[i].m, &undo);
+
+            if (aborted) return 0;
+            if (score >= beta) return beta;
+            if (score > alpha) alpha = score;
+        }
+
         return alpha;
+    }
+
+    // ========================================================================
+    // Enhanced Q1/Q2/Q3 Quiescence Search (P1.16 Corrected Architecture)
+    // ========================================================================
+    bool in_check = native_is_check(b);
+
+    // Recursion budget / horizon fallback limit
+    constexpr int MAX_QSEARCH_PLY = 24;
+    if (qply >= MAX_QSEARCH_PLY || ply >= MAX_SEARCH_PLY - 1) {
+        return native_evaluate(b);
+    }
+
+    int stand_pat = -INF;
+    if (!in_check) {
+        stand_pat = native_evaluate(b);
+        if (stand_pat >= beta) return beta;
+        if (stand_pat > alpha) alpha = stand_pat;
+
+        // Delta pruning margin: 900 (Queen) + 200 safety = 1100
+        constexpr int DELTA_MARGIN = 1100;
+        if (stand_pat + DELTA_MARGIN < alpha) {
+            return alpha;
+        }
     }
 
     struct ScoredMove {
         uint16_t m;
         int score;
     };
-    ScoredMove caps[MAX_MOVES];
-    int n_caps = 0;
+    ScoredMove moves[MAX_MOVES];
+    int n_moves = 0;
 
-    uint16_t raw_caps[MAX_MOVES];
-    int n_raw = 0;
-
-    if (g_use_staged_movegen) {
-        n_raw = native_generate_captures(b, raw_caps);
-    } else {
-        uint16_t all_m[MAX_MOVES];
-        int n_all = native_generate_legal_moves(b, all_m);
-        int them_side = 1 - b->side_to_move;
-        for (int i = 0; i < n_all; i++) {
-            int to = move_to(all_m[i]);
-            bool is_c = (b->occupancy[them_side] & (1ULL << to)) || (move_flag(all_m[i]) == 2);
-            if (is_c || move_flag(all_m[i]) == 3) {
-                raw_caps[n_raw++] = all_m[i];
-            }
+    if (in_check) {
+        g_telemetry_qsearch_in_check++;
+        // IN CHECK: Mandatory check evasion generation. Must search all legal moves.
+        uint16_t legal_m[MAX_MOVES];
+        int n_legal = native_generate_legal_moves(b, legal_m);
+        if (n_legal == 0) {
+            g_telemetry_qsearch_checkmates++;
+            return -(MATE_SCORE - ply);
         }
-    }
 
-    for (int i = 0; i < n_raw; i++) {
-        uint16_t m = raw_caps[i];
-        int to = move_to(m);
-        int them = 1 - b->side_to_move;
-        int score = 0;
+        int them_side = 1 - b->side_to_move;
+        for (int i = 0; i < n_legal; i++) {
+            uint16_t m = legal_m[i];
+            int to = move_to(m);
+            bool is_cap = (b->occupancy[them_side] & (1ULL << to)) || (move_flag(m) == 2);
+            int score = 0;
 
-        if (move_flag(m) == 3) {
-            int promo = move_promo(m);
-            score = (promo == 3) ? 900000 : 800000;
-        } else if (g_quiescence_see_mode > 0 || g_use_see_in_quiescence) {
-            int see_val = janus_see(b, m);
-            g_see_total_evaluations++;
-            if (g_quiescence_see_mode >= 2 && see_val < 0 && move_flag(m) != 3) {
-                g_telemetry_qmoves_pruned++;
-                continue;
-            }
-            if (g_quiescence_see_mode == 3 && see_val < -50 && move_flag(m) != 3) {
-                g_telemetry_qmoves_pruned++;
-                continue;
-            }
-            int victim = NO_PIECE;
-            if (move_flag(m) == 2) {
-                victim = PAWN;
-            } else {
+            if (is_cap) {
+                int victim = NO_PIECE;
+                if (move_flag(m) == 2) victim = PAWN;
+                else {
+                    for (int p = 0; p < 6; p++) {
+                        if (b->pieces[them_side][p] & (1ULL << to)) { victim = p; break; }
+                    }
+                }
+                int attacker = NO_PIECE;
+                int from = move_from(m);
                 for (int p = 0; p < 6; p++) {
-                    if (b->pieces[them][p] & (1ULL << to)) { victim = p; break; }
+                    if (b->pieces[b->side_to_move][p] & (1ULL << from)) { attacker = p; break; }
+                }
+                int mvv_lva = (victim * 10) - attacker;
+                score = 100000 + mvv_lva;
+            } else if (move_flag(m) == 3) {
+                int promo = move_promo(m);
+                score = (promo == 3) ? 900000 : 800000;
+            } else {
+                score = 10000; // Quiet evasion
+            }
+            moves[n_moves++] = { m, score };
+        }
+    } else {
+        // NOT IN CHECK: Normal capture and promotion generation
+        uint16_t raw_caps[MAX_MOVES];
+        int n_raw = 0;
+        if (g_use_staged_movegen) {
+            n_raw = native_generate_captures(b, raw_caps);
+        } else {
+            uint16_t all_m[MAX_MOVES];
+            int n_all = native_generate_legal_moves(b, all_m);
+            int them_side = 1 - b->side_to_move;
+            for (int i = 0; i < n_all; i++) {
+                int to = move_to(all_m[i]);
+                bool is_c = (b->occupancy[them_side] & (1ULL << to)) || (move_flag(all_m[i]) == 2);
+                if (is_c || move_flag(all_m[i]) == 3) {
+                    raw_caps[n_raw++] = all_m[i];
                 }
             }
-            int attacker = NO_PIECE;
-            int from = move_from(m);
-            for (int p = 0; p < 6; p++) {
-                if (b->pieces[b->side_to_move][p] & (1ULL << from)) { attacker = p; break; }
-            }
-            int mvv_lva = (victim * 10) - attacker;
-            if (see_val > 0) {
-                g_see_positive_captures++;
-                score = 100000 + mvv_lva;
-            } else if (see_val == 0) {
-                g_see_neutral_captures++;
-                score = 95000 + mvv_lva;
-            } else {
-                g_see_negative_captures++;
-                score = 10000 + std::max(-10000, see_val) + mvv_lva;
-            }
-        } else {
-            score = score_move_for_ordering(b, m, 0, 0);
         }
-        caps[n_caps++] = { m, score };
+
+        for (int i = 0; i < n_raw; i++) {
+            uint16_t m = raw_caps[i];
+            int to = move_to(m);
+            int them = 1 - b->side_to_move;
+            int score = 0;
+
+            if (move_flag(m) == 3) {
+                int promo = move_promo(m);
+                score = (promo == 3) ? 900000 : 800000;
+            } else if (g_quiescence_see_mode > 0 || g_use_see_in_quiescence) {
+                int see_val = janus_see(b, m);
+                g_see_total_evaluations++;
+                if (g_quiescence_see_mode >= 2 && see_val < 0 && move_flag(m) != 3) {
+                    g_telemetry_qmoves_pruned++;
+                    continue;
+                }
+                if (g_quiescence_see_mode == 3 && see_val < -50 && move_flag(m) != 3) {
+                    g_telemetry_qmoves_pruned++;
+                    continue;
+                }
+                int victim = NO_PIECE;
+                if (move_flag(m) == 2) {
+                    victim = PAWN;
+                } else {
+                    for (int p = 0; p < 6; p++) {
+                        if (b->pieces[them][p] & (1ULL << to)) { victim = p; break; }
+                    }
+                }
+                int attacker = NO_PIECE;
+                int from = move_from(m);
+                for (int p = 0; p < 6; p++) {
+                    if (b->pieces[b->side_to_move][p] & (1ULL << from)) { attacker = p; break; }
+                }
+                int mvv_lva = (victim * 10) - attacker;
+                if (see_val > 0) {
+                    g_see_positive_captures++;
+                    score = 100000 + mvv_lva;
+                } else if (see_val == 0) {
+                    g_see_neutral_captures++;
+                    score = 95000 + mvv_lva;
+                } else {
+                    g_see_negative_captures++;
+                    score = 10000 + std::max(-10000, see_val) + mvv_lva;
+                }
+            } else {
+                score = score_move_for_ordering(b, m, 0, 0);
+            }
+            moves[n_moves++] = { m, score };
+        }
+
+        // Q2 & Q3: Selective Checking Moves at first quiescence ply (qply == 0)
+        if (g_qsearch_mode >= 2 && qply == 0) {
+            uint16_t quiets[MAX_MOVES];
+            int n_quiets = native_generate_quiets(b, quiets);
+            UndoInfo check_undo;
+            for (int i = 0; i < n_quiets; i++) {
+                uint16_t m = quiets[i];
+                if (!native_make_move(b, m, &check_undo)) continue;
+                bool gives_check = native_is_check(b);
+                native_unmake_move(b, m, &check_undo);
+                if (gives_check) {
+                    if (g_qsearch_mode == 3) {
+                        int see_check = janus_see(b, m);
+                        if (see_check < 0) continue;
+                    }
+                    g_telemetry_qsearch_checks_generated++;
+                    moves[n_moves++] = { m, 50000 }; // Ranked above quiet evasions
+                }
+            }
+        }
     }
 
-    std::sort(caps, caps + n_caps, [](const ScoredMove& a, const ScoredMove& b) {
+    if (!in_check && n_moves == 0) {
+        if (qply == 0 || stand_pat < 0) {
+            uint16_t lmoves[MAX_MOVES];
+            if (native_generate_legal_moves(b, lmoves) == 0) {
+                return 0; // Stalemate
+            }
+        }
+    }
+
+    std::sort(moves, moves + n_moves, [](const ScoredMove& a, const ScoredMove& b) {
         return a.score > b.score;
     });
 
     UndoInfo undo;
-    for (int i = 0; i < n_caps; i++) {
-        if (!native_make_move(b, caps[i].m, &undo)) continue;
-        int score = -quiescence(b, -beta, -alpha, nodes, deadline, aborted);
-        native_unmake_move(b, caps[i].m, &undo);
+    int legal_searched = 0;
+    for (int i = 0; i < n_moves; i++) {
+        if (!native_make_move(b, moves[i].m, &undo)) continue;
+        legal_searched++;
+        int score = -quiescence(b, -beta, -alpha, ply + 1, qply + 1, nodes, deadline, aborted);
+        native_unmake_move(b, moves[i].m, &undo);
 
         if (aborted) return 0;
         if (score >= beta) return beta;
         if (score > alpha) alpha = score;
+    }
+
+    if (in_check && legal_searched == 0) {
+        g_telemetry_qsearch_checkmates++;
+        return -(MATE_SCORE - ply);
     }
 
     return alpha;
@@ -4047,7 +4323,7 @@ static int negamax(
         if (g_exact_search_mode) {
             return native_evaluate(b);
         }
-        return quiescence(b, alpha, beta, nodes, deadline, aborted);
+        return quiescence(b, alpha, beta, ply, 0, nodes, deadline, aborted);
     }
 
     // TT Probe
@@ -4822,6 +5098,7 @@ EXPORT void native_reset_lmr_telemetry() {
 
 EXPORT void native_clear_tt() {
     std::memset(g_tt, 0, sizeof(g_tt));
+    g_parallel_tt.clear();
 }
 
 EXPORT void native_get_lmr_telemetry(uint64_t* out_arr) {
@@ -4956,6 +5233,10 @@ EXPORT void native_get_see_telemetry(uint64_t* out_arr) {
 EXPORT void native_set_conthist_mode(int mode) { g_conthist_mode = mode; }
 EXPORT void native_set_dynamic_lmr_mode(int mode) { g_dynamic_lmr_mode = mode; }
 EXPORT void native_set_eval_mode(int mode) { g_eval_mode = mode; }
+EXPORT void native_set_pawn_hash(int enable) { g_use_pawn_hash = (enable != 0); }
+EXPORT int native_get_pawn_hash() { return g_use_pawn_hash ? 1 : 0; }
+EXPORT void native_set_threads(int threads) { g_num_threads = std::max(1, std::min(16, threads)); }
+EXPORT int native_get_threads() { return g_num_threads; }
 EXPORT void native_clear_conthist() {
     std::memset(g_conthist_1ply, 0, sizeof(g_conthist_1ply));
     std::memset(g_conthist_2ply, 0, sizeof(g_conthist_2ply));
@@ -5016,6 +5297,43 @@ EXPORT void native_get_p13_telemetry(uint64_t* out_arr) {
         out_arr[7] = g_telemetry_probcut_probes;
         out_arr[8] = g_telemetry_probcut_cutoffs;
     }
+}
+
+// Milestone P1.16 Quiescence Search Control & Telemetry Exports
+EXPORT void native_set_qsearch_mode(int mode) { g_qsearch_mode = mode; }
+EXPORT int native_get_qsearch_mode() { return g_qsearch_mode; }
+EXPORT void native_reset_qsearch_telemetry() {
+    g_telemetry_qsearch_in_check = 0;
+    g_telemetry_qsearch_checkmates = 0;
+    g_telemetry_qsearch_checks_generated = 0;
+}
+EXPORT void native_get_qsearch_telemetry(uint64_t* out_arr) {
+    if (out_arr) {
+        out_arr[0] = g_telemetry_qsearch_in_check;
+        out_arr[1] = g_telemetry_qsearch_checkmates;
+        out_arr[2] = g_telemetry_qsearch_checks_generated;
+    }
+}
+EXPORT int native_qsearch(NativeBoard* b, int alpha, int beta, int ply, int qply) {
+    uint64_t nodes = 0;
+    bool aborted = false;
+    auto deadline = std::chrono::steady_clock::now() + std::chrono::seconds(10);
+    return quiescence(b, alpha, beta, ply, qply, nodes, deadline, aborted);
+}
+
+EXPORT void native_reset_search_state() {
+    native_reset_history();
+    native_clear_conthist();
+    native_clear_tactical_tables();
+    native_clear_killers();
+    native_clear_history_heuristic();
+    native_reset_ordering_telemetry();
+    std::memset(g_tt, 0, sizeof(g_tt));
+    g_parallel_tt.clear();
+    native_reset_lmr_telemetry();
+    native_reset_pvs_telemetry();
+    native_reset_see_telemetry();
+    native_reset_qsearch_telemetry();
 }
 
 // ============================================================================
@@ -5096,7 +5414,7 @@ static void uci_loop() {
         iss >> cmd;
 
         if (cmd == "uci") {
-            std::cout << "id name Janus Classical X (P1.14 Candidate X19)" << std::endl;
+            std::cout << "id name Janus Classical X (P1.16 Candidate X21)" << std::endl;
             std::cout << "id author Project Janus Developers" << std::endl;
             std::cout << "option name Threads type spin default 1 min 1 max 16" << std::endl;
             std::cout << "option name UCI_LMP type combo default L1 var L0 var L1 var L2 var L3" << std::endl;
@@ -5109,10 +5427,11 @@ static void uci_loop() {
             std::cout << "option name LMRBaseReduction type spin default 1 min 1 max 3" << std::endl;
             std::cout << "option name UseSEEOrdering type check default false" << std::endl;
             std::cout << "option name UseSEEInQuiescence type check default false" << std::endl;
-            std::cout << "option name UCI_Variant type combo default X19 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18 var X19 var X20" << std::endl;
-            std::cout << "option name UCI_AdaptiveCapture type combo default C0 var C0 var C1 var C2 var C3" << std::endl;
+            std::cout << "option name UCI_Variant type combo default X21 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18 var X19 var X20 var X21" << std::endl;
+            std::cout << "option name UCI_AdaptiveCapture type combo default C1 var C0 var C1 var C2 var C3" << std::endl;
             std::cout << "option name UCI_HistoryMode type combo default H0 var H0 var H1 var H2 var H3" << std::endl;
             std::cout << "option name UCI_ExactSearchMode type check default false" << std::endl;
+            std::cout << "option name UCI_QuiescenceMode type combo default Q1 var Q0 var Q1 var Q2 var Q3" << std::endl;
             std::cout << "option name UCI_ContinuationHistory type combo default H3 var H0 var H1 var H2 var H3" << std::endl;
             std::cout << "option name UCI_DynamicLMR type combo default L3 var L0 var L1 var L2 var L3" << std::endl;
             std::cout << "option name UCI_ClassicalEval type combo default E15 var E0 var E1 var E2 var E3 var E4 var E5 var E6 var E7 var E8 var E9 var E10 var E11 var E15" << std::endl;
@@ -5300,6 +5619,11 @@ static void uci_loop() {
                     else if (opt_val == "H3") g_history_mode = 3;
                 } else if (opt_name == "UCI_ExactSearchMode") {
                     g_exact_search_mode = (opt_val.empty() || opt_val == "true" || opt_val == "1");
+                } else if (opt_name == "UCI_QuiescenceMode" && !opt_val.empty()) {
+                    if (opt_val == "Q0") g_qsearch_mode = 0;
+                    else if (opt_val == "Q1") g_qsearch_mode = 1;
+                    else if (opt_val == "Q2") g_qsearch_mode = 2;
+                    else if (opt_val == "Q3") g_qsearch_mode = 3;
                 }
             }
                 } else if (cmd == "telemetry_report") {
@@ -5338,9 +5662,14 @@ static void uci_loop() {
             std::cout << "multicut_cutoffs " << g_telemetry_multicut_cutoffs << std::endl;
             std::cout << "probcut_probes " << g_telemetry_probcut_probes << std::endl;
             std::cout << "probcut_cutoffs " << g_telemetry_probcut_cutoffs << std::endl;
+            std::cout << "qsearch_mode " << g_qsearch_mode << std::endl;
+            std::cout << "qsearch_in_check " << g_telemetry_qsearch_in_check << std::endl;
+            std::cout << "qsearch_checkmates " << g_telemetry_qsearch_checkmates << std::endl;
+            std::cout << "qsearch_checks_gen " << g_telemetry_qsearch_checks_generated << std::endl;
             std::cout << "TELEMETRY_END" << std::endl;
         } else if (cmd == "telemetry_reset") {
             native_reset_p11_telemetry();
+            native_reset_qsearch_telemetry();
             std::cout << "telemetry_reset_ok" << std::endl;
         } else if (cmd == "ucinewgame") {
             native_reset_history();

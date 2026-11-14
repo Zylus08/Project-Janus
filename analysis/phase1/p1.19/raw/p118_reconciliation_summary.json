@@ -1,0 +1,282 @@
+{
+  "hash_audit": {
+    "X7_Baseline_1T": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.3\\control\\janus_classical_x7.exe",
+      "expected": "86392A2F4BD4182A4D7DC21E32940BD7939F6816794D5E1AB02F4082431CA28B",
+      "actual": "86392A2F4BD4182A4D7DC21E32940BD7939F6816794D5E1AB02F4082431CA28B",
+      "match": true
+    },
+    "X12_Baseline_4T": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.7\\control\\janus_classical_x12.exe",
+      "expected": "00B4F5FEDEA02A392A1AF9713A96512E5199A0E3AE55C295AD1C7CFFF1B47059",
+      "actual": "00B4F5FEDEA02A392A1AF9713A96512E5199A0E3AE55C295AD1C7CFFF1B47059",
+      "match": true
+    },
+    "X22_Reference_1T": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.17\\control\\janus_classical_x22.exe",
+      "expected": "35D095CFFE8A2EDA412171803C09BE52A74DFB3F9744C04F573D2A7FFB1C2F1C",
+      "actual": "35D095CFFE8A2EDA412171803C09BE52A74DFB3F9744C04F573D2A7FFB1C2F1C",
+      "match": true
+    },
+    "X23_Archived_1T": {
+      "path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.18\\control\\janus_classical_x23.exe",
+      "expected": "39E875841B36AC82F464ABC7F31DB19D7CF5ABCD0F15B0A923B086A5BB393E39",
+      "actual": "39E875841B36AC82F464ABC7F31DB19D7CF5ABCD0F15B0A923B086A5BB393E39",
+      "match": true
+    }
+  },
+  "authoritative_tournaments": {
+    "match_1": {
+      "match_name": "Match 1 (X23-S vs X7 Baseline 1T)",
+      "cand": "Janus Classical X23-S",
+      "ref": "Janus Classical X7",
+      "games_count": 100,
+      "score": 44.0,
+      "win_rate": 44.0,
+      "wins": 22,
+      "draws": 44,
+      "losses": 34,
+      "paired_ci": [
+        0.3706201504613559,
+        0.5093798495386441
+      ],
+      "p_value_one_sided": 0.9549605875599866,
+      "p_value_two_sided": 0.09007882488002701,
+      "elo": -41.89414020800522,
+      "pentanomial": {
+        "LL_0_0": 5,
+        "LD_0_25": 15,
+        "DD_or_WL_0_5": 19,
+        "WD_0_75": 9,
+        "WW_1_0": 2
+      }
+    },
+    "match_2": {
+      "match_name": "Match 2 (X23-S vs X22-S Reference 1T)",
+      "cand": "Janus Classical X23-S",
+      "ref": "Janus Classical X22-S",
+      "games_count": 50,
+      "score": 24.5,
+      "win_rate": 49.0,
+      "wins": 15,
+      "draws": 19,
+      "losses": 16,
+      "paired_ci": [
+        0.3683876802040188,
+        0.6116123197959812
+      ],
+      "p_value_one_sided": 0.5640181163148958,
+      "p_value_two_sided": 0.8719637673702083,
+      "elo": -6.94963842776909,
+      "pentanomial": {
+        "LL_0_0": 4,
+        "LD_0_25": 3,
+        "DD_or_WL_0_5": 12,
+        "WD_0_75": 2,
+        "WW_1_0": 4
+      }
+    },
+    "match_3": {
+      "match_name": "Match 3 (X23-P vs X12 Baseline 4T SMP)",
+      "cand": "Janus Classical X23-P",
+      "ref": "Janus Classical X12",
+      "games_count": 100,
+      "score": 48.0,
+      "win_rate": 48.0,
+      "wins": 25,
+      "draws": 46,
+      "losses": 29,
+      "paired_ci": [
+        0.4074712106664462,
+        0.5525287893335538
+      ],
+      "p_value_one_sided": 0.705561461197622,
+      "p_value_two_sided": 0.5888770776047562,
+      "elo": -13.904842503684801,
+      "pentanomial": {
+        "LL_0_0": 6,
+        "LD_0_25": 8,
+        "DD_or_WL_0_5": 23,
+        "WD_0_75": 10,
+        "WW_1_0": 3
+      }
+    },
+    "match_4": {
+      "match_name": "Match 4 (X23-S vs X7 Baseline 1T Slow TC)",
+      "cand": "Janus Classical X23-S",
+      "ref": "Janus Classical X7",
+      "games_count": 50,
+      "score": 24.5,
+      "win_rate": 49.0,
+      "wins": 16,
+      "draws": 17,
+      "losses": 17,
+      "paired_ci": [
+        0.37869566798565296,
+        0.6013043320143471
+      ],
+      "p_value_one_sided": 0.5698884526942847,
+      "p_value_two_sided": 0.8602230946114308,
+      "elo": -6.94963842776909,
+      "pentanomial": {
+        "LL_0_0": 4,
+        "LD_0_25": 2,
+        "DD_or_WL_0_5": 12,
+        "WD_0_75": 5,
+        "WW_1_0": 2
+      }
+    },
+    "match_5": {
+      "match_name": "Match 5 (X23-S vs Stockfish 4)",
+      "cand": "Janus Classical X23-S",
+      "ref": "Stockfish 4",
+      "games_count": 40,
+      "score": 0.5,
+      "win_rate": 1.25,
+      "wins": 0,
+      "draws": 1,
+      "losses": 39,
+      "paired_ci": [
+        0.0,
+        0.0369995
+      ],
+      "p_value_one_sided": 1.0,
+      "p_value_two_sided": 0.0,
+      "elo": -759.0508365161766,
+      "pentanomial": {
+        "LL_0_0": 19,
+        "LD_0_25": 1,
+        "DD_or_WL_0_5": 0,
+        "WD_0_75": 0,
+        "WW_1_0": 0
+      }
+    },
+    "match_6": {
+      "match_name": "Match 6 (X23-S vs Stockfish 11)",
+      "cand": "Janus Classical X23-S",
+      "ref": "Stockfish 11",
+      "games_count": 40,
+      "score": 1.0,
+      "win_rate": 2.5,
+      "wins": 0,
+      "draws": 2,
+      "losses": 38,
+      "paired_ci": [
+        0.0,
+        0.058723424631770965
+      ],
+      "p_value_one_sided": 1.0,
+      "p_value_two_sided": 9.333356156047338e-168,
+      "elo": -636.4258428105996,
+      "pentanomial": {
+        "LL_0_0": 18,
+        "LD_0_25": 2,
+        "DD_or_WL_0_5": 0,
+        "WD_0_75": 0,
+        "WW_1_0": 0
+      }
+    },
+    "match_7": {
+      "match_name": "Match 7 (X23-S vs Stockfish 19 NNUE)",
+      "cand": "Janus Classical X23-S",
+      "ref": "Stockfish 19 NNUE",
+      "games_count": 40,
+      "score": 1.0,
+      "win_rate": 2.5,
+      "wins": 0,
+      "draws": 2,
+      "losses": 38,
+      "paired_ci": [
+        0.0,
+        0.058723424631770965
+      ],
+      "p_value_one_sided": 1.0,
+      "p_value_two_sided": 9.333356156047338e-168,
+      "elo": -636.4258428105996,
+      "pentanomial": {
+        "LL_0_0": 18,
+        "LD_0_25": 2,
+        "DD_or_WL_0_5": 0,
+        "WD_0_75": 0,
+        "WW_1_0": 0
+      }
+    }
+  },
+  "development_ablations": {
+    "match_dev1_joint": {
+      "match_name": "Match Dev-1 (Joint X23 vs X22)",
+      "cand": "Janus Classical X23-S (Joint)",
+      "ref": "Janus Classical X22-S",
+      "games_count": 20,
+      "score": 7.0,
+      "win_rate": 35.0,
+      "wins": 4,
+      "draws": 6,
+      "losses": 10,
+      "paired_ci": [
+        0.14083554366001858,
+        0.5591644563399814
+      ],
+      "p_value_one_sided": 0.9200731625811862,
+      "p_value_two_sided": 0.15985367483762739,
+      "elo": -107.53812491703198,
+      "pentanomial": {
+        "LL_0_0": 3,
+        "LD_0_25": 3,
+        "DD_or_WL_0_5": 2,
+        "WD_0_75": 1,
+        "WW_1_0": 1
+      }
+    },
+    "match_dev2_trackA": {
+      "match_name": "Match Dev-2 (Track A Alone vs X22)",
+      "cand": "Janus Classical X23 (Track A Alone)",
+      "ref": "Janus Classical X22-S",
+      "games_count": 20,
+      "score": 10.5,
+      "win_rate": 52.5,
+      "wins": 5,
+      "draws": 11,
+      "losses": 4,
+      "paired_ci": [
+        0.410669,
+        0.639331
+      ],
+      "p_value_one_sided": 0.3341175708976246,
+      "p_value_two_sided": 0.6682351417952492,
+      "elo": 17.386277512436145,
+      "pentanomial": {
+        "LL_0_0": 0,
+        "LD_0_25": 2,
+        "DD_or_WL_0_5": 5,
+        "WD_0_75": 3,
+        "WW_1_0": 0
+      }
+    },
+    "match_dev3_trackB": {
+      "match_name": "Match Dev-3 (Track B Alone vs X22)",
+      "cand": "Janus Classical X23 (Track B Alone)",
+      "ref": "Janus Classical X22-S",
+      "games_count": 20,
+      "score": 7.5,
+      "win_rate": 37.5,
+      "wins": 4,
+      "draws": 7,
+      "losses": 9,
+      "paired_ci": [
+        0.17832463574458543,
+        0.5716753642554145
+      ],
+      "p_value_one_sided": 0.8935594540861185,
+      "p_value_two_sided": 0.21288109182776302,
+      "elo": -88.73949984654253,
+      "pentanomial": {
+        "LL_0_0": 2,
+        "LD_0_25": 4,
+        "DD_or_WL_0_5": 2,
+        "WD_0_75": 1,
+        "WW_1_0": 1
+      }
+    }
+  }
+}

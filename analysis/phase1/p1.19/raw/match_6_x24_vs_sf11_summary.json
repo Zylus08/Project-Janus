@@ -1,0 +1,27 @@
+{
+  "match_name": "Match 6: Candidate X24-S vs Stockfish 11 (External 2020 Reference)",
+  "candidate": "Janus Classical X24-S",
+  "reference": "Stockfish 11",
+  "num_pairs": 20,
+  "total_games": 40,
+  "score": 1.0,
+  "wins": 0,
+  "draws": 2,
+  "losses": 38,
+  "win_rate_percent": 2.5,
+  "elo": -636.4,
+  "paired_ci_95": [
+    0.0,
+    5.87
+  ],
+  "p_value_one_sided": 1.0,
+  "p_value_two_sided": 0.0,
+  "pentanomial": {
+    "2.0": 0,
+    "1.5": 0,
+    "1.0": 0,
+    "0.5": 2,
+    "0.0": 18
+  },
+  "elapsed_seconds": 60.0
+}

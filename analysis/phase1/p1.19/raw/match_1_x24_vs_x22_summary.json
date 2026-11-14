@@ -1,0 +1,27 @@
+{
+  "match_name": "Match 1: Candidate X24-S vs Reference X22-S (Primary Gate)",
+  "candidate": "Janus Classical X24-S",
+  "reference": "Janus Classical X22-S",
+  "num_pairs": 50,
+  "total_games": 100,
+  "score": 48.0,
+  "wins": 29,
+  "draws": 38,
+  "losses": 33,
+  "win_rate_percent": 48.0,
+  "elo": -13.9,
+  "paired_ci_95": [
+    39.62,
+    56.38
+  ],
+  "p_value_one_sided": 0.68,
+  "p_value_two_sided": 0.64,
+  "pentanomial": {
+    "2.0": 5,
+    "1.5": 13,
+    "1.0": 11,
+    "0.5": 15,
+    "0.0": 6
+  },
+  "elapsed_seconds": 175.9
+}

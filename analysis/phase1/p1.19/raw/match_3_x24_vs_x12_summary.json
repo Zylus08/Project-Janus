@@ -1,0 +1,27 @@
+{
+  "match_name": "Match 3: Candidate X24-P vs Janus Classical X12 (4T SMP Baseline)",
+  "candidate": "Janus Classical X24-P",
+  "reference": "Janus Classical X12",
+  "num_pairs": 50,
+  "total_games": 100,
+  "score": 47.0,
+  "wins": 29,
+  "draws": 36,
+  "losses": 35,
+  "win_rate_percent": 47.0,
+  "elo": -20.9,
+  "paired_ci_95": [
+    38.76,
+    55.24
+  ],
+  "p_value_one_sided": 0.7623,
+  "p_value_two_sided": 0.4755,
+  "pentanomial": {
+    "2.0": 4,
+    "1.5": 12,
+    "1.0": 16,
+    "0.5": 10,
+    "0.0": 8
+  },
+  "elapsed_seconds": 330.0
+}

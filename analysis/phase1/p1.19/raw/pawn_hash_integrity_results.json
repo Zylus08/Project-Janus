@@ -1,0 +1,14 @@
+{
+  "num_positions": 500,
+  "total_evaluations_benchmarked": 100000,
+  "mismatches_cold_vs_no": 0,
+  "mismatches_warm_vs_cold": 0,
+  "invariant_passed": true,
+  "ns_per_eval_disabled": 1374.26,
+  "ns_per_eval_warm": 1187.68,
+  "eval_speedup_percent": 13.58,
+  "pawn_hash_table_size_entries": 65536,
+  "pawn_hash_entry_bytes": 32,
+  "pawn_hash_total_kb": 2048,
+  "attribution_conclusion": "The +13.5% speedup is strictly an architectural acceleration artifact of the 64K pawn hash table and does not attribute to the chess value of backward pawns. Both X22 and X24 share the identical pawn hash table."
+}

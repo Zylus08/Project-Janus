@@ -1,0 +1,133 @@
+[
+  {
+    "id": 1,
+    "name": "True Backward Pawn (Black d6 with c5/e5 ahead; White e4 supported by f2)",
+    "desc": "Black d6 stop square d5 controlled by White e4. No Black pawns behind rank 5 on c/e files. White has f2 supporting e4.",
+    "fen": "8/8/3p4/2p1p3/4P3/8/5P2/4K2k w - - 0 1",
+    "eval_off": -140,
+    "eval_on": -125,
+    "delta": 15,
+    "expected_delta": 15,
+    "status": "PASS"
+  },
+  {
+    "id": 2,
+    "name": "Supported Backward-Looking Pawn (Black c7 pawn behind d6)",
+    "desc": "Black pawn on c7 exists at rank 7 (rank 6 index >= 5), providing natural supporter to d6. Not backward.",
+    "fen": "8/2p5/3p4/2p1p3/4P3/8/5P2/4K2k w - - 0 1",
+    "eval_off": -260,
+    "eval_on": -260,
+    "delta": 0,
+    "expected_delta": 0,
+    "status": "PASS"
+  },
+  {
+    "id": 3,
+    "name": "Isolated Pawn Interaction (Compounding Isolated + Backward)",
+    "desc": "White d3 has no adjacent friendly pawns (isolated: -20 eg) and stop square d4 controlled by Black c5 (backward: -15 eg). Black c5 supported by d6.",
+    "fen": "8/8/3p4/2p5/8/3P4/8/4K2k w - - 0 1",
+    "eval_off": -90,
+    "eval_on": -105,
+    "delta": -15,
+    "expected_delta": -15,
+    "status": "PASS"
+  },
+  {
+    "id": 4,
+    "name": "Doubled Pawns on File (Rearmost evaluated)",
+    "desc": "White doubled d-pawns (d3, d4). d4 stop square attacked by Black c5. Rearmost d3 evaluated and penalized.",
+    "fen": "8/8/3p4/2p5/3P4/3P4/5P2/4K2k w - - 0 1",
+    "eval_off": 105,
+    "eval_on": 90,
+    "delta": -15,
+    "expected_delta": -15,
+    "status": "PASS"
+  },
+  {
+    "id": 5,
+    "name": "Blocked Backward Pawn (Piece on stop square)",
+    "desc": "Black Knight on d5 stop square does not negate enemy pawn ray control. d6 remains structurally backward.",
+    "fen": "8/8/3p4/2pnp3/4P3/8/5P2/4K2k w - - 0 1",
+    "eval_off": -478,
+    "eval_on": -463,
+    "delta": 15,
+    "expected_delta": 15,
+    "status": "PASS"
+  },
+  {
+    "id": 6,
+    "name": "Candidate Passed Pawn (Uninhibited stop square)",
+    "desc": "White d4 facing Black e5. Stop square d5 is not attacked by enemy pawns. No backward penalty.",
+    "fen": "8/8/8/4p3/3P4/8/8/4K2k w - - 0 1",
+    "eval_off": 30,
+    "eval_on": 30,
+    "delta": 0,
+    "expected_delta": 0,
+    "status": "PASS"
+  },
+  {
+    "id": 7,
+    "name": "Advance Removing Backwardness (Dynamic Transition)",
+    "desc": "Pushing d3 to d4 escapes the backward configuration, restoring structural parity.",
+    "fen_before": "8/8/3p4/2p5/8/3P4/8/4K2k w - - 0 1",
+    "fen_after": "8/8/3p4/2p5/3P4/8/8/4K2k w - - 0 1",
+    "eval_before": -105,
+    "eval_after": -70,
+    "transition_delta": 35,
+    "status": "PASS"
+  },
+  {
+    "id": 8,
+    "name": "Exchange Creating Backwardness (Removal of supporter)",
+    "desc": "Eliminating the flanking supporter pawn instantly transitions the structure into a backward pawn.",
+    "fen_before": "8/2p5/3p4/2p1p3/4P3/8/5P2/4K2k w - - 0 1",
+    "fen_after": "8/8/3p4/2p1p3/4P3/8/5P2/4K2k w - - 0 1",
+    "eval_before": -260,
+    "eval_after": -125,
+    "transition_delta": 135,
+    "status": "PASS"
+  },
+  {
+    "id": 9,
+    "name": "Color Symmetry Verification (White d2 vs Black d7)",
+    "desc": "Exact board inversion confirms mathematical parity: side with backward pawn receives identical -15 penalty.",
+    "fen_white": "4k2K/8/5p2/8/4p3/2P1P3/3P4/8 w - - 0 1",
+    "fen_black": "8/3p4/2p1p3/4P3/8/5P2/8/4K2k b - - 0 1",
+    "delta_white": -15,
+    "delta_black": -15,
+    "status": "PASS"
+  },
+  {
+    "id": 10,
+    "name": "Multiple Backward Pawns (Linear Compounding: b3 & d3)",
+    "desc": "White b3 and d3 both backward (stop squares b4, d4 controlled by Black c5). Penalty compounds linearly (-30 eg).",
+    "fen": "8/8/3p4/2p5/8/1P1P4/8/4K2k w - - 0 1",
+    "eval_off": -15,
+    "eval_on": -45,
+    "delta": -30,
+    "expected_delta": -30,
+    "status": "PASS"
+  },
+  {
+    "id": 11,
+    "name": "Backward Pawn on Edge File (a-file Single Flank)",
+    "desc": "Edge pawn on a3 has only b-file as adjacent file. Controlled by Black b5 (supported by c6). Detected as backward.",
+    "fen": "8/8/2p5/1p6/8/P7/8/4K2k w - - 0 1",
+    "eval_off": -120,
+    "eval_on": -135,
+    "delta": -15,
+    "expected_delta": -15,
+    "status": "PASS"
+  },
+  {
+    "id": 12,
+    "name": "Pawn Chain Base vs Apex (c2 Base Immunity)",
+    "desc": "Base of chain (c2) has uninhibited stop square c3 (no enemy pawns attack c3). Not backward.",
+    "fen": "8/8/8/8/4P3/3P4/2P5/4K2k w - - 0 1",
+    "eval_off": 540,
+    "eval_on": 540,
+    "delta": 0,
+    "expected_delta": 0,
+    "status": "PASS"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "match_name": "Match 4: Candidate X24-S vs Janus Classical X7 (Slow TC Robustness)",
+  "candidate": "Janus Classical X24-S",
+  "reference": "Janus Classical X7",
+  "num_pairs": 25,
+  "total_games": 50,
+  "score": 18.5,
+  "wins": 6,
+  "draws": 25,
+  "losses": 19,
+  "win_rate_percent": 37.0,
+  "elo": -92.5,
+  "paired_ci_95": [
+    26.75,
+    47.25
+  ],
+  "p_value_one_sided": 0.9936,
+  "p_value_two_sided": 0.0129,
+  "pentanomial": {
+    "2.0": 1,
+    "1.5": 3,
+    "1.0": 7,
+    "0.5": 10,
+    "0.0": 4
+  },
+  "elapsed_seconds": 200.4
+}

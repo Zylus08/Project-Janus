@@ -1,0 +1,27 @@
+{
+  "match_name": "Match 7: Candidate X24-S vs Stockfish 19 (External SOTA Benchmark)",
+  "candidate": "Janus Classical X24-S",
+  "reference": "Stockfish 19",
+  "num_pairs": 20,
+  "total_games": 40,
+  "score": 2.5,
+  "wins": 0,
+  "draws": 5,
+  "losses": 35,
+  "win_rate_percent": 6.25,
+  "elo": -470.4,
+  "paired_ci_95": [
+    1.38,
+    11.12
+  ],
+  "p_value_one_sided": 1.0,
+  "p_value_two_sided": 0.0,
+  "pentanomial": {
+    "2.0": 0,
+    "1.5": 0,
+    "1.0": 0,
+    "0.5": 5,
+    "0.0": 15
+  },
+  "elapsed_seconds": 62.5
+}

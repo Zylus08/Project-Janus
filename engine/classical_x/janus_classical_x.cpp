@@ -326,7 +326,7 @@ static int  g_rfp_margin_per_depth = 120;      // Margin per ply (120 for 1T, 90
 static bool g_use_aspiration_window = true;    // Phase 5: Aspiration Windows (delta = 25 cp)
 static int  g_aspiration_delta = 25;           // Aspiration delta
 static bool g_movepicker_stage_reform = false; // Phase 1, Milestone P1.14: Good Captures -> Killers -> Countermove -> Quiets -> Bad Captures
-static std::string g_search_variant = "X19";    // Active variant identifier (Default Candidate X19)
+static std::string g_search_variant = "X24";    // Active variant identifier (Default Candidate X23)
 
 // Milestone P1.15 Adaptive Capture Ordering, History Modes & Exact Search Contract
 static int  g_adaptive_capture_mode = 0; // 0=C0 (Frozen X19), 1=C1 (Near-even [-100, 0)), 2=C2 (Endgame conditional), 3=C3 (Defensive / check exception)
@@ -901,6 +901,46 @@ EXPORT void native_apply_search_variant(const char* var_str) {
             g_lmp_max_depth = 4;
             g_rfp_margin_per_depth = 90;
         }
+    } else if (var == "X24") { // P1.19 Candidate: Track A Isolated (Backward Pawns + True Outposts + 64K Pawn Hash, Zero King File Exposure)
+        g_use_staged_movegen = true;
+        g_quiescence_see_mode = 2;
+        g_use_see_in_quiescence = true;
+        g_use_null_move_pruning = true;
+        g_use_reverse_futility = true;
+        g_use_aspiration_window = true;
+        g_conthist_mode = 3; // H3
+        g_dynamic_lmr_mode = 3; // L3 Calibrated LMR
+        g_use_pruning_safety = false;
+        g_movepicker_stage_reform = true;
+        g_adaptive_capture_mode = 1; // C1 Near-Even Capture Promotion
+        g_qsearch_mode = 1; // Q1 Corrected Quiescence Search
+        g_use_true_outposts = 1; // True Outposts with Pawn Immunity
+        g_use_backward_pawns = 1; // Track A: Classical Backward Pawn Detection Enabled
+        g_use_king_file_exposure = 0; // Track B: King File Exposure Penalty Permanently DISABLED
+        if (g_num_threads == 1) { // Track S: X24-S (1T)
+            g_eval_mode = 5; // E5 Combined Classical Eval
+            g_tactical_ordering_mode = 2; // Enable Countermove table for staging
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = true; // 64K entry Pawn Hash Table
+            g_dynamic_time_mgmt = false;
+            g_use_lmp = false;
+            g_lmp_mode = 0;
+            g_rfp_margin_per_depth = 120;
+        } else { // Track P: X24-P (4T)
+            g_eval_mode = 10; // E10 Enhanced Classical Evaluation
+            g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = true; // 64K entry Pawn Hash Table
+            g_dynamic_time_mgmt = true;
+            g_use_lmp = true; // Safe Late Move Pruning
+            g_lmp_mode = 1; // Conservative Quadratic LMP
+            g_lmp_max_depth = 4;
+            g_rfp_margin_per_depth = 90;
+        }
     } else if (var == "X23") { // P1.18 Candidate: Backward Pawns + King File Exposure + True Outposts + Pawn Hash
         g_use_staged_movegen = true;
         g_quiescence_see_mode = 2;
@@ -1189,7 +1229,7 @@ EXPORT int native_init() {
     std::memset(g_killer_moves, 0, sizeof(g_killer_moves));
     std::memset(g_history_table, 0, sizeof(g_history_table));
     g_game_history_len = 0;
-    native_apply_search_variant("X14");
+    native_apply_search_variant("X24");
     return 1;
 }
 
@@ -2053,7 +2093,7 @@ static void eval_pawn_structure(const NativeBoard* b, int mg[2], int eg[2]) {
             }
         }
 
-        // 2. Isolated & Doubled Pawns
+        // 2. Isolated, Doubled & Backward Pawns
         for (int f = 0; f < 8; f++) {
             uint64_t f_pawns = my_pawns & FILE_MASKS[f];
             if (f_pawns) {
@@ -2067,6 +2107,32 @@ static void eval_pawn_structure(const NativeBoard* b, int mg[2], int eg[2]) {
                 if (cnt > 1) {
                     mg[c] -= 15 * (cnt - 1);
                     eg[c] -= 25 * (cnt - 1);
+                }
+                // Backward Pawns (P1.18 Track A)
+                if (g_use_backward_pawns) {
+                    int base_sq = (c == WHITE) ? bitscan_forward(f_pawns) : bitscan_reverse(f_pawns);
+                    int base_r = base_sq / 8;
+                    int stop_sq = (c == WHITE) ? (base_sq + 8) : (base_sq - 8);
+                    if (stop_sq >= 0 && stop_sq < 64) {
+                        uint64_t stop_attackers = pawn_attacks[c][stop_sq];
+                        if (stop_attackers & enemy_pawns) {
+                            uint64_t friendly_adj = my_pawns & adjacent_files_mask(f);
+                            bool has_supporter_behind = false;
+                            while (friendly_adj) {
+                                int asq = bitscan_forward(friendly_adj);
+                                friendly_adj &= friendly_adj - 1;
+                                int ar = asq / 8;
+                                if ((c == WHITE && ar <= base_r) || (c == BLACK && ar >= base_r)) {
+                                    has_supporter_behind = true;
+                                    break;
+                                }
+                            }
+                            if (!has_supporter_behind) {
+                                mg[c] -= 10;
+                                eg[c] -= 15;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -2269,6 +2335,30 @@ static void eval_king_safety(const NativeBoard* b, int mg[2], int eg[2]) {
             int danger = attack_units * attack_units;
             mg[c] -= std::min(200, danger * 2);
         }
+
+        // Open & Semi-Open File King Exposure (P1.18 Track B)
+        if (g_use_king_file_exposure) {
+            uint64_t en_heavy = b->pieces[them][ROOK] | b->pieces[them][QUEEN];
+            int exposure_penalty = 0;
+            uint64_t my_kf_pawns = b->pieces[c][PAWN] & FILE_MASKS[kf];
+            uint64_t en_kf_pawns = b->pieces[them][PAWN] & FILE_MASKS[kf];
+            bool has_en_heavy_kf = (en_heavy & FILE_MASKS[kf]) != 0;
+            if (!my_kf_pawns && !en_kf_pawns) {
+                exposure_penalty += has_en_heavy_kf ? 40 : 25;
+            } else if (!my_kf_pawns && en_kf_pawns) {
+                exposure_penalty += has_en_heavy_kf ? 25 : 15;
+            }
+            for (int adj_f : { kf - 1, kf + 1 }) {
+                if (adj_f >= 0 && adj_f <= 7) {
+                    uint64_t my_adj_pawns = b->pieces[c][PAWN] & FILE_MASKS[adj_f];
+                    bool has_en_heavy_adj = (en_heavy & FILE_MASKS[adj_f]) != 0;
+                    if (!my_adj_pawns) {
+                        exposure_penalty += has_en_heavy_adj ? 14 : 8;
+                    }
+                }
+            }
+            mg[c] -= std::min(80, exposure_penalty);
+        }
     }
 }
 
@@ -2385,25 +2475,27 @@ static void eval_pawn_structure_v2(const NativeBoard* b, int mg[2], int eg[2], u
                 }
 
                 // Backward pawn
-                int base_sq = (c == WHITE) ? bitscan_forward(f_pawns) : bitscan_reverse(f_pawns);
-                int base_r = base_sq / 8;
-                int stop_sq = (c == WHITE) ? (base_sq + 8) : (base_sq - 8);
-                if (stop_sq >= 0 && stop_sq < 64) {
-                    uint64_t stop_attackers = (c == WHITE) ? pawn_attacks[WHITE][stop_sq] : pawn_attacks[BLACK][stop_sq];
-                    if (stop_attackers & enemy_pawns) {
-                        uint64_t friendly_adj = my_pawns & adjacent_files_mask(f);
-                        bool has_supporter_behind = false;
-                        while (friendly_adj) {
-                            int asq = bitscan_forward(friendly_adj);
-                            friendly_adj &= friendly_adj - 1;
-                            int ar = asq / 8;
-                            if ((c == WHITE && ar <= base_r) || (c == BLACK && ar >= base_r)) {
-                                has_supporter_behind = true;
-                                break;
+                if (g_use_backward_pawns) {
+                    int base_sq = (c == WHITE) ? bitscan_forward(f_pawns) : bitscan_reverse(f_pawns);
+                    int base_r = base_sq / 8;
+                    int stop_sq = (c == WHITE) ? (base_sq + 8) : (base_sq - 8);
+                    if (stop_sq >= 0 && stop_sq < 64) {
+                        uint64_t stop_attackers = (c == WHITE) ? pawn_attacks[WHITE][stop_sq] : pawn_attacks[BLACK][stop_sq];
+                        if (stop_attackers & enemy_pawns) {
+                            uint64_t friendly_adj = my_pawns & adjacent_files_mask(f);
+                            bool has_supporter_behind = false;
+                            while (friendly_adj) {
+                                int asq = bitscan_forward(friendly_adj);
+                                friendly_adj &= friendly_adj - 1;
+                                int ar = asq / 8;
+                                if ((c == WHITE && ar <= base_r) || (c == BLACK && ar >= base_r)) {
+                                    has_supporter_behind = true;
+                                    break;
+                                }
                             }
-                        }
-                        if (!has_supporter_behind) {
-                            mg[c] -= 10; eg[c] -= 15;
+                            if (!has_supporter_behind) {
+                                mg[c] -= 10; eg[c] -= 15;
+                            }
                         }
                     }
                 }
@@ -2508,6 +2600,30 @@ static void eval_king_safety_v2(const NativeBoard* b, int mg[2], int eg[2]) {
                     }
                 }
             }
+        }
+
+        // Open & Semi-Open File King Exposure (P1.18 Track B)
+        if (g_use_king_file_exposure) {
+            uint64_t en_heavy = b->pieces[them][ROOK] | b->pieces[them][QUEEN];
+            int exposure_penalty = 0;
+            uint64_t my_kf_pawns = b->pieces[c][PAWN] & FILE_MASKS[kf];
+            uint64_t en_kf_pawns = b->pieces[them][PAWN] & FILE_MASKS[kf];
+            bool has_en_heavy_kf = (en_heavy & FILE_MASKS[kf]) != 0;
+            if (!my_kf_pawns && !en_kf_pawns) {
+                exposure_penalty += has_en_heavy_kf ? 40 : 25;
+            } else if (!my_kf_pawns && en_kf_pawns) {
+                exposure_penalty += has_en_heavy_kf ? 25 : 15;
+            }
+            for (int adj_f : { kf - 1, kf + 1 }) {
+                if (adj_f >= 0 && adj_f <= 7) {
+                    uint64_t my_adj_pawns = b->pieces[c][PAWN] & FILE_MASKS[adj_f];
+                    bool has_en_heavy_adj = (en_heavy & FILE_MASKS[adj_f]) != 0;
+                    if (!my_adj_pawns) {
+                        exposure_penalty += has_en_heavy_adj ? 14 : 8;
+                    }
+                }
+            }
+            mg[c] -= std::min(80, exposure_penalty);
         }
     }
 }
@@ -4740,7 +4856,7 @@ static int negamax(
                                (native_is_check(b) == 0); // Non-checking move
 
         // Milestone P1.12 & P1.13 Targeted Intervention: Protect pawn moves in pure pawn endgames from LMR reduction
-        if ((g_search_variant == "X17" || g_search_variant == "X18" || g_search_variant == "X19" || g_search_variant == "X20") && non_pawn_mat == 0 && moved_piece == PAWN) {
+        if ((g_search_variant == "X17" || g_search_variant == "X18" || g_search_variant == "X19" || g_search_variant == "X20" || g_search_variant == "X21" || g_search_variant == "X22" || g_search_variant == "X23" || g_search_variant == "X24") && non_pawn_mat == 0 && moved_piece == PAWN) {
             is_lmr_eligible = false;
         }
 
@@ -5442,6 +5558,14 @@ EXPORT void native_set_qsearch_mode(int mode) { g_qsearch_mode = mode; }
 EXPORT int native_get_qsearch_mode() { return g_qsearch_mode; }
 EXPORT void native_set_outpost_mode(int mode) { g_use_true_outposts = mode; }
 EXPORT int native_get_outpost_mode() { return g_use_true_outposts; }
+EXPORT void native_clear_pawn_table() { clear_pawn_table(); }
+EXPORT void native_set_backward_pawns_mode(int mode) {
+    g_use_backward_pawns = mode;
+    clear_pawn_table();
+}
+EXPORT int native_get_backward_pawns_mode() { return g_use_backward_pawns; }
+EXPORT void native_set_king_file_exposure_mode(int mode) { g_use_king_file_exposure = mode; }
+EXPORT int native_get_king_file_exposure_mode() { return g_use_king_file_exposure; }
 EXPORT void native_reset_qsearch_telemetry() {
     g_telemetry_qsearch_in_check = 0;
     g_telemetry_qsearch_checkmates = 0;
@@ -5554,7 +5678,7 @@ static void uci_loop() {
         iss >> cmd;
 
         if (cmd == "uci") {
-            std::cout << "id name Janus Classical X (P1.17 Candidate X22)" << std::endl;
+            std::cout << "id name Janus Classical X (P1.19 Candidate X24)" << std::endl;
             std::cout << "id author Project Janus Developers" << std::endl;
             std::cout << "option name Threads type spin default 1 min 1 max 16" << std::endl;
             std::cout << "option name UCI_LMP type combo default L1 var L0 var L1 var L2 var L3" << std::endl;
@@ -5567,7 +5691,7 @@ static void uci_loop() {
             std::cout << "option name LMRBaseReduction type spin default 1 min 1 max 3" << std::endl;
             std::cout << "option name UseSEEOrdering type check default false" << std::endl;
             std::cout << "option name UseSEEInQuiescence type check default false" << std::endl;
-            std::cout << "option name UCI_Variant type combo default X21 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18 var X19 var X20 var X21" << std::endl;
+            std::cout << "option name UCI_Variant type combo default X24 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18 var X19 var X20 var X21 var X22 var X23 var X24" << std::endl;
             std::cout << "option name UCI_AdaptiveCapture type combo default C1 var C0 var C1 var C2 var C3" << std::endl;
             std::cout << "option name UCI_HistoryMode type combo default H0 var H0 var H1 var H2 var H3" << std::endl;
             std::cout << "option name UCI_ExactSearchMode type check default false" << std::endl;
@@ -5591,6 +5715,9 @@ static void uci_loop() {
             std::cout << "option name UCI_DynamicTime type check default true" << std::endl;
             std::cout << "option name UCI_PawnHash type check default true" << std::endl;
             std::cout << "option name UCI_PruningSafety type check default true" << std::endl;
+            std::cout << "option name UCI_OutpostMode type combo default 1 var 0 var 1" << std::endl;
+            std::cout << "option name UCI_BackwardPawns type check default false" << std::endl;
+            std::cout << "option name UCI_KingFileExposure type check default false" << std::endl;
             std::cout << "uciok" << std::endl;
         } else if (cmd == "isready") {
             std::cout << "readyok" << std::endl;
@@ -5608,28 +5735,7 @@ static void uci_loop() {
                 }
                 if (opt_name == "Threads" && !opt_val.empty()) {
                     g_num_threads = std::max(1, std::min(16, std::stoi(opt_val)));
-                    if (g_search_variant == "X15" || g_search_variant == "X16" || g_search_variant == "X17" || g_search_variant == "X18" || g_search_variant == "X19") {
-                        if (g_num_threads == 1) {
-                            g_use_pawn_hash = false;
-                            g_dynamic_time_mgmt = false;
-                            g_use_lmp = false;
-                            g_lmp_mode = 0;
-                            g_rfp_margin_per_depth = 120;
-                            if (g_search_variant == "X19") {
-                                g_eval_mode = 5;
-                            }
-                        } else {
-                            g_use_pawn_hash = true;
-                            g_dynamic_time_mgmt = true;
-                            g_use_lmp = true;
-                            g_lmp_mode = 1;
-                            g_lmp_max_depth = 4;
-                            g_rfp_margin_per_depth = 90;
-                            if (g_search_variant == "X19") {
-                                g_eval_mode = 10;
-                            }
-                        }
-                    }
+                    native_apply_search_variant(g_search_variant.c_str());
                 } else if (opt_name == "UCI_LMP" && !opt_val.empty()) {
                     if (opt_val == "L0") { g_use_lmp = false; g_lmp_mode = 0; }
                     else if (opt_val == "L1") { g_use_lmp = true; g_lmp_mode = 1; }
@@ -5766,6 +5872,11 @@ static void uci_loop() {
                     else if (opt_val == "Q3") g_qsearch_mode = 3;
                 } else if (opt_name == "UCI_OutpostMode" && !opt_val.empty()) {
                     g_use_true_outposts = std::stoi(opt_val);
+                } else if (opt_name == "UCI_BackwardPawns") {
+                    g_use_backward_pawns = (opt_val.empty() || opt_val == "true" || opt_val == "1") ? 1 : 0;
+                    clear_pawn_table();
+                } else if (opt_name == "UCI_KingFileExposure") {
+                    g_use_king_file_exposure = (opt_val.empty() || opt_val == "true" || opt_val == "1") ? 1 : 0;
                 }
             }
                 } else if (cmd == "telemetry_report") {

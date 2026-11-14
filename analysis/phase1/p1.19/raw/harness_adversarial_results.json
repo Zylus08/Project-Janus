@@ -1,0 +1,157 @@
+{
+  "total_tests": 15,
+  "passed_tests": 15,
+  "pass_rate": 1.0,
+  "results": [
+    {
+      "test_id": "CASE_1",
+      "description": "White winning with positive score (+1500 cp, White to move, 6 plies)",
+      "status": "PASS",
+      "adjudicated_winner": "White",
+      "expected_winner": "White",
+      "adjudicated_result": "1-0",
+      "expected_result": "1-0",
+      "termination": "adjudication_resignation"
+    },
+    {
+      "test_id": "CASE_2",
+      "description": "White losing with negative score (-1500 cp, White to move, 6 plies)",
+      "status": "PASS",
+      "adjudicated_winner": "Black",
+      "expected_winner": "Black",
+      "adjudicated_result": "0-1",
+      "expected_result": "0-1",
+      "termination": "adjudication_resignation"
+    },
+    {
+      "test_id": "CASE_3",
+      "description": "Black winning with positive side-to-move score (+1500 cp, Black to move, 6 plies)",
+      "status": "PASS",
+      "adjudicated_winner": "Black",
+      "expected_winner": "Black",
+      "adjudicated_result": "0-1",
+      "expected_result": "0-1",
+      "termination": "adjudication_resignation"
+    },
+    {
+      "test_id": "CASE_4_P116_INVERSION_TEST",
+      "description": "Black losing with negative side-to-move score (-1500 cp, Black to move, 6 plies) [P1.16 BUG TEST]",
+      "status": "PASS",
+      "adjudicated_winner": "White",
+      "expected_winner": "White",
+      "adjudicated_result": "1-0",
+      "expected_result": "1-0",
+      "termination": "adjudication_resignation"
+    },
+    {
+      "test_id": "CASE_5A",
+      "description": "Mate score: White announces mate in 3 (+3 mate, White to move)",
+      "status": "PASS",
+      "adjudicated_winner": "White",
+      "expected_winner": "White",
+      "adjudicated_result": "1-0",
+      "expected_result": "1-0",
+      "termination": "adjudication_mate_score"
+    },
+    {
+      "test_id": "CASE_5B",
+      "description": "Mate score: Black announces mate in 2 (+2 mate, Black to move)",
+      "status": "PASS",
+      "adjudicated_winner": "Black",
+      "expected_winner": "Black",
+      "adjudicated_result": "0-1",
+      "expected_result": "0-1",
+      "termination": "adjudication_mate_score"
+    },
+    {
+      "test_id": "CASE_5C",
+      "description": "Mate score: Black announces being mated in 1 (-1 mate, Black to move)",
+      "status": "PASS",
+      "adjudicated_winner": "White",
+      "expected_winner": "White",
+      "adjudicated_result": "1-0",
+      "expected_result": "1-0",
+      "termination": "adjudication_mate_score"
+    },
+    {
+      "test_id": "CASE_5D_ON_BOARD_MATE",
+      "description": "Direct Checkmate on board delivered by Black (Fool's Mate: 4. Qh4#)",
+      "status": "PASS",
+      "adjudicated_winner": "Black",
+      "expected_winner": "Black",
+      "adjudicated_result": "0-1",
+      "expected_result": "0-1",
+      "termination": "checkmate"
+    },
+    {
+      "test_id": "CASE_6",
+      "description": "Missing or malformed score lines (normal position, no score -> in progress)",
+      "status": "PASS",
+      "adjudicated_winner": "None",
+      "expected_winner": "None",
+      "adjudicated_result": "*",
+      "expected_result": "*",
+      "termination": "in_progress"
+    },
+    {
+      "test_id": "CASE_7_TIMEOUT",
+      "description": "Clock timeout by Black (Black exceeds time budget)",
+      "status": "PASS",
+      "adjudicated_winner": "White",
+      "expected_winner": "White",
+      "adjudicated_result": "1-0",
+      "expected_result": "1-0",
+      "termination": "timeout_forfeit"
+    },
+    {
+      "test_id": "CASE_8_CRASH",
+      "description": "Engine crash: White process terminates with exit code != 0",
+      "status": "PASS",
+      "adjudicated_winner": "Black",
+      "expected_winner": "Black",
+      "adjudicated_result": "0-1",
+      "expected_result": "0-1",
+      "termination": "crash_forfeit"
+    },
+    {
+      "test_id": "CASE_9_ILLEGAL_MOVE",
+      "description": "Illegal move emitted: Black attempts illegal knight jump",
+      "status": "PASS",
+      "adjudicated_winner": "White",
+      "expected_winner": "White",
+      "adjudicated_result": "1-0",
+      "expected_result": "1-0",
+      "termination": "illegal_move_forfeit"
+    },
+    {
+      "test_id": "CASE_10_STALEMATE",
+      "description": "Stalemate on board (King has no legal moves and is not in check)",
+      "status": "PASS",
+      "adjudicated_winner": "Draw",
+      "expected_winner": "Draw",
+      "adjudicated_result": "1/2-1/2",
+      "expected_result": "1/2-1/2",
+      "termination": "stalemate"
+    },
+    {
+      "test_id": "CASE_11_REPETITION",
+      "description": "Threefold repetition claimable",
+      "status": "PASS",
+      "adjudicated_winner": "None",
+      "expected_winner": "None",
+      "adjudicated_result": "*",
+      "expected_result": "*",
+      "termination": "in_progress"
+    },
+    {
+      "test_id": "CASE_12_CONFIRM_P116_INVERSION_PREVENTION",
+      "description": "Exact reproduction of Match 7 Game 25: SF19 delivers checkmate Rh3# on move 55",
+      "status": "PASS",
+      "adjudicated_winner": "Black",
+      "expected_winner": "Black",
+      "adjudicated_result": "0-1",
+      "expected_result": "0-1",
+      "termination": "adjudication_mate_score"
+    }
+  ]
+}

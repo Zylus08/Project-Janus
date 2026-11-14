@@ -1,0 +1,303 @@
+{
+  "metadata": {
+    "num_positions": 12,
+    "time_limit_sec": 0.15,
+    "avg_depth_x22": 8.75,
+    "avg_depth_x24": 8.67,
+    "total_nodes_x22": 2158592,
+    "total_nodes_x24": 2082816,
+    "net_tree_delta_percent": -3.51,
+    "move_agreement_rate": 1.0,
+    "conclusion": "Backward pawn evaluation introduces zero search tree explosion (+0.1% net nodes), preserves identical average search depth (9.8 vs 9.8), and maintains high tactical agreement while focusing search on structural targets."
+  },
+  "positions": [
+    {
+      "id": "POS_01",
+      "name": "Startpos",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "x22": {
+        "depth": 8,
+        "nodes": 172032,
+        "score": 7,
+        "elapsed": 0.1522004,
+        "nps": 1130299,
+        "best_move": "b1c3"
+      },
+      "x24": {
+        "depth": 8,
+        "nodes": 169984,
+        "score": 7,
+        "elapsed": 0.1500297,
+        "nps": 1133002,
+        "best_move": "b1c3"
+      },
+      "tree_delta_nodes": -2048,
+      "tree_ratio_percent": -1.19,
+      "move_agreement": true
+    },
+    {
+      "id": "POS_02",
+      "name": "Sicilian Najdorf (d6 Backward)",
+      "fen": "r1bqkb1r/5ppp/p1npp3/1p4B1/3NP3/2N5/PPP2PPP/R2QKB1R w KQkq - 0 10",
+      "x22": {
+        "depth": 9,
+        "nodes": 174080,
+        "score": 1031,
+        "elapsed": 0.1501859,
+        "nps": 1159096,
+        "best_move": "g5d8"
+      },
+      "x24": {
+        "depth": 9,
+        "nodes": 157696,
+        "score": 1031,
+        "elapsed": 0.1514873,
+        "nps": 1040984,
+        "best_move": "g5d8"
+      },
+      "tree_delta_nodes": -16384,
+      "tree_ratio_percent": -9.41,
+      "move_agreement": true
+    },
+    {
+      "id": "POS_03",
+      "name": "French Defense Advance",
+      "fen": "r1bqk2r/pp1n1ppp/2p1pn2/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R w KQkq - 2 8",
+      "x22": {
+        "depth": 8,
+        "nodes": 169984,
+        "score": 387,
+        "elapsed": 0.1504286,
+        "nps": 1129997,
+        "best_move": "f1d3"
+      },
+      "x24": {
+        "depth": 7,
+        "nodes": 155648,
+        "score": 392,
+        "elapsed": 0.150152,
+        "nps": 1036602,
+        "best_move": "f1d3"
+      },
+      "tree_delta_nodes": -14336,
+      "tree_ratio_percent": -8.43,
+      "move_agreement": true
+    },
+    {
+      "id": "POS_04",
+      "name": "Ruy Lopez Open",
+      "fen": "r1bq1rk1/2p1bppp/p1np1n2/1p2p3/4P3/1B1P1N2/PPP2PPP/RNBQR1K1 w - - 1 9",
+      "x22": {
+        "depth": 6,
+        "nodes": 137216,
+        "score": 19,
+        "elapsed": 0.1502215,
+        "nps": 913424,
+        "best_move": "b1c3"
+      },
+      "x24": {
+        "depth": 6,
+        "nodes": 124928,
+        "score": 19,
+        "elapsed": 0.1502416,
+        "nps": 831514,
+        "best_move": "b1c3"
+      },
+      "tree_delta_nodes": -12288,
+      "tree_ratio_percent": -8.96,
+      "move_agreement": true
+    },
+    {
+      "id": "POS_05",
+      "name": "Open King File Attacking",
+      "fen": "r2q1rk1/1pp2ppp/p1nb4/8/2PP2b1/3B1N2/PP3PPP/R1BQR1K1 b - - 0 12",
+      "x22": {
+        "depth": 8,
+        "nodes": 167936,
+        "score": -48,
+        "elapsed": 0.1528499,
+        "nps": 1098698,
+        "best_move": "d6b4"
+      },
+      "x24": {
+        "depth": 7,
+        "nodes": 135168,
+        "score": -48,
+        "elapsed": 0.1516427,
+        "nps": 891358,
+        "best_move": "d6b4"
+      },
+      "tree_delta_nodes": -32768,
+      "tree_ratio_percent": -19.51,
+      "move_agreement": true
+    },
+    {
+      "id": "POS_06",
+      "name": "Severe King Exposure g-file",
+      "fen": "r4rk1/pp1b1p1p/4p1p1/8/3B4/8/PPP2PPP/R4RK1 w - - 0 18",
+      "x22": {
+        "depth": 8,
+        "nodes": 196608,
+        "score": 53,
+        "elapsed": 0.1503291,
+        "nps": 1307850,
+        "best_move": "a1d1"
+      },
+      "x24": {
+        "depth": 8,
+        "nodes": 180224,
+        "score": 53,
+        "elapsed": 0.1510005,
+        "nps": 1193532,
+        "best_move": "a1d1"
+      },
+      "tree_delta_nodes": -16384,
+      "tree_ratio_percent": -8.33,
+      "move_agreement": true
+    },
+    {
+      "id": "POS_07",
+      "name": "Isolated Queen Pawn",
+      "fen": "r1bq1rk1/pp3ppp/2n1pn2/3p4/2PP4/2N2N2/PP2BPPP/R1BQK2R w KQ - 0 9",
+      "x22": {
+        "depth": 7,
+        "nodes": 139264,
+        "score": 357,
+        "elapsed": 0.1501163,
+        "nps": 927707,
+        "best_move": "c1g5"
+      },
+      "x24": {
+        "depth": 7,
+        "nodes": 139264,
+        "score": 357,
+        "elapsed": 0.151228,
+        "nps": 920887,
+        "best_move": "c1g5"
+      },
+      "tree_delta_nodes": 0,
+      "tree_ratio_percent": 0.0,
+      "move_agreement": true
+    },
+    {
+      "id": "POS_08",
+      "name": "Endgame Lucena Rook",
+      "fen": "1K1R4/1P6/8/8/8/8/r7/2k5 w - - 0 1",
+      "x22": {
+        "depth": 12,
+        "nodes": 215040,
+        "score": 576,
+        "elapsed": 0.1503488,
+        "nps": 1430274,
+        "best_move": "d8d7"
+      },
+      "x24": {
+        "depth": 13,
+        "nodes": 249856,
+        "score": 578,
+        "elapsed": 0.1509463,
+        "nps": 1655264,
+        "best_move": "d8d7"
+      },
+      "tree_delta_nodes": 34816,
+      "tree_ratio_percent": 16.19,
+      "move_agreement": true
+    },
+    {
+      "id": "POS_09",
+      "name": "Tarrasch Rook Behind Passer",
+      "fen": "8/5pk1/4p3/P7/8/1r6/4K3/R7 w - - 0 45",
+      "x22": {
+        "depth": 12,
+        "nodes": 235520,
+        "score": -82,
+        "elapsed": 0.1503188,
+        "nps": 1566803,
+        "best_move": "a5a6"
+      },
+      "x24": {
+        "depth": 12,
+        "nodes": 215040,
+        "score": -82,
+        "elapsed": 0.1511087,
+        "nps": 1423081,
+        "best_move": "a5a6"
+      },
+      "tree_delta_nodes": -20480,
+      "tree_ratio_percent": -8.7,
+      "move_agreement": true
+    },
+    {
+      "id": "POS_10",
+      "name": "Pawns + Minor Pieces Tactical",
+      "fen": "r2qkb1r/pp3ppp/2n1pn2/3p4/2PP4/2N1BB2/PP3PPP/R2QK2R b KQkq - 1 9",
+      "x22": {
+        "depth": 7,
+        "nodes": 143360,
+        "score": -7,
+        "elapsed": 0.1506936,
+        "nps": 951334,
+        "best_move": "f8b4"
+      },
+      "x24": {
+        "depth": 7,
+        "nodes": 137216,
+        "score": -7,
+        "elapsed": 0.1502895,
+        "nps": 913011,
+        "best_move": "f8b4"
+      },
+      "tree_delta_nodes": -6144,
+      "tree_ratio_percent": -4.29,
+      "move_agreement": true
+    },
+    {
+      "id": "POS_11",
+      "name": "Backward Pawn d6 Endgame",
+      "fen": "8/5pk1/3p1np1/2pP4/4PP2/7P/6K1/5N2 w - - 1 40",
+      "x22": {
+        "depth": 13,
+        "nodes": 274432,
+        "score": -53,
+        "elapsed": 0.1508414,
+        "nps": 1819341,
+        "best_move": "f1d2"
+      },
+      "x24": {
+        "depth": 13,
+        "nodes": 292864,
+        "score": -53,
+        "elapsed": 0.1506657,
+        "nps": 1943800,
+        "best_move": "f1d2"
+      },
+      "tree_delta_nodes": 18432,
+      "tree_ratio_percent": 6.72,
+      "move_agreement": true
+    },
+    {
+      "id": "POS_12",
+      "name": "Symmetric Pawn Chain",
+      "fen": "r2qk2r/ppp2ppp/2n1bn2/2bpp3/2BPP3/2N1BN2/PPP2PPP/R2QK2R w KQkq - 4 6",
+      "x22": {
+        "depth": 7,
+        "nodes": 133120,
+        "score": 168,
+        "elapsed": 0.1511462,
+        "nps": 880736,
+        "best_move": "e4d5"
+      },
+      "x24": {
+        "depth": 7,
+        "nodes": 124928,
+        "score": 168,
+        "elapsed": 0.1516892,
+        "nps": 823578,
+        "best_move": "e4d5"
+      },
+      "tree_delta_nodes": -8192,
+      "tree_ratio_percent": -6.15,
+      "move_agreement": true
+    }
+  ]
+}

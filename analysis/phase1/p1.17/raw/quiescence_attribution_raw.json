@@ -1,0 +1,509 @@
+{
+  "Q0": {
+    "name": "Legacy Q0 (No evasions, Stand-pat in check, No Pawn Hash)",
+    "total_nodes": 3143764,
+    "total_time": 1.9147344999999998,
+    "avg_depth": 11.4,
+    "avg_nps": 1641879,
+    "details": [
+      {
+        "fen_idx": 0,
+        "depth": 8,
+        "score": 8,
+        "nodes": 169984,
+        "elapsed": 0.1012815,
+        "nps": 1678332
+      },
+      {
+        "fen_idx": 1,
+        "depth": 7,
+        "score": 28999,
+        "nodes": 233472,
+        "elapsed": 0.1001355,
+        "nps": 2331560
+      },
+      {
+        "fen_idx": 2,
+        "depth": 9,
+        "score": 634,
+        "nodes": 137216,
+        "elapsed": 0.10131,
+        "nps": 1354417
+      },
+      {
+        "fen_idx": 3,
+        "depth": 8,
+        "score": 100,
+        "nodes": 126976,
+        "elapsed": 0.101244,
+        "nps": 1254158
+      },
+      {
+        "fen_idx": 4,
+        "depth": 7,
+        "score": 62,
+        "nodes": 131072,
+        "elapsed": 0.100808,
+        "nps": 1300214
+      },
+      {
+        "fen_idx": 5,
+        "depth": 6,
+        "score": 52,
+        "nodes": 124928,
+        "elapsed": 0.1009106,
+        "nps": 1238006
+      },
+      {
+        "fen_idx": 6,
+        "depth": 12,
+        "score": 4,
+        "nodes": 231424,
+        "elapsed": 0.1000611,
+        "nps": 2312826
+      },
+      {
+        "fen_idx": 7,
+        "depth": 9,
+        "score": -383,
+        "nodes": 116736,
+        "elapsed": 0.1006218,
+        "nps": 1160146
+      },
+      {
+        "fen_idx": 8,
+        "depth": 9,
+        "score": 1,
+        "nodes": 151552,
+        "elapsed": 0.1008107,
+        "nps": 1503332
+      },
+      {
+        "fen_idx": 9,
+        "depth": 8,
+        "score": 64,
+        "nodes": 137216,
+        "elapsed": 0.1016513,
+        "nps": 1349869
+      },
+      {
+        "fen_idx": 10,
+        "depth": 13,
+        "score": 28999,
+        "nodes": 366592,
+        "elapsed": 0.1003449,
+        "nps": 3653319
+      },
+      {
+        "fen_idx": 11,
+        "depth": 64,
+        "score": 0,
+        "nodes": 748,
+        "elapsed": 0.0001695,
+        "nps": 4412979
+      },
+      {
+        "fen_idx": 12,
+        "depth": 12,
+        "score": -28990,
+        "nodes": 274432,
+        "elapsed": 0.1001644,
+        "nps": 2739815
+      },
+      {
+        "fen_idx": 13,
+        "depth": 7,
+        "score": 30,
+        "nodes": 122880,
+        "elapsed": 0.1004029,
+        "nps": 1223869
+      },
+      {
+        "fen_idx": 14,
+        "depth": 9,
+        "score": 354,
+        "nodes": 112640,
+        "elapsed": 0.1003958,
+        "nps": 1121959
+      },
+      {
+        "fen_idx": 15,
+        "depth": 7,
+        "score": 950,
+        "nodes": 163840,
+        "elapsed": 0.1004303,
+        "nps": 1631380
+      },
+      {
+        "fen_idx": 16,
+        "depth": 9,
+        "score": 215,
+        "nodes": 138600,
+        "elapsed": 0.1000349,
+        "nps": 1385516
+      },
+      {
+        "fen_idx": 17,
+        "depth": 9,
+        "score": 107,
+        "nodes": 133120,
+        "elapsed": 0.1011793,
+        "nps": 1315684
+      },
+      {
+        "fen_idx": 18,
+        "depth": 8,
+        "score": -13,
+        "nodes": 141312,
+        "elapsed": 0.1017084,
+        "nps": 1389383
+      },
+      {
+        "fen_idx": 19,
+        "depth": 7,
+        "score": 28,
+        "nodes": 129024,
+        "elapsed": 0.1010696,
+        "nps": 1276585
+      }
+    ]
+  },
+  "Q1": {
+    "name": "Corrected Q1 (Evasions, Suppress Stand-pat, No Pawn Hash)",
+    "total_nodes": 2570988,
+    "total_time": 1.9217801,
+    "avg_depth": 10.9,
+    "avg_nps": 1337815,
+    "details": [
+      {
+        "fen_idx": 0,
+        "depth": 7,
+        "score": 38,
+        "nodes": 120832,
+        "elapsed": 0.1001064,
+        "nps": 1207035
+      },
+      {
+        "fen_idx": 1,
+        "depth": 7,
+        "score": 28999,
+        "nodes": 219136,
+        "elapsed": 0.1000187,
+        "nps": 2190950
+      },
+      {
+        "fen_idx": 2,
+        "depth": 8,
+        "score": 624,
+        "nodes": 106496,
+        "elapsed": 0.1018199,
+        "nps": 1045925
+      },
+      {
+        "fen_idx": 3,
+        "depth": 7,
+        "score": 98,
+        "nodes": 104448,
+        "elapsed": 0.1008811,
+        "nps": 1035357
+      },
+      {
+        "fen_idx": 4,
+        "depth": 7,
+        "score": 62,
+        "nodes": 106496,
+        "elapsed": 0.1020184,
+        "nps": 1043890
+      },
+      {
+        "fen_idx": 5,
+        "depth": 5,
+        "score": 52,
+        "nodes": 106496,
+        "elapsed": 0.1015383,
+        "nps": 1048825
+      },
+      {
+        "fen_idx": 6,
+        "depth": 12,
+        "score": 4,
+        "nodes": 165888,
+        "elapsed": 0.1008036,
+        "nps": 1645655
+      },
+      {
+        "fen_idx": 7,
+        "depth": 8,
+        "score": -439,
+        "nodes": 92160,
+        "elapsed": 0.100403,
+        "nps": 917900
+      },
+      {
+        "fen_idx": 8,
+        "depth": 7,
+        "score": 49,
+        "nodes": 106496,
+        "elapsed": 0.1026698,
+        "nps": 1037267
+      },
+      {
+        "fen_idx": 9,
+        "depth": 7,
+        "score": 65,
+        "nodes": 116736,
+        "elapsed": 0.101877,
+        "nps": 1145852
+      },
+      {
+        "fen_idx": 10,
+        "depth": 13,
+        "score": 28999,
+        "nodes": 337920,
+        "elapsed": 0.1003795,
+        "nps": 3366424
+      },
+      {
+        "fen_idx": 11,
+        "depth": 64,
+        "score": 0,
+        "nodes": 748,
+        "elapsed": 0.0001745,
+        "nps": 4286532
+      },
+      {
+        "fen_idx": 12,
+        "depth": 12,
+        "score": -912,
+        "nodes": 237568,
+        "elapsed": 0.1006815,
+        "nps": 2359599
+      },
+      {
+        "fen_idx": 13,
+        "depth": 7,
+        "score": 30,
+        "nodes": 124928,
+        "elapsed": 0.1016256,
+        "nps": 1229296
+      },
+      {
+        "fen_idx": 14,
+        "depth": 9,
+        "score": 354,
+        "nodes": 108544,
+        "elapsed": 0.1011621,
+        "nps": 1072971
+      },
+      {
+        "fen_idx": 15,
+        "depth": 7,
+        "score": 950,
+        "nodes": 131072,
+        "elapsed": 0.1014826,
+        "nps": 1291571
+      },
+      {
+        "fen_idx": 16,
+        "depth": 8,
+        "score": 195,
+        "nodes": 104448,
+        "elapsed": 0.1011226,
+        "nps": 1032884
+      },
+      {
+        "fen_idx": 17,
+        "depth": 8,
+        "score": 115,
+        "nodes": 81920,
+        "elapsed": 0.1015213,
+        "nps": 806924
+      },
+      {
+        "fen_idx": 18,
+        "depth": 8,
+        "score": -23,
+        "nodes": 92160,
+        "elapsed": 0.1001033,
+        "nps": 920648
+      },
+      {
+        "fen_idx": 19,
+        "depth": 7,
+        "score": 28,
+        "nodes": 106496,
+        "elapsed": 0.1013909,
+        "nps": 1050350
+      }
+    ]
+  },
+  "Q2": {
+    "name": "Candidate X21 (Q1 + 64K Pawn Hash Enabled)",
+    "total_nodes": 2834588,
+    "total_time": 1.9158906000000004,
+    "avg_depth": 11.05,
+    "avg_nps": 1479514,
+    "details": [
+      {
+        "fen_idx": 0,
+        "depth": 8,
+        "score": 16,
+        "nodes": 129024,
+        "elapsed": 0.1008438,
+        "nps": 1279444
+      },
+      {
+        "fen_idx": 1,
+        "depth": 7,
+        "score": 28999,
+        "nodes": 243712,
+        "elapsed": 0.1005828,
+        "nps": 2422998
+      },
+      {
+        "fen_idx": 2,
+        "depth": 9,
+        "score": 638,
+        "nodes": 110000,
+        "elapsed": 0.1006468,
+        "nps": 1092930
+      },
+      {
+        "fen_idx": 3,
+        "depth": 7,
+        "score": 98,
+        "nodes": 112640,
+        "elapsed": 0.1015301,
+        "nps": 1109424
+      },
+      {
+        "fen_idx": 4,
+        "depth": 7,
+        "score": 62,
+        "nodes": 116736,
+        "elapsed": 0.100485,
+        "nps": 1161725
+      },
+      {
+        "fen_idx": 5,
+        "depth": 5,
+        "score": 52,
+        "nodes": 114688,
+        "elapsed": 0.1000784,
+        "nps": 1145981
+      },
+      {
+        "fen_idx": 6,
+        "depth": 12,
+        "score": 4,
+        "nodes": 188416,
+        "elapsed": 0.1005644,
+        "nps": 1873585
+      },
+      {
+        "fen_idx": 7,
+        "depth": 8,
+        "score": -439,
+        "nodes": 110592,
+        "elapsed": 0.1025555,
+        "nps": 1078362
+      },
+      {
+        "fen_idx": 8,
+        "depth": 7,
+        "score": 49,
+        "nodes": 122880,
+        "elapsed": 0.1018529,
+        "nps": 1206445
+      },
+      {
+        "fen_idx": 9,
+        "depth": 8,
+        "score": 64,
+        "nodes": 135168,
+        "elapsed": 0.100511,
+        "nps": 1344808
+      },
+      {
+        "fen_idx": 10,
+        "depth": 13,
+        "score": 28999,
+        "nodes": 382976,
+        "elapsed": 0.1000957,
+        "nps": 3826098
+      },
+      {
+        "fen_idx": 11,
+        "depth": 64,
+        "score": 0,
+        "nodes": 748,
+        "elapsed": 0.0001713,
+        "nps": 4366608
+      },
+      {
+        "fen_idx": 12,
+        "depth": 12,
+        "score": -912,
+        "nodes": 245760,
+        "elapsed": 0.1001539,
+        "nps": 2453823
+      },
+      {
+        "fen_idx": 13,
+        "depth": 7,
+        "score": 30,
+        "nodes": 133120,
+        "elapsed": 0.1008418,
+        "nps": 1320087
+      },
+      {
+        "fen_idx": 14,
+        "depth": 9,
+        "score": 354,
+        "nodes": 114688,
+        "elapsed": 0.1001913,
+        "nps": 1144690
+      },
+      {
+        "fen_idx": 15,
+        "depth": 7,
+        "score": 950,
+        "nodes": 135168,
+        "elapsed": 0.1015599,
+        "nps": 1330918
+      },
+      {
+        "fen_idx": 16,
+        "depth": 8,
+        "score": 195,
+        "nodes": 112640,
+        "elapsed": 0.100274,
+        "nps": 1123322
+      },
+      {
+        "fen_idx": 17,
+        "depth": 9,
+        "score": 112,
+        "nodes": 118784,
+        "elapsed": 0.1007249,
+        "nps": 1179291
+      },
+      {
+        "fen_idx": 18,
+        "depth": 8,
+        "score": -23,
+        "nodes": 118784,
+        "elapsed": 0.1007395,
+        "nps": 1179120
+      },
+      {
+        "fen_idx": 19,
+        "depth": 6,
+        "score": 29,
+        "nodes": 88064,
+        "elapsed": 0.1014876,
+        "nps": 867731
+      }
+    ]
+  }
+}

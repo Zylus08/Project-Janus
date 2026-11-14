@@ -335,6 +335,7 @@ static bool g_exact_search_mode = false; // Phase 6 exact full-width verificatio
 
 // Milestone P1.16 Quiescence Search Architecture & Correctness
 static int  g_qsearch_mode = 1;          // 0=Q0 (Frozen legacy), 1=Q1 (Corrected in-check evasions & mate detection), 2=Q2 (Q1 + quiet checks at qply 0), 3=Q3 (Q2 + conservative check filter)
+static int  g_use_true_outposts = 1;     // 0=Legacy E5 outposts, 1=True outposts with enemy pawn immunity & central bishop outposts
 static uint64_t g_telemetry_qsearch_in_check = 0;
 static uint64_t g_telemetry_qsearch_checkmates = 0;
 static uint64_t g_telemetry_qsearch_checks_generated = 0;
@@ -833,6 +834,7 @@ EXPORT void native_apply_search_variant(const char* var_str) {
         g_movepicker_stage_reform = true;
         g_adaptive_capture_mode = 1; // C1 Near-Even Capture Promotion
         g_qsearch_mode = 1; // Q1 Corrected Quiescence Search
+        g_use_true_outposts = 0; // Legacy outposts in X21
         if (g_num_threads == 1) { // Track S: X21-S (X7 foundation + Stage Reform + Adaptive Captures + Corrected QSearch)
             g_eval_mode = 5; // E5 Combined Classical Eval
             g_tactical_ordering_mode = 2; // Enable Countermove table for staging
@@ -845,6 +847,44 @@ EXPORT void native_apply_search_variant(const char* var_str) {
             g_lmp_mode = 0;
             g_rfp_margin_per_depth = 120;
         } else { // Track P: X21-P (X12 foundation + Stage Reform + Adaptive Captures + Corrected QSearch)
+            g_eval_mode = 10; // E10 Enhanced Classical Evaluation
+            g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = true; // 64K entry Pawn Hash Table
+            g_dynamic_time_mgmt = true;
+            g_use_lmp = true; // Safe Late Move Pruning
+            g_lmp_mode = 1; // Conservative Quadratic LMP
+            g_lmp_max_depth = 4;
+            g_rfp_margin_per_depth = 90;
+        }
+    } else if (var == "X22") { // P1.17 Candidate: Quiescence Correctness + True Outposts + 1T Pawn Hash
+        g_use_staged_movegen = true;
+        g_quiescence_see_mode = 2;
+        g_use_see_in_quiescence = true;
+        g_use_null_move_pruning = true;
+        g_use_reverse_futility = true;
+        g_use_aspiration_window = true;
+        g_conthist_mode = 3; // H3
+        g_dynamic_lmr_mode = 3; // L3 Calibrated LMR
+        g_use_pruning_safety = false;
+        g_movepicker_stage_reform = true;
+        g_adaptive_capture_mode = 1; // C1 Near-Even Capture Promotion
+        g_qsearch_mode = 1; // Q1 Corrected Quiescence Search
+        g_use_true_outposts = 1; // True Outposts with Pawn Immunity
+        if (g_num_threads == 1) { // Track S: X22-S (1T)
+            g_eval_mode = 5; // E5 Combined Classical Eval
+            g_tactical_ordering_mode = 2; // Enable Countermove table for staging
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = true; // 64K entry Pawn Hash Table (Enabled on 1T!)
+            g_dynamic_time_mgmt = false;
+            g_use_lmp = false;
+            g_lmp_mode = 0;
+            g_rfp_margin_per_depth = 120;
+        } else { // Track P: X22-P (4T)
             g_eval_mode = 10; // E10 Enhanced Classical Evaluation
             g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
             g_singular_extension_mode = 0; // S0 Off
@@ -2017,16 +2057,70 @@ static void eval_mobility_and_coordination(const NativeBoard* b, int mg[2], int 
             }
         }
 
-        // Knight outposts
-        uint64_t knights = b->pieces[c][KNIGHT];
-        while (knights) {
-            int sq = bitscan_forward(knights);
-            knights &= knights - 1;
-            int r = (c == WHITE) ? (sq / 8) : (7 - (sq / 8));
-            if (r >= 3 && r <= 5) {
-                uint64_t def = (c == WHITE) ? pawn_attacks[BLACK][sq] : pawn_attacks[WHITE][sq];
-                if (def & b->pieces[c][PAWN]) {
-                    mg[c] += 15; eg[c] += 10;
+        // Knight & Bishop Outposts
+        if (g_use_true_outposts) {
+            // Knights
+            uint64_t knights = b->pieces[c][KNIGHT];
+            while (knights) {
+                int sq = bitscan_forward(knights);
+                knights &= knights - 1;
+                int actual_r = sq / 8;
+                int f = sq % 8;
+                int r = (c == WHITE) ? actual_r : (7 - actual_r);
+                if (r >= 3 && r <= 5) {
+                    uint64_t def = (c == WHITE) ? pawn_attacks[BLACK][sq] : pawn_attacks[WHITE][sq];
+                    if (def & b->pieces[c][PAWN]) {
+                        uint64_t adj_files = 0ULL;
+                        if (f > 0) adj_files |= FILE_MASKS[f - 1];
+                        if (f < 7) adj_files |= FILE_MASKS[f + 1];
+                        uint64_t pawn_danger = (c == WHITE) ?
+                            (b->pieces[BLACK][PAWN] & adj_files & (0xFFFFFFFFFFFFFFFFULL << (8 * (actual_r + 1)))) :
+                            (b->pieces[WHITE][PAWN] & adj_files & ~((0xFFFFFFFFFFFFFFFFULL << (8 * actual_r))));
+                        if (pawn_danger == 0) {
+                            mg[c] += 28; eg[c] += 18; // True Knight Outpost with Pawn Immunity
+                        } else {
+                            mg[c] += 8; eg[c] += 4;   // Transient Outpost (Kickable)
+                        }
+                    }
+                }
+            }
+            // Bishops (Central Outposts on files c-f, ranks 4-6)
+            uint64_t bishops = b->pieces[c][BISHOP];
+            while (bishops) {
+                int sq = bitscan_forward(bishops);
+                bishops &= bishops - 1;
+                int actual_r = sq / 8;
+                int f = sq % 8;
+                int r = (c == WHITE) ? actual_r : (7 - actual_r);
+                if (r >= 3 && r <= 5 && f >= 2 && f <= 5) {
+                    uint64_t def = (c == WHITE) ? pawn_attacks[BLACK][sq] : pawn_attacks[WHITE][sq];
+                    if (def & b->pieces[c][PAWN]) {
+                        uint64_t adj_files = 0ULL;
+                        if (f > 0) adj_files |= FILE_MASKS[f - 1];
+                        if (f < 7) adj_files |= FILE_MASKS[f + 1];
+                        uint64_t pawn_danger = (c == WHITE) ?
+                            (b->pieces[BLACK][PAWN] & adj_files & (0xFFFFFFFFFFFFFFFFULL << (8 * (actual_r + 1)))) :
+                            (b->pieces[WHITE][PAWN] & adj_files & ~((0xFFFFFFFFFFFFFFFFULL << (8 * actual_r))));
+                        if (pawn_danger == 0) {
+                            mg[c] += 22; eg[c] += 14; // True Bishop Outpost with Pawn Immunity
+                        } else {
+                            mg[c] += 6; eg[c] += 3;   // Transient Bishop Outpost
+                        }
+                    }
+                }
+            }
+        } else {
+            // Legacy Outpost Logic (X7/X21)
+            uint64_t knights = b->pieces[c][KNIGHT];
+            while (knights) {
+                int sq = bitscan_forward(knights);
+                knights &= knights - 1;
+                int r = (c == WHITE) ? (sq / 8) : (7 - (sq / 8));
+                if (r >= 3 && r <= 5) {
+                    uint64_t def = (c == WHITE) ? pawn_attacks[BLACK][sq] : pawn_attacks[WHITE][sq];
+                    if (def & b->pieces[c][PAWN]) {
+                        mg[c] += 15; eg[c] += 10;
+                    }
                 }
             }
         }
@@ -5302,6 +5396,8 @@ EXPORT void native_get_p13_telemetry(uint64_t* out_arr) {
 // Milestone P1.16 Quiescence Search Control & Telemetry Exports
 EXPORT void native_set_qsearch_mode(int mode) { g_qsearch_mode = mode; }
 EXPORT int native_get_qsearch_mode() { return g_qsearch_mode; }
+EXPORT void native_set_outpost_mode(int mode) { g_use_true_outposts = mode; }
+EXPORT int native_get_outpost_mode() { return g_use_true_outposts; }
 EXPORT void native_reset_qsearch_telemetry() {
     g_telemetry_qsearch_in_check = 0;
     g_telemetry_qsearch_checkmates = 0;
@@ -5414,7 +5510,7 @@ static void uci_loop() {
         iss >> cmd;
 
         if (cmd == "uci") {
-            std::cout << "id name Janus Classical X (P1.16 Candidate X21)" << std::endl;
+            std::cout << "id name Janus Classical X (P1.17 Candidate X22)" << std::endl;
             std::cout << "id author Project Janus Developers" << std::endl;
             std::cout << "option name Threads type spin default 1 min 1 max 16" << std::endl;
             std::cout << "option name UCI_LMP type combo default L1 var L0 var L1 var L2 var L3" << std::endl;
@@ -5624,6 +5720,8 @@ static void uci_loop() {
                     else if (opt_val == "Q1") g_qsearch_mode = 1;
                     else if (opt_val == "Q2") g_qsearch_mode = 2;
                     else if (opt_val == "Q3") g_qsearch_mode = 3;
+                } else if (opt_name == "UCI_OutpostMode" && !opt_val.empty()) {
+                    g_use_true_outposts = std::stoi(opt_val);
                 }
             }
                 } else if (cmd == "telemetry_report") {

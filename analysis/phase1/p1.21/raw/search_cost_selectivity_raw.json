@@ -1,0 +1,640 @@
+{
+  "eval_microbenchmarks": {
+    "subsystems": {
+      "material_pst": {
+        "total_sec": 0.11659359999976004,
+        "ns_per_call": 388.65,
+        "calls_per_sec": 2573040
+      },
+      "pawn_structure": {
+        "total_sec": 0.15403600000081497,
+        "ns_per_call": 513.45,
+        "calls_per_sec": 1947596
+      },
+      "king_safety": {
+        "total_sec": 0.1452889000011055,
+        "ns_per_call": 484.3,
+        "calls_per_sec": 2064851
+      },
+      "mobility": {
+        "total_sec": 0.1544543000009071,
+        "ns_per_call": 514.85,
+        "calls_per_sec": 1942322
+      },
+      "endgame": {
+        "total_sec": 0.14977379999982077,
+        "ns_per_call": 499.25,
+        "calls_per_sec": 2003020
+      },
+      "full_x22_e0": {
+        "total_sec": 0.19759799999974348,
+        "ns_per_call": 658.66,
+        "calls_per_sec": 1518233
+      }
+    },
+    "eval_variants": {
+      "E0_Legacy": {
+        "ns_per_call": 668.33,
+        "calls_per_sec": 1496263
+      },
+      "E1_BackwardPawns": {
+        "ns_per_call": 662.11,
+        "calls_per_sec": 1510323
+      },
+      "E2_ConnectedPawns": {
+        "ns_per_call": 664.21,
+        "calls_per_sec": 1505549
+      }
+    }
+  },
+  "selectivity_and_node_distribution": [
+    {
+      "id": "P01_START",
+      "name": "Standard Startpos",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "depths": {
+        "d4": {
+          "depth": 4,
+          "bestmove": "b1c3",
+          "score": 0,
+          "nodes": 2806,
+          "main_nodes": 1624,
+          "qsearch_nodes": 1182,
+          "qsearch_ratio_pct": 42.1,
+          "rfp_probes": 462,
+          "rfp_cutoffs": 0,
+          "rfp_cutoff_pct": 0.0,
+          "nmp_probes": 40,
+          "nmp_cutoffs": 26,
+          "nmp_cutoff_pct": 65.0,
+          "first_move_cutoff_pct": 94.3,
+          "eval_calls": 1640,
+          "wall_ms": 3.76
+        },
+        "d6": {
+          "depth": 6,
+          "bestmove": "b1c3",
+          "score": 0,
+          "nodes": 32394,
+          "main_nodes": 18252,
+          "qsearch_nodes": 14142,
+          "qsearch_ratio_pct": 43.7,
+          "rfp_probes": 5552,
+          "rfp_cutoffs": 84,
+          "rfp_cutoff_pct": 1.5,
+          "nmp_probes": 309,
+          "nmp_cutoffs": 90,
+          "nmp_cutoff_pct": 29.1,
+          "first_move_cutoff_pct": 94.4,
+          "eval_calls": 19497,
+          "wall_ms": 27.14
+        },
+        "d8": {
+          "depth": 8,
+          "bestmove": "b1c3",
+          "score": 7,
+          "nodes": 151288,
+          "main_nodes": 85294,
+          "qsearch_nodes": 65994,
+          "qsearch_ratio_pct": 43.6,
+          "rfp_probes": 22659,
+          "rfp_cutoffs": 2506,
+          "rfp_cutoff_pct": 11.1,
+          "nmp_probes": 1904,
+          "nmp_cutoffs": 850,
+          "nmp_cutoff_pct": 44.6,
+          "first_move_cutoff_pct": 95.3,
+          "eval_calls": 87777,
+          "wall_ms": 108.31
+        }
+      }
+    },
+    {
+      "id": "P02_SEMI_SLAV",
+      "name": "Semi-Slav Complex",
+      "fen": "r1bq1rk1/pp1nbppp/2p1pn2/3p4/2PP4/2N1PN2/PPQ2PPP/R1B1KB1R w KQ - 0 7",
+      "depths": {
+        "d4": {
+          "depth": 4,
+          "bestmove": "f1d3",
+          "score": 36,
+          "nodes": 10099,
+          "main_nodes": 4402,
+          "qsearch_nodes": 5697,
+          "qsearch_ratio_pct": 56.4,
+          "rfp_probes": 710,
+          "rfp_cutoffs": 116,
+          "rfp_cutoff_pct": 16.3,
+          "nmp_probes": 41,
+          "nmp_cutoffs": 35,
+          "nmp_cutoff_pct": 85.4,
+          "first_move_cutoff_pct": 82.5,
+          "eval_calls": 6329,
+          "wall_ms": 7.55
+        },
+        "d6": {
+          "depth": 6,
+          "bestmove": "f1d3",
+          "score": 38,
+          "nodes": 56826,
+          "main_nodes": 26916,
+          "qsearch_nodes": 29910,
+          "qsearch_ratio_pct": 52.6,
+          "rfp_probes": 7540,
+          "rfp_cutoffs": 2785,
+          "rfp_cutoff_pct": 36.9,
+          "nmp_probes": 305,
+          "nmp_cutoffs": 133,
+          "nmp_cutoff_pct": 43.6,
+          "first_move_cutoff_pct": 84.7,
+          "eval_calls": 36989,
+          "wall_ms": 47.88
+        },
+        "d8": {
+          "depth": 8,
+          "bestmove": "f1d3",
+          "score": 36,
+          "nodes": 281768,
+          "main_nodes": 130760,
+          "qsearch_nodes": 151008,
+          "qsearch_ratio_pct": 53.6,
+          "rfp_probes": 35005,
+          "rfp_cutoffs": 14573,
+          "rfp_cutoff_pct": 41.6,
+          "nmp_probes": 1401,
+          "nmp_cutoffs": 531,
+          "nmp_cutoff_pct": 37.9,
+          "first_move_cutoff_pct": 86.2,
+          "eval_calls": 183053,
+          "wall_ms": 229.71
+        }
+      }
+    },
+    {
+      "id": "P03_SIC_TACT",
+      "name": "Sicilian Scheveningen",
+      "fen": "2r2rk1/1bq1bppp/p2pp3/1p2P3/3N1P2/P1NR4/1PP1Q1PP/5R1K w - - 0 18",
+      "depths": {
+        "d4": {
+          "depth": 4,
+          "bestmove": "e5d6",
+          "score": 35,
+          "nodes": 9321,
+          "main_nodes": 4477,
+          "qsearch_nodes": 4844,
+          "qsearch_ratio_pct": 52.0,
+          "rfp_probes": 1338,
+          "rfp_cutoffs": 712,
+          "rfp_cutoff_pct": 53.2,
+          "nmp_probes": 124,
+          "nmp_cutoffs": 100,
+          "nmp_cutoff_pct": 80.6,
+          "first_move_cutoff_pct": 92.9,
+          "eval_calls": 6126,
+          "wall_ms": 7.82
+        },
+        "d6": {
+          "depth": 6,
+          "bestmove": "d4e6",
+          "score": 155,
+          "nodes": 23946,
+          "main_nodes": 12121,
+          "qsearch_nodes": 11825,
+          "qsearch_ratio_pct": 49.4,
+          "rfp_probes": 3701,
+          "rfp_cutoffs": 2449,
+          "rfp_cutoff_pct": 66.2,
+          "nmp_probes": 312,
+          "nmp_cutoffs": 216,
+          "nmp_cutoff_pct": 69.2,
+          "first_move_cutoff_pct": 95.4,
+          "eval_calls": 15315,
+          "wall_ms": 17.04
+        },
+        "d8": {
+          "depth": 8,
+          "bestmove": "d4e6",
+          "score": 147,
+          "nodes": 107660,
+          "main_nodes": 57899,
+          "qsearch_nodes": 49761,
+          "qsearch_ratio_pct": 46.2,
+          "rfp_probes": 16031,
+          "rfp_cutoffs": 11737,
+          "rfp_cutoff_pct": 73.2,
+          "nmp_probes": 983,
+          "nmp_cutoffs": 537,
+          "nmp_cutoff_pct": 54.6,
+          "first_move_cutoff_pct": 97.2,
+          "eval_calls": 64907,
+          "wall_ms": 60.86
+        }
+      }
+    },
+    {
+      "id": "P04_FRENCH_ADV",
+      "name": "French Advance",
+      "fen": "r1bqk2r/pp1nbppp/2n1p3/2ppP3/3P1P2/2N1BN2/PPP3PP/R2QKB1R w KQkq - 1 8",
+      "depths": {
+        "d4": {
+          "depth": 4,
+          "bestmove": "f1d3",
+          "score": 15,
+          "nodes": 10861,
+          "main_nodes": 4864,
+          "qsearch_nodes": 5997,
+          "qsearch_ratio_pct": 55.2,
+          "rfp_probes": 1480,
+          "rfp_cutoffs": 652,
+          "rfp_cutoff_pct": 44.1,
+          "nmp_probes": 40,
+          "nmp_cutoffs": 9,
+          "nmp_cutoff_pct": 22.5,
+          "first_move_cutoff_pct": 94.2,
+          "eval_calls": 7334,
+          "wall_ms": 10.55
+        },
+        "d6": {
+          "depth": 6,
+          "bestmove": "f1b5",
+          "score": 27,
+          "nodes": 45699,
+          "main_nodes": 22171,
+          "qsearch_nodes": 23528,
+          "qsearch_ratio_pct": 51.5,
+          "rfp_probes": 6396,
+          "rfp_cutoffs": 3741,
+          "rfp_cutoff_pct": 58.5,
+          "nmp_probes": 291,
+          "nmp_cutoffs": 93,
+          "nmp_cutoff_pct": 32.0,
+          "first_move_cutoff_pct": 92.9,
+          "eval_calls": 29363,
+          "wall_ms": 39.43
+        },
+        "d8": {
+          "depth": 8,
+          "bestmove": "f1b5",
+          "score": 28,
+          "nodes": 156453,
+          "main_nodes": 79081,
+          "qsearch_nodes": 77372,
+          "qsearch_ratio_pct": 49.5,
+          "rfp_probes": 20637,
+          "rfp_cutoffs": 11594,
+          "rfp_cutoff_pct": 56.2,
+          "nmp_probes": 1070,
+          "nmp_cutoffs": 418,
+          "nmp_cutoff_pct": 39.1,
+          "first_move_cutoff_pct": 93.9,
+          "eval_calls": 96676,
+          "wall_ms": 110.56
+        }
+      }
+    },
+    {
+      "id": "P05_ROOK_END",
+      "name": "Rook 4v3 Endgame",
+      "fen": "8/5pk1/4p1p1/1R5p/8/6P1/r4PKP/8 w - - 0 35",
+      "depths": {
+        "d4": {
+          "depth": 4,
+          "bestmove": "b5b7",
+          "score": -100,
+          "nodes": 2050,
+          "main_nodes": 1067,
+          "qsearch_nodes": 983,
+          "qsearch_ratio_pct": 48.0,
+          "rfp_probes": 212,
+          "rfp_cutoffs": 46,
+          "rfp_cutoff_pct": 21.7,
+          "nmp_probes": 22,
+          "nmp_cutoffs": 17,
+          "nmp_cutoff_pct": 77.3,
+          "first_move_cutoff_pct": 77.9,
+          "eval_calls": 1163,
+          "wall_ms": 1.23
+        },
+        "d6": {
+          "depth": 6,
+          "bestmove": "b5b7",
+          "score": -111,
+          "nodes": 9494,
+          "main_nodes": 5177,
+          "qsearch_nodes": 4317,
+          "qsearch_ratio_pct": 45.5,
+          "rfp_probes": 1253,
+          "rfp_cutoffs": 295,
+          "rfp_cutoff_pct": 23.5,
+          "nmp_probes": 132,
+          "nmp_cutoffs": 68,
+          "nmp_cutoff_pct": 51.5,
+          "first_move_cutoff_pct": 80.2,
+          "eval_calls": 5446,
+          "wall_ms": 5.13
+        },
+        "d8": {
+          "depth": 8,
+          "bestmove": "b5b7",
+          "score": -100,
+          "nodes": 34788,
+          "main_nodes": 19099,
+          "qsearch_nodes": 15689,
+          "qsearch_ratio_pct": 45.1,
+          "rfp_probes": 4970,
+          "rfp_cutoffs": 1116,
+          "rfp_cutoff_pct": 22.5,
+          "nmp_probes": 693,
+          "nmp_cutoffs": 401,
+          "nmp_cutoff_pct": 57.9,
+          "first_move_cutoff_pct": 84.4,
+          "eval_calls": 20028,
+          "wall_ms": 18.07
+        }
+      }
+    },
+    {
+      "id": "P06_PAWN_RACE",
+      "name": "Passed Pawn Race",
+      "fen": "8/1P6/8/8/8/8/p7/k6K w - - 0 1",
+      "depths": {
+        "d4": {
+          "depth": 4,
+          "bestmove": "h1g1",
+          "score": 643,
+          "nodes": 172,
+          "main_nodes": 113,
+          "qsearch_nodes": 59,
+          "qsearch_ratio_pct": 34.3,
+          "rfp_probes": 67,
+          "rfp_cutoffs": 46,
+          "rfp_cutoff_pct": 68.7,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "nmp_cutoff_pct": 0.0,
+          "first_move_cutoff_pct": 100.0,
+          "eval_calls": 119,
+          "wall_ms": 0.32
+        },
+        "d6": {
+          "depth": 6,
+          "bestmove": "h1g1",
+          "score": 660,
+          "nodes": 1419,
+          "main_nodes": 758,
+          "qsearch_nodes": 661,
+          "qsearch_ratio_pct": 46.6,
+          "rfp_probes": 297,
+          "rfp_cutoffs": 195,
+          "rfp_cutoff_pct": 65.7,
+          "nmp_probes": 4,
+          "nmp_cutoffs": 0,
+          "nmp_cutoff_pct": 0.0,
+          "first_move_cutoff_pct": 88.6,
+          "eval_calls": 843,
+          "wall_ms": 1.0
+        },
+        "d8": {
+          "depth": 8,
+          "bestmove": "h1g1",
+          "score": 661,
+          "nodes": 7720,
+          "main_nodes": 3891,
+          "qsearch_nodes": 3829,
+          "qsearch_ratio_pct": 49.6,
+          "rfp_probes": 1231,
+          "rfp_cutoffs": 696,
+          "rfp_cutoff_pct": 56.5,
+          "nmp_probes": 44,
+          "nmp_cutoffs": 0,
+          "nmp_cutoff_pct": 0.0,
+          "first_move_cutoff_pct": 89.9,
+          "eval_calls": 4299,
+          "wall_ms": 4.03
+        }
+      }
+    }
+  ],
+  "cross_engine_nps": {
+    "Janus_X22": {
+      "total_nodes": 609480,
+      "total_wall_ms": 497.18,
+      "aggregate_nps": 1225873,
+      "positions": [
+        {
+          "pos_id": "P01_START",
+          "bestmove": "d2d4",
+          "score": 16,
+          "nodes": 123519,
+          "wall_ms": 95.36,
+          "nps": 1299315
+        },
+        {
+          "pos_id": "P02_SEMI_SLAV",
+          "bestmove": "f1d3",
+          "score": 37,
+          "nodes": 293960,
+          "wall_ms": 265.24,
+          "nps": 1109263
+        },
+        {
+          "pos_id": "P03_SIC_TACT",
+          "bestmove": "d4e6",
+          "score": 172,
+          "nodes": 36308,
+          "wall_ms": 29.76,
+          "nps": 1232128
+        },
+        {
+          "pos_id": "P04_FRENCH_ADV",
+          "bestmove": "f1b5",
+          "score": 29,
+          "nodes": 103433,
+          "wall_ms": 78.06,
+          "nps": 1330341
+        },
+        {
+          "pos_id": "P05_ROOK_END",
+          "bestmove": "b5c5",
+          "score": -113,
+          "nodes": 44299,
+          "wall_ms": 24.59,
+          "nps": 1817133
+        },
+        {
+          "pos_id": "P06_PAWN_RACE",
+          "bestmove": "h1g1",
+          "score": 689,
+          "nodes": 7961,
+          "wall_ms": 4.17,
+          "nps": 1985435
+        }
+      ]
+    },
+    "Janus_X24": {
+      "total_nodes": 738237,
+      "total_wall_ms": 551.68,
+      "aggregate_nps": 1338161,
+      "positions": [
+        {
+          "pos_id": "P01_START",
+          "bestmove": "b1c3",
+          "score": 7,
+          "nodes": 151288,
+          "wall_ms": 106.59,
+          "nps": 1422593
+        },
+        {
+          "pos_id": "P02_SEMI_SLAV",
+          "bestmove": "f1d3",
+          "score": 36,
+          "nodes": 281856,
+          "wall_ms": 232.84,
+          "nps": 1212041
+        },
+        {
+          "pos_id": "P03_SIC_TACT",
+          "bestmove": "d4e6",
+          "score": 147,
+          "nodes": 106146,
+          "wall_ms": 58.94,
+          "nps": 1807648
+        },
+        {
+          "pos_id": "P04_FRENCH_ADV",
+          "bestmove": "f1b5",
+          "score": 28,
+          "nodes": 156439,
+          "wall_ms": 131.16,
+          "nps": 1245038
+        },
+        {
+          "pos_id": "P05_ROOK_END",
+          "bestmove": "b5b7",
+          "score": -100,
+          "nodes": 34788,
+          "wall_ms": 18.1,
+          "nps": 1945028
+        },
+        {
+          "pos_id": "P06_PAWN_RACE",
+          "bestmove": "h1g1",
+          "score": 661,
+          "nodes": 7720,
+          "wall_ms": 4.05,
+          "nps": 2014666
+        }
+      ]
+    },
+    "Janus_X25": {
+      "total_nodes": 739677,
+      "total_wall_ms": 540.71,
+      "aggregate_nps": 1367973,
+      "positions": [
+        {
+          "pos_id": "P01_START",
+          "bestmove": "b1c3",
+          "score": 7,
+          "nodes": 151288,
+          "wall_ms": 110.32,
+          "nps": 1374209
+        },
+        {
+          "pos_id": "P02_SEMI_SLAV",
+          "bestmove": "f1d3",
+          "score": 36,
+          "nodes": 281768,
+          "wall_ms": 230.38,
+          "nps": 1224471
+        },
+        {
+          "pos_id": "P03_SIC_TACT",
+          "bestmove": "d4e6",
+          "score": 147,
+          "nodes": 107660,
+          "wall_ms": 59.27,
+          "nps": 1823784
+        },
+        {
+          "pos_id": "P04_FRENCH_ADV",
+          "bestmove": "f1b5",
+          "score": 28,
+          "nodes": 156453,
+          "wall_ms": 112.34,
+          "nps": 1395574
+        },
+        {
+          "pos_id": "P05_ROOK_END",
+          "bestmove": "b5b7",
+          "score": -100,
+          "nodes": 34788,
+          "wall_ms": 24.37,
+          "nps": 1440753
+        },
+        {
+          "pos_id": "P06_PAWN_RACE",
+          "bestmove": "h1g1",
+          "score": 661,
+          "nodes": 7720,
+          "wall_ms": 4.03,
+          "nps": 1990768
+        }
+      ]
+    },
+    "Active_Engine": {
+      "total_nodes": 739677,
+      "total_wall_ms": 565.69,
+      "aggregate_nps": 1307565,
+      "positions": [
+        {
+          "pos_id": "P01_START",
+          "bestmove": "b1c3",
+          "score": 7,
+          "nodes": 151288,
+          "wall_ms": 118.98,
+          "nps": 1274587
+        },
+        {
+          "pos_id": "P02_SEMI_SLAV",
+          "bestmove": "f1d3",
+          "score": 36,
+          "nodes": 281768,
+          "wall_ms": 236.29,
+          "nps": 1193942
+        },
+        {
+          "pos_id": "P03_SIC_TACT",
+          "bestmove": "d4e6",
+          "score": 147,
+          "nodes": 107660,
+          "wall_ms": 62.96,
+          "nps": 1716263
+        },
+        {
+          "pos_id": "P04_FRENCH_ADV",
+          "bestmove": "f1b5",
+          "score": 28,
+          "nodes": 156453,
+          "wall_ms": 118.96,
+          "nps": 1317837
+        },
+        {
+          "pos_id": "P05_ROOK_END",
+          "bestmove": "b5b7",
+          "score": -100,
+          "nodes": 34788,
+          "wall_ms": 24.41,
+          "nps": 1440013
+        },
+        {
+          "pos_id": "P06_PAWN_RACE",
+          "bestmove": "h1g1",
+          "score": 661,
+          "nodes": 7720,
+          "wall_ms": 4.09,
+          "nps": 1998808
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1289 @@
+[
+  {
+    "id": "ARCH_01_QUIET",
+    "archetype": "Quiet Middlegame",
+    "fen": "r1bq1rk1/pp1nbppp/2p1pn2/3p4/2PP4/2N1PN2/PPQ2PPP/R1B1KB1R w KQ - 0 7",
+    "expected_concept": "Development / Piece Coordination",
+    "depth_traces": {
+      "d4": {
+        "E0_X22": {
+          "bestmove": "c4c5",
+          "score": 40,
+          "nodes": 10535,
+          "pv": "c4c5 h7h6 f1d3 d8c7"
+        },
+        "E1_X24": {
+          "bestmove": "f1d3",
+          "score": 36,
+          "nodes": 10095,
+          "pv": "f1d3 d5c4 d3c4 f6d5"
+        },
+        "E2_X25": {
+          "bestmove": "c4c5",
+          "score": 40,
+          "nodes": 10539,
+          "pv": "c4c5 h7h6 f1d3 d8c7"
+        },
+        "stability": {
+          "e1_matches_e0": false,
+          "e2_matches_e0": true,
+          "e0_move": "c4c5",
+          "e1_move": "f1d3",
+          "e2_move": "c4c5"
+        }
+      },
+      "d5": {
+        "E0_X22": {
+          "bestmove": "c4d5",
+          "score": 42,
+          "nodes": 16231,
+          "pv": "c4d5 c6d5 h2h3 h7h6 f1d3"
+        },
+        "E1_X24": {
+          "bestmove": "f1d3",
+          "score": 51,
+          "nodes": 14225,
+          "pv": "f1d3 h7h6 c4c5 d8c7 e1g1"
+        },
+        "E2_X25": {
+          "bestmove": "c4d5",
+          "score": 42,
+          "nodes": 16237,
+          "pv": "c4d5 c6d5 h2h3 h7h6 f1d3"
+        },
+        "stability": {
+          "e1_matches_e0": false,
+          "e2_matches_e0": true,
+          "e0_move": "c4d5",
+          "e1_move": "f1d3",
+          "e2_move": "c4d5"
+        }
+      },
+      "d6": {
+        "E0_X22": {
+          "bestmove": "f1d3",
+          "score": 34,
+          "nodes": 75370,
+          "pv": "f1d3 h7h6 h2h3 d8c7 c4c5 e6e5"
+        },
+        "E1_X24": {
+          "bestmove": "f1d3",
+          "score": 38,
+          "nodes": 56831,
+          "pv": "f1d3 h7h6 h2h3 d5c4 d3c4 f6d5"
+        },
+        "E2_X25": {
+          "bestmove": "f1d3",
+          "score": 34,
+          "nodes": 75374,
+          "pv": "f1d3 h7h6 h2h3 d8c7 c4c5 e6e5"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "f1d3",
+          "e1_move": "f1d3",
+          "e2_move": "f1d3"
+        }
+      },
+      "d7": {
+        "E0_X22": {
+          "bestmove": "f1d3",
+          "score": 41,
+          "nodes": 104849,
+          "pv": "f1d3 d5c4 d3c4 f6d5 e3e4 d7b6 c4d3"
+        },
+        "E1_X24": {
+          "bestmove": "f1d3",
+          "score": 44,
+          "nodes": 94027,
+          "pv": "f1d3 h7h6 h2h3 d8c7 c4c5 e6e5 c1d2"
+        },
+        "E2_X25": {
+          "bestmove": "f1d3",
+          "score": 41,
+          "nodes": 104854,
+          "pv": "f1d3 d5c4 d3c4 f6d5 e3e4 d7b6 c4d3"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "f1d3",
+          "e1_move": "f1d3",
+          "e2_move": "f1d3"
+        }
+      },
+      "d8": {
+        "E0_X22": {
+          "bestmove": "c1d2",
+          "score": 33,
+          "nodes": 342186,
+          "pv": "c1d2 d8c7 c4d5 c6d5 f1d3 h7h6"
+        },
+        "E1_X24": {
+          "bestmove": "f1d3",
+          "score": 36,
+          "nodes": 281856,
+          "pv": "f1d3 d8c7 c1d2 h7h6 h2h3"
+        },
+        "E2_X25": {
+          "bestmove": "c1d2",
+          "score": 33,
+          "nodes": 342210,
+          "pv": "c1d2 d8c7 c4d5 c6d5 f1d3 h7h6"
+        },
+        "stability": {
+          "e1_matches_e0": false,
+          "e2_matches_e0": true,
+          "e0_move": "c1d2",
+          "e1_move": "f1d3",
+          "e2_move": "c1d2"
+        }
+      }
+    }
+  },
+  {
+    "id": "ARCH_02_TACTICAL",
+    "archetype": "Tactical Middlegame",
+    "fen": "2r2rk1/1bq1bppp/p2pp3/1p2P3/3N1P2/P1NR4/1PP1Q1PP/5R1K w - - 0 18",
+    "expected_concept": "Tactical breakthrough d4e6",
+    "depth_traces": {
+      "d4": {
+        "E0_X22": {
+          "bestmove": "e5d6",
+          "score": 52,
+          "nodes": 7703,
+          "pv": "e5d6 c7d6 d4b5 d6b6"
+        },
+        "E1_X24": {
+          "bestmove": "e5d6",
+          "score": 52,
+          "nodes": 7829,
+          "pv": "e5d6 c7d6 d4b5 d6b6"
+        },
+        "E2_X25": {
+          "bestmove": "e5d6",
+          "score": 35,
+          "nodes": 9224,
+          "pv": "e5d6 c7d6 d4b5 d6b6"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "e5d6",
+          "e1_move": "e5d6",
+          "e2_move": "e5d6"
+        }
+      },
+      "d5": {
+        "E0_X22": {
+          "bestmove": "d4e6",
+          "score": 144,
+          "nodes": 14143,
+          "pv": "d4e6 f7e6 e5d6 c7d7 d6e7"
+        },
+        "E1_X24": {
+          "bestmove": "d4e6",
+          "score": 155,
+          "nodes": 14542,
+          "pv": "d4e6 f7e6 e5d6 c7d7 d6e7"
+        },
+        "E2_X25": {
+          "bestmove": "d4e6",
+          "score": 144,
+          "nodes": 16421,
+          "pv": "d4e6 f7e6 e5d6 c7d7 d6e7"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "d4e6",
+          "e1_move": "d4e6",
+          "e2_move": "d4e6"
+        }
+      },
+      "d6": {
+        "E0_X22": {
+          "bestmove": "d4e6",
+          "score": 144,
+          "nodes": 21793,
+          "pv": "d4e6 f7e6 e5d6 c7d7 d6e7 d7e7"
+        },
+        "E1_X24": {
+          "bestmove": "d4e6",
+          "score": 155,
+          "nodes": 22149,
+          "pv": "d4e6 f7e6 e5d6 c7d7 d6e7 d7e7"
+        },
+        "E2_X25": {
+          "bestmove": "d4e6",
+          "score": 144,
+          "nodes": 24070,
+          "pv": "d4e6 f7e6 e5d6 c7d7 d6e7 d7e7"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "d4e6",
+          "e1_move": "d4e6",
+          "e2_move": "d4e6"
+        }
+      },
+      "d7": {
+        "E0_X22": {
+          "bestmove": "d4e6",
+          "score": 172,
+          "nodes": 35410,
+          "pv": "d4e6 f7e6 e5d6 c7d7 d6e7 d7e7 c3e4"
+        },
+        "E1_X24": {
+          "bestmove": "d4e6",
+          "score": 174,
+          "nodes": 33715,
+          "pv": "d4e6 f7e6 e5d6 b7g2 h1g2 c7c6 g2g1"
+        },
+        "E2_X25": {
+          "bestmove": "d4e6",
+          "score": 172,
+          "nodes": 38405,
+          "pv": "d4e6 f7e6 e5d6 c7d7 d6e7 d7e7 c3e4"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "d4e6",
+          "e1_move": "d4e6",
+          "e2_move": "d4e6"
+        }
+      },
+      "d8": {
+        "E0_X22": {
+          "bestmove": "d4e6",
+          "score": 136,
+          "nodes": 115297,
+          "pv": "d4e6 f7e6 e5d6 c7d7 d6e7 d7e7 f1e1 f8f4"
+        },
+        "E1_X24": {
+          "bestmove": "d4e6",
+          "score": 147,
+          "nodes": 106146,
+          "pv": "d4e6 f7e6 e5d6 c7d7 d6e7 d7e7 e2e5 c8d8"
+        },
+        "E2_X25": {
+          "bestmove": "d4e6",
+          "score": 136,
+          "nodes": 112520,
+          "pv": "d4e6 f7e6 e5d6 c7d7 d6e7 d7e7 f1e1 f8f4"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "d4e6",
+          "e1_move": "d4e6",
+          "e2_move": "d4e6"
+        }
+      }
+    }
+  },
+  {
+    "id": "ARCH_03_CLOSED",
+    "archetype": "Closed Pawn Structure",
+    "fen": "r1bqk2r/pp1nbppp/2n1p3/2ppP3/3P1P2/2N1BN2/PPP3PP/R2QKB1R w KQkq - 1 8",
+    "expected_concept": "French pawn chain tension",
+    "depth_traces": {
+      "d4": {
+        "E0_X22": {
+          "bestmove": "f1d3",
+          "score": 15,
+          "nodes": 11179,
+          "pv": "f1d3 d8b6 c3b5 c5d4"
+        },
+        "E1_X24": {
+          "bestmove": "f1d3",
+          "score": 15,
+          "nodes": 10851,
+          "pv": "f1d3 d8b6 c3b5 c5d4"
+        },
+        "E2_X25": {
+          "bestmove": "f1d3",
+          "score": 15,
+          "nodes": 11189,
+          "pv": "f1d3 d8b6 c3b5 c5d4"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "f1d3",
+          "e1_move": "f1d3",
+          "e2_move": "f1d3"
+        }
+      },
+      "d5": {
+        "E0_X22": {
+          "bestmove": "f1b5",
+          "score": 28,
+          "nodes": 29455,
+          "pv": "f1b5 c5d4 f3d4 e7h4 g2g3"
+        },
+        "E1_X24": {
+          "bestmove": "f1b5",
+          "score": 28,
+          "nodes": 29056,
+          "pv": "f1b5 c5d4 f3d4 e7h4 g2g3"
+        },
+        "E2_X25": {
+          "bestmove": "f1b5",
+          "score": 28,
+          "nodes": 29466,
+          "pv": "f1b5 c5d4 f3d4 e7h4 g2g3"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "f1b5",
+          "e1_move": "f1b5",
+          "e2_move": "f1b5"
+        }
+      },
+      "d6": {
+        "E0_X22": {
+          "bestmove": "f1b5",
+          "score": 27,
+          "nodes": 46263,
+          "pv": "f1b5 c5d4 f3d4 c6d4 d1d4 d8c7"
+        },
+        "E1_X24": {
+          "bestmove": "f1b5",
+          "score": 27,
+          "nodes": 45688,
+          "pv": "f1b5 c5d4 f3d4 c6d4 d1d4 d8c7"
+        },
+        "E2_X25": {
+          "bestmove": "f1b5",
+          "score": 27,
+          "nodes": 46274,
+          "pv": "f1b5 c5d4 f3d4 c6d4 d1d4 d8c7"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "f1b5",
+          "e1_move": "f1b5",
+          "e2_move": "f1b5"
+        }
+      },
+      "d7": {
+        "E0_X22": {
+          "bestmove": "f1b5",
+          "score": 37,
+          "nodes": 90949,
+          "pv": "f1b5 d8c7 e1g1 c5d4 f3d4 e7c5 d1d3"
+        },
+        "E1_X24": {
+          "bestmove": "f1b5",
+          "score": 37,
+          "nodes": 89738,
+          "pv": "f1b5 d8c7 e1g1 c5d4 f3d4 e7c5 d1d3"
+        },
+        "E2_X25": {
+          "bestmove": "f1b5",
+          "score": 37,
+          "nodes": 90948,
+          "pv": "f1b5 d8c7 e1g1 c5d4 f3d4 e7c5 d1d3"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "f1b5",
+          "e1_move": "f1b5",
+          "e2_move": "f1b5"
+        }
+      },
+      "d8": {
+        "E0_X22": {
+          "bestmove": "f1b5",
+          "score": 28,
+          "nodes": 163332,
+          "pv": "f1b5 c5d4 f3d4 c6d4 d1d4 a7a6 d4a4 d8c7"
+        },
+        "E1_X24": {
+          "bestmove": "f1b5",
+          "score": 28,
+          "nodes": 156439,
+          "pv": "f1b5 c5d4 f3d4 c6d4 d1d4 a7a6 d4a4 d8c7"
+        },
+        "E2_X25": {
+          "bestmove": "f1b5",
+          "score": 28,
+          "nodes": 163312,
+          "pv": "f1b5 c5d4 f3d4 c6d4 d1d4 a7a6 d4a4 d8c7"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "f1b5",
+          "e1_move": "f1b5",
+          "e2_move": "f1b5"
+        }
+      }
+    }
+  },
+  {
+    "id": "ARCH_04_OPEN_FILE",
+    "archetype": "Open-File Position",
+    "fen": "r1b2rk1/pp3ppp/2n1p3/8/2B5/4q3/PPP3PP/3R1R1K w - - 0 16",
+    "expected_concept": "Rook open d-file / Queen infiltration",
+    "depth_traces": {
+      "d4": {
+        "E0_X22": {
+          "bestmove": "c4b5",
+          "score": -1304,
+          "nodes": 6052,
+          "pv": "c4b5 e3b6 b5c6 b6c6"
+        },
+        "E1_X24": {
+          "bestmove": "c4b5",
+          "score": -1304,
+          "nodes": 6052,
+          "pv": "c4b5 e3b6 b5c6 b6c6"
+        },
+        "E2_X25": {
+          "bestmove": "c4b5",
+          "score": -1289,
+          "nodes": 6037,
+          "pv": "c4b5 e3b6 b5c6 b6c6"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "c4b5",
+          "e1_move": "c4b5",
+          "e2_move": "c4b5"
+        }
+      },
+      "d5": {
+        "E0_X22": {
+          "bestmove": "c4b5",
+          "score": -1315,
+          "nodes": 12145,
+          "pv": "c4b5 c6e5 f1e1 e3c5 b5d3"
+        },
+        "E1_X24": {
+          "bestmove": "c4b5",
+          "score": -1315,
+          "nodes": 12145,
+          "pv": "c4b5 c6e5 f1e1 e3c5 b5d3"
+        },
+        "E2_X25": {
+          "bestmove": "c4b5",
+          "score": -1302,
+          "nodes": 12121,
+          "pv": "c4b5 c6e5 f1e1 e3c5 b5d3"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "c4b5",
+          "e1_move": "c4b5",
+          "e2_move": "c4b5"
+        }
+      },
+      "d6": {
+        "E0_X22": {
+          "bestmove": "c4b5",
+          "score": -1325,
+          "nodes": 38305,
+          "pv": "c4b5 e3c5 b5d3 c6b4 d1d2 b4a2"
+        },
+        "E1_X24": {
+          "bestmove": "c4b5",
+          "score": -1325,
+          "nodes": 38304,
+          "pv": "c4b5 e3c5 b5d3 c6b4 d1d2 b4a2"
+        },
+        "E2_X25": {
+          "bestmove": "c4b5",
+          "score": -1311,
+          "nodes": 35962,
+          "pv": "c4b5 e3c5 b5c6 c5c6 f1f2 c8d7"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "c4b5",
+          "e1_move": "c4b5",
+          "e2_move": "c4b5"
+        }
+      },
+      "d7": {
+        "E0_X22": {
+          "bestmove": "c4b5",
+          "score": -1325,
+          "nodes": 92585,
+          "pv": "c4b5 e3b6 b5c6 b6c6 d1d2 c6c4 f1a1"
+        },
+        "E1_X24": {
+          "bestmove": "c4b5",
+          "score": -1325,
+          "nodes": 92599,
+          "pv": "c4b5 e3b6 b5c6 b6c6 d1d2 c6c4 f1a1"
+        },
+        "E2_X25": {
+          "bestmove": "c4b5",
+          "score": -1310,
+          "nodes": 83613,
+          "pv": "c4b5 e3b6 b5c6 b6c6"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "c4b5",
+          "e1_move": "c4b5",
+          "e2_move": "c4b5"
+        }
+      },
+      "d8": {
+        "E0_X22": {
+          "bestmove": "c4b5",
+          "score": -1332,
+          "nodes": 167195,
+          "pv": "c4b5 e3b6 b5c6 b6c6 d1d2 c6c4 f1a1 f8e8"
+        },
+        "E1_X24": {
+          "bestmove": "c4b5",
+          "score": -1332,
+          "nodes": 167600,
+          "pv": "c4b5 e3b6 b5c6 b6c6 d1d2 c6c4 f1a1 f8e8"
+        },
+        "E2_X25": {
+          "bestmove": "c4b5",
+          "score": -1330,
+          "nodes": 217069,
+          "pv": "c4b5 e3b6 b5c6 b6c6 d1d2 c6c4 f1a1 e6e5"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "c4b5",
+          "e1_move": "c4b5",
+          "e2_move": "c4b5"
+        }
+      }
+    }
+  },
+  {
+    "id": "ARCH_05_ROOK_END",
+    "archetype": "Rook Endgame",
+    "fen": "8/5pk1/4p1p1/1R5p/8/6P1/r4PKP/8 w - - 0 35",
+    "expected_concept": "Rook 4v3 passive defense vs active cut",
+    "depth_traces": {
+      "d4": {
+        "E0_X22": {
+          "bestmove": "b5b7",
+          "score": -108,
+          "nodes": 2232,
+          "pv": "b5b7 a2c2 g2g1 e6e5"
+        },
+        "E1_X24": {
+          "bestmove": "b5b7",
+          "score": -100,
+          "nodes": 2050,
+          "pv": "b5b7 e6e5 b7e7 a2e2"
+        },
+        "E2_X25": {
+          "bestmove": "b5b7",
+          "score": -108,
+          "nodes": 2232,
+          "pv": "b5b7 a2c2 g2g1 e6e5"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "b5b7",
+          "e1_move": "b5b7",
+          "e2_move": "b5b7"
+        }
+      },
+      "d5": {
+        "E0_X22": {
+          "bestmove": "b5b7",
+          "score": -108,
+          "nodes": 3135,
+          "pv": "b5b7 a2c2 g2g1 e6e5 h2h3"
+        },
+        "E1_X24": {
+          "bestmove": "b5b7",
+          "score": -108,
+          "nodes": 3254,
+          "pv": "b5b7 a2c2 g2g1 e6e5 h2h3"
+        },
+        "E2_X25": {
+          "bestmove": "b5b7",
+          "score": -108,
+          "nodes": 3135,
+          "pv": "b5b7 a2c2 g2g1 e6e5 h2h3"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "b5b7",
+          "e1_move": "b5b7",
+          "e2_move": "b5b7"
+        }
+      },
+      "d6": {
+        "E0_X22": {
+          "bestmove": "b5b7",
+          "score": -101,
+          "nodes": 7951,
+          "pv": "b5b7 a2c2 h2h3 e6e5 b7e7 g7f6"
+        },
+        "E1_X24": {
+          "bestmove": "b5b7",
+          "score": -111,
+          "nodes": 9494,
+          "pv": "b5b7 a2c2 h2h3 g6g5 g3g4 h5h4"
+        },
+        "E2_X25": {
+          "bestmove": "b5b7",
+          "score": -101,
+          "nodes": 7951,
+          "pv": "b5b7 a2c2 h2h3 e6e5 b7e7 g7f6"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "b5b7",
+          "e1_move": "b5b7",
+          "e2_move": "b5b7"
+        }
+      },
+      "d7": {
+        "E0_X22": {
+          "bestmove": "b5b7",
+          "score": -100,
+          "nodes": 12705,
+          "pv": "b5b7 a2c2 h2h3 g6g5 g3g4 h5g4 h3g4"
+        },
+        "E1_X24": {
+          "bestmove": "b5b7",
+          "score": -107,
+          "nodes": 13895,
+          "pv": "b5b7 a2c2 h2h3 g6g5 g3g4 h5h4 g2g1"
+        },
+        "E2_X25": {
+          "bestmove": "b5b7",
+          "score": -100,
+          "nodes": 12705,
+          "pv": "b5b7 a2c2 h2h3 g6g5 g3g4 h5g4 h3g4"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "b5b7",
+          "e1_move": "b5b7",
+          "e2_move": "b5b7"
+        }
+      },
+      "d8": {
+        "E0_X22": {
+          "bestmove": "b5b7",
+          "score": -95,
+          "nodes": 25510,
+          "pv": "b5b7 a2c2 h2h3 g7g8 b7b8 g8h7 b8b7 h7g7"
+        },
+        "E1_X24": {
+          "bestmove": "b5b7",
+          "score": -100,
+          "nodes": 34788,
+          "pv": "b5b7 a2c2 h2h3 e6e5 b7e7 g7f6 e7b7 e5e4"
+        },
+        "E2_X25": {
+          "bestmove": "b5b7",
+          "score": -95,
+          "nodes": 25510,
+          "pv": "b5b7 a2c2 h2h3 g7g8 b7b8 g8h7 b8b7 h7g7"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "b5b7",
+          "e1_move": "b5b7",
+          "e2_move": "b5b7"
+        }
+      }
+    }
+  },
+  {
+    "id": "ARCH_06_PASSER_RACE",
+    "archetype": "Passed-Pawn Race",
+    "fen": "8/1P6/8/8/8/8/p7/k6K w - - 0 1",
+    "expected_concept": "Dynamic promotion timing",
+    "depth_traces": {
+      "d4": {
+        "E0_X22": {
+          "bestmove": "h1g1",
+          "score": 643,
+          "nodes": 172,
+          "pv": "h1g1 a1b2 b7b8q b2a3"
+        },
+        "E1_X24": {
+          "bestmove": "h1g1",
+          "score": 643,
+          "nodes": 172,
+          "pv": "h1g1 a1b2 b7b8q b2a3"
+        },
+        "E2_X25": {
+          "bestmove": "h1g1",
+          "score": 643,
+          "nodes": 172,
+          "pv": "h1g1 a1b2 b7b8q b2a3"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "h1g1",
+          "e1_move": "h1g1",
+          "e2_move": "h1g1"
+        }
+      },
+      "d5": {
+        "E0_X22": {
+          "bestmove": "h1g1",
+          "score": 660,
+          "nodes": 766,
+          "pv": "h1g1 a1b2 b7b8q b2a3 b8d6"
+        },
+        "E1_X24": {
+          "bestmove": "h1g1",
+          "score": 660,
+          "nodes": 766,
+          "pv": "h1g1 a1b2 b7b8q b2a3 b8d6"
+        },
+        "E2_X25": {
+          "bestmove": "h1g1",
+          "score": 660,
+          "nodes": 766,
+          "pv": "h1g1 a1b2 b7b8q b2a3 b8d6"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "h1g1",
+          "e1_move": "h1g1",
+          "e2_move": "h1g1"
+        }
+      },
+      "d6": {
+        "E0_X22": {
+          "bestmove": "h1g1",
+          "score": 660,
+          "nodes": 1419,
+          "pv": "h1g1 a1b2 b7b8q b2a3 b8d6 a3a4"
+        },
+        "E1_X24": {
+          "bestmove": "h1g1",
+          "score": 660,
+          "nodes": 1419,
+          "pv": "h1g1 a1b2 b7b8q b2a3 b8d6 a3a4"
+        },
+        "E2_X25": {
+          "bestmove": "h1g1",
+          "score": 660,
+          "nodes": 1419,
+          "pv": "h1g1 a1b2 b7b8q b2a3 b8d6 a3a4"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "h1g1",
+          "e1_move": "h1g1",
+          "e2_move": "h1g1"
+        }
+      },
+      "d7": {
+        "E0_X22": {
+          "bestmove": "h1g1",
+          "score": 660,
+          "nodes": 4034,
+          "pv": "h1g1 a1b2 b7b8q b2a3 b8d6 a3a4 d6e5"
+        },
+        "E1_X24": {
+          "bestmove": "h1g1",
+          "score": 660,
+          "nodes": 4034,
+          "pv": "h1g1 a1b2 b7b8q b2a3 b8d6 a3a4 d6e5"
+        },
+        "E2_X25": {
+          "bestmove": "h1g1",
+          "score": 660,
+          "nodes": 4034,
+          "pv": "h1g1 a1b2 b7b8q b2a3 b8d6 a3a4 d6e5"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "h1g1",
+          "e1_move": "h1g1",
+          "e2_move": "h1g1"
+        }
+      },
+      "d8": {
+        "E0_X22": {
+          "bestmove": "h1g1",
+          "score": 661,
+          "nodes": 7720,
+          "pv": "h1g1 a1b2 b7b8q b2a3 b8e5 a3b3 e5a5 b3b2"
+        },
+        "E1_X24": {
+          "bestmove": "h1g1",
+          "score": 661,
+          "nodes": 7720,
+          "pv": "h1g1 a1b2 b7b8q b2a3 b8e5 a3b3 e5a5 b3b2"
+        },
+        "E2_X25": {
+          "bestmove": "h1g1",
+          "score": 661,
+          "nodes": 7720,
+          "pv": "h1g1 a1b2 b7b8q b2a3 b8e5 a3b3 e5a5 b3b2"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "h1g1",
+          "e1_move": "h1g1",
+          "e2_move": "h1g1"
+        }
+      }
+    }
+  },
+  {
+    "id": "ARCH_07_ZUGZWANG",
+    "archetype": "Zugzwang",
+    "fen": "8/8/p1p5/1p5p/1P5P/kPK5/8/8 w - - 0 1",
+    "expected_concept": "King tempo / Opposition preservation",
+    "depth_traces": {
+      "d4": {
+        "E0_X22": {
+          "bestmove": "c3c2",
+          "score": -184,
+          "nodes": 250,
+          "pv": "c3c2 a3b4 c2b2 b4a5"
+        },
+        "E1_X24": {
+          "bestmove": "c3c2",
+          "score": -193,
+          "nodes": 270,
+          "pv": "c3c2 a3b4 c2b2 c6c5"
+        },
+        "E2_X25": {
+          "bestmove": "c3c2",
+          "score": -184,
+          "nodes": 250,
+          "pv": "c3c2 a3b4 c2b2 b4a5"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "c3c2",
+          "e1_move": "c3c2",
+          "e2_move": "c3c2"
+        }
+      },
+      "d5": {
+        "E0_X22": {
+          "bestmove": "c3c2",
+          "score": -182,
+          "nodes": 464,
+          "pv": "c3c2 a3b4 c2b2 c6c5 b2a2"
+        },
+        "E1_X24": {
+          "bestmove": "c3c2",
+          "score": -197,
+          "nodes": 537,
+          "pv": "c3c2 a3b4 c2b2 c6c5 b2a2"
+        },
+        "E2_X25": {
+          "bestmove": "c3c2",
+          "score": -182,
+          "nodes": 464,
+          "pv": "c3c2 a3b4 c2b2 c6c5 b2a2"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "c3c2",
+          "e1_move": "c3c2",
+          "e2_move": "c3c2"
+        }
+      },
+      "d6": {
+        "E0_X22": {
+          "bestmove": "c3c2",
+          "score": -198,
+          "nodes": 756,
+          "pv": "c3c2 a3b4 c2b2 c6c5 b2a2 b4a5"
+        },
+        "E1_X24": {
+          "bestmove": "c3c2",
+          "score": -213,
+          "nodes": 929,
+          "pv": "c3c2 a3b4 c2b2 c6c5 b2a2 b4a5"
+        },
+        "E2_X25": {
+          "bestmove": "c3c2",
+          "score": -198,
+          "nodes": 756,
+          "pv": "c3c2 a3b4 c2b2 c6c5 b2a2 b4a5"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "c3c2",
+          "e1_move": "c3c2",
+          "e2_move": "c3c2"
+        }
+      },
+      "d7": {
+        "E0_X22": {
+          "bestmove": "c3c2",
+          "score": -310,
+          "nodes": 2051,
+          "pv": "c3c2 a3b4 c2b2 c6c5 b2a2 c5c4 b3c4"
+        },
+        "E1_X24": {
+          "bestmove": "c3c2",
+          "score": -310,
+          "nodes": 2587,
+          "pv": "c3c2 a3b4 c2b2 c6c5 b2a2 c5c4 b3c4"
+        },
+        "E2_X25": {
+          "bestmove": "c3c2",
+          "score": -335,
+          "nodes": 1339,
+          "pv": "c3c2 a3b4 c2b2 c6c5 b2a2 c5c4 b3c4"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "c3c2",
+          "e1_move": "c3c2",
+          "e2_move": "c3c2"
+        }
+      },
+      "d8": {
+        "E0_X22": {
+          "bestmove": "c3c2",
+          "score": -310,
+          "nodes": 2640,
+          "pv": "c3c2 a3b4 c2b2 c6c5 b2a2 c5c4 b3c4 b4c4"
+        },
+        "E1_X24": {
+          "bestmove": "c3c2",
+          "score": -310,
+          "nodes": 3245,
+          "pv": "c3c2 a3b4 c2b2 c6c5 b2a2 c5c4 b3c4 b4c4"
+        },
+        "E2_X25": {
+          "bestmove": "c3c2",
+          "score": -335,
+          "nodes": 1983,
+          "pv": "c3c2 a3b4 c2b2 c6c5 b2a2 c5c4 b3c4 b4c4"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "c3c2",
+          "e1_move": "c3c2",
+          "e2_move": "c3c2"
+        }
+      }
+    }
+  },
+  {
+    "id": "ARCH_08_QUIET_DEF",
+    "archetype": "Defensive Quiet Move",
+    "fen": "3r2k1/p4ppp/1p2p3/8/8/1P2P3/P4PPP/3R2K1 w - - 0 1",
+    "expected_concept": "Back-rank defense or rook exchange",
+    "depth_traces": {
+      "d4": {
+        "E0_X22": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 1052,
+          "pv": "d1d8"
+        },
+        "E1_X24": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 1052,
+          "pv": "d1d8"
+        },
+        "E2_X25": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 1052,
+          "pv": "d1d8"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "d1d8",
+          "e1_move": "d1d8",
+          "e2_move": "d1d8"
+        }
+      },
+      "d5": {
+        "E0_X22": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 3438,
+          "pv": "d1d8"
+        },
+        "E1_X24": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 3438,
+          "pv": "d1d8"
+        },
+        "E2_X25": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 3438,
+          "pv": "d1d8"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "d1d8",
+          "e1_move": "d1d8",
+          "e2_move": "d1d8"
+        }
+      },
+      "d6": {
+        "E0_X22": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 7410,
+          "pv": "d1d8"
+        },
+        "E1_X24": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 7410,
+          "pv": "d1d8"
+        },
+        "E2_X25": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 7410,
+          "pv": "d1d8"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "d1d8",
+          "e1_move": "d1d8",
+          "e2_move": "d1d8"
+        }
+      },
+      "d7": {
+        "E0_X22": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 22001,
+          "pv": "d1d8"
+        },
+        "E1_X24": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 22001,
+          "pv": "d1d8"
+        },
+        "E2_X25": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 22001,
+          "pv": "d1d8"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "d1d8",
+          "e1_move": "d1d8",
+          "e2_move": "d1d8"
+        }
+      },
+      "d8": {
+        "E0_X22": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 43364,
+          "pv": "d1d8"
+        },
+        "E1_X24": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 43364,
+          "pv": "d1d8"
+        },
+        "E2_X25": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 43364,
+          "pv": "d1d8"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "d1d8",
+          "e1_move": "d1d8",
+          "e2_move": "d1d8"
+        }
+      }
+    }
+  },
+  {
+    "id": "ARCH_09_KING_ATTACK",
+    "archetype": "King Attack",
+    "fen": "r1b1k2r/pppp1ppp/8/4N3/1b1qn3/2N5/PPPP1PPP/R1BQKB1R w KQkq - 1 7",
+    "expected_concept": "Immediate mate threat on f2",
+    "depth_traces": {
+      "d4": {
+        "E0_X22": {
+          "bestmove": "e5d3",
+          "score": 198,
+          "nodes": 8674,
+          "pv": "e5d3 d7d6 f1e2 b4c3"
+        },
+        "E1_X24": {
+          "bestmove": "e5d3",
+          "score": 198,
+          "nodes": 8674,
+          "pv": "e5d3 d7d6 f1e2 b4c3"
+        },
+        "E2_X25": {
+          "bestmove": "e5d3",
+          "score": 198,
+          "nodes": 8656,
+          "pv": "e5d3 d7d6 f1e2 b4c3"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "e5d3",
+          "e1_move": "e5d3",
+          "e2_move": "e5d3"
+        }
+      },
+      "d5": {
+        "E0_X22": {
+          "bestmove": "c3e4",
+          "score": 258,
+          "nodes": 16148,
+          "pv": "c3e4 d4e4 d1e2 d7d5 e2e4"
+        },
+        "E1_X24": {
+          "bestmove": "c3e4",
+          "score": 258,
+          "nodes": 16199,
+          "pv": "c3e4 d4e4 d1e2 d7d5 e2e4"
+        },
+        "E2_X25": {
+          "bestmove": "c3e4",
+          "score": 258,
+          "nodes": 16121,
+          "pv": "c3e4 d4e4 d1e2 d7d5 e2e4"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "c3e4",
+          "e1_move": "c3e4",
+          "e2_move": "c3e4"
+        }
+      },
+      "d6": {
+        "E0_X22": {
+          "bestmove": "c3e4",
+          "score": 258,
+          "nodes": 24634,
+          "pv": "c3e4 d4e4 d1e2 d7d5 e2e4 d5e4"
+        },
+        "E1_X24": {
+          "bestmove": "c3e4",
+          "score": 258,
+          "nodes": 24785,
+          "pv": "c3e4 d4e4 d1e2 d7d5 e2e4 d5e4"
+        },
+        "E2_X25": {
+          "bestmove": "c3e4",
+          "score": 258,
+          "nodes": 24405,
+          "pv": "c3e4 d4e4 d1e2 d7d5 e2e4 d5e4"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "c3e4",
+          "e1_move": "c3e4",
+          "e2_move": "c3e4"
+        }
+      },
+      "d7": {
+        "E0_X22": {
+          "bestmove": "c3e4",
+          "score": 272,
+          "nodes": 48982,
+          "pv": "c3e4 d4e5 d1e2 d7d5 e4c3 b4c3 d2c3"
+        },
+        "E1_X24": {
+          "bestmove": "c3e4",
+          "score": 272,
+          "nodes": 50156,
+          "pv": "c3e4 d4e5 d1e2 d7d5 e4c3 b4c3 d2c3"
+        },
+        "E2_X25": {
+          "bestmove": "c3e4",
+          "score": 272,
+          "nodes": 48312,
+          "pv": "c3e4 d4e5 d1e2 d7d5 e4c3 b4c3 d2c3"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "c3e4",
+          "e1_move": "c3e4",
+          "e2_move": "c3e4"
+        }
+      },
+      "d8": {
+        "E0_X22": {
+          "bestmove": "c3e4",
+          "score": 265,
+          "nodes": 89727,
+          "pv": "c3e4 d4e5 d1e2 d7d5 e4c3 e5e2 f1e2 c8e6"
+        },
+        "E1_X24": {
+          "bestmove": "c3e4",
+          "score": 265,
+          "nodes": 92174,
+          "pv": "c3e4 d4e5 d1e2 d7d5 e4c3 e5e2 f1e2 c8e6"
+        },
+        "E2_X25": {
+          "bestmove": "c3e4",
+          "score": 265,
+          "nodes": 87627,
+          "pv": "c3e4 d4e5 d1e2 d7d5 e4c3 e5e2 f1e2 c8e6"
+        },
+        "stability": {
+          "e1_matches_e0": true,
+          "e2_matches_e0": true,
+          "e0_move": "c3e4",
+          "e1_move": "c3e4",
+          "e2_move": "c3e4"
+        }
+      }
+    }
+  }
+]

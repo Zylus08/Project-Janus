@@ -178,7 +178,7 @@ public:
         }
     }
 
-    bool probe(uint64_t key, int depth, int ply, int alpha, int beta, int& out_score, uint16_t& out_move, bool allow_cutoff) {
+    bool probe(uint64_t key, int depth, int ply, int alpha, int beta, int& out_score, uint16_t& out_move, bool allow_cutoff, TTEntry* out_entry = nullptr) {
         size_t c_idx = (key ^ (key >> 32)) % NUM_TT_CLUSTERS;
         TTCluster& c = clusters[c_idx];
 
@@ -191,6 +191,9 @@ public:
 
         for (int i = 0; i < 3; ++i) {
             if (c.entries[i].key == key) {
+                if (out_entry) {
+                    *out_entry = c.entries[i];
+                }
                 out_move = c.entries[i].best_move;
                 if (allow_cutoff && c.entries[i].depth >= depth) {
                     int tt_score = score_from_tt(c.entries[i].score, ply);
@@ -326,7 +329,8 @@ static int  g_rfp_margin_per_depth = 120;      // Margin per ply (120 for 1T, 90
 static bool g_use_aspiration_window = true;    // Phase 5: Aspiration Windows (delta = 25 cp)
 static int  g_aspiration_delta = 25;           // Aspiration delta
 static bool g_movepicker_stage_reform = false; // Phase 1, Milestone P1.14: Good Captures -> Killers -> Countermove -> Quiets -> Bad Captures
-static std::string g_search_variant = "X25";    // Active variant identifier (Default Candidate X25)
+static std::string g_search_variant = "X26";    // Active variant identifier (Default Candidate X26)
+static int  g_rfp_repair_mode = 3;              // P1.21 Option A: 0=B0 (Legacy), 1=B1 (+NonPV), 2=B2 (+TTStore), 3=B3 (+TTConflict +Zugzwang)
 
 // Milestone P1.15 Adaptive Capture Ordering, History Modes & Exact Search Contract
 static int  g_adaptive_capture_mode = 0; // 0=C0 (Frozen X19), 1=C1 (Near-even [-100, 0)), 2=C2 (Endgame conditional), 3=C3 (Defensive / check exception)
@@ -339,9 +343,12 @@ static int  g_use_true_outposts = 1;     // 0=Legacy E5 outposts, 1=True outpost
 static int  g_use_backward_pawns = 0;    // P1.18 Track A: 0=Disabled (Legacy), 1=Classical Backward Pawn Detection (-10 mg / -15 eg)
 static int  g_use_king_file_exposure = 0;// P1.18 Track B: 0=Disabled (Legacy), 1=Open & Semi-Open File King Exposure Penalty
 static int  g_use_connected_pawns = 1;   // P1.20 Option B: 0=Disabled (Legacy X22/X7), 1=Enhanced Connected & Supported Passed Pawns
+static int  g_synthetic_eval_perturbation = 0; // P1.21 Phase 4: Diagnostic score perturbation (offline only)
 static uint64_t g_telemetry_qsearch_in_check = 0;
 static uint64_t g_telemetry_qsearch_checkmates = 0;
 static uint64_t g_telemetry_qsearch_checks_generated = 0;
+static uint64_t g_telemetry_main_nodes = 0;
+static uint64_t g_telemetry_qsearch_nodes = 0;
 
 // ============================================================================
 // Search Modernization & Positional Evaluation Options (Milestone P1.2)
@@ -438,6 +445,7 @@ EXPORT void native_apply_search_variant(const char* var_str) {
     std::string var(var_str);
     g_search_variant = var;
     g_movepicker_stage_reform = false;
+    g_rfp_repair_mode = 0; // Default to legacy RFP for older variants
     if (var == "X0") { // C1 Frozen Baseline Equivalent
         g_use_staged_movegen = false;
         g_quiescence_see_mode = 0;
@@ -902,6 +910,48 @@ EXPORT void native_apply_search_variant(const char* var_str) {
             g_lmp_max_depth = 4;
             g_rfp_margin_per_depth = 90;
         }
+    } else if (var == "X26") { // P1.21 Candidate: Option A (Verified RFP Correctness Repair + Option B Connected Passers + 64K Pawn Hash)
+        g_use_staged_movegen = true;
+        g_quiescence_see_mode = 2;
+        g_use_see_in_quiescence = true;
+        g_use_null_move_pruning = true;
+        g_use_reverse_futility = true;
+        g_use_aspiration_window = true;
+        g_conthist_mode = 3; // H3
+        g_dynamic_lmr_mode = 3; // L3 Calibrated LMR
+        g_use_pruning_safety = false;
+        g_movepicker_stage_reform = true;
+        g_adaptive_capture_mode = 1; // C1 Near-Even Capture Promotion
+        g_qsearch_mode = 1; // Q1 Corrected Quiescence Search
+        g_use_true_outposts = 1; // True Outposts with Pawn Immunity
+        g_use_backward_pawns = 0; // Strictly Disabled
+        g_use_king_file_exposure = 0; // Strictly Disabled
+        g_use_connected_pawns = 1; // Option B Enabled
+        g_rfp_repair_mode = 3; // Full Option A RFP Correctness Repair
+        if (g_num_threads == 1) { // Track S: X26-S (1T)
+            g_eval_mode = 5; // E5 Combined Classical Eval
+            g_tactical_ordering_mode = 2; // Enable Countermove table for staging
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = true; // 64K entry Pawn Hash Table
+            g_dynamic_time_mgmt = false;
+            g_use_lmp = false;
+            g_lmp_mode = 0;
+            g_rfp_margin_per_depth = 120;
+        } else { // Track P: X26-P (4T)
+            g_eval_mode = 10; // E10 Enhanced Classical Evaluation
+            g_tactical_ordering_mode = 2; // M2 Countermove Heuristic
+            g_singular_extension_mode = 0; // S0 Off
+            g_multicut_mode = 0; // C0 Off
+            g_probcut_mode = 0; // P0 Off
+            g_use_pawn_hash = true; // 64K entry Pawn Hash Table
+            g_dynamic_time_mgmt = true;
+            g_use_lmp = true; // Safe Late Move Pruning
+            g_lmp_mode = 1; // Conservative Quadratic LMP
+            g_lmp_max_depth = 4;
+            g_rfp_margin_per_depth = 90;
+        }
     } else if (var == "X25") { // P1.20 Candidate: Option B (Connected & Supported Passed Pawns + 64K Pawn Hash, Zero Backward Pawns)
         g_use_staged_movegen = true;
         g_quiescence_see_mode = 2;
@@ -1040,6 +1090,8 @@ EXPORT void native_reset_p11_telemetry() {
     g_telemetry_rfp_cutoffs = 0;
     g_telemetry_aspiration_researches = 0;
     g_telemetry_qmoves_pruned = 0;
+    g_telemetry_main_nodes = 0;
+    g_telemetry_qsearch_nodes = 0;
 }
 
 
@@ -1271,7 +1323,7 @@ EXPORT int native_init() {
     std::memset(g_killer_moves, 0, sizeof(g_killer_moves));
     std::memset(g_history_table, 0, sizeof(g_history_table));
     g_game_history_len = 0;
-    native_apply_search_variant("X24");
+    native_apply_search_variant("X26");
     return 1;
 }
 
@@ -3326,12 +3378,15 @@ EXPORT int native_evaluate_internal(const NativeBoard* b, int emode) {
 }
 
 EXPORT int native_evaluate(const NativeBoard* b) {
-    return native_evaluate_internal(b, g_eval_mode);
+    return native_evaluate_internal(b, g_eval_mode) + g_synthetic_eval_perturbation;
 }
 
 EXPORT int native_evaluate_detail(const NativeBoard* b, int emode) {
-    return native_evaluate_internal(b, emode);
+    return native_evaluate_internal(b, emode) + g_synthetic_eval_perturbation;
 }
+
+EXPORT void native_set_synthetic_perturbation(int cp) { g_synthetic_eval_perturbation = cp; }
+EXPORT int native_get_synthetic_perturbation() { return g_synthetic_eval_perturbation; }
 
 // Static Exchange Evaluation (SEE) values (centipawns)
 constexpr int SEE_PIECE_VALUES[6] = { 100, 320, 335, 500, 900, 20000 };
@@ -4318,6 +4373,7 @@ EXPORT int native_get_exact_search_mode() {
 
 static int quiescence(NativeBoard* b, int alpha, int beta, int ply, int qply, uint64_t& nodes, std::chrono::steady_clock::time_point deadline, bool& aborted) {
     nodes++;
+    g_telemetry_qsearch_nodes++;
 
     if ((nodes & 2047) == 0) {
         if (g_stop_search.load(std::memory_order_relaxed) || (t_thread_id == 0 && std::chrono::steady_clock::now() >= deadline)) {
@@ -4653,6 +4709,7 @@ static int negamax(
     uint16_t excluded_move = 0
 ) {
     nodes++;
+    g_telemetry_main_nodes++;
 
     if ((nodes & 2047) == 0) {
         if (g_stop_search.load(std::memory_order_relaxed) || (t_thread_id == 0 && std::chrono::steady_clock::now() >= deadline)) {
@@ -4690,12 +4747,15 @@ static int negamax(
     TTEntry entry{};
     bool has_entry = false;
 
-    if (!g_exact_search_mode && (g_search_variant == "X11" || g_search_variant == "X12" || g_search_variant == "X13" || g_search_variant == "X14" || g_num_threads > 1)) {
+    if (!g_exact_search_mode && (g_search_variant == "X11" || g_search_variant == "X12" || g_search_variant == "X13" || g_search_variant == "X14" || g_search_variant == "X26" || g_num_threads > 1)) {
         int tt_score = 0;
         bool allow_cutoff = (ply > 0 && excluded_move == 0);
-        if (g_parallel_tt.probe(key, depth, ply, alpha, beta, tt_score, tt_move, allow_cutoff)) {
+        if (g_parallel_tt.probe(key, depth, ply, alpha, beta, tt_score, tt_move, allow_cutoff, &entry)) {
             g_telemetry_tt_hits++;
             return tt_score;
+        }
+        if (entry.key == key) {
+            has_entry = true;
         }
     } else {
         size_t tt_idx = key % TT_SIZE;
@@ -4760,9 +4820,37 @@ static int negamax(
     }
 
     // ========================================================================
-    // Reverse Futility Pruning (RFP / Static Null Move Pruning, Phase 4)
+    // Reverse Futility Pruning (RFP / Static Null Move Pruning, Phase 4 & P1.21 Option A)
     // ========================================================================
-    if (!g_exact_search_mode && g_use_reverse_futility && depth <= 3 && ply > 0 && !in_check && std::abs(beta) < MATE_SCORE - 100) {
+    bool is_pv_node = (beta - alpha > 1);
+    bool rfp_allowed = !g_exact_search_mode && g_use_reverse_futility && depth <= 3 && ply > 0 && !in_check && std::abs(beta) < MATE_SCORE - 100;
+
+    if (rfp_allowed) {
+        // Contract Repair 1: Non-PV Guard (B1, B2, B3)
+        if (g_rfp_repair_mode >= 1 && is_pv_node) {
+            rfp_allowed = false;
+        }
+
+        // Contract Repair 4: Zugzwang & Non-Pawn Material Guard (B3)
+        if (g_rfp_repair_mode >= 3) {
+            int us_rfp = b->side_to_move;
+            uint64_t my_non_pawns = b->pieces[us_rfp][KNIGHT] | b->pieces[us_rfp][BISHOP] | 
+                                    b->pieces[us_rfp][ROOK]   | b->pieces[us_rfp][QUEEN];
+            if (my_non_pawns == 0) {
+                rfp_allowed = false;
+            }
+        }
+
+        // Contract Repair 3: TT Upper-Bound Conflict Check (B3)
+        if (g_rfp_repair_mode >= 3 && has_entry) {
+            int tt_s = score_from_tt(entry.score, ply);
+            if (entry.flag == TT_UPPER && tt_s < beta) {
+                rfp_allowed = false;
+            }
+        }
+    }
+
+    if (rfp_allowed) {
         g_telemetry_rfp_probes++;
         if (!g_use_pruning_safety) {
             static_eval = native_evaluate(b);
@@ -4773,6 +4861,25 @@ static int negamax(
         }
         if (static_eval - rfp_margin >= beta) {
             g_telemetry_rfp_cutoffs++;
+
+            // Contract Repair 2: Store TT Lower Bound (B2, B3)
+            if (g_rfp_repair_mode >= 2 && !aborted && excluded_move == 0) {
+                if (g_search_variant == "X11" || g_search_variant == "X12" || g_search_variant == "X13" || g_search_variant == "X14" || g_search_variant == "X26" || g_num_threads > 1) {
+                    g_parallel_tt.store(key, static_eval, (int8_t)depth, TT_LOWER, ply, 0);
+                } else {
+                    size_t tt_idx = key % TT_SIZE;
+                    TTEntry& entry_ref = g_tt[tt_idx];
+                    if (entry_ref.key != key || depth >= entry_ref.depth || entry_ref.age != g_tt_age) {
+                        entry_ref.key = key;
+                        entry_ref.score = (int16_t)score_to_tt(static_eval, ply);
+                        entry_ref.depth = (int8_t)depth;
+                        entry_ref.flag = TT_LOWER;
+                        entry_ref.age = g_tt_age;
+                        entry_ref.best_move = 0;
+                    }
+                }
+            }
+
             return static_eval;
         }
     }
@@ -4960,7 +5067,7 @@ static int negamax(
                                (native_is_check(b) == 0); // Non-checking move
 
         // Milestone P1.12 & P1.13 Targeted Intervention: Protect pawn moves in pure pawn endgames from LMR reduction
-        if ((g_search_variant == "X17" || g_search_variant == "X18" || g_search_variant == "X19" || g_search_variant == "X20" || g_search_variant == "X21" || g_search_variant == "X22" || g_search_variant == "X23" || g_search_variant == "X24") && non_pawn_mat == 0 && moved_piece == PAWN) {
+        if ((g_search_variant == "X17" || g_search_variant == "X18" || g_search_variant == "X19" || g_search_variant == "X20" || g_search_variant == "X21" || g_search_variant == "X22" || g_search_variant == "X23" || g_search_variant == "X24" || g_search_variant == "X25" || g_search_variant == "X26") && non_pawn_mat == 0 && moved_piece == PAWN) {
             is_lmr_eligible = false;
         }
 
@@ -5222,7 +5329,7 @@ static int negamax(
         if (best_score <= orig_alpha) flag = TT_UPPER;
         else if (best_score >= beta) flag = TT_LOWER;
 
-        if (g_search_variant == "X11" || g_search_variant == "X12" || g_search_variant == "X13" || g_search_variant == "X14" || g_num_threads > 1) {
+        if (g_search_variant == "X11" || g_search_variant == "X12" || g_search_variant == "X13" || g_search_variant == "X14" || g_search_variant == "X26" || g_num_threads > 1) {
             g_parallel_tt.store(key, best_score, (int8_t)depth, flag, ply, best_move);
         } else {
             size_t tt_idx = key % TT_SIZE;
@@ -5675,6 +5782,8 @@ EXPORT void native_set_connected_pawns_mode(int mode) {
     clear_pawn_table();
 }
 EXPORT int native_get_connected_pawns_mode() { return g_use_connected_pawns; }
+EXPORT void native_set_rfp_repair_mode(int mode) { g_rfp_repair_mode = mode; }
+EXPORT int native_get_rfp_repair_mode() { return g_rfp_repair_mode; }
 EXPORT void native_reset_qsearch_telemetry() {
     g_telemetry_qsearch_in_check = 0;
     g_telemetry_qsearch_checkmates = 0;
@@ -5787,7 +5896,7 @@ static void uci_loop() {
         iss >> cmd;
 
         if (cmd == "uci") {
-            std::cout << "id name Janus Classical X (P1.19 Candidate X24)" << std::endl;
+            std::cout << "id name Janus Classical X (P1.21 Candidate X26)" << std::endl;
             std::cout << "id author Project Janus Developers" << std::endl;
             std::cout << "option name Threads type spin default 1 min 1 max 16" << std::endl;
             std::cout << "option name UCI_LMP type combo default L1 var L0 var L1 var L2 var L3" << std::endl;
@@ -5800,7 +5909,7 @@ static void uci_loop() {
             std::cout << "option name LMRBaseReduction type spin default 1 min 1 max 3" << std::endl;
             std::cout << "option name UseSEEOrdering type check default false" << std::endl;
             std::cout << "option name UseSEEInQuiescence type check default false" << std::endl;
-            std::cout << "option name UCI_Variant type combo default X25 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18 var X19 var X20 var X21 var X22 var X23 var X24 var X25" << std::endl;
+            std::cout << "option name UCI_Variant type combo default X26 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18 var X19 var X20 var X21 var X22 var X23 var X24 var X25 var X26" << std::endl;
             std::cout << "option name UCI_ConnectedPawns type check default true" << std::endl;
             std::cout << "option name UCI_AdaptiveCapture type combo default C1 var C0 var C1 var C2 var C3" << std::endl;
             std::cout << "option name UCI_HistoryMode type combo default H0 var H0 var H1 var H2 var H3" << std::endl;
@@ -5828,6 +5937,9 @@ static void uci_loop() {
             std::cout << "option name UCI_OutpostMode type combo default 1 var 0 var 1" << std::endl;
             std::cout << "option name UCI_BackwardPawns type check default false" << std::endl;
             std::cout << "option name UCI_KingFileExposure type check default false" << std::endl;
+            std::cout << "option name UCI_SyntheticPerturbation type spin default 0 min -500 max 500" << std::endl;
+            std::cout << "option name UCI_RfpRepair type check default true" << std::endl;
+            std::cout << "option name UCI_RfpRepairMode type spin default 3 min 0 max 3" << std::endl;
             std::cout << "uciok" << std::endl;
         } else if (cmd == "isready") {
             std::cout << "readyok" << std::endl;
@@ -5990,6 +6102,12 @@ static void uci_loop() {
                 } else if (opt_name == "UCI_ConnectedPawns") {
                     g_use_connected_pawns = (opt_val.empty() || opt_val == "true" || opt_val == "1") ? 1 : 0;
                     clear_pawn_table();
+                } else if (opt_name == "UCI_SyntheticPerturbation" && !opt_val.empty()) {
+                    g_synthetic_eval_perturbation = std::stoi(opt_val);
+                } else if (opt_name == "UCI_RfpRepair") {
+                    g_rfp_repair_mode = (opt_val.empty() || opt_val == "true" || opt_val == "1") ? 3 : 0;
+                } else if (opt_name == "UCI_RfpRepairMode" && !opt_val.empty()) {
+                    g_rfp_repair_mode = std::max(0, std::min(3, std::stoi(opt_val)));
                 }
             }
                 } else if (cmd == "telemetry_report") {
@@ -6032,6 +6150,9 @@ static void uci_loop() {
             std::cout << "qsearch_in_check " << g_telemetry_qsearch_in_check << std::endl;
             std::cout << "qsearch_checkmates " << g_telemetry_qsearch_checkmates << std::endl;
             std::cout << "qsearch_checks_gen " << g_telemetry_qsearch_checks_generated << std::endl;
+            std::cout << "main_nodes " << g_telemetry_main_nodes << std::endl;
+            std::cout << "qsearch_nodes " << g_telemetry_qsearch_nodes << std::endl;
+            std::cout << "rfp_repair_mode " << g_rfp_repair_mode << std::endl;
             std::cout << "TELEMETRY_END" << std::endl;
         } else if (cmd == "telemetry_reset") {
             native_reset_p11_telemetry();

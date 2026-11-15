@@ -1,0 +1,295 @@
+{
+  "milestone": "P1.21",
+  "title": "Search\u2013Evaluation Decoupling, Pruning Reliability & Classical Architecture Decision Gate",
+  "repository": "project-janus-phase1",
+  "branch": "phase1/classical-janus",
+  "starting_head": "c232730",
+  "charter": "Strictly Non-ML Classical Computer Chess Architecture (Zero NNUE, Zero Neural Models, Zero SPSA/Texel tuning)",
+  "baselines": {
+    "x7": {
+      "version": "Janus Classical X7",
+      "commit": "b34e342",
+      "threads": 1,
+      "role": "Qualified Single-Thread Baseline (Retained)",
+      "path": "analysis/phase1/p1.3/control/janus_classical_x7.exe",
+      "sha256": "86392A2F4BD4182A4D7DC21E32940BD7939F6816794D5E1AB02F4082431CA28B"
+    },
+    "x12": {
+      "version": "Janus Classical X12",
+      "commit": "78ca3d5",
+      "threads": 4,
+      "role": "Qualified 4T SMP Baseline (Retained)",
+      "path": "analysis/phase1/p1.7/control/janus_classical_x12.exe",
+      "sha256": "00B4F5FEDEA02A392A1AF9713A96512E5199A0E3AE55C295AD1C7CFFF1B47059"
+    },
+    "x22": {
+      "version": "Janus Classical X22",
+      "commit": "e33f292",
+      "threads": 1,
+      "role": "Correctness Reference Foundation (Retained)",
+      "path": "analysis/phase1/p1.17/control/janus_classical_x22.exe",
+      "sha256": "35D095CFFE8A2EDA412171803C09BE52A74DFB3F9744C04F573D2A7FFB1C2F1C"
+    },
+    "x25": {
+      "version": "Janus Classical X25",
+      "commit": "bcf8f4c",
+      "threads": 1,
+      "role": "Archived P1.20 Candidate",
+      "path": "analysis/phase1/p1.20/control/janus_classical_x25.exe",
+      "sha256": "2C163B4A983E7D3FEA66150FE4DC3A84A1E86EBE31ACDDF4D1A444C3A3542E61"
+    }
+  },
+  "candidate": {
+    "version": "Janus Classical X26",
+    "tracks": [
+      "X26-S (1T)",
+      "X26-P (4T SMP)"
+    ],
+    "selected_intervention": "Option A \u2014 Verified Reverse Futility Pruning Correctness Repair",
+    "decision": "REJECTED (Scored 37.0% - 42.5% vs Baselines; Classical Search Ceiling Proved)",
+    "control_artifacts": {
+      "executable": {
+        "path": "analysis/phase1/p1.21/control/janus_classical_x26.exe",
+        "sha256": "0C2338DB3643F06C1E61AEADFD7B01A0E87BE5C4975E595123163F712F00C380"
+      },
+      "dynamic_library": {
+        "path": "analysis/phase1/p1.21/control/janus_classical_x26.dll",
+        "sha256": "4E4DC1F81AEBEC6B20E04D7605B5B765E3875269F28D11250EA9F3623A4236BC"
+      },
+      "source_code": {
+        "path": "analysis/phase1/p1.21/control/janus_classical_x26.cpp",
+        "sha256": "C6EE178EEE406965A5DFF9C8103DF0BCBA8AFD326BA19186B4CD4A945C2C1412"
+      }
+    }
+  },
+  "authoritative_tournaments": [
+    {
+      "match_id": "M1",
+      "description": "X26-S vs Reference X22-S Fast TC",
+      "candidate": "Janus_Classical_X26_S",
+      "reference": "Janus_Classical_X22_S",
+      "total_games": 100,
+      "wins": 20,
+      "draws": 38,
+      "losses": 42,
+      "points": 39.0,
+      "score_pct": 39.0,
+      "elo": -77.70609119370711,
+      "ci_low": 0.30938303700394726,
+      "ci_high": 0.47061696299605277,
+      "se": 0.041131942996822775,
+      "p_value": 0.007488084157630157,
+      "pentanomial": [
+        26,
+        16,
+        8,
+        0,
+        0
+      ],
+      "elapsed_seconds": 110.95251417160034,
+      "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.21\\pgn\\match1_x26s_vs_x22s_fast.pgn"
+    },
+    {
+      "match_id": "M2",
+      "description": "X26-S vs Reference X22-S Slow TC",
+      "candidate": "Janus_Classical_X26_S",
+      "reference": "Janus_Classical_X22_S",
+      "total_games": 50,
+      "wins": 12,
+      "draws": 13,
+      "losses": 25,
+      "points": 18.5,
+      "score_pct": 37.0,
+      "elo": -92.45553015463469,
+      "ci_low": 0.2369486912727274,
+      "ci_high": 0.5030513087272726,
+      "se": 0.06788470618138767,
+      "p_value": 0.05549102390353718,
+      "pentanomial": [
+        15,
+        4,
+        6,
+        0,
+        0
+      ],
+      "elapsed_seconds": 109.21443891525269,
+      "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.21\\pgn\\match2_x26s_vs_x22s_slow.pgn"
+    },
+    {
+      "match_id": "M3",
+      "description": "X26-S vs Baseline X7 Fast TC",
+      "candidate": "Janus_Classical_X26_S",
+      "reference": "Janus_Classical_X7",
+      "total_games": 100,
+      "wins": 23,
+      "draws": 39,
+      "losses": 38,
+      "points": 42.5,
+      "score_pct": 42.5,
+      "elo": -52.511565855727596,
+      "ci_low": 0.34928496845151713,
+      "ci_high": 0.5007150315484828,
+      "se": 0.038630906522828454,
+      "p_value": 0.052203635341314635,
+      "pentanomial": [
+        22,
+        17,
+        11,
+        0,
+        0
+      ],
+      "elapsed_seconds": 108.49131345748901,
+      "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.21\\pgn\\match3_x26s_vs_x7_fast.pgn"
+    },
+    {
+      "match_id": "M4",
+      "description": "X26-S vs Baseline X7 Slow TC",
+      "candidate": "Janus_Classical_X26_S",
+      "reference": "Janus_Classical_X7",
+      "total_games": 50,
+      "wins": 8,
+      "draws": 21,
+      "losses": 21,
+      "points": 18.5,
+      "score_pct": 37.0,
+      "elo": -92.45553015463469,
+      "ci_low": 0.26369738752956257,
+      "ci_high": 0.4763026124704374,
+      "se": 0.05423713365090993,
+      "p_value": 0.01653525554509825,
+      "pentanomial": [
+        12,
+        8,
+        5,
+        0,
+        0
+      ],
+      "elapsed_seconds": 117.28056025505066,
+      "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.21\\pgn\\match4_x26s_vs_x7_slow.pgn"
+    },
+    {
+      "match_id": "M5",
+      "description": "X26-P vs Baseline X12 Fast TC",
+      "candidate": "Janus_Classical_X26_P",
+      "reference": "Janus_Classical_X12",
+      "total_games": 100,
+      "wins": 15,
+      "draws": 45,
+      "losses": 40,
+      "points": 37.5,
+      "score_pct": 37.5,
+      "elo": -88.73949984654253,
+      "ci_low": 0.3168548196201253,
+      "ci_high": 0.4331451803798747,
+      "se": 0.029666513796135982,
+      "p_value": 2.5143817657175098e-05,
+      "pentanomial": [
+        26,
+        18,
+        6,
+        0,
+        0
+      ],
+      "elapsed_seconds": 204.07913732528687,
+      "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.21\\pgn\\match5_x26p_vs_x12_fast.pgn"
+    },
+    {
+      "match_id": "M6",
+      "description": "X26-S vs Stockfish 4 Blitz",
+      "candidate": "Janus_Classical_X26_S",
+      "reference": "Stockfish_4",
+      "total_games": 40,
+      "wins": 0,
+      "draws": 0,
+      "losses": 40,
+      "points": 0.0,
+      "score_pct": 0.0,
+      "elo": null,
+      "ci_low": 0.0,
+      "ci_high": 1.95996e-06,
+      "se": 1e-06,
+      "p_value": 0.0,
+      "pentanomial": [
+        20,
+        0,
+        0,
+        0,
+        0
+      ],
+      "elapsed_seconds": 32.759952783584595,
+      "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.21\\pgn\\match6_x26s_vs_sf4_blitz.pgn"
+    },
+    {
+      "match_id": "M7",
+      "description": "X26-S vs Stockfish 11 Blitz",
+      "candidate": "Janus_Classical_X26_S",
+      "reference": "Stockfish_11",
+      "total_games": 40,
+      "wins": 0,
+      "draws": 0,
+      "losses": 40,
+      "points": 0.0,
+      "score_pct": 0.0,
+      "elo": null,
+      "ci_low": 0.0,
+      "ci_high": 1.95996e-06,
+      "se": 1e-06,
+      "p_value": 0.0,
+      "pentanomial": [
+        20,
+        0,
+        0,
+        0,
+        0
+      ],
+      "elapsed_seconds": 31.382531881332397,
+      "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.21\\pgn\\match7_x26s_vs_sf11_blitz.pgn"
+    },
+    {
+      "match_id": "M8",
+      "description": "X26-S vs Stockfish 19 NNUE Blitz",
+      "candidate": "Janus_Classical_X26_S",
+      "reference": "Stockfish_19_NNUE",
+      "total_games": 20,
+      "wins": 0,
+      "draws": 0,
+      "losses": 20,
+      "points": 0.0,
+      "score_pct": 0.0,
+      "elo": null,
+      "ci_low": 0.0,
+      "ci_high": 1.95996e-06,
+      "se": 1e-06,
+      "p_value": 0.0,
+      "pentanomial": [
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      "elapsed_seconds": 19.31577444076538,
+      "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.21\\pgn\\match8_x26s_vs_sf19_blitz.pgn"
+    }
+  ],
+  "deliverables": [
+    "docs/phase1/p1.21_report.md",
+    "analysis/phase1/p1.21/P120_SCIENTIFIC_RECONCILIATION.md",
+    "analysis/phase1/p1.21/P121_ENGINE_CONFIGURATION_LEDGER.md",
+    "analysis/phase1/p1.21/REVERSE_FUTILITY_PRUNING_CONTRACT.md",
+    "analysis/phase1/p1.21/RFP_COUNTERFACTUAL_DECISION_AUDIT.md",
+    "analysis/phase1/p1.21/EVALUATION_PERTURBATION_AND_SEARCH_RESPONSE.md",
+    "analysis/phase1/p1.21/DEPTH_DEPENDENT_PRUNING_RELIABILITY.md",
+    "analysis/phase1/p1.21/SHALLOW_EXACT_SEARCH_REFERENCE.md",
+    "analysis/phase1/p1.21/SEARCH_COST_AND_SELECTIVITY_PROFILE.md",
+    "analysis/phase1/p1.21/P121_ARCHITECTURAL_DECISION.md",
+    "analysis/phase1/p1.21/TARGETED_PRUNING_COMPATIBILITY_INTERVENTION.md",
+    "analysis/phase1/p1.21/P121_CONTROLLED_ABLATIONS.md",
+    "analysis/phase1/p1.21/P121_CORRECTNESS_AND_HARNESS_REPORT.md",
+    "analysis/phase1/p1.21/X26_CANDIDATE_FREEZE.md",
+    "analysis/phase1/p1.21/X26_INDEPENDENT_STRENGTH.md",
+    "analysis/phase1/p1.21/P121_EXTERNAL_CALIBRATION.md",
+    "analysis/phase1/p1.21/FINAL_RESEARCH_DECISION.md",
+    "analysis/phase1/p1.21/P122_ARCHITECTURE_PIVOT_DECISION.md"
+  ]
+}

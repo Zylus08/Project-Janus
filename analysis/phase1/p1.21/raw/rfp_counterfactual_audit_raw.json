@@ -1,0 +1,1046 @@
+[
+  {
+    "id": "CF_Q1",
+    "type": "Quiet Semi-Slav",
+    "fen": "r1bq1rk1/pp1nbppp/2p1pn2/3p4/2PP4/2N1PN2/PPQ2PPP/R1B1KB1R w KQ - 0 7",
+    "depths": {
+      "d2": {
+        "on": {
+          "bestmove": "f3g5",
+          "score": 22,
+          "nodes": 724,
+          "nps": 802216,
+          "pv": "f3g5 g7g6"
+        },
+        "off": {
+          "bestmove": "f3g5",
+          "score": 22,
+          "nodes": 724,
+          "nps": 778578,
+          "pv": "f3g5 g7g6"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d3": {
+        "on": {
+          "bestmove": "c4c5",
+          "score": 52,
+          "nodes": 7189,
+          "nps": 1530909,
+          "pv": "c4c5 b7b6 f3g5"
+        },
+        "off": {
+          "bestmove": "c4c5",
+          "score": 52,
+          "nodes": 7239,
+          "nps": 1511178,
+          "pv": "c4c5 b7b6 f3g5"
+        },
+        "node_ratio": 0.9931,
+        "node_delta": -50,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d4": {
+        "on": {
+          "bestmove": "f1d3",
+          "score": 36,
+          "nodes": 10099,
+          "nps": 1352792,
+          "pv": "f1d3 d5c4 d3c4 f6d5"
+        },
+        "off": {
+          "bestmove": "f1d3",
+          "score": 36,
+          "nodes": 10498,
+          "nps": 1400872,
+          "pv": "f1d3 d5c4 d3c4 f6d5"
+        },
+        "node_ratio": 0.962,
+        "node_delta": -399,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d5": {
+        "on": {
+          "bestmove": "f1d3",
+          "score": 51,
+          "nodes": 14230,
+          "nps": 1342782,
+          "pv": "f1d3 h7h6 c4c5 d8c7 e1g1"
+        },
+        "off": {
+          "bestmove": "f1d3",
+          "score": 51,
+          "nodes": 15140,
+          "nps": 1423199,
+          "pv": "f1d3 h7h6 c4c5 d8c7 e1g1"
+        },
+        "node_ratio": 0.9399,
+        "node_delta": -910,
+        "move_agreement": true,
+        "score_delta": 0
+      }
+    }
+  },
+  {
+    "id": "CF_Q2",
+    "type": "Quiet French",
+    "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2N1PN2/PPP1BPPP/R1BQ1RK1 w kq - 0 7",
+    "depths": {
+      "d2": {
+        "on": {
+          "bestmove": "f3e5",
+          "score": 18,
+          "nodes": 496,
+          "nps": 906764,
+          "pv": "f3e5 c6e5"
+        },
+        "off": {
+          "bestmove": "f3e5",
+          "score": 18,
+          "nodes": 496,
+          "nps": 932681,
+          "pv": "f3e5 c6e5"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d3": {
+        "on": {
+          "bestmove": "e2b5",
+          "score": 32,
+          "nodes": 4213,
+          "nps": 1233386,
+          "pv": "e2b5 d8b6 f3e5"
+        },
+        "off": {
+          "bestmove": "e2b5",
+          "score": 32,
+          "nodes": 4213,
+          "nps": 1247224,
+          "pv": "e2b5 d8b6 f3e5"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d4": {
+        "on": {
+          "bestmove": "e2b5",
+          "score": 22,
+          "nodes": 7421,
+          "nps": 1069524,
+          "pv": "e2b5 d8b6 f3e5 c8d7"
+        },
+        "off": {
+          "bestmove": "e2b5",
+          "score": 22,
+          "nodes": 8111,
+          "nps": 1102757,
+          "pv": "e2b5 d8b6 f3e5 c8d7"
+        },
+        "node_ratio": 0.9149,
+        "node_delta": -690,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d5": {
+        "on": {
+          "bestmove": "f3e5",
+          "score": 23,
+          "nodes": 18708,
+          "nps": 1208589,
+          "pv": "f3e5 c6e5 d4e5 f6e4 c3e4"
+        },
+        "off": {
+          "bestmove": "f3e5",
+          "score": 23,
+          "nodes": 20495,
+          "nps": 1303214,
+          "pv": "f3e5 c6e5 d4e5 f6e4 c3e4"
+        },
+        "node_ratio": 0.9128,
+        "node_delta": -1787,
+        "move_agreement": true,
+        "score_delta": 0
+      }
+    }
+  },
+  {
+    "id": "CF_T1",
+    "type": "King Defense Queen Penetration",
+    "fen": "r1b2rk1/pp3ppp/2n1p3/8/2B5/4q3/PPP3PP/3R1R1K w - - 0 16",
+    "depths": {
+      "d2": {
+        "on": {
+          "bestmove": "f1f3",
+          "score": -1283,
+          "nodes": 814,
+          "nps": 1226088,
+          "pv": "f1f3 e3c5"
+        },
+        "off": {
+          "bestmove": "f1f3",
+          "score": -1283,
+          "nodes": 814,
+          "nps": 1222222,
+          "pv": "f1f3 e3c5"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d3": {
+        "on": {
+          "bestmove": "c4b5",
+          "score": -1289,
+          "nodes": 4770,
+          "nps": 1441479,
+          "pv": "c4b5 e3b6 b5c6"
+        },
+        "off": {
+          "bestmove": "c4b5",
+          "score": -1289,
+          "nodes": 4770,
+          "nps": 1497739,
+          "pv": "c4b5 e3b6 b5c6"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d4": {
+        "on": {
+          "bestmove": "c4b5",
+          "score": -1289,
+          "nodes": 6037,
+          "nps": 1386859,
+          "pv": "c4b5 e3b6 b5c6 b6c6"
+        },
+        "off": {
+          "bestmove": "c4b5",
+          "score": -1289,
+          "nodes": 6367,
+          "nps": 1354277,
+          "pv": "c4b5 e3b6 b5c6 b6c6"
+        },
+        "node_ratio": 0.9482,
+        "node_delta": -330,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d5": {
+        "on": {
+          "bestmove": "c4b5",
+          "score": -1302,
+          "nodes": 12121,
+          "nps": 1420751,
+          "pv": "c4b5 c6e5 f1e1 e3c5 b5d3"
+        },
+        "off": {
+          "bestmove": "c4b5",
+          "score": -1302,
+          "nodes": 15297,
+          "nps": 1548530,
+          "pv": "c4b5 c6e5 f1e1 e3c5 b5d3"
+        },
+        "node_ratio": 0.7924,
+        "node_delta": -3176,
+        "move_agreement": true,
+        "score_delta": 0
+      }
+    }
+  },
+  {
+    "id": "CF_T2",
+    "type": "Tactical Threat on f2",
+    "fen": "r1b1k2r/pppp1ppp/8/4N3/1b1qn3/2N5/PPPP1PPP/R1BQKB1R w KQkq - 1 7",
+    "depths": {
+      "d2": {
+        "on": {
+          "bestmove": "d1h5",
+          "score": 176,
+          "nodes": 1361,
+          "nps": 663061,
+          "pv": "d1h5 d4f2"
+        },
+        "off": {
+          "bestmove": "d1h5",
+          "score": 176,
+          "nodes": 1361,
+          "nps": 670146,
+          "pv": "d1h5 d4f2"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d3": {
+        "on": {
+          "bestmove": "e5d3",
+          "score": 180,
+          "nodes": 4800,
+          "nps": 986902,
+          "pv": "e5d3 d7d6 f1e2"
+        },
+        "off": {
+          "bestmove": "e5d3",
+          "score": 180,
+          "nodes": 5041,
+          "nps": 971085,
+          "pv": "e5d3 d7d6 f1e2"
+        },
+        "node_ratio": 0.9522,
+        "node_delta": -241,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d4": {
+        "on": {
+          "bestmove": "e5d3",
+          "score": 198,
+          "nodes": 8656,
+          "nps": 954049,
+          "pv": "e5d3 d7d6 f1e2 b4c3"
+        },
+        "off": {
+          "bestmove": "e5d3",
+          "score": 198,
+          "nodes": 11711,
+          "nps": 909486,
+          "pv": "e5d3 d7d6 f1e2 b4c3"
+        },
+        "node_ratio": 0.7391,
+        "node_delta": -3055,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d5": {
+        "on": {
+          "bestmove": "c3e4",
+          "score": 258,
+          "nodes": 16172,
+          "nps": 986578,
+          "pv": "c3e4 d4e4 d1e2 d7d5 e2e4"
+        },
+        "off": {
+          "bestmove": "c3e4",
+          "score": 258,
+          "nodes": 24897,
+          "nps": 1034577,
+          "pv": "c3e4 d4e4 d1e2 d7d5 e2e4"
+        },
+        "node_ratio": 0.6496,
+        "node_delta": -8725,
+        "move_agreement": true,
+        "score_delta": 0
+      }
+    }
+  },
+  {
+    "id": "CF_T3",
+    "type": "Sicilian Scheveningen Attack",
+    "fen": "2r2rk1/1bq1bppp/p2pp3/1p2P3/3N1P2/P1NR4/1PP1Q1PP/5R1K w - - 0 18",
+    "depths": {
+      "d2": {
+        "on": {
+          "bestmove": "f1d1",
+          "score": 22,
+          "nodes": 584,
+          "nps": 849207,
+          "pv": "f1d1 d6d5"
+        },
+        "off": {
+          "bestmove": "f1d1",
+          "score": 22,
+          "nodes": 584,
+          "nps": 887133,
+          "pv": "f1d1 d6d5"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d3": {
+        "on": {
+          "bestmove": "e5d6",
+          "score": 121,
+          "nodes": 5819,
+          "nps": 1573170,
+          "pv": "e5d6 c7d6 d4b5"
+        },
+        "off": {
+          "bestmove": "e5d6",
+          "score": 121,
+          "nodes": 5819,
+          "nps": 1641930,
+          "pv": "e5d6 c7d6 d4b5"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d4": {
+        "on": {
+          "bestmove": "e5d6",
+          "score": 35,
+          "nodes": 9321,
+          "nps": 1272109,
+          "pv": "e5d6 c7d6 d4b5 d6b6"
+        },
+        "off": {
+          "bestmove": "d4e6",
+          "score": 155,
+          "nodes": 9793,
+          "nps": 1288281,
+          "pv": "d4e6 f7e6 e5d6 c7d7"
+        },
+        "node_ratio": 0.9518,
+        "node_delta": -472,
+        "move_agreement": false,
+        "score_delta": -120
+      },
+      "d5": {
+        "on": {
+          "bestmove": "d4e6",
+          "score": 155,
+          "nodes": 16321,
+          "nps": 1280329,
+          "pv": "d4e6 f7e6 e5d6 c7d7 d6e7"
+        },
+        "off": {
+          "bestmove": "d4e6",
+          "score": 155,
+          "nodes": 14217,
+          "nps": 1406412,
+          "pv": "d4e6 f7e6 e5d6 c7d7 d6e7"
+        },
+        "node_ratio": 1.148,
+        "node_delta": 2104,
+        "move_agreement": true,
+        "score_delta": 0
+      }
+    }
+  },
+  {
+    "id": "CF_C1",
+    "type": "Closed Queen's Gambit",
+    "fen": "rnbq1rk1/ppp1bppp/4pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQ - 4 6",
+    "depths": {
+      "d2": {
+        "on": {
+          "bestmove": "c4d5",
+          "score": 10,
+          "nodes": 476,
+          "nps": 833041,
+          "pv": "c4d5 e6d5"
+        },
+        "off": {
+          "bestmove": "c4d5",
+          "score": 10,
+          "nodes": 476,
+          "nps": 877257,
+          "pv": "c4d5 e6d5"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d3": {
+        "on": {
+          "bestmove": "g5f6",
+          "score": 20,
+          "nodes": 4120,
+          "nps": 1651037,
+          "pv": "g5f6 e7f6 e2e4"
+        },
+        "off": {
+          "bestmove": "g5f6",
+          "score": 20,
+          "nodes": 4327,
+          "nps": 1592272,
+          "pv": "g5f6 e7f6 e2e4"
+        },
+        "node_ratio": 0.9522,
+        "node_delta": -207,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d4": {
+        "on": {
+          "bestmove": "g5f6",
+          "score": 13,
+          "nodes": 7978,
+          "nps": 1111745,
+          "pv": "g5f6 e7f6 e2e4 f8e8"
+        },
+        "off": {
+          "bestmove": "g5f6",
+          "score": 13,
+          "nodes": 8530,
+          "nps": 1176730,
+          "pv": "g5f6 e7f6 e2e4 f8e8"
+        },
+        "node_ratio": 0.9353,
+        "node_delta": -552,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d5": {
+        "on": {
+          "bestmove": "g5f6",
+          "score": 33,
+          "nodes": 12873,
+          "nps": 1266342,
+          "pv": "g5f6 e7f6 e2e4 d5e4 c3e4"
+        },
+        "off": {
+          "bestmove": "g5f6",
+          "score": 33,
+          "nodes": 13974,
+          "nps": 1349206,
+          "pv": "g5f6 e7f6 e2e4 d5e4 c3e4"
+        },
+        "node_ratio": 0.9212,
+        "node_delta": -1101,
+        "move_agreement": true,
+        "score_delta": 0
+      }
+    }
+  },
+  {
+    "id": "CF_C2",
+    "type": "French Advance Closed Chain",
+    "fen": "r1bqk2r/pp1nbppp/2n1p3/2ppP3/3P1P2/2N1BN2/PPP3PP/R2QKB1R w KQkq - 1 8",
+    "depths": {
+      "d2": {
+        "on": {
+          "bestmove": "f1d3",
+          "score": 34,
+          "nodes": 569,
+          "nps": 711872,
+          "pv": "f1d3 c5d4"
+        },
+        "off": {
+          "bestmove": "f1d3",
+          "score": 34,
+          "nodes": 569,
+          "nps": 605512,
+          "pv": "f1d3 c5d4"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d3": {
+        "on": {
+          "bestmove": "a2a3",
+          "score": 25,
+          "nodes": 5932,
+          "nps": 1201150,
+          "pv": "a2a3 d8b6 f1b5"
+        },
+        "off": {
+          "bestmove": "a2a3",
+          "score": 25,
+          "nodes": 5932,
+          "nps": 1002314,
+          "pv": "a2a3 d8b6 f1b5"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d4": {
+        "on": {
+          "bestmove": "f1d3",
+          "score": 15,
+          "nodes": 10861,
+          "nps": 1061059,
+          "pv": "f1d3 d8b6 c3b5 c5d4"
+        },
+        "off": {
+          "bestmove": "f1d3",
+          "score": 15,
+          "nodes": 12855,
+          "nps": 1073351,
+          "pv": "f1d3 d8b6 c3b5 c5d4"
+        },
+        "node_ratio": 0.8449,
+        "node_delta": -1994,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d5": {
+        "on": {
+          "bestmove": "f1b5",
+          "score": 28,
+          "nodes": 29067,
+          "nps": 1194221,
+          "pv": "f1b5 c5d4 f3d4 e7h4 g2g3"
+        },
+        "off": {
+          "bestmove": "f1b5",
+          "score": 28,
+          "nodes": 34408,
+          "nps": 1181439,
+          "pv": "f1b5 c5d4 f3d4 e7h4 g2g3"
+        },
+        "node_ratio": 0.8448,
+        "node_delta": -5341,
+        "move_agreement": true,
+        "score_delta": 0
+      }
+    }
+  },
+  {
+    "id": "CF_R1",
+    "type": "Quiet Rook Endgame 4v3",
+    "fen": "8/5pk1/4p1p1/1R5p/8/6P1/r4PKP/8 w - - 0 35",
+    "depths": {
+      "d2": {
+        "on": {
+          "bestmove": "b5b7",
+          "score": -110,
+          "nodes": 216,
+          "nps": 852743,
+          "pv": "b5b7 e6e5"
+        },
+        "off": {
+          "bestmove": "b5b7",
+          "score": -110,
+          "nodes": 216,
+          "nps": 931034,
+          "pv": "b5b7 e6e5"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d3": {
+        "on": {
+          "bestmove": "h2h3",
+          "score": -95,
+          "nodes": 1583,
+          "nps": 2006591,
+          "pv": "h2h3 a2c2 b5b7"
+        },
+        "off": {
+          "bestmove": "h2h3",
+          "score": -95,
+          "nodes": 1583,
+          "nps": 2006337,
+          "pv": "h2h3 a2c2 b5b7"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d4": {
+        "on": {
+          "bestmove": "b5b7",
+          "score": -100,
+          "nodes": 2050,
+          "nps": 1860422,
+          "pv": "b5b7 e6e5 b7e7 a2e2"
+        },
+        "off": {
+          "bestmove": "b5b7",
+          "score": -100,
+          "nodes": 2168,
+          "nps": 1849040,
+          "pv": "b5b7 e6e5 b7e7 a2e2"
+        },
+        "node_ratio": 0.9456,
+        "node_delta": -118,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d5": {
+        "on": {
+          "bestmove": "b5b7",
+          "score": -108,
+          "nodes": 3254,
+          "nps": 1902367,
+          "pv": "b5b7 a2c2 g2g1 e6e5 h2h3"
+        },
+        "off": {
+          "bestmove": "b5b7",
+          "score": -108,
+          "nodes": 3719,
+          "nps": 1916121,
+          "pv": "b5b7 a2c2 g2g1 e6e5 h2h3"
+        },
+        "node_ratio": 0.875,
+        "node_delta": -465,
+        "move_agreement": true,
+        "score_delta": 0
+      }
+    }
+  },
+  {
+    "id": "CF_R2",
+    "type": "Rook Exchange Decision",
+    "fen": "3r2k1/p4ppp/1p2p3/8/8/1P2P3/P4PPP/3R2K1 w - - 0 1",
+    "depths": {
+      "d2": {
+        "on": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 127,
+          "nps": 1116974,
+          "pv": "d1d8"
+        },
+        "off": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 127,
+          "nps": 1118942,
+          "pv": "d1d8"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d3": {
+        "on": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 521,
+          "nps": 2454074,
+          "pv": "d1d8"
+        },
+        "off": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 521,
+          "nps": 2415391,
+          "pv": "d1d8"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d4": {
+        "on": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 1052,
+          "nps": 2563977,
+          "pv": "d1d8"
+        },
+        "off": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 1052,
+          "nps": 2172655,
+          "pv": "d1d8"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d5": {
+        "on": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 3438,
+          "nps": 3728445,
+          "pv": "d1d8"
+        },
+        "off": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 3438,
+          "nps": 3595106,
+          "pv": "d1d8"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      }
+    }
+  },
+  {
+    "id": "CF_P1",
+    "type": "Mutual 7th Rank Passer Race",
+    "fen": "8/1P6/8/8/8/8/p7/k6K w - - 0 1",
+    "depths": {
+      "d2": {
+        "on": {
+          "bestmove": "h1g1",
+          "score": 643,
+          "nodes": 51,
+          "nps": 625766,
+          "pv": "h1g1 a1b2"
+        },
+        "off": {
+          "bestmove": "h1g1",
+          "score": 643,
+          "nodes": 67,
+          "nps": 750279,
+          "pv": "h1g1 a1b2"
+        },
+        "node_ratio": 0.7612,
+        "node_delta": -16,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d3": {
+        "on": {
+          "bestmove": "h1g1",
+          "score": 643,
+          "nodes": 90,
+          "nps": 740740,
+          "pv": "h1g1 a1b2 b7b8q"
+        },
+        "off": {
+          "bestmove": "h1g1",
+          "score": 643,
+          "nodes": 189,
+          "nps": 1388684,
+          "pv": "h1g1 a1b2 b7b8q"
+        },
+        "node_ratio": 0.4762,
+        "node_delta": -99,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d4": {
+        "on": {
+          "bestmove": "h1g1",
+          "score": 643,
+          "nodes": 172,
+          "nps": 1162162,
+          "pv": "h1g1 a1b2 b7b8q b2a3"
+        },
+        "off": {
+          "bestmove": "h1g1",
+          "score": 643,
+          "nodes": 371,
+          "nps": 1599137,
+          "pv": "h1g1 a1b2 b7b8q b2a3"
+        },
+        "node_ratio": 0.4636,
+        "node_delta": -199,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d5": {
+        "on": {
+          "bestmove": "h1g1",
+          "score": 660,
+          "nodes": 766,
+          "nps": 1976774,
+          "pv": "h1g1 a1b2 b7b8q b2a3 b8d6"
+        },
+        "off": {
+          "bestmove": "h1g1",
+          "score": 660,
+          "nodes": 1418,
+          "nps": 2485974,
+          "pv": "h1g1 a1b2 b7b8q b2a3 b8d6"
+        },
+        "node_ratio": 0.5402,
+        "node_delta": -652,
+        "move_agreement": true,
+        "score_delta": 0
+      }
+    }
+  },
+  {
+    "id": "CF_P2",
+    "type": "Rook Blockading 2nd Rank Passer",
+    "fen": "8/4k3/8/8/8/4K3/1p6/1R6 w - - 0 1",
+    "depths": {
+      "d2": {
+        "on": {
+          "bestmove": "b1b2",
+          "score": 519,
+          "nodes": 66,
+          "nps": 796139,
+          "pv": "b1b2 e7f8"
+        },
+        "off": {
+          "bestmove": "e3e2",
+          "score": 527,
+          "nodes": 239,
+          "nps": 1406709,
+          "pv": "e3e2 e7f8"
+        },
+        "node_ratio": 0.2762,
+        "node_delta": -173,
+        "move_agreement": false,
+        "score_delta": -8
+      },
+      "d3": {
+        "on": {
+          "bestmove": "b1b2",
+          "score": 547,
+          "nodes": 239,
+          "nps": 1687853,
+          "pv": "b1b2 e7f7 b2b7"
+        },
+        "off": {
+          "bestmove": "b1b2",
+          "score": 547,
+          "nodes": 946,
+          "nps": 2692088,
+          "pv": "b1b2 e7f7 b2b7"
+        },
+        "node_ratio": 0.2526,
+        "node_delta": -707,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d4": {
+        "on": {
+          "bestmove": "b1b2",
+          "score": 547,
+          "nodes": 684,
+          "nps": 1425000,
+          "pv": "b1b2 e7f7 b2b7 f7g8"
+        },
+        "off": {
+          "bestmove": "b1b2",
+          "score": 547,
+          "nodes": 2065,
+          "nps": 2330962,
+          "pv": "b1b2 e7f7 b2b7 f7g8"
+        },
+        "node_ratio": 0.3312,
+        "node_delta": -1381,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d5": {
+        "on": {
+          "bestmove": "b1b2",
+          "score": 563,
+          "nodes": 2346,
+          "nps": 2438162,
+          "pv": "b1b2 e7f7 b2b7 f7g8 e3d2"
+        },
+        "off": {
+          "bestmove": "b1b2",
+          "score": 563,
+          "nodes": 4405,
+          "nps": 2792216,
+          "pv": "b1b2 e7f7 b2b7 f7g8 e3d2"
+        },
+        "node_ratio": 0.5326,
+        "node_delta": -2059,
+        "move_agreement": true,
+        "score_delta": 0
+      }
+    }
+  },
+  {
+    "id": "CF_P3",
+    "type": "Mutual Pawn Zugzwang",
+    "fen": "8/8/p1p5/1p5p/1P5P/kPK5/8/8 w - - 0 1",
+    "depths": {
+      "d2": {
+        "on": {
+          "bestmove": "c3d2",
+          "score": -180,
+          "nodes": 40,
+          "nps": 421052,
+          "pv": "c3d2 a3b4"
+        },
+        "off": {
+          "bestmove": "c3d2",
+          "score": -180,
+          "nodes": 40,
+          "nps": 486026,
+          "pv": "c3d2 a3b4"
+        },
+        "node_ratio": 1.0,
+        "node_delta": 0,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d3": {
+        "on": {
+          "bestmove": "c3c2",
+          "score": -168,
+          "nodes": 137,
+          "nps": 1071149,
+          "pv": "c3c2 a3b4 c2b2"
+        },
+        "off": {
+          "bestmove": "c3c2",
+          "score": -168,
+          "nodes": 149,
+          "nps": 1123680,
+          "pv": "c3c2 a3b4 c2b2"
+        },
+        "node_ratio": 0.9195,
+        "node_delta": -12,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d4": {
+        "on": {
+          "bestmove": "c3c2",
+          "score": -193,
+          "nodes": 270,
+          "nps": 1297453,
+          "pv": "c3c2 a3b4 c2b2 c6c5"
+        },
+        "off": {
+          "bestmove": "c3c2",
+          "score": -193,
+          "nodes": 282,
+          "nps": 1357727,
+          "pv": "c3c2 a3b4 c2b2 c6c5"
+        },
+        "node_ratio": 0.9574,
+        "node_delta": -12,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d5": {
+        "on": {
+          "bestmove": "c3c2",
+          "score": -197,
+          "nodes": 537,
+          "nps": 1777557,
+          "pv": "c3c2 a3b4 c2b2 c6c5 b2a2"
+        },
+        "off": {
+          "bestmove": "c3c2",
+          "score": -197,
+          "nodes": 575,
+          "nps": 1755189,
+          "pv": "c3c2 a3b4 c2b2 c6c5 b2a2"
+        },
+        "node_ratio": 0.9339,
+        "node_delta": -38,
+        "move_agreement": true,
+        "score_delta": 0
+      }
+    }
+  }
+]

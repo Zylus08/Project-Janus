@@ -1,0 +1,53 @@
+{
+  "milestone": "P1.21",
+  "candidate": "Janus Classical X26",
+  "tracks": {
+    "1T": "X26-S (Single-Thread Strength Candidate)",
+    "4T": "X26-P (SMP Parallel Candidate)"
+  },
+  "timestamp_utc": "2026-11-15T19:10:00Z",
+  "source_parent_commit": "c232730",
+  "intervention": "Option A: Verified Reverse Futility Pruning Correctness Repair",
+  "artifacts": {
+    "executable": {
+      "path": "analysis/phase1/p1.21/control/janus_classical_x26.exe",
+      "size_bytes": 1616384,
+      "sha256": "0C2338DB3643F06C1E61AEADFD7B01A0E87BE5C4975E595123163F712F00C380"
+    },
+    "dynamic_library": {
+      "path": "analysis/phase1/p1.21/control/janus_classical_x26.dll",
+      "size_bytes": 1517568,
+      "sha256": "4E4DC1F81AEBEC6B20E04D7605B5B765E3875269F28D11250EA9F3623A4236BC"
+    },
+    "source_code": {
+      "path": "analysis/phase1/p1.21/control/janus_classical_x26.cpp",
+      "size_bytes": 266545,
+      "sha256": "C6EE178EEE406965A5DFF9C8103DF0BCBA8AFD326BA19186B4CD4A945C2C1412"
+    }
+  },
+  "configuration": {
+    "X26-S": {
+      "threads": 1,
+      "eval_mode": 5,
+      "rfp_margin_per_depth": 120,
+      "rfp_repair_mode": 3,
+      "backward_pawns": 0,
+      "connected_passers": 1,
+      "outposts": 1,
+      "pawn_hash": true,
+      "lmp": false
+    },
+    "X26-P": {
+      "threads": 4,
+      "eval_mode": 10,
+      "rfp_margin_per_depth": 90,
+      "rfp_repair_mode": 3,
+      "backward_pawns": 0,
+      "connected_passers": 1,
+      "outposts": 1,
+      "pawn_hash": true,
+      "lmp": true,
+      "lmp_mode": 1
+    }
+  }
+}

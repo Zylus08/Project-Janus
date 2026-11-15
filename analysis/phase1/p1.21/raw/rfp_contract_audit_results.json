@@ -1,0 +1,362 @@
+[
+  {
+    "test_id": "CAT1_MATE_1",
+    "category": "Mate-threat blindness",
+    "fen": "r1b2rk1/pp3ppp/2n1p3/8/2B5/4q3/PPP3PP/3R1R1K w - - 0 16",
+    "description": "White up material but king under heavy queen penetration",
+    "risk_type": "Heuristic selectivity / Tactical blindness",
+    "d2": {
+      "on": {
+        "depth": 2,
+        "bestmove": "f1f3",
+        "score": -1283,
+        "nodes": 814,
+        "nps": 1205390
+      },
+      "off": {
+        "depth": 2,
+        "bestmove": "f1f3",
+        "score": -1283,
+        "nodes": 814,
+        "nps": 1397664
+      },
+      "move_agreement": true,
+      "node_ratio": 1.0,
+      "score_delta": 0
+    },
+    "d3": {
+      "on": {
+        "depth": 3,
+        "bestmove": "c4b5",
+        "score": -1289,
+        "nodes": 4150,
+        "nps": 1569829
+      },
+      "off": {
+        "depth": 3,
+        "bestmove": "c4b5",
+        "score": -1289,
+        "nodes": 4150,
+        "nps": 1646237
+      },
+      "move_agreement": true,
+      "node_ratio": 1.0,
+      "score_delta": 0
+    }
+  },
+  {
+    "test_id": "CAT1_MATE_2",
+    "category": "Mate-threat blindness",
+    "fen": "r1b1k2r/pppp1ppp/8/4N3/1b1qn3/2N5/PPPP1PPP/R1BQKB1R w KQkq - 1 7",
+    "description": "Scholar/Fried-liver style mate threat on f2",
+    "risk_type": "Tactical mate blindness",
+    "d2": {
+      "on": {
+        "depth": 2,
+        "bestmove": "d1h5",
+        "score": 176,
+        "nodes": 1361,
+        "nps": 737749
+      },
+      "off": {
+        "depth": 2,
+        "bestmove": "d1h5",
+        "score": 176,
+        "nodes": 1361,
+        "nps": 728235
+      },
+      "move_agreement": true,
+      "node_ratio": 1.0,
+      "score_delta": 0
+    },
+    "d3": {
+      "on": {
+        "depth": 3,
+        "bestmove": "e5d3",
+        "score": 180,
+        "nodes": 3652,
+        "nps": 1102790
+      },
+      "off": {
+        "depth": 3,
+        "bestmove": "e5d3",
+        "score": 180,
+        "nodes": 3893,
+        "nps": 1084189
+      },
+      "move_agreement": true,
+      "node_ratio": 0.938,
+      "score_delta": 0
+    }
+  },
+  {
+    "test_id": "CAT2_ZUG_1",
+    "category": "Zugzwang",
+    "fen": "8/8/p1p5/1p5p/1P5P/kPK5/8/8 w - - 0 1",
+    "description": "Classic K&P mutual zugzwang",
+    "risk_type": "Evaluation-search assumption violation",
+    "d2": {
+      "on": {
+        "depth": 2,
+        "bestmove": "c3d2",
+        "score": -180,
+        "nodes": 40,
+        "nps": 1286173
+      },
+      "off": {
+        "depth": 2,
+        "bestmove": "c3d2",
+        "score": -180,
+        "nodes": 40,
+        "nps": 1785714
+      },
+      "move_agreement": true,
+      "node_ratio": 1.0,
+      "score_delta": 0
+    },
+    "d3": {
+      "on": {
+        "depth": 3,
+        "bestmove": "c3c2",
+        "score": -168,
+        "nodes": 117,
+        "nps": 2142857
+      },
+      "off": {
+        "depth": 3,
+        "bestmove": "c3c2",
+        "score": -168,
+        "nodes": 129,
+        "nps": 2585170
+      },
+      "move_agreement": true,
+      "node_ratio": 0.907,
+      "score_delta": 0
+    }
+  },
+  {
+    "test_id": "CAT2_ZUG_2",
+    "category": "Zugzwang",
+    "fen": "8/8/8/4p3/3kP3/8/4K3/8 w - - 0 1",
+    "description": "King & Pawn opposition zugzwang",
+    "risk_type": "Opposition loss",
+    "d2": {
+      "on": {
+        "depth": 2,
+        "bestmove": "e2f3",
+        "score": 6,
+        "nodes": 43,
+        "nps": 1755102
+      },
+      "off": {
+        "depth": 2,
+        "bestmove": "e2f3",
+        "score": 6,
+        "nodes": 43,
+        "nps": 2311827
+      },
+      "move_agreement": true,
+      "node_ratio": 1.0,
+      "score_delta": 0
+    },
+    "d3": {
+      "on": {
+        "depth": 3,
+        "bestmove": "e2f3",
+        "score": -93,
+        "nodes": 123,
+        "nps": 3044554
+      },
+      "off": {
+        "depth": 3,
+        "bestmove": "e2f3",
+        "score": -93,
+        "nodes": 123,
+        "nps": 3153846
+      },
+      "move_agreement": true,
+      "node_ratio": 1.0,
+      "score_delta": 0
+    }
+  },
+  {
+    "test_id": "CAT3_SAC_1",
+    "category": "Tactical sacrifice",
+    "fen": "r1bqk2r/pp1nbppp/2p1pn2/3p4/2PP4/2N1PN2/PPQ2PPP/R1B1KB1R w KQkq - 4 7",
+    "description": "Standard quiet opening structure",
+    "risk_type": "Baseline quiet control",
+    "d2": {
+      "on": {
+        "depth": 2,
+        "bestmove": "c4c5",
+        "score": 29,
+        "nodes": 535,
+        "nps": 980392
+      },
+      "off": {
+        "depth": 2,
+        "bestmove": "c4c5",
+        "score": 29,
+        "nodes": 535,
+        "nps": 1117843
+      },
+      "move_agreement": true,
+      "node_ratio": 1.0,
+      "score_delta": 0
+    },
+    "d3": {
+      "on": {
+        "depth": 3,
+        "bestmove": "c4c5",
+        "score": 52,
+        "nodes": 3898,
+        "nps": 2022413
+      },
+      "off": {
+        "depth": 3,
+        "bestmove": "c4c5",
+        "score": 52,
+        "nodes": 3898,
+        "nps": 2112622
+      },
+      "move_agreement": true,
+      "node_ratio": 1.0,
+      "score_delta": 0
+    }
+  },
+  {
+    "test_id": "CAT3_DEF_1",
+    "category": "Quiet defense",
+    "fen": "3r2k1/p4ppp/1p2p3/8/8/1P2P3/P4PPP/3R2K1 w - - 0 1",
+    "description": "Rook endgame back-rank threat",
+    "risk_type": "Tactical back-rank exchange",
+    "d2": {
+      "on": {
+        "depth": 2,
+        "bestmove": "d1d8",
+        "score": 28999,
+        "nodes": 127,
+        "nps": 2035256
+      },
+      "off": {
+        "depth": 2,
+        "bestmove": "d1d8",
+        "score": 28999,
+        "nodes": 127,
+        "nps": 2015873
+      },
+      "move_agreement": true,
+      "node_ratio": 1.0,
+      "score_delta": 0
+    },
+    "d3": {
+      "on": {
+        "depth": 3,
+        "bestmove": "d1d8",
+        "score": 28999,
+        "nodes": 468,
+        "nps": 4017167
+      },
+      "off": {
+        "depth": 3,
+        "bestmove": "d1d8",
+        "score": 28999,
+        "nodes": 468,
+        "nps": 4266180
+      },
+      "move_agreement": true,
+      "node_ratio": 1.0,
+      "score_delta": 0
+    }
+  },
+  {
+    "test_id": "CAT4_RACE_1",
+    "category": "Passed pawn race",
+    "fen": "8/1P6/8/8/8/8/p7/k6K w - - 0 1",
+    "description": "Both sides have pawn on 7th rank; dynamic promotion determines outcome",
+    "risk_type": "Static evaluation lag vs promotion horizon",
+    "d2": {
+      "on": {
+        "depth": 2,
+        "bestmove": "h1g1",
+        "score": 643,
+        "nodes": 51,
+        "nps": 1814946
+      },
+      "off": {
+        "depth": 2,
+        "bestmove": "h1g1",
+        "score": 643,
+        "nodes": 67,
+        "nps": 2680000
+      },
+      "move_agreement": true,
+      "node_ratio": 0.761,
+      "score_delta": 0
+    },
+    "d3": {
+      "on": {
+        "depth": 3,
+        "bestmove": "h1g1",
+        "score": 643,
+        "nodes": 62,
+        "nps": 2952380
+      },
+      "off": {
+        "depth": 3,
+        "bestmove": "h1g1",
+        "score": 643,
+        "nodes": 145,
+        "nps": 3708439
+      },
+      "move_agreement": true,
+      "node_ratio": 0.428,
+      "score_delta": 0
+    }
+  },
+  {
+    "test_id": "CAT4_RACE_2",
+    "category": "Passed pawn race",
+    "fen": "8/4k3/8/8/8/4K3/1p6/1R6 w - - 0 1",
+    "description": "Rook vs passed pawn on 2nd rank",
+    "risk_type": "Piece vs passer valuation",
+    "d2": {
+      "on": {
+        "depth": 2,
+        "bestmove": "b1b2",
+        "score": 519,
+        "nodes": 66,
+        "nps": 2237288
+      },
+      "off": {
+        "depth": 2,
+        "bestmove": "e3e2",
+        "score": 527,
+        "nodes": 239,
+        "nps": 2320388
+      },
+      "move_agreement": false,
+      "node_ratio": 0.276,
+      "score_delta": -8
+    },
+    "d3": {
+      "on": {
+        "depth": 3,
+        "bestmove": "b1b2",
+        "score": 547,
+        "nodes": 223,
+        "nps": 3430769
+      },
+      "off": {
+        "depth": 3,
+        "bestmove": "b1b2",
+        "score": 547,
+        "nodes": 757,
+        "nps": 3815524
+      },
+      "move_agreement": true,
+      "node_ratio": 0.295,
+      "score_delta": 0
+    }
+  }
+]

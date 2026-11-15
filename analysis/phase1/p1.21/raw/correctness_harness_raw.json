@@ -1,0 +1,314 @@
+{
+  "perft_suite": {
+    "all_passed": true,
+    "positions": [
+      {
+        "id": "PERFT_01_STARTPOS",
+        "name": "Standard Startpos",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "depths": [
+          {
+            "depth": 1,
+            "expected": 20,
+            "actual": 20,
+            "passed": true,
+            "elapsed_sec": 1e-05,
+            "nps": 1739130
+          },
+          {
+            "depth": 2,
+            "expected": 400,
+            "actual": 400,
+            "passed": true,
+            "elapsed_sec": 2e-05,
+            "nps": 19230769
+          },
+          {
+            "depth": 3,
+            "expected": 8902,
+            "actual": 8902,
+            "passed": true,
+            "elapsed_sec": 0.00039,
+            "nps": 23098079
+          },
+          {
+            "depth": 4,
+            "expected": 197281,
+            "actual": 197281,
+            "passed": true,
+            "elapsed_sec": 0.00837,
+            "nps": 23566070
+          },
+          {
+            "depth": 5,
+            "expected": 4865609,
+            "actual": 4865609,
+            "passed": true,
+            "elapsed_sec": 0.21026,
+            "nps": 23140486
+          }
+        ]
+      },
+      {
+        "id": "PERFT_02_KIWIPETE",
+        "name": "Kiwipete Complex",
+        "fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+        "depths": [
+          {
+            "depth": 1,
+            "expected": 48,
+            "actual": 48,
+            "passed": true,
+            "elapsed_sec": 1e-05,
+            "nps": 6400000
+          },
+          {
+            "depth": 2,
+            "expected": 2039,
+            "actual": 2039,
+            "passed": true,
+            "elapsed_sec": 0.00011,
+            "nps": 17901668
+          },
+          {
+            "depth": 3,
+            "expected": 97862,
+            "actual": 97862,
+            "passed": true,
+            "elapsed_sec": 0.00502,
+            "nps": 19482779
+          },
+          {
+            "depth": 4,
+            "expected": 4085603,
+            "actual": 4085603,
+            "passed": true,
+            "elapsed_sec": 0.19234,
+            "nps": 21242008
+          }
+        ]
+      },
+      {
+        "id": "PERFT_03_SILVER",
+        "name": "Silver Suite King Walks",
+        "fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+        "depths": [
+          {
+            "depth": 1,
+            "expected": 14,
+            "actual": 14,
+            "passed": true,
+            "elapsed_sec": 0.0,
+            "nps": 3255813
+          },
+          {
+            "depth": 2,
+            "expected": 191,
+            "actual": 191,
+            "passed": true,
+            "elapsed_sec": 2e-05,
+            "nps": 10052631
+          },
+          {
+            "depth": 3,
+            "expected": 2812,
+            "actual": 2812,
+            "passed": true,
+            "elapsed_sec": 0.00019,
+            "nps": 14823405
+          },
+          {
+            "depth": 4,
+            "expected": 43238,
+            "actual": 43238,
+            "passed": true,
+            "elapsed_sec": 0.00298,
+            "nps": 14517190
+          },
+          {
+            "depth": 5,
+            "expected": 674624,
+            "actual": 674624,
+            "passed": true,
+            "elapsed_sec": 0.0424,
+            "nps": 15912331
+          }
+        ]
+      },
+      {
+        "id": "PERFT_04_POS4",
+        "name": "Position 4 Promotions",
+        "fen": "r3k2r/Pppp1ppp/1b3nbN/nP6/BBP1P3/q4N2/Pp1P2PP/R2Q1RK1 w kq - 0 1",
+        "depths": [
+          {
+            "depth": 1,
+            "expected": 6,
+            "actual": 6,
+            "passed": true,
+            "elapsed_sec": 1e-05,
+            "nps": 952380
+          },
+          {
+            "depth": 2,
+            "expected": 264,
+            "actual": 264,
+            "passed": true,
+            "elapsed_sec": 2e-05,
+            "nps": 11891891
+          },
+          {
+            "depth": 3,
+            "expected": 9467,
+            "actual": 9467,
+            "passed": true,
+            "elapsed_sec": 0.0005,
+            "nps": 18960544
+          },
+          {
+            "depth": 4,
+            "expected": 422333,
+            "actual": 422333,
+            "passed": true,
+            "elapsed_sec": 0.02281,
+            "nps": 18514769
+          }
+        ]
+      },
+      {
+        "id": "PERFT_05_POS5",
+        "name": "Position 5 King Defense Checks",
+        "fen": "rnbq1k1r/pp1Pbppp/2p5/8/2B5/8/PPP1NnPP/RNBQK2R w KQ - 1 8",
+        "depths": [
+          {
+            "depth": 1,
+            "expected": 44,
+            "actual": 44,
+            "passed": true,
+            "elapsed_sec": 1e-05,
+            "nps": 7586207
+          },
+          {
+            "depth": 2,
+            "expected": 1486,
+            "actual": 1486,
+            "passed": true,
+            "elapsed_sec": 8e-05,
+            "nps": 19348958
+          },
+          {
+            "depth": 3,
+            "expected": 62379,
+            "actual": 62379,
+            "passed": true,
+            "elapsed_sec": 0.00333,
+            "nps": 18739185
+          },
+          {
+            "depth": 4,
+            "expected": 2103487,
+            "actual": 2103487,
+            "passed": true,
+            "elapsed_sec": 0.09988,
+            "nps": 21060711
+          }
+        ]
+      }
+    ]
+  },
+  "referee_suite": {
+    "all_passed": true,
+    "cases": [
+      {
+        "id": "REF_01",
+        "name": "Bare Kings (K vs K)",
+        "passed": true,
+        "details": "Expected insufficient=1"
+      },
+      {
+        "id": "REF_02",
+        "name": "Minor Piece (K+N vs K)",
+        "passed": true,
+        "details": "Expected insufficient=1"
+      },
+      {
+        "id": "REF_03",
+        "name": "Minor Piece (K+B vs K)",
+        "passed": true,
+        "details": "Expected insufficient=1"
+      },
+      {
+        "id": "REF_04",
+        "name": "Two Knights (K+NN vs K)",
+        "passed": true,
+        "details": "Expected insufficient=0 (mating material exists)"
+      },
+      {
+        "id": "REF_05",
+        "name": "Pawn Endgame (K+P vs K)",
+        "passed": true,
+        "details": "Expected insufficient=0"
+      },
+      {
+        "id": "REF_06",
+        "name": "Fifty-Move Rule Claimable (halfmove=100)",
+        "passed": true,
+        "details": "Expected claimable=1"
+      },
+      {
+        "id": "REF_07",
+        "name": "Seventy-Five Move Rule Auto (halfmove=150)",
+        "passed": true,
+        "details": "Expected auto_draw=1"
+      },
+      {
+        "id": "REF_08",
+        "name": "Threefold Repetition Claimable (count=3)",
+        "passed": true,
+        "details": "Expected claimable=1"
+      },
+      {
+        "id": "REF_09",
+        "name": "Fivefold Repetition Auto Draw (count=5)",
+        "passed": true,
+        "details": "Expected auto_draw=1"
+      },
+      {
+        "id": "REF_10",
+        "name": "Stalemate (in_check=0, legal_moves=0)",
+        "passed": true,
+        "details": "check=0, legal=0"
+      },
+      {
+        "id": "REF_11",
+        "name": "Checkmate (in_check=1, legal_moves=0)",
+        "passed": true,
+        "details": "check=1, legal=0"
+      },
+      {
+        "id": "REF_12",
+        "name": "King Move Castling Rights Invalidation",
+        "passed": true,
+        "details": "after=0, restored=3"
+      },
+      {
+        "id": "REF_13",
+        "name": "Rook Move Castling Invalidation",
+        "passed": true,
+        "details": "W_OO=0, W_OOO=2"
+      },
+      {
+        "id": "REF_14",
+        "name": "En Passant Pawn Capture & Unmake",
+        "passed": true,
+        "details": "e5_cleared=True, restored=True"
+      },
+      {
+        "id": "REF_15",
+        "name": "All Promotion Pieces (Q, R, B, N)",
+        "passed": true,
+        "details": "found_prom_pieces=4/4"
+      }
+    ]
+  },
+  "overall_qualification_passed": true
+}

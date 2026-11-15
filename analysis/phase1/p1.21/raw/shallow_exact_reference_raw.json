@@ -1,0 +1,792 @@
+[
+  {
+    "id": "EX_01",
+    "name": "Startpos",
+    "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "depths": {
+      "d1": {
+        "depth": 1,
+        "exact_staged": {
+          "bestmove": "b1c3",
+          "score": 64,
+          "nodes": 21,
+          "pv": "b1c3"
+        },
+        "exact_legacy": {
+          "bestmove": "b1c3",
+          "score": 64,
+          "nodes": 21,
+          "pv": "b1c3"
+        },
+        "selective": {
+          "bestmove": "b1c3",
+          "score": 64,
+          "nodes": 41,
+          "pv": "b1c3"
+        },
+        "ordering_invariance": true,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d2": {
+        "depth": 2,
+        "exact_staged": {
+          "bestmove": "b1c3",
+          "score": 0,
+          "nodes": 112,
+          "pv": "b1c3 b8c6"
+        },
+        "exact_legacy": {
+          "bestmove": "b1c3",
+          "score": 0,
+          "nodes": 112,
+          "pv": "b1c3 b8c6"
+        },
+        "selective": {
+          "bestmove": "b1c3",
+          "score": 0,
+          "nodes": 207,
+          "pv": "b1c3 b8c6"
+        },
+        "ordering_invariance": true,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d3": {
+        "depth": 3,
+        "exact_staged": {
+          "bestmove": "b1c3",
+          "score": 64,
+          "nodes": 730,
+          "pv": "b1c3 b8c6 g1f3"
+        },
+        "exact_legacy": {
+          "bestmove": "b1c3",
+          "score": 64,
+          "nodes": 768,
+          "pv": "b1c3 b8c6 g1f3"
+        },
+        "selective": {
+          "bestmove": "b1c3",
+          "score": 64,
+          "nodes": 1286,
+          "pv": "b1c3 b8c6 g1f3"
+        },
+        "ordering_invariance": true,
+        "move_agreement": true,
+        "score_delta": 0
+      }
+    }
+  },
+  {
+    "id": "EX_02",
+    "name": "Semi-Slav Quiet",
+    "fen": "r1bq1rk1/pp1nbppp/2p1pn2/3p4/2PP4/2N1PN2/PPQ2PPP/R1B1KB1R w KQ - 0 7",
+    "depths": {
+      "d1": {
+        "depth": 1,
+        "exact_staged": {
+          "bestmove": "c3d5",
+          "score": 158,
+          "nodes": 43,
+          "pv": "c3d5"
+        },
+        "exact_legacy": {
+          "bestmove": "c3d5",
+          "score": 158,
+          "nodes": 43,
+          "pv": "c3d5"
+        },
+        "selective": {
+          "bestmove": "f3g5",
+          "score": 105,
+          "nodes": 107,
+          "pv": "f3g5"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": -53
+      },
+      "d2": {
+        "depth": 2,
+        "exact_staged": {
+          "bestmove": "c4d5",
+          "score": 10,
+          "nodes": 200,
+          "pv": "c4d5 f6d5"
+        },
+        "exact_legacy": {
+          "bestmove": "c4d5",
+          "score": 10,
+          "nodes": 200,
+          "pv": "c4d5 f6d5"
+        },
+        "selective": {
+          "bestmove": "f3g5",
+          "score": 22,
+          "nodes": 724,
+          "pv": "f3g5 g7g6"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": 12
+      },
+      "d3": {
+        "depth": 3,
+        "exact_staged": {
+          "bestmove": "f3g5",
+          "score": 164,
+          "nodes": 2568,
+          "pv": "f3g5 d5c4 g5f7"
+        },
+        "exact_legacy": {
+          "bestmove": "f3g5",
+          "score": 164,
+          "nodes": 2323,
+          "pv": "f3g5 d5c4 g5f7"
+        },
+        "selective": {
+          "bestmove": "c4c5",
+          "score": 52,
+          "nodes": 7189,
+          "pv": "c4c5 b7b6 f3g5"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": -112
+      }
+    }
+  },
+  {
+    "id": "EX_03",
+    "name": "French Advance",
+    "fen": "r1bqk2r/pp1nbppp/2n1p3/2ppP3/3P1P2/2N1BN2/PPP3PP/R2QKB1R w KQkq - 1 8",
+    "depths": {
+      "d1": {
+        "depth": 1,
+        "exact_staged": {
+          "bestmove": "c3d5",
+          "score": 164,
+          "nodes": 41,
+          "pv": "c3d5"
+        },
+        "exact_legacy": {
+          "bestmove": "c3d5",
+          "score": 164,
+          "nodes": 41,
+          "pv": "c3d5"
+        },
+        "selective": {
+          "bestmove": "f1d3",
+          "score": 34,
+          "nodes": 292,
+          "pv": "f1d3"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": -130
+      },
+      "d2": {
+        "depth": 2,
+        "exact_staged": {
+          "bestmove": "d4c5",
+          "score": -35,
+          "nodes": 192,
+          "pv": "d4c5 d7e5"
+        },
+        "exact_legacy": {
+          "bestmove": "d4c5",
+          "score": -35,
+          "nodes": 192,
+          "pv": "d4c5 d7e5"
+        },
+        "selective": {
+          "bestmove": "f1d3",
+          "score": 34,
+          "nodes": 569,
+          "pv": "f1d3 c5d4"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": 69
+      },
+      "d3": {
+        "depth": 3,
+        "exact_staged": {
+          "bestmove": "f1b5",
+          "score": 252,
+          "nodes": 2975,
+          "pv": "f1b5 c5d4 b5c6"
+        },
+        "exact_legacy": {
+          "bestmove": "f1b5",
+          "score": 252,
+          "nodes": 2206,
+          "pv": "f1b5 c5d4 b5c6"
+        },
+        "selective": {
+          "bestmove": "a2a3",
+          "score": 25,
+          "nodes": 5932,
+          "pv": "a2a3 d8b6 f1b5"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": -227
+      }
+    }
+  },
+  {
+    "id": "EX_04",
+    "name": "Sicilian Tactical",
+    "fen": "2r2rk1/1bq1bppp/p2pp3/1p2P3/3N1P2/P1NR4/1PP1Q1PP/5R1K w - - 0 18",
+    "depths": {
+      "d1": {
+        "depth": 1,
+        "exact_staged": {
+          "bestmove": "e5d6",
+          "score": 181,
+          "nodes": 45,
+          "pv": "e5d6"
+        },
+        "exact_legacy": {
+          "bestmove": "e5d6",
+          "score": 181,
+          "nodes": 45,
+          "pv": "e5d6"
+        },
+        "selective": {
+          "bestmove": "e2h5",
+          "score": 34,
+          "nodes": 154,
+          "pv": "e2h5"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": -147
+      },
+      "d2": {
+        "depth": 2,
+        "exact_staged": {
+          "bestmove": "e5d6",
+          "score": -152,
+          "nodes": 1094,
+          "pv": "e5d6 c7c3"
+        },
+        "exact_legacy": {
+          "bestmove": "e5d6",
+          "score": -152,
+          "nodes": 172,
+          "pv": "e5d6 c7c3"
+        },
+        "selective": {
+          "bestmove": "f1d1",
+          "score": 22,
+          "nodes": 584,
+          "pv": "f1d1 d6d5"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": 174
+      },
+      "d3": {
+        "depth": 3,
+        "exact_staged": {
+          "bestmove": "e2g4",
+          "score": 138,
+          "nodes": 4406,
+          "pv": "e2g4 d6e5 f4e5"
+        },
+        "exact_legacy": {
+          "bestmove": "e2g4",
+          "score": 138,
+          "nodes": 3399,
+          "pv": "e2g4 d6e5 f4e5"
+        },
+        "selective": {
+          "bestmove": "e5d6",
+          "score": 121,
+          "nodes": 5819,
+          "pv": "e5d6 c7d6 d4b5"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": -17
+      }
+    }
+  },
+  {
+    "id": "EX_05",
+    "name": "King Defense Queen Attack",
+    "fen": "r1b2rk1/pp3ppp/2n1p3/8/2B5/4q3/PPP3PP/3R1R1K w - - 0 16",
+    "depths": {
+      "d1": {
+        "depth": 1,
+        "exact_staged": {
+          "bestmove": "f1f7",
+          "score": -1106,
+          "nodes": 36,
+          "pv": "f1f7"
+        },
+        "exact_legacy": {
+          "bestmove": "f1f7",
+          "score": -1106,
+          "nodes": 36,
+          "pv": "f1f7"
+        },
+        "selective": {
+          "bestmove": "c4d3",
+          "score": -1275,
+          "nodes": 77,
+          "pv": "c4d3"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": -169
+      },
+      "d2": {
+        "depth": 2,
+        "exact_staged": {
+          "bestmove": "d1d6",
+          "score": -1332,
+          "nodes": 470,
+          "pv": "d1d6 f8d8"
+        },
+        "exact_legacy": {
+          "bestmove": "d1d6",
+          "score": -1332,
+          "nodes": 347,
+          "pv": "d1d6 f8d8"
+        },
+        "selective": {
+          "bestmove": "f1f3",
+          "score": -1283,
+          "nodes": 814,
+          "pv": "f1f3 e3c5"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": 49
+      },
+      "d3": {
+        "depth": 3,
+        "exact_staged": {
+          "bestmove": "f1f3",
+          "score": -1096,
+          "nodes": 4498,
+          "pv": "f1f3 e3c5 c4e6"
+        },
+        "exact_legacy": {
+          "bestmove": "f1f3",
+          "score": -1096,
+          "nodes": 2879,
+          "pv": "f1f3 e3c5 c4e6"
+        },
+        "selective": {
+          "bestmove": "c4b5",
+          "score": -1289,
+          "nodes": 4770,
+          "pv": "c4b5 e3b6 b5c6"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": -193
+      }
+    }
+  },
+  {
+    "id": "EX_06",
+    "name": "Fried Liver Attack f2 Threat",
+    "fen": "r1b1k2r/pppp1ppp/8/4N3/1b1qn3/2N5/PPPP1PPP/R1BQKB1R w KQkq - 1 7",
+    "depths": {
+      "d1": {
+        "depth": 1,
+        "exact_staged": {
+          "bestmove": "c3e4",
+          "score": 563,
+          "nodes": 37,
+          "pv": "c3e4"
+        },
+        "exact_legacy": {
+          "bestmove": "c3e4",
+          "score": 563,
+          "nodes": 37,
+          "pv": "c3e4"
+        },
+        "selective": {
+          "bestmove": "d1f3",
+          "score": 244,
+          "nodes": 248,
+          "pv": "d1f3"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": -319
+      },
+      "d2": {
+        "depth": 2,
+        "exact_staged": {
+          "bestmove": "c3e4",
+          "score": 227,
+          "nodes": 151,
+          "pv": "c3e4 d4e4"
+        },
+        "exact_legacy": {
+          "bestmove": "c3e4",
+          "score": 227,
+          "nodes": 151,
+          "pv": "c3e4 d4e4"
+        },
+        "selective": {
+          "bestmove": "d1h5",
+          "score": 176,
+          "nodes": 1361,
+          "pv": "d1h5 d4f2"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": -51
+      },
+      "d3": {
+        "depth": 3,
+        "exact_staged": {
+          "bestmove": "d1f3",
+          "score": 317,
+          "nodes": 2558,
+          "pv": "d1f3 d4e5 f3e4"
+        },
+        "exact_legacy": {
+          "bestmove": "d1f3",
+          "score": 317,
+          "nodes": 2530,
+          "pv": "d1f3 d4e5 f3e4"
+        },
+        "selective": {
+          "bestmove": "e5d3",
+          "score": 180,
+          "nodes": 4800,
+          "pv": "e5d3 d7d6 f1e2"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": -137
+      }
+    }
+  },
+  {
+    "id": "EX_07",
+    "name": "Rook 4v3 Endgame",
+    "fen": "8/5pk1/4p1p1/1R5p/8/6P1/r4PKP/8 w - - 0 35",
+    "depths": {
+      "d1": {
+        "depth": 1,
+        "exact_staged": {
+          "bestmove": "b5h5",
+          "score": -63,
+          "nodes": 23,
+          "pv": "b5h5"
+        },
+        "exact_legacy": {
+          "bestmove": "b5h5",
+          "score": -63,
+          "nodes": 23,
+          "pv": "b5h5"
+        },
+        "selective": {
+          "bestmove": "b5b7",
+          "score": -90,
+          "nodes": 48,
+          "pv": "b5b7"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": -27
+      },
+      "d2": {
+        "depth": 2,
+        "exact_staged": {
+          "bestmove": "b5b7",
+          "score": -231,
+          "nodes": 387,
+          "pv": "b5b7 a2f2"
+        },
+        "exact_legacy": {
+          "bestmove": "b5b7",
+          "score": -231,
+          "nodes": 151,
+          "pv": "b5b7 a2f2"
+        },
+        "selective": {
+          "bestmove": "b5b7",
+          "score": -110,
+          "nodes": 216,
+          "pv": "b5b7 e6e5"
+        },
+        "ordering_invariance": true,
+        "move_agreement": true,
+        "score_delta": 121
+      },
+      "d3": {
+        "depth": 3,
+        "exact_staged": {
+          "bestmove": "b5b7",
+          "score": -9,
+          "nodes": 1195,
+          "pv": "b5b7 e6e5 b7f7"
+        },
+        "exact_legacy": {
+          "bestmove": "b5b7",
+          "score": -9,
+          "nodes": 704,
+          "pv": "b5b7 e6e5 b7f7"
+        },
+        "selective": {
+          "bestmove": "h2h3",
+          "score": -95,
+          "nodes": 1583,
+          "pv": "h2h3 a2c2 b5b7"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": -86
+      }
+    }
+  },
+  {
+    "id": "EX_08",
+    "name": "Passed Pawn Race",
+    "fen": "8/1P6/8/8/8/8/p7/k6K w - - 0 1",
+    "depths": {
+      "d1": {
+        "depth": 1,
+        "exact_staged": {
+          "bestmove": "b7b8q",
+          "score": 634,
+          "nodes": 8,
+          "pv": "b7b8q"
+        },
+        "exact_legacy": {
+          "bestmove": "b7b8q",
+          "score": 634,
+          "nodes": 8,
+          "pv": "b7b8q"
+        },
+        "selective": {
+          "bestmove": "b7b8b",
+          "score": 56,
+          "nodes": 15,
+          "pv": "b7b8b"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": -578
+      },
+      "d2": {
+        "depth": 2,
+        "exact_staged": {
+          "bestmove": "b7b8b",
+          "score": 59,
+          "nodes": 22,
+          "pv": "b7b8b a1b2"
+        },
+        "exact_legacy": {
+          "bestmove": "b7b8b",
+          "score": 59,
+          "nodes": 23,
+          "pv": "b7b8b a1b2"
+        },
+        "selective": {
+          "bestmove": "h1g1",
+          "score": 643,
+          "nodes": 51,
+          "pv": "h1g1 a1b2"
+        },
+        "ordering_invariance": true,
+        "move_agreement": false,
+        "score_delta": 584
+      },
+      "d3": {
+        "depth": 3,
+        "exact_staged": {
+          "bestmove": "h1g1",
+          "score": 656,
+          "nodes": 95,
+          "pv": "h1g1 a1b2 b7b8q"
+        },
+        "exact_legacy": {
+          "bestmove": "h1g1",
+          "score": 656,
+          "nodes": 96,
+          "pv": "h1g1 a1b2 b7b8q"
+        },
+        "selective": {
+          "bestmove": "h1g1",
+          "score": 643,
+          "nodes": 90,
+          "pv": "h1g1 a1b2 b7b8q"
+        },
+        "ordering_invariance": true,
+        "move_agreement": true,
+        "score_delta": -13
+      }
+    }
+  },
+  {
+    "id": "EX_09",
+    "name": "Mutual KP Zugzwang",
+    "fen": "8/8/p1p5/1p5p/1P5P/kPK5/8/8 w - - 0 1",
+    "depths": {
+      "d1": {
+        "depth": 1,
+        "exact_staged": {
+          "bestmove": "c3d2",
+          "score": -77,
+          "nodes": 5,
+          "pv": "c3d2"
+        },
+        "exact_legacy": {
+          "bestmove": "c3d2",
+          "score": -77,
+          "nodes": 5,
+          "pv": "c3d2"
+        },
+        "selective": {
+          "bestmove": "c3d2",
+          "score": -180,
+          "nodes": 15,
+          "pv": "c3d2"
+        },
+        "ordering_invariance": true,
+        "move_agreement": true,
+        "score_delta": -103
+      },
+      "d2": {
+        "depth": 2,
+        "exact_staged": {
+          "bestmove": "c3d2",
+          "score": -180,
+          "nodes": 20,
+          "pv": "c3d2 a3b4"
+        },
+        "exact_legacy": {
+          "bestmove": "c3d2",
+          "score": -180,
+          "nodes": 20,
+          "pv": "c3d2 a3b4"
+        },
+        "selective": {
+          "bestmove": "c3d2",
+          "score": -180,
+          "nodes": 40,
+          "pv": "c3d2 a3b4"
+        },
+        "ordering_invariance": true,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d3": {
+        "depth": 3,
+        "exact_staged": {
+          "bestmove": "c3c2",
+          "score": -162,
+          "nodes": 69,
+          "pv": "c3c2 a3b4 c2b1"
+        },
+        "exact_legacy": {
+          "bestmove": "c3c2",
+          "score": -162,
+          "nodes": 69,
+          "pv": "c3c2 a3b4 c2b1"
+        },
+        "selective": {
+          "bestmove": "c3c2",
+          "score": -168,
+          "nodes": 137,
+          "pv": "c3c2 a3b4 c2b2"
+        },
+        "ordering_invariance": true,
+        "move_agreement": true,
+        "score_delta": -6
+      }
+    }
+  },
+  {
+    "id": "EX_10",
+    "name": "Back-Rank Rook Defense",
+    "fen": "3r2k1/p4ppp/1p2p3/8/8/1P2P3/P4PPP/3R2K1 w - - 0 1",
+    "depths": {
+      "d1": {
+        "depth": 1,
+        "exact_staged": {
+          "bestmove": "d1d8",
+          "score": 534,
+          "nodes": 25,
+          "pv": "d1d8"
+        },
+        "exact_legacy": {
+          "bestmove": "d1d8",
+          "score": 534,
+          "nodes": 25,
+          "pv": "d1d8"
+        },
+        "selective": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 49,
+          "pv": "d1d8"
+        },
+        "ordering_invariance": true,
+        "move_agreement": true,
+        "score_delta": 28465
+      },
+      "d2": {
+        "depth": 2,
+        "exact_staged": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 73,
+          "pv": "d1d8"
+        },
+        "exact_legacy": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 73,
+          "pv": "d1d8"
+        },
+        "selective": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 127,
+          "pv": "d1d8"
+        },
+        "ordering_invariance": true,
+        "move_agreement": true,
+        "score_delta": 0
+      },
+      "d3": {
+        "depth": 3,
+        "exact_staged": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 294,
+          "pv": "d1d8"
+        },
+        "exact_legacy": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 294,
+          "pv": "d1d8"
+        },
+        "selective": {
+          "bestmove": "d1d8",
+          "score": 28999,
+          "nodes": 521,
+          "pv": "d1d8"
+        },
+        "ordering_invariance": true,
+        "move_agreement": true,
+        "score_delta": 0
+      }
+    }
+  }
+]

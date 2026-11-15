@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "P01_SIC_D6",
+    "fen": "r1bqkb1r/pp3ppp/2n1pn2/2pp4/3P4/2N1PN2/PPP1BPPP/R1BQK2R w KQkq - 2 6",
+    "archetype": "Backward d6",
+    "runs": {
+      "E0_Ref_X22": {
+        "bestmove": "e2b5",
+        "score": 3,
+        "nodes": 59605,
+        "nps": 1206259,
+        "elapsed_sec": 0.05,
+        "pv": "e2b5 c5d4 b5c6 b7c6 f3d4 c8b7",
+        "telemetry": {
+          "rfp_probes": 8630,
+          "rfp_cutoffs": 4193,
+          "nmp_probes": 349,
+          "nmp_cutoffs": 92,
+          "lmr_reduced": 2093,
+          "eval_calls": 40318,
+          "total_cutoffs": 3966
+        }
+      },
+      "E1_BackwardPawns": {
+        "bestmove": "e1g1",
+        "score": 0,
+        "nodes": 95073,
+        "nps": 1162572,
+        "elapsed_sec": 0.0809,
+        "pv": "e1g1 c5d4 e3d4 f8d6 c1g5 d8b6",
+        "telemetry": {
+          "rfp_probes": 14281,
+          "rfp_cutoffs": 6934,
+          "nmp_probes": 586,
+          "nmp_cutoffs": 152,
+          "lmr_reduced": 3543,
+          "eval_calls": 65425,
+          "total_cutoffs": 6611
+        }
+      },
+      "E2_ConnectedPawns": {
+        "bestmove": "e2b5",
+        "score": 3,
+        "nodes": 59614,
+        "nps": 1110541,
+        "elapsed_sec": 0.0534,
+        "pv": "e2b5 c5d4 b5c6 b7c6 f3d4 c8b7",
+        "telemetry": {
+          "rfp_probes": 8630,
+          "rfp_cutoffs": 4193,
+          "nmp_probes": 349,
+          "nmp_cutoffs": 92,
+          "lmr_reduced": 2093,
+          "eval_calls": 40325,
+          "total_cutoffs": 3966
+        }
+      },
+      "E3_SyntheticBias": {
+        "bestmove": "e2b5",
+        "score": 9,
+        "nodes": 47586,
+        "nps": 1619193,
+        "elapsed_sec": 0.0289,
+        "pv": "e2b5 c8d7 h2h3 d8c7 b5c6 d7c6",
+        "telemetry": {
+          "rfp_probes": 7120,
+          "rfp_cutoffs": 3998,
+          "nmp_probes": 257,
+          "nmp_cutoffs": 43,
+          "lmr_reduced": 1956,
+          "eval_calls": 29278,
+          "total_cutoffs": 2627
+        }
+      }
+    }
+  },
+  {
+    "id": "P02_FR_E6",
+    "fen": "r1bqk2r/pp2bppp/2n1pn2/2pp4/3P4/2N1PN2/PPP1BPPP/R1BQ1RK1 w kq - 0 7",
+    "archetype": "Backward e6",
+    "runs": {
+      "E0_Ref_X22": {
+        "bestmove": "f3e5",
+        "score": 23,
+        "nodes": 33146,
+        "nps": 1113885,
+        "elapsed_sec": 0.0307,
+        "pv": "f3e5 c6e5 d4e5 f6e4 c3e4 d5e4",
+        "telemetry": {
+          "rfp_probes": 4649,
+          "rfp_cutoffs": 2487,
+          "nmp_probes": 266,
+          "nmp_cutoffs": 76,
+          "lmr_reduced": 1527,
+          "eval_calls": 21418,
+          "total_cutoffs": 1813
+        }
+      },
+      "E1_BackwardPawns": {
+        "bestmove": "f3e5",
+        "score": 23,
+        "nodes": 33272,
+        "nps": 1234587,
+        "elapsed_sec": 0.0278,
+        "pv": "f3e5 c6e5 d4e5 f6e4 c3e4 d5e4",
+        "telemetry": {
+          "rfp_probes": 4631,
+          "rfp_cutoffs": 2430,
+          "nmp_probes": 263,
+          "nmp_cutoffs": 75,
+          "lmr_reduced": 1481,
+          "eval_calls": 21638,
+          "total_cutoffs": 1868
+        }
+      },
+      "E2_ConnectedPawns": {
+        "bestmove": "f3e5",
+        "score": 23,
+        "nodes": 33146,
+        "nps": 1308463,
+        "elapsed_sec": 0.0261,
+        "pv": "f3e5 c6e5 d4e5 f6e4 c3e4 d5e4",
+        "telemetry": {
+          "rfp_probes": 4649,
+          "rfp_cutoffs": 2487,
+          "nmp_probes": 266,
+          "nmp_cutoffs": 76,
+          "lmr_reduced": 1527,
+          "eval_calls": 21418,
+          "total_cutoffs": 1813
+        }
+      },
+      "E3_SyntheticBias": {
+        "bestmove": "a2a3",
+        "score": 11,
+        "nodes": 54433,
+        "nps": 1452212,
+        "elapsed_sec": 0.0372,
+        "pv": "a2a3 h7h6 d4c5 e7c5",
+        "telemetry": {
+          "rfp_probes": 6542,
+          "rfp_cutoffs": 2707,
+          "nmp_probes": 239,
+          "nmp_cutoffs": 35,
+          "lmr_reduced": 1927,
+          "eval_calls": 33484,
+          "total_cutoffs": 3279
+        }
+      }
+    }
+  },
+  {
+    "id": "P03_SLAV_C6",
+    "fen": "r1bq1rk1/pp1n1ppp/2p1pn2/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R w KQ - 0 7",
+    "archetype": "Backward c-pawn",
+    "runs": {
+      "E0_Ref_X22": {
+        "bestmove": "f1d3",
+        "score": 370,
+        "nodes": 41803,
+        "nps": 1353601,
+        "elapsed_sec": 0.0313,
+        "pv": "f1d3 d5c4 d3c4 d7b6 c4d3 b6d5",
+        "telemetry": {
+          "rfp_probes": 5144,
+          "rfp_cutoffs": 1883,
+          "nmp_probes": 232,
+          "nmp_cutoffs": 98,
+          "lmr_reduced": 1065,
+          "eval_calls": 28086,
+          "total_cutoffs": 2951
+        }
+      },
+      "E1_BackwardPawns": {
+        "bestmove": "f1d3",
+        "score": 370,
+        "nodes": 35887,
+        "nps": 1317626,
+        "elapsed_sec": 0.0281,
+        "pv": "f1d3 d5c4 d3c4 d7b6 c4d3 b6d5",
+        "telemetry": {
+          "rfp_probes": 4380,
+          "rfp_cutoffs": 1550,
+          "nmp_probes": 222,
+          "nmp_cutoffs": 105,
+          "lmr_reduced": 915,
+          "eval_calls": 23810,
+          "total_cutoffs": 2533
+        }
+      },
+      "E2_ConnectedPawns": {
+        "bestmove": "f1d3",
+        "score": 370,
+        "nodes": 41803,
+        "nps": 1316165,
+        "elapsed_sec": 0.0324,
+        "pv": "f1d3 d5c4 d3c4 d7b6 c4d3 b6d5",
+        "telemetry": {
+          "rfp_probes": 5144,
+          "rfp_cutoffs": 1883,
+          "nmp_probes": 232,
+          "nmp_cutoffs": 98,
+          "lmr_reduced": 1065,
+          "eval_calls": 28086,
+          "total_cutoffs": 2951
+        }
+      },
+      "E3_SyntheticBias": {
+        "bestmove": "c4d5",
+        "score": 388,
+        "nodes": 50420,
+        "nps": 1767875,
+        "elapsed_sec": 0.0289,
+        "pv": "c4d5 e6d5 f1d3 f8e8 f3g5 g7g6",
+        "telemetry": {
+          "rfp_probes": 4905,
+          "rfp_cutoffs": 1598,
+          "nmp_probes": 214,
+          "nmp_cutoffs": 80,
+          "lmr_reduced": 1878,
+          "eval_calls": 29938,
+          "total_cutoffs": 2759
+        }
+      }
+    }
+  },
+  {
+    "id": "P04_ISOL_D4",
+    "fen": "r1bqk2r/pp1n1ppp/2p1pn2/3p4/2PP4/2P1PN2/P4PPP/R1BQKB1R w KQkq - 1 7",
+    "archetype": "Semi-open center",
+    "runs": {
+      "E0_Ref_X22": {
+        "bestmove": "f1d3",
+        "score": 5,
+        "nodes": 39604,
+        "nps": 1252847,
+        "elapsed_sec": 0.032,
+        "pv": "f1d3 f6e4 c1b2 h7h6 d1b3 d8c7",
+        "telemetry": {
+          "rfp_probes": 3689,
+          "rfp_cutoffs": 493,
+          "nmp_probes": 212,
+          "nmp_cutoffs": 85,
+          "lmr_reduced": 1193,
+          "eval_calls": 25991,
+          "total_cutoffs": 2852
+        }
+      },
+      "E1_BackwardPawns": {
+        "bestmove": "c4d5",
+        "score": 6,
+        "nodes": 20622,
+        "nps": 1298140,
+        "elapsed_sec": 0.016,
+        "pv": "c4d5 c6d5 c3c4 d8a5 c1d2 a5c7",
+        "telemetry": {
+          "rfp_probes": 2139,
+          "rfp_cutoffs": 383,
+          "nmp_probes": 168,
+          "nmp_cutoffs": 83,
+          "lmr_reduced": 662,
+          "eval_calls": 13086,
+          "total_cutoffs": 1563
+        }
+      },
+      "E2_ConnectedPawns": {
+        "bestmove": "f1d3",
+        "score": 5,
+        "nodes": 39604,
+        "nps": 1269615,
+        "elapsed_sec": 0.0317,
+        "pv": "f1d3 f6e4 c1b2 h7h6 d1b3 d8c7",
+        "telemetry": {
+          "rfp_probes": 3689,
+          "rfp_cutoffs": 493,
+          "nmp_probes": 212,
+          "nmp_cutoffs": 85,
+          "lmr_reduced": 1193,
+          "eval_calls": 25991,
+          "total_cutoffs": 2852
+        }
+      },
+      "E3_SyntheticBias": {
+        "bestmove": "c4d5",
+        "score": 30,
+        "nodes": 46414,
+        "nps": 1668955,
+        "elapsed_sec": 0.0276,
+        "pv": "c4d5 c6d5 f1d3 d8c7 c1b2 f6e4",
+        "telemetry": {
+          "rfp_probes": 4402,
+          "rfp_cutoffs": 804,
+          "nmp_probes": 191,
+          "nmp_cutoffs": 52,
+          "lmr_reduced": 1540,
+          "eval_calls": 28227,
+          "total_cutoffs": 3107
+        }
+      }
+    }
+  },
+  {
+    "id": "P05_CONN_P",
+    "fen": "8/5k2/8/1P1P4/8/8/4K3/8 w - - 0 1",
+    "archetype": "Connected Passer Pair",
+    "runs": {
+      "E0_Ref_X22": {
+        "bestmove": "b5b6",
+        "score": 923,
+        "nodes": 2330,
+        "nps": 3114973,
+        "elapsed_sec": 0.001,
+        "pv": "b5b6 f7e7 b6b7 e7d6 b7b8q d6d5",
+        "telemetry": {
+          "rfp_probes": 430,
+          "rfp_cutoffs": 250,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 188,
+          "eval_calls": 1433,
+          "total_cutoffs": 121
+        }
+      },
+      "E1_BackwardPawns": {
+        "bestmove": "b5b6",
+        "score": 923,
+        "nodes": 2330,
+        "nps": 3184800,
+        "elapsed_sec": 0.001,
+        "pv": "b5b6 f7e7 b6b7 e7d6 b7b8q d6d5",
+        "telemetry": {
+          "rfp_probes": 430,
+          "rfp_cutoffs": 250,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 188,
+          "eval_calls": 1433,
+          "total_cutoffs": 121
+        }
+      },
+      "E2_ConnectedPawns": {
+        "bestmove": "b5b6",
+        "score": 923,
+        "nodes": 2330,
+        "nps": 2451083,
+        "elapsed_sec": 0.001,
+        "pv": "b5b6 f7e7 b6b7 e7d6 b7b8q d6d5",
+        "telemetry": {
+          "rfp_probes": 430,
+          "rfp_cutoffs": 250,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 188,
+          "eval_calls": 1433,
+          "total_cutoffs": 121
+        }
+      },
+      "E3_SyntheticBias": {
+        "bestmove": "b5b6",
+        "score": 953,
+        "nodes": 2244,
+        "nps": 3173076,
+        "elapsed_sec": 0.002,
+        "pv": "b5b6 f7e7 b6b7 e7d6 b7b8q d6d5",
+        "telemetry": {
+          "rfp_probes": 430,
+          "rfp_cutoffs": 250,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 188,
+          "eval_calls": 1361,
+          "total_cutoffs": 121
+        }
+      }
+    }
+  },
+  {
+    "id": "P06_SUPP_P",
+    "fen": "8/8/4k3/1P6/2P5/8/4K3/8 w - - 0 1",
+    "archetype": "Supported Passer",
+    "runs": {
+      "E0_Ref_X22": {
+        "bestmove": "c4c5",
+        "score": 425,
+        "nodes": 3514,
+        "nps": 2624150,
+        "elapsed_sec": 0.0025,
+        "pv": "c4c5 e6d7 c5c6 d7c7 e2d2 c7b8",
+        "telemetry": {
+          "rfp_probes": 572,
+          "rfp_cutoffs": 23,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 138,
+          "eval_calls": 1927,
+          "total_cutoffs": 443
+        }
+      },
+      "E1_BackwardPawns": {
+        "bestmove": "c4c5",
+        "score": 425,
+        "nodes": 3514,
+        "nps": 2752192,
+        "elapsed_sec": 0.002,
+        "pv": "c4c5 e6d7 c5c6 d7c7 e2d2 c7b8",
+        "telemetry": {
+          "rfp_probes": 572,
+          "rfp_cutoffs": 23,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 138,
+          "eval_calls": 1927,
+          "total_cutoffs": 443
+        }
+      },
+      "E2_ConnectedPawns": {
+        "bestmove": "c4c5",
+        "score": 500,
+        "nodes": 3584,
+        "nps": 2727134,
+        "elapsed_sec": 0.001,
+        "pv": "c4c5 e6d5 c5c6 d5d6 e2d2 d6c7",
+        "telemetry": {
+          "rfp_probes": 665,
+          "rfp_cutoffs": 153,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 237,
+          "eval_calls": 1998,
+          "total_cutoffs": 413
+        }
+      },
+      "E3_SyntheticBias": {
+        "bestmove": "c4c5",
+        "score": 455,
+        "nodes": 4634,
+        "nps": 3211365,
+        "elapsed_sec": 0.0016,
+        "pv": "c4c5 e6d7 e2d2 d7c8 c5c6 c8b8",
+        "telemetry": {
+          "rfp_probes": 798,
+          "rfp_cutoffs": 206,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 269,
+          "eval_calls": 2579,
+          "total_cutoffs": 422
+        }
+      }
+    }
+  },
+  {
+    "id": "P07_ISOL_P",
+    "fen": "8/8/4k3/1P6/8/8/4K3/8 w - - 0 1",
+    "archetype": "Isolated Passer",
+    "runs": {
+      "E0_Ref_X22": {
+        "bestmove": "b5b6",
+        "score": 0,
+        "nodes": 4365,
+        "nps": 3218314,
+        "elapsed_sec": 0.001,
+        "pv": "b5b6 e6d7 b6b7 d7c7 b7b8q c7b8",
+        "telemetry": {
+          "rfp_probes": 628,
+          "rfp_cutoffs": 64,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 224,
+          "eval_calls": 2022,
+          "total_cutoffs": 380
+        }
+      },
+      "E1_BackwardPawns": {
+        "bestmove": "b5b6",
+        "score": 0,
+        "nodes": 4365,
+        "nps": 3587867,
+        "elapsed_sec": 0.001,
+        "pv": "b5b6 e6d7 b6b7 d7c7 b7b8q c7b8",
+        "telemetry": {
+          "rfp_probes": 628,
+          "rfp_cutoffs": 64,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 224,
+          "eval_calls": 2022,
+          "total_cutoffs": 380
+        }
+      },
+      "E2_ConnectedPawns": {
+        "bestmove": "b5b6",
+        "score": 0,
+        "nodes": 4365,
+        "nps": 3534412,
+        "elapsed_sec": 0.0,
+        "pv": "b5b6 e6d7 b6b7 d7c7 b7b8q c7b8",
+        "telemetry": {
+          "rfp_probes": 628,
+          "rfp_cutoffs": 64,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 224,
+          "eval_calls": 2022,
+          "total_cutoffs": 380
+        }
+      },
+      "E3_SyntheticBias": {
+        "bestmove": "b5b6",
+        "score": 0,
+        "nodes": 4651,
+        "nps": 3385007,
+        "elapsed_sec": 0.001,
+        "pv": "b5b6 e6d7 b6b7 d7c7 b7b8q c7b8",
+        "telemetry": {
+          "rfp_probes": 734,
+          "rfp_cutoffs": 173,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 249,
+          "eval_calls": 2278,
+          "total_cutoffs": 352
+        }
+      }
+    }
+  },
+  {
+    "id": "P08_RACE",
+    "fen": "8/1P6/8/8/8/8/p7/k6K w - - 0 1",
+    "archetype": "Passed Pawn Race",
+    "runs": {
+      "E0_Ref_X22": {
+        "bestmove": "h1g1",
+        "score": 660,
+        "nodes": 1419,
+        "nps": 1761420,
+        "elapsed_sec": 0.001,
+        "pv": "h1g1 a1b2 b7b8q b2a3 b8d6 a3a4",
+        "telemetry": {
+          "rfp_probes": 297,
+          "rfp_cutoffs": 195,
+          "nmp_probes": 4,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 56,
+          "eval_calls": 843,
+          "total_cutoffs": 114
+        }
+      },
+      "E1_BackwardPawns": {
+        "bestmove": "h1g1",
+        "score": 660,
+        "nodes": 1419,
+        "nps": 1758364,
+        "elapsed_sec": 0.0016,
+        "pv": "h1g1 a1b2 b7b8q b2a3 b8d6 a3a4",
+        "telemetry": {
+          "rfp_probes": 297,
+          "rfp_cutoffs": 195,
+          "nmp_probes": 4,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 56,
+          "eval_calls": 843,
+          "total_cutoffs": 114
+        }
+      },
+      "E2_ConnectedPawns": {
+        "bestmove": "h1g1",
+        "score": 660,
+        "nodes": 1419,
+        "nps": 1750771,
+        "elapsed_sec": 0.0013,
+        "pv": "h1g1 a1b2 b7b8q b2a3 b8d6 a3a4",
+        "telemetry": {
+          "rfp_probes": 297,
+          "rfp_cutoffs": 195,
+          "nmp_probes": 4,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 56,
+          "eval_calls": 843,
+          "total_cutoffs": 114
+        }
+      },
+      "E3_SyntheticBias": {
+        "bestmove": "h1g1",
+        "score": 690,
+        "nodes": 1613,
+        "nps": 1780156,
+        "elapsed_sec": 0.001,
+        "pv": "h1g1 a1b2 b7b8q b2a3 b8d6 a3a4",
+        "telemetry": {
+          "rfp_probes": 328,
+          "rfp_cutoffs": 197,
+          "nmp_probes": 4,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 56,
+          "eval_calls": 952,
+          "total_cutoffs": 146
+        }
+      }
+    }
+  },
+  {
+    "id": "P09_ATT_F2",
+    "fen": "r1b1k2r/pppp1ppp/8/4N3/1b1qn3/2N5/PPPP1PPP/R1BQKB1R w KQkq - 1 7",
+    "archetype": "Tactical Mate Attack",
+    "runs": {
+      "E0_Ref_X22": {
+        "bestmove": "c3e4",
+        "score": 258,
+        "nodes": 24634,
+        "nps": 932357,
+        "elapsed_sec": 0.0278,
+        "pv": "c3e4 d4e4 d1e2 d7d5 e2e4 d5e4",
+        "telemetry": {
+          "rfp_probes": 5395,
+          "rfp_cutoffs": 4111,
+          "nmp_probes": 255,
+          "nmp_cutoffs": 49,
+          "lmr_reduced": 1400,
+          "eval_calls": 16717,
+          "total_cutoffs": 1316
+        }
+      },
+      "E1_BackwardPawns": {
+        "bestmove": "c3e4",
+        "score": 258,
+        "nodes": 24785,
+        "nps": 965655,
+        "elapsed_sec": 0.0246,
+        "pv": "c3e4 d4e4 d1e2 d7d5 e2e4 d5e4",
+        "telemetry": {
+          "rfp_probes": 5382,
+          "rfp_cutoffs": 4103,
+          "nmp_probes": 256,
+          "nmp_cutoffs": 49,
+          "lmr_reduced": 1401,
+          "eval_calls": 16813,
+          "total_cutoffs": 1311
+        }
+      },
+      "E2_ConnectedPawns": {
+        "bestmove": "c3e4",
+        "score": 258,
+        "nodes": 24405,
+        "nps": 986750,
+        "elapsed_sec": 0.0245,
+        "pv": "c3e4 d4e4 d1e2 d7d5 e2e4 d5e4",
+        "telemetry": {
+          "rfp_probes": 4983,
+          "rfp_cutoffs": 3728,
+          "nmp_probes": 231,
+          "nmp_cutoffs": 53,
+          "lmr_reduced": 1293,
+          "eval_calls": 16392,
+          "total_cutoffs": 1280
+        }
+      },
+      "E3_SyntheticBias": {
+        "bestmove": "c3e4",
+        "score": 288,
+        "nodes": 22776,
+        "nps": 1124996,
+        "elapsed_sec": 0.0198,
+        "pv": "c3e4 d4e4 d1e2 d7d5 e2e4 d5e4",
+        "telemetry": {
+          "rfp_probes": 4773,
+          "rfp_cutoffs": 3618,
+          "nmp_probes": 206,
+          "nmp_cutoffs": 46,
+          "lmr_reduced": 1220,
+          "eval_calls": 14710,
+          "total_cutoffs": 1169
+        }
+      }
+    }
+  },
+  {
+    "id": "P10_SCHEV",
+    "fen": "2r2rk1/1bq1bppp/p2pp3/1p2P3/3N1P2/P1NR4/1PP1Q1PP/5R1K w - - 0 18",
+    "archetype": "Kingside Attack Break",
+    "runs": {
+      "E0_Ref_X22": {
+        "bestmove": "d4e6",
+        "score": 144,
+        "nodes": 21793,
+        "nps": 1419351,
+        "elapsed_sec": 0.0159,
+        "pv": "d4e6 f7e6 e5d6 c7d7 d6e7 d7e7",
+        "telemetry": {
+          "rfp_probes": 2961,
+          "rfp_cutoffs": 1954,
+          "nmp_probes": 271,
+          "nmp_cutoffs": 190,
+          "lmr_reduced": 893,
+          "eval_calls": 13780,
+          "total_cutoffs": 802
+        }
+      },
+      "E1_BackwardPawns": {
+        "bestmove": "d4e6",
+        "score": 155,
+        "nodes": 22149,
+        "nps": 1440210,
+        "elapsed_sec": 0.0157,
+        "pv": "d4e6 f7e6 e5d6 c7d7 d6e7 d7e7",
+        "telemetry": {
+          "rfp_probes": 3097,
+          "rfp_cutoffs": 2109,
+          "nmp_probes": 270,
+          "nmp_cutoffs": 187,
+          "lmr_reduced": 893,
+          "eval_calls": 13995,
+          "total_cutoffs": 779
+        }
+      },
+      "E2_ConnectedPawns": {
+        "bestmove": "d4e6",
+        "score": 144,
+        "nodes": 24070,
+        "nps": 1371463,
+        "elapsed_sec": 0.0183,
+        "pv": "d4e6 f7e6 e5d6 c7d7 d6e7 d7e7",
+        "telemetry": {
+          "rfp_probes": 3654,
+          "rfp_cutoffs": 2376,
+          "nmp_probes": 314,
+          "nmp_cutoffs": 219,
+          "lmr_reduced": 895,
+          "eval_calls": 15413,
+          "total_cutoffs": 1026
+        }
+      },
+      "E3_SyntheticBias": {
+        "bestmove": "d4e6",
+        "score": 144,
+        "nodes": 27505,
+        "nps": 1686895,
+        "elapsed_sec": 0.0156,
+        "pv": "d4e6 b7g2 h1g2 c7c6 g2g1 f7e6",
+        "telemetry": {
+          "rfp_probes": 3471,
+          "rfp_cutoffs": 2472,
+          "nmp_probes": 221,
+          "nmp_cutoffs": 120,
+          "lmr_reduced": 1332,
+          "eval_calls": 16526,
+          "total_cutoffs": 768
+        }
+      }
+    }
+  },
+  {
+    "id": "P11_PENETR",
+    "fen": "r1b2rk1/pp3ppp/2n1p3/8/2B5/4q3/PPP3PP/3R1R1K w - - 0 16",
+    "archetype": "Queen Infiltration",
+    "runs": {
+      "E0_Ref_X22": {
+        "bestmove": "c4b5",
+        "score": -1325,
+        "nodes": 38305,
+        "nps": 1314137,
+        "elapsed_sec": 0.0295,
+        "pv": "c4b5 e3c5 b5d3 c6b4 d1d2 b4a2",
+        "telemetry": {
+          "rfp_probes": 7150,
+          "rfp_cutoffs": 3275,
+          "nmp_probes": 330,
+          "nmp_cutoffs": 84,
+          "lmr_reduced": 2025,
+          "eval_calls": 23611,
+          "total_cutoffs": 3548
+        }
+      },
+      "E1_BackwardPawns": {
+        "bestmove": "c4b5",
+        "score": -1325,
+        "nodes": 38304,
+        "nps": 1308804,
+        "elapsed_sec": 0.029,
+        "pv": "c4b5 e3c5 b5d3 c6b4 d1d2 b4a2",
+        "telemetry": {
+          "rfp_probes": 7150,
+          "rfp_cutoffs": 3276,
+          "nmp_probes": 330,
+          "nmp_cutoffs": 84,
+          "lmr_reduced": 2025,
+          "eval_calls": 23611,
+          "total_cutoffs": 3547
+        }
+      },
+      "E2_ConnectedPawns": {
+        "bestmove": "c4b5",
+        "score": -1311,
+        "nodes": 35962,
+        "nps": 1290125,
+        "elapsed_sec": 0.0281,
+        "pv": "c4b5 e3c5 b5c6 c5c6 f1f2 c8d7",
+        "telemetry": {
+          "rfp_probes": 6698,
+          "rfp_cutoffs": 3232,
+          "nmp_probes": 327,
+          "nmp_cutoffs": 87,
+          "lmr_reduced": 1914,
+          "eval_calls": 22274,
+          "total_cutoffs": 3140
+        }
+      },
+      "E3_SyntheticBias": {
+        "bestmove": "c4b5",
+        "score": -1323,
+        "nodes": 72969,
+        "nps": 1696227,
+        "elapsed_sec": 0.0426,
+        "pv": "c4b5 c6e5 d1e1 e3d4 c2c3 d4c5",
+        "telemetry": {
+          "rfp_probes": 7003,
+          "rfp_cutoffs": 2698,
+          "nmp_probes": 299,
+          "nmp_cutoffs": 49,
+          "lmr_reduced": 2834,
+          "eval_calls": 41574,
+          "total_cutoffs": 3564
+        }
+      }
+    }
+  },
+  {
+    "id": "P12_K_EXPO",
+    "fen": "r1bq1rk1/ppp1bppp/2n1pn2/3p4/2PP4/2N2NP1/PP2PPBP/R1BQ1RK1 w - - 0 7",
+    "archetype": "King Shelter G3",
+    "runs": {
+      "E0_Ref_X22": {
+        "bestmove": "f3e5",
+        "score": -17,
+        "nodes": 34162,
+        "nps": 1276821,
+        "elapsed_sec": 0.0275,
+        "pv": "f3e5 c6e5 d4e5 f6d7 c4d5 d7e5",
+        "telemetry": {
+          "rfp_probes": 4151,
+          "rfp_cutoffs": 1752,
+          "nmp_probes": 248,
+          "nmp_cutoffs": 124,
+          "lmr_reduced": 1206,
+          "eval_calls": 22029,
+          "total_cutoffs": 2058
+        }
+      },
+      "E1_BackwardPawns": {
+        "bestmove": "f3e5",
+        "score": -17,
+        "nodes": 34329,
+        "nps": 1246618,
+        "elapsed_sec": 0.0274,
+        "pv": "f3e5 c6e5 d4e5 f6d7 c4d5 d7e5",
+        "telemetry": {
+          "rfp_probes": 4101,
+          "rfp_cutoffs": 1719,
+          "nmp_probes": 247,
+          "nmp_cutoffs": 124,
+          "lmr_reduced": 1206,
+          "eval_calls": 22164,
+          "total_cutoffs": 2041
+        }
+      },
+      "E2_ConnectedPawns": {
+        "bestmove": "f3e5",
+        "score": -17,
+        "nodes": 34162,
+        "nps": 1313988,
+        "elapsed_sec": 0.0261,
+        "pv": "f3e5 c6e5 d4e5 f6d7 c4d5 d7e5",
+        "telemetry": {
+          "rfp_probes": 4151,
+          "rfp_cutoffs": 1752,
+          "nmp_probes": 248,
+          "nmp_cutoffs": 124,
+          "lmr_reduced": 1206,
+          "eval_calls": 22029,
+          "total_cutoffs": 2058
+        }
+      },
+      "E3_SyntheticBias": {
+        "bestmove": "f3e5",
+        "score": 13,
+        "nodes": 29444,
+        "nps": 1616265,
+        "elapsed_sec": 0.0184,
+        "pv": "f3e5 c6e5 d4e5 f6d7 c4d5 d7e5",
+        "telemetry": {
+          "rfp_probes": 3139,
+          "rfp_cutoffs": 1488,
+          "nmp_probes": 187,
+          "nmp_cutoffs": 90,
+          "lmr_reduced": 1219,
+          "eval_calls": 17695,
+          "total_cutoffs": 1324
+        }
+      }
+    }
+  },
+  {
+    "id": "P13_Q_SLAV",
+    "fen": "r1bq1rk1/pp1nbppp/2p1pn2/3p4/2PP4/2N1PN2/PPQ2PPP/R1B1KB1R w KQ - 0 7",
+    "archetype": "Quiet Middlegame",
+    "runs": {
+      "E0_Ref_X22": {
+        "bestmove": "f1d3",
+        "score": 34,
+        "nodes": 75370,
+        "nps": 1199698,
+        "elapsed_sec": 0.0635,
+        "pv": "f1d3 h7h6 h2h3 d8c7 c4c5 e6e5",
+        "telemetry": {
+          "rfp_probes": 9948,
+          "rfp_cutoffs": 3558,
+          "nmp_probes": 354,
+          "nmp_cutoffs": 127,
+          "lmr_reduced": 2428,
+          "eval_calls": 49015,
+          "total_cutoffs": 5840
+        }
+      },
+      "E1_BackwardPawns": {
+        "bestmove": "f1d3",
+        "score": 38,
+        "nodes": 56831,
+        "nps": 1208473,
+        "elapsed_sec": 0.0474,
+        "pv": "f1d3 h7h6 h2h3 d5c4 d3c4 f6d5",
+        "telemetry": {
+          "rfp_probes": 7540,
+          "rfp_cutoffs": 2785,
+          "nmp_probes": 305,
+          "nmp_cutoffs": 133,
+          "lmr_reduced": 1757,
+          "eval_calls": 36995,
+          "total_cutoffs": 4358
+        }
+      },
+      "E2_ConnectedPawns": {
+        "bestmove": "f1d3",
+        "score": 34,
+        "nodes": 75374,
+        "nps": 1189151,
+        "elapsed_sec": 0.064,
+        "pv": "f1d3 h7h6 h2h3 d8c7 c4c5 e6e5",
+        "telemetry": {
+          "rfp_probes": 9948,
+          "rfp_cutoffs": 3558,
+          "nmp_probes": 354,
+          "nmp_cutoffs": 127,
+          "lmr_reduced": 2428,
+          "eval_calls": 49019,
+          "total_cutoffs": 5840
+        }
+      },
+      "E3_SyntheticBias": {
+        "bestmove": "f1d3",
+        "score": 60,
+        "nodes": 83797,
+        "nps": 1421285,
+        "elapsed_sec": 0.0589,
+        "pv": "f1d3 d8c7 f3g5 g7g6 c4c5 e6e5",
+        "telemetry": {
+          "rfp_probes": 9488,
+          "rfp_cutoffs": 3878,
+          "nmp_probes": 351,
+          "nmp_cutoffs": 114,
+          "lmr_reduced": 3660,
+          "eval_calls": 51205,
+          "total_cutoffs": 4933
+        }
+      }
+    }
+  },
+  {
+    "id": "P14_FR_ADV",
+    "fen": "r1bqk2r/pp1nbppp/2n1p3/2ppP3/3P1P2/2N1BN2/PPP3PP/R2QKB1R w KQkq - 1 8",
+    "archetype": "French Closed Chain",
+    "runs": {
+      "E0_Ref_X22": {
+        "bestmove": "f1b5",
+        "score": 27,
+        "nodes": 46263,
+        "nps": 1212539,
+        "elapsed_sec": 0.0391,
+        "pv": "f1b5 c5d4 f3d4 c6d4 d1d4 d8c7",
+        "telemetry": {
+          "rfp_probes": 6335,
+          "rfp_cutoffs": 3654,
+          "nmp_probes": 291,
+          "nmp_cutoffs": 93,
+          "lmr_reduced": 2103,
+          "eval_calls": 29802,
+          "total_cutoffs": 2320
+        }
+      },
+      "E1_BackwardPawns": {
+        "bestmove": "f1b5",
+        "score": 27,
+        "nodes": 45688,
+        "nps": 1222526,
+        "elapsed_sec": 0.0375,
+        "pv": "f1b5 c5d4 f3d4 c6d4 d1d4 d8c7",
+        "telemetry": {
+          "rfp_probes": 6396,
+          "rfp_cutoffs": 3741,
+          "nmp_probes": 291,
+          "nmp_cutoffs": 93,
+          "lmr_reduced": 2104,
+          "eval_calls": 29354,
+          "total_cutoffs": 2294
+        }
+      },
+      "E2_ConnectedPawns": {
+        "bestmove": "f1b5",
+        "score": 27,
+        "nodes": 46274,
+        "nps": 1193256,
+        "elapsed_sec": 0.0388,
+        "pv": "f1b5 c5d4 f3d4 c6d4 d1d4 d8c7",
+        "telemetry": {
+          "rfp_probes": 6335,
+          "rfp_cutoffs": 3654,
+          "nmp_probes": 291,
+          "nmp_cutoffs": 93,
+          "lmr_reduced": 2103,
+          "eval_calls": 29811,
+          "total_cutoffs": 2320
+        }
+      },
+      "E3_SyntheticBias": {
+        "bestmove": "f1b5",
+        "score": 18,
+        "nodes": 61745,
+        "nps": 1423778,
+        "elapsed_sec": 0.0431,
+        "pv": "f1b5 c5d4 f3d4 e7h4 g2g3 c6d4",
+        "telemetry": {
+          "rfp_probes": 9845,
+          "rfp_cutoffs": 6701,
+          "nmp_probes": 344,
+          "nmp_cutoffs": 48,
+          "lmr_reduced": 3238,
+          "eval_calls": 37748,
+          "total_cutoffs": 2579
+        }
+      }
+    }
+  },
+  {
+    "id": "P15_RK_END",
+    "fen": "8/5pk1/4p1p1/1R5p/8/6P1/r4PKP/8 w - - 0 35",
+    "archetype": "Rook 4v3 Endgame",
+    "runs": {
+      "E0_Ref_X22": {
+        "bestmove": "b5b7",
+        "score": -101,
+        "nodes": 7951,
+        "nps": 1908270,
+        "elapsed_sec": 0.0041,
+        "pv": "b5b7 a2c2 h2h3 e6e5 b7e7 g7f6",
+        "telemetry": {
+          "rfp_probes": 991,
+          "rfp_cutoffs": 249,
+          "nmp_probes": 122,
+          "nmp_cutoffs": 71,
+          "lmr_reduced": 342,
+          "eval_calls": 4496,
+          "total_cutoffs": 607
+        }
+      },
+      "E1_BackwardPawns": {
+        "bestmove": "b5b7",
+        "score": -111,
+        "nodes": 9494,
+        "nps": 1766621,
+        "elapsed_sec": 0.0055,
+        "pv": "b5b7 a2c2 h2h3 g6g5 g3g4 h5h4",
+        "telemetry": {
+          "rfp_probes": 1253,
+          "rfp_cutoffs": 295,
+          "nmp_probes": 132,
+          "nmp_cutoffs": 68,
+          "lmr_reduced": 424,
+          "eval_calls": 5446,
+          "total_cutoffs": 809
+        }
+      },
+      "E2_ConnectedPawns": {
+        "bestmove": "b5b7",
+        "score": -101,
+        "nodes": 7951,
+        "nps": 2057126,
+        "elapsed_sec": 0.0037,
+        "pv": "b5b7 a2c2 h2h3 e6e5 b7e7 g7f6",
+        "telemetry": {
+          "rfp_probes": 991,
+          "rfp_cutoffs": 249,
+          "nmp_probes": 122,
+          "nmp_cutoffs": 71,
+          "lmr_reduced": 343,
+          "eval_calls": 4496,
+          "total_cutoffs": 607
+        }
+      },
+      "E3_SyntheticBias": {
+        "bestmove": "b5b7",
+        "score": -89,
+        "nodes": 18726,
+        "nps": 2430590,
+        "elapsed_sec": 0.0085,
+        "pv": "b5b7 a2c2 b7b5 g7g8 b5b7 e6e5",
+        "telemetry": {
+          "rfp_probes": 1657,
+          "rfp_cutoffs": 213,
+          "nmp_probes": 133,
+          "nmp_cutoffs": 48,
+          "lmr_reduced": 712,
+          "eval_calls": 10265,
+          "total_cutoffs": 1115
+        }
+      }
+    }
+  },
+  {
+    "id": "P16_ZUGZW",
+    "fen": "8/8/p1p5/1p5p/1P5P/kPK5/8/8 w - - 0 1",
+    "archetype": "Pawn Zugzwang",
+    "runs": {
+      "E0_Ref_X22": {
+        "bestmove": "c3c2",
+        "score": -198,
+        "nodes": 756,
+        "nps": 2016537,
+        "elapsed_sec": 0.0,
+        "pv": "c3c2 a3b4 c2b2 c6c5 b2a2 b4a5",
+        "telemetry": {
+          "rfp_probes": 200,
+          "rfp_cutoffs": 71,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 26,
+          "eval_calls": 473,
+          "total_cutoffs": 81
+        }
+      },
+      "E1_BackwardPawns": {
+        "bestmove": "c3c2",
+        "score": -213,
+        "nodes": 929,
+        "nps": 2026172,
+        "elapsed_sec": 0.0,
+        "pv": "c3c2 a3b4 c2b2 c6c5 b2a2 b4a5",
+        "telemetry": {
+          "rfp_probes": 240,
+          "rfp_cutoffs": 74,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 29,
+          "eval_calls": 597,
+          "total_cutoffs": 110
+        }
+      },
+      "E2_ConnectedPawns": {
+        "bestmove": "c3c2",
+        "score": -198,
+        "nodes": 756,
+        "nps": 2005837,
+        "elapsed_sec": 0.001,
+        "pv": "c3c2 a3b4 c2b2 c6c5 b2a2 b4a5",
+        "telemetry": {
+          "rfp_probes": 200,
+          "rfp_cutoffs": 71,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 26,
+          "eval_calls": 473,
+          "total_cutoffs": 81
+        }
+      },
+      "E3_SyntheticBias": {
+        "bestmove": "c3c2",
+        "score": -168,
+        "nodes": 1128,
+        "nps": 2295482,
+        "elapsed_sec": 0.001,
+        "pv": "c3c2 a3b4 c2b2 c6c5 b2a2 b4a5",
+        "telemetry": {
+          "rfp_probes": 275,
+          "rfp_cutoffs": 75,
+          "nmp_probes": 0,
+          "nmp_cutoffs": 0,
+          "lmr_reduced": 40,
+          "eval_calls": 699,
+          "total_cutoffs": 130
+        }
+      }
+    }
+  }
+]

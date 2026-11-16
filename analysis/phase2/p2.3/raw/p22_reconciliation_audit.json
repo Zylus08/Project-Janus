@@ -1,0 +1,72 @@
+{
+  "parent_commit": "aa66937",
+  "expected_head": "aa66937",
+  "artifacts": {
+    "H1_EXE": {
+      "path": "analysis/phase2/p2.1/control/janus_hybrid_h1.exe",
+      "sha256": "755C451D064EA38ECC400274CBCE48D28B6F43F67747BB63C0F4E84F6EA4F97A",
+      "exists": true
+    },
+    "H1_DLL": {
+      "path": "analysis/phase2/p2.1/control/janus_hybrid_h1.dll",
+      "sha256": "D73EB8425F2F875DBD2AB2FFDD616072468955D36820F0F0D604419AAB074ED3",
+      "exists": true
+    },
+    "H1_BIN": {
+      "path": "analysis/phase2/p2.1/models/janus_nnue_h1.bin",
+      "sha256": "FD4D8105C39FD9A08783D9D9AC0BB85B27DB99578B97677B035C07F4D2A653F3",
+      "exists": true
+    },
+    "R1_EXE": {
+      "path": "analysis/phase1/p1.22/control/janus_classical_r1.exe",
+      "sha256": "7312B2B73CD9D40F108EE1B5F3903632A2A7805B19BC73082A796922DE66029B",
+      "exists": true
+    },
+    "X7_EXE": {
+      "path": "analysis/phase1/p1.3/control/janus_classical_x7.exe",
+      "sha256": "86392A2F4BD4182A4D7DC21E32940BD7939F6816794D5E1AB02F4082431CA28B",
+      "exists": true
+    },
+    "X22_EXE": {
+      "path": "analysis/phase1/p1.17/control/janus_classical_x22.exe",
+      "sha256": "35D095CFFE8A2EDA412171803C09BE52A74DFB3F9744C04F573D2A7FFB1C2F1C",
+      "exists": true
+    }
+  },
+  "p22_experiment": {
+    "milestone": "P2.2",
+    "decision": "Category B: Neural Engineering, Forensics & Data Advancement",
+    "manifest_entries": 48
+  },
+  "tournament_reconstruction": {
+    "pgn_path": "analysis/phase2/p2.2/raw/match_h2_vs_r1.pgn",
+    "total_games": 50,
+    "h2_wins": 0,
+    "draws": 8,
+    "r1_wins": 42,
+    "h2_points": 4.0,
+    "score_pct": 8.0,
+    "illegal_moves": 0,
+    "total_plies": 3866,
+    "pairs_count": 25,
+    "pentanomial": [
+      17,
+      8,
+      0,
+      0,
+      0
+    ],
+    "ci_95": [
+      3.33,
+      12.67
+    ],
+    "elo": -424.3
+  },
+  "scientific_corrections": {
+    "quantization_overstatement": "P2.2 verified Pearson r=0.999636 across 500 test positions; this is empirical validation over a sample, not a mathematical guarantee over all reachable positions.",
+    "accumulator_overstatement": "P2.2 tested 14,781 legal moves with Delta=0; this confirms accumulator correctness over the sample trace, but full correctness requires formal test suites covering all move classes.",
+    "draw_frequency_overstatement": "49.5% draw rate contributed to BCE logit compression, but BCE with unscaled targets and lack of teacher centipawn grounding was equally responsible.",
+    "dense_network_overstatement": "Dense feed-forward layers can theoretically approximate higher-order interactions given sufficient parameters/data; the limitation in H1 was capacity (768->128x2->32->1) and sample efficiency.",
+    "accumulator_latency_overstatement": "0.11 us accumulator update is only the sparse input layer delta; full forward pass (hidden layers, activation clipping, scalar output) requires ~1.0-1.5 us."
+  }
+}

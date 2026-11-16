@@ -1,0 +1,387 @@
+{
+  "positions_evaluated": 17,
+  "mean_shift_d5_to_d7_cp": 12.18,
+  "mean_disagreement_r1_x22_cp": 14.41,
+  "timing_ms": {
+    "T0_R1_D5": 42.6,
+    "T1_R1_D7": 317.6,
+    "T2_X22_D6": 102.1
+  },
+  "compute_budget_estimate_50k_positions_hours": 0.59,
+  "audit_data": [
+    {
+      "name": "startpos",
+      "phase": "opening",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "T0_R1_D5": {
+        "cp": 45,
+        "nodes": 5432,
+        "ms": 8
+      },
+      "T1_R1_D7": {
+        "cp": 34,
+        "nodes": 52043,
+        "ms": 81
+      },
+      "T2_X22_D6": {
+        "cp": 0,
+        "nodes": 32692,
+        "ms": 61
+      },
+      "stability_d5_d7": 11,
+      "disagreement_r1_x22": 34
+    },
+    {
+      "name": "italian_game",
+      "phase": "opening",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+      "T0_R1_D5": {
+        "cp": 0,
+        "nodes": 14813,
+        "ms": 26
+      },
+      "T1_R1_D7": {
+        "cp": -5,
+        "nodes": 64166,
+        "ms": 104
+      },
+      "T2_X22_D6": {
+        "cp": -29,
+        "nodes": 33428,
+        "ms": 61
+      },
+      "stability_d5_d7": 5,
+      "disagreement_r1_x22": 24
+    },
+    {
+      "name": "french_defense",
+      "phase": "opening",
+      "fen": "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "T0_R1_D5": {
+        "cp": 50,
+        "nodes": 7551,
+        "ms": 13
+      },
+      "T1_R1_D7": {
+        "cp": 33,
+        "nodes": 42634,
+        "ms": 59
+      },
+      "T2_X22_D6": {
+        "cp": 14,
+        "nodes": 44285,
+        "ms": 76
+      },
+      "stability_d5_d7": 17,
+      "disagreement_r1_x22": 19
+    },
+    {
+      "name": "sicilian_najdorf",
+      "phase": "opening",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+      "T0_R1_D5": {
+        "cp": 90,
+        "nodes": 36007,
+        "ms": 62
+      },
+      "T1_R1_D7": {
+        "cp": 54,
+        "nodes": 360381,
+        "ms": 677
+      },
+      "T2_X22_D6": {
+        "cp": 69,
+        "nodes": 68285,
+        "ms": 132
+      },
+      "stability_d5_d7": 36,
+      "disagreement_r1_x22": 15
+    },
+    {
+      "name": "kiwipete",
+      "phase": "tactical",
+      "fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "T0_R1_D5": {
+        "cp": 42,
+        "nodes": 120729,
+        "ms": 202
+      },
+      "T1_R1_D7": {
+        "cp": 7,
+        "nodes": 676674,
+        "ms": 1157
+      },
+      "T2_X22_D6": {
+        "cp": 52,
+        "nodes": 121988,
+        "ms": 381
+      },
+      "stability_d5_d7": 35,
+      "disagreement_r1_x22": 45
+    },
+    {
+      "name": "hanging_piece",
+      "phase": "middlegame",
+      "fen": "r1bq1rk1/ppp2ppp/2np4/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 8",
+      "T0_R1_D5": {
+        "cp": 364,
+        "nodes": 12161,
+        "ms": 68
+      },
+      "T1_R1_D7": {
+        "cp": 373,
+        "nodes": 88964,
+        "ms": 427
+      },
+      "T2_X22_D6": {
+        "cp": 374,
+        "nodes": 42765,
+        "ms": 295
+      },
+      "stability_d5_d7": 9,
+      "disagreement_r1_x22": 1
+    },
+    {
+      "name": "f7_attack",
+      "phase": "tactical",
+      "fen": "r1bqk2r/pppp1ppp/2n5/2b1p3/2B1P1n1/3P1N2/PPP2PPP/RNBQK2R w KQkq - 1 5",
+      "T0_R1_D5": {
+        "cp": 13,
+        "nodes": 10931,
+        "ms": 67
+      },
+      "T1_R1_D7": {
+        "cp": 17,
+        "nodes": 112541,
+        "ms": 814
+      },
+      "T2_X22_D6": {
+        "cp": -24,
+        "nodes": 27450,
+        "ms": 195
+      },
+      "stability_d5_d7": 4,
+      "disagreement_r1_x22": 41
+    },
+    {
+      "name": "tactical_sacrifice",
+      "phase": "tactical",
+      "fen": "r1b2rk1/pp1p1ppp/2n1pn2/q1b5/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 9",
+      "T0_R1_D5": {
+        "cp": 179,
+        "nodes": 15085,
+        "ms": 111
+      },
+      "T1_R1_D7": {
+        "cp": 168,
+        "nodes": 179289,
+        "ms": 1156
+      },
+      "T2_X22_D6": {
+        "cp": 179,
+        "nodes": 38324,
+        "ms": 267
+      },
+      "stability_d5_d7": 11,
+      "disagreement_r1_x22": 11
+    },
+    {
+      "name": "damaged_king_pawn_shield",
+      "phase": "positional",
+      "fen": "r1bq1rk1/pppp1p1p/2n3p1/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 8",
+      "T0_R1_D5": {
+        "cp": 902,
+        "nodes": 11596,
+        "ms": 58
+      },
+      "T1_R1_D7": {
+        "cp": 909,
+        "nodes": 36584,
+        "ms": 172
+      },
+      "T2_X22_D6": {
+        "cp": 899,
+        "nodes": 15877,
+        "ms": 92
+      },
+      "stability_d5_d7": 7,
+      "disagreement_r1_x22": 10
+    },
+    {
+      "name": "passed_pawn_middlegame",
+      "phase": "positional",
+      "fen": "r1bq1rk1/1pp2ppp/p1np4/4P3/2B5/2NP1N2/PPP2PPP/R1BQ1RK1 b - - 0 9",
+      "T0_R1_D5": {
+        "cp": -693,
+        "nodes": 17508,
+        "ms": 97
+      },
+      "T1_R1_D7": {
+        "cp": -696,
+        "nodes": 99121,
+        "ms": 613
+      },
+      "T2_X22_D6": {
+        "cp": -692,
+        "nodes": 21143,
+        "ms": 115
+      },
+      "stability_d5_d7": 3,
+      "disagreement_r1_x22": 4
+    },
+    {
+      "name": "rook_endgame_lucena",
+      "phase": "endgame",
+      "fen": "1K6/1P1k4/8/8/8/8/r7/2R5 w - - 0 1",
+      "T0_R1_D5": {
+        "cp": 242,
+        "nodes": 2007,
+        "ms": 3
+      },
+      "T1_R1_D7": {
+        "cp": 243,
+        "nodes": 6177,
+        "ms": 18
+      },
+      "T2_X22_D6": {
+        "cp": 243,
+        "nodes": 3020,
+        "ms": 10
+      },
+      "stability_d5_d7": 1,
+      "disagreement_r1_x22": 0
+    },
+    {
+      "name": "rook_endgame_philidor",
+      "phase": "endgame",
+      "fen": "8/4k3/8/8/8/4R3/r7/4K3 b - - 0 1",
+      "T0_R1_D5": {
+        "cp": 28,
+        "nodes": 1902,
+        "ms": 3
+      },
+      "T1_R1_D7": {
+        "cp": 10,
+        "nodes": 11428,
+        "ms": 48
+      },
+      "T2_X22_D6": {
+        "cp": 0,
+        "nodes": 4937,
+        "ms": 33
+      },
+      "stability_d5_d7": 18,
+      "disagreement_r1_x22": 10
+    },
+    {
+      "name": "bishop_endgame_opposite",
+      "phase": "endgame",
+      "fen": "8/4k3/2b5/8/8/5B2/4K3/8 w - - 0 1",
+      "T0_R1_D5": {
+        "cp": 0,
+        "nodes": 75,
+        "ms": 0
+      },
+      "T1_R1_D7": {
+        "cp": 0,
+        "nodes": 105,
+        "ms": 0
+      },
+      "T2_X22_D6": {
+        "cp": 0,
+        "nodes": 90,
+        "ms": 0
+      },
+      "stability_d5_d7": 0,
+      "disagreement_r1_x22": 0
+    },
+    {
+      "name": "knight_endgame",
+      "phase": "endgame",
+      "fen": "8/4k3/2n5/8/8/5N2/4K3/8 w - - 0 1",
+      "T0_R1_D5": {
+        "cp": 5,
+        "nodes": 1286,
+        "ms": 1
+      },
+      "T1_R1_D7": {
+        "cp": 0,
+        "nodes": 4806,
+        "ms": 8
+      },
+      "T2_X22_D6": {
+        "cp": 0,
+        "nodes": 3208,
+        "ms": 4
+      },
+      "stability_d5_d7": 5,
+      "disagreement_r1_x22": 0
+    },
+    {
+      "name": "pawn_endgame_opposition",
+      "phase": "endgame",
+      "fen": "8/8/8/4k3/8/4P3/4K3/8 w - - 0 1",
+      "T0_R1_D5": {
+        "cp": 141,
+        "nodes": 1403,
+        "ms": 3
+      },
+      "T1_R1_D7": {
+        "cp": 147,
+        "nodes": 4218,
+        "ms": 9
+      },
+      "T2_X22_D6": {
+        "cp": 141,
+        "nodes": 2273,
+        "ms": 3
+      },
+      "stability_d5_d7": 6,
+      "disagreement_r1_x22": 6
+    },
+    {
+      "name": "drawn_kp_k",
+      "phase": "endgame",
+      "fen": "8/8/8/8/4k3/8/4P3/4K3 w - - 0 1",
+      "T0_R1_D5": {
+        "cp": 138,
+        "nodes": 740,
+        "ms": 1
+      },
+      "T1_R1_D7": {
+        "cp": 114,
+        "nodes": 2115,
+        "ms": 3
+      },
+      "T2_X22_D6": {
+        "cp": 119,
+        "nodes": 1052,
+        "ms": 2
+      },
+      "stability_d5_d7": 24,
+      "disagreement_r1_x22": 5
+    },
+    {
+      "name": "queen_endgame",
+      "phase": "endgame",
+      "fen": "8/4k3/8/4q3/4Q3/8/4K3/8 w - - 0 1",
+      "T0_R1_D5": {
+        "cp": 901,
+        "nodes": 1386,
+        "ms": 2
+      },
+      "T1_R1_D7": {
+        "cp": 916,
+        "nodes": 14620,
+        "ms": 53
+      },
+      "T2_X22_D6": {
+        "cp": 936,
+        "nodes": 2541,
+        "ms": 9
+      },
+      "stability_d5_d7": 15,
+      "disagreement_r1_x22": 20
+    }
+  ]
+}

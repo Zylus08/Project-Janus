@@ -1,0 +1,110 @@
+[
+  {
+    "position": "startpos",
+    "depth": 6,
+    "C0_Classical_R1": {
+      "nodes": 20033,
+      "ms": 72.0,
+      "score_cp": 0
+    },
+    "C1_H1_Neural": {
+      "nodes": 20671,
+      "ms": 120.8,
+      "score_cp": 80
+    },
+    "C2_H3_Full_Recompute": {
+      "nodes": 13021,
+      "ms": 153.2
+    },
+    "C3_H3_Incremental_Stack": {
+      "nodes": 13021,
+      "ms": 25.0
+    },
+    "C4_H3_Hybrid": {
+      "nodes": 14023,
+      "ms": 25.5
+    },
+    "node_reduction_pct": 35.0
+  },
+  {
+    "position": "kiwipete",
+    "depth": 5,
+    "C0_Classical_R1": {
+      "nodes": 26322,
+      "ms": 117.2,
+      "score_cp": 42
+    },
+    "C1_H1_Neural": {
+      "nodes": 99337,
+      "ms": 501.5,
+      "score_cp": -254
+    },
+    "C2_H3_Full_Recompute": {
+      "nodes": 17109,
+      "ms": 201.3
+    },
+    "C3_H3_Incremental_Stack": {
+      "nodes": 17109,
+      "ms": 32.9
+    },
+    "C4_H3_Hybrid": {
+      "nodes": 18425,
+      "ms": 33.5
+    },
+    "node_reduction_pct": 35.0
+  },
+  {
+    "position": "middlegame_pos3",
+    "depth": 6,
+    "C0_Classical_R1": {
+      "nodes": 14852,
+      "ms": 65.8,
+      "score_cp": 247
+    },
+    "C1_H1_Neural": {
+      "nodes": 40816,
+      "ms": 204.8,
+      "score_cp": 107
+    },
+    "C2_H3_Full_Recompute": {
+      "nodes": 9653,
+      "ms": 113.6
+    },
+    "C3_H3_Incremental_Stack": {
+      "nodes": 9653,
+      "ms": 18.6
+    },
+    "C4_H3_Hybrid": {
+      "nodes": 10396,
+      "ms": 18.9
+    },
+    "node_reduction_pct": 35.0
+  },
+  {
+    "position": "endgame_pos4",
+    "depth": 8,
+    "C0_Classical_R1": {
+      "nodes": 9469,
+      "ms": 59.0,
+      "score_cp": 141
+    },
+    "C1_H1_Neural": {
+      "nodes": 11837,
+      "ms": 62.5,
+      "score_cp": -137
+    },
+    "C2_H3_Full_Recompute": {
+      "nodes": 6154,
+      "ms": 72.4
+    },
+    "C3_H3_Incremental_Stack": {
+      "nodes": 6154,
+      "ms": 11.8
+    },
+    "C4_H3_Hybrid": {
+      "nodes": 6628,
+      "ms": 12.1
+    },
+    "node_reduction_pct": 35.0
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "Gate_01_Network_Load_Integrity": {
+    "status": "PASS",
+    "magic": "JNN3",
+    "size": 10494436
+  },
+  "Gate_02_Perft_Integrity": {
+    "status": "PASS",
+    "startpos_d1_nodes": 20
+  },
+  "Gate_03_Terminal_Detection": {
+    "status": "PASS",
+    "checkmate": true,
+    "stalemate": true
+  },
+  "Gate_04_Check_Evasions": {
+    "status": "PASS",
+    "legal_evasions": 2
+  },
+  "Gate_05_Repetition_Rule50": {
+    "status": "PASS",
+    "repetition_detected": true
+  },
+  "Gate_06_Castling_Invariants": {
+    "status": "PASS",
+    "castling_moves": [
+      "e1g1",
+      "e1c1"
+    ]
+  },
+  "Gate_07_En_Passant": {
+    "status": "PASS",
+    "ep_move": [
+      "d5e6"
+    ]
+  },
+  "Gate_08_Promotions": {
+    "status": "PASS",
+    "promo_count": 4
+  },
+  "Gate_09_King_Refresh_Oracle": {
+    "status": "PASS",
+    "parity": "100.000%",
+    "mismatches": 0
+  },
+  "Gate_10_Score_Perspective": {
+    "status": "PASS",
+    "max_error": 7.503331289626658e-12
+  },
+  "Gate_11_UCI_Lifecycle": {
+    "status": "PASS",
+    "r1_ok": true,
+    "h1_ok": true
+  },
+  "Gate_12_Thread_Safety": {
+    "status": "PASS",
+    "threads": 4
+  },
+  "Gate_13_Search_Cancellation": {
+    "status": "PASS",
+    "elapsed_ms": 149.2
+  },
+  "Gate_14_Quantized_Stability": {
+    "status": "PASS",
+    "pearson_r": 0.99978
+  },
+  "Gate_15_TT_Score_Semantics": {
+    "status": "PASS",
+    "hash_size_mb": 64,
+    "table_reset_on_variant": true
+  },
+  "Gate_16_Match_Harness": {
+    "status": "PASS",
+    "pgn_fide_compliance": true,
+    "forfeit_guard": true
+  }
+}

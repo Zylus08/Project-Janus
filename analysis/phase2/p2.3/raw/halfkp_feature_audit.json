@@ -1,0 +1,106 @@
+{
+  "test_cases": [
+    {
+      "name": "startpos",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "non_kings": 30,
+      "white_active_features": 30,
+      "black_active_features": 30,
+      "status": "PASS"
+    },
+    {
+      "name": "kiwipete",
+      "fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "non_kings": 30,
+      "white_active_features": 30,
+      "black_active_features": 30,
+      "status": "PASS"
+    },
+    {
+      "name": "castling_test_white",
+      "fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1",
+      "non_kings": 4,
+      "white_active_features": 4,
+      "black_active_features": 4,
+      "status": "PASS"
+    },
+    {
+      "name": "castling_test_black",
+      "fen": "r3k2r/8/8/8/8/8/8/R3K2R b KQkq - 0 1",
+      "non_kings": 4,
+      "white_active_features": 4,
+      "black_active_features": 4,
+      "status": "PASS"
+    },
+    {
+      "name": "en_passant_white",
+      "fen": "8/8/8/3Pp3/8/8/8/4K2k w - e6 0 1",
+      "non_kings": 2,
+      "white_active_features": 2,
+      "black_active_features": 2,
+      "status": "PASS"
+    },
+    {
+      "name": "en_passant_black",
+      "fen": "4k2K/8/8/8/3pP3/8/8/8 b - e3 0 1",
+      "non_kings": 2,
+      "white_active_features": 2,
+      "black_active_features": 2,
+      "status": "PASS"
+    },
+    {
+      "name": "promotion_white",
+      "fen": "8/4P3/8/8/8/8/8/4K2k w - - 0 1",
+      "non_kings": 1,
+      "white_active_features": 1,
+      "black_active_features": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "promotion_black",
+      "fen": "4K2k/8/8/8/8/8/4p3/8 b - - 0 1",
+      "non_kings": 1,
+      "white_active_features": 1,
+      "black_active_features": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "endgame_kpk",
+      "fen": "8/8/8/8/4k3/8/4P3/4K3 w - - 0 1",
+      "non_kings": 1,
+      "white_active_features": 1,
+      "black_active_features": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "endgame_kqk",
+      "fen": "8/8/8/3k4/8/8/4Q3/4K3 w - - 0 1",
+      "non_kings": 1,
+      "white_active_features": 1,
+      "black_active_features": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "tactical_pins",
+      "fen": "r1bqk2r/pppp1ppp/2n5/4p3/1bB1n3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+      "non_kings": 29,
+      "white_active_features": 29,
+      "black_active_features": 29,
+      "status": "PASS"
+    },
+    {
+      "name": "check_evasion",
+      "fen": "7k/8/8/8/8/8/4q3/3K4 w - - 0 1",
+      "non_kings": 1,
+      "white_active_features": 1,
+      "black_active_features": 1,
+      "status": "PASS"
+    }
+  ],
+  "total_moves_tested": 2217,
+  "incremental_mismatches": 0,
+  "refreshes_white": 149,
+  "refreshes_black": 116,
+  "color_symmetry_startpos": "PASS",
+  "oracle_parity": "100.000%"
+}

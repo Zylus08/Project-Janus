@@ -1,0 +1,45 @@
+{
+  "architecture_id": "N1_HalfKP_40960_128x2_32_1",
+  "feature_transformer": {
+    "input_features": 40960,
+    "units_per_perspective": 128,
+    "perspectives_share_weights": true,
+    "weight_matrix_shape": [
+      40960,
+      128
+    ],
+    "weights_count": 5242880,
+    "biases_count": 128,
+    "quantization_type": "int16_t (16-bit signed)",
+    "scale": 256.0,
+    "size_bytes": 10486016,
+    "size_mb": 10.0
+  },
+  "dense_layers": {
+    "layer1": {
+      "in": 256,
+      "out": 32,
+      "weights": 8192,
+      "biases": 32,
+      "size_bytes": 8320
+    },
+    "layer2": {
+      "in": 32,
+      "out": 1,
+      "weights": 32,
+      "biases": 1,
+      "size_bytes": 36
+    }
+  },
+  "total_parameters": 5251265,
+  "quantized_file_size_bytes": 10494436,
+  "quantized_file_size_mb": 10.01,
+  "runtime_cache_footprint": {
+    "bytes_per_accumulator": 512,
+    "max_search_depth": 128,
+    "stack_bytes_per_thread": 65536,
+    "stack_kb_per_thread": 64.0,
+    "l1_cache_fit": "Fits within standard 32KB/48KB L1 per 64 plies, 100% fits in 512KB L2 cache",
+    "model_weights_l3_residency": "10.0 MB fits completely in CPU L3 cache (16MB - 32MB)"
+  }
+}

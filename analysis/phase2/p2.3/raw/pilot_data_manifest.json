@@ -1,0 +1,29 @@
+{
+  "pipeline": "P2.3_Search_Grounded_Data_Pilot",
+  "total_games": 72,
+  "total_positions": 5052,
+  "teacher": {
+    "engine": "Janus_Classical_R1",
+    "exe_sha256": "7312B2B73CD9D40F108EE1B5F3903632A2A7805B19BC73082A796922DE66029B",
+    "depth": 5
+  },
+  "partitions": {
+    "train": {
+      "positions": 4002,
+      "games": 57,
+      "sha256": "2E8FFBAFEF70E1E4903F3BB5AE03C37E6D2EFA3828B8294A6F051D5685F30671"
+    },
+    "val": {
+      "positions": 533,
+      "games": 7,
+      "sha256": "58895467F3197EF0029E88468FB2FD215D47261516BFC421F18F015A19BF1A6B"
+    },
+    "test": {
+      "positions": 517,
+      "games": 8,
+      "sha256": "79F444758577124DBCD812F462990D668DB46E3361F4703828F1F2BFABAEA9A7"
+    }
+  },
+  "leakage_count": 0,
+  "generation_time_sec": 593.9
+}

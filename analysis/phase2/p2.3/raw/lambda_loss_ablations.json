@@ -1,0 +1,227 @@
+{
+  "L0_outcome_only_bce": {
+    "ablation_id": "L0_outcome_only_bce",
+    "lambda": 0.0,
+    "loss_type": "mse",
+    "epochs": 5,
+    "elapsed_sec": 45.7,
+    "final_val_mae_cp": 311.35,
+    "final_val_score_mse": 0.04668,
+    "final_val_outcome_bce": 0.72561,
+    "diagnostic_evals": {
+      "startpos": 15.9,
+      "queen_margin": -33.0,
+      "knight_margin": -62.3,
+      "damaged_king": -165.8
+    },
+    "queen_margin": -48.9,
+    "knight_margin": -78.2,
+    "queen_knight_ratio": 0.0,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.688,
+        "val_cp_mae": 227.72,
+        "val_score_mse": 0.0302,
+        "val_outcome_bce": 0.69658
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.65276,
+        "val_cp_mae": 290.7,
+        "val_score_mse": 0.04126,
+        "val_outcome_bce": 0.71644
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.62912,
+        "val_cp_mae": 301.37,
+        "val_score_mse": 0.04398,
+        "val_outcome_bce": 0.72091
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.61871,
+        "val_cp_mae": 310.82,
+        "val_score_mse": 0.04649,
+        "val_outcome_bce": 0.72483
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.61586,
+        "val_cp_mae": 311.35,
+        "val_score_mse": 0.04668,
+        "val_outcome_bce": 0.72561
+      }
+    ]
+  },
+  "L1_score_only_mse": {
+    "ablation_id": "L1_score_only_mse",
+    "lambda": 1.0,
+    "loss_type": "mse",
+    "epochs": 5,
+    "elapsed_sec": 39.6,
+    "final_val_mae_cp": 232.83,
+    "final_val_score_mse": 0.03279,
+    "final_val_outcome_bce": 0.70316,
+    "diagnostic_evals": {
+      "startpos": 26.5,
+      "queen_margin": -0.9,
+      "knight_margin": 10.2,
+      "damaged_king": 44.1
+    },
+    "queen_margin": -27.4,
+    "knight_margin": -16.3,
+    "queen_knight_ratio": 0.0,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.0171,
+        "val_cp_mae": 223.18,
+        "val_score_mse": 0.02889,
+        "val_outcome_bce": 0.69562
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.00709,
+        "val_cp_mae": 229.6,
+        "val_score_mse": 0.03095,
+        "val_outcome_bce": 0.70227
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.00313,
+        "val_cp_mae": 233.25,
+        "val_score_mse": 0.03229,
+        "val_outcome_bce": 0.70303
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.00222,
+        "val_cp_mae": 230.61,
+        "val_score_mse": 0.03235,
+        "val_outcome_bce": 0.70253
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.0019,
+        "val_cp_mae": 232.83,
+        "val_score_mse": 0.03279,
+        "val_outcome_bce": 0.70316
+      }
+    ]
+  },
+  "L2_calibrated_mixed_08": {
+    "ablation_id": "L2_calibrated_mixed_08",
+    "lambda": 0.8,
+    "loss_type": "mse",
+    "epochs": 5,
+    "elapsed_sec": 34.1,
+    "final_val_mae_cp": 253.29,
+    "final_val_score_mse": 0.0343,
+    "final_val_outcome_bce": 0.70595,
+    "diagnostic_evals": {
+      "startpos": 30.3,
+      "queen_margin": -2.9,
+      "knight_margin": -12.8,
+      "damaged_king": -4.0
+    },
+    "queen_margin": -33.2,
+    "knight_margin": -43.1,
+    "queen_knight_ratio": 0.0,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.15168,
+        "val_cp_mae": 230.27,
+        "val_score_mse": 0.03021,
+        "val_outcome_bce": 0.69674
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.14193,
+        "val_cp_mae": 245.92,
+        "val_score_mse": 0.0319,
+        "val_outcome_bce": 0.70294
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.13827,
+        "val_cp_mae": 251.03,
+        "val_score_mse": 0.0333,
+        "val_outcome_bce": 0.70482
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.1373,
+        "val_cp_mae": 251.52,
+        "val_score_mse": 0.03389,
+        "val_outcome_bce": 0.7054
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.13697,
+        "val_cp_mae": 253.29,
+        "val_score_mse": 0.0343,
+        "val_outcome_bce": 0.70595
+      }
+    ],
+    "checkpoint_path": "analysis/phase2/p2.3/models/h3_pilot_lambda08.pt"
+  },
+  "L3_robust_huber_08": {
+    "ablation_id": "L3_robust_huber_08",
+    "lambda": 0.8,
+    "loss_type": "huber",
+    "epochs": 5,
+    "elapsed_sec": 37.6,
+    "final_val_mae_cp": 296.53,
+    "final_val_score_mse": 0.04312,
+    "final_val_outcome_bce": 0.71903,
+    "diagnostic_evals": {
+      "startpos": 18.9,
+      "queen_margin": -25.4,
+      "knight_margin": -42.6,
+      "damaged_king": -97.9
+    },
+    "queen_margin": -44.3,
+    "knight_margin": -61.5,
+    "queen_knight_ratio": 0.0,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.14201,
+        "val_cp_mae": 230.99,
+        "val_score_mse": 0.03085,
+        "val_outcome_bce": 0.69666
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.13542,
+        "val_cp_mae": 272.08,
+        "val_score_mse": 0.03754,
+        "val_outcome_bce": 0.70905
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.13148,
+        "val_cp_mae": 287.58,
+        "val_score_mse": 0.04039,
+        "val_outcome_bce": 0.71448
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.12973,
+        "val_cp_mae": 293.36,
+        "val_score_mse": 0.04256,
+        "val_outcome_bce": 0.71747
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.12917,
+        "val_cp_mae": 296.53,
+        "val_score_mse": 0.04312,
+        "val_outcome_bce": 0.71903
+      }
+    ]
+  }
+}

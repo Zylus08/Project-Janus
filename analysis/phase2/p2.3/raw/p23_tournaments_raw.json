@@ -1,0 +1,98 @@
+[
+  {
+    "match_id": "M1",
+    "description": "H3 (NNUE) vs R1 (Classical) Fast TC",
+    "candidate": "Janus_Hybrid_H3",
+    "reference": "Janus_Classical_R1",
+    "total_games": 50,
+    "total_pairs": 25,
+    "wins": 0,
+    "draws": 1,
+    "losses": 49,
+    "points": 0.5,
+    "score_pct": 1.0,
+    "elo": -798.25,
+    "subcategories": {
+      "LL": 24,
+      "LD": 1,
+      "DD": 0,
+      "WL": 0,
+      "WD": 0,
+      "WW": 0
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      24,
+      1,
+      0,
+      0,
+      0
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      0,
+      0,
+      0,
+      1,
+      24
+    ],
+    "paired_ci_95": [
+      0.0,
+      2.96
+    ],
+    "paired_se": 0.01,
+    "paired_p_value": 0.0,
+    "wilson_ci_95": [
+      0.1,
+      8.89
+    ],
+    "elapsed_seconds": 59.1,
+    "pgn_path": "analysis/phase2/p2.3/raw/match_h3_vs_r1.pgn"
+  },
+  {
+    "match_id": "M2",
+    "description": "H3 (NNUE) vs H1 (NNUE) Fast TC",
+    "candidate": "Janus_Hybrid_H3",
+    "reference": "Janus_Hybrid_H1",
+    "total_games": 50,
+    "total_pairs": 25,
+    "wins": 0,
+    "draws": 7,
+    "losses": 43,
+    "points": 3.5,
+    "score_pct": 7.0,
+    "elo": -449.35,
+    "subcategories": {
+      "LL": 20,
+      "LD": 3,
+      "DD": 2,
+      "WL": 0,
+      "WD": 0,
+      "WW": 0
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      20,
+      3,
+      2,
+      0,
+      0
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      0,
+      0,
+      2,
+      3,
+      20
+    ],
+    "paired_ci_95": [
+      0.99,
+      13.01
+    ],
+    "paired_se": 0.03069,
+    "paired_p_value": 0.0,
+    "wilson_ci_95": [
+      2.59,
+      17.54
+    ],
+    "elapsed_seconds": 73.2,
+    "pgn_path": "analysis/phase2/p2.3/raw/match_h3_vs_h1.pgn"
+  }
+]

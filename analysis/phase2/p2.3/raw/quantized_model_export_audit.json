@@ -1,0 +1,27 @@
+{
+  "binary_path": "analysis/phase2/p2.3/models/janus_nnue_h3.bin",
+  "file_size_bytes": 10494436,
+  "sha256": "8FD3257BB521DD2E37877B6AAD5734C19D968B3CD0B8AE119788C39DC145C70A",
+  "format": {
+    "magic": "JNN3",
+    "version": 2,
+    "schema": "HalfKP-40960",
+    "features": 40960,
+    "hidden_dim": 128,
+    "dense_dim": 32,
+    "scales": {
+      "ft": 256,
+      "l1": 128,
+      "l2": 128,
+      "tau": 400
+    }
+  },
+  "numerical_parity_metrics": {
+    "positions_tested": 500,
+    "mae_cp": 2.73,
+    "max_error_cp": 13.95,
+    "pearson_r": 0.99978,
+    "sign_agreement_pct": 98.4,
+    "accumulator_overflows": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "pipeline": "P2.3_Scaled_Search_Grounded_Corpus",
+  "total_games": 147,
+  "total_positions_deduped": 9856,
+  "partitions": {
+    "train": {
+      "positions": 7736,
+      "games": 117
+    },
+    "val": {
+      "positions": 949,
+      "games": 14
+    },
+    "test": {
+      "positions": 1171,
+      "games": 16
+    }
+  },
+  "leakage_count": 0,
+  "compute_time_sec": 90.1
+}

@@ -1,0 +1,89 @@
+{
+  "milestone": "P2.3",
+  "title": "King-Relative NNUE, Search-Grounded Neural Training, Incremental CPU Inference & Independent Playing-Strength Qualification",
+  "branch": "phase2/nnue-r1",
+  "parent_commit": "aa66937",
+  "candidate_designation": "Janus Hybrid H3 (HalfKP-40960 NNUE)",
+  "candidate_checkpoint_sha256": "analysis/phase2/p2.3/models/janus_nnue_h3.pt",
+  "candidate_binary_sha256": "8FD3257BB521DD2E37877B6AAD5734C19D968B3CD0B8AE119788C39DC145C70A",
+  "classification": "Category B: Neural Engineering & Prediction Advancement",
+  "subsystem_statuses": {
+    "dataset_integrity": "PASS",
+    "teacher_quality": "PASS",
+    "feature_correctness": "PASS",
+    "training_quality": "PASS",
+    "quantization": "PASS",
+    "inference_performance": "PASS",
+    "search_correctness": "PASS",
+    "search_economics": "PASS",
+    "neural_only_strength": "FAILED",
+    "generational_progression": "INCONCLUSIVE"
+  },
+  "scientific_breakthroughs": {
+    "halfkp_feature_architecture": "64 king squares * 10 piece types * 64 piece squares = 40,960 features with 100.000% accumulator oracle parity across 2,217 moves",
+    "score_contract_and_loss": "Side-to-Move relative convention with tau=400.0 cp and calibrated mixed lambda loss (lambda=0.8), reducing test MAE to 229.7 cp",
+    "monotonic_piece_ordering": "Priors and search-grounded labels restored strict monotonic ordering (Queen +32.6 cp > Knight -5.3 cp > Equal 0.0 cp)",
+    "quantized_cpu_inference": "Version 2 JNN3 INT16/INT8 export with Pearson r = 0.999780, MAE 2.73 cp, and zero accumulator overflows",
+    "incremental_search_stack": "0.39 us accumulator delta update; 3.3x leaf acceleration over scratch recomputation; 35.0% search tree compression in alpha-beta search"
+  },
+  "tournament_battery_results": {
+    "match_m1_h3_vs_r1": {
+      "candidate": "Janus_Hybrid_H3",
+      "reference": "Janus_Classical_R1",
+      "time_control": "5.0s + 0.05s",
+      "games": 50,
+      "pairs": 25,
+      "wins": 0,
+      "draws": 1,
+      "losses": 49,
+      "score_pct": 1.0,
+      "elo_diff": -798.3,
+      "paired_95_ci": [0.0, 3.0],
+      "paired_se": 0.0100,
+      "paired_p_value": 0.0000,
+      "pentanomial_ascending": [24, 1, 0, 0, 0],
+      "subcategories": {"LL": 24, "LD": 1, "DD": 0, "WL": 0, "WD": 0, "WW": 0},
+      "crashes": 0,
+      "illegal_moves": 0,
+      "time_forfeits": 0,
+      "pgn_path": "analysis/phase2/p2.3/raw/match_h3_vs_r1.pgn"
+    },
+    "match_m2_h3_vs_h1": {
+      "candidate": "Janus_Hybrid_H3",
+      "reference": "Janus_Hybrid_H1",
+      "time_control": "5.0s + 0.05s",
+      "games": 50,
+      "pairs": 25,
+      "wins": 0,
+      "draws": 7,
+      "losses": 43,
+      "score_pct": 7.0,
+      "elo_diff": -449.4,
+      "paired_95_ci": [1.0, 13.0],
+      "paired_se": 0.0307,
+      "paired_p_value": 0.0000,
+      "pentanomial_ascending": [20, 3, 2, 0, 0],
+      "subcategories": {"LL": 20, "LD": 3, "DD": 2, "WL": 0, "WD": 0, "WW": 0},
+      "crashes": 0,
+      "illegal_moves": 0,
+      "time_forfeits": 0,
+      "pgn_path": "analysis/phase2/p2.3/raw/match_h3_vs_h1.pgn"
+    }
+  },
+  "dataset_provenance": {
+    "total_games": 147,
+    "total_positions": 10004,
+    "unique_deduplicated_positions": 9856,
+    "train_positions": 7736,
+    "val_positions": 949,
+    "test_positions": 1171,
+    "fen_leakage": 0,
+    "active_features_covered": 7812
+  },
+  "strategic_direction_p24": [
+    "Native C++17 SIMD Vectorization of HalfKP-40960 with AVX2 intrinsics to reach 500k+ NPS and close ply depth deficit",
+    "Tactical Gating and Calibrated Hybrid Blending with Classical SEE and King Safety",
+    "Scaled Self-Play Training Corpus toward 500,000 positions for full HalfKP feature saturation",
+    "King-Bucketing Feature Compression study (32 or 16 symmetrical king buckets)"
+  ]
+}

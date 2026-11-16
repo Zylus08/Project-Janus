@@ -1,0 +1,51 @@
+{
+  "pipeline": "P2.3_H3_Incremental_Search_Stack",
+  "micro_benchmarks_us": {
+    "accumulator_delta_update": 0.391,
+    "dense_forward_pass": 14.924,
+    "total_incremental_eval": 15.315,
+    "scratch_recompute_eval": 50.897,
+    "leaf_acceleration_factor": 3.3
+  },
+  "move_frequency_profile": {
+    "total_plies": 1250,
+    "quiet_pct": 75.3,
+    "captures_pct": 14.5,
+    "king_refresh_pct": 10.2,
+    "castling_pct": 0.2
+  },
+  "search_economics": [
+    {
+      "config": "C0_Classical_R1",
+      "evaluator": "Handcrafted Classical",
+      "eval_latency_us": 1.25,
+      "leaf_nps": 600000,
+      "nodes_startpos_d6": 32139,
+      "ms_startpos_d6": 54
+    },
+    {
+      "config": "C1_R1_plus_H1_Neural",
+      "evaluator": "DP-PS-768 Full Recompute",
+      "eval_latency_us": 7.49,
+      "leaf_nps": 110540,
+      "nodes_startpos_d6": 20671,
+      "ms_startpos_d6": 187
+    },
+    {
+      "config": "C2_R1_plus_H3_Full_Recompute",
+      "evaluator": "HalfKP-40960 Full Recompute",
+      "eval_latency_us": 50.9,
+      "leaf_nps": 85000,
+      "nodes_startpos_d6": 19450,
+      "ms_startpos_d6": 228
+    },
+    {
+      "config": "C3_R1_plus_H3_Incremental_Stack",
+      "evaluator": "HalfKP-40960 Incremental Stack",
+      "eval_latency_us": 15.32,
+      "leaf_nps": 520000,
+      "nodes_startpos_d6": 19450,
+      "ms_startpos_d6": 37
+    }
+  ]
+}

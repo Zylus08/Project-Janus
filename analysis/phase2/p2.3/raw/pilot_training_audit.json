@@ -1,0 +1,173 @@
+{
+  "pipeline": "P2.3_Pilot_Training_Qualification",
+  "architecture": "HalfKP-40960-128x2-32-1",
+  "epochs": 10,
+  "training_time_sec": 92.7,
+  "validation_metrics": {
+    "epoch": 10,
+    "train_loss": 0.13539,
+    "val_cp_mae": 247.6,
+    "val_score_mse": 0.03383,
+    "val_outcome_bce": 0.70553,
+    "diag": {
+      "startpos": 39.4,
+      "queen_margin": 50.7,
+      "knight_margin": 41.2,
+      "damaged_king": 12.9
+    }
+  },
+  "held_out_test_metrics": {
+    "test_cp_mae": 1250.53,
+    "test_score_mse": 0.03629,
+    "test_outcome_bce": 0.69615,
+    "test_cp_mae_clipped": 310.44,
+    "test_cp_mae_non_mate": 202.97
+  },
+  "diagnostic_suite": {
+    "startpos": 39.4,
+    "queen_margin": 50.7,
+    "knight_margin": 41.2,
+    "damaged_king": 12.9
+  },
+  "material_ordering": {
+    "startpos_cp": 39.4,
+    "queen_margin_cp": 11.3,
+    "knight_margin_cp": 1.8,
+    "queen_exceeds_knight": true,
+    "startpos_in_bounds": true,
+    "status": "QUALIFIED"
+  },
+  "checkpoint": "analysis/phase2/p2.3/models/h3_pilot_qualified.pt",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.15043,
+      "val_cp_mae": 236.11,
+      "val_score_mse": 0.03037,
+      "val_outcome_bce": 0.69887,
+      "diag": {
+        "startpos": 26.2,
+        "queen_margin": 42.5,
+        "knight_margin": 8.3,
+        "damaged_king": 86.5
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.14164,
+      "val_cp_mae": 236.36,
+      "val_score_mse": 0.02988,
+      "val_outcome_bce": 0.70175,
+      "diag": {
+        "startpos": 6.6,
+        "queen_margin": 20.0,
+        "knight_margin": -6.7,
+        "damaged_king": 20.1
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.1382,
+      "val_cp_mae": 248.43,
+      "val_score_mse": 0.03218,
+      "val_outcome_bce": 0.70571,
+      "diag": {
+        "startpos": 31.4,
+        "queen_margin": 39.5,
+        "knight_margin": 17.2,
+        "damaged_king": 24.1
+      }
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.13718,
+      "val_cp_mae": 245.07,
+      "val_score_mse": 0.03293,
+      "val_outcome_bce": 0.7053,
+      "diag": {
+        "startpos": 34.3,
+        "queen_margin": 46.3,
+        "knight_margin": 21.9,
+        "damaged_king": 21.9
+      }
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.13665,
+      "val_cp_mae": 246.78,
+      "val_score_mse": 0.03331,
+      "val_outcome_bce": 0.70527,
+      "diag": {
+        "startpos": 27.3,
+        "queen_margin": 36.9,
+        "knight_margin": 21.6,
+        "damaged_king": 23.1
+      }
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.13611,
+      "val_cp_mae": 246.68,
+      "val_score_mse": 0.03332,
+      "val_outcome_bce": 0.70539,
+      "diag": {
+        "startpos": 64.8,
+        "queen_margin": 76.7,
+        "knight_margin": 61.4,
+        "damaged_king": 4.5
+      }
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.13584,
+      "val_cp_mae": 249.91,
+      "val_score_mse": 0.03416,
+      "val_outcome_bce": 0.70644,
+      "diag": {
+        "startpos": 42.1,
+        "queen_margin": 53.3,
+        "knight_margin": 40.4,
+        "damaged_king": 15.2
+      }
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.13567,
+      "val_cp_mae": 248.4,
+      "val_score_mse": 0.0339,
+      "val_outcome_bce": 0.70581,
+      "diag": {
+        "startpos": 38.6,
+        "queen_margin": 50.3,
+        "knight_margin": 40.2,
+        "damaged_king": 7.2
+      }
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.13559,
+      "val_cp_mae": 247.58,
+      "val_score_mse": 0.03382,
+      "val_outcome_bce": 0.70543,
+      "diag": {
+        "startpos": 39.3,
+        "queen_margin": 51.2,
+        "knight_margin": 41.0,
+        "damaged_king": 10.7
+      }
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.13539,
+      "val_cp_mae": 247.6,
+      "val_score_mse": 0.03383,
+      "val_outcome_bce": 0.70553,
+      "diag": {
+        "startpos": 39.4,
+        "queen_margin": 50.7,
+        "knight_margin": 41.2,
+        "damaged_king": 12.9
+      }
+    }
+  ]
+}

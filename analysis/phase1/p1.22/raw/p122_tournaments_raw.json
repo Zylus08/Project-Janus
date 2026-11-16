@@ -1,0 +1,386 @@
+[
+  {
+    "match_id": "M1",
+    "description": "R1 vs Reference X22-S Fast TC",
+    "candidate": "Janus_Classical_R1_0",
+    "reference": "Janus_Classical_X22_S",
+    "total_games": 100,
+    "total_pairs": 50,
+    "wins": 9,
+    "draws": 58,
+    "losses": 33,
+    "points": 38.0,
+    "score_pct": 38.0,
+    "elo": -85.04,
+    "subcategories": {
+      "LL": 3,
+      "LD": 23,
+      "DD": 15,
+      "WL": 4,
+      "WD": 5,
+      "WW": 0
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      3,
+      23,
+      19,
+      5,
+      0
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      0,
+      5,
+      19,
+      23,
+      3
+    ],
+    "paired_ci_95": [
+      32.72,
+      43.28
+    ],
+    "paired_se": 0.02695,
+    "paired_p_value": 1e-05,
+    "wilson_ci_95": [
+      29.1,
+      47.79
+    ],
+    "elapsed_seconds": 134.9,
+    "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.22\\pgn\\match1_r1_vs_x22s_fast.pgn"
+  },
+  {
+    "match_id": "M2",
+    "description": "R1 vs Reference X22-S Slow TC",
+    "candidate": "Janus_Classical_R1_0",
+    "reference": "Janus_Classical_X22_S",
+    "total_games": 50,
+    "total_pairs": 25,
+    "wins": 1,
+    "draws": 29,
+    "losses": 20,
+    "points": 15.5,
+    "score_pct": 31.0,
+    "elo": -138.99,
+    "subcategories": {
+      "LL": 5,
+      "LD": 10,
+      "DD": 9,
+      "WL": 0,
+      "WD": 1,
+      "WW": 0
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      5,
+      10,
+      9,
+      1,
+      0
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      0,
+      1,
+      9,
+      10,
+      5
+    ],
+    "paired_ci_95": [
+      22.86,
+      39.14
+    ],
+    "paired_se": 0.04153,
+    "paired_p_value": 0.0,
+    "wilson_ci_95": [
+      19.93,
+      44.78
+    ],
+    "elapsed_seconds": 218.9,
+    "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.22\\pgn\\match2_r1_vs_x22s_slow.pgn"
+  },
+  {
+    "match_id": "M3",
+    "description": "R1 vs Baseline X7 Fast TC",
+    "candidate": "Janus_Classical_R1_0",
+    "reference": "Janus_Classical_X7",
+    "total_games": 100,
+    "total_pairs": 50,
+    "wins": 8,
+    "draws": 57,
+    "losses": 35,
+    "points": 36.5,
+    "score_pct": 36.5,
+    "elo": -96.19,
+    "subcategories": {
+      "LL": 4,
+      "LD": 23,
+      "DD": 15,
+      "WL": 4,
+      "WD": 4,
+      "WW": 0
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      4,
+      23,
+      19,
+      4,
+      0
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      0,
+      4,
+      19,
+      23,
+      4
+    ],
+    "paired_ci_95": [
+      31.22,
+      41.78
+    ],
+    "paired_se": 0.02693,
+    "paired_p_value": 0.0,
+    "wilson_ci_95": [
+      27.73,
+      46.27
+    ],
+    "elapsed_seconds": 133.7,
+    "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.22\\pgn\\match3_r1_vs_x7_fast.pgn"
+  },
+  {
+    "match_id": "M4",
+    "description": "R1 vs Baseline X7 Slow TC",
+    "candidate": "Janus_Classical_R1_0",
+    "reference": "Janus_Classical_X7",
+    "total_games": 50,
+    "total_pairs": 25,
+    "wins": 5,
+    "draws": 30,
+    "losses": 15,
+    "points": 20.0,
+    "score_pct": 40.0,
+    "elo": -70.44,
+    "subcategories": {
+      "LL": 3,
+      "LD": 8,
+      "DD": 9,
+      "WL": 1,
+      "WD": 4,
+      "WW": 0
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      3,
+      8,
+      10,
+      4,
+      0
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      0,
+      4,
+      10,
+      8,
+      3
+    ],
+    "paired_ci_95": [
+      31.05,
+      48.95
+    ],
+    "paired_se": 0.04564,
+    "paired_p_value": 0.02846,
+    "wilson_ci_95": [
+      27.61,
+      53.82
+    ],
+    "elapsed_seconds": 201.0,
+    "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.22\\pgn\\match4_r1_vs_x7_slow.pgn"
+  },
+  {
+    "match_id": "M5",
+    "description": "R1-4T vs Baseline X12 Fast TC (4T SMP)",
+    "candidate": "Janus_Classical_R1_4T",
+    "reference": "Janus_Classical_X12",
+    "total_games": 100,
+    "total_pairs": 50,
+    "wins": 15,
+    "draws": 54,
+    "losses": 31,
+    "points": 42.0,
+    "score_pct": 42.0,
+    "elo": -56.07,
+    "subcategories": {
+      "LL": 6,
+      "LD": 14,
+      "DD": 16,
+      "WL": 5,
+      "WD": 8,
+      "WW": 1
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      6,
+      14,
+      21,
+      8,
+      1
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      1,
+      8,
+      21,
+      14,
+      6
+    ],
+    "paired_ci_95": [
+      35.37,
+      48.63
+    ],
+    "paired_se": 0.03384,
+    "paired_p_value": 0.01806,
+    "wilson_ci_95": [
+      32.8,
+      51.79
+    ],
+    "elapsed_seconds": 674.9,
+    "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.22\\pgn\\match5_r1_4t_vs_x12_fast.pgn"
+  },
+  {
+    "match_id": "M6",
+    "description": "R1 vs Stockfish 4 Blitz",
+    "candidate": "Janus_Classical_R1_0",
+    "reference": "Stockfish_4",
+    "total_games": 40,
+    "total_pairs": 20,
+    "wins": 0,
+    "draws": 4,
+    "losses": 36,
+    "points": 2.0,
+    "score_pct": 5.0,
+    "elo": -511.5,
+    "subcategories": {
+      "LL": 16,
+      "LD": 4,
+      "DD": 0,
+      "WL": 0,
+      "WD": 0,
+      "WW": 0
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      16,
+      4,
+      0,
+      0,
+      0
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      0,
+      0,
+      0,
+      4,
+      16
+    ],
+    "paired_ci_95": [
+      0.5,
+      9.5
+    ],
+    "paired_se": 0.02294,
+    "paired_p_value": 0.0,
+    "wilson_ci_95": [
+      1.38,
+      16.5
+    ],
+    "elapsed_seconds": 28.4,
+    "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.22\\pgn\\match6_r1_vs_sf4_blitz.pgn"
+  },
+  {
+    "match_id": "M7",
+    "description": "R1 vs Stockfish 11 Blitz",
+    "candidate": "Janus_Classical_R1_0",
+    "reference": "Stockfish_11",
+    "total_games": 40,
+    "total_pairs": 20,
+    "wins": 0,
+    "draws": 1,
+    "losses": 39,
+    "points": 0.5,
+    "score_pct": 1.25,
+    "elo": -759.05,
+    "subcategories": {
+      "LL": 19,
+      "LD": 1,
+      "DD": 0,
+      "WL": 0,
+      "WD": 0,
+      "WW": 0
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      19,
+      1,
+      0,
+      0,
+      0
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      0,
+      0,
+      0,
+      1,
+      19
+    ],
+    "paired_ci_95": [
+      0.0,
+      3.7
+    ],
+    "paired_se": 0.0125,
+    "paired_p_value": 0.0,
+    "wilson_ci_95": [
+      0.13,
+      10.91
+    ],
+    "elapsed_seconds": 29.1,
+    "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.22\\pgn\\match7_r1_vs_sf11_blitz.pgn"
+  },
+  {
+    "match_id": "M8",
+    "description": "R1 vs Stockfish 19 NNUE Blitz",
+    "candidate": "Janus_Classical_R1_0",
+    "reference": "Stockfish_19_NNUE",
+    "total_games": 20,
+    "total_pairs": 10,
+    "wins": 0,
+    "draws": 1,
+    "losses": 19,
+    "points": 0.5,
+    "score_pct": 2.5,
+    "elo": -636.43,
+    "subcategories": {
+      "LL": 9,
+      "LD": 1,
+      "DD": 0,
+      "WL": 0,
+      "WD": 0,
+      "WW": 0
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      9,
+      1,
+      0,
+      0,
+      0
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      0,
+      0,
+      0,
+      1,
+      9
+    ],
+    "paired_ci_95": [
+      0.0,
+      7.4
+    ],
+    "paired_se": 0.025,
+    "paired_p_value": 0.0,
+    "wilson_ci_95": [
+      0.26,
+      20.05
+    ],
+    "elapsed_seconds": 11.0,
+    "pgn_path": "E:\\ChessXML\\project-janus-phase1\\analysis\\phase1\\p1.22\\pgn\\match8_r1_vs_sf19_blitz.pgn"
+  }
+]

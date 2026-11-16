@@ -1,0 +1,262 @@
+[
+  {
+    "name": "Startpos",
+    "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "depth": 6,
+    "levels": {
+      "S0": {
+        "desc": "Pure PVS + Qsearch",
+        "bestmove": "b1c3",
+        "score": 0,
+        "nodes": 106600,
+        "wall_ms": 120.89,
+        "ratio_vs_s0": 1.0,
+        "reduction_pct": 0.0
+      },
+      "S1": {
+        "desc": "+ Null-Move Pruning (NMP)",
+        "bestmove": "b1c3",
+        "score": 0,
+        "nodes": 47142,
+        "wall_ms": 37.61,
+        "ratio_vs_s0": 0.442,
+        "reduction_pct": 55.8
+      },
+      "S2": {
+        "desc": "+ Reverse Futility Pruning (RFP)",
+        "bestmove": "b1c3",
+        "score": 0,
+        "nodes": 46679,
+        "wall_ms": 36.65,
+        "ratio_vs_s0": 0.438,
+        "reduction_pct": 56.2
+      },
+      "S3": {
+        "desc": "+ Late Move Reductions (LMR)",
+        "bestmove": "b1c3",
+        "score": 0,
+        "nodes": 46679,
+        "wall_ms": 38.12,
+        "ratio_vs_s0": 0.438,
+        "reduction_pct": 56.2
+      },
+      "S4": {
+        "desc": "+ Late Move Pruning (LMP) [Full R1.0]",
+        "bestmove": "b1c3",
+        "score": 0,
+        "nodes": 21669,
+        "wall_ms": 26.48,
+        "ratio_vs_s0": 0.203,
+        "reduction_pct": 79.7
+      }
+    }
+  },
+  {
+    "name": "Semi-Slav",
+    "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5",
+    "depth": 6,
+    "levels": {
+      "S0": {
+        "desc": "Pure PVS + Qsearch",
+        "bestmove": "e2e3",
+        "score": 42,
+        "nodes": 284598,
+        "wall_ms": 340.2,
+        "ratio_vs_s0": 1.0,
+        "reduction_pct": 0.0
+      },
+      "S1": {
+        "desc": "+ Null-Move Pruning (NMP)",
+        "bestmove": "e2e3",
+        "score": 42,
+        "nodes": 159774,
+        "wall_ms": 153.95,
+        "ratio_vs_s0": 0.561,
+        "reduction_pct": 43.9
+      },
+      "S2": {
+        "desc": "+ Reverse Futility Pruning (RFP)",
+        "bestmove": "e2e3",
+        "score": 42,
+        "nodes": 145016,
+        "wall_ms": 127.9,
+        "ratio_vs_s0": 0.51,
+        "reduction_pct": 49.0
+      },
+      "S3": {
+        "desc": "+ Late Move Reductions (LMR)",
+        "bestmove": "e2e3",
+        "score": 42,
+        "nodes": 145016,
+        "wall_ms": 128.43,
+        "ratio_vs_s0": 0.51,
+        "reduction_pct": 49.0
+      },
+      "S4": {
+        "desc": "+ Late Move Pruning (LMP) [Full R1.0]",
+        "bestmove": "e2e3",
+        "score": 42,
+        "nodes": 58983,
+        "wall_ms": 93.16,
+        "ratio_vs_s0": 0.207,
+        "reduction_pct": 79.3
+      }
+    }
+  },
+  {
+    "name": "Tactical Queen",
+    "fen": "r1b1k2r/pppp1ppp/8/8/1B1qn3/8/PPP2PPP/RN1QKB1R w KQkq - 0 1",
+    "depth": 6,
+    "levels": {
+      "S0": {
+        "desc": "Pure PVS + Qsearch",
+        "bestmove": "d1d4",
+        "score": 1300,
+        "nodes": 324760,
+        "wall_ms": 351.37,
+        "ratio_vs_s0": 1.0,
+        "reduction_pct": 0.0
+      },
+      "S1": {
+        "desc": "+ Null-Move Pruning (NMP)",
+        "bestmove": "d1d4",
+        "score": 1300,
+        "nodes": 123537,
+        "wall_ms": 141.65,
+        "ratio_vs_s0": 0.38,
+        "reduction_pct": 62.0
+      },
+      "S2": {
+        "desc": "+ Reverse Futility Pruning (RFP)",
+        "bestmove": "d1d4",
+        "score": 1300,
+        "nodes": 59356,
+        "wall_ms": 46.53,
+        "ratio_vs_s0": 0.183,
+        "reduction_pct": 81.7
+      },
+      "S3": {
+        "desc": "+ Late Move Reductions (LMR)",
+        "bestmove": "d1d4",
+        "score": 1300,
+        "nodes": 59356,
+        "wall_ms": 44.54,
+        "ratio_vs_s0": 0.183,
+        "reduction_pct": 81.7
+      },
+      "S4": {
+        "desc": "+ Late Move Pruning (LMP) [Full R1.0]",
+        "bestmove": "d1d4",
+        "score": 1442,
+        "nodes": 15425,
+        "wall_ms": 24.81,
+        "ratio_vs_s0": 0.047,
+        "reduction_pct": 95.3
+      }
+    }
+  },
+  {
+    "name": "Scheveningen Sac",
+    "fen": "2r2rk1/1bq1bppp/p2pp3/1p2P3/3N1P2/P1NR4/1PP1Q1PP/5R1K w - - 0 18",
+    "depth": 6,
+    "levels": {
+      "S0": {
+        "desc": "Pure PVS + Qsearch",
+        "bestmove": "d4e6",
+        "score": 163,
+        "nodes": 350523,
+        "wall_ms": 477.65,
+        "ratio_vs_s0": 1.0,
+        "reduction_pct": 0.0
+      },
+      "S1": {
+        "desc": "+ Null-Move Pruning (NMP)",
+        "bestmove": "d4e6",
+        "score": 163,
+        "nodes": 115044,
+        "wall_ms": 96.2,
+        "ratio_vs_s0": 0.328,
+        "reduction_pct": 67.2
+      },
+      "S2": {
+        "desc": "+ Reverse Futility Pruning (RFP)",
+        "bestmove": "d4e6",
+        "score": 163,
+        "nodes": 44681,
+        "wall_ms": 36.92,
+        "ratio_vs_s0": 0.127,
+        "reduction_pct": 87.3
+      },
+      "S3": {
+        "desc": "+ Late Move Reductions (LMR)",
+        "bestmove": "d4e6",
+        "score": 163,
+        "nodes": 44681,
+        "wall_ms": 36.59,
+        "ratio_vs_s0": 0.127,
+        "reduction_pct": 87.3
+      },
+      "S4": {
+        "desc": "+ Late Move Pruning (LMP) [Full R1.0]",
+        "bestmove": "d4e6",
+        "score": 163,
+        "nodes": 15183,
+        "wall_ms": 24.45,
+        "ratio_vs_s0": 0.043,
+        "reduction_pct": 95.7
+      }
+    }
+  },
+  {
+    "name": "Rook 4v3",
+    "fen": "8/5pk1/7p/1R6/8/8/5rPP/6K1 b - - 0 1",
+    "depth": 6,
+    "levels": {
+      "S0": {
+        "desc": "Pure PVS + Qsearch",
+        "bestmove": "f2c2",
+        "score": -46,
+        "nodes": 25653,
+        "wall_ms": 16.82,
+        "ratio_vs_s0": 1.0,
+        "reduction_pct": 0.0
+      },
+      "S1": {
+        "desc": "+ Null-Move Pruning (NMP)",
+        "bestmove": "f2c2",
+        "score": -46,
+        "nodes": 14991,
+        "wall_ms": 8.58,
+        "ratio_vs_s0": 0.584,
+        "reduction_pct": 41.6
+      },
+      "S2": {
+        "desc": "+ Reverse Futility Pruning (RFP)",
+        "bestmove": "f2c2",
+        "score": -46,
+        "nodes": 13517,
+        "wall_ms": 7.3,
+        "ratio_vs_s0": 0.527,
+        "reduction_pct": 47.3
+      },
+      "S3": {
+        "desc": "+ Late Move Reductions (LMR)",
+        "bestmove": "f2c2",
+        "score": -46,
+        "nodes": 13517,
+        "wall_ms": 7.58,
+        "ratio_vs_s0": 0.527,
+        "reduction_pct": 47.3
+      },
+      "S4": {
+        "desc": "+ Late Move Pruning (LMP) [Full R1.0]",
+        "bestmove": "f2c2",
+        "score": -46,
+        "nodes": 5417,
+        "wall_ms": 4.43,
+        "ratio_vs_s0": 0.211,
+        "reduction_pct": 78.9
+      }
+    }
+  }
+]

@@ -329,7 +329,7 @@ static int  g_rfp_margin_per_depth = 120;      // Margin per ply (120 for 1T, 90
 static bool g_use_aspiration_window = true;    // Phase 5: Aspiration Windows (delta = 25 cp)
 static int  g_aspiration_delta = 25;           // Aspiration delta
 static bool g_movepicker_stage_reform = false; // Phase 1, Milestone P1.14: Good Captures -> Killers -> Countermove -> Quiets -> Bad Captures
-static std::string g_search_variant = "X26";    // Active variant identifier (Default Candidate X26)
+static std::string g_search_variant = "R1";    // Active variant identifier (Default Candidate R1 Reboot)
 static int  g_rfp_repair_mode = 3;              // P1.21 Option A: 0=B0 (Legacy), 1=B1 (+NonPV), 2=B2 (+TTStore), 3=B3 (+TTConflict +Zugzwang)
 
 // Milestone P1.15 Adaptive Capture Ordering, History Modes & Exact Search Contract
@@ -910,6 +910,9 @@ EXPORT void native_apply_search_variant(const char* var_str) {
             g_lmp_max_depth = 4;
             g_rfp_margin_per_depth = 90;
         }
+    } else if (var == "R1") { // Milestone P1.22 Candidate: Clean-Sheet Classical Search Reboot
+        g_search_variant = "R1";
+        // R1 uses its own encapsulated state
     } else if (var == "X26") { // P1.21 Candidate: Option A (Verified RFP Correctness Repair + Option B Connected Passers + 64K Pawn Hash)
         g_use_staged_movegen = true;
         g_quiescence_see_mode = 2;
@@ -5445,12 +5448,18 @@ static void run_worker_search(
     out_wres->nodes = worker_nodes;
 }
 
+#include "r1/r1_bridge.hpp"
+
 EXPORT int native_search(
     NativeBoard* b,
     int max_depth,
     double time_limit_sec,
     NativeSearchResult* out_res
 ) {
+    if (g_search_variant == "R1") {
+        native_r1_search(b, max_depth, time_limit_sec, out_res);
+        return out_res ? out_res->best_move : 0;
+    }
     init_attacks();
     auto start_time = std::chrono::steady_clock::now();
     g_search_start_time = start_time;
@@ -5896,7 +5905,7 @@ static void uci_loop() {
         iss >> cmd;
 
         if (cmd == "uci") {
-            std::cout << "id name Janus Classical X (P1.21 Candidate X26)" << std::endl;
+            std::cout << "id name Janus Classical R1 (Search Reboot)" << std::endl;
             std::cout << "id author Project Janus Developers" << std::endl;
             std::cout << "option name Threads type spin default 1 min 1 max 16" << std::endl;
             std::cout << "option name UCI_LMP type combo default L1 var L0 var L1 var L2 var L3" << std::endl;
@@ -5909,7 +5918,7 @@ static void uci_loop() {
             std::cout << "option name LMRBaseReduction type spin default 1 min 1 max 3" << std::endl;
             std::cout << "option name UseSEEOrdering type check default false" << std::endl;
             std::cout << "option name UseSEEInQuiescence type check default false" << std::endl;
-            std::cout << "option name UCI_Variant type combo default X26 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18 var X19 var X20 var X21 var X22 var X23 var X24 var X25 var X26" << std::endl;
+            std::cout << "option name UCI_Variant type combo default R1 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18 var X19 var X20 var X21 var X22 var X23 var X24 var X25 var X26 var R1" << std::endl;
             std::cout << "option name UCI_ConnectedPawns type check default true" << std::endl;
             std::cout << "option name UCI_AdaptiveCapture type combo default C1 var C0 var C1 var C2 var C3" << std::endl;
             std::cout << "option name UCI_HistoryMode type combo default H0 var H0 var H1 var H2 var H3" << std::endl;

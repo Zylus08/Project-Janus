@@ -1,0 +1,170 @@
+{
+  "timestamp": "2026-11-16 12:32:36",
+  "phase3_minimax_correctness": [
+    {
+      "name": "Startpos D1",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "depth": 1,
+      "score": 64,
+      "move": "b1c3",
+      "ab_score": 64,
+      "ab_move": "b1c3",
+      "score_match": true,
+      "move_match": true,
+      "is_mate": false,
+      "status": "PASS"
+    },
+    {
+      "name": "Startpos D2",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "depth": 2,
+      "score": 0,
+      "move": "b1c3",
+      "ab_score": 0,
+      "ab_move": "b1c3",
+      "score_match": true,
+      "move_match": true,
+      "is_mate": false,
+      "status": "PASS"
+    },
+    {
+      "name": "Startpos D3",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "depth": 3,
+      "score": 64,
+      "move": "b1c3",
+      "ab_score": 64,
+      "ab_move": "b1c3",
+      "score_match": true,
+      "move_match": true,
+      "is_mate": false,
+      "status": "PASS"
+    },
+    {
+      "name": "Mate in 1 (Scholar Refutation)",
+      "fen": "rnbqkbnr/ppppp2p/5p2/6p1/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+      "depth": 1,
+      "score": 273,
+      "move": "c1g5",
+      "ab_score": 273,
+      "ab_move": "c1g5",
+      "score_match": true,
+      "move_match": true,
+      "is_mate": false,
+      "status": "PASS"
+    },
+    {
+      "name": "Mate in 1 (Back-rank)",
+      "fen": "6k1/5ppp/8/8/8/8/8/3R2K1 w - - 0 1",
+      "depth": 1,
+      "score": 39,
+      "move": "d1d7",
+      "ab_score": 39,
+      "ab_move": "d1d7",
+      "score_match": true,
+      "move_match": true,
+      "is_mate": false,
+      "status": "PASS"
+    },
+    {
+      "name": "Mate in 2 (Tactical Queen)",
+      "fen": "r1b1k2r/pppp1ppp/8/8/1B1qn3/8/PPP2PPP/RN1QKB1R w KQkq - 0 1",
+      "depth": 3,
+      "score": 1385,
+      "move": "d1d4",
+      "ab_score": 1385,
+      "ab_move": "d1d4",
+      "score_match": true,
+      "move_match": true,
+      "is_mate": false,
+      "status": "PASS"
+    },
+    {
+      "name": "Stalemate Defense (K+P vs K)",
+      "fen": "7k/5K2/6P1/8/8/8/8/8 b - - 0 1",
+      "depth": 1,
+      "score": 0,
+      "move": "a1a1",
+      "ab_score": 0,
+      "ab_move": "a1a1",
+      "score_match": true,
+      "move_match": true,
+      "is_mate": false,
+      "status": "PASS"
+    },
+    {
+      "name": "Endgame KP Passer Race",
+      "fen": "8/4k3/8/8/8/4K3/1p6/1R6 w - - 0 1",
+      "depth": 2,
+      "score": 519,
+      "move": "b1b2",
+      "ab_score": 519,
+      "ab_move": "b1b2",
+      "score_match": true,
+      "move_match": true,
+      "is_mate": false,
+      "status": "PASS"
+    }
+  ],
+  "phase4_transposition_contracts": {
+    "tt0_cutoff_contract": {
+      "pass": true,
+      "code": 0
+    },
+    "tt1_precedence_contract": {
+      "pass": true,
+      "code": 0
+    },
+    "tt2_storage_contract": {
+      "pass": true,
+      "code": 0
+    }
+  },
+  "phase5_pvs_aspiration_deepening": {
+    "positions": [
+      {
+        "name": "Startpos D4",
+        "depth": 4,
+        "best_move": "b1c3",
+        "score": 0,
+        "nodes": 5365
+      },
+      {
+        "name": "Semi-Slav D4",
+        "depth": 4,
+        "best_move": "c4c5",
+        "score": 41,
+        "nodes": 14574
+      },
+      {
+        "name": "Tactical Pin D4",
+        "depth": 4,
+        "best_move": "d1d4",
+        "score": 1412,
+        "nodes": 7701
+      }
+    ],
+    "short_search_completed_depth": 3
+  },
+  "phase6_quiescence_correctness": {
+    "stand_pat_score": 920,
+    "check_evasion_move": "e8f8"
+  },
+  "phase7_baseline_r1_engine": {
+    "depth": 6,
+    "best_move": "b1c3",
+    "score": 0,
+    "total_nodes": 21669,
+    "main_nodes": 12776,
+    "qsearch_nodes": 8893,
+    "nps": 821598,
+    "elapsed_ms": 26.3742,
+    "telemetry": {
+      "tt_cutoffs": 407,
+      "nmp_cutoffs": 356,
+      "rfp_cutoffs": 270,
+      "lmr_researches": 0,
+      "lmp_cutoffs": 908
+    }
+  }
+}

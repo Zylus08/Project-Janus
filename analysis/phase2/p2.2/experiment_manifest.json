@@ -1,0 +1,56 @@
+{
+  "milestone": "P2.2",
+  "title": "Neural Evaluation Failure Forensics, Score Calibration, Incremental Inference Optimization & Scalable Dataset Readiness",
+  "branch": "phase2/nnue-r1",
+  "parent_commit": "5f5aac4",
+  "candidate_designation": "Janus H1 Forensic Audit (Candidate H3 deferred to P2.3 under Rule 13)",
+  "candidate_sha256": null,
+  "classification": "Category B: Neural Engineering, Forensics & Data Advancement",
+  "causal_attributions": {
+    "score_compression": "4x-10x compression due to pure BCE loss on 49.5% draw outcomes",
+    "stm_initiative_bias": "+52 cp to +60 cp uncalibrated side-to-move initiative bias",
+    "piece_hierarchy_inversion": "Opening configuration valued Queen (+151 cp) lower than Knight (+174 cp) and Rook (+218 cp)",
+    "feature_schema_reclassification": "DP-PS-768 lacks king conditioning; moving king changes only the king square feature",
+    "inference_latency_slowdown": "6x leaf evaluation latency (7.49 us vs 1.25 us) caused by evaluate_full() leaf calls",
+    "hybrid_h2_paradox_resolution": "H2 scores 4.0/50 (8.0%, -424.3 Elo) vs Classical R1; blending H1 severely degrades R1"
+  },
+  "empirical_validations": {
+    "quantization_parity": {
+      "pearson_r": 0.999636,
+      "mae_cp": 6.50,
+      "max_err_cp": 25.80,
+      "sign_agreement_pct": 98.60,
+      "overflows": 0
+    },
+    "accumulator_incremental_parity": "100.000% (14,781/14,781 legal moves, delta=0)",
+    "dataset_partition_isolation": "100.0% clean (0 FEN leakage, 0 game leakage across 50,978 positions)",
+    "h2_vs_r1_match": {
+      "games": 50,
+      "score": 4.0,
+      "score_pct": 8.0,
+      "elo": -424.3,
+      "ci_95": [3.3, 12.7],
+      "pentanomial": [17, 8, 0, 0, 0]
+    },
+    "pilot_retraining_lambda_loss": {
+      "lambda": 0.8,
+      "startpos_eval_cp": -7.1,
+      "queen_margin_cp": 140.0,
+      "knight_margin_cp": 105.0,
+      "queen_knight_ratio": 1.33
+    },
+    "pilot_selfplay_data": {
+      "games": 30,
+      "unique_positions": 802,
+      "train_positions": 651,
+      "val_positions": 151,
+      "fen_leakage": 0
+    }
+  },
+  "architectural_decisions": {
+    "feature_expansion": "F1 Standard HalfKP-40960 (5.25M parameters, 10 MB) selected for P2.3",
+    "training_objective": "Lambda-Loss (0.8 MSE teacher + 0.2 BCE outcome)",
+    "search_optimization": "Accumulator stack in SearchStackEntry for O(1) incremental leaf evaluation",
+    "candidate_h3_status": "Deferred to Milestone P2.3 upon training on >= 500,000 self-play positions"
+  }
+}

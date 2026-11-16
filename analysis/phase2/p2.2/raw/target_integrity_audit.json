@@ -1,0 +1,102 @@
+[
+  {
+    "name": "1. White Queen Advantage (w to move)",
+    "fen": "rnb1kbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "expected_desc": "Win for STM (White)",
+    "expected_sign": "> 0",
+    "classical_r1": 867,
+    "pytorch_cp": 195.9,
+    "quantized_cpp": 203,
+    "sign_correct": true
+  },
+  {
+    "name": "2. White Queen Advantage (b to move)",
+    "fen": "rnb1kbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR b KQkq - 0 1",
+    "expected_desc": "Loss for STM (Black)",
+    "expected_sign": "< 0",
+    "classical_r1": -867,
+    "pytorch_cp": -82.2,
+    "quantized_cpp": -85,
+    "sign_correct": true
+  },
+  {
+    "name": "3. Black Queen Advantage (b to move)",
+    "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNB1KBNR b KQkq - 0 1",
+    "expected_desc": "Win for STM (Black)",
+    "expected_sign": "> 0",
+    "classical_r1": 867,
+    "pytorch_cp": 195.9,
+    "quantized_cpp": 203,
+    "sign_correct": true
+  },
+  {
+    "name": "4. Black Queen Advantage (w to move)",
+    "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNB1KBNR w KQkq - 0 1",
+    "expected_desc": "Loss for STM (White)",
+    "expected_sign": "< 0",
+    "classical_r1": -867,
+    "pytorch_cp": -82.2,
+    "quantized_cpp": -85,
+    "sign_correct": true
+  },
+  {
+    "name": "5. White Passed Pawn d7 (w to move)",
+    "fen": "k7/3P4/8/8/8/8/8/K7 w - - 0 1",
+    "expected_desc": "Win for STM (White)",
+    "expected_sign": "> 0",
+    "classical_r1": 762,
+    "pytorch_cp": 410.7,
+    "quantized_cpp": 418,
+    "sign_correct": true
+  },
+  {
+    "name": "6. Black Passed Pawn d2 (b to move)",
+    "fen": "k7/8/8/8/8/8/3p4/K7 b - - 0 1",
+    "expected_desc": "Win for STM (Black)",
+    "expected_sign": "> 0",
+    "classical_r1": 762,
+    "pytorch_cp": 410.7,
+    "quantized_cpp": 418,
+    "sign_correct": true
+  },
+  {
+    "name": "7. Forced Mate for White (w to move)",
+    "fen": "6k1/5ppp/8/8/8/8/8/4R1K1 w - - 0 1",
+    "expected_desc": "Mate for STM (White)",
+    "expected_sign": ">> 0",
+    "classical_r1": -1,
+    "pytorch_cp": 254.1,
+    "quantized_cpp": 253,
+    "sign_correct": true
+  },
+  {
+    "name": "8. Forced Mate for White (b to move)",
+    "fen": "4r1k1/8/8/8/8/8/5PPP/6K1 b - - 0 1",
+    "expected_desc": "Mate for STM (Black)",
+    "expected_sign": ">> 0",
+    "classical_r1": -1,
+    "pytorch_cp": 254.1,
+    "quantized_cpp": 253,
+    "sign_correct": true
+  },
+  {
+    "name": "9. Drawn Equal Endgame",
+    "fen": "8/8/4k3/8/8/4K3/8/8 w - - 0 1",
+    "expected_desc": "Draw (Equal)",
+    "expected_sign": "~ 0",
+    "classical_r1": 0,
+    "pytorch_cp": 25.5,
+    "quantized_cpp": 26,
+    "sign_correct": true
+  },
+  {
+    "name": "10. Stalemate Position (b to move)",
+    "fen": "k7/2Q5/1K6/8/8/8/8/8 b - - 0 1",
+    "expected_desc": "Stalemate (Draw)",
+    "expected_sign": "0",
+    "classical_r1": -866,
+    "pytorch_cp": -722.6,
+    "quantized_cpp": -726,
+    "sign_correct": true
+  }
+]

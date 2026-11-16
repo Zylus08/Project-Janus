@@ -1,0 +1,42 @@
+{
+  "F0_DP_PS_768": {
+    "name": "Janus Dual-Perspective Piece-Square-768",
+    "feature_dim": 768,
+    "total_params": 106689,
+    "weight_bytes": 205220,
+    "weight_size_formatted": "200.4 KB",
+    "king_conditioned": false,
+    "pawn_shelter_encoded": false,
+    "king_attack_geometry_encoded": false
+  },
+  "F1_HalfKP_40960": {
+    "name": "Standard HalfKP-40960 (Full King-Piece Conditioning)",
+    "feature_dim": 40960,
+    "total_params": 5251265,
+    "weight_bytes": 10494372,
+    "weight_size_formatted": "10.01 MB",
+    "king_conditioned": true,
+    "pawn_shelter_encoded": true,
+    "king_attack_geometry_encoded": true
+  },
+  "F2_HalfKP_Bucketed_4": {
+    "name": "King-Bucketed HalfKP-4 (4 King Quadrants)",
+    "feature_dim": 2560,
+    "total_params": 336065,
+    "weight_bytes": 663972,
+    "weight_size_formatted": "648.4 KB",
+    "king_conditioned": true,
+    "pawn_shelter_encoded": true,
+    "king_attack_geometry_encoded": false
+  },
+  "F3_HalfKP_4096": {
+    "name": "Compact HalfKP-4096 (64 King x 64 Relative Geometry)",
+    "feature_dim": 4096,
+    "total_params": 532673,
+    "weight_bytes": 1057188,
+    "weight_size_formatted": "1.01 MB",
+    "king_conditioned": true,
+    "pawn_shelter_encoded": true,
+    "king_attack_geometry_encoded": true
+  }
+}

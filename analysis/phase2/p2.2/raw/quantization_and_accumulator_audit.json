@@ -1,0 +1,22 @@
+{
+  "quantization_parity": {
+    "positions_evaluated": 500,
+    "pearson_r": 0.999636,
+    "mae_cp": 6.5,
+    "max_err_cp": 25.8,
+    "rmse_cp": 8.27,
+    "sign_agreement_pct": 98.6
+  },
+  "accumulator_invariants": {
+    "total_moves_tested": 14781,
+    "parity_failures": 0,
+    "exact_parity_pct": 100.0,
+    "move_types": {
+      "quiet": 12823,
+      "capture": 1885,
+      "castling": 5,
+      "en_passant": 2,
+      "promotion": 66
+    }
+  }
+}

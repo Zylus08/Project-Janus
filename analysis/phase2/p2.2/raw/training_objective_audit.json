@@ -1,0 +1,35 @@
+{
+  "h1_original_params": {
+    "loss_function": "BCEWithLogitsLoss",
+    "target_type": "Binary / Trinary Game Outcome (STM perspective)",
+    "target_range": "[0.0, 1.0]",
+    "optimizer": "Adam (lr=1e-3, weight_decay=1e-5)",
+    "lr_schedule": "None (Constant 1e-3)",
+    "batch_size": 256,
+    "epochs": 5,
+    "checkpoint_selection": "Final epoch (Epoch 5)",
+    "random_seed": 42,
+    "train_loss_history": [
+      0.6219,
+      0.4502,
+      0.4112,
+      0.398,
+      0.3906
+    ],
+    "primary_defects": [
+      "Outcome-only labeling introduces massive noise on blunders/reversals",
+      "49.5% draw rate pulls logits toward zero, causing 4x-10x score compression",
+      "Zero centipawn grounding causes Queen (203 cp) < Knight (226 cp) distortion"
+    ]
+  },
+  "pilot_retraining": {
+    "lambda_val": 0.8,
+    "samples": 10000,
+    "epochs": 5,
+    "queen_margin": 94.2,
+    "rook_margin": 64.8,
+    "knight_margin": 70.8,
+    "queen_knight_ratio": 1.33,
+    "monotonic_piece_ordering_restored": false
+  }
+}

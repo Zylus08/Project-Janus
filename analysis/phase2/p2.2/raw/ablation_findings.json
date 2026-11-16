@@ -1,0 +1,94 @@
+{
+  "diagnostics": [
+    {
+      "name": "Startpos",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "truth": 20,
+      "a0_classical": 0,
+      "a1_nnue": 52,
+      "a2_calibrated": 0,
+      "a5_hybrid": 26
+    },
+    {
+      "name": "White +Q",
+      "fen": "rnb1kbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "truth": 850,
+      "a0_classical": 867,
+      "a1_nnue": 203,
+      "a2_calibrated": 528,
+      "a5_hybrid": 535
+    },
+    {
+      "name": "White +R",
+      "fen": "1nbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "truth": 500,
+      "a0_classical": 486,
+      "a1_nnue": 270,
+      "a2_calibrated": 763,
+      "a5_hybrid": 378
+    },
+    {
+      "name": "White +N",
+      "fen": "r1bqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "truth": 325,
+      "a0_classical": 270,
+      "a1_nnue": 226,
+      "a2_calibrated": 609,
+      "a5_hybrid": 248
+    },
+    {
+      "name": "White +P",
+      "fen": "rnbqkbnr/1ppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "truth": 100,
+      "a0_classical": 85,
+      "a1_nnue": 80,
+      "a2_calibrated": 98,
+      "a5_hybrid": 82
+    },
+    {
+      "name": "Down Queen",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNB1KBNR w KQkq - 0 1",
+      "truth": -850,
+      "a0_classical": -867,
+      "a1_nnue": -85,
+      "a2_calibrated": -479,
+      "a5_hybrid": -476
+    }
+  ],
+  "h2_vs_r1_match": {
+    "candidate": "Janus_Hybrid_H2",
+    "opponent": "Janus_Classical_R1",
+    "total_games": 50,
+    "points": 4.0,
+    "score_pct": 8.0,
+    "elo": -424.28,
+    "wins": 0,
+    "draws": 8,
+    "losses": 42,
+    "subcategories": {
+      "LL": 17,
+      "LD": 8,
+      "DD": 0,
+      "WL": 0,
+      "WD": 0,
+      "WW": 0
+    },
+    "pentanomial_asc": [
+      17,
+      8,
+      0,
+      0,
+      0
+    ],
+    "paired_ci_95": [
+      3.33,
+      12.67
+    ],
+    "p_value": 0.0,
+    "wilson_ci_95": [
+      3.15,
+      18.84
+    ],
+    "elapsed_seconds": 71.2
+  }
+}

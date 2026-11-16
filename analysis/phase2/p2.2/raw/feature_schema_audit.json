@@ -1,0 +1,141 @@
+{
+  "startpos": {
+    "active_stm_count": 32,
+    "active_ntm_count": 32,
+    "stm": 0
+  },
+  "color_inversion_symmetry": {
+    "white_stm_features_sorted": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      65,
+      70,
+      130,
+      133,
+      192,
+      199,
+      259,
+      324,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438,
+      439,
+      505,
+      510,
+      570,
+      573,
+      632,
+      639,
+      699,
+      764
+    ],
+    "black_stm_features_sorted": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      65,
+      70,
+      130,
+      133,
+      192,
+      199,
+      259,
+      324,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438,
+      439,
+      505,
+      510,
+      570,
+      573,
+      632,
+      639,
+      699,
+      764
+    ],
+    "exact_set_match": true
+  },
+  "king_placement_differential": {
+    "fen_ke1": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
+    "fen_kg1": "8/8/8/8/8/8/4P3/6K1 w - - 0 1",
+    "features_ke1": [
+      12,
+      324
+    ],
+    "features_kg1": [
+      12,
+      326
+    ],
+    "removed_feature": [
+      324
+    ],
+    "added_feature": [
+      326
+    ],
+    "unchanged_features": [
+      12
+    ],
+    "is_pawn_feature_affected_by_king_position": true
+  },
+  "castling_white_kingside": {
+    "removed": [
+      639,
+      764
+    ],
+    "added": [
+      637,
+      766
+    ],
+    "num_removed": 2,
+    "num_added": 2
+  },
+  "en_passant": {
+    "removed": [
+      36,
+      324,
+      419,
+      711
+    ],
+    "added": [
+      383,
+      403,
+      764
+    ],
+    "num_removed": 4,
+    "num_added": 3
+  },
+  "promotions": {
+    "queen_promo_added": [
+      383,
+      644,
+      764
+    ],
+    "knight_promo_added": [
+      383,
+      452,
+      764
+    ],
+    "distinct_promotions": true
+  },
+  "make_unmake_invariant": true
+}

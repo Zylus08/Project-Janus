@@ -1,0 +1,48 @@
+{
+  "eval_classical": 867,
+  "eval_nnue": 203,
+  "eval_hybrid_50": 535,
+  "eval_hybrid_0": 867,
+  "eval_hybrid_100": 203,
+  "boundary_w0_exact": true,
+  "boundary_w100_exact": true,
+  "search_classical": {
+    "bestmove": "b1c3",
+    "nodes": 9742,
+    "score_cp": 938,
+    "nps": 721111,
+    "pv": [
+      "b1c3",
+      "g8f6",
+      "g1f3",
+      "b8c6",
+      "d2d4"
+    ]
+  },
+  "search_nnue": {
+    "bestmove": "b1c3",
+    "nodes": 6475,
+    "score_cp": 305,
+    "nps": 203386,
+    "pv": [
+      "b1c3",
+      "a7a6",
+      "d2d3",
+      "d7d6",
+      "c1e3"
+    ]
+  },
+  "search_hybrid": {
+    "bestmove": "b1c3",
+    "nodes": 1874,
+    "score_cp": 644,
+    "nps": 182720,
+    "pv": [
+      "b1c3",
+      "a7a6",
+      "d2d3",
+      "d7d6",
+      "c1e3"
+    ]
+  }
+}

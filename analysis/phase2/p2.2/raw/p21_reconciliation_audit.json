@@ -1,0 +1,190 @@
+{
+  "hashes_match": false,
+  "actual_hashes": {
+    "H1_EXE": "755C451D064EA38ECC400274CBCE48D28B6F43F67747BB63C0F4E84F6EA4F97A",
+    "H1_BIN": "FD4D8105C39FD9A08783D9D9AC0BB85B27DB99578B97677B035C07F4D2A653F3",
+    "R1_EXE": "7312B2B73CD9D40F108EE1B5F3903632A2A7805B19BC73082A796922DE66029B",
+    "X7_EXE": "86392A2F4BD4182A4D7DC21E32940BD7939F6816794D5E1AB02F4082431CA28B",
+    "X22_EXE": "35D095CFFE8A2EDA412171803C09BE52A74DFB3F9744C04F573D2A7FFB1C2F1C"
+  },
+  "reconstructed_games": 450,
+  "matches": [
+    {
+      "match_id": "M1",
+      "desc": "H1 (NNUE) vs R1 (Classical) Fast TC",
+      "raw_games": 100,
+      "pgn_games": 100,
+      "score_pts": 1.5,
+      "score_pct": 1.5,
+      "wdl": "+0 =3 -97",
+      "raw_wdl": "+0 =3 -97",
+      "terminations": {
+        "Checkmate": 97,
+        "Threefold Repetition": 3
+      },
+      "wilson_ci": [
+        0.35,
+        6.24
+      ],
+      "pentanomial_asc": [
+        47,
+        3,
+        0,
+        0,
+        0
+      ],
+      "elo": -726.94
+    },
+    {
+      "match_id": "M2",
+      "desc": "H2 (Hybrid) vs H1 (NNUE) Fast TC",
+      "raw_games": 50,
+      "pgn_games": 50,
+      "score_pts": 49.5,
+      "score_pct": 99.0,
+      "wdl": "+49 =1 -0",
+      "raw_wdl": "+49 =1 -0",
+      "terminations": {
+        "Checkmate": 49,
+        "Threefold Repetition": 1
+      },
+      "wilson_ci": [
+        91.11,
+        99.9
+      ],
+      "pentanomial_asc": [
+        0,
+        0,
+        0,
+        1,
+        24
+      ],
+      "elo": 798.25
+    },
+    {
+      "match_id": "M3",
+      "desc": "H1 (NNUE) vs Baseline X7 Fast TC",
+      "raw_games": 100,
+      "pgn_games": 100,
+      "score_pts": 0.0,
+      "score_pct": 0.0,
+      "wdl": "+0 =0 -100",
+      "raw_wdl": "+0 =0 -100",
+      "terminations": {
+        "Checkmate": 100
+      },
+      "wilson_ci": [
+        0.0,
+        3.7
+      ],
+      "pentanomial_asc": [
+        50,
+        0,
+        0,
+        0,
+        0
+      ],
+      "elo": null
+    },
+    {
+      "match_id": "M4",
+      "desc": "H1 (NNUE) vs Reference X22-S Fast TC",
+      "raw_games": 100,
+      "pgn_games": 100,
+      "score_pts": 0.0,
+      "score_pct": 0.0,
+      "wdl": "+0 =0 -100",
+      "raw_wdl": "+0 =0 -100",
+      "terminations": {
+        "Checkmate": 100
+      },
+      "wilson_ci": [
+        0.0,
+        3.7
+      ],
+      "pentanomial_asc": [
+        50,
+        0,
+        0,
+        0,
+        0
+      ],
+      "elo": null
+    },
+    {
+      "match_id": "M5",
+      "desc": "H1 (NNUE) vs Stockfish 4 Blitz",
+      "raw_games": 40,
+      "pgn_games": 40,
+      "score_pts": 0.0,
+      "score_pct": 0.0,
+      "wdl": "+0 =0 -40",
+      "raw_wdl": "+0 =0 -40",
+      "terminations": {
+        "Checkmate": 40
+      },
+      "wilson_ci": [
+        0.0,
+        8.76
+      ],
+      "pentanomial_asc": [
+        20,
+        0,
+        0,
+        0,
+        0
+      ],
+      "elo": null
+    },
+    {
+      "match_id": "M6",
+      "desc": "H1 (NNUE) vs Stockfish 11 Blitz",
+      "raw_games": 40,
+      "pgn_games": 40,
+      "score_pts": 0.0,
+      "score_pct": 0.0,
+      "wdl": "+0 =0 -40",
+      "raw_wdl": "+0 =0 -40",
+      "terminations": {
+        "Checkmate": 40
+      },
+      "wilson_ci": [
+        0.0,
+        8.76
+      ],
+      "pentanomial_asc": [
+        20,
+        0,
+        0,
+        0,
+        0
+      ],
+      "elo": null
+    },
+    {
+      "match_id": "M7",
+      "desc": "H1 (NNUE) vs Stockfish 19 NNUE Blitz",
+      "raw_games": 20,
+      "pgn_games": 20,
+      "score_pts": 0.0,
+      "score_pct": 0.0,
+      "wdl": "+0 =0 -20",
+      "raw_wdl": "+0 =0 -20",
+      "terminations": {
+        "Checkmate": 20
+      },
+      "wilson_ci": [
+        0.0,
+        16.11
+      ],
+      "pentanomial_asc": [
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      "elo": null
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "model_name": "JanusNNUE_H1",
+  "architecture": "768 -> 128 (x2) -> 32 -> 1",
+  "total_parameters": 106689,
+  "epochs": 5,
+  "training_time_sec": 41.84,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.6219,
+      "val_loss": 0.65718,
+      "val_acc_pct": 59.88
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.46855,
+      "val_loss": 0.69519,
+      "val_acc_pct": 60.44
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.41781,
+      "val_loss": 0.73584,
+      "val_acc_pct": 62.96
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.39923,
+      "val_loss": 0.74128,
+      "val_acc_pct": 59.82
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.39061,
+      "val_loss": 0.76781,
+      "val_acc_pct": 60.72
+    }
+  ],
+  "held_out_test": {
+    "test_loss": 0.77659,
+    "test_accuracy_pct": 59.78
+  },
+  "quantization": {
+    "scale_ft": 256.0,
+    "scale_l1": 128.0,
+    "scale_l2": 128.0,
+    "binary_path": "analysis/phase2/p2.1/models/janus_nnue_h1.bin",
+    "binary_size_bytes": 213468,
+    "binary_sha256": "fd4d8105c39fd9a08783d9d9ac0bb85b27db99578b97677b035c07f4d2a653f3",
+    "mae_cp": 6.51,
+    "max_err_cp": 25.76,
+    "correlation": 0.999635
+  }
+}

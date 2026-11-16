@@ -10,6 +10,7 @@
 #include "r1_tt.hpp"
 #include "r1_movepicker.hpp"
 #include "r1_quiescence.hpp"
+#include "r1_nnue.hpp"
 
 #include <chrono>
 #include <iostream>
@@ -19,10 +20,26 @@ namespace r1 {
 class SearchCore {
 public:
     SearchCore(TranspositionTable& tt, SearchTelemetry& telemetry, const SearchConfig& config = SearchConfig{})
-        : tt_(tt), telemetry_(telemetry), config_(config), quiescence_(telemetry, tables_) {}
+        : tt_(tt), telemetry_(telemetry), config_(config), quiescence_(telemetry, tables_, config) {}
 
-    void set_config(const SearchConfig& cfg) { config_ = cfg; }
+    void set_config(const SearchConfig& cfg) {
+        config_ = cfg;
+        quiescence_.set_config(cfg);
+    }
     const SearchConfig& config() const { return config_; }
+
+    inline int evaluate_position(const NativeBoard* b) const {
+        if (config_.eval_mode == EVAL_CLASSICAL) {
+            return ::native_evaluate(b);
+        }
+        int nnue_score = NNUEEvaluator::evaluate_full(b);
+        if (config_.eval_mode == EVAL_NNUE) {
+            return nnue_score;
+        }
+        int classical_score = ::native_evaluate(b);
+        int w = config_.hybrid_nnue_weight;
+        return (w * nnue_score + (100 - w) * classical_score) / 100;
+    }
 
     void clear_tables() {
         tables_.clear();
@@ -40,7 +57,7 @@ public:
         telemetry_.main_nodes++;
 
         if (depth <= 0) {
-            return ::native_evaluate(b);
+            return evaluate_position(b);
         }
 
         uint16_t legals[MAX_MOVES];
@@ -97,7 +114,7 @@ public:
         }
 
         if (ply >= MAX_PLY - 1) {
-            return ::native_evaluate(b);
+            return evaluate_position(b);
         }
 
         // Base case: Quiescence search
@@ -105,7 +122,7 @@ public:
             if (config_.use_qsearch) {
                 return quiescence_.search(b, alpha, beta, ply);
             } else {
-                return ::native_evaluate(b);
+                return evaluate_position(b);
             }
         }
 
@@ -141,7 +158,7 @@ public:
         // Selectivity Heuristics (Strictly Non-PV, ply > 0, !in_check)
         // ====================================================================
         if (!is_pv && ply > 0 && !in_check && excluded_move == 0) {
-            int static_eval = ::native_evaluate(b);
+            int static_eval = evaluate_position(b);
 
             // 1. Reverse Futility Pruning (RFP) with Formal Contract Guard
             if (config_.use_rfp && depth <= 3 && std::abs(beta) < MATE_THRESHOLD) {

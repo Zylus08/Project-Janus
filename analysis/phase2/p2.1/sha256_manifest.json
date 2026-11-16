@@ -1,0 +1,162 @@
+{
+  "analysis\\phase2\\p2.1\\control\\janus_hybrid_h1.exe": {
+    "sha256": "755C451D064EA38ECC400274CBCE48D28B6F43F67747BB63C0F4E84F6EA4F97A",
+    "size_bytes": 1850880
+  },
+  "analysis\\phase2\\p2.1\\control\\janus_hybrid_h1.dll": {
+    "sha256": "D73EB8425F2F875DBD2AB2FFDD616072468955D36820F0F0D604419AAB074ED3",
+    "size_bytes": 1776128
+  },
+  "analysis\\phase1\\p1.22\\control\\janus_classical_r1.exe": {
+    "sha256": "7312B2B73CD9D40F108EE1B5F3903632A2A7805B19BC73082A796922DE66029B",
+    "size_bytes": 1630208
+  },
+  "analysis\\phase1\\p1.3\\control\\janus_classical_x7.exe": {
+    "sha256": "86392A2F4BD4182A4D7DC21E32940BD7939F6816794D5E1AB02F4082431CA28B",
+    "size_bytes": 370176
+  },
+  "analysis\\phase1\\p1.17\\control\\janus_classical_x22.exe": {
+    "sha256": "35D095CFFE8A2EDA412171803C09BE52A74DFB3F9744C04F573D2A7FFB1C2F1C",
+    "size_bytes": 1610752
+  },
+  "engine\\classical_x\\janus_classical_x.cpp": {
+    "sha256": "B55949AB6AC2018F23FADE916364204E6395DD730DD21487ACB7AF637361875C",
+    "size_bytes": 268235
+  },
+  "engine\\classical_x\\r1\\r1_nnue.hpp": {
+    "sha256": "C005CAB9E59E6AA097FC26EEA8F465C4ABC694C35AEEA75216CA7A8B9387B0E0",
+    "size_bytes": 8075
+  },
+  "engine\\classical_x\\r1\\r1_nnue_weights.hpp": {
+    "sha256": "5A183B9662EA556F9375DEF536DFE6A3C3062C3756F1C877E9F65873902CEE4B",
+    "size_bytes": 312211
+  },
+  "engine\\classical_x\\r1\\r1_search.hpp": {
+    "sha256": "A2B54BBBD11D80C6154CE353DE7C43136EC758FA4EDB0B49844B80BEF3288EE5",
+    "size_bytes": 16944
+  },
+  "engine\\classical_x\\r1\\r1_quiescence.hpp": {
+    "sha256": "9BDC71927CF992CC54F2C63A94124010074A39F2DB0A44D9D0C8FCB06FBC144B",
+    "size_bytes": 3535
+  },
+  "engine\\classical_x\\r1\\r1_bridge.hpp": {
+    "sha256": "FF33D2ADB98E5C16FE4C29AE0E8679E7584BAD5319333697BCA68CAB71250C8A",
+    "size_bytes": 8275
+  },
+  "engine\\classical_x\\r1\\r1_types.hpp": {
+    "sha256": "0BE73A7757D5CE742F2764BE8B39D41EC9DA85D18952D3FF60BA2D79D7FB78CC",
+    "size_bytes": 3022
+  },
+  "analysis\\phase2\\p2.1\\models\\janus_nnue_h1.bin": {
+    "sha256": "FD4D8105C39FD9A08783D9D9AC0BB85B27DB99578B97677B035C07F4D2A653F3",
+    "size_bytes": 213468
+  },
+  "analysis\\phase2\\p2.1\\models\\janus_nnue_h1_float.pt": {
+    "sha256": "856FDDB5AA36284E90B213ED40613CFF1EEDE2E65113E974EBB03ADE01850083",
+    "size_bytes": 429925
+  },
+  "analysis\\phase2\\p2.1\\data\\janus_nnue_train.jsonl": {
+    "sha256": "78CCE009B263617186654110F114038D7C36524A2840AF50238A0BABA76A858D",
+    "size_bytes": 9572530
+  },
+  "analysis\\phase2\\p2.1\\data\\janus_nnue_val.jsonl": {
+    "sha256": "A5884BB71D6250DD02F4BE1F56D50FE311CDE9CE08073264DA24227ECC45E638",
+    "size_bytes": 1188412
+  },
+  "analysis\\phase2\\p2.1\\data\\janus_nnue_test.jsonl": {
+    "sha256": "3DB745775B8C99C6035453434B9123AD24D4864D843558AAC40ECFDAC3655C07",
+    "size_bytes": 1198775
+  },
+  "analysis\\phase2\\p2.1\\raw\\p21_tournaments_raw.json": {
+    "sha256": "24E426414158F30F0C8B31DB8D98FA40E37DFB54B6B794337DF3F4ADA92ABF9A",
+    "size_bytes": 6429
+  },
+  "analysis\\phase2\\p2.1\\pgn\\match1_h1_vs_r1_fast.pgn": {
+    "sha256": "FE7714A5F09CA190332D233953800186DC0B95D08157533746B2B9DD60BC4FB8",
+    "size_bytes": 52553
+  },
+  "analysis\\phase2\\p2.1\\pgn\\match2_h2_vs_h1_fast.pgn": {
+    "sha256": "06E4B8B29AF0FEE50B9CAEBA9AF450A104D227871F5E0E5428B402B651FDEF7F",
+    "size_bytes": 26904
+  },
+  "analysis\\phase2\\p2.1\\pgn\\match3_h1_vs_x7_fast.pgn": {
+    "sha256": "C9B16094ACBEFB5B330D06EB80F55C6CCA2D14AA4518A438893E874F933F4857",
+    "size_bytes": 50236
+  },
+  "analysis\\phase2\\p2.1\\pgn\\match4_h1_vs_x22s_fast.pgn": {
+    "sha256": "F0468DC481D2223A54F8094B4EA1894C339AE421E5E066D6946D4F60DE54361E",
+    "size_bytes": 50419
+  },
+  "analysis\\phase2\\p2.1\\pgn\\match5_h1_vs_sf4_blitz.pgn": {
+    "sha256": "A406B1C389F60BF2D0B58C8F5307AA55B2A4CCFD575E7A0755ABA9EAF0AB7102",
+    "size_bytes": 18630
+  },
+  "analysis\\phase2\\p2.1\\pgn\\match6_h1_vs_sf11_blitz.pgn": {
+    "sha256": "F2FD3DFF927339197E45C7DB8DBC2DAAEE7085C32C162AC2E2D7A8D4642FDD52",
+    "size_bytes": 18626
+  },
+  "analysis\\phase2\\p2.1\\pgn\\match7_h1_vs_sf19_blitz.pgn": {
+    "sha256": "EBA3B8323F8A9ECB688BA71E27CE34B1D6EA61DBDE0EE7F3949612D42BEB35DC",
+    "size_bytes": 9523
+  },
+  "analysis\\phase2\\p2.1\\PHASE2_CHARTER_AND_TRANSITION.md": {
+    "sha256": "16DE871D566CBC6EA2357A4A3B7569D96A97A53715BC885A22C82A966FF99D93",
+    "size_bytes": 3619
+  },
+  "analysis\\phase2\\p2.1\\R1_NEURAL_INTEGRATION_ARCHITECTURE.md": {
+    "sha256": "7E6D87FCCF64E2DAF1FD1E11194AB4C40EE6154339875D2420C61446A9801EC3",
+    "size_bytes": 6300
+  },
+  "analysis\\phase2\\p2.1\\NNUE_FEATURE_SCHEMA.md": {
+    "sha256": "679F3520A7EAB5B9F6699548B16F0038369AA5240DA44D8C47D6C7D4496A49D8",
+    "size_bytes": 3551
+  },
+  "analysis\\phase2\\p2.1\\CHESS_DATASET_INTEGRITY.md": {
+    "sha256": "14B403772B1B9136889465C95E22F1D142D25FE0EC31E4004BCF3C0A3E485FCB",
+    "size_bytes": 3076
+  },
+  "analysis\\phase2\\p2.1\\JANUS_NNUE_TRAINING_REPORT.md": {
+    "sha256": "686881C0037B257D3A971CDCE2B73768C5292EA9CF2987CA487060B4D8077B62",
+    "size_bytes": 3554
+  },
+  "analysis\\phase2\\p2.1\\NNUE_QUANTIZED_CPU_INFERENCE.md": {
+    "sha256": "41D0D3AF20E95900570ECDF5F465327E2C41ECA630B445296DC9DDD49100FD8B",
+    "size_bytes": 2835
+  },
+  "analysis\\phase2\\p2.1\\INCREMENTAL_ACCUMULATOR_CORRECTNESS.md": {
+    "sha256": "232AEABD134B9D1BBBB06EBB2E331F0C45BC04BD4564A74ECFA40F4AADDF5DDC",
+    "size_bytes": 2885
+  },
+  "analysis\\phase2\\p2.1\\JANUS_HYBRID_SEARCH_INTEGRATION.md": {
+    "sha256": "BF8A6011BF10D2066B9F09005A0E893A7CA92A030B575DB2952FB14BB54A8F64",
+    "size_bytes": 3564
+  },
+  "analysis\\phase2\\p2.1\\CLASSICAL_VS_NNUE_SEARCH_ECONOMICS.md": {
+    "sha256": "9823F52D2630775E68201AAABC800611A481B71DD3E3A5B44DDB24AC0E20C596",
+    "size_bytes": 3348
+  },
+  "analysis\\phase2\\p2.1\\PHASE2_NEURAL_CORRECTNESS_GATE.md": {
+    "sha256": "8F831DC8E98248FF82E55FCA5BBE4B47E154BA837AF0C7BEC846AE8B9458C130",
+    "size_bytes": 3333
+  },
+  "analysis\\phase2\\p2.1\\JANUS_H1_CANDIDATE_FREEZE.md": {
+    "sha256": "10240756E7775606F4115C7756F5CD02DAC3417EFFA7468078A380C71598BB00",
+    "size_bytes": 2451
+  },
+  "analysis\\phase2\\p2.1\\JANUS_H1_INDEPENDENT_STRENGTH.md": {
+    "sha256": "6C32FF293AAC7BDAF3D7B46C8132DE421CCB2C84689A10A7B667D1D4B0985DFF",
+    "size_bytes": 5480
+  },
+  "analysis\\phase2\\p2.1\\PHASE2_EXTERNAL_CALIBRATION.md": {
+    "sha256": "D74AD02FC6EB74D58DD5D67CCCF0DAB4D29FF1640929FF839414B698AB9385A7",
+    "size_bytes": 4664
+  },
+  "analysis\\phase2\\p2.1\\PHASE2_P21_FINAL_DECISION.md": {
+    "sha256": "3931017CC1BB412DFB5AEE067DDD9D124BFD40D2235F07A194BB3008772EAB47",
+    "size_bytes": 5150
+  },
+  "docs\\phase2\\p2.1_report.md": {
+    "sha256": "475DAB6581F40D9157B571288ED5E4C6B16B6742DAA7F2EB0F5D709FC2A9F9B4",
+    "size_bytes": 12650
+  }
+}

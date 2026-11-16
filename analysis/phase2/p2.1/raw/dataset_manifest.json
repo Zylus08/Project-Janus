@@ -1,0 +1,24 @@
+{
+  "pipeline_version": "P2.1_V1",
+  "date": "2026-11-16",
+  "random_seed": 42,
+  "total_games_ingested": 583,
+  "total_unique_positions": 50978,
+  "splits": {
+    "train": {
+      "path": "analysis/phase2/p2.1/data/janus_nnue_train.jsonl",
+      "num_positions": 40736,
+      "sha256": "78cce009b263617186654110f114038d7c36524a2840af50238a0baba76a858d"
+    },
+    "val": {
+      "path": "analysis/phase2/p2.1/data/janus_nnue_val.jsonl",
+      "num_positions": 5127,
+      "sha256": "a5884bb71d6250dd02f4be1f56d50fe311cde9ce08073264da24227ecc45e638"
+    },
+    "test": {
+      "path": "analysis/phase2/p2.1/data/janus_nnue_test.jsonl",
+      "num_positions": 5115,
+      "sha256": "3db745775b8c99c6035453434b9123ad24d4864d843558aac40ecfdac3655c07"
+    }
+  }
+}

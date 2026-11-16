@@ -1,0 +1,106 @@
+{
+  "Startpos": {
+    "H0_Classical": {
+      "best_move": "d2d4",
+      "score_cp": 34,
+      "nodes": 32139,
+      "nps": 112195,
+      "time_ms": 286,
+      "wall_time_sec": 0.434
+    },
+    "H1_NNUE": {
+      "best_move": "e2e4",
+      "score_cp": 80,
+      "nodes": 20671,
+      "nps": 110486,
+      "time_ms": 187,
+      "wall_time_sec": 0.2827
+    },
+    "H2_Hybrid": {
+      "best_move": "d2d4",
+      "score_cp": 34,
+      "nodes": 32139,
+      "nps": 110105,
+      "time_ms": 291,
+      "wall_time_sec": 0.384
+    }
+  },
+  "Kiwipete": {
+    "H0_Classical": {
+      "best_move": "d5e6",
+      "score_cp": -177,
+      "nodes": 161696,
+      "nps": 83534,
+      "time_ms": 1935,
+      "wall_time_sec": 2.026
+    },
+    "H1_NNUE": {
+      "best_move": "e5g6",
+      "score_cp": -222,
+      "nodes": 345661,
+      "nps": 83422,
+      "time_ms": 4143,
+      "wall_time_sec": 4.2336
+    },
+    "H2_Hybrid": {
+      "best_move": "d5e6",
+      "score_cp": -177,
+      "nodes": 161696,
+      "nps": 77456,
+      "time_ms": 2087,
+      "wall_time_sec": 2.1927
+    }
+  },
+  "Fine_70": {
+    "H0_Classical": {
+      "best_move": "a1b1",
+      "score_cp": -54,
+      "nodes": 1392,
+      "nps": 226566,
+      "time_ms": 6,
+      "wall_time_sec": 0.1057
+    },
+    "H1_NNUE": {
+      "best_move": "a1a2",
+      "score_cp": -213,
+      "nodes": 1171,
+      "nps": 201030,
+      "time_ms": 5,
+      "wall_time_sec": 0.098
+    },
+    "H2_Hybrid": {
+      "best_move": "a1b1",
+      "score_cp": -54,
+      "nodes": 1392,
+      "nps": 275938,
+      "time_ms": 5,
+      "wall_time_sec": 0.0979
+    }
+  },
+  "CF_T3_Scheveningen": {
+    "H0_Classical": {
+      "best_move": "e2e3",
+      "score_cp": 60,
+      "nodes": 50370,
+      "nps": 94817,
+      "time_ms": 531,
+      "wall_time_sec": 0.6289
+    },
+    "H1_NNUE": {
+      "best_move": "h2h3",
+      "score_cp": 138,
+      "nodes": 70296,
+      "nps": 92846,
+      "time_ms": 757,
+      "wall_time_sec": 0.8347
+    },
+    "H2_Hybrid": {
+      "best_move": "e2e3",
+      "score_cp": 60,
+      "nodes": 50370,
+      "nps": 93694,
+      "time_ms": 537,
+      "wall_time_sec": 0.6163
+    }
+  }
+}

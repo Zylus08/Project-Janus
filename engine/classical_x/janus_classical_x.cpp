@@ -332,6 +332,10 @@ static bool g_movepicker_stage_reform = false; // Phase 1, Milestone P1.14: Good
 static std::string g_search_variant = "R1";    // Active variant identifier (Default Candidate R1 Reboot)
 static int  g_rfp_repair_mode = 3;              // P1.21 Option A: 0=B0 (Legacy), 1=B1 (+NonPV), 2=B2 (+TTStore), 3=B3 (+TTConflict +Zugzwang)
 
+// Phase 2 R1 / NNUE integration forward declarations
+EXPORT void native_r1_set_eval_mode(int mode, int hybrid_weight);
+EXPORT int native_r1_evaluate_nnue(NativeBoard* b);
+
 // Milestone P1.15 Adaptive Capture Ordering, History Modes & Exact Search Contract
 static int  g_adaptive_capture_mode = 0; // 0=C0 (Frozen X19), 1=C1 (Near-even [-100, 0)), 2=C2 (Endgame conditional), 3=C3 (Defensive / check exception)
 static int  g_history_mode = 0;          // 0=H0 (Frozen X19), 1=H1 (Aging/decay at root), 2=H2 (Conservative aging), 3=H3 (In-search gravity)
@@ -912,7 +916,13 @@ EXPORT void native_apply_search_variant(const char* var_str) {
         }
     } else if (var == "R1") { // Milestone P1.22 Candidate: Clean-Sheet Classical Search Reboot
         g_search_variant = "R1";
-        // R1 uses its own encapsulated state
+        native_r1_set_eval_mode(0, 50);
+    } else if (var == "H1") { // Milestone P2.1 Candidate: Janus Hybrid H1 (R1 Search + NNUE Evaluation)
+        g_search_variant = "R1";
+        native_r1_set_eval_mode(1, 100);
+    } else if (var == "H2") { // Milestone P2.1 Candidate: Janus Hybrid H2 (R1 Search + Blended Hybrid Evaluation)
+        g_search_variant = "R1";
+        native_r1_set_eval_mode(2, 50);
     } else if (var == "X26") { // P1.21 Candidate: Option A (Verified RFP Correctness Repair + Option B Connected Passers + 64K Pawn Hash)
         g_use_staged_movegen = true;
         g_quiescence_see_mode = 2;
@@ -5918,7 +5928,9 @@ static void uci_loop() {
             std::cout << "option name LMRBaseReduction type spin default 1 min 1 max 3" << std::endl;
             std::cout << "option name UseSEEOrdering type check default false" << std::endl;
             std::cout << "option name UseSEEInQuiescence type check default false" << std::endl;
-            std::cout << "option name UCI_Variant type combo default R1 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18 var X19 var X20 var X21 var X22 var X23 var X24 var X25 var X26 var R1" << std::endl;
+            std::cout << "option name UCI_Variant type combo default R1 var X0 var X1 var X2 var X3 var X4 var X5 var X6 var X7 var X8 var X9 var X10 var X11 var X12 var X13 var X14 var X15 var X16 var X17 var X18 var X19 var X20 var X21 var X22 var X23 var X24 var X25 var X26 var R1 var H1 var H2" << std::endl;
+            std::cout << "option name UCI_Evaluation type combo default Classical var Classical var NNUE var Hybrid" << std::endl;
+            std::cout << "option name NNUE_Weight type spin default 50 min 0 max 100" << std::endl;
             std::cout << "option name UCI_ConnectedPawns type check default true" << std::endl;
             std::cout << "option name UCI_AdaptiveCapture type combo default C1 var C0 var C1 var C2 var C3" << std::endl;
             std::cout << "option name UCI_HistoryMode type combo default H0 var H0 var H1 var H2 var H3" << std::endl;
@@ -6016,6 +6028,13 @@ static void uci_loop() {
                     g_lmr_base_reduction = std::stoi(opt_val);
                 } else if (opt_name == "UCI_Variant" && !opt_val.empty()) {
                     native_apply_search_variant(opt_val.c_str());
+                } else if (opt_name == "UCI_Evaluation" && !opt_val.empty()) {
+                    if (opt_val == "Classical") native_r1_set_eval_mode(0, 50);
+                    else if (opt_val == "NNUE") native_r1_set_eval_mode(1, 100);
+                    else if (opt_val == "Hybrid") native_r1_set_eval_mode(2, 50);
+                } else if (opt_name == "NNUE_Weight" && !opt_val.empty()) {
+                    int w = std::clamp(std::stoi(opt_val), 0, 100);
+                    native_r1_set_eval_mode(2, w);
                 } else if (opt_name == "UCI_StagedMovegen") {
                     g_use_staged_movegen = (opt_val.empty() || opt_val == "true" || opt_val == "1");
                 } else if (opt_name == "UCI_QuiescenceSEE" && !opt_val.empty()) {

@@ -1,0 +1,338 @@
+[
+  {
+    "match_id": "M1",
+    "description": "H1 (NNUE) vs R1 (Classical) Fast TC",
+    "candidate": "Janus_Hybrid_H1",
+    "reference": "Janus_Classical_R1",
+    "total_games": 100,
+    "total_pairs": 50,
+    "wins": 0,
+    "draws": 3,
+    "losses": 97,
+    "points": 1.5,
+    "score_pct": 1.5,
+    "elo": -726.94,
+    "subcategories": {
+      "LL": 47,
+      "LD": 3,
+      "DD": 0,
+      "WL": 0,
+      "WD": 0,
+      "WW": 0
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      47,
+      3,
+      0,
+      0,
+      0
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      0,
+      0,
+      0,
+      3,
+      47
+    ],
+    "paired_ci_95": [
+      0.0,
+      3.16
+    ],
+    "paired_se": 0.00848,
+    "paired_p_value": 0.0,
+    "wilson_ci_95": [
+      0.35,
+      6.24
+    ],
+    "elapsed_seconds": 90.9,
+    "pgn_path": "analysis/phase2/p2.1/pgn/match1_h1_vs_r1_fast.pgn"
+  },
+  {
+    "match_id": "M2",
+    "description": "H2 (Hybrid) vs H1 (NNUE) Fast TC",
+    "candidate": "Janus_Hybrid_H2",
+    "reference": "Janus_Hybrid_H1",
+    "total_games": 50,
+    "total_pairs": 25,
+    "wins": 49,
+    "draws": 1,
+    "losses": 0,
+    "points": 49.5,
+    "score_pct": 99.0,
+    "elo": 798.25,
+    "subcategories": {
+      "LL": 0,
+      "LD": 0,
+      "DD": 0,
+      "WL": 0,
+      "WD": 1,
+      "WW": 24
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      0,
+      0,
+      0,
+      1,
+      24
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      24,
+      1,
+      0,
+      0,
+      0
+    ],
+    "paired_ci_95": [
+      97.04,
+      100.0
+    ],
+    "paired_se": 0.01,
+    "paired_p_value": 0.0,
+    "wilson_ci_95": [
+      91.11,
+      99.9
+    ],
+    "elapsed_seconds": 55.2,
+    "pgn_path": "analysis/phase2/p2.1/pgn/match2_h2_vs_h1_fast.pgn"
+  },
+  {
+    "match_id": "M3",
+    "description": "H1 (NNUE) vs Baseline X7 Fast TC",
+    "candidate": "Janus_Hybrid_H1",
+    "reference": "Janus_Classical_X7",
+    "total_games": 100,
+    "total_pairs": 50,
+    "wins": 0,
+    "draws": 0,
+    "losses": 100,
+    "points": 0.0,
+    "score_pct": 0.0,
+    "elo": null,
+    "subcategories": {
+      "LL": 50,
+      "LD": 0,
+      "DD": 0,
+      "WL": 0,
+      "WD": 0,
+      "WW": 0
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      50,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      0,
+      0,
+      0,
+      0,
+      50
+    ],
+    "paired_ci_95": [
+      0.0,
+      0.0
+    ],
+    "paired_se": 0.0,
+    "paired_p_value": 0.0,
+    "wilson_ci_95": [
+      0.0,
+      3.7
+    ],
+    "elapsed_seconds": 88.0,
+    "pgn_path": "analysis/phase2/p2.1/pgn/match3_h1_vs_x7_fast.pgn"
+  },
+  {
+    "match_id": "M4",
+    "description": "H1 (NNUE) vs Reference X22-S Fast TC",
+    "candidate": "Janus_Hybrid_H1",
+    "reference": "Janus_Classical_X22_S",
+    "total_games": 100,
+    "total_pairs": 50,
+    "wins": 0,
+    "draws": 0,
+    "losses": 100,
+    "points": 0.0,
+    "score_pct": 0.0,
+    "elo": null,
+    "subcategories": {
+      "LL": 50,
+      "LD": 0,
+      "DD": 0,
+      "WL": 0,
+      "WD": 0,
+      "WW": 0
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      50,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      0,
+      0,
+      0,
+      0,
+      50
+    ],
+    "paired_ci_95": [
+      0.0,
+      0.0
+    ],
+    "paired_se": 0.0,
+    "paired_p_value": 0.0,
+    "wilson_ci_95": [
+      0.0,
+      3.7
+    ],
+    "elapsed_seconds": 92.0,
+    "pgn_path": "analysis/phase2/p2.1/pgn/match4_h1_vs_x22s_fast.pgn"
+  },
+  {
+    "match_id": "M5",
+    "description": "H1 (NNUE) vs Stockfish 4 Blitz",
+    "candidate": "Janus_Hybrid_H1",
+    "reference": "Stockfish_4",
+    "total_games": 40,
+    "total_pairs": 20,
+    "wins": 0,
+    "draws": 0,
+    "losses": 40,
+    "points": 0.0,
+    "score_pct": 0.0,
+    "elo": null,
+    "subcategories": {
+      "LL": 20,
+      "LD": 0,
+      "DD": 0,
+      "WL": 0,
+      "WD": 0,
+      "WW": 0
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      20,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      0,
+      0,
+      0,
+      0,
+      20
+    ],
+    "paired_ci_95": [
+      0.0,
+      0.0
+    ],
+    "paired_se": 0.0,
+    "paired_p_value": 0.0,
+    "wilson_ci_95": [
+      0.0,
+      8.76
+    ],
+    "elapsed_seconds": 21.4,
+    "pgn_path": "analysis/phase2/p2.1/pgn/match5_h1_vs_sf4_blitz.pgn"
+  },
+  {
+    "match_id": "M6",
+    "description": "H1 (NNUE) vs Stockfish 11 Blitz",
+    "candidate": "Janus_Hybrid_H1",
+    "reference": "Stockfish_11",
+    "total_games": 40,
+    "total_pairs": 20,
+    "wins": 0,
+    "draws": 0,
+    "losses": 40,
+    "points": 0.0,
+    "score_pct": 0.0,
+    "elo": null,
+    "subcategories": {
+      "LL": 20,
+      "LD": 0,
+      "DD": 0,
+      "WL": 0,
+      "WD": 0,
+      "WW": 0
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      20,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      0,
+      0,
+      0,
+      0,
+      20
+    ],
+    "paired_ci_95": [
+      0.0,
+      0.0
+    ],
+    "paired_se": 0.0,
+    "paired_p_value": 0.0,
+    "wilson_ci_95": [
+      0.0,
+      8.76
+    ],
+    "elapsed_seconds": 24.0,
+    "pgn_path": "analysis/phase2/p2.1/pgn/match6_h1_vs_sf11_blitz.pgn"
+  },
+  {
+    "match_id": "M7",
+    "description": "H1 (NNUE) vs Stockfish 19 NNUE Blitz",
+    "candidate": "Janus_Hybrid_H1",
+    "reference": "Stockfish_19_NNUE",
+    "total_games": 20,
+    "total_pairs": 10,
+    "wins": 0,
+    "draws": 0,
+    "losses": 20,
+    "points": 0.0,
+    "score_pct": 0.0,
+    "elo": null,
+    "subcategories": {
+      "LL": 10,
+      "LD": 0,
+      "DD": 0,
+      "WL": 0,
+      "WD": 0,
+      "WW": 0
+    },
+    "pentanomial_ascending_LL_to_WW": [
+      10,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pentanomial_descending_WW_to_LL": [
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "paired_ci_95": [
+      0.0,
+      0.0
+    ],
+    "paired_se": 0.0,
+    "paired_p_value": 0.0,
+    "wilson_ci_95": [
+      0.0,
+      16.11
+    ],
+    "elapsed_seconds": 21.7,
+    "pgn_path": "analysis/phase2/p2.1/pgn/match7_h1_vs_sf19_blitz.pgn"
+  }
+]

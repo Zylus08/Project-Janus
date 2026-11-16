@@ -3,24 +3,43 @@
  * r1_quiescence.hpp
  * Janus Classical R1 — Corrected Tactical Quiescence Search (Q1 Semantics).
  * Implements stand-pat fail-high, check evasion completeness, delta pruning, and SEE filtering.
+ * Supports Classical, NNUE, and Hybrid evaluation modes.
  */
 
 #include "r1_types.hpp"
 #include "r1_telemetry.hpp"
 #include "r1_movepicker.hpp"
+#include "r1_nnue.hpp"
 
 namespace r1 {
 
 class QuiescenceCore {
 public:
-    QuiescenceCore(SearchTelemetry& telemetry, const MoveOrderingTables& tables)
-        : telemetry_(telemetry), tables_(tables) {}
+    QuiescenceCore(SearchTelemetry& telemetry, const MoveOrderingTables& tables, const SearchConfig& config)
+        : telemetry_(telemetry), tables_(tables), config_(config) {}
+
+    void set_config(const SearchConfig& config) {
+        config_ = config;
+    }
+
+    inline int evaluate_position(const NativeBoard* b) const {
+        if (config_.eval_mode == EVAL_CLASSICAL) {
+            return ::native_evaluate(b);
+        }
+        int nnue_score = NNUEEvaluator::evaluate_full(b);
+        if (config_.eval_mode == EVAL_NNUE) {
+            return nnue_score;
+        }
+        int classical_score = ::native_evaluate(b);
+        int w = config_.hybrid_nnue_weight;
+        return (w * nnue_score + (100 - w) * classical_score) / 100;
+    }
 
     int search(NativeBoard* b, int alpha, int beta, int ply) {
         telemetry_.qsearch_nodes++;
 
         if (ply >= MAX_PLY - 1) {
-            return ::native_evaluate(b);
+            return evaluate_position(b);
         }
 
         bool in_check = (::native_is_check(b) != 0);
@@ -28,7 +47,7 @@ public:
         // Stand-pat evaluation (only if not in check)
         int stand_pat = -INF;
         if (!in_check) {
-            stand_pat = ::native_evaluate(b);
+            stand_pat = evaluate_position(b);
             if (stand_pat >= beta) {
                 return stand_pat; // Stand-pat fail-high cutoff
             }
@@ -87,6 +106,7 @@ public:
 private:
     SearchTelemetry& telemetry_;
     const MoveOrderingTables& tables_;
+    SearchConfig config_;
 };
 
 } // namespace r1

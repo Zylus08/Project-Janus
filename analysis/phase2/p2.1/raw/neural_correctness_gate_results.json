@@ -1,0 +1,61 @@
+{
+  "overall_status": "PASS",
+  "gates": {
+    "Gate_01_FeatureExtractionParity": {
+      "pass": true,
+      "startpos_eval_cp": 52
+    },
+    "Gate_02_IncrementalAccumulatorParity": {
+      "pass": true,
+      "mismatch_diff": 0
+    },
+    "Gate_03_QuantizedOutputStability": {
+      "pass": true,
+      "lone_king_cp": -27,
+      "extreme_cp": 350
+    },
+    "Gate_04_WeightShapeVerification": {
+      "pass": true,
+      "dimensions": [
+        768,
+        128,
+        32,
+        1
+      ]
+    },
+    "Gate_05_ModelChecksumVerification": {
+      "pass": true,
+      "sha256": "fd4d8105c39fd9a08783d9d9ac0bb85b27db99578b97677b035c07f4d2a653f3",
+      "size_bytes": 213468
+    },
+    "Gate_06_MissingNetworkHandling": {
+      "pass": true,
+      "embedded_weights": true
+    },
+    "Gate_07_ThreadLocalAccumulatorSafety": {
+      "pass": true,
+      "isolated_instances": true
+    },
+    "Gate_08_SearchCancellation": {
+      "pass": true,
+      "bestmove_returned": true
+    },
+    "Gate_09_UCILifecycle": {
+      "pass": true,
+      "readyok": true
+    },
+    "Gate_10_ColorSymmetry": {
+      "pass": true,
+      "white_stm": 21,
+      "black_stm": 21
+    },
+    "Gate_11_MakeUnmakeInvariance": {
+      "pass": true,
+      "stack_depth": 128
+    },
+    "Gate_12_InCheckEvasionCompleteness": {
+      "pass": true,
+      "evasion_move": "e1e2"
+    }
+  }
+}

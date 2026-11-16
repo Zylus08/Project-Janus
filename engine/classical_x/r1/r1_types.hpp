@@ -49,8 +49,16 @@ struct SearchResult {
     bool aborted = false;
 };
 
-// Search configuration options (strictly non-ML)
+enum EvalMode : uint8_t {
+    EVAL_CLASSICAL = 0,
+    EVAL_NNUE = 1,
+    EVAL_HYBRID = 2
+};
+
+// Search configuration options (strictly non-ML for Classical; NNUE/Hybrid enabled in Phase 2)
 struct SearchConfig {
+    EvalMode eval_mode = EVAL_CLASSICAL;  // Evaluation mode: Classical, NNUE, or Hybrid
+    int hybrid_nnue_weight = 50;          // NNUE weight percentage in hybrid mode (0..100)
     bool full_width_minimax_mode = false; // Phase 3: exact minimax verification
     bool use_pvs = true;                  // Phase 5: Principal Variation Search
     bool use_aspiration_window = true;    // Phase 5: Aspiration windows

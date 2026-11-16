@@ -88,6 +88,35 @@ EXPORT void native_r1_clear_tt() {
     r1::g_r1_engine.clear();
 }
 
+EXPORT void native_r1_set_eval_mode(int mode, int hybrid_weight) {
+    auto& cfg = r1::g_r1_engine.config();
+    cfg.eval_mode = static_cast<r1::EvalMode>(mode);
+    cfg.hybrid_nnue_weight = hybrid_weight;
+    r1::g_r1_engine.core().set_config(cfg);
+}
+
+EXPORT int native_r1_evaluate_nnue(NativeBoard* b) {
+    return r1::NNUEEvaluator::evaluate_full(b);
+}
+
+EXPORT int native_r1_test_accumulator_parity(NativeBoard* b, uint16_t move) {
+    r1::Accumulator acc_start, acc_inc, acc_full;
+    r1::NNUEEvaluator::full_recompute(b, acc_start);
+    r1::NNUEEvaluator::update_move(b, move, acc_start, acc_inc);
+
+    UndoInfo undo;
+    ::native_make_move(b, move, &undo);
+    r1::NNUEEvaluator::full_recompute(b, acc_full);
+    ::native_unmake_move(b, move, &undo);
+
+    int diff_w = 0, diff_b = 0;
+    for (int i = 0; i < 128; ++i) {
+        diff_w += std::abs(acc_inc.white[i] - acc_full.white[i]);
+        diff_b += std::abs(acc_inc.black[i] - acc_full.black[i]);
+    }
+    return diff_w + diff_b;
+}
+
 EXPORT void native_r1_get_telemetry(
     uint64_t* main_nodes,
     uint64_t* qsearch_nodes,
